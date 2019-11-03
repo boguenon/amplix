@@ -1,0 +1,119 @@
+@charset "utf-8"; 
+
+/*
+ * Hangeul NanumBarunGothic Font
+ */
+@font-face {
+ font-family: 'NanumBarunGothic';
+ src: url(./NanumBarunGothicWeb.eot);
+ src: url(./NanumBarunGothicWeb.eot?#iefix) format('embedded-opentype'),
+      url(./NanumBarunGothicWeb.woff) format('woff'),
+      url(./NanumBarunGothicWeb.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumBarunGothicBold';
+ src: url(./NanumBarunGothicWebBold.eot);
+ src: url(./NanumBarunGothicWebBold.eot?#iefix) format('embedded-opentype'),
+      url(./NanumBarunGothicWebBold.woff) format('woff'),
+      url(./NanumBarunGothicWebBold.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumBareunGothicLight';
+ src: url(./NanumBarunGothicWebLight.eot);
+ src: url(./NanumBarunGothicWebLight.eot?#iefix) format('embedded-opentype'),
+      url(./NanumBarunGothicWebLight.woff) format('woff'),
+      url(./NanumBarunGothicWebLight.ttf) format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumBarunpen';
+ src: url(./NanumBarunpenR.eot);
+ src: url(./NanumBarunpenR.eot?#iefix) format('embedded-opentype'),
+      url(./NanumBarunpenR.woff) format('woff'),
+      url(./NanumBarunpenR.ttf) format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumBareunGothicUltraLight';
+ src: url(./NanumBarunGothicWebUltraLight_11172.eot);
+ src: url(./NanumBarunGothicWebUltraLight_11172.eot?#iefix) format('embedded-opentype'),
+      url(./NanumBarunGothicWebUltraLight_11172.woff) format('woff'),
+      url(./NanumBarunGothicWebUltraLight_11172.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumGothicEco';
+ src: url(./NanumGothicEco.eot);
+ src: url(./NanumGothicEco.eot?#iefix) format('embedded-opentype'),
+      url(./NanumGothicEco.woff) format('woff'),
+      url(./NanumGothicEco.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumMyeongjoEco';
+ src: url(./NanumMyeongjoEco.eot);
+ src: url(./NanumMyeongjoEco.eot?#iefix) format('embedded-opentype'),
+      url(./NanumMyeongjoEco.woff) format('woff'),
+      url(./NanumMyeongjoEco.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumBrush';
+ src: url(./NanumBrush.eot);
+ src: url(./NanumBrush.eot?#iefix) format('embedded-opentype'),
+      url(./NanumBrush.woff) format('woff'),
+      url(./NanumBrush.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumPen';
+ src: url(./NanumPen.eot);
+ src: url(./NanumPen.eot?#iefix) format('embedded-opentype'),
+      url(./NanumPen.woff) format('woff'),
+      url(./NanumPen.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumMyeongjo';
+ src: url(./NanumMyeongjo.eot);
+ src: url(./NanumMyeongjo.eot?#iefix) format('embedded-opentype'),
+      url(./NanumMyeongjo.woff) format('woff'),
+      url(./NanumMyeongjo.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumGothic';
+ src: url(./NanumGothic.eot);
+ src: url(./NanumGothic.eot?#iefix) format('embedded-opentype'),
+      url(./NanumGothic.woff) format('woff'),
+      url(./NanumGothic.ttf) format('truetype');
+}
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+      /*font-family: NanumBarunGothic;*/
+      font-family: NanumBarunGothic;
+      font-smooth:always;
+      -webkit-font-smoothing: antialiased;
+      font-size: 11px;
+
+
+}
+
+.idv-side-bar,
+.x-window-header-text-default {
+	font-size: 14px;
+}
+
+.x-tab-bar,
+.x-btn-default-small .x-btn-inner,
+.x-panel-header-text-default,
+.x-form-field, .x-form-display-field  {
+	font-size: 12px;
+}
+
+.x-btn-default-toolbar-small .x-btn-inner,
+.x-toolbar .x-toolbar-text {
+	font-size: 11px;
+}
+
+.ace-editor {
+  font-family: monospace !important;
+}
+
+.ace_editor div {
+    font: inherit!important
+}

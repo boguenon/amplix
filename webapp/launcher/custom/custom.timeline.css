@@ -1,0 +1,198 @@
+.igc-tg-gr {
+	font-family: arial;
+	padding: 10px;
+}
+.igc-tg-gr .lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 10000;
+	background-color: black;
+	background-color: rgba(0,0,0,0.8);
+}
+.igc-tg-gr .lightbox .g-close-button {
+	display: block;
+	background: url(http://graphics8.nytimes.com/newsgraphics/2013/01/04/movie-marker/b1a9c2fc1689fd89ecff4a7d2be5e5757716e344/close-button.svg) no-repeat center left;
+	padding-left: 20px;
+	line-height: 30px;
+	width: 200px;
+	height: 30px;
+	text-transform: uppercase;
+	color: #666;
+	position: absolute;
+	top: -30px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0.7;
+}
+.igc-tg-gr .lightbox .g-close-button:hover {
+	opacity: 1;
+}
+.igc-tg-gr .movie {
+	border-top: solid 1px #aaa;
+	position: relative;
+	margin: 0 0 20px;
+	padding-top: 25px;
+	height: 440px;
+}
+.igc-tg-gr .movie h3 {
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 0.6em;
+}
+.igc-tg-gr .movie .intro {
+	font-family: Georgia;
+	color: #666;
+	line-height: 1.5em;
+	font-size: 15px;
+	width: 640px;
+}
+.igc-tg-gr .thumbnail-frame {
+	position: absolute;
+	top: 25px;
+	padding: 6px;
+	background-color: rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.igc-tg-gr .thumbnail-frame .play {
+	width: 35px;
+	height: 35px;
+	background: #333 url(http://graphics8.nytimes.com/newsgraphics/2013/01/04/movie-marker/b1a9c2fc1689fd89ecff4a7d2be5e5757716e344/triangle.png) no-repeat 9px center;
+	background-size: 17px;
+	border: solid 1px white;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	opacity: 0.5;
+	border-radius: 4px;
+	text-transform: uppercase;
+	color: white;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 35px;
+	overflow: hidden;
+	-webkit-transition-property: width, opacity;
+	-webkit-transition-duration: 0.2s, 0.3s;
+	-moz-transition-property: width, opacity;
+	-moz-transition-duration: 0.2s, 0.3s;
+	transition-property: width, opacity;
+	transition-duration: 0.2s, 0.3s;
+}
+.igc-tg-gr .thumbnail-frame .label {
+	position: absolute;
+	left: 35px;
+}
+.igc-tg-gr .thumbnail-frame:hover .play {
+	width: 90px;
+}
+.igc-tg-gr .thumbnail-crop {
+	overflow: hidden;
+	position: relative;
+}
+.igc-tg-gr .thumbnail-image {
+	position: absolute;
+}
+.igc-tg-gr .annotation {
+	position: absolute;
+	font-size: 11px;
+	line-height: 1.4em;
+	color: #999;
+}
+.igc-tg-gr .annotation-pointer {
+	stroke: #bbb;
+	stroke-opacity: 0.5;
+	shape-rendering: crispEdges;
+}
+.igc-tg-gr .annotation-pointer rect {
+	fill: #666;
+	stroke: none;
+}
+.igc-tg-gr .annotation-pointer path {
+	fill: none;
+	stroke: #999;
+}
+.igc-tg-gr .movie svg, .annotations {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.igc-tg-gr .stage {
+	height: 250px;
+	position: absolute;
+	top: 170px;
+}
+.igc-tg-gr .bar-hover {
+	fill-opacity: 0;
+	shape-rendering: crispEdges;
+	pointer-events: all;
+}
+.igc-tg-gr .cut:hover .bar {
+	stroke: #000;
+	stroke-width: 1.5px;
+}
+.igc-tg-gr .bar-hover:hover {
+	fill-opacity: 0.05;
+}
+.igc-tg-gr .axis {
+	shape-rendering: crispEdges;
+	font-size: 10px;
+	fill: #aaa;
+}
+.igc-tg-gr .scatterline {
+	fill: none;
+	stroke: #ccc;
+	shape-rendering: crispEdges;
+}
+.igc-tg-gr .domain {
+}
+.igc-tg-gr .section-line,
+.igc-tg-gr .baseline {
+	stroke: #ddd;
+}
+.igc-tg-gr .section-line {
+	stroke-dasharray: 3,3;
+}
+.igc-tg-gr .y.axis .separator {
+	stroke: #aaa;
+}
+.igc-tg-gr .y.axis .label {
+	font-weight: bold;
+	font-size: 11px;
+	fill: #000;
+	text-anchor: end;
+}
+.igc-tg-gr .y.axis .missing-section text {
+	fill: #aaa;
+	font-size: 11px;
+	text-anchor: end;
+}
+.igc-tg-gr .y.axis .section-marker rect {
+	fill-opacity: .07;
+}
+.igc-tg-gr .axis path {
+	display: none;
+}
+.igc-tg-gr .x.axis .tick {
+	stroke: #ccc;
+}
+.igc-tg-gr #main #interactiveFooter {
+	border-top:1px solid #ddd;
+	margin-top:10px;
+	padding-top:12px;
+}
+.igc-tg-gr #main div.storyHeader h1 {
+	font-size: 26px;
+	margin-bottom: 8px;
+	margin-top: 35px;
+	text-align: center;
+}
+.igc-tg-gr #main div.storySummary {
+	width: 800px;
+	margin: 0 auto 20px;
+	text-align: center;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}

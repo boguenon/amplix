@@ -1,0 +1,27 @@
+{
+	"view": [
+		{
+			"name": "appmenu",
+			"region": "west",
+			"width": 223, 
+			"c_width": 35,
+			"o_width": 223,
+			"bodyCls": "idv-side-bar igc-t-expanded",
+			"explorer": false,
+			"html": "<div class='mainHeader'>\n<div id='innerLogo' class='innerLogo'>\n<span class='ig-c-text'>$APP_NAME</span>\n<div class='ig-c-button'><span class='btn_expanded'></span><span class='btn_collapsed'></span></div>\n</div>\n<ul class='mainNav' id='mainNav'></ul>\n<div class='searchForm' id='searchForm'>\n<input type='text' id='tsearch' placeholder='Search' class='searchKeyword' maxlength='1000' autocomplete='off'></input>\n<span class='searchGo'></span>\n</div>\n</div>\n<ul class='mainFooter' id='mainFooter'>\n<li class='last'>$APP_COPY</li>\n</ul>"
+		},
+		{
+			"name": "navitab",
+			"hidden": true,
+			"tabhidden": false
+		},
+		{
+			"name": "navitree",
+			"hidden": false
+		},
+		{
+			"name": "intropanel",
+			"cls": ""
+		}
+	]	
+}

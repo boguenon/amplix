@@ -1,0 +1,348 @@
+CREATE TABLE fm_account (
+  account_id #NUMBER# NOT NULL,
+  account_parent #NUMBER# #NULL#,
+  account_description #VARCHAR#(30) #NULL#,
+  account_type #VARCHAR#(30) NOT NULL,
+  account_rollup #VARCHAR#(30) NOT NULL,
+  Custom_Members #VARCHAR#(255) #NULL#
+);
+
+
+
+
+
+CREATE TABLE fm_category (
+  category_id #VARCHAR#(30) NOT NULL,
+  category_parent #VARCHAR#(30) #NULL#,
+  category_description #VARCHAR#(30) NOT NULL,
+  category_rollup #VARCHAR#(30) #NULL#
+);
+
+
+
+CREATE TABLE fm_currency (
+  currency_id #NUMBER# NOT NULL,
+  currency_date #VARCHAR#(30) NOT NULL,
+  fm_currency #VARCHAR#(30) NOT NULL,
+  conversion_ratio #FL_NUMBER_4# NOT NULL
+);
+
+
+
+CREATE TABLE fm_customer (
+  customer_id #NUMBER# NOT NULL,
+  account_num #BIG_NUMBER# NOT NULL,
+  lname #VARCHAR#(30) NOT NULL,
+  fname #VARCHAR#(30) NOT NULL,
+  mi #VARCHAR#(30) #NULL#,
+  address1 #VARCHAR#(30) #NULL#,
+  address2 #VARCHAR#(30) #NULL#,
+  address3 #VARCHAR#(30) #NULL#,
+  address4 #VARCHAR#(30) #NULL#,
+  city #VARCHAR#(30) #NULL#,
+  state_province #VARCHAR#(30) #NULL#,
+  postal_code #VARCHAR#(30) NOT NULL,
+  country #VARCHAR#(30) NOT NULL,
+  customer_region_id #NUMBER# NOT NULL,
+  phone1 #VARCHAR#(30) NOT NULL,
+  phone2 #VARCHAR#(30) NOT NULL,
+  birthdate #VARCHAR#(30) NOT NULL,
+  marital_status #VARCHAR#(30) NOT NULL,
+  yearly_income #VARCHAR#(30) NOT NULL,
+  gender #VARCHAR#(30) NOT NULL,
+  total_children #NUMBER# NOT NULL,
+  num_children_at_home #NUMBER# NOT NULL,
+  education #VARCHAR#(30) NOT NULL,
+  date_accnt_opened #VARCHAR#(30) NOT NULL,
+  member_card #VARCHAR#(30) #NULL#,
+  occupation #VARCHAR#(30) #NULL#,
+  houseowner #VARCHAR#(30) #NULL#,
+  num_cars_owned #NUMBER# #NULL#,
+  fullname #VARCHAR#(60) NOT NULL
+);
+
+
+
+
+CREATE TABLE fm_days (
+  day #NUMBER# NOT NULL,
+  week_day #VARCHAR#(30) NOT NULL
+);
+
+CREATE TABLE fm_department (
+  department_id #NUMBER# NOT NULL,
+  department_description #VARCHAR#(30) NOT NULL
+);
+
+
+
+CREATE TABLE fm_employee (
+  employee_id #NUMBER# NOT NULL,
+  full_name #VARCHAR#(30) NOT NULL,
+  first_name #VARCHAR#(30) NOT NULL,
+  last_name #VARCHAR#(30) NOT NULL,
+  position_id #NUMBER# #NULL#,
+  position_title #VARCHAR#(30) #NULL#,
+  store_id #NUMBER# NOT NULL,
+  department_id #NUMBER# NOT NULL,
+  birth_date #VARCHAR#(30) NOT NULL,
+  hire_date #VARCHAR#(20) #NULL#,
+  end_date #VARCHAR#(20) #NULL#,
+  fm_salary #FL_NUMBER_4# NOT NULL,
+  supervisor_id #NUMBER# #NULL#,
+  education_level #VARCHAR#(30) NOT NULL,
+  marital_status #VARCHAR#(30) NOT NULL,
+  gender #VARCHAR#(30) NOT NULL,
+  management_role #VARCHAR#(30) #NULL#
+);
+
+
+
+
+CREATE TABLE fm_employee_closure (
+  employee_id #NUMBER# NOT NULL,
+  supervisor_id #NUMBER# NOT NULL,
+  distance #NUMBER# #NULL#
+);
+
+
+
+CREATE TABLE fm_expense_fact (
+  store_id #NUMBER# NOT NULL,
+  account_id #NUMBER# NOT NULL,
+  exp_date #VARCHAR#(20) NOT NULL,
+  time_id #NUMBER# NOT NULL,
+  category_id #VARCHAR#(30) NOT NULL,
+  currency_id #NUMBER# NOT NULL,
+  amount #FL_NUMBER_4# NOT NULL
+);
+
+
+CREATE TABLE fm_inventory_fact (
+  inventory_year #NUMBER# NOT NULL,
+  product_id #NUMBER# NOT NULL,
+  time_id #NUMBER# #NULL#,
+  warehouse_id #NUMBER# #NULL#,
+  store_id #NUMBER# #NULL#,
+  units_ordered #NUMBER# #NULL#,
+  units_shipped #NUMBER# #NULL#,
+  warehouse_sales #FL_NUMBER_4# #NULL#,
+  warehouse_cost #FL_NUMBER_4# #NULL#,
+  supply_time #NUMBER# #NULL#,
+  store_invoice #FL_NUMBER_4# #NULL#
+);
+
+
+
+CREATE TABLE fm_position (
+  position_id #NUMBER# NOT NULL,
+  position_title #VARCHAR#(30) NOT NULL,
+  pay_type #VARCHAR#(30) NOT NULL,
+  min_scale #FL_NUMBER_4# NOT NULL,
+  max_scale #FL_NUMBER_4# NOT NULL,
+  management_role #VARCHAR#(30) NOT NULL
+);
+
+
+
+CREATE TABLE fm_product (
+  product_class_id #NUMBER# NOT NULL,
+  product_id #NUMBER# NOT NULL,
+  brand_name #VARCHAR#(60) #NULL#,
+  product_name #VARCHAR#(60) NOT NULL,
+  SKU #BIG_NUMBER# NOT NULL,
+  SRP #FL_NUMBER_4# #NULL#,
+  gross_weight #FL_NUMBER_5# #NULL#,
+  net_weight #FL_NUMBER_5# #NULL#,
+  recyclable_package #SMALL_NUMBER# #NULL#,
+  low_fat #SMALL_NUMBER# #NULL#,
+  units_per_case #NUMBER# #NULL#,
+  cases_per_pallet #NUMBER# #NULL#,
+  shelf_width #FL_NUMBER_5# #NULL#,
+  shelf_height #FL_NUMBER_5# #NULL#,
+  shelf_depth #FL_NUMBER_5# #NULL#
+);
+
+
+
+CREATE TABLE fm_product_class (
+  product_class_id #NUMBER# NOT NULL,
+  product_subcategory #VARCHAR#(30) #NULL#,
+  product_category #VARCHAR#(30) #NULL#,
+  product_department #VARCHAR#(30) #NULL#,
+  product_family #VARCHAR#(30) #NULL#
+);
+
+
+
+CREATE TABLE fm_promotion (
+  promotion_id #NUMBER# NOT NULL,
+  promotion_district_id #NUMBER# #NULL#,
+  promotion_name #VARCHAR#(30) #NULL#,
+  media_type #VARCHAR#(30) #NULL#,
+  cost #FL_NUMBER_4# #NULL#,
+  start_date #VARCHAR#(20) #NULL#,
+  end_date #VARCHAR#(20) #NULL#
+);
+
+
+
+CREATE TABLE fm_region (
+  region_id #NUMBER# NOT NULL,
+  sales_city #VARCHAR#(30) #NULL#,
+  sales_state_province #VARCHAR#(30) #NULL#,
+  sales_district #VARCHAR#(30) #NULL#,
+  sales_region #VARCHAR#(30) #NULL#,
+  sales_country #VARCHAR#(30) #NULL#,
+  sales_district_id #NUMBER# #NULL#
+);
+
+
+
+CREATE TABLE fm_reserve_employee (
+  employee_id #NUMBER# NOT NULL,
+  full_name #VARCHAR#(30) NOT NULL,
+  first_name #VARCHAR#(30) NOT NULL,
+  last_name #VARCHAR#(30) NOT NULL,
+  position_id #NUMBER# #NULL#,
+  position_title #VARCHAR#(30) #NULL#,
+  store_id #NUMBER# NOT NULL,
+  department_id #NUMBER# NOT NULL,
+  birth_date #VARCHAR#(20) NOT NULL,
+  hire_date #VARCHAR#(20) #NULL#,
+  end_date #VARCHAR#(20) #NULL#,
+  fm_salary #FL_NUMBER_4# NOT NULL,
+  supervisor_id #NUMBER# #NULL#,
+  education_level #VARCHAR#(30) NOT NULL,
+  marital_status #VARCHAR#(30) NOT NULL,
+  gender #VARCHAR#(30) NOT NULL
+);
+
+
+
+CREATE TABLE fm_salary (
+  pay_date #VARCHAR#(20) NOT NULL,
+  employee_id #NUMBER# NOT NULL,
+  department_id #NUMBER# NOT NULL,
+  currency_id #NUMBER# NOT NULL,
+  salary_paid #FL_NUMBER_4# NOT NULL,
+  overtime_paid #FL_NUMBER_4# NOT NULL,
+  vacation_accrued #FL_NUMBER_5# NOT NULL,
+  vacation_used #FL_NUMBER_5# NOT NULL
+);
+
+
+CREATE TABLE fm_sales_fact (
+  sales_year #NUMBER# NOT NULL,
+  product_id #NUMBER# NOT NULL,
+  time_id #NUMBER# NOT NULL,
+  customer_id #NUMBER# NOT NULL,
+  promotion_id #NUMBER# NOT NULL,
+  store_id #NUMBER# NOT NULL,
+  store_sales #FL_NUMBER_4# NOT NULL,
+  store_cost #FL_NUMBER_4# NOT NULL,
+  unit_sales #FL_NUMBER_4# NOT NULL,
+  transact_id #NUMBER# #NULL#
+);
+
+
+CREATE TABLE fm_store (
+  store_id #NUMBER# NOT NULL,
+  store_type #VARCHAR#(30) #NULL#,
+  region_id #NUMBER# #NULL#,
+  store_name #VARCHAR#(30) #NULL#,
+  store_number #NUMBER# #NULL#,
+  store_street_address #VARCHAR#(30) #NULL#,
+  store_city #VARCHAR#(30) #NULL#,
+  store_state #VARCHAR#(30) #NULL#,
+  store_postal_code #VARCHAR#(30) #NULL#,
+  store_country #VARCHAR#(30) #NULL#,
+  store_manager #VARCHAR#(30) #NULL#,
+  store_phone #VARCHAR#(30) #NULL#,
+  store_fax #VARCHAR#(30) #NULL#,
+  first_opened_date #VARCHAR#(20) #NULL#,
+  last_remodel_date #VARCHAR#(20) #NULL#,
+  store_sqft #NUMBER# #NULL#,
+  grocery_sqft #NUMBER# #NULL#,
+  frozen_sqft #NUMBER# #NULL#,
+  meat_sqft #NUMBER# #NULL#,
+  coffee_bar #SMALL_NUMBER# #NULL#,
+  video_store #SMALL_NUMBER# #NULL#,
+  salad_bar #SMALL_NUMBER# #NULL#,
+  prepared_food #SMALL_NUMBER# #NULL#,
+  florist #SMALL_NUMBER# #NULL#
+);
+
+
+
+
+CREATE TABLE fm_store_ragged (
+  store_id #NUMBER# NOT NULL,
+  store_type #VARCHAR#(30) #NULL#,
+  region_id #NUMBER# #NULL#,
+  store_name #VARCHAR#(30) #NULL#,
+  store_number #NUMBER# #NULL#,
+  store_street_address #VARCHAR#(30) #NULL#,
+  store_city #VARCHAR#(30) #NULL#,
+  store_state #VARCHAR#(30) #NULL#,
+  store_postal_code #VARCHAR#(30) #NULL#,
+  store_country #VARCHAR#(30) #NULL#,
+  store_manager #VARCHAR#(30) #NULL#,
+  store_phone #VARCHAR#(30) #NULL#,
+  store_fax #VARCHAR#(30) #NULL#,
+  first_opened_date #VARCHAR#(20) #NULL#,
+  last_remodel_date #VARCHAR#(20) #NULL#,
+  store_sqft #NUMBER# #NULL#,
+  grocery_sqft #NUMBER# #NULL#,
+  frozen_sqft #NUMBER# #NULL#,
+  meat_sqft #NUMBER# #NULL#,
+  coffee_bar #SMALL_NUMBER# #NULL#,
+  video_store #SMALL_NUMBER# #NULL#,
+  salad_bar #SMALL_NUMBER# #NULL#,
+  prepared_food #SMALL_NUMBER# #NULL#,
+  florist #SMALL_NUMBER# #NULL#
+);
+
+
+
+
+CREATE TABLE fm_time_by_day (
+  time_id #NUMBER# NOT NULL,
+  the_date #VARCHAR#(20) #NULL#,
+  the_day #VARCHAR#(30) #NULL#,
+  the_month #VARCHAR#(30) #NULL#,
+  the_year #NUMBER# #NULL#,
+  day_of_month #NUMBER# #NULL#,
+  week_of_year #NUMBER# #NULL#,
+  month_of_year #NUMBER# #NULL#,
+  quarter #VARCHAR#(30) #NULL#,
+  fiscal_period #VARCHAR#(30) #NULL#
+);
+
+
+CREATE TABLE fm_warehouse (
+  warehouse_id #NUMBER# NOT NULL,
+  warehouse_class_id #NUMBER# #NULL#,
+  stores_id #NUMBER# #NULL#,
+  warehouse_name #VARCHAR#(60) #NULL#,
+  wa_address1 #VARCHAR#(30) #NULL#,
+  wa_address2 #VARCHAR#(30) #NULL#,
+  wa_address3 #VARCHAR#(30) #NULL#,
+  wa_address4 #VARCHAR#(30) #NULL#,
+  warehouse_city #VARCHAR#(30) #NULL#,
+  warehouse_state_province #VARCHAR#(30) #NULL#,
+  warehouse_postal_code #VARCHAR#(30) #NULL#,
+  warehouse_country #VARCHAR#(30) #NULL#,
+  warehouse_owner_name #VARCHAR#(30) #NULL#,
+  warehouse_phone #VARCHAR#(30) #NULL#,
+  warehouse_fax #VARCHAR#(30) #NULL#
+);
+
+
+
+CREATE TABLE fm_warehouse_class (
+  warehouse_class_id #NUMBER# NOT NULL,
+  description #VARCHAR#(30) #NULL#
+);
+
+

@@ -1,0 +1,575 @@
+{
+	"children": [
+		{
+			"name": "Navigator",
+			"cls": "ig_nav"
+		},
+		{
+			"name": "Analysis",
+			"cls": "ig_anl",
+			"children": [
+				{
+					"name": "Database Connection",
+					"cls": "ig_dbcon"
+				},
+				{
+					"name": "Variables",
+					"cls": "ig_var"
+				},
+				{
+					"name": "System Lookup",
+					"cls": "ig_lookup"
+				},
+				{
+					"name": "Dashboard Mgr",
+					"cls": "ig_dbd"
+				}
+			]
+		},
+		{
+			"name": "Excel file loading",
+			"cls": "ig_dataset",
+			"children": [
+				{
+					"name": "Create Data Set",
+					"cls": "ig_n_dataset"
+				},
+				{
+					"name": "Data Set DBA",
+					"cls": "ig_n_dataset_dba"
+				},
+				{
+					"name": "DDL request button",
+					"cls": "ig_n_ds_reqb"
+				},
+				{
+					"name": "DDL create button",
+					"cls": "ig_n_ds_sddlb"
+				}
+			]
+		},
+		{
+			"name": "Management",
+			"cls": "ig_mngr",
+			"children": [
+				{
+					"name": "system",
+					"cls": "ig_sys",
+					"children": [
+						{
+							"name": "User Management",
+							"cls": "ig_user"
+						},
+						
+						{
+							"name": "Features",
+							"cls": "ig_ft"
+						}
+					]
+				},
+				{
+					"name": "Settings",
+					"cls": "ig_settings",
+					"children": [
+						{
+							"name": "Look and Feel",
+							"cls": "ig_lnf"
+						},
+						{
+							"name": "Locale Manager",
+							"cls": "ig_loc"
+						},
+						{
+							"name": "Locale Dictionary",
+							"cls": "ig_dloc"
+						},
+						{
+							"name": "Dashboard Mgr",
+							"cls": "ig_dbd"
+						}
+					]
+				},
+				{
+					"name": "Monitoring",
+					"cls": "ig_mon",
+					"children": [
+						{
+							"name": "Meta Import",
+							"cls": "ig_imp"
+						},
+						{
+							"name": "Migration",
+							"cls": "ig_migration"
+						},
+						{
+							"name": "System Log",
+							"cls": "ig_syslog"
+						},
+						{
+							"name": "System Resource",
+							"cls": "ig_sysres"
+						},
+						{
+							"name": "Schedule Server Status",
+							"cls": "ig_schedule"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BigData Analysis",
+			"cls": "ig_bdmgr",
+			"children": [
+				{
+					"name": "Hadoop",
+					"cls": "ig_hdoop",
+					"children": [
+						{
+							"name": "Hadoop BizFlow",
+							"cls": "ig_hd_flow"
+						},
+						{
+							"name": "Hadoop Map Reduce",
+							"cls": "ig_hd_mapr"
+						}
+					]
+				},
+				{
+					"name": "MongoDB",
+					"cls": "ig_mongo",
+					"children": [
+						{
+							"name": "Mongo Data Processor",
+							"cls": "ig_mg_dproc"
+						},
+						{
+							"name": "Mongo Data Collector",
+							"cls": "ig_mg_data"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Machine Learning",
+			"cls": "ig_mlmgr",
+			"children": [
+				{
+					"name": "Bayes Learning",
+					"cls": "ig_ml_bayes",
+					"children": [
+						{
+							"name": "Bayes Influence",
+							"cls": "ig_ml_bayes_rpt"
+						},
+						{
+							"name": "Learn from Data",
+							"cls": "ig_ml_learn"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Migration",
+			"cls": "ig_mig",
+			"children": [
+				{
+					"name": "Discoverer Migration",
+					"cls": "ig_disco"
+				}
+			]
+		},
+		{
+			"name": "Send mail",
+			"cls": "ig_mail",
+			"children": [
+				{
+					"name": "Registration email",
+					"cls": "ig_mx_reg"
+				},
+				{
+					"name": "User Update email",
+					"cls": "ig_mx_upd"
+				},
+				{
+					"name": "Password reset",
+					"cls": "ig_mx_prs"
+				}
+			]
+		},
+		{
+			"name": "Navigator",
+			"cls": "ig_nav",
+			"children": [
+				{
+					"name": "List",
+					"cls": "ig_n_lst",
+					"children": [
+						{
+							"name": "Private Contents",
+							"cls": "ig_n_p"
+						},
+						{
+							"name": "All Content",
+							"cls": "ig_n_a"
+						},
+						{
+							"name": "Favorites",
+							"cls": "ig_n_fav"
+						},
+						{
+							"name": "Manage Workspace",
+							"cls": "ig_n_mw"
+						},
+						{
+							"name": "Most Recent",
+							"cls": "ig_n_rcnt"
+						},
+						{
+							"name": "Deleted Content",
+							"cls": "ig_n_del"
+						}
+					]
+				},
+				{
+					"name": "Folder Popup",
+					"cls": "ig_n_fp",
+					"children": [
+						{
+							"name": "Create New",
+							"cls": "ig_n_f",
+							"children": [
+								{
+									"name": "Workspace",
+									"cls": "ig_n_cw"
+								},
+								{
+									"name": "Folder",
+									"cls": "ig_n_f_f"
+								},
+								{
+									"name": "Cube Analysis",
+									"cls": "ig_n_cb",
+									"children": [
+										{
+											"name": "ROLAP Cube",
+											"cls": "ig_n_c_rc"
+										},
+										{
+											"name": "BigData Cube",
+											"cls": "ig_n_c_b"
+										}
+									 ]
+								},
+								{
+									"name": "Database Model",
+									"cls": "ig_n_dbm"
+								},
+								{
+									"name": "Report",
+									"cls": "ig_n_rpt"
+								},
+								{
+									"name": "Dashboard",
+									"cls": "ig_n_dbd"
+								},
+								{
+									"name": "Composite Report",
+									"cls": "ig_n_crpt"
+								},
+								{
+									"name": "Hadoop BizOp",
+									"cls": "ig_n_hb"
+								},
+								{
+									"name": "Java Class",
+									"cls": "ig_n_jc"
+								},
+								{
+									"name": "R Script",
+									"cls": "ig_n_f_r"
+								},
+								{
+									"name": "Java Class Module",
+									"cls": "ig_n_jcm"
+								},
+								{
+									"name": "Cube Items",
+									"cls": "ig_cc",
+									"children": [
+										{
+											"name": "Custom Metric",
+											"cls": "ig_n_cm"
+										},
+										{
+											"name": "Date Metric",
+											"cls": "ig_n_dm"
+										},
+										{
+											"name": "Formula",
+											"cls": "ig_n_fm"
+										},
+										{
+											"name": "Measure",
+											"cls": "ig_n_ms"
+										},
+										{
+											"name": "Chart Measure",
+											"cls": "ig_n_cms"
+										},
+										{
+											"name": "UDG",
+											"cls": "ig_n_udg"
+										},
+										{
+											"name": "Group Measure",
+											"cls": "ig_n_gm"
+										},
+										{
+											"name": "Hierarchy",
+											"cls": "ig_n_hm"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Export Content",
+							"cls": "ig_n_exp"
+						},
+						{
+							"name": "Copy Item",
+							"cls": "ig_n_cp"
+						},
+						{
+							"name": "Rename Content",
+							"cls": "ig_n_ren"
+						},
+						{
+							"name": "Move to",
+							"cls": "ig_n_mv"
+						},
+						{
+							"name": "Delete Content",
+							"cls": "ig_n_del"
+						},
+						{
+							"name": "Object Auth",
+							"cls": "ig_n_oauth"
+						},
+						{
+							"name": "Object Subscribe",
+							"cls": "ig_n_osubscr"
+						},
+						{
+							"name": "Version Control",
+							"cls": "ig_n_rev"
+						},
+						{
+							"name": "Refresh",
+							"cls": "ig_n_ref"
+						},
+						{
+							"name": "Manage Folder",
+							"cls": "ig_n_mgf"
+						},
+						{
+							"name": "Edit Cube",
+							"cls": "ig_n_e_cube"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Report",
+			"cls": "ig_report",
+			"children": [
+				{
+					"name": "toolbar",
+					"cls": "ig_r_tbar",
+					"children": [
+						{
+							"name": "save",
+							"cls": "ig_r_save"
+						},
+						{
+							"name": "save as",
+							"cls": "ig_r_saveas"
+						},
+						{
+							"name": "run",
+							"cls": "ig_r_run"
+						},
+						{
+							"name": "design",
+							"cls": "ig_r_design"
+						},
+						{
+							"name": "view selection",
+							"cls": "ig_r_vsel",
+							"children": [
+								{
+									"name": "view grid",
+									"cls": "ig_r_grid"
+								},
+								{
+									"name": "view_chart",
+									"cls": "ig_r_chart"
+								},
+								{
+									"name": "view_analysis",
+									"cls": "ig_r_anal"
+								},
+								{
+									"name": "view_r",
+									"cls": "ig_r_r"
+								},
+                                {
+                                    "name": "view_python",
+                                    "cls": "ig_r_python"
+                                },
+                                {
+                                	"name": "Add ReportViewer",
+                                	"cls": "ig_r_rpt_vr"
+                                },
+                                {
+                                	"name": "Add StoryView",
+                                	"cls": "ig_r_story"
+                                }
+							]
+						},
+						{
+							"name": "Email Burstring",
+							"cls": "ig_r_bursting"
+						},
+						{
+							"name": "Form Builder",
+							"cls": "ig_r_formb"
+						},
+						{
+							"name": "share report",
+							"cls": "ig_r_email"
+						},
+						{
+							"name": "formula",
+							"cls": "ig_r_fm"
+						},
+						{
+							"name": "export",
+							"cls": "ig_r_exp",
+							"children": [
+								{
+									"name": "excel",
+									"cls": "ig_r_xls"
+								},
+								{
+									"name": "ppt",
+									"cls": "ig_r_ppt"
+								},
+								{
+									"name": "pdf",
+									"cls": "ig_r_pdf"
+								},
+								{
+									"name": "csv",
+									"cls": "ig_r_csv"
+								},
+								{
+									"name": "html",
+									"cls": "ig_r_html"
+								},
+								{
+									"name": "jasper",
+									"cls": "ig_r_jasper"
+								},
+								{
+									"name": "clipboard",
+									"cls": "ig_r_clb"
+								}
+							]
+						},
+						{
+							"name": "export option",
+							"cls": "ig_r_eopt"
+						},
+						{
+							"name": "tools",
+							"cls": "ig_r_tools",
+							"children": [
+								{
+									"name": "change report type",
+									"cls": "ig_r_crpt"
+								},
+								{
+									"name": "basic statistics",
+									"cls": "ig_r_stat"
+								}
+							]
+						},
+						{
+							"name": "analysis menus",
+							"cls": "ig_anal_menu"
+						},
+						{
+							"name": "docking",
+							"cls": "ig_r_dock",
+							"children": [
+								{
+									"name": "edit dock panel",
+									"cls": "ig_r_edpanel"
+								},
+								{
+									"name": "add panel",
+									"cls": "ig_r_adpanel"
+								}
+							]
+						},
+						{
+							"name": "R Summary",
+							"cls": "ig_r_rsum"
+						},
+						{
+							"name": "R Script Editor",
+							"cls": "ig_r_rsce"
+						},
+						{
+							"name": "R Wizard",
+							"cls": "ig_r_rwzd"
+						},
+						{
+							"name": "R Image Save",
+							"cls": "ig_r_rimg"
+						},
+						{
+							"name": "Chart Wizard",
+							"cls": "ig_r_cwz"
+						},
+						{
+							"name": "Chart Type",
+							"cls": "ig_r_ct"
+						},
+						{
+							"name": "Schedule",
+							"cls": "ig_r_sch"
+						},
+						{
+							"name": "favorites",
+							"cls": "ig_r_fav"
+						},
+						{
+							"name": "instruction",
+							"cls": "ig_r_inst"
+						},
+						{
+							"name": "help",
+							"cls": "ig_r_help"
+						}
+					]
+				}
+			]
+		}
+	] 
+}
