@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="amplix" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" -->
+	<display-name>amplix</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<!--   REMOVE THIS COMMENT if web deploy
+	<context-param>
+    	<param-name>APP_HOME</param-name>
+    	<param-value>c:/amplix/</param-value>
+  	</context-param>
+  	REMOVE THIS COMMENT  -->   
+	<error-page>
+ 		<error-code>404</error-code>
+ 		<location>/404.html</location>
+	</error-page>
+	<error-page>
+ 		<error-code>500</error-code>
+ 		<location>/500.html</location>
+	</error-page>
+    <session-config>
+        <session-timeout>120</session-timeout>
+    </session-config>
+    <!-- 
+	    30 MB => 31457280
+	    50 MB =>  52428800
+	    100 MB => 104857600
+		200 MB => 209715200
+		250 MB => 262144000
+		maximum file size : 250MB 
+	-->
+	<multipart-config>
+		<max-file-size>31457280</max-file-size>
+		<max-request-size>31457280</max-request-size>
+		<file-size-threshold>0</file-size-threshold>
+	</multipart-config>
+	<servlet>
+		<servlet-name>remoteproc</servlet-name>
+		<servlet-class>
+			com.amplix.rpc.igcRpc
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>remoteproc</servlet-name>
+		<url-pattern>/servlet/krcp</url-pattern>
+	</servlet-mapping>
+  	<listener>
+  		<listener-class>com.amplix.rpc.igcSessionListener</listener-class>
+  	</listener>
+  	<listener>
+  		<listener-class>com.amplix.rpc.igcFileUploadListener</listener-class>
+  	</listener>
+  	<filter>
+	    <filter-name>UrlRewriteFilter</filter-name>
+	    <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+	    <filter-name>UrlRewriteFilter</filter-name>
+	    <url-pattern>/go/*</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+	    <filter-name>UrlRewriteFilter</filter-name>
+	    <url-pattern>/run/*</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+</web-app>

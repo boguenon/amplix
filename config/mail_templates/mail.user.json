@@ -1,0 +1,59 @@
+{
+	"meta_type": "email_templates",
+	"data": [
+		{
+			"name": "blank",
+			"title": "[amplix] {TITLE}",
+			"message": {
+				"type": "html",
+				"text": "\n\n{MESSAGE}.\n",
+				"html": "blank.html"
+			}
+		},
+		{
+			"name": "reset_password",
+			"title": "[amplix] Password reset notification",
+			"message": {
+				"type": "html",
+				"text": "\n\nYour password is reset.\n",
+				"html": "reset_password.html"
+			}
+		},
+		{
+			"name": "user_register",
+			"title": "[amplix] Your account is created.",
+			"message": {
+				"type": "html",
+				"text": "\nYour account is created by administrator.\nPlease login and change your password to secure use of the amplix!\n\nYour temporary password is : {PASSWORD}",
+				"html": "user_register.html"
+			}
+		},
+		{
+			"name": "user_update",
+			"title": "[amplix] Your account is modified.",
+			"message": {
+				"type": "html",
+				"text": "\nYour account is modified by {USERNAME}.\n\nPlease login and validate the change!\n\n${:PASSWORDCHANGE}\n\nYour temporary password is : {PASSWORD}",
+				"html": "user_update.html"
+			}
+		},
+		{
+			"name": "schedule_notification",
+			"title": "[amplix] Your schedule is processed.",
+			"message": {
+				"type": "html",
+				"text": "\nYour schedule is processed by {USERNAME}.\n\nPlease login and view pages!\n\nhttp://localhost:8780/launcher/navi.jsp?mval=1&slink={SCHEDULE_LINK}",
+				"html": "schedule_notification.html"
+			}
+		},
+		{
+			"name": "share_item",
+			"title": "[amplix] Share Reports.",
+			"message": {
+				"type": "html",
+				"text": "\nYou get shared report by user {USERNAME}.\n\nPlease login and view pages!\n\nhttp://localhost:8780/launcher/navi.jsp?mval=1&slink={ITEM_UID}\n\nLocation : {ITEM_PATH}\n\n{linkurl}",
+				"html": "share_item.html"
+			}
+		}
+	]
+}

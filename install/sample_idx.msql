@@ -1,0 +1,106 @@
+ALTER TABLE fm_account ADD PRIMARY KEY (account_id);
+
+CREATE INDEX i_account_parent on fm_account(account_parent);
+
+ALTER TABLE fm_category ADD PRIMARY KEY (category_id);
+
+CREATE INDEX i_category_parent ON fm_category(category_parent);
+
+
+
+CREATE INDEX i_currency_id ON fm_currency(currency_id);
+
+
+ALTER TABLE fm_customer ADD PRIMARY KEY (customer_id);
+CREATE INDEX i_cust_acct_num ON fm_customer(account_num);
+CREATE INDEX i_customer_fname ON fm_customer(fname);
+CREATE INDEX i_customer_lname ON fm_customer(lname);
+CREATE INDEX i_cust_child_home ON fm_customer(num_children_at_home);
+CREATE INDEX i_cust_postal_code ON fm_customer(postal_code);
+CREATE INDEX i_cust_region_id ON fm_customer(customer_region_id);
+
+ALTER TABLE fm_department ADD PRIMARY KEY (department_id);
+
+ALTER TABLE fm_employee ADD PRIMARY KEY (employee_id);
+
+CREATE INDEX i_empl_dept_id ON fm_employee(department_id);
+CREATE INDEX i_empl_store_id ON fm_employee(store_id);
+CREATE INDEX i_empl_super_id ON fm_employee(supervisor_id);
+
+
+CREATE INDEX i_empl_closure ON fm_employee_closure(supervisor_id,employee_id);
+
+
+
+CREATE INDEX i_expense_store_id ON fm_expense_fact(store_id);
+CREATE INDEX i_expense_acct_id ON fm_expense_fact(account_id);
+CREATE INDEX i_expense_time_id ON fm_expense_fact(time_id);
+
+
+
+CREATE INDEX i_inv_prod_id ON fm_inventory_fact(product_id);
+CREATE INDEX i_inv_store_id ON fm_inventory_fact(store_id);
+CREATE INDEX i_inv_time_id ON fm_inventory_fact(time_id);
+CREATE INDEX i_inv_wrhse_id ON fm_inventory_fact(warehouse_id);
+
+
+
+ALTER TABLE fm_position ADD PRIMARY KEY (position_id);
+
+ALTER TABLE fm_product ADD PRIMARY KEY (product_id);
+
+CREATE INDEX i_prod_brand_name ON fm_product(brand_name);
+CREATE INDEX i_prod_class_id ON fm_product(product_class_id);
+CREATE INDEX i_product_name ON fm_product(product_name);
+CREATE INDEX i_product_SKU ON fm_product(SKU);
+
+
+ALTER TABLE fm_promotion ADD PRIMARY KEY (promotion_id);
+
+
+
+CREATE INDEX i_promo_dist_id ON fm_promotion(promotion_district_id);
+
+
+
+ALTER TABLE fm_reserve_employee ADD PRIMARY KEY (employee_id);
+
+
+
+CREATE INDEX i_rsrv_empl_dept ON fm_reserve_employee(department_id);
+CREATE INDEX i_rsrv_empl_store ON fm_reserve_employee(store_id);
+CREATE INDEX i_rsrv_empl_sup ON fm_reserve_employee(supervisor_id);
+
+
+CREATE INDEX i_salary_pay_date ON fm_salary(pay_date);
+CREATE INDEX i_salary_employee ON fm_salary(employee_id);
+
+
+
+CREATE INDEX i_sls_cust_id ON fm_sales_fact(customer_id);
+CREATE INDEX i_sls_prod_id ON fm_sales_fact(product_id);
+CREATE INDEX i_sls_promo_id ON fm_sales_fact(promotion_id);
+CREATE INDEX i_sls_store_id ON fm_sales_fact(store_id);
+CREATE INDEX i_sls_time_id ON fm_sales_fact(time_id);
+
+
+ALTER TABLE fm_store ADD PRIMARY KEY (store_id);
+CREATE INDEX i_store_region_id ON fm_store(region_id);
+
+ALTER TABLE fm_store_ragged ADD PRIMARY KEY (store_id);
+CREATE INDEX i_store_rggd_reg ON fm_store_ragged(region_id);
+
+
+
+CREATE INDEX i_time_day ON fm_time_by_day(the_date);
+CREATE INDEX i_time_year ON fm_time_by_day(the_year);
+CREATE INDEX i_time_quarter ON fm_time_by_day(quarter);
+CREATE INDEX i_time_month ON fm_time_by_day(month_of_year);
+
+
+
+
+
+
+
+

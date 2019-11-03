@@ -1,0 +1,43 @@
+<extra_userform version="1.0.0">
+	<!-- 
+		for ebs system integration
+		uncomment bellow section and change database
+		alter table igcusers add ebs_login_id varchar2(100);
+		alter table igcusers add ebs_expire_date varchar2(100);
+		alter table igcusers add ebs_desc varchar2(255);
+	-->
+	<!-- 
+	<item name="ebs_expire_date" 
+		displayname="EBS LoginID" fieldname="ebs_login_id" 
+		optional="true" type="textfield"/>
+	<item 
+		name="ebs_expire_date" 
+		displayname="EBS ExpireDate" 
+		fieldname="ebs_expire_date" 
+		optional="true" 
+		type="textfield"/>
+	<item
+		name="ebs_desc"
+		displayname="EBS Description"
+		fieldname="ebs_desc"
+		optional="true"
+		type="textarea" />
+	-->
+	<!-- end of for ebs system integration -->
+	<!-- Item name="Company" displayname="* Your company name :" fieldname="company" optional="false" type="textinput"/>
+	<Item name="Sex" displayname="Your sex :" fieldname="sex" optional="true" type="select">
+	  <values>
+	  	<value code="" value="[select]"/>
+	  	<value code="1" value="male"/>
+	  	<value code="2" value="female"/>
+	  </values>
+	</Item>
+	<Item name="Position" displayname="* Your position :" fieldname="position" optional="false" type="select">
+		<values>
+	  	<value code="" value="[select]"/>
+	  	<value code="1" value="manager"/>
+	  	<value code="2" value="decision maker"/>
+	  	<value code="9" value="employee"/>
+	  </values>
+	</Item -->
+</extra_userform>

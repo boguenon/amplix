@@ -1,0 +1,26 @@
+{
+	"calcmode": {
+		"title": "Calculation Mode",
+		"html": "Example) Raw data result for this measure is weekday ('Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat', 'Sun') and need to calculate aggregation after query results, then check selected.<br>Already aggregated data should not checked for data value is double processed after query results and processing pivot tables."
+	},
+	"edit_dock_panel": {
+		"title": "Edit Docking Panel",
+		"html": "Click to editmode of docking panel. Drag and drop title bar to positioning, resizing the context. Just place to Top/Bottom or Left/Right side of another panel and it will move to position on that area. <br><br>After finish setup panel, click button again to toggle to exit editmode."
+	},
+	"add_panel": {
+		"title": "Add Panel",
+		"html": "Click to add sheet / tab / filter / text control on docking area."
+	},
+	"data_query_viewer": {
+		"title": "Data Query Viewer",
+		"html": "Check selected to build report not limited on pivot definition.<br>To make pivot report uncheck and select pivot items on measures and column area for analytical output view."
+	},
+	"advanced_pivot": {
+		"title": "Advanced Pivot Options",
+		"html": "Select advanced pivot options for Tree view, and change measure on different view point, and etc."
+	},
+	"inline_view": {
+		"title": "Inline View",
+		"html": "Inline View is SQL SELECT statement to make logical table. Input your SQL statement and click on column to register field included in the select statement"
+	}
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+	<contextName>mplix</contextName>
+	<appender name="FILE" class="ch.qos.logback.classic.sift.SiftingAppender">
+		<discriminator>
+			<key>logFileName</key>
+			<defaultValue>console.out</defaultValue>
+		</discriminator>
+		<!-- 
+		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+			<evaluator class="ch.qos.logback.classic.boolex.GEventEvaluator">
+				e.mdc?.get("logFileName") != null
+			</evaluator>
+			<OnMismatch>DENY</OnMismatch>
+			<OnMatch>NEUTRAL</OnMatch>
+		</filter>
+		-->
+		<sift>
+			<appender name="FILE-${logFileName}"
+				class="ch.qos.logback.core.rolling.RollingFileAppender">
+				<file>${app_home}/logs/${logFileName}.log</file>
+				<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+					<Pattern>
+						%d{yyyy-MM-dd HH:mm:ss} %level %logger{35} - %msg%n
+					</Pattern>
+				</encoder>
+				<!-- 
+				<rollingPolicy
+					class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+					<FileNamePattern>${app_home}/logs/${logFileName}.%i.log.zip
+					</FileNamePattern>
+					<MinIndex>1</MinIndex>
+					<MaxIndex>10</MaxIndex>
+				</rollingPolicy>
+				 -->
+				<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+					<!-- daily rollover -->
+					<fileNamePattern>logs/${logFileName}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+					<timeBasedFileNamingAndTriggeringPolicy
+					class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+					<!-- or whenever the file size reaches 50MB -->
+					<maxFileSize>50MB</maxFileSize>
+					</timeBasedFileNamingAndTriggeringPolicy>
+					<!-- keep 30 days' worth of history -->
+					<maxHistory>30</maxHistory>
+				</rollingPolicy>
+				<triggeringPolicy
+					class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+					<MaxFileSize>5MB</MaxFileSize>
+				</triggeringPolicy>
+			</appender>
+		</sift>
+	</appender>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss} %level %msg%n </Pattern>
+		</layout>
+		<target>System.err</target>
+	</appender>
+	<!-- 
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${app_home}/logs/console.out.log</file>
+		
+		<encoder>
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %level %logger{35} - %msg%n </Pattern>
+		</encoder>
+	</appender>
+	 -->
+	<appender name="DB" class="org.apache.log4j.jdbc.JDBCAppender">
+		<param name="driver" value="com.mysql.jdbc.Driver"/>
+		<param name="url" value="jdbc:mysql://localhost/DBNAME"/>
+		<param name="user" value="user_id"/>
+		<param name="password" value="password"/>
+		<param name="sql" value="INSERT INTO igcserverlog (log_level, log_date, log_host, log_user, log_msg) VALUES ('%x','%d','%C','%p','%m')"/>
+
+		<layout class="org.apache.log4j.PatternLayout">
+		</layout>
+	</appender>
+	<logger name="com.amplix.scheduler">
+		<level value="all" />
+		<appender-ref ref="FILE" threshold="debug"/>
+	</logger>
+	<logger name="rootLogger" additivity="true">
+		<level value="debug"/>
+		<appender-ref ref="STDOUT" threshold="info"/>
+		<appender-ref ref="FILE" threshold="debug"/>
+	</logger>
+	<root level="debug">
+		<appender-ref ref="STDOUT" threshold="info"/>
+		<appender-ref ref="FILE" threshold="debug"/>
+	</root>
+</configuration>

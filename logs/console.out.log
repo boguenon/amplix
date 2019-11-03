@@ -1,0 +1,264 @@
+2019-06-18 23:09:18 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:09:18 INFO com.amplix.rpc.igcRpc - **** Starting amplix WEB Application ********
+2019-06-18 23:09:18 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:09:18 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:09:18 INFO com.amplix.rpc.igcRpc -  application loading from : c:\workspace\_boguenon\output/
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - Start Parse config file
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... server node processing: 
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... connection node processing: 
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... boot node processing: 
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... agents node processing: 
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... database node processing: 
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... database node processing: meta_connection
+2019-06-18 23:09:18 INFO com.amplix.H.A.m - >> loading database configuration : null
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... database node processing: nosql_db
+2019-06-18 23:09:18 INFO com.amplix.H.A.m - >> loading nosql database configuration : null
+2019-06-18 23:09:18 INFO com.amplix.H.A.m - >> loading nosql database configuration : hbase_main
+2019-06-18 23:09:18 INFO com.amplix.H.A.m - >> loading nosql database configuration : null
+2019-06-18 23:09:18 INFO com.amplix.H.A.m - >> loading nosql database configuration : null
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... email node processing: 
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... applications node processing: 
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... deploy servers processing: 
+2019-06-18 23:09:18 DEBUG com.amplix.H.A.m - ... sso node processing: 
+2019-06-18 23:09:18 ERROR com.amplix.H.G.J - error on db connection mgr, register database driver : com.mysql.jdbc.Driver
+2019-06-18 23:09:19 INFO com.amplix.H.G.J - + Initialized database pool IGCBASE
+2019-06-18 23:09:19 DEBUG com.amplix.H.G.H - initializing pool source (dbcp)
+2019-06-18 23:09:19 DEBUG com.amplix.H.G.H - initializing pool source (dbcp) ==> successful
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcServer - Database loaded with schema version :3.0
+2019-06-18 23:09:19 INFO com.amplix.D.E -  skip fix base version 3.6:3.6
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcRpc - ---------------- POI Class Library Checking ----------------
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcServer - POI Core came from ->
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-3.17.jar!/org/apache/poi/poifs/filesystem/POIFSFileSystem.class
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcServer - POI OOXML came from ->
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-ooxml-3.17.jar!/org/apache/poi/POIXMLDocument.class
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcServer - POI Scratchpad came from ->
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-scratchpad-3.17.jar!/org/apache/poi/hslf/usermodel/HSLFSlideShow.class
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcServer - >> loading font : 
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcServer - >> end of loading font : 
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcRpc - ------------------------------------------------------------
+2019-06-18 23:09:19 INFO com.amplix.rpc.igcRpc - >>>>>> loading plugin packages: null
+2019-06-18 23:09:19 ERROR com.amplix.rpc.igcRpc - plugin class load failed : java.lang.NullPointerException
+2019-06-18 23:16:57 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:16:57 INFO com.amplix.rpc.igcRpc - **** Starting amplix WEB Application ********
+2019-06-18 23:16:57 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:16:57 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:16:57 INFO com.amplix.rpc.igcRpc -  application loading from : c:\workspace\_boguenon\output/
+2019-06-18 23:16:57 DEBUG com.amplix.H.A.R - Start Parse config file
+2019-06-18 23:16:57 DEBUG com.amplix.H.A.R - ... server node processing: 
+2019-06-18 23:16:57 DEBUG com.amplix.H.A.R - ... connection node processing: 
+2019-06-18 23:16:57 DEBUG com.amplix.H.A.R - ... boot node processing: 
+2019-06-18 23:16:57 DEBUG com.amplix.H.A.R - ... agents node processing: 
+2019-06-18 23:16:57 DEBUG com.amplix.H.A.R - ... database node processing: 
+2019-06-18 23:16:57 DEBUG com.amplix.H.A.R - ... database node processing: meta_connection
+2019-06-18 23:16:57 INFO com.amplix.H.A.R - >> loading database configuration : null
+2019-06-18 23:16:58 DEBUG com.amplix.H.A.R - ... database node processing: nosql_db
+2019-06-18 23:16:58 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:16:58 INFO com.amplix.H.A.R - >> loading nosql database configuration : hbase_main
+2019-06-18 23:16:58 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:16:58 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:16:58 DEBUG com.amplix.H.A.R - ... email node processing: 
+2019-06-18 23:16:58 DEBUG com.amplix.H.A.R - ... applications node processing: 
+2019-06-18 23:16:58 DEBUG com.amplix.H.A.R - ... deploy servers processing: 
+2019-06-18 23:16:58 DEBUG com.amplix.H.A.R - ... sso node processing: 
+2019-06-18 23:16:58 ERROR com.amplix.H.G.E - error on db connection mgr, register database driver : com.mysql.jdbc.Driver
+2019-06-18 23:16:59 INFO com.amplix.H.G.E - + Initialized database pool IGCBASE
+2019-06-18 23:16:59 DEBUG com.amplix.H.G.C - initializing pool source (dbcp)
+2019-06-18 23:16:59 DEBUG com.amplix.H.G.C - initializing pool source (dbcp) ==> successful
+2019-06-18 23:16:59 INFO com.amplix.rpc.igcServer - Database loaded with schema version :3.0
+2019-06-18 23:17:00 INFO com.amplix.D.B -  skip fix base version 3.6:3.6
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcRpc - ---------------- POI Class Library Checking ----------------
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcServer - POI Core came from ->
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-3.17.jar!/org/apache/poi/poifs/filesystem/POIFSFileSystem.class
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcServer - POI OOXML came from ->
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-ooxml-3.17.jar!/org/apache/poi/POIXMLDocument.class
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcServer - POI Scratchpad came from ->
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-scratchpad-3.17.jar!/org/apache/poi/hslf/usermodel/HSLFSlideShow.class
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcServer - >> loading font : 
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcServer - >> end of loading font : 
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcRpc - ------------------------------------------------------------
+2019-06-18 23:17:00 INFO com.amplix.rpc.igcRpc - >>>>>> loading plugin packages: null
+2019-06-18 23:17:00 ERROR com.amplix.rpc.igcRpc - plugin class load failed : java.lang.NullPointerException
+2019-06-18 23:22:05 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:22:05 INFO com.amplix.rpc.igcRpc - **** Starting amplix WEB Application ********
+2019-06-18 23:22:05 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:22:05 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:22:05 INFO com.amplix.rpc.igcRpc -  application loading from : c:\workspace\_boguenon\output/
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - Start Parse config file
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... server node processing: 
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... connection node processing: 
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... boot node processing: 
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... agents node processing: 
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... database node processing: 
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... database node processing: meta_connection
+2019-06-18 23:22:06 INFO com.amplix.H.A.R - >> loading database configuration : null
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... database node processing: nosql_db
+2019-06-18 23:22:06 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:22:06 INFO com.amplix.H.A.R - >> loading nosql database configuration : hbase_main
+2019-06-18 23:22:06 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:22:06 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... email node processing: 
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... applications node processing: 
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... deploy servers processing: 
+2019-06-18 23:22:06 DEBUG com.amplix.H.A.R - ... sso node processing: 
+2019-06-18 23:22:06 ERROR com.amplix.H.G.E - error on db connection mgr, register database driver : com.mysql.jdbc.Driver
+2019-06-18 23:22:06 INFO com.amplix.H.G.E - + Initialized database pool IGCBASE
+2019-06-18 23:22:06 DEBUG com.amplix.H.G.C - initializing pool source (dbcp)
+2019-06-18 23:22:06 DEBUG com.amplix.H.G.C - initializing pool source (dbcp) ==> successful
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcServer - Database loaded with schema version :3.0
+2019-06-18 23:22:07 INFO com.amplix.D.B -  skip fix base version 3.6:3.6
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcRpc - ---------------- POI Class Library Checking ----------------
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcServer - POI Core came from ->
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-3.17.jar!/org/apache/poi/poifs/filesystem/POIFSFileSystem.class
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcServer - POI OOXML came from ->
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-ooxml-3.17.jar!/org/apache/poi/POIXMLDocument.class
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcServer - POI Scratchpad came from ->
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-scratchpad-3.17.jar!/org/apache/poi/hslf/usermodel/HSLFSlideShow.class
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcServer - >> loading font : 
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcServer - >> end of loading font : 
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcRpc - ------------------------------------------------------------
+2019-06-18 23:22:07 INFO com.amplix.rpc.igcRpc - >>>>>> loading plugin packages: null
+2019-06-18 23:22:07 ERROR com.amplix.rpc.igcRpc - plugin class load failed : java.lang.NullPointerException
+2019-06-18 23:23:52 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:23:52 INFO com.amplix.rpc.igcRpc - **** Starting amplix WEB Application ********
+2019-06-18 23:23:52 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:23:52 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:23:52 INFO com.amplix.rpc.igcRpc -  application loading from : c:\workspace\_boguenon\output/
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - Start Parse config file
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... server node processing: 
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... connection node processing: 
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... boot node processing: 
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... agents node processing: 
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... database node processing: 
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... database node processing: meta_connection
+2019-06-18 23:23:52 INFO com.amplix.H.A.R - >> loading database configuration : null
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... database node processing: nosql_db
+2019-06-18 23:23:52 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:23:52 INFO com.amplix.H.A.R - >> loading nosql database configuration : hbase_main
+2019-06-18 23:23:52 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:23:52 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... email node processing: 
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... applications node processing: 
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... deploy servers processing: 
+2019-06-18 23:23:52 DEBUG com.amplix.H.A.R - ... sso node processing: 
+2019-06-18 23:23:53 ERROR com.amplix.H.G.E - error on db connection mgr, register database driver : com.mysql.jdbc.Driver
+2019-06-18 23:23:53 INFO com.amplix.H.G.E - + Initialized database pool IGCBASE
+2019-06-18 23:23:53 DEBUG com.amplix.H.G.C - initializing pool source (dbcp)
+2019-06-18 23:23:53 DEBUG com.amplix.H.G.C - initializing pool source (dbcp) ==> successful
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcServer - Database loaded with schema version :3.0
+2019-06-18 23:23:54 INFO com.amplix.D.B -  skip fix base version 3.6:3.6
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcRpc - ---------------- POI Class Library Checking ----------------
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcServer - POI Core came from ->
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-3.17.jar!/org/apache/poi/poifs/filesystem/POIFSFileSystem.class
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcServer - POI OOXML came from ->
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-ooxml-3.17.jar!/org/apache/poi/POIXMLDocument.class
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcServer - POI Scratchpad came from ->
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-scratchpad-3.17.jar!/org/apache/poi/hslf/usermodel/HSLFSlideShow.class
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcServer - >> loading font : 
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcServer - >> end of loading font : 
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcRpc - ------------------------------------------------------------
+2019-06-18 23:23:54 INFO com.amplix.rpc.igcRpc - >>>>>> loading plugin packages: null
+2019-06-18 23:23:54 ERROR com.amplix.rpc.igcRpc - plugin class load failed : java.lang.NullPointerException
+2019-06-18 23:25:16 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:25:16 INFO com.amplix.rpc.igcRpc - **** Starting amplix WEB Application ********
+2019-06-18 23:25:16 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:25:16 INFO com.amplix.rpc.igcRpc - **********************************************
+2019-06-18 23:25:16 INFO com.amplix.rpc.igcRpc -  application loading from : c:\workspace\_boguenon\output/
+2019-06-18 23:25:16 DEBUG com.amplix.H.A.R - Start Parse config file
+2019-06-18 23:25:16 DEBUG com.amplix.H.A.R - ... server node processing: 
+2019-06-18 23:25:16 DEBUG com.amplix.H.A.R - ... connection node processing: 
+2019-06-18 23:25:16 DEBUG com.amplix.H.A.R - ... boot node processing: 
+2019-06-18 23:25:16 DEBUG com.amplix.H.A.R - ... agents node processing: 
+2019-06-18 23:25:16 DEBUG com.amplix.H.A.R - ... database node processing: 
+2019-06-18 23:25:16 DEBUG com.amplix.H.A.R - ... database node processing: meta_connection
+2019-06-18 23:25:16 INFO com.amplix.H.A.R - >> loading database configuration : null
+2019-06-18 23:25:17 DEBUG com.amplix.H.A.R - ... database node processing: nosql_db
+2019-06-18 23:25:17 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:25:17 INFO com.amplix.H.A.R - >> loading nosql database configuration : hbase_main
+2019-06-18 23:25:17 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:25:17 INFO com.amplix.H.A.R - >> loading nosql database configuration : null
+2019-06-18 23:25:17 DEBUG com.amplix.H.A.R - ... email node processing: 
+2019-06-18 23:25:17 DEBUG com.amplix.H.A.R - ... applications node processing: 
+2019-06-18 23:25:17 DEBUG com.amplix.H.A.R - ... deploy servers processing: 
+2019-06-18 23:25:17 DEBUG com.amplix.H.A.R - ... sso node processing: 
+2019-06-18 23:25:17 ERROR com.amplix.H.G.E - error on db connection mgr, register database driver : com.mysql.jdbc.Driver
+2019-06-18 23:25:17 INFO com.amplix.H.G.E - + Initialized database pool IGCBASE
+2019-06-18 23:25:17 DEBUG com.amplix.H.G.C - initializing pool source (dbcp)
+2019-06-18 23:25:17 DEBUG com.amplix.H.G.C - initializing pool source (dbcp) ==> successful
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcServer - Database loaded with schema version :3.0
+2019-06-18 23:25:18 INFO com.amplix.D.B -  skip fix base version 3.6:3.6
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcRpc - ---------------- POI Class Library Checking ----------------
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcServer - POI Core came from ->
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-3.17.jar!/org/apache/poi/poifs/filesystem/POIFSFileSystem.class
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcServer - POI OOXML came from ->
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-ooxml-3.17.jar!/org/apache/poi/POIXMLDocument.class
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcServer - POI Scratchpad came from ->
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcServer - file:/C:/workspace/_boguenon/output/webapp/WEB-INF/lib/poi-scratchpad-3.17.jar!/org/apache/poi/hslf/usermodel/HSLFSlideShow.class
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcServer - >> loading font : 
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcServer - >> end of loading font : 
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcRpc - ------------------------------------------------------------
+2019-06-18 23:25:18 INFO com.amplix.rpc.igcRpc - >>>>>> loading plugin packages: null
+2019-06-18 23:25:18 ERROR com.amplix.rpc.igcRpc - plugin class load failed : java.lang.NullPointerException
+2019-06-18 23:25:24 INFO com.amplix.rpc.igcRpc - <<  Install path exist and need to remove before service. >>
+2019-06-18 23:25:24 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (14:null) 0
+2019-06-18 23:25:31 INFO com.amplix.rpc.igcRpc - <<  Install path exist and need to remove before service. >>
+2019-06-18 23:25:31 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (23:null) 0
+2019-06-18 23:25:43 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (23:null) 0
+2019-06-18 23:25:43 INFO com.amplix.H.A.E - >> Processing login
+2019-06-18 23:25:43 INFO com.amplix.H.A.E - >> debug purpose : pre db connection
+2019-06-18 23:25:43 INFO com.amplix.H.A.E - >> debug purpose : post db connection
+2019-06-18 23:25:43 ERROR com.amplix.H.A.E - >> adding authority content
+2019-06-18 23:25:43 INFO com.amplix.rpc.igcRpc - << LOGIN >> user loginned to server (admin:Admin)
+2019-06-18 23:25:43 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (13:null) 0
+2019-06-18 23:25:45 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (5:null) 0
+2019-06-18 23:25:45 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (11:null) 0
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - ** Processing User Management **
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - get user detail
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading user registeration form
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading features
+2019-06-18 23:25:45 INFO com.amplix.H.A.O - reading screen template : c:\workspace\_boguenon\output//config/templates/default.json
+2019-06-18 23:25:45 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (28:null) 0
+2019-06-18 23:25:46 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (11:null) 0
+2019-06-18 23:25:46 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (11:null) 0
+2019-06-18 23:25:47 INFO com.amplix.H.J.F - >> workspaces : 7
+2019-06-18 23:25:47 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (5:null) 1
+2019-06-18 23:27:36 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (5:null) 0
+2019-06-18 23:27:36 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (11:null) 0
+2019-06-18 23:27:36 INFO com.amplix.H.A.O - ** Processing User Management **
+2019-06-18 23:27:36 INFO com.amplix.H.A.O - get user detail
+2019-06-18 23:27:36 INFO com.amplix.H.A.O - reading user registeration form
+2019-06-18 23:27:36 INFO com.amplix.H.A.O - reading screen template : c:\workspace\_boguenon\output//config/templates/default.json
+2019-06-18 23:27:36 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (28:null) 0
+2019-06-18 23:27:37 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (11:null) 0
+2019-06-18 23:27:37 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (11:null) 0
+2019-06-18 23:27:37 INFO com.amplix.H.J.F - >> workspaces : 7
+2019-06-18 23:27:37 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (5:null) 0
+2019-06-18 23:27:48 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (29:null) 0
+2019-06-18 23:27:53 DEBUG com.amplix.H.A.Q - >> reading object foodmart:26
+2019-06-18 23:27:53 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (5:null) 0
+2019-06-18 23:27:54 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (5:null) 0
+2019-06-18 23:27:54 DEBUG com.amplix.rpc.igcRpc - >> rpc call : 0:0:0:0:0:0:0:1 (5:null) 0

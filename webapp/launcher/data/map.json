@@ -1,0 +1,32 @@
+{"maptype": [
+	{
+		"subtype": "us_states",
+		"name": "US States",
+		"filename": "us-states.json",
+		"scale": 500
+	},
+	{
+		"subtype": "us_county",
+		"name": "US County",
+		"filename": "us-counties.json",
+		"scale": 500
+	},
+	{
+		"subtype": "world_countries",
+		"name": "World Countries",
+		"filename": "world-en.json",
+		"scale": 1
+	},
+	{
+		"subtype": "europe",
+		"name": "Europe",
+		"filename": "europe-en.json",
+		"scale": 1
+	},
+	{
+		"subtype": "germany",
+		"name": "Germany",
+		"filename": "germany-en.json",
+		"scale": 1
+	}
+]}

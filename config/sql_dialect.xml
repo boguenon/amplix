@@ -1,0 +1,374 @@
+<sql_dialect>
+	<date_expressions>
+		<date_extract type="oracle">
+			<extract type="yyyy">
+				to_char({field}, 'yyyy')
+			</extract>
+			<extract type="quarter">
+				to_char({field}, 'Q')
+			</extract>
+			<extract type="month">
+				to_char({field}, 'mm')
+			</extract>
+			<extract type="day">
+				to_char({field}, 'dd')
+			</extract>
+			<extract type="weekmonth">
+				to_char({field}, 'W')
+			</extract>
+			<extract type="week" begin="1">
+				to_char({field}, 'D')
+			</extract>
+			<extract type="ampm">
+				to_char({field}, 'AM')
+			</extract>
+			<extract type="hour">
+				to_char({field}, 'HH')
+			</extract>
+			<extract type="minute">
+				to_char({field}, 'MI')
+			</extract>
+			<extract type="custom">
+				to_char({field}, '{format}')
+			</extract>
+		</date_extract>
+		<date_extract type="mysql">
+			<extract type="yyyy">
+				DATE_FORMAT({field}, '%Y')
+			</extract>
+			<extract type="quarter">
+				QUARTER({field})
+			</extract>
+			<extract type="month">
+				DATE_FORMAT({field}, '%c')
+			</extract>
+			<extract type="day">
+				DATE_FORMAT({field}, '%e')
+			</extract>
+			<extract type="weekmonth">
+				WEEK({field}, 5) - WEEK(DATE_SUB({field}, INTERVAL DAYOFMONTH({field}) - 1 DAY), 5) + 1
+			</extract>
+			<!-- 
+			// Day of the week (0=Sunday, 6=Saturday)
+			-->
+			<extract type="week" begin="0">
+				DATE_FORMAT({field}, '%w')
+			</extract>
+			<extract type="ampm">
+				DATE_FORMAT({field}, '%p')
+			</extract>
+			<extract type="hour">
+				DATE_FORMAT({field}, '%k')
+			</extract>
+			<extract type="minute">
+				DATE_FORMAT({field}, '%i')
+			</extract>
+			<extract type="custom">
+				DATE_FORMAT({field}, '%b %e, %Y %k-%i')
+			</extract>
+		</date_extract>
+		<date_extract type="mssql">
+			<extract type="yyyy">
+				DATEPART(yyyy, {field})
+			</extract>
+			<extract type="quarter">
+				DATEPART(q, {field})
+			</extract>
+			<extract type="month">
+				DATEPART(m, {field})
+			</extract>
+			<extract type="day">
+				DATEPART(d, {field})
+			</extract>
+			<extract type="weekmonth">
+				DATEDIFF(week, DATEADD(week, DATEDIFF(week, 0, DATEADD(month, DATEDIFF(month, 0, {field}), 0)), 0), {field} - 1) + 1
+			</extract>
+			<extract type="week" begin="0">
+				DATEPART(weekday, {field})
+			</extract>
+			<extract type="ampm">
+				CASE WHEN DATEPART(HOUR, {field}) BETWEEN 0 AND 11 THEN 'AM' ELSE 'PM' END
+			</extract>
+			<extract type="hour">
+				DATEPART(hour, {field})
+			</extract>
+			<extract type="minute">
+				DATEPART(minute, {field})
+			</extract>
+			<extract type="custom">
+				CONVERT({field}, {format})
+			</extract>
+		</date_extract>
+		<date_extract type="sybase">
+			<extract type="yyyy">
+				TO_CHAR({field}, 'yyyy')
+			</extract>
+			<extract type="quarter">
+				TO_CHAR({field}, 'Q')
+			</extract>
+			<extract type="month">
+				TO_CHAR({field}, 'mm')
+			</extract>
+			<extract type="day">
+				TO_CHAR({field}, 'dd')
+			</extract>
+			<extract type="weekmonth">
+				TO_CHAR({field}, 'W') // not supported
+			</extract>
+			<extract type="week" begin="1">
+				TO_CHAR({field}, 'd')
+			</extract>
+			<extract type="ampm">
+				TO_CHAR({field}, 'aa')
+			</extract>
+			<extract type="hour">
+				TO_CHAR({field}, 'HH')
+			</extract>
+			<extract type="minute">
+				TO_CHAR({field}, 'NN')
+			</extract>
+			<extract type="custom">
+				TO_CHAR({field}, '{format}')
+			</extract>
+		</date_extract>
+		<date_extract type="postgre">
+			<extract type="yyyy">
+				EXTRACT(YEAR FROM {field})
+			</extract>
+			<extract type="quarter">
+				EXTRACT(QUARTER FROM {field})
+			</extract>
+			<extract type="month">
+				EXTRACT(MONTH FROM {field})
+			</extract>
+			<extract type="day">
+				EXTRACT(DAY FROM {field})
+			</extract>
+			<extract type="weekmonth">
+				EXTRACT(DOW FROM {field})
+			</extract>
+			<extract type="week" begin="1">
+				EXTRACT(WEEK FROM {field})
+			</extract>
+			<extract type="ampm">
+				CASE WHEN EXTRACT(HOUR FROM {field}) BETWEEN 0 AND 11 THEN 'AM' ELSE 'PM' END
+			</extract>
+			<extract type="hour">
+				EXTRACT(HOUR FROM {field})
+			</extract>
+			<extract type="minute">
+				EXTRACT(MINUTE FROM {field})
+			</extract>
+			<extract type="custom">
+				TO_CHAR({field}, {format})
+			</extract>
+		</date_extract>
+		<date_extract type="teradata">
+			<extract type="yyyy">
+				EXTRACT(YEAR FROM {field})
+			</extract>
+			<extract type="quarter">
+				EXTRACT(QUARTER FROM {field})
+			</extract>
+			<extract type="month">
+				EXTRACT(MONTH FROM {field})
+			</extract>
+			<extract type="day">
+				EXTRACT(DAY FROM {field})
+			</extract>
+			<extract type="weekmonth">
+				EXTRACT(DOW FROM {field})
+			</extract>
+			<extract type="week" begin="1">
+				EXTRACT(EXTRACT FROM {field})
+			</extract>
+			<extract type="ampm">
+				CASE WHEN EXTRACT(HOUR FROM {field}) BETWEEN 0 AND 11 THEN 'AM' ELSE 'PM' END
+			</extract>
+			<extract type="hour">
+				EXTRACT(HOUR FROM {field})
+			</extract>
+			<extract type="minute">
+				EXTRACT(MINUTE FROM {field})
+			</extract>
+			<extract type="custom">
+				TO_CHAR({field}, {format})
+			</extract>
+		</date_extract>
+		<date_extract type="h2">
+			<extract type="yyyy">
+				EXTRACT(YEAR FROM {field})
+			</extract>
+			<extract type="quarter">
+				EXTRACT(QUARTER FROM {field})
+			</extract>
+			<extract type="month">
+				EXTRACT(MONTH FROM {field})
+			</extract>
+			<extract type="day">
+				EXTRACT(DAY FROM {field})
+			</extract>
+			<extract type="weekmonth">
+				EXTRACT(DOW FROM {field})
+			</extract>
+			<extract type="week" begin="1">
+				EXTRACT(WEEK FROM {field})
+			</extract>
+			<extract type="ampm">
+				CASE WHEN EXTRACT(HOUR FROM {field}) BETWEEN 0 AND 11 THEN 'AM' ELSE 'PM' END
+			</extract>
+			<extract type="hour">
+				EXTRACT(HOUR FROM {field})
+			</extract>
+			<extract type="minute">
+				EXTRACT(MINUTE FROM {field})
+			</extract>
+			<extract type="custom">
+				TO_CHAR({field}, {format})
+			</extract>
+		</date_extract>
+	</date_expressions>
+	<date_format>
+		<item type="oracle">
+			<date><![CDATA[TO_CHAR({field}, 'YYYYMMDDHH24MISS')]]></date>
+			<datetime><![CDATA[TO_CHAR({field}, 'YYYYMMDDHH24MISS')]]></datetime>
+		</item>
+		<item type="mysql">
+			<date><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></date>
+			<datetime><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></datetime>
+		</item>
+		<item type="mssql">
+			<date><![CDATA[replace(replace(replace(convert(varchar, {field}, 20), '-', ''), ' ', ''), ':', '')]]></date>
+			<datetime><![CDATA[replace(replace(replace(convert(varchar, {field}, 20), '-', ''), ' ', ''), ':', '')]]></datetime>
+		</item>
+		<item type="h2">
+			<date><![CDATA[FORMATDATETIME({field}, 'yyyyMMddhhmmss')]]></date>
+			<datetime><![CDATA[FORMATDATETIME({field}, 'yyyyMMddhhmmss')]]></datetime>
+		</item>
+	</date_format>
+	<string_to_date>
+		<item type="oracle">
+			<date><![CDATA[TO_DATE({value},'yyyymmdd')]]></date>
+			<datetime><![CDATA[TO_DATE({value},'yyyymmddhh24miss')]]></datetime>
+		</item>
+		<item type="mysql">
+			<date><![CDATA[STR_TO_DATE({value}, '%Y%m%d')]]></date>
+			<datetime><![CDATA[STR_TO_DATE({value}, '%Y%m%d%H%i%s')]]></datetime>
+		</item>
+		<item type="sybase">
+			<date><![CDATA[CONVERT(DATETIME, {value}, 112)]]></date>
+			<datetime><![CDATA[CONVERT(DATETIME, {value}, 23)]]></datetime>
+			<datetime_format>yyyy-MM-ddTHH:mm:ss</datetime_format>
+		</item>
+		<item type="postgre">
+			<date><![CDATA[TO_DATE({value}, 'YYYYMMDD')]]></date>
+			<datetime><![CDATA[TO_TIMESTAMP({value}, 'YYYYMMDDHH24MISS')]]></datetime>
+		</item>
+		<item type="teradata">
+			<date><![CDATA[CAST({value} AS DATE FORMAT 'YYYYMMDD')]]></date>
+			<datetime><![CDATA[CAST({value} AS TIMESTAMP FORMAT 'YYYYMMDDHHMISS')]]></datetime>
+		</item>
+		<item type="mssql">
+			<date><![CDATA[CONVERT(DATE, {value}, 112)]]></date>
+			<datetime><![CDATA[CONVERT(DATE, {value}, 120]]></datetime>
+			<datetime_format>yyyy-MM-dd HH:mm:ss</datetime_format>
+		</item>
+		<item type="h2">
+			<date><![CDATA[PARSEDATETIME({value}, 'yyyyMMddhhmmss')]]></date>
+			<datetime><![CDATA[PARSEDATETIME({value}, 'yyyyMMddhhmmss')]]></datetime>
+		</item>
+	</string_to_date>
+	<db_info>
+		<item type="oracle">
+			<separator><![CDATA[""]]></separator>
+			<tablealias></tablealias>
+			<dualtable>FROM DUAL</dualtable>
+		</item>
+		<item type="mssql">
+			<separator><![CDATA[[]]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable></dualtable>
+		</item>
+		<item type="db2">
+			<separator><![CDATA[[]]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable>sysibm.sysdummy1</dualtable>
+		</item>
+		<item type="mysql">
+			<separator><![CDATA[``]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable></dualtable>
+		</item>
+		<item type="sybase">
+			<separator><![CDATA[""]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable></dualtable>
+		</item>
+		<item type="postgre">
+			<separator><![CDATA[""]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable>FROM DUAL</dualtable>
+		</item>
+		<item type="teradata">
+			<separator><![CDATA[""]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable></dualtable>
+		</item>
+		<item type="h2">
+			<separator><![CDATA[""]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable></dualtable>
+		</item>
+	</db_info>
+	<limit_query>
+		<item type="oracle">
+			<presql></presql>
+			<append_select></append_select>
+			<append_where><![CDATA[ROWNUM < {n}]]></append_where>
+			<limit_query></limit_query>
+			<postsql></postsql>
+		</item>
+		<item type="mssql">
+			<presql></presql>
+			<append_select><![CDATA[TOP {n}]]></append_select>
+			<append_where></append_where>
+			<limit_query></limit_query>
+			<postsql></postsql>
+		</item>
+		<item type="db2">
+			<presql></presql>
+			<append_select></append_select>
+			<append_where></append_where>
+			<limit_query><![CDATA[LIMIT {n}]]></limit_query>
+			<postsql></postsql>
+		</item>
+		<item type="mysql">
+			<presql></presql>
+			<append_select></append_select>
+			<append_where></append_where>
+			<limit_query><![CDATA[LIMIT {n}]]></limit_query>
+			<postsql></postsql>
+		</item>
+		<item type="sybase">
+			<presql><![CDATA[SET ROWCOUNT={n}]]></presql>
+			<append_select></append_select>
+			<append_where></append_where>
+			<limit_query></limit_query>
+			<postsql><![CDATA[SET ROWCOUNT=0]]></postsql>
+		</item>
+		<item type="postgre">
+			<presql></presql>
+			<append_select></append_select>
+			<append_where></append_where>
+			<limit_query><![CDATA[LIMIT {n}]]></limit_query>
+			<postsql></postsql>
+		</item>
+		<item type="h2">
+			<presql></presql>
+			<append_select></append_select>
+			<append_where></append_where>
+			<limit_query><![CDATA[LIMIT {n}]]></limit_query>
+			<postsql></postsql>
+		</item>
+	</limit_query>
+</sql_dialect>

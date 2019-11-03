@@ -1,0 +1,8 @@
+{
+	"data": [
+		{"lang": "ko_KR", "file": "locale_kr.json"},
+		{"lang": "en_US", "file": "locale_en.json"},
+		{"lang": "ja_JP", "file": "locale_jp.json"},
+		{"lang": "es_ES", "file": "locale_esp.json"}
+	]
+}
