@@ -1,13 +1,37 @@
 # AMPLIX BI Distribution Build
 
+Are you frustrated finding valuable information from your data?
+
+Are you hoping for a better solution for your business?
+
 This is community version install files for statistics reports and dashboard visualization solution, AMPLIX BI. To evaluate free cloud instance, please visit [amplixbi.com](https://www.amplixbi.com/).
 
-The main characterastic and benefits are as follows:
+We provides professional solution and services for your business success:
+  * Cloud service or proprietry installation for secure data.
+  * No client installation and plugin free.
+  * Pivot reporting and office integration.
+  * Drag and drop dashboard building.
+  * Filter and prompt with searchable meta information.
+  * Built in statistics reports compatible with IBM SAS.
 
-  * Cloud service or proprietry installation for secure data
-  * No client installation and plugin free
-  * Pivot reporting and dashboard build with easy drag and drop
-  * 
+For your business success
+  * Microsoft office integration.
+  * Oracle eBusinessSuite / SAP ERP.
+  * Salesforce and cloud data integration.
+
+For data scientists
+  * ERD with relational databases
+  * Statistics on package, Charts, Data visualization
+  * Python and R stat integration
+  * Decision tree
+
+For IT team
+  * Professional support and consulting services.
+  * End user satisfaction with DevOps lifecycle.
+  * Easy maintenance, management and self updates for serviceabilty.
+  * Reduce development schedule for analysis.
+  * Enhance performance with optimizing database processing.
+  * Automatic migration of Discoverer Reports.
 
 ## Getting Started
 
@@ -15,21 +39,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+This install have server service with embedded Tomcat. You need bellow software installed prior to installation steps.
 
-
-```
-Give examples
-```
+  * [Java JDK 1.8] (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Oracle Java JDK 1.8
+  * [Web browser] - Full support Web Standards and no plugin installation for developer and end-user.
+  * Internet Explorer 9 or higher, Microsoft Edge, Google Chrome, Apple Safari etc.
 
 ### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
 
 Package installation is easy step on console.
 Open command prompt on windows or shell on linux system, and execute following command.
@@ -39,29 +55,32 @@ cd {APP_HOME}/bin
 startup.bat   (or startup.sh on linux)
 ```
 
-### Startup options
+#### Startup options
+
+The installation is automized with command prompt. Complex configuration argument are completed with guided program asks for your input.
 
 ```
 cd {APP_HOME}/bin
+
 ; Install initial metacontents and tables on configured target db
 catalina.bat install
+
 ; Generates sql scripts to create and initial metacontents with target db
 catalina.bat script
+
 ; Generates sql scripts to create sample foodmart database
 catalina.bat sample_data
-```
 
 Type Yes to continue installation.
+```
 
 To use default value, just type enter. To modify value type value in the console and type enter key to continue.
 
-The program asks meta database selection. To use local embedded meta database, type apacheembd.
+#### Metadatabase configuration
+In this step, need to connect on database system using database provider store application data.
+The program asks meta database selection. To use local embedded meta database, type **apacheembd**.
 
-### Metadatabase configuration
-
-In this step, need to connect on database system using database provider supported client tool. The following example is based on MySQL.
-
-#### Prepare meta database
+##### Prepare meta database
 Open MySQL command prompt and execute following command to connect to database system.
 
 ```
@@ -85,7 +104,8 @@ Password: >>
 -> Password of the admin user for the application login
 ```
 
-Database type mapping information
+Supported database system and type name are as follows:
+
 |Database name|Type name|Notes|
 | ----------- | ------- | --- |
 |oracle|oracle| |
@@ -99,12 +119,15 @@ Database type mapping information
 |Sybase ASE|sybase_ase| |
 
 
-Configuration Property file
-have information necessary to boot application. This information includes database connection information, and email server settings.
-Automatic configuration file updates. On first installation, run the following command to guided property file setting.
+#### Post Installation
+
+Configuration Property file have information necessary to boot application, such as database connection information, and email server settings.
+On first installation, run the following command to guided property file setting.
+
 ```
 	{APP_HOME}/bin/startup.sh install
 ```
+
 For manual changes on configuation property file, follow steps bellow. Open the following file on VI editor or notepad to edit.
 
 ```
@@ -112,7 +135,7 @@ For manual changes on configuation property file, follow steps bellow. Open the 
 ```
 Update `[META_DATABASE]` section with meta database connection information.
 
-On booting time, database connection password, email automatically encrypted and the value changes to starting {ENC} and followed encrypted codes. This protects and secure important database configuration information from leaking outside.
+On booting time, database connection password, email automatically encrypted and the value changes to starting {ENC} and followed encrypted codes.
 
 ## Deployment
 
@@ -127,10 +150,6 @@ You can deploy on Java based web application server such as Tomcat, GlassFish or
 * [Apache commons] (https://commons.apache.org/) - Java library for math, files
 * [FasterXML/jackson] (https://github.com/FasterXML/jackson) - Dependency Management
 * [OpenMarkov] (http://www.openmarkov.org) - Opensource Bayesian statistics
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 
 ## License
