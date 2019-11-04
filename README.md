@@ -14,18 +14,18 @@ We provides professional solution and services for your business success:
   * Filter and prompt with searchable meta information.
   * Built in statistics reports compatible with IBM SAS.
 
-For your business success
+### For your business success
   * Microsoft office integration.
   * Oracle eBusinessSuite / SAP ERP.
   * Salesforce and cloud data integration.
 
-For data scientists
+### For data scientists
   * ERD with relational databases
   * Statistics on package, Charts, Data visualization
   * Python and R stat integration
   * Decision tree
 
-For IT team
+### For IT team
   * Professional support and consulting services.
   * End user satisfaction with DevOps lifecycle.
   * Easy maintenance, management and self updates for serviceabilty.
@@ -41,8 +41,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 This install have server service with embedded Tomcat. You need bellow software installed prior to installation steps.
 
-  * [Java JDK 1.8] (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Oracle Java JDK 1.8
-  * [Web browser] - Full support Web Standards and no plugin installation for developer and end-user.
+  * [Java JDK 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Oracle Java JDK 1.8
+  * **Web browser** - Full support Web Standards and no plugin installation for developer and end-user.
   * Internet Explorer 9 or higher, Microsoft Edge, Google Chrome, Apple Safari etc.
 
 ### Installing
@@ -147,9 +147,9 @@ You can deploy on Java based web application server such as Tomcat, GlassFish or
 * [webix](http://www.webix.com/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Tomcat](http://tomcat.apache.org/) - The web framework used
-* [Apache commons] (https://commons.apache.org/) - Java library for math, files
-* [FasterXML/jackson] (https://github.com/FasterXML/jackson) - Dependency Management
-* [OpenMarkov] (http://www.openmarkov.org) - Opensource Bayesian statistics
+* [Apache commons](https://commons.apache.org/) - Java library for math, files
+* [FasterXML/jackson](https://github.com/FasterXML/jackson) - Dependency Management
+* [OpenMarkov](http://www.openmarkov.org) - Opensource Bayesian statistics
 
 
 ## License
