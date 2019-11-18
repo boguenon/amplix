@@ -1,5 +1,5 @@
 ig$.bootconfig = {
-	"cache": "201910281822",
+	"cache": "201911180210",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -20,6 +20,9 @@ ig$.bootconfig = {
         "custom": [
             "./js/custom.min.js",
             "./custom/custom.timeline.css"
+        ],
+        "sso": [
+            "./custom/sso_client.js"
         ]
     },
     scmap: {

@@ -1,0 +1,19 @@
+{
+	"meta_type": "script_library",
+	"name": "ReportStyle",
+	"type": "Unknown",
+	"uid": "script_library",
+	"writable": false,
+	"manage": false,
+	"is_sub": false,
+	"attributes": {},
+	"content": {
+		"scripts": [
+			{
+				"name": "1.Test",
+				"language": "python",
+				"content": ""
+			}
+		]
+	}
+}
