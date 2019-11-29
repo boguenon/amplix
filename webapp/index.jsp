@@ -5,12 +5,6 @@
     String _d = formatter.format(new java.util.Date());
     
     String uri = request.getServerName();
-    String mts = null;
-    
-    if (uri != null && uri.equals("") == false)
-    {
-        mts = com.amplix.rpc.igcRpc.LoadMTS(uri);
-    }
 %>
 <!DOCTYPE html>
 <html>
@@ -20,16 +14,18 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" href="./main/css/main.min.css?_dc=201911180226" />
+    <link rel="stylesheet" href="./main/css/main.min.css?_dc=201911291137" />
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="./main/css/mainpage_ie.css" />
 <![endif]-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.png" type="image/png">
     <script type="text/javascript" src="./main/js/jquery-1.12.0.min.js"></script>
     <script type="text/javascript">
     var __mts_id = null;
+    var __uri = "<%=uri%>";
    	</script>
-    <script type="text/javascript" src="./main/js/main.min.js?_dc=201911180226"></script>
+   	<script type="text/javascript" src="./config.js?_dc=201911291137"></script>
+    <script type="text/javascript" src="./main/js/main.min.js?_dc=201911291137"></script>
 </head>
 <body class="index nav-light hoverable">
 	

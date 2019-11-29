@@ -1,6 +1,6 @@
 var ig$ = {
     useLocale: "en_US",
-    servlet: "../../servlet/krcp",
+    servlet: "../servlet/krcp",
     companyname: "amplix",
     appname: "amplix",
     appbg: "bg_7186.png",
@@ -77,8 +77,8 @@ var ig$ = {
         }}
     ],
 	appInfo: {
-		date: "201911180226",
-		web_revision: "657-3.01.699-71-g8841cc8"
+		date: "201911291137",
+		web_revision: "705-3.01.699-119-g93bf521"
 	}
     // hide_report_help: true
 };

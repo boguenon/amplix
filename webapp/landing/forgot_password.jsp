@@ -43,6 +43,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
+<link rel="icon" href="../favicon.png" type="image/png">
 <title>amplix | Forgot password</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
