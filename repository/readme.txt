@@ -1,0 +1,1 @@
+Empty folder for cache temporary file storage space!
