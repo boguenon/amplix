@@ -1,3 +1,0 @@
-DELETE FROM igcserver;
-INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '3.6', {CURUTCTIME});
-INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '3.65', {CURUTCTIME});

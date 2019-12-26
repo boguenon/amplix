@@ -1,7 +1,7 @@
+[META_DATABASE]
 ############################################################################
 # database general settings
 ############################################################################
-[META_DATABASE]
 connection_method		= "tomcat_dbcp" 
 connectionpool			= true
 autocommit				= true 
@@ -29,118 +29,18 @@ persist.validatesql = "select 1"
 
 ##--------------------------------------------------------------------------
 
-############################################################################
-# Email SMTP server configuration
-############################################################################
-[EMAIL]
-enabled		= ##boolean##
-useauth		= ##boolean##
-authuser	= ##string##
-hostname	= ##string##
-password	= ##string##
-port		= ##string##
-#using ssl : protocol=ssl
-#using tls : protocol=smpt, starttls=true
-#using normal smtp : protocol=smtp
-protocol	= ##string(smtp,ssl)##
-starttls    = ##boolean##
-
-############################################################################
-# Deploy server registration
-############################################################################
-[DEPLOY]
-server.production.server_url 	= http://localhost:8280
-server.production.endpoint 		= /boguenon/servlet/krcp
-
-server.staging.server_url 		= http://localhost:8280
-server.staging.endpoint 		= /boguenon/servlet/krcp
-
+[APPLICATION]
 ############################################################################
 # Application specific settings
 ############################################################################
-[APPLICATION]
 application.mainpage.mdi 					= "../launcher/analytics.jsp"
 application.mainpage.dashboard 				= "../launcher/dashboard.jsp"
 
-application.disk_mirror.enabled 				= true
-application.disk_mirror.location 			= meta_files
-application.disk_mirror.filename 			= uid
-application.pdf_codepage.codepage 			= Identity-H
-application.excel_output.type				= xlsx
-application.excel_output.default_font		= Verdana
-application.scheduler.server_type			= internal
-application.scheduler.engine_type			= quartz
 
-#application.python.path						= "c:/ProgramData/Anaconda3/Scripts"
-# ** python connnection method
-# export    : execute shell script
-# websocket : connect through websocket
-application.python.method					= "websocket"
-application.python.path						= "c:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64\Scripts\"
-# python connect through websocket options
-application.python.url						= "http://localhost:8889/"
-application.python.password					= "test1"
-
-application.security.lock_login				= snooze
-application.security.snooze_time				= 2
-
-#^                 # start-of-string
-#(?=.*[0-9])       # a digit must occur at least once
-#(?=.*[a-z])       # a lower case letter must occur at least once
-#(?=.*[A-Z])       # an upper case letter must occur at least once
-#(?=.*[@#$%^&+=])  # a special character must occur at least once
-#(?=\S+$)          # no whitespace allowed in the entire string
-#.{8,}             # anything, at least eight places though
-#$                 # end-of-string
-# strong password
-# application.security.password_rule			= ^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\S+$).{8,}$
-# median password 
-# application.security.password_rule			= ^(?=.*[0-9])(?=.*[a-z])(?=\S+$).{8,}$
-# weak password
-application.security.password_rule			= ^(?=\S+$).{8,}$
-application.security.rock_wong_password		= 0
-
-# use calculator for 1MB = 1048576 multiply with your file size (default 30 mb)
-# 30 MB => 31457280
-# 50 MB =>  52428800
-# 100 MB => 104857600
-# 200 MB => 209715200
-# 250 MB => 262144000
-application.fileupload.maxfileupload 		= 3145728
-application.fileupload.maxfileupload_bulk 	= 52428800
-
-############################################################################
-# Single Sign On (SSO modules)
-############################################################################
-[SINGLESIGNON]
-module.dbsync.name 						= "Amplix Guest Auth"
-module.dbsync.enabled 					= false
-module.dbsync.authentication.class 		= com.amplix.sso.amplix.GuestUserAuth
-module.dbsync.authorization.mode		= "before_only"
-module.dbsync.authorization.class		= com.amplix.sso.amplix.GuestUserAuth
-
-module.foodmart.name 					= "Foodmart Guest Auth"
-module.foodmart.enabled 				= true
-module.foodmart.authentication.class 	= com.amplix.sso.amplix.FoodmartUserAuth
-module.foodmart.authorization.mode		= "before_only"
-module.foodmart.authorization.class		= com.amplix.sso.amplix.FoodmartUserAuth
-
-module.oracleebs.name 					= "Oracle EBS"
-module.oracleebs.enabled 				= true
-module.oracleebs.authentication.class 	= com.amplix.sso.ebs.EBSAuth
-module.oracleebs.authorization.mode		= 
-module.oracleebs.authorization.class	= com.amplix.sso.ebs.EBSAuth
-
-module.apache_ldap.name					= "Apache LDAP"
-module.apache_ldap.enabled				= true
-module.apache_ldap.authentication.class	= com.amplix.sso.ibk.UserDBSync
-module.apache_ldap.authorization.mode	= 
-module.apache_ldap.authorization.class	= com.amplix.sso.ibk.UserDBSync
-
+[SCHEDULE_SERVER]
 ############################################################################
 # Scheduler server information
 ############################################################################
-[SCHEDULE_SERVER]
 acceptcount			= 10 
 defaultlocale		= "en_US" 
 idletimeout			= 0 
@@ -154,35 +54,11 @@ session_expire		= 600
 javahome			= "c:/Program Files (x86)/Java/jdk1.6.0_34"
 defaultdateformat	= "''yy-MM-dd hh:mm:ss a"
 
-############################################################################
-# Agent settings
-############################################################################
-[AGENTS]
-agent.hadoop.port 			= 4504
-agent.hadoop.enabled 		= true
-agent.hadoop.job			= "hadoop" 
-agent.hadoop.name			= "hadoop" 
-agent.hadoop.serverhost		= "127.0.0.1" 
-agent.hadoop.servername		= "hadoopbase"
-
-agent.schedule.enabled		= "false" 
-agent.schedule.job			= "schedule" 
-agent.schedule.name			= "schedule" 
-agent.schedule.port			= "4504" 
-agent.schedule.serverhost	= "127.0.0.1" 
-agent.schedule.servername	= "hadoopbase"
-
-agent.app.enabled			= "true" 
-agent.app.job				= "app" 
-agent.app.name				= "app" 
-agent.app.port				= "4504" 
-agent.app.serverhost		= "127.0.0.1" 
-agent.app.servername		= "hadoopbase"
-
+[SERVER_BOOT_CONFIG]
 ############################################################################
 # Apache embedded boot server configuration
 ############################################################################
-[SERVER_BOOT_CONFIG]
+
 server_protocol 	= ##string(HTTP,HTTPS)##
 server_port			= ##string(8580)##
 
@@ -194,33 +70,3 @@ context_root 		= "/"
 
 shutdown_port		= ##string(6680)##
 
-############################################################################
-# MongoDB or NoSQL DB Connection Information
-############################################################################
-[NOSQLDB]
-mongodb.mongodb_01.nodename = mongodb_01
-mongodb.mongodb_01.hostname = 127.0.0.1
-mongodb.mongodb_01.password="{ENC}o2ArfU4wxko="
-mongodb.mongodb_01.userid 	= 
-
-mongodb.mongodb_02.nodename = mongodb_02
-mongodb.mongodb_02.hostname = 127.0.0.1
-mongodb.mongodb_02.password="{ENC}o2ArfU4wxko="
-mongodb.mongodb_02.userid 	=
-
-mongodb.mongodb_03.nodename = mongodb_03
-mongodb.mongodb_03.hostname = 127.0.0.1
-mongodb.mongodb_03.password="{ENC}o2ArfU4wxko="
-mongodb.mongodb_03.userid 	=
-
-hbase.hbase_01.nodename 	= hbase_01
-hbase.hbase_01.batchsize	= 1000 
-hbase.hbase_01.cachesize	= 1000 
-hbase.hbase_01.databasetype	= hbase 
-hbase.hbase_01.hostname		= "192.168.190.175" 
-hbase.hbase_01.name			= "hbase_main" 
-hbase.hbase_01.password="{ENC}o2ArfU4wxko="
-hbase.hbase_01.userid		=
-hbase.hbase_01.option["hbase.zookeeper.quorum"]	= 192.168.190.175
-hbase.hbase_01.option["hbase.zookeeper.property.clientPort"] = 2181
-hbase.hbase_01.option["hbase.master"] = 192.168.190.175:60000

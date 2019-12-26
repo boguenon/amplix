@@ -1,0 +1,91 @@
+{
+	"info": {
+		"version": "3.6.5",
+		"date": 20191205,
+		"description": "This is meta data install script with initialization information. \nIf you already installed on this server, then backup before click next button."
+	},
+	"modules": [
+		{
+			"name": "sample_northwind",
+			"desc": "Northwind sample database",
+			"steps": [
+				{
+					"type": "sql",
+					"name": "sample_sch.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat1.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat2.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat3.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat4.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat5.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat6.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat7.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat8.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat9.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat10.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat11.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_dat12.msql"
+				},
+				{
+					"type": "sql",
+					"name": "sample_idx.msql"
+				}
+			]
+		}
+	],
+	"meta_data": [
+		{
+			"type": "sql",
+			"name": "meta_sch.msql"
+		},
+		{
+			"type": "sql",
+			"name": "meta_dat1.msql"
+		},
+		{
+			"type": "sql",
+			"name": "meta_dat2.msql"
+		}
+	],
+	"meta_postjob": [
+		{
+			"type": "sql",
+			"name": "meta_fnl.msql"
+		}
+	]
+}

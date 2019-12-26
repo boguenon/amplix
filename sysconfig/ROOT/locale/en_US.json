@@ -1,1 +1,4732 @@
-{"meta_type":"locales","objinfo":{},"name":"en_US","type":"Unknown","writable":false,"manage":false,"is_sub":false,"attributes":{},"data":[{"name":"L_CM_DISP_2","value":"* Drag Items here to define this measure"},{"name":"L_CD_DISP_2","value":"* Drag Metric Item or Click Add button"},{"name":"L_TIME_FMT_DSC","value":"* Applied if date format item"},{"name":"L_FM_DISP1","value":"* Double click field to add in the function."},{"name":"L_CM_DISP_1","value":"* Double click field to add in the function"},{"name":"L_FM_DISP2","value":"* Drag Items here to define this measure."},{"name":"L_ME_DISP1","value":"* Double click field to add in the function"},{"name":"L_C_DCOUNT","value":"@ Counts"},{"name":"L_VIEW_ITEM","value":"View @"},{"name":"L_C_DATE","value":"Detail of @"},{"name":"M_SEL_ERR","value":"@ is necessary. Please select value"},{"name":"I_ABOUT","value":"About @"},{"name":"E_D_EVNT","value":"Error while processing evnet @."},{"name":"L_C_TOTAL","value":"Total @"},{"name":"E_PV_L","value":"Privilege error on content: (@)"},{"name":"L_C_M_NAMES_S","value":"JAN#FEB#MAR#APR#MAY#JUN#JUL#AUG#SEP#OCT#NOV#DEC"},{"name":"L_C_M_NAMES","value":"January#February#March#April#May#June#July#August#September#October#November#December"},{"name":"L_DUAL_AXIS","value":"Dual YAxis"},{"name":"L_CONTACT_CRED","value":"Copyright &copy; 1996-2010"},{"name":"L_EXPORT_CSV","value":"CSV"},{"name":"L_DB_MON","value":"DB Monitoring"},{"name":"L_DB_CHARSET","value":"DB CharSet"},{"name":"L_OUTPUT_CHARSET","value":"Output CharSet"},{"name":"L_TABLE_FIELD","value":"DB Table"},{"name":"L_EXPORT_DOCX","value":"DOCX Export"},{"name":"B_GO","value":"Go"},{"name":"D_HIERARCHY","value":"Hierarchy"},{"name":"T_BG_HIVEJOB","value":"Hive Job"},{"name":"L_EXPORT_HTML","value":"HTML View"},{"name":"L_EXP_JASP","value":"Jasper"},{"name":"D_JAVACLASS","value":"Java Class"},{"name":"L_JDBC_URL","value":"JDBC URL"},{"name":"L_JDBC_DRV","value":"JDBC Driver"},{"name":"T_MDB_CUBE","value":"MDB Access Analysis"},{"name":"L_MDB_OPTION","value":"MDB Options"},{"name":"L_MONGODB","value":"MongoDB"},{"name":"L_MONGO_DATA","value":"MongoDB Data"},{"name":"L_MONGO_DPROC","value":"MongoDB Process"},{"name":"D_MDBCUBE","value":"MS Access DataCube"},{"name":"L_MDB_CUBE","value":"MS Access DataCube"},{"name":"L_EXPORT_EXCEL","value":"MS Excel"},{"name":"L_EXPORT_PPT","value":"MS PPT"},{"name":"D_NOSQL","value":"NoSQL Database"},{"name":"L_OP_NOT","value":"NOT Operation"},{"name":"L_EXPORT_PDF","value":"PDF"},{"name":"L_ML_C7","value":"Load PGMX"},{"name":"L_R_WIZARD","value":"R Wizard"},{"name":"L_R_PARAM","value":"R Parameters"},{"name":"L_R_SUMMARY","value":"R Summary"},{"name":"L_R_SCRIPT","value":"R Script Editor"},{"name":"L_VIEW_RSTAT","value":"R Statistics"},{"name":"T_R_WIZARD","value":"R Statistics Wizard"},{"name":"L_EXPORT_RTF","value":"RTF Export"},{"name":"T_SELECT_POOL","value":"Select Pool"},{"name":"L_F_SQL_IS","value":"SQL Is Operator (IS)"},{"name":"L_F_SQL_IS_NOT","value":"SQL Is Not Operator (IS NOT)"},{"name":"L_LD_SQL","value":"SQL Query Import"},{"name":"I_SQLCUBE","value":"SQL Wizard"},{"name":"L_VIEW_SQL","value":"View SQL"},{"name":"L_LD_SQL_D","value":"SQL Source"},{"name":"L_P_sql","value":"Run SQL"},{"name":"D_SQLCUBE","value":"SQL Cube"},{"name":"L_SQL_CUBE","value":"SQL Cube"},{"name":"L_EDIT_SQL","value":"Edit SQL"},{"name":"L_SQL_PRE_PROC","value":"SQL Pre Processor"},{"name":"D_UIPAGE","value":"UI Page"},{"name":"L_UIPAGE","value":"UI Page"},{"name":"L_LNK_URL","value":"URL Address"},{"name":"L_EXPORT_XML","value":"XML Export"},{"name":"L_CSTEP_5","value":"YAxis"},{"name":"L_YAXIS_FORMAT","value":"Y-Axis format"},{"name":"L_YAXIS_TITLE","value":"YAxis Title"},{"name":"L_YAXIS_MAX","value":"Y-Axis Maximum"},{"name":"L_YAXIS_MIN","value":"Y-Axis Minimum"},{"name":"L_ALIGN_CENTER","value":"Center"},{"name":"L_SHOW_FIRST","value":"Show First"},{"name":"S_BOTTOM","value":"Bottom value"},{"name":"S_TOP","value":"Top value"},{"name":"L_USE_MFMT","value":"Use Measure Format"},{"name":"L_ML_CEFF_S","value":"Sensitivity Analysis"},{"name":"L_F_VALUE_LNG","value":"Values"},{"name":"B_VALUES","value":"Values"},{"name":"B_TEXT","value":"value"},{"name":"B_VALUE","value":"Value"},{"name":"L_BAND_VALUE_1","value":"Value"},{"name":"L_F_VALUE","value":"Value"},{"name":"L_FLT_VAL_SCR","value":"Validation Function"},{"name":"L_VAL_DELIM","value":"Value Delimiter"},{"name":"B_COMBO_VAL","value":"List Values"},{"name":"L_P_valuelist","value":"Fill Values"},{"name":"T_VALUE_SELECT","value":"Value Selection Wizard"},{"name":"T_DYN_SELECT","value":"Select Values..."},{"name":"L_STACK_VALUE","value":"Stack value"},{"name":"L_VALUE_TYPE","value":"ValueType"},{"name":"L_E_LIST","value":"Select from Values"},{"name":"B_CUST_VAL","value":"Custom Values"},{"name":"L_SHOW_VALUE","value":"Show Values"},{"name":"L_TK_INTVL","value":"Tick Interval"},{"name":"L_SELECT_VALUE","value":"Select Value"},{"name":"L_FORMAT","value":"Format"},{"name":"L_AREA_MEASURE","value":"Measure"},{"name":"L_F_EQ","value":"Equal (=)"},{"name":"L_F_EQ_NOT","value":"Not Equal (<>)"},{"name":"L_OBJECT_TYPE","value":"Object Type"},{"name":"T_META_SELECT","value":"Select Item..."},{"name":"B_SEARCH","value":"Search"},{"name":"L_SEARCH_KWD","value":"Search"},{"name":"L_NEW_SHEET","value":"New Sheet"},{"name":"L_ML_CEFF_D","value":"Determistic Analysis"},{"name":"M_WARNING","value":"Warning!"},{"name":"L_SC_C1","value":"Run once after"},{"name":"L_LONGITUDE","value":"Longitude"},{"name":"B_PATH","value":"Path"},{"name":"L_C_DIR","value":"Calculate Direction"},{"name":"L_ERR_SAVE","value":"To continue save content before."},{"name":"L_DEPRIVATE","value":"Lock User from Login"},{"name":"L_HIGH_PREC","value":"High precision number"},{"name":"L_ADV_OPTION","value":"Advanced Options"},{"name":"L_ADVANCED_OPTION","value":"Advanced Option"},{"name":"L_R_FIXSIZE","value":"Fixed Size"},{"name":"B_SHARE","value":"Share"},{"name":"I_RELATION","value":"Relation"},{"name":"T_MANAGE","value":"Manage"},{"name":"L_MANAGEMENT","value":"Management"},{"name":"I_ADMIN","value":"Admin"},{"name":"S_COUNT","value":"Count"},{"name":"B_DELIMITER","value":"Delimiter"},{"name":"L_LM_ADD","value":"Add Country Code"},{"name":"L_FONT_BOLD","value":"Bold"},{"name":"L_PRIVILEGE","value":"Privilege"},{"name":"D_AUTH","value":"Duty"},{"name":"L_OBJECT_AUTH","value":"Object Auth"},{"name":"T_OBJECT_AUTH","value":"Object Auth"},{"name":"T_DUTY_LIST","value":"Duty List"},{"name":"L_ADD_DUTY","value":"Add Duty"},{"name":"D_GROUP","value":"Group"},{"name":"L_GROUP_LEVEL","value":"Group level"},{"name":"L_GROUP_FIELD","value":"Group Field"},{"name":"W_SYNC_GRP","value":"Would you execute group synchronization in server?"},{"name":"L_GROUP_NAME","value":"Group Name"},{"name":"L_ADD_GROUP","value":"Add Group"},{"name":"L_OPT_GRID","value":"Grid Option"},{"name":"L_OVF_DESC","value":"Check overflow for draw scrolled grid"},{"name":"T_STYLE_WIZARD","value":"Style Wizard"},{"name":"L_TB_PRT_GRD","value":"Export Grid"},{"name":"L_GRID_HMENU","value":"Hide Grid popup menu"},{"name":"L_VIEW_GRID","value":"Sheet view"},{"name":"L_FONT_FACE","value":"Font Face"},{"name":"L_FORE_COLOR","value":"Fore color"},{"name":"L_DATE_OPTION","value":"Date Option"},{"name":"T_FEATURES","value":"Features"},{"name":"L_BASE_STYLE","value":"Base Style"},{"name":"L_STATISTICS","value":"Basic Statistics"},{"name":"T_STATISTICS","value":"Basic Statistics"},{"name":"L_SET_DEF","value":"Use Default"},{"name":"L_FONT_ITALIC","value":"Italic"},{"name":"L_PREDEFINED_FIELD","value":"Predefined Field"},{"name":"L_FILE_DELETE","value":"Replace existing data"},{"name":"L_PWD_OLD","value":"Old Password"},{"name":"L_OTHER_OPTION","value":"Other Options"},{"name":"L_OTHER_VALUE","value":"Other value"},{"name":"L_ML_C1","value":"Chance Node"},{"name":"L_C_PR","value":"Private Contents"},{"name":"L_DATE_METRIC","value":"Date Metric"},{"name":"D_DATEMETRIC","value":"Date Metric"},{"name":"L_DATE_FORMAT","value":"Date Format"},{"name":"L_DATE_TYPE","value":"Date Type Field"},{"name":"B_DSC","value":"Descending"},{"name":"B_ORDER_DSC","value":"Order Descending"},{"name":"M_SAVED","value":"Successfully saved content"},{"name":"B_YEAR","value":"Year"},{"name":"L_C_YR_SFX","value":"Year"},{"name":"B_HEIGHT","value":"Height"},{"name":"L_FIXED_H","value":"Fix Height"},{"name":"F_P_CUM","value":"Cumulative Percentage"},{"name":"L_SAVE_REPORT_AS","value":"Save as Report"},{"name":"L_SAVE_EXCEL_AS","value":"Save Content As"},{"name":"L_SAVE_CONTENTAS","value":"Save Content As..."},{"name":"B_NEXT","value":"Next"},{"name":"L_C_NEXT","value":"Next"},{"name":"E_SC_LD","value":"Error while loading DynamicScript"},{"name":"L_P_open_dlg","value":"Open Dialog"},{"name":"T_M_TENANT","value":"Multi Tenant"},{"name":"L_CFIT_PORD","value":"Polynomial Order"},{"name":"D_MOLAPCUBE","value":"MOLAP Cube"},{"name":"L_MOLAP_CUBE","value":"MOLAP Cube"},{"name":"T_MCUBE_WINDOW","value":"m Dimension Cube"},{"name":"L_BUILD_MCUBE","value":"Build Cube"},{"name":"L_UNIT_TEXT","value":"Unit Text"},{"name":"L_P_PIVOT_UNIT","value":"Pivot Unit"},{"name":"B_CLOSE","value":"Close"},{"name":"L_C_CLOSE","value":"Close"},{"name":"L_LNK_TGT","value":"Browser Target"},{"name":"L_DRILL_PARAM_DESC","value":"Check columns to filter on target Sheet"},{"name":"L_BASE_METRIC","value":"Base Metric"},{"name":"L_SORT_SRC","value":"Items to sort"},{"name":"D_DASHBOARD","value":"Dashboard"},{"name":"L_DASHBOARD","value":"Dashboard"},{"name":"T_DASHBOARD","value":"Dashboard"},{"name":"L_MGR_DASHBOARD","value":"Dashaboard Mgr"},{"name":"L_DBD_MAP","value":"Dashboard Mapping"},{"name":"I_MGR_DBD","value":"Dashboard Plugins"},{"name":"L_CSTEP_2","value":"Data"},{"name":"L_DATA_LABEL","value":"Data Labels"},{"name":"L_T_CUBE_SEL","value":"Data Select Wizard"},{"name":"L_EDIT_DATA","value":"Edit Data"},{"name":"T_Filter","value":"Filter Data"},{"name":"L_EMPTY","value":"No Data."},{"name":"L_BB_STEP_1","value":"Preparing datas"},{"name":"L_MENU_DB_MODEL","value":"Relation DataModel"},{"name":"T_DB_CON","value":"Database Instances"},{"name":"L_DB_INSTANCE","value":"Database Instance"},{"name":"L_DB_TYPE","value":"Database Type"},{"name":"L_DB_NAME","value":"Database Name"},{"name":"M_S_S1","value":"No results found for selected database instance."},{"name":"L_ADD_DB_INST","value":"Add Database Instance"},{"name":"L_VIEW_MODE","value":"View Mode"},{"name":"L_DATASET","value":"DataSet"},{"name":"L_B_ADC","value":"DataFile Cube"},{"name":"D_TABDIMENSION","value":"Data Separate Dimension"},{"name":"L_DATA_LABEL_FMT","value":"Data Label Format"},{"name":"L_PRV_DATA","value":"Data Preview"},{"name":"L_DATA_OPTION","value":"Data Option"},{"name":"T_BG_DS","value":"Data source"},{"name":"L_STYLE_DATA","value":"Data Style"},{"name":"L_LD_LK","value":"Connect Connection"},{"name":"M_ERR_CDATA","value":"Error while handling custom data report"},{"name":"T_FILTER","value":"Filter Data"},{"name":"L_NO_DATA","value":"No data"},{"name":"L_STACK_CHART","value":"Stacked series"},{"name":"L_MSG_TABNAME","value":"Type data label text for tab dimension."},{"name":"I_DATA","value":"DATA"},{"name":"L_MGR_DATABASE","value":"Database manager"},{"name":"L_REG_DATABASE","value":"Register Database"},{"name":"I_DATABASE_CONNECTION","value":"Database connection"},{"name":"T_DB_PWD","value":"Database Connection"},{"name":"T_DATA_UPLOAD","value":"Upload DataFile"},{"name":"L_LD_FILE","value":"Load DataFile"},{"name":"L_SHOW_TOOL_BUTTON","value":"Show Tool button"},{"name":"B_HELP","value":"Help"},{"name":"L_HELP_DOC","value":"Help Documentation"},{"name":"I_HELP_MGR","value":"Help Manager"},{"name":"L_HELP_GUIDES","value":"Help and Guides"},{"name":"L_NEW_DOCUMENT","value":"Add Document"},{"name":"E_DUP_FOLDER","value":"Move same folder is not allowed"},{"name":"L_TB_BN","value":"Found same node name used in this table. Would you like to change all names with changes?"},{"name":"L_V_DESC","value":"Dynamic Variable Editor"},{"name":"L_F_BETWEEN_NOT","value":"Not Between values (NOT BETWEEN)"},{"name":"L_F_BETWEEN","value":"Between values (BETWEEN)"},{"name":"B_BACK","value":"Back"},{"name":"L_DRAG_SELECT","value":"Drag Select"},{"name":"L_ENABLE_DRILL","value":"Drill down"},{"name":"L_R_UPD_TGT","value":"Drill Target"},{"name":"L_BTN_LOGIN","value":"Login"},{"name":"L_ML_C2","value":"Decision Node"},{"name":"L_ML_C5","value":"Decision Tree"},{"name":"L_LABEL_DIST","value":"Label Distance"},{"name":"L_SHOW_LABEL","value":"Show Label"},{"name":"L_LABEL_ALIGN","value":"Label Align"},{"name":"L_L_STEP","value":"Label Step"},{"name":"L_MARKER","value":"Marker"},{"name":"L_CFIT_LC","value":"Line Style"},{"name":"L_BAND_BORDER","value":"Border"},{"name":"L_LINE_NUM","value":"Line Number"},{"name":"L_B_LAYOUT","value":"Layout"},{"name":"B_OPT_LAYOUT","value":"Layout"},{"name":"L_LAYOUT","value":"Layout"},{"name":"L_LAYOUT_WIZARD","value":"Layout Wizard"},{"name":"L_EDIT_LAYOUT","value":"Edit layout"},{"name":"T_LAYOUT","value":"Layout Templates"},{"name":"L_LOG_VIEW","value":"View log result"},{"name":"L_LOGOUT","value":"Log Out"},{"name":"L_DESKTOP_LOGOUT","value":"Logout"},{"name":"L_T_LOUT","value":"Would you like to Logout system?"},{"name":"L_M_C_LOGOUT","value":"Please click yes button to logout.<br> Click no button to cancel"},{"name":"L_LOGIN_TITLE","value":"Secure login"},{"name":"B_LOGIN","value":"Login"},{"name":"L_ONLOAD_RUN","value":"Execute on loading"},{"name":"T_LDATA_TITLE","value":"Local Data Cube Option"},{"name":"D_EXCELLOADER","value":"Local File Cube"},{"name":"L_EXCEL_LOADER","value":"Local File Cube"},{"name":"D_DATACUBE","value":"Local File Cube"},{"name":"L_CLEAR_LOOKUP","value":"Remove Lookup"},{"name":"L_RESOURCES","value":"Resources"},{"name":"L_RESOURCE","value":"Resources"},{"name":"D_REPORT","value":"Report"},{"name":"L_REPORT","value":"Report"},{"name":"T_REPORT_WINDOW","value":"Report"},{"name":"L_REPORT_TOOLS","value":"Report Tools"},{"name":"L_REPORT_NAME","value":"Report Name"},{"name":"L_RPT_V_OPT","value":"Report Viewer Option"},{"name":"L_MENU_REPORT","value":"Create Reporting"},{"name":"M_REPORT","value":"Make Report"},{"name":"L_P_RPT_C","value":"Report Options"},{"name":"I_REPORT_STYLE","value":"Report Style"},{"name":"T_GLOBAL_REPORT_STYLE","value":"Look and Feel"},{"name":"L_P_onlinereport","value":"Run Report"},{"name":"L_SYS_LOG","value":"System Log"},{"name":"M_ERR_C_REP_PROC","value":"Error while processing Custom Report Handler"},{"name":"T_REPORT_OPTION","value":"Change report options"},{"name":"L_CHANGE_REPORTTYPE","value":"Change Report Type"},{"name":"L_SAVE_REPORT","value":"Save Report"},{"name":"L_ADD_REPORT","value":"Add Report"},{"name":"T_RPT_PIVOT","value":"Report Pivot"},{"name":"L_MAP_ITEM","value":"Map to Report Item"},{"name":"L_LINK_FIELD","value":"Link Field"},{"name":"L_DRILL_ON_DESC","value":"Check columns to show link."},{"name":"B_WIZARD","value":"Wizard"},{"name":"D_CHARTMEASURE","value":"Micro Chart"},{"name":"L_CHART_MEASURE","value":"Micro Chart"},{"name":"L_RNK_LST","value":"Show all last rank"},{"name":"L_L_TAB","value":"Load last tab only"},{"name":"D_CUBEMODEL","value":"ROLAP Cube Model"},{"name":"L_ROLAP_CUBE_MODEL","value":"ROLAP Cube Model"},{"name":"D_CUBE","value":"ROLAP Cube"},{"name":"L_ROLAP_CUBE","value":"ROLAP Cube"},{"name":"B_EVERY","value":"Every"},{"name":"L_EV_DAY","value":"Every Day on Hour"},{"name":"T_BG_MR","value":"Map/Reduce"},{"name":"L_MAP_OPT","value":"Map Options"},{"name":"L_MAP_TYPE","value":"Map Type"},{"name":"L_B_JV","value":"Map/Reduce Java"},{"name":"L_HD_MAPR","value":"Map Reduce"},{"name":"D_MCUBE","value":"MultiDimension Cube"},{"name":"L_MENU","value":"Menu"},{"name":"L_FEATURE_CTRL","value":"Feature Controls"},{"name":"L_MAIL_BD","value":"Content"},{"name":"L_P_MEASURE","value":"Measures"},{"name":"D_MEASURE","value":"Measure"},{"name":"L_MEASURE","value":"Measure"},{"name":"T_MEASURE","value":"Measure"},{"name":"L_GROUP_MEASURE","value":"Group Measure"},{"name":"L_REG_MEASURES","value":"Make Measures"},{"name":"T_M_MEASURE","value":"Make Measures"},{"name":"T_M_Measure","value":"Register Measures"},{"name":"L_M_NAME","value":"Measure Name"},{"name":"L_M_FORMAT","value":"Measure Format"},{"name":"L_M_POSITION","value":"Measure Position"},{"name":"L_MEASURE_ON","value":"Measure On"},{"name":"L_BB_STEP_3","value":"Make Measures and Time Metrics"},{"name":"L_M_FILTER","value":"Measure Filter"},{"name":"L_META_IMPORT","value":"Import Meta File"},{"name":"I_META_IMP","value":"Load Meta File"},{"name":"T_META_IMP","value":"Load Meta File"},{"name":"T_META_EDITOR","value":"Meta Editor"},{"name":"L_EXPORT_META","value":"Export content in file"},{"name":"D_METRIC","value":"Metric"},{"name":"L_METRIC","value":"Metric"},{"name":"L_MC_ELEM_EDT","value":"Element Editor"},{"name":"L_T_LOOKUP","value":"Lookup Options"},{"name":"L_MONITORING","value":"Monitoring"},{"name":"L_MODEL_CREATE","value":"Create Model"},{"name":"L_MODEL_SELECT","value":"Select Model"},{"name":"L_MODEL_EDIT","value":"Edit Model"},{"name":"L_LD_INI","value":"Clear All DataSet"},{"name":"L_ALL_DATA","value":"All data"},{"name":"L_CFIT_AS","value":"All series curves"},{"name":"L_LD_UL","value":"Disconnect All Connections"},{"name":"L_C_AL","value":"All Contents"},{"name":"L_BTN_TRG_ALL","value":"Validate Filters"},{"name":"L_AU_APPLY_SUB","value":"Apply all sub folder"},{"name":"L_F_IN_NOT","value":"Not In List (NOT IN)"},{"name":"L_F_IN","value":"In List (IN)"},{"name":"L_LNK_TMPL","value":"Document Template"},{"name":"B_STRING","value":"String"},{"name":"L_PREVIEW","value":"Preview"},{"name":"L_FONT_UNDERLINE","value":"Underline"},{"name":"L_DELETE_SHORTCUT","value":"Delete Shortcut"},{"name":"L_SC_PR","value":"Period to Run"},{"name":"L_SCC_TYPE","value":"Repeat Type"},{"name":"L_SC_C2","value":"Repeat Cron"},{"name":"L_EXPORT_OPTION","value":"Option"},{"name":"L_EXPORT","value":"Export"},{"name":"L_MAIL_CC","value":"Mail CC"},{"name":"B_METHOD","value":"Method"},{"name":"L_BG_COL","value":"Background Color"},{"name":"L_BACK_COLOR","value":"Back color"},{"name":"L_CSTEP_6","value":"Bands"},{"name":"L_BAND_TYPE","value":"Band Type"},{"name":"L_BB_CA","value":"Bubble Color Axis"},{"name":"L_BB_SA","value":"Bubble Size Axis"},{"name":"L_BB_OPT","value":"BubbleMap Options"},{"name":"T_REVISION","value":"Revision Control"},{"name":"L_REVISION","value":"Version Control"},{"name":"B_SVN","value":"Versioning and Recovery"},{"name":"L_SHOW_LEGEND","value":"Show Legend"},{"name":"L_LEGEND_POSITION","value":"Legend position"},{"name":"L_CSTEP_3","value":"Legend"},{"name":"S_RAN","value":"Range"},{"name":"L_SAVE_C_MSG","value":"You are closing a tab that has unsaved changes. Would you like to save your changes?"},{"name":"L_SAVE_CHANGES","value":"Save Changes?"},{"name":"L_HL_DESC","value":"Click cell to edit or click New for make new highlight option."},{"name":"L_RM_VAR","value":"Remove Variable"},{"name":"I_BD_CONFIG","value":"Variables"},{"name":"L_ADD_VAR","value":"Add Variable"},{"name":"B_SHOW","value":"Show"},{"name":"L_VIEW_OPTION","value":"Legend Option"},{"name":"L_TB_VCH","value":"Change View"},{"name":"L_SHOW_VIEW_CHANGE","value":"Show ViewMode button"},{"name":"L_RECOVER","value":"Recover"},{"name":"L_COPY_ITEM","value":"Copy @"},{"name":"D_COMPOSITEREPORT","value":"Composite Report"},{"name":"L_COMPOSITEREPORT","value":"Composite Report"},{"name":"L_P_RPT_RT","value":"Composite Pivot"},{"name":"L_V_RPT","value":"Composite Pivot Mode"},{"name":"L_P_RPT","value":"Composite Pivot"},{"name":"T_COMPOSITE_REPORT","value":"Composite Report"},{"name":"F_STOT","value":"Sub total"},{"name":"B_MINUTE","value":"Minute"},{"name":"B_QUARTER","value":"Quarter"},{"name":"S_VAR","value":"Variance"},{"name":"L_ANALYSIS","value":"Analysis"},{"name":"I_WIZARD","value":"Step by Step Analysis"},{"name":"L_VARIABLES","value":"Variables"},{"name":"L_R_ANAL_CUBE","value":"Analysis Cube"},{"name":"L_M_CUBE_SEL","value":"Select Analysis Subject..."},{"name":"L_B_AC","value":"Analysis Cube"},{"name":"L_M_SUBJ","value":"Analysis Subject:"},{"name":"L_R_ANAL_CUBE_L","value":"Subject name"},{"name":"L_MENU_CUBE","value":"Analysis Cube"},{"name":"L_MENU_CUBE_WORK","value":"Cube Analysis"},{"name":"T_METRIC_SETTING","value":"Metric Configuration"},{"name":"B_REMOVE_PIVOT","value":"Remove Pivot"},{"name":"L_ADD_METRIC","value":"Add new Dimension"},{"name":"L_LOADING_REPORT","value":"Loading..."},{"name":"L_PASTE_ITEM","value":"Paste here"},{"name":"L_ADD_VIEW","value":"Add View"},{"name":"L_ML_CEFF","value":"Cost Effectiveness Analysis"},{"name":"L_B_BW","value":"Business Workflow"},{"name":"B_INACTIVE","value":"Inactive"},{"name":"L_B_USR","value":"Blocked Users"},{"name":"D_BIGDATA","value":"BigData"},{"name":"L_BIGDATA","value":"BigData"},{"name":"T_NOSQLDATA_TITLE","value":"BigData Connection Options"},{"name":"T_NOSQL_CUBE","value":"BigData Analysis Cube"},{"name":"L_HD_BPROC","value":"Bigdata Design"},{"name":"D_BIGDATAMODEL","value":"BigDataModel"},{"name":"D_NOSQLCUBE","value":"BigData Cube"},{"name":"L_NOSQL_CUBE","value":"BigData Cube"},{"name":"L_NULL_VALUE","value":"Null value"},{"name":"L_REM_BLK","value":"Remove Blank Values"},{"name":"M_BLANK","value":"Add Item"},{"name":"B_ENABLED","value":"Enabled"},{"name":"B_ENABLE","value":"Enable"},{"name":"B_USER_DOC","value":"Instructions"},{"name":"I_USER","value":"User"},{"name":"M_LOCK_MSG","value":"Content is locked by @1 at @2"},{"name":"L_BTN_EVTDESC","value":"Disable user select value and run, and wait button click event."},{"name":"L_USER_MANAGEMENT","value":"User Management"},{"name":"I_USER_MANAGER","value":"User Manager"},{"name":"L_MGR_USER","value":"User manager"},{"name":"L_USER_DUTY","value":"User Duty"},{"name":"L_MGR_UD","value":"User Duty Management"},{"name":"T_USER_GROUP","value":"User Groups"},{"name":"T_SYNC_USER","value":"User Sync"},{"name":"W_SYNC_SAVE","value":"Would you save user synchronize parameter in server?"},{"name":"W_SYNC_USER","value":"Would you execute user synchronization in server?"},{"name":"T_REG_USER","value":"Register User"},{"name":"L_B_CM","value":"Custom Metrics"},{"name":"L_USERNAME","value":"Name of User"},{"name":"L_DB_UNAME","value":"UserName"},{"name":"L_USERID","value":"User ID"},{"name":"B_CUSTOM","value":"Custom"},{"name":"L_CUSTOM_FIX","value":"Custom Fix"},{"name":"D_GROUPFIELD","value":"User defined group"},{"name":"D_UDG","value":"User Defined Group"},{"name":"L_UDG","value":"User Defined Group"},{"name":"T_UDG","value":"User Defined Group"},{"name":"T_CUSTOM_METRIC","value":"Custom Metric"},{"name":"L_CUSTOM_FIELD","value":"Custom Field"},{"name":"L_ADD_USER","value":"Add User"},{"name":"L_UD_DESC","value":"Select user duty from list."},{"name":"D_CUSTOMMETRIC","value":"Custom Metric"},{"name":"L_CUSTOM_METRIC","value":"Custom Metric"},{"name":"L_FIXEDSIZE","value":"Fixed size mode"},{"name":"L_SQL_PRE","value":"Pre Processing"},{"name":"L_DLOCALE_MGR","value":"Dictionary Locale"},{"name":"L_LM_EXP","value":"Export Locale Data"},{"name":"L_LM_LCS","value":"Add Locale Item"},{"name":"L_LM_IMP","value":"Import Locale Data"},{"name":"L_E_DEL","value":"Delete"},{"name":"B_DELETE","value":"Delete"},{"name":"B_REMOVE","value":"Remove"},{"name":"L_DELETE_ITEM","value":"Delete @"},{"name":"L_RELATION_VIEW","value":"Relation view"},{"name":"L_PAD_TOP","value":"Top"},{"name":"L_LNK_DRILL","value":"Drill to Detail"},{"name":"L_DRILLREPORT","value":"Use for Detail view"},{"name":"L_DET_VIEW","value":"Detail View"},{"name":"T_DRILL_CONFIG","value":"Detail View Config"},{"name":"L_DRILL_ON","value":"Columns to Drill"},{"name":"M_DETAIL","value":"Details"},{"name":"B_TOP","value":"Top"},{"name":"L_RANK_TOP","value":"Rank Top"},{"name":"L_B_U","value":"Go Up"},{"name":"B_STATUS","value":"Status"},{"name":"L_NEW_RPT_VIEWER","value":"New Report Viewer"},{"name":"I_WORKSPACE","value":"New Workspace"},{"name":"L_NEW_PANEL","value":"New Panel"},{"name":"L_REFRESH","value":"Refresh"},{"name":"L_BAND_COLOR","value":"Color"},{"name":"B_COLOR","value":"Color"},{"name":"B_OWNER","value":"Owner"},{"name":"B_CR","value":"Create .."},{"name":"L_TYPE_ITEM_NAME","value":"Set item name to create"},{"name":"I_SERVER_CONFIG","value":"Server Config"},{"name":"M_ERR_CONNECT","value":"Failed to get connection on server! Please retry later"},{"name":"L_P_inv_svc","value":"Invoke Service"},{"name":"B_SEL","value":"Select"},{"name":"B_MOVE_DOWN","value":"Move row down"},{"name":"B_MOVE_UP","value":"Move row up"},{"name":"B_CD_MHS","value":"Do you like move checked items to @?"},{"name":"B_CD_CHS","value":"Do you like delete checked items?"},{"name":"L_DELETE_CHECKED","value":"Delete checked"},{"name":"L_REMOVE_SELECTED","value":"Remove selected"},{"name":"B_DESC","value":"Description"},{"name":"L_DESCRIPTION","value":"Description"},{"name":"L_PREFERENCES","value":"Preferences"},{"name":"L_DESKTOP_SETTING","value":"Setting"},{"name":"L_CHANGE_SETTING","value":"Change Setting"},{"name":"L_SEL_MODE","value":"Select Mode"},{"name":"M_SUCCESS","value":"Success!"},{"name":"B_SUCCESS","value":"Successfully completed process"},{"name":"L_CVAL_DESC","value":"Type text with semi-colon delimiter"},{"name":"L_HL_CELL","value":"Cell Only"},{"name":"L_PADDING","value":"Padding"},{"name":"L_NUMBER_PRECISION","value":"Numeric Precision"},{"name":"B_PROPERTY","value":"Property"},{"name":"D_FORMULA","value":"Formula"},{"name":"L_FORMULA","value":"Formula"},{"name":"D_FORMULAMEASURE","value":"Formula"},{"name":"L_CFIT_FOR","value":"Show Formula"},{"name":"L_USE_FORMULA","value":"Show formula"},{"name":"T_FORMULA_MEASURE","value":"Formula Measure"},{"name":"L_SYNTAX_FORMULA","value":"Formula Syntax"},{"name":"L_S_GRST","value":"Group Results"},{"name":"L_S_TROW","value":"Show on top row"},{"name":"L_SEP_COL","value":"Separate Column"},{"name":"B_MODI","value":"Modifier"},{"name":"L_VERTICAL","value":"Vertical"},{"name":"L_ALIGN_VERTICAL","value":"Vertical Align"},{"name":"L_LAYOUT_VERTICAL","value":"vertical"},{"name":"L_HORIZONTAL","value":"Horizontal"},{"name":"L_LAYOUT_HORIZONTAL","value":"horizontal"},{"name":"F_RNK","value":"Rank"},{"name":"L_RNK_VAL","value":"Rank on Value"},{"name":"L_RANK_OPTION","value":"Rank Options"},{"name":"L_RNK_CNT","value":"Rank Count"},{"name":"L_RNK_PAR","value":"Partition By"},{"name":"L_BTN_TRGALLDESC","value":"Recursively validate all filters including hidden panel"},{"name":"B_HIDE","value":"Hidden"},{"name":"B_NUMERIC","value":"Numeric"},{"name":"L_NUM_PREC","value":"Number precision"},{"name":"T_BG_SC","value":"Shell Command"},{"name":"B_SHEET_NAME","value":"Sheet name"},{"name":"L_R_ANAL_CUBE_LBL","value":"Sheet Cube"},{"name":"T_SHEET_OPTION","value":"Sheet Option"},{"name":"L_SHEET_OPTIONS","value":"Sheet Options"},{"name":"L_SHEET_NUM","value":"Sheet Number"},{"name":"L_ADD_SHEET","value":"Add Sheet"},{"name":"L_C_SCH","value":"Loaded with schedule results. Would you like to query to server?"},{"name":"L_REG_SCH","value":"Register Schedule"},{"name":"I_SCHEDULE","value":"Schedule Monitoring"},{"name":"L_LST_SCH","value":"Schedule List"},{"name":"L_SC_CT","value":"Schedule Type"},{"name":"B_SCHEDULE","value":"Schedule"},{"name":"L_SCRIPT_WIZARD","value":"Script Wizard"},{"name":"D_SCHEMA","value":"Schema"},{"name":"L_SCHEMA","value":"Schema"},{"name":"L_SCHEMA_NAME","value":"Schema Name"},{"name":"L_REN_SCH","value":"Change Name"},{"name":"B_ST_NAME","value":"Style"},{"name":"L_LOOK_AND_FEEL","value":"Look and Feel"},{"name":"L_GRID_STYLE","value":"Set Grid Style"},{"name":"L_STYLE_OPTION","value":"Style Option"},{"name":"L_OPT_STYLE","value":"Style Option"},{"name":"L_LD_ST","value":"Styles"},{"name":"L_STYLENAME","value":"Style name"},{"name":"L_ST_NAME","value":"Style name"},{"name":"L_F_STR","value":"String Format"},{"name":"L_CLOSEABLE","value":"Closable"},{"name":"L_TC_DU","value":"Duration (mili second)"},{"name":"B_HOUR","value":"Hour"},{"name":"L_DF_TS","value":"Time Separate"},{"name":"L_TIME_FMT","value":"Time Format"},{"name":"L_TC_TA","value":"Time axis"},{"name":"L_TIMEZONE","value":"Timezone"},{"name":"L_TZ_OFFSET","value":"Time Offset"},{"name":"L_SHOW_TZ","value":"Show Timezone"},{"name":"T_DM","value":"DateMetric Editor"},{"name":"L_TIME_OPTION","value":"Time series option"},{"name":"L_SERIES_LAYOUT","value":"Series Layout"},{"name":"L_SERIES","value":"Series Option"},{"name":"L_SERIES_TYPE","value":"Series Type"},{"name":"L_SYSTEM","value":"System"},{"name":"T_SYS_RES","value":"System Resources"},{"name":"L_SYS_RES","value":"System Resources"},{"name":"I_SYSMON","value":"System Monitoring"},{"name":"D_PRIVATECONTENT","value":"System Document"},{"name":"I_ABOUT_DETAIL","value":"About"},{"name":"L_S_LK","value":"System Lookup"},{"name":"B_T_FR","value":"From Time"},{"name":"B_DT_FR","value":"From Date"},{"name":"L_MAKESTYLE","value":"Define new style"},{"name":"L_PWD_NEW","value":"New Password"},{"name":"L_MAKEITEM_G","value":"Make Item"},{"name":"L_MAKEITEM","value":"Make Item (@)"},{"name":"S_REL","value":"Reliable"},{"name":"B_EXECUTE","value":"Execute"},{"name":"L_RUN","value":"Run"},{"name":"L_RUN_BUTTON","value":"Run Button"},{"name":"L_BTN_TRG","value":"Trigger Run event"},{"name":"B_UNDO","value":"Undo changes"},{"name":"L_BTN_ROW_ON","value":"Button at Row No."},{"name":"L_BTN_TRGDESC","value":"When click on run button, trigger other filter box values."},{"name":"L_RUN_REPORT","value":"Run"},{"name":"B_NO","value":"No"},{"name":"L_PAD_BOTTOM","value":"Bottom"},{"name":"L_INPUT_USERID","value":"ID"},{"name":"B_ID","value":"ID"},{"name":"B_INSIDE","value":"Inside"},{"name":"L_INNER_RADIUS","value":"Inner radius"},{"name":"L_EVENT_WIZARD","value":"Action Wizard"},{"name":"L_APPL","value":"Application"},{"name":"L_SW_APP","value":"Switch Application"},{"name":"L_LOCALE_MANAGER","value":"Locale Manager"},{"name":"L_SELECT_LOCALE","value":"Select Language"},{"name":"I_LOC_MGR","value":"Locale Manager"},{"name":"L_R_UT_DRILL","value":"Update Sheet"},{"name":"L_DATA_TAB","value":"Uploaded Data"},{"name":"L_STG_LINE","value":"Stagger Line"},{"name":"L_DF_YF","value":"Year Format"},{"name":"B_OP","value":"Operator"},{"name":"L_HL_COL","value":"Columns"},{"name":"L_P_COL","value":"Column Dimensios"},{"name":"L_AREA_COLUMN","value":"Column"},{"name":"L_ENGLISH","value":"English"},{"name":"L_MAP_AXIS","value":"Map Axis"},{"name":"B_ZOOM","value":"Zoom"},{"name":"B_OK","value":"OK"},{"name":"B_YES","value":"Yes"},{"name":"L_CFIT_FCS","value":"Forecast"},{"name":"M_ERROR","value":"Error"},{"name":"L_ALIGN_RIGHT","value":"Right"},{"name":"L_PAD_RIGHT","value":"Right"},{"name":"B_ASC","value":"Ascending"},{"name":"B_ORDER_ASC","value":"Order Ascending"},{"name":"B_OVERFLOW","value":"Overflow"},{"name":"B_AMPM","value":"AM PM"},{"name":"L_DF_APM","value":"AM/PM"},{"name":"L_EXP_OFFICE","value":"Office Direct"},{"name":"L_EXPORT_OFFICE","value":"Office Direct"},{"name":"B_OPTION","value":"Option"},{"name":"L_OPTIONS","value":"Options"},{"name":"S_SKEW","value":"Skewness"},{"name":"L_LNK_EXT","value":"External URL Link"},{"name":"L_R_CMENU","value":"External Drill Target"},{"name":"L_ALIGN_LEFT","value":"Left"},{"name":"L_PAD_LEFT","value":"Left"},{"name":"L_DF_WD","value":"Weekday"},{"name":"B_WEEK","value":"Week"},{"name":"L_DF_WF","value":"Weekday Format"},{"name":"L_DF_WD_O","value":"Weekday Order"},{"name":"L_BORDER_RIGHT","value":"Border right"},{"name":"L_DATE_FORMAT_SRC","value":"Source Date Format"},{"name":"B_MONTH","value":"Month"},{"name":"L_DF_MF","value":"Month Format"},{"name":"B_WEEKMONTH","value":"Week Month"},{"name":"L_EXPORT_PRINT","value":"HTML Print"},{"name":"L_LATITUDE","value":"Latitude"},{"name":"L_RO_INST1","value":"Please select options above."},{"name":"B_LOC","value":"Location"},{"name":"L_P_open_win","value":"Open Window"},{"name":"L_ML_C3","value":"Utility Node"},{"name":"L_FEATURE","value":"Feature"},{"name":"B_TYPE","value":"Type"},{"name":"L_TYPE","value":"Type"},{"name":"T_RSN","value":"Report Twit"},{"name":"M_NOT_EDITABLE","value":"Not allowed to edit this item!"},{"name":"L_GOTO","value":"Goto"},{"name":"L_MOVE","value":"Move"},{"name":"L_B_MVT","value":"Move To"},{"name":"B_NAME","value":"name"},{"name":"L_RENAME","value":"Rename"},{"name":"L_RENAME_ITEM","value":"Rename @"},{"name":"T_RENAME_ITEM","value":"Rename item (@)"},{"name":"L_EMAIL","value":"Email"},{"name":"L_NOTI_EMAIL","value":"Notify Email"},{"name":"T_SAVE_IMAGE","value":"Image"},{"name":"L_SAVE_IMAGE","value":"Save as Image"},{"name":"L_BTN_EVT","value":"Run with event"},{"name":"L_C_PREV","value":"Prev"},{"name":"B_PREVIOUS","value":"Previous"},{"name":"L_CLC_PERI","value":"Expire After"},{"name":"B_DAY","value":"Day"},{"name":"L_C_D_NAMES_M","value":"SU#MO#TU#WE#TH#FR#SA"},{"name":"L_C_D_NAMES_S","value":"Sun#Mon#Tue#Wed#Thu#Fri#Sat"},{"name":"B_GENERAL","value":"General"},{"name":"L_LAYOUT_NORMAL","value":"normal"},{"name":"L_GENERAL_OPTION","value":"General Options"},{"name":"L_C_D_NAMES","value":"Sunday#Monday#Tuesday#Wednesday#Thursday#Friday#Saturday"},{"name":"L_DF_DS","value":"Date Separate"},{"name":"L_DF_DF","value":"Day Format"},{"name":"L_AUTO_WIDTH","value":"Auto size"},{"name":"L_BUILD","value":"Suggested Build Item"},{"name":"L_ML_LEARN","value":"Learn"},{"name":"D_CLASSMODULE","value":"ClassModule"},{"name":"D_JAVAPACKAGE","value":"Java Package"},{"name":"L_P_execute_script","value":"Run JavaScript"},{"name":"L_M_SUBJ_REC","value":"Recently used items"},{"name":"L_F_LE","value":"Less or Equal (<=)"},{"name":"L_F_LE_NOT","value":"Not Less or Equal (>)"},{"name":"L_F_LT","value":"Less then (<)"},{"name":"L_JB_STAT","value":"Job Status"},{"name":"D_WORKSPACE","value":"Workspace"},{"name":"B_WORKSPACE","value":"Workspace"},{"name":"L_WORKSPACE","value":"New Workspace"},{"name":"L_C_MW","value":"Manage Workspace"},{"name":"L_F_LT_NOT","value":"Not Less then (>=)"},{"name":"B_UNLOCK","value":"Unlock"},{"name":"B_SAVE","value":"Save"},{"name":"L_SELECT_PATH","value":"Select path to create"},{"name":"M_ERR_NSAVE","value":"Need to save content!"},{"name":"B_APPLY","value":"Apply"},{"name":"L_APPL_R","value":"Apply on"},{"name":"L_CLC_HOUR","value":"Clear At"},{"name":"L_TM_ALG","value":"Algorithms"},{"name":"L_LAYOUT_CASCADE","value":"cascade"},{"name":"L_DRILL_PARAM","value":"Columns to Params"},{"name":"L_FETCH_ALL","value":"Fetch All Data"},{"name":"B_SHOW_ALL","value":"Show All"},{"name":"L_EN_DRILL","value":"Drill to All"},{"name":"L_EN_DRILL_DESC","value":"Check to drill to all sheets"},{"name":"L_CFIT_SS","value":"Show Summary curves"},{"name":"L_ALL_VALUE","value":"All Value"},{"name":"F_P_POT","value":"Percent of Total"},{"name":"E_SWA_CFM","value":"Please select application name to switch to."},{"name":"L_FONT_ALIGNMENT","value":"Alignment"},{"name":"L_SORT_SEL","value":"Methods to Sorting"},{"name":"L_SORT_TP","value":"Sort Type"},{"name":"L_DF_OS","value":"Order style"},{"name":"L_SORT_ORD","value":"Sorting Orders"},{"name":"L_SORT_OPTION","value":"Rank and Sorting"},{"name":"L_F_SORT","value":"Sort Field"},{"name":"T_SORT_OPTION","value":"Sort Options"},{"name":"M_INFO","value":"Info!"},{"name":"L_REMOVE","value":"Remove"},{"name":"L_SHOW_TITLE","value":"Show title"},{"name":"L_TITLE_OPTION","value":"Title Setting"},{"name":"L_CONDITION","value":"Condition"},{"name":"L_ADD_CONDITION","value":"Add condition"},{"name":"M_S_S2","value":"No results found for registered tables."},{"name":"L_JOIN","value":"Join"},{"name":"L_ADD_JOIN","value":"Add Join"},{"name":"L_BTN_SEARCH","value":"Search"},{"name":"L_ROW_LIMIT_COUNT","value":"Limit Count"},{"name":"B_NO_DATA","value":"No Data"},{"name":"L_EMPTY_DATA","value":"Empty in this list"},{"name":"L_VIEW_MODE_LBL","value":"Data query viewer"},{"name":"B_PROC","value":"Processing request..<br>Please wait a moment."},{"name":"L_BAND_VALUE_2","value":"Value to"},{"name":"B_T_TO","value":"To Time"},{"name":"B_DT_TO","value":"To Date"},{"name":"L_F_VALUE_TO","value":"To Value"},{"name":"L_T_LOGOUT","value":"Logout"},{"name":"L_M_LOGOUT","value":"Are you sure you want to logout?"},{"name":"L_C_W_H","value":"Week"},{"name":"L_DISTINCT_QUERY","value":"Distinct Query"},{"name":"L_DISTINCT","value":"Return distinct all rows"},{"name":"S_MEDIAN","value":"Median"},{"name":"B_FAVORITES","value":"Favorites"},{"name":"M_SAVED_FAV","value":"Added in Favorites list"},{"name":"L_C_FC","value":"My Favorites"},{"name":"F_INC","value":"Incremental"},{"name":"L_GEO_FIELD","value":"Geo Location"},{"name":"L_CONTACT_HELP","value":"For support please contact"},{"name":"L_EV_MIN","value":"Every Minutes"},{"name":"L_SC_C3","value":"Run once at time"},{"name":"L_EV_HOUR","value":"Every Hour"},{"name":"M_UNKNOWN","value":"Unknown Error!"},{"name":"L_E_VALUE","value":"Type Values"},{"name":"L_AGGR","value":"Aggregation"},{"name":"F_DIFF","value":"Difference"},{"name":"L_CSTEP_1","value":"Chart"},{"name":"T_CHART_WIZARD","value":"Chart Designer"},{"name":"L_CLR_SET","value":"Color Set"},{"name":"T_CHART_SERIES","value":"Chart Series"},{"name":"L_CSTEP_4","value":"Plot Area"},{"name":"L_CHART_OPTION","value":"Data Pivot Option"},{"name":"L_CHART_GROUP","value":"Chart category"},{"name":"L_CHART_THEME","value":"Chart theme"},{"name":"T_CHART_PLOTBAND","value":"Chart Plot Band"},{"name":"L_VIEW_CHART","value":"Chart view"},{"name":"L_CHART_TYPE","value":"Chart type"},{"name":"L_MAX_CHART_ELEMENT","value":"Data Elements"},{"name":"T_BG_SCR","value":"Command Result"},{"name":"L_WAIT_1","value":"Please wait while processing request"},{"name":"S_HOME","value":"Home"},{"name":"S_KURT","value":"Kurtosis"},{"name":"B_SECOND","value":"Second"},{"name":"B_DEFAULT","value":"Default"},{"name":"B_CLEAR","value":"Clear"},{"name":"L_C_LC","value":"Most recent contents"},{"name":"L_BB_MS","value":"Max bubble size"},{"name":"S_MAX","value":"Maximum"},{"name":"F_MAX","value":"Maximum"},{"name":"F_MIN","value":"Minimum"},{"name":"L_MIN_WIDTH","value":"Min width"},{"name":"L_MIN_HEIGHT","value":"Min height"},{"name":"S_MIN","value":"Minimum"},{"name":"L_LAST_UPD","value":"Last updated time :"},{"name":"B_LASTUPD","value":"Last Updated"},{"name":"B_ADD","value":"Add"},{"name":"L_ML_C4a","value":"Inference"},{"name":"L_SWAP_AXIS","value":"Swap axis"},{"name":"T_BG_OP","value":"Output"},{"name":"L_TB_PRT_T","value":"Export Target(s)"},{"name":"T_EXPORT_WIZARD","value":"Export Wizard"},{"name":"L_TB_PRT","value":"Export Buttons"},{"name":"L_EXP_MET","value":"Menu Control"},{"name":"L_EXP_MET_DESC","value":"Check menu items to use in this report."},{"name":"L_LNK_DOC","value":"Download Export File"},{"name":"L_OUTP_TYPE","value":"Output Type"},{"name":"L_PG_RANGE","value":"Page range"},{"name":"L_PG_START","value":"Page Start from"},{"name":"B_PROC_CANCEL","value":"Cancel"},{"name":"B_CANCEL","value":"Cancel"},{"name":"L_USE_CACHE","value":"Use Cache"},{"name":"L_CACHE_PERI","value":"Cache Period"},{"name":"L_CACHE_RULE","value":"Cache Rule"},{"name":"I_EXP_SCH","value":"Content Search Options"},{"name":"T_EXP_MC","value":"Export Content"},{"name":"T_EXP_MC_Q","value":"Would you continue to export content to file?"},{"name":"L_CONTROLLER","value":"Control"},{"name":"L_FIX_COLUMN","value":"Fix Column"},{"name":"L_COL_VIS","value":"Column Visible"},{"name":"L_COL_SIZE","value":"Column Size"},{"name":"L_COLUMN_WIDTH","value":"Column Width"},{"name":"L_R_COLUMN_FIT","value":"Fit column to panel"},{"name":"L_COL_TREE","value":"Make Column Header Tree"},{"name":"L_ML_C6","value":"Cases"},{"name":"L_ML_C6b","value":"Remove Case"},{"name":"L_ML_C6a","value":"Add Case"},{"name":"B_CODE","value":"Code"},{"name":"L_CODEMAPPING","value":"CodeMapping"},{"name":"D_CODEMAP","value":"Code Mapping"},{"name":"L_LOOKUP","value":"Metric Lookup"},{"name":"L_CODE_FIELD","value":"Code Mapping"},{"name":"T_CODE_MAPPING","value":"Code Mapping"},{"name":"I_QRY_TOOL","value":"Query Tool"},{"name":"L_DB_SCHEDULE_QUERYTIMEOUT","value":"Query Timeout(Scheduler)"},{"name":"L_DB_QUERYTIMEOUT","value":"Query Timeout(S)"},{"name":"L_CUBE","value":"Cube"},{"name":"T_CUBE","value":"Cube"},{"name":"L_R_ANAL_CUBE_LB","value":"Cube"},{"name":"L_MC_DATA_EDT","value":"Cube Data Editor"},{"name":"B_BUILD","value":"Create Cube"},{"name":"L_BUILD_CUBE","value":"Build Cube"},{"name":"L_SAVE_CUBE","value":"Save Cube"},{"name":"B_B_CUBE","value":"Click continue to start automatic cube build process."},{"name":"T_CUBE_MODEL","value":"Cube Model"},{"name":"L_BUILD_MODEL","value":"Model Wizard"},{"name":"L_SHOW_PIVOT","value":"Show CubeFolder"},{"name":"L_E_CB","value":"Edit Cube"},{"name":"L_F_GE","value":"Greater or Equal (>=)"},{"name":"L_F_GE_NOT","value":"Not Greater or Equal (<)"},{"name":"L_F_GT","value":"Greater then (>)"},{"name":"L_F_GT_NOT","value":"Not Greater then (<=)"},{"name":"L_SCALE_DOWN","value":"Scale down when necessary"},{"name":"L_CLASS_MOD","value":"Class Module"},{"name":"L_P_CLUSTER","value":"Cluster Dimension"},{"name":"L_CLUSTER","value":"Cluster"},{"name":"L_CLIPBOARD_COPY","value":"Copy to Clipboard"},{"name":"B_CLIPBOARD","value":"Copy to clipboard"},{"name":"L_EMPTY_SEARCH","value":"Search keyword"},{"name":"L_F_LIKE","value":"Include keyword (LIKE)"},{"name":"L_F_LIKE_NOT","value":"Not Include keyword (NOT LIKE)"},{"name":"B_TITLE","value":"Title"},{"name":"L_TITLE","value":"Title text"},{"name":"L_HIDE_TITLE","value":"Hide Title"},{"name":"L_STYLE_TITLE","value":"Title Style"},{"name":"L_T_DIR","value":"Title Location"},{"name":"L_TITLE_POSITION","value":"Title position"},{"name":"L_OPT_TBAR","value":"Title Bar Options"},{"name":"L_BROWSE_ITEM","value":"Browse @"},{"name":"T_BROWSER","value":"Browser"},{"name":"S_NAVI","value":"Navigator"},{"name":"T_TAB_BROWSER","value":"Tabbed Browser"},{"name":"L_SHOW_TAB_BAR","value":"Show Tab buttons"},{"name":"L_R_CM_SHOWTAB","value":"Open in Tab"},{"name":"L_NEW_TABPANEL","value":"New TabPanel"},{"name":"D_TENANT","value":"Tenant"},{"name":"L_ADD_TENANT","value":"Add Tenant"},{"name":"L_BORDER_COLOR","value":"Border color"},{"name":"M_SUC_DBCON","value":"Successful to connect db"},{"name":"I_TABLE_REGISTER","value":"Table Register"},{"name":"L_REG_TABLE","value":"Table Register"},{"name":"L_TABLES","value":"Table Source"},{"name":"L_TBL_ORD","value":"Table Order"},{"name":"L_ERR_CUBE_ITEMS","value":"Mismatched or Error items exist on cube. Modify and save cube to update mismatched information."},{"name":"L_P_RELOAD","value":"Click Refresh to load."},{"name":"L_NEW_TEXTAREA","value":"New TextArea"},{"name":"L_F_DISP","value":"Display Field"},{"name":"L_AUTO_ROT","value":"Rotate Text"},{"name":"L_APPLY_TMPL","value":"Apply Template"},{"name":"L_F_TMPL","value":"Apply Template"},{"name":"L_EXPORT_JASPER","value":"JasperReport"},{"name":"T_DB_TMPL","value":"Database template"},{"name":"M_SEL_MODEL","value":"Select model on toolbar button to continue cube design."},{"name":"B_TREEVIEW","value":"Tree"},{"name":"L_TREE_VIEW","value":"Tree View"},{"name":"L_ENABLE_TREE_VIEW","value":"Enable Tree View"},{"name":"L_TREEM_OPTION","value":"TreeMap Options"},{"name":"L_TM_CL","value":"TreeMap Class"},{"name":"L_SCC_REC","value":"Recurr with Interval"},{"name":"L_SCC_DATE","value":"Recurr on Time"},{"name":"L_PIE_OPTION","value":"Pie Option"},{"name":"L_IMPORT_FILE","value":"Import File"},{"name":"L_FILEEXT","value":"Extension"},{"name":"L_SELECT_FILE","value":"Select File..."},{"name":"L_FILENAME","value":"File Name"},{"name":"T_EXCEL_LOADER","value":"LocalData Loader"},{"name":"L_LAYOUT_POPUP","value":"popup"},{"name":"L_PANEL_H","value":"Panel Height"},{"name":"L_PANEL_W","value":"Panel Width"},{"name":"L_INPUT_PASSWORD","value":"Password"},{"name":"T_PASSWORD_CHANGE","value":"Password"},{"name":"L_DB_PWD","value":"Password"},{"name":"L_PWD_LABEL","value":"Secure password"},{"name":"L_PASSWORD","value":"Change Password"},{"name":"L_CH_PASSWD","value":"Change Password"},{"name":"L_PWD_CONFIRM","value":"Confirm New Password"},{"name":"M_BLANK_PWD","value":"Password should not be blank"},{"name":"L_STACK_PERCENT","value":"Stack by Percentage"},{"name":"L_PAGING","value":"Paging"},{"name":"L_PG_DIRECTION","value":"Page Direction"},{"name":"L_SHOW_PAGENUMBER","value":"Show page number"},{"name":"L_PAGE_STYLE","value":"Page Style"},{"name":"L_PAGE_OPTIONS","value":"Page Options"},{"name":"L_PG_SIZE","value":"Page Size"},{"name":"L_FOOTER","value":"Footer"},{"name":"L_REPEAT_HEADER","value":"Repeat header"},{"name":"L_ROW_P_PAGE","value":"Rows per Page"},{"name":"L_PG_LOADER","value":"Page Loading"},{"name":"L_USE_PAGING","value":"Use pagination"},{"name":"L_EDIT","value":"Edit"},{"name":"L_ML_C4b","value":"Editor"},{"name":"L_E_IT","value":"Edit Item"},{"name":"L_EDIT_ITEM","value":"Edit @"},{"name":"L_EDITOR_TYPE","value":"Editor Type"},{"name":"M_LOCK_TITLE","value":"Content Locked"},{"name":"S_AVG","value":"Average"},{"name":"F_AVG","value":"Average"},{"name":"L_C_FMT_VAL","value":"Use Formatted Value"},{"name":"B_WIDTH","value":"Width"},{"name":"L_FIXED_W","value":"Fix Width"},{"name":"L_FONT_SELECT","value":"Font Selection"},{"name":"L_FONT_ST","value":"Font Style"},{"name":"L_FONTSIZE","value":"Fontsize"},{"name":"D_FOLDER","value":"Folder"},{"name":"B_FOLDER","value":"Folder"},{"name":"T_MGR_FOLDER","value":"Folder Manager"},{"name":"L_BB_STEP_2","value":"Create Folder Structures"},{"name":"L_CREATE_FOLDER","value":"Create Folder"},{"name":"L_REG_FOLDER","value":"Add Folder"},{"name":"L_MGR_FD","value":"Manage Folder"},{"name":"L_FOLDER_ITEMS","value":"Folder Items"},{"name":"L_DATE_FORMAT_TGT","value":"Display Date Format"},{"name":"L_DISP_TITLE","value":"Display Title"},{"name":"B_DISP_NAME","value":"Display Name"},{"name":"S_STDERR","value":"Standard Error"},{"name":"S_STDEV","value":"Standard deviation"},{"name":"L_R_RUN_PROP","value":"Run Properties"},{"name":"T_PROMPT_DLG","value":"Prompt"},{"name":"T_PROMPT_MSG","value":"Fill value for change condition"},{"name":"L_PROMPT_TYPE","value":"Prompt Type"},{"name":"L_FLOATING","value":"Floating"},{"name":"L_PLOT_STYLES","value":"Plot Styles"},{"name":"L_ENABLE_PIVOT","value":"Enable Pivot"},{"name":"L_PIVOT","value":"Design"},{"name":"L_V_PIVOT","value":"Pivot Mode"},{"name":"T_PIVOT_EDITOR","value":"Report Designer"},{"name":"L_PIVOT_REPORT","value":"Design"},{"name":"B_REQ","value":"Required Field"},{"name":"T_DB_BLANK","value":"Field is required."},{"name":"L_FILTER","value":"Filter"},{"name":"L_R_OPT_FILTER","value":"Filter Options"},{"name":"T_DYNFILTER_CONFIG","value":"Filter Config"},{"name":"L_SHOW_FILTER_INFO","value":"Show filter information"},{"name":"L_CLEAR_FLT","value":"Clear Filter"},{"name":"L_NEW_FILTER","value":"New Filter"},{"name":"B_SET_FILTER","value":"Set Filter"},{"name":"L_BORDER_BOTTOM","value":"Border bottom"},{"name":"L_HADOOP","value":"Hadoop Management"},{"name":"L_HD_BFLOW","value":"Hadoop BizFlow"},{"name":"B_BOTTOM","value":"Bottom"},{"name":"L_RANK_BOTTOM","value":"Rank Bottom"},{"name":"L_C_ITEMS","value":"Sub Items"},{"name":"L_TB_HL","value":"Config Highlight"},{"name":"T_HL_OPT","value":"Highlight Options"},{"name":"L_R_UT_DESC","value":"On check one or multi, only drill to selected."},{"name":"L_KOREAN","value":"Korean"},{"name":"L_EXPORT_ODF_EXCEL","value":"Open SpreadSheet"},{"name":"L_EXPORT_ODF_WORD","value":"Open Document"},{"name":"L_EXPORT_ODF_PPT","value":"Open Presentation"},{"name":"L_FUNC","value":"Function"},{"name":"L_SYNTAX","value":"Syntax"},{"name":"S_SUM","value":"Summary"},{"name":"L_ITEM","value":"Item"},{"name":"L_NAVIGATOR","value":"Navigator"},{"name":"B_DELETE_ITEM","value":"Delete item"},{"name":"L_CR_TP_SEL","value":"Select Item"},{"name":"B_CONFIG_ITEM","value":"Config Item"},{"name":"L_SAVE_EXCEL","value":"Save Content"},{"name":"L_CREATE_ITEM","value":"Create Item"},{"name":"L_ADD_NEW","value":"Add New"},{"name":"L_ITEMNAME","value":"Item name"},{"name":"L_AU_TITLE","value":"Set object access for duty"},{"name":"L_F_NOTIN","value":"Not Including"},{"name":"L_TABLE_DROP","value":"To register drag Field to Middle Region."},{"name":"L_C_DEL_ITEM","value":"Do you want to remove item?"},{"name":"L_SELECT_ITEM","value":"Select item to continue"},{"name":"L_DYN_SELECT","value":"Check values"},{"name":"M_SEL_ITEM","value":"Select item to continue."},{"name":"M_DELETED","value":"Successfully removed content"},{"name":"L_SAVE_CONTENT","value":"Save Content"},{"name":"T_META_SAVE","value":"Save Item As..."},{"name":"E_NO_MATCH_FLD","value":"Not found matching item from list."},{"name":"L_HL_ROW","value":"Rows"},{"name":"L_BB_YA","value":"Row data to Y Axis"},{"name":"L_BB_SL","value":"Show RowData legend"},{"name":"L_P_ROW","value":"Row Dimensions"},{"name":"L_ROW_SIZE","value":"Row Size"},{"name":"L_AREA_ROW","value":"Row"},{"name":"M_NA","value":"Not Allowed operations."},{"name":"L_M_C_SAVE_DESKTOP","value":"Do you want to save desktop information currently opened?"},{"name":"L_FILE_APPEND","value":"Append on current tab"},{"name":"L_C_CUR","value":"Current,"},{"name":"L_P_cls","value":"Close Window"},{"name":"L_APPL_TMPL","value":"Application Template"},{"name":"L_HL_RANGE","value":"Apply on"},{"name":"L_SWA_CFM","value":"Do you want to continue to logout and login in another project?"},{"name":"B_CONFIRM","value":"Confirm"},{"name":"B_ACTIVE","value":"Active"},{"name":"L_A_USR","value":"Active Users"},{"name":"L_ACTIVATE","value":"Activate"},{"name":"L_CFIT_TYPE","value":"CurveFit Type"},{"name":"L_SC_ACTION","value":"Schedule Action"},{"name":"L_C_DC","value":"Deleted Contents"},{"name":"T_TRASHBIN","value":"TrashBin"},{"name":"L_C_CD","value":"Deleted Content"},{"name":"L_RANGE_FIELD","value":"Range Field"},{"name":"L_META_MIG","value":"Meta Migration"},{"name":"L_C_INLINEV","value":"Inline View"},{"name":"L_IMP_TB","value":"Import Table"},{"name":"L_TENANT","value":"Tenant"},{"name":"B_DATATYPE","value":"Data Type"},{"name":"L_SERVER_HOST","value":"Server Host"},{"name":"L_ML","value":"Machine Learning"},{"name":"B_PHY_NAME","value":"Physical Name"},{"name":"I_LOGOUT","value":"Logout button for secure session out."},{"name":"L_MIG","value":"Migration"},{"name":"L_B_CUBE","value":"Cube Processing"},{"name":"L_ENDPOINT_URL","value":"Endpoint URL"},{"name":"L_SYS_BACKSCH","value":"Background Schedule"},{"name":"B_SEQUENCE","value":"Order"},{"name":"L_SUBSCRIBE","value":"Subscribe"},{"name":"L_DEPLOY_SVR","value":"Deploy Server"},{"name":"I_START_INTRO","value":"Start introduction"},{"name":"I_COLLAPSE_BTN","value":"Collapse and Expand side panel."},{"name":"I_MAINMENU","value":"Main menu (Click twice to see on full screen)"},{"name":"I_SEARCH_MAIN","value":"Search with keyword to find report and object"},{"name":"I_NAVIGATOR","value":"Navigation panel to contents"},{"name":"I_MAIN_WS","value":"Main workspace area"},{"name":"I_APP_AREA","value":"Application area."},{"name":"I_SAVE_CNT","value":"Save content "},{"name":"I_RUN_REPORT","value":"Run report."},{"name":"I_ADD_VIEW","value":"Add view and widget."},{"name":"I_SHEET_AREA","value":"Sheet area."},{"name":"I_SHEET_TITLE","value":"Sheet Title"},{"name":"I_SHEET_VIEW","value":"Sheet View"},{"name":"I_BTN_PIVOTOPTION","value":"Pivot Option to change fields and columns"},{"name":"I_BTN_WIDGET_CONF","value":"Widget Configuration button to settup detailed information."},{"name":"L_AUTO_JOIN","value":"Auto Join"},{"name":"L_JOIN_BEUTIFY","value":"Auto Layout tables"},{"name":"L_UPLOAD","value":"Upload file"},{"name":"L_RNK_SVAL","value":"Sort by value"},{"name":"L_SEL_RPT","value":"Select Report"},{"name":"L_SEL_DBD","value":"Select Dashboard"},{"name":"L_DESIGN","value":"Design mode"},{"name":"L_APPL_THEME","value":"Application Theme"},{"name":"M_VALIDATED","value":"Validated successfully!"},{"name":"T_ML_LEARN","value":"Machine Learning"},{"name":"T_HD_CFG_CL","value":"Hadoop Configuration"},{"name":"T_Resources","value":"Resources"},{"name":"T_DYN_LFILE","value":"Filter by fileupload"},{"name":"L_DYN_LFILE","value":"Upload file and make filter with values"},{"name":"T_REPORT_STYLE","value":"Report Style"},{"name":"T_BA_1","value":"Bayes Analysis"},{"name":"B_INTRO","value":"Introduction"},{"name":"B_PREV","value":"Prev"},{"name":"B_SKIP","value":"Skip"},{"name":"B_OBJ_NAME","value":"Object name"},{"name":"B_DATA_ZOOM","value":"Data Zoom"},{"name":"B_C_DELETE","value":"Click ok to continue delete!"},{"name":"B_SELECT_FOLDER","value":"Select folder to continue;"},{"name":"B_SELECT_TARGET","value":"Select target object to continue;"},{"name":"B_TEMPLATES","value":"Templates"},{"name":"B_CONFIG","value":"Configuration"},{"name":"B_VIEWMODE","value":"View Mode"},{"name":"B_EDITMODE","value":"Edit Mode"},{"name":"B_PARAMTERS","value":"Parameters"},{"name":"B_NOT_EXECUTED","value":"Not executed"},{"name":"B_VALIDATE","value":"Validate"},{"name":"L_AUTH","value":"Authentication"},{"name":"T_GRD_CFG","value":"Grid Configuration"},{"name":"L_FORMVIEWER","value":"Form Viewer"},{"name":"L_M_TITLE","value":"Measure title"},{"name":"L_M_EXT_TITLE","value":"Extra title"},{"name":"L_PAGE_FILTER","value":"Page filter"},{"name":"L_TENANT_NAME","value":"Tenant name"},{"name":"L_LICENSE_INFO","value":"License info"},{"name":"L_ALLOWED_USERS","value":"Allowed users"},{"name":"L_REG_DATE","value":"Reg date"},{"name":"L_pf_navitree","value":"Pivot filter"},{"name":"L_pf_fedit","value":"Pivot filter editor"},{"name":"L_pf_filter","value":"Pivot filter"},{"name":"L_SAVE_CONTENT_AS","value":"Save content as"},{"name":"L_DATA_SOURCE","value":"Data source"},{"name":"T_DB_GEN","value":"DB generator"},{"name":"L_P_export","value":"Export"},{"name":"L_ERR_L_MOD","value":"Error while loading module!"},{"name":"I_DLOC_MGR","value":"Dictionary management"},{"name":"I_META_MIG","value":"Meta migration"},{"name":"L_REG_DATASET","value":"Register dataset"},{"name":"T_MIG_DISCO","value":"Oracle Discoverer Migration"},{"name":"L_METRIC_ITEMS","value":"Metric items"},{"name":"T_DBD_VAR","value":"Dashboard variables"},{"name":"E_LM_SEL","value":"Select locale from combobox first!"},{"name":"T_TORSP_RS","value":"Tornado spider results"},{"name":"L_LNK_TP","value":"Link field"},{"name":"T_SUBSCR_AUTH","value":"Subscribtion authenticate"},{"name":"T_NET_PROP","value":"Network property"},{"name":"M_APP_LOADED","value":"Application loaded successfully!"},{"name":"L_F_COMMENT","value":"Comment"},{"name":"M_SAVE_PROGRESS","value":"Save is in progressing.. Please wait!"},{"name":"M_DEF_DATE","value":"Default date"},{"name":"L_DB_VAL","value":"DB Value"},{"name":"L_SF_AUTHMETHOD","value":"Salesforce auth method"},{"name":"L_SF_SECTOKEN","value":"Salesforce token"},{"name":"L_TARGET_DB","value":"Target database"},{"name":"T_JASP_TMPL","value":"Jasper template"},{"name":"L_HIERARCHY","value":"Hierarchy"},{"name":"T_FM_SEL","value":"Formula selection"},{"name":"T_FM_SEL_CONFIG","value":"Formula configuration"},{"name":"L_ADD_FILTER","value":"Add filter"},{"name":"T_INT_LEARN","value":"Interactive learning"},{"name":"L_VIEW_PYTHON","value":"Python"},{"name":"L_R_OPTIONS","value":"R options"},{"name":"L_PY_EDIT","value":"Python edit"},{"name":"T_COST_EFF","value":"Cost effectiveness"},{"name":"L_GS_ENABLED","value":"Gs enabled"},{"name":"L_ALT_COLOR","value":"Alternative color"},{"name":"L_REG_LINK","value":"Register link"},{"name":"L_TB_FORM_V","value":"Form viewer"},{"name":"L_EMAIL_BURSTING","value":"Email bursting"},{"name":"L_BAYES","value":"Machine Learning"},{"name":"L_BAYES_RPT","value":"ML Report"},{"name":"L_DISCO","value":"Discoverer Migration"},{"name":"L_SEL_DB","value":"Select Datasource"},{"name":"L_BOBJ","value":"Business Object"},{"name":"L_SETTINGS","value":"Settings"},{"name":"D_BOBJECT","value":"Business Object"},{"name":"L_V_SYNC","value":"Sync with Sheet"},{"name":"L_NEW_STORYVIEW","value":"Add StoryIt"},{"name":"L_XLS_BUTTON","value":"Show Excel button"},{"name":"L_XLS_STYLE","value":"Excel Button Style"},{"name":"L_VIEW_ANAL","value":"View Analysis"},{"name":"L_D_EXCEL","value":"Download"}]}
+{
+	"meta_type": "locales",
+	"objinfo": {},
+	"name": "en_US",
+	"type": "Unknown",
+	"writable": false,
+	"manage": false,
+	"is_sub": false,
+	"attributes": {},
+	"data": [
+		{
+			"name": "L_CM_DISP_2",
+			"value": "* Drag Items here to define this measure"
+		},
+		{
+			"name": "L_CD_DISP_2",
+			"value": "* Drag Metric Item or Click Add button"
+		},
+		{
+			"name": "L_TIME_FMT_DSC",
+			"value": "* Applied if date format item"
+		},
+		{
+			"name": "L_FM_DISP1",
+			"value": "* Double click field to add in the function."
+		},
+		{
+			"name": "L_CM_DISP_1",
+			"value": "* Double click field to add in the function"
+		},
+		{
+			"name": "L_FM_DISP2",
+			"value": "* Drag Items here to define this measure."
+		},
+		{
+			"name": "L_ME_DISP1",
+			"value": "* Double click field to add in the function"
+		},
+		{
+			"name": "L_C_DCOUNT",
+			"value": "@ Counts"
+		},
+		{
+			"name": "L_VIEW_ITEM",
+			"value": "View @"
+		},
+		{
+			"name": "L_C_DATE",
+			"value": "Detail of @"
+		},
+		{
+			"name": "M_SEL_ERR",
+			"value": "@ is necessary. Please select value"
+		},
+		{
+			"name": "I_ABOUT",
+			"value": "About @"
+		},
+		{
+			"name": "E_D_EVNT",
+			"value": "Error while processing evnet @."
+		},
+		{
+			"name": "L_C_TOTAL",
+			"value": "Total @"
+		},
+		{
+			"name": "E_PV_L",
+			"value": "Privilege error on content: (@)"
+		},
+		{
+			"name": "L_C_M_NAMES_S",
+			"value": "JAN#FEB#MAR#APR#MAY#JUN#JUL#AUG#SEP#OCT#NOV#DEC"
+		},
+		{
+			"name": "L_C_M_NAMES",
+			"value": "January#February#March#April#May#June#July#August#September#October#November#December"
+		},
+		{
+			"name": "L_DUAL_AXIS",
+			"value": "Dual YAxis"
+		},
+		{
+			"name": "L_CONTACT_CRED",
+			"value": "Copyright &copy; 1996-2010"
+		},
+		{
+			"name": "L_EXPORT_CSV",
+			"value": "CSV"
+		},
+		{
+			"name": "L_DB_MON",
+			"value": "DB Monitoring"
+		},
+		{
+			"name": "L_DB_CHARSET",
+			"value": "DB CharSet"
+		},
+		{
+			"name": "L_OUTPUT_CHARSET",
+			"value": "Output CharSet"
+		},
+		{
+			"name": "L_TABLE_FIELD",
+			"value": "DB Table"
+		},
+		{
+			"name": "L_EXPORT_DOCX",
+			"value": "DOCX Export"
+		},
+		{
+			"name": "B_GO",
+			"value": "Go"
+		},
+		{
+			"name": "D_HIERARCHY",
+			"value": "Hierarchy"
+		},
+		{
+			"name": "T_BG_HIVEJOB",
+			"value": "Hive Job"
+		},
+		{
+			"name": "L_EXPORT_HTML",
+			"value": "HTML View"
+		},
+		{
+			"name": "L_EXP_JASP",
+			"value": "Jasper"
+		},
+		{
+			"name": "D_JAVACLASS",
+			"value": "Java Class"
+		},
+		{
+			"name": "L_JDBC_URL",
+			"value": "JDBC URL"
+		},
+		{
+			"name": "L_JDBC_DRV",
+			"value": "JDBC Driver"
+		},
+		{
+			"name": "T_MDB_CUBE",
+			"value": "MDB Access Analysis"
+		},
+		{
+			"name": "L_MDB_OPTION",
+			"value": "MDB Options"
+		},
+		{
+			"name": "L_MONGODB",
+			"value": "MongoDB"
+		},
+		{
+			"name": "L_MONGO_DATA",
+			"value": "MongoDB Data"
+		},
+		{
+			"name": "L_MONGO_DPROC",
+			"value": "MongoDB Process"
+		},
+		{
+			"name": "D_MDBCUBE",
+			"value": "MS Access DataCube"
+		},
+		{
+			"name": "L_MDB_CUBE",
+			"value": "MS Access DataCube"
+		},
+		{
+			"name": "L_EXPORT_EXCEL",
+			"value": "MS Excel"
+		},
+		{
+			"name": "L_EXPORT_PPT",
+			"value": "MS PPT"
+		},
+		{
+			"name": "D_NOSQL",
+			"value": "NoSQL Database"
+		},
+		{
+			"name": "L_OP_NOT",
+			"value": "NOT Operation"
+		},
+		{
+			"name": "L_EXPORT_PDF",
+			"value": "PDF"
+		},
+		{
+			"name": "L_ML_C7",
+			"value": "Load PGMX"
+		},
+		{
+			"name": "L_R_WIZARD",
+			"value": "R Wizard"
+		},
+		{
+			"name": "L_R_PARAM",
+			"value": "R Parameters"
+		},
+		{
+			"name": "L_R_SUMMARY",
+			"value": "R Summary"
+		},
+		{
+			"name": "L_R_SCRIPT",
+			"value": "R Script Editor"
+		},
+		{
+			"name": "L_VIEW_RSTAT",
+			"value": "R Statistics"
+		},
+		{
+			"name": "T_R_WIZARD",
+			"value": "R Statistics Wizard"
+		},
+		{
+			"name": "L_EXPORT_RTF",
+			"value": "RTF Export"
+		},
+		{
+			"name": "T_SELECT_POOL",
+			"value": "Select Pool"
+		},
+		{
+			"name": "L_F_SQL_IS",
+			"value": "SQL Is Operator (IS)"
+		},
+		{
+			"name": "L_F_SQL_IS_NOT",
+			"value": "SQL Is Not Operator (IS NOT)"
+		},
+		{
+			"name": "L_LD_SQL",
+			"value": "SQL Query Import"
+		},
+		{
+			"name": "I_SQLCUBE",
+			"value": "SQL Wizard"
+		},
+		{
+			"name": "L_VIEW_SQL",
+			"value": "View SQL"
+		},
+		{
+			"name": "L_LD_SQL_D",
+			"value": "SQL Source"
+		},
+		{
+			"name": "L_P_sql",
+			"value": "Run SQL"
+		},
+		{
+			"name": "D_SQLCUBE",
+			"value": "SQL Cube"
+		},
+		{
+			"name": "L_SQL_CUBE",
+			"value": "SQL Cube"
+		},
+		{
+			"name": "L_EDIT_SQL",
+			"value": "Edit SQL"
+		},
+		{
+			"name": "L_SQL_PRE_PROC",
+			"value": "SQL Pre Processor"
+		},
+		{
+			"name": "D_UIPAGE",
+			"value": "UI Page"
+		},
+		{
+			"name": "L_UIPAGE",
+			"value": "UI Page"
+		},
+		{
+			"name": "L_LNK_URL",
+			"value": "URL Address"
+		},
+		{
+			"name": "L_EXPORT_XML",
+			"value": "XML Export"
+		},
+		{
+			"name": "L_CSTEP_5",
+			"value": "YAxis"
+		},
+		{
+			"name": "L_YAXIS_FORMAT",
+			"value": "Y-Axis format"
+		},
+		{
+			"name": "L_YAXIS_TITLE",
+			"value": "YAxis Title"
+		},
+		{
+			"name": "L_YAXIS_MAX",
+			"value": "Y-Axis Maximum"
+		},
+		{
+			"name": "L_YAXIS_MIN",
+			"value": "Y-Axis Minimum"
+		},
+		{
+			"name": "L_ALIGN_CENTER",
+			"value": "Center"
+		},
+		{
+			"name": "L_SHOW_FIRST",
+			"value": "Show First"
+		},
+		{
+			"name": "S_BOTTOM",
+			"value": "Bottom value"
+		},
+		{
+			"name": "S_TOP",
+			"value": "Top value"
+		},
+		{
+			"name": "L_USE_MFMT",
+			"value": "Use Measure Format"
+		},
+		{
+			"name": "L_ML_CEFF_S",
+			"value": "Sensitivity Analysis"
+		},
+		{
+			"name": "L_F_VALUE_LNG",
+			"value": "Values"
+		},
+		{
+			"name": "B_VALUES",
+			"value": "Values"
+		},
+		{
+			"name": "B_TEXT",
+			"value": "value"
+		},
+		{
+			"name": "B_VALUE",
+			"value": "Value"
+		},
+		{
+			"name": "L_BAND_VALUE_1",
+			"value": "Value"
+		},
+		{
+			"name": "L_F_VALUE",
+			"value": "Value"
+		},
+		{
+			"name": "L_FLT_VAL_SCR",
+			"value": "Validation Function"
+		},
+		{
+			"name": "L_VAL_DELIM",
+			"value": "Value Delimiter"
+		},
+		{
+			"name": "B_COMBO_VAL",
+			"value": "List Values"
+		},
+		{
+			"name": "L_P_valuelist",
+			"value": "Fill Values"
+		},
+		{
+			"name": "T_VALUE_SELECT",
+			"value": "Value Selection Wizard"
+		},
+		{
+			"name": "T_DYN_SELECT",
+			"value": "Select Values..."
+		},
+		{
+			"name": "L_STACK_VALUE",
+			"value": "Stack value"
+		},
+		{
+			"name": "L_VALUE_TYPE",
+			"value": "ValueType"
+		},
+		{
+			"name": "L_E_LIST",
+			"value": "Select from Values"
+		},
+		{
+			"name": "B_CUST_VAL",
+			"value": "Custom Values"
+		},
+		{
+			"name": "L_SHOW_VALUE",
+			"value": "Show Values"
+		},
+		{
+			"name": "L_TK_INTVL",
+			"value": "Tick Interval"
+		},
+		{
+			"name": "L_SELECT_VALUE",
+			"value": "Select Value"
+		},
+		{
+			"name": "L_FORMAT",
+			"value": "Format"
+		},
+		{
+			"name": "L_AREA_MEASURE",
+			"value": "Measure"
+		},
+		{
+			"name": "L_F_EQ",
+			"value": "Equal (=)"
+		},
+		{
+			"name": "L_F_EQ_NOT",
+			"value": "Not Equal (<>)"
+		},
+		{
+			"name": "L_OBJECT_TYPE",
+			"value": "Object Type"
+		},
+		{
+			"name": "T_META_SELECT",
+			"value": "Select Item..."
+		},
+		{
+			"name": "B_SEARCH",
+			"value": "Search"
+		},
+		{
+			"name": "L_SEARCH_KWD",
+			"value": "Search"
+		},
+		{
+			"name": "L_NEW_SHEET",
+			"value": "New Sheet"
+		},
+		{
+			"name": "L_ML_CEFF_D",
+			"value": "Determistic Analysis"
+		},
+		{
+			"name": "M_WARNING",
+			"value": "Warning!"
+		},
+		{
+			"name": "L_SC_C1",
+			"value": "Run once after"
+		},
+		{
+			"name": "L_LONGITUDE",
+			"value": "Longitude"
+		},
+		{
+			"name": "B_PATH",
+			"value": "Path"
+		},
+		{
+			"name": "L_C_DIR",
+			"value": "Calculate Direction"
+		},
+		{
+			"name": "L_ERR_SAVE",
+			"value": "To continue save content before."
+		},
+		{
+			"name": "L_DEPRIVATE",
+			"value": "Lock User from Login"
+		},
+		{
+			"name": "L_HIGH_PREC",
+			"value": "High precision number"
+		},
+		{
+			"name": "L_ADV_OPTION",
+			"value": "Advanced Options"
+		},
+		{
+			"name": "L_ADVANCED_OPTION",
+			"value": "Advanced Option"
+		},
+		{
+			"name": "L_R_FIXSIZE",
+			"value": "Fixed Size"
+		},
+		{
+			"name": "B_SHARE",
+			"value": "Share"
+		},
+		{
+			"name": "I_RELATION",
+			"value": "Relation"
+		},
+		{
+			"name": "T_MANAGE",
+			"value": "Manage"
+		},
+		{
+			"name": "L_MANAGEMENT",
+			"value": "Management"
+		},
+		{
+			"name": "I_ADMIN",
+			"value": "Admin"
+		},
+		{
+			"name": "S_COUNT",
+			"value": "Count"
+		},
+		{
+			"name": "B_DELIMITER",
+			"value": "Delimiter"
+		},
+		{
+			"name": "L_LM_ADD",
+			"value": "Add Country Code"
+		},
+		{
+			"name": "L_FONT_BOLD",
+			"value": "Bold"
+		},
+		{
+			"name": "L_PRIVILEGE",
+			"value": "Privilege"
+		},
+		{
+			"name": "D_AUTH",
+			"value": "Duty"
+		},
+		{
+			"name": "L_OBJECT_AUTH",
+			"value": "Object Auth"
+		},
+		{
+			"name": "T_OBJECT_AUTH",
+			"value": "Object Auth"
+		},
+		{
+			"name": "T_DUTY_LIST",
+			"value": "Duty List"
+		},
+		{
+			"name": "L_ADD_DUTY",
+			"value": "Add Duty"
+		},
+		{
+			"name": "D_GROUP",
+			"value": "Group"
+		},
+		{
+			"name": "L_GROUP_LEVEL",
+			"value": "Group level"
+		},
+		{
+			"name": "L_GROUP_FIELD",
+			"value": "Group Field"
+		},
+		{
+			"name": "W_SYNC_GRP",
+			"value": "Would you execute group synchronization in server?"
+		},
+		{
+			"name": "L_GROUP_NAME",
+			"value": "Group Name"
+		},
+		{
+			"name": "L_ADD_GROUP",
+			"value": "Add Group"
+		},
+		{
+			"name": "L_OPT_GRID",
+			"value": "Grid Option"
+		},
+		{
+			"name": "L_OVF_DESC",
+			"value": "Check overflow for draw scrolled grid"
+		},
+		{
+			"name": "T_STYLE_WIZARD",
+			"value": "Style Wizard"
+		},
+		{
+			"name": "L_TB_PRT_GRD",
+			"value": "Export Grid"
+		},
+		{
+			"name": "L_GRID_HMENU",
+			"value": "Hide Grid popup menu"
+		},
+		{
+			"name": "L_VIEW_GRID",
+			"value": "Sheet view"
+		},
+		{
+			"name": "L_FONT_FACE",
+			"value": "Font Face"
+		},
+		{
+			"name": "L_FORE_COLOR",
+			"value": "Fore color"
+		},
+		{
+			"name": "L_DATE_OPTION",
+			"value": "Date Option"
+		},
+		{
+			"name": "T_FEATURES",
+			"value": "Features"
+		},
+		{
+			"name": "L_BASE_STYLE",
+			"value": "Base Style"
+		},
+		{
+			"name": "L_STATISTICS",
+			"value": "Basic Statistics"
+		},
+		{
+			"name": "T_STATISTICS",
+			"value": "Basic Statistics"
+		},
+		{
+			"name": "L_SET_DEF",
+			"value": "Use Default"
+		},
+		{
+			"name": "L_FONT_ITALIC",
+			"value": "Italic"
+		},
+		{
+			"name": "L_PREDEFINED_FIELD",
+			"value": "Predefined Field"
+		},
+		{
+			"name": "L_FILE_DELETE",
+			"value": "Replace existing data"
+		},
+		{
+			"name": "L_PWD_OLD",
+			"value": "Old Password"
+		},
+		{
+			"name": "L_OTHER_OPTION",
+			"value": "Other Options"
+		},
+		{
+			"name": "L_OTHER_VALUE",
+			"value": "Other value"
+		},
+		{
+			"name": "L_ML_C1",
+			"value": "Chance Node"
+		},
+		{
+			"name": "L_C_PR",
+			"value": "Private Contents"
+		},
+		{
+			"name": "L_DATE_METRIC",
+			"value": "Date Metric"
+		},
+		{
+			"name": "D_DATEMETRIC",
+			"value": "Date Metric"
+		},
+		{
+			"name": "L_DATE_FORMAT",
+			"value": "Date Format"
+		},
+		{
+			"name": "L_DATE_TYPE",
+			"value": "Date Type Field"
+		},
+		{
+			"name": "B_DSC",
+			"value": "Descending"
+		},
+		{
+			"name": "B_ORDER_DSC",
+			"value": "Order Descending"
+		},
+		{
+			"name": "M_SAVED",
+			"value": "Successfully saved content"
+		},
+		{
+			"name": "B_YEAR",
+			"value": "Year"
+		},
+		{
+			"name": "L_C_YR_SFX",
+			"value": "Year"
+		},
+		{
+			"name": "B_HEIGHT",
+			"value": "Height"
+		},
+		{
+			"name": "L_FIXED_H",
+			"value": "Fix Height"
+		},
+		{
+			"name": "F_P_CUM",
+			"value": "Cumulative Percentage"
+		},
+		{
+			"name": "L_SAVE_REPORT_AS",
+			"value": "Save as Report"
+		},
+		{
+			"name": "L_SAVE_EXCEL_AS",
+			"value": "Save Content As"
+		},
+		{
+			"name": "L_SAVE_CONTENTAS",
+			"value": "Save Content As..."
+		},
+		{
+			"name": "B_NEXT",
+			"value": "Next"
+		},
+		{
+			"name": "L_C_NEXT",
+			"value": "Next"
+		},
+		{
+			"name": "E_SC_LD",
+			"value": "Error while loading DynamicScript"
+		},
+		{
+			"name": "L_P_open_dlg",
+			"value": "Open Dialog"
+		},
+		{
+			"name": "T_M_TENANT",
+			"value": "Multi Tenant"
+		},
+		{
+			"name": "L_CFIT_PORD",
+			"value": "Polynomial Order"
+		},
+		{
+			"name": "D_MOLAPCUBE",
+			"value": "MOLAP Cube"
+		},
+		{
+			"name": "L_MOLAP_CUBE",
+			"value": "MOLAP Cube"
+		},
+		{
+			"name": "T_MCUBE_WINDOW",
+			"value": "m Dimension Cube"
+		},
+		{
+			"name": "L_BUILD_MCUBE",
+			"value": "Build Cube"
+		},
+		{
+			"name": "L_UNIT_TEXT",
+			"value": "Unit Text"
+		},
+		{
+			"name": "L_P_PIVOT_UNIT",
+			"value": "Pivot Unit"
+		},
+		{
+			"name": "B_CLOSE",
+			"value": "Close"
+		},
+		{
+			"name": "L_C_CLOSE",
+			"value": "Close"
+		},
+		{
+			"name": "L_LNK_TGT",
+			"value": "Browser Target"
+		},
+		{
+			"name": "L_DRILL_PARAM_DESC",
+			"value": "Check columns to filter on target Sheet"
+		},
+		{
+			"name": "L_BASE_METRIC",
+			"value": "Base Metric"
+		},
+		{
+			"name": "L_SORT_SRC",
+			"value": "Items to sort"
+		},
+		{
+			"name": "D_DASHBOARD",
+			"value": "Dashboard"
+		},
+		{
+			"name": "L_DASHBOARD",
+			"value": "Dashboard"
+		},
+		{
+			"name": "T_DASHBOARD",
+			"value": "Dashboard"
+		},
+		{
+			"name": "L_MGR_DASHBOARD",
+			"value": "Dashaboard Mgr"
+		},
+		{
+			"name": "L_DBD_MAP",
+			"value": "Dashboard Mapping"
+		},
+		{
+			"name": "I_MGR_DBD",
+			"value": "Dashboard Plugins"
+		},
+		{
+			"name": "L_CSTEP_2",
+			"value": "Data"
+		},
+		{
+			"name": "L_DATA_LABEL",
+			"value": "Data Labels"
+		},
+		{
+			"name": "L_T_CUBE_SEL",
+			"value": "Data Select Wizard"
+		},
+		{
+			"name": "L_EDIT_DATA",
+			"value": "Edit Data"
+		},
+		{
+			"name": "T_Filter",
+			"value": "Filter Data"
+		},
+		{
+			"name": "L_EMPTY",
+			"value": "No Data."
+		},
+		{
+			"name": "L_BB_STEP_1",
+			"value": "Preparing datas"
+		},
+		{
+			"name": "L_MENU_DB_MODEL",
+			"value": "Relation DataModel"
+		},
+		{
+			"name": "T_DB_CON",
+			"value": "Database Instances"
+		},
+		{
+			"name": "L_DB_INSTANCE",
+			"value": "Database Instance"
+		},
+		{
+			"name": "L_DB_TYPE",
+			"value": "Database Type"
+		},
+		{
+			"name": "L_DB_NAME",
+			"value": "Database Name"
+		},
+		{
+			"name": "M_S_S1",
+			"value": "No results found for selected database instance."
+		},
+		{
+			"name": "L_ADD_DB_INST",
+			"value": "Add Database Instance"
+		},
+		{
+			"name": "L_VIEW_MODE",
+			"value": "View Mode"
+		},
+		{
+			"name": "L_DATASET",
+			"value": "DataSet"
+		},
+		{
+			"name": "L_B_ADC",
+			"value": "DataFile Cube"
+		},
+		{
+			"name": "D_TABDIMENSION",
+			"value": "Data Separate Dimension"
+		},
+		{
+			"name": "L_DATA_LABEL_FMT",
+			"value": "Data Label Format"
+		},
+		{
+			"name": "L_PRV_DATA",
+			"value": "Data Preview"
+		},
+		{
+			"name": "L_DATA_OPTION",
+			"value": "Data Option"
+		},
+		{
+			"name": "T_BG_DS",
+			"value": "Data source"
+		},
+		{
+			"name": "L_STYLE_DATA",
+			"value": "Data Style"
+		},
+		{
+			"name": "L_LD_LK",
+			"value": "Connect Connection"
+		},
+		{
+			"name": "M_ERR_CDATA",
+			"value": "Error while handling custom data report"
+		},
+		{
+			"name": "T_FILTER",
+			"value": "Filter Data"
+		},
+		{
+			"name": "L_NO_DATA",
+			"value": "No data"
+		},
+		{
+			"name": "L_STACK_CHART",
+			"value": "Stacked series"
+		},
+		{
+			"name": "L_MSG_TABNAME",
+			"value": "Type data label text for tab dimension."
+		},
+		{
+			"name": "I_DATA",
+			"value": "DATA"
+		},
+		{
+			"name": "L_MGR_DATABASE",
+			"value": "Database manager"
+		},
+		{
+			"name": "L_REG_DATABASE",
+			"value": "Register Database"
+		},
+		{
+			"name": "I_DATABASE_CONNECTION",
+			"value": "Database connection"
+		},
+		{
+			"name": "T_DB_PWD",
+			"value": "Database Connection"
+		},
+		{
+			"name": "T_DATA_UPLOAD",
+			"value": "Upload DataFile"
+		},
+		{
+			"name": "L_LD_FILE",
+			"value": "Load DataFile"
+		},
+		{
+			"name": "L_SHOW_TOOL_BUTTON",
+			"value": "Show Tool button"
+		},
+		{
+			"name": "B_HELP",
+			"value": "Help"
+		},
+		{
+			"name": "L_HELP_DOC",
+			"value": "Help Documentation"
+		},
+		{
+			"name": "I_HELP_MGR",
+			"value": "Help Manager"
+		},
+		{
+			"name": "L_HELP_GUIDES",
+			"value": "Help and Guides"
+		},
+		{
+			"name": "L_NEW_DOCUMENT",
+			"value": "Add Document"
+		},
+		{
+			"name": "E_DUP_FOLDER",
+			"value": "Move same folder is not allowed"
+		},
+		{
+			"name": "L_TB_BN",
+			"value": "Found same node name used in this table. Would you like to change all names with changes?"
+		},
+		{
+			"name": "L_V_DESC",
+			"value": "Dynamic Variable Editor"
+		},
+		{
+			"name": "L_F_BETWEEN_NOT",
+			"value": "Not Between values (NOT BETWEEN)"
+		},
+		{
+			"name": "L_F_BETWEEN",
+			"value": "Between values (BETWEEN)"
+		},
+		{
+			"name": "B_BACK",
+			"value": "Back"
+		},
+		{
+			"name": "L_DRAG_SELECT",
+			"value": "Drag Select"
+		},
+		{
+			"name": "L_ENABLE_DRILL",
+			"value": "Drill down"
+		},
+		{
+			"name": "L_R_UPD_TGT",
+			"value": "Drill Target"
+		},
+		{
+			"name": "L_BTN_LOGIN",
+			"value": "Login"
+		},
+		{
+			"name": "L_ML_C2",
+			"value": "Decision Node"
+		},
+		{
+			"name": "L_ML_C5",
+			"value": "Decision Tree"
+		},
+		{
+			"name": "L_LABEL_DIST",
+			"value": "Label Distance"
+		},
+		{
+			"name": "L_SHOW_LABEL",
+			"value": "Show Label"
+		},
+		{
+			"name": "L_LABEL_ALIGN",
+			"value": "Label Align"
+		},
+		{
+			"name": "L_L_STEP",
+			"value": "Label Step"
+		},
+		{
+			"name": "L_MARKER",
+			"value": "Marker"
+		},
+		{
+			"name": "L_CFIT_LC",
+			"value": "Line Style"
+		},
+		{
+			"name": "L_BAND_BORDER",
+			"value": "Border"
+		},
+		{
+			"name": "L_LINE_NUM",
+			"value": "Line Number"
+		},
+		{
+			"name": "L_B_LAYOUT",
+			"value": "Layout"
+		},
+		{
+			"name": "B_OPT_LAYOUT",
+			"value": "Layout"
+		},
+		{
+			"name": "L_LAYOUT",
+			"value": "Layout"
+		},
+		{
+			"name": "L_LAYOUT_WIZARD",
+			"value": "Layout Wizard"
+		},
+		{
+			"name": "L_EDIT_LAYOUT",
+			"value": "Edit layout"
+		},
+		{
+			"name": "T_LAYOUT",
+			"value": "Layout Templates"
+		},
+		{
+			"name": "L_LOG_VIEW",
+			"value": "View log result"
+		},
+		{
+			"name": "L_LOGOUT",
+			"value": "Log Out"
+		},
+		{
+			"name": "L_DESKTOP_LOGOUT",
+			"value": "Logout"
+		},
+		{
+			"name": "L_T_LOUT",
+			"value": "Would you like to Logout system?"
+		},
+		{
+			"name": "L_M_C_LOGOUT",
+			"value": "Please click yes button to logout.<br> Click no button to cancel"
+		},
+		{
+			"name": "L_LOGIN_TITLE",
+			"value": "Secure login"
+		},
+		{
+			"name": "B_LOGIN",
+			"value": "Login"
+		},
+		{
+			"name": "L_ONLOAD_RUN",
+			"value": "Execute on loading"
+		},
+		{
+			"name": "T_LDATA_TITLE",
+			"value": "Local Data Cube Option"
+		},
+		{
+			"name": "D_EXCELLOADER",
+			"value": "Local File Cube"
+		},
+		{
+			"name": "L_EXCEL_LOADER",
+			"value": "Local File Cube"
+		},
+		{
+			"name": "D_DATACUBE",
+			"value": "Local File Cube"
+		},
+		{
+			"name": "L_CLEAR_LOOKUP",
+			"value": "Remove Lookup"
+		},
+		{
+			"name": "L_RESOURCES",
+			"value": "Resources"
+		},
+		{
+			"name": "L_RESOURCE",
+			"value": "Resources"
+		},
+		{
+			"name": "D_REPORT",
+			"value": "Report"
+		},
+		{
+			"name": "L_REPORT",
+			"value": "Report"
+		},
+		{
+			"name": "T_REPORT_WINDOW",
+			"value": "Report"
+		},
+		{
+			"name": "L_REPORT_TOOLS",
+			"value": "Report Tools"
+		},
+		{
+			"name": "L_REPORT_NAME",
+			"value": "Report Name"
+		},
+		{
+			"name": "L_RPT_V_OPT",
+			"value": "Report Viewer Option"
+		},
+		{
+			"name": "L_MENU_REPORT",
+			"value": "Create Reporting"
+		},
+		{
+			"name": "M_REPORT",
+			"value": "Make Report"
+		},
+		{
+			"name": "L_P_RPT_C",
+			"value": "Report Options"
+		},
+		{
+			"name": "I_REPORT_STYLE",
+			"value": "Report Style"
+		},
+		{
+			"name": "T_GLOBAL_REPORT_STYLE",
+			"value": "Look and Feel"
+		},
+		{
+			"name": "L_P_onlinereport",
+			"value": "Run Report"
+		},
+		{
+			"name": "L_SYS_LOG",
+			"value": "System Log"
+		},
+		{
+			"name": "M_ERR_C_REP_PROC",
+			"value": "Error while processing Custom Report Handler"
+		},
+		{
+			"name": "T_REPORT_OPTION",
+			"value": "Change report options"
+		},
+		{
+			"name": "L_CHANGE_REPORTTYPE",
+			"value": "Change Report Type"
+		},
+		{
+			"name": "L_SAVE_REPORT",
+			"value": "Save Report"
+		},
+		{
+			"name": "L_ADD_REPORT",
+			"value": "Add Report"
+		},
+		{
+			"name": "T_RPT_PIVOT",
+			"value": "Report Pivot"
+		},
+		{
+			"name": "L_MAP_ITEM",
+			"value": "Map to Report Item"
+		},
+		{
+			"name": "L_LINK_FIELD",
+			"value": "Link Field"
+		},
+		{
+			"name": "L_DRILL_ON_DESC",
+			"value": "Check columns to show link."
+		},
+		{
+			"name": "B_WIZARD",
+			"value": "Wizard"
+		},
+		{
+			"name": "D_CHARTMEASURE",
+			"value": "Micro Chart"
+		},
+		{
+			"name": "L_CHART_MEASURE",
+			"value": "Micro Chart"
+		},
+		{
+			"name": "L_RNK_LST",
+			"value": "Show all last rank"
+		},
+		{
+			"name": "L_L_TAB",
+			"value": "Load last tab only"
+		},
+		{
+			"name": "D_CUBEMODEL",
+			"value": "ROLAP Cube Model"
+		},
+		{
+			"name": "L_ROLAP_CUBE_MODEL",
+			"value": "ROLAP Cube Model"
+		},
+		{
+			"name": "D_CUBE",
+			"value": "ROLAP Cube"
+		},
+		{
+			"name": "L_ROLAP_CUBE",
+			"value": "ROLAP Cube"
+		},
+		{
+			"name": "B_EVERY",
+			"value": "Every"
+		},
+		{
+			"name": "L_EV_DAY",
+			"value": "Every Day on Hour"
+		},
+		{
+			"name": "T_BG_MR",
+			"value": "Map/Reduce"
+		},
+		{
+			"name": "L_MAP_OPT",
+			"value": "Map Options"
+		},
+		{
+			"name": "L_MAP_TYPE",
+			"value": "Map Type"
+		},
+		{
+			"name": "L_B_JV",
+			"value": "Map/Reduce Java"
+		},
+		{
+			"name": "L_HD_MAPR",
+			"value": "Map Reduce"
+		},
+		{
+			"name": "D_MCUBE",
+			"value": "MultiDimension Cube"
+		},
+		{
+			"name": "L_MENU",
+			"value": "Menu"
+		},
+		{
+			"name": "L_FEATURE_CTRL",
+			"value": "Feature Controls"
+		},
+		{
+			"name": "L_MAIL_BD",
+			"value": "Content"
+		},
+		{
+			"name": "L_P_MEASURE",
+			"value": "Measures"
+		},
+		{
+			"name": "D_MEASURE",
+			"value": "Measure"
+		},
+		{
+			"name": "L_MEASURE",
+			"value": "Measure"
+		},
+		{
+			"name": "T_MEASURE",
+			"value": "Measure"
+		},
+		{
+			"name": "L_GROUP_MEASURE",
+			"value": "Group Measure"
+		},
+		{
+			"name": "L_REG_MEASURES",
+			"value": "Make Measures"
+		},
+		{
+			"name": "T_M_MEASURE",
+			"value": "Make Measures"
+		},
+		{
+			"name": "T_M_Measure",
+			"value": "Register Measures"
+		},
+		{
+			"name": "L_M_NAME",
+			"value": "Measure Name"
+		},
+		{
+			"name": "L_M_FORMAT",
+			"value": "Measure Format"
+		},
+		{
+			"name": "L_M_POSITION",
+			"value": "Measure Position"
+		},
+		{
+			"name": "L_MEASURE_ON",
+			"value": "Measure On"
+		},
+		{
+			"name": "L_BB_STEP_3",
+			"value": "Make Measures and Time Metrics"
+		},
+		{
+			"name": "L_M_FILTER",
+			"value": "Measure Filter"
+		},
+		{
+			"name": "L_META_IMPORT",
+			"value": "Import Meta File"
+		},
+		{
+			"name": "I_META_IMP",
+			"value": "Load Meta File"
+		},
+		{
+			"name": "T_META_IMP",
+			"value": "Load Meta File"
+		},
+		{
+			"name": "T_META_EDITOR",
+			"value": "Meta Editor"
+		},
+		{
+			"name": "L_EXPORT_META",
+			"value": "Export content in file"
+		},
+		{
+			"name": "D_METRIC",
+			"value": "Metric"
+		},
+		{
+			"name": "L_METRIC",
+			"value": "Metric"
+		},
+		{
+			"name": "L_MC_ELEM_EDT",
+			"value": "Element Editor"
+		},
+		{
+			"name": "L_T_LOOKUP",
+			"value": "Lookup Options"
+		},
+		{
+			"name": "L_MONITORING",
+			"value": "Monitoring"
+		},
+		{
+			"name": "L_MODEL_CREATE",
+			"value": "Create Model"
+		},
+		{
+			"name": "L_MODEL_SELECT",
+			"value": "Select Model"
+		},
+		{
+			"name": "L_MODEL_EDIT",
+			"value": "Edit Model"
+		},
+		{
+			"name": "L_LD_INI",
+			"value": "Clear All DataSet"
+		},
+		{
+			"name": "L_ALL_DATA",
+			"value": "All data"
+		},
+		{
+			"name": "L_CFIT_AS",
+			"value": "All series curves"
+		},
+		{
+			"name": "L_LD_UL",
+			"value": "Disconnect All Connections"
+		},
+		{
+			"name": "L_C_AL",
+			"value": "All Contents"
+		},
+		{
+			"name": "L_BTN_TRG_ALL",
+			"value": "Validate Filters"
+		},
+		{
+			"name": "L_AU_APPLY_SUB",
+			"value": "Apply all sub folder"
+		},
+		{
+			"name": "L_F_IN_NOT",
+			"value": "Not In List (NOT IN)"
+		},
+		{
+			"name": "L_F_IN",
+			"value": "In List (IN)"
+		},
+		{
+			"name": "L_LNK_TMPL",
+			"value": "Document Template"
+		},
+		{
+			"name": "B_STRING",
+			"value": "String"
+		},
+		{
+			"name": "L_PREVIEW",
+			"value": "Preview"
+		},
+		{
+			"name": "L_FONT_UNDERLINE",
+			"value": "Underline"
+		},
+		{
+			"name": "L_DELETE_SHORTCUT",
+			"value": "Delete Shortcut"
+		},
+		{
+			"name": "L_SC_PR",
+			"value": "Period to Run"
+		},
+		{
+			"name": "L_SCC_TYPE",
+			"value": "Repeat Type"
+		},
+		{
+			"name": "L_SC_C2",
+			"value": "Repeat Cron"
+		},
+		{
+			"name": "L_EXPORT_OPTION",
+			"value": "Option"
+		},
+		{
+			"name": "L_EXPORT",
+			"value": "Export"
+		},
+		{
+			"name": "L_MAIL_CC",
+			"value": "Mail CC"
+		},
+		{
+			"name": "B_METHOD",
+			"value": "Method"
+		},
+		{
+			"name": "L_BG_COL",
+			"value": "Background Color"
+		},
+		{
+			"name": "L_BACK_COLOR",
+			"value": "Back color"
+		},
+		{
+			"name": "L_CSTEP_6",
+			"value": "Bands"
+		},
+		{
+			"name": "L_BAND_TYPE",
+			"value": "Band Type"
+		},
+		{
+			"name": "L_BB_CA",
+			"value": "Bubble Color Axis"
+		},
+		{
+			"name": "L_BB_SA",
+			"value": "Bubble Size Axis"
+		},
+		{
+			"name": "L_BB_OPT",
+			"value": "BubbleMap Options"
+		},
+		{
+			"name": "T_REVISION",
+			"value": "Revision Control"
+		},
+		{
+			"name": "L_REVISION",
+			"value": "Version Control"
+		},
+		{
+			"name": "B_SVN",
+			"value": "Versioning and Recovery"
+		},
+		{
+			"name": "L_SHOW_LEGEND",
+			"value": "Show Legend"
+		},
+		{
+			"name": "L_LEGEND_POSITION",
+			"value": "Legend position"
+		},
+		{
+			"name": "L_CSTEP_3",
+			"value": "Legend"
+		},
+		{
+			"name": "S_RAN",
+			"value": "Range"
+		},
+		{
+			"name": "L_SAVE_C_MSG",
+			"value": "You are closing a tab that has unsaved changes. Would you like to save your changes?"
+		},
+		{
+			"name": "L_SAVE_CHANGES",
+			"value": "Save Changes?"
+		},
+		{
+			"name": "L_HL_DESC",
+			"value": "Click cell to edit or click New for make new highlight option."
+		},
+		{
+			"name": "L_RM_VAR",
+			"value": "Remove Variable"
+		},
+		{
+			"name": "I_BD_CONFIG",
+			"value": "Variables"
+		},
+		{
+			"name": "L_ADD_VAR",
+			"value": "Add Variable"
+		},
+		{
+			"name": "B_SHOW",
+			"value": "Show"
+		},
+		{
+			"name": "L_VIEW_OPTION",
+			"value": "Legend Option"
+		},
+		{
+			"name": "L_TB_VCH",
+			"value": "Change View"
+		},
+		{
+			"name": "L_SHOW_VIEW_CHANGE",
+			"value": "Show ViewMode button"
+		},
+		{
+			"name": "L_RECOVER",
+			"value": "Recover"
+		},
+		{
+			"name": "L_COPY_ITEM",
+			"value": "Copy @"
+		},
+		{
+			"name": "D_COMPOSITEREPORT",
+			"value": "Composite Report"
+		},
+		{
+			"name": "L_COMPOSITEREPORT",
+			"value": "Composite Report"
+		},
+		{
+			"name": "L_P_RPT_RT",
+			"value": "Composite Pivot"
+		},
+		{
+			"name": "L_V_RPT",
+			"value": "Composite Pivot Mode"
+		},
+		{
+			"name": "L_P_RPT",
+			"value": "Composite Pivot"
+		},
+		{
+			"name": "T_COMPOSITE_REPORT",
+			"value": "Composite Report"
+		},
+		{
+			"name": "F_STOT",
+			"value": "Sub total"
+		},
+		{
+			"name": "B_MINUTE",
+			"value": "Minute"
+		},
+		{
+			"name": "B_QUARTER",
+			"value": "Quarter"
+		},
+		{
+			"name": "S_VAR",
+			"value": "Variance"
+		},
+		{
+			"name": "L_ANALYSIS",
+			"value": "Analysis"
+		},
+		{
+			"name": "I_WIZARD",
+			"value": "Step by Step Analysis"
+		},
+		{
+			"name": "L_VARIABLES",
+			"value": "Variables"
+		},
+		{
+			"name": "L_R_ANAL_CUBE",
+			"value": "Analysis Cube"
+		},
+		{
+			"name": "L_M_CUBE_SEL",
+			"value": "Select Analysis Subject..."
+		},
+		{
+			"name": "L_B_AC",
+			"value": "Analysis Cube"
+		},
+		{
+			"name": "L_M_SUBJ",
+			"value": "Analysis Subject:"
+		},
+		{
+			"name": "L_R_ANAL_CUBE_L",
+			"value": "Subject name"
+		},
+		{
+			"name": "L_MENU_CUBE",
+			"value": "Analysis Cube"
+		},
+		{
+			"name": "L_MENU_CUBE_WORK",
+			"value": "Cube Analysis"
+		},
+		{
+			"name": "T_METRIC_SETTING",
+			"value": "Metric Configuration"
+		},
+		{
+			"name": "B_REMOVE_PIVOT",
+			"value": "Remove Pivot"
+		},
+		{
+			"name": "L_ADD_METRIC",
+			"value": "Add new Dimension"
+		},
+		{
+			"name": "L_LOADING_REPORT",
+			"value": "Loading..."
+		},
+		{
+			"name": "L_PASTE_ITEM",
+			"value": "Paste here"
+		},
+		{
+			"name": "L_ADD_VIEW",
+			"value": "Add View"
+		},
+		{
+			"name": "L_ML_CEFF",
+			"value": "Cost Effectiveness Analysis"
+		},
+		{
+			"name": "L_B_BW",
+			"value": "Business Workflow"
+		},
+		{
+			"name": "B_INACTIVE",
+			"value": "Inactive"
+		},
+		{
+			"name": "L_B_USR",
+			"value": "Blocked Users"
+		},
+		{
+			"name": "D_BIGDATA",
+			"value": "BigData"
+		},
+		{
+			"name": "L_BIGDATA",
+			"value": "BigData"
+		},
+		{
+			"name": "T_NOSQLDATA_TITLE",
+			"value": "BigData Connection Options"
+		},
+		{
+			"name": "T_NOSQL_CUBE",
+			"value": "BigData Analysis Cube"
+		},
+		{
+			"name": "L_HD_BPROC",
+			"value": "Bigdata Design"
+		},
+		{
+			"name": "D_BIGDATAMODEL",
+			"value": "BigDataModel"
+		},
+		{
+			"name": "D_NOSQLCUBE",
+			"value": "BigData Cube"
+		},
+		{
+			"name": "L_NOSQL_CUBE",
+			"value": "BigData Cube"
+		},
+		{
+			"name": "L_NULL_VALUE",
+			"value": "Null value"
+		},
+		{
+			"name": "L_REM_BLK",
+			"value": "Remove Blank Values"
+		},
+		{
+			"name": "M_BLANK",
+			"value": "Add Item"
+		},
+		{
+			"name": "B_ENABLED",
+			"value": "Enabled"
+		},
+		{
+			"name": "B_ENABLE",
+			"value": "Enable"
+		},
+		{
+			"name": "B_USER_DOC",
+			"value": "Instructions"
+		},
+		{
+			"name": "I_USER",
+			"value": "User"
+		},
+		{
+			"name": "M_LOCK_MSG",
+			"value": "Content is locked by @1 at @2"
+		},
+		{
+			"name": "L_BTN_EVTDESC",
+			"value": "Disable user select value and run, and wait button click event."
+		},
+		{
+			"name": "L_USER_MANAGEMENT",
+			"value": "User Management"
+		},
+		{
+			"name": "I_USER_MANAGER",
+			"value": "User Manager"
+		},
+		{
+			"name": "L_MGR_USER",
+			"value": "User manager"
+		},
+		{
+			"name": "L_USER_DUTY",
+			"value": "User Duty"
+		},
+		{
+			"name": "L_MGR_UD",
+			"value": "User Duty Management"
+		},
+		{
+			"name": "T_USER_GROUP",
+			"value": "User Groups"
+		},
+		{
+			"name": "T_SYNC_USER",
+			"value": "User Sync"
+		},
+		{
+			"name": "W_SYNC_SAVE",
+			"value": "Would you save user synchronize parameter in server?"
+		},
+		{
+			"name": "W_SYNC_USER",
+			"value": "Would you execute user synchronization in server?"
+		},
+		{
+			"name": "T_REG_USER",
+			"value": "Register User"
+		},
+		{
+			"name": "L_B_CM",
+			"value": "Custom Metrics"
+		},
+		{
+			"name": "L_USERNAME",
+			"value": "Name of User"
+		},
+		{
+			"name": "L_DB_UNAME",
+			"value": "UserName"
+		},
+		{
+			"name": "L_USERID",
+			"value": "User ID"
+		},
+		{
+			"name": "B_CUSTOM",
+			"value": "Custom"
+		},
+		{
+			"name": "L_CUSTOM_FIX",
+			"value": "Custom Fix"
+		},
+		{
+			"name": "D_GROUPFIELD",
+			"value": "User defined group"
+		},
+		{
+			"name": "D_UDG",
+			"value": "User Defined Group"
+		},
+		{
+			"name": "L_UDG",
+			"value": "User Defined Group"
+		},
+		{
+			"name": "T_UDG",
+			"value": "User Defined Group"
+		},
+		{
+			"name": "T_CUSTOM_METRIC",
+			"value": "Custom Metric"
+		},
+		{
+			"name": "L_CUSTOM_FIELD",
+			"value": "Custom Field"
+		},
+		{
+			"name": "L_ADD_USER",
+			"value": "Add User"
+		},
+		{
+			"name": "L_UD_DESC",
+			"value": "Select user duty from list."
+		},
+		{
+			"name": "D_CUSTOMMETRIC",
+			"value": "Custom Metric"
+		},
+		{
+			"name": "L_CUSTOM_METRIC",
+			"value": "Custom Metric"
+		},
+		{
+			"name": "L_FIXEDSIZE",
+			"value": "Fixed size mode"
+		},
+		{
+			"name": "L_SQL_PRE",
+			"value": "Pre Processing"
+		},
+		{
+			"name": "L_DLOCALE_MGR",
+			"value": "Dictionary Locale"
+		},
+		{
+			"name": "L_LM_EXP",
+			"value": "Export Locale Data"
+		},
+		{
+			"name": "L_LM_LCS",
+			"value": "Add Locale Item"
+		},
+		{
+			"name": "L_LM_IMP",
+			"value": "Import Locale Data"
+		},
+		{
+			"name": "L_E_DEL",
+			"value": "Delete"
+		},
+		{
+			"name": "B_DELETE",
+			"value": "Delete"
+		},
+		{
+			"name": "B_REMOVE",
+			"value": "Remove"
+		},
+		{
+			"name": "L_DELETE_ITEM",
+			"value": "Delete @"
+		},
+		{
+			"name": "L_RELATION_VIEW",
+			"value": "Relation view"
+		},
+		{
+			"name": "L_PAD_TOP",
+			"value": "Top"
+		},
+		{
+			"name": "L_LNK_DRILL",
+			"value": "Drill to Detail"
+		},
+		{
+			"name": "L_DRILLREPORT",
+			"value": "Use for Detail view"
+		},
+		{
+			"name": "L_DET_VIEW",
+			"value": "Detail View"
+		},
+		{
+			"name": "T_DRILL_CONFIG",
+			"value": "Detail View Config"
+		},
+		{
+			"name": "L_DRILL_ON",
+			"value": "Columns to Drill"
+		},
+		{
+			"name": "M_DETAIL",
+			"value": "Details"
+		},
+		{
+			"name": "B_TOP",
+			"value": "Top"
+		},
+		{
+			"name": "L_RANK_TOP",
+			"value": "Rank Top"
+		},
+		{
+			"name": "L_B_U",
+			"value": "Go Up"
+		},
+		{
+			"name": "B_STATUS",
+			"value": "Status"
+		},
+		{
+			"name": "L_NEW_RPT_VIEWER",
+			"value": "New Report Viewer"
+		},
+		{
+			"name": "I_WORKSPACE",
+			"value": "New Workspace"
+		},
+		{
+			"name": "L_NEW_PANEL",
+			"value": "New Panel"
+		},
+		{
+			"name": "L_REFRESH",
+			"value": "Refresh"
+		},
+		{
+			"name": "L_BAND_COLOR",
+			"value": "Color"
+		},
+		{
+			"name": "B_COLOR",
+			"value": "Color"
+		},
+		{
+			"name": "B_OWNER",
+			"value": "Owner"
+		},
+		{
+			"name": "B_CR",
+			"value": "Create .."
+		},
+		{
+			"name": "L_TYPE_ITEM_NAME",
+			"value": "Set item name to create"
+		},
+		{
+			"name": "I_SERVER_CONFIG",
+			"value": "Server Config"
+		},
+		{
+			"name": "M_ERR_CONNECT",
+			"value": "Failed to get connection on server! Please retry later"
+		},
+		{
+			"name": "L_P_inv_svc",
+			"value": "Invoke Service"
+		},
+		{
+			"name": "B_SEL",
+			"value": "Select"
+		},
+		{
+			"name": "B_MOVE_DOWN",
+			"value": "Move row down"
+		},
+		{
+			"name": "B_MOVE_UP",
+			"value": "Move row up"
+		},
+		{
+			"name": "B_CD_MHS",
+			"value": "Do you like move checked items to @?"
+		},
+		{
+			"name": "B_CD_CHS",
+			"value": "Do you like delete checked items?"
+		},
+		{
+			"name": "L_DELETE_CHECKED",
+			"value": "Delete checked"
+		},
+		{
+			"name": "L_REMOVE_SELECTED",
+			"value": "Remove selected"
+		},
+		{
+			"name": "B_DESC",
+			"value": "Description"
+		},
+		{
+			"name": "L_DESCRIPTION",
+			"value": "Description"
+		},
+		{
+			"name": "L_PREFERENCES",
+			"value": "Preferences"
+		},
+		{
+			"name": "L_DESKTOP_SETTING",
+			"value": "Setting"
+		},
+		{
+			"name": "L_CHANGE_SETTING",
+			"value": "Change Setting"
+		},
+		{
+			"name": "L_SEL_MODE",
+			"value": "Select Mode"
+		},
+		{
+			"name": "M_SUCCESS",
+			"value": "Success!"
+		},
+		{
+			"name": "B_SUCCESS",
+			"value": "Successfully completed process"
+		},
+		{
+			"name": "L_CVAL_DESC",
+			"value": "Type text with semi-colon delimiter"
+		},
+		{
+			"name": "L_HL_CELL",
+			"value": "Cell Only"
+		},
+		{
+			"name": "L_PADDING",
+			"value": "Padding"
+		},
+		{
+			"name": "L_NUMBER_PRECISION",
+			"value": "Numeric Precision"
+		},
+		{
+			"name": "B_PROPERTY",
+			"value": "Property"
+		},
+		{
+			"name": "D_FORMULA",
+			"value": "Formula"
+		},
+		{
+			"name": "L_FORMULA",
+			"value": "Formula"
+		},
+		{
+			"name": "D_FORMULAMEASURE",
+			"value": "Formula"
+		},
+		{
+			"name": "L_CFIT_FOR",
+			"value": "Show Formula"
+		},
+		{
+			"name": "L_USE_FORMULA",
+			"value": "Show formula"
+		},
+		{
+			"name": "T_FORMULA_MEASURE",
+			"value": "Formula Measure"
+		},
+		{
+			"name": "L_SYNTAX_FORMULA",
+			"value": "Formula Syntax"
+		},
+		{
+			"name": "L_S_GRST",
+			"value": "Group Results"
+		},
+		{
+			"name": "L_S_TROW",
+			"value": "Show on top row"
+		},
+		{
+			"name": "L_SEP_COL",
+			"value": "Separate Column"
+		},
+		{
+			"name": "B_MODI",
+			"value": "Modifier"
+		},
+		{
+			"name": "L_VERTICAL",
+			"value": "Vertical"
+		},
+		{
+			"name": "L_ALIGN_VERTICAL",
+			"value": "Vertical Align"
+		},
+		{
+			"name": "L_LAYOUT_VERTICAL",
+			"value": "vertical"
+		},
+		{
+			"name": "L_HORIZONTAL",
+			"value": "Horizontal"
+		},
+		{
+			"name": "L_LAYOUT_HORIZONTAL",
+			"value": "horizontal"
+		},
+		{
+			"name": "F_RNK",
+			"value": "Rank"
+		},
+		{
+			"name": "L_RNK_VAL",
+			"value": "Rank on Value"
+		},
+		{
+			"name": "L_RANK_OPTION",
+			"value": "Rank Options"
+		},
+		{
+			"name": "L_RNK_CNT",
+			"value": "Rank Count"
+		},
+		{
+			"name": "L_RNK_PAR",
+			"value": "Partition By"
+		},
+		{
+			"name": "L_BTN_TRGALLDESC",
+			"value": "Recursively validate all filters including hidden panel"
+		},
+		{
+			"name": "B_HIDE",
+			"value": "Hidden"
+		},
+		{
+			"name": "B_NUMERIC",
+			"value": "Numeric"
+		},
+		{
+			"name": "L_NUM_PREC",
+			"value": "Number precision"
+		},
+		{
+			"name": "T_BG_SC",
+			"value": "Shell Command"
+		},
+		{
+			"name": "B_SHEET_NAME",
+			"value": "Sheet name"
+		},
+		{
+			"name": "L_R_ANAL_CUBE_LBL",
+			"value": "Sheet Cube"
+		},
+		{
+			"name": "T_SHEET_OPTION",
+			"value": "Sheet Option"
+		},
+		{
+			"name": "L_SHEET_OPTIONS",
+			"value": "Sheet Options"
+		},
+		{
+			"name": "L_SHEET_NUM",
+			"value": "Sheet Number"
+		},
+		{
+			"name": "L_ADD_SHEET",
+			"value": "Add Sheet"
+		},
+		{
+			"name": "L_C_SCH",
+			"value": "Loaded with schedule results. Would you like to query to server?"
+		},
+		{
+			"name": "L_REG_SCH",
+			"value": "Register Schedule"
+		},
+		{
+			"name": "I_SCHEDULE",
+			"value": "Schedule Monitoring"
+		},
+		{
+			"name": "L_LST_SCH",
+			"value": "Schedule List"
+		},
+		{
+			"name": "L_SC_CT",
+			"value": "Schedule Type"
+		},
+		{
+			"name": "B_SCHEDULE",
+			"value": "Schedule"
+		},
+		{
+			"name": "L_SCRIPT_WIZARD",
+			"value": "Script Wizard"
+		},
+		{
+			"name": "D_SCHEMA",
+			"value": "Schema"
+		},
+		{
+			"name": "L_SCHEMA",
+			"value": "Schema"
+		},
+		{
+			"name": "L_SCHEMA_NAME",
+			"value": "Schema Name"
+		},
+		{
+			"name": "L_REN_SCH",
+			"value": "Change Name"
+		},
+		{
+			"name": "B_ST_NAME",
+			"value": "Style"
+		},
+		{
+			"name": "L_LOOK_AND_FEEL",
+			"value": "Look and Feel"
+		},
+		{
+			"name": "L_GRID_STYLE",
+			"value": "Set Grid Style"
+		},
+		{
+			"name": "L_STYLE_OPTION",
+			"value": "Style Option"
+		},
+		{
+			"name": "L_OPT_STYLE",
+			"value": "Style Option"
+		},
+		{
+			"name": "L_LD_ST",
+			"value": "Styles"
+		},
+		{
+			"name": "L_STYLENAME",
+			"value": "Style name"
+		},
+		{
+			"name": "L_ST_NAME",
+			"value": "Style name"
+		},
+		{
+			"name": "L_F_STR",
+			"value": "String Format"
+		},
+		{
+			"name": "L_CLOSEABLE",
+			"value": "Closable"
+		},
+		{
+			"name": "L_TC_DU",
+			"value": "Duration (mili second)"
+		},
+		{
+			"name": "B_HOUR",
+			"value": "Hour"
+		},
+		{
+			"name": "L_DF_TS",
+			"value": "Time Separate"
+		},
+		{
+			"name": "L_TIME_FMT",
+			"value": "Time Format"
+		},
+		{
+			"name": "L_TC_TA",
+			"value": "Time axis"
+		},
+		{
+			"name": "L_TIMEZONE",
+			"value": "Timezone"
+		},
+		{
+			"name": "L_TZ_OFFSET",
+			"value": "Time Offset"
+		},
+		{
+			"name": "L_SHOW_TZ",
+			"value": "Show Timezone"
+		},
+		{
+			"name": "T_DM",
+			"value": "DateMetric Editor"
+		},
+		{
+			"name": "L_TIME_OPTION",
+			"value": "Time series option"
+		},
+		{
+			"name": "L_SERIES_LAYOUT",
+			"value": "Series Layout"
+		},
+		{
+			"name": "L_SERIES",
+			"value": "Series Option"
+		},
+		{
+			"name": "L_SERIES_TYPE",
+			"value": "Series Type"
+		},
+		{
+			"name": "L_SYSTEM",
+			"value": "System"
+		},
+		{
+			"name": "T_SYS_RES",
+			"value": "System Resources"
+		},
+		{
+			"name": "L_SYS_RES",
+			"value": "System Resources"
+		},
+		{
+			"name": "I_SYSMON",
+			"value": "System Monitoring"
+		},
+		{
+			"name": "D_PRIVATECONTENT",
+			"value": "System Document"
+		},
+		{
+			"name": "I_ABOUT_DETAIL",
+			"value": "About"
+		},
+		{
+			"name": "L_S_LK",
+			"value": "System Lookup"
+		},
+		{
+			"name": "B_T_FR",
+			"value": "From Time"
+		},
+		{
+			"name": "B_DT_FR",
+			"value": "From Date"
+		},
+		{
+			"name": "L_MAKESTYLE",
+			"value": "Define new style"
+		},
+		{
+			"name": "L_PWD_NEW",
+			"value": "New Password"
+		},
+		{
+			"name": "L_MAKEITEM_G",
+			"value": "Make Item"
+		},
+		{
+			"name": "L_MAKEITEM",
+			"value": "Make Item (@)"
+		},
+		{
+			"name": "S_REL",
+			"value": "Reliable"
+		},
+		{
+			"name": "B_EXECUTE",
+			"value": "Execute"
+		},
+		{
+			"name": "L_RUN",
+			"value": "Run"
+		},
+		{
+			"name": "L_RUN_BUTTON",
+			"value": "Run Button"
+		},
+		{
+			"name": "L_BTN_TRG",
+			"value": "Trigger Run event"
+		},
+		{
+			"name": "B_UNDO",
+			"value": "Undo changes"
+		},
+		{
+			"name": "L_BTN_ROW_ON",
+			"value": "Button at Row No."
+		},
+		{
+			"name": "L_BTN_TRGDESC",
+			"value": "When click on run button, trigger other filter box values."
+		},
+		{
+			"name": "L_RUN_REPORT",
+			"value": "Run"
+		},
+		{
+			"name": "B_NO",
+			"value": "No"
+		},
+		{
+			"name": "L_PAD_BOTTOM",
+			"value": "Bottom"
+		},
+		{
+			"name": "L_INPUT_USERID",
+			"value": "ID"
+		},
+		{
+			"name": "B_ID",
+			"value": "ID"
+		},
+		{
+			"name": "B_INSIDE",
+			"value": "Inside"
+		},
+		{
+			"name": "L_INNER_RADIUS",
+			"value": "Inner radius"
+		},
+		{
+			"name": "L_EVENT_WIZARD",
+			"value": "Action Wizard"
+		},
+		{
+			"name": "L_APPL",
+			"value": "Application"
+		},
+		{
+			"name": "L_SW_APP",
+			"value": "Switch Application"
+		},
+		{
+			"name": "L_LOCALE_MANAGER",
+			"value": "Locale Manager"
+		},
+		{
+			"name": "L_SELECT_LOCALE",
+			"value": "Select Language"
+		},
+		{
+			"name": "I_LOC_MGR",
+			"value": "Locale Manager"
+		},
+		{
+			"name": "L_R_UT_DRILL",
+			"value": "Update Sheet"
+		},
+		{
+			"name": "L_DATA_TAB",
+			"value": "Uploaded Data"
+		},
+		{
+			"name": "L_STG_LINE",
+			"value": "Stagger Line"
+		},
+		{
+			"name": "L_DF_YF",
+			"value": "Year Format"
+		},
+		{
+			"name": "B_OP",
+			"value": "Operator"
+		},
+		{
+			"name": "L_HL_COL",
+			"value": "Columns"
+		},
+		{
+			"name": "L_P_COL",
+			"value": "Column Dimensios"
+		},
+		{
+			"name": "L_AREA_COLUMN",
+			"value": "Column"
+		},
+		{
+			"name": "L_ENGLISH",
+			"value": "English"
+		},
+		{
+			"name": "L_MAP_AXIS",
+			"value": "Map Axis"
+		},
+		{
+			"name": "B_ZOOM",
+			"value": "Zoom"
+		},
+		{
+			"name": "B_OK",
+			"value": "OK"
+		},
+		{
+			"name": "B_YES",
+			"value": "Yes"
+		},
+		{
+			"name": "L_CFIT_FCS",
+			"value": "Forecast"
+		},
+		{
+			"name": "M_ERROR",
+			"value": "Error"
+		},
+		{
+			"name": "L_ALIGN_RIGHT",
+			"value": "Right"
+		},
+		{
+			"name": "L_PAD_RIGHT",
+			"value": "Right"
+		},
+		{
+			"name": "B_ASC",
+			"value": "Ascending"
+		},
+		{
+			"name": "B_ORDER_ASC",
+			"value": "Order Ascending"
+		},
+		{
+			"name": "B_OVERFLOW",
+			"value": "Overflow"
+		},
+		{
+			"name": "B_AMPM",
+			"value": "AM PM"
+		},
+		{
+			"name": "L_DF_APM",
+			"value": "AM/PM"
+		},
+		{
+			"name": "L_EXP_OFFICE",
+			"value": "Office Direct"
+		},
+		{
+			"name": "L_EXPORT_OFFICE",
+			"value": "Office Direct"
+		},
+		{
+			"name": "B_OPTION",
+			"value": "Option"
+		},
+		{
+			"name": "L_OPTIONS",
+			"value": "Options"
+		},
+		{
+			"name": "S_SKEW",
+			"value": "Skewness"
+		},
+		{
+			"name": "L_LNK_EXT",
+			"value": "External URL Link"
+		},
+		{
+			"name": "L_R_CMENU",
+			"value": "External Drill Target"
+		},
+		{
+			"name": "L_ALIGN_LEFT",
+			"value": "Left"
+		},
+		{
+			"name": "L_PAD_LEFT",
+			"value": "Left"
+		},
+		{
+			"name": "L_DF_WD",
+			"value": "Weekday"
+		},
+		{
+			"name": "B_WEEK",
+			"value": "Week"
+		},
+		{
+			"name": "L_DF_WF",
+			"value": "Weekday Format"
+		},
+		{
+			"name": "L_DF_WD_O",
+			"value": "Weekday Order"
+		},
+		{
+			"name": "L_BORDER_RIGHT",
+			"value": "Border right"
+		},
+		{
+			"name": "L_DATE_FORMAT_SRC",
+			"value": "Source Date Format"
+		},
+		{
+			"name": "B_MONTH",
+			"value": "Month"
+		},
+		{
+			"name": "L_DF_MF",
+			"value": "Month Format"
+		},
+		{
+			"name": "B_WEEKMONTH",
+			"value": "Week Month"
+		},
+		{
+			"name": "L_EXPORT_PRINT",
+			"value": "HTML Print"
+		},
+		{
+			"name": "L_LATITUDE",
+			"value": "Latitude"
+		},
+		{
+			"name": "L_RO_INST1",
+			"value": "Please select options above."
+		},
+		{
+			"name": "B_LOC",
+			"value": "Location"
+		},
+		{
+			"name": "L_P_open_win",
+			"value": "Open Window"
+		},
+		{
+			"name": "L_ML_C3",
+			"value": "Utility Node"
+		},
+		{
+			"name": "L_FEATURE",
+			"value": "Feature"
+		},
+		{
+			"name": "B_TYPE",
+			"value": "Type"
+		},
+		{
+			"name": "L_TYPE",
+			"value": "Type"
+		},
+		{
+			"name": "T_RSN",
+			"value": "Report Twit"
+		},
+		{
+			"name": "M_NOT_EDITABLE",
+			"value": "Not allowed to edit this item!"
+		},
+		{
+			"name": "L_GOTO",
+			"value": "Goto"
+		},
+		{
+			"name": "L_MOVE",
+			"value": "Move"
+		},
+		{
+			"name": "L_B_MVT",
+			"value": "Move To"
+		},
+		{
+			"name": "B_NAME",
+			"value": "name"
+		},
+		{
+			"name": "L_RENAME",
+			"value": "Rename"
+		},
+		{
+			"name": "L_RENAME_ITEM",
+			"value": "Rename @"
+		},
+		{
+			"name": "T_RENAME_ITEM",
+			"value": "Rename item (@)"
+		},
+		{
+			"name": "L_EMAIL",
+			"value": "Email"
+		},
+		{
+			"name": "L_NOTI_EMAIL",
+			"value": "Notify Email"
+		},
+		{
+			"name": "T_SAVE_IMAGE",
+			"value": "Image"
+		},
+		{
+			"name": "L_SAVE_IMAGE",
+			"value": "Save as Image"
+		},
+		{
+			"name": "L_BTN_EVT",
+			"value": "Run with event"
+		},
+		{
+			"name": "L_C_PREV",
+			"value": "Prev"
+		},
+		{
+			"name": "B_PREVIOUS",
+			"value": "Previous"
+		},
+		{
+			"name": "L_CLC_PERI",
+			"value": "Expire After"
+		},
+		{
+			"name": "B_DAY",
+			"value": "Day"
+		},
+		{
+			"name": "L_C_D_NAMES_M",
+			"value": "SU#MO#TU#WE#TH#FR#SA"
+		},
+		{
+			"name": "L_C_D_NAMES_S",
+			"value": "Sun#Mon#Tue#Wed#Thu#Fri#Sat"
+		},
+		{
+			"name": "B_GENERAL",
+			"value": "General"
+		},
+		{
+			"name": "L_LAYOUT_NORMAL",
+			"value": "normal"
+		},
+		{
+			"name": "L_GENERAL_OPTION",
+			"value": "General Options"
+		},
+		{
+			"name": "L_C_D_NAMES",
+			"value": "Sunday#Monday#Tuesday#Wednesday#Thursday#Friday#Saturday"
+		},
+		{
+			"name": "L_DF_DS",
+			"value": "Date Separate"
+		},
+		{
+			"name": "L_DF_DF",
+			"value": "Day Format"
+		},
+		{
+			"name": "L_AUTO_WIDTH",
+			"value": "Auto size"
+		},
+		{
+			"name": "L_BUILD",
+			"value": "Suggested Build Item"
+		},
+		{
+			"name": "L_ML_LEARN",
+			"value": "Learn"
+		},
+		{
+			"name": "D_CLASSMODULE",
+			"value": "ClassModule"
+		},
+		{
+			"name": "D_JAVAPACKAGE",
+			"value": "Java Package"
+		},
+		{
+			"name": "L_P_execute_script",
+			"value": "Run JavaScript"
+		},
+		{
+			"name": "L_M_SUBJ_REC",
+			"value": "Recently used items"
+		},
+		{
+			"name": "L_F_LE",
+			"value": "Less or Equal (<=)"
+		},
+		{
+			"name": "L_F_LE_NOT",
+			"value": "Not Less or Equal (>)"
+		},
+		{
+			"name": "L_F_LT",
+			"value": "Less then (<)"
+		},
+		{
+			"name": "L_JB_STAT",
+			"value": "Job Status"
+		},
+		{
+			"name": "D_WORKSPACE",
+			"value": "Workspace"
+		},
+		{
+			"name": "B_WORKSPACE",
+			"value": "Workspace"
+		},
+		{
+			"name": "L_WORKSPACE",
+			"value": "New Workspace"
+		},
+		{
+			"name": "L_C_MW",
+			"value": "Manage Workspace"
+		},
+		{
+			"name": "L_F_LT_NOT",
+			"value": "Not Less then (>=)"
+		},
+		{
+			"name": "B_UNLOCK",
+			"value": "Unlock"
+		},
+		{
+			"name": "B_SAVE",
+			"value": "Save"
+		},
+		{
+			"name": "L_SELECT_PATH",
+			"value": "Select path to create"
+		},
+		{
+			"name": "M_ERR_NSAVE",
+			"value": "Need to save content!"
+		},
+		{
+			"name": "B_APPLY",
+			"value": "Apply"
+		},
+		{
+			"name": "L_APPL_R",
+			"value": "Apply on"
+		},
+		{
+			"name": "L_CLC_HOUR",
+			"value": "Clear At"
+		},
+		{
+			"name": "L_TM_ALG",
+			"value": "Algorithms"
+		},
+		{
+			"name": "L_LAYOUT_CASCADE",
+			"value": "cascade"
+		},
+		{
+			"name": "L_DRILL_PARAM",
+			"value": "Columns to Params"
+		},
+		{
+			"name": "L_FETCH_ALL",
+			"value": "Fetch All Data"
+		},
+		{
+			"name": "B_SHOW_ALL",
+			"value": "Show All"
+		},
+		{
+			"name": "L_EN_DRILL",
+			"value": "Drill to All"
+		},
+		{
+			"name": "L_EN_DRILL_DESC",
+			"value": "Check to drill to all sheets"
+		},
+		{
+			"name": "L_CFIT_SS",
+			"value": "Show Summary curves"
+		},
+		{
+			"name": "L_ALL_VALUE",
+			"value": "All Value"
+		},
+		{
+			"name": "F_P_POT",
+			"value": "Percent of Total"
+		},
+		{
+			"name": "E_SWA_CFM",
+			"value": "Please select application name to switch to."
+		},
+		{
+			"name": "L_FONT_ALIGNMENT",
+			"value": "Alignment"
+		},
+		{
+			"name": "L_SORT_SEL",
+			"value": "Methods to Sorting"
+		},
+		{
+			"name": "L_SORT_TP",
+			"value": "Sort Type"
+		},
+		{
+			"name": "L_DF_OS",
+			"value": "Order style"
+		},
+		{
+			"name": "L_SORT_ORD",
+			"value": "Sorting Orders"
+		},
+		{
+			"name": "L_SORT_OPTION",
+			"value": "Rank and Sorting"
+		},
+		{
+			"name": "L_F_SORT",
+			"value": "Sort Field"
+		},
+		{
+			"name": "T_SORT_OPTION",
+			"value": "Sort Options"
+		},
+		{
+			"name": "M_INFO",
+			"value": "Info!"
+		},
+		{
+			"name": "L_REMOVE",
+			"value": "Remove"
+		},
+		{
+			"name": "L_SHOW_TITLE",
+			"value": "Show title"
+		},
+		{
+			"name": "L_TITLE_OPTION",
+			"value": "Title Setting"
+		},
+		{
+			"name": "L_CONDITION",
+			"value": "Condition"
+		},
+		{
+			"name": "L_ADD_CONDITION",
+			"value": "Add condition"
+		},
+		{
+			"name": "M_S_S2",
+			"value": "No results found for registered tables."
+		},
+		{
+			"name": "L_JOIN",
+			"value": "Join"
+		},
+		{
+			"name": "L_ADD_JOIN",
+			"value": "Add Join"
+		},
+		{
+			"name": "L_BTN_SEARCH",
+			"value": "Search"
+		},
+		{
+			"name": "L_ROW_LIMIT_COUNT",
+			"value": "Limit Count"
+		},
+		{
+			"name": "B_NO_DATA",
+			"value": "No Data"
+		},
+		{
+			"name": "L_EMPTY_DATA",
+			"value": "Empty in this list"
+		},
+		{
+			"name": "L_VIEW_MODE_LBL",
+			"value": "Data query viewer"
+		},
+		{
+			"name": "B_PROC",
+			"value": "Processing request..<br>Please wait a moment."
+		},
+		{
+			"name": "L_BAND_VALUE_2",
+			"value": "Value to"
+		},
+		{
+			"name": "B_T_TO",
+			"value": "To Time"
+		},
+		{
+			"name": "B_DT_TO",
+			"value": "To Date"
+		},
+		{
+			"name": "L_F_VALUE_TO",
+			"value": "To Value"
+		},
+		{
+			"name": "L_T_LOGOUT",
+			"value": "Logout"
+		},
+		{
+			"name": "L_M_LOGOUT",
+			"value": "Are you sure you want to logout?"
+		},
+		{
+			"name": "L_C_W_H",
+			"value": "Week"
+		},
+		{
+			"name": "L_DISTINCT_QUERY",
+			"value": "Distinct Query"
+		},
+		{
+			"name": "L_DISTINCT",
+			"value": "Return distinct all rows"
+		},
+		{
+			"name": "S_MEDIAN",
+			"value": "Median"
+		},
+		{
+			"name": "B_FAVORITES",
+			"value": "Favorites"
+		},
+		{
+			"name": "M_SAVED_FAV",
+			"value": "Added in Favorites list"
+		},
+		{
+			"name": "L_C_FC",
+			"value": "My Favorites"
+		},
+		{
+			"name": "F_INC",
+			"value": "Incremental"
+		},
+		{
+			"name": "L_GEO_FIELD",
+			"value": "Geo Location"
+		},
+		{
+			"name": "L_CONTACT_HELP",
+			"value": "For support please contact"
+		},
+		{
+			"name": "L_EV_MIN",
+			"value": "Every Minutes"
+		},
+		{
+			"name": "L_SC_C3",
+			"value": "Run once at time"
+		},
+		{
+			"name": "L_EV_HOUR",
+			"value": "Every Hour"
+		},
+		{
+			"name": "M_UNKNOWN",
+			"value": "Unknown Error!"
+		},
+		{
+			"name": "L_E_VALUE",
+			"value": "Type Values"
+		},
+		{
+			"name": "L_AGGR",
+			"value": "Aggregation"
+		},
+		{
+			"name": "F_DIFF",
+			"value": "Difference"
+		},
+		{
+			"name": "L_CSTEP_1",
+			"value": "Chart"
+		},
+		{
+			"name": "T_CHART_WIZARD",
+			"value": "Chart Designer"
+		},
+		{
+			"name": "L_CLR_SET",
+			"value": "Color Set"
+		},
+		{
+			"name": "T_CHART_SERIES",
+			"value": "Chart Series"
+		},
+		{
+			"name": "L_CSTEP_4",
+			"value": "Plot Area"
+		},
+		{
+			"name": "L_CHART_OPTION",
+			"value": "Data Pivot Option"
+		},
+		{
+			"name": "L_CHART_GROUP",
+			"value": "Chart category"
+		},
+		{
+			"name": "L_CHART_THEME",
+			"value": "Chart theme"
+		},
+		{
+			"name": "T_CHART_PLOTBAND",
+			"value": "Chart Plot Band"
+		},
+		{
+			"name": "L_VIEW_CHART",
+			"value": "Chart view"
+		},
+		{
+			"name": "L_CHART_TYPE",
+			"value": "Chart type"
+		},
+		{
+			"name": "L_MAX_CHART_ELEMENT",
+			"value": "Data Elements"
+		},
+		{
+			"name": "T_BG_SCR",
+			"value": "Command Result"
+		},
+		{
+			"name": "L_WAIT_1",
+			"value": "Please wait while processing request"
+		},
+		{
+			"name": "S_HOME",
+			"value": "Home"
+		},
+		{
+			"name": "S_KURT",
+			"value": "Kurtosis"
+		},
+		{
+			"name": "B_SECOND",
+			"value": "Second"
+		},
+		{
+			"name": "B_DEFAULT",
+			"value": "Default"
+		},
+		{
+			"name": "B_CLEAR",
+			"value": "Clear"
+		},
+		{
+			"name": "L_C_LC",
+			"value": "Most recent contents"
+		},
+		{
+			"name": "L_BB_MS",
+			"value": "Max bubble size"
+		},
+		{
+			"name": "S_MAX",
+			"value": "Maximum"
+		},
+		{
+			"name": "F_MAX",
+			"value": "Maximum"
+		},
+		{
+			"name": "F_MIN",
+			"value": "Minimum"
+		},
+		{
+			"name": "L_MIN_WIDTH",
+			"value": "Min width"
+		},
+		{
+			"name": "L_MIN_HEIGHT",
+			"value": "Min height"
+		},
+		{
+			"name": "S_MIN",
+			"value": "Minimum"
+		},
+		{
+			"name": "L_LAST_UPD",
+			"value": "Last updated time :"
+		},
+		{
+			"name": "B_LASTUPD",
+			"value": "Last Updated"
+		},
+		{
+			"name": "B_ADD",
+			"value": "Add"
+		},
+		{
+			"name": "L_ML_C4a",
+			"value": "Inference"
+		},
+		{
+			"name": "L_SWAP_AXIS",
+			"value": "Swap axis"
+		},
+		{
+			"name": "T_BG_OP",
+			"value": "Output"
+		},
+		{
+			"name": "L_TB_PRT_T",
+			"value": "Export Target(s)"
+		},
+		{
+			"name": "T_EXPORT_WIZARD",
+			"value": "Export Wizard"
+		},
+		{
+			"name": "L_TB_PRT",
+			"value": "Export Buttons"
+		},
+		{
+			"name": "L_EXP_MET",
+			"value": "Menu Control"
+		},
+		{
+			"name": "L_EXP_MET_DESC",
+			"value": "Check menu items to use in this report."
+		},
+		{
+			"name": "L_LNK_DOC",
+			"value": "Download Export File"
+		},
+		{
+			"name": "L_OUTP_TYPE",
+			"value": "Output Type"
+		},
+		{
+			"name": "L_PG_RANGE",
+			"value": "Page range"
+		},
+		{
+			"name": "L_PG_START",
+			"value": "Page Start from"
+		},
+		{
+			"name": "B_PROC_CANCEL",
+			"value": "Cancel"
+		},
+		{
+			"name": "B_CANCEL",
+			"value": "Cancel"
+		},
+		{
+			"name": "L_USE_CACHE",
+			"value": "Use Cache"
+		},
+		{
+			"name": "L_CACHE_PERI",
+			"value": "Cache Period"
+		},
+		{
+			"name": "L_CACHE_RULE",
+			"value": "Cache Rule"
+		},
+		{
+			"name": "I_EXP_SCH",
+			"value": "Content Search Options"
+		},
+		{
+			"name": "T_EXP_MC",
+			"value": "Export Content"
+		},
+		{
+			"name": "T_EXP_MC_Q",
+			"value": "Would you continue to export content to file?"
+		},
+		{
+			"name": "L_CONTROLLER",
+			"value": "Control"
+		},
+		{
+			"name": "L_FIX_COLUMN",
+			"value": "Fix Column"
+		},
+		{
+			"name": "L_COL_VIS",
+			"value": "Column Visible"
+		},
+		{
+			"name": "L_COL_SIZE",
+			"value": "Column Size"
+		},
+		{
+			"name": "L_COLUMN_WIDTH",
+			"value": "Column Width"
+		},
+		{
+			"name": "L_R_COLUMN_FIT",
+			"value": "Fit column to panel"
+		},
+		{
+			"name": "L_COL_TREE",
+			"value": "Make Column Header Tree"
+		},
+		{
+			"name": "L_ML_C6",
+			"value": "Cases"
+		},
+		{
+			"name": "L_ML_C6b",
+			"value": "Remove Case"
+		},
+		{
+			"name": "L_ML_C6a",
+			"value": "Add Case"
+		},
+		{
+			"name": "B_CODE",
+			"value": "Code"
+		},
+		{
+			"name": "L_CODEMAPPING",
+			"value": "CodeMapping"
+		},
+		{
+			"name": "D_CODEMAP",
+			"value": "Code Mapping"
+		},
+		{
+			"name": "L_LOOKUP",
+			"value": "Metric Lookup"
+		},
+		{
+			"name": "L_CODE_FIELD",
+			"value": "Code Mapping"
+		},
+		{
+			"name": "T_CODE_MAPPING",
+			"value": "Code Mapping"
+		},
+		{
+			"name": "I_QRY_TOOL",
+			"value": "Query Tool"
+		},
+		{
+			"name": "L_DB_SCHEDULE_QUERYTIMEOUT",
+			"value": "Query Timeout(Scheduler)"
+		},
+		{
+			"name": "L_DB_QUERYTIMEOUT",
+			"value": "Query Timeout(S)"
+		},
+		{
+			"name": "L_CUBE",
+			"value": "Cube"
+		},
+		{
+			"name": "T_CUBE",
+			"value": "Cube"
+		},
+		{
+			"name": "L_R_ANAL_CUBE_LB",
+			"value": "Cube"
+		},
+		{
+			"name": "L_MC_DATA_EDT",
+			"value": "Cube Data Editor"
+		},
+		{
+			"name": "B_BUILD",
+			"value": "Create Cube"
+		},
+		{
+			"name": "L_BUILD_CUBE",
+			"value": "Build Cube"
+		},
+		{
+			"name": "L_SAVE_CUBE",
+			"value": "Save Cube"
+		},
+		{
+			"name": "B_B_CUBE",
+			"value": "Click continue to start automatic cube build process."
+		},
+		{
+			"name": "T_CUBE_MODEL",
+			"value": "Cube Model"
+		},
+		{
+			"name": "L_BUILD_MODEL",
+			"value": "Model Wizard"
+		},
+		{
+			"name": "L_SHOW_PIVOT",
+			"value": "Show CubeFolder"
+		},
+		{
+			"name": "L_E_CB",
+			"value": "Edit Cube"
+		},
+		{
+			"name": "L_F_GE",
+			"value": "Greater or Equal (>=)"
+		},
+		{
+			"name": "L_F_GE_NOT",
+			"value": "Not Greater or Equal (<)"
+		},
+		{
+			"name": "L_F_GT",
+			"value": "Greater then (>)"
+		},
+		{
+			"name": "L_F_GT_NOT",
+			"value": "Not Greater then (<=)"
+		},
+		{
+			"name": "L_SCALE_DOWN",
+			"value": "Scale down when necessary"
+		},
+		{
+			"name": "L_CLASS_MOD",
+			"value": "Class Module"
+		},
+		{
+			"name": "L_P_CLUSTER",
+			"value": "Cluster Dimension"
+		},
+		{
+			"name": "L_CLUSTER",
+			"value": "Cluster"
+		},
+		{
+			"name": "L_CLIPBOARD_COPY",
+			"value": "Copy to Clipboard"
+		},
+		{
+			"name": "B_CLIPBOARD",
+			"value": "Copy to clipboard"
+		},
+		{
+			"name": "L_EMPTY_SEARCH",
+			"value": "Search keyword"
+		},
+		{
+			"name": "L_F_LIKE",
+			"value": "Include keyword (LIKE)"
+		},
+		{
+			"name": "L_F_LIKE_NOT",
+			"value": "Not Include keyword (NOT LIKE)"
+		},
+		{
+			"name": "B_TITLE",
+			"value": "Title"
+		},
+		{
+			"name": "L_TITLE",
+			"value": "Title text"
+		},
+		{
+			"name": "L_HIDE_TITLE",
+			"value": "Hide Title"
+		},
+		{
+			"name": "L_STYLE_TITLE",
+			"value": "Title Style"
+		},
+		{
+			"name": "L_T_DIR",
+			"value": "Title Location"
+		},
+		{
+			"name": "L_TITLE_POSITION",
+			"value": "Title position"
+		},
+		{
+			"name": "L_OPT_TBAR",
+			"value": "Title Bar Options"
+		},
+		{
+			"name": "L_BROWSE_ITEM",
+			"value": "Browse @"
+		},
+		{
+			"name": "T_BROWSER",
+			"value": "Browser"
+		},
+		{
+			"name": "S_NAVI",
+			"value": "Navigator"
+		},
+		{
+			"name": "T_TAB_BROWSER",
+			"value": "Tabbed Browser"
+		},
+		{
+			"name": "L_SHOW_TAB_BAR",
+			"value": "Show Tab buttons"
+		},
+		{
+			"name": "L_R_CM_SHOWTAB",
+			"value": "Open in Tab"
+		},
+		{
+			"name": "L_NEW_TABPANEL",
+			"value": "New TabPanel"
+		},
+		{
+			"name": "D_TENANT",
+			"value": "Tenant"
+		},
+		{
+			"name": "L_ADD_TENANT",
+			"value": "Add Tenant"
+		},
+		{
+			"name": "L_BORDER_COLOR",
+			"value": "Border color"
+		},
+		{
+			"name": "M_SUC_DBCON",
+			"value": "Successful to connect db"
+		},
+		{
+			"name": "I_TABLE_REGISTER",
+			"value": "Table Register"
+		},
+		{
+			"name": "L_REG_TABLE",
+			"value": "Table Register"
+		},
+		{
+			"name": "L_TABLES",
+			"value": "Table Source"
+		},
+		{
+			"name": "L_TBL_ORD",
+			"value": "Table Order"
+		},
+		{
+			"name": "L_ERR_CUBE_ITEMS",
+			"value": "Mismatched or Error items exist on cube. Modify and save cube to update mismatched information."
+		},
+		{
+			"name": "L_P_RELOAD",
+			"value": "Click Refresh to load."
+		},
+		{
+			"name": "L_NEW_TEXTAREA",
+			"value": "New TextArea"
+		},
+		{
+			"name": "L_F_DISP",
+			"value": "Display Field"
+		},
+		{
+			"name": "L_AUTO_ROT",
+			"value": "Rotate Text"
+		},
+		{
+			"name": "L_APPLY_TMPL",
+			"value": "Apply Template"
+		},
+		{
+			"name": "L_F_TMPL",
+			"value": "Apply Template"
+		},
+		{
+			"name": "L_EXPORT_JASPER",
+			"value": "JasperReport"
+		},
+		{
+			"name": "T_DB_TMPL",
+			"value": "Database template"
+		},
+		{
+			"name": "M_SEL_MODEL",
+			"value": "Select model on toolbar button to continue cube design."
+		},
+		{
+			"name": "B_TREEVIEW",
+			"value": "Tree"
+		},
+		{
+			"name": "L_TREE_VIEW",
+			"value": "Tree View"
+		},
+		{
+			"name": "L_ENABLE_TREE_VIEW",
+			"value": "Enable Tree View"
+		},
+		{
+			"name": "L_TREEM_OPTION",
+			"value": "TreeMap Options"
+		},
+		{
+			"name": "L_TM_CL",
+			"value": "TreeMap Class"
+		},
+		{
+			"name": "L_SCC_REC",
+			"value": "Recurr with Interval"
+		},
+		{
+			"name": "L_SCC_DATE",
+			"value": "Recurr on Time"
+		},
+		{
+			"name": "L_PIE_OPTION",
+			"value": "Pie Option"
+		},
+		{
+			"name": "L_IMPORT_FILE",
+			"value": "Import File"
+		},
+		{
+			"name": "L_FILEEXT",
+			"value": "Extension"
+		},
+		{
+			"name": "L_SELECT_FILE",
+			"value": "Select File..."
+		},
+		{
+			"name": "L_FILENAME",
+			"value": "File Name"
+		},
+		{
+			"name": "T_EXCEL_LOADER",
+			"value": "LocalData Loader"
+		},
+		{
+			"name": "L_LAYOUT_POPUP",
+			"value": "popup"
+		},
+		{
+			"name": "L_PANEL_H",
+			"value": "Panel Height"
+		},
+		{
+			"name": "L_PANEL_W",
+			"value": "Panel Width"
+		},
+		{
+			"name": "L_INPUT_PASSWORD",
+			"value": "Password"
+		},
+		{
+			"name": "T_PASSWORD_CHANGE",
+			"value": "Password"
+		},
+		{
+			"name": "L_DB_PWD",
+			"value": "Password"
+		},
+		{
+			"name": "L_PWD_LABEL",
+			"value": "Secure password"
+		},
+		{
+			"name": "L_PASSWORD",
+			"value": "Change Password"
+		},
+		{
+			"name": "L_CH_PASSWD",
+			"value": "Change Password"
+		},
+		{
+			"name": "L_PWD_CONFIRM",
+			"value": "Confirm New Password"
+		},
+		{
+			"name": "M_BLANK_PWD",
+			"value": "Password should not be blank"
+		},
+		{
+			"name": "L_STACK_PERCENT",
+			"value": "Stack by Percentage"
+		},
+		{
+			"name": "L_PAGING",
+			"value": "Paging"
+		},
+		{
+			"name": "L_PG_DIRECTION",
+			"value": "Page Direction"
+		},
+		{
+			"name": "L_SHOW_PAGENUMBER",
+			"value": "Show page number"
+		},
+		{
+			"name": "L_PAGE_STYLE",
+			"value": "Page Style"
+		},
+		{
+			"name": "L_PAGE_OPTIONS",
+			"value": "Page Options"
+		},
+		{
+			"name": "L_PG_SIZE",
+			"value": "Page Size"
+		},
+		{
+			"name": "L_FOOTER",
+			"value": "Footer"
+		},
+		{
+			"name": "L_REPEAT_HEADER",
+			"value": "Repeat header"
+		},
+		{
+			"name": "L_ROW_P_PAGE",
+			"value": "Rows per Page"
+		},
+		{
+			"name": "L_PG_LOADER",
+			"value": "Page Loading"
+		},
+		{
+			"name": "L_USE_PAGING",
+			"value": "Use pagination"
+		},
+		{
+			"name": "L_EDIT",
+			"value": "Edit"
+		},
+		{
+			"name": "L_ML_C4b",
+			"value": "Editor"
+		},
+		{
+			"name": "L_E_IT",
+			"value": "Edit Item"
+		},
+		{
+			"name": "L_EDIT_ITEM",
+			"value": "Edit @"
+		},
+		{
+			"name": "L_EDITOR_TYPE",
+			"value": "Editor Type"
+		},
+		{
+			"name": "M_LOCK_TITLE",
+			"value": "Content Locked"
+		},
+		{
+			"name": "S_AVG",
+			"value": "Average"
+		},
+		{
+			"name": "F_AVG",
+			"value": "Average"
+		},
+		{
+			"name": "L_C_FMT_VAL",
+			"value": "Use Formatted Value"
+		},
+		{
+			"name": "B_WIDTH",
+			"value": "Width"
+		},
+		{
+			"name": "L_FIXED_W",
+			"value": "Fix Width"
+		},
+		{
+			"name": "L_FONT_SELECT",
+			"value": "Font Selection"
+		},
+		{
+			"name": "L_FONT_ST",
+			"value": "Font Style"
+		},
+		{
+			"name": "L_FONTSIZE",
+			"value": "Fontsize"
+		},
+		{
+			"name": "D_FOLDER",
+			"value": "Folder"
+		},
+		{
+			"name": "B_FOLDER",
+			"value": "Folder"
+		},
+		{
+			"name": "T_MGR_FOLDER",
+			"value": "Folder Manager"
+		},
+		{
+			"name": "L_BB_STEP_2",
+			"value": "Create Folder Structures"
+		},
+		{
+			"name": "L_CREATE_FOLDER",
+			"value": "Create Folder"
+		},
+		{
+			"name": "L_REG_FOLDER",
+			"value": "Add Folder"
+		},
+		{
+			"name": "L_MGR_FD",
+			"value": "Manage Folder"
+		},
+		{
+			"name": "L_FOLDER_ITEMS",
+			"value": "Folder Items"
+		},
+		{
+			"name": "L_DATE_FORMAT_TGT",
+			"value": "Display Date Format"
+		},
+		{
+			"name": "L_DISP_TITLE",
+			"value": "Display Title"
+		},
+		{
+			"name": "B_DISP_NAME",
+			"value": "Display Name"
+		},
+		{
+			"name": "S_STDERR",
+			"value": "Standard Error"
+		},
+		{
+			"name": "S_STDEV",
+			"value": "Standard deviation"
+		},
+		{
+			"name": "L_R_RUN_PROP",
+			"value": "Run Properties"
+		},
+		{
+			"name": "T_PROMPT_DLG",
+			"value": "Prompt"
+		},
+		{
+			"name": "T_PROMPT_MSG",
+			"value": "Fill value for change condition"
+		},
+		{
+			"name": "L_PROMPT_TYPE",
+			"value": "Prompt Type"
+		},
+		{
+			"name": "L_FLOATING",
+			"value": "Floating"
+		},
+		{
+			"name": "L_PLOT_STYLES",
+			"value": "Plot Styles"
+		},
+		{
+			"name": "L_ENABLE_PIVOT",
+			"value": "Enable Pivot"
+		},
+		{
+			"name": "L_PIVOT",
+			"value": "Design"
+		},
+		{
+			"name": "L_V_PIVOT",
+			"value": "Pivot Mode"
+		},
+		{
+			"name": "T_PIVOT_EDITOR",
+			"value": "Report Designer"
+		},
+		{
+			"name": "L_PIVOT_REPORT",
+			"value": "Design"
+		},
+		{
+			"name": "B_REQ",
+			"value": "Required Field"
+		},
+		{
+			"name": "T_DB_BLANK",
+			"value": "Field is required."
+		},
+		{
+			"name": "L_FILTER",
+			"value": "Filter"
+		},
+		{
+			"name": "L_R_OPT_FILTER",
+			"value": "Filter Options"
+		},
+		{
+			"name": "T_DYNFILTER_CONFIG",
+			"value": "Filter Config"
+		},
+		{
+			"name": "L_SHOW_FILTER_INFO",
+			"value": "Show filter information"
+		},
+		{
+			"name": "L_CLEAR_FLT",
+			"value": "Clear Filter"
+		},
+		{
+			"name": "L_NEW_FILTER",
+			"value": "New Filter"
+		},
+		{
+			"name": "B_SET_FILTER",
+			"value": "Set Filter"
+		},
+		{
+			"name": "L_BORDER_BOTTOM",
+			"value": "Border bottom"
+		},
+		{
+			"name": "L_HADOOP",
+			"value": "Hadoop Management"
+		},
+		{
+			"name": "L_HD_BFLOW",
+			"value": "Hadoop BizFlow"
+		},
+		{
+			"name": "B_BOTTOM",
+			"value": "Bottom"
+		},
+		{
+			"name": "L_RANK_BOTTOM",
+			"value": "Rank Bottom"
+		},
+		{
+			"name": "L_C_ITEMS",
+			"value": "Sub Items"
+		},
+		{
+			"name": "L_TB_HL",
+			"value": "Config Highlight"
+		},
+		{
+			"name": "T_HL_OPT",
+			"value": "Highlight Options"
+		},
+		{
+			"name": "L_R_UT_DESC",
+			"value": "On check one or multi, only drill to selected."
+		},
+		{
+			"name": "L_KOREAN",
+			"value": "Korean"
+		},
+		{
+			"name": "L_EXPORT_ODF_EXCEL",
+			"value": "Open SpreadSheet"
+		},
+		{
+			"name": "L_EXPORT_ODF_WORD",
+			"value": "Open Document"
+		},
+		{
+			"name": "L_EXPORT_ODF_PPT",
+			"value": "Open Presentation"
+		},
+		{
+			"name": "L_FUNC",
+			"value": "Function"
+		},
+		{
+			"name": "L_SYNTAX",
+			"value": "Syntax"
+		},
+		{
+			"name": "S_SUM",
+			"value": "Summary"
+		},
+		{
+			"name": "L_ITEM",
+			"value": "Item"
+		},
+		{
+			"name": "L_NAVIGATOR",
+			"value": "Navigator"
+		},
+		{
+			"name": "B_DELETE_ITEM",
+			"value": "Delete item"
+		},
+		{
+			"name": "L_CR_TP_SEL",
+			"value": "Select Item"
+		},
+		{
+			"name": "B_CONFIG_ITEM",
+			"value": "Config Item"
+		},
+		{
+			"name": "L_SAVE_EXCEL",
+			"value": "Save Content"
+		},
+		{
+			"name": "L_CREATE_ITEM",
+			"value": "Create Item"
+		},
+		{
+			"name": "L_ADD_NEW",
+			"value": "Add New"
+		},
+		{
+			"name": "L_ITEMNAME",
+			"value": "Item name"
+		},
+		{
+			"name": "L_AU_TITLE",
+			"value": "Set object access for duty"
+		},
+		{
+			"name": "L_F_NOTIN",
+			"value": "Not Including"
+		},
+		{
+			"name": "L_TABLE_DROP",
+			"value": "To register drag Field to Middle Region."
+		},
+		{
+			"name": "L_C_DEL_ITEM",
+			"value": "Do you want to remove item?"
+		},
+		{
+			"name": "L_SELECT_ITEM",
+			"value": "Select item to continue"
+		},
+		{
+			"name": "L_DYN_SELECT",
+			"value": "Check values"
+		},
+		{
+			"name": "M_SEL_ITEM",
+			"value": "Select item to continue."
+		},
+		{
+			"name": "M_DELETED",
+			"value": "Successfully removed content"
+		},
+		{
+			"name": "L_SAVE_CONTENT",
+			"value": "Save Content"
+		},
+		{
+			"name": "T_META_SAVE",
+			"value": "Save Item As..."
+		},
+		{
+			"name": "E_NO_MATCH_FLD",
+			"value": "Not found matching item from list."
+		},
+		{
+			"name": "L_HL_ROW",
+			"value": "Rows"
+		},
+		{
+			"name": "L_BB_YA",
+			"value": "Row data to Y Axis"
+		},
+		{
+			"name": "L_BB_SL",
+			"value": "Show RowData legend"
+		},
+		{
+			"name": "L_P_ROW",
+			"value": "Row Dimensions"
+		},
+		{
+			"name": "L_ROW_SIZE",
+			"value": "Row Size"
+		},
+		{
+			"name": "L_AREA_ROW",
+			"value": "Row"
+		},
+		{
+			"name": "M_NA",
+			"value": "Not Allowed operations."
+		},
+		{
+			"name": "L_M_C_SAVE_DESKTOP",
+			"value": "Do you want to save desktop information currently opened?"
+		},
+		{
+			"name": "L_FILE_APPEND",
+			"value": "Append on current tab"
+		},
+		{
+			"name": "L_C_CUR",
+			"value": "Current,"
+		},
+		{
+			"name": "L_P_cls",
+			"value": "Close Window"
+		},
+		{
+			"name": "L_APPL_TMPL",
+			"value": "Application Template"
+		},
+		{
+			"name": "L_HL_RANGE",
+			"value": "Apply on"
+		},
+		{
+			"name": "L_SWA_CFM",
+			"value": "Do you want to continue to logout and login in another project?"
+		},
+		{
+			"name": "B_CONFIRM",
+			"value": "Confirm"
+		},
+		{
+			"name": "B_ACTIVE",
+			"value": "Active"
+		},
+		{
+			"name": "L_A_USR",
+			"value": "Active Users"
+		},
+		{
+			"name": "L_ACTIVATE",
+			"value": "Activate"
+		},
+		{
+			"name": "L_CFIT_TYPE",
+			"value": "CurveFit Type"
+		},
+		{
+			"name": "L_SC_ACTION",
+			"value": "Schedule Action"
+		},
+		{
+			"name": "L_C_DC",
+			"value": "Deleted Contents"
+		},
+		{
+			"name": "T_TRASHBIN",
+			"value": "TrashBin"
+		},
+		{
+			"name": "L_C_CD",
+			"value": "Deleted Content"
+		},
+		{
+			"name": "L_RANGE_FIELD",
+			"value": "Range Field"
+		},
+		{
+			"name": "L_META_MIG",
+			"value": "Meta Migration"
+		},
+		{
+			"name": "L_C_INLINEV",
+			"value": "Inline View"
+		},
+		{
+			"name": "L_IMP_TB",
+			"value": "Import Table"
+		},
+		{
+			"name": "L_TENANT",
+			"value": "Tenant"
+		},
+		{
+			"name": "B_DATATYPE",
+			"value": "Data Type"
+		},
+		{
+			"name": "L_SERVER_HOST",
+			"value": "Server Host"
+		},
+		{
+			"name": "L_ML",
+			"value": "Machine Learning"
+		},
+		{
+			"name": "B_PHY_NAME",
+			"value": "Physical Name"
+		},
+		{
+			"name": "I_LOGOUT",
+			"value": "Logout button for secure session out."
+		},
+		{
+			"name": "L_MIG",
+			"value": "Migration"
+		},
+		{
+			"name": "L_B_CUBE",
+			"value": "Cube Processing"
+		},
+		{
+			"name": "L_ENDPOINT_URL",
+			"value": "Endpoint URL"
+		},
+		{
+			"name": "L_SYS_BACKSCH",
+			"value": "Background Schedule"
+		},
+		{
+			"name": "B_SEQUENCE",
+			"value": "Order"
+		},
+		{
+			"name": "L_SUBSCRIBE",
+			"value": "Subscribe"
+		},
+		{
+			"name": "L_DEPLOY_SVR",
+			"value": "Deploy Server"
+		},
+		{
+			"name": "I_START_INTRO",
+			"value": "Start introduction"
+		},
+		{
+			"name": "I_COLLAPSE_BTN",
+			"value": "Collapse and Expand side panel."
+		},
+		{
+			"name": "I_MAINMENU",
+			"value": "Main menu (Click twice to see on full screen)"
+		},
+		{
+			"name": "I_SEARCH_MAIN",
+			"value": "Search with keyword to find report and object"
+		},
+		{
+			"name": "I_NAVIGATOR",
+			"value": "Navigation panel to contents"
+		},
+		{
+			"name": "I_MAIN_WS",
+			"value": "Main workspace area"
+		},
+		{
+			"name": "I_APP_AREA",
+			"value": "Application area."
+		},
+		{
+			"name": "I_SAVE_CNT",
+			"value": "Save content "
+		},
+		{
+			"name": "I_RUN_REPORT",
+			"value": "Run report."
+		},
+		{
+			"name": "I_ADD_VIEW",
+			"value": "Add view and widget."
+		},
+		{
+			"name": "I_SHEET_AREA",
+			"value": "Sheet area."
+		},
+		{
+			"name": "I_SHEET_TITLE",
+			"value": "Sheet Title"
+		},
+		{
+			"name": "I_SHEET_VIEW",
+			"value": "Sheet View"
+		},
+		{
+			"name": "I_BTN_PIVOTOPTION",
+			"value": "Pivot Option to change fields and columns"
+		},
+		{
+			"name": "I_BTN_WIDGET_CONF",
+			"value": "Widget Configuration button to settup detailed information."
+		},
+		{
+			"name": "L_AUTO_JOIN",
+			"value": "Auto Join"
+		},
+		{
+			"name": "L_JOIN_BEUTIFY",
+			"value": "Auto Layout tables"
+		},
+		{
+			"name": "L_UPLOAD",
+			"value": "Upload file"
+		},
+		{
+			"name": "L_RNK_SVAL",
+			"value": "Sort by value"
+		},
+		{
+			"name": "L_SEL_RPT",
+			"value": "Select Report"
+		},
+		{
+			"name": "L_SEL_DBD",
+			"value": "Select Dashboard"
+		},
+		{
+			"name": "L_DESIGN",
+			"value": "Design mode"
+		},
+		{
+			"name": "L_APPL_THEME",
+			"value": "Application Theme"
+		},
+		{
+			"name": "M_VALIDATED",
+			"value": "Validated successfully!"
+		},
+		{
+			"name": "T_ML_LEARN",
+			"value": "Machine Learning"
+		},
+		{
+			"name": "T_HD_CFG_CL",
+			"value": "Hadoop Configuration"
+		},
+		{
+			"name": "T_Resources",
+			"value": "Resources"
+		},
+		{
+			"name": "T_DYN_LFILE",
+			"value": "Filter by fileupload"
+		},
+		{
+			"name": "L_DYN_LFILE",
+			"value": "Upload file and make filter with values"
+		},
+		{
+			"name": "T_REPORT_STYLE",
+			"value": "Report Style"
+		},
+		{
+			"name": "T_BA_1",
+			"value": "Bayes Analysis"
+		},
+		{
+			"name": "B_INTRO",
+			"value": "Introduction"
+		},
+		{
+			"name": "B_PREV",
+			"value": "Prev"
+		},
+		{
+			"name": "B_SKIP",
+			"value": "Skip"
+		},
+		{
+			"name": "B_OBJ_NAME",
+			"value": "Object name"
+		},
+		{
+			"name": "B_DATA_ZOOM",
+			"value": "Data Zoom"
+		},
+		{
+			"name": "B_C_DELETE",
+			"value": "Click ok to continue delete!"
+		},
+		{
+			"name": "B_SELECT_FOLDER",
+			"value": "Select folder to continue;"
+		},
+		{
+			"name": "B_SELECT_TARGET",
+			"value": "Select target object to continue;"
+		},
+		{
+			"name": "B_TEMPLATES",
+			"value": "Templates"
+		},
+		{
+			"name": "B_CONFIG",
+			"value": "Configuration"
+		},
+		{
+			"name": "B_VIEWMODE",
+			"value": "View Mode"
+		},
+		{
+			"name": "B_EDITMODE",
+			"value": "Edit Mode"
+		},
+		{
+			"name": "B_PARAMTERS",
+			"value": "Parameters"
+		},
+		{
+			"name": "B_NOT_EXECUTED",
+			"value": "Not executed"
+		},
+		{
+			"name": "B_VALIDATE",
+			"value": "Validate"
+		},
+		{
+			"name": "L_AUTH",
+			"value": "Authentication"
+		},
+		{
+			"name": "T_GRD_CFG",
+			"value": "Grid Configuration"
+		},
+		{
+			"name": "L_FORMVIEWER",
+			"value": "Form Viewer"
+		},
+		{
+			"name": "L_M_TITLE",
+			"value": "Measure title"
+		},
+		{
+			"name": "L_M_EXT_TITLE",
+			"value": "Extra title"
+		},
+		{
+			"name": "L_PAGE_FILTER",
+			"value": "Page filter"
+		},
+		{
+			"name": "L_TENANT_NAME",
+			"value": "Tenant name"
+		},
+		{
+			"name": "L_LICENSE_INFO",
+			"value": "License info"
+		},
+		{
+			"name": "L_ALLOWED_USERS",
+			"value": "Allowed users"
+		},
+		{
+			"name": "L_REG_DATE",
+			"value": "Reg date"
+		},
+		{
+			"name": "L_pf_navitree",
+			"value": "Pivot filter"
+		},
+		{
+			"name": "L_pf_fedit",
+			"value": "Pivot filter editor"
+		},
+		{
+			"name": "L_pf_filter",
+			"value": "Pivot filter"
+		},
+		{
+			"name": "L_SAVE_CONTENT_AS",
+			"value": "Save content as"
+		},
+		{
+			"name": "L_DATA_SOURCE",
+			"value": "Data source"
+		},
+		{
+			"name": "T_DB_GEN",
+			"value": "DB generator"
+		},
+		{
+			"name": "L_P_export",
+			"value": "Export"
+		},
+		{
+			"name": "L_ERR_L_MOD",
+			"value": "Error while loading module!"
+		},
+		{
+			"name": "I_DLOC_MGR",
+			"value": "Dictionary management"
+		},
+		{
+			"name": "I_META_MIG",
+			"value": "Meta migration"
+		},
+		{
+			"name": "L_REG_DATASET",
+			"value": "Register dataset"
+		},
+		{
+			"name": "T_MIG_DISCO",
+			"value": "Oracle Discoverer Migration"
+		},
+		{
+			"name": "L_METRIC_ITEMS",
+			"value": "Metric items"
+		},
+		{
+			"name": "T_DBD_VAR",
+			"value": "Dashboard variables"
+		},
+		{
+			"name": "E_LM_SEL",
+			"value": "Select locale from combobox first!"
+		},
+		{
+			"name": "T_TORSP_RS",
+			"value": "Tornado spider results"
+		},
+		{
+			"name": "L_LNK_TP",
+			"value": "Link field"
+		},
+		{
+			"name": "T_SUBSCR_AUTH",
+			"value": "Subscribtion authenticate"
+		},
+		{
+			"name": "T_NET_PROP",
+			"value": "Network property"
+		},
+		{
+			"name": "M_APP_LOADED",
+			"value": "Application loaded successfully!"
+		},
+		{
+			"name": "L_F_COMMENT",
+			"value": "Comment"
+		},
+		{
+			"name": "M_SAVE_PROGRESS",
+			"value": "Save is in progressing.. Please wait!"
+		},
+		{
+			"name": "M_DEF_DATE",
+			"value": "Default date"
+		},
+		{
+			"name": "L_DB_VAL",
+			"value": "DB Value"
+		},
+		{
+			"name": "L_SF_AUTHMETHOD",
+			"value": "Salesforce auth method"
+		},
+		{
+			"name": "L_SF_SECTOKEN",
+			"value": "Salesforce token"
+		},
+		{
+			"name": "L_TARGET_DB",
+			"value": "Target database"
+		},
+		{
+			"name": "T_JASP_TMPL",
+			"value": "Jasper template"
+		},
+		{
+			"name": "L_HIERARCHY",
+			"value": "Hierarchy"
+		},
+		{
+			"name": "T_FM_SEL",
+			"value": "Formula selection"
+		},
+		{
+			"name": "T_FM_SEL_CONFIG",
+			"value": "Formula configuration"
+		},
+		{
+			"name": "L_ADD_FILTER",
+			"value": "Add filter"
+		},
+		{
+			"name": "T_INT_LEARN",
+			"value": "Interactive learning"
+		},
+		{
+			"name": "L_VIEW_PYTHON",
+			"value": "Python"
+		},
+		{
+			"name": "L_R_OPTIONS",
+			"value": "R options"
+		},
+		{
+			"name": "L_PY_EDIT",
+			"value": "Python edit"
+		},
+		{
+			"name": "T_COST_EFF",
+			"value": "Cost effectiveness"
+		},
+		{
+			"name": "L_GS_ENABLED",
+			"value": "Gs enabled"
+		},
+		{
+			"name": "L_ALT_COLOR",
+			"value": "Alternative color"
+		},
+		{
+			"name": "L_REG_LINK",
+			"value": "Register link"
+		},
+		{
+			"name": "L_TB_FORM_V",
+			"value": "Form viewer"
+		},
+		{
+			"name": "L_EMAIL_BURSTING",
+			"value": "Email bursting"
+		},
+		{
+			"name": "L_BAYES",
+			"value": "Machine Learning"
+		},
+		{
+			"name": "L_BAYES_RPT",
+			"value": "ML Report"
+		},
+		{
+			"name": "L_DISCO",
+			"value": "Discoverer Migration"
+		},
+		{
+			"name": "L_SEL_DB",
+			"value": "Select Datasource"
+		},
+		{
+			"name": "L_BOBJ",
+			"value": "Business Object"
+		},
+		{
+			"name": "L_SETTINGS",
+			"value": "Settings"
+		},
+		{
+			"name": "D_BOBJECT",
+			"value": "Business Object"
+		},
+		{
+			"name": "L_V_SYNC",
+			"value": "Sync with Sheet"
+		},
+		{
+			"name": "L_NEW_STORYVIEW",
+			"value": "Add StoryIt"
+		},
+		{
+			"name": "L_XLS_BUTTON",
+			"value": "Show Excel button"
+		},
+		{
+			"name": "L_XLS_STYLE",
+			"value": "Excel Button Style"
+		},
+		{
+			"name": "L_VIEW_ANAL",
+			"value": "View Analysis"
+		},
+		{
+			"name": "L_D_EXCEL",
+			"value": "Download"
+		},
+		{
+			"name": "L_SYS_CONFIG",
+			"value": "System Config"
+		}
+	]
+}

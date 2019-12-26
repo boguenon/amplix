@@ -1,1 +1,4732 @@
-{"meta_type":"locales","objinfo":{},"name":"zh_CN","type":"Unknown","writable":false,"manage":false,"is_sub":false,"attributes":{},"data":[{"name":"L_CM_DISP_2","value":"*在此处拖动项目以定义此度量"},{"name":"L_CD_DISP_2","value":"*拖动度量项或单击“添加”按钮"},{"name":"L_TIME_FMT_DSC","value":"*如果是日期格式项，则应用"},{"name":"L_FM_DISP1","value":"*双击字段添加功能。"},{"name":"L_CM_DISP_1","value":"*双击字段添加功能"},{"name":"L_FM_DISP2","value":"*在此处拖动项目以定义此度量。"},{"name":"L_ME_DISP1","value":"*双击字段添加功能"},{"name":"L_C_DCOUNT","value":"@ Counts"},{"name":"L_VIEW_ITEM","value":"查看@"},{"name":"L_C_DATE","value":"@的细节"},{"name":"M_SEL_ERR","value":"@ 有必要的。请选择价值"},{"name":"I_ABOUT","value":"关于 @"},{"name":"E_D_EVNT","value":"处理evnet @时出错。"},{"name":"L_C_TOTAL","value":"总计@"},{"name":"E_PV_L","value":"内容特权错误：（@）"},{"name":"L_C_M_NAMES_S","value":"一月#二月#三月#四月#五月#六月#七月#八月#九月#十月#十一月#十二月"},{"name":"L_C_M_NAMES","value":"一月#二月#三月#四月#五月#六月#七月#八月#九月#十月#十一月#十二月"},{"name":"L_DUAL_AXIS","value":"双YAxis"},{"name":"L_CONTACT_CRED","value":"版权和复制; 1996-2010"},{"name":"L_EXPORT_CSV","value":"CSV"},{"name":"L_DB_MON","value":"数据库监控"},{"name":"L_DB_CHARSET","value":"DB CharSet"},{"name":"L_OUTPUT_CHARSET","value":"输出CharSet"},{"name":"L_TABLE_FIELD","value":"数据库表"},{"name":"L_EXPORT_DOCX","value":"DOCX导出"},{"name":"B_GO","value":"走"},{"name":"D_HIERARCHY","value":"等级制度"},{"name":"T_BG_HIVEJOB","value":"蜂巢工作"},{"name":"L_EXPORT_HTML","value":"HTML视图"},{"name":"L_EXP_JASP","value":"碧玉"},{"name":"D_JAVACLASS","value":"Java类"},{"name":"L_JDBC_URL","value":"JDBC URL"},{"name":"L_JDBC_DRV","value":"JDBC驱动程序"},{"name":"T_MDB_CUBE","value":"MDB访问分析"},{"name":"L_MDB_OPTION","value":"MDB选项"},{"name":"L_MONGODB","value":"MongoDB的"},{"name":"L_MONGO_DATA","value":"MongoDB数据"},{"name":"L_MONGO_DPROC","value":"MongoDB进程"},{"name":"D_MDBCUBE","value":"MS Access DataCube"},{"name":"L_MDB_CUBE","value":"MS Access DataCube"},{"name":"L_EXPORT_EXCEL","value":"MS Excel"},{"name":"L_EXPORT_PPT","value":"MS PPT"},{"name":"D_NOSQL","value":"NoSQL数据库"},{"name":"L_OP_NOT","value":"不操作"},{"name":"L_EXPORT_PDF","value":"PDF"},{"name":"L_ML_C7","value":"加载PGMX"},{"name":"L_R_WIZARD","value":"R精灵"},{"name":"L_R_PARAM","value":"R参数"},{"name":"L_R_SUMMARY","value":"R摘要"},{"name":"L_R_SCRIPT","value":"R脚本编辑器"},{"name":"L_VIEW_RSTAT","value":"R统计"},{"name":"T_R_WIZARD","value":"R统计向导"},{"name":"L_EXPORT_RTF","value":"RTF导出"},{"name":"T_SELECT_POOL","value":"选择池"},{"name":"L_F_SQL_IS","value":"SQL是运算符（IS）"},{"name":"L_F_SQL_IS_NOT","value":"SQL不是运算符（不是）"},{"name":"L_LD_SQL","value":"SQL查询导入"},{"name":"I_SQLCUBE","value":"SQL向导"},{"name":"L_VIEW_SQL","value":"查看SQL"},{"name":"L_LD_SQL_D","value":"SQL源码"},{"name":"L_P_sql","value":"运行SQL"},{"name":"D_SQLCUBE","value":"SQL Cube"},{"name":"L_SQL_CUBE","value":"SQL Cube"},{"name":"L_EDIT_SQL","value":"编辑SQL"},{"name":"L_SQL_PRE_PROC","value":"SQL预处理器"},{"name":"D_UIPAGE","value":"UI页面"},{"name":"L_UIPAGE","value":"UI页面"},{"name":"L_LNK_URL","value":"URL地址"},{"name":"L_EXPORT_XML","value":"XML导出"},{"name":"L_CSTEP_5","value":"Y轴"},{"name":"L_YAXIS_FORMAT","value":"Y轴格式"},{"name":"L_YAXIS_TITLE","value":"YAxis标题"},{"name":"L_YAXIS_MAX","value":"Y轴最大值"},{"name":"L_YAXIS_MIN","value":"Y轴最小值"},{"name":"L_ALIGN_CENTER","value":"中央"},{"name":"L_SHOW_FIRST","value":"显示第一"},{"name":"S_BOTTOM","value":"底价"},{"name":"S_TOP","value":"最高价值"},{"name":"L_USE_MFMT","value":"使用测量格式"},{"name":"L_ML_CEFF_S","value":"敏感性分析"},{"name":"L_F_VALUE_LNG","value":"值"},{"name":"B_VALUES","value":"值"},{"name":"B_TEXT","value":"值"},{"name":"B_VALUE","value":"值"},{"name":"L_BAND_VALUE_1","value":"值"},{"name":"L_F_VALUE","value":"值"},{"name":"L_FLT_VAL_SCR","value":"验证功能"},{"name":"L_VAL_DELIM","value":"价值分隔符"},{"name":"B_COMBO_VAL","value":"列表值"},{"name":"L_P_valuelist","value":"填充值"},{"name":"T_VALUE_SELECT","value":"值选择向导"},{"name":"T_DYN_SELECT","value":"选择值..."},{"name":"L_STACK_VALUE","value":"堆栈值"},{"name":"L_VALUE_TYPE","value":"值类型"},{"name":"L_E_LIST","value":"从值中选择"},{"name":"B_CUST_VAL","value":"自定义值"},{"name":"L_SHOW_VALUE","value":"显示值"},{"name":"L_TK_INTVL","value":"勾选间隔"},{"name":"L_SELECT_VALUE","value":"选择值"},{"name":"L_FORMAT","value":"格式"},{"name":"L_AREA_MEASURE","value":"测量"},{"name":"L_F_EQ","value":"等于（=）"},{"name":"L_F_EQ_NOT","value":"不等于（<>）"},{"name":"L_OBJECT_TYPE","value":"对象类型"},{"name":"T_META_SELECT","value":"选择物品..."},{"name":"B_SEARCH","value":"搜索"},{"name":"L_SEARCH_KWD","value":"搜索"},{"name":"L_NEW_SHEET","value":"新表"},{"name":"L_ML_CEFF_D","value":"确定性分析"},{"name":"M_WARNING","value":"警告！"},{"name":"L_SC_C1","value":"之后运行一次"},{"name":"L_LONGITUDE","value":"经度"},{"name":"B_PATH","value":"路径"},{"name":"L_C_DIR","value":"计算方向"},{"name":"L_ERR_SAVE","value":"要继续之前保存内容。"},{"name":"L_DEPRIVATE","value":"锁定用户登录"},{"name":"L_HIGH_PREC","value":"高精度数"},{"name":"L_ADV_OPTION","value":"高级选项"},{"name":"L_ADVANCED_OPTION","value":"高级选项"},{"name":"L_R_FIXSIZE","value":"固定尺寸"},{"name":"B_SHARE","value":"分享"},{"name":"I_RELATION","value":"关系"},{"name":"T_MANAGE","value":"管理"},{"name":"L_MANAGEMENT","value":"管理"},{"name":"I_ADMIN","value":"管理员"},{"name":"S_COUNT","value":"计数"},{"name":"B_DELIMITER","value":"分隔符"},{"name":"L_LM_ADD","value":"添加国家代码"},{"name":"L_FONT_BOLD","value":"胆大"},{"name":"L_PRIVILEGE","value":"特权"},{"name":"D_AUTH","value":"义务"},{"name":"L_OBJECT_AUTH","value":"对象验证"},{"name":"T_OBJECT_AUTH","value":"对象验证"},{"name":"T_DUTY_LIST","value":"职责清单"},{"name":"L_ADD_DUTY","value":"添加责任"},{"name":"D_GROUP","value":"组"},{"name":"L_GROUP_LEVEL","value":"集团层面"},{"name":"L_GROUP_FIELD","value":"集团领域"},{"name":"W_SYNC_GRP","value":"你会在服务器中执行组同步吗？"},{"name":"L_GROUP_NAME","value":"团队名字"},{"name":"L_ADD_GROUP","value":"添加组"},{"name":"L_OPT_GRID","value":"网格选项"},{"name":"L_OVF_DESC","value":"检查绘制滚动网格的溢出"},{"name":"T_STYLE_WIZARD","value":"风格向导"},{"name":"L_TB_PRT_GRD","value":"出口网格"},{"name":"L_GRID_HMENU","value":"隐藏网格弹出菜单"},{"name":"L_VIEW_GRID","value":"工作表视图"},{"name":"L_FONT_FACE","value":"字体脸"},{"name":"L_FORE_COLOR","value":"前景色"},{"name":"L_DATE_OPTION","value":"日期选项"},{"name":"T_FEATURES","value":"特征"},{"name":"L_BASE_STYLE","value":"基本款式"},{"name":"L_STATISTICS","value":"基本统计"},{"name":"T_STATISTICS","value":"基本统计"},{"name":"L_SET_DEF","value":"默认情况下使用"},{"name":"L_FONT_ITALIC","value":"斜体"},{"name":"L_PREDEFINED_FIELD","value":"预定义字段"},{"name":"L_FILE_DELETE","value":"替换现有数据"},{"name":"L_PWD_OLD","value":"旧密码"},{"name":"L_OTHER_OPTION","value":"其他选择"},{"name":"L_OTHER_VALUE","value":"其他价值"},{"name":"L_ML_C1","value":"机会节点"},{"name":"L_C_PR","value":"私人内容"},{"name":"L_DATE_METRIC","value":"日期指标"},{"name":"D_DATEMETRIC","value":"日期指标"},{"name":"L_DATE_FORMAT","value":"日期格式"},{"name":"L_DATE_TYPE","value":"日期类型字段"},{"name":"B_DSC","value":"降序"},{"name":"B_ORDER_DSC","value":"订单降序"},{"name":"M_SAVED","value":"成功保存了内容"},{"name":"B_YEAR","value":"年"},{"name":"L_C_YR_SFX","value":"年"},{"name":"B_HEIGHT","value":"高度"},{"name":"L_FIXED_H","value":"修复高度"},{"name":"F_P_CUM","value":"累积总和Percent"},{"name":"L_SAVE_REPORT_AS","value":"保存为报告"},{"name":"L_SAVE_EXCEL_AS","value":"将内容另存为"},{"name":"L_SAVE_CONTENTAS","value":"将内容另存为......"},{"name":"B_NEXT","value":"下一个"},{"name":"L_C_NEXT","value":"下一个"},{"name":"E_SC_LD","value":"加载DynamicScript时出错"},{"name":"L_P_open_dlg","value":"打开对话框"},{"name":"T_M_TENANT","value":"多租户"},{"name":"L_CFIT_PORD","value":"多项式顺序"},{"name":"D_MOLAPCUBE","value":"MOLAP Cube"},{"name":"L_MOLAP_CUBE","value":"MOLAP Cube"},{"name":"T_MCUBE_WINDOW","value":"m尺寸立方体"},{"name":"L_BUILD_MCUBE","value":"构建多维数据集"},{"name":"L_UNIT_TEXT","value":"单位文字"},{"name":"L_P_PIVOT_UNIT","value":"枢轴单位"},{"name":"B_CLOSE","value":"关"},{"name":"L_C_CLOSE","value":"关"},{"name":"L_LNK_TGT","value":"浏览器目标"},{"name":"L_DRILL_PARAM_DESC","value":"检查列以过滤目标工作表"},{"name":"L_BASE_METRIC","value":"基本指标"},{"name":"L_SORT_SRC","value":"要排序的项目"},{"name":"D_DASHBOARD","value":"仪表板"},{"name":"L_DASHBOARD","value":"仪表板"},{"name":"T_DASHBOARD","value":"仪表板"},{"name":"L_MGR_DASHBOARD","value":"Dashaboard经理"},{"name":"L_DBD_MAP","value":"仪表板映射"},{"name":"I_MGR_DBD","value":"仪表板插件"},{"name":"L_CSTEP_2","value":"数据"},{"name":"L_DATA_LABEL","value":"数据标签"},{"name":"L_T_CUBE_SEL","value":"数据选择向导"},{"name":"L_EDIT_DATA","value":"编辑数据"},{"name":"T_Filter","value":"过滤数据"},{"name":"L_EMPTY","value":"没有数据。"},{"name":"L_BB_STEP_1","value":"准备数据"},{"name":"L_MENU_DB_MODEL","value":"关系数据模型"},{"name":"T_DB_CON","value":"数据库实例"},{"name":"L_DB_INSTANCE","value":"数据库实例"},{"name":"L_DB_TYPE","value":"数据库类型"},{"name":"L_DB_NAME","value":"数据库名称"},{"name":"M_S_S1","value":"未找到所选数据库实例的结果。"},{"name":"L_ADD_DB_INST","value":"添加数据库实例"},{"name":"L_VIEW_MODE","value":"查看模式"},{"name":"L_DATASET","value":"数据集"},{"name":"L_B_ADC","value":"DataFile Cube"},{"name":"D_TABDIMENSION","value":"数据分离维度"},{"name":"L_DATA_LABEL_FMT","value":"数据标签格式"},{"name":"L_PRV_DATA","value":"数据预览"},{"name":"L_DATA_OPTION","value":"数据选项"},{"name":"T_BG_DS","value":"数据源"},{"name":"L_STYLE_DATA","value":"数据样式"},{"name":"L_LD_LK","value":"连接连接"},{"name":"M_ERR_CDATA","value":"处理自定义数据报告时出错"},{"name":"T_FILTER","value":"过滤数据"},{"name":"L_NO_DATA","value":"没有数据"},{"name":"L_STACK_CHART","value":"堆叠系列"},{"name":"L_MSG_TABNAME","value":"键入标签维度的数据标签文本。"},{"name":"I_DATA","value":"数据"},{"name":"L_MGR_DATABASE","value":"数据库经理"},{"name":"L_REG_DATABASE","value":"注册数据库"},{"name":"I_DATABASE_CONNECTION","value":"数据库连接"},{"name":"T_DB_PWD","value":"数据库连接"},{"name":"T_DATA_UPLOAD","value":"上传DataFile"},{"name":"L_LD_FILE","value":"加载DataFile"},{"name":"L_SHOW_TOOL_BUTTON","value":"显示工具按钮"},{"name":"B_HELP","value":"救命"},{"name":"L_HELP_DOC","value":"帮助文档"},{"name":"I_HELP_MGR","value":"帮助经理"},{"name":"L_HELP_GUIDES","value":"帮助和指南"},{"name":"L_NEW_DOCUMENT","value":"添加文档"},{"name":"E_DUP_FOLDER","value":"不允许移动相同的文件夹"},{"name":"L_TB_BN","value":"找到此表中使用的相同节点名称。您想要更改所有名称吗？"},{"name":"L_V_DESC","value":"动态变量编辑器"},{"name":"L_F_BETWEEN_NOT","value":"不在值之间（不在两者之间）"},{"name":"L_F_BETWEEN","value":"值之间（BETWEEN）"},{"name":"B_BACK","value":"背部"},{"name":"L_DRAG_SELECT","value":"拖动选择"},{"name":"L_ENABLE_DRILL","value":"深入研究"},{"name":"L_R_UPD_TGT","value":"钻目标"},{"name":"L_BTN_LOGIN","value":"登录"},{"name":"L_ML_C2","value":"决策节点"},{"name":"L_ML_C5","value":"决策树"},{"name":"L_LABEL_DIST","value":"标签距离"},{"name":"L_SHOW_LABEL","value":"显示标签"},{"name":"L_LABEL_ALIGN","value":"标签对齐"},{"name":"L_L_STEP","value":"标签步骤"},{"name":"L_MARKER","value":"标记"},{"name":"L_CFIT_LC","value":"线条样式"},{"name":"L_BAND_BORDER","value":"边界"},{"name":"L_LINE_NUM","value":"电话号码"},{"name":"L_B_LAYOUT","value":"布局"},{"name":"B_OPT_LAYOUT","value":"布局"},{"name":"L_LAYOUT","value":"布局"},{"name":"L_LAYOUT_WIZARD","value":"布局向导"},{"name":"L_EDIT_LAYOUT","value":"编辑布局"},{"name":"T_LAYOUT","value":"布局模板"},{"name":"L_LOG_VIEW","value":"查看日志结果"},{"name":"L_LOGOUT","value":"登出"},{"name":"L_DESKTOP_LOGOUT","value":"登出"},{"name":"L_T_LOUT","value":"你想退出系统吗？"},{"name":"L_M_C_LOGOUT","value":"请单击是按钮退出。<br>单击否按钮取消"},{"name":"L_LOGIN_TITLE","value":"安全登录"},{"name":"B_LOGIN","value":"登录"},{"name":"L_ONLOAD_RUN","value":"加载时执行"},{"name":"T_LDATA_TITLE","value":"本地数据立方体选项"},{"name":"D_EXCELLOADER","value":"本地文件多维数据集"},{"name":"L_EXCEL_LOADER","value":"本地文件多维数据集"},{"name":"D_DATACUBE","value":"本地文件多维数据集"},{"name":"L_CLEAR_LOOKUP","value":"删除查找"},{"name":"L_RESOURCES","value":"资源"},{"name":"L_RESOURCE","value":"资源"},{"name":"D_REPORT","value":"报告"},{"name":"L_REPORT","value":"报告"},{"name":"T_REPORT_WINDOW","value":"报告"},{"name":"L_REPORT_TOOLS","value":"报告工具"},{"name":"L_REPORT_NAME","value":"报告名称"},{"name":"L_RPT_V_OPT","value":"报告查看器选项"},{"name":"L_MENU_REPORT","value":"创建报告"},{"name":"M_REPORT","value":"制作报告"},{"name":"L_P_RPT_C","value":"报告选项"},{"name":"I_REPORT_STYLE","value":"报告风格"},{"name":"T_GLOBAL_REPORT_STYLE","value":"外观和感觉"},{"name":"L_P_onlinereport","value":"运行报告"},{"name":"L_SYS_LOG","value":"系统日志"},{"name":"M_ERR_C_REP_PROC","value":"处理自定义报表处理程序时出错"},{"name":"T_REPORT_OPTION","value":"更改报告选项"},{"name":"L_CHANGE_REPORTTYPE","value":"更改报告类型"},{"name":"L_SAVE_REPORT","value":"保存报告"},{"name":"L_ADD_REPORT","value":"添加报告"},{"name":"T_RPT_PIVOT","value":"报告枢轴"},{"name":"L_MAP_ITEM","value":"映射到报告项目"},{"name":"L_LINK_FIELD","value":"链接字段"},{"name":"L_DRILL_ON_DESC","value":"检查列以显示链接。"},{"name":"B_WIZARD","value":"巫师"},{"name":"D_CHARTMEASURE","value":"微图表"},{"name":"L_CHART_MEASURE","value":"微图表"},{"name":"L_RNK_LST","value":"显示所有最后排名"},{"name":"L_L_TAB","value":"仅加载最后一个选项卡"},{"name":"D_CUBEMODEL","value":"ROLAP立方体模型"},{"name":"L_ROLAP_CUBE_MODEL","value":"ROLAP立方体模型"},{"name":"D_CUBE","value":"ROLAP Cube"},{"name":"L_ROLAP_CUBE","value":"ROLAP Cube"},{"name":"B_EVERY","value":"一切"},{"name":"L_EV_DAY","value":"每小时一天"},{"name":"T_BG_MR","value":"的Map / Reduce"},{"name":"L_MAP_OPT","value":"地图选项"},{"name":"L_MAP_TYPE","value":"地图类型"},{"name":"L_B_JV","value":"映射/减少Java"},{"name":"L_HD_MAPR","value":"地图减少"},{"name":"D_MCUBE","value":"MultiDimension Cube"},{"name":"L_MENU","value":"菜单"},{"name":"L_FEATURE_CTRL","value":"功能控制"},{"name":"L_MAIL_BD","value":"内容"},{"name":"L_P_MEASURE","value":"措施"},{"name":"D_MEASURE","value":"测量"},{"name":"L_MEASURE","value":"测量"},{"name":"T_MEASURE","value":"测量"},{"name":"L_GROUP_MEASURE","value":"集团措施"},{"name":"L_REG_MEASURES","value":"制定措施"},{"name":"T_M_MEASURE","value":"制定措施"},{"name":"T_M_Measure","value":"注册措施"},{"name":"L_M_NAME","value":"测量名称"},{"name":"L_M_FORMAT","value":"测量格式"},{"name":"L_M_POSITION","value":"测量位置"},{"name":"L_MEASURE_ON","value":"测量开"},{"name":"L_BB_STEP_3","value":"制定措施和时间指标"},{"name":"L_M_FILTER","value":"测量过滤器"},{"name":"L_META_IMPORT","value":"导入元文件"},{"name":"I_META_IMP","value":"加载元文件"},{"name":"T_META_IMP","value":"加载元文件"},{"name":"T_META_EDITOR","value":"元编辑器"},{"name":"L_EXPORT_META","value":"导出文件中的内容"},{"name":"D_METRIC","value":"公"},{"name":"L_METRIC","value":"公"},{"name":"L_MC_ELEM_EDT","value":"元素编辑器"},{"name":"L_T_LOOKUP","value":"查找选项"},{"name":"L_MONITORING","value":"监控"},{"name":"L_MODEL_CREATE","value":"创建模型"},{"name":"L_MODEL_SELECT","value":"选择型号"},{"name":"L_MODEL_EDIT","value":"编辑模型"},{"name":"L_LD_INI","value":"清除所有数据集"},{"name":"L_ALL_DATA","value":"所有数据"},{"name":"L_CFIT_AS","value":"所有系列曲线"},{"name":"L_LD_UL","value":"断开所有连接"},{"name":"L_C_AL","value":"所有内容"},{"name":"L_BTN_TRG_ALL","value":"验证过滤器"},{"name":"L_AU_APPLY_SUB","value":"应用所有子文件夹"},{"name":"L_F_IN_NOT","value":"不在列表中（不在内）"},{"name":"L_F_IN","value":"在列表中（IN）"},{"name":"L_LNK_TMPL","value":"文档模板"},{"name":"B_STRING","value":"串"},{"name":"L_PREVIEW","value":"预习"},{"name":"L_FONT_UNDERLINE","value":"强调"},{"name":"L_DELETE_SHORTCUT","value":"删除快捷方式"},{"name":"L_SC_PR","value":"期间运行"},{"name":"L_SCC_TYPE","value":"重复类型"},{"name":"L_SC_C2","value":"重复克朗"},{"name":"L_EXPORT_OPTION","value":"选项"},{"name":"L_EXPORT","value":"出口"},{"name":"L_MAIL_CC","value":"邮件CC"},{"name":"B_METHOD","value":"方法"},{"name":"L_BG_COL","value":"背景颜色"},{"name":"L_BACK_COLOR","value":"背面颜色"},{"name":"L_CSTEP_6","value":"带"},{"name":"L_BAND_TYPE","value":"乐队类型"},{"name":"L_BB_CA","value":"气泡颜色轴"},{"name":"L_BB_SA","value":"气泡尺寸轴"},{"name":"L_BB_OPT","value":"BubbleMap选项"},{"name":"T_REVISION","value":"修订控制"},{"name":"L_REVISION","value":"版本控制"},{"name":"B_SVN","value":"版本控制和恢复"},{"name":"L_SHOW_LEGEND","value":"显示传奇"},{"name":"L_LEGEND_POSITION","value":"传奇位置"},{"name":"L_CSTEP_3","value":"传说"},{"name":"S_RAN","value":"范围"},{"name":"L_SAVE_C_MSG","value":"您正在关闭具有未保存更改的选项卡。您要保存更改吗？"},{"name":"L_SAVE_CHANGES","value":"保存更改？"},{"name":"L_HL_DESC","value":"单击要编辑的单元格，或单击“新建”以创建新的高亮选项"},{"name":"L_RM_VAR","value":"删除变量"},{"name":"I_BD_CONFIG","value":"变量"},{"name":"L_ADD_VAR","value":"添加变量"},{"name":"B_SHOW","value":"节目"},{"name":"L_VIEW_OPTION","value":"传奇选项"},{"name":"L_TB_VCH","value":"改变观点"},{"name":"L_SHOW_VIEW_CHANGE","value":"显示ViewMode按钮"},{"name":"L_RECOVER","value":"恢复"},{"name":"L_COPY_ITEM","value":"复制@"},{"name":"D_COMPOSITEREPORT","value":"综合报告"},{"name":"L_COMPOSITEREPORT","value":"综合报告"},{"name":"L_P_RPT_RT","value":"复合枢轴"},{"name":"L_V_RPT","value":"复合枢轴模式"},{"name":"L_P_RPT","value":"复合枢轴"},{"name":"T_COMPOSITE_REPORT","value":"综合报告"},{"name":"F_STOT","value":"小计"},{"name":"B_MINUTE","value":"分钟"},{"name":"B_QUARTER","value":"25美分硬币"},{"name":"S_VAR","value":"方差"},{"name":"L_ANALYSIS","value":"分析"},{"name":"I_WIZARD","value":"分步分析"},{"name":"L_VARIABLES","value":"变量"},{"name":"L_R_ANAL_CUBE","value":"分析立方体"},{"name":"L_M_CUBE_SEL","value":"选择分析主题..."},{"name":"L_B_AC","value":"分析立方体"},{"name":"L_M_SUBJ","value":"分析主题："},{"name":"L_R_ANAL_CUBE_L","value":"主题名称"},{"name":"L_MENU_CUBE","value":"分析立方体"},{"name":"L_MENU_CUBE_WORK","value":"立方体分析"},{"name":"T_METRIC_SETTING","value":"度量配置"},{"name":"B_REMOVE_PIVOT","value":"删除Pivot"},{"name":"L_ADD_METRIC","value":"添加新维度"},{"name":"L_LOADING_REPORT","value":"载入中..."},{"name":"L_PASTE_ITEM","value":"粘贴在这里"},{"name":"L_ADD_VIEW","value":"添加视图"},{"name":"L_ML_CEFF","value":"成本效益分析"},{"name":"L_B_BW","value":"业务工作流程"},{"name":"B_INACTIVE","value":"待用"},{"name":"L_B_USR","value":"被阻止的用户"},{"name":"D_BIGDATA","value":"大数据"},{"name":"L_BIGDATA","value":"大数据"},{"name":"T_NOSQLDATA_TITLE","value":"BigData连接选项"},{"name":"T_NOSQL_CUBE","value":"BigData分析立方体"},{"name":"L_HD_BPROC","value":"Bigdata设计"},{"name":"D_BIGDATAMODEL","value":"BigDataModel"},{"name":"D_NOSQLCUBE","value":"BigData Cube"},{"name":"L_NOSQL_CUBE","value":"BigData Cube"},{"name":"L_NULL_VALUE","value":"空值"},{"name":"L_REM_BLK","value":"删除空值"},{"name":"M_BLANK","value":"新增项目"},{"name":"B_ENABLED","value":"启用"},{"name":"B_ENABLE","value":"启用"},{"name":"B_USER_DOC","value":"说明"},{"name":"I_USER","value":"用户"},{"name":"M_LOCK_MSG","value":"内容在@ 2处被@ 1锁定"},{"name":"L_BTN_EVTDESC","value":"禁用用户选择值并运行，并等待按钮单击事件。"},{"name":"L_USER_MANAGEMENT","value":"用户管理"},{"name":"I_USER_MANAGER","value":"用户经理"},{"name":"L_MGR_USER","value":"用户经理"},{"name":"L_USER_DUTY","value":"用户责任"},{"name":"L_MGR_UD","value":"用户责任管理"},{"name":"T_USER_GROUP","value":"用户组"},{"name":"T_SYNC_USER","value":"用户同步"},{"name":"W_SYNC_SAVE","value":"你会在服务器中保存用户同步参数吗？"},{"name":"W_SYNC_USER","value":"你会在服务器中执行用户同步吗？"},{"name":"T_REG_USER","value":"注册用户"},{"name":"L_B_CM","value":"自定义指标"},{"name":"L_USERNAME","value":"用户名"},{"name":"L_DB_UNAME","value":"用户名"},{"name":"L_USERID","value":"用户身份"},{"name":"B_CUSTOM","value":"习惯"},{"name":"L_CUSTOM_FIX","value":"自定义修复"},{"name":"D_GROUPFIELD","value":"用户定义的组"},{"name":"D_UDG","value":"用户定义的组"},{"name":"L_UDG","value":"用户定义的组"},{"name":"T_UDG","value":"用户定义的组"},{"name":"T_CUSTOM_METRIC","value":"自定义指标"},{"name":"L_CUSTOM_FIELD","value":"自定义字段"},{"name":"L_ADD_USER","value":"添加用户"},{"name":"L_UD_DESC","value":"从列表中选择用户职责。"},{"name":"D_CUSTOMMETRIC","value":"自定义指标"},{"name":"L_CUSTOM_METRIC","value":"自定义指标"},{"name":"L_FIXEDSIZE","value":"固定尺寸模式"},{"name":"L_SQL_PRE","value":"预处理"},{"name":"L_DLOCALE_MGR","value":"字典区域设置"},{"name":"L_LM_EXP","value":"导出区域设置数据"},{"name":"L_LM_LCS","value":"添加区域设置项"},{"name":"L_LM_IMP","value":"导入区域设置数据"},{"name":"L_E_DEL","value":"删除"},{"name":"B_DELETE","value":"删除"},{"name":"B_REMOVE","value":"去掉"},{"name":"L_DELETE_ITEM","value":"删除@"},{"name":"L_RELATION_VIEW","value":"关系视图"},{"name":"L_PAD_TOP","value":"最佳"},{"name":"L_LNK_DRILL","value":"钻到细节"},{"name":"L_DRILLREPORT","value":"用于详细信息视图"},{"name":"L_DET_VIEW","value":"详细视图"},{"name":"T_DRILL_CONFIG","value":"详细信息视图配置"},{"name":"L_DRILL_ON","value":"要钻的列"},{"name":"M_DETAIL","value":"细节"},{"name":"B_TOP","value":"最佳"},{"name":"L_RANK_TOP","value":"排名靠前"},{"name":"L_B_U","value":"上"},{"name":"B_STATUS","value":"状态"},{"name":"L_NEW_RPT_VIEWER","value":"新报告查看器"},{"name":"I_WORKSPACE","value":"新工作区"},{"name":"L_NEW_PANEL","value":"新小组"},{"name":"L_REFRESH","value":"刷新"},{"name":"L_BAND_COLOR","value":"颜色"},{"name":"B_COLOR","value":"颜色"},{"name":"B_OWNER","value":"所有者"},{"name":"B_CR","value":"创建 .."},{"name":"L_TYPE_ITEM_NAME","value":"设置要创建的项目名称"},{"name":"I_SERVER_CONFIG","value":"服务器配置"},{"name":"M_ERR_CONNECT","value":"无法在服务器上获得连接！请稍后重试"},{"name":"L_P_inv_svc","value":"调用服务"},{"name":"B_SEL","value":"选择"},{"name":"B_MOVE_DOWN","value":"向下移动行"},{"name":"B_MOVE_UP","value":"向上移动行"},{"name":"B_CD_MHS","value":"你喜欢把托运物品移到@？"},{"name":"B_CD_CHS","value":"你喜欢删除已检查的项目吗？"},{"name":"L_DELETE_CHECKED","value":"删除已选中"},{"name":"L_REMOVE_SELECTED","value":"删除选定"},{"name":"B_DESC","value":"描述"},{"name":"L_DESCRIPTION","value":"描述"},{"name":"L_PREFERENCES","value":"喜好"},{"name":"L_DESKTOP_SETTING","value":"设置"},{"name":"L_CHANGE_SETTING","value":"修改设置"},{"name":"L_SEL_MODE","value":"选择模式"},{"name":"M_SUCCESS","value":"成功！"},{"name":"B_SUCCESS","value":"成功完成流程"},{"name":"L_CVAL_DESC","value":"使用分号分隔符键入文本"},{"name":"L_HL_CELL","value":"仅限细胞"},{"name":"L_PADDING","value":"填充"},{"name":"L_NUMBER_PRECISION","value":"数字精度"},{"name":"B_PROPERTY","value":"属性"},{"name":"D_FORMULA","value":"式"},{"name":"L_FORMULA","value":"式"},{"name":"D_FORMULAMEASURE","value":"式"},{"name":"L_CFIT_FOR","value":"显示公式"},{"name":"L_USE_FORMULA","value":"显示公式"},{"name":"T_FORMULA_MEASURE","value":"配方测量"},{"name":"L_SYNTAX_FORMULA","value":"公式语法"},{"name":"L_S_GRST","value":"小组结果"},{"name":"L_S_TROW","value":"显示在顶行"},{"name":"L_SEP_COL","value":"单独的列"},{"name":"B_MODI","value":"修改"},{"name":"L_VERTICAL","value":"垂直"},{"name":"L_ALIGN_VERTICAL","value":"垂直对齐"},{"name":"L_LAYOUT_VERTICAL","value":"垂直"},{"name":"L_HORIZONTAL","value":"横"},{"name":"L_LAYOUT_HORIZONTAL","value":"横"},{"name":"F_RNK","value":"秩"},{"name":"L_RNK_VAL","value":"价值排名"},{"name":"L_RANK_OPTION","value":"排名选项"},{"name":"L_RNK_CNT","value":"排名"},{"name":"L_RNK_PAR","value":"分区依据"},{"name":"L_BTN_TRGALLDESC","value":"递归验证包括隐藏面板在内的所有过滤器"},{"name":"B_HIDE","value":"隐"},{"name":"B_NUMERIC","value":"数字"},{"name":"L_NUM_PREC","value":"数字精度"},{"name":"T_BG_SC","value":"壳牌司令部"},{"name":"B_SHEET_NAME","value":"工作表名称"},{"name":"L_R_ANAL_CUBE_LBL","value":"板材立方体"},{"name":"T_SHEET_OPTION","value":"表格选项"},{"name":"L_SHEET_OPTIONS","value":"表格选项"},{"name":"L_SHEET_NUM","value":"表号"},{"name":"L_ADD_SHEET","value":"添加表格"},{"name":"L_C_SCH","value":"加载计划结果。你想查询服务器吗？"},{"name":"L_REG_SCH","value":"注册时间表"},{"name":"I_SCHEDULE","value":"进度监控"},{"name":"L_LST_SCH","value":"附表清单"},{"name":"L_SC_CT","value":"时间表类型"},{"name":"B_SCHEDULE","value":"时间表"},{"name":"L_SCRIPT_WIZARD","value":"脚本向导"},{"name":"D_SCHEMA","value":"架构"},{"name":"L_SCHEMA","value":"架构"},{"name":"L_SCHEMA_NAME","value":"架构名称"},{"name":"L_REN_SCH","value":"更换名字"},{"name":"B_ST_NAME","value":"样式"},{"name":"L_LOOK_AND_FEEL","value":"外观和感觉"},{"name":"L_GRID_STYLE","value":"设置网格样式"},{"name":"L_STYLE_OPTION","value":"款式选择"},{"name":"L_OPT_STYLE","value":"款式选择"},{"name":"L_LD_ST","value":"样式"},{"name":"L_STYLENAME","value":"样式名称"},{"name":"L_ST_NAME","value":"样式名称"},{"name":"L_F_STR","value":"字符串格式"},{"name":"L_CLOSEABLE","value":"可关闭"},{"name":"L_TC_DU","value":"持续时间（米莉秒）"},{"name":"B_HOUR","value":"小时"},{"name":"L_DF_TS","value":"时间分开"},{"name":"L_TIME_FMT","value":"时间格式"},{"name":"L_TC_TA","value":"时间轴"},{"name":"L_TIMEZONE","value":"时区"},{"name":"L_TZ_OFFSET","value":"时间偏移"},{"name":"L_SHOW_TZ","value":"显示时区"},{"name":"T_DM","value":"DateMetric编辑器"},{"name":"L_TIME_OPTION","value":"时间序列选项"},{"name":"L_SERIES_LAYOUT","value":"系列布局"},{"name":"L_SERIES","value":"系列选项"},{"name":"L_SERIES_TYPE","value":"系列类型"},{"name":"L_SYSTEM","value":"系统"},{"name":"T_SYS_RES","value":"系统资源"},{"name":"L_SYS_RES","value":"系统资源"},{"name":"I_SYSMON","value":"系统监控"},{"name":"D_PRIVATECONTENT","value":"系统文件"},{"name":"I_ABOUT_DETAIL","value":"关于"},{"name":"L_S_LK","value":"系统查找"},{"name":"B_T_FR","value":"从时间"},{"name":"B_DT_FR","value":"从日期"},{"name":"L_MAKESTYLE","value":"定义新风格"},{"name":"L_PWD_NEW","value":"新密码"},{"name":"L_MAKEITEM_G","value":"制作物品"},{"name":"L_MAKEITEM","value":"制作项目（@）"},{"name":"S_REL","value":"可靠"},{"name":"B_EXECUTE","value":"执行"},{"name":"L_RUN","value":"跑"},{"name":"L_RUN_BUTTON","value":"运行按钮"},{"name":"L_BTN_TRG","value":"触发器运行事件"},{"name":"B_UNDO","value":"取消更改"},{"name":"L_BTN_ROW_ON","value":"行号按钮"},{"name":"L_BTN_TRGDESC","value":"单击“运行”按钮时，触发其他筛选框值。"},{"name":"L_RUN_REPORT","value":"跑"},{"name":"B_NO","value":"没有"},{"name":"L_PAD_BOTTOM","value":"底部"},{"name":"L_INPUT_USERID","value":"ID"},{"name":"B_ID","value":"ID"},{"name":"B_INSIDE","value":"内"},{"name":"L_INNER_RADIUS","value":"内半径"},{"name":"L_EVENT_WIZARD","value":"动作向导"},{"name":"L_APPL","value":"应用"},{"name":"L_SW_APP","value":"切换应用"},{"name":"L_LOCALE_MANAGER","value":"区域经理"},{"name":"L_SELECT_LOCALE","value":"选择语言"},{"name":"I_LOC_MGR","value":"区域经理"},{"name":"L_R_UT_DRILL","value":"更新表"},{"name":"L_DATA_TAB","value":"上传的数据"},{"name":"L_STG_LINE","value":"交错线"},{"name":"L_DF_YF","value":"年份格式"},{"name":"B_OP","value":"操作者"},{"name":"L_HL_COL","value":"列"},{"name":"L_P_COL","value":"列Dimensios"},{"name":"L_AREA_COLUMN","value":"柱"},{"name":"L_ENGLISH","value":"英语"},{"name":"L_MAP_AXIS","value":"地图轴"},{"name":"B_ZOOM","value":"放大"},{"name":"B_OK","value":"好"},{"name":"B_YES","value":"是"},{"name":"L_CFIT_FCS","value":"预测"},{"name":"M_ERROR","value":"错误"},{"name":"L_ALIGN_RIGHT","value":"对"},{"name":"L_PAD_RIGHT","value":"对"},{"name":"B_ASC","value":"上升"},{"name":"B_ORDER_ASC","value":"订单升序"},{"name":"B_OVERFLOW","value":"溢出"},{"name":"B_AMPM","value":"上午下午"},{"name":"L_DF_APM","value":"上午下午"},{"name":"L_EXP_OFFICE","value":"Office Direct"},{"name":"L_EXPORT_OFFICE","value":"Office Direct"},{"name":"B_OPTION","value":"选项"},{"name":"L_OPTIONS","value":"选项"},{"name":"S_SKEW","value":"偏态"},{"name":"L_LNK_EXT","value":"外部URL链接"},{"name":"L_R_CMENU","value":"外部钻孔目标"},{"name":"L_ALIGN_LEFT","value":"剩下"},{"name":"L_PAD_LEFT","value":"剩下"},{"name":"L_DF_WD","value":"平日"},{"name":"B_WEEK","value":"周"},{"name":"L_DF_WF","value":"平日格式"},{"name":"L_DF_WD_O","value":"平日订单"},{"name":"L_BORDER_RIGHT","value":"边界吧"},{"name":"L_DATE_FORMAT_SRC","value":"来源日期格式"},{"name":"B_MONTH","value":"月"},{"name":"L_DF_MF","value":"月份格式"},{"name":"B_WEEKMONTH","value":"周月"},{"name":"L_EXPORT_PRINT","value":"HTML打印"},{"name":"L_LATITUDE","value":"纬度"},{"name":"L_RO_INST1","value":"请选择以上选项。"},{"name":"B_LOC","value":"地点"},{"name":"L_P_open_win","value":"打开窗户"},{"name":"L_ML_C3","value":"实用节点"},{"name":"L_FEATURE","value":"特征"},{"name":"B_TYPE","value":"类型"},{"name":"L_TYPE","value":"类型"},{"name":"T_RSN","value":"报告Twit"},{"name":"M_NOT_EDITABLE","value":"不允许编辑此项目！"},{"name":"L_GOTO","value":"去"},{"name":"L_MOVE","value":"移动"},{"name":"L_B_MVT","value":"搬去"},{"name":"B_NAME","value":"名称"},{"name":"L_RENAME","value":"改名"},{"name":"L_RENAME_ITEM","value":"改名 @"},{"name":"T_RENAME_ITEM","value":"重命名项目（@）"},{"name":"L_EMAIL","value":"电子邮件"},{"name":"L_NOTI_EMAIL","value":"通知电子邮件"},{"name":"T_SAVE_IMAGE","value":"图片"},{"name":"L_SAVE_IMAGE","value":"另存为图像"},{"name":"L_BTN_EVT","value":"与事件一起运行"},{"name":"L_C_PREV","value":"上一页"},{"name":"B_PREVIOUS","value":"以前"},{"name":"L_CLC_PERI","value":"过期后"},{"name":"B_DAY","value":"天"},{"name":"L_C_D_NAMES_M","value":"星期天#星期一#星期二#星期三#星期四#星期五#星期六"},{"name":"L_C_D_NAMES_S","value":"星期天#星期一#星期二#星期三#星期四#星期五#星期六"},{"name":"B_GENERAL","value":"一般"},{"name":"L_LAYOUT_NORMAL","value":"正常"},{"name":"L_GENERAL_OPTION","value":"常规选项"},{"name":"L_C_D_NAMES","value":"星期天#星期一#星期二#星期三#星期四#星期五#星期六"},{"name":"L_DF_DS","value":"日期分开"},{"name":"L_DF_DF","value":"日格式"},{"name":"L_AUTO_WIDTH","value":"自动尺寸"},{"name":"L_BUILD","value":"建议的构建项目"},{"name":"L_ML_LEARN","value":"学习"},{"name":"D_CLASSMODULE","value":"ClassModule"},{"name":"D_JAVAPACKAGE","value":"Java包"},{"name":"L_P_execute_script","value":"运行JavaScript"},{"name":"L_M_SUBJ_REC","value":"最近使用的物品"},{"name":"L_F_LE","value":"更少或相等（<=）"},{"name":"L_F_LE_NOT","value":"不小于或等于（>）"},{"name":"L_F_LT","value":"少于（<）"},{"name":"L_JB_STAT","value":"工作状态"},{"name":"D_WORKSPACE","value":"工作区"},{"name":"B_WORKSPACE","value":"工作区"},{"name":"L_WORKSPACE","value":"新工作区"},{"name":"L_C_MW","value":"管理工作区"},{"name":"L_F_LT_NOT","value":"不小于（> =）"},{"name":"B_UNLOCK","value":"开锁"},{"name":"B_SAVE","value":"保存"},{"name":"L_SELECT_PATH","value":"选择要创建的路径"},{"name":"M_ERR_NSAVE","value":"需要保存内容！"},{"name":"B_APPLY","value":"应用"},{"name":"L_APPL_R","value":"应用于"},{"name":"L_CLC_HOUR","value":"清楚"},{"name":"L_TM_ALG","value":"算法"},{"name":"L_LAYOUT_CASCADE","value":"级联"},{"name":"L_DRILL_PARAM","value":"列到Params"},{"name":"L_FETCH_ALL","value":"获取所有数据"},{"name":"B_SHOW_ALL","value":"显示所有"},{"name":"L_EN_DRILL","value":"钻到所有人"},{"name":"L_EN_DRILL_DESC","value":"检查钻取到所有工作表"},{"name":"L_CFIT_SS","value":"显示摘要曲线"},{"name":"L_ALL_VALUE","value":"所有价值"},{"name":"F_P_POT","value":"总数百分比"},{"name":"E_SWA_CFM","value":"请选择要切换到的应用程序名称。"},{"name":"L_FONT_ALIGNMENT","value":"对准"},{"name":"L_SORT_SEL","value":"排序方法"},{"name":"L_SORT_TP","value":"排序类型"},{"name":"L_DF_OS","value":"订单风格"},{"name":"L_SORT_ORD","value":"排序订单"},{"name":"L_SORT_OPTION","value":"排名和排序"},{"name":"L_F_SORT","value":"排序字段"},{"name":"T_SORT_OPTION","value":"排序选项"},{"name":"M_INFO","value":"信息！"},{"name":"L_REMOVE","value":"去掉"},{"name":"L_SHOW_TITLE","value":"显示标题"},{"name":"L_TITLE_OPTION","value":"标题设置"},{"name":"L_CONDITION","value":"条件"},{"name":"L_ADD_CONDITION","value":"添加条件"},{"name":"M_S_S2","value":"找不到已注册表格的结果。"},{"name":"L_JOIN","value":"加入"},{"name":"L_ADD_JOIN","value":"添加加入"},{"name":"L_BTN_SEARCH","value":"搜索"},{"name":"L_ROW_LIMIT_COUNT","value":"限制数量"},{"name":"B_NO_DATA","value":"没有数据"},{"name":"L_EMPTY_DATA","value":"在此列表中清空"},{"name":"L_VIEW_MODE_LBL","value":"数据查询查看器"},{"name":"B_PROC","value":"处理请求.. <br>请稍等。"},{"name":"L_BAND_VALUE_2","value":"价值"},{"name":"B_T_TO","value":"到时间"},{"name":"B_DT_TO","value":"至今"},{"name":"L_F_VALUE_TO","value":"为了价值"},{"name":"L_T_LOGOUT","value":"登出"},{"name":"L_M_LOGOUT","value":"您确定要退出吗？"},{"name":"L_C_W_H","value":"周"},{"name":"L_DISTINCT_QUERY","value":"不同的查询"},{"name":"L_DISTINCT","value":"返回不同的所有行"},{"name":"S_MEDIAN","value":"中位数"},{"name":"B_FAVORITES","value":"最爱"},{"name":"M_SAVED_FAV","value":"在收藏夹列表中添加"},{"name":"L_C_FC","value":"我最喜爱的"},{"name":"F_INC","value":"增加的"},{"name":"L_GEO_FIELD","value":"地理位置"},{"name":"L_CONTACT_HELP","value":"如需支持，请联系"},{"name":"L_EV_MIN","value":"每分钟"},{"name":"L_SC_C3","value":"一次运行一次"},{"name":"L_EV_HOUR","value":"每隔一小时"},{"name":"M_UNKNOWN","value":"未知错误！"},{"name":"L_E_VALUE","value":"键入值"},{"name":"L_AGGR","value":"聚合"},{"name":"F_DIFF","value":"区别"},{"name":"L_CSTEP_1","value":"图表"},{"name":"T_CHART_WIZARD","value":"图表设计师"},{"name":"L_CLR_SET","value":"颜色设置"},{"name":"T_CHART_SERIES","value":"图表系列"},{"name":"L_CSTEP_4","value":"地块面积"},{"name":"L_CHART_OPTION","value":"数据透视选项"},{"name":"L_CHART_GROUP","value":"图表类别"},{"name":"L_CHART_THEME","value":"图表主题"},{"name":"T_CHART_PLOTBAND","value":"图表情节带"},{"name":"L_VIEW_CHART","value":"图表视图"},{"name":"L_CHART_TYPE","value":"图表类型"},{"name":"L_MAX_CHART_ELEMENT","value":"数据元素"},{"name":"T_BG_SCR","value":"命令结果"},{"name":"L_WAIT_1","value":"处理请求时请稍候"},{"name":"S_HOME","value":"家"},{"name":"S_KURT","value":"峰度"},{"name":"B_SECOND","value":"第二"},{"name":"B_DEFAULT","value":"默认"},{"name":"B_CLEAR","value":"明确"},{"name":"L_C_LC","value":"最新内容"},{"name":"L_BB_MS","value":"最大气泡尺寸"},{"name":"S_MAX","value":"最大值"},{"name":"F_MAX","value":"最大值"},{"name":"F_MIN","value":"最低限度"},{"name":"L_MIN_WIDTH","value":"最小宽度"},{"name":"L_MIN_HEIGHT","value":"最小高度"},{"name":"S_MIN","value":"最低限度"},{"name":"L_LAST_UPD","value":"上次更新时间："},{"name":"B_LASTUPD","value":"最近更新时间"},{"name":"B_ADD","value":"加"},{"name":"L_ML_C4a","value":"推理"},{"name":"L_SWAP_AXIS","value":"交换轴"},{"name":"T_BG_OP","value":"产量"},{"name":"L_TB_PRT_T","value":"出口目标"},{"name":"T_EXPORT_WIZARD","value":"导出向导"},{"name":"L_TB_PRT","value":"出口按钮"},{"name":"L_EXP_MET","value":"菜单控制"},{"name":"L_EXP_MET_DESC","value":"检查要在此报告中使用的菜单项。"},{"name":"L_LNK_DOC","value":"下载导出文件"},{"name":"L_OUTP_TYPE","value":"输出类型"},{"name":"L_PG_RANGE","value":"页面范围"},{"name":"L_PG_START","value":"页面开始"},{"name":"B_PROC_CANCEL","value":"取消"},{"name":"B_CANCEL","value":"取消"},{"name":"L_USE_CACHE","value":"使用缓存"},{"name":"L_CACHE_PERI","value":"缓存期"},{"name":"L_CACHE_RULE","value":"缓存规则"},{"name":"I_EXP_SCH","value":"内容搜索选项"},{"name":"T_EXP_MC","value":"导出内容"},{"name":"T_EXP_MC_Q","value":"你会继续将内容导出到文件吗？"},{"name":"L_CONTROLLER","value":"控制"},{"name":"L_FIX_COLUMN","value":"修复列"},{"name":"L_COL_VIS","value":"列可见"},{"name":"L_COL_SIZE","value":"列大小"},{"name":"L_COLUMN_WIDTH","value":"列宽"},{"name":"L_R_COLUMN_FIT","value":"将柱子安装到面板上"},{"name":"L_COL_TREE","value":"创建列标题树"},{"name":"L_ML_C6","value":"案例"},{"name":"L_ML_C6b","value":"删除案例"},{"name":"L_ML_C6a","value":"添加案例"},{"name":"B_CODE","value":"码"},{"name":"L_CODEMAPPING","value":"CodeMapping"},{"name":"D_CODEMAP","value":"代码映射"},{"name":"L_LOOKUP","value":"度量标准查找"},{"name":"L_CODE_FIELD","value":"代码映射"},{"name":"T_CODE_MAPPING","value":"代码映射"},{"name":"I_QRY_TOOL","value":"查询工具"},{"name":"L_DB_SCHEDULE_QUERYTIMEOUT","value":"查询超时（调度程序）"},{"name":"L_DB_QUERYTIMEOUT","value":"查询超时（S）"},{"name":"L_CUBE","value":"立方体"},{"name":"T_CUBE","value":"立方体"},{"name":"L_R_ANAL_CUBE_LB","value":"立方体"},{"name":"L_MC_DATA_EDT","value":"立方体数据编辑器"},{"name":"B_BUILD","value":"创建多维数据集"},{"name":"L_BUILD_CUBE","value":"构建多维数据集"},{"name":"L_SAVE_CUBE","value":"保存多维数据集"},{"name":"B_B_CUBE","value":"单击继续以启动自动多维数据集生成过程"},{"name":"T_CUBE_MODEL","value":"立方体模型"},{"name":"L_BUILD_MODEL","value":"模型向导"},{"name":"L_SHOW_PIVOT","value":"显示CubeFolder"},{"name":"L_E_CB","value":"编辑多维数据集"},{"name":"L_F_GE","value":"大或等（> =）"},{"name":"L_F_GE_NOT","value":"不大于或等于（<）"},{"name":"L_F_GT","value":"大于（>）"},{"name":"L_F_GT_NOT","value":"不大于（<=）"},{"name":"L_SCALE_DOWN","value":"必要时缩小"},{"name":"L_CLASS_MOD","value":"课程模块"},{"name":"L_P_CLUSTER","value":"群集维度"},{"name":"L_CLUSTER","value":"簇"},{"name":"L_CLIPBOARD_COPY","value":"复制到剪贴板"},{"name":"B_CLIPBOARD","value":"复制到剪贴板"},{"name":"L_EMPTY_SEARCH","value":"搜索关键字"},{"name":"L_F_LIKE","value":"包含关键字（LIKE）"},{"name":"L_F_LIKE_NOT","value":"不包括关键字（不喜欢）"},{"name":"B_TITLE","value":"标题"},{"name":"L_TITLE","value":"标题文字"},{"name":"L_HIDE_TITLE","value":"隐藏标题"},{"name":"L_STYLE_TITLE","value":"标题风格"},{"name":"L_T_DIR","value":"标题位置"},{"name":"L_TITLE_POSITION","value":"职位"},{"name":"L_OPT_TBAR","value":"标题栏选项"},{"name":"L_BROWSE_ITEM","value":"浏览@"},{"name":"T_BROWSER","value":"浏览器"},{"name":"S_NAVI","value":"航海家"},{"name":"T_TAB_BROWSER","value":"选项卡式浏览器"},{"name":"L_SHOW_TAB_BAR","value":"显示标签按钮"},{"name":"L_R_CM_SHOWTAB","value":"在Tab中打开"},{"name":"L_NEW_TABPANEL","value":"新的TabPanel"},{"name":"D_TENANT","value":"承租人"},{"name":"L_ADD_TENANT","value":"添加租户"},{"name":"L_BORDER_COLOR","value":"边框颜色"},{"name":"M_SUC_DBCON","value":"成功连接数据库"},{"name":"I_TABLE_REGISTER","value":"表寄存器"},{"name":"L_REG_TABLE","value":"表寄存器"},{"name":"L_TABLES","value":"表来源"},{"name":"L_TBL_ORD","value":"表顺序"},{"name":"L_ERR_CUBE_ITEMS","value":"多维数据集上存在不匹配或错误项。修改并保存多维数据集以更新不匹配的信息。"},{"name":"L_P_RELOAD","value":"单击“刷新”以加载。"},{"name":"L_NEW_TEXTAREA","value":"新TextArea"},{"name":"L_F_DISP","value":"显示字段"},{"name":"L_AUTO_ROT","value":"旋转文字"},{"name":"L_APPLY_TMPL","value":"应用模板"},{"name":"L_F_TMPL","value":"应用模板"},{"name":"L_EXPORT_JASPER","value":"JasperReport的"},{"name":"T_DB_TMPL","value":"数据库模板"},{"name":"M_SEL_MODEL","value":"选择工具栏按钮上的模型以继续立方体设计。"},{"name":"B_TREEVIEW","value":"树"},{"name":"L_TREE_VIEW","value":"树视图"},{"name":"L_ENABLE_TREE_VIEW","value":"启用树视图"},{"name":"L_TREEM_OPTION","value":"TreeMap选项"},{"name":"L_TM_CL","value":"TreeMap类"},{"name":"L_SCC_REC","value":"与间隔重复"},{"name":"L_SCC_DATE","value":"重现时间"},{"name":"L_PIE_OPTION","value":"馅饼选项"},{"name":"L_IMPORT_FILE","value":"导入文件"},{"name":"L_FILEEXT","value":"延期"},{"name":"L_SELECT_FILE","value":"选择文件..."},{"name":"L_FILENAME","value":"文件名"},{"name":"T_EXCEL_LOADER","value":"LocalData Loader"},{"name":"L_LAYOUT_POPUP","value":"弹出"},{"name":"L_PANEL_H","value":"面板高度"},{"name":"L_PANEL_W","value":"面板宽度"},{"name":"L_INPUT_PASSWORD","value":"密码"},{"name":"T_PASSWORD_CHANGE","value":"密码"},{"name":"L_DB_PWD","value":"密码"},{"name":"L_PWD_LABEL","value":"安全密码"},{"name":"L_PASSWORD","value":"更改密码"},{"name":"L_CH_PASSWD","value":"更改密码"},{"name":"L_PWD_CONFIRM","value":"确认新密码"},{"name":"M_BLANK_PWD","value":"密码不应为空"},{"name":"L_STACK_PERCENT","value":"按百分比堆叠"},{"name":"L_PAGING","value":"分页"},{"name":"L_PG_DIRECTION","value":"页面方向"},{"name":"L_SHOW_PAGENUMBER","value":"显示页码"},{"name":"L_PAGE_STYLE","value":"页面样式"},{"name":"L_PAGE_OPTIONS","value":"页面选项"},{"name":"L_PG_SIZE","value":"页面大小"},{"name":"L_FOOTER","value":"页脚"},{"name":"L_REPEAT_HEADER","value":"重复标题"},{"name":"L_ROW_P_PAGE","value":"每页行数"},{"name":"L_PG_LOADER","value":"页面加载"},{"name":"L_USE_PAGING","value":"使用分页"},{"name":"L_EDIT","value":"编辑"},{"name":"L_ML_C4b","value":"编辑"},{"name":"L_E_IT","value":"编辑项目"},{"name":"L_EDIT_ITEM","value":"编辑@"},{"name":"L_EDITOR_TYPE","value":"编辑类型"},{"name":"M_LOCK_TITLE","value":"内容已锁定"},{"name":"S_AVG","value":"平均"},{"name":"F_AVG","value":"平均"},{"name":"L_C_FMT_VAL","value":"使用格式化值"},{"name":"B_WIDTH","value":"宽度"},{"name":"L_FIXED_W","value":"修复宽度"},{"name":"L_FONT_SELECT","value":"字体选择"},{"name":"L_FONT_ST","value":"字体样式"},{"name":"L_FONTSIZE","value":"字体大小"},{"name":"D_FOLDER","value":"夹"},{"name":"B_FOLDER","value":"夹"},{"name":"T_MGR_FOLDER","value":"Folder Manager"},{"name":"L_BB_STEP_2","value":"创建文件夹结构"},{"name":"L_CREATE_FOLDER","value":"创建文件夹"},{"name":"L_REG_FOLDER","value":"新增文件夹"},{"name":"L_MGR_FD","value":"管理文件夹"},{"name":"L_FOLDER_ITEMS","value":"文件夹项目"},{"name":"L_DATE_FORMAT_TGT","value":"显示日期格式"},{"name":"L_DISP_TITLE","value":"显示标题"},{"name":"B_DISP_NAME","value":"显示名称"},{"name":"S_STDERR","value":"标准错误"},{"name":"S_STDEV","value":"标准偏差"},{"name":"L_R_RUN_PROP","value":"运行属性"},{"name":"T_PROMPT_DLG","value":"提示"},{"name":"T_PROMPT_MSG","value":"填写变更条件的值"},{"name":"L_PROMPT_TYPE","value":"提示类型"},{"name":"L_FLOATING","value":"漂浮的"},{"name":"L_PLOT_STYLES","value":"情节样式"},{"name":"L_ENABLE_PIVOT","value":"启用Pivot"},{"name":"L_PIVOT","value":"设计"},{"name":"L_V_PIVOT","value":"透视模式"},{"name":"T_PIVOT_EDITOR","value":"报表设计器"},{"name":"L_PIVOT_REPORT","value":"设计"},{"name":"B_REQ","value":"必填项目"},{"name":"T_DB_BLANK","value":"现场是必需的。"},{"name":"L_FILTER","value":"过滤"},{"name":"L_R_OPT_FILTER","value":"过滤选项"},{"name":"T_DYNFILTER_CONFIG","value":"过滤配置"},{"name":"L_SHOW_FILTER_INFO","value":"显示过滤器信息"},{"name":"L_CLEAR_FLT","value":"清除过滤器"},{"name":"L_NEW_FILTER","value":"新过滤器"},{"name":"B_SET_FILTER","value":"设置过滤器"},{"name":"L_BORDER_BOTTOM","value":"边境底部"},{"name":"L_HADOOP","value":"Hadoop管理"},{"name":"L_HD_BFLOW","value":"Hadoop BizFlow"},{"name":"B_BOTTOM","value":"底部"},{"name":"L_RANK_BOTTOM","value":"排名底部"},{"name":"L_C_ITEMS","value":"子项目"},{"name":"L_TB_HL","value":"配置突出显示"},{"name":"T_HL_OPT","value":"突出显示选项"},{"name":"L_R_UT_DESC","value":"在检查一个或多个时，仅钻取到选中。"},{"name":"L_KOREAN","value":"朝鲜的"},{"name":"L_EXPORT_ODF_EXCEL","value":"打开SpreadSheet"},{"name":"L_EXPORT_ODF_WORD","value":"打开文档"},{"name":"L_EXPORT_ODF_PPT","value":"公开演讲"},{"name":"L_FUNC","value":"功能"},{"name":"L_SYNTAX","value":"句法"},{"name":"S_SUM","value":"摘要"},{"name":"L_ITEM","value":"项目"},{"name":"L_NAVIGATOR","value":"航海家"},{"name":"B_DELETE_ITEM","value":"删除项目"},{"name":"L_CR_TP_SEL","value":"选择物品"},{"name":"B_CONFIG_ITEM","value":"配置项目"},{"name":"L_SAVE_EXCEL","value":"保存内容"},{"name":"L_CREATE_ITEM","value":"创建项目"},{"name":"L_ADD_NEW","value":"添新"},{"name":"L_ITEMNAME","value":"项目名称"},{"name":"L_AU_TITLE","value":"设置对象访问权限"},{"name":"L_F_NOTIN","value":"不包括"},{"name":"L_TABLE_DROP","value":"要将拖动字段注册到中间区域。"},{"name":"L_C_DEL_ITEM","value":"你想删除项目吗？"},{"name":"L_SELECT_ITEM","value":"选择项目以继续"},{"name":"L_DYN_SELECT","value":"检查值"},{"name":"M_SEL_ITEM","value":"选择项目以继续。"},{"name":"M_DELETED","value":"已成功删除内容"},{"name":"L_SAVE_CONTENT","value":"保存内容"},{"name":"T_META_SAVE","value":"将项目另存为..."},{"name":"E_NO_MATCH_FLD","value":"找不到列表中的匹配项。"},{"name":"L_HL_ROW","value":"行"},{"name":"L_BB_YA","value":"将数据行数据到Y轴"},{"name":"L_BB_SL","value":"显示RowData图例"},{"name":"L_P_ROW","value":"行尺寸"},{"name":"L_ROW_SIZE","value":"行大小"},{"name":"L_AREA_ROW","value":"行"},{"name":"M_NA","value":"不允许操作。"},{"name":"L_M_C_SAVE_DESKTOP","value":"要保存当前打开的桌面信息吗？"},{"name":"L_FILE_APPEND","value":"附加在当前选项卡上"},{"name":"L_C_CUR","value":"当前，"},{"name":"L_P_cls","value":"关闭窗口"},{"name":"L_APPL_TMPL","value":"应用模板"},{"name":"L_HL_RANGE","value":"应用于"},{"name":"L_SWA_CFM","value":"您想继续退出并登录其他项目吗？"},{"name":"B_CONFIRM","value":"确认"},{"name":"B_ACTIVE","value":"活性"},{"name":"L_A_USR","value":"活跃用户"},{"name":"L_ACTIVATE","value":"启用"},{"name":"L_CFIT_TYPE","value":"CurveFit类型"},{"name":"L_SC_ACTION","value":"安排行动"},{"name":"L_C_DC","value":"删除内容"},{"name":"T_TRASHBIN","value":"垃圾桶"},{"name":"L_C_CD","value":"删除内容"},{"name":"L_RANGE_FIELD","value":"范围场"},{"name":"L_META_MIG","value":"元迁移"},{"name":"L_C_INLINEV","value":"内联视图"},{"name":"L_IMP_TB","value":"导入表"},{"name":"L_TENANT","value":"承租人"},{"name":"B_DATATYPE","value":"数据类型"},{"name":"L_SERVER_HOST","value":"服务器主机"},{"name":"L_ML","value":"机器学习"},{"name":"B_PHY_NAME","value":"物理名称"},{"name":"I_LOGOUT","value":"用于安全会话的注销按钮。"},{"name":"L_MIG","value":"移民"},{"name":"L_B_CUBE","value":"立方体处理"},{"name":"L_ENDPOINT_URL","value":"端点URL"},{"name":"L_SYS_BACKSCH","value":"背景时间表"},{"name":"B_SEQUENCE","value":"订购"},{"name":"L_SUBSCRIBE","value":"订阅"},{"name":"L_DEPLOY_SVR","value":"部署服务器"},{"name":"I_START_INTRO","value":"开始介绍"},{"name":"I_COLLAPSE_BTN","value":"折叠并展开侧面板。"},{"name":"I_MAINMENU","value":"主菜单（点击两次全屏查看）"},{"name":"I_SEARCH_MAIN","value":"使用关键字搜索以查找报告和对象"},{"name":"I_NAVIGATOR","value":"导航面板到内容"},{"name":"I_MAIN_WS","value":"主工作区"},{"name":"I_APP_AREA","value":"应用领域。"},{"name":"I_SAVE_CNT","value":"保存内容"},{"name":"I_RUN_REPORT","value":"运行报告。"},{"name":"I_ADD_VIEW","value":"添加视图和小部件。"},{"name":"I_SHEET_AREA","value":"单张面积。"},{"name":"I_SHEET_TITLE","value":"表格标题"},{"name":"I_SHEET_VIEW","value":"工作表视图"},{"name":"I_BTN_PIVOTOPTION","value":"透视选项可更改字段和列"},{"name":"I_BTN_WIDGET_CONF","value":"窗口小部件配置按钮，用于设置详细信息。"},{"name":"L_AUTO_JOIN","value":"自动加入"},{"name":"L_JOIN_BEUTIFY","value":"自动布局表"},{"name":"L_UPLOAD","value":"上传文件"},{"name":"L_RNK_SVAL","value":"按值排序"},{"name":"L_SEL_RPT","value":"选择报告"},{"name":"L_SEL_DBD","value":"选择仪表板"},{"name":"L_DESIGN","value":"设计模式"},{"name":"L_APPL_THEME","value":"应用主题"},{"name":"M_VALIDATED","value":"验证成功！"},{"name":"T_ML_LEARN","value":"机器学习"},{"name":"T_HD_CFG_CL","value":"Hadoop配置"},{"name":"T_Resources","value":"资源"},{"name":"T_DYN_LFILE","value":"按fileupload过滤"},{"name":"L_DYN_LFILE","value":"上传文件并使用值过滤"},{"name":"T_REPORT_STYLE","value":"报告风格"},{"name":"T_BA_1","value":"贝叶斯分析"},{"name":"B_INTRO","value":"介绍"},{"name":"B_PREV","value":"上一页"},{"name":"B_SKIP","value":"跳跃"},{"name":"B_OBJ_NAME","value":"对象名称"},{"name":"B_DATA_ZOOM","value":"数据缩放"},{"name":"B_C_DELETE","value":"单击确定继续删除！"},{"name":"B_SELECT_FOLDER","value":"选择要继续的文件夹;"},{"name":"B_SELECT_TARGET","value":"选择目标对象继续;"},{"name":"B_TEMPLATES","value":"模板"},{"name":"B_CONFIG","value":"组态"},{"name":"B_VIEWMODE","value":"查看模式"},{"name":"B_EDITMODE","value":"编辑模式"},{"name":"B_PARAMTERS","value":"参数"},{"name":"B_NOT_EXECUTED","value":"没有执行"},{"name":"B_VALIDATE","value":"验证"},{"name":"L_AUTH","value":"认证"},{"name":"T_GRD_CFG","value":"网格配置"},{"name":"L_FORMVIEWER","value":"表单查看器"},{"name":"L_M_TITLE","value":"衡量标题"},{"name":"L_M_EXT_TITLE","value":"额外的标题"},{"name":"L_PAGE_FILTER","value":"页面过滤器"},{"name":"L_TENANT_NAME","value":"租户名称"},{"name":"L_LICENSE_INFO","value":"许可证信息"},{"name":"L_ALLOWED_USERS","value":"允许用户"},{"name":"L_REG_DATE","value":"注册日期"},{"name":"L_pf_navitree","value":"枢轴过滤器"},{"name":"L_pf_fedit","value":"透视滤镜编辑器"},{"name":"L_pf_filter","value":"枢轴过滤器"},{"name":"L_SAVE_CONTENT_AS","value":"将内容另存为"},{"name":"L_DATA_SOURCE","value":"数据源"},{"name":"T_DB_GEN","value":"数据库生成器"},{"name":"L_P_export","value":"出口"},{"name":"L_ERR_L_MOD","value":"加载模块时出错！"},{"name":"I_DLOC_MGR","value":"字典管理"},{"name":"I_META_MIG","value":"元迁移"},{"name":"L_REG_DATASET","value":"注册数据集"},{"name":"T_MIG_DISCO","value":"Oracle Discoverer Migration"},{"name":"L_METRIC_ITEMS","value":"指标项目"},{"name":"T_DBD_VAR","value":"仪表板变量"},{"name":"E_LM_SEL","value":"首先从组合框中选择区域设置！"},{"name":"T_TORSP_RS","value":"龙卷风蜘蛛的结果"},{"name":"L_LNK_TP","value":"链接字段"},{"name":"T_SUBSCR_AUTH","value":"订阅进行身份验证"},{"name":"T_NET_PROP","value":"网络财产"},{"name":"M_APP_LOADED","value":"应用加载成功！"},{"name":"L_F_COMMENT","value":"评论"},{"name":"M_SAVE_PROGRESS","value":"保存正在进行中..请稍候！"},{"name":"M_DEF_DATE","value":"默认日期"},{"name":"L_DB_VAL","value":"数据库值"},{"name":"L_SF_AUTHMETHOD","value":"Salesforce身份验证方法"},{"name":"L_SF_SECTOKEN","value":"Salesforce令牌"},{"name":"L_TARGET_DB","value":"目标数据库"},{"name":"T_JASP_TMPL","value":"碧玉模板"},{"name":"L_HIERARCHY","value":"等级制度"},{"name":"T_FM_SEL","value":"配方选择"},{"name":"T_FM_SEL_CONFIG","value":"配方配置"},{"name":"L_ADD_FILTER","value":"添加过滤器"},{"name":"T_INT_LEARN","value":"互动学习"},{"name":"L_VIEW_PYTHON","value":"蟒蛇"},{"name":"L_R_OPTIONS","value":"R选项"},{"name":"L_PY_EDIT","value":"Python编辑"},{"name":"T_COST_EFF","value":"成本效益"},{"name":"L_GS_ENABLED","value":"Gs已启用"},{"name":"L_ALT_COLOR","value":"替代颜色"},{"name":"L_REG_LINK","value":"注册链接"},{"name":"L_TB_FORM_V","value":"表单查看器"},{"name":"L_EMAIL_BURSTING","value":"电子邮件爆发"},{"name":"L_BAYES","value":"Machine Learning"},{"name":"L_BAYES_RPT","value":"ML Report"},{"name":"L_DISCO","value":"Discoverer Migration"},{"name":"L_SEL_DB","value":"Select Datasource"},{"name":"L_BOBJ","value":"Business Object"},{"name":"L_SETTINGS","value":"Settings"},{"name":"D_BOBJECT","value":"Business Object"},{"name":"L_V_SYNC","value":"Sync with Sheet"},{"name":"L_NEW_STORYVIEW","value":"Add StoryIt"},{"name":"L_XLS_BUTTON","value":"Show Excel button"},{"name":"L_XLS_STYLE","value":"Excel Button Style"},{"name":"L_VIEW_ANAL","value":"View Analysis"},{"name":"L_D_EXCEL","value":"Download"}]}
+{
+	"meta_type": "locales",
+	"objinfo": {},
+	"name": "zh_CN",
+	"type": "Unknown",
+	"writable": false,
+	"manage": false,
+	"is_sub": false,
+	"attributes": {},
+	"data": [
+		{
+			"name": "L_CM_DISP_2",
+			"value": "*在此处拖动项目以定义此度量"
+		},
+		{
+			"name": "L_CD_DISP_2",
+			"value": "*拖动度量项或单击“添加”按钮"
+		},
+		{
+			"name": "L_TIME_FMT_DSC",
+			"value": "*如果是日期格式项，则应用"
+		},
+		{
+			"name": "L_FM_DISP1",
+			"value": "*双击字段添加功能。"
+		},
+		{
+			"name": "L_CM_DISP_1",
+			"value": "*双击字段添加功能"
+		},
+		{
+			"name": "L_FM_DISP2",
+			"value": "*在此处拖动项目以定义此度量。"
+		},
+		{
+			"name": "L_ME_DISP1",
+			"value": "*双击字段添加功能"
+		},
+		{
+			"name": "L_C_DCOUNT",
+			"value": "@ Counts"
+		},
+		{
+			"name": "L_VIEW_ITEM",
+			"value": "查看@"
+		},
+		{
+			"name": "L_C_DATE",
+			"value": "@的细节"
+		},
+		{
+			"name": "M_SEL_ERR",
+			"value": "@ 有必要的。请选择价值"
+		},
+		{
+			"name": "I_ABOUT",
+			"value": "关于 @"
+		},
+		{
+			"name": "E_D_EVNT",
+			"value": "处理evnet @时出错。"
+		},
+		{
+			"name": "L_C_TOTAL",
+			"value": "总计@"
+		},
+		{
+			"name": "E_PV_L",
+			"value": "内容特权错误：（@）"
+		},
+		{
+			"name": "L_C_M_NAMES_S",
+			"value": "一月#二月#三月#四月#五月#六月#七月#八月#九月#十月#十一月#十二月"
+		},
+		{
+			"name": "L_C_M_NAMES",
+			"value": "一月#二月#三月#四月#五月#六月#七月#八月#九月#十月#十一月#十二月"
+		},
+		{
+			"name": "L_DUAL_AXIS",
+			"value": "双YAxis"
+		},
+		{
+			"name": "L_CONTACT_CRED",
+			"value": "版权和复制; 1996-2010"
+		},
+		{
+			"name": "L_EXPORT_CSV",
+			"value": "CSV"
+		},
+		{
+			"name": "L_DB_MON",
+			"value": "数据库监控"
+		},
+		{
+			"name": "L_DB_CHARSET",
+			"value": "DB CharSet"
+		},
+		{
+			"name": "L_OUTPUT_CHARSET",
+			"value": "输出CharSet"
+		},
+		{
+			"name": "L_TABLE_FIELD",
+			"value": "数据库表"
+		},
+		{
+			"name": "L_EXPORT_DOCX",
+			"value": "DOCX导出"
+		},
+		{
+			"name": "B_GO",
+			"value": "走"
+		},
+		{
+			"name": "D_HIERARCHY",
+			"value": "等级制度"
+		},
+		{
+			"name": "T_BG_HIVEJOB",
+			"value": "蜂巢工作"
+		},
+		{
+			"name": "L_EXPORT_HTML",
+			"value": "HTML视图"
+		},
+		{
+			"name": "L_EXP_JASP",
+			"value": "碧玉"
+		},
+		{
+			"name": "D_JAVACLASS",
+			"value": "Java类"
+		},
+		{
+			"name": "L_JDBC_URL",
+			"value": "JDBC URL"
+		},
+		{
+			"name": "L_JDBC_DRV",
+			"value": "JDBC驱动程序"
+		},
+		{
+			"name": "T_MDB_CUBE",
+			"value": "MDB访问分析"
+		},
+		{
+			"name": "L_MDB_OPTION",
+			"value": "MDB选项"
+		},
+		{
+			"name": "L_MONGODB",
+			"value": "MongoDB的"
+		},
+		{
+			"name": "L_MONGO_DATA",
+			"value": "MongoDB数据"
+		},
+		{
+			"name": "L_MONGO_DPROC",
+			"value": "MongoDB进程"
+		},
+		{
+			"name": "D_MDBCUBE",
+			"value": "MS Access DataCube"
+		},
+		{
+			"name": "L_MDB_CUBE",
+			"value": "MS Access DataCube"
+		},
+		{
+			"name": "L_EXPORT_EXCEL",
+			"value": "MS Excel"
+		},
+		{
+			"name": "L_EXPORT_PPT",
+			"value": "MS PPT"
+		},
+		{
+			"name": "D_NOSQL",
+			"value": "NoSQL数据库"
+		},
+		{
+			"name": "L_OP_NOT",
+			"value": "不操作"
+		},
+		{
+			"name": "L_EXPORT_PDF",
+			"value": "PDF"
+		},
+		{
+			"name": "L_ML_C7",
+			"value": "加载PGMX"
+		},
+		{
+			"name": "L_R_WIZARD",
+			"value": "R精灵"
+		},
+		{
+			"name": "L_R_PARAM",
+			"value": "R参数"
+		},
+		{
+			"name": "L_R_SUMMARY",
+			"value": "R摘要"
+		},
+		{
+			"name": "L_R_SCRIPT",
+			"value": "R脚本编辑器"
+		},
+		{
+			"name": "L_VIEW_RSTAT",
+			"value": "R统计"
+		},
+		{
+			"name": "T_R_WIZARD",
+			"value": "R统计向导"
+		},
+		{
+			"name": "L_EXPORT_RTF",
+			"value": "RTF导出"
+		},
+		{
+			"name": "T_SELECT_POOL",
+			"value": "选择池"
+		},
+		{
+			"name": "L_F_SQL_IS",
+			"value": "SQL是运算符（IS）"
+		},
+		{
+			"name": "L_F_SQL_IS_NOT",
+			"value": "SQL不是运算符（不是）"
+		},
+		{
+			"name": "L_LD_SQL",
+			"value": "SQL查询导入"
+		},
+		{
+			"name": "I_SQLCUBE",
+			"value": "SQL向导"
+		},
+		{
+			"name": "L_VIEW_SQL",
+			"value": "查看SQL"
+		},
+		{
+			"name": "L_LD_SQL_D",
+			"value": "SQL源码"
+		},
+		{
+			"name": "L_P_sql",
+			"value": "运行SQL"
+		},
+		{
+			"name": "D_SQLCUBE",
+			"value": "SQL Cube"
+		},
+		{
+			"name": "L_SQL_CUBE",
+			"value": "SQL Cube"
+		},
+		{
+			"name": "L_EDIT_SQL",
+			"value": "编辑SQL"
+		},
+		{
+			"name": "L_SQL_PRE_PROC",
+			"value": "SQL预处理器"
+		},
+		{
+			"name": "D_UIPAGE",
+			"value": "UI页面"
+		},
+		{
+			"name": "L_UIPAGE",
+			"value": "UI页面"
+		},
+		{
+			"name": "L_LNK_URL",
+			"value": "URL地址"
+		},
+		{
+			"name": "L_EXPORT_XML",
+			"value": "XML导出"
+		},
+		{
+			"name": "L_CSTEP_5",
+			"value": "Y轴"
+		},
+		{
+			"name": "L_YAXIS_FORMAT",
+			"value": "Y轴格式"
+		},
+		{
+			"name": "L_YAXIS_TITLE",
+			"value": "YAxis标题"
+		},
+		{
+			"name": "L_YAXIS_MAX",
+			"value": "Y轴最大值"
+		},
+		{
+			"name": "L_YAXIS_MIN",
+			"value": "Y轴最小值"
+		},
+		{
+			"name": "L_ALIGN_CENTER",
+			"value": "中央"
+		},
+		{
+			"name": "L_SHOW_FIRST",
+			"value": "显示第一"
+		},
+		{
+			"name": "S_BOTTOM",
+			"value": "底价"
+		},
+		{
+			"name": "S_TOP",
+			"value": "最高价值"
+		},
+		{
+			"name": "L_USE_MFMT",
+			"value": "使用测量格式"
+		},
+		{
+			"name": "L_ML_CEFF_S",
+			"value": "敏感性分析"
+		},
+		{
+			"name": "L_F_VALUE_LNG",
+			"value": "值"
+		},
+		{
+			"name": "B_VALUES",
+			"value": "值"
+		},
+		{
+			"name": "B_TEXT",
+			"value": "值"
+		},
+		{
+			"name": "B_VALUE",
+			"value": "值"
+		},
+		{
+			"name": "L_BAND_VALUE_1",
+			"value": "值"
+		},
+		{
+			"name": "L_F_VALUE",
+			"value": "值"
+		},
+		{
+			"name": "L_FLT_VAL_SCR",
+			"value": "验证功能"
+		},
+		{
+			"name": "L_VAL_DELIM",
+			"value": "价值分隔符"
+		},
+		{
+			"name": "B_COMBO_VAL",
+			"value": "列表值"
+		},
+		{
+			"name": "L_P_valuelist",
+			"value": "填充值"
+		},
+		{
+			"name": "T_VALUE_SELECT",
+			"value": "值选择向导"
+		},
+		{
+			"name": "T_DYN_SELECT",
+			"value": "选择值..."
+		},
+		{
+			"name": "L_STACK_VALUE",
+			"value": "堆栈值"
+		},
+		{
+			"name": "L_VALUE_TYPE",
+			"value": "值类型"
+		},
+		{
+			"name": "L_E_LIST",
+			"value": "从值中选择"
+		},
+		{
+			"name": "B_CUST_VAL",
+			"value": "自定义值"
+		},
+		{
+			"name": "L_SHOW_VALUE",
+			"value": "显示值"
+		},
+		{
+			"name": "L_TK_INTVL",
+			"value": "勾选间隔"
+		},
+		{
+			"name": "L_SELECT_VALUE",
+			"value": "选择值"
+		},
+		{
+			"name": "L_FORMAT",
+			"value": "格式"
+		},
+		{
+			"name": "L_AREA_MEASURE",
+			"value": "测量"
+		},
+		{
+			"name": "L_F_EQ",
+			"value": "等于（=）"
+		},
+		{
+			"name": "L_F_EQ_NOT",
+			"value": "不等于（<>）"
+		},
+		{
+			"name": "L_OBJECT_TYPE",
+			"value": "对象类型"
+		},
+		{
+			"name": "T_META_SELECT",
+			"value": "选择物品..."
+		},
+		{
+			"name": "B_SEARCH",
+			"value": "搜索"
+		},
+		{
+			"name": "L_SEARCH_KWD",
+			"value": "搜索"
+		},
+		{
+			"name": "L_NEW_SHEET",
+			"value": "新表"
+		},
+		{
+			"name": "L_ML_CEFF_D",
+			"value": "确定性分析"
+		},
+		{
+			"name": "M_WARNING",
+			"value": "警告！"
+		},
+		{
+			"name": "L_SC_C1",
+			"value": "之后运行一次"
+		},
+		{
+			"name": "L_LONGITUDE",
+			"value": "经度"
+		},
+		{
+			"name": "B_PATH",
+			"value": "路径"
+		},
+		{
+			"name": "L_C_DIR",
+			"value": "计算方向"
+		},
+		{
+			"name": "L_ERR_SAVE",
+			"value": "要继续之前保存内容。"
+		},
+		{
+			"name": "L_DEPRIVATE",
+			"value": "锁定用户登录"
+		},
+		{
+			"name": "L_HIGH_PREC",
+			"value": "高精度数"
+		},
+		{
+			"name": "L_ADV_OPTION",
+			"value": "高级选项"
+		},
+		{
+			"name": "L_ADVANCED_OPTION",
+			"value": "高级选项"
+		},
+		{
+			"name": "L_R_FIXSIZE",
+			"value": "固定尺寸"
+		},
+		{
+			"name": "B_SHARE",
+			"value": "分享"
+		},
+		{
+			"name": "I_RELATION",
+			"value": "关系"
+		},
+		{
+			"name": "T_MANAGE",
+			"value": "管理"
+		},
+		{
+			"name": "L_MANAGEMENT",
+			"value": "管理"
+		},
+		{
+			"name": "I_ADMIN",
+			"value": "管理员"
+		},
+		{
+			"name": "S_COUNT",
+			"value": "计数"
+		},
+		{
+			"name": "B_DELIMITER",
+			"value": "分隔符"
+		},
+		{
+			"name": "L_LM_ADD",
+			"value": "添加国家代码"
+		},
+		{
+			"name": "L_FONT_BOLD",
+			"value": "胆大"
+		},
+		{
+			"name": "L_PRIVILEGE",
+			"value": "特权"
+		},
+		{
+			"name": "D_AUTH",
+			"value": "义务"
+		},
+		{
+			"name": "L_OBJECT_AUTH",
+			"value": "对象验证"
+		},
+		{
+			"name": "T_OBJECT_AUTH",
+			"value": "对象验证"
+		},
+		{
+			"name": "T_DUTY_LIST",
+			"value": "职责清单"
+		},
+		{
+			"name": "L_ADD_DUTY",
+			"value": "添加责任"
+		},
+		{
+			"name": "D_GROUP",
+			"value": "组"
+		},
+		{
+			"name": "L_GROUP_LEVEL",
+			"value": "集团层面"
+		},
+		{
+			"name": "L_GROUP_FIELD",
+			"value": "集团领域"
+		},
+		{
+			"name": "W_SYNC_GRP",
+			"value": "你会在服务器中执行组同步吗？"
+		},
+		{
+			"name": "L_GROUP_NAME",
+			"value": "团队名字"
+		},
+		{
+			"name": "L_ADD_GROUP",
+			"value": "添加组"
+		},
+		{
+			"name": "L_OPT_GRID",
+			"value": "网格选项"
+		},
+		{
+			"name": "L_OVF_DESC",
+			"value": "检查绘制滚动网格的溢出"
+		},
+		{
+			"name": "T_STYLE_WIZARD",
+			"value": "风格向导"
+		},
+		{
+			"name": "L_TB_PRT_GRD",
+			"value": "出口网格"
+		},
+		{
+			"name": "L_GRID_HMENU",
+			"value": "隐藏网格弹出菜单"
+		},
+		{
+			"name": "L_VIEW_GRID",
+			"value": "工作表视图"
+		},
+		{
+			"name": "L_FONT_FACE",
+			"value": "字体脸"
+		},
+		{
+			"name": "L_FORE_COLOR",
+			"value": "前景色"
+		},
+		{
+			"name": "L_DATE_OPTION",
+			"value": "日期选项"
+		},
+		{
+			"name": "T_FEATURES",
+			"value": "特征"
+		},
+		{
+			"name": "L_BASE_STYLE",
+			"value": "基本款式"
+		},
+		{
+			"name": "L_STATISTICS",
+			"value": "基本统计"
+		},
+		{
+			"name": "T_STATISTICS",
+			"value": "基本统计"
+		},
+		{
+			"name": "L_SET_DEF",
+			"value": "默认情况下使用"
+		},
+		{
+			"name": "L_FONT_ITALIC",
+			"value": "斜体"
+		},
+		{
+			"name": "L_PREDEFINED_FIELD",
+			"value": "预定义字段"
+		},
+		{
+			"name": "L_FILE_DELETE",
+			"value": "替换现有数据"
+		},
+		{
+			"name": "L_PWD_OLD",
+			"value": "旧密码"
+		},
+		{
+			"name": "L_OTHER_OPTION",
+			"value": "其他选择"
+		},
+		{
+			"name": "L_OTHER_VALUE",
+			"value": "其他价值"
+		},
+		{
+			"name": "L_ML_C1",
+			"value": "机会节点"
+		},
+		{
+			"name": "L_C_PR",
+			"value": "私人内容"
+		},
+		{
+			"name": "L_DATE_METRIC",
+			"value": "日期指标"
+		},
+		{
+			"name": "D_DATEMETRIC",
+			"value": "日期指标"
+		},
+		{
+			"name": "L_DATE_FORMAT",
+			"value": "日期格式"
+		},
+		{
+			"name": "L_DATE_TYPE",
+			"value": "日期类型字段"
+		},
+		{
+			"name": "B_DSC",
+			"value": "降序"
+		},
+		{
+			"name": "B_ORDER_DSC",
+			"value": "订单降序"
+		},
+		{
+			"name": "M_SAVED",
+			"value": "成功保存了内容"
+		},
+		{
+			"name": "B_YEAR",
+			"value": "年"
+		},
+		{
+			"name": "L_C_YR_SFX",
+			"value": "年"
+		},
+		{
+			"name": "B_HEIGHT",
+			"value": "高度"
+		},
+		{
+			"name": "L_FIXED_H",
+			"value": "修复高度"
+		},
+		{
+			"name": "F_P_CUM",
+			"value": "累积总和Percent"
+		},
+		{
+			"name": "L_SAVE_REPORT_AS",
+			"value": "保存为报告"
+		},
+		{
+			"name": "L_SAVE_EXCEL_AS",
+			"value": "将内容另存为"
+		},
+		{
+			"name": "L_SAVE_CONTENTAS",
+			"value": "将内容另存为......"
+		},
+		{
+			"name": "B_NEXT",
+			"value": "下一个"
+		},
+		{
+			"name": "L_C_NEXT",
+			"value": "下一个"
+		},
+		{
+			"name": "E_SC_LD",
+			"value": "加载DynamicScript时出错"
+		},
+		{
+			"name": "L_P_open_dlg",
+			"value": "打开对话框"
+		},
+		{
+			"name": "T_M_TENANT",
+			"value": "多租户"
+		},
+		{
+			"name": "L_CFIT_PORD",
+			"value": "多项式顺序"
+		},
+		{
+			"name": "D_MOLAPCUBE",
+			"value": "MOLAP Cube"
+		},
+		{
+			"name": "L_MOLAP_CUBE",
+			"value": "MOLAP Cube"
+		},
+		{
+			"name": "T_MCUBE_WINDOW",
+			"value": "m尺寸立方体"
+		},
+		{
+			"name": "L_BUILD_MCUBE",
+			"value": "构建多维数据集"
+		},
+		{
+			"name": "L_UNIT_TEXT",
+			"value": "单位文字"
+		},
+		{
+			"name": "L_P_PIVOT_UNIT",
+			"value": "枢轴单位"
+		},
+		{
+			"name": "B_CLOSE",
+			"value": "关"
+		},
+		{
+			"name": "L_C_CLOSE",
+			"value": "关"
+		},
+		{
+			"name": "L_LNK_TGT",
+			"value": "浏览器目标"
+		},
+		{
+			"name": "L_DRILL_PARAM_DESC",
+			"value": "检查列以过滤目标工作表"
+		},
+		{
+			"name": "L_BASE_METRIC",
+			"value": "基本指标"
+		},
+		{
+			"name": "L_SORT_SRC",
+			"value": "要排序的项目"
+		},
+		{
+			"name": "D_DASHBOARD",
+			"value": "仪表板"
+		},
+		{
+			"name": "L_DASHBOARD",
+			"value": "仪表板"
+		},
+		{
+			"name": "T_DASHBOARD",
+			"value": "仪表板"
+		},
+		{
+			"name": "L_MGR_DASHBOARD",
+			"value": "Dashaboard经理"
+		},
+		{
+			"name": "L_DBD_MAP",
+			"value": "仪表板映射"
+		},
+		{
+			"name": "I_MGR_DBD",
+			"value": "仪表板插件"
+		},
+		{
+			"name": "L_CSTEP_2",
+			"value": "数据"
+		},
+		{
+			"name": "L_DATA_LABEL",
+			"value": "数据标签"
+		},
+		{
+			"name": "L_T_CUBE_SEL",
+			"value": "数据选择向导"
+		},
+		{
+			"name": "L_EDIT_DATA",
+			"value": "编辑数据"
+		},
+		{
+			"name": "T_Filter",
+			"value": "过滤数据"
+		},
+		{
+			"name": "L_EMPTY",
+			"value": "没有数据。"
+		},
+		{
+			"name": "L_BB_STEP_1",
+			"value": "准备数据"
+		},
+		{
+			"name": "L_MENU_DB_MODEL",
+			"value": "关系数据模型"
+		},
+		{
+			"name": "T_DB_CON",
+			"value": "数据库实例"
+		},
+		{
+			"name": "L_DB_INSTANCE",
+			"value": "数据库实例"
+		},
+		{
+			"name": "L_DB_TYPE",
+			"value": "数据库类型"
+		},
+		{
+			"name": "L_DB_NAME",
+			"value": "数据库名称"
+		},
+		{
+			"name": "M_S_S1",
+			"value": "未找到所选数据库实例的结果。"
+		},
+		{
+			"name": "L_ADD_DB_INST",
+			"value": "添加数据库实例"
+		},
+		{
+			"name": "L_VIEW_MODE",
+			"value": "查看模式"
+		},
+		{
+			"name": "L_DATASET",
+			"value": "数据集"
+		},
+		{
+			"name": "L_B_ADC",
+			"value": "DataFile Cube"
+		},
+		{
+			"name": "D_TABDIMENSION",
+			"value": "数据分离维度"
+		},
+		{
+			"name": "L_DATA_LABEL_FMT",
+			"value": "数据标签格式"
+		},
+		{
+			"name": "L_PRV_DATA",
+			"value": "数据预览"
+		},
+		{
+			"name": "L_DATA_OPTION",
+			"value": "数据选项"
+		},
+		{
+			"name": "T_BG_DS",
+			"value": "数据源"
+		},
+		{
+			"name": "L_STYLE_DATA",
+			"value": "数据样式"
+		},
+		{
+			"name": "L_LD_LK",
+			"value": "连接连接"
+		},
+		{
+			"name": "M_ERR_CDATA",
+			"value": "处理自定义数据报告时出错"
+		},
+		{
+			"name": "T_FILTER",
+			"value": "过滤数据"
+		},
+		{
+			"name": "L_NO_DATA",
+			"value": "没有数据"
+		},
+		{
+			"name": "L_STACK_CHART",
+			"value": "堆叠系列"
+		},
+		{
+			"name": "L_MSG_TABNAME",
+			"value": "键入标签维度的数据标签文本。"
+		},
+		{
+			"name": "I_DATA",
+			"value": "数据"
+		},
+		{
+			"name": "L_MGR_DATABASE",
+			"value": "数据库经理"
+		},
+		{
+			"name": "L_REG_DATABASE",
+			"value": "注册数据库"
+		},
+		{
+			"name": "I_DATABASE_CONNECTION",
+			"value": "数据库连接"
+		},
+		{
+			"name": "T_DB_PWD",
+			"value": "数据库连接"
+		},
+		{
+			"name": "T_DATA_UPLOAD",
+			"value": "上传DataFile"
+		},
+		{
+			"name": "L_LD_FILE",
+			"value": "加载DataFile"
+		},
+		{
+			"name": "L_SHOW_TOOL_BUTTON",
+			"value": "显示工具按钮"
+		},
+		{
+			"name": "B_HELP",
+			"value": "救命"
+		},
+		{
+			"name": "L_HELP_DOC",
+			"value": "帮助文档"
+		},
+		{
+			"name": "I_HELP_MGR",
+			"value": "帮助经理"
+		},
+		{
+			"name": "L_HELP_GUIDES",
+			"value": "帮助和指南"
+		},
+		{
+			"name": "L_NEW_DOCUMENT",
+			"value": "添加文档"
+		},
+		{
+			"name": "E_DUP_FOLDER",
+			"value": "不允许移动相同的文件夹"
+		},
+		{
+			"name": "L_TB_BN",
+			"value": "找到此表中使用的相同节点名称。您想要更改所有名称吗？"
+		},
+		{
+			"name": "L_V_DESC",
+			"value": "动态变量编辑器"
+		},
+		{
+			"name": "L_F_BETWEEN_NOT",
+			"value": "不在值之间（不在两者之间）"
+		},
+		{
+			"name": "L_F_BETWEEN",
+			"value": "值之间（BETWEEN）"
+		},
+		{
+			"name": "B_BACK",
+			"value": "背部"
+		},
+		{
+			"name": "L_DRAG_SELECT",
+			"value": "拖动选择"
+		},
+		{
+			"name": "L_ENABLE_DRILL",
+			"value": "深入研究"
+		},
+		{
+			"name": "L_R_UPD_TGT",
+			"value": "钻目标"
+		},
+		{
+			"name": "L_BTN_LOGIN",
+			"value": "登录"
+		},
+		{
+			"name": "L_ML_C2",
+			"value": "决策节点"
+		},
+		{
+			"name": "L_ML_C5",
+			"value": "决策树"
+		},
+		{
+			"name": "L_LABEL_DIST",
+			"value": "标签距离"
+		},
+		{
+			"name": "L_SHOW_LABEL",
+			"value": "显示标签"
+		},
+		{
+			"name": "L_LABEL_ALIGN",
+			"value": "标签对齐"
+		},
+		{
+			"name": "L_L_STEP",
+			"value": "标签步骤"
+		},
+		{
+			"name": "L_MARKER",
+			"value": "标记"
+		},
+		{
+			"name": "L_CFIT_LC",
+			"value": "线条样式"
+		},
+		{
+			"name": "L_BAND_BORDER",
+			"value": "边界"
+		},
+		{
+			"name": "L_LINE_NUM",
+			"value": "电话号码"
+		},
+		{
+			"name": "L_B_LAYOUT",
+			"value": "布局"
+		},
+		{
+			"name": "B_OPT_LAYOUT",
+			"value": "布局"
+		},
+		{
+			"name": "L_LAYOUT",
+			"value": "布局"
+		},
+		{
+			"name": "L_LAYOUT_WIZARD",
+			"value": "布局向导"
+		},
+		{
+			"name": "L_EDIT_LAYOUT",
+			"value": "编辑布局"
+		},
+		{
+			"name": "T_LAYOUT",
+			"value": "布局模板"
+		},
+		{
+			"name": "L_LOG_VIEW",
+			"value": "查看日志结果"
+		},
+		{
+			"name": "L_LOGOUT",
+			"value": "登出"
+		},
+		{
+			"name": "L_DESKTOP_LOGOUT",
+			"value": "登出"
+		},
+		{
+			"name": "L_T_LOUT",
+			"value": "你想退出系统吗？"
+		},
+		{
+			"name": "L_M_C_LOGOUT",
+			"value": "请单击是按钮退出。<br>单击否按钮取消"
+		},
+		{
+			"name": "L_LOGIN_TITLE",
+			"value": "安全登录"
+		},
+		{
+			"name": "B_LOGIN",
+			"value": "登录"
+		},
+		{
+			"name": "L_ONLOAD_RUN",
+			"value": "加载时执行"
+		},
+		{
+			"name": "T_LDATA_TITLE",
+			"value": "本地数据立方体选项"
+		},
+		{
+			"name": "D_EXCELLOADER",
+			"value": "本地文件多维数据集"
+		},
+		{
+			"name": "L_EXCEL_LOADER",
+			"value": "本地文件多维数据集"
+		},
+		{
+			"name": "D_DATACUBE",
+			"value": "本地文件多维数据集"
+		},
+		{
+			"name": "L_CLEAR_LOOKUP",
+			"value": "删除查找"
+		},
+		{
+			"name": "L_RESOURCES",
+			"value": "资源"
+		},
+		{
+			"name": "L_RESOURCE",
+			"value": "资源"
+		},
+		{
+			"name": "D_REPORT",
+			"value": "报告"
+		},
+		{
+			"name": "L_REPORT",
+			"value": "报告"
+		},
+		{
+			"name": "T_REPORT_WINDOW",
+			"value": "报告"
+		},
+		{
+			"name": "L_REPORT_TOOLS",
+			"value": "报告工具"
+		},
+		{
+			"name": "L_REPORT_NAME",
+			"value": "报告名称"
+		},
+		{
+			"name": "L_RPT_V_OPT",
+			"value": "报告查看器选项"
+		},
+		{
+			"name": "L_MENU_REPORT",
+			"value": "创建报告"
+		},
+		{
+			"name": "M_REPORT",
+			"value": "制作报告"
+		},
+		{
+			"name": "L_P_RPT_C",
+			"value": "报告选项"
+		},
+		{
+			"name": "I_REPORT_STYLE",
+			"value": "报告风格"
+		},
+		{
+			"name": "T_GLOBAL_REPORT_STYLE",
+			"value": "外观和感觉"
+		},
+		{
+			"name": "L_P_onlinereport",
+			"value": "运行报告"
+		},
+		{
+			"name": "L_SYS_LOG",
+			"value": "系统日志"
+		},
+		{
+			"name": "M_ERR_C_REP_PROC",
+			"value": "处理自定义报表处理程序时出错"
+		},
+		{
+			"name": "T_REPORT_OPTION",
+			"value": "更改报告选项"
+		},
+		{
+			"name": "L_CHANGE_REPORTTYPE",
+			"value": "更改报告类型"
+		},
+		{
+			"name": "L_SAVE_REPORT",
+			"value": "保存报告"
+		},
+		{
+			"name": "L_ADD_REPORT",
+			"value": "添加报告"
+		},
+		{
+			"name": "T_RPT_PIVOT",
+			"value": "报告枢轴"
+		},
+		{
+			"name": "L_MAP_ITEM",
+			"value": "映射到报告项目"
+		},
+		{
+			"name": "L_LINK_FIELD",
+			"value": "链接字段"
+		},
+		{
+			"name": "L_DRILL_ON_DESC",
+			"value": "检查列以显示链接。"
+		},
+		{
+			"name": "B_WIZARD",
+			"value": "巫师"
+		},
+		{
+			"name": "D_CHARTMEASURE",
+			"value": "微图表"
+		},
+		{
+			"name": "L_CHART_MEASURE",
+			"value": "微图表"
+		},
+		{
+			"name": "L_RNK_LST",
+			"value": "显示所有最后排名"
+		},
+		{
+			"name": "L_L_TAB",
+			"value": "仅加载最后一个选项卡"
+		},
+		{
+			"name": "D_CUBEMODEL",
+			"value": "ROLAP立方体模型"
+		},
+		{
+			"name": "L_ROLAP_CUBE_MODEL",
+			"value": "ROLAP立方体模型"
+		},
+		{
+			"name": "D_CUBE",
+			"value": "ROLAP Cube"
+		},
+		{
+			"name": "L_ROLAP_CUBE",
+			"value": "ROLAP Cube"
+		},
+		{
+			"name": "B_EVERY",
+			"value": "一切"
+		},
+		{
+			"name": "L_EV_DAY",
+			"value": "每小时一天"
+		},
+		{
+			"name": "T_BG_MR",
+			"value": "的Map / Reduce"
+		},
+		{
+			"name": "L_MAP_OPT",
+			"value": "地图选项"
+		},
+		{
+			"name": "L_MAP_TYPE",
+			"value": "地图类型"
+		},
+		{
+			"name": "L_B_JV",
+			"value": "映射/减少Java"
+		},
+		{
+			"name": "L_HD_MAPR",
+			"value": "地图减少"
+		},
+		{
+			"name": "D_MCUBE",
+			"value": "MultiDimension Cube"
+		},
+		{
+			"name": "L_MENU",
+			"value": "菜单"
+		},
+		{
+			"name": "L_FEATURE_CTRL",
+			"value": "功能控制"
+		},
+		{
+			"name": "L_MAIL_BD",
+			"value": "内容"
+		},
+		{
+			"name": "L_P_MEASURE",
+			"value": "措施"
+		},
+		{
+			"name": "D_MEASURE",
+			"value": "测量"
+		},
+		{
+			"name": "L_MEASURE",
+			"value": "测量"
+		},
+		{
+			"name": "T_MEASURE",
+			"value": "测量"
+		},
+		{
+			"name": "L_GROUP_MEASURE",
+			"value": "集团措施"
+		},
+		{
+			"name": "L_REG_MEASURES",
+			"value": "制定措施"
+		},
+		{
+			"name": "T_M_MEASURE",
+			"value": "制定措施"
+		},
+		{
+			"name": "T_M_Measure",
+			"value": "注册措施"
+		},
+		{
+			"name": "L_M_NAME",
+			"value": "测量名称"
+		},
+		{
+			"name": "L_M_FORMAT",
+			"value": "测量格式"
+		},
+		{
+			"name": "L_M_POSITION",
+			"value": "测量位置"
+		},
+		{
+			"name": "L_MEASURE_ON",
+			"value": "测量开"
+		},
+		{
+			"name": "L_BB_STEP_3",
+			"value": "制定措施和时间指标"
+		},
+		{
+			"name": "L_M_FILTER",
+			"value": "测量过滤器"
+		},
+		{
+			"name": "L_META_IMPORT",
+			"value": "导入元文件"
+		},
+		{
+			"name": "I_META_IMP",
+			"value": "加载元文件"
+		},
+		{
+			"name": "T_META_IMP",
+			"value": "加载元文件"
+		},
+		{
+			"name": "T_META_EDITOR",
+			"value": "元编辑器"
+		},
+		{
+			"name": "L_EXPORT_META",
+			"value": "导出文件中的内容"
+		},
+		{
+			"name": "D_METRIC",
+			"value": "公"
+		},
+		{
+			"name": "L_METRIC",
+			"value": "公"
+		},
+		{
+			"name": "L_MC_ELEM_EDT",
+			"value": "元素编辑器"
+		},
+		{
+			"name": "L_T_LOOKUP",
+			"value": "查找选项"
+		},
+		{
+			"name": "L_MONITORING",
+			"value": "监控"
+		},
+		{
+			"name": "L_MODEL_CREATE",
+			"value": "创建模型"
+		},
+		{
+			"name": "L_MODEL_SELECT",
+			"value": "选择型号"
+		},
+		{
+			"name": "L_MODEL_EDIT",
+			"value": "编辑模型"
+		},
+		{
+			"name": "L_LD_INI",
+			"value": "清除所有数据集"
+		},
+		{
+			"name": "L_ALL_DATA",
+			"value": "所有数据"
+		},
+		{
+			"name": "L_CFIT_AS",
+			"value": "所有系列曲线"
+		},
+		{
+			"name": "L_LD_UL",
+			"value": "断开所有连接"
+		},
+		{
+			"name": "L_C_AL",
+			"value": "所有内容"
+		},
+		{
+			"name": "L_BTN_TRG_ALL",
+			"value": "验证过滤器"
+		},
+		{
+			"name": "L_AU_APPLY_SUB",
+			"value": "应用所有子文件夹"
+		},
+		{
+			"name": "L_F_IN_NOT",
+			"value": "不在列表中（不在内）"
+		},
+		{
+			"name": "L_F_IN",
+			"value": "在列表中（IN）"
+		},
+		{
+			"name": "L_LNK_TMPL",
+			"value": "文档模板"
+		},
+		{
+			"name": "B_STRING",
+			"value": "串"
+		},
+		{
+			"name": "L_PREVIEW",
+			"value": "预习"
+		},
+		{
+			"name": "L_FONT_UNDERLINE",
+			"value": "强调"
+		},
+		{
+			"name": "L_DELETE_SHORTCUT",
+			"value": "删除快捷方式"
+		},
+		{
+			"name": "L_SC_PR",
+			"value": "期间运行"
+		},
+		{
+			"name": "L_SCC_TYPE",
+			"value": "重复类型"
+		},
+		{
+			"name": "L_SC_C2",
+			"value": "重复克朗"
+		},
+		{
+			"name": "L_EXPORT_OPTION",
+			"value": "选项"
+		},
+		{
+			"name": "L_EXPORT",
+			"value": "出口"
+		},
+		{
+			"name": "L_MAIL_CC",
+			"value": "邮件CC"
+		},
+		{
+			"name": "B_METHOD",
+			"value": "方法"
+		},
+		{
+			"name": "L_BG_COL",
+			"value": "背景颜色"
+		},
+		{
+			"name": "L_BACK_COLOR",
+			"value": "背面颜色"
+		},
+		{
+			"name": "L_CSTEP_6",
+			"value": "带"
+		},
+		{
+			"name": "L_BAND_TYPE",
+			"value": "乐队类型"
+		},
+		{
+			"name": "L_BB_CA",
+			"value": "气泡颜色轴"
+		},
+		{
+			"name": "L_BB_SA",
+			"value": "气泡尺寸轴"
+		},
+		{
+			"name": "L_BB_OPT",
+			"value": "BubbleMap选项"
+		},
+		{
+			"name": "T_REVISION",
+			"value": "修订控制"
+		},
+		{
+			"name": "L_REVISION",
+			"value": "版本控制"
+		},
+		{
+			"name": "B_SVN",
+			"value": "版本控制和恢复"
+		},
+		{
+			"name": "L_SHOW_LEGEND",
+			"value": "显示传奇"
+		},
+		{
+			"name": "L_LEGEND_POSITION",
+			"value": "传奇位置"
+		},
+		{
+			"name": "L_CSTEP_3",
+			"value": "传说"
+		},
+		{
+			"name": "S_RAN",
+			"value": "范围"
+		},
+		{
+			"name": "L_SAVE_C_MSG",
+			"value": "您正在关闭具有未保存更改的选项卡。您要保存更改吗？"
+		},
+		{
+			"name": "L_SAVE_CHANGES",
+			"value": "保存更改？"
+		},
+		{
+			"name": "L_HL_DESC",
+			"value": "单击要编辑的单元格，或单击“新建”以创建新的高亮选项"
+		},
+		{
+			"name": "L_RM_VAR",
+			"value": "删除变量"
+		},
+		{
+			"name": "I_BD_CONFIG",
+			"value": "变量"
+		},
+		{
+			"name": "L_ADD_VAR",
+			"value": "添加变量"
+		},
+		{
+			"name": "B_SHOW",
+			"value": "节目"
+		},
+		{
+			"name": "L_VIEW_OPTION",
+			"value": "传奇选项"
+		},
+		{
+			"name": "L_TB_VCH",
+			"value": "改变观点"
+		},
+		{
+			"name": "L_SHOW_VIEW_CHANGE",
+			"value": "显示ViewMode按钮"
+		},
+		{
+			"name": "L_RECOVER",
+			"value": "恢复"
+		},
+		{
+			"name": "L_COPY_ITEM",
+			"value": "复制@"
+		},
+		{
+			"name": "D_COMPOSITEREPORT",
+			"value": "综合报告"
+		},
+		{
+			"name": "L_COMPOSITEREPORT",
+			"value": "综合报告"
+		},
+		{
+			"name": "L_P_RPT_RT",
+			"value": "复合枢轴"
+		},
+		{
+			"name": "L_V_RPT",
+			"value": "复合枢轴模式"
+		},
+		{
+			"name": "L_P_RPT",
+			"value": "复合枢轴"
+		},
+		{
+			"name": "T_COMPOSITE_REPORT",
+			"value": "综合报告"
+		},
+		{
+			"name": "F_STOT",
+			"value": "小计"
+		},
+		{
+			"name": "B_MINUTE",
+			"value": "分钟"
+		},
+		{
+			"name": "B_QUARTER",
+			"value": "25美分硬币"
+		},
+		{
+			"name": "S_VAR",
+			"value": "方差"
+		},
+		{
+			"name": "L_ANALYSIS",
+			"value": "分析"
+		},
+		{
+			"name": "I_WIZARD",
+			"value": "分步分析"
+		},
+		{
+			"name": "L_VARIABLES",
+			"value": "变量"
+		},
+		{
+			"name": "L_R_ANAL_CUBE",
+			"value": "分析立方体"
+		},
+		{
+			"name": "L_M_CUBE_SEL",
+			"value": "选择分析主题..."
+		},
+		{
+			"name": "L_B_AC",
+			"value": "分析立方体"
+		},
+		{
+			"name": "L_M_SUBJ",
+			"value": "分析主题："
+		},
+		{
+			"name": "L_R_ANAL_CUBE_L",
+			"value": "主题名称"
+		},
+		{
+			"name": "L_MENU_CUBE",
+			"value": "分析立方体"
+		},
+		{
+			"name": "L_MENU_CUBE_WORK",
+			"value": "立方体分析"
+		},
+		{
+			"name": "T_METRIC_SETTING",
+			"value": "度量配置"
+		},
+		{
+			"name": "B_REMOVE_PIVOT",
+			"value": "删除Pivot"
+		},
+		{
+			"name": "L_ADD_METRIC",
+			"value": "添加新维度"
+		},
+		{
+			"name": "L_LOADING_REPORT",
+			"value": "载入中..."
+		},
+		{
+			"name": "L_PASTE_ITEM",
+			"value": "粘贴在这里"
+		},
+		{
+			"name": "L_ADD_VIEW",
+			"value": "添加视图"
+		},
+		{
+			"name": "L_ML_CEFF",
+			"value": "成本效益分析"
+		},
+		{
+			"name": "L_B_BW",
+			"value": "业务工作流程"
+		},
+		{
+			"name": "B_INACTIVE",
+			"value": "待用"
+		},
+		{
+			"name": "L_B_USR",
+			"value": "被阻止的用户"
+		},
+		{
+			"name": "D_BIGDATA",
+			"value": "大数据"
+		},
+		{
+			"name": "L_BIGDATA",
+			"value": "大数据"
+		},
+		{
+			"name": "T_NOSQLDATA_TITLE",
+			"value": "BigData连接选项"
+		},
+		{
+			"name": "T_NOSQL_CUBE",
+			"value": "BigData分析立方体"
+		},
+		{
+			"name": "L_HD_BPROC",
+			"value": "Bigdata设计"
+		},
+		{
+			"name": "D_BIGDATAMODEL",
+			"value": "BigDataModel"
+		},
+		{
+			"name": "D_NOSQLCUBE",
+			"value": "BigData Cube"
+		},
+		{
+			"name": "L_NOSQL_CUBE",
+			"value": "BigData Cube"
+		},
+		{
+			"name": "L_NULL_VALUE",
+			"value": "空值"
+		},
+		{
+			"name": "L_REM_BLK",
+			"value": "删除空值"
+		},
+		{
+			"name": "M_BLANK",
+			"value": "新增项目"
+		},
+		{
+			"name": "B_ENABLED",
+			"value": "启用"
+		},
+		{
+			"name": "B_ENABLE",
+			"value": "启用"
+		},
+		{
+			"name": "B_USER_DOC",
+			"value": "说明"
+		},
+		{
+			"name": "I_USER",
+			"value": "用户"
+		},
+		{
+			"name": "M_LOCK_MSG",
+			"value": "内容在@ 2处被@ 1锁定"
+		},
+		{
+			"name": "L_BTN_EVTDESC",
+			"value": "禁用用户选择值并运行，并等待按钮单击事件。"
+		},
+		{
+			"name": "L_USER_MANAGEMENT",
+			"value": "用户管理"
+		},
+		{
+			"name": "I_USER_MANAGER",
+			"value": "用户经理"
+		},
+		{
+			"name": "L_MGR_USER",
+			"value": "用户经理"
+		},
+		{
+			"name": "L_USER_DUTY",
+			"value": "用户责任"
+		},
+		{
+			"name": "L_MGR_UD",
+			"value": "用户责任管理"
+		},
+		{
+			"name": "T_USER_GROUP",
+			"value": "用户组"
+		},
+		{
+			"name": "T_SYNC_USER",
+			"value": "用户同步"
+		},
+		{
+			"name": "W_SYNC_SAVE",
+			"value": "你会在服务器中保存用户同步参数吗？"
+		},
+		{
+			"name": "W_SYNC_USER",
+			"value": "你会在服务器中执行用户同步吗？"
+		},
+		{
+			"name": "T_REG_USER",
+			"value": "注册用户"
+		},
+		{
+			"name": "L_B_CM",
+			"value": "自定义指标"
+		},
+		{
+			"name": "L_USERNAME",
+			"value": "用户名"
+		},
+		{
+			"name": "L_DB_UNAME",
+			"value": "用户名"
+		},
+		{
+			"name": "L_USERID",
+			"value": "用户身份"
+		},
+		{
+			"name": "B_CUSTOM",
+			"value": "习惯"
+		},
+		{
+			"name": "L_CUSTOM_FIX",
+			"value": "自定义修复"
+		},
+		{
+			"name": "D_GROUPFIELD",
+			"value": "用户定义的组"
+		},
+		{
+			"name": "D_UDG",
+			"value": "用户定义的组"
+		},
+		{
+			"name": "L_UDG",
+			"value": "用户定义的组"
+		},
+		{
+			"name": "T_UDG",
+			"value": "用户定义的组"
+		},
+		{
+			"name": "T_CUSTOM_METRIC",
+			"value": "自定义指标"
+		},
+		{
+			"name": "L_CUSTOM_FIELD",
+			"value": "自定义字段"
+		},
+		{
+			"name": "L_ADD_USER",
+			"value": "添加用户"
+		},
+		{
+			"name": "L_UD_DESC",
+			"value": "从列表中选择用户职责。"
+		},
+		{
+			"name": "D_CUSTOMMETRIC",
+			"value": "自定义指标"
+		},
+		{
+			"name": "L_CUSTOM_METRIC",
+			"value": "自定义指标"
+		},
+		{
+			"name": "L_FIXEDSIZE",
+			"value": "固定尺寸模式"
+		},
+		{
+			"name": "L_SQL_PRE",
+			"value": "预处理"
+		},
+		{
+			"name": "L_DLOCALE_MGR",
+			"value": "字典区域设置"
+		},
+		{
+			"name": "L_LM_EXP",
+			"value": "导出区域设置数据"
+		},
+		{
+			"name": "L_LM_LCS",
+			"value": "添加区域设置项"
+		},
+		{
+			"name": "L_LM_IMP",
+			"value": "导入区域设置数据"
+		},
+		{
+			"name": "L_E_DEL",
+			"value": "删除"
+		},
+		{
+			"name": "B_DELETE",
+			"value": "删除"
+		},
+		{
+			"name": "B_REMOVE",
+			"value": "去掉"
+		},
+		{
+			"name": "L_DELETE_ITEM",
+			"value": "删除@"
+		},
+		{
+			"name": "L_RELATION_VIEW",
+			"value": "关系视图"
+		},
+		{
+			"name": "L_PAD_TOP",
+			"value": "最佳"
+		},
+		{
+			"name": "L_LNK_DRILL",
+			"value": "钻到细节"
+		},
+		{
+			"name": "L_DRILLREPORT",
+			"value": "用于详细信息视图"
+		},
+		{
+			"name": "L_DET_VIEW",
+			"value": "详细视图"
+		},
+		{
+			"name": "T_DRILL_CONFIG",
+			"value": "详细信息视图配置"
+		},
+		{
+			"name": "L_DRILL_ON",
+			"value": "要钻的列"
+		},
+		{
+			"name": "M_DETAIL",
+			"value": "细节"
+		},
+		{
+			"name": "B_TOP",
+			"value": "最佳"
+		},
+		{
+			"name": "L_RANK_TOP",
+			"value": "排名靠前"
+		},
+		{
+			"name": "L_B_U",
+			"value": "上"
+		},
+		{
+			"name": "B_STATUS",
+			"value": "状态"
+		},
+		{
+			"name": "L_NEW_RPT_VIEWER",
+			"value": "新报告查看器"
+		},
+		{
+			"name": "I_WORKSPACE",
+			"value": "新工作区"
+		},
+		{
+			"name": "L_NEW_PANEL",
+			"value": "新小组"
+		},
+		{
+			"name": "L_REFRESH",
+			"value": "刷新"
+		},
+		{
+			"name": "L_BAND_COLOR",
+			"value": "颜色"
+		},
+		{
+			"name": "B_COLOR",
+			"value": "颜色"
+		},
+		{
+			"name": "B_OWNER",
+			"value": "所有者"
+		},
+		{
+			"name": "B_CR",
+			"value": "创建 .."
+		},
+		{
+			"name": "L_TYPE_ITEM_NAME",
+			"value": "设置要创建的项目名称"
+		},
+		{
+			"name": "I_SERVER_CONFIG",
+			"value": "服务器配置"
+		},
+		{
+			"name": "M_ERR_CONNECT",
+			"value": "无法在服务器上获得连接！请稍后重试"
+		},
+		{
+			"name": "L_P_inv_svc",
+			"value": "调用服务"
+		},
+		{
+			"name": "B_SEL",
+			"value": "选择"
+		},
+		{
+			"name": "B_MOVE_DOWN",
+			"value": "向下移动行"
+		},
+		{
+			"name": "B_MOVE_UP",
+			"value": "向上移动行"
+		},
+		{
+			"name": "B_CD_MHS",
+			"value": "你喜欢把托运物品移到@？"
+		},
+		{
+			"name": "B_CD_CHS",
+			"value": "你喜欢删除已检查的项目吗？"
+		},
+		{
+			"name": "L_DELETE_CHECKED",
+			"value": "删除已选中"
+		},
+		{
+			"name": "L_REMOVE_SELECTED",
+			"value": "删除选定"
+		},
+		{
+			"name": "B_DESC",
+			"value": "描述"
+		},
+		{
+			"name": "L_DESCRIPTION",
+			"value": "描述"
+		},
+		{
+			"name": "L_PREFERENCES",
+			"value": "喜好"
+		},
+		{
+			"name": "L_DESKTOP_SETTING",
+			"value": "设置"
+		},
+		{
+			"name": "L_CHANGE_SETTING",
+			"value": "修改设置"
+		},
+		{
+			"name": "L_SEL_MODE",
+			"value": "选择模式"
+		},
+		{
+			"name": "M_SUCCESS",
+			"value": "成功！"
+		},
+		{
+			"name": "B_SUCCESS",
+			"value": "成功完成流程"
+		},
+		{
+			"name": "L_CVAL_DESC",
+			"value": "使用分号分隔符键入文本"
+		},
+		{
+			"name": "L_HL_CELL",
+			"value": "仅限细胞"
+		},
+		{
+			"name": "L_PADDING",
+			"value": "填充"
+		},
+		{
+			"name": "L_NUMBER_PRECISION",
+			"value": "数字精度"
+		},
+		{
+			"name": "B_PROPERTY",
+			"value": "属性"
+		},
+		{
+			"name": "D_FORMULA",
+			"value": "式"
+		},
+		{
+			"name": "L_FORMULA",
+			"value": "式"
+		},
+		{
+			"name": "D_FORMULAMEASURE",
+			"value": "式"
+		},
+		{
+			"name": "L_CFIT_FOR",
+			"value": "显示公式"
+		},
+		{
+			"name": "L_USE_FORMULA",
+			"value": "显示公式"
+		},
+		{
+			"name": "T_FORMULA_MEASURE",
+			"value": "配方测量"
+		},
+		{
+			"name": "L_SYNTAX_FORMULA",
+			"value": "公式语法"
+		},
+		{
+			"name": "L_S_GRST",
+			"value": "小组结果"
+		},
+		{
+			"name": "L_S_TROW",
+			"value": "显示在顶行"
+		},
+		{
+			"name": "L_SEP_COL",
+			"value": "单独的列"
+		},
+		{
+			"name": "B_MODI",
+			"value": "修改"
+		},
+		{
+			"name": "L_VERTICAL",
+			"value": "垂直"
+		},
+		{
+			"name": "L_ALIGN_VERTICAL",
+			"value": "垂直对齐"
+		},
+		{
+			"name": "L_LAYOUT_VERTICAL",
+			"value": "垂直"
+		},
+		{
+			"name": "L_HORIZONTAL",
+			"value": "横"
+		},
+		{
+			"name": "L_LAYOUT_HORIZONTAL",
+			"value": "横"
+		},
+		{
+			"name": "F_RNK",
+			"value": "秩"
+		},
+		{
+			"name": "L_RNK_VAL",
+			"value": "价值排名"
+		},
+		{
+			"name": "L_RANK_OPTION",
+			"value": "排名选项"
+		},
+		{
+			"name": "L_RNK_CNT",
+			"value": "排名"
+		},
+		{
+			"name": "L_RNK_PAR",
+			"value": "分区依据"
+		},
+		{
+			"name": "L_BTN_TRGALLDESC",
+			"value": "递归验证包括隐藏面板在内的所有过滤器"
+		},
+		{
+			"name": "B_HIDE",
+			"value": "隐"
+		},
+		{
+			"name": "B_NUMERIC",
+			"value": "数字"
+		},
+		{
+			"name": "L_NUM_PREC",
+			"value": "数字精度"
+		},
+		{
+			"name": "T_BG_SC",
+			"value": "壳牌司令部"
+		},
+		{
+			"name": "B_SHEET_NAME",
+			"value": "工作表名称"
+		},
+		{
+			"name": "L_R_ANAL_CUBE_LBL",
+			"value": "板材立方体"
+		},
+		{
+			"name": "T_SHEET_OPTION",
+			"value": "表格选项"
+		},
+		{
+			"name": "L_SHEET_OPTIONS",
+			"value": "表格选项"
+		},
+		{
+			"name": "L_SHEET_NUM",
+			"value": "表号"
+		},
+		{
+			"name": "L_ADD_SHEET",
+			"value": "添加表格"
+		},
+		{
+			"name": "L_C_SCH",
+			"value": "加载计划结果。你想查询服务器吗？"
+		},
+		{
+			"name": "L_REG_SCH",
+			"value": "注册时间表"
+		},
+		{
+			"name": "I_SCHEDULE",
+			"value": "进度监控"
+		},
+		{
+			"name": "L_LST_SCH",
+			"value": "附表清单"
+		},
+		{
+			"name": "L_SC_CT",
+			"value": "时间表类型"
+		},
+		{
+			"name": "B_SCHEDULE",
+			"value": "时间表"
+		},
+		{
+			"name": "L_SCRIPT_WIZARD",
+			"value": "脚本向导"
+		},
+		{
+			"name": "D_SCHEMA",
+			"value": "架构"
+		},
+		{
+			"name": "L_SCHEMA",
+			"value": "架构"
+		},
+		{
+			"name": "L_SCHEMA_NAME",
+			"value": "架构名称"
+		},
+		{
+			"name": "L_REN_SCH",
+			"value": "更换名字"
+		},
+		{
+			"name": "B_ST_NAME",
+			"value": "样式"
+		},
+		{
+			"name": "L_LOOK_AND_FEEL",
+			"value": "外观和感觉"
+		},
+		{
+			"name": "L_GRID_STYLE",
+			"value": "设置网格样式"
+		},
+		{
+			"name": "L_STYLE_OPTION",
+			"value": "款式选择"
+		},
+		{
+			"name": "L_OPT_STYLE",
+			"value": "款式选择"
+		},
+		{
+			"name": "L_LD_ST",
+			"value": "样式"
+		},
+		{
+			"name": "L_STYLENAME",
+			"value": "样式名称"
+		},
+		{
+			"name": "L_ST_NAME",
+			"value": "样式名称"
+		},
+		{
+			"name": "L_F_STR",
+			"value": "字符串格式"
+		},
+		{
+			"name": "L_CLOSEABLE",
+			"value": "可关闭"
+		},
+		{
+			"name": "L_TC_DU",
+			"value": "持续时间（米莉秒）"
+		},
+		{
+			"name": "B_HOUR",
+			"value": "小时"
+		},
+		{
+			"name": "L_DF_TS",
+			"value": "时间分开"
+		},
+		{
+			"name": "L_TIME_FMT",
+			"value": "时间格式"
+		},
+		{
+			"name": "L_TC_TA",
+			"value": "时间轴"
+		},
+		{
+			"name": "L_TIMEZONE",
+			"value": "时区"
+		},
+		{
+			"name": "L_TZ_OFFSET",
+			"value": "时间偏移"
+		},
+		{
+			"name": "L_SHOW_TZ",
+			"value": "显示时区"
+		},
+		{
+			"name": "T_DM",
+			"value": "DateMetric编辑器"
+		},
+		{
+			"name": "L_TIME_OPTION",
+			"value": "时间序列选项"
+		},
+		{
+			"name": "L_SERIES_LAYOUT",
+			"value": "系列布局"
+		},
+		{
+			"name": "L_SERIES",
+			"value": "系列选项"
+		},
+		{
+			"name": "L_SERIES_TYPE",
+			"value": "系列类型"
+		},
+		{
+			"name": "L_SYSTEM",
+			"value": "系统"
+		},
+		{
+			"name": "T_SYS_RES",
+			"value": "系统资源"
+		},
+		{
+			"name": "L_SYS_RES",
+			"value": "系统资源"
+		},
+		{
+			"name": "I_SYSMON",
+			"value": "系统监控"
+		},
+		{
+			"name": "D_PRIVATECONTENT",
+			"value": "系统文件"
+		},
+		{
+			"name": "I_ABOUT_DETAIL",
+			"value": "关于"
+		},
+		{
+			"name": "L_S_LK",
+			"value": "系统查找"
+		},
+		{
+			"name": "B_T_FR",
+			"value": "从时间"
+		},
+		{
+			"name": "B_DT_FR",
+			"value": "从日期"
+		},
+		{
+			"name": "L_MAKESTYLE",
+			"value": "定义新风格"
+		},
+		{
+			"name": "L_PWD_NEW",
+			"value": "新密码"
+		},
+		{
+			"name": "L_MAKEITEM_G",
+			"value": "制作物品"
+		},
+		{
+			"name": "L_MAKEITEM",
+			"value": "制作项目（@）"
+		},
+		{
+			"name": "S_REL",
+			"value": "可靠"
+		},
+		{
+			"name": "B_EXECUTE",
+			"value": "执行"
+		},
+		{
+			"name": "L_RUN",
+			"value": "跑"
+		},
+		{
+			"name": "L_RUN_BUTTON",
+			"value": "运行按钮"
+		},
+		{
+			"name": "L_BTN_TRG",
+			"value": "触发器运行事件"
+		},
+		{
+			"name": "B_UNDO",
+			"value": "取消更改"
+		},
+		{
+			"name": "L_BTN_ROW_ON",
+			"value": "行号按钮"
+		},
+		{
+			"name": "L_BTN_TRGDESC",
+			"value": "单击“运行”按钮时，触发其他筛选框值。"
+		},
+		{
+			"name": "L_RUN_REPORT",
+			"value": "跑"
+		},
+		{
+			"name": "B_NO",
+			"value": "没有"
+		},
+		{
+			"name": "L_PAD_BOTTOM",
+			"value": "底部"
+		},
+		{
+			"name": "L_INPUT_USERID",
+			"value": "ID"
+		},
+		{
+			"name": "B_ID",
+			"value": "ID"
+		},
+		{
+			"name": "B_INSIDE",
+			"value": "内"
+		},
+		{
+			"name": "L_INNER_RADIUS",
+			"value": "内半径"
+		},
+		{
+			"name": "L_EVENT_WIZARD",
+			"value": "动作向导"
+		},
+		{
+			"name": "L_APPL",
+			"value": "应用"
+		},
+		{
+			"name": "L_SW_APP",
+			"value": "切换应用"
+		},
+		{
+			"name": "L_LOCALE_MANAGER",
+			"value": "区域经理"
+		},
+		{
+			"name": "L_SELECT_LOCALE",
+			"value": "选择语言"
+		},
+		{
+			"name": "I_LOC_MGR",
+			"value": "区域经理"
+		},
+		{
+			"name": "L_R_UT_DRILL",
+			"value": "更新表"
+		},
+		{
+			"name": "L_DATA_TAB",
+			"value": "上传的数据"
+		},
+		{
+			"name": "L_STG_LINE",
+			"value": "交错线"
+		},
+		{
+			"name": "L_DF_YF",
+			"value": "年份格式"
+		},
+		{
+			"name": "B_OP",
+			"value": "操作者"
+		},
+		{
+			"name": "L_HL_COL",
+			"value": "列"
+		},
+		{
+			"name": "L_P_COL",
+			"value": "列Dimensios"
+		},
+		{
+			"name": "L_AREA_COLUMN",
+			"value": "柱"
+		},
+		{
+			"name": "L_ENGLISH",
+			"value": "英语"
+		},
+		{
+			"name": "L_MAP_AXIS",
+			"value": "地图轴"
+		},
+		{
+			"name": "B_ZOOM",
+			"value": "放大"
+		},
+		{
+			"name": "B_OK",
+			"value": "好"
+		},
+		{
+			"name": "B_YES",
+			"value": "是"
+		},
+		{
+			"name": "L_CFIT_FCS",
+			"value": "预测"
+		},
+		{
+			"name": "M_ERROR",
+			"value": "错误"
+		},
+		{
+			"name": "L_ALIGN_RIGHT",
+			"value": "对"
+		},
+		{
+			"name": "L_PAD_RIGHT",
+			"value": "对"
+		},
+		{
+			"name": "B_ASC",
+			"value": "上升"
+		},
+		{
+			"name": "B_ORDER_ASC",
+			"value": "订单升序"
+		},
+		{
+			"name": "B_OVERFLOW",
+			"value": "溢出"
+		},
+		{
+			"name": "B_AMPM",
+			"value": "上午下午"
+		},
+		{
+			"name": "L_DF_APM",
+			"value": "上午下午"
+		},
+		{
+			"name": "L_EXP_OFFICE",
+			"value": "Office Direct"
+		},
+		{
+			"name": "L_EXPORT_OFFICE",
+			"value": "Office Direct"
+		},
+		{
+			"name": "B_OPTION",
+			"value": "选项"
+		},
+		{
+			"name": "L_OPTIONS",
+			"value": "选项"
+		},
+		{
+			"name": "S_SKEW",
+			"value": "偏态"
+		},
+		{
+			"name": "L_LNK_EXT",
+			"value": "外部URL链接"
+		},
+		{
+			"name": "L_R_CMENU",
+			"value": "外部钻孔目标"
+		},
+		{
+			"name": "L_ALIGN_LEFT",
+			"value": "剩下"
+		},
+		{
+			"name": "L_PAD_LEFT",
+			"value": "剩下"
+		},
+		{
+			"name": "L_DF_WD",
+			"value": "平日"
+		},
+		{
+			"name": "B_WEEK",
+			"value": "周"
+		},
+		{
+			"name": "L_DF_WF",
+			"value": "平日格式"
+		},
+		{
+			"name": "L_DF_WD_O",
+			"value": "平日订单"
+		},
+		{
+			"name": "L_BORDER_RIGHT",
+			"value": "边界吧"
+		},
+		{
+			"name": "L_DATE_FORMAT_SRC",
+			"value": "来源日期格式"
+		},
+		{
+			"name": "B_MONTH",
+			"value": "月"
+		},
+		{
+			"name": "L_DF_MF",
+			"value": "月份格式"
+		},
+		{
+			"name": "B_WEEKMONTH",
+			"value": "周月"
+		},
+		{
+			"name": "L_EXPORT_PRINT",
+			"value": "HTML打印"
+		},
+		{
+			"name": "L_LATITUDE",
+			"value": "纬度"
+		},
+		{
+			"name": "L_RO_INST1",
+			"value": "请选择以上选项。"
+		},
+		{
+			"name": "B_LOC",
+			"value": "地点"
+		},
+		{
+			"name": "L_P_open_win",
+			"value": "打开窗户"
+		},
+		{
+			"name": "L_ML_C3",
+			"value": "实用节点"
+		},
+		{
+			"name": "L_FEATURE",
+			"value": "特征"
+		},
+		{
+			"name": "B_TYPE",
+			"value": "类型"
+		},
+		{
+			"name": "L_TYPE",
+			"value": "类型"
+		},
+		{
+			"name": "T_RSN",
+			"value": "报告Twit"
+		},
+		{
+			"name": "M_NOT_EDITABLE",
+			"value": "不允许编辑此项目！"
+		},
+		{
+			"name": "L_GOTO",
+			"value": "去"
+		},
+		{
+			"name": "L_MOVE",
+			"value": "移动"
+		},
+		{
+			"name": "L_B_MVT",
+			"value": "搬去"
+		},
+		{
+			"name": "B_NAME",
+			"value": "名称"
+		},
+		{
+			"name": "L_RENAME",
+			"value": "改名"
+		},
+		{
+			"name": "L_RENAME_ITEM",
+			"value": "改名 @"
+		},
+		{
+			"name": "T_RENAME_ITEM",
+			"value": "重命名项目（@）"
+		},
+		{
+			"name": "L_EMAIL",
+			"value": "电子邮件"
+		},
+		{
+			"name": "L_NOTI_EMAIL",
+			"value": "通知电子邮件"
+		},
+		{
+			"name": "T_SAVE_IMAGE",
+			"value": "图片"
+		},
+		{
+			"name": "L_SAVE_IMAGE",
+			"value": "另存为图像"
+		},
+		{
+			"name": "L_BTN_EVT",
+			"value": "与事件一起运行"
+		},
+		{
+			"name": "L_C_PREV",
+			"value": "上一页"
+		},
+		{
+			"name": "B_PREVIOUS",
+			"value": "以前"
+		},
+		{
+			"name": "L_CLC_PERI",
+			"value": "过期后"
+		},
+		{
+			"name": "B_DAY",
+			"value": "天"
+		},
+		{
+			"name": "L_C_D_NAMES_M",
+			"value": "星期天#星期一#星期二#星期三#星期四#星期五#星期六"
+		},
+		{
+			"name": "L_C_D_NAMES_S",
+			"value": "星期天#星期一#星期二#星期三#星期四#星期五#星期六"
+		},
+		{
+			"name": "B_GENERAL",
+			"value": "一般"
+		},
+		{
+			"name": "L_LAYOUT_NORMAL",
+			"value": "正常"
+		},
+		{
+			"name": "L_GENERAL_OPTION",
+			"value": "常规选项"
+		},
+		{
+			"name": "L_C_D_NAMES",
+			"value": "星期天#星期一#星期二#星期三#星期四#星期五#星期六"
+		},
+		{
+			"name": "L_DF_DS",
+			"value": "日期分开"
+		},
+		{
+			"name": "L_DF_DF",
+			"value": "日格式"
+		},
+		{
+			"name": "L_AUTO_WIDTH",
+			"value": "自动尺寸"
+		},
+		{
+			"name": "L_BUILD",
+			"value": "建议的构建项目"
+		},
+		{
+			"name": "L_ML_LEARN",
+			"value": "学习"
+		},
+		{
+			"name": "D_CLASSMODULE",
+			"value": "ClassModule"
+		},
+		{
+			"name": "D_JAVAPACKAGE",
+			"value": "Java包"
+		},
+		{
+			"name": "L_P_execute_script",
+			"value": "运行JavaScript"
+		},
+		{
+			"name": "L_M_SUBJ_REC",
+			"value": "最近使用的物品"
+		},
+		{
+			"name": "L_F_LE",
+			"value": "更少或相等（<=）"
+		},
+		{
+			"name": "L_F_LE_NOT",
+			"value": "不小于或等于（>）"
+		},
+		{
+			"name": "L_F_LT",
+			"value": "少于（<）"
+		},
+		{
+			"name": "L_JB_STAT",
+			"value": "工作状态"
+		},
+		{
+			"name": "D_WORKSPACE",
+			"value": "工作区"
+		},
+		{
+			"name": "B_WORKSPACE",
+			"value": "工作区"
+		},
+		{
+			"name": "L_WORKSPACE",
+			"value": "新工作区"
+		},
+		{
+			"name": "L_C_MW",
+			"value": "管理工作区"
+		},
+		{
+			"name": "L_F_LT_NOT",
+			"value": "不小于（> =）"
+		},
+		{
+			"name": "B_UNLOCK",
+			"value": "开锁"
+		},
+		{
+			"name": "B_SAVE",
+			"value": "保存"
+		},
+		{
+			"name": "L_SELECT_PATH",
+			"value": "选择要创建的路径"
+		},
+		{
+			"name": "M_ERR_NSAVE",
+			"value": "需要保存内容！"
+		},
+		{
+			"name": "B_APPLY",
+			"value": "应用"
+		},
+		{
+			"name": "L_APPL_R",
+			"value": "应用于"
+		},
+		{
+			"name": "L_CLC_HOUR",
+			"value": "清楚"
+		},
+		{
+			"name": "L_TM_ALG",
+			"value": "算法"
+		},
+		{
+			"name": "L_LAYOUT_CASCADE",
+			"value": "级联"
+		},
+		{
+			"name": "L_DRILL_PARAM",
+			"value": "列到Params"
+		},
+		{
+			"name": "L_FETCH_ALL",
+			"value": "获取所有数据"
+		},
+		{
+			"name": "B_SHOW_ALL",
+			"value": "显示所有"
+		},
+		{
+			"name": "L_EN_DRILL",
+			"value": "钻到所有人"
+		},
+		{
+			"name": "L_EN_DRILL_DESC",
+			"value": "检查钻取到所有工作表"
+		},
+		{
+			"name": "L_CFIT_SS",
+			"value": "显示摘要曲线"
+		},
+		{
+			"name": "L_ALL_VALUE",
+			"value": "所有价值"
+		},
+		{
+			"name": "F_P_POT",
+			"value": "总数百分比"
+		},
+		{
+			"name": "E_SWA_CFM",
+			"value": "请选择要切换到的应用程序名称。"
+		},
+		{
+			"name": "L_FONT_ALIGNMENT",
+			"value": "对准"
+		},
+		{
+			"name": "L_SORT_SEL",
+			"value": "排序方法"
+		},
+		{
+			"name": "L_SORT_TP",
+			"value": "排序类型"
+		},
+		{
+			"name": "L_DF_OS",
+			"value": "订单风格"
+		},
+		{
+			"name": "L_SORT_ORD",
+			"value": "排序订单"
+		},
+		{
+			"name": "L_SORT_OPTION",
+			"value": "排名和排序"
+		},
+		{
+			"name": "L_F_SORT",
+			"value": "排序字段"
+		},
+		{
+			"name": "T_SORT_OPTION",
+			"value": "排序选项"
+		},
+		{
+			"name": "M_INFO",
+			"value": "信息！"
+		},
+		{
+			"name": "L_REMOVE",
+			"value": "去掉"
+		},
+		{
+			"name": "L_SHOW_TITLE",
+			"value": "显示标题"
+		},
+		{
+			"name": "L_TITLE_OPTION",
+			"value": "标题设置"
+		},
+		{
+			"name": "L_CONDITION",
+			"value": "条件"
+		},
+		{
+			"name": "L_ADD_CONDITION",
+			"value": "添加条件"
+		},
+		{
+			"name": "M_S_S2",
+			"value": "找不到已注册表格的结果。"
+		},
+		{
+			"name": "L_JOIN",
+			"value": "加入"
+		},
+		{
+			"name": "L_ADD_JOIN",
+			"value": "添加加入"
+		},
+		{
+			"name": "L_BTN_SEARCH",
+			"value": "搜索"
+		},
+		{
+			"name": "L_ROW_LIMIT_COUNT",
+			"value": "限制数量"
+		},
+		{
+			"name": "B_NO_DATA",
+			"value": "没有数据"
+		},
+		{
+			"name": "L_EMPTY_DATA",
+			"value": "在此列表中清空"
+		},
+		{
+			"name": "L_VIEW_MODE_LBL",
+			"value": "数据查询查看器"
+		},
+		{
+			"name": "B_PROC",
+			"value": "处理请求.. <br>请稍等。"
+		},
+		{
+			"name": "L_BAND_VALUE_2",
+			"value": "价值"
+		},
+		{
+			"name": "B_T_TO",
+			"value": "到时间"
+		},
+		{
+			"name": "B_DT_TO",
+			"value": "至今"
+		},
+		{
+			"name": "L_F_VALUE_TO",
+			"value": "为了价值"
+		},
+		{
+			"name": "L_T_LOGOUT",
+			"value": "登出"
+		},
+		{
+			"name": "L_M_LOGOUT",
+			"value": "您确定要退出吗？"
+		},
+		{
+			"name": "L_C_W_H",
+			"value": "周"
+		},
+		{
+			"name": "L_DISTINCT_QUERY",
+			"value": "不同的查询"
+		},
+		{
+			"name": "L_DISTINCT",
+			"value": "返回不同的所有行"
+		},
+		{
+			"name": "S_MEDIAN",
+			"value": "中位数"
+		},
+		{
+			"name": "B_FAVORITES",
+			"value": "最爱"
+		},
+		{
+			"name": "M_SAVED_FAV",
+			"value": "在收藏夹列表中添加"
+		},
+		{
+			"name": "L_C_FC",
+			"value": "我最喜爱的"
+		},
+		{
+			"name": "F_INC",
+			"value": "增加的"
+		},
+		{
+			"name": "L_GEO_FIELD",
+			"value": "地理位置"
+		},
+		{
+			"name": "L_CONTACT_HELP",
+			"value": "如需支持，请联系"
+		},
+		{
+			"name": "L_EV_MIN",
+			"value": "每分钟"
+		},
+		{
+			"name": "L_SC_C3",
+			"value": "一次运行一次"
+		},
+		{
+			"name": "L_EV_HOUR",
+			"value": "每隔一小时"
+		},
+		{
+			"name": "M_UNKNOWN",
+			"value": "未知错误！"
+		},
+		{
+			"name": "L_E_VALUE",
+			"value": "键入值"
+		},
+		{
+			"name": "L_AGGR",
+			"value": "聚合"
+		},
+		{
+			"name": "F_DIFF",
+			"value": "区别"
+		},
+		{
+			"name": "L_CSTEP_1",
+			"value": "图表"
+		},
+		{
+			"name": "T_CHART_WIZARD",
+			"value": "图表设计师"
+		},
+		{
+			"name": "L_CLR_SET",
+			"value": "颜色设置"
+		},
+		{
+			"name": "T_CHART_SERIES",
+			"value": "图表系列"
+		},
+		{
+			"name": "L_CSTEP_4",
+			"value": "地块面积"
+		},
+		{
+			"name": "L_CHART_OPTION",
+			"value": "数据透视选项"
+		},
+		{
+			"name": "L_CHART_GROUP",
+			"value": "图表类别"
+		},
+		{
+			"name": "L_CHART_THEME",
+			"value": "图表主题"
+		},
+		{
+			"name": "T_CHART_PLOTBAND",
+			"value": "图表情节带"
+		},
+		{
+			"name": "L_VIEW_CHART",
+			"value": "图表视图"
+		},
+		{
+			"name": "L_CHART_TYPE",
+			"value": "图表类型"
+		},
+		{
+			"name": "L_MAX_CHART_ELEMENT",
+			"value": "数据元素"
+		},
+		{
+			"name": "T_BG_SCR",
+			"value": "命令结果"
+		},
+		{
+			"name": "L_WAIT_1",
+			"value": "处理请求时请稍候"
+		},
+		{
+			"name": "S_HOME",
+			"value": "家"
+		},
+		{
+			"name": "S_KURT",
+			"value": "峰度"
+		},
+		{
+			"name": "B_SECOND",
+			"value": "第二"
+		},
+		{
+			"name": "B_DEFAULT",
+			"value": "默认"
+		},
+		{
+			"name": "B_CLEAR",
+			"value": "明确"
+		},
+		{
+			"name": "L_C_LC",
+			"value": "最新内容"
+		},
+		{
+			"name": "L_BB_MS",
+			"value": "最大气泡尺寸"
+		},
+		{
+			"name": "S_MAX",
+			"value": "最大值"
+		},
+		{
+			"name": "F_MAX",
+			"value": "最大值"
+		},
+		{
+			"name": "F_MIN",
+			"value": "最低限度"
+		},
+		{
+			"name": "L_MIN_WIDTH",
+			"value": "最小宽度"
+		},
+		{
+			"name": "L_MIN_HEIGHT",
+			"value": "最小高度"
+		},
+		{
+			"name": "S_MIN",
+			"value": "最低限度"
+		},
+		{
+			"name": "L_LAST_UPD",
+			"value": "上次更新时间："
+		},
+		{
+			"name": "B_LASTUPD",
+			"value": "最近更新时间"
+		},
+		{
+			"name": "B_ADD",
+			"value": "加"
+		},
+		{
+			"name": "L_ML_C4a",
+			"value": "推理"
+		},
+		{
+			"name": "L_SWAP_AXIS",
+			"value": "交换轴"
+		},
+		{
+			"name": "T_BG_OP",
+			"value": "产量"
+		},
+		{
+			"name": "L_TB_PRT_T",
+			"value": "出口目标"
+		},
+		{
+			"name": "T_EXPORT_WIZARD",
+			"value": "导出向导"
+		},
+		{
+			"name": "L_TB_PRT",
+			"value": "出口按钮"
+		},
+		{
+			"name": "L_EXP_MET",
+			"value": "菜单控制"
+		},
+		{
+			"name": "L_EXP_MET_DESC",
+			"value": "检查要在此报告中使用的菜单项。"
+		},
+		{
+			"name": "L_LNK_DOC",
+			"value": "下载导出文件"
+		},
+		{
+			"name": "L_OUTP_TYPE",
+			"value": "输出类型"
+		},
+		{
+			"name": "L_PG_RANGE",
+			"value": "页面范围"
+		},
+		{
+			"name": "L_PG_START",
+			"value": "页面开始"
+		},
+		{
+			"name": "B_PROC_CANCEL",
+			"value": "取消"
+		},
+		{
+			"name": "B_CANCEL",
+			"value": "取消"
+		},
+		{
+			"name": "L_USE_CACHE",
+			"value": "使用缓存"
+		},
+		{
+			"name": "L_CACHE_PERI",
+			"value": "缓存期"
+		},
+		{
+			"name": "L_CACHE_RULE",
+			"value": "缓存规则"
+		},
+		{
+			"name": "I_EXP_SCH",
+			"value": "内容搜索选项"
+		},
+		{
+			"name": "T_EXP_MC",
+			"value": "导出内容"
+		},
+		{
+			"name": "T_EXP_MC_Q",
+			"value": "你会继续将内容导出到文件吗？"
+		},
+		{
+			"name": "L_CONTROLLER",
+			"value": "控制"
+		},
+		{
+			"name": "L_FIX_COLUMN",
+			"value": "修复列"
+		},
+		{
+			"name": "L_COL_VIS",
+			"value": "列可见"
+		},
+		{
+			"name": "L_COL_SIZE",
+			"value": "列大小"
+		},
+		{
+			"name": "L_COLUMN_WIDTH",
+			"value": "列宽"
+		},
+		{
+			"name": "L_R_COLUMN_FIT",
+			"value": "将柱子安装到面板上"
+		},
+		{
+			"name": "L_COL_TREE",
+			"value": "创建列标题树"
+		},
+		{
+			"name": "L_ML_C6",
+			"value": "案例"
+		},
+		{
+			"name": "L_ML_C6b",
+			"value": "删除案例"
+		},
+		{
+			"name": "L_ML_C6a",
+			"value": "添加案例"
+		},
+		{
+			"name": "B_CODE",
+			"value": "码"
+		},
+		{
+			"name": "L_CODEMAPPING",
+			"value": "CodeMapping"
+		},
+		{
+			"name": "D_CODEMAP",
+			"value": "代码映射"
+		},
+		{
+			"name": "L_LOOKUP",
+			"value": "度量标准查找"
+		},
+		{
+			"name": "L_CODE_FIELD",
+			"value": "代码映射"
+		},
+		{
+			"name": "T_CODE_MAPPING",
+			"value": "代码映射"
+		},
+		{
+			"name": "I_QRY_TOOL",
+			"value": "查询工具"
+		},
+		{
+			"name": "L_DB_SCHEDULE_QUERYTIMEOUT",
+			"value": "查询超时（调度程序）"
+		},
+		{
+			"name": "L_DB_QUERYTIMEOUT",
+			"value": "查询超时（S）"
+		},
+		{
+			"name": "L_CUBE",
+			"value": "立方体"
+		},
+		{
+			"name": "T_CUBE",
+			"value": "立方体"
+		},
+		{
+			"name": "L_R_ANAL_CUBE_LB",
+			"value": "立方体"
+		},
+		{
+			"name": "L_MC_DATA_EDT",
+			"value": "立方体数据编辑器"
+		},
+		{
+			"name": "B_BUILD",
+			"value": "创建多维数据集"
+		},
+		{
+			"name": "L_BUILD_CUBE",
+			"value": "构建多维数据集"
+		},
+		{
+			"name": "L_SAVE_CUBE",
+			"value": "保存多维数据集"
+		},
+		{
+			"name": "B_B_CUBE",
+			"value": "单击继续以启动自动多维数据集生成过程"
+		},
+		{
+			"name": "T_CUBE_MODEL",
+			"value": "立方体模型"
+		},
+		{
+			"name": "L_BUILD_MODEL",
+			"value": "模型向导"
+		},
+		{
+			"name": "L_SHOW_PIVOT",
+			"value": "显示CubeFolder"
+		},
+		{
+			"name": "L_E_CB",
+			"value": "编辑多维数据集"
+		},
+		{
+			"name": "L_F_GE",
+			"value": "大或等（> =）"
+		},
+		{
+			"name": "L_F_GE_NOT",
+			"value": "不大于或等于（<）"
+		},
+		{
+			"name": "L_F_GT",
+			"value": "大于（>）"
+		},
+		{
+			"name": "L_F_GT_NOT",
+			"value": "不大于（<=）"
+		},
+		{
+			"name": "L_SCALE_DOWN",
+			"value": "必要时缩小"
+		},
+		{
+			"name": "L_CLASS_MOD",
+			"value": "课程模块"
+		},
+		{
+			"name": "L_P_CLUSTER",
+			"value": "群集维度"
+		},
+		{
+			"name": "L_CLUSTER",
+			"value": "簇"
+		},
+		{
+			"name": "L_CLIPBOARD_COPY",
+			"value": "复制到剪贴板"
+		},
+		{
+			"name": "B_CLIPBOARD",
+			"value": "复制到剪贴板"
+		},
+		{
+			"name": "L_EMPTY_SEARCH",
+			"value": "搜索关键字"
+		},
+		{
+			"name": "L_F_LIKE",
+			"value": "包含关键字（LIKE）"
+		},
+		{
+			"name": "L_F_LIKE_NOT",
+			"value": "不包括关键字（不喜欢）"
+		},
+		{
+			"name": "B_TITLE",
+			"value": "标题"
+		},
+		{
+			"name": "L_TITLE",
+			"value": "标题文字"
+		},
+		{
+			"name": "L_HIDE_TITLE",
+			"value": "隐藏标题"
+		},
+		{
+			"name": "L_STYLE_TITLE",
+			"value": "标题风格"
+		},
+		{
+			"name": "L_T_DIR",
+			"value": "标题位置"
+		},
+		{
+			"name": "L_TITLE_POSITION",
+			"value": "职位"
+		},
+		{
+			"name": "L_OPT_TBAR",
+			"value": "标题栏选项"
+		},
+		{
+			"name": "L_BROWSE_ITEM",
+			"value": "浏览@"
+		},
+		{
+			"name": "T_BROWSER",
+			"value": "浏览器"
+		},
+		{
+			"name": "S_NAVI",
+			"value": "航海家"
+		},
+		{
+			"name": "T_TAB_BROWSER",
+			"value": "选项卡式浏览器"
+		},
+		{
+			"name": "L_SHOW_TAB_BAR",
+			"value": "显示标签按钮"
+		},
+		{
+			"name": "L_R_CM_SHOWTAB",
+			"value": "在Tab中打开"
+		},
+		{
+			"name": "L_NEW_TABPANEL",
+			"value": "新的TabPanel"
+		},
+		{
+			"name": "D_TENANT",
+			"value": "承租人"
+		},
+		{
+			"name": "L_ADD_TENANT",
+			"value": "添加租户"
+		},
+		{
+			"name": "L_BORDER_COLOR",
+			"value": "边框颜色"
+		},
+		{
+			"name": "M_SUC_DBCON",
+			"value": "成功连接数据库"
+		},
+		{
+			"name": "I_TABLE_REGISTER",
+			"value": "表寄存器"
+		},
+		{
+			"name": "L_REG_TABLE",
+			"value": "表寄存器"
+		},
+		{
+			"name": "L_TABLES",
+			"value": "表来源"
+		},
+		{
+			"name": "L_TBL_ORD",
+			"value": "表顺序"
+		},
+		{
+			"name": "L_ERR_CUBE_ITEMS",
+			"value": "多维数据集上存在不匹配或错误项。修改并保存多维数据集以更新不匹配的信息。"
+		},
+		{
+			"name": "L_P_RELOAD",
+			"value": "单击“刷新”以加载。"
+		},
+		{
+			"name": "L_NEW_TEXTAREA",
+			"value": "新TextArea"
+		},
+		{
+			"name": "L_F_DISP",
+			"value": "显示字段"
+		},
+		{
+			"name": "L_AUTO_ROT",
+			"value": "旋转文字"
+		},
+		{
+			"name": "L_APPLY_TMPL",
+			"value": "应用模板"
+		},
+		{
+			"name": "L_F_TMPL",
+			"value": "应用模板"
+		},
+		{
+			"name": "L_EXPORT_JASPER",
+			"value": "JasperReport的"
+		},
+		{
+			"name": "T_DB_TMPL",
+			"value": "数据库模板"
+		},
+		{
+			"name": "M_SEL_MODEL",
+			"value": "选择工具栏按钮上的模型以继续立方体设计。"
+		},
+		{
+			"name": "B_TREEVIEW",
+			"value": "树"
+		},
+		{
+			"name": "L_TREE_VIEW",
+			"value": "树视图"
+		},
+		{
+			"name": "L_ENABLE_TREE_VIEW",
+			"value": "启用树视图"
+		},
+		{
+			"name": "L_TREEM_OPTION",
+			"value": "TreeMap选项"
+		},
+		{
+			"name": "L_TM_CL",
+			"value": "TreeMap类"
+		},
+		{
+			"name": "L_SCC_REC",
+			"value": "与间隔重复"
+		},
+		{
+			"name": "L_SCC_DATE",
+			"value": "重现时间"
+		},
+		{
+			"name": "L_PIE_OPTION",
+			"value": "馅饼选项"
+		},
+		{
+			"name": "L_IMPORT_FILE",
+			"value": "导入文件"
+		},
+		{
+			"name": "L_FILEEXT",
+			"value": "延期"
+		},
+		{
+			"name": "L_SELECT_FILE",
+			"value": "选择文件..."
+		},
+		{
+			"name": "L_FILENAME",
+			"value": "文件名"
+		},
+		{
+			"name": "T_EXCEL_LOADER",
+			"value": "LocalData Loader"
+		},
+		{
+			"name": "L_LAYOUT_POPUP",
+			"value": "弹出"
+		},
+		{
+			"name": "L_PANEL_H",
+			"value": "面板高度"
+		},
+		{
+			"name": "L_PANEL_W",
+			"value": "面板宽度"
+		},
+		{
+			"name": "L_INPUT_PASSWORD",
+			"value": "密码"
+		},
+		{
+			"name": "T_PASSWORD_CHANGE",
+			"value": "密码"
+		},
+		{
+			"name": "L_DB_PWD",
+			"value": "密码"
+		},
+		{
+			"name": "L_PWD_LABEL",
+			"value": "安全密码"
+		},
+		{
+			"name": "L_PASSWORD",
+			"value": "更改密码"
+		},
+		{
+			"name": "L_CH_PASSWD",
+			"value": "更改密码"
+		},
+		{
+			"name": "L_PWD_CONFIRM",
+			"value": "确认新密码"
+		},
+		{
+			"name": "M_BLANK_PWD",
+			"value": "密码不应为空"
+		},
+		{
+			"name": "L_STACK_PERCENT",
+			"value": "按百分比堆叠"
+		},
+		{
+			"name": "L_PAGING",
+			"value": "分页"
+		},
+		{
+			"name": "L_PG_DIRECTION",
+			"value": "页面方向"
+		},
+		{
+			"name": "L_SHOW_PAGENUMBER",
+			"value": "显示页码"
+		},
+		{
+			"name": "L_PAGE_STYLE",
+			"value": "页面样式"
+		},
+		{
+			"name": "L_PAGE_OPTIONS",
+			"value": "页面选项"
+		},
+		{
+			"name": "L_PG_SIZE",
+			"value": "页面大小"
+		},
+		{
+			"name": "L_FOOTER",
+			"value": "页脚"
+		},
+		{
+			"name": "L_REPEAT_HEADER",
+			"value": "重复标题"
+		},
+		{
+			"name": "L_ROW_P_PAGE",
+			"value": "每页行数"
+		},
+		{
+			"name": "L_PG_LOADER",
+			"value": "页面加载"
+		},
+		{
+			"name": "L_USE_PAGING",
+			"value": "使用分页"
+		},
+		{
+			"name": "L_EDIT",
+			"value": "编辑"
+		},
+		{
+			"name": "L_ML_C4b",
+			"value": "编辑"
+		},
+		{
+			"name": "L_E_IT",
+			"value": "编辑项目"
+		},
+		{
+			"name": "L_EDIT_ITEM",
+			"value": "编辑@"
+		},
+		{
+			"name": "L_EDITOR_TYPE",
+			"value": "编辑类型"
+		},
+		{
+			"name": "M_LOCK_TITLE",
+			"value": "内容已锁定"
+		},
+		{
+			"name": "S_AVG",
+			"value": "平均"
+		},
+		{
+			"name": "F_AVG",
+			"value": "平均"
+		},
+		{
+			"name": "L_C_FMT_VAL",
+			"value": "使用格式化值"
+		},
+		{
+			"name": "B_WIDTH",
+			"value": "宽度"
+		},
+		{
+			"name": "L_FIXED_W",
+			"value": "修复宽度"
+		},
+		{
+			"name": "L_FONT_SELECT",
+			"value": "字体选择"
+		},
+		{
+			"name": "L_FONT_ST",
+			"value": "字体样式"
+		},
+		{
+			"name": "L_FONTSIZE",
+			"value": "字体大小"
+		},
+		{
+			"name": "D_FOLDER",
+			"value": "夹"
+		},
+		{
+			"name": "B_FOLDER",
+			"value": "夹"
+		},
+		{
+			"name": "T_MGR_FOLDER",
+			"value": "Folder Manager"
+		},
+		{
+			"name": "L_BB_STEP_2",
+			"value": "创建文件夹结构"
+		},
+		{
+			"name": "L_CREATE_FOLDER",
+			"value": "创建文件夹"
+		},
+		{
+			"name": "L_REG_FOLDER",
+			"value": "新增文件夹"
+		},
+		{
+			"name": "L_MGR_FD",
+			"value": "管理文件夹"
+		},
+		{
+			"name": "L_FOLDER_ITEMS",
+			"value": "文件夹项目"
+		},
+		{
+			"name": "L_DATE_FORMAT_TGT",
+			"value": "显示日期格式"
+		},
+		{
+			"name": "L_DISP_TITLE",
+			"value": "显示标题"
+		},
+		{
+			"name": "B_DISP_NAME",
+			"value": "显示名称"
+		},
+		{
+			"name": "S_STDERR",
+			"value": "标准错误"
+		},
+		{
+			"name": "S_STDEV",
+			"value": "标准偏差"
+		},
+		{
+			"name": "L_R_RUN_PROP",
+			"value": "运行属性"
+		},
+		{
+			"name": "T_PROMPT_DLG",
+			"value": "提示"
+		},
+		{
+			"name": "T_PROMPT_MSG",
+			"value": "填写变更条件的值"
+		},
+		{
+			"name": "L_PROMPT_TYPE",
+			"value": "提示类型"
+		},
+		{
+			"name": "L_FLOATING",
+			"value": "漂浮的"
+		},
+		{
+			"name": "L_PLOT_STYLES",
+			"value": "情节样式"
+		},
+		{
+			"name": "L_ENABLE_PIVOT",
+			"value": "启用Pivot"
+		},
+		{
+			"name": "L_PIVOT",
+			"value": "设计"
+		},
+		{
+			"name": "L_V_PIVOT",
+			"value": "透视模式"
+		},
+		{
+			"name": "T_PIVOT_EDITOR",
+			"value": "报表设计器"
+		},
+		{
+			"name": "L_PIVOT_REPORT",
+			"value": "设计"
+		},
+		{
+			"name": "B_REQ",
+			"value": "必填项目"
+		},
+		{
+			"name": "T_DB_BLANK",
+			"value": "现场是必需的。"
+		},
+		{
+			"name": "L_FILTER",
+			"value": "过滤"
+		},
+		{
+			"name": "L_R_OPT_FILTER",
+			"value": "过滤选项"
+		},
+		{
+			"name": "T_DYNFILTER_CONFIG",
+			"value": "过滤配置"
+		},
+		{
+			"name": "L_SHOW_FILTER_INFO",
+			"value": "显示过滤器信息"
+		},
+		{
+			"name": "L_CLEAR_FLT",
+			"value": "清除过滤器"
+		},
+		{
+			"name": "L_NEW_FILTER",
+			"value": "新过滤器"
+		},
+		{
+			"name": "B_SET_FILTER",
+			"value": "设置过滤器"
+		},
+		{
+			"name": "L_BORDER_BOTTOM",
+			"value": "边境底部"
+		},
+		{
+			"name": "L_HADOOP",
+			"value": "Hadoop管理"
+		},
+		{
+			"name": "L_HD_BFLOW",
+			"value": "Hadoop BizFlow"
+		},
+		{
+			"name": "B_BOTTOM",
+			"value": "底部"
+		},
+		{
+			"name": "L_RANK_BOTTOM",
+			"value": "排名底部"
+		},
+		{
+			"name": "L_C_ITEMS",
+			"value": "子项目"
+		},
+		{
+			"name": "L_TB_HL",
+			"value": "配置突出显示"
+		},
+		{
+			"name": "T_HL_OPT",
+			"value": "突出显示选项"
+		},
+		{
+			"name": "L_R_UT_DESC",
+			"value": "在检查一个或多个时，仅钻取到选中。"
+		},
+		{
+			"name": "L_KOREAN",
+			"value": "朝鲜的"
+		},
+		{
+			"name": "L_EXPORT_ODF_EXCEL",
+			"value": "打开SpreadSheet"
+		},
+		{
+			"name": "L_EXPORT_ODF_WORD",
+			"value": "打开文档"
+		},
+		{
+			"name": "L_EXPORT_ODF_PPT",
+			"value": "公开演讲"
+		},
+		{
+			"name": "L_FUNC",
+			"value": "功能"
+		},
+		{
+			"name": "L_SYNTAX",
+			"value": "句法"
+		},
+		{
+			"name": "S_SUM",
+			"value": "摘要"
+		},
+		{
+			"name": "L_ITEM",
+			"value": "项目"
+		},
+		{
+			"name": "L_NAVIGATOR",
+			"value": "航海家"
+		},
+		{
+			"name": "B_DELETE_ITEM",
+			"value": "删除项目"
+		},
+		{
+			"name": "L_CR_TP_SEL",
+			"value": "选择物品"
+		},
+		{
+			"name": "B_CONFIG_ITEM",
+			"value": "配置项目"
+		},
+		{
+			"name": "L_SAVE_EXCEL",
+			"value": "保存内容"
+		},
+		{
+			"name": "L_CREATE_ITEM",
+			"value": "创建项目"
+		},
+		{
+			"name": "L_ADD_NEW",
+			"value": "添新"
+		},
+		{
+			"name": "L_ITEMNAME",
+			"value": "项目名称"
+		},
+		{
+			"name": "L_AU_TITLE",
+			"value": "设置对象访问权限"
+		},
+		{
+			"name": "L_F_NOTIN",
+			"value": "不包括"
+		},
+		{
+			"name": "L_TABLE_DROP",
+			"value": "要将拖动字段注册到中间区域。"
+		},
+		{
+			"name": "L_C_DEL_ITEM",
+			"value": "你想删除项目吗？"
+		},
+		{
+			"name": "L_SELECT_ITEM",
+			"value": "选择项目以继续"
+		},
+		{
+			"name": "L_DYN_SELECT",
+			"value": "检查值"
+		},
+		{
+			"name": "M_SEL_ITEM",
+			"value": "选择项目以继续。"
+		},
+		{
+			"name": "M_DELETED",
+			"value": "已成功删除内容"
+		},
+		{
+			"name": "L_SAVE_CONTENT",
+			"value": "保存内容"
+		},
+		{
+			"name": "T_META_SAVE",
+			"value": "将项目另存为..."
+		},
+		{
+			"name": "E_NO_MATCH_FLD",
+			"value": "找不到列表中的匹配项。"
+		},
+		{
+			"name": "L_HL_ROW",
+			"value": "行"
+		},
+		{
+			"name": "L_BB_YA",
+			"value": "将数据行数据到Y轴"
+		},
+		{
+			"name": "L_BB_SL",
+			"value": "显示RowData图例"
+		},
+		{
+			"name": "L_P_ROW",
+			"value": "行尺寸"
+		},
+		{
+			"name": "L_ROW_SIZE",
+			"value": "行大小"
+		},
+		{
+			"name": "L_AREA_ROW",
+			"value": "行"
+		},
+		{
+			"name": "M_NA",
+			"value": "不允许操作。"
+		},
+		{
+			"name": "L_M_C_SAVE_DESKTOP",
+			"value": "要保存当前打开的桌面信息吗？"
+		},
+		{
+			"name": "L_FILE_APPEND",
+			"value": "附加在当前选项卡上"
+		},
+		{
+			"name": "L_C_CUR",
+			"value": "当前，"
+		},
+		{
+			"name": "L_P_cls",
+			"value": "关闭窗口"
+		},
+		{
+			"name": "L_APPL_TMPL",
+			"value": "应用模板"
+		},
+		{
+			"name": "L_HL_RANGE",
+			"value": "应用于"
+		},
+		{
+			"name": "L_SWA_CFM",
+			"value": "您想继续退出并登录其他项目吗？"
+		},
+		{
+			"name": "B_CONFIRM",
+			"value": "确认"
+		},
+		{
+			"name": "B_ACTIVE",
+			"value": "活性"
+		},
+		{
+			"name": "L_A_USR",
+			"value": "活跃用户"
+		},
+		{
+			"name": "L_ACTIVATE",
+			"value": "启用"
+		},
+		{
+			"name": "L_CFIT_TYPE",
+			"value": "CurveFit类型"
+		},
+		{
+			"name": "L_SC_ACTION",
+			"value": "安排行动"
+		},
+		{
+			"name": "L_C_DC",
+			"value": "删除内容"
+		},
+		{
+			"name": "T_TRASHBIN",
+			"value": "垃圾桶"
+		},
+		{
+			"name": "L_C_CD",
+			"value": "删除内容"
+		},
+		{
+			"name": "L_RANGE_FIELD",
+			"value": "范围场"
+		},
+		{
+			"name": "L_META_MIG",
+			"value": "元迁移"
+		},
+		{
+			"name": "L_C_INLINEV",
+			"value": "内联视图"
+		},
+		{
+			"name": "L_IMP_TB",
+			"value": "导入表"
+		},
+		{
+			"name": "L_TENANT",
+			"value": "承租人"
+		},
+		{
+			"name": "B_DATATYPE",
+			"value": "数据类型"
+		},
+		{
+			"name": "L_SERVER_HOST",
+			"value": "服务器主机"
+		},
+		{
+			"name": "L_ML",
+			"value": "机器学习"
+		},
+		{
+			"name": "B_PHY_NAME",
+			"value": "物理名称"
+		},
+		{
+			"name": "I_LOGOUT",
+			"value": "用于安全会话的注销按钮。"
+		},
+		{
+			"name": "L_MIG",
+			"value": "移民"
+		},
+		{
+			"name": "L_B_CUBE",
+			"value": "立方体处理"
+		},
+		{
+			"name": "L_ENDPOINT_URL",
+			"value": "端点URL"
+		},
+		{
+			"name": "L_SYS_BACKSCH",
+			"value": "背景时间表"
+		},
+		{
+			"name": "B_SEQUENCE",
+			"value": "订购"
+		},
+		{
+			"name": "L_SUBSCRIBE",
+			"value": "订阅"
+		},
+		{
+			"name": "L_DEPLOY_SVR",
+			"value": "部署服务器"
+		},
+		{
+			"name": "I_START_INTRO",
+			"value": "开始介绍"
+		},
+		{
+			"name": "I_COLLAPSE_BTN",
+			"value": "折叠并展开侧面板。"
+		},
+		{
+			"name": "I_MAINMENU",
+			"value": "主菜单（点击两次全屏查看）"
+		},
+		{
+			"name": "I_SEARCH_MAIN",
+			"value": "使用关键字搜索以查找报告和对象"
+		},
+		{
+			"name": "I_NAVIGATOR",
+			"value": "导航面板到内容"
+		},
+		{
+			"name": "I_MAIN_WS",
+			"value": "主工作区"
+		},
+		{
+			"name": "I_APP_AREA",
+			"value": "应用领域。"
+		},
+		{
+			"name": "I_SAVE_CNT",
+			"value": "保存内容"
+		},
+		{
+			"name": "I_RUN_REPORT",
+			"value": "运行报告。"
+		},
+		{
+			"name": "I_ADD_VIEW",
+			"value": "添加视图和小部件。"
+		},
+		{
+			"name": "I_SHEET_AREA",
+			"value": "单张面积。"
+		},
+		{
+			"name": "I_SHEET_TITLE",
+			"value": "表格标题"
+		},
+		{
+			"name": "I_SHEET_VIEW",
+			"value": "工作表视图"
+		},
+		{
+			"name": "I_BTN_PIVOTOPTION",
+			"value": "透视选项可更改字段和列"
+		},
+		{
+			"name": "I_BTN_WIDGET_CONF",
+			"value": "窗口小部件配置按钮，用于设置详细信息。"
+		},
+		{
+			"name": "L_AUTO_JOIN",
+			"value": "自动加入"
+		},
+		{
+			"name": "L_JOIN_BEUTIFY",
+			"value": "自动布局表"
+		},
+		{
+			"name": "L_UPLOAD",
+			"value": "上传文件"
+		},
+		{
+			"name": "L_RNK_SVAL",
+			"value": "按值排序"
+		},
+		{
+			"name": "L_SEL_RPT",
+			"value": "选择报告"
+		},
+		{
+			"name": "L_SEL_DBD",
+			"value": "选择仪表板"
+		},
+		{
+			"name": "L_DESIGN",
+			"value": "设计模式"
+		},
+		{
+			"name": "L_APPL_THEME",
+			"value": "应用主题"
+		},
+		{
+			"name": "M_VALIDATED",
+			"value": "验证成功！"
+		},
+		{
+			"name": "T_ML_LEARN",
+			"value": "机器学习"
+		},
+		{
+			"name": "T_HD_CFG_CL",
+			"value": "Hadoop配置"
+		},
+		{
+			"name": "T_Resources",
+			"value": "资源"
+		},
+		{
+			"name": "T_DYN_LFILE",
+			"value": "按fileupload过滤"
+		},
+		{
+			"name": "L_DYN_LFILE",
+			"value": "上传文件并使用值过滤"
+		},
+		{
+			"name": "T_REPORT_STYLE",
+			"value": "报告风格"
+		},
+		{
+			"name": "T_BA_1",
+			"value": "贝叶斯分析"
+		},
+		{
+			"name": "B_INTRO",
+			"value": "介绍"
+		},
+		{
+			"name": "B_PREV",
+			"value": "上一页"
+		},
+		{
+			"name": "B_SKIP",
+			"value": "跳跃"
+		},
+		{
+			"name": "B_OBJ_NAME",
+			"value": "对象名称"
+		},
+		{
+			"name": "B_DATA_ZOOM",
+			"value": "数据缩放"
+		},
+		{
+			"name": "B_C_DELETE",
+			"value": "单击确定继续删除！"
+		},
+		{
+			"name": "B_SELECT_FOLDER",
+			"value": "选择要继续的文件夹;"
+		},
+		{
+			"name": "B_SELECT_TARGET",
+			"value": "选择目标对象继续;"
+		},
+		{
+			"name": "B_TEMPLATES",
+			"value": "模板"
+		},
+		{
+			"name": "B_CONFIG",
+			"value": "组态"
+		},
+		{
+			"name": "B_VIEWMODE",
+			"value": "查看模式"
+		},
+		{
+			"name": "B_EDITMODE",
+			"value": "编辑模式"
+		},
+		{
+			"name": "B_PARAMTERS",
+			"value": "参数"
+		},
+		{
+			"name": "B_NOT_EXECUTED",
+			"value": "没有执行"
+		},
+		{
+			"name": "B_VALIDATE",
+			"value": "验证"
+		},
+		{
+			"name": "L_AUTH",
+			"value": "认证"
+		},
+		{
+			"name": "T_GRD_CFG",
+			"value": "网格配置"
+		},
+		{
+			"name": "L_FORMVIEWER",
+			"value": "表单查看器"
+		},
+		{
+			"name": "L_M_TITLE",
+			"value": "衡量标题"
+		},
+		{
+			"name": "L_M_EXT_TITLE",
+			"value": "额外的标题"
+		},
+		{
+			"name": "L_PAGE_FILTER",
+			"value": "页面过滤器"
+		},
+		{
+			"name": "L_TENANT_NAME",
+			"value": "租户名称"
+		},
+		{
+			"name": "L_LICENSE_INFO",
+			"value": "许可证信息"
+		},
+		{
+			"name": "L_ALLOWED_USERS",
+			"value": "允许用户"
+		},
+		{
+			"name": "L_REG_DATE",
+			"value": "注册日期"
+		},
+		{
+			"name": "L_pf_navitree",
+			"value": "枢轴过滤器"
+		},
+		{
+			"name": "L_pf_fedit",
+			"value": "透视滤镜编辑器"
+		},
+		{
+			"name": "L_pf_filter",
+			"value": "枢轴过滤器"
+		},
+		{
+			"name": "L_SAVE_CONTENT_AS",
+			"value": "将内容另存为"
+		},
+		{
+			"name": "L_DATA_SOURCE",
+			"value": "数据源"
+		},
+		{
+			"name": "T_DB_GEN",
+			"value": "数据库生成器"
+		},
+		{
+			"name": "L_P_export",
+			"value": "出口"
+		},
+		{
+			"name": "L_ERR_L_MOD",
+			"value": "加载模块时出错！"
+		},
+		{
+			"name": "I_DLOC_MGR",
+			"value": "字典管理"
+		},
+		{
+			"name": "I_META_MIG",
+			"value": "元迁移"
+		},
+		{
+			"name": "L_REG_DATASET",
+			"value": "注册数据集"
+		},
+		{
+			"name": "T_MIG_DISCO",
+			"value": "Oracle Discoverer Migration"
+		},
+		{
+			"name": "L_METRIC_ITEMS",
+			"value": "指标项目"
+		},
+		{
+			"name": "T_DBD_VAR",
+			"value": "仪表板变量"
+		},
+		{
+			"name": "E_LM_SEL",
+			"value": "首先从组合框中选择区域设置！"
+		},
+		{
+			"name": "T_TORSP_RS",
+			"value": "龙卷风蜘蛛的结果"
+		},
+		{
+			"name": "L_LNK_TP",
+			"value": "链接字段"
+		},
+		{
+			"name": "T_SUBSCR_AUTH",
+			"value": "订阅进行身份验证"
+		},
+		{
+			"name": "T_NET_PROP",
+			"value": "网络财产"
+		},
+		{
+			"name": "M_APP_LOADED",
+			"value": "应用加载成功！"
+		},
+		{
+			"name": "L_F_COMMENT",
+			"value": "评论"
+		},
+		{
+			"name": "M_SAVE_PROGRESS",
+			"value": "保存正在进行中..请稍候！"
+		},
+		{
+			"name": "M_DEF_DATE",
+			"value": "默认日期"
+		},
+		{
+			"name": "L_DB_VAL",
+			"value": "数据库值"
+		},
+		{
+			"name": "L_SF_AUTHMETHOD",
+			"value": "Salesforce身份验证方法"
+		},
+		{
+			"name": "L_SF_SECTOKEN",
+			"value": "Salesforce令牌"
+		},
+		{
+			"name": "L_TARGET_DB",
+			"value": "目标数据库"
+		},
+		{
+			"name": "T_JASP_TMPL",
+			"value": "碧玉模板"
+		},
+		{
+			"name": "L_HIERARCHY",
+			"value": "等级制度"
+		},
+		{
+			"name": "T_FM_SEL",
+			"value": "配方选择"
+		},
+		{
+			"name": "T_FM_SEL_CONFIG",
+			"value": "配方配置"
+		},
+		{
+			"name": "L_ADD_FILTER",
+			"value": "添加过滤器"
+		},
+		{
+			"name": "T_INT_LEARN",
+			"value": "互动学习"
+		},
+		{
+			"name": "L_VIEW_PYTHON",
+			"value": "蟒蛇"
+		},
+		{
+			"name": "L_R_OPTIONS",
+			"value": "R选项"
+		},
+		{
+			"name": "L_PY_EDIT",
+			"value": "Python编辑"
+		},
+		{
+			"name": "T_COST_EFF",
+			"value": "成本效益"
+		},
+		{
+			"name": "L_GS_ENABLED",
+			"value": "Gs已启用"
+		},
+		{
+			"name": "L_ALT_COLOR",
+			"value": "替代颜色"
+		},
+		{
+			"name": "L_REG_LINK",
+			"value": "注册链接"
+		},
+		{
+			"name": "L_TB_FORM_V",
+			"value": "表单查看器"
+		},
+		{
+			"name": "L_EMAIL_BURSTING",
+			"value": "电子邮件爆发"
+		},
+		{
+			"name": "L_BAYES",
+			"value": "Machine Learning"
+		},
+		{
+			"name": "L_BAYES_RPT",
+			"value": "ML Report"
+		},
+		{
+			"name": "L_DISCO",
+			"value": "Discoverer Migration"
+		},
+		{
+			"name": "L_SEL_DB",
+			"value": "Select Datasource"
+		},
+		{
+			"name": "L_BOBJ",
+			"value": "Business Object"
+		},
+		{
+			"name": "L_SETTINGS",
+			"value": "Settings"
+		},
+		{
+			"name": "D_BOBJECT",
+			"value": "Business Object"
+		},
+		{
+			"name": "L_V_SYNC",
+			"value": "Sync with Sheet"
+		},
+		{
+			"name": "L_NEW_STORYVIEW",
+			"value": "Add StoryIt"
+		},
+		{
+			"name": "L_XLS_BUTTON",
+			"value": "Show Excel button"
+		},
+		{
+			"name": "L_XLS_STYLE",
+			"value": "Excel Button Style"
+		},
+		{
+			"name": "L_VIEW_ANAL",
+			"value": "View Analysis"
+		},
+		{
+			"name": "L_D_EXCEL",
+			"value": "Download"
+		},
+		{
+			"name": "L_SYS_CONFIG",
+			"value": "System Config"
+		}
+	]
+}

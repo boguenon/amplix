@@ -1,1 +1,4732 @@
-{"meta_type":"locales","objinfo":{},"name":"zh_TW","type":"Unknown","writable":false,"manage":false,"is_sub":false,"attributes":{},"data":[{"name":"L_CM_DISP_2","value":"*在此處拖動項目以定義此度量"},{"name":"L_CD_DISP_2","value":"*拖動度量項或單擊“添加”按鈕"},{"name":"L_TIME_FMT_DSC","value":"*如果是日期格式項，則應用"},{"name":"L_FM_DISP1","value":"*雙擊字段添加功能。"},{"name":"L_CM_DISP_1","value":"*雙擊字段添加功能"},{"name":"L_FM_DISP2","value":"*在此處拖動項目以定義此度量。"},{"name":"L_ME_DISP1","value":"*雙擊字段添加功能"},{"name":"L_C_DCOUNT","value":"@ Counts"},{"name":"L_VIEW_ITEM","value":"查看@"},{"name":"L_C_DATE","value":"@的細節"},{"name":"M_SEL_ERR","value":"@ 有必要的。請選擇價值"},{"name":"I_ABOUT","value":"關於 @"},{"name":"E_D_EVNT","value":"處理evnet @時出錯。"},{"name":"L_C_TOTAL","value":"總計@"},{"name":"E_PV_L","value":"內容特權錯誤：（@）"},{"name":"L_C_M_NAMES_S","value":"JAN＃FEB＃MAR＃APR＃MAY＃JUN＃JUL＃AUG＃SEP＃華僑城＃NOV＃DEC"},{"name":"L_C_M_NAMES","value":"一月二月＃＃＃三月四月五月＃＃＃月＃月＃月＃月＃月＃十一月十二月"},{"name":"L_DUAL_AXIS","value":"雙YAxis"},{"name":"L_CONTACT_CRED","value":"版權和復制; 1996-2010"},{"name":"L_EXPORT_CSV","value":"CSV"},{"name":"L_DB_MON","value":"數據庫監控"},{"name":"L_DB_CHARSET","value":"DB CharSet"},{"name":"L_OUTPUT_CHARSET","value":"輸出CharSet"},{"name":"L_TABLE_FIELD","value":"數據庫表"},{"name":"L_EXPORT_DOCX","value":"DOCX導出"},{"name":"B_GO","value":"走"},{"name":"D_HIERARCHY","value":"等級制度"},{"name":"T_BG_HIVEJOB","value":"蜂巢工作"},{"name":"L_EXPORT_HTML","value":"HTML視圖"},{"name":"L_EXP_JASP","value":"碧玉"},{"name":"D_JAVACLASS","value":"Java類"},{"name":"L_JDBC_URL","value":"JDBC URL"},{"name":"L_JDBC_DRV","value":"JDBC驅動程序"},{"name":"T_MDB_CUBE","value":"MDB訪問分析"},{"name":"L_MDB_OPTION","value":"MDB選項"},{"name":"L_MONGODB","value":"MongoDB的"},{"name":"L_MONGO_DATA","value":"MongoDB數據"},{"name":"L_MONGO_DPROC","value":"MongoDB進程"},{"name":"D_MDBCUBE","value":"MS Access DataCube"},{"name":"L_MDB_CUBE","value":"MS Access DataCube"},{"name":"L_EXPORT_EXCEL","value":"MS Excel"},{"name":"L_EXPORT_PPT","value":"MS PPT"},{"name":"D_NOSQL","value":"NoSQL數據庫"},{"name":"L_OP_NOT","value":"不操作"},{"name":"L_EXPORT_PDF","value":"PDF"},{"name":"L_ML_C7","value":"加載PGMX"},{"name":"L_R_WIZARD","value":"R精靈"},{"name":"L_R_PARAM","value":"R參數"},{"name":"L_R_SUMMARY","value":"R摘要"},{"name":"L_R_SCRIPT","value":"R腳本編輯器"},{"name":"L_VIEW_RSTAT","value":"R統計"},{"name":"T_R_WIZARD","value":"R統計嚮導"},{"name":"L_EXPORT_RTF","value":"RTF導出"},{"name":"T_SELECT_POOL","value":"選擇池"},{"name":"L_F_SQL_IS","value":"SQL是運算符（IS）"},{"name":"L_F_SQL_IS_NOT","value":"SQL不是運算符（不是）"},{"name":"L_LD_SQL","value":"SQL查詢導入"},{"name":"I_SQLCUBE","value":"SQL嚮導"},{"name":"L_VIEW_SQL","value":"查看SQL"},{"name":"L_LD_SQL_D","value":"SQL源碼"},{"name":"L_P_sql","value":"運行SQL"},{"name":"D_SQLCUBE","value":"SQL Cube"},{"name":"L_SQL_CUBE","value":"SQL Cube"},{"name":"L_EDIT_SQL","value":"編輯SQL"},{"name":"L_SQL_PRE_PROC","value":"SQL預處理器"},{"name":"D_UIPAGE","value":"UI頁面"},{"name":"L_UIPAGE","value":"UI頁面"},{"name":"L_LNK_URL","value":"URL地址"},{"name":"L_EXPORT_XML","value":"XML導出"},{"name":"L_CSTEP_5","value":"Y軸"},{"name":"L_YAXIS_FORMAT","value":"Y軸格式"},{"name":"L_YAXIS_TITLE","value":"YAxis標題"},{"name":"L_YAXIS_MAX","value":"Y軸最大值"},{"name":"L_YAXIS_MIN","value":"Y軸最小值"},{"name":"L_ALIGN_CENTER","value":"中央"},{"name":"L_SHOW_FIRST","value":"顯示第一"},{"name":"S_BOTTOM","value":"底價"},{"name":"S_TOP","value":"最高價值"},{"name":"L_USE_MFMT","value":"使用測量格式"},{"name":"L_ML_CEFF_S","value":"敏感性分析"},{"name":"L_F_VALUE_LNG","value":"值"},{"name":"B_VALUES","value":"值"},{"name":"B_TEXT","value":"值"},{"name":"B_VALUE","value":"值"},{"name":"L_BAND_VALUE_1","value":"值"},{"name":"L_F_VALUE","value":"值"},{"name":"L_FLT_VAL_SCR","value":"驗證功能"},{"name":"L_VAL_DELIM","value":"價值分隔符"},{"name":"B_COMBO_VAL","value":"列表值"},{"name":"L_P_valuelist","value":"填充值"},{"name":"T_VALUE_SELECT","value":"值選擇嚮導"},{"name":"T_DYN_SELECT","value":"選擇值..."},{"name":"L_STACK_VALUE","value":"堆棧值"},{"name":"L_VALUE_TYPE","value":"值類型"},{"name":"L_E_LIST","value":"從值中選擇"},{"name":"B_CUST_VAL","value":"自定義值"},{"name":"L_SHOW_VALUE","value":"顯示值"},{"name":"L_TK_INTVL","value":"勾選間隔"},{"name":"L_SELECT_VALUE","value":"選擇值"},{"name":"L_FORMAT","value":"格式"},{"name":"L_AREA_MEASURE","value":"測量"},{"name":"L_F_EQ","value":"等於（=）"},{"name":"L_F_EQ_NOT","value":"不等於（<>）"},{"name":"L_OBJECT_TYPE","value":"對像類型"},{"name":"T_META_SELECT","value":"選擇物品..."},{"name":"B_SEARCH","value":"搜索"},{"name":"L_SEARCH_KWD","value":"搜索"},{"name":"L_NEW_SHEET","value":"新表"},{"name":"L_ML_CEFF_D","value":"確定性分析"},{"name":"M_WARNING","value":"警告！"},{"name":"L_SC_C1","value":"之後運行一次"},{"name":"L_LONGITUDE","value":"經度"},{"name":"B_PATH","value":"路徑"},{"name":"L_C_DIR","value":"計算方向"},{"name":"L_ERR_SAVE","value":"要繼續之前保存內容。"},{"name":"L_DEPRIVATE","value":"鎖定用戶登錄"},{"name":"L_HIGH_PREC","value":"高精度數"},{"name":"L_ADV_OPTION","value":"高級選項"},{"name":"L_ADVANCED_OPTION","value":"高級選項"},{"name":"L_R_FIXSIZE","value":"固定尺寸"},{"name":"B_SHARE","value":"分享"},{"name":"I_RELATION","value":"關係"},{"name":"T_MANAGE","value":"管理"},{"name":"L_MANAGEMENT","value":"管理"},{"name":"I_ADMIN","value":"管理員"},{"name":"S_COUNT","value":"計數"},{"name":"B_DELIMITER","value":"分隔符"},{"name":"L_LM_ADD","value":"添加國家代碼"},{"name":"L_FONT_BOLD","value":"膽大"},{"name":"L_PRIVILEGE","value":"特權"},{"name":"D_AUTH","value":"義務"},{"name":"L_OBJECT_AUTH","value":"對象驗證"},{"name":"T_OBJECT_AUTH","value":"對象驗證"},{"name":"T_DUTY_LIST","value":"職責清單"},{"name":"L_ADD_DUTY","value":"添加責任"},{"name":"D_GROUP","value":"組"},{"name":"L_GROUP_LEVEL","value":"集團層面"},{"name":"L_GROUP_FIELD","value":"集團領域"},{"name":"W_SYNC_GRP","value":"你會在服務器中執行組同步嗎？"},{"name":"L_GROUP_NAME","value":"團隊名字"},{"name":"L_ADD_GROUP","value":"添加組"},{"name":"L_OPT_GRID","value":"網格選項"},{"name":"L_OVF_DESC","value":"檢查繪製滾動網格的溢出"},{"name":"T_STYLE_WIZARD","value":"風格嚮導"},{"name":"L_TB_PRT_GRD","value":"出口網格"},{"name":"L_GRID_HMENU","value":"隱藏網格彈出菜單"},{"name":"L_VIEW_GRID","value":"工作表視圖"},{"name":"L_FONT_FACE","value":"字體臉"},{"name":"L_FORE_COLOR","value":"前景色"},{"name":"L_DATE_OPTION","value":"日期選項"},{"name":"T_FEATURES","value":"特徵"},{"name":"L_BASE_STYLE","value":"基本款式"},{"name":"L_STATISTICS","value":"基本統計"},{"name":"T_STATISTICS","value":"基本統計"},{"name":"L_SET_DEF","value":"默認情況下使用"},{"name":"L_FONT_ITALIC","value":"斜體"},{"name":"L_PREDEFINED_FIELD","value":"預定義字段"},{"name":"L_FILE_DELETE","value":"替換現有數據"},{"name":"L_PWD_OLD","value":"舊密碼"},{"name":"L_OTHER_OPTION","value":"其他選擇"},{"name":"L_OTHER_VALUE","value":"其他價值"},{"name":"L_ML_C1","value":"機會節點"},{"name":"L_C_PR","value":"私人內容"},{"name":"L_DATE_METRIC","value":"學於video腐choose"},{"name":"D_DATEMETRIC","value":"日期指標"},{"name":"L_DATE_FORMAT","value":"日期格式"},{"name":"L_DATE_TYPE","value":"日期類型字段"},{"name":"B_DSC","value":"降序"},{"name":"B_ORDER_DSC","value":"訂單降序"},{"name":"M_SAVED","value":"成功保存了內容"},{"name":"B_YEAR","value":"年"},{"name":"L_C_YR_SFX","value":"年"},{"name":"B_HEIGHT","value":"高度"},{"name":"L_FIXED_H","value":"修復高度"},{"name":"F_P_CUM","value":"累積總和Percent"},{"name":"L_SAVE_REPORT_AS","value":"保存為報告"},{"name":"L_SAVE_EXCEL_AS","value":"將內容另存為"},{"name":"L_SAVE_CONTENTAS","value":"將內容另存為......"},{"name":"B_NEXT","value":"下一個"},{"name":"L_C_NEXT","value":"下一個"},{"name":"E_SC_LD","value":"加載DynamicScript時出錯"},{"name":"L_P_open_dlg","value":"打開對話框"},{"name":"T_M_TENANT","value":"多租戶"},{"name":"L_CFIT_PORD","value":"多項式順序"},{"name":"D_MOLAPCUBE","value":"MOLAP Cube"},{"name":"L_MOLAP_CUBE","value":"MOLAP Cube"},{"name":"T_MCUBE_WINDOW","value":"m尺寸立方體"},{"name":"L_BUILD_MCUBE","value":"構建多維數據集"},{"name":"L_UNIT_TEXT","value":"單位文字"},{"name":"L_P_PIVOT_UNIT","value":"樞軸單位"},{"name":"B_CLOSE","value":"關"},{"name":"L_C_CLOSE","value":"關"},{"name":"L_LNK_TGT","value":"瀏覽器目標"},{"name":"L_DRILL_PARAM_DESC","value":"檢查列以過濾目標工作表"},{"name":"L_BASE_METRIC","value":"基本指標"},{"name":"L_SORT_SRC","value":"要排序的項目"},{"name":"D_DASHBOARD","value":"儀表板"},{"name":"L_DASHBOARD","value":"儀表板"},{"name":"T_DASHBOARD","value":"儀表板"},{"name":"L_MGR_DASHBOARD","value":"Dashaboard經理"},{"name":"L_DBD_MAP","value":"儀表板映射"},{"name":"I_MGR_DBD","value":"儀表板插件"},{"name":"L_CSTEP_2","value":"數據"},{"name":"L_DATA_LABEL","value":"數據標籤"},{"name":"L_T_CUBE_SEL","value":"數據選擇嚮導"},{"name":"L_EDIT_DATA","value":"編輯數據"},{"name":"T_Filter","value":"過濾數據"},{"name":"L_EMPTY","value":"沒有數據。"},{"name":"L_BB_STEP_1","value":"準備數據"},{"name":"L_MENU_DB_MODEL","value":"關係數據模型"},{"name":"T_DB_CON","value":"數據庫實例"},{"name":"L_DB_INSTANCE","value":"數據庫實例"},{"name":"L_DB_TYPE","value":"數據庫類型"},{"name":"L_DB_NAME","value":"數據庫名稱"},{"name":"M_S_S1","value":"未找到所選數據庫實例的結果。"},{"name":"L_ADD_DB_INST","value":"添加數據庫實例"},{"name":"L_VIEW_MODE","value":"查看模式"},{"name":"L_DATASET","value":"數據集"},{"name":"L_B_ADC","value":"DataFile Cube"},{"name":"D_TABDIMENSION","value":"數據分離維度"},{"name":"L_DATA_LABEL_FMT","value":"數據標籤格式"},{"name":"L_PRV_DATA","value":"數據預覽"},{"name":"L_DATA_OPTION","value":"數據選項"},{"name":"T_BG_DS","value":"數據源"},{"name":"L_STYLE_DATA","value":"數據樣式"},{"name":"L_LD_LK","value":"連接連接"},{"name":"M_ERR_CDATA","value":"處理自定義數據報告時出錯"},{"name":"T_FILTER","value":"過濾數據"},{"name":"L_NO_DATA","value":"沒有數據"},{"name":"L_STACK_CHART","value":"堆疊系列"},{"name":"L_MSG_TABNAME","value":"鍵入標籤維度的數據標籤文本。"},{"name":"I_DATA","value":"數據"},{"name":"L_MGR_DATABASE","value":"數據庫經理"},{"name":"L_REG_DATABASE","value":"註冊數據庫"},{"name":"I_DATABASE_CONNECTION","value":"數據庫連接"},{"name":"T_DB_PWD","value":"數據庫連接"},{"name":"T_DATA_UPLOAD","value":"上傳DataFile"},{"name":"L_LD_FILE","value":"加載DataFile"},{"name":"L_SHOW_TOOL_BUTTON","value":"顯示工具按鈕"},{"name":"B_HELP","value":"救命"},{"name":"L_HELP_DOC","value":"幫助文檔"},{"name":"I_HELP_MGR","value":"幫助經理"},{"name":"L_HELP_GUIDES","value":"幫助和指南"},{"name":"L_NEW_DOCUMENT","value":"添加文檔"},{"name":"E_DUP_FOLDER","value":"不允許移動相同的文件夾"},{"name":"L_TB_BN","value":"找到此表中使用的相同節點名稱。您想要更改所有名稱嗎？"},{"name":"L_V_DESC","value":"動態變量編輯器"},{"name":"L_F_BETWEEN_NOT","value":"不在值之間（不在兩者之間）"},{"name":"L_F_BETWEEN","value":"值之間（BETWEEN）"},{"name":"B_BACK","value":"背部"},{"name":"L_DRAG_SELECT","value":"拖動選擇"},{"name":"L_ENABLE_DRILL","value":"深入研究"},{"name":"L_R_UPD_TGT","value":"鑽目標"},{"name":"L_BTN_LOGIN","value":"登錄"},{"name":"L_ML_C2","value":"決策節點"},{"name":"L_ML_C5","value":"決策樹"},{"name":"L_LABEL_DIST","value":"標籤距離"},{"name":"L_SHOW_LABEL","value":"顯示標籤"},{"name":"L_LABEL_ALIGN","value":"標籤對齊"},{"name":"L_L_STEP","value":"標籤步驟"},{"name":"L_MARKER","value":"標記"},{"name":"L_CFIT_LC","value":"線條樣式"},{"name":"L_BAND_BORDER","value":"邊界"},{"name":"L_LINE_NUM","value":"電話號碼"},{"name":"L_B_LAYOUT","value":"佈局"},{"name":"B_OPT_LAYOUT","value":"佈局"},{"name":"L_LAYOUT","value":"佈局"},{"name":"L_LAYOUT_WIZARD","value":"佈局嚮導"},{"name":"L_EDIT_LAYOUT","value":"編輯佈局"},{"name":"T_LAYOUT","value":"佈局模板"},{"name":"L_LOG_VIEW","value":"查看日誌結果"},{"name":"L_LOGOUT","value":"登出"},{"name":"L_DESKTOP_LOGOUT","value":"登出"},{"name":"L_T_LOUT","value":"你想退出系統嗎？"},{"name":"L_M_C_LOGOUT","value":"請單擊是按鈕退出。<br>單擊否按鈕取消"},{"name":"L_LOGIN_TITLE","value":"安全登錄"},{"name":"B_LOGIN","value":"登錄"},{"name":"L_ONLOAD_RUN","value":"加載時執行"},{"name":"T_LDATA_TITLE","value":"本地數據立方體選項"},{"name":"D_EXCELLOADER","value":"本地文件多維數據集"},{"name":"L_EXCEL_LOADER","value":"本地文件多維數據集"},{"name":"D_DATACUBE","value":"本地文件多維數據集"},{"name":"L_CLEAR_LOOKUP","value":"刪除查找"},{"name":"L_RESOURCES","value":"資源"},{"name":"L_RESOURCE","value":"資源"},{"name":"D_REPORT","value":"報告"},{"name":"L_REPORT","value":"報告"},{"name":"T_REPORT_WINDOW","value":"報告"},{"name":"L_REPORT_TOOLS","value":"報告工具"},{"name":"L_REPORT_NAME","value":"報告名稱"},{"name":"L_RPT_V_OPT","value":"報告查看器選項"},{"name":"L_MENU_REPORT","value":"創建報告"},{"name":"M_REPORT","value":"製作報告"},{"name":"L_P_RPT_C","value":"報告選項"},{"name":"I_REPORT_STYLE","value":"報告風格"},{"name":"T_GLOBAL_REPORT_STYLE","value":"外觀和感覺"},{"name":"L_P_onlinereport","value":"運行報告"},{"name":"L_SYS_LOG","value":"系統日誌"},{"name":"M_ERR_C_REP_PROC","value":"處理自定義報表處理程序時出錯"},{"name":"T_REPORT_OPTION","value":"更改報告選項"},{"name":"L_CHANGE_REPORTTYPE","value":"更改報告類型"},{"name":"L_SAVE_REPORT","value":"保存報告"},{"name":"L_ADD_REPORT","value":"添加報告"},{"name":"T_RPT_PIVOT","value":"報告樞軸"},{"name":"L_MAP_ITEM","value":"映射到報告項目"},{"name":"L_LINK_FIELD","value":"鏈接字段"},{"name":"L_DRILL_ON_DESC","value":"檢查列以顯示鏈接。"},{"name":"B_WIZARD","value":"巫師"},{"name":"D_CHARTMEASURE","value":"微圖表"},{"name":"L_CHART_MEASURE","value":"微圖表"},{"name":"L_RNK_LST","value":"顯示所有最後排名"},{"name":"L_L_TAB","value":"僅加載最後一個選項卡"},{"name":"D_CUBEMODEL","value":"ROLAP立方體模型"},{"name":"L_ROLAP_CUBE_MODEL","value":"ROLAP立方體模型"},{"name":"D_CUBE","value":"ROLAP Cube"},{"name":"L_ROLAP_CUBE","value":"ROLAP Cube"},{"name":"B_EVERY","value":"一切"},{"name":"L_EV_DAY","value":"每小時一天"},{"name":"T_BG_MR","value":"的Map / Reduce"},{"name":"L_MAP_OPT","value":"地圖選項"},{"name":"L_MAP_TYPE","value":"地圖類型"},{"name":"L_B_JV","value":"映射/減少Java"},{"name":"L_HD_MAPR","value":"地圖減少"},{"name":"D_MCUBE","value":"MultiDimension Cube"},{"name":"L_MENU","value":"菜單"},{"name":"L_FEATURE_CTRL","value":"功能控制"},{"name":"L_MAIL_BD","value":"內容"},{"name":"L_P_MEASURE","value":"措施"},{"name":"D_MEASURE","value":"測量"},{"name":"L_MEASURE","value":"測量"},{"name":"T_MEASURE","value":"測量"},{"name":"L_GROUP_MEASURE","value":"集團措施"},{"name":"L_REG_MEASURES","value":"制定措施"},{"name":"T_M_MEASURE","value":"制定措施"},{"name":"T_M_Measure","value":"註冊措施"},{"name":"L_M_NAME","value":"測量名稱"},{"name":"L_M_FORMAT","value":"測量格式"},{"name":"L_M_POSITION","value":"測量位置"},{"name":"L_MEASURE_ON","value":"測量開"},{"name":"L_BB_STEP_3","value":"制定措施和時間指標"},{"name":"L_M_FILTER","value":"測量過濾器"},{"name":"L_META_IMPORT","value":"導入元文件"},{"name":"I_META_IMP","value":"加載元文件"},{"name":"T_META_IMP","value":"加載元文件"},{"name":"T_META_EDITOR","value":"元編輯器"},{"name":"L_EXPORT_META","value":"導出文件中的內容"},{"name":"D_METRIC","value":"公"},{"name":"L_METRIC","value":"公"},{"name":"L_MC_ELEM_EDT","value":"元素編輯器"},{"name":"L_T_LOOKUP","value":"查找選項"},{"name":"L_MONITORING","value":"監控"},{"name":"L_MODEL_CREATE","value":"創建模型"},{"name":"L_MODEL_SELECT","value":"選擇型號"},{"name":"L_MODEL_EDIT","value":"編輯模型"},{"name":"L_LD_INI","value":"清除所有數據集"},{"name":"L_ALL_DATA","value":"所有數據"},{"name":"L_CFIT_AS","value":"所有系列曲線"},{"name":"L_LD_UL","value":"斷開所有連接"},{"name":"L_C_AL","value":"所有內容"},{"name":"L_BTN_TRG_ALL","value":"驗證過濾器"},{"name":"L_AU_APPLY_SUB","value":"應用所有子文件夾"},{"name":"L_F_IN_NOT","value":"不在列表中（不在內）"},{"name":"L_F_IN","value":"在列表中（IN）"},{"name":"L_LNK_TMPL","value":"文檔模板"},{"name":"B_STRING","value":"串"},{"name":"L_PREVIEW","value":"預習"},{"name":"L_FONT_UNDERLINE","value":"強調"},{"name":"L_DELETE_SHORTCUT","value":"刪除快捷方式"},{"name":"L_SC_PR","value":"期間運行"},{"name":"L_SCC_TYPE","value":"重複類型"},{"name":"L_SC_C2","value":"重複克朗"},{"name":"L_EXPORT_OPTION","value":"選項"},{"name":"L_EXPORT","value":"出口"},{"name":"L_MAIL_CC","value":"郵件CC"},{"name":"B_METHOD","value":"方法"},{"name":"L_BG_COL","value":"背景顏色"},{"name":"L_BACK_COLOR","value":"背面顏色"},{"name":"L_CSTEP_6","value":"帶"},{"name":"L_BAND_TYPE","value":"樂隊類型"},{"name":"L_BB_CA","value":"氣泡顏色軸"},{"name":"L_BB_SA","value":"氣泡尺寸軸"},{"name":"L_BB_OPT","value":"BubbleMap選項"},{"name":"T_REVISION","value":"修訂控制"},{"name":"L_REVISION","value":"版本控制"},{"name":"B_SVN","value":"版本控制和恢復"},{"name":"L_SHOW_LEGEND","value":"顯示傳奇"},{"name":"L_LEGEND_POSITION","value":"傳奇位置"},{"name":"L_CSTEP_3","value":"傳說"},{"name":"S_RAN","value":"範圍"},{"name":"L_SAVE_C_MSG","value":"您正在關閉具有未保存更改的選項卡。您要保存更改嗎？"},{"name":"L_SAVE_CHANGES","value":"保存更改？"},{"name":"L_HL_DESC","value":"單擊要編輯的單元格，或單擊“新建”以創建新的高亮選項"},{"name":"L_RM_VAR","value":"刪除變量"},{"name":"I_BD_CONFIG","value":"變量"},{"name":"L_ADD_VAR","value":"添加變量"},{"name":"B_SHOW","value":"節目"},{"name":"L_VIEW_OPTION","value":"傳奇選項"},{"name":"L_TB_VCH","value":"改變觀點"},{"name":"L_SHOW_VIEW_CHANGE","value":"顯示ViewMode按鈕"},{"name":"L_RECOVER","value":"恢復"},{"name":"L_COPY_ITEM","value":"複製@"},{"name":"D_COMPOSITEREPORT","value":"綜合報告"},{"name":"L_COMPOSITEREPORT","value":"綜合報告"},{"name":"L_P_RPT_RT","value":"複合樞軸"},{"name":"L_V_RPT","value":"複合樞軸模式"},{"name":"L_P_RPT","value":"複合樞軸"},{"name":"T_COMPOSITE_REPORT","value":"綜合報告"},{"name":"F_STOT","value":"小計"},{"name":"B_MINUTE","value":"分鐘"},{"name":"B_QUARTER","value":"25美分硬幣"},{"name":"S_VAR","value":"方差"},{"name":"L_ANALYSIS","value":"分析"},{"name":"I_WIZARD","value":"分步分析"},{"name":"L_VARIABLES","value":"變量"},{"name":"L_R_ANAL_CUBE","value":"分析立方體"},{"name":"L_M_CUBE_SEL","value":"選擇分析主題..."},{"name":"L_B_AC","value":"分析立方體"},{"name":"L_M_SUBJ","value":"分析主題："},{"name":"L_R_ANAL_CUBE_L","value":"主題名稱"},{"name":"L_MENU_CUBE","value":"分析立方體"},{"name":"L_MENU_CUBE_WORK","value":"立方體分析"},{"name":"T_METRIC_SETTING","value":"度量配置"},{"name":"B_REMOVE_PIVOT","value":"刪除Pivot"},{"name":"L_ADD_METRIC","value":"添加新維度"},{"name":"L_LOADING_REPORT","value":"載入中..."},{"name":"L_PASTE_ITEM","value":"粘貼在這裡"},{"name":"L_ADD_VIEW","value":"添加視圖"},{"name":"L_ML_CEFF","value":"成本效益分析"},{"name":"L_B_BW","value":"業務工作流程"},{"name":"B_INACTIVE","value":"待用"},{"name":"L_B_USR","value":"被阻止的用戶"},{"name":"D_BIGDATA","value":"大數據"},{"name":"L_BIGDATA","value":"大數據"},{"name":"T_NOSQLDATA_TITLE","value":"BigData連接選項"},{"name":"T_NOSQL_CUBE","value":"BigData分析立方體"},{"name":"L_HD_BPROC","value":"Bigdata設計"},{"name":"D_BIGDATAMODEL","value":"BigDataModel"},{"name":"D_NOSQLCUBE","value":"BigData Cube"},{"name":"L_NOSQL_CUBE","value":"BigData Cube"},{"name":"L_NULL_VALUE","value":"空值"},{"name":"L_REM_BLK","value":"刪除空值"},{"name":"M_BLANK","value":"新增項目"},{"name":"B_ENABLED","value":"啟用"},{"name":"B_ENABLE","value":"啟用"},{"name":"B_USER_DOC","value":"說明"},{"name":"I_USER","value":"用戶"},{"name":"M_LOCK_MSG","value":"內容在@ 2處被@ 1鎖定"},{"name":"L_BTN_EVTDESC","value":"禁用用戶選擇值並運行，並等待按鈕單擊事件。"},{"name":"L_USER_MANAGEMENT","value":"用戶管理"},{"name":"I_USER_MANAGER","value":"用戶經理"},{"name":"L_MGR_USER","value":"用戶經理"},{"name":"L_USER_DUTY","value":"用戶責任"},{"name":"L_MGR_UD","value":"用戶責任管理"},{"name":"T_USER_GROUP","value":"用戶組"},{"name":"T_SYNC_USER","value":"用戶同步"},{"name":"W_SYNC_SAVE","value":"你會在服務器中保存用戶同步參數嗎？"},{"name":"W_SYNC_USER","value":"你會在服務器中執行用戶同步嗎？"},{"name":"T_REG_USER","value":"註冊用戶"},{"name":"L_B_CM","value":"自定義指標"},{"name":"L_USERNAME","value":"用戶名"},{"name":"L_DB_UNAME","value":"用戶名"},{"name":"L_USERID","value":"用戶身份"},{"name":"B_CUSTOM","value":"習慣"},{"name":"L_CUSTOM_FIX","value":"自定義修復"},{"name":"D_GROUPFIELD","value":"用戶定義的組"},{"name":"D_UDG","value":"用戶定義的組"},{"name":"L_UDG","value":"用戶定義的組"},{"name":"T_UDG","value":"用戶定義的組"},{"name":"T_CUSTOM_METRIC","value":"自定義指標"},{"name":"L_CUSTOM_FIELD","value":"自定義字段"},{"name":"L_ADD_USER","value":"添加用戶"},{"name":"L_UD_DESC","value":"從列表中選擇用戶職責。"},{"name":"D_CUSTOMMETRIC","value":"自定義指標"},{"name":"L_CUSTOM_METRIC","value":"自定義指標"},{"name":"L_FIXEDSIZE","value":"固定尺寸模式"},{"name":"L_SQL_PRE","value":"預處理"},{"name":"L_DLOCALE_MGR","value":"字典區域設置"},{"name":"L_LM_EXP","value":"導出區域設置數據"},{"name":"L_LM_LCS","value":"添加區域設置項"},{"name":"L_LM_IMP","value":"導入區域設置數據"},{"name":"L_E_DEL","value":"刪除"},{"name":"B_DELETE","value":"刪除"},{"name":"B_REMOVE","value":"去掉"},{"name":"L_DELETE_ITEM","value":"刪除@"},{"name":"L_RELATION_VIEW","value":"關係視圖"},{"name":"L_PAD_TOP","value":"最佳"},{"name":"L_LNK_DRILL","value":"鑽到細節"},{"name":"L_DRILLREPORT","value":"用於詳細信息視圖"},{"name":"L_DET_VIEW","value":"詳細視圖"},{"name":"T_DRILL_CONFIG","value":"詳細信息視圖配置"},{"name":"L_DRILL_ON","value":"要鑽的列"},{"name":"M_DETAIL","value":"細節"},{"name":"B_TOP","value":"最佳"},{"name":"L_RANK_TOP","value":"排名靠前"},{"name":"L_B_U","value":"上"},{"name":"B_STATUS","value":"狀態"},{"name":"L_NEW_RPT_VIEWER","value":"新報告查看器"},{"name":"I_WORKSPACE","value":"新工作區"},{"name":"L_NEW_PANEL","value":"新小組"},{"name":"L_REFRESH","value":"刷新"},{"name":"L_BAND_COLOR","value":"顏色"},{"name":"B_COLOR","value":"顏色"},{"name":"B_OWNER","value":"所有者"},{"name":"B_CR","value":"創建 .."},{"name":"L_TYPE_ITEM_NAME","value":"設置要創建的項目名稱"},{"name":"I_SERVER_CONFIG","value":"服務器配置"},{"name":"M_ERR_CONNECT","value":"無法在服務器上獲得連接！請稍後重試"},{"name":"L_P_inv_svc","value":"調用服務"},{"name":"B_SEL","value":"選擇"},{"name":"B_MOVE_DOWN","value":"向下移動行"},{"name":"B_MOVE_UP","value":"向上移動行"},{"name":"B_CD_MHS","value":"你喜歡把托運物品移到@？"},{"name":"B_CD_CHS","value":"你喜歡刪除已檢查的項目嗎？"},{"name":"L_DELETE_CHECKED","value":"刪除已選中"},{"name":"L_REMOVE_SELECTED","value":"刪除選定"},{"name":"B_DESC","value":"描述"},{"name":"L_DESCRIPTION","value":"描述"},{"name":"L_PREFERENCES","value":"喜好"},{"name":"L_DESKTOP_SETTING","value":"設置"},{"name":"L_CHANGE_SETTING","value":"修改設置"},{"name":"L_SEL_MODE","value":"選擇模式"},{"name":"M_SUCCESS","value":"成功！"},{"name":"B_SUCCESS","value":"成功完成流程"},{"name":"L_CVAL_DESC","value":"使用分號分隔符鍵入文本"},{"name":"L_HL_CELL","value":"僅限細胞"},{"name":"L_PADDING","value":"填充"},{"name":"L_NUMBER_PRECISION","value":"數字精度"},{"name":"B_PROPERTY","value":"屬性"},{"name":"D_FORMULA","value":"式"},{"name":"L_FORMULA","value":"式"},{"name":"D_FORMULAMEASURE","value":"式"},{"name":"L_CFIT_FOR","value":"顯示公式"},{"name":"L_USE_FORMULA","value":"顯示公式"},{"name":"T_FORMULA_MEASURE","value":"配方測量"},{"name":"L_SYNTAX_FORMULA","value":"公式語法"},{"name":"L_S_GRST","value":"小組結果"},{"name":"L_S_TROW","value":"顯示在頂行"},{"name":"L_SEP_COL","value":"單獨的列"},{"name":"B_MODI","value":"修改"},{"name":"L_VERTICAL","value":"垂直"},{"name":"L_ALIGN_VERTICAL","value":"垂直對齊"},{"name":"L_LAYOUT_VERTICAL","value":"垂直"},{"name":"L_HORIZONTAL","value":"橫"},{"name":"L_LAYOUT_HORIZONTAL","value":"橫"},{"name":"F_RNK","value":"秩"},{"name":"L_RNK_VAL","value":"價值排名"},{"name":"L_RANK_OPTION","value":"排名選項"},{"name":"L_RNK_CNT","value":"排名"},{"name":"L_RNK_PAR","value":"分區依據"},{"name":"L_BTN_TRGALLDESC","value":"遞歸驗證包括隱藏面板在內的所有過濾器"},{"name":"B_HIDE","value":"隱"},{"name":"B_NUMERIC","value":"數字"},{"name":"L_NUM_PREC","value":"數字精度"},{"name":"T_BG_SC","value":"殼牌司令部"},{"name":"B_SHEET_NAME","value":"工作表名稱"},{"name":"L_R_ANAL_CUBE_LBL","value":"板材立方體"},{"name":"T_SHEET_OPTION","value":"表格選項"},{"name":"L_SHEET_OPTIONS","value":"表格選項"},{"name":"L_SHEET_NUM","value":"表號"},{"name":"L_ADD_SHEET","value":"添加表格"},{"name":"L_C_SCH","value":"加載計劃結果。你想查詢服務器嗎？"},{"name":"L_REG_SCH","value":"註冊時間表"},{"name":"I_SCHEDULE","value":"進度監控"},{"name":"L_LST_SCH","value":"附表清單"},{"name":"L_SC_CT","value":"時間表類型"},{"name":"B_SCHEDULE","value":"時間表"},{"name":"L_SCRIPT_WIZARD","value":"腳本嚮導"},{"name":"D_SCHEMA","value":"架構"},{"name":"L_SCHEMA","value":"架構"},{"name":"L_SCHEMA_NAME","value":"架構名稱"},{"name":"L_REN_SCH","value":"更換名字"},{"name":"B_ST_NAME","value":"樣式"},{"name":"L_LOOK_AND_FEEL","value":"外觀和感覺"},{"name":"L_GRID_STYLE","value":"設置網格樣式"},{"name":"L_STYLE_OPTION","value":"款式選擇"},{"name":"L_OPT_STYLE","value":"款式選擇"},{"name":"L_LD_ST","value":"樣式"},{"name":"L_STYLENAME","value":"樣式名稱"},{"name":"L_ST_NAME","value":"樣式名稱"},{"name":"L_F_STR","value":"字符串格式"},{"name":"L_CLOSEABLE","value":"可關閉"},{"name":"L_TC_DU","value":"持續時間（米莉秒）"},{"name":"B_HOUR","value":"小時"},{"name":"L_DF_TS","value":"時間分開"},{"name":"L_TIME_FMT","value":"時間格式"},{"name":"L_TC_TA","value":"時間軸"},{"name":"L_TIMEZONE","value":"時區"},{"name":"L_TZ_OFFSET","value":"時間偏移"},{"name":"L_SHOW_TZ","value":"顯示時區"},{"name":"T_DM","value":"DateMetric編輯器"},{"name":"L_TIME_OPTION","value":"時間序列選項"},{"name":"L_SERIES_LAYOUT","value":"系列佈局"},{"name":"L_SERIES","value":"系列選項"},{"name":"L_SERIES_TYPE","value":"系列類型"},{"name":"L_SYSTEM","value":"系統"},{"name":"T_SYS_RES","value":"系統資源"},{"name":"L_SYS_RES","value":"系統資源"},{"name":"I_SYSMON","value":"系統監控"},{"name":"D_PRIVATECONTENT","value":"系統文件"},{"name":"I_ABOUT_DETAIL","value":"關於"},{"name":"L_S_LK","value":"系統查找"},{"name":"B_T_FR","value":"從時間"},{"name":"B_DT_FR","value":"從日期"},{"name":"L_MAKESTYLE","value":"定義新風格"},{"name":"L_PWD_NEW","value":"新密碼"},{"name":"L_MAKEITEM_G","value":"製作物品"},{"name":"L_MAKEITEM","value":"製作項目（@）"},{"name":"S_REL","value":"可靠"},{"name":"B_EXECUTE","value":"執行"},{"name":"L_RUN","value":"跑"},{"name":"L_RUN_BUTTON","value":"運行按鈕"},{"name":"L_BTN_TRG","value":"觸發器運行事件"},{"name":"B_UNDO","value":"取消更改"},{"name":"L_BTN_ROW_ON","value":"行號按鈕"},{"name":"L_BTN_TRGDESC","value":"單擊“運行”按鈕時，觸發其他篩選框值。"},{"name":"L_RUN_REPORT","value":"跑"},{"name":"B_NO","value":"沒有"},{"name":"L_PAD_BOTTOM","value":"底部"},{"name":"L_INPUT_USERID","value":"ID"},{"name":"B_ID","value":"ID"},{"name":"B_INSIDE","value":"內"},{"name":"L_INNER_RADIUS","value":"內半徑"},{"name":"L_EVENT_WIZARD","value":"動作嚮導"},{"name":"L_APPL","value":"應用"},{"name":"L_SW_APP","value":"切換應用"},{"name":"L_LOCALE_MANAGER","value":"區域經理"},{"name":"L_SELECT_LOCALE","value":"選擇語言"},{"name":"I_LOC_MGR","value":"區域經理"},{"name":"L_R_UT_DRILL","value":"更新表"},{"name":"L_DATA_TAB","value":"上傳的數據"},{"name":"L_STG_LINE","value":"交錯線"},{"name":"L_DF_YF","value":"年份格式"},{"name":"B_OP","value":"操作者"},{"name":"L_HL_COL","value":"列"},{"name":"L_P_COL","value":"列Dimensios"},{"name":"L_AREA_COLUMN","value":"柱"},{"name":"L_ENGLISH","value":"英語"},{"name":"L_MAP_AXIS","value":"地圖軸"},{"name":"B_ZOOM","value":"放大"},{"name":"B_OK","value":"好"},{"name":"B_YES","value":"是"},{"name":"L_CFIT_FCS","value":"預測"},{"name":"M_ERROR","value":"錯誤"},{"name":"L_ALIGN_RIGHT","value":"對"},{"name":"L_PAD_RIGHT","value":"對"},{"name":"B_ASC","value":"上升"},{"name":"B_ORDER_ASC","value":"訂單升序"},{"name":"B_OVERFLOW","value":"溢出"},{"name":"B_AMPM","value":"上午下午"},{"name":"L_DF_APM","value":"上午下午"},{"name":"L_EXP_OFFICE","value":"Office Direct"},{"name":"L_EXPORT_OFFICE","value":"Office Direct"},{"name":"B_OPTION","value":"選項"},{"name":"L_OPTIONS","value":"選項"},{"name":"S_SKEW","value":"偏態"},{"name":"L_LNK_EXT","value":"外部URL鏈接"},{"name":"L_R_CMENU","value":"外部鑽孔目標"},{"name":"L_ALIGN_LEFT","value":"剩下"},{"name":"L_PAD_LEFT","value":"剩下"},{"name":"L_DF_WD","value":"平日"},{"name":"B_WEEK","value":"週"},{"name":"L_DF_WF","value":"平日格式"},{"name":"L_DF_WD_O","value":"平日訂單"},{"name":"L_BORDER_RIGHT","value":"邊界吧"},{"name":"L_DATE_FORMAT_SRC","value":"來源日期格式"},{"name":"B_MONTH","value":"月"},{"name":"L_DF_MF","value":"月份格式"},{"name":"B_WEEKMONTH","value":"周月"},{"name":"L_EXPORT_PRINT","value":"HTML打印"},{"name":"L_LATITUDE","value":"緯度"},{"name":"L_RO_INST1","value":"請選擇以上選項。"},{"name":"B_LOC","value":"地點"},{"name":"L_P_open_win","value":"打開窗戶"},{"name":"L_ML_C3","value":"實用節點"},{"name":"L_FEATURE","value":"特徵"},{"name":"B_TYPE","value":"類型"},{"name":"L_TYPE","value":"類型"},{"name":"T_RSN","value":"報告Twit"},{"name":"M_NOT_EDITABLE","value":"不允許編輯此項目！"},{"name":"L_GOTO","value":"去"},{"name":"L_MOVE","value":"移動"},{"name":"L_B_MVT","value":"搬去"},{"name":"B_NAME","value":"名稱"},{"name":"L_RENAME","value":"改名"},{"name":"L_RENAME_ITEM","value":"改名 @"},{"name":"T_RENAME_ITEM","value":"重命名項目（@）"},{"name":"L_EMAIL","value":"電子郵件"},{"name":"L_NOTI_EMAIL","value":"通知電子郵件"},{"name":"T_SAVE_IMAGE","value":"圖片"},{"name":"L_SAVE_IMAGE","value":"另存為圖像"},{"name":"L_BTN_EVT","value":"與事件一起運行"},{"name":"L_C_PREV","value":"上一頁"},{"name":"B_PREVIOUS","value":"以前"},{"name":"L_CLC_PERI","value":"過期後"},{"name":"B_DAY","value":"天"},{"name":"L_C_D_NAMES_M","value":"SU＃MO＃TU＃WE＃TH＃FR＃SA"},{"name":"L_C_D_NAMES_S","value":"孫＃週一週二＃＃＃星期三星期四星期五＃＃週六"},{"name":"B_GENERAL","value":"一般"},{"name":"L_LAYOUT_NORMAL","value":"正常"},{"name":"L_GENERAL_OPTION","value":"常規選項"},{"name":"L_C_D_NAMES","value":"週日週一＃＃＃週二週三週四＃＃＃週五週六"},{"name":"L_DF_DS","value":"日期分開"},{"name":"L_DF_DF","value":"日格式"},{"name":"L_AUTO_WIDTH","value":"自動尺寸"},{"name":"L_BUILD","value":"建議的構建項目"},{"name":"L_ML_LEARN","value":"學習"},{"name":"D_CLASSMODULE","value":"ClassModule"},{"name":"D_JAVAPACKAGE","value":"Java包"},{"name":"L_P_execute_script","value":"運行JavaScript"},{"name":"L_M_SUBJ_REC","value":"最近使用的物品"},{"name":"L_F_LE","value":"更少或相等（<=）"},{"name":"L_F_LE_NOT","value":"不小於或等於（>）"},{"name":"L_F_LT","value":"少於（<）"},{"name":"L_JB_STAT","value":"工作狀態"},{"name":"D_WORKSPACE","value":"工作區"},{"name":"B_WORKSPACE","value":"工作區"},{"name":"L_WORKSPACE","value":"新工作區"},{"name":"L_C_MW","value":"管理工作區"},{"name":"L_F_LT_NOT","value":"不小於（> =）"},{"name":"B_UNLOCK","value":"開鎖"},{"name":"B_SAVE","value":"保存"},{"name":"L_SELECT_PATH","value":"選擇要創建的路徑"},{"name":"M_ERR_NSAVE","value":"需要保存內容！"},{"name":"B_APPLY","value":"應用"},{"name":"L_APPL_R","value":"應用於"},{"name":"L_CLC_HOUR","value":"清楚"},{"name":"L_TM_ALG","value":"算法"},{"name":"L_LAYOUT_CASCADE","value":"級聯"},{"name":"L_DRILL_PARAM","value":"列到Params"},{"name":"L_FETCH_ALL","value":"獲取所有數據"},{"name":"B_SHOW_ALL","value":"顯示所有"},{"name":"L_EN_DRILL","value":"鑽到所有人"},{"name":"L_EN_DRILL_DESC","value":"檢查鑽取到所有工作表"},{"name":"L_CFIT_SS","value":"顯示摘要曲線"},{"name":"L_ALL_VALUE","value":"所有價值"},{"name":"F_P_POT","value":"總數百分比"},{"name":"E_SWA_CFM","value":"請選擇要切換到的應用程序名稱。"},{"name":"L_FONT_ALIGNMENT","value":"對準"},{"name":"L_SORT_SEL","value":"排序方法"},{"name":"L_SORT_TP","value":"排序類型"},{"name":"L_DF_OS","value":"訂單風格"},{"name":"L_SORT_ORD","value":"排序訂單"},{"name":"L_SORT_OPTION","value":"排名和排序"},{"name":"L_F_SORT","value":"排序字段"},{"name":"T_SORT_OPTION","value":"排序選項"},{"name":"M_INFO","value":"信息！"},{"name":"L_REMOVE","value":"去掉"},{"name":"L_SHOW_TITLE","value":"顯示標題"},{"name":"L_TITLE_OPTION","value":"標題設置"},{"name":"L_CONDITION","value":"條件"},{"name":"L_ADD_CONDITION","value":"添加條件"},{"name":"M_S_S2","value":"找不到已註冊表格的結果。"},{"name":"L_JOIN","value":"加入"},{"name":"L_ADD_JOIN","value":"添加加入"},{"name":"L_BTN_SEARCH","value":"搜索"},{"name":"L_ROW_LIMIT_COUNT","value":"限制數量"},{"name":"B_NO_DATA","value":"沒有數據"},{"name":"L_EMPTY_DATA","value":"在此列表中清空"},{"name":"L_VIEW_MODE_LBL","value":"數據查詢查看器"},{"name":"B_PROC","value":"處理請求.. <br>請稍等。"},{"name":"L_BAND_VALUE_2","value":"價值"},{"name":"B_T_TO","value":"到時間"},{"name":"B_DT_TO","value":"至今"},{"name":"L_F_VALUE_TO","value":"為了價值"},{"name":"L_T_LOGOUT","value":"登出"},{"name":"L_M_LOGOUT","value":"您確定要退出嗎？"},{"name":"L_C_W_H","value":"週"},{"name":"L_DISTINCT_QUERY","value":"不同的查詢"},{"name":"L_DISTINCT","value":"返回不同的所有行"},{"name":"S_MEDIAN","value":"中位數"},{"name":"B_FAVORITES","value":"最愛"},{"name":"M_SAVED_FAV","value":"在收藏夾列表中添加"},{"name":"L_C_FC","value":"我最喜愛的"},{"name":"F_INC","value":"增加的"},{"name":"L_GEO_FIELD","value":"地理位置"},{"name":"L_CONTACT_HELP","value":"如需支持，請聯繫"},{"name":"L_EV_MIN","value":"每分鐘"},{"name":"L_SC_C3","value":"一次運行一次"},{"name":"L_EV_HOUR","value":"每隔一小時"},{"name":"M_UNKNOWN","value":"未知錯誤！"},{"name":"L_E_VALUE","value":"鍵入值"},{"name":"L_AGGR","value":"聚合"},{"name":"F_DIFF","value":"區別"},{"name":"L_CSTEP_1","value":"圖表"},{"name":"T_CHART_WIZARD","value":"圖表設計師"},{"name":"L_CLR_SET","value":"顏色設置"},{"name":"T_CHART_SERIES","value":"圖表系列"},{"name":"L_CSTEP_4","value":"地塊面積"},{"name":"L_CHART_OPTION","value":"數據透視選項"},{"name":"L_CHART_GROUP","value":"圖表類別"},{"name":"L_CHART_THEME","value":"圖表主題"},{"name":"T_CHART_PLOTBAND","value":"圖表情節帶"},{"name":"L_VIEW_CHART","value":"圖表視圖"},{"name":"L_CHART_TYPE","value":"圖表類型"},{"name":"L_MAX_CHART_ELEMENT","value":"數據元素"},{"name":"T_BG_SCR","value":"命令結果"},{"name":"L_WAIT_1","value":"處理請求時請稍候"},{"name":"S_HOME","value":"家"},{"name":"S_KURT","value":"峰度"},{"name":"B_SECOND","value":"第二"},{"name":"B_DEFAULT","value":"默認"},{"name":"B_CLEAR","value":"明確"},{"name":"L_C_LC","value":"最新內容"},{"name":"L_BB_MS","value":"最大氣泡尺寸"},{"name":"S_MAX","value":"最大值"},{"name":"F_MAX","value":"最大值"},{"name":"F_MIN","value":"最低限度"},{"name":"L_MIN_WIDTH","value":"最小寬度"},{"name":"L_MIN_HEIGHT","value":"最小高度"},{"name":"S_MIN","value":"最低限度"},{"name":"L_LAST_UPD","value":"上次更新時間："},{"name":"B_LASTUPD","value":"最近更新時間"},{"name":"B_ADD","value":"加"},{"name":"L_ML_C4a","value":"推理"},{"name":"L_SWAP_AXIS","value":"交換軸"},{"name":"T_BG_OP","value":"產量"},{"name":"L_TB_PRT_T","value":"出口目標"},{"name":"T_EXPORT_WIZARD","value":"導出嚮導"},{"name":"L_TB_PRT","value":"出口按鈕"},{"name":"L_EXP_MET","value":"菜單控制"},{"name":"L_EXP_MET_DESC","value":"檢查要在此報告中使​​用的菜單項。"},{"name":"L_LNK_DOC","value":"下載導出文件"},{"name":"L_OUTP_TYPE","value":"輸出類型"},{"name":"L_PG_RANGE","value":"頁面範圍"},{"name":"L_PG_START","value":"頁面開始"},{"name":"B_PROC_CANCEL","value":"取消"},{"name":"B_CANCEL","value":"取消"},{"name":"L_USE_CACHE","value":"使用緩存"},{"name":"L_CACHE_PERI","value":"緩存期"},{"name":"L_CACHE_RULE","value":"緩存規則"},{"name":"I_EXP_SCH","value":"內容搜索選項"},{"name":"T_EXP_MC","value":"導出內容"},{"name":"T_EXP_MC_Q","value":"你會繼續將內容導出到文件嗎？"},{"name":"L_CONTROLLER","value":"控制"},{"name":"L_FIX_COLUMN","value":"修復列"},{"name":"L_COL_VIS","value":"列可見"},{"name":"L_COL_SIZE","value":"列大小"},{"name":"L_COLUMN_WIDTH","value":"列寬"},{"name":"L_R_COLUMN_FIT","value":"將柱子安裝到面板上"},{"name":"L_COL_TREE","value":"創建列標題樹"},{"name":"L_ML_C6","value":"案例"},{"name":"L_ML_C6b","value":"刪除案例"},{"name":"L_ML_C6a","value":"添加案例"},{"name":"B_CODE","value":"碼"},{"name":"L_CODEMAPPING","value":"CodeMapping"},{"name":"D_CODEMAP","value":"代碼映射"},{"name":"L_LOOKUP","value":"度量標準查找"},{"name":"L_CODE_FIELD","value":"代碼映射"},{"name":"T_CODE_MAPPING","value":"代碼映射"},{"name":"I_QRY_TOOL","value":"查詢工具"},{"name":"L_DB_SCHEDULE_QUERYTIMEOUT","value":"查詢超時（調度程序）"},{"name":"L_DB_QUERYTIMEOUT","value":"查詢超時（S）"},{"name":"L_CUBE","value":"立方體"},{"name":"T_CUBE","value":"立方體"},{"name":"L_R_ANAL_CUBE_LB","value":"立方體"},{"name":"L_MC_DATA_EDT","value":"立方體數據編輯器"},{"name":"B_BUILD","value":"創建多維數據集"},{"name":"L_BUILD_CUBE","value":"構建多維數據集"},{"name":"L_SAVE_CUBE","value":"保存多維數據集"},{"name":"B_B_CUBE","value":"單擊繼續以啟動自動多維數據集生成過程"},{"name":"T_CUBE_MODEL","value":"立方體模型"},{"name":"L_BUILD_MODEL","value":"模型嚮導"},{"name":"L_SHOW_PIVOT","value":"顯示CubeFolder"},{"name":"L_E_CB","value":"編輯多維數據集"},{"name":"L_F_GE","value":"大或等（> =）"},{"name":"L_F_GE_NOT","value":"不大於或等於（<）"},{"name":"L_F_GT","value":"大於（>）"},{"name":"L_F_GT_NOT","value":"不大於（<=）"},{"name":"L_SCALE_DOWN","value":"必要時縮小"},{"name":"L_CLASS_MOD","value":"課程模塊"},{"name":"L_P_CLUSTER","value":"群集維度"},{"name":"L_CLUSTER","value":"簇"},{"name":"L_CLIPBOARD_COPY","value":"複製到剪貼板"},{"name":"B_CLIPBOARD","value":"複製到剪貼板"},{"name":"L_EMPTY_SEARCH","value":"搜索關鍵字"},{"name":"L_F_LIKE","value":"包含關鍵字（LIKE）"},{"name":"L_F_LIKE_NOT","value":"不包括關鍵字（不喜歡）"},{"name":"B_TITLE","value":"標題"},{"name":"L_TITLE","value":"標題文字"},{"name":"L_HIDE_TITLE","value":"隱藏標題"},{"name":"L_STYLE_TITLE","value":"標題風格"},{"name":"L_T_DIR","value":"標題位置"},{"name":"L_TITLE_POSITION","value":"職位"},{"name":"L_OPT_TBAR","value":"標題欄選項"},{"name":"L_BROWSE_ITEM","value":"瀏覽@"},{"name":"T_BROWSER","value":"瀏覽器"},{"name":"S_NAVI","value":"航海家"},{"name":"T_TAB_BROWSER","value":"選項卡式瀏覽器"},{"name":"L_SHOW_TAB_BAR","value":"顯示標籤按鈕"},{"name":"L_R_CM_SHOWTAB","value":"在Tab中打開"},{"name":"L_NEW_TABPANEL","value":"新的TabPanel"},{"name":"D_TENANT","value":"承租人"},{"name":"L_ADD_TENANT","value":"添加租戶"},{"name":"L_BORDER_COLOR","value":"邊框顏色"},{"name":"M_SUC_DBCON","value":"成功連接數據庫"},{"name":"I_TABLE_REGISTER","value":"表寄存器"},{"name":"L_REG_TABLE","value":"表寄存器"},{"name":"L_TABLES","value":"表來源"},{"name":"L_TBL_ORD","value":"表順序"},{"name":"L_ERR_CUBE_ITEMS","value":"多維數據集上存在不匹配或錯誤項。修改並保存多維數據集以更新不匹配的信息。"},{"name":"L_P_RELOAD","value":"單擊“刷新”以加載。"},{"name":"L_NEW_TEXTAREA","value":"新TextArea"},{"name":"L_F_DISP","value":"顯示字段"},{"name":"L_AUTO_ROT","value":"旋轉文字"},{"name":"L_APPLY_TMPL","value":"應用模板"},{"name":"L_F_TMPL","value":"應用模板"},{"name":"L_EXPORT_JASPER","value":"JasperReport的"},{"name":"T_DB_TMPL","value":"數據庫模板"},{"name":"M_SEL_MODEL","value":"選擇工具欄按鈕上的模型以繼續立方體設計。"},{"name":"B_TREEVIEW","value":"樹"},{"name":"L_TREE_VIEW","value":"樹視圖"},{"name":"L_ENABLE_TREE_VIEW","value":"啟用樹視圖"},{"name":"L_TREEM_OPTION","value":"TreeMap選項"},{"name":"L_TM_CL","value":"TreeMap類"},{"name":"L_SCC_REC","value":"與間隔重複"},{"name":"L_SCC_DATE","value":"重現時間"},{"name":"L_PIE_OPTION","value":"餡餅選項"},{"name":"L_IMPORT_FILE","value":"導入文件"},{"name":"L_FILEEXT","value":"延期"},{"name":"L_SELECT_FILE","value":"選擇文件..."},{"name":"L_FILENAME","value":"文件名"},{"name":"T_EXCEL_LOADER","value":"LocalData Loader"},{"name":"L_LAYOUT_POPUP","value":"彈出"},{"name":"L_PANEL_H","value":"面板高度"},{"name":"L_PANEL_W","value":"面板寬度"},{"name":"L_INPUT_PASSWORD","value":"密碼"},{"name":"T_PASSWORD_CHANGE","value":"密碼"},{"name":"L_DB_PWD","value":"密碼"},{"name":"L_PWD_LABEL","value":"安全密碼"},{"name":"L_PASSWORD","value":"更改密碼"},{"name":"L_CH_PASSWD","value":"更改密碼"},{"name":"L_PWD_CONFIRM","value":"確認新密碼"},{"name":"M_BLANK_PWD","value":"密碼不應為空"},{"name":"L_STACK_PERCENT","value":"按百分比堆疊"},{"name":"L_PAGING","value":"分頁"},{"name":"L_PG_DIRECTION","value":"頁面方向"},{"name":"L_SHOW_PAGENUMBER","value":"顯示頁碼"},{"name":"L_PAGE_STYLE","value":"頁面樣式"},{"name":"L_PAGE_OPTIONS","value":"頁面選項"},{"name":"L_PG_SIZE","value":"頁面大小"},{"name":"L_FOOTER","value":"頁腳"},{"name":"L_REPEAT_HEADER","value":"重複標題"},{"name":"L_ROW_P_PAGE","value":"每頁行數"},{"name":"L_PG_LOADER","value":"頁面加載"},{"name":"L_USE_PAGING","value":"使用分頁"},{"name":"L_EDIT","value":"編輯"},{"name":"L_ML_C4b","value":"編輯"},{"name":"L_E_IT","value":"編輯項目"},{"name":"L_EDIT_ITEM","value":"編輯@"},{"name":"L_EDITOR_TYPE","value":"編輯類型"},{"name":"M_LOCK_TITLE","value":"內容已鎖定"},{"name":"S_AVG","value":"平均"},{"name":"F_AVG","value":"平均"},{"name":"L_C_FMT_VAL","value":"使用格式化值"},{"name":"B_WIDTH","value":"寬度"},{"name":"L_FIXED_W","value":"修復寬度"},{"name":"L_FONT_SELECT","value":"字體選擇"},{"name":"L_FONT_ST","value":"字體樣式"},{"name":"L_FONTSIZE","value":"字體大小"},{"name":"D_FOLDER","value":"夾"},{"name":"B_FOLDER","value":"夾"},{"name":"T_MGR_FOLDER","value":"Folder Manager"},{"name":"L_BB_STEP_2","value":"創建文件夾結構"},{"name":"L_CREATE_FOLDER","value":"創建文件夾"},{"name":"L_REG_FOLDER","value":"新增文件夾"},{"name":"L_MGR_FD","value":"管理文件夾"},{"name":"L_FOLDER_ITEMS","value":"文件夾項目"},{"name":"L_DATE_FORMAT_TGT","value":"顯示日期格式"},{"name":"L_DISP_TITLE","value":"顯示標題"},{"name":"B_DISP_NAME","value":"顯示名稱"},{"name":"S_STDERR","value":"標準錯誤"},{"name":"S_STDEV","value":"標準偏差"},{"name":"L_R_RUN_PROP","value":"運行屬性"},{"name":"T_PROMPT_DLG","value":"提示"},{"name":"T_PROMPT_MSG","value":"填寫變更條件的值"},{"name":"L_PROMPT_TYPE","value":"提示類型"},{"name":"L_FLOATING","value":"漂浮的"},{"name":"L_PLOT_STYLES","value":"情節樣式"},{"name":"L_ENABLE_PIVOT","value":"啟用Pivot"},{"name":"L_PIVOT","value":"設計"},{"name":"L_V_PIVOT","value":"透視模式"},{"name":"T_PIVOT_EDITOR","value":"報表設計器"},{"name":"L_PIVOT_REPORT","value":"設計"},{"name":"B_REQ","value":"必填項目"},{"name":"T_DB_BLANK","value":"現場是必需的。"},{"name":"L_FILTER","value":"過濾"},{"name":"L_R_OPT_FILTER","value":"過濾選項"},{"name":"T_DYNFILTER_CONFIG","value":"過濾配置"},{"name":"L_SHOW_FILTER_INFO","value":"顯示過濾器信息"},{"name":"L_CLEAR_FLT","value":"清除過濾器"},{"name":"L_NEW_FILTER","value":"新過濾器"},{"name":"B_SET_FILTER","value":"設置過濾器"},{"name":"L_BORDER_BOTTOM","value":"邊境底部"},{"name":"L_HADOOP","value":"Hadoop管理"},{"name":"L_HD_BFLOW","value":"Hadoop BizFlow"},{"name":"B_BOTTOM","value":"底部"},{"name":"L_RANK_BOTTOM","value":"排名底部"},{"name":"L_C_ITEMS","value":"子項目"},{"name":"L_TB_HL","value":"配置突出顯示"},{"name":"T_HL_OPT","value":"突出顯示選項"},{"name":"L_R_UT_DESC","value":"在檢查一個或多個時，僅鑽取到選中。"},{"name":"L_KOREAN","value":"朝鮮的"},{"name":"L_EXPORT_ODF_EXCEL","value":"打開SpreadSheet"},{"name":"L_EXPORT_ODF_WORD","value":"打開文檔"},{"name":"L_EXPORT_ODF_PPT","value":"公開演講"},{"name":"L_FUNC","value":"功能"},{"name":"L_SYNTAX","value":"句法"},{"name":"S_SUM","value":"摘要"},{"name":"L_ITEM","value":"項目"},{"name":"L_NAVIGATOR","value":"航海家"},{"name":"B_DELETE_ITEM","value":"刪除項目"},{"name":"L_CR_TP_SEL","value":"選擇物品"},{"name":"B_CONFIG_ITEM","value":"配置項目"},{"name":"L_SAVE_EXCEL","value":"保存內容"},{"name":"L_CREATE_ITEM","value":"創建項目"},{"name":"L_ADD_NEW","value":"添新"},{"name":"L_ITEMNAME","value":"項目名稱"},{"name":"L_AU_TITLE","value":"設置對象訪問權限"},{"name":"L_F_NOTIN","value":"不包括"},{"name":"L_TABLE_DROP","value":"要將拖動字段註冊到中間區域。"},{"name":"L_C_DEL_ITEM","value":"你想刪除項目嗎？"},{"name":"L_SELECT_ITEM","value":"選擇項目以繼續"},{"name":"L_DYN_SELECT","value":"檢查值"},{"name":"M_SEL_ITEM","value":"選擇項目以繼續。"},{"name":"M_DELETED","value":"已成功刪除內容"},{"name":"L_SAVE_CONTENT","value":"保存內容"},{"name":"T_META_SAVE","value":"將項目另存為..."},{"name":"E_NO_MATCH_FLD","value":"找不到列表中的匹配項。"},{"name":"L_HL_ROW","value":"行"},{"name":"L_BB_YA","value":"將數據行數據到Y軸"},{"name":"L_BB_SL","value":"顯示RowData圖例"},{"name":"L_P_ROW","value":"行尺寸"},{"name":"L_ROW_SIZE","value":"行大小"},{"name":"L_AREA_ROW","value":"行"},{"name":"M_NA","value":"不允許操作。"},{"name":"L_M_C_SAVE_DESKTOP","value":"要保存當前打開的桌面信息嗎？"},{"name":"L_FILE_APPEND","value":"附加在當前選項卡上"},{"name":"L_C_CUR","value":"當前，"},{"name":"L_P_cls","value":"關閉窗口"},{"name":"L_APPL_TMPL","value":"應用模板"},{"name":"L_HL_RANGE","value":"應用於"},{"name":"L_SWA_CFM","value":"您想繼續退出並登錄其他項目嗎？"},{"name":"B_CONFIRM","value":"確認"},{"name":"B_ACTIVE","value":"活性"},{"name":"L_A_USR","value":"活躍用戶"},{"name":"L_ACTIVATE","value":"啟用"},{"name":"L_CFIT_TYPE","value":"CurveFit類型"},{"name":"L_SC_ACTION","value":"安排行動"},{"name":"L_C_DC","value":"刪除內容"},{"name":"T_TRASHBIN","value":"垃圾桶"},{"name":"L_C_CD","value":"刪除內容"},{"name":"L_RANGE_FIELD","value":"範圍場"},{"name":"L_META_MIG","value":"元遷移"},{"name":"L_C_INLINEV","value":"內聯視圖"},{"name":"L_IMP_TB","value":"導入表"},{"name":"L_TENANT","value":"承租人"},{"name":"B_DATATYPE","value":"數據類型"},{"name":"L_SERVER_HOST","value":"服務器主機"},{"name":"L_ML","value":"機器學習"},{"name":"B_PHY_NAME","value":"物理名稱"},{"name":"I_LOGOUT","value":"用於安全會話的註銷按鈕。"},{"name":"L_MIG","value":"移民"},{"name":"L_B_CUBE","value":"立方體處理"},{"name":"L_ENDPOINT_URL","value":"端點URL"},{"name":"L_SYS_BACKSCH","value":"背景時間表"},{"name":"B_SEQUENCE","value":"訂購"},{"name":"L_SUBSCRIBE","value":"訂閱"},{"name":"L_DEPLOY_SVR","value":"部署服務器"},{"name":"I_START_INTRO","value":"開始介紹"},{"name":"I_COLLAPSE_BTN","value":"折疊並展開側面板。"},{"name":"I_MAINMENU","value":"主菜單（點擊兩次全屏查看）"},{"name":"I_SEARCH_MAIN","value":"使用關鍵字搜索以查找報告和對象"},{"name":"I_NAVIGATOR","value":"導航面板到內容"},{"name":"I_MAIN_WS","value":"主工作區"},{"name":"I_APP_AREA","value":"應用領域。"},{"name":"I_SAVE_CNT","value":"保存內容"},{"name":"I_RUN_REPORT","value":"運行報告。"},{"name":"I_ADD_VIEW","value":"添加視圖和小部件。"},{"name":"I_SHEET_AREA","value":"單張面積。"},{"name":"I_SHEET_TITLE","value":"表格標題"},{"name":"I_SHEET_VIEW","value":"工作表視圖"},{"name":"I_BTN_PIVOTOPTION","value":"透視選項可更改字段和列"},{"name":"I_BTN_WIDGET_CONF","value":"窗口小部件配置按鈕，用於設置詳細信息。"},{"name":"L_AUTO_JOIN","value":"自動加入"},{"name":"L_JOIN_BEUTIFY","value":"自動佈局表"},{"name":"L_UPLOAD","value":"上傳文件"},{"name":"L_RNK_SVAL","value":"按值排序"},{"name":"L_SEL_RPT","value":"選擇報告"},{"name":"L_SEL_DBD","value":"選擇儀表板"},{"name":"L_DESIGN","value":"設計模式"},{"name":"L_APPL_THEME","value":"應用主題"},{"name":"M_VALIDATED","value":"驗證成功！"},{"name":"T_ML_LEARN","value":"機器學習"},{"name":"T_HD_CFG_CL","value":"Hadoop配置"},{"name":"T_Resources","value":"資源"},{"name":"T_DYN_LFILE","value":"按fileupload過濾"},{"name":"L_DYN_LFILE","value":"上傳文件並使用值過濾"},{"name":"T_REPORT_STYLE","value":"報告風格"},{"name":"T_BA_1","value":"貝葉斯分析"},{"name":"B_INTRO","value":"介紹"},{"name":"B_PREV","value":"上一頁"},{"name":"B_SKIP","value":"跳躍"},{"name":"B_OBJ_NAME","value":"對象名稱"},{"name":"B_DATA_ZOOM","value":"數據縮放"},{"name":"B_C_DELETE","value":"單擊確定繼續刪除！"},{"name":"B_SELECT_FOLDER","value":"選擇要繼續的文件夾;"},{"name":"B_SELECT_TARGET","value":"選擇目標對象繼續;"},{"name":"B_TEMPLATES","value":"模板"},{"name":"B_CONFIG","value":"組態"},{"name":"B_VIEWMODE","value":"查看模式"},{"name":"B_EDITMODE","value":"編輯模式"},{"name":"B_PARAMTERS","value":"參數"},{"name":"B_NOT_EXECUTED","value":"沒有執行"},{"name":"B_VALIDATE","value":"驗證"},{"name":"L_AUTH","value":"認證"},{"name":"T_GRD_CFG","value":"網格配置"},{"name":"L_FORMVIEWER","value":"表單查看器"},{"name":"L_M_TITLE","value":"衡量標題"},{"name":"L_M_EXT_TITLE","value":"額外的標題"},{"name":"L_PAGE_FILTER","value":"頁面過濾器"},{"name":"L_TENANT_NAME","value":"租戶名稱"},{"name":"L_LICENSE_INFO","value":"許可證信息"},{"name":"L_ALLOWED_USERS","value":"允許用戶"},{"name":"L_REG_DATE","value":"註冊日期"},{"name":"L_pf_navitree","value":"樞軸過濾器"},{"name":"L_pf_fedit","value":"透視濾鏡編輯器"},{"name":"L_pf_filter","value":"樞軸過濾器"},{"name":"L_SAVE_CONTENT_AS","value":"將內容另存為"},{"name":"L_DATA_SOURCE","value":"數據源"},{"name":"T_DB_GEN","value":"數據庫生成器"},{"name":"L_P_export","value":"出口"},{"name":"L_ERR_L_MOD","value":"加載模塊時出錯！"},{"name":"I_DLOC_MGR","value":"字典管理"},{"name":"I_META_MIG","value":"元遷移"},{"name":"L_REG_DATASET","value":"註冊數據集"},{"name":"T_MIG_DISCO","value":"Oracle Discoverer Migration"},{"name":"L_METRIC_ITEMS","value":"指標項目"},{"name":"T_DBD_VAR","value":"儀表板變量"},{"name":"E_LM_SEL","value":"首先從組合框中選擇區域設置！"},{"name":"T_TORSP_RS","value":"龍捲風蜘蛛的結果"},{"name":"L_LNK_TP","value":"鏈接字段"},{"name":"T_SUBSCR_AUTH","value":"訂閱進行身份驗證"},{"name":"T_NET_PROP","value":"網絡財產"},{"name":"M_APP_LOADED","value":"應用加載成功！"},{"name":"L_F_COMMENT","value":"評論"},{"name":"M_SAVE_PROGRESS","value":"保存正在進行中..請稍候！"},{"name":"M_DEF_DATE","value":"默認日期"},{"name":"L_DB_VAL","value":"數據庫值"},{"name":"L_SF_AUTHMETHOD","value":"Salesforce身份驗證方法"},{"name":"L_SF_SECTOKEN","value":"Salesforce令牌"},{"name":"L_TARGET_DB","value":"目標數據庫"},{"name":"T_JASP_TMPL","value":"碧玉模板"},{"name":"L_HIERARCHY","value":"等級制度"},{"name":"T_FM_SEL","value":"配方選擇"},{"name":"T_FM_SEL_CONFIG","value":"配方配置"},{"name":"L_ADD_FILTER","value":"添加過濾器"},{"name":"T_INT_LEARN","value":"互動學習"},{"name":"L_VIEW_PYTHON","value":"蟒蛇"},{"name":"L_R_OPTIONS","value":"R選項"},{"name":"L_PY_EDIT","value":"Python編輯"},{"name":"T_COST_EFF","value":"成本效益"},{"name":"L_GS_ENABLED","value":"Gs已啟用"},{"name":"L_ALT_COLOR","value":"替代顏色"},{"name":"L_REG_LINK","value":"註冊鏈接"},{"name":"L_TB_FORM_V","value":"表單查看器"},{"name":"L_EMAIL_BURSTING","value":"電子郵件爆發"},{"name":"L_BAYES","value":"Machine Learning"},{"name":"L_BAYES_RPT","value":"ML Report"},{"name":"L_DISCO","value":"Discoverer Migration"},{"name":"L_SEL_DB","value":"Select Datasource"},{"name":"L_BOBJ","value":"Business Object"},{"name":"L_SETTINGS","value":"Settings"},{"name":"D_BOBJECT","value":"Business Object"},{"name":"L_V_SYNC","value":"Sync with Sheet"},{"name":"L_NEW_STORYVIEW","value":"Add StoryIt"},{"name":"L_XLS_BUTTON","value":"Show Excel button"},{"name":"L_XLS_STYLE","value":"Excel Button Style"},{"name":"L_VIEW_ANAL","value":"View Analysis"},{"name":"L_D_EXCEL","value":"Download"}]}
+{
+	"meta_type": "locales",
+	"objinfo": {},
+	"name": "zh_TW",
+	"type": "Unknown",
+	"writable": false,
+	"manage": false,
+	"is_sub": false,
+	"attributes": {},
+	"data": [
+		{
+			"name": "L_CM_DISP_2",
+			"value": "*在此處拖動項目以定義此度量"
+		},
+		{
+			"name": "L_CD_DISP_2",
+			"value": "*拖動度量項或單擊“添加”按鈕"
+		},
+		{
+			"name": "L_TIME_FMT_DSC",
+			"value": "*如果是日期格式項，則應用"
+		},
+		{
+			"name": "L_FM_DISP1",
+			"value": "*雙擊字段添加功能。"
+		},
+		{
+			"name": "L_CM_DISP_1",
+			"value": "*雙擊字段添加功能"
+		},
+		{
+			"name": "L_FM_DISP2",
+			"value": "*在此處拖動項目以定義此度量。"
+		},
+		{
+			"name": "L_ME_DISP1",
+			"value": "*雙擊字段添加功能"
+		},
+		{
+			"name": "L_C_DCOUNT",
+			"value": "@ Counts"
+		},
+		{
+			"name": "L_VIEW_ITEM",
+			"value": "查看@"
+		},
+		{
+			"name": "L_C_DATE",
+			"value": "@的細節"
+		},
+		{
+			"name": "M_SEL_ERR",
+			"value": "@ 有必要的。請選擇價值"
+		},
+		{
+			"name": "I_ABOUT",
+			"value": "關於 @"
+		},
+		{
+			"name": "E_D_EVNT",
+			"value": "處理evnet @時出錯。"
+		},
+		{
+			"name": "L_C_TOTAL",
+			"value": "總計@"
+		},
+		{
+			"name": "E_PV_L",
+			"value": "內容特權錯誤：（@）"
+		},
+		{
+			"name": "L_C_M_NAMES_S",
+			"value": "JAN＃FEB＃MAR＃APR＃MAY＃JUN＃JUL＃AUG＃SEP＃華僑城＃NOV＃DEC"
+		},
+		{
+			"name": "L_C_M_NAMES",
+			"value": "一月二月＃＃＃三月四月五月＃＃＃月＃月＃月＃月＃月＃十一月十二月"
+		},
+		{
+			"name": "L_DUAL_AXIS",
+			"value": "雙YAxis"
+		},
+		{
+			"name": "L_CONTACT_CRED",
+			"value": "版權和復制; 1996-2010"
+		},
+		{
+			"name": "L_EXPORT_CSV",
+			"value": "CSV"
+		},
+		{
+			"name": "L_DB_MON",
+			"value": "數據庫監控"
+		},
+		{
+			"name": "L_DB_CHARSET",
+			"value": "DB CharSet"
+		},
+		{
+			"name": "L_OUTPUT_CHARSET",
+			"value": "輸出CharSet"
+		},
+		{
+			"name": "L_TABLE_FIELD",
+			"value": "數據庫表"
+		},
+		{
+			"name": "L_EXPORT_DOCX",
+			"value": "DOCX導出"
+		},
+		{
+			"name": "B_GO",
+			"value": "走"
+		},
+		{
+			"name": "D_HIERARCHY",
+			"value": "等級制度"
+		},
+		{
+			"name": "T_BG_HIVEJOB",
+			"value": "蜂巢工作"
+		},
+		{
+			"name": "L_EXPORT_HTML",
+			"value": "HTML視圖"
+		},
+		{
+			"name": "L_EXP_JASP",
+			"value": "碧玉"
+		},
+		{
+			"name": "D_JAVACLASS",
+			"value": "Java類"
+		},
+		{
+			"name": "L_JDBC_URL",
+			"value": "JDBC URL"
+		},
+		{
+			"name": "L_JDBC_DRV",
+			"value": "JDBC驅動程序"
+		},
+		{
+			"name": "T_MDB_CUBE",
+			"value": "MDB訪問分析"
+		},
+		{
+			"name": "L_MDB_OPTION",
+			"value": "MDB選項"
+		},
+		{
+			"name": "L_MONGODB",
+			"value": "MongoDB的"
+		},
+		{
+			"name": "L_MONGO_DATA",
+			"value": "MongoDB數據"
+		},
+		{
+			"name": "L_MONGO_DPROC",
+			"value": "MongoDB進程"
+		},
+		{
+			"name": "D_MDBCUBE",
+			"value": "MS Access DataCube"
+		},
+		{
+			"name": "L_MDB_CUBE",
+			"value": "MS Access DataCube"
+		},
+		{
+			"name": "L_EXPORT_EXCEL",
+			"value": "MS Excel"
+		},
+		{
+			"name": "L_EXPORT_PPT",
+			"value": "MS PPT"
+		},
+		{
+			"name": "D_NOSQL",
+			"value": "NoSQL數據庫"
+		},
+		{
+			"name": "L_OP_NOT",
+			"value": "不操作"
+		},
+		{
+			"name": "L_EXPORT_PDF",
+			"value": "PDF"
+		},
+		{
+			"name": "L_ML_C7",
+			"value": "加載PGMX"
+		},
+		{
+			"name": "L_R_WIZARD",
+			"value": "R精靈"
+		},
+		{
+			"name": "L_R_PARAM",
+			"value": "R參數"
+		},
+		{
+			"name": "L_R_SUMMARY",
+			"value": "R摘要"
+		},
+		{
+			"name": "L_R_SCRIPT",
+			"value": "R腳本編輯器"
+		},
+		{
+			"name": "L_VIEW_RSTAT",
+			"value": "R統計"
+		},
+		{
+			"name": "T_R_WIZARD",
+			"value": "R統計嚮導"
+		},
+		{
+			"name": "L_EXPORT_RTF",
+			"value": "RTF導出"
+		},
+		{
+			"name": "T_SELECT_POOL",
+			"value": "選擇池"
+		},
+		{
+			"name": "L_F_SQL_IS",
+			"value": "SQL是運算符（IS）"
+		},
+		{
+			"name": "L_F_SQL_IS_NOT",
+			"value": "SQL不是運算符（不是）"
+		},
+		{
+			"name": "L_LD_SQL",
+			"value": "SQL查詢導入"
+		},
+		{
+			"name": "I_SQLCUBE",
+			"value": "SQL嚮導"
+		},
+		{
+			"name": "L_VIEW_SQL",
+			"value": "查看SQL"
+		},
+		{
+			"name": "L_LD_SQL_D",
+			"value": "SQL源碼"
+		},
+		{
+			"name": "L_P_sql",
+			"value": "運行SQL"
+		},
+		{
+			"name": "D_SQLCUBE",
+			"value": "SQL Cube"
+		},
+		{
+			"name": "L_SQL_CUBE",
+			"value": "SQL Cube"
+		},
+		{
+			"name": "L_EDIT_SQL",
+			"value": "編輯SQL"
+		},
+		{
+			"name": "L_SQL_PRE_PROC",
+			"value": "SQL預處理器"
+		},
+		{
+			"name": "D_UIPAGE",
+			"value": "UI頁面"
+		},
+		{
+			"name": "L_UIPAGE",
+			"value": "UI頁面"
+		},
+		{
+			"name": "L_LNK_URL",
+			"value": "URL地址"
+		},
+		{
+			"name": "L_EXPORT_XML",
+			"value": "XML導出"
+		},
+		{
+			"name": "L_CSTEP_5",
+			"value": "Y軸"
+		},
+		{
+			"name": "L_YAXIS_FORMAT",
+			"value": "Y軸格式"
+		},
+		{
+			"name": "L_YAXIS_TITLE",
+			"value": "YAxis標題"
+		},
+		{
+			"name": "L_YAXIS_MAX",
+			"value": "Y軸最大值"
+		},
+		{
+			"name": "L_YAXIS_MIN",
+			"value": "Y軸最小值"
+		},
+		{
+			"name": "L_ALIGN_CENTER",
+			"value": "中央"
+		},
+		{
+			"name": "L_SHOW_FIRST",
+			"value": "顯示第一"
+		},
+		{
+			"name": "S_BOTTOM",
+			"value": "底價"
+		},
+		{
+			"name": "S_TOP",
+			"value": "最高價值"
+		},
+		{
+			"name": "L_USE_MFMT",
+			"value": "使用測量格式"
+		},
+		{
+			"name": "L_ML_CEFF_S",
+			"value": "敏感性分析"
+		},
+		{
+			"name": "L_F_VALUE_LNG",
+			"value": "值"
+		},
+		{
+			"name": "B_VALUES",
+			"value": "值"
+		},
+		{
+			"name": "B_TEXT",
+			"value": "值"
+		},
+		{
+			"name": "B_VALUE",
+			"value": "值"
+		},
+		{
+			"name": "L_BAND_VALUE_1",
+			"value": "值"
+		},
+		{
+			"name": "L_F_VALUE",
+			"value": "值"
+		},
+		{
+			"name": "L_FLT_VAL_SCR",
+			"value": "驗證功能"
+		},
+		{
+			"name": "L_VAL_DELIM",
+			"value": "價值分隔符"
+		},
+		{
+			"name": "B_COMBO_VAL",
+			"value": "列表值"
+		},
+		{
+			"name": "L_P_valuelist",
+			"value": "填充值"
+		},
+		{
+			"name": "T_VALUE_SELECT",
+			"value": "值選擇嚮導"
+		},
+		{
+			"name": "T_DYN_SELECT",
+			"value": "選擇值..."
+		},
+		{
+			"name": "L_STACK_VALUE",
+			"value": "堆棧值"
+		},
+		{
+			"name": "L_VALUE_TYPE",
+			"value": "值類型"
+		},
+		{
+			"name": "L_E_LIST",
+			"value": "從值中選擇"
+		},
+		{
+			"name": "B_CUST_VAL",
+			"value": "自定義值"
+		},
+		{
+			"name": "L_SHOW_VALUE",
+			"value": "顯示值"
+		},
+		{
+			"name": "L_TK_INTVL",
+			"value": "勾選間隔"
+		},
+		{
+			"name": "L_SELECT_VALUE",
+			"value": "選擇值"
+		},
+		{
+			"name": "L_FORMAT",
+			"value": "格式"
+		},
+		{
+			"name": "L_AREA_MEASURE",
+			"value": "測量"
+		},
+		{
+			"name": "L_F_EQ",
+			"value": "等於（=）"
+		},
+		{
+			"name": "L_F_EQ_NOT",
+			"value": "不等於（<>）"
+		},
+		{
+			"name": "L_OBJECT_TYPE",
+			"value": "對像類型"
+		},
+		{
+			"name": "T_META_SELECT",
+			"value": "選擇物品..."
+		},
+		{
+			"name": "B_SEARCH",
+			"value": "搜索"
+		},
+		{
+			"name": "L_SEARCH_KWD",
+			"value": "搜索"
+		},
+		{
+			"name": "L_NEW_SHEET",
+			"value": "新表"
+		},
+		{
+			"name": "L_ML_CEFF_D",
+			"value": "確定性分析"
+		},
+		{
+			"name": "M_WARNING",
+			"value": "警告！"
+		},
+		{
+			"name": "L_SC_C1",
+			"value": "之後運行一次"
+		},
+		{
+			"name": "L_LONGITUDE",
+			"value": "經度"
+		},
+		{
+			"name": "B_PATH",
+			"value": "路徑"
+		},
+		{
+			"name": "L_C_DIR",
+			"value": "計算方向"
+		},
+		{
+			"name": "L_ERR_SAVE",
+			"value": "要繼續之前保存內容。"
+		},
+		{
+			"name": "L_DEPRIVATE",
+			"value": "鎖定用戶登錄"
+		},
+		{
+			"name": "L_HIGH_PREC",
+			"value": "高精度數"
+		},
+		{
+			"name": "L_ADV_OPTION",
+			"value": "高級選項"
+		},
+		{
+			"name": "L_ADVANCED_OPTION",
+			"value": "高級選項"
+		},
+		{
+			"name": "L_R_FIXSIZE",
+			"value": "固定尺寸"
+		},
+		{
+			"name": "B_SHARE",
+			"value": "分享"
+		},
+		{
+			"name": "I_RELATION",
+			"value": "關係"
+		},
+		{
+			"name": "T_MANAGE",
+			"value": "管理"
+		},
+		{
+			"name": "L_MANAGEMENT",
+			"value": "管理"
+		},
+		{
+			"name": "I_ADMIN",
+			"value": "管理員"
+		},
+		{
+			"name": "S_COUNT",
+			"value": "計數"
+		},
+		{
+			"name": "B_DELIMITER",
+			"value": "分隔符"
+		},
+		{
+			"name": "L_LM_ADD",
+			"value": "添加國家代碼"
+		},
+		{
+			"name": "L_FONT_BOLD",
+			"value": "膽大"
+		},
+		{
+			"name": "L_PRIVILEGE",
+			"value": "特權"
+		},
+		{
+			"name": "D_AUTH",
+			"value": "義務"
+		},
+		{
+			"name": "L_OBJECT_AUTH",
+			"value": "對象驗證"
+		},
+		{
+			"name": "T_OBJECT_AUTH",
+			"value": "對象驗證"
+		},
+		{
+			"name": "T_DUTY_LIST",
+			"value": "職責清單"
+		},
+		{
+			"name": "L_ADD_DUTY",
+			"value": "添加責任"
+		},
+		{
+			"name": "D_GROUP",
+			"value": "組"
+		},
+		{
+			"name": "L_GROUP_LEVEL",
+			"value": "集團層面"
+		},
+		{
+			"name": "L_GROUP_FIELD",
+			"value": "集團領域"
+		},
+		{
+			"name": "W_SYNC_GRP",
+			"value": "你會在服務器中執行組同步嗎？"
+		},
+		{
+			"name": "L_GROUP_NAME",
+			"value": "團隊名字"
+		},
+		{
+			"name": "L_ADD_GROUP",
+			"value": "添加組"
+		},
+		{
+			"name": "L_OPT_GRID",
+			"value": "網格選項"
+		},
+		{
+			"name": "L_OVF_DESC",
+			"value": "檢查繪製滾動網格的溢出"
+		},
+		{
+			"name": "T_STYLE_WIZARD",
+			"value": "風格嚮導"
+		},
+		{
+			"name": "L_TB_PRT_GRD",
+			"value": "出口網格"
+		},
+		{
+			"name": "L_GRID_HMENU",
+			"value": "隱藏網格彈出菜單"
+		},
+		{
+			"name": "L_VIEW_GRID",
+			"value": "工作表視圖"
+		},
+		{
+			"name": "L_FONT_FACE",
+			"value": "字體臉"
+		},
+		{
+			"name": "L_FORE_COLOR",
+			"value": "前景色"
+		},
+		{
+			"name": "L_DATE_OPTION",
+			"value": "日期選項"
+		},
+		{
+			"name": "T_FEATURES",
+			"value": "特徵"
+		},
+		{
+			"name": "L_BASE_STYLE",
+			"value": "基本款式"
+		},
+		{
+			"name": "L_STATISTICS",
+			"value": "基本統計"
+		},
+		{
+			"name": "T_STATISTICS",
+			"value": "基本統計"
+		},
+		{
+			"name": "L_SET_DEF",
+			"value": "默認情況下使用"
+		},
+		{
+			"name": "L_FONT_ITALIC",
+			"value": "斜體"
+		},
+		{
+			"name": "L_PREDEFINED_FIELD",
+			"value": "預定義字段"
+		},
+		{
+			"name": "L_FILE_DELETE",
+			"value": "替換現有數據"
+		},
+		{
+			"name": "L_PWD_OLD",
+			"value": "舊密碼"
+		},
+		{
+			"name": "L_OTHER_OPTION",
+			"value": "其他選擇"
+		},
+		{
+			"name": "L_OTHER_VALUE",
+			"value": "其他價值"
+		},
+		{
+			"name": "L_ML_C1",
+			"value": "機會節點"
+		},
+		{
+			"name": "L_C_PR",
+			"value": "私人內容"
+		},
+		{
+			"name": "L_DATE_METRIC",
+			"value": "學於video腐choose"
+		},
+		{
+			"name": "D_DATEMETRIC",
+			"value": "日期指標"
+		},
+		{
+			"name": "L_DATE_FORMAT",
+			"value": "日期格式"
+		},
+		{
+			"name": "L_DATE_TYPE",
+			"value": "日期類型字段"
+		},
+		{
+			"name": "B_DSC",
+			"value": "降序"
+		},
+		{
+			"name": "B_ORDER_DSC",
+			"value": "訂單降序"
+		},
+		{
+			"name": "M_SAVED",
+			"value": "成功保存了內容"
+		},
+		{
+			"name": "B_YEAR",
+			"value": "年"
+		},
+		{
+			"name": "L_C_YR_SFX",
+			"value": "年"
+		},
+		{
+			"name": "B_HEIGHT",
+			"value": "高度"
+		},
+		{
+			"name": "L_FIXED_H",
+			"value": "修復高度"
+		},
+		{
+			"name": "F_P_CUM",
+			"value": "累積總和Percent"
+		},
+		{
+			"name": "L_SAVE_REPORT_AS",
+			"value": "保存為報告"
+		},
+		{
+			"name": "L_SAVE_EXCEL_AS",
+			"value": "將內容另存為"
+		},
+		{
+			"name": "L_SAVE_CONTENTAS",
+			"value": "將內容另存為......"
+		},
+		{
+			"name": "B_NEXT",
+			"value": "下一個"
+		},
+		{
+			"name": "L_C_NEXT",
+			"value": "下一個"
+		},
+		{
+			"name": "E_SC_LD",
+			"value": "加載DynamicScript時出錯"
+		},
+		{
+			"name": "L_P_open_dlg",
+			"value": "打開對話框"
+		},
+		{
+			"name": "T_M_TENANT",
+			"value": "多租戶"
+		},
+		{
+			"name": "L_CFIT_PORD",
+			"value": "多項式順序"
+		},
+		{
+			"name": "D_MOLAPCUBE",
+			"value": "MOLAP Cube"
+		},
+		{
+			"name": "L_MOLAP_CUBE",
+			"value": "MOLAP Cube"
+		},
+		{
+			"name": "T_MCUBE_WINDOW",
+			"value": "m尺寸立方體"
+		},
+		{
+			"name": "L_BUILD_MCUBE",
+			"value": "構建多維數據集"
+		},
+		{
+			"name": "L_UNIT_TEXT",
+			"value": "單位文字"
+		},
+		{
+			"name": "L_P_PIVOT_UNIT",
+			"value": "樞軸單位"
+		},
+		{
+			"name": "B_CLOSE",
+			"value": "關"
+		},
+		{
+			"name": "L_C_CLOSE",
+			"value": "關"
+		},
+		{
+			"name": "L_LNK_TGT",
+			"value": "瀏覽器目標"
+		},
+		{
+			"name": "L_DRILL_PARAM_DESC",
+			"value": "檢查列以過濾目標工作表"
+		},
+		{
+			"name": "L_BASE_METRIC",
+			"value": "基本指標"
+		},
+		{
+			"name": "L_SORT_SRC",
+			"value": "要排序的項目"
+		},
+		{
+			"name": "D_DASHBOARD",
+			"value": "儀表板"
+		},
+		{
+			"name": "L_DASHBOARD",
+			"value": "儀表板"
+		},
+		{
+			"name": "T_DASHBOARD",
+			"value": "儀表板"
+		},
+		{
+			"name": "L_MGR_DASHBOARD",
+			"value": "Dashaboard經理"
+		},
+		{
+			"name": "L_DBD_MAP",
+			"value": "儀表板映射"
+		},
+		{
+			"name": "I_MGR_DBD",
+			"value": "儀表板插件"
+		},
+		{
+			"name": "L_CSTEP_2",
+			"value": "數據"
+		},
+		{
+			"name": "L_DATA_LABEL",
+			"value": "數據標籤"
+		},
+		{
+			"name": "L_T_CUBE_SEL",
+			"value": "數據選擇嚮導"
+		},
+		{
+			"name": "L_EDIT_DATA",
+			"value": "編輯數據"
+		},
+		{
+			"name": "T_Filter",
+			"value": "過濾數據"
+		},
+		{
+			"name": "L_EMPTY",
+			"value": "沒有數據。"
+		},
+		{
+			"name": "L_BB_STEP_1",
+			"value": "準備數據"
+		},
+		{
+			"name": "L_MENU_DB_MODEL",
+			"value": "關係數據模型"
+		},
+		{
+			"name": "T_DB_CON",
+			"value": "數據庫實例"
+		},
+		{
+			"name": "L_DB_INSTANCE",
+			"value": "數據庫實例"
+		},
+		{
+			"name": "L_DB_TYPE",
+			"value": "數據庫類型"
+		},
+		{
+			"name": "L_DB_NAME",
+			"value": "數據庫名稱"
+		},
+		{
+			"name": "M_S_S1",
+			"value": "未找到所選數據庫實例的結果。"
+		},
+		{
+			"name": "L_ADD_DB_INST",
+			"value": "添加數據庫實例"
+		},
+		{
+			"name": "L_VIEW_MODE",
+			"value": "查看模式"
+		},
+		{
+			"name": "L_DATASET",
+			"value": "數據集"
+		},
+		{
+			"name": "L_B_ADC",
+			"value": "DataFile Cube"
+		},
+		{
+			"name": "D_TABDIMENSION",
+			"value": "數據分離維度"
+		},
+		{
+			"name": "L_DATA_LABEL_FMT",
+			"value": "數據標籤格式"
+		},
+		{
+			"name": "L_PRV_DATA",
+			"value": "數據預覽"
+		},
+		{
+			"name": "L_DATA_OPTION",
+			"value": "數據選項"
+		},
+		{
+			"name": "T_BG_DS",
+			"value": "數據源"
+		},
+		{
+			"name": "L_STYLE_DATA",
+			"value": "數據樣式"
+		},
+		{
+			"name": "L_LD_LK",
+			"value": "連接連接"
+		},
+		{
+			"name": "M_ERR_CDATA",
+			"value": "處理自定義數據報告時出錯"
+		},
+		{
+			"name": "T_FILTER",
+			"value": "過濾數據"
+		},
+		{
+			"name": "L_NO_DATA",
+			"value": "沒有數據"
+		},
+		{
+			"name": "L_STACK_CHART",
+			"value": "堆疊系列"
+		},
+		{
+			"name": "L_MSG_TABNAME",
+			"value": "鍵入標籤維度的數據標籤文本。"
+		},
+		{
+			"name": "I_DATA",
+			"value": "數據"
+		},
+		{
+			"name": "L_MGR_DATABASE",
+			"value": "數據庫經理"
+		},
+		{
+			"name": "L_REG_DATABASE",
+			"value": "註冊數據庫"
+		},
+		{
+			"name": "I_DATABASE_CONNECTION",
+			"value": "數據庫連接"
+		},
+		{
+			"name": "T_DB_PWD",
+			"value": "數據庫連接"
+		},
+		{
+			"name": "T_DATA_UPLOAD",
+			"value": "上傳DataFile"
+		},
+		{
+			"name": "L_LD_FILE",
+			"value": "加載DataFile"
+		},
+		{
+			"name": "L_SHOW_TOOL_BUTTON",
+			"value": "顯示工具按鈕"
+		},
+		{
+			"name": "B_HELP",
+			"value": "救命"
+		},
+		{
+			"name": "L_HELP_DOC",
+			"value": "幫助文檔"
+		},
+		{
+			"name": "I_HELP_MGR",
+			"value": "幫助經理"
+		},
+		{
+			"name": "L_HELP_GUIDES",
+			"value": "幫助和指南"
+		},
+		{
+			"name": "L_NEW_DOCUMENT",
+			"value": "添加文檔"
+		},
+		{
+			"name": "E_DUP_FOLDER",
+			"value": "不允許移動相同的文件夾"
+		},
+		{
+			"name": "L_TB_BN",
+			"value": "找到此表中使用的相同節點名稱。您想要更改所有名稱嗎？"
+		},
+		{
+			"name": "L_V_DESC",
+			"value": "動態變量編輯器"
+		},
+		{
+			"name": "L_F_BETWEEN_NOT",
+			"value": "不在值之間（不在兩者之間）"
+		},
+		{
+			"name": "L_F_BETWEEN",
+			"value": "值之間（BETWEEN）"
+		},
+		{
+			"name": "B_BACK",
+			"value": "背部"
+		},
+		{
+			"name": "L_DRAG_SELECT",
+			"value": "拖動選擇"
+		},
+		{
+			"name": "L_ENABLE_DRILL",
+			"value": "深入研究"
+		},
+		{
+			"name": "L_R_UPD_TGT",
+			"value": "鑽目標"
+		},
+		{
+			"name": "L_BTN_LOGIN",
+			"value": "登錄"
+		},
+		{
+			"name": "L_ML_C2",
+			"value": "決策節點"
+		},
+		{
+			"name": "L_ML_C5",
+			"value": "決策樹"
+		},
+		{
+			"name": "L_LABEL_DIST",
+			"value": "標籤距離"
+		},
+		{
+			"name": "L_SHOW_LABEL",
+			"value": "顯示標籤"
+		},
+		{
+			"name": "L_LABEL_ALIGN",
+			"value": "標籤對齊"
+		},
+		{
+			"name": "L_L_STEP",
+			"value": "標籤步驟"
+		},
+		{
+			"name": "L_MARKER",
+			"value": "標記"
+		},
+		{
+			"name": "L_CFIT_LC",
+			"value": "線條樣式"
+		},
+		{
+			"name": "L_BAND_BORDER",
+			"value": "邊界"
+		},
+		{
+			"name": "L_LINE_NUM",
+			"value": "電話號碼"
+		},
+		{
+			"name": "L_B_LAYOUT",
+			"value": "佈局"
+		},
+		{
+			"name": "B_OPT_LAYOUT",
+			"value": "佈局"
+		},
+		{
+			"name": "L_LAYOUT",
+			"value": "佈局"
+		},
+		{
+			"name": "L_LAYOUT_WIZARD",
+			"value": "佈局嚮導"
+		},
+		{
+			"name": "L_EDIT_LAYOUT",
+			"value": "編輯佈局"
+		},
+		{
+			"name": "T_LAYOUT",
+			"value": "佈局模板"
+		},
+		{
+			"name": "L_LOG_VIEW",
+			"value": "查看日誌結果"
+		},
+		{
+			"name": "L_LOGOUT",
+			"value": "登出"
+		},
+		{
+			"name": "L_DESKTOP_LOGOUT",
+			"value": "登出"
+		},
+		{
+			"name": "L_T_LOUT",
+			"value": "你想退出系統嗎？"
+		},
+		{
+			"name": "L_M_C_LOGOUT",
+			"value": "請單擊是按鈕退出。<br>單擊否按鈕取消"
+		},
+		{
+			"name": "L_LOGIN_TITLE",
+			"value": "安全登錄"
+		},
+		{
+			"name": "B_LOGIN",
+			"value": "登錄"
+		},
+		{
+			"name": "L_ONLOAD_RUN",
+			"value": "加載時執行"
+		},
+		{
+			"name": "T_LDATA_TITLE",
+			"value": "本地數據立方體選項"
+		},
+		{
+			"name": "D_EXCELLOADER",
+			"value": "本地文件多維數據集"
+		},
+		{
+			"name": "L_EXCEL_LOADER",
+			"value": "本地文件多維數據集"
+		},
+		{
+			"name": "D_DATACUBE",
+			"value": "本地文件多維數據集"
+		},
+		{
+			"name": "L_CLEAR_LOOKUP",
+			"value": "刪除查找"
+		},
+		{
+			"name": "L_RESOURCES",
+			"value": "資源"
+		},
+		{
+			"name": "L_RESOURCE",
+			"value": "資源"
+		},
+		{
+			"name": "D_REPORT",
+			"value": "報告"
+		},
+		{
+			"name": "L_REPORT",
+			"value": "報告"
+		},
+		{
+			"name": "T_REPORT_WINDOW",
+			"value": "報告"
+		},
+		{
+			"name": "L_REPORT_TOOLS",
+			"value": "報告工具"
+		},
+		{
+			"name": "L_REPORT_NAME",
+			"value": "報告名稱"
+		},
+		{
+			"name": "L_RPT_V_OPT",
+			"value": "報告查看器選項"
+		},
+		{
+			"name": "L_MENU_REPORT",
+			"value": "創建報告"
+		},
+		{
+			"name": "M_REPORT",
+			"value": "製作報告"
+		},
+		{
+			"name": "L_P_RPT_C",
+			"value": "報告選項"
+		},
+		{
+			"name": "I_REPORT_STYLE",
+			"value": "報告風格"
+		},
+		{
+			"name": "T_GLOBAL_REPORT_STYLE",
+			"value": "外觀和感覺"
+		},
+		{
+			"name": "L_P_onlinereport",
+			"value": "運行報告"
+		},
+		{
+			"name": "L_SYS_LOG",
+			"value": "系統日誌"
+		},
+		{
+			"name": "M_ERR_C_REP_PROC",
+			"value": "處理自定義報表處理程序時出錯"
+		},
+		{
+			"name": "T_REPORT_OPTION",
+			"value": "更改報告選項"
+		},
+		{
+			"name": "L_CHANGE_REPORTTYPE",
+			"value": "更改報告類型"
+		},
+		{
+			"name": "L_SAVE_REPORT",
+			"value": "保存報告"
+		},
+		{
+			"name": "L_ADD_REPORT",
+			"value": "添加報告"
+		},
+		{
+			"name": "T_RPT_PIVOT",
+			"value": "報告樞軸"
+		},
+		{
+			"name": "L_MAP_ITEM",
+			"value": "映射到報告項目"
+		},
+		{
+			"name": "L_LINK_FIELD",
+			"value": "鏈接字段"
+		},
+		{
+			"name": "L_DRILL_ON_DESC",
+			"value": "檢查列以顯示鏈接。"
+		},
+		{
+			"name": "B_WIZARD",
+			"value": "巫師"
+		},
+		{
+			"name": "D_CHARTMEASURE",
+			"value": "微圖表"
+		},
+		{
+			"name": "L_CHART_MEASURE",
+			"value": "微圖表"
+		},
+		{
+			"name": "L_RNK_LST",
+			"value": "顯示所有最後排名"
+		},
+		{
+			"name": "L_L_TAB",
+			"value": "僅加載最後一個選項卡"
+		},
+		{
+			"name": "D_CUBEMODEL",
+			"value": "ROLAP立方體模型"
+		},
+		{
+			"name": "L_ROLAP_CUBE_MODEL",
+			"value": "ROLAP立方體模型"
+		},
+		{
+			"name": "D_CUBE",
+			"value": "ROLAP Cube"
+		},
+		{
+			"name": "L_ROLAP_CUBE",
+			"value": "ROLAP Cube"
+		},
+		{
+			"name": "B_EVERY",
+			"value": "一切"
+		},
+		{
+			"name": "L_EV_DAY",
+			"value": "每小時一天"
+		},
+		{
+			"name": "T_BG_MR",
+			"value": "的Map / Reduce"
+		},
+		{
+			"name": "L_MAP_OPT",
+			"value": "地圖選項"
+		},
+		{
+			"name": "L_MAP_TYPE",
+			"value": "地圖類型"
+		},
+		{
+			"name": "L_B_JV",
+			"value": "映射/減少Java"
+		},
+		{
+			"name": "L_HD_MAPR",
+			"value": "地圖減少"
+		},
+		{
+			"name": "D_MCUBE",
+			"value": "MultiDimension Cube"
+		},
+		{
+			"name": "L_MENU",
+			"value": "菜單"
+		},
+		{
+			"name": "L_FEATURE_CTRL",
+			"value": "功能控制"
+		},
+		{
+			"name": "L_MAIL_BD",
+			"value": "內容"
+		},
+		{
+			"name": "L_P_MEASURE",
+			"value": "措施"
+		},
+		{
+			"name": "D_MEASURE",
+			"value": "測量"
+		},
+		{
+			"name": "L_MEASURE",
+			"value": "測量"
+		},
+		{
+			"name": "T_MEASURE",
+			"value": "測量"
+		},
+		{
+			"name": "L_GROUP_MEASURE",
+			"value": "集團措施"
+		},
+		{
+			"name": "L_REG_MEASURES",
+			"value": "制定措施"
+		},
+		{
+			"name": "T_M_MEASURE",
+			"value": "制定措施"
+		},
+		{
+			"name": "T_M_Measure",
+			"value": "註冊措施"
+		},
+		{
+			"name": "L_M_NAME",
+			"value": "測量名稱"
+		},
+		{
+			"name": "L_M_FORMAT",
+			"value": "測量格式"
+		},
+		{
+			"name": "L_M_POSITION",
+			"value": "測量位置"
+		},
+		{
+			"name": "L_MEASURE_ON",
+			"value": "測量開"
+		},
+		{
+			"name": "L_BB_STEP_3",
+			"value": "制定措施和時間指標"
+		},
+		{
+			"name": "L_M_FILTER",
+			"value": "測量過濾器"
+		},
+		{
+			"name": "L_META_IMPORT",
+			"value": "導入元文件"
+		},
+		{
+			"name": "I_META_IMP",
+			"value": "加載元文件"
+		},
+		{
+			"name": "T_META_IMP",
+			"value": "加載元文件"
+		},
+		{
+			"name": "T_META_EDITOR",
+			"value": "元編輯器"
+		},
+		{
+			"name": "L_EXPORT_META",
+			"value": "導出文件中的內容"
+		},
+		{
+			"name": "D_METRIC",
+			"value": "公"
+		},
+		{
+			"name": "L_METRIC",
+			"value": "公"
+		},
+		{
+			"name": "L_MC_ELEM_EDT",
+			"value": "元素編輯器"
+		},
+		{
+			"name": "L_T_LOOKUP",
+			"value": "查找選項"
+		},
+		{
+			"name": "L_MONITORING",
+			"value": "監控"
+		},
+		{
+			"name": "L_MODEL_CREATE",
+			"value": "創建模型"
+		},
+		{
+			"name": "L_MODEL_SELECT",
+			"value": "選擇型號"
+		},
+		{
+			"name": "L_MODEL_EDIT",
+			"value": "編輯模型"
+		},
+		{
+			"name": "L_LD_INI",
+			"value": "清除所有數據集"
+		},
+		{
+			"name": "L_ALL_DATA",
+			"value": "所有數據"
+		},
+		{
+			"name": "L_CFIT_AS",
+			"value": "所有系列曲線"
+		},
+		{
+			"name": "L_LD_UL",
+			"value": "斷開所有連接"
+		},
+		{
+			"name": "L_C_AL",
+			"value": "所有內容"
+		},
+		{
+			"name": "L_BTN_TRG_ALL",
+			"value": "驗證過濾器"
+		},
+		{
+			"name": "L_AU_APPLY_SUB",
+			"value": "應用所有子文件夾"
+		},
+		{
+			"name": "L_F_IN_NOT",
+			"value": "不在列表中（不在內）"
+		},
+		{
+			"name": "L_F_IN",
+			"value": "在列表中（IN）"
+		},
+		{
+			"name": "L_LNK_TMPL",
+			"value": "文檔模板"
+		},
+		{
+			"name": "B_STRING",
+			"value": "串"
+		},
+		{
+			"name": "L_PREVIEW",
+			"value": "預習"
+		},
+		{
+			"name": "L_FONT_UNDERLINE",
+			"value": "強調"
+		},
+		{
+			"name": "L_DELETE_SHORTCUT",
+			"value": "刪除快捷方式"
+		},
+		{
+			"name": "L_SC_PR",
+			"value": "期間運行"
+		},
+		{
+			"name": "L_SCC_TYPE",
+			"value": "重複類型"
+		},
+		{
+			"name": "L_SC_C2",
+			"value": "重複克朗"
+		},
+		{
+			"name": "L_EXPORT_OPTION",
+			"value": "選項"
+		},
+		{
+			"name": "L_EXPORT",
+			"value": "出口"
+		},
+		{
+			"name": "L_MAIL_CC",
+			"value": "郵件CC"
+		},
+		{
+			"name": "B_METHOD",
+			"value": "方法"
+		},
+		{
+			"name": "L_BG_COL",
+			"value": "背景顏色"
+		},
+		{
+			"name": "L_BACK_COLOR",
+			"value": "背面顏色"
+		},
+		{
+			"name": "L_CSTEP_6",
+			"value": "帶"
+		},
+		{
+			"name": "L_BAND_TYPE",
+			"value": "樂隊類型"
+		},
+		{
+			"name": "L_BB_CA",
+			"value": "氣泡顏色軸"
+		},
+		{
+			"name": "L_BB_SA",
+			"value": "氣泡尺寸軸"
+		},
+		{
+			"name": "L_BB_OPT",
+			"value": "BubbleMap選項"
+		},
+		{
+			"name": "T_REVISION",
+			"value": "修訂控制"
+		},
+		{
+			"name": "L_REVISION",
+			"value": "版本控制"
+		},
+		{
+			"name": "B_SVN",
+			"value": "版本控制和恢復"
+		},
+		{
+			"name": "L_SHOW_LEGEND",
+			"value": "顯示傳奇"
+		},
+		{
+			"name": "L_LEGEND_POSITION",
+			"value": "傳奇位置"
+		},
+		{
+			"name": "L_CSTEP_3",
+			"value": "傳說"
+		},
+		{
+			"name": "S_RAN",
+			"value": "範圍"
+		},
+		{
+			"name": "L_SAVE_C_MSG",
+			"value": "您正在關閉具有未保存更改的選項卡。您要保存更改嗎？"
+		},
+		{
+			"name": "L_SAVE_CHANGES",
+			"value": "保存更改？"
+		},
+		{
+			"name": "L_HL_DESC",
+			"value": "單擊要編輯的單元格，或單擊“新建”以創建新的高亮選項"
+		},
+		{
+			"name": "L_RM_VAR",
+			"value": "刪除變量"
+		},
+		{
+			"name": "I_BD_CONFIG",
+			"value": "變量"
+		},
+		{
+			"name": "L_ADD_VAR",
+			"value": "添加變量"
+		},
+		{
+			"name": "B_SHOW",
+			"value": "節目"
+		},
+		{
+			"name": "L_VIEW_OPTION",
+			"value": "傳奇選項"
+		},
+		{
+			"name": "L_TB_VCH",
+			"value": "改變觀點"
+		},
+		{
+			"name": "L_SHOW_VIEW_CHANGE",
+			"value": "顯示ViewMode按鈕"
+		},
+		{
+			"name": "L_RECOVER",
+			"value": "恢復"
+		},
+		{
+			"name": "L_COPY_ITEM",
+			"value": "複製@"
+		},
+		{
+			"name": "D_COMPOSITEREPORT",
+			"value": "綜合報告"
+		},
+		{
+			"name": "L_COMPOSITEREPORT",
+			"value": "綜合報告"
+		},
+		{
+			"name": "L_P_RPT_RT",
+			"value": "複合樞軸"
+		},
+		{
+			"name": "L_V_RPT",
+			"value": "複合樞軸模式"
+		},
+		{
+			"name": "L_P_RPT",
+			"value": "複合樞軸"
+		},
+		{
+			"name": "T_COMPOSITE_REPORT",
+			"value": "綜合報告"
+		},
+		{
+			"name": "F_STOT",
+			"value": "小計"
+		},
+		{
+			"name": "B_MINUTE",
+			"value": "分鐘"
+		},
+		{
+			"name": "B_QUARTER",
+			"value": "25美分硬幣"
+		},
+		{
+			"name": "S_VAR",
+			"value": "方差"
+		},
+		{
+			"name": "L_ANALYSIS",
+			"value": "分析"
+		},
+		{
+			"name": "I_WIZARD",
+			"value": "分步分析"
+		},
+		{
+			"name": "L_VARIABLES",
+			"value": "變量"
+		},
+		{
+			"name": "L_R_ANAL_CUBE",
+			"value": "分析立方體"
+		},
+		{
+			"name": "L_M_CUBE_SEL",
+			"value": "選擇分析主題..."
+		},
+		{
+			"name": "L_B_AC",
+			"value": "分析立方體"
+		},
+		{
+			"name": "L_M_SUBJ",
+			"value": "分析主題："
+		},
+		{
+			"name": "L_R_ANAL_CUBE_L",
+			"value": "主題名稱"
+		},
+		{
+			"name": "L_MENU_CUBE",
+			"value": "分析立方體"
+		},
+		{
+			"name": "L_MENU_CUBE_WORK",
+			"value": "立方體分析"
+		},
+		{
+			"name": "T_METRIC_SETTING",
+			"value": "度量配置"
+		},
+		{
+			"name": "B_REMOVE_PIVOT",
+			"value": "刪除Pivot"
+		},
+		{
+			"name": "L_ADD_METRIC",
+			"value": "添加新維度"
+		},
+		{
+			"name": "L_LOADING_REPORT",
+			"value": "載入中..."
+		},
+		{
+			"name": "L_PASTE_ITEM",
+			"value": "粘貼在這裡"
+		},
+		{
+			"name": "L_ADD_VIEW",
+			"value": "添加視圖"
+		},
+		{
+			"name": "L_ML_CEFF",
+			"value": "成本效益分析"
+		},
+		{
+			"name": "L_B_BW",
+			"value": "業務工作流程"
+		},
+		{
+			"name": "B_INACTIVE",
+			"value": "待用"
+		},
+		{
+			"name": "L_B_USR",
+			"value": "被阻止的用戶"
+		},
+		{
+			"name": "D_BIGDATA",
+			"value": "大數據"
+		},
+		{
+			"name": "L_BIGDATA",
+			"value": "大數據"
+		},
+		{
+			"name": "T_NOSQLDATA_TITLE",
+			"value": "BigData連接選項"
+		},
+		{
+			"name": "T_NOSQL_CUBE",
+			"value": "BigData分析立方體"
+		},
+		{
+			"name": "L_HD_BPROC",
+			"value": "Bigdata設計"
+		},
+		{
+			"name": "D_BIGDATAMODEL",
+			"value": "BigDataModel"
+		},
+		{
+			"name": "D_NOSQLCUBE",
+			"value": "BigData Cube"
+		},
+		{
+			"name": "L_NOSQL_CUBE",
+			"value": "BigData Cube"
+		},
+		{
+			"name": "L_NULL_VALUE",
+			"value": "空值"
+		},
+		{
+			"name": "L_REM_BLK",
+			"value": "刪除空值"
+		},
+		{
+			"name": "M_BLANK",
+			"value": "新增項目"
+		},
+		{
+			"name": "B_ENABLED",
+			"value": "啟用"
+		},
+		{
+			"name": "B_ENABLE",
+			"value": "啟用"
+		},
+		{
+			"name": "B_USER_DOC",
+			"value": "說明"
+		},
+		{
+			"name": "I_USER",
+			"value": "用戶"
+		},
+		{
+			"name": "M_LOCK_MSG",
+			"value": "內容在@ 2處被@ 1鎖定"
+		},
+		{
+			"name": "L_BTN_EVTDESC",
+			"value": "禁用用戶選擇值並運行，並等待按鈕單擊事件。"
+		},
+		{
+			"name": "L_USER_MANAGEMENT",
+			"value": "用戶管理"
+		},
+		{
+			"name": "I_USER_MANAGER",
+			"value": "用戶經理"
+		},
+		{
+			"name": "L_MGR_USER",
+			"value": "用戶經理"
+		},
+		{
+			"name": "L_USER_DUTY",
+			"value": "用戶責任"
+		},
+		{
+			"name": "L_MGR_UD",
+			"value": "用戶責任管理"
+		},
+		{
+			"name": "T_USER_GROUP",
+			"value": "用戶組"
+		},
+		{
+			"name": "T_SYNC_USER",
+			"value": "用戶同步"
+		},
+		{
+			"name": "W_SYNC_SAVE",
+			"value": "你會在服務器中保存用戶同步參數嗎？"
+		},
+		{
+			"name": "W_SYNC_USER",
+			"value": "你會在服務器中執行用戶同步嗎？"
+		},
+		{
+			"name": "T_REG_USER",
+			"value": "註冊用戶"
+		},
+		{
+			"name": "L_B_CM",
+			"value": "自定義指標"
+		},
+		{
+			"name": "L_USERNAME",
+			"value": "用戶名"
+		},
+		{
+			"name": "L_DB_UNAME",
+			"value": "用戶名"
+		},
+		{
+			"name": "L_USERID",
+			"value": "用戶身份"
+		},
+		{
+			"name": "B_CUSTOM",
+			"value": "習慣"
+		},
+		{
+			"name": "L_CUSTOM_FIX",
+			"value": "自定義修復"
+		},
+		{
+			"name": "D_GROUPFIELD",
+			"value": "用戶定義的組"
+		},
+		{
+			"name": "D_UDG",
+			"value": "用戶定義的組"
+		},
+		{
+			"name": "L_UDG",
+			"value": "用戶定義的組"
+		},
+		{
+			"name": "T_UDG",
+			"value": "用戶定義的組"
+		},
+		{
+			"name": "T_CUSTOM_METRIC",
+			"value": "自定義指標"
+		},
+		{
+			"name": "L_CUSTOM_FIELD",
+			"value": "自定義字段"
+		},
+		{
+			"name": "L_ADD_USER",
+			"value": "添加用戶"
+		},
+		{
+			"name": "L_UD_DESC",
+			"value": "從列表中選擇用戶職責。"
+		},
+		{
+			"name": "D_CUSTOMMETRIC",
+			"value": "自定義指標"
+		},
+		{
+			"name": "L_CUSTOM_METRIC",
+			"value": "自定義指標"
+		},
+		{
+			"name": "L_FIXEDSIZE",
+			"value": "固定尺寸模式"
+		},
+		{
+			"name": "L_SQL_PRE",
+			"value": "預處理"
+		},
+		{
+			"name": "L_DLOCALE_MGR",
+			"value": "字典區域設置"
+		},
+		{
+			"name": "L_LM_EXP",
+			"value": "導出區域設置數據"
+		},
+		{
+			"name": "L_LM_LCS",
+			"value": "添加區域設置項"
+		},
+		{
+			"name": "L_LM_IMP",
+			"value": "導入區域設置數據"
+		},
+		{
+			"name": "L_E_DEL",
+			"value": "刪除"
+		},
+		{
+			"name": "B_DELETE",
+			"value": "刪除"
+		},
+		{
+			"name": "B_REMOVE",
+			"value": "去掉"
+		},
+		{
+			"name": "L_DELETE_ITEM",
+			"value": "刪除@"
+		},
+		{
+			"name": "L_RELATION_VIEW",
+			"value": "關係視圖"
+		},
+		{
+			"name": "L_PAD_TOP",
+			"value": "最佳"
+		},
+		{
+			"name": "L_LNK_DRILL",
+			"value": "鑽到細節"
+		},
+		{
+			"name": "L_DRILLREPORT",
+			"value": "用於詳細信息視圖"
+		},
+		{
+			"name": "L_DET_VIEW",
+			"value": "詳細視圖"
+		},
+		{
+			"name": "T_DRILL_CONFIG",
+			"value": "詳細信息視圖配置"
+		},
+		{
+			"name": "L_DRILL_ON",
+			"value": "要鑽的列"
+		},
+		{
+			"name": "M_DETAIL",
+			"value": "細節"
+		},
+		{
+			"name": "B_TOP",
+			"value": "最佳"
+		},
+		{
+			"name": "L_RANK_TOP",
+			"value": "排名靠前"
+		},
+		{
+			"name": "L_B_U",
+			"value": "上"
+		},
+		{
+			"name": "B_STATUS",
+			"value": "狀態"
+		},
+		{
+			"name": "L_NEW_RPT_VIEWER",
+			"value": "新報告查看器"
+		},
+		{
+			"name": "I_WORKSPACE",
+			"value": "新工作區"
+		},
+		{
+			"name": "L_NEW_PANEL",
+			"value": "新小組"
+		},
+		{
+			"name": "L_REFRESH",
+			"value": "刷新"
+		},
+		{
+			"name": "L_BAND_COLOR",
+			"value": "顏色"
+		},
+		{
+			"name": "B_COLOR",
+			"value": "顏色"
+		},
+		{
+			"name": "B_OWNER",
+			"value": "所有者"
+		},
+		{
+			"name": "B_CR",
+			"value": "創建 .."
+		},
+		{
+			"name": "L_TYPE_ITEM_NAME",
+			"value": "設置要創建的項目名稱"
+		},
+		{
+			"name": "I_SERVER_CONFIG",
+			"value": "服務器配置"
+		},
+		{
+			"name": "M_ERR_CONNECT",
+			"value": "無法在服務器上獲得連接！請稍後重試"
+		},
+		{
+			"name": "L_P_inv_svc",
+			"value": "調用服務"
+		},
+		{
+			"name": "B_SEL",
+			"value": "選擇"
+		},
+		{
+			"name": "B_MOVE_DOWN",
+			"value": "向下移動行"
+		},
+		{
+			"name": "B_MOVE_UP",
+			"value": "向上移動行"
+		},
+		{
+			"name": "B_CD_MHS",
+			"value": "你喜歡把托運物品移到@？"
+		},
+		{
+			"name": "B_CD_CHS",
+			"value": "你喜歡刪除已檢查的項目嗎？"
+		},
+		{
+			"name": "L_DELETE_CHECKED",
+			"value": "刪除已選中"
+		},
+		{
+			"name": "L_REMOVE_SELECTED",
+			"value": "刪除選定"
+		},
+		{
+			"name": "B_DESC",
+			"value": "描述"
+		},
+		{
+			"name": "L_DESCRIPTION",
+			"value": "描述"
+		},
+		{
+			"name": "L_PREFERENCES",
+			"value": "喜好"
+		},
+		{
+			"name": "L_DESKTOP_SETTING",
+			"value": "設置"
+		},
+		{
+			"name": "L_CHANGE_SETTING",
+			"value": "修改設置"
+		},
+		{
+			"name": "L_SEL_MODE",
+			"value": "選擇模式"
+		},
+		{
+			"name": "M_SUCCESS",
+			"value": "成功！"
+		},
+		{
+			"name": "B_SUCCESS",
+			"value": "成功完成流程"
+		},
+		{
+			"name": "L_CVAL_DESC",
+			"value": "使用分號分隔符鍵入文本"
+		},
+		{
+			"name": "L_HL_CELL",
+			"value": "僅限細胞"
+		},
+		{
+			"name": "L_PADDING",
+			"value": "填充"
+		},
+		{
+			"name": "L_NUMBER_PRECISION",
+			"value": "數字精度"
+		},
+		{
+			"name": "B_PROPERTY",
+			"value": "屬性"
+		},
+		{
+			"name": "D_FORMULA",
+			"value": "式"
+		},
+		{
+			"name": "L_FORMULA",
+			"value": "式"
+		},
+		{
+			"name": "D_FORMULAMEASURE",
+			"value": "式"
+		},
+		{
+			"name": "L_CFIT_FOR",
+			"value": "顯示公式"
+		},
+		{
+			"name": "L_USE_FORMULA",
+			"value": "顯示公式"
+		},
+		{
+			"name": "T_FORMULA_MEASURE",
+			"value": "配方測量"
+		},
+		{
+			"name": "L_SYNTAX_FORMULA",
+			"value": "公式語法"
+		},
+		{
+			"name": "L_S_GRST",
+			"value": "小組結果"
+		},
+		{
+			"name": "L_S_TROW",
+			"value": "顯示在頂行"
+		},
+		{
+			"name": "L_SEP_COL",
+			"value": "單獨的列"
+		},
+		{
+			"name": "B_MODI",
+			"value": "修改"
+		},
+		{
+			"name": "L_VERTICAL",
+			"value": "垂直"
+		},
+		{
+			"name": "L_ALIGN_VERTICAL",
+			"value": "垂直對齊"
+		},
+		{
+			"name": "L_LAYOUT_VERTICAL",
+			"value": "垂直"
+		},
+		{
+			"name": "L_HORIZONTAL",
+			"value": "橫"
+		},
+		{
+			"name": "L_LAYOUT_HORIZONTAL",
+			"value": "橫"
+		},
+		{
+			"name": "F_RNK",
+			"value": "秩"
+		},
+		{
+			"name": "L_RNK_VAL",
+			"value": "價值排名"
+		},
+		{
+			"name": "L_RANK_OPTION",
+			"value": "排名選項"
+		},
+		{
+			"name": "L_RNK_CNT",
+			"value": "排名"
+		},
+		{
+			"name": "L_RNK_PAR",
+			"value": "分區依據"
+		},
+		{
+			"name": "L_BTN_TRGALLDESC",
+			"value": "遞歸驗證包括隱藏面板在內的所有過濾器"
+		},
+		{
+			"name": "B_HIDE",
+			"value": "隱"
+		},
+		{
+			"name": "B_NUMERIC",
+			"value": "數字"
+		},
+		{
+			"name": "L_NUM_PREC",
+			"value": "數字精度"
+		},
+		{
+			"name": "T_BG_SC",
+			"value": "殼牌司令部"
+		},
+		{
+			"name": "B_SHEET_NAME",
+			"value": "工作表名稱"
+		},
+		{
+			"name": "L_R_ANAL_CUBE_LBL",
+			"value": "板材立方體"
+		},
+		{
+			"name": "T_SHEET_OPTION",
+			"value": "表格選項"
+		},
+		{
+			"name": "L_SHEET_OPTIONS",
+			"value": "表格選項"
+		},
+		{
+			"name": "L_SHEET_NUM",
+			"value": "表號"
+		},
+		{
+			"name": "L_ADD_SHEET",
+			"value": "添加表格"
+		},
+		{
+			"name": "L_C_SCH",
+			"value": "加載計劃結果。你想查詢服務器嗎？"
+		},
+		{
+			"name": "L_REG_SCH",
+			"value": "註冊時間表"
+		},
+		{
+			"name": "I_SCHEDULE",
+			"value": "進度監控"
+		},
+		{
+			"name": "L_LST_SCH",
+			"value": "附表清單"
+		},
+		{
+			"name": "L_SC_CT",
+			"value": "時間表類型"
+		},
+		{
+			"name": "B_SCHEDULE",
+			"value": "時間表"
+		},
+		{
+			"name": "L_SCRIPT_WIZARD",
+			"value": "腳本嚮導"
+		},
+		{
+			"name": "D_SCHEMA",
+			"value": "架構"
+		},
+		{
+			"name": "L_SCHEMA",
+			"value": "架構"
+		},
+		{
+			"name": "L_SCHEMA_NAME",
+			"value": "架構名稱"
+		},
+		{
+			"name": "L_REN_SCH",
+			"value": "更換名字"
+		},
+		{
+			"name": "B_ST_NAME",
+			"value": "樣式"
+		},
+		{
+			"name": "L_LOOK_AND_FEEL",
+			"value": "外觀和感覺"
+		},
+		{
+			"name": "L_GRID_STYLE",
+			"value": "設置網格樣式"
+		},
+		{
+			"name": "L_STYLE_OPTION",
+			"value": "款式選擇"
+		},
+		{
+			"name": "L_OPT_STYLE",
+			"value": "款式選擇"
+		},
+		{
+			"name": "L_LD_ST",
+			"value": "樣式"
+		},
+		{
+			"name": "L_STYLENAME",
+			"value": "樣式名稱"
+		},
+		{
+			"name": "L_ST_NAME",
+			"value": "樣式名稱"
+		},
+		{
+			"name": "L_F_STR",
+			"value": "字符串格式"
+		},
+		{
+			"name": "L_CLOSEABLE",
+			"value": "可關閉"
+		},
+		{
+			"name": "L_TC_DU",
+			"value": "持續時間（米莉秒）"
+		},
+		{
+			"name": "B_HOUR",
+			"value": "小時"
+		},
+		{
+			"name": "L_DF_TS",
+			"value": "時間分開"
+		},
+		{
+			"name": "L_TIME_FMT",
+			"value": "時間格式"
+		},
+		{
+			"name": "L_TC_TA",
+			"value": "時間軸"
+		},
+		{
+			"name": "L_TIMEZONE",
+			"value": "時區"
+		},
+		{
+			"name": "L_TZ_OFFSET",
+			"value": "時間偏移"
+		},
+		{
+			"name": "L_SHOW_TZ",
+			"value": "顯示時區"
+		},
+		{
+			"name": "T_DM",
+			"value": "DateMetric編輯器"
+		},
+		{
+			"name": "L_TIME_OPTION",
+			"value": "時間序列選項"
+		},
+		{
+			"name": "L_SERIES_LAYOUT",
+			"value": "系列佈局"
+		},
+		{
+			"name": "L_SERIES",
+			"value": "系列選項"
+		},
+		{
+			"name": "L_SERIES_TYPE",
+			"value": "系列類型"
+		},
+		{
+			"name": "L_SYSTEM",
+			"value": "系統"
+		},
+		{
+			"name": "T_SYS_RES",
+			"value": "系統資源"
+		},
+		{
+			"name": "L_SYS_RES",
+			"value": "系統資源"
+		},
+		{
+			"name": "I_SYSMON",
+			"value": "系統監控"
+		},
+		{
+			"name": "D_PRIVATECONTENT",
+			"value": "系統文件"
+		},
+		{
+			"name": "I_ABOUT_DETAIL",
+			"value": "關於"
+		},
+		{
+			"name": "L_S_LK",
+			"value": "系統查找"
+		},
+		{
+			"name": "B_T_FR",
+			"value": "從時間"
+		},
+		{
+			"name": "B_DT_FR",
+			"value": "從日期"
+		},
+		{
+			"name": "L_MAKESTYLE",
+			"value": "定義新風格"
+		},
+		{
+			"name": "L_PWD_NEW",
+			"value": "新密碼"
+		},
+		{
+			"name": "L_MAKEITEM_G",
+			"value": "製作物品"
+		},
+		{
+			"name": "L_MAKEITEM",
+			"value": "製作項目（@）"
+		},
+		{
+			"name": "S_REL",
+			"value": "可靠"
+		},
+		{
+			"name": "B_EXECUTE",
+			"value": "執行"
+		},
+		{
+			"name": "L_RUN",
+			"value": "跑"
+		},
+		{
+			"name": "L_RUN_BUTTON",
+			"value": "運行按鈕"
+		},
+		{
+			"name": "L_BTN_TRG",
+			"value": "觸發器運行事件"
+		},
+		{
+			"name": "B_UNDO",
+			"value": "取消更改"
+		},
+		{
+			"name": "L_BTN_ROW_ON",
+			"value": "行號按鈕"
+		},
+		{
+			"name": "L_BTN_TRGDESC",
+			"value": "單擊“運行”按鈕時，觸發其他篩選框值。"
+		},
+		{
+			"name": "L_RUN_REPORT",
+			"value": "跑"
+		},
+		{
+			"name": "B_NO",
+			"value": "沒有"
+		},
+		{
+			"name": "L_PAD_BOTTOM",
+			"value": "底部"
+		},
+		{
+			"name": "L_INPUT_USERID",
+			"value": "ID"
+		},
+		{
+			"name": "B_ID",
+			"value": "ID"
+		},
+		{
+			"name": "B_INSIDE",
+			"value": "內"
+		},
+		{
+			"name": "L_INNER_RADIUS",
+			"value": "內半徑"
+		},
+		{
+			"name": "L_EVENT_WIZARD",
+			"value": "動作嚮導"
+		},
+		{
+			"name": "L_APPL",
+			"value": "應用"
+		},
+		{
+			"name": "L_SW_APP",
+			"value": "切換應用"
+		},
+		{
+			"name": "L_LOCALE_MANAGER",
+			"value": "區域經理"
+		},
+		{
+			"name": "L_SELECT_LOCALE",
+			"value": "選擇語言"
+		},
+		{
+			"name": "I_LOC_MGR",
+			"value": "區域經理"
+		},
+		{
+			"name": "L_R_UT_DRILL",
+			"value": "更新表"
+		},
+		{
+			"name": "L_DATA_TAB",
+			"value": "上傳的數據"
+		},
+		{
+			"name": "L_STG_LINE",
+			"value": "交錯線"
+		},
+		{
+			"name": "L_DF_YF",
+			"value": "年份格式"
+		},
+		{
+			"name": "B_OP",
+			"value": "操作者"
+		},
+		{
+			"name": "L_HL_COL",
+			"value": "列"
+		},
+		{
+			"name": "L_P_COL",
+			"value": "列Dimensios"
+		},
+		{
+			"name": "L_AREA_COLUMN",
+			"value": "柱"
+		},
+		{
+			"name": "L_ENGLISH",
+			"value": "英語"
+		},
+		{
+			"name": "L_MAP_AXIS",
+			"value": "地圖軸"
+		},
+		{
+			"name": "B_ZOOM",
+			"value": "放大"
+		},
+		{
+			"name": "B_OK",
+			"value": "好"
+		},
+		{
+			"name": "B_YES",
+			"value": "是"
+		},
+		{
+			"name": "L_CFIT_FCS",
+			"value": "預測"
+		},
+		{
+			"name": "M_ERROR",
+			"value": "錯誤"
+		},
+		{
+			"name": "L_ALIGN_RIGHT",
+			"value": "對"
+		},
+		{
+			"name": "L_PAD_RIGHT",
+			"value": "對"
+		},
+		{
+			"name": "B_ASC",
+			"value": "上升"
+		},
+		{
+			"name": "B_ORDER_ASC",
+			"value": "訂單升序"
+		},
+		{
+			"name": "B_OVERFLOW",
+			"value": "溢出"
+		},
+		{
+			"name": "B_AMPM",
+			"value": "上午下午"
+		},
+		{
+			"name": "L_DF_APM",
+			"value": "上午下午"
+		},
+		{
+			"name": "L_EXP_OFFICE",
+			"value": "Office Direct"
+		},
+		{
+			"name": "L_EXPORT_OFFICE",
+			"value": "Office Direct"
+		},
+		{
+			"name": "B_OPTION",
+			"value": "選項"
+		},
+		{
+			"name": "L_OPTIONS",
+			"value": "選項"
+		},
+		{
+			"name": "S_SKEW",
+			"value": "偏態"
+		},
+		{
+			"name": "L_LNK_EXT",
+			"value": "外部URL鏈接"
+		},
+		{
+			"name": "L_R_CMENU",
+			"value": "外部鑽孔目標"
+		},
+		{
+			"name": "L_ALIGN_LEFT",
+			"value": "剩下"
+		},
+		{
+			"name": "L_PAD_LEFT",
+			"value": "剩下"
+		},
+		{
+			"name": "L_DF_WD",
+			"value": "平日"
+		},
+		{
+			"name": "B_WEEK",
+			"value": "週"
+		},
+		{
+			"name": "L_DF_WF",
+			"value": "平日格式"
+		},
+		{
+			"name": "L_DF_WD_O",
+			"value": "平日訂單"
+		},
+		{
+			"name": "L_BORDER_RIGHT",
+			"value": "邊界吧"
+		},
+		{
+			"name": "L_DATE_FORMAT_SRC",
+			"value": "來源日期格式"
+		},
+		{
+			"name": "B_MONTH",
+			"value": "月"
+		},
+		{
+			"name": "L_DF_MF",
+			"value": "月份格式"
+		},
+		{
+			"name": "B_WEEKMONTH",
+			"value": "周月"
+		},
+		{
+			"name": "L_EXPORT_PRINT",
+			"value": "HTML打印"
+		},
+		{
+			"name": "L_LATITUDE",
+			"value": "緯度"
+		},
+		{
+			"name": "L_RO_INST1",
+			"value": "請選擇以上選項。"
+		},
+		{
+			"name": "B_LOC",
+			"value": "地點"
+		},
+		{
+			"name": "L_P_open_win",
+			"value": "打開窗戶"
+		},
+		{
+			"name": "L_ML_C3",
+			"value": "實用節點"
+		},
+		{
+			"name": "L_FEATURE",
+			"value": "特徵"
+		},
+		{
+			"name": "B_TYPE",
+			"value": "類型"
+		},
+		{
+			"name": "L_TYPE",
+			"value": "類型"
+		},
+		{
+			"name": "T_RSN",
+			"value": "報告Twit"
+		},
+		{
+			"name": "M_NOT_EDITABLE",
+			"value": "不允許編輯此項目！"
+		},
+		{
+			"name": "L_GOTO",
+			"value": "去"
+		},
+		{
+			"name": "L_MOVE",
+			"value": "移動"
+		},
+		{
+			"name": "L_B_MVT",
+			"value": "搬去"
+		},
+		{
+			"name": "B_NAME",
+			"value": "名稱"
+		},
+		{
+			"name": "L_RENAME",
+			"value": "改名"
+		},
+		{
+			"name": "L_RENAME_ITEM",
+			"value": "改名 @"
+		},
+		{
+			"name": "T_RENAME_ITEM",
+			"value": "重命名項目（@）"
+		},
+		{
+			"name": "L_EMAIL",
+			"value": "電子郵件"
+		},
+		{
+			"name": "L_NOTI_EMAIL",
+			"value": "通知電子郵件"
+		},
+		{
+			"name": "T_SAVE_IMAGE",
+			"value": "圖片"
+		},
+		{
+			"name": "L_SAVE_IMAGE",
+			"value": "另存為圖像"
+		},
+		{
+			"name": "L_BTN_EVT",
+			"value": "與事件一起運行"
+		},
+		{
+			"name": "L_C_PREV",
+			"value": "上一頁"
+		},
+		{
+			"name": "B_PREVIOUS",
+			"value": "以前"
+		},
+		{
+			"name": "L_CLC_PERI",
+			"value": "過期後"
+		},
+		{
+			"name": "B_DAY",
+			"value": "天"
+		},
+		{
+			"name": "L_C_D_NAMES_M",
+			"value": "SU＃MO＃TU＃WE＃TH＃FR＃SA"
+		},
+		{
+			"name": "L_C_D_NAMES_S",
+			"value": "孫＃週一週二＃＃＃星期三星期四星期五＃＃週六"
+		},
+		{
+			"name": "B_GENERAL",
+			"value": "一般"
+		},
+		{
+			"name": "L_LAYOUT_NORMAL",
+			"value": "正常"
+		},
+		{
+			"name": "L_GENERAL_OPTION",
+			"value": "常規選項"
+		},
+		{
+			"name": "L_C_D_NAMES",
+			"value": "週日週一＃＃＃週二週三週四＃＃＃週五週六"
+		},
+		{
+			"name": "L_DF_DS",
+			"value": "日期分開"
+		},
+		{
+			"name": "L_DF_DF",
+			"value": "日格式"
+		},
+		{
+			"name": "L_AUTO_WIDTH",
+			"value": "自動尺寸"
+		},
+		{
+			"name": "L_BUILD",
+			"value": "建議的構建項目"
+		},
+		{
+			"name": "L_ML_LEARN",
+			"value": "學習"
+		},
+		{
+			"name": "D_CLASSMODULE",
+			"value": "ClassModule"
+		},
+		{
+			"name": "D_JAVAPACKAGE",
+			"value": "Java包"
+		},
+		{
+			"name": "L_P_execute_script",
+			"value": "運行JavaScript"
+		},
+		{
+			"name": "L_M_SUBJ_REC",
+			"value": "最近使用的物品"
+		},
+		{
+			"name": "L_F_LE",
+			"value": "更少或相等（<=）"
+		},
+		{
+			"name": "L_F_LE_NOT",
+			"value": "不小於或等於（>）"
+		},
+		{
+			"name": "L_F_LT",
+			"value": "少於（<）"
+		},
+		{
+			"name": "L_JB_STAT",
+			"value": "工作狀態"
+		},
+		{
+			"name": "D_WORKSPACE",
+			"value": "工作區"
+		},
+		{
+			"name": "B_WORKSPACE",
+			"value": "工作區"
+		},
+		{
+			"name": "L_WORKSPACE",
+			"value": "新工作區"
+		},
+		{
+			"name": "L_C_MW",
+			"value": "管理工作區"
+		},
+		{
+			"name": "L_F_LT_NOT",
+			"value": "不小於（> =）"
+		},
+		{
+			"name": "B_UNLOCK",
+			"value": "開鎖"
+		},
+		{
+			"name": "B_SAVE",
+			"value": "保存"
+		},
+		{
+			"name": "L_SELECT_PATH",
+			"value": "選擇要創建的路徑"
+		},
+		{
+			"name": "M_ERR_NSAVE",
+			"value": "需要保存內容！"
+		},
+		{
+			"name": "B_APPLY",
+			"value": "應用"
+		},
+		{
+			"name": "L_APPL_R",
+			"value": "應用於"
+		},
+		{
+			"name": "L_CLC_HOUR",
+			"value": "清楚"
+		},
+		{
+			"name": "L_TM_ALG",
+			"value": "算法"
+		},
+		{
+			"name": "L_LAYOUT_CASCADE",
+			"value": "級聯"
+		},
+		{
+			"name": "L_DRILL_PARAM",
+			"value": "列到Params"
+		},
+		{
+			"name": "L_FETCH_ALL",
+			"value": "獲取所有數據"
+		},
+		{
+			"name": "B_SHOW_ALL",
+			"value": "顯示所有"
+		},
+		{
+			"name": "L_EN_DRILL",
+			"value": "鑽到所有人"
+		},
+		{
+			"name": "L_EN_DRILL_DESC",
+			"value": "檢查鑽取到所有工作表"
+		},
+		{
+			"name": "L_CFIT_SS",
+			"value": "顯示摘要曲線"
+		},
+		{
+			"name": "L_ALL_VALUE",
+			"value": "所有價值"
+		},
+		{
+			"name": "F_P_POT",
+			"value": "總數百分比"
+		},
+		{
+			"name": "E_SWA_CFM",
+			"value": "請選擇要切換到的應用程序名稱。"
+		},
+		{
+			"name": "L_FONT_ALIGNMENT",
+			"value": "對準"
+		},
+		{
+			"name": "L_SORT_SEL",
+			"value": "排序方法"
+		},
+		{
+			"name": "L_SORT_TP",
+			"value": "排序類型"
+		},
+		{
+			"name": "L_DF_OS",
+			"value": "訂單風格"
+		},
+		{
+			"name": "L_SORT_ORD",
+			"value": "排序訂單"
+		},
+		{
+			"name": "L_SORT_OPTION",
+			"value": "排名和排序"
+		},
+		{
+			"name": "L_F_SORT",
+			"value": "排序字段"
+		},
+		{
+			"name": "T_SORT_OPTION",
+			"value": "排序選項"
+		},
+		{
+			"name": "M_INFO",
+			"value": "信息！"
+		},
+		{
+			"name": "L_REMOVE",
+			"value": "去掉"
+		},
+		{
+			"name": "L_SHOW_TITLE",
+			"value": "顯示標題"
+		},
+		{
+			"name": "L_TITLE_OPTION",
+			"value": "標題設置"
+		},
+		{
+			"name": "L_CONDITION",
+			"value": "條件"
+		},
+		{
+			"name": "L_ADD_CONDITION",
+			"value": "添加條件"
+		},
+		{
+			"name": "M_S_S2",
+			"value": "找不到已註冊表格的結果。"
+		},
+		{
+			"name": "L_JOIN",
+			"value": "加入"
+		},
+		{
+			"name": "L_ADD_JOIN",
+			"value": "添加加入"
+		},
+		{
+			"name": "L_BTN_SEARCH",
+			"value": "搜索"
+		},
+		{
+			"name": "L_ROW_LIMIT_COUNT",
+			"value": "限制數量"
+		},
+		{
+			"name": "B_NO_DATA",
+			"value": "沒有數據"
+		},
+		{
+			"name": "L_EMPTY_DATA",
+			"value": "在此列表中清空"
+		},
+		{
+			"name": "L_VIEW_MODE_LBL",
+			"value": "數據查詢查看器"
+		},
+		{
+			"name": "B_PROC",
+			"value": "處理請求.. <br>請稍等。"
+		},
+		{
+			"name": "L_BAND_VALUE_2",
+			"value": "價值"
+		},
+		{
+			"name": "B_T_TO",
+			"value": "到時間"
+		},
+		{
+			"name": "B_DT_TO",
+			"value": "至今"
+		},
+		{
+			"name": "L_F_VALUE_TO",
+			"value": "為了價值"
+		},
+		{
+			"name": "L_T_LOGOUT",
+			"value": "登出"
+		},
+		{
+			"name": "L_M_LOGOUT",
+			"value": "您確定要退出嗎？"
+		},
+		{
+			"name": "L_C_W_H",
+			"value": "週"
+		},
+		{
+			"name": "L_DISTINCT_QUERY",
+			"value": "不同的查詢"
+		},
+		{
+			"name": "L_DISTINCT",
+			"value": "返回不同的所有行"
+		},
+		{
+			"name": "S_MEDIAN",
+			"value": "中位數"
+		},
+		{
+			"name": "B_FAVORITES",
+			"value": "最愛"
+		},
+		{
+			"name": "M_SAVED_FAV",
+			"value": "在收藏夾列表中添加"
+		},
+		{
+			"name": "L_C_FC",
+			"value": "我最喜愛的"
+		},
+		{
+			"name": "F_INC",
+			"value": "增加的"
+		},
+		{
+			"name": "L_GEO_FIELD",
+			"value": "地理位置"
+		},
+		{
+			"name": "L_CONTACT_HELP",
+			"value": "如需支持，請聯繫"
+		},
+		{
+			"name": "L_EV_MIN",
+			"value": "每分鐘"
+		},
+		{
+			"name": "L_SC_C3",
+			"value": "一次運行一次"
+		},
+		{
+			"name": "L_EV_HOUR",
+			"value": "每隔一小時"
+		},
+		{
+			"name": "M_UNKNOWN",
+			"value": "未知錯誤！"
+		},
+		{
+			"name": "L_E_VALUE",
+			"value": "鍵入值"
+		},
+		{
+			"name": "L_AGGR",
+			"value": "聚合"
+		},
+		{
+			"name": "F_DIFF",
+			"value": "區別"
+		},
+		{
+			"name": "L_CSTEP_1",
+			"value": "圖表"
+		},
+		{
+			"name": "T_CHART_WIZARD",
+			"value": "圖表設計師"
+		},
+		{
+			"name": "L_CLR_SET",
+			"value": "顏色設置"
+		},
+		{
+			"name": "T_CHART_SERIES",
+			"value": "圖表系列"
+		},
+		{
+			"name": "L_CSTEP_4",
+			"value": "地塊面積"
+		},
+		{
+			"name": "L_CHART_OPTION",
+			"value": "數據透視選項"
+		},
+		{
+			"name": "L_CHART_GROUP",
+			"value": "圖表類別"
+		},
+		{
+			"name": "L_CHART_THEME",
+			"value": "圖表主題"
+		},
+		{
+			"name": "T_CHART_PLOTBAND",
+			"value": "圖表情節帶"
+		},
+		{
+			"name": "L_VIEW_CHART",
+			"value": "圖表視圖"
+		},
+		{
+			"name": "L_CHART_TYPE",
+			"value": "圖表類型"
+		},
+		{
+			"name": "L_MAX_CHART_ELEMENT",
+			"value": "數據元素"
+		},
+		{
+			"name": "T_BG_SCR",
+			"value": "命令結果"
+		},
+		{
+			"name": "L_WAIT_1",
+			"value": "處理請求時請稍候"
+		},
+		{
+			"name": "S_HOME",
+			"value": "家"
+		},
+		{
+			"name": "S_KURT",
+			"value": "峰度"
+		},
+		{
+			"name": "B_SECOND",
+			"value": "第二"
+		},
+		{
+			"name": "B_DEFAULT",
+			"value": "默認"
+		},
+		{
+			"name": "B_CLEAR",
+			"value": "明確"
+		},
+		{
+			"name": "L_C_LC",
+			"value": "最新內容"
+		},
+		{
+			"name": "L_BB_MS",
+			"value": "最大氣泡尺寸"
+		},
+		{
+			"name": "S_MAX",
+			"value": "最大值"
+		},
+		{
+			"name": "F_MAX",
+			"value": "最大值"
+		},
+		{
+			"name": "F_MIN",
+			"value": "最低限度"
+		},
+		{
+			"name": "L_MIN_WIDTH",
+			"value": "最小寬度"
+		},
+		{
+			"name": "L_MIN_HEIGHT",
+			"value": "最小高度"
+		},
+		{
+			"name": "S_MIN",
+			"value": "最低限度"
+		},
+		{
+			"name": "L_LAST_UPD",
+			"value": "上次更新時間："
+		},
+		{
+			"name": "B_LASTUPD",
+			"value": "最近更新時間"
+		},
+		{
+			"name": "B_ADD",
+			"value": "加"
+		},
+		{
+			"name": "L_ML_C4a",
+			"value": "推理"
+		},
+		{
+			"name": "L_SWAP_AXIS",
+			"value": "交換軸"
+		},
+		{
+			"name": "T_BG_OP",
+			"value": "產量"
+		},
+		{
+			"name": "L_TB_PRT_T",
+			"value": "出口目標"
+		},
+		{
+			"name": "T_EXPORT_WIZARD",
+			"value": "導出嚮導"
+		},
+		{
+			"name": "L_TB_PRT",
+			"value": "出口按鈕"
+		},
+		{
+			"name": "L_EXP_MET",
+			"value": "菜單控制"
+		},
+		{
+			"name": "L_EXP_MET_DESC",
+			"value": "檢查要在此報告中使​​用的菜單項。"
+		},
+		{
+			"name": "L_LNK_DOC",
+			"value": "下載導出文件"
+		},
+		{
+			"name": "L_OUTP_TYPE",
+			"value": "輸出類型"
+		},
+		{
+			"name": "L_PG_RANGE",
+			"value": "頁面範圍"
+		},
+		{
+			"name": "L_PG_START",
+			"value": "頁面開始"
+		},
+		{
+			"name": "B_PROC_CANCEL",
+			"value": "取消"
+		},
+		{
+			"name": "B_CANCEL",
+			"value": "取消"
+		},
+		{
+			"name": "L_USE_CACHE",
+			"value": "使用緩存"
+		},
+		{
+			"name": "L_CACHE_PERI",
+			"value": "緩存期"
+		},
+		{
+			"name": "L_CACHE_RULE",
+			"value": "緩存規則"
+		},
+		{
+			"name": "I_EXP_SCH",
+			"value": "內容搜索選項"
+		},
+		{
+			"name": "T_EXP_MC",
+			"value": "導出內容"
+		},
+		{
+			"name": "T_EXP_MC_Q",
+			"value": "你會繼續將內容導出到文件嗎？"
+		},
+		{
+			"name": "L_CONTROLLER",
+			"value": "控制"
+		},
+		{
+			"name": "L_FIX_COLUMN",
+			"value": "修復列"
+		},
+		{
+			"name": "L_COL_VIS",
+			"value": "列可見"
+		},
+		{
+			"name": "L_COL_SIZE",
+			"value": "列大小"
+		},
+		{
+			"name": "L_COLUMN_WIDTH",
+			"value": "列寬"
+		},
+		{
+			"name": "L_R_COLUMN_FIT",
+			"value": "將柱子安裝到面板上"
+		},
+		{
+			"name": "L_COL_TREE",
+			"value": "創建列標題樹"
+		},
+		{
+			"name": "L_ML_C6",
+			"value": "案例"
+		},
+		{
+			"name": "L_ML_C6b",
+			"value": "刪除案例"
+		},
+		{
+			"name": "L_ML_C6a",
+			"value": "添加案例"
+		},
+		{
+			"name": "B_CODE",
+			"value": "碼"
+		},
+		{
+			"name": "L_CODEMAPPING",
+			"value": "CodeMapping"
+		},
+		{
+			"name": "D_CODEMAP",
+			"value": "代碼映射"
+		},
+		{
+			"name": "L_LOOKUP",
+			"value": "度量標準查找"
+		},
+		{
+			"name": "L_CODE_FIELD",
+			"value": "代碼映射"
+		},
+		{
+			"name": "T_CODE_MAPPING",
+			"value": "代碼映射"
+		},
+		{
+			"name": "I_QRY_TOOL",
+			"value": "查詢工具"
+		},
+		{
+			"name": "L_DB_SCHEDULE_QUERYTIMEOUT",
+			"value": "查詢超時（調度程序）"
+		},
+		{
+			"name": "L_DB_QUERYTIMEOUT",
+			"value": "查詢超時（S）"
+		},
+		{
+			"name": "L_CUBE",
+			"value": "立方體"
+		},
+		{
+			"name": "T_CUBE",
+			"value": "立方體"
+		},
+		{
+			"name": "L_R_ANAL_CUBE_LB",
+			"value": "立方體"
+		},
+		{
+			"name": "L_MC_DATA_EDT",
+			"value": "立方體數據編輯器"
+		},
+		{
+			"name": "B_BUILD",
+			"value": "創建多維數據集"
+		},
+		{
+			"name": "L_BUILD_CUBE",
+			"value": "構建多維數據集"
+		},
+		{
+			"name": "L_SAVE_CUBE",
+			"value": "保存多維數據集"
+		},
+		{
+			"name": "B_B_CUBE",
+			"value": "單擊繼續以啟動自動多維數據集生成過程"
+		},
+		{
+			"name": "T_CUBE_MODEL",
+			"value": "立方體模型"
+		},
+		{
+			"name": "L_BUILD_MODEL",
+			"value": "模型嚮導"
+		},
+		{
+			"name": "L_SHOW_PIVOT",
+			"value": "顯示CubeFolder"
+		},
+		{
+			"name": "L_E_CB",
+			"value": "編輯多維數據集"
+		},
+		{
+			"name": "L_F_GE",
+			"value": "大或等（> =）"
+		},
+		{
+			"name": "L_F_GE_NOT",
+			"value": "不大於或等於（<）"
+		},
+		{
+			"name": "L_F_GT",
+			"value": "大於（>）"
+		},
+		{
+			"name": "L_F_GT_NOT",
+			"value": "不大於（<=）"
+		},
+		{
+			"name": "L_SCALE_DOWN",
+			"value": "必要時縮小"
+		},
+		{
+			"name": "L_CLASS_MOD",
+			"value": "課程模塊"
+		},
+		{
+			"name": "L_P_CLUSTER",
+			"value": "群集維度"
+		},
+		{
+			"name": "L_CLUSTER",
+			"value": "簇"
+		},
+		{
+			"name": "L_CLIPBOARD_COPY",
+			"value": "複製到剪貼板"
+		},
+		{
+			"name": "B_CLIPBOARD",
+			"value": "複製到剪貼板"
+		},
+		{
+			"name": "L_EMPTY_SEARCH",
+			"value": "搜索關鍵字"
+		},
+		{
+			"name": "L_F_LIKE",
+			"value": "包含關鍵字（LIKE）"
+		},
+		{
+			"name": "L_F_LIKE_NOT",
+			"value": "不包括關鍵字（不喜歡）"
+		},
+		{
+			"name": "B_TITLE",
+			"value": "標題"
+		},
+		{
+			"name": "L_TITLE",
+			"value": "標題文字"
+		},
+		{
+			"name": "L_HIDE_TITLE",
+			"value": "隱藏標題"
+		},
+		{
+			"name": "L_STYLE_TITLE",
+			"value": "標題風格"
+		},
+		{
+			"name": "L_T_DIR",
+			"value": "標題位置"
+		},
+		{
+			"name": "L_TITLE_POSITION",
+			"value": "職位"
+		},
+		{
+			"name": "L_OPT_TBAR",
+			"value": "標題欄選項"
+		},
+		{
+			"name": "L_BROWSE_ITEM",
+			"value": "瀏覽@"
+		},
+		{
+			"name": "T_BROWSER",
+			"value": "瀏覽器"
+		},
+		{
+			"name": "S_NAVI",
+			"value": "航海家"
+		},
+		{
+			"name": "T_TAB_BROWSER",
+			"value": "選項卡式瀏覽器"
+		},
+		{
+			"name": "L_SHOW_TAB_BAR",
+			"value": "顯示標籤按鈕"
+		},
+		{
+			"name": "L_R_CM_SHOWTAB",
+			"value": "在Tab中打開"
+		},
+		{
+			"name": "L_NEW_TABPANEL",
+			"value": "新的TabPanel"
+		},
+		{
+			"name": "D_TENANT",
+			"value": "承租人"
+		},
+		{
+			"name": "L_ADD_TENANT",
+			"value": "添加租戶"
+		},
+		{
+			"name": "L_BORDER_COLOR",
+			"value": "邊框顏色"
+		},
+		{
+			"name": "M_SUC_DBCON",
+			"value": "成功連接數據庫"
+		},
+		{
+			"name": "I_TABLE_REGISTER",
+			"value": "表寄存器"
+		},
+		{
+			"name": "L_REG_TABLE",
+			"value": "表寄存器"
+		},
+		{
+			"name": "L_TABLES",
+			"value": "表來源"
+		},
+		{
+			"name": "L_TBL_ORD",
+			"value": "表順序"
+		},
+		{
+			"name": "L_ERR_CUBE_ITEMS",
+			"value": "多維數據集上存在不匹配或錯誤項。修改並保存多維數據集以更新不匹配的信息。"
+		},
+		{
+			"name": "L_P_RELOAD",
+			"value": "單擊“刷新”以加載。"
+		},
+		{
+			"name": "L_NEW_TEXTAREA",
+			"value": "新TextArea"
+		},
+		{
+			"name": "L_F_DISP",
+			"value": "顯示字段"
+		},
+		{
+			"name": "L_AUTO_ROT",
+			"value": "旋轉文字"
+		},
+		{
+			"name": "L_APPLY_TMPL",
+			"value": "應用模板"
+		},
+		{
+			"name": "L_F_TMPL",
+			"value": "應用模板"
+		},
+		{
+			"name": "L_EXPORT_JASPER",
+			"value": "JasperReport的"
+		},
+		{
+			"name": "T_DB_TMPL",
+			"value": "數據庫模板"
+		},
+		{
+			"name": "M_SEL_MODEL",
+			"value": "選擇工具欄按鈕上的模型以繼續立方體設計。"
+		},
+		{
+			"name": "B_TREEVIEW",
+			"value": "樹"
+		},
+		{
+			"name": "L_TREE_VIEW",
+			"value": "樹視圖"
+		},
+		{
+			"name": "L_ENABLE_TREE_VIEW",
+			"value": "啟用樹視圖"
+		},
+		{
+			"name": "L_TREEM_OPTION",
+			"value": "TreeMap選項"
+		},
+		{
+			"name": "L_TM_CL",
+			"value": "TreeMap類"
+		},
+		{
+			"name": "L_SCC_REC",
+			"value": "與間隔重複"
+		},
+		{
+			"name": "L_SCC_DATE",
+			"value": "重現時間"
+		},
+		{
+			"name": "L_PIE_OPTION",
+			"value": "餡餅選項"
+		},
+		{
+			"name": "L_IMPORT_FILE",
+			"value": "導入文件"
+		},
+		{
+			"name": "L_FILEEXT",
+			"value": "延期"
+		},
+		{
+			"name": "L_SELECT_FILE",
+			"value": "選擇文件..."
+		},
+		{
+			"name": "L_FILENAME",
+			"value": "文件名"
+		},
+		{
+			"name": "T_EXCEL_LOADER",
+			"value": "LocalData Loader"
+		},
+		{
+			"name": "L_LAYOUT_POPUP",
+			"value": "彈出"
+		},
+		{
+			"name": "L_PANEL_H",
+			"value": "面板高度"
+		},
+		{
+			"name": "L_PANEL_W",
+			"value": "面板寬度"
+		},
+		{
+			"name": "L_INPUT_PASSWORD",
+			"value": "密碼"
+		},
+		{
+			"name": "T_PASSWORD_CHANGE",
+			"value": "密碼"
+		},
+		{
+			"name": "L_DB_PWD",
+			"value": "密碼"
+		},
+		{
+			"name": "L_PWD_LABEL",
+			"value": "安全密碼"
+		},
+		{
+			"name": "L_PASSWORD",
+			"value": "更改密碼"
+		},
+		{
+			"name": "L_CH_PASSWD",
+			"value": "更改密碼"
+		},
+		{
+			"name": "L_PWD_CONFIRM",
+			"value": "確認新密碼"
+		},
+		{
+			"name": "M_BLANK_PWD",
+			"value": "密碼不應為空"
+		},
+		{
+			"name": "L_STACK_PERCENT",
+			"value": "按百分比堆疊"
+		},
+		{
+			"name": "L_PAGING",
+			"value": "分頁"
+		},
+		{
+			"name": "L_PG_DIRECTION",
+			"value": "頁面方向"
+		},
+		{
+			"name": "L_SHOW_PAGENUMBER",
+			"value": "顯示頁碼"
+		},
+		{
+			"name": "L_PAGE_STYLE",
+			"value": "頁面樣式"
+		},
+		{
+			"name": "L_PAGE_OPTIONS",
+			"value": "頁面選項"
+		},
+		{
+			"name": "L_PG_SIZE",
+			"value": "頁面大小"
+		},
+		{
+			"name": "L_FOOTER",
+			"value": "頁腳"
+		},
+		{
+			"name": "L_REPEAT_HEADER",
+			"value": "重複標題"
+		},
+		{
+			"name": "L_ROW_P_PAGE",
+			"value": "每頁行數"
+		},
+		{
+			"name": "L_PG_LOADER",
+			"value": "頁面加載"
+		},
+		{
+			"name": "L_USE_PAGING",
+			"value": "使用分頁"
+		},
+		{
+			"name": "L_EDIT",
+			"value": "編輯"
+		},
+		{
+			"name": "L_ML_C4b",
+			"value": "編輯"
+		},
+		{
+			"name": "L_E_IT",
+			"value": "編輯項目"
+		},
+		{
+			"name": "L_EDIT_ITEM",
+			"value": "編輯@"
+		},
+		{
+			"name": "L_EDITOR_TYPE",
+			"value": "編輯類型"
+		},
+		{
+			"name": "M_LOCK_TITLE",
+			"value": "內容已鎖定"
+		},
+		{
+			"name": "S_AVG",
+			"value": "平均"
+		},
+		{
+			"name": "F_AVG",
+			"value": "平均"
+		},
+		{
+			"name": "L_C_FMT_VAL",
+			"value": "使用格式化值"
+		},
+		{
+			"name": "B_WIDTH",
+			"value": "寬度"
+		},
+		{
+			"name": "L_FIXED_W",
+			"value": "修復寬度"
+		},
+		{
+			"name": "L_FONT_SELECT",
+			"value": "字體選擇"
+		},
+		{
+			"name": "L_FONT_ST",
+			"value": "字體樣式"
+		},
+		{
+			"name": "L_FONTSIZE",
+			"value": "字體大小"
+		},
+		{
+			"name": "D_FOLDER",
+			"value": "夾"
+		},
+		{
+			"name": "B_FOLDER",
+			"value": "夾"
+		},
+		{
+			"name": "T_MGR_FOLDER",
+			"value": "Folder Manager"
+		},
+		{
+			"name": "L_BB_STEP_2",
+			"value": "創建文件夾結構"
+		},
+		{
+			"name": "L_CREATE_FOLDER",
+			"value": "創建文件夾"
+		},
+		{
+			"name": "L_REG_FOLDER",
+			"value": "新增文件夾"
+		},
+		{
+			"name": "L_MGR_FD",
+			"value": "管理文件夾"
+		},
+		{
+			"name": "L_FOLDER_ITEMS",
+			"value": "文件夾項目"
+		},
+		{
+			"name": "L_DATE_FORMAT_TGT",
+			"value": "顯示日期格式"
+		},
+		{
+			"name": "L_DISP_TITLE",
+			"value": "顯示標題"
+		},
+		{
+			"name": "B_DISP_NAME",
+			"value": "顯示名稱"
+		},
+		{
+			"name": "S_STDERR",
+			"value": "標準錯誤"
+		},
+		{
+			"name": "S_STDEV",
+			"value": "標準偏差"
+		},
+		{
+			"name": "L_R_RUN_PROP",
+			"value": "運行屬性"
+		},
+		{
+			"name": "T_PROMPT_DLG",
+			"value": "提示"
+		},
+		{
+			"name": "T_PROMPT_MSG",
+			"value": "填寫變更條件的值"
+		},
+		{
+			"name": "L_PROMPT_TYPE",
+			"value": "提示類型"
+		},
+		{
+			"name": "L_FLOATING",
+			"value": "漂浮的"
+		},
+		{
+			"name": "L_PLOT_STYLES",
+			"value": "情節樣式"
+		},
+		{
+			"name": "L_ENABLE_PIVOT",
+			"value": "啟用Pivot"
+		},
+		{
+			"name": "L_PIVOT",
+			"value": "設計"
+		},
+		{
+			"name": "L_V_PIVOT",
+			"value": "透視模式"
+		},
+		{
+			"name": "T_PIVOT_EDITOR",
+			"value": "報表設計器"
+		},
+		{
+			"name": "L_PIVOT_REPORT",
+			"value": "設計"
+		},
+		{
+			"name": "B_REQ",
+			"value": "必填項目"
+		},
+		{
+			"name": "T_DB_BLANK",
+			"value": "現場是必需的。"
+		},
+		{
+			"name": "L_FILTER",
+			"value": "過濾"
+		},
+		{
+			"name": "L_R_OPT_FILTER",
+			"value": "過濾選項"
+		},
+		{
+			"name": "T_DYNFILTER_CONFIG",
+			"value": "過濾配置"
+		},
+		{
+			"name": "L_SHOW_FILTER_INFO",
+			"value": "顯示過濾器信息"
+		},
+		{
+			"name": "L_CLEAR_FLT",
+			"value": "清除過濾器"
+		},
+		{
+			"name": "L_NEW_FILTER",
+			"value": "新過濾器"
+		},
+		{
+			"name": "B_SET_FILTER",
+			"value": "設置過濾器"
+		},
+		{
+			"name": "L_BORDER_BOTTOM",
+			"value": "邊境底部"
+		},
+		{
+			"name": "L_HADOOP",
+			"value": "Hadoop管理"
+		},
+		{
+			"name": "L_HD_BFLOW",
+			"value": "Hadoop BizFlow"
+		},
+		{
+			"name": "B_BOTTOM",
+			"value": "底部"
+		},
+		{
+			"name": "L_RANK_BOTTOM",
+			"value": "排名底部"
+		},
+		{
+			"name": "L_C_ITEMS",
+			"value": "子項目"
+		},
+		{
+			"name": "L_TB_HL",
+			"value": "配置突出顯示"
+		},
+		{
+			"name": "T_HL_OPT",
+			"value": "突出顯示選項"
+		},
+		{
+			"name": "L_R_UT_DESC",
+			"value": "在檢查一個或多個時，僅鑽取到選中。"
+		},
+		{
+			"name": "L_KOREAN",
+			"value": "朝鮮的"
+		},
+		{
+			"name": "L_EXPORT_ODF_EXCEL",
+			"value": "打開SpreadSheet"
+		},
+		{
+			"name": "L_EXPORT_ODF_WORD",
+			"value": "打開文檔"
+		},
+		{
+			"name": "L_EXPORT_ODF_PPT",
+			"value": "公開演講"
+		},
+		{
+			"name": "L_FUNC",
+			"value": "功能"
+		},
+		{
+			"name": "L_SYNTAX",
+			"value": "句法"
+		},
+		{
+			"name": "S_SUM",
+			"value": "摘要"
+		},
+		{
+			"name": "L_ITEM",
+			"value": "項目"
+		},
+		{
+			"name": "L_NAVIGATOR",
+			"value": "航海家"
+		},
+		{
+			"name": "B_DELETE_ITEM",
+			"value": "刪除項目"
+		},
+		{
+			"name": "L_CR_TP_SEL",
+			"value": "選擇物品"
+		},
+		{
+			"name": "B_CONFIG_ITEM",
+			"value": "配置項目"
+		},
+		{
+			"name": "L_SAVE_EXCEL",
+			"value": "保存內容"
+		},
+		{
+			"name": "L_CREATE_ITEM",
+			"value": "創建項目"
+		},
+		{
+			"name": "L_ADD_NEW",
+			"value": "添新"
+		},
+		{
+			"name": "L_ITEMNAME",
+			"value": "項目名稱"
+		},
+		{
+			"name": "L_AU_TITLE",
+			"value": "設置對象訪問權限"
+		},
+		{
+			"name": "L_F_NOTIN",
+			"value": "不包括"
+		},
+		{
+			"name": "L_TABLE_DROP",
+			"value": "要將拖動字段註冊到中間區域。"
+		},
+		{
+			"name": "L_C_DEL_ITEM",
+			"value": "你想刪除項目嗎？"
+		},
+		{
+			"name": "L_SELECT_ITEM",
+			"value": "選擇項目以繼續"
+		},
+		{
+			"name": "L_DYN_SELECT",
+			"value": "檢查值"
+		},
+		{
+			"name": "M_SEL_ITEM",
+			"value": "選擇項目以繼續。"
+		},
+		{
+			"name": "M_DELETED",
+			"value": "已成功刪除內容"
+		},
+		{
+			"name": "L_SAVE_CONTENT",
+			"value": "保存內容"
+		},
+		{
+			"name": "T_META_SAVE",
+			"value": "將項目另存為..."
+		},
+		{
+			"name": "E_NO_MATCH_FLD",
+			"value": "找不到列表中的匹配項。"
+		},
+		{
+			"name": "L_HL_ROW",
+			"value": "行"
+		},
+		{
+			"name": "L_BB_YA",
+			"value": "將數據行數據到Y軸"
+		},
+		{
+			"name": "L_BB_SL",
+			"value": "顯示RowData圖例"
+		},
+		{
+			"name": "L_P_ROW",
+			"value": "行尺寸"
+		},
+		{
+			"name": "L_ROW_SIZE",
+			"value": "行大小"
+		},
+		{
+			"name": "L_AREA_ROW",
+			"value": "行"
+		},
+		{
+			"name": "M_NA",
+			"value": "不允許操作。"
+		},
+		{
+			"name": "L_M_C_SAVE_DESKTOP",
+			"value": "要保存當前打開的桌面信息嗎？"
+		},
+		{
+			"name": "L_FILE_APPEND",
+			"value": "附加在當前選項卡上"
+		},
+		{
+			"name": "L_C_CUR",
+			"value": "當前，"
+		},
+		{
+			"name": "L_P_cls",
+			"value": "關閉窗口"
+		},
+		{
+			"name": "L_APPL_TMPL",
+			"value": "應用模板"
+		},
+		{
+			"name": "L_HL_RANGE",
+			"value": "應用於"
+		},
+		{
+			"name": "L_SWA_CFM",
+			"value": "您想繼續退出並登錄其他項目嗎？"
+		},
+		{
+			"name": "B_CONFIRM",
+			"value": "確認"
+		},
+		{
+			"name": "B_ACTIVE",
+			"value": "活性"
+		},
+		{
+			"name": "L_A_USR",
+			"value": "活躍用戶"
+		},
+		{
+			"name": "L_ACTIVATE",
+			"value": "啟用"
+		},
+		{
+			"name": "L_CFIT_TYPE",
+			"value": "CurveFit類型"
+		},
+		{
+			"name": "L_SC_ACTION",
+			"value": "安排行動"
+		},
+		{
+			"name": "L_C_DC",
+			"value": "刪除內容"
+		},
+		{
+			"name": "T_TRASHBIN",
+			"value": "垃圾桶"
+		},
+		{
+			"name": "L_C_CD",
+			"value": "刪除內容"
+		},
+		{
+			"name": "L_RANGE_FIELD",
+			"value": "範圍場"
+		},
+		{
+			"name": "L_META_MIG",
+			"value": "元遷移"
+		},
+		{
+			"name": "L_C_INLINEV",
+			"value": "內聯視圖"
+		},
+		{
+			"name": "L_IMP_TB",
+			"value": "導入表"
+		},
+		{
+			"name": "L_TENANT",
+			"value": "承租人"
+		},
+		{
+			"name": "B_DATATYPE",
+			"value": "數據類型"
+		},
+		{
+			"name": "L_SERVER_HOST",
+			"value": "服務器主機"
+		},
+		{
+			"name": "L_ML",
+			"value": "機器學習"
+		},
+		{
+			"name": "B_PHY_NAME",
+			"value": "物理名稱"
+		},
+		{
+			"name": "I_LOGOUT",
+			"value": "用於安全會話的註銷按鈕。"
+		},
+		{
+			"name": "L_MIG",
+			"value": "移民"
+		},
+		{
+			"name": "L_B_CUBE",
+			"value": "立方體處理"
+		},
+		{
+			"name": "L_ENDPOINT_URL",
+			"value": "端點URL"
+		},
+		{
+			"name": "L_SYS_BACKSCH",
+			"value": "背景時間表"
+		},
+		{
+			"name": "B_SEQUENCE",
+			"value": "訂購"
+		},
+		{
+			"name": "L_SUBSCRIBE",
+			"value": "訂閱"
+		},
+		{
+			"name": "L_DEPLOY_SVR",
+			"value": "部署服務器"
+		},
+		{
+			"name": "I_START_INTRO",
+			"value": "開始介紹"
+		},
+		{
+			"name": "I_COLLAPSE_BTN",
+			"value": "折疊並展開側面板。"
+		},
+		{
+			"name": "I_MAINMENU",
+			"value": "主菜單（點擊兩次全屏查看）"
+		},
+		{
+			"name": "I_SEARCH_MAIN",
+			"value": "使用關鍵字搜索以查找報告和對象"
+		},
+		{
+			"name": "I_NAVIGATOR",
+			"value": "導航面板到內容"
+		},
+		{
+			"name": "I_MAIN_WS",
+			"value": "主工作區"
+		},
+		{
+			"name": "I_APP_AREA",
+			"value": "應用領域。"
+		},
+		{
+			"name": "I_SAVE_CNT",
+			"value": "保存內容"
+		},
+		{
+			"name": "I_RUN_REPORT",
+			"value": "運行報告。"
+		},
+		{
+			"name": "I_ADD_VIEW",
+			"value": "添加視圖和小部件。"
+		},
+		{
+			"name": "I_SHEET_AREA",
+			"value": "單張面積。"
+		},
+		{
+			"name": "I_SHEET_TITLE",
+			"value": "表格標題"
+		},
+		{
+			"name": "I_SHEET_VIEW",
+			"value": "工作表視圖"
+		},
+		{
+			"name": "I_BTN_PIVOTOPTION",
+			"value": "透視選項可更改字段和列"
+		},
+		{
+			"name": "I_BTN_WIDGET_CONF",
+			"value": "窗口小部件配置按鈕，用於設置詳細信息。"
+		},
+		{
+			"name": "L_AUTO_JOIN",
+			"value": "自動加入"
+		},
+		{
+			"name": "L_JOIN_BEUTIFY",
+			"value": "自動佈局表"
+		},
+		{
+			"name": "L_UPLOAD",
+			"value": "上傳文件"
+		},
+		{
+			"name": "L_RNK_SVAL",
+			"value": "按值排序"
+		},
+		{
+			"name": "L_SEL_RPT",
+			"value": "選擇報告"
+		},
+		{
+			"name": "L_SEL_DBD",
+			"value": "選擇儀表板"
+		},
+		{
+			"name": "L_DESIGN",
+			"value": "設計模式"
+		},
+		{
+			"name": "L_APPL_THEME",
+			"value": "應用主題"
+		},
+		{
+			"name": "M_VALIDATED",
+			"value": "驗證成功！"
+		},
+		{
+			"name": "T_ML_LEARN",
+			"value": "機器學習"
+		},
+		{
+			"name": "T_HD_CFG_CL",
+			"value": "Hadoop配置"
+		},
+		{
+			"name": "T_Resources",
+			"value": "資源"
+		},
+		{
+			"name": "T_DYN_LFILE",
+			"value": "按fileupload過濾"
+		},
+		{
+			"name": "L_DYN_LFILE",
+			"value": "上傳文件並使用值過濾"
+		},
+		{
+			"name": "T_REPORT_STYLE",
+			"value": "報告風格"
+		},
+		{
+			"name": "T_BA_1",
+			"value": "貝葉斯分析"
+		},
+		{
+			"name": "B_INTRO",
+			"value": "介紹"
+		},
+		{
+			"name": "B_PREV",
+			"value": "上一頁"
+		},
+		{
+			"name": "B_SKIP",
+			"value": "跳躍"
+		},
+		{
+			"name": "B_OBJ_NAME",
+			"value": "對象名稱"
+		},
+		{
+			"name": "B_DATA_ZOOM",
+			"value": "數據縮放"
+		},
+		{
+			"name": "B_C_DELETE",
+			"value": "單擊確定繼續刪除！"
+		},
+		{
+			"name": "B_SELECT_FOLDER",
+			"value": "選擇要繼續的文件夾;"
+		},
+		{
+			"name": "B_SELECT_TARGET",
+			"value": "選擇目標對象繼續;"
+		},
+		{
+			"name": "B_TEMPLATES",
+			"value": "模板"
+		},
+		{
+			"name": "B_CONFIG",
+			"value": "組態"
+		},
+		{
+			"name": "B_VIEWMODE",
+			"value": "查看模式"
+		},
+		{
+			"name": "B_EDITMODE",
+			"value": "編輯模式"
+		},
+		{
+			"name": "B_PARAMTERS",
+			"value": "參數"
+		},
+		{
+			"name": "B_NOT_EXECUTED",
+			"value": "沒有執行"
+		},
+		{
+			"name": "B_VALIDATE",
+			"value": "驗證"
+		},
+		{
+			"name": "L_AUTH",
+			"value": "認證"
+		},
+		{
+			"name": "T_GRD_CFG",
+			"value": "網格配置"
+		},
+		{
+			"name": "L_FORMVIEWER",
+			"value": "表單查看器"
+		},
+		{
+			"name": "L_M_TITLE",
+			"value": "衡量標題"
+		},
+		{
+			"name": "L_M_EXT_TITLE",
+			"value": "額外的標題"
+		},
+		{
+			"name": "L_PAGE_FILTER",
+			"value": "頁面過濾器"
+		},
+		{
+			"name": "L_TENANT_NAME",
+			"value": "租戶名稱"
+		},
+		{
+			"name": "L_LICENSE_INFO",
+			"value": "許可證信息"
+		},
+		{
+			"name": "L_ALLOWED_USERS",
+			"value": "允許用戶"
+		},
+		{
+			"name": "L_REG_DATE",
+			"value": "註冊日期"
+		},
+		{
+			"name": "L_pf_navitree",
+			"value": "樞軸過濾器"
+		},
+		{
+			"name": "L_pf_fedit",
+			"value": "透視濾鏡編輯器"
+		},
+		{
+			"name": "L_pf_filter",
+			"value": "樞軸過濾器"
+		},
+		{
+			"name": "L_SAVE_CONTENT_AS",
+			"value": "將內容另存為"
+		},
+		{
+			"name": "L_DATA_SOURCE",
+			"value": "數據源"
+		},
+		{
+			"name": "T_DB_GEN",
+			"value": "數據庫生成器"
+		},
+		{
+			"name": "L_P_export",
+			"value": "出口"
+		},
+		{
+			"name": "L_ERR_L_MOD",
+			"value": "加載模塊時出錯！"
+		},
+		{
+			"name": "I_DLOC_MGR",
+			"value": "字典管理"
+		},
+		{
+			"name": "I_META_MIG",
+			"value": "元遷移"
+		},
+		{
+			"name": "L_REG_DATASET",
+			"value": "註冊數據集"
+		},
+		{
+			"name": "T_MIG_DISCO",
+			"value": "Oracle Discoverer Migration"
+		},
+		{
+			"name": "L_METRIC_ITEMS",
+			"value": "指標項目"
+		},
+		{
+			"name": "T_DBD_VAR",
+			"value": "儀表板變量"
+		},
+		{
+			"name": "E_LM_SEL",
+			"value": "首先從組合框中選擇區域設置！"
+		},
+		{
+			"name": "T_TORSP_RS",
+			"value": "龍捲風蜘蛛的結果"
+		},
+		{
+			"name": "L_LNK_TP",
+			"value": "鏈接字段"
+		},
+		{
+			"name": "T_SUBSCR_AUTH",
+			"value": "訂閱進行身份驗證"
+		},
+		{
+			"name": "T_NET_PROP",
+			"value": "網絡財產"
+		},
+		{
+			"name": "M_APP_LOADED",
+			"value": "應用加載成功！"
+		},
+		{
+			"name": "L_F_COMMENT",
+			"value": "評論"
+		},
+		{
+			"name": "M_SAVE_PROGRESS",
+			"value": "保存正在進行中..請稍候！"
+		},
+		{
+			"name": "M_DEF_DATE",
+			"value": "默認日期"
+		},
+		{
+			"name": "L_DB_VAL",
+			"value": "數據庫值"
+		},
+		{
+			"name": "L_SF_AUTHMETHOD",
+			"value": "Salesforce身份驗證方法"
+		},
+		{
+			"name": "L_SF_SECTOKEN",
+			"value": "Salesforce令牌"
+		},
+		{
+			"name": "L_TARGET_DB",
+			"value": "目標數據庫"
+		},
+		{
+			"name": "T_JASP_TMPL",
+			"value": "碧玉模板"
+		},
+		{
+			"name": "L_HIERARCHY",
+			"value": "等級制度"
+		},
+		{
+			"name": "T_FM_SEL",
+			"value": "配方選擇"
+		},
+		{
+			"name": "T_FM_SEL_CONFIG",
+			"value": "配方配置"
+		},
+		{
+			"name": "L_ADD_FILTER",
+			"value": "添加過濾器"
+		},
+		{
+			"name": "T_INT_LEARN",
+			"value": "互動學習"
+		},
+		{
+			"name": "L_VIEW_PYTHON",
+			"value": "蟒蛇"
+		},
+		{
+			"name": "L_R_OPTIONS",
+			"value": "R選項"
+		},
+		{
+			"name": "L_PY_EDIT",
+			"value": "Python編輯"
+		},
+		{
+			"name": "T_COST_EFF",
+			"value": "成本效益"
+		},
+		{
+			"name": "L_GS_ENABLED",
+			"value": "Gs已啟用"
+		},
+		{
+			"name": "L_ALT_COLOR",
+			"value": "替代顏色"
+		},
+		{
+			"name": "L_REG_LINK",
+			"value": "註冊鏈接"
+		},
+		{
+			"name": "L_TB_FORM_V",
+			"value": "表單查看器"
+		},
+		{
+			"name": "L_EMAIL_BURSTING",
+			"value": "電子郵件爆發"
+		},
+		{
+			"name": "L_BAYES",
+			"value": "Machine Learning"
+		},
+		{
+			"name": "L_BAYES_RPT",
+			"value": "ML Report"
+		},
+		{
+			"name": "L_DISCO",
+			"value": "Discoverer Migration"
+		},
+		{
+			"name": "L_SEL_DB",
+			"value": "Select Datasource"
+		},
+		{
+			"name": "L_BOBJ",
+			"value": "Business Object"
+		},
+		{
+			"name": "L_SETTINGS",
+			"value": "Settings"
+		},
+		{
+			"name": "D_BOBJECT",
+			"value": "Business Object"
+		},
+		{
+			"name": "L_V_SYNC",
+			"value": "Sync with Sheet"
+		},
+		{
+			"name": "L_NEW_STORYVIEW",
+			"value": "Add StoryIt"
+		},
+		{
+			"name": "L_XLS_BUTTON",
+			"value": "Show Excel button"
+		},
+		{
+			"name": "L_XLS_STYLE",
+			"value": "Excel Button Style"
+		},
+		{
+			"name": "L_VIEW_ANAL",
+			"value": "View Analysis"
+		},
+		{
+			"name": "L_D_EXCEL",
+			"value": "Download"
+		},
+		{
+			"name": "L_SYS_CONFIG",
+			"value": "System Config"
+		}
+	]
+}

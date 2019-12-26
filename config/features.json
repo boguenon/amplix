@@ -60,7 +60,10 @@
 							"name": "User Management",
 							"cls": "ig_user"
 						},
-						
+						{
+							"name": "System Config",
+							"cls": "ig_sys_config"
+						},
 						{
 							"name": "Features",
 							"cls": "ig_ft"

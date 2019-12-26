@@ -63,32 +63,6 @@ persist.validatesql = "select 1"
 ##--------------------------------------------------------------------------
 
 ############################################################################
-# Email SMTP server configuration
-############################################################################
-[EMAIL]
-enabled		= false
-useauth		= true
-authuser	= boguenon@amplixbi.com
-hostname	= smtp.zoho.com
-password="{ENC}olO6KMuUMJuEVHvJdtECpA=="
-port		= 587
-#using ssl : protocol=ssl
-#using tls : protocol=smpt, starttls=true
-#using normal smtp : protocol=smtp
-protocol	= smtp
-starttls    = true
-
-############################################################################
-# Deploy server registration
-############################################################################
-[DEPLOY]
-server.production.server_url 	= http://localhost:8280
-server.production.endpoint 		= /boguenon/servlet/krcp
-
-server.staging.server_url 		= http://localhost:8280
-server.staging.endpoint 		= /boguenon/servlet/krcp
-
-############################################################################
 # Application specific settings
 ############################################################################
 [APPLICATION]
@@ -151,34 +125,6 @@ application.fileupload.maxfileupload 		= 3145728
 application.fileupload.maxfileupload_bulk 	= 52428800
 
 ############################################################################
-# Single Sign On (SSO modules)
-############################################################################
-[SINGLESIGNON]
-module.dbsync.name 						= "Amplix Guest Auth"
-module.dbsync.enabled 					= true
-module.dbsync.authentication.class 		= com.amplix.sso.amplix.GuestUserAuth
-module.dbsync.authorization.mode		= "before_only"
-module.dbsync.authorization.class		= com.amplix.sso.amplix.GuestUserAuth
-
-module.foodmart.name 					= "Foodmart Guest Auth"
-module.foodmart.enabled 				= true
-module.foodmart.authentication.class 	= com.amplix.sso.amplix.FoodmartUserAuth
-module.foodmart.authorization.mode		= "before_only"
-module.foodmart.authorization.class		= com.amplix.sso.amplix.FoodmartUserAuth
-
-module.oracleebs.name 					= "Oracle EBS"
-module.oracleebs.enabled 				= true
-module.oracleebs.authentication.class 	= com.amplix.sso.ebs.EBSAuth
-module.oracleebs.authorization.mode		= 
-module.oracleebs.authorization.class	= com.amplix.sso.ebs.EBSAuth
-
-module.apache_ldap.name					= "Apache LDAP"
-module.apache_ldap.enabled				= true
-module.apache_ldap.authentication.class	= com.amplix.sso.ibk.UserDBSync
-module.apache_ldap.authorization.mode	= 
-module.apache_ldap.authorization.class	= com.amplix.sso.ibk.UserDBSync
-
-############################################################################
 # Scheduler server information
 ############################################################################
 [SCHEDULE_SERVER]
@@ -195,31 +141,6 @@ session_expire		= 600
 defaultdateformat	= "''yy-MM-dd hh:mm:ss a"
 
 ############################################################################
-# Agent settings
-############################################################################
-[AGENTS]
-agent.hadoop.port 			= 4504
-agent.hadoop.enabled 		= true
-agent.hadoop.job			= "hadoop" 
-agent.hadoop.name			= "hadoop" 
-agent.hadoop.serverhost		= "127.0.0.1" 
-agent.hadoop.servername		= "hadoopbase"
-
-agent.schedule.enabled		= "false" 
-agent.schedule.job			= "schedule" 
-agent.schedule.name			= "schedule" 
-agent.schedule.port			= "4504" 
-agent.schedule.serverhost	= "127.0.0.1" 
-agent.schedule.servername	= "hadoopbase"
-
-agent.app.enabled			= "true" 
-agent.app.job				= "app" 
-agent.app.name				= "app" 
-agent.app.port				= "4504" 
-agent.app.serverhost		= "127.0.0.1" 
-agent.app.servername		= "hadoopbase"
-
-############################################################################
 # Apache embedded boot server configuration
 ############################################################################
 [SERVER_BOOT_CONFIG]
@@ -234,33 +155,3 @@ context_root 		= "/"
 
 shutdown_port		= 6680
 
-############################################################################
-# MongoDB or NoSQL DB Connection Information
-############################################################################
-[NOSQLDB]
-mongodb.mongodb_01.nodename = mongodb_01
-mongodb.mongodb_01.hostname = 127.0.0.1
-mongodb.mongodb_01.password="{ENC}o2ArfU4wxko="
-mongodb.mongodb_01.userid 	= 
-
-mongodb.mongodb_02.nodename = mongodb_02
-mongodb.mongodb_02.hostname = 127.0.0.1
-mongodb.mongodb_02.password="{ENC}o2ArfU4wxko="
-mongodb.mongodb_02.userid 	=
-
-mongodb.mongodb_03.nodename = mongodb_03
-mongodb.mongodb_03.hostname = 127.0.0.1
-mongodb.mongodb_03.password="{ENC}o2ArfU4wxko="
-mongodb.mongodb_03.userid 	=
-
-hbase.hbase_01.nodename 	= hbase_01
-hbase.hbase_01.batchsize	= 1000 
-hbase.hbase_01.cachesize	= 1000 
-hbase.hbase_01.databasetype	= hbase 
-hbase.hbase_01.hostname		= "192.168.190.175" 
-hbase.hbase_01.name			= "hbase_main" 
-hbase.hbase_01.password="{ENC}o2ArfU4wxko="
-hbase.hbase_01.userid		=
-hbase.hbase_01.option["hbase.zookeeper.quorum"]	= 192.168.190.175
-hbase.hbase_01.option["hbase.zookeeper.property.clientPort"] = 2181
-hbase.hbase_01.option["hbase.master"] = 192.168.190.175:60000
