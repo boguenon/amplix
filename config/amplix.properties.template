@@ -10,7 +10,7 @@ monitor					= false
 
 # data base connection information only system applies first matching values
 # password is automatically encrypted after server startup
-databasetype=##string(mysql,oracle,mssql,apacheembd,postgresql)##
+databasetype=""
 jdbcdriver="" 
 jdbcurl="" 
 userid="" 
@@ -59,8 +59,8 @@ defaultdateformat	= "''yy-MM-dd hh:mm:ss a"
 # Apache embedded boot server configuration
 ############################################################################
 
-server_protocol 	= ##string(HTTP,HTTPS)##
-server_port			= ##string(8580)##
+server_protocol 	= HTTP
+server_port			= 8580
 
 https_keyalias 		= keyAlias
 https_keystore_pass = "changeit"
@@ -68,5 +68,5 @@ https_keystore_file = "keystore.jks"
 https_ssl_protocol 	= TLS
 context_root 		= "/"
 
-shutdown_port		= ##string(6680)##
+shutdown_port		= 6680
 
