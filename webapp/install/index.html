@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="icon" href="../favicon.png" type="image/png">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>amplix installation wizard</title>
+<link rel="stylesheet" type="text/css" href="./css/igcf.min.css" />
+<script type="text/javascript" src="../launcher/js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="./js/igcf.min.js"></script>
+</head>
+<body scroll="no">
+<div id="main-area" class="main-scroller">
+	<div class="body-wrap">
+		<div class="content-top-area-wrap">
+			<div class="content-top-area">
+				<div class="title">
+					<img src="./images/common_top_title.png" alt="title">
+					<span>Amplix BI Installer</span>
+				</div>
+			</div>
+		</div>
+		<div class="content-middle-area">
+			<div class="content-wrap">
+				<h3>Welcom in Amplix BI Installer.</h3>
+				<p>
+					For security reasons this script will only work with a new and unmodified AmplixBI installation. You should either re-extract the files from the download package or consult the complete instruction.
+				</p>
+				<p>
+	           		This installation wizard provides you a guided setup configuration and instructions. With few steps, you can ready for using advanced data visualization on your desk and for your team!
+	            </p>
+	            <p>
+	            	Thank you for choosing AmplixBi. We can make your data visualization more powerful, more easy without programming efforts.
+	            </p>
+	            <p>
+	            	Please read below requirements for successful completion.
+	            </p>
+			</div>
+			
+			<div id="dpage_01">
+				<div class="menu-area">
+					<div class="menu selected" id="tab_01"><a>Package Installation</a></div>
+					<div class="menu" id="tab_02"><a>Deploy as Web Application</a></div>
+				</div>
+				<div class="menu-content-wrap">
+					<div id="tab_content_01" class="menu-content">
+						<div class="title">
+							<span>Package Installation</span>
+						</div>
+						<div class="content">
+							<div class="install-text install-text-fw">
+			                    <h4>1. Pre-requirements for amplix</h4>
+			                    <p>
+			                    	Install does not meet required environment to proceed.<br />
+			                    	Please check bellow steps for install and try again.
+			                    	<ul>
+			                    		<li>Install the Java SDK(1.8.0 or later).</li>
+			                    		<li>Install MYSQL database</li>
+			                    		<li>
+			                    			<span class="install-title">Download and extract file.</span><br/>
+			                    			Download amplixbi.zip and extract to folder.<br/>
+			                    			<br/>
+			                    			<code>
+			                    				unzip amplixbi.zip
+			                    			</code>
+			                    			<br/>
+			                    			<br/>
+			                    			Copy extracted folder to application installation location, for example /opt<br/>
+			                    			<code>
+			                    				mv amplixbi /opt/
+			                    			</code>
+			                    		</li>
+			                    	</ul>
+			                    </p>
+								<h4>2. Prepare database</h4>
+								<p>
+									<ul>
+										<li>
+											<span class="install-title">Install and Start MySQL database</span>
+										</li>
+										<li>
+											<span class="install-title">Login as root user with the following command.</span><br>
+											<br>
+											<code>mysql -uroot -p</code><br><br>
+										</li>
+										<li>
+											<span class="install-title">Create empty database with the following command on the above database command shell.</span><br>
+											<br>
+											<code>CREATE DATABASE amplix_meta;</code><br>
+											<code>CREATE USER 'amplix'@'localhost' IDENTIFIED BY 'password';</code>
+										</li>
+										<li>
+											<span class="install-title">Grant permission to database</span><br>
+											<br />
+											<code>GRANT ALL PRIVILEGES ON amplix_meta.* TO 'amplix'@'localhost';</code><br/>
+											<code>FLUSH PRIVILEGES;</code>
+										</li>
+										<li>
+											<span class="install-title">Create Sample database user and database (Optional)</span><br/>
+											<br/>
+											<code>CREATE DATABASE foodmeart;</code><br/>
+											<code>CREATE USER 'foodmart'@'localhost' IDENTIFIED BY 'password';</code><br/>
+											<br/>
+											<span class="install-title">Grant permission to foodmart user and database</span><br/>
+											<br/>
+											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'amplix'@'localhost';</code><br/>
+											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'foodmart'@'localhost';</code><br/>
+											<code>FLUSH PRIVILEGES;</code>
+										</li>
+									</ul>
+								</p>
+								<h4>3. Start Application.</h4>
+								<p>
+									<ul>
+										<li>
+											<span class="install-title">Open Shell Command prompt. Execute following command.</span><br/>
+											<br/>
+											<code>./bin/RUN_startup.sh</code><br/>
+											<code>./bin/RUN_startup.bat</code>
+										</li>
+										<li>
+											<span class="install-title">Open this installation wizard on web browser, and follow instruction.</span><br/>
+											<br/>
+											<code>http://localhost:8080/amplix/install/</code>
+										</li>
+									</ul>
+								</p>
+								<h4>4. Stop Application.</h4>
+								<p>
+									<ul>
+										<li>
+											<span class="install-title">To stop application, run the following command.</span><br/>
+											<br/>
+											<code>./bin/RUN_shutdown.sh</code><br/>
+											<code>./bin/RUN_shutdown.bat</code>
+										</li>
+									</ul>
+								</p>
+			                </div>
+						</div>
+					</div>
+					
+					
+					<div id="tab_content_02" class="menu-content" style="display:none;">
+						<div class="title">
+		                	All-in-One Installation
+		                </div>
+		                <div class="content">
+		                	<div class="install-text install-text-fw">
+			                	<h4>1. Pre-requirements for amplix</h4>
+			                    <p>
+			                    	Install does not meet required environment to proceed.<br />
+			                    	Please check bellow steps for install and try again.
+			                    	<ul>
+			                    		<li>Install the Java SDK(1.8.0 or later).</li>
+			                    		<li>Install WebApplication Server (Tomcat)</li>
+			                    		<li>Install database for MetaData</li>
+			                    		<li>
+			                    			<span class="install-title">Download and extract file.</span><br/>
+			                    			Download amplixbi.zip and extract to folder.<br/>
+			                    			<br/>
+			                    			<code>
+			                    				unzip amplixbi.zip
+			                    			</code>
+			                    			<br/>
+			                    			<br/>
+			                    			Copy extracted folder to application installation location, for example /opt<br/>
+			                    			<code>
+			                    				mv amplixbi /opt/
+			                    			</code>
+			                    		</li>
+			                    	</ul>
+			                    </p>
+			                    <h4>2. Prepare database</h4>
+								<p>
+									<ul>
+										<li>
+											<span class="install-title">Install and Start MySQL database</span>
+										</li>
+										<li>
+											<span class="install-title">Login as root user with the following command.</span><br>
+											<br>
+											<code>mysql -uroot -p</code><br><br>
+										</li>
+										<li>
+											<span class="install-title">Create empty database with the following command on the above database command shell.</span><br>
+											<br>
+											<code>CREATE DATABASE amplix_meta;</code><br>
+											<code>CREATE USER 'amplix'@'localhost' IDENTIFIED BY 'password';</code>
+										</li>
+										<li>
+											<span class="install-title">Grant permission to database</span><br>
+											<br />
+											<code>GRANT ALL PRIVILEGES ON amplix_meta.* TO 'amplix'@'localhost';</code><br/>
+											<code>FLUSH PRIVILEGES;</code>
+										</li>
+										<li>
+											<span class="install-title">Create Sample database user and database (Optional)</span><br/>
+											<br/>
+											<code>CREATE DATABASE foodmeart;</code><br/>
+											<code>CREATE USER 'foodmart'@'localhost' IDENTIFIED BY 'password';</code><br/>
+											<br/>
+											<span class="install-title">Grant permission to foodmart user and database</span><br/>
+											<br/>
+											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'amplix'@'localhost';</code><br/>
+											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'foodmart'@'localhost';</code><br/>
+											<code>FLUSH PRIVILEGES;</code>
+										</li>
+									</ul>
+								</p>
+								<h4>3. Deploy amplix analysis application for your Tomcat Server.</h4>
+								<p>
+									<ul>
+										<li>
+											<span class="install-title">Edit web.xml file</span><br/>
+											Open the <code>web.xml</code> file in <code>/amplixbi/webapp/WEB-INF/web.xml</code>.<br/>
+											Edit <code>APP_HOME</code> for the folder that extracted. and uncomment the section<br/>
+											<br/>
+											<code>
+												&lt;context-param&gt;<br/>
+											    &nbsp;&nbsp;&nbsp;&nbsp;&lt;param-name&gt;APP_HOME&lt;/param-name&gt;<br/>
+											    &nbsp;&nbsp;&nbsp;&nbsp;&lt;param-value&gt;/opt/amplix&lt;/param-value&gt;<br/>
+											  	&lt;/context-param&gt;<br/>
+											</code>
+										</li>
+										<li>
+											<span class="install-title">Register Application</span><br/>
+											On tomcat need to register context.xml on tomcat configuration folder.<br/>
+											Create below file if not exists on your tomcat folder
+											<br/>
+											<code>TOMCAT/conf/Catalina/localhost/amplix.xml</code>
+											<br/>
+											<br/>
+											<code>
+												&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br/>
+												&lt;Context docBase="/opt/amplix"<br/>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cachingAllowed="true" reloadable="false"&gt;<br/>
+												&lt;/Context&gt;<br/>
+											</code>
+										</li>
+									</ul>
+								</p>
+			                    <h4>4. Deploy and run the web appication</h4>
+								<p>
+									<ul>
+										<li>Restart Apache Tomcat.</li>
+										<li>
+											Open this installation wizard on web browser, and follow instruction.<br/>
+											<br/>
+											<code>http://localhost:8080/amplix/install/</code>
+										</li>
+									</ul>
+								</p>
+			                </div>
+			             </div>
+					</div>
+				</div>
+				
+				<div id="d_error_01" class="error" style="display:none;">
+					<div class="error-desc"></div>
+				</div>
+				
+				<div id="btn_start_01" class="button-area">
+					<div id="btn_start_form" class="button">
+						<a>Goto Configurations</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="dpage_02" style="display:none;">
+				<div class="menu-area">
+					<div class="menu selected"><a>Settings</a></div>
+				</div>
+				<div class="menu-content-wrap">
+					<div class="menu-content">
+						<div class="title">
+							Server Version
+						</div>
+						<div class="content">
+							<table class="tb_form">
+								<tr>
+									<td colspan="2">
+										<span>Installation and Server starts on <code id="app_home"></code>.</span> <br />
+										<span>Version to install is <code id="s_version"></code></span>
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="title">
+							Database Configuration
+						</div>
+						<div class="content">
+							<table id="form_db" class="tb_form">
+								<col width="200px"></col>
+								<col width="*"></col>
+								<col width="*"></col>
+		               			<tr>
+		               				<td class="fieldname">Select MetaDatabase</td>
+		               				<td colspan="2">
+		               					<select id="db_type">
+		               					</select>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">Host Name</td>
+		               				<td colspan="2">
+		               					<input id="db_host" type="text" placeholder="localhost"></input>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">Port Number</td>
+		               				<td colspan="2">
+		               					<input id="db_port" type="text" placeholder="3306"></input>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">Database Name</td>
+		               				<td colspan="2">
+		               					<input id="db_name" type="text" placeholder="amplix_meta"></input>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td></td>
+		               				<td colspan="2">
+		               					<div class="button-area tb-button">
+			               					<button id="btn_check_dburl" class="button grey">
+												Auto Generate JDBC Information
+											</button>
+										</div>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">JDBC Driver</td>
+		               				<td>
+		               					<input id="db_jdbc_driver" type="text"></input>
+		               				</td>
+		               				<td>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">JDBC URL</td>
+		               				<td colspan="2">
+		               					<textarea id="db_jdbc_url"></textarea>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">ValidateSQL</td>
+		               				<td>
+		               					<textarea id="db_validatesql"></textarea>
+		               				</td>
+		               				<td>
+		               					
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">User name</td>
+		               				<td colspan="2">
+		               					<input id="db_user" type="text" placeholder="amplix"></input>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">User Password</td>
+		               				<td colspan="2">
+		               					<input id="db_passwd" type="password"></input>
+		               				</td>
+		               			</tr>
+								<tr>
+									<td colspan="1"></td>
+									<td>
+										<div class="button-area tb-button">
+											<button id="btn_check_con" class="button grey">
+												Check Connection
+											</button>
+										</div>
+									</td>
+									<td><span id="db_con_status"></span></td>
+								</tr>
+		               		</table>
+						</div>
+						
+						<div class="title">
+							Admin User
+						</div>
+						<div class="content">
+							<table class="tb_form">
+								<col width="200px"></col>
+								<col width="*"></col>
+		               			<tr>
+		               				<td class="fieldname">Admin User Password</td>
+		               				<td><input id="s2adminpwd" type="password" placeholder="Password"></input></td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">&nbsp;</td>
+		               				<td><input id="s2adminpwd_confirm" type="password" placeholder="Password confirm"></input></td>
+		               			</tr>
+		               		</table>
+						</div>
+						
+						<div class="title">
+							Additional Modules
+						</div>
+						<div class="content">
+							<table id="sel_modules" class="tb_form">
+							</table>
+						</div>
+						<div class="content">
+							<table class="tb_form">
+								<col width="200px"></col>
+								<col width="*"></col>
+								<tr>
+									<td class="fieldname">
+										Module Database Name
+									</td>
+									<td><input type="text" id="md_owner"></input></td>
+								</tr>
+								<tr>
+									<td class="fieldname">
+										Module User
+									</td>
+									<td><input type="text" id="md_user"></input></td>
+								</tr>
+								<tr>
+									<td class="fieldname">
+										Module Password
+									</td>
+									<td><input type="password" id="md_password"></input></td>
+								</tr>
+								<tr>
+									<td colspan="1"></td>
+									<td>
+										<div class="button-area tb-button">
+											<button id="btn_check_con2" class="button grey">
+												Check Connection
+											</button>
+										</div>
+									</td>
+									<td><span id="db_con_status2"></span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div id="d_error_02" class="error" style="display:none;">
+					<div class="error-desc"></div>
+				</div>
+				<div class="button-area">
+					<div id="btn_back_inst" class="button grey">
+						<a>Back to Instruction</a>
+					</div>
+					<div id="btn_start_install" class="button">
+						<a>Start Installation</a>
+					</div>
+				</div>
+			</div>
+			
+			<div id="dpage_03" style="display:none;">
+				<div class="menu-area">
+					<div class="menu selected"><a>Installation</a></div>
+				</div>
+				<div class="menu-content-wrap">
+					<div class="menu-content">
+						<div class="title">
+							Installation Completed!
+						</div>
+						<div class="content">
+							<table class="final-table">
+								<tr>
+									<td class="warning" align="center">
+										PLEASE REMEMBER TO COMPLETELY<br/>REMOVE THE INSTALLATION DIRECTORY.<br />You will not be able to proceed beyond this point until the installation directory has been removed. This is a security feature of AMPLIX BI!.
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="title">
+						                	Administrator Login Details
+						                </div>
+						                <div class="content">
+						                	Username: admin
+						               	</div>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="title">
+						                	Important configuration check points
+						                </div>
+						                <div class="content">
+						                	<div class="install-text install-text-fw">
+							                    <p>
+							                    	<ul>
+							                    		<li>
+							                    			<span class="install-title">JavaScript configuration for server connection.</span><br/>
+							                    			Open and edit this file, if 404 error while login.
+							                    			<code>amplixbi/webapp/config.js</code><br/>
+							                    			<br/>
+							                    			<code>
+							                    				var ig$ = { <br/>
+																&nbsp;&nbsp;&nbsp;&nbsp;useLocale: "en_US",<br/>
+																&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#ff0000">servlet: "../servlet/krcp",</b><br/>
+																&nbsp;&nbsp;&nbsp;&nbsp;...<br/>
+							                    			</code>
+							                    		</li>
+							                    		<li>
+							                    			<span class="install-title">Application main page configuration.</span><br/>
+							                    			Open and edit this file, if 404 error after login.<br/>
+							                    			Amplix intentionally hiding entry point of application, for security reason.
+							                    			<code>amplixbi/config/amplix.properties</code><br/>
+							                    			<br/>
+							                    			<code>
+							                    				[APPLICATION]<br/>
+																application.mainpage.mdi 					= "../launcher/analytics.jsp"<br/>
+																application.mainpage.dashboard 				= "../launcher/dashboard.jsp"<br/>
+																application.mainpage.viewer 				= "../launcher/viewer.jsp"<br/>
+							                    			</code>
+							                    		</li>
+							                    	</ul>
+							                    </p>
+							                </div>
+							            </div>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="center" class="notice">
+										<div id="cpanel">
+											<div>
+												<div class="icon">
+													<br />
+													<b style="font-size: 18px;">Thank you.</b>
+													<br />
+													Visit the <a href="https://amplibi.com">https://amplixbi.com</a> for more information and support!<br/>
+													<br />
+													
+													<br /><br />
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="button-area">
+					<div id="btn_start" class="button">
+						<a>Start your Analysis</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-bottom">
+			<a href="http://www.amplixbi.com" target="_blank">amplixbi.com</a> All right reserved.
+		</div>
+	</div>
+</div>
+<div id="loading" class="progress">
+	<div class="progress-bg">
+	</div>
+	<div class="progress-msg">
+		<span>Loading request to server! <br/> Please wait a moment!</span>
+		<div id="progressbar" class="progressbar">
+			<div id="progress_gauge" class="progress_gauge"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
