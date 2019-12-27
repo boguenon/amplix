@@ -48,6 +48,18 @@
 		<servlet-name>remoteproc</servlet-name>
 		<url-pattern>/servlet/krcp</url-pattern>
 	</servlet-mapping>
+	<!-- please remove this section after install -->
+	<servlet>
+		<servlet-name>installproc</servlet-name>
+		<servlet-class>
+			com.amplix.rpc.igcInstall
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>installproc</servlet-name>
+		<url-pattern>/servlet/ircp</url-pattern>
+	</servlet-mapping>
+	<!-- // end of remove section after install -->
   	<listener>
   		<listener-class>com.amplix.rpc.igcSessionListener</listener-class>
   	</listener>
