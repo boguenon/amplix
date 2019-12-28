@@ -22,15 +22,15 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=201912262113" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=201912272242" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=201912262113" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=201912272242" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=201912262113" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=201912272242" />
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=201912262113"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=201912262113"></script>
-<script type="text/javascript" src="./js/igca.min.js?_dc=201912262113"></script>
+<script type="text/javascript" src="../config.js?_dc=201912272242"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=201912272242"></script>
+<script type="text/javascript" src="./js/igca.min.js?_dc=201912272242"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";

@@ -69,7 +69,7 @@ CREATE TABLE igcmce (  mts CHAR(17) NOT NULL,  iuid CHAR(17) NULL,  seq INT(4) N
 CREATE INDEX idx_igcmce_f1 ON igcmce(iuid);
 CREATE UNIQUE INDEX idx_igcmce_f2 ON igcmce(iuid, revise, seq, mts);
 CREATE INDEX idx_igcmce_tenant ON igcmce(mts);
-CREATE TABLE igcobjectauth (  mts CHAR(17) NOT NULL,  sid CHAR(17) NULL,  iuid CHAR(17) NULL,  writable CHAR(1) DEFAULT 'N',  manage CHAR(1) DEFAULT 'F');
+CREATE TABLE igcobjectauth (  mts CHAR(17) NOT NULL,  sid CHAR(17) NULL,  iuid CHAR(17) NULL,  writable CHAR(1) DEFAULT 'N',  c_manage CHAR(1) DEFAULT 'F');
 CREATE INDEX idx_igcobjectauth_f1 ON igcobjectauth(iuid);
 CREATE INDEX idx_igcobjectauth_f2 ON igcobjectauth(sid);
 CREATE INDEX idx_igcobjectauth_tenant ON igcobjectauth(mts);
@@ -122,7 +122,7 @@ CREATE TABLE igcdbh (	seq INT(4),	gid INT(4),	tid VARCHAR(20),	drvcls VARCHAR(10
 CREATE TABLE igcudb (	iuid CHAR(17),	mid CHAR(17),	tid VARCHAR(20),	tname VARCHAR(100),	drvcls VARCHAR(100),	drvname VARCHAR(30),	surl VARCHAR(100),	dbuid VARCHAR(40),	dbpwd VARCHAR(40),	mdate BIGINT(19),	cdate BIGINT(19));
 CREATE UNIQUE INDEX p_igcudb_f1 ON igcudb (	iuid, mid, tname);
 CREATE INDEX p_igcudb_f2 ON igcudb (mid);
-CREATE TABLE igcudbauth (	sid CHAR(17),	mid CHAR(17),	writable CHAR(1),	manage CHAR(1));
+CREATE TABLE igcudbauth (	sid CHAR(17),	mid CHAR(17),	writable CHAR(1),	c_manage CHAR(1));
 CREATE TABLE igcsm (	iuid CHAR(17),	sid CHAR(17),	snder VARCHAR(255),	sndem VARCHAR(255),	email VARCHAR(255),	seq INT(4),	subj VARCHAR(255),	cnts VARCHAR(255),	cdate BIGINT(19),	mdate BIGINT(19),	mstat CHAR(1),	reslcd VARCHAR(255),	msgtype VARCHAR(4));
 CREATE INDEX idx_igcsm_f1 ON igcsm (iuid);
 CREATE UNIQUE INDEX idx_igcsm_f2 ON igcsm (sid, seq);
@@ -401,7 +401,7 @@ insert into igcfunc (fid, name, dbtype, description, fvalue, is_builtin, func_ty
 INSERT INTO igcdbhgrp (seq, tname, tdesc, mstat) VALUES (1, 'Relational JDBC Connector', '', 1), (2, 'Cloud Connector', '', 1), (3, 'ERP BI Connector', '', 1), (4, 'Embedded Datasource', '', 1), (5, 'Bigdata Connector', '', 1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (1, 1, 'oracle','oracle.jdbc.OracleDriver','Oracle Thin Driver','jdbc:oracle:thin:@<server>[:<1521>]:<service_name>',1), (2, 1, 'mysql','com.mysql.jdbc.Driver','MySQL Driver','jdbc:mysql://<hostname>[,<failoverhost>][:<3306>]/<dbname>[?<param1>=<value1>][&<param2>=<value2>]',1), (3, 1, 'db2','com.ibm.as400.access.AS400JDBCDriver','IBM DB2 Driver','jdbc:db2:<dbname>',1), (4, 1, 'as400','com.ibm.as400.access.AS400JDBCDriver','IBM AS400 DB2 Driver','jdbc:as400:<dbname>',1), (5, 1, 'mssql','com.microsoft.sqlserver.jdbc.SQLServerDriver','Microsoft MSSQL Server JDBC Driver','jdbc:microsoft:sqlserver://<server_name>:<1433>;databaseName=<dbname>;integratedSecurity=true;',1), (6, 1, 'postg','org.postgresql.Driver','PostgreSQL','jdbc:postgresql:[<//host>[:<5432>/]]<database>',1), (7, 1, 'sybase_iq','com.sybase.jdbc4.jdbc.SybDriver','Sybase IQ','jdbc:sybase:Tds:@<server>[:<7100>/]?ServiceName=<dbname>',1), (8, 1, 'sybase_ase','com.sybase.jdbc4.jdbc.SybDriver','Sybase ASE','jdbc:sybase:Tds:@<server>[:<7100>/]/<dbname>?ENABLE_SSL=true&SSL_TRUST_ALL_CERTS=true',1), (9, 1, 'exasol','com.exasol.jdbc.EXADriver','Exasol InMemory Database','jdbc:exa:<HOST>:<PORT>;schema=<DB>',1), (10, 2, 'sforce','sforce','Salesforce connection','sforce',1), (11, 3, 'ebs','com.amplix.connector.ebs.OracleEBSJdbcDriver','Oracle EBS application','jdbc:oracleebs:@<server>[:<1521>]:<service_name>',1), (12, 2, 'ldap','ldap','LDAP data source','ldap',1), (13, 3, 'sapbw','sapbw','SAP BW Data','sapbw',1), (14, 3, 'essbase','essbase','Oralce Hyperion Essbase','essbase',1), (15, 1, 'jdbcodbc','sun.jdbc.odbc.JdbcOdbcDriver','JDBC ODBC Bridge','jdbc:odbc:<alias>',1), (16, 5, 'hive','org.apache.hadoop.hive.jdbc.HiveDriver','Hive2','jdbc:hive://<server>:<10000>/default',1), (17, 5, 'mongodb','-','MongoDB NoSQL Database','-',1), (18, 4, 'apacheembd','org.apache.derby.jdbc.EmbeddedDriver','Apache Derby Embedded','jdbc:derby:<database>[;create=true]',1), (19, 4, 'h2','org.h2.Driver','H2 Database','jdbc:h2:file:~/<location>',1), (20, 3, 'jde','com.amplix.connector.jde.OracleJDEJdbcDriver','Oracle JD Edwards ERP','jdbc:oraclejde:@<server>[:<1521>]:<service_name>',1), (21, 2, 'amplix','com.amplix.connector.metadb.MetaDBJdbcDriver','amplix meta readonly','jdbc:amplix:@:service_name',1), (22, 2, 'soap','soap','SOAP WebService','soap',1), (23, 2, 'rest','rest','REST WebService','rest',1);
 DELETE FROM igcserver;
-INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '3.6', 1574914393468), ('ProductVersion', '3.65', 1574914393468);
+INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '3.6', 1574914393468), ('ProductVersion', '3.66', 1574914393468);
 
 
 UPDATE igcusers SET upasswd='46E3D772A1888EADFF26C7ADA47FD7502D796E07' WHERE userid='admin';

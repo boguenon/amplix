@@ -314,7 +314,7 @@ CREATE TABLE igcobjectauth (
   sid #CHAR#(17) #NULL#,
   iuid #CHAR#(17) #NULL#,
   writable #CHAR#(1) DEFAULT 'N',
-  manage #CHAR#(1) DEFAULT 'F'
+  c_manage #CHAR#(1) DEFAULT 'F'
 );
 
 CREATE INDEX idx_igcobjectauth_f1 ON igcobjectauth(iuid);
@@ -534,7 +534,7 @@ CREATE TABLE igcudbauth (
 	sid #CHAR#(17),
 	mid #CHAR#(17),
 	writable #CHAR#(1),
-	manage #CHAR#(1)
+	c_manage #CHAR#(1)
 );
 
 CREATE TABLE igcsm (

@@ -70,7 +70,7 @@ CREATE TABLE igcmce (  mts CHAR(17) NOT NULL,  iuid CHAR(17) NULL,  seq NUMBER(4
 CREATE INDEX idx_igcmce_f1 ON igcmce(iuid);
 CREATE UNIQUE INDEX idx_igcmce_f2 ON igcmce(iuid, revise, seq, mts);
 CREATE INDEX idx_igcmce_tenant ON igcmce(mts);
-CREATE TABLE igcobjectauth (  mts CHAR(17) NOT NULL,  sid CHAR(17) NULL,  iuid CHAR(17) NULL,  writable CHAR(1) DEFAULT 'N',  manage CHAR(1) DEFAULT 'F');
+CREATE TABLE igcobjectauth (  mts CHAR(17) NOT NULL,  sid CHAR(17) NULL,  iuid CHAR(17) NULL,  writable CHAR(1) DEFAULT 'N',  c_manage CHAR(1) DEFAULT 'F');
 CREATE INDEX idx_igcobjectauth_f1 ON igcobjectauth(iuid);
 CREATE INDEX idx_igcobjectauth_f2 ON igcobjectauth(sid);
 CREATE INDEX idx_igcobjectauth_tenant ON igcobjectauth(mts);
@@ -123,7 +123,7 @@ CREATE TABLE igcdbh (	seq NUMBER(4),	gid NUMBER(4),	tid VARCHAR2(20),	drvcls VAR
 CREATE TABLE igcudb (	iuid CHAR(17),	mid CHAR(17),	tid VARCHAR2(20),	tname VARCHAR2(100),	drvcls VARCHAR2(100),	drvname VARCHAR2(30),	surl VARCHAR2(100),	dbuid VARCHAR2(40),	dbpwd VARCHAR2(40),	mdate NUMBER(19),	cdate NUMBER(19));
 CREATE UNIQUE INDEX p_igcudb_f1 ON igcudb (	iuid, mid, tname);
 CREATE INDEX p_igcudb_f2 ON igcudb (mid);
-CREATE TABLE igcudbauth (	sid CHAR(17),	mid CHAR(17),	writable CHAR(1),	manage CHAR(1));
+CREATE TABLE igcudbauth (	sid CHAR(17),	mid CHAR(17),	writable CHAR(1),	c_manage CHAR(1));
 CREATE TABLE igcsm (	iuid CHAR(17),	sid CHAR(17),	snder VARCHAR2(255),	sndem VARCHAR2(255),	email VARCHAR2(255),	seq NUMBER(4),	subj VARCHAR2(255),	cnts VARCHAR2(255),	cdate NUMBER(19),	mdate NUMBER(19),	mstat CHAR(1),	reslcd VARCHAR2(255),	msgtype VARCHAR2(4));
 CREATE INDEX idx_igcsm_f1 ON igcsm (iuid);
 CREATE UNIQUE INDEX idx_igcsm_f2 ON igcsm (sid, seq);
@@ -439,7 +439,7 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (22, 2, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (23, 2, 'rest','rest','REST WebService','rest',1);
 DELETE FROM igcserver;
 INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '3.6', 1574914410144);
-INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '3.65', 1574914410144);
+INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '3.66', 1574914410144);
 
 
 UPDATE igcusers SET upasswd='46E3D772A1888EADFF26C7ADA47FD7502D796E07' WHERE userid='admin';

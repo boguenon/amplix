@@ -7,7 +7,7 @@
 			<defaultValue>amplix.out</defaultValue>
 		</discriminator>
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-			<level>DEBUG</level>
+			<level>${LOG_LEVEL}</level>
 		</filter>
 		<sift>
 			<appender name="FILE-${logFileName}"
