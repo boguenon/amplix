@@ -6,19 +6,10 @@
   "manage" : false,
   "is_sub" : false,
   "attributes" : { },
-  "email_enabled" : true,
-  "email_protocol" : "SMTP",
-  "email_encryption" : "ssl/tls",
-  "email_address" : "boguenon@amplixbi.com",
-  "email_auth_type" : "login",
-  "email_auth" : true,
-  "email_server" : "smtp.zoho.com",
-  "email_port" : "465",
-  "email_authuser" : "boguenon@gmail.com",
-  "sys_loglevel" : "TRACE",
+  "sys_loglevel" : "INFO",
   "sch_method" : "internal",
   "excel_type" : "xlsx",
-  "meta_enable_file" : true,
+  "meta_enable_file" : false,
   "meta_files" : "meta_files",
   "meta_name_rule" : "uid",
   "python_method" : "websocket",
@@ -34,9 +25,6 @@
   "maxfileupload" : 30,
   "maxfileuploadbulk" : 50,
   "sec_wrong_passwd" : 5,
-  "h2_jdbcurl" : "",
-  "h2_username" : "",
-  "h2_password" : "{ENC}o2ArfU4wxko=",
   "sso_modules" : [ {
     "name" : "dbsync",
     "desc" : "Amplix Guest Auth",
@@ -101,7 +89,5 @@
       },
       "parameters" : [ ]
     }
-  } ],
-  "email_authpass" : "{ENC}olO6KMuUMJuEVHvJdtECpA==",
-  "python_password" : "{ENC}o2ArfU4wxko="
+  } ]
 }
