@@ -1,0 +1,107 @@
+{
+  "meta_type" : "sys_config",
+  "objinfo" : { },
+  "type" : "Unknown",
+  "writable" : false,
+  "manage" : false,
+  "is_sub" : false,
+  "attributes" : { },
+  "email_enabled" : true,
+  "email_protocol" : "SMTP",
+  "email_encryption" : "ssl/tls",
+  "email_address" : "boguenon@amplixbi.com",
+  "email_auth_type" : "login",
+  "email_auth" : true,
+  "email_server" : "smtp.zoho.com",
+  "email_port" : "465",
+  "email_authuser" : "boguenon@gmail.com",
+  "sys_loglevel" : "TRACE",
+  "sch_method" : "internal",
+  "excel_type" : "xlsx",
+  "meta_enable_file" : true,
+  "meta_files" : "meta_files",
+  "meta_name_rule" : "uid",
+  "python_method" : "websocket",
+  "python_exec" : "",
+  "python_jupyter" : "http://localhost:8888/",
+  "python_need_auth" : false,
+  "python_username" : "",
+  "sec_enable_snooze" : true,
+  "sec_post_limit_count" : 1000,
+  "sec_snooze_time" : 5,
+  "sec_tenant_post_proc" : "",
+  "sec_password_rule" : "^.{6,}$",
+  "maxfileupload" : 30,
+  "maxfileuploadbulk" : 50,
+  "sec_wrong_passwd" : 5,
+  "h2_jdbcurl" : "",
+  "h2_username" : "",
+  "h2_password" : "{ENC}o2ArfU4wxko=",
+  "sso_modules" : [ {
+    "name" : "dbsync",
+    "desc" : "Amplix Guest Auth",
+    "enabled" : true,
+    "authentication" : {
+      "options" : {
+        "class" : "com.amplix.sso.amplix.GuestUserAuth"
+      },
+      "parameters" : [ ]
+    },
+    "authorization" : {
+      "options" : {
+        "class" : "com.amplix.sso.amplix.GuestUserAuth"
+      },
+      "parameters" : [ ]
+    }
+  }, {
+    "name" : "foodmart",
+    "desc" : "Foodmart Guest Auth",
+    "enabled" : true,
+    "authentication" : {
+      "options" : {
+        "class" : "com.amplix.sso.amplix.FoodmartUserAuth"
+      },
+      "parameters" : [ ]
+    },
+    "authorization" : {
+      "options" : {
+        "class" : "com.amplix.sso.amplix.FoodmartUserAuth"
+      },
+      "parameters" : [ ]
+    }
+  }, {
+    "name" : "oracle_ebs",
+    "desc" : "Oracle EBS",
+    "enabled" : true,
+    "authentication" : {
+      "options" : {
+        "class" : "com.amplix.sso.ebs.EBSAuth"
+      },
+      "parameters" : [ ]
+    },
+    "authorization" : {
+      "options" : {
+        "class" : "com.amplix.sso.ebs.EBSAuth"
+      },
+      "parameters" : [ ]
+    }
+  }, {
+    "name" : "apache_ldap",
+    "desc" : "Apache LDAP",
+    "enabled" : true,
+    "authentication" : {
+      "options" : {
+        "class" : " com.amplix.sso.ibk.UserDBSync"
+      },
+      "parameters" : [ ]
+    },
+    "authorization" : {
+      "options" : {
+        "class" : " com.amplix.sso.ibk.UserDBSync"
+      },
+      "parameters" : [ ]
+    }
+  } ],
+  "email_authpass" : "{ENC}olO6KMuUMJuEVHvJdtECpA==",
+  "python_password" : "{ENC}o2ArfU4wxko="
+}
