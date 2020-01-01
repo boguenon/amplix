@@ -1,6 +1,6 @@
 {
 	"100": "Client connection rejected for limited server license!",
-	"101": "Server license date has expired! Please contact us at INGECEP to request a new demo license key!",
+	"101": "Server license date has expired! Please contact us at https://www.amplixbi.com to request a new demo license key!",
 	"102": "Error while checking user id and password.",
 	"103": "You are not an active user.",
 	"104": "Session timed out, please try to log-in again.",
