@@ -1893,6 +1893,10 @@
 			"value": "ユ?ザ?の追加"
 		},
 		{
+			"name": "L_ADD_EXISTING_USER",
+			"value": "ユ?ザ?の追加(Existing)"
+		},
+		{
 			"name": "L_UD_DESC",
 			"value": "リストからユ?ザ?のデュ?ティを選?します。"
 		},

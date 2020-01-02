@@ -1893,6 +1893,10 @@
 			"value": "添加用户"
 		},
 		{
+			"name": "L_ADD_EXISTING_USER",
+			"value": "添加用户 (Existing)"
+		},
+		{
 			"name": "L_UD_DESC",
 			"value": "从列表中选择用户职责。"
 		},

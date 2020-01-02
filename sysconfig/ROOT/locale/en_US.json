@@ -1893,6 +1893,10 @@
 			"value": "Add User"
 		},
 		{
+			"name": "L_ADD_EXISTING_USER",
+			"value": "Add Existing User"
+		},
+		{
 			"name": "L_UD_DESC",
 			"value": "Select user duty from list."
 		},

@@ -1893,6 +1893,10 @@
 			"value": "사용자 추가"
 		},
 		{
+			"name": "L_ADD_EXISTING_USER",
+			"value": "기존 사용자 추가"
+		},
+		{
 			"name": "L_UD_DESC",
 			"value": "사용자에게 부여할 권한을 선택하여 추가해 주십시오."
 		},
