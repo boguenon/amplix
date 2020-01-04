@@ -5,7 +5,7 @@ var ig$ = {
     appname: "amplix",
     appbg: "bg_7186.png",
     companydomain: "http://www.amplixbi.com",
-    applink: "http://localhost:8780/boguenon/launcher/viewer.jsp?objid={objid}",
+    applink: "launcher/viewer.jsp?objid={objid}",
     copy: "&copy; 2005-" + (new Date()).getFullYear() + " amplixbi.com Inc. <br />ALL RIGHTS RESERVED. <br />amplix. Confidential Information",
     intropage: "navi_intro",
     timer_rsn: 300000,
@@ -77,8 +77,8 @@ var ig$ = {
         }}
     ],
 	appInfo: {
-		date: "202001032217",
-		web_revision: "834-3.5.66-9-gbc0c1dc"
+		date: "202001032320",
+		web_revision: "835-3.5.66-10-g445c7ae"
 	}
     // hide_report_help: true
 };
