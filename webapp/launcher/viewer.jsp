@@ -35,18 +35,18 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202001030105" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202001032217" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202001030105" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202001032217" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202001030105" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202001032217" />
 <%
 if (igc_theme != null)
 {
 	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/theme_" + igc_theme_name + ".css\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202001030105" />
+<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202001032217" />
 
 <style>
 #content {
@@ -55,9 +55,9 @@ if (igc_theme != null)
 </style>
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202001030105"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202001030105"></script>
-<script type="text/javascript" src="./js/igca.min.js?_dc=202001030105"></script>
+<script type="text/javascript" src="../config.js?_dc=202001032217"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202001032217"></script>
+<script type="text/javascript" src="./js/igca.min.js?_dc=202001032217"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
