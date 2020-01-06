@@ -21,9 +21,6 @@
     {
     	igc_theme_name = igc_theme.toLowerCase().replaceAll(" ", "");
     }
-    
-    String objid = request.getParameter("objid");
-    objid = objid != null && objid.trim().length() > 0 ? objid : null;
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,29 +32,23 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202001032320" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202001060044" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202001032320" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202001060044" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202001032320" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202001060044" />
 <%
 if (igc_theme != null)
 {
 	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/theme_" + igc_theme_name + ".css\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202001032320" />
-
-<style>
-#content {
-	top: <%= (objid == null ? "102" : "0") %> px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202001060044" />
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202001032320"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202001032320"></script>
-<script type="text/javascript" src="./js/igca.min.js?_dc=202001032320"></script>
+<script type="text/javascript" src="../config.js?_dc=202001060044"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202001060044"></script>
+<script type="text/javascript" src="./js/igca.min.js?_dc=202001060044"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -94,8 +85,6 @@ getLocale();
 		out.println("ig$.theme_id=\"" + igc_theme + "\";");
 	}
 %>
-
-var load_obj_id = "<%= (objid == null ? "" : objid) %>";
 
 var _report_prompt = [];
 <%
@@ -161,27 +150,25 @@ __microloader();
 </script>
 </head>
 <body scroll="no">
-<%
-	if (objid == null) {
-%>
-<div id="slide_menu"></div>
-<div id="header"> 
-  <div id="nav">
-    <span class="f_left logo">
-    amplix
-    <!-- a href="./"><img src="./images/logo.png" width="300" height="38" alt="logo"/></a -->
-    </span>
-    <ul id="d_nav">
-      
-    </ul>
-  </div>
+<div id="top_viewer" style="display:none;">
+	<div id="slide_menu"></div>
+	<div id="header"> 
+	  <div id="nav">
+	    <span class="f_left logo">
+	    amplix
+	    <!-- a href="./"><img src="./images/logo.png" width="300" height="38" alt="logo"/></a -->
+	    </span>
+	    <ul id="d_nav">
+	      
+	    </ul>
+	  </div>
+	</div>
+	<div id="title_area">
+	  <h1>Dashboard Viewer</h1>
+	</div>
 </div>
-<div id="title_area">
-  <h1>Dashboard Viewer</h1>
-</div>
-<% } %>
 <div id="wrap">
-  <div id="content">
+  <div id="content" style="top: 0px;">
     <div style="overflow-x:hidden;" width="100%" height="100%" name="mainview" id="mainview"></div>
   </div>
 </div>

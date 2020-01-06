@@ -840,3 +840,19 @@ CREATE TABLE igcsso (
 );
 
 CREATE UNIQUE INDEX idx_sso_01 ON igcsso(mtu, muid, ssomod, fname, seq);
+
+CREATE TABLE igcshare (
+	suid #CHAR#(17) NOT NULL,
+	mtu #CHAR#(17) NOT NULL,
+	muid #CHAR#(17) NOT NULL,
+	p_status #CHAR#(1) NOT NULL,
+	b_public #CHAR#(1) NOT NULL,
+	p_url #VARCHAR#(255) NOT NULL,
+	acc_count #NUMBER#(8) NOT NULL,
+	cdate #LONG# NOT NULL,
+	mdate #LONG# NOT NULL,
+	ldate #LONG# NOT NULL
+);
+
+CREATE UNIQUE INDEX idx_share_01 ON igcshare(suid);
+CREATE INDEX idx_share_02 ON igcshare(suid, mtu, muid);

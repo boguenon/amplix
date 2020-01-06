@@ -181,6 +181,9 @@ CREATE UNIQUE INDEX idx_dbareq_01 ON igcdbareq(reqid);
 CREATE UNIQUE INDEX idx_dbareq_02 ON igcdbareq(fuid, sid);
 CREATE TABLE igcsso (	mtu CHAR(17) NOT NULL,	muid CHAR(17) NOT NULL,	ssomod VARCHAR(20) NOT NULL,	fname VARCHAR(200) NOT NULL,	seq NUMERIC(4) NOT NULL,	svalue VARCHAR(255) NOT NULL,	mdate BIGINT NOT NULL,  	cdate BIGINT NOT NULL);
 CREATE UNIQUE INDEX idx_sso_01 ON igcsso(mtu, muid, ssomod, fname, seq);
+CREATE TABLE igcshare (suid CHAR(17) NOT NULL, mtu CHAR(17) NOT NULL, muid CHAR(17) NOT NULL, p_status CHAR(1) NOT NULL, b_public CHAR(1) NOT NULL, p_url VARCHAR(255) NOT NULL, acc_count NUMERIC(8) NOT NULL, cdate BIGINT NOT NULL, mdate BIGINT NOT NULL, ldate BIGINT NOT NULL);
+CREATE UNIQUE INDEX idx_share_01 ON igcshare(suid);
+CREATE INDEX idx_share_02 ON igcshare(suid, mtu, muid);
 INSERT INTO igcmts (mtu, mtname, mdate, pstatus, a1, a2) VALUES ('0122483f-0155fb46','ROOT',1407568418000,'A',NULL,NULL);
 INSERT INTO igcdepts (mts, gid, dname, active, mdate, pid, node, mid, description, dtype, privilege, lacc, cacc, dept_id) VALUES ('0122483f-0155fb46','0122483f-0155fb46','AdminGroup',1,1260464461000,'0125a045-017ae681','NODE@0125A045-017AE681@0122483F-0155FB46',NULL,'lll','A',NULL,0,0,NULL);
 INSERT INTO igcdepts (mts, gid, dname, active, mdate, pid, node, mid, description, dtype, privilege, lacc, cacc, dept_id) VALUES ('0122483f-0155fb46','0125a045-017ae681','RootGroup',1,1261069261000,NULL,'NODE@0125A045-017AE681','0125a5a3-0145447c',NULL,'A',NULL,0,0,NULL);
@@ -438,7 +441,7 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (22, 2, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (23, 2, 'rest','rest','REST WebService','rest',1);
 DELETE FROM igcserver;
 INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '3.6', 1574914457438);
-INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '3.66', 1574914457438);
+INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '3.67', 1574914457438);
 
 
 UPDATE igcusers SET upasswd='46E3D772A1888EADFF26C7ADA47FD7502D796E07' WHERE userid='admin';
