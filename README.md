@@ -52,33 +52,20 @@ Open command prompt on windows or shell on linux system, and execute following c
 
 ```
 cd {APP_HOME}/bin
-startup.bat   (or startup.sh on linux)
+RUN_startup.bat   (or startup.sh on linux)
 ```
 
 #### Startup options
 
-The installation is automized with command prompt. Complex configuration argument are completed with guided program asks for your input.
+The installation provided with wizard which simplifies and easy your installation steps.
+
+Open web browser, and type url bellow.
 
 ```
-cd {APP_HOME}/bin
-
-; Install initial metacontents and tables on configured target db
-catalina.bat install
-
-; Generates sql scripts to create and initial metacontents with target db
-catalina.bat script
-
-; Generates sql scripts to create sample foodmart database
-catalina.bat sample_data
-
-Type Yes to continue installation.
+http://localhost:8580/install
 ```
 
-To use default value, just type enter. To modify value type value in the console and type enter key to continue.
-
-#### Metadatabase configuration
-In this step, need to connect on database system using database provider store application data.
-The program asks meta database selection. To use local embedded meta database, type **apacheembd**.
+Follow steps on the wizard. If you plan to web application server deploy, follow steps on installation wizard.
 
 ##### Prepare meta database
 Open MySQL command prompt and execute following command to connect to database system.
@@ -93,15 +80,6 @@ CREATE DATABASE amplix DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
 The interactive prompt will ask the following criteria to generate files:
-```
-{APP_HOME}/bin/catalina.bat script
-
-database type (mysql,oracle,mssql,apacheembd,postgresql)>>
--> Check below database type mapping information to shortcur name of database type
-SQL script filename : [meta.sql] >>
--> Enter file name to be created
-Password: >>
--> Password of the admin user for the application login
 ```
 
 Supported database system and type name are as follows:
@@ -118,24 +96,6 @@ Supported database system and type name are as follows:
 |Tibero DB|tibero| |
 |Sybase ASE|sybase_ase| |
 
-
-#### Post Installation
-
-Configuration Property file have information necessary to boot application, such as database connection information, and email server settings.
-On first installation, run the following command to guided property file setting.
-
-```
-	{APP_HOME}/bin/startup.sh install
-```
-
-For manual changes on configuation property file, follow steps bellow. Open the following file on VI editor or notepad to edit.
-
-```
-	{APP_HOME}/config/amplix.properties 
-```
-Update `[META_DATABASE]` section with meta database connection information.
-
-On booting time, database connection password, email automatically encrypted and the value changes to starting {ENC} and followed encrypted codes.
 
 ## Deployment
 
