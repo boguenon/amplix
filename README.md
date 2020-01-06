@@ -55,7 +55,7 @@ cd {APP_HOME}/bin
 RUN_startup.bat   (or startup.sh on linux)
 ```
 
-#### Startup options
+#### Installation Wizard
 
 The installation provided with wizard which simplifies and easy your installation steps.
 
