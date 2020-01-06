@@ -52,7 +52,7 @@ Open command prompt on windows or shell on linux system, and execute following c
 
 ```
 cd {APP_HOME}/bin
-RUN_startup.bat   (or startup.sh on linux)
+RUN_startup.bat   (or RUN_startup.sh on linux)
 ```
 
 #### Installation Wizard
@@ -78,23 +78,6 @@ After connecting to database execute following DDL script to create database.
 ```
 CREATE DATABASE amplix DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
-
-The interactive prompt will ask the following criteria to generate files:
-```
-
-Supported database system and type name are as follows:
-
-|Database name|Type name|Notes|
-| ----------- | ------- | --- |
-|oracle|oracle| |
-|ApacheEmbedded|apacheembd| |
-|IBM DB2|db2| |
-|IBM AS400|db2| |
-|MySQL|mysql| |
-|Postre SQL|postg / postgresql / postgre| |
-|MS SQL|mssql| |
-|Tibero DB|tibero| |
-|Sybase ASE|sybase_ase| |
 
 
 ## Deployment
