@@ -283,9 +283,6 @@ if ""%1"" == ""start"" goto doStart
 if ""%1"" == ""stop"" goto doStop
 if ""%1"" == ""configtest"" goto doConfigTest
 if ""%1"" == ""version"" goto doVersion
-if ""%1"" == ""install"" goto doInstall
-if ""%1"" == ""script"" goto doInstall
-if ""%1"" == ""sample_data"" goto doInstall
 
 echo Usage:  catalina ( commands ... )
 echo commands:
@@ -296,12 +293,9 @@ echo   run               Start Catalina in the current window
 echo   run -security     Start in the current window with security manager
 echo   start             Start Catalina in a separate window
 echo   start -security   Start in a separate window with security manager
-echo   install           Install initial metacontents and tables on configured target db
-echo   script            Generates sql scripts to create and initial metacontents with target db
-echo   sample_data       Generates sql scripts to create sample foodmart database
 echo   stop              Stop Catalina
 echo   configtest        Run a basic syntax check on server.xml
-echo   version           What version of tomcat are you running?
+echo   version           What version of amplix are you running?
 goto end
 
 :doDebug
@@ -324,7 +318,7 @@ goto execCmd
 
 :doStart
 shift
-if "%TITLE%" == "" set TITLE=Tomcat
+if "%TITLE%" == "" set TITLE=Amplix
 set _EXECJAVA=start "%TITLE%" %_RUNJAVA%
 if not ""%1"" == ""-security"" goto execCmd
 shift
@@ -347,12 +341,6 @@ goto execCmd
 :doVersion
 %_EXECJAVA% -classpath "%CATALINA_HOME%\lib\catalina.jar" org.apache.catalina.util.ServerInfo
 goto end
-
-:doInstall
-set ACTION=%1
-set CATALINA_OPTS=
-goto execCmd
-
 
 :execCmd
 rem Get remaining unshifted command line arguments and save them in the

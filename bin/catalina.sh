@@ -373,42 +373,6 @@ if [ "$1" = "debug" ] ; then
     fi
   fi
 
-elif [ "$1" = "install" ]; then
-
-  shift
-  eval exec "\"$_RUNJAVA\"" "\"$LOGGING_CONFIG\"" $LOGGING_MANAGER $JAVA_OPTS $CATALINA_OPTS \
-    -D$ENDORSED_PROP="\"$JAVA_ENDORSED_DIRS\"" \
-    -classpath "\"$CLASSPATH\"" \
-    -Dcatalina.base="\"$CATALINA_BASE\"" \
-    -Dcatalina.home="\"$CATALINA_HOME\"" \
-    -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-    -DAPP_HOME="\"$CATALINA_BASE\"" \
-    com.amplix.launcher.ServerService "$@" install
-
-elif [ "$1" = "script" ]; then
-
-  shift
-  eval exec "\"$_RUNJAVA\"" "\"$LOGGING_CONFIG\"" $LOGGING_MANAGER $JAVA_OPTS $CATALINA_OPTS \
-    -D$ENDORSED_PROP="\"$JAVA_ENDORSED_DIRS\"" \
-    -classpath "\"$CLASSPATH\"" \
-    -Dcatalina.base="\"$CATALINA_BASE\"" \
-    -Dcatalina.home="\"$CATALINA_HOME\"" \
-    -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-    -DAPP_HOME="\"$CATALINA_BASE\"" \
-    com.amplix.launcher.ServerService "$@" script
-
-elif [ "$1" = "sample_data" ]; then
-
-  shift
-  eval exec "\"$_RUNJAVA\"" "\"$LOGGING_CONFIG\"" $LOGGING_MANAGER $JAVA_OPTS $CATALINA_OPTS \
-    -D$ENDORSED_PROP="\"$JAVA_ENDORSED_DIRS\"" \
-    -classpath "\"$CLASSPATH\"" \
-    -Dcatalina.base="\"$CATALINA_BASE\"" \
-    -Dcatalina.home="\"$CATALINA_HOME\"" \
-    -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-    -DAPP_HOME="\"$CATALINA_BASE\"" \
-    com.amplix.launcher.ServerService "$@" sample_data
-
 elif [ "$1" = "run" ]; then
 
   shift
@@ -448,8 +412,8 @@ elif [ "$1" = "start" ] ; then
           PID=`cat "$CATALINA_PID"`
           ps -p $PID >/dev/null 2>&1
           if [ $? -eq 0 ] ; then
-            echo "Tomcat appears to still be running with PID $PID. Start aborted."
-            echo "If the following process is not a Tomcat process, remove the PID file and try again:"
+            echo "Amplix appears to still be running with PID $PID. Start aborted."
+            echo "If the following process is not a Amplix process, remove the PID file and try again:"
             ps -f -p $PID
             exit 1
           else
@@ -516,7 +480,7 @@ elif [ "$1" = "start" ] ; then
     echo $! > "$CATALINA_PID"
   fi
 
-  echo "Tomcat started."
+  echo "Amplix started."
 
 elif [ "$1" = "stop" ] ; then
 
@@ -549,7 +513,7 @@ elif [ "$1" = "stop" ] ; then
         echo "PID file is empty and has been ignored."
       fi
     else
-      echo "\$CATALINA_PID was set but the specified file does not exist. Is Tomcat running? Stop aborted."
+      echo "\$CATALINA_PID was set but the specified file does not exist. Is Amplix running? Stop aborted."
       exit 1
     fi
   fi
@@ -580,20 +544,20 @@ elif [ "$1" = "stop" ] ; then
           if [ $? != 0 ]; then
             if [ -w "$CATALINA_PID" ]; then
               cat /dev/null > "$CATALINA_PID"
-              # If Tomcat has stopped don't try and force a stop with an empty PID file
+              # If Amplix has stopped don't try and force a stop with an empty PID file
               FORCE=0
             else
               echo "The PID file could not be removed or cleared."
             fi
           fi
-          echo "Tomcat stopped."
+          echo "Amplix stopped."
           break
         fi
         if [ $SLEEP -gt 0 ]; then
           sleep 1
         fi
         if [ $SLEEP -eq 0 ]; then
-          echo "Tomcat did not stop in time."
+          echo "Amplix did not stop in time."
           if [ $FORCE -eq 0 ]; then
             echo "PID file was not removed."
           fi
@@ -612,7 +576,7 @@ elif [ "$1" = "stop" ] ; then
     else
       if [ -f "$CATALINA_PID" ]; then
         PID=`cat "$CATALINA_PID"`
-        echo "Killing Tomcat with the PID: $PID"
+        echo "Killing Amplix with the PID: $PID"
         kill -9 $PID
         while [ $KILL_SLEEP_INTERVAL -ge 0 ]; do
             kill -0 `cat "$CATALINA_PID"` >/dev/null 2>&1
@@ -625,7 +589,7 @@ elif [ "$1" = "stop" ] ; then
                         echo "The PID file could not be removed."
                     fi
                 fi
-                echo "The Tomcat process has been killed."
+                echo "The Amplix process has been killed."
                 break
             fi
             if [ $KILL_SLEEP_INTERVAL -gt 0 ]; then
@@ -634,7 +598,7 @@ elif [ "$1" = "stop" ] ; then
             KILL_SLEEP_INTERVAL=`expr $KILL_SLEEP_INTERVAL - 1 `
         done
         if [ $KILL_SLEEP_INTERVAL -lt 0 ]; then
-            echo "Tomcat has not been killed completely yet. The process might be waiting on some system call or might be UNINTERRUPTIBLE."
+            echo "Amplix has not been killed completely yet. The process might be waiting on some system call or might be UNINTERRUPTIBLE."
         fi
       fi
     fi
@@ -676,7 +640,6 @@ else
   echo "  jpda start        Start Catalina under JPDA debugger"
   echo "  run               Start Catalina in the current window"
   echo "  run -security     Start in the current window with security manager"
-  echo "  install           Install amplix application"
   echo "  start             Start Catalina in a separate window"
   echo "  start -security   Start in a separate window with security manager"
   echo "  stop              Stop Catalina, waiting up to 5 seconds for the process to end"
@@ -684,7 +647,7 @@ else
   echo "  stop -force       Stop Catalina, wait up to 5 seconds and then use kill -KILL if still running"
   echo "  stop n -force     Stop Catalina, wait up to n seconds and then use kill -KILL if still running"
   echo "  configtest        Run a basic syntax check on server.xml - check exit code for result"
-  echo "  version           What version of tomcat are you running?"
+  echo "  version           What version of amplix are you running?"
   echo "Note: Waiting for the process to end and use of the -force option require that \$CATALINA_PID is defined"
   exit 1
 
