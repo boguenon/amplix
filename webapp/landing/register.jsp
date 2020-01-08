@@ -12,7 +12,7 @@
     prod = prod == null ? "" : prod;
     if (prod.equals("trial") == false && prod.equals("dedicated") == false && prod.equals("enterprise") == false)
     {
-    	String redirectURL = "http://www.amplixbi.com/main/lang_en/index.html#pricing";
+    	String redirectURL = "http://www.amplixbi.com/main/lang_en/index.jsp#pricing";
         response.sendRedirect(redirectURL);
     }
 %>
