@@ -441,8 +441,8 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (21, 2, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (22, 2, 'soap','soap','SOAP WebService','soap',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (23, 2, 'rest','rest','REST WebService','rest',1);
 DELETE FROM igcserver;
-INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '3.6', 1574914410144);
-INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '3.67', 1574914410144);
+INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '4.0', 1574914410144);
+INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '4.01', 1574914410144);
 
 
 UPDATE igcusers SET upasswd='46E3D772A1888EADFF26C7ADA47FD7502D796E07' WHERE userid='admin';
