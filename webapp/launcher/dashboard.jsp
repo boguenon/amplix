@@ -34,11 +34,11 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202001152234" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202001152242" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202001152234" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202001152242" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202001152234" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202001152242" />
 
 <%
 if (igc_theme != null)
@@ -48,9 +48,9 @@ if (igc_theme != null)
 %>
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202001152234"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202001152234"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202001152234"></script>
+<script type="text/javascript" src="../config.js?_dc=202001152242"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202001152242"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202001152242"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -128,7 +128,7 @@ ig$.bootconfig.cache = ig$.appInfo.apprelease + "_" + ig$.appInfo.date.replace(/
 var bc = ig$.bootconfig.boot,
     scripts,
     i, j,
-    modules = ["framework", "vis", "app_dashboard", "appnc", "custom"],
+    modules = ["framework", "vis_ec", "app_dashboard", "appnc", "custom"],
     s, cache = ig$.bootconfig.cache || new Date().getTime(),
     __microloader = function() {
         while (mod = modules.shift())
