@@ -77,8 +77,8 @@ var ig$ = {
         }}
     ],
 	appInfo: {
-		date: "202001132348",
-		web_revision: "875-3.5.67-37-g41c885f"
+		date: "202001152234",
+		web_revision: "889-3.5.67-51-gabfc16b"
 	}
     // hide_report_help: true
 };

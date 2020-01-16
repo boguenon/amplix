@@ -4731,6 +4731,10 @@
 		{
 			"name": "L_SYS_CONFIG",
 			"value": "시스템 설정"
+		},
+		{
+			"name": "CMD_ASSIST_ROBO",
+			"value": "Assist Robo"
 		}
 	]
 }

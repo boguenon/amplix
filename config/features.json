@@ -67,6 +67,10 @@
 						{
 							"name": "Features",
 							"cls": "ig_ft"
+						},
+						{
+							"name": "Assistant Robot",
+							"cls": "ig_assist_robot"
 						}
 					]
 				},

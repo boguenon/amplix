@@ -4731,6 +4731,10 @@
 		{
 			"name": "L_SYS_CONFIG",
 			"value": "System Config"
+		},
+		{
+			"name": "CMD_ASSIST_ROBO",
+			"value": "Assist Robo"
 		}
 	]
 }
