@@ -4733,8 +4733,12 @@
 			"value": "System Config"
 		},
 		{
-			"name": "CMD_ASSIST_ROBO",
+			"name": "L_ASSIST_ROBO",
 			"value": "Assist Robo"
+		},
+		{
+			"name": "D_NLP",
+			"value": "Autobot Corpus"
 		}
 	]
 }

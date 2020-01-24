@@ -856,3 +856,14 @@ CREATE TABLE igcshare (
 
 CREATE UNIQUE INDEX idx_share_01 ON igcshare(suid);
 CREATE INDEX idx_share_02 ON igcshare(suid, mtu, muid);
+
+CREATE TABLE igccudlog (
+	suid #CHAR#(17) NOT NULL,
+	seq #NUMBER#(4) NOT NULL,
+	sender #VARCHAR#(120) NOT NULL,
+	p_status #NUMBER#(4) NOT NULL,
+	cdate #LONG# NOT NULL,
+	mdate #LONG# NOT NULL
+);
+
+CREATE UNIQUE INDEX idx_cudlog_01 ON igccudlog(suid, seq);
