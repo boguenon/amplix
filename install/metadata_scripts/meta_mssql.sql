@@ -181,6 +181,8 @@ CREATE UNIQUE INDEX idx_dbareq_01 ON igcdbareq(reqid);
 CREATE UNIQUE INDEX idx_dbareq_02 ON igcdbareq(fuid, sid);
 CREATE TABLE igcsso (	mtu CHAR(17) NOT NULL,	muid CHAR(17) NOT NULL,	ssomod VARCHAR(20) NOT NULL,	fname VARCHAR(200) NOT NULL,	seq INTEGER NOT NULL,	svalue VARCHAR(255) NOT NULL,	mdate BIGINT NOT NULL,  	cdate BIGINT NOT NULL);
 CREATE UNIQUE INDEX idx_sso_01 ON igcsso(mtu, muid, ssomod, fname, seq);
+CREATE TABLE igccudlog (suid CHAR(17) NOT NULL, nickname VARCHAR(255) NOT NULL, p_status INTEGER NOT NULL, cdate BIGINT NOT NULL,mdate BIGINT NOT NULL);
+CREATE UNIQUE INDEX idx_cudlog_01 ON igccudlog(suid);
 INSERT INTO igcmts (mtu, mtname, mdate, pstatus, a1, a2) VALUES ('0122483f-0155fb46','ROOT',1407568418000,'A',NULL,NULL);
 INSERT INTO igcdepts (mts, gid, dname, active, mdate, pid, node, mid, description, dtype, privilege, lacc, cacc, dept_id) VALUES ('0122483f-0155fb46','0122483f-0155fb46','AdminGroup',1,1260464461000,'0125a045-017ae681','NODE@0125A045-017AE681@0122483F-0155FB46',NULL,'lll','A',NULL,0,0,NULL);
 INSERT INTO igcdepts (mts, gid, dname, active, mdate, pid, node, mid, description, dtype, privilege, lacc, cacc, dept_id) VALUES ('0122483f-0155fb46','0125a045-017ae681','RootGroup',1,1261069261000,NULL,'NODE@0125A045-017AE681','0125a5a3-0145447c',NULL,'A',NULL,0,0,NULL);

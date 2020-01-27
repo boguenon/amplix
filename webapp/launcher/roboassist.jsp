@@ -41,9 +41,9 @@ input,select,textarea{
     background-color:inherit
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202001261756"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202001262134"></link>
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="./js/igccud.min.js?_dc=202001261756"></script>
+<script type="text/javascript" src="./js/igccud.min.js?_dc=202001262134"></script>
 <script type="text/javascript">
 function start_chat() {
 	$("#main_loading").show();
@@ -91,12 +91,7 @@ function start_cuddle() {
 }
 
 $(document).ready(function() {
-<%
-	if (request.getParameter("start_chat") != null && request.getParameter("start_chat").equals("T"))
-	{
-		out.println("\tsetTimeout(function() {start_cuddle();}, 1000);");
-	}
-%>
+	setTimeout(function() {start_cuddle();}, 1000);
 });
 </script>
 </head>
