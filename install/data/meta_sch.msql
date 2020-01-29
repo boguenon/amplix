@@ -866,3 +866,14 @@ CREATE TABLE igccudlog (
 );
 
 CREATE UNIQUE INDEX idx_cudlog_01 ON igccudlog(suid);
+
+CREATE TABLE igccuddata (
+	suid #CHAR#(17) NOT NULL,
+	seq #NUMBER#(4) NOT NULL,
+	cdate #LONG# NOT NULL,
+	s_intent #VARCHAR#(255) NOT NULL,
+	s_utter #VARCHAR#(255) NOT NULL,
+	s_resp #VARCHAR#(255) NOT NULL
+);
+
+CREATE UNIQUE INDEX idx_cuddata_01 ON igccuddata(suid, seq);

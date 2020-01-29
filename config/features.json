@@ -387,6 +387,20 @@
 							"cls": "ig_n_e_cube"
 						}
 					]
+				},
+				{
+					"name": "metacontrol",
+					"cls": "ig_m_ctrl",
+					"children": [
+						{
+							"name": "save",
+							"cls": "ig_m_save"
+						},
+						{
+							"name": "save",
+							"cls": "ig_m_saveas"
+						}
+					]
 				}
 			]
 		},
