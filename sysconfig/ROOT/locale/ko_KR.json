@@ -2265,6 +2265,10 @@
 			"value": "스케쥴 모니터링"
 		},
 		{
+			"name": "I_SCHEDULE_MOD",
+			"value": "스케쥴 모듈"
+		},
+		{
 			"name": "L_LST_SCH",
 			"value": "스케쥴 목록"
 		},
@@ -4270,7 +4274,7 @@
 		},
 		{
 			"name": "L_SYS_BACKSCH",
-			"value": "배경 일정"
+			"value": "백그라운드 작업"
 		},
 		{
 			"name": "B_SEQUENCE",
@@ -4739,6 +4743,10 @@
 		{
 			"name": "D_NLP",
 			"value": "Autobot Corpus"
+		},
+		{
+			"name": "L_CACHE_REFRESH",
+			"value": "캐시 초기화 후 생성"
 		}
 	]
 }

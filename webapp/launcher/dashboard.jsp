@@ -34,11 +34,11 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202001291823" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202002031816" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202001291823" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202002031816" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202001291823" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202002031816" />
 
 <%
 if (igc_theme != null)
@@ -48,9 +48,9 @@ if (igc_theme != null)
 %>
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202001291823"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202001291823"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202001291823"></script>
+<script type="text/javascript" src="../config.js?_dc=202002031816"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202002031816"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202002031816"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -306,6 +306,57 @@ ig$.dashboard_custom = {
 	}
 };
 </script>
+<!-- start cuddler -->
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202002031816"></link>
+<script type="text/javascript">
+var assist_message = [
+	"Welcome to amplixbi! <br/>I am here to assit you!",
+	"We have agents to cuddle you. <br/> Just click me!"
+];
+
+function rotate_msg() {
+	if (window.assist_message && assist_message.length > 0)
+	{
+		var mindex = window._curmsg || 0;
+		
+		$("#assist_message").fadeIn();
+		$("#assist_message").html(assist_message[mindex % assist_message.length]);
+		
+		window._curmsg = mindex + 1;
+		
+		if (assist_message.length > 1)
+		{
+			setTimeout(function() {
+				$("#assist_message").fadeOut();
+				setTimeout(rotate_msg, 2000);
+			}, 3000);
+		}
+	}
+}
+
+$(document).ready(function() {
+	rotate_msg();
+	
+	$("#robo_wrap").bind("click", function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		
+		$("#robo_main").show();
+		
+		document.getElementById("roboassist").src = "./roboassist.jsp";
+	});
+	
+	$("#robo_close").bind("click", function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		
+		$("#robo_main").fadeOut();
+		
+		document.getElementById("roboassist").src = "";
+	});	
+});
+</script>
+<!-- end cuddler -->
 </head>
 <body scroll="no">
 	<div id="loading-mask" style=""></div>
@@ -318,7 +369,7 @@ ig$.dashboard_custom = {
 		</div>
 	</div>
 
- 	<div id="main"></div>
+ 	<div id="mainview"></div>
  	
  	<div id="navbar" class="navbar">
  		<div class="navbar-header">
@@ -376,5 +427,30 @@ ig$.dashboard_custom = {
     
     <ul id="m_style" class="dropdown-menu animated fadeInRight m-t-xs">
     </ul>
+    
+    <!-- start cuddler --> 
+	<div class="robo_wrap" id="robo_wrap" style="display:none;">
+		<div class="robo_icon">
+			<img src="./images/cuddler.png" width="120px" height="84px">
+		</div>
+		<div class="assist_message" id="assist_message">
+		</div>
+	</div>
+	<div class="robo_main fadeInRight animated" id="robo_main">
+		<div class="robo_area">
+			<div class="robo_title">
+				<span class="robo_title_text">Expert Bot is here for cuddle you!</span>
+				<div class="robo_title_button">
+					<a id="robo_close" class="robo_close">
+						<i class="robo-window-close"></i>
+					</a>
+				</div>
+			</div>
+			<div class="robo_embed_area">
+				<iframe id="roboassist" src=""></iframe>
+			</div>
+		</div>
+	</div>
+	<!-- end cuddler -->
 </body>
 </html>

@@ -1,0 +1,41 @@
+package ${PACKAGE_NAME};
+
+import java.io.File;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.amplix.rpc.igcJob;
+import com.amplix.rpc.igcServer;
+
+${IMPORT_CLASSES}
+
+public class ${CLASS_NAME}
+	extends igcJob
+{
+	private static final Logger logger = LoggerFactory.getLogger(${CLASS_NAME}.class);
+	
+	public String execute(String intent, String message)
+	{
+		String answer = null;
+		logger.info("intent process handler : " + intent);
+		
+$$START_INTENTS_$$
+		if (intent.equals("${INTENTS.NAME}"))
+		{
+			${INTENTS.SOURCE}
+		}
+$$END_INTENTS_$$
+		
+		return answer;
+	}
+
+	@Override
+	public void dispose() {
+		super.dispose();
+	}
+}

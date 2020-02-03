@@ -2265,6 +2265,10 @@
 			"value": "进度监控"
 		},
 		{
+			"name": "I_SCHEDULE_MOD",
+			"value": "Schedule Module"
+		},
+		{
 			"name": "L_LST_SCH",
 			"value": "附表清单"
 		},
@@ -4739,6 +4743,10 @@
 		{
 			"name": "D_NLP",
 			"value": "Autobot Corpus"
+		},
+		{
+			"name": "L_CACHE_REFRESH",
+			"value": "Cache Build after Clear"
 		}
 	]
 }

@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - PDF automization to parse document into data to analysis and transactional purpose
 - PDF viewer before downloading file
 - PDF template updates to PDFBox library
+- Database cache enhanced to daily scheduled refresh
 
 ### Fixed
 - Fixed issue on duplicated names on root folder. Prevents rename and save content with duplicated names on same folder and root folder.

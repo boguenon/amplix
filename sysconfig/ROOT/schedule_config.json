@@ -1,0 +1,17 @@
+{
+  "meta_type" : "schedule_config",
+  "objinfo" : { },
+  "type" : "Unknown",
+  "writable" : false,
+  "manage" : false,
+  "is_sub" : false,
+  "attributes" : { },
+  "programs" : [ {
+    "name" : "CClearResources",
+    "java_source" : [ "String tempfolder = p_daemon.APP_HOME + \"/temp\";", "          ", "File dir = new File(tempfolder);", "", "long tsize = 0L;", "int n = 0;", "", "SimpleDateFormat sdf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");", "Date cdate = new Date();", "long ldate = cdate.getTime();", "", "for (File f : dir.listFiles())", "{", "  if (f.isFile() && f.canRead() && f.canWrite())", "  {", "    String fname = f.getAbsolutePath();", "    long fsize = f.getTotalSpace();", "    String date = sdf.format(f.lastModified());", "    ", "    if (ldate - f.lastModified() > 60 * 6 * 1000L)", "    {", "      try", "      {", "        f.delete();", "        logger.debug(\"oooooo delete \" + fname + \" (\" + fsize + \"), \" + date);", "        tsize += fsize;", "        n++;", "      }", "      catch (Exception e)", "      {", "        logger.debug(\"****** delete failed : \" + fname + \" : \" + e.getMessage());", "      }", "    }", "    else", "    {", "      logger.debug(\"xxxxxx delete failed : \" + fname + \" : last modified \" + date);", "    }", "  }", "}", "", "logger.debug(\"##### total \" + n + \" files deleted (\" + tsize + \" bytes)\");" ],
+    "ui_layout" : null,
+    "ui_script" : null,
+    "params" : null,
+    "java_class" : "com.amplix.scheduler.job.CClearResources"
+  } ]
+}

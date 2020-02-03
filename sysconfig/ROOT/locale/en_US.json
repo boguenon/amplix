@@ -2265,6 +2265,10 @@
 			"value": "Schedule Monitoring"
 		},
 		{
+			"name": "I_SCHEDULE_MOD",
+			"value": "Schedule Module"
+		},
+		{
 			"name": "L_LST_SCH",
 			"value": "Schedule List"
 		},
@@ -4739,6 +4743,10 @@
 		{
 			"name": "D_NLP",
 			"value": "Autobot Corpus"
+		},
+		{
+			"name": "L_CACHE_REFRESH",
+			"value": "Cache Build after Clear"
 		}
 	]
 }

@@ -119,6 +119,10 @@
 						{
 							"name": "Schedule Server Status",
 							"cls": "ig_schedule"
+						},
+						{
+							"name": "Schedule Programming",
+							"cls": "ig_schedule_prog"
 						}
 					]
 				}
