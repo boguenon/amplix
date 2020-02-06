@@ -76,9 +76,10 @@ var ig$ = {
             window._btn_handler(view, key);
         }}
     ],
+	echarts_theme: "amplix",
 	appInfo: {
-		date: "202002052325",
-		web_revision: "976-3.5.67-138-ge9fbcd84"
+		date: "202002061814",
+		web_revision: "985-3.5.67-147-g4df01fa9"
 	}
     // hide_report_help: true
 };
