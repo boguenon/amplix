@@ -34,23 +34,23 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202002091032" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202002091425" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202002091032" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202002091425" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202002091032" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202002091425" />
 <%
 if (igc_theme != null)
 {
 	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/theme_" + igc_theme_name + ".css\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202002091032" />
+<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202002091425" />
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202002091032"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202002091032"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202002091032"></script>
+<script type="text/javascript" src="../config.js?_dc=202002091425"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202002091425"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202002091425"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -125,31 +125,8 @@ function loadParameter(param) {
 ig$.appInfo.apprelease = "<%= version%>";
 ig$.bootconfig.cache = ig$.appInfo.apprelease + "_" + ig$.appInfo.date.replace(/[{}]/g, "");
 
-var bc = ig$.bootconfig.boot,
-    scripts,
-    i, j,
-    modules = ["framework", "vis_ec", "app_viewer", "custom_viewer", "appnc", "custom"],
-    s, cache = ig$.bootconfig.cache || new Date().getTime(),
-    __microloader = function() {
-        while (mod = modules.shift())
-        {
-            var sc = bc[mod];
-            
-            if (sc && sc.length)
-            {
-                IG$.getScriptCache(
-                    sc, 
-                    new IG$.callBackObj(this, function() {
-                        __microloader();
-                    }),
-                    mod == "appnc"
-                );
-                break;
-            }
-        }
-    };
-
-__microloader();
+var modules = ["framework", "vis_ec", "vis_ec_theme", "app_viewer", "custom_viewer", "appnc", "custom"];
+IG$.__microloader(modules);
 </script>
 </head>
 <body scroll="no">

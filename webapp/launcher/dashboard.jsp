@@ -34,11 +34,11 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202002091032" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202002091425" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202002091032" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202002091425" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202002091032" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202002091425" />
 
 <%
 if (igc_theme != null)
@@ -48,9 +48,9 @@ if (igc_theme != null)
 %>
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202002091032"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202002091032"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202002091032"></script>
+<script type="text/javascript" src="../config.js?_dc=202002091425"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202002091425"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202002091425"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -125,31 +125,8 @@ function loadParameter(param) {
 ig$.appInfo.apprelease = "<%= version%>";
 ig$.bootconfig.cache = ig$.appInfo.apprelease + "_" + ig$.appInfo.date.replace(/[{}]/g, "");
 
-var bc = ig$.bootconfig.boot,
-    scripts,
-    i, j,
-    modules = ["framework", "vis_ec", "app_dashboard", "appnc", "custom"],
-    s, cache = ig$.bootconfig.cache || new Date().getTime(),
-    __microloader = function() {
-        while (mod = modules.shift())
-        {
-            var sc = bc[mod];
-            
-            if (sc && sc.length)
-            {
-                IG$.getScriptCache(
-                    sc, 
-                    new IG$.callBackObj(this, function() {
-                        __microloader();
-                    }),
-                    mod == "appnc"
-                );
-                break;
-            }
-        }
-    };
-
-__microloader();
+var modules = ["framework", "vis_ec", "vis_ec_theme, ""app_dashboard", "appnc", "custom"];
+IG$.__microloader(modules);
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -307,7 +284,7 @@ ig$.dashboard_custom = {
 };
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202002091032"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202002091425"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
