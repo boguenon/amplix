@@ -18,9 +18,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - PDF viewer before downloading file
 - PDF template updates to PDFBox library
 - Database cache enhanced to daily scheduled refresh
+- Download multiple sheets with excel button
 
 ### Fixed
 - Fixed issue on duplicated names on root folder. Prevents rename and save content with duplicated names on same folder and root folder.
+- Fixed issue on performance for loading variables.
+- Fixed issue on scheduler.
+- Drill down between dashboard sheets fixed
 
 ## [4.1.1] - 2020-01-26
 ### Added
