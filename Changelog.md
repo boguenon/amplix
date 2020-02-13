@@ -20,10 +20,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Database cache enhanced to daily scheduled refresh
 - Download multiple sheets with excel button
 
+### Removed
+- Database register UI changed with removing timeline viewer on right side dock.
+
 ### Fixed
 - Fixed issue on duplicated names on root folder. Prevents rename and save content with duplicated names on same folder and root folder.
 - Fixed issue on performance for loading variables.
 - Fixed issue on scheduler.
+- Fixed issue on cluster charts when removing cluster dimension
 - Drill down between dashboard sheets fixed
 
 ## [4.1.1] - 2020-01-26
