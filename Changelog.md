@@ -19,9 +19,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - PDF template updates to PDFBox library
 - Database cache enhanced to daily scheduled refresh
 - Download multiple sheets with excel button
+- Role management (Adding existing user)
+- amplix.properties changes : move most feature to system configuration UI
+- single sign on module configuration moved to system configuration
 
 ### Removed
 - Database register UI changed with removing timeline viewer on right side dock.
+- Removed db paging functions (fetch all rows from databases)
 
 ### Fixed
 - Fixed issue on duplicated names on root folder. Prevents rename and save content with duplicated names on same folder and root folder.
@@ -29,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed issue on scheduler.
 - Fixed issue on cluster charts when removing cluster dimension
 - Drill down between dashboard sheets fixed
+- Row count mismatch more than 8000 records
 
 ## [4.1.1] - 2020-01-26
 ### Added
