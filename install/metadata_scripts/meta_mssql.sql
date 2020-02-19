@@ -181,6 +181,9 @@ CREATE UNIQUE INDEX idx_dbareq_01 ON igcdbareq(reqid);
 CREATE UNIQUE INDEX idx_dbareq_02 ON igcdbareq(fuid, sid);
 CREATE TABLE igcsso (	mtu CHAR(17) NOT NULL,	muid CHAR(17) NOT NULL,	ssomod VARCHAR(20) NOT NULL,	fname VARCHAR(200) NOT NULL,	seq INTEGER NOT NULL,	svalue VARCHAR(255) NOT NULL,	mdate BIGINT NOT NULL,  	cdate BIGINT NOT NULL);
 CREATE UNIQUE INDEX idx_sso_01 ON igcsso(mtu, muid, ssomod, fname, seq);
+CREATE TABLE igcshare (	suid CHAR(17) NOT NULL,	mtu CHAR(17) NOT NULL,	muid CHAR(17) NOT NULL,	p_status CHAR(1) NOT NULL,	b_public CHAR(1) NOT NULL,	p_url VARCHAR(255) NOT NULL,	acc_count INTEGER NOT NULL,	cdate BIGINT NOT NULL,	mdate BIGINT NOT NULL,	ldate BIGINT NOT NULL);
+CREATE UNIQUE INDEX idx_share_01 ON igcshare(suid);
+CREATE INDEX idx_share_02 ON igcshare(suid, mtu, muid);
 CREATE TABLE igccudlog (suid CHAR(17) NOT NULL, nickname VARCHAR(255) NOT NULL, p_status INTEGER NOT NULL, cdate BIGINT NOT NULL,mdate BIGINT NOT NULL);
 CREATE UNIQUE INDEX idx_cudlog_01 ON igccudlog(suid);
 CREATE TABLE igccuddata (suid CHAR(17) NOT NULL, seq INTEGER NOT NULL, cdate BIGINT NOT NULL, s_intent VARCHAR(255) NOT NULL, s_utter VARCHAR(255) NOT NULL, s_resp VARCHAR(255) NOT NULL);
@@ -442,7 +445,7 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (22, 2, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (23, 2, 'rest','rest','REST WebService','rest',1);
 DELETE FROM igcserver;
 INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '4.0', 1574914423042);
-INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '4.12', 1574914423042);
+INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '4.13', 1574914423042);
 
 
 UPDATE igcusers SET upasswd='46E3D772A1888EADFF26C7ADA47FD7502D796E07' WHERE userid='admin';

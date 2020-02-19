@@ -445,7 +445,7 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (22, 2, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (23, 2, 'rest','rest','REST WebService','rest',1);
 DELETE FROM igcserver;
 INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '4.0', 1574914457438);
-INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '4.12', 1574914457438);
+INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '4.13', 1574914457438);
 
 
 UPDATE igcusers SET upasswd='46E3D772A1888EADFF26C7ADA47FD7502D796E07' WHERE userid='admin';
