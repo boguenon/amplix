@@ -35,6 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Management : License updates by file upload
 - Module : Backup and restore meta content
 - Module : Data execution module updated to support large query results.
+- Export : Added paper size A3, A2, A1, A0
 
 ## [4.1.2] - 2020-02-10
 ### Added
