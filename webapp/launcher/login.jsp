@@ -34,14 +34,14 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202002270206" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202003032353" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202002270206" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003032353" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202002270206" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003032353" />
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202002270206"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202002270206"></script>
+<script type="text/javascript" src="../config.js?_dc=202003032353"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202003032353"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";

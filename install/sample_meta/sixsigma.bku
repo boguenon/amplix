@@ -1,0 +1,17 @@
+{
+  "export_meta" : [ {
+    "meta_type" : "metacontent",
+    "objinfo" : { },
+    "name" : "SixSigma Samples",
+    "type" : "Folder",
+    "uid" : "2f7a4c5b-566c4791",
+    "description" : "",
+    "memo" : "",
+    "pid" : "2f7a4c5b-566c4791",
+    "nodepath" : "/SixSigma Samples",
+    "writable" : true,
+    "manage" : true,
+    "is_sub" : false,
+    "attributes" : { }
+  } ]
+}

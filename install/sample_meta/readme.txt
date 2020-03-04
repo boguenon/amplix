@@ -1,0 +1,1 @@
+## Sample data content loadable on installation or import meta contents

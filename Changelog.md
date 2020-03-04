@@ -6,6 +6,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.1.3] - 2020-03-05
+### Added
+- Chart : Yaxis logbase scale
+- Chart : Yaxis logarithm support
+- Chart : Individual series line type attribute
+- Chart : Individual Series line width attribute
+- Chart : Added Quality Statistics group
+- Chart : Added Pareto chart
+- Chart : Added Control chart for Quality
+- Scheduler : Cancel and purge scheduled running
+- Export to excel : Chart image with tabular data options.
+- Feature : Statistics Viewer comp. SPSS
+- Installer : Loading sample reports and dashboard
+- Feature : Meta content editor for developers
+- Sample : Six Sigma Quality control examples with semiconductor mfg sample data set. Table name : mfg_qstat
+
+### Fixed
+- Analysis : Ranged group custom dimension
+- Analysis : Fixed issues on cluster and cluster visualization
+- Framework : Tab resizing issues
+- Framework : Oversized toolbar with popup button
+- Export to pdf : Asian font options
+- Export to pdf : Scale down to fix paper
+- Scheduler : Fixed issue on loading results with empty or failed events
+
+### Enhancement
+- Management : License updates by file upload
+- Module : Backup and restore meta content
+- Module : Data execution module updated to support large query results.
+
 ## [4.1.2] - 2020-02-10
 ### Added
 - Start using changelog and applying rules for code maintenance.

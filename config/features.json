@@ -389,6 +389,10 @@
 						{
 							"name": "Edit Cube",
 							"cls": "ig_n_e_cube"
+						},
+						{
+							"name": "Edit Meta Content",
+							"cls": "ig_n_e_meta"
 						}
 					]
 				},
