@@ -30,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Export to pdf : Asian font options
 - Export to pdf : Scale down to fix paper
 - Scheduler : Fixed issue on loading results with empty or failed events
+- Analysis : Formula Measure query generation error fixed
 
 ### Enhancement
 - Management : License updates by file upload

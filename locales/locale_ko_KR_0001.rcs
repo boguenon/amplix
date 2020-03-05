@@ -5,3 +5,6 @@ A;L_LINE_TYPE;라인유형
 A;L_LINE_WIDTH;라인폭
 A;T_META_EXP;메타 백업
 A;L_META_EXP_OPT;메타 백업 옵션
+A;T_ANAL_WIZARD;분석 통계 마법사
+A;L_ASTEP_1;분석 옵션 1단계
+A;L_ASTEP_2;분석 옵션 2단계
