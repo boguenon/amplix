@@ -3591,5 +3591,17 @@
     "group" : "locale_ko_KR_0001",
     "name" : "L_META_EXP_OPT",
     "value" : "메타 백업 옵션"
+  }, {
+    "group" : "locale_ko_KR_0001",
+    "name" : "T_ANAL_WIZARD",
+    "value" : "분석 통계 마법사"
+  }, {
+    "group" : "locale_ko_KR_0001",
+    "name" : "L_ASTEP_1",
+    "value" : "분석 옵션 1단계"
+  }, {
+    "group" : "locale_ko_KR_0001",
+    "name" : "L_ASTEP_2",
+    "value" : "분석 옵션 2단계"
   } ]
 }

@@ -3591,5 +3591,17 @@
     "group" : "locale_zh_CN_0001",
     "name" : "L_META_EXP_OPT",
     "value" : "Meta Export Option"
+  }, {
+    "group" : "locale_zh_CN_0001",
+    "name" : "T_ANAL_WIZARD",
+    "value" : "Analyis Stat Wizard"
+  }, {
+    "group" : "locale_zh_CN_0001",
+    "name" : "L_ASTEP_1",
+    "value" : "Statistics Option Step 1"
+  }, {
+    "group" : "locale_zh_CN_0001",
+    "name" : "L_ASTEP_2",
+    "value" : "Statistics Option Step 2"
   } ]
 }
