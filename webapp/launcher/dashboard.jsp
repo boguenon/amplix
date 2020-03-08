@@ -34,11 +34,11 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202003080945" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202003081113" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003080945" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003081113" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003080945" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003081113" />
 
 <%
 if (igc_theme != null)
@@ -48,9 +48,9 @@ if (igc_theme != null)
 %>
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202003080945"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202003080945"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202003080945"></script>
+<script type="text/javascript" src="../config.js?_dc=202003081113"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202003081113"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202003081113"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -129,90 +129,40 @@ var modules = ["framework", "vis_ec", "vis_ec_theme", "app_dashboard", "appnc", 
 IG$.__microloader(modules);
 </script>
 <script type="text/javascript">
-$(document).ready(function() {
-	var btn_logout = $("#igc_logout"),
-		igc_login_dr = $("#igc_login_dr"),
-		m_user = $("#m_user"),
-		m_pwd = $("#m_pwd"),
-		m_passwd = $("#m_passwd", m_user),
-		m_logout = $("#m_logout", m_user),
-		m_style = $("#m_style"),
-		doc = $(document),
-		body = $("body"),
-		f = function(e) {
-			m_user.hide();
-			doc.unbind("click", f);
+IG$.ready(function() {
+	var menu_logout = new IG$._menu_button($(".user-info"), [
+		{
+			nmae: "b_passwd",
+			text: "Password",
+			handler: function() {
+				var m_pwd = $("#m_pwd"),
+					u1 = $("#u1", m_pwd),
+					u2 = $("#u2", m_pwd),
+					u3 = $("#u3", m_pwd);
+					
+				u1.val("");
+				u2.val("");
+				u3.val("");
+				
+				m_pwd.show();
+			}
 		},
-		f1 = function(e) {
-			m_style.hide();
-			doc.unbind("click", f1);
-		},
-		b_style = $("#b_style");
-	
-	btn_logout.bind("click", function() {
-		IG$.showLogout();
-	});
-	
-	m_logout.bind("click", function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-		
-		m_user.hide();
-		doc.unbind("click", f);
-		
-		IG$.showLogout();
-	});
-	
-	m_passwd.bind("click", function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-
-		doc.unbind("click", f);
-		
-		var u1 = $("#u1", m_pwd),
-			u2 = $("#u2", m_pwd),
-			u3 = $("#u3", m_pwd);
-			
-		u1.val("");
-		u2.val("");
-		u3.val("");
-		
-		m_pwd.show();
-		
-		m_user.hide();
-	});
-	
-	igc_login_dr.bind("click", function(e) {
-		e.stopPropagation();
-		e.preventDefault();
-		
-		m_user.css({
+		{
+			nmae: "b_logout",
+			text: "Logout",
+			handler: function() {
+				IG$.showLogout();
+			}
+		}
+	], {
+		btn_styles: ["fadeInRight"],
+		menu_position: {
 			top: 20,
 			left: "initial",
 			right: 10
-		});
-		m_user.toggle();
-		m_style.hide();
-		doc.bind("click", f);
-		doc.unbind("click", f1);
+		}
 	});
-	
-	b_style.bind("click", function(e) {
-		e.stopPropagation();
-		e.preventDefault();
-		
-		m_style.css({
-			top: 20,
-			left: "initial",
-			right: 10
-		});
-		
-		m_user.hide();
-		doc.unbind("click", f);
-		
-		m_style.toggle();
-		doc.bind("click", f1);
-	});
+	menu_logout.create();
 	
 	window.app_themes = function(themes) {
 		var m_style = $("#m_style");
@@ -284,7 +234,7 @@ ig$.dashboard_custom = {
 };
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003080945"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003081113"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
@@ -396,12 +346,6 @@ $(document).ready(function() {
  		</div>
  	</div>
  	
- 	<ul id="m_user" class="dropdown-menu animated fadeInRight m-t-xs">
-        <li><a class="btn_button" id="m_passwd">Password</a></li>
-        <li class="divider"></li>
-        <li><a class="btn_button" id="m_logout">Logout</a></li>
-    </ul>
-    
     <ul id="m_style" class="dropdown-menu animated fadeInRight m-t-xs">
     </ul>
     
