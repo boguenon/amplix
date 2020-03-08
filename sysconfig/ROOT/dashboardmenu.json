@@ -88,6 +88,13 @@
       "updatedate" : 0,
       "status" : 0
     } ],
-    "level" : 0
+    "level" : 0,
+    "options" : {
+      "ltype" : "report",
+      "html" : "",
+      "rptl" : "corona1",
+      "rptl_uid" : "b6da35b9-d9d24375",
+      "scrp" : ""
+    }
   } ]
 }
