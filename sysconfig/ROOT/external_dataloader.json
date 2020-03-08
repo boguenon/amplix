@@ -1,0 +1,19 @@
+{
+  "meta_type" : "schedule_config",
+  "objinfo" : { },
+  "type" : "Unknown",
+  "writable" : false,
+  "manage" : false,
+  "is_sub" : false,
+  "attributes" : { },
+  "programs" : [ {
+    "name" : "test",
+    "description" : null,
+    "java_source" : null,
+    "ui_layout" : null,
+    "ui_script" : null,
+    "params" : null,
+    "intent" : null,
+    "java_class" : "com.amplix.external.dataloader.tes"
+  } ]
+}

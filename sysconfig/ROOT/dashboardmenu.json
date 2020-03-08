@@ -1,1 +1,93 @@
-{"meta_type":"dashboard_menu","objinfo":{},"type":"Unknown","uid":"/SYS_Config/dashboardmenu","writable":false,"manage":false,"is_sub":false,"attributes":{},"menustructure":[{"name":"test","items":[{"name":"Opportunity Count","uid":"63311ed0-d25043c1","nodepath":"/2. Opportunity Tracking/Opportunity Count","type":"Report","rankcount":0,"hidecolumn":false,"ispageitem":false,"calcmode":false,"isnewitem":false,"sequence":0,"updatedate":0,"status":0},{"name":"Revenue Overview","uid":"1da55b0a-04524452","nodepath":"/2. Opportunity Tracking/Revenue Overview","type":"Report","rankcount":0,"hidecolumn":false,"ispageitem":false,"calcmode":false,"isnewitem":false,"sequence":0,"updatedate":0,"status":0},{"name":"Upcoming Opportunity","uid":"a577eeb3-70c5422a","nodepath":"/2. Opportunity Tracking/Upcoming Opportunity","type":"Report","rankcount":0,"hidecolumn":false,"ispageitem":false,"calcmode":false,"isnewitem":false,"sequence":0,"updatedate":0,"status":0}],"level":0,"options":{"ltype":"report","html":"","rptl":"IT Spend Trend","scrp":"","rptl_uid":"79ccd0ad-66c041f3"}},{"name":"Test2","items":[{"name":"Growth Opportunities","uid":"7dbe5db1-dfec457b","nodepath":"/3. Sales and Marketing/Growth Opportunities","type":"Report","rankcount":0,"hidecolumn":false,"ispageitem":false,"calcmode":false,"isnewitem":false,"sequence":0,"updatedate":0,"status":0},{"name":"Market Share","uid":"718a4f35-0688455a","nodepath":"/3. Sales and Marketing/Market Share","type":"Report","rankcount":0,"hidecolumn":false,"ispageitem":false,"calcmode":false,"isnewitem":false,"sequence":0,"updatedate":0,"status":0},{"name":"Sentiment","uid":"bbf96803-49ec4c6a","nodepath":"/3. Sales and Marketing/Sentiment","type":"Report","rankcount":0,"hidecolumn":false,"ispageitem":false,"calcmode":false,"isnewitem":false,"sequence":0,"updatedate":0,"status":0},{"name":"YTD Category","uid":"5b3c21c2-945f49bf","nodepath":"/3. Sales and Marketing/YTD Category","type":"Report","rankcount":0,"hidecolumn":false,"ispageitem":false,"calcmode":false,"isnewitem":false,"sequence":0,"updatedate":0,"status":0}],"level":0}]}
+{
+  "meta_type" : "dashboard_menu",
+  "objinfo" : { },
+  "type" : "Unknown",
+  "uid" : "/SYS_Config/dashboardmenu",
+  "writable" : false,
+  "manage" : false,
+  "is_sub" : false,
+  "attributes" : { },
+  "menustructure" : [ {
+    "name" : "Corona",
+    "items" : [ {
+      "name" : "corona1",
+      "uid" : "b6da35b9-d9d24375",
+      "nodepath" : "/Corona19/corona1",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "corona2",
+      "uid" : "7b6e9d32-c0e64618",
+      "nodepath" : "/Corona19/corona2",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "corona3",
+      "uid" : "79fa0616-1ed147c1",
+      "nodepath" : "/Corona19/corona3",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "corona4",
+      "uid" : "01c02db6-751e4a61",
+      "nodepath" : "/Corona19/corona4",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "corona5",
+      "uid" : "68a5c19d-e8a04956",
+      "nodepath" : "/Corona19/corona5",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "corona6",
+      "uid" : "e95c6eab-f3d04502",
+      "nodepath" : "/Corona19/corona6",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    } ],
+    "level" : 0
+  } ]
+}
