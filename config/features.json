@@ -407,6 +407,14 @@
 						{
 							"name": "save",
 							"cls": "ig_m_saveas"
+						},
+						{
+							"name": "private workspace",
+							"cls": "ig_m_prv_ws"
+						},
+						{
+							"name": "team workspace",
+							"cls": "ig_m_team_ws"
 						}
 					]
 				}

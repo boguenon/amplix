@@ -3603,5 +3603,161 @@
     "group" : "locale_ko_KR_0001",
     "name" : "L_ASTEP_2",
     "value" : "분석 옵션 2단계"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "B_PRIV_FLD",
+    "value" : "나의 작업공간"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "B_PUB_FLD",
+    "value" : "팀 작업공간"
+  }, {
+    "group" : "locale_ko_KR_0001",
+    "name" : "L_BASE_CLASS",
+    "value" : "베이스 클래스"
+  }, {
+    "group" : "locale_ko_KR_0001",
+    "name" : "L_LOGIC_TYPE",
+    "value" : "함수 유형 선택"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_VAL_SEL",
+    "value" : "값 선택"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_CASE_INS",
+    "value" : "대소문자 구별"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_POP_DLG",
+    "value" : "값 선택 팝업 윈도우"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_VMODE",
+    "value" : "값보기 모드"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_RNG_VAL",
+    "value" : "범위값 지정"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_RNG_TXT",
+    "value" : "범위값 표시 텍스트"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_NEC",
+    "value" : "필수 항목"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_SEL_ALL",
+    "value" : "전체 선택 가능"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_SEL_TXT",
+    "value" : "전체 선택 표시 텍스트"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_HIE_FLT",
+    "value" : "상위 필터 목록"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_FMT_VAL",
+    "value" : "값 포맷 형식"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_U_PROMPT",
+    "value" : "프롬프트로 처리"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_TAB_PNL",
+    "value" : "탭 패널 선택"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_LOOKUP",
+    "value" : "코드 맵핑 필드"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_DEF_VAL",
+    "value" : "기본값 선택"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_START_ROW",
+    "value" : "다음행 첫열에 표시"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_MERGE_LEFT",
+    "value" : "타이틀을 왼쪽에 붙임"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_AUTO_WIDTH",
+    "value" : "자동 폭 계산"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_COLSPAN",
+    "value" : "컬럼 폭 스팬 지정"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_CHECK_LAYOUT",
+    "value" : "체크 버튼 레이아웃"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_DT_SEL_TYP",
+    "value" : "날짜 선택 유형"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_YEAR_FR",
+    "value" : "시작 년도 제한"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_YEAR_TO",
+    "value" : "종료 년도 제한"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_SHOW_DT_SEL",
+    "value" : "날짜 선택 콤보 표시"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_DT_START",
+    "value" : "시작일"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_DT_END",
+    "value" : "종료일"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_INV_JS",
+    "value" : "외부 JavaScript 검증"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_SHOW_WHEN",
+    "value" : "프롬프트 표시(숨김) 조건"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_SHOW_WHEN_VALUES",
+    "value" : "숨김 조건 선택값 지정"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_VS_EN",
+    "value" : "선택값 그룹핑 표시"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_VS_TITLE",
+    "value" : "선택값 그룹 타이틀"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_VS_FORCE",
+    "value" : "선택 그룹값 자동 선택"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_FLT_VS_EXP",
+    "value" : "상세 필터링 버튼 표시"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_BTN_VALUESET",
+    "value" : "값 선택 목록"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_EDIT_META",
+    "value" : "메타 편집기"
   } ]
 }

@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.1.4] - 2020-03-15
+### Fixed
+- SQL Injection protection enforced to prepared statement for filter values
+- Copy and paste in explorer fixed
+
+### Enhancement
+- Prompt filter layouting designer
+- Prompt default value sets
+
 ## [4.1.3] - 2020-03-05
 ### Added
 - Chart : Yaxis logbase scale
