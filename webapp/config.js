@@ -68,6 +68,11 @@ var ig$ = {
         {code: "ja_JP", disp: "Japan", l1: "ユーザーID", l2: "パスワード", l3: "ログイン"},
 		{code: "ko_KR", disp: "Korean", l1: "사용자 아이디", l2: "패스워드", l3: "로그인"}
     ],
+    themes: [
+    	{code: "", disp: "Basic"},
+    	{code: "DesertLight", disp: "Desert Light"},
+    	{code: "DarkBrown", disp: "Dark Brown"}
+    ],
     sheet_toolbar: [
         {name: "Custom1", key: "custom1", label: "Custom1", cls: "igc-btn-text", handler: function(view, key) {
             window._btn_handler(view, key);
@@ -78,8 +83,8 @@ var ig$ = {
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202003231543",
-		web_revision: "1120-4.13-47-g4673f0df"
+		date: "202003261506",
+		web_revision: "1123-4.13-50-g72eaa579"
 	}
     // hide_report_help: true
 };

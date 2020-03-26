@@ -3759,5 +3759,21 @@
     "group" : "locale_ja_JP_0002",
     "name" : "L_EDIT_META",
     "value" : "Edit MetaContent"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "L_BORDER_INNER",
+    "value" : "Inner Borders"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "L_BORDER_OUTER",
+    "value" : "Outer Borders"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "L_BORDER_LEFT",
+    "value" : "Border Left"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "L_BORDER_TOP",
+    "value" : "Border Top"
   } ]
 }

@@ -9,6 +9,9 @@
 	String mts = request.getParameter("mts");
 	mts = (mts == null) ? "" : mts;
 	
+	String theme = request.getParameter("theme");
+    theme = (theme == null) ? "" : theme;
+	
 	boolean is_debug = (request.getParameter("debug") != null && request.getParameter("debug").equals("true") ? true : false);
 %>
 <!DOCTYPE html>
@@ -34,14 +37,14 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202003231543" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202003261506" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003231543" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003261506" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003231543" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003261506" />
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202003231543"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202003231543"></script>
+<script type="text/javascript" src="../config.js?_dc=202003261506"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202003261506"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";
@@ -71,6 +74,9 @@ function parseLocation() {
 			case 'lang':
 				useLocale = hvalue;
 				break;
+			case "theme":
+				ig$.theme_id = hvalue;
+            	break;
 			case 'app':
 				loadingApp = hvalue;
 				break;
@@ -78,6 +84,8 @@ function parseLocation() {
 		}
 	}
 }
+
+ig$.theme_id = ig$.theme_id || "<%=theme%>" || $.cookie("theme");
 
 function initPage() {
 	var uid = $.cookie("lui") || "",
@@ -134,6 +142,59 @@ function initPage() {
 			}
 		}
 	});
+	
+	$("#b_theme").bind("change", function(e) {
+        var b_theme = $("#b_theme"),
+            selvalue = $("option:selected", b_theme).val(),
+            redirect = $(location).attr('href'),
+            p, hv, h = {},
+            k, v,
+            i, s = false;
+        
+        if (selvalue != ig$.theme_id)
+        {
+        	$.removeCookie("theme");
+        	$.cookie("theme", selvalue, {
+        		path: "/"
+        	});
+        	
+            if (redirect.indexOf("?") > -1)
+            {
+                p = redirect.substring(0, redirect.indexOf("?"));
+                hv = redirect.substring(redirect.indexOf("?") + 1);
+                h = hv.split("&");
+                
+                for (i=0; i < h.length; i++)
+                {
+                    if (h[i].substring(0, 6) == "theme=")
+                    {
+                        h[i] = h[i].substring(0, 6) + selvalue;
+                        s = true;
+                        break;
+                    }
+                }
+                
+                if (!s)
+                {
+                	h.push("theme=" + selvalue);
+                	s = true;
+                }
+                
+                hv = h.join("&");
+                
+                redirect = p + "?" + hv;
+            }
+            
+            if (s == true)
+            {
+                bg.show();
+                
+                setTimeout(function() {
+                    window.location.replace(redirect);
+                }, 100);
+            }
+        }
+    });
 		
 	$('#login_btn').bind('click', function() {
 		var userid = $('#userid').val(),

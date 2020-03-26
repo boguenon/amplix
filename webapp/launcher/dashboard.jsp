@@ -12,15 +12,7 @@
 
     String version = com.amplix.rpc.igcServer.version;
     
-    String igc_theme = request.getParameter("igc_theme");
-    igc_theme = (igc_theme != null && "".equals(igc_theme) == true) ? null : igc_theme;
-    
-    String igc_theme_name = null;
-    
-    if (igc_theme != null)
-    {
-    	igc_theme_name = igc_theme.toLowerCase().replaceAll(" ", "");
-    }
+    String theme = request.getParameter("theme");
 	
 	boolean is_debug = (request.getParameter("debug") != null && request.getParameter("debug").equals("true") ? true : false);
 %>
@@ -34,23 +26,22 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202003231543" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202003261506" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003231543" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003261506" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003231543" />
-
 <%
-if (igc_theme != null)
+if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/theme_" + igc_theme_name + ".css\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202003261506\" />");
 }
 %>
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003261506" />
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202003231543"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202003231543"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202003231543"></script>
+<script type="text/javascript" src="../config.js?_dc=202003261506"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202003261506"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202003261506"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -82,9 +73,9 @@ function getLocale()
 getLocale();
 
 <%
-	if (igc_theme != null)
+	if (theme != null && theme.length() > 0)
 	{
-		out.println("ig$.theme_id=\"" + igc_theme + "\";");
+		out.println("ig$.theme_id=\"" + theme + "\";");
 	}
 %>
 
@@ -124,6 +115,13 @@ function loadParameter(param) {
 <script type="text/javascript">
 ig$.appInfo.apprelease = "<%= version%>";
 ig$.bootconfig.cache = ig$.appInfo.apprelease + "_" + ig$.appInfo.date.replace(/[{}]/g, "");
+
+<%
+if (theme != null && theme.length() > 0)
+{
+	out.println("ig$.theme_id=\"" + theme + "\";");
+}
+%>
 
 var modules = ["framework", "vis_ec", "vis_ec_theme", "app_dashboard", "appnc", "custom"];
 IG$.__microloader(modules);
@@ -234,7 +232,7 @@ ig$.dashboard_custom = {
 };
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003231543"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003261506"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
