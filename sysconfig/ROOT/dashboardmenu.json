@@ -8,11 +8,11 @@
   "is_sub" : false,
   "attributes" : { },
   "menustructure" : [ {
-    "name" : "Corona",
+    "name" : "Test 1",
     "items" : [ {
-      "name" : "corona1",
-      "uid" : "b6da35b9-d9d24375",
-      "nodepath" : "/Corona19/corona1",
+      "name" : "trim3",
+      "uid" : "6e49584e-60f648f3",
+      "nodepath" : "/Tutorial/trim3",
       "type" : "Report",
       "rankcount" : 0,
       "hidecolumn" : false,
@@ -23,9 +23,9 @@
       "updatedate" : 0,
       "status" : 0
     }, {
-      "name" : "corona2",
-      "uid" : "7b6e9d32-c0e64618",
-      "nodepath" : "/Corona19/corona2",
+      "name" : "1. Cartesian",
+      "uid" : "1e452fe6-79464eb4",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/1. Cartesian",
       "type" : "Report",
       "rankcount" : 0,
       "hidecolumn" : false,
@@ -36,9 +36,9 @@
       "updatedate" : 0,
       "status" : 0
     }, {
-      "name" : "corona3",
-      "uid" : "79fa0616-1ed147c1",
-      "nodepath" : "/Corona19/corona3",
+      "name" : "2. Pie",
+      "uid" : "40cadb95-1efe4ecb",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/2. Pie",
       "type" : "Report",
       "rankcount" : 0,
       "hidecolumn" : false,
@@ -49,9 +49,9 @@
       "updatedate" : 0,
       "status" : 0
     }, {
-      "name" : "corona4",
-      "uid" : "01c02db6-751e4a61",
-      "nodepath" : "/Corona19/corona4",
+      "name" : "3. Radar",
+      "uid" : "6edd3ec4-46e64b12",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/3. Radar",
       "type" : "Report",
       "rankcount" : 0,
       "hidecolumn" : false,
@@ -62,9 +62,9 @@
       "updatedate" : 0,
       "status" : 0
     }, {
-      "name" : "corona5",
-      "uid" : "68a5c19d-e8a04956",
-      "nodepath" : "/Corona19/corona5",
+      "name" : "4. Bubble",
+      "uid" : "308fe1c4-eefd40c1",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/4. Bubble",
       "type" : "Report",
       "rankcount" : 0,
       "hidecolumn" : false,
@@ -75,9 +75,87 @@
       "updatedate" : 0,
       "status" : 0
     }, {
-      "name" : "corona6",
-      "uid" : "e95c6eab-f3d04502",
-      "nodepath" : "/Corona19/corona6",
+      "name" : "5. Scatter",
+      "uid" : "298fb35c-4cff4a5b",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/5. Scatter",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "6. Stacked Bar",
+      "uid" : "6191abdc-0bd24e42",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/6. Stacked Bar",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "7. Logarithm Scale Axis",
+      "uid" : "1c9e0683-55a04572",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/7. Logarithm Scale Axis",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "8. Dual Axis",
+      "uid" : "cb0687b7-a90440ac",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/8. Dual Axis",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "9. Band with Average",
+      "uid" : "a5d647a0-066e4bb2",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/9. Band with Average",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "10. Regression",
+      "uid" : "2ec80e68-c8fc45fb",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/10. Regression",
+      "type" : "Report",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    }, {
+      "name" : "11. Stacked Percentage",
+      "uid" : "6f103ffc-6efb476c",
+      "nodepath" : "/Northwind Examples/2. Data Visualization/11. Stacked Percentage",
       "type" : "Report",
       "rankcount" : 0,
       "hidecolumn" : false,
@@ -88,13 +166,6 @@
       "updatedate" : 0,
       "status" : 0
     } ],
-    "level" : 0,
-    "options" : {
-      "ltype" : "report",
-      "html" : "",
-      "rptl" : "corona1",
-      "rptl_uid" : "b6da35b9-d9d24375",
-      "scrp" : ""
-    }
+    "level" : 0
   } ]
 }
