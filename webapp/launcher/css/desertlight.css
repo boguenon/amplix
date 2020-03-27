@@ -2915,3 +2915,44 @@ a:active .webix_custom_radio {
 	border-bottom: 1px solid #e5e5e5;
 	background-color: #0c0c0c;
 }
+
+/*login*/
+.loginWindow {
+    background-color: #393939 !important;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: inherit;
+    color: #313131;
+}
+
+.login-ic {
+	position: relative;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-color: #4a4a4a;
+	color: #fff;
+}
+
+.loginWindow table {
+	color: #9c9c9c;
+}
+
+.loginWindow select,
+.loginWindow input {
+	background: #828282;
+	color: #f9f9f9;
+}
+
+.loginWindow input:hover {
+	background: #3c3c3c;
+}
+
+.login-mc #login_btn {
+	background-color: #272727;
+	border-color: #000;
+}
