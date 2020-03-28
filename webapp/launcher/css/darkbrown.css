@@ -3970,6 +3970,10 @@ div.webix_item_tab.webix_selected {
 .mainNav .colwrapper .column span {
 }
 
+.intro-figure .image {
+    background-color: #efefef;
+}
+
 /*login*/
 .loginWindow {
     background-color: #393939 !important;

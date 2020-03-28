@@ -191,7 +191,6 @@ body {
 }
 .webix_arrow_icon {
   color: #ffffff;
-  font-size: 18px;
   font-family: FontAwesome;
 }
 .webix_arrow_icon:before {
@@ -1058,6 +1057,13 @@ div.webix_modal_cover {
   color: #ffffff;
   text-transform: none;
 }
+
+.webix_layout_toolbar.webix_toolbar .webix_el_button, 
+.webix_layout_toolbar.webix_toolbar .webix_el_label, 
+.webix_layout_toolbar.webix_toolbar .webix_inp_label {
+  color: #ffffff;
+}
+
 .webix_inp_bottom_label {
   color: #ffffff;
 }
@@ -1697,7 +1703,6 @@ label.webix_required:after {
   content: "\f00d";
   color: #ffffff;
   font-family: FontAwesome;
-  font-size: 16px;
   display: block;
   cursor: pointer;
 }
@@ -2058,7 +2063,6 @@ label.webix_required:after {
 }
 .webix_menu-x .webix_submenu_icon,
 .webix_view.webix_menu .webix_submenu_icon {
-  font-size: 14px;
   font-family: FontAwesome;
 }
 .webix_menu.webix_view .webix_list_item:hover,
@@ -2914,6 +2918,88 @@ a:active .webix_custom_radio {
 .breadcrumbs {
 	border-bottom: 1px solid #e5e5e5;
 	background-color: #0c0c0c;
+}
+
+.intro-figure .image {
+    background-color: #666666;
+}
+
+.introbox h2 {
+	color: #eaeaea;
+}
+
+.recent-row {
+	color: #eaeaea;
+}
+
+/* analysis */
+.d_analysis .t_analysis th.anal-header {
+	background-color: #6b6b6b;
+}
+
+.d_analysis .t_analysis td.anal-header {
+	background-color: #565656;
+}
+
+.idv-br-stable table td {
+	color: #ececec;
+}
+
+.idv-br-stable-blue {
+	color: #ffed71;
+}
+
+.ig-navi-namecol {
+	color: #71ff6f;
+}
+
+.igc_design_mode .df-title {
+	color: #71ff6f;
+}
+
+/* filters */
+.df-item-row input[type="text"] {
+	background-color: #5a5a5a;
+	background-image: none;
+	color: #ffffff;
+}
+
+.df-item-row .df-filter-valuset select {
+	background-color: #5a5a5a;
+	color: #ffffff;
+}
+
+.df-title.df-title-error {
+	color: #ff6363;
+}
+
+/*loading */
+.igc-loading-box {
+	background-color: #505050;
+	border-color: #131313;
+}
+
+.igc-loading-proc .spinner > div {
+  background-color: #848484;
+}
+
+.igc-loading-box .igc-loading-msg button {
+	border: 0px solid #efefef;
+    background-color: #6b6b6b;
+    color: #fff;
+}
+
+#loading-mask {
+	
+}
+
+#loading {
+	background-color: #464646;
+	color: #fff;
+}
+
+#loading #lpt {
+	background-color: #8a8a8a;
 }
 
 /*login*/
