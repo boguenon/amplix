@@ -26,22 +26,22 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202003292147" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202003292338" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003292147" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003292338" />
 <% } %>
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202003292147\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202003292338\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003292147" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003292338" />
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202003292147"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202003292147"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202003292147"></script>
+<script type="text/javascript" src="../config.js?_dc=202003292338"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202003292338"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202003292338"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -71,13 +71,6 @@ function getLocale()
 }
 
 getLocale();
-
-<%
-	if (theme != null && theme.length() > 0)
-	{
-		out.println("ig$.theme_id=\"" + theme + "\";");
-	}
-%>
 
 var _report_prompt = [];
 <%
@@ -203,7 +196,7 @@ IG$.ready(function() {
 		    }
 	    }
 	    
-	    vars["igc_theme"] = themename;
+	    vars["theme"] = themename;
 	    
 	    nurl = url + "?";
 	    
@@ -216,23 +209,9 @@ IG$.ready(function() {
 	};
 });
 
-function _btn_handler(view, key) {
-	if (key == "custom1")
-	{
-		IG$._n2("013138da-01f4ab0a", "report", null, false);
-	}
-}
-
-ig$.dashboard_custom = {
-	menu_loaded: function(menus, panel, snav) {
-		var item = menus[0];
-		snav.empty();
-		panel.L3.call(panel, snav, item, 0);
-	}
-};
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003292147"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003292338"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
