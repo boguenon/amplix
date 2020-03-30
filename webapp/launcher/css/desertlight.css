@@ -3042,3 +3042,8 @@ a:active .webix_custom_radio {
 	background-color: #272727;
 	border-color: #000;
 }
+
+.dashboard_cnt {
+	background: #393939 -webkit-gradient(linear, left top, left 95%, from(#393939), to(#393939)) no-repeat;
+	color: #fff;
+}
