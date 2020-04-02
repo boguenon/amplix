@@ -3760,20 +3760,28 @@
     "name" : "L_EDIT_META",
     "value" : "Edit MetaContent"
   }, {
-    "group" : "locale_en_US_0003",
+    "group" : "locale_en_US_0004",
     "name" : "L_BORDER_INNER",
     "value" : "Inner Borders"
   }, {
-    "group" : "locale_en_US_0003",
+    "group" : "locale_en_US_0004",
     "name" : "L_BORDER_OUTER",
     "value" : "Outer Borders"
   }, {
-    "group" : "locale_en_US_0003",
+    "group" : "locale_en_US_0004",
     "name" : "L_BORDER_LEFT",
     "value" : "Border Left"
   }, {
-    "group" : "locale_en_US_0003",
+    "group" : "locale_en_US_0004",
     "name" : "L_BORDER_TOP",
     "value" : "Border Top"
+  }, {
+    "group" : "locale_en_US_0004",
+    "name" : "B_SET_STYLE",
+    "value" : "Set Style"
+  }, {
+    "group" : "locale_en_US_0004",
+    "name" : "L_FETCH_MODE",
+    "value" : "Fetch Mode"
   } ]
 }

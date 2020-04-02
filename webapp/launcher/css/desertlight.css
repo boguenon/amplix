@@ -2900,6 +2900,10 @@ a:active .webix_custom_radio {
 	color: #fff;
 }
 
+.dock-splitter {
+	background-color: #666666;
+} 
+
 /*dashboard*/
 #sidebar {
 	background-color: #393939;

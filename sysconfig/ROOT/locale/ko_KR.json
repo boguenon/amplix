@@ -3760,20 +3760,28 @@
     "name" : "L_EDIT_META",
     "value" : "메타 편집기"
   }, {
-    "group" : "locale_ko_KR_0003",
+    "group" : "locale_ko_KR_0004",
     "name" : "L_BORDER_INNER",
     "value" : "안쪽 보더"
   }, {
-    "group" : "locale_ko_KR_0003",
+    "group" : "locale_ko_KR_0004",
     "name" : "L_BORDER_OUTER",
     "value" : "바깥쪽 보더"
   }, {
-    "group" : "locale_ko_KR_0003",
+    "group" : "locale_ko_KR_0004",
     "name" : "L_BORDER_LEFT",
     "value" : "좌측 보더"
   }, {
-    "group" : "locale_ko_KR_0003",
+    "group" : "locale_ko_KR_0004",
     "name" : "L_BORDER_TOP",
     "value" : "상단 보더"
+  }, {
+    "group" : "locale_ko_KR_0004",
+    "name" : "B_SET_STYLE",
+    "value" : "스타일 설정"
+  }, {
+    "group" : "locale_ko_KR_0004",
+    "name" : "L_FETCH_MODE",
+    "value" : "데이타 조회 모드"
   } ]
 }
