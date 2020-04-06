@@ -600,8 +600,9 @@
     "name" : "D_DASHBOARD",
     "value" : "데시보드"
   }, {
+    "group" : "locale_ko_KR_0004",
     "name" : "L_DASHBOARD",
-    "value" : "데시보드"
+    "value" : "앱페이지"
   }, {
     "name" : "T_DASHBOARD",
     "value" : "데시보드"
@@ -3760,28 +3761,32 @@
     "name" : "L_EDIT_META",
     "value" : "메타 편집기"
   }, {
-    "group" : "locale_ko_KR_0004",
+    "group" : "locale_ko_KR_0003",
     "name" : "L_BORDER_INNER",
     "value" : "안쪽 보더"
   }, {
-    "group" : "locale_ko_KR_0004",
+    "group" : "locale_ko_KR_0003",
     "name" : "L_BORDER_OUTER",
     "value" : "바깥쪽 보더"
   }, {
-    "group" : "locale_ko_KR_0004",
+    "group" : "locale_ko_KR_0003",
     "name" : "L_BORDER_LEFT",
     "value" : "좌측 보더"
   }, {
-    "group" : "locale_ko_KR_0004",
+    "group" : "locale_ko_KR_0003",
     "name" : "L_BORDER_TOP",
     "value" : "상단 보더"
   }, {
-    "group" : "locale_ko_KR_0004",
+    "group" : "locale_ko_KR_0003",
     "name" : "B_SET_STYLE",
     "value" : "스타일 설정"
   }, {
-    "group" : "locale_ko_KR_0004",
+    "group" : "locale_ko_KR_0003",
     "name" : "L_FETCH_MODE",
     "value" : "데이타 조회 모드"
+  }, {
+    "group" : "locale_ko_KR_0002",
+    "name" : "L_RENDER_BY_MEA",
+    "value" : "메져별로 적용"
   } ]
 }

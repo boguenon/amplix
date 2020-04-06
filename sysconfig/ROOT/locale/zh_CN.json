@@ -600,8 +600,9 @@
     "name" : "D_DASHBOARD",
     "value" : "仪表板"
   }, {
+    "group" : "locale_zh_CN_0004",
     "name" : "L_DASHBOARD",
-    "value" : "仪表板"
+    "value" : "AppPage"
   }, {
     "name" : "T_DASHBOARD",
     "value" : "仪表板"
@@ -3604,11 +3605,11 @@
     "name" : "L_ASTEP_2",
     "value" : "Statistics Option Step 2"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "B_PRIV_FLD",
     "value" : "Private Folders"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "B_PUB_FLD",
     "value" : "My Team Folders"
   }, {
@@ -3620,171 +3621,171 @@
     "name" : "L_LOGIC_TYPE",
     "value" : "Select Logic Type"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_VAL_SEL",
     "value" : "Value Selection"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_CASE_INS",
     "value" : "Case Insensitive"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_POP_DLG",
     "value" : "Popup Window Selector"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_VMODE",
     "value" : "Value Mode"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_RNG_VAL",
     "value" : "Range Values"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_RNG_TXT",
     "value" : "Range Display Text"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_NEC",
     "value" : "Required Field"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_SEL_ALL",
     "value" : "Show Select All"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_SEL_TXT",
     "value" : "Select All Text"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_HIE_FLT",
     "value" : "Hierarchy Filters"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_FMT_VAL",
     "value" : "Value Format String"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_U_PROMPT",
     "value" : "Use as Prompt"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_TAB_PNL",
     "value" : "Tab Panel to Control"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_LOOKUP",
     "value" : "Code Mapping Field"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_DEF_VAL",
     "value" : "Default Values"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_START_ROW",
     "value" : "Start Row and First Column"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_MERGE_LEFT",
     "value" : "Title Merge on Left"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_AUTO_WIDTH",
     "value" : "Auto Width"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_COLSPAN",
     "value" : "Column Spans to"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_CHECK_LAYOUT",
     "value" : "Check button Layout"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_DT_SEL_TYP",
     "value" : "Date Selection Type"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_YEAR_FR",
     "value" : "Limits Year From"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_YEAR_TO",
     "value" : "Limits Year To"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_SHOW_DT_SEL",
     "value" : "Show Date Range Combo"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_DT_START",
     "value" : "Start Date"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_DT_END",
     "value" : "End Date"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_INV_JS",
     "value" : "External JS Validator"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_SHOW_WHEN",
     "value" : "Hide Condition"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_SHOW_WHEN_VALUES",
     "value" : "Show Values On"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_VS_EN",
     "value" : "Show ValueSet Group"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_VS_TITLE",
     "value" : "ValueSet Title"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_VS_FORCE",
     "value" : "Select Group OnLoad"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_FLT_VS_EXP",
     "value" : "Collapse/Expand Filters"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_BTN_VALUESET",
     "value" : "Value Set Group"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_EDIT_META",
     "value" : "Edit MetaContent"
   }, {
-    "group" : "locale_zh_CN_0003",
+    "group" : "locale_zh_CN_0002",
     "name" : "L_RENDER_BY_MEA",
     "value" : "Render by Measures"
   }, {
-    "group" : "locale_zh_CN_0004",
+    "group" : "locale_zh_CN_0003",
     "name" : "L_BORDER_INNER",
     "value" : "Inner Borders"
   }, {
-    "group" : "locale_zh_CN_0004",
+    "group" : "locale_zh_CN_0003",
     "name" : "L_BORDER_OUTER",
     "value" : "Outer Borders"
   }, {
-    "group" : "locale_zh_CN_0004",
+    "group" : "locale_zh_CN_0003",
     "name" : "L_BORDER_LEFT",
     "value" : "Border Left"
   }, {
-    "group" : "locale_zh_CN_0004",
+    "group" : "locale_zh_CN_0003",
     "name" : "L_BORDER_TOP",
     "value" : "Border Top"
   }, {
-    "group" : "locale_zh_CN_0004",
+    "group" : "locale_zh_CN_0003",
     "name" : "B_SET_STYLE",
     "value" : "Set Style"
   }, {
-    "group" : "locale_zh_CN_0004",
+    "group" : "locale_zh_CN_0003",
     "name" : "L_FETCH_MODE",
     "value" : "Fetch Mode"
   } ]
