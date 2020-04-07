@@ -83,8 +83,8 @@ var ig$ = {
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202004061544",
-		web_revision: "1147-4.13-74-gffc55a8d"
+		date: "202004071819",
+		web_revision: "1149-4.13-76-gd930700a"
 	}
     // hide_report_help: true
 };
