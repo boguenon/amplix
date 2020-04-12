@@ -2936,6 +2936,20 @@ a:active .webix_custom_radio {
 	color: #eaeaea;
 }
 
+.igc-p-color {
+    border: 1px solid #C1C1C1;
+    background-color: #393939;
+}
+
+.igc-toolbar-more {
+	background-color: #393939;
+}
+
+.igc-more-drop-menu {
+	background-color: #393939;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 /* analysis */
 .d_analysis .t_analysis th.anal-header {
 	background-color: #6b6b6b;
