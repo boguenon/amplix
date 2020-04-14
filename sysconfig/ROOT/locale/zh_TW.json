@@ -3788,5 +3788,25 @@
     "group" : "locale_zh_TW_0003",
     "name" : "L_FETCH_MODE",
     "value" : "Fetch Mode"
+  }, {
+    "group" : "locale_zh_TW_0004",
+    "name" : "L_FETCH_APPPAGE",
+    "value" : "Paged Fetch"
+  }, {
+    "group" : "locale_zh_TW_0004",
+    "name" : "L_FETCH_DBPAGE",
+    "value" : "Database Page"
+  }, {
+    "group" : "locale_zh_TW_0004",
+    "name" : "L_P_mapping",
+    "value" : "Parameter Mapping"
+  }, {
+    "group" : "locale_zh_TW_0004",
+    "name" : "T_HIERARCHY",
+    "value" : "Hierarchy"
+  }, {
+    "group" : "locale_zh_TW_0004",
+    "name" : "B_FORMULA",
+    "value" : "Formula"
   } ]
 }

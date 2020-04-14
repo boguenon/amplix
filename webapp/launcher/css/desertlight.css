@@ -2975,6 +2975,14 @@ a:active .webix_custom_radio {
 	color: #71ff6f;
 }
 
+.igc-cubemodelviewer {
+	background-color: #565656;
+}
+
+.igc-cm-join {
+	background-color: #000;
+}
+
 /* filters */
 .df-item-row input[type="text"] {
 	background-color: #5a5a5a;

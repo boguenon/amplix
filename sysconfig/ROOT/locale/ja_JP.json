@@ -3788,5 +3788,25 @@
     "group" : "locale_ja_JP_0002",
     "name" : "L_RENDER_BY_MEA",
     "value" : "Render by Measures"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "L_FETCH_APPPAGE",
+    "value" : "Paged Fetch"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "L_FETCH_DBPAGE",
+    "value" : "Database Page"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "L_P_mapping",
+    "value" : "Parameter Mapping"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "T_HIERARCHY",
+    "value" : "Hierarchy"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "B_FORMULA",
+    "value" : "Formula"
   } ]
 }

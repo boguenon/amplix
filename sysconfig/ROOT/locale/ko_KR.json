@@ -3788,5 +3788,25 @@
     "group" : "locale_ko_KR_0002",
     "name" : "L_RENDER_BY_MEA",
     "value" : "메져별로 적용"
+  }, {
+    "group" : "locale_ko_KR_0004",
+    "name" : "L_FETCH_APPPAGE",
+    "value" : "페이지별 패치"
+  }, {
+    "group" : "locale_ko_KR_0004",
+    "name" : "L_FETCH_DBPAGE",
+    "value" : "데이타베이스 패치"
+  }, {
+    "group" : "locale_ko_KR_0004",
+    "name" : "L_P_mapping",
+    "value" : "변수 치환"
+  }, {
+    "group" : "locale_ko_KR_0004",
+    "name" : "T_HIERARCHY",
+    "value" : "계층 디멘젼"
+  }, {
+    "group" : "locale_ko_KR_0004",
+    "name" : "B_FORMULA",
+    "value" : "수식"
   } ]
 }

@@ -1,1 +1,76 @@
-{"meta_type":"locales","objinfo":{},"name":"ko_KR","type":"Unknown","writable":false,"manage":false,"is_sub":false,"attributes":{},"data":[{"name":"count(*)","value":"전체 합계"}]}
+{
+  "meta_type" : "locales",
+  "objinfo" : { },
+  "name" : "ko_KR",
+  "type" : "Unknown",
+  "writable" : false,
+  "manage" : false,
+  "is_sub" : false,
+  "attributes" : { },
+  "data" : [ {
+    "name" : "test"
+  }, {
+    "name" : "PRIOR_PROC_DATE"
+  }, {
+    "name" : "Total YIELD_COUNTS"
+  }, {
+    "name" : "Total PROD_COUNTS"
+  }, {
+    "name" : "Partner number counts"
+  }, {
+    "name" : "외부링크12"
+  }, {
+    "name" : "외부링크11"
+  }, {
+    "name" : "YIELD_COUNTS"
+  }, {
+    "name" : "Yield Ratio"
+  }, {
+    "name" : "Yield Counts Histogram"
+  }, {
+    "name" : "TRIM_TYPE"
+  }, {
+    "name" : "test_udg"
+  }, {
+    "name" : "PROD_TYPE"
+  }, {
+    "name" : "PROD_COUNTS"
+  }, {
+    "name" : "Prod Type Hierarchy1"
+  }, {
+    "name" : "PRIOR_PROC_DATE1"
+  }, {
+    "name" : "PREV_PROCESS"
+  }, {
+    "name" : "PREV_PROC_MACHINE_ID"
+  }, {
+    "name" : "PARTNUMBER"
+  }, {
+    "name" : "measures"
+  }, {
+    "name" : "MACHINE_ID"
+  }, {
+    "name" : "LOT_ID"
+  }, {
+    "name" : "end_date_str"
+  }, {
+    "name" : "END_DATE"
+  }, {
+    "name" : "End Date Split1"
+  }, {
+    "name" : "RelationModel"
+  }, {
+    "name" : "mfg_qstat_view"
+  }, {
+    "name" : "mfg_qstat_test"
+  }, {
+    "name" : "mfg_qstat"
+  }, {
+    "name" : "SemiConBO"
+  }, {
+    "name" : "Activities and Seps"
+  }, {
+    "name" : "count(*)",
+    "value" : "전체 합계"
+  } ]
+}

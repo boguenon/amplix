@@ -1,1 +1,107 @@
-{"meta_type":"locales","objinfo":{},"name":"en_US","type":"Unknown","writable":false,"manage":false,"is_sub":false,"attributes":{},"data":[{"name":"Activities and Seps","value":"Activities and Seps"},{"name":"count(*)","value":"Total Counts"}]}
+{
+  "meta_type" : "locales",
+  "objinfo" : { },
+  "name" : "en_US",
+  "type" : "Unknown",
+  "writable" : false,
+  "manage" : false,
+  "is_sub" : false,
+  "attributes" : { },
+  "data" : [ {
+    "name" : "test",
+    "value" : ""
+  }, {
+    "name" : "PRIOR_PROC_DATE",
+    "value" : ""
+  }, {
+    "name" : "Total YIELD_COUNTS",
+    "value" : ""
+  }, {
+    "name" : "Total PROD_COUNTS",
+    "value" : ""
+  }, {
+    "name" : "Partner number counts",
+    "value" : ""
+  }, {
+    "name" : "외부링크12",
+    "value" : ""
+  }, {
+    "name" : "외부링크11",
+    "value" : ""
+  }, {
+    "name" : "YIELD_COUNTS",
+    "value" : ""
+  }, {
+    "name" : "Yield Ratio",
+    "value" : ""
+  }, {
+    "name" : "Yield Counts Histogram",
+    "value" : ""
+  }, {
+    "name" : "TRIM_TYPE",
+    "value" : ""
+  }, {
+    "name" : "test_udg",
+    "value" : ""
+  }, {
+    "name" : "PROD_TYPE",
+    "value" : ""
+  }, {
+    "name" : "PROD_COUNTS",
+    "value" : ""
+  }, {
+    "name" : "Prod Type Hierarchy1",
+    "value" : ""
+  }, {
+    "name" : "PRIOR_PROC_DATE1",
+    "value" : "jjj"
+  }, {
+    "name" : "PREV_PROCESS",
+    "value" : ""
+  }, {
+    "name" : "PREV_PROC_MACHINE_ID",
+    "value" : ""
+  }, {
+    "name" : "PARTNUMBER",
+    "value" : ""
+  }, {
+    "name" : "measures",
+    "value" : ""
+  }, {
+    "name" : "MACHINE_ID",
+    "value" : ""
+  }, {
+    "name" : "LOT_ID",
+    "value" : ""
+  }, {
+    "name" : "end_date_str",
+    "value" : ""
+  }, {
+    "name" : "END_DATE",
+    "value" : ""
+  }, {
+    "name" : "End Date Split1",
+    "value" : ""
+  }, {
+    "name" : "RelationModel",
+    "value" : ""
+  }, {
+    "name" : "mfg_qstat_view",
+    "value" : ""
+  }, {
+    "name" : "mfg_qstat_test",
+    "value" : ""
+  }, {
+    "name" : "mfg_qstat",
+    "value" : ""
+  }, {
+    "name" : "SemiConBO",
+    "value" : ""
+  }, {
+    "name" : "Activities and Seps",
+    "value" : "Activities and Seps"
+  }, {
+    "name" : "count(*)",
+    "value" : "Total Counts"
+  } ]
+}
