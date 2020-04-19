@@ -602,7 +602,7 @@
   }, {
     "group" : "locale_ko_KR_0004",
     "name" : "L_DASHBOARD",
-    "value" : "앱페이지"
+    "value" : "폼뷜더"
   }, {
     "name" : "T_DASHBOARD",
     "value" : "데시보드"
@@ -3808,5 +3808,9 @@
     "group" : "locale_ko_KR_0004",
     "name" : "B_FORMULA",
     "value" : "수식"
+  }, {
+    "group" : "locale_ko_KR_0004",
+    "name" : "L_RUN_RPT_FIRST",
+    "value" : "다운로드 하려면 조회를 먼저 해 주십시오."
   } ]
 }

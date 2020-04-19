@@ -2999,6 +2999,10 @@ a:active .webix_custom_radio {
 	color: #ff6363;
 }
 
+.igc-td-link {
+	color: #00ff08;
+}
+
 /*loading */
 .igc-loading-box {
 	background-color: #505050;

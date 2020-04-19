@@ -13,7 +13,11 @@ import com.amplix.service.common.CUserDB;
 import com.amplix.service.dbpool.DBConnectionPool;
 
 import java.util.*;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.text.*;
 import com.amplix.plugin.*;
 
@@ -64,7 +68,7 @@ public class ${CLASS_NAME}
 	}
 	
 ##MODULE_FUNC
-	public void ${NAME}(Connection __con, Map<String, String> params)
+	public void ${NAME}(Connection __con, Map<String, Object> params)
 		throws Exception 
 	{
 		PreparedStatement __pstmt = null;

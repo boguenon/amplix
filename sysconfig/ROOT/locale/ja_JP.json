@@ -602,7 +602,7 @@
   }, {
     "group" : "locale_ja_JP_0004",
     "name" : "L_DASHBOARD",
-    "value" : "AppPage"
+    "value" : "FormBuilder"
   }, {
     "name" : "T_DASHBOARD",
     "value" : "ダッシュボ?ド"
@@ -3808,5 +3808,9 @@
     "group" : "locale_ja_JP_0004",
     "name" : "B_FORMULA",
     "value" : "Formula"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "L_RUN_RPT_FIRST",
+    "value" : "Run Report first to download file!"
   } ]
 }
