@@ -8,6 +8,23 @@
   "is_sub" : false,
   "attributes" : { },
   "menustructure" : [ {
+    "name" : "Form Builders",
+    "items" : [ {
+      "name" : "Reading BBS",
+      "uid" : "2ea59b5c-6c9a4288",
+      "nodepath" : "/FormBuilder demo/Reading BBS",
+      "type" : "Dashboard",
+      "rankcount" : 0,
+      "hidecolumn" : false,
+      "ispageitem" : false,
+      "calcmode" : false,
+      "isnewitem" : false,
+      "sequence" : 0,
+      "updatedate" : 0,
+      "status" : 0
+    } ],
+    "level" : 0
+  }, {
     "name" : "Test 1",
     "items" : [ {
       "name" : "trim3",
