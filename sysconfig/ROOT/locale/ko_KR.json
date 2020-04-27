@@ -3812,5 +3812,9 @@
     "group" : "locale_ko_KR_0004",
     "name" : "L_RUN_RPT_FIRST",
     "value" : "다운로드 하려면 조회를 먼저 해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "B_MM",
+    "value" : "Month"
   } ]
 }
