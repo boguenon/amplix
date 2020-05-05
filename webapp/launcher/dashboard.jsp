@@ -26,22 +26,22 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202005050022" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202005051044" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202005050022" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202005051044" />
 <% } %>
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202005050022\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202005051044\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202005050022" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202005051044" />
 
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202005050022"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202005050022"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202005050022"></script>
+<script type="text/javascript" src="../config.js?_dc=202005051044"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202005051044"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202005051044"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -155,28 +155,7 @@ IG$.ready(function() {
 	});
 	menu_logout.create();
 	
-	window.app_themes = function(themes) {
-		var m_style = $("#m_style");
-		
-		if (themes && m_style)
-		{
-			$.each(themes, function(i, theme) {
-				var m = $("<li><a class='btn_button'>" + theme.name + "</a></li>").appendTo(m_style);
-				
-				m.bind("click", function(e) {
-					e.preventDefault();
-					e.stopPropagation();
-					
-					window.set_themes(theme.name);
-					
-					m_style.hide();
-					doc.unbind("click", f1);
-				});
-			});
-		}
-	};
-	
-	window.set_themes = function(themename) {
+	var set_themes = function(theme) {
 		var vars = {}, 
 			hash,
 			murl = window.location.href,
@@ -196,7 +175,7 @@ IG$.ready(function() {
 		    }
 	    }
 	    
-	    vars["theme"] = themename;
+	    vars["theme"] = theme.code || "";
 	    
 	    nurl = url + "?";
 	    
@@ -207,11 +186,32 @@ IG$.ready(function() {
 	    
 	    window.location.replace(nurl);
 	};
+	
+	var theme_options = [];
+	
+	$.each(ig$.themes, function(i, theme) {
+		theme_options.push({
+			text: theme.disp,
+			handler: function() {
+				set_themes(theme);
+			}
+		})
+	});
+	
+	var menu_theme = new IG$._menu_button($("#b_style"), theme_options, {
+		btn_styles: ["fadeInRight"],
+		menu_position: {
+			top: 20,
+			left: "initial",
+			right: 10
+		}
+	});
+	menu_theme.create();
 });
 
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202005050022"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202005051044"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
