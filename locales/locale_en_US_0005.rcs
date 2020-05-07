@@ -3,3 +3,4 @@ A;L_M_GROUP;Measure Group Combobox
 A;L_FLT_PROPAGATION;Propagate Iniitialize
 A;L_RENAME_TOOL;Rename Tool
 A;L_SCREEN_CAPTURE;Screen Capture
+A;L_F_SQL_EXISTS;SQL Exists operator (EXISTS)

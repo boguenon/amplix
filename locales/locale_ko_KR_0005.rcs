@@ -3,3 +3,4 @@ A;L_M_GROUP;메져 그룹 콤보박스
 A;L_FLT_PROPAGATION;타 항목 초기화
 A;L_RENAME_TOOL;이름 변경 도구
 A;L_SCREEN_CAPTURE;스크린 캡쳐
+A;L_F_SQL_EXISTS;SQL Exists 함수 (EXISTS)
