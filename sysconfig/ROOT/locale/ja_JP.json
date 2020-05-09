@@ -3816,5 +3816,41 @@
     "group" : "locale_ja_JP_0005",
     "name" : "B_MM",
     "value" : "Month"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_M_GROUP",
+    "value" : "Measure Group Combobox"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_FLT_PROPAGATION",
+    "value" : "Propagate Iniitialize"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_RENAME_TOOL",
+    "value" : "Rename Tool"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_SCREEN_CAPTURE",
+    "value" : "Screen Capture"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_F_SQL_EXISTS",
+    "value" : "SQL Exists operator (EXISTS)"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_PARENT_CHILD_NODES",
+    "value" : "Parent Child Hierarchy"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_PARENT_METRIC",
+    "value" : "Parent Dimension"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_PRIOR_START_WITH",
+    "value" : "Prior Start With"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_DISPLAY_OPTION",
+    "value" : "Display Option"
   } ]
 }

@@ -3816,5 +3816,41 @@
     "group" : "locale_ko_KR_0005",
     "name" : "B_MM",
     "value" : "Month"
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "L_M_GROUP",
+    "value" : "메져 그룹 콤보박스"
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "L_FLT_PROPAGATION",
+    "value" : "타 항목 초기화"
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "L_RENAME_TOOL",
+    "value" : "이름 변경 도구"
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "L_SCREEN_CAPTURE",
+    "value" : "스크린 캡쳐"
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "L_F_SQL_EXISTS",
+    "value" : "SQL Exists 함수 (EXISTS)"
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "L_PARENT_CHILD_NODES",
+    "value" : "상위 계층 디멘젼 필드"
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "L_PARENT_METRIC",
+    "value" : "상위 디멘젼"
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "L_PRIOR_START_WITH",
+    "value" : "최상위 노드 값"
+  }, {
+    "group" : "locale_ko_KR_0005",
+    "name" : "L_DISPLAY_OPTION",
+    "value" : "디스플레이 옵션"
   } ]
 }
