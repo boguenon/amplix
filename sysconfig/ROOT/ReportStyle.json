@@ -8,6 +8,18 @@
   "manage" : false,
   "is_sub" : false,
   "attributes" : { },
+  "chart_color_set" : {
+    "office_2013" : [ "#0000AC", "#ed7d31", "#a5a5a5", "#ffc000", "#4472c4", "#70ad47", "#255e91", "#9e480e", "#636363", "#997300", "#264478", "#43682b" ],
+    "theme 1" : [ "#5b9bd5", "#a5a5a5", "#4472c4", "#255e91", "#636363", "#264478", "#7cafdd", "#b7b7b7", "#698ed0", "#327dc2", "#848484", "#335aa1", "#9dc3e6", "#c9c9c9" ],
+    "theme 2" : [ "#ed7d31", "#ffc000", "#70ad47", "#9e480e", "#997300", "#43682b", "#f1975a", "#ffcd33", "#8cc168", "#d26012", "#cc9a00", "#5a8a39" ],
+    "theme 3" : [ "#70ad47", "#4472c4", "#ffc000", "#43682b", "#264478", "#997300", "#8cc168", "#698ed0", "#ffcd33", "#5a8a39", "#335aa1", "#cc9a00" ],
+    "signika" : [ "#f45b5b", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee" ],
+    "light-color" : [ "#7cb5ec", "#f7a35c", "#90ee7e", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee" ],
+    "dark-color" : [ "#2b908f", "#90ee7e", "#f45b5b", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee" ],
+    "combo1574" : [ "#7A3E48", "#EECD86", "#E18942", "#B95835", "#3D3242", "#06354F" ],
+    "combo1573" : [ "#7C786A", "#8DCDC1", "#D3E397", "#FFF5C3", "#EB6E44" ],
+    "combo1572" : [ "#6194BC", "#A5D1F3", "#D0EAFF", "#E4001B", "#ECECEC", "#606060" ]
+  },
   "themes" : [ {
     "name" : "base_theme",
     "c_cset" : "office_2013",
@@ -1238,8 +1250,6 @@
     } ]
   }, {
     "name" : "DesertLight",
-    "c_cset" : "",
-    "gs_col" : "",
     "gs_enable" : false,
     "gs_opa" : 0.6,
     "default_styles" : [ {
@@ -1274,9 +1284,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#575757",
-        "forecolor" : "#000000",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#000000"
       },
       "data" : {
         "autowidth" : true,
@@ -1341,9 +1351,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#575757",
-        "forecolor" : "#000000",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#000000"
       },
       "data" : {
         "autowidth" : true,
@@ -1408,9 +1418,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#000000",
-        "forecolor" : "#FFFFFF",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#FFFFFF"
       },
       "data" : {
         "autowidth" : true,
@@ -1579,9 +1589,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#000000",
-        "forecolor" : "#FFFFFF",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#FFFFFF"
       },
       "data" : {
         "autowidth" : true,
@@ -1646,9 +1656,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#000000",
-        "forecolor" : "#818181",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#818181"
       },
       "data" : {
         "autowidth" : true,
@@ -1713,9 +1723,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#D8D8D8",
-        "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -2427,8 +2437,6 @@
     } ]
   }, {
     "name" : "DarkBrown",
-    "c_cset" : "",
-    "gs_col" : "",
     "gs_enable" : false,
     "gs_opa" : 0.6,
     "default_styles" : [ {
@@ -2463,9 +2471,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#D8D8D8",
-        "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -2530,9 +2538,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#D8D8D8",
-        "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -2597,9 +2605,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#9fd9ff",
-        "forecolor" : "#575757",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#575757"
       },
       "data" : {
         "autowidth" : true,
@@ -2768,9 +2776,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#9fd9ff",
-        "forecolor" : "#575757",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#575757"
       },
       "data" : {
         "autowidth" : true,
@@ -2835,9 +2843,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#9fd9ff",
-        "forecolor" : "#575757",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#575757"
       },
       "data" : {
         "autowidth" : true,
@@ -2902,9 +2910,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "bordercolor" : "#F4F4F4",
         "backcolor" : "#D8D8D8",
-        "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4"
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
