@@ -3852,5 +3852,17 @@
     "group" : "locale_ko_KR_0005",
     "name" : "L_DISPLAY_OPTION",
     "value" : "디스플레이 옵션"
+  }, {
+    "group" : "locale_ko_KR_0006",
+    "name" : "L_REG_TEMPLATE",
+    "value" : "템플릿으로 등록"
+  }, {
+    "group" : "locale_ko_KR_0006",
+    "name" : "L_C_REGTMPL",
+    "value" : "현재 리포트를 템플릿으로 등록하시겠습니까?"
+  }, {
+    "group" : "locale_ko_KR_0006",
+    "name" : "L_T_TMPL_SEL",
+    "value" : "템플릿 선택"
   } ]
 }

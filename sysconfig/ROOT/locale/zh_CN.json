@@ -3852,5 +3852,17 @@
     "group" : "locale_zh_CN_0005",
     "name" : "L_DISPLAY_OPTION",
     "value" : "Display Option"
+  }, {
+    "group" : "locale_zh_CN_0006",
+    "name" : "L_REG_TEMPLATE",
+    "value" : "Register as Templates"
+  }, {
+    "group" : "locale_zh_CN_0006",
+    "name" : "L_C_REGTMPL",
+    "value" : "Do you want to register this report as Template?"
+  }, {
+    "group" : "locale_zh_CN_0006",
+    "name" : "L_T_TMPL_SEL",
+    "value" : "Template Selection"
   } ]
 }
