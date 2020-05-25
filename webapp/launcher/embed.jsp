@@ -13,11 +13,11 @@
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
 
-<script type="text/javascript" src="./js/jquery-1.12.0.js?_dc=202005242131"></script>
+<script type="text/javascript" src="./js/jquery-1.12.0.min.js?_dc=202005251134"></script>
 
-<script type="text/javascript" src="../config.js?_dc=202005242131"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202005242131"></script>
-<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202005242131"></script>
+<script type="text/javascript" src="../config.js?_dc=202005251134"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202005251134"></script>
+<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202005251134"></script>
 <script type="text/javascript">
 $(function(){
   $("#nav > ul > li > a").mouseover(function(){      
@@ -45,8 +45,8 @@ $(function(){
 
   $("#nav li a").click(function(event){
     if ($(this).attr("href") != "#") {
-      if($(this).text() == '대시보드') { 
-        $("#title_area > h1").text("세종특별자치시 교통정보현황");
+      if($(this).text() == 'Main') { 
+        $("#title_area > h1").text("AmplixBI.com User Viewer");
       }
       else { 
         $("#title_area > h1").text($(this).text());
@@ -84,7 +84,7 @@ var m$mts = "ROOT";
 ig$.mainview = "amplix_panel";
 IG$.amplix_ready(function() {
 	IG$.open_url({
-		uid: "/Northwind Examples/4. Dashboard/1. datasorting"
+		uid: "/Northwind Examples/1. Basic Functions/5. Page Filter"
 	});
 });
 
@@ -128,7 +128,7 @@ $(document).ready(function() {
 				<img src="" width="300" height="38" alt="logo"></a>
 			</span>
 			<ul>
-				<li><a amplx-data-uid="/Northwind Examples/4. Dashboard/1. datasorting">Main</a></li>
+				<li><a amplx-data-uid="/Northwind Examples/1. Basic Functions/5. Page Filter">Main</a></li>
 				<li><a href="#">Pivoting</a>
 					<ul style="display: none;">
 						<li>

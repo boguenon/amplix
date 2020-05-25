@@ -235,7 +235,7 @@ var _amplix_load_content = [
 		"./css/custom.css"
 	],
 	[
-		"./js/igca.js"
+		"./js/igca.min.js"
 	],
 	"framework",
 	"vis_ec", "vis_ec_theme", "app_viewer", "custom_viewer", "appnc", "custom"
