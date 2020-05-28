@@ -188,7 +188,7 @@ rem quotes into the CLASSPATH
 if "%CLASSPATH%" == "" goto emptyClasspath
 set "CLASSPATH=%CLASSPATH%;"
 :emptyClasspath
-set "CLASSPATH=%CATALINA_HOME%\bin\amplix_launcher-3.0.0.jar;%CATALINA_HOME%\bin\amplix-4.1.0.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-8.5.42.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
+set "CLASSPATH=%CATALINA_HOME%\bin\amplix_launcher-3.0.0.jar;%CATALINA_HOME%\bin\amplix-3.0.0.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-8.5.42.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
 
 if not "%CATALINA_TMPDIR%" == "" goto gotTmpdir
 set "CATALINA_TMPDIR=%CATALINA_BASE%\temp"
