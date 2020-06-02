@@ -3864,5 +3864,13 @@
     "group" : "locale_zh_CN_0006",
     "name" : "L_T_TMPL_SEL",
     "value" : "Template Selection"
+  }, {
+    "group" : "locale_zh_CN_0006",
+    "name" : "L_AUTO_REFRESH",
+    "value" : "Auto Refresh"
+  }, {
+    "group" : "locale_zh_CN_0006",
+    "name" : "L_REFRESH_CYCLE",
+    "value" : "Refresh Cycle(Sec)"
   } ]
 }

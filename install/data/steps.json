@@ -96,6 +96,20 @@
 					"name": "sixsigma.bku"
 				}
 			]
+		},
+		{
+			"name": "sample_fb",
+			"desc": "Formbuilder Examples",
+			"steps": [
+				{
+					"type": "sql",
+					"name": "formbuilder.msql"
+				},
+				{
+					"type": "meta",
+					"name": "retirement_planning.bku"
+				}
+			]
 		}
 	],
 	"meta_data": [
