@@ -65,6 +65,14 @@
 							"cls": "ig_sys_config"
 						},
 						{
+							"name": "SingleSignOn",
+							"cls": "ig_sys_sso"
+						},
+						{
+							"name": "SingleSignOnDesigner",
+							"cls": "ig_sys_sso_designer"
+						},
+						{
 							"name": "Features",
 							"cls": "ig_ft"
 						},
