@@ -1,12 +1,12 @@
 {
   "meta_type" : "features",
-  "objinfo" : { },
+  "attributes" : { },
   "type" : "Unknown",
+  "objinfo" : { },
   "uid" : "4fce8d2e-6d5144d0",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
-  "attributes" : { },
   "features" : [ {
     "name" : "Navigator",
     "cls" : "ig_nav",
@@ -98,6 +98,18 @@
     "show" : true,
     "hide" : false
   }, {
+    "name" : "SingleSignOn",
+    "cls" : "ig_sys_sso",
+    "clspath" : "ig_mngr-ig_sys-ig_sys_sso",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "SingleSignOnDesigner",
+    "cls" : "ig_sys_sso_designer",
+    "clspath" : "ig_mngr-ig_sys-ig_sys_sso_designer",
+    "show" : true,
+    "hide" : false
+  }, {
     "name" : "Features",
     "cls" : "ig_ft",
     "clspath" : "ig_mngr-ig_sys-ig_ft",
@@ -167,6 +179,12 @@
     "name" : "Schedule Server Status",
     "cls" : "ig_schedule",
     "clspath" : "ig_mngr-ig_mon-ig_schedule",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Schedule Programming",
+    "cls" : "ig_schedule_prog",
+    "clspath" : "ig_mngr-ig_mon-ig_schedule_prog",
     "show" : true,
     "hide" : false
   }, {
@@ -374,6 +392,12 @@
     "show" : true,
     "hide" : false
   }, {
+    "name" : "SQL Report",
+    "cls" : "ig_n_sqlrpt",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_sqlrpt",
+    "show" : true,
+    "hide" : false
+  }, {
     "name" : "Dashboard",
     "cls" : "ig_n_dbd",
     "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_dbd",
@@ -527,6 +551,30 @@
     "name" : "Edit Cube",
     "cls" : "ig_n_e_cube",
     "clspath" : "ig_nav-ig_n_fp-ig_n_e_cube",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Edit Meta Content",
+    "cls" : "ig_n_e_meta",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_e_meta",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "metacontrol",
+    "cls" : "ig_m_ctrl",
+    "clspath" : "ig_nav-ig_m_ctrl",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "save",
+    "cls" : "ig_m_save",
+    "clspath" : "ig_nav-ig_m_ctrl-ig_m_save",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "save",
+    "cls" : "ig_m_saveas",
+    "clspath" : "ig_nav-ig_m_ctrl-ig_m_saveas",
     "show" : true,
     "hide" : false
   }, {
@@ -791,6 +839,12 @@
     "name" : "help",
     "cls" : "ig_r_help",
     "clspath" : "ig_report-ig_r_tbar-ig_r_help",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "SQL Report",
+    "cls" : "ig_sql_report",
+    "clspath" : "ig_sql_report",
     "show" : true,
     "hide" : false
   } ]
