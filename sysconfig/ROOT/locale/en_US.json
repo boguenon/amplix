@@ -3872,5 +3872,9 @@
     "group" : "locale_en_US_0006",
     "name" : "L_REFRESH_CYCLE",
     "value" : "Refresh Cycle(Sec)"
+  }, {
+    "group" : "locale_en_US_0007",
+    "name" : "L_SQL_REPORT",
+    "value" : "SQL Report"
   } ]
 }

@@ -3872,5 +3872,9 @@
     "group" : "locale_ko_KR_0006",
     "name" : "L_REFRESH_CYCLE",
     "value" : "리프레시 주기(초)"
+  }, {
+    "group" : "locale_ko_KR_0007",
+    "name" : "L_SQL_REPORT",
+    "value" : "SQL 리포트"
   } ]
 }

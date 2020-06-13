@@ -1,0 +1,7 @@
+A;L_SQL_REPORT;SQL 리포트
+A;D_SQLREPORT;SQL 리포트
+A;L_CON_STR;연결 파라미터
+A;T_BURST_CONFIG;이메일 버스트 옵션
+A;L_TB_PIVOT;피벗 버튼
+A;L_BURST_EMAIL;이메일 필드
+A;L_SUB_QUERY;서브 SQL 쿼리

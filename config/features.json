@@ -291,6 +291,10 @@
 									"cls": "ig_n_rpt"
 								},
 								{
+									"name": "SQL Report",
+									"cls": "ig_n_sqlrpt"
+								},
+								{
 									"name": "Dashboard",
 									"cls": "ig_n_dbd"
 								},
@@ -615,6 +619,10 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "SQL Report",
+			"cls": "ig_sql_report"
 		}
 	] 
 }
