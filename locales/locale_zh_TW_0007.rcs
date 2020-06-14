@@ -5,3 +5,11 @@ A;T_BURST_CONFIG;Burst Options
 A;L_TB_PIVOT;Pivot Button
 A;L_BURST_EMAIL;Email Field
 A;L_SUB_QUERY;Sub SQL Query
+A;L_SHOW_DETAIL;Show Detail
+A;B_DETAIL;Detail
+A;L_FLT_COND;Show only..
+A;L_KEYWORD;Keyword
+A;L_QUICK_SELECT;----- Quick Select -----
+A;L_ANAL_ITEMS;Analysis Items
+A;B_ALL;All
+A;L_FLT_DATE_PERIOD;Date Period

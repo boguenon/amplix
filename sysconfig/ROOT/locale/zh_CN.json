@@ -3876,5 +3876,61 @@
     "group" : "locale_zh_CN_0007",
     "name" : "L_SQL_REPORT",
     "value" : "SQL Report"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "D_SQLREPORT",
+    "value" : "SQL Report"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_CON_STR",
+    "value" : "Connection Param"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "T_BURST_CONFIG",
+    "value" : "Burst Options"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_TB_PIVOT",
+    "value" : "Pivot Button"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_BURST_EMAIL",
+    "value" : "Email Field"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_SUB_QUERY",
+    "value" : "Sub SQL Query"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_SHOW_DETAIL",
+    "value" : "Show Detail"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "B_DETAIL",
+    "value" : "Detail"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_FLT_COND",
+    "value" : "Show only.."
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_KEYWORD",
+    "value" : "Keyword"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_QUICK_SELECT",
+    "value" : "----- Quick Select -----"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_ANAL_ITEMS",
+    "value" : "Analysis Items"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "B_ALL",
+    "value" : "All"
+  }, {
+    "group" : "locale_zh_CN_0007",
+    "name" : "L_FLT_DATE_PERIOD",
+    "value" : "Date Period"
   } ]
 }
