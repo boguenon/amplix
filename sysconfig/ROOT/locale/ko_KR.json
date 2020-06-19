@@ -3932,5 +3932,21 @@
     "group" : "locale_ko_KR_0007",
     "name" : "L_FLT_DATE_PERIOD",
     "value" : "날짜 범위 지정"
+  }, {
+    "group" : "locale_ko_KR_0007",
+    "name" : "L_MINIMIZE",
+    "value" : "창 원래화면"
+  }, {
+    "group" : "locale_ko_KR_0007",
+    "name" : "L_MAXIMIZE",
+    "value" : "창 초대화면"
+  }, {
+    "group" : "locale_ko_KR_0007",
+    "name" : "B_NO_PIVOT",
+    "value" : "피벗항목을 설정해 주세요."
+  }, {
+    "group" : "locale_ko_KR_0007",
+    "name" : "B_PIVOT_CONFIG",
+    "value" : "피벗 설정 바로가기"
   } ]
 }

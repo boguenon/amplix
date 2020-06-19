@@ -28,4 +28,4 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (21, 2, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (22, 2, 'soap','soap','SOAP WebService','soap',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (23, 2, 'rest','rest','REST WebService','rest',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (24, 5, 'elasticsearch', '-', 'ElasticSearch', '-', 1);
-
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (25, 1, 'cubrid', 'cubrid.jdbc.driver.CUBRIDDriver', 'CUBRID', 'jdbc:cubrid:<server>:<30000>:<dbname>:<public>::', 1);

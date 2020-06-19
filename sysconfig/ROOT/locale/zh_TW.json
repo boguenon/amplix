@@ -3932,5 +3932,21 @@
     "group" : "locale_zh_TW_0007",
     "name" : "L_FLT_DATE_PERIOD",
     "value" : "Date Period"
+  }, {
+    "group" : "locale_zh_TW_0007",
+    "name" : "L_MINIMIZE",
+    "value" : "Minimize"
+  }, {
+    "group" : "locale_zh_TW_0007",
+    "name" : "L_MAXIMIZE",
+    "value" : "Maximize"
+  }, {
+    "group" : "locale_zh_TW_0007",
+    "name" : "B_NO_PIVOT",
+    "value" : "Need Pivot Fields"
+  }, {
+    "group" : "locale_zh_TW_0007",
+    "name" : "B_PIVOT_CONFIG",
+    "value" : "Click to config Pivot!"
   } ]
 }
