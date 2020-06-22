@@ -90,7 +90,6 @@ public class ${CLASS_NAME}
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
-		String uid = null;
 		logger.info("!!beforeLogin process call execution!!");
 		
 		HttpServletRequest request = (HttpServletRequest) iprop.get("request");
