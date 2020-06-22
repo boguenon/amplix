@@ -8,9 +8,9 @@
 <link rel="icon" href="../favicon.png" type="image/png">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>amplix installation wizard</title>
-<link rel="stylesheet" type="text/css" href="./css/igcf.min.css" />
-<script type="text/javascript" src="../launcher/js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="./js/igcf.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/igcf.min.css?_dc=202006212216" />
+<script type="text/javascript" src="../launcher/js/jquery-1.12.0.min.js?_dc=202006212216"></script>
+<script type="text/javascript" src="./js/igcf.min.js?_dc=202006212216"></script>
 </head>
 <body scroll="no">
 <div id="main-area" class="main-scroller">
@@ -271,7 +271,6 @@
 				</div>
 			</div>
 			
-			
 			<div id="dpage_02" style="display:none;">
 				<div class="menu-area">
 					<div class="menu selected"><a>Settings</a></div>
@@ -309,21 +308,24 @@
 		               			</tr>
 		               			<tr>
 		               				<td class="fieldname">Host Name</td>
-		               				<td colspan="2">
-		               					<input id="db_host" type="text" placeholder="localhost"></input>
+		               				<td>
+		               					<input id="db_host" type="text"></input>
 		               				</td>
+									<td><span id="msg_db_host" class="ex_msg"></span></td>
 		               			</tr>
 		               			<tr>
 		               				<td class="fieldname">Port Number</td>
-		               				<td colspan="2">
-		               					<input id="db_port" type="text" placeholder="3306"></input>
+		               				<td>
+		               					<input id="db_port" type="text"></input>
 		               				</td>
+		               				<td><span id="msg_db_port" class="ex_msg"></span></td>
 		               			</tr>
 		               			<tr>
 		               				<td class="fieldname">Database Name</td>
-		               				<td colspan="2">
-		               					<input id="db_name" type="text" placeholder="amplix_meta"></input>
+		               				<td>
+		               					<input id="db_name" type="text"></input>
 		               				</td>
+		               				<td><span id="msg_db_name" class="ex_msg">Ex) amplix_meta</span></td>
 		               			</tr>
 		               			<tr>
 		               				<td></td>
@@ -360,9 +362,10 @@
 		               			</tr>
 		               			<tr>
 		               				<td class="fieldname">User name</td>
-		               				<td colspan="2">
-		               					<input id="db_user" type="text" placeholder="amplix"></input>
+		               				<td>
+		               					<input id="db_user" type="text"></input>
 		               				</td>
+		               				<td><span id="msg_db_user" class="ex_msg">Ex) amplix</span></td>
 		               			</tr>
 		               			<tr>
 		               				<td class="fieldname">User Password</td>
@@ -413,27 +416,30 @@
 							<table class="tb_form">
 								<col width="200px"></col>
 								<col width="*"></col>
+								<col width="*"></col>
 								<tr>
 									<td class="fieldname">
 										Module Database Name
 									</td>
 									<td><input type="text" id="md_owner"></input></td>
+									<td><span id="msg_md_owner" class="ex_msg"></span></td>							
 								</tr>
 								<tr>
 									<td class="fieldname">
 										Module User
 									</td>
 									<td><input type="text" id="md_user"></input></td>
+									<td><span id="msg_md_user" class="ex_msg"></span></td>
 								</tr>
 								<tr>
 									<td class="fieldname">
 										Module Password
 									</td>
-									<td><input type="password" id="md_password"></input></td>
+									<td colspan="2"><input type="password" id="md_password"></input></td>
 								</tr>
 								<tr>
 									<td colspan="1"></td>
-									<td>
+									<td colspan="2">
 										<div class="button-area tb-button">
 											<button id="btn_check_con2" class="button grey">
 												Check Connection
@@ -458,7 +464,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="dpage_03" style="display:none;">
 				<div class="menu-area">
 					<div class="menu selected"><a>Installation</a></div>
