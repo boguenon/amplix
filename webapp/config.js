@@ -83,7 +83,7 @@ var ig$ = {
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202006212240",
+		date: "202006212244",
 		web_revision: "1245-4.13-172-g0c743d86"
 	}
     // hide_report_help: true
