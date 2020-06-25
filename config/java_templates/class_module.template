@@ -8,10 +8,6 @@ import org.slf4j.LoggerFactory;
 import com.amplix.rpc.igcJob;
 import com.amplix.rpc.igcServer;
 
-import com.amplix.service.common.MetaObject;
-import com.amplix.service.common.CUserDB;
-import com.amplix.service.dbpool.DBConnectionPool;
-
 import java.util.*;
 import java.sql.Connection;
 import java.sql.Statement;
