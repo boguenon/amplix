@@ -14,7 +14,9 @@
 		},
 		{
 			"name": "navitree",
-			"hidden": false
+			"hidden": false,
+			"padding": "5 5",
+			"bodyCls": "igc-rounded-border"
 		},
 		{
 			"name": "intropanel",

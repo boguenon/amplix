@@ -3948,5 +3948,17 @@
     "group" : "locale_en_US_0007",
     "name" : "B_PIVOT_CONFIG",
     "value" : "Click to config Pivot!"
+  }, {
+    "group" : "locale_en_US_0009",
+    "name" : "L_C_REMSQL",
+    "value" : "Remove this sql can cause sheets that reconfiguration. Click confirm to continue."
+  }, {
+    "group" : "locale_en_US_0009",
+    "name" : "B_EDIT",
+    "value" : "Edit"
+  }, {
+    "group" : "locale_en_US_0009",
+    "name" : "L_C_SQL_NON",
+    "value" : "Need at least one sql and could not delete this one."
   } ]
 }
