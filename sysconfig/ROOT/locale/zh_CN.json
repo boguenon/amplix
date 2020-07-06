@@ -3948,5 +3948,21 @@
     "group" : "locale_zh_CN_0007",
     "name" : "B_PIVOT_CONFIG",
     "value" : "Click to config Pivot!"
+  }, {
+    "group" : "locale_zh_CN_0009",
+    "name" : "L_C_REMSQL",
+    "value" : "Remove this sql can cause sheets that reconfiguration. Click confirm to continue."
+  }, {
+    "group" : "locale_zh_CN_0009",
+    "name" : "B_EDIT",
+    "value" : "Edit"
+  }, {
+    "group" : "locale_zh_CN_0009",
+    "name" : "L_C_SQL_NON",
+    "value" : "Need at least one sql and could not delete this one."
+  }, {
+    "group" : "locale_zh_CN_0009",
+    "name" : "L_C_SWAPSQL",
+    "value" : "Changing SQL need to reconfigure your pivot items. Click confirm to continue."
   } ]
 }

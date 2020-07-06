@@ -3948,5 +3948,21 @@
     "group" : "locale_ko_KR_0007",
     "name" : "B_PIVOT_CONFIG",
     "value" : "피벗 설정 바로가기"
+  }, {
+    "group" : "locale_ko_KR_0009",
+    "name" : "L_C_REMSQL",
+    "value" : "SQL쿼리를 삭제하시면 쉬트의 피벗을 새로 정의하여야 합니다. 계속하시려면 확인을 눌러 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0009",
+    "name" : "B_EDIT",
+    "value" : "편집"
+  }, {
+    "group" : "locale_ko_KR_0009",
+    "name" : "L_C_SQL_NON",
+    "value" : "최소 1개의 SQL 정의가 필요하여 삭제하지 못하였습니다."
+  }, {
+    "group" : "locale_ko_KR_0009",
+    "name" : "L_C_SWAPSQL",
+    "value" : "SQL 항목을 변경하시면 피벗을 새로 설정하여야 함비낟. 계속하시려면 확인을 눌러 주십시오."
   } ]
 }

@@ -3948,5 +3948,49 @@
     "group" : "locale_ja_JP_0007",
     "name" : "B_PIVOT_CONFIG",
     "value" : "Click to config Pivot!"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_CLEAR_FORMULA",
+    "value" : "Clear Formula"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "B_MORE",
+    "value" : "More"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "F_STDEV",
+    "value" : "Standard Deviation"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "F_STDEVP",
+    "value" : "Standard Deviation P"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "F_PERCENTILE",
+    "value" : "Percentile"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "F_PERCENTILE_EXE",
+    "value" : "Percentile Excel"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_FORMULA_GROUP",
+    "value" : "Formula Group"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_EXPRESSION",
+    "value" : "Expression"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_USE_COL_FORMAT",
+    "value" : "Use Column Format"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_DISP_TEMPLATE",
+    "value" : "Display Template"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_C_EXCEL_CSV",
+    "value" : "Data count exceeds for Excel output. Would you download as CSV file?"
   } ]
 }
