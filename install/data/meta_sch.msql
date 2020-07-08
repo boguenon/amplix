@@ -888,7 +888,9 @@ CREATE TABLE igcfh (
 	muid #CHAR#(17),
 	cdate #LONG#,
 	mdate #LONG#,
-	pstatus #SMALL_NUMBER#
+	pstatus #SMALL_NUMBER#,
+	umid #CHAR#(17),
+	nrows #LONG#
 );
 
-CREATE INDEX idx_igcfh_01 ON igcfh(mts, tuid);
+CREATE INDEX idx_igcfh_01 ON igcfh(mts, tuid, umid);
