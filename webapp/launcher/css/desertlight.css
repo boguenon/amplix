@@ -3094,3 +3094,7 @@ a:active .webix_custom_radio {
 .searchForm input[type="text"] {
 	background-color: initial;
 }
+
+.igc-disabled {
+    color: #676767;
+}

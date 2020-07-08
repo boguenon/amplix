@@ -3960,5 +3960,9 @@
     "group" : "locale_en_US_0009",
     "name" : "L_C_SQL_NON",
     "value" : "Need at least one sql and could not delete this one."
+  }, {
+    "group" : "locale_en_US_0010",
+    "name" : "L_SELECT_FIELD",
+    "value" : "Check select field to continue!"
   } ]
 }

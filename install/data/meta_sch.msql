@@ -877,3 +877,18 @@ CREATE TABLE igccuddata (
 );
 
 CREATE UNIQUE INDEX idx_cuddata_01 ON igccuddata(suid, seq);
+
+CREATE TABLE igcfh (
+	mts #CHAR#(17),
+	iuid #CHAR#(17),
+	tuid #CHAR#(17),
+	cname #VARCHAR#(100),
+	fname #VARCHAR#(100),
+	uname #VARCHAR#(30),
+	muid #CHAR#(17),
+	cdate #LONG#,
+	mdate #LONG#,
+	pstatus #SMALL_NUMBER#
+);
+
+CREATE INDEX idx_igcfh_01 ON igcfh(mts, tuid);

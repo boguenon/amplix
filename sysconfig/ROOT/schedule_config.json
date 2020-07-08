@@ -17,8 +17,8 @@
     "ui_script" : null,
     "code_parts" : { },
     "params" : null,
-    "java_class" : "com.amplix.scheduler.job.CClearResources",
-    "intent" : null
+    "intent" : null,
+    "java_class" : "com.amplix.scheduler.job.CClearResources"
   }, {
     "name" : "test",
     "description" : null,
@@ -30,8 +30,8 @@
     "ui_script" : null,
     "code_parts" : { },
     "params" : null,
-    "java_class" : "com.amplix.scheduler.job.tes",
-    "intent" : null
+    "intent" : null,
+    "java_class" : "com.amplix.scheduler.job.tes"
   }, {
     "name" : "Corona19DataLoader",
     "description" : null,
@@ -43,8 +43,8 @@
     "ui_script" : null,
     "code_parts" : { },
     "params" : null,
-    "java_class" : "com.amplix.scheduler.job.Corona19DataLoaderr",
-    "intent" : null
+    "intent" : null,
+    "java_class" : "com.amplix.scheduler.job.Corona19DataLoaderr"
   }, {
     "name" : "test_sso1",
     "description" : null,
@@ -58,7 +58,22 @@
       "code_before_login" : [ "if (userid != null && userid.startsWith(\"sso_sim_b6118e61573e4aaa_key_map:\") == true)\r", "{\r", "\tthis.setSecProp(iprop);\r", "\t\r", "\t//Object _osess = session.getAttribute(\"__sso_info\"); //-- session \r", "\t \r", "\tObject _osess = session.getAttribute(\"__sso_info\");\r", "\r", "\tif (_osess != null)\r", "\t{\r", "\t\tString t = _osess.toString();\r", "\t\tlogger.info(t);\r", "\t\tString muserid = t.substring(t.indexOf(\":\") + 1);\r", "\r", "\t\tlogger.info(\">> login with ID : \" + muserid);\r", "\t\t\r", "\t\tuid = getRegisteredUserUUID(mts, muserid);\r", "\t}\r", "}" ]
     },
     "params" : null,
-    "java_class" : "com.amplix.sso.custom.test_sso",
-    "intent" : null
+    "intent" : null,
+    "java_class" : "com.amplix.sso.custom.test_sso"
+  }, {
+    "name" : "test_singleSignOn",
+    "description" : null,
+    "mod_type" : "single_sign_on",
+    "java_source" : [ ],
+    "java_import" : [ ],
+    "java_extra" : [ ],
+    "ui_layout" : [ ],
+    "ui_script" : [ ],
+    "code_parts" : {
+      "code_before_login" : [ "if (userid != null && userid.startsWith(\"sso_sim_b6118e61573e4aaa_key_map:\") == true)\r", "{\r", "\tthis.setSecProp(iprop);\r", "\t\r", "\tString mts = \"0122483f-0155fb46\";\r", "\t//Object _osess = session.getAttribute(\"__sso_info\"); //-- session \r", "\t \r", "\tObject _osess = session.getAttribute(\"__sso_info\");\r", "\r", "\tif (_osess != null)\r", "\t{\r", "\t\tString t = _osess.toString();\r", "\t\tlogger.info(t);\r", "\t\tString muserid = t.substring(t.indexOf(\":\") + 1);\r", "\r", "\t\tlogger.info(\">> login with ID : \" + muserid);\r", "\t\t\r", "\t\tuid = getRegisteredUserUUID(mts, muserid);\r", "\t}\r", "}" ]
+    },
+    "params" : null,
+    "intent" : null,
+    "java_class" : "com.amplix.sso.custom.test_singleSignO"
   } ]
 }
