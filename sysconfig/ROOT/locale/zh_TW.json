@@ -345,8 +345,9 @@
     "name" : "L_LONGITUDE",
     "value" : "經度"
   }, {
+    "group" : "locale_zh_TW_0010",
     "name" : "B_PATH",
-    "value" : "路徑"
+    "value" : "Path"
   }, {
     "name" : "L_C_DIR",
     "value" : "計算方向"
@@ -3964,5 +3965,105 @@
     "group" : "locale_zh_TW_0009",
     "name" : "L_C_SWAPSQL",
     "value" : "Changing SQL need to reconfigure your pivot items. Click confirm to continue."
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "L_SELECT_FIELD",
+    "value" : "Check select field to continue!"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "L_AU_APPLY_APPEND",
+    "value" : "Append Only"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "B_READ",
+    "value" : "Read"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "B_WRITE",
+    "value" : "Writable"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "E_PERMISSION",
+    "value" : "Error on permission of the item."
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "B_ADVANCED",
+    "value" : "Advanced Options"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "D_DATASET",
+    "value" : "DataSet"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "L_TABLE_NAME",
+    "value" : "Table name"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "L_FIELD_NAME",
+    "value" : "Field name"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "B_REFRESH",
+    "value" : "Refresh"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "B_ITEMNAME",
+    "value" : "Item name"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "L_CLEAR_FORMULA",
+    "value" : "Clear Formula"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "B_MORE",
+    "value" : "More"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "F_STDEV",
+    "value" : "Standard Deviation"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "F_STDEVP",
+    "value" : "Standard Deviation P"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "F_PERCENTILE",
+    "value" : "Percentile"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "F_PERCENTILE_EXE",
+    "value" : "Percentile Excel"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "L_FORMULA_GROUP",
+    "value" : "Formula Group"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "L_EXPRESSION",
+    "value" : "Expression"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "L_USE_COL_FORMAT",
+    "value" : "Use Column Format"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "L_DISP_TEMPLATE",
+    "value" : "Display Template"
+  }, {
+    "group" : "locale_zh_TW_0008",
+    "name" : "L_C_EXCEL_CSV",
+    "value" : "Data count exceeds for Excel output. Would you download as CSV file?"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "T_SEL_DB",
+    "value" : "Select Database Connector"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "L_REVOKE_READ",
+    "value" : "Revoke Read"
+  }, {
+    "group" : "locale_zh_TW_0010",
+    "name" : "L_REVOKE_WRITE",
+    "value" : "Remoke Write"
   } ]
 }

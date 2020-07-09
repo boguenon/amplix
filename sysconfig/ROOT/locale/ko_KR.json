@@ -345,6 +345,7 @@
     "name" : "L_LONGITUDE",
     "value" : "경도"
   }, {
+    "group" : "locale_ko_KR_0010",
     "name" : "B_PATH",
     "value" : "경로"
   }, {
@@ -3964,5 +3965,105 @@
     "group" : "locale_ko_KR_0009",
     "name" : "L_C_SWAPSQL",
     "value" : "SQL 항목을 변경하시면 피벗을 새로 설정하여야 함비낟. 계속하시려면 확인을 눌러 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "L_SELECT_FIELD",
+    "value" : "필트를 선택하신 후 계속 진행해 주십시오!"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "L_AU_APPLY_APPEND",
+    "value" : "추가하기"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "B_READ",
+    "value" : "보기"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "B_WRITE",
+    "value" : "쓰기"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "E_PERMISSION",
+    "value" : "항목을 사용할 권한이 없습니다."
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "B_ADVANCED",
+    "value" : "고급 옵션"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "D_DATASET",
+    "value" : "데이타셋"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "L_TABLE_NAME",
+    "value" : "테이블 명"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "L_FIELD_NAME",
+    "value" : "필드 명"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "B_REFRESH",
+    "value" : "새로고침"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "B_ITEMNAME",
+    "value" : "아이템명"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "L_CLEAR_FORMULA",
+    "value" : "수식 삭제하기"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "B_MORE",
+    "value" : "추가옵션"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "F_STDEV",
+    "value" : "표준편차"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "F_STDEVP",
+    "value" : "표준편차 P"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "F_PERCENTILE",
+    "value" : "퍼센타일"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "F_PERCENTILE_EXE",
+    "value" : "퍼센타일(엑셀)"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "L_FORMULA_GROUP",
+    "value" : "수식 그룹"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "L_EXPRESSION",
+    "value" : "수식"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "L_USE_COL_FORMAT",
+    "value" : "컬럼 포맷 사용"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "L_DISP_TEMPLATE",
+    "value" : "셀 표시 템플릿"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "L_C_EXCEL_CSV",
+    "value" : "엑셀 다운로드를 위한 건수를 초과합니다. CSV 파일로 다운로드 받으시겠습니까?"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "T_SEL_DB",
+    "value" : "데이타베이스 커넥터 선택"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "L_REVOKE_READ",
+    "value" : "읽기 제거"
+  }, {
+    "group" : "locale_ko_KR_0010",
+    "name" : "L_REVOKE_WRITE",
+    "value" : "쓰기 제거"
   } ]
 }

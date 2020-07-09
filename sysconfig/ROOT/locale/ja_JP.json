@@ -345,8 +345,9 @@
     "name" : "L_LONGITUDE",
     "value" : "?度"
   }, {
+    "group" : "locale_ja_JP_0010",
     "name" : "B_PATH",
-    "value" : "パス"
+    "value" : "Path"
   }, {
     "name" : "L_C_DIR",
     "value" : "方向を計算します"
@@ -3992,5 +3993,77 @@
     "group" : "locale_ja_JP_0009",
     "name" : "L_C_EXCEL_CSV",
     "value" : "Data count exceeds for Excel output. Would you download as CSV file?"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_SELECT_FIELD",
+    "value" : "Check select field to continue!"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_AU_APPLY_APPEND",
+    "value" : "Append Only"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_READ",
+    "value" : "Read"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_WRITE",
+    "value" : "Writable"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "E_PERMISSION",
+    "value" : "Error on permission of the item."
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_ADVANCED",
+    "value" : "Advanced Options"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "D_DATASET",
+    "value" : "DataSet"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_TABLE_NAME",
+    "value" : "Table name"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_FIELD_NAME",
+    "value" : "Field name"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_REFRESH",
+    "value" : "Refresh"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_ITEMNAME",
+    "value" : "Item name"
+  }, {
+    "group" : "locale_ja_JP_0008",
+    "name" : "L_C_REMSQL",
+    "value" : "Remove this sql can cause sheets that reconfiguration. Click confirm to continue."
+  }, {
+    "group" : "locale_ja_JP_0008",
+    "name" : "B_EDIT",
+    "value" : "Edit"
+  }, {
+    "group" : "locale_ja_JP_0008",
+    "name" : "L_C_SQL_NON",
+    "value" : "Need at least one sql and could not delete this one."
+  }, {
+    "group" : "locale_ja_JP_0008",
+    "name" : "L_C_SWAPSQL",
+    "value" : "Changing SQL need to reconfigure your pivot items. Click confirm to continue."
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "T_SEL_DB",
+    "value" : "Select Database Connector"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_REVOKE_READ",
+    "value" : "Revoke Read"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_REVOKE_WRITE",
+    "value" : "Remoke Write"
   } ]
 }

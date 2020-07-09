@@ -6,7 +6,7 @@
 		},
 		{
 			"name": "Analysis",
-			"cls": "ig_anl",
+			"cls": "ig_anal",
 			"children": [
 				{
 					"name": "Database Connection",
@@ -269,22 +269,12 @@
 									"cls": "ig_n_f_f"
 								},
 								{
-									"name": "Cube Analysis",
-									"cls": "ig_n_cb",
-									"children": [
-										{
-											"name": "ROLAP Cube",
-											"cls": "ig_n_c_rc"
-										},
-										{
-											"name": "BigData Cube",
-											"cls": "ig_n_c_b"
-										}
-									 ]
-								},
-								{
 									"name": "Database Model",
 									"cls": "ig_n_dbm"
+								},
+								{
+									"name": "Business Object",
+									"cls": "ig_n_bobj"
 								},
 								{
 									"name": "Report",
