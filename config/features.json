@@ -223,6 +223,10 @@
 			"cls": "ig_nav",
 			"children": [
 				{
+					"name": "Create Workspace",
+					"cls": "ig_n_cw"
+				},
+				{
 					"name": "List",
 					"cls": "ig_n_lst",
 					"children": [
@@ -260,10 +264,6 @@
 							"name": "Create New",
 							"cls": "ig_n_f",
 							"children": [
-								{
-									"name": "Workspace",
-									"cls": "ig_n_cw"
-								},
 								{
 									"name": "Folder",
 									"cls": "ig_n_f_f"
