@@ -5,6 +5,24 @@
 			"cls": "ig_nav"
 		},
 		{
+			"name": "Report Menu",
+			"cls": "ig_report_menu",
+			"children": [
+				{
+					"name": "New Report",
+					"cls": "ig_menu_rpt"
+				},
+				{
+					"name": "New SQL Report",
+					"cls": "ig_menu_sql_rpt"
+				},
+				{
+					"name": "New Report",
+					"cls": "ig_menu_formbuilder"
+				}
+			]
+		},
+		{
 			"name": "Analysis",
 			"cls": "ig_anal",
 			"children": [
@@ -21,7 +39,7 @@
 					"cls": "ig_lookup"
 				},
 				{
-					"name": "Dashboard Mgr",
+					"name": "Form Builder Mgr",
 					"cls": "ig_dbd"
 				}
 			]
@@ -97,10 +115,6 @@
 						{
 							"name": "Locale Dictionary",
 							"cls": "ig_dloc"
-						},
-						{
-							"name": "Dashboard Mgr",
-							"cls": "ig_dbd"
 						}
 					]
 				},
@@ -285,7 +299,7 @@
 									"cls": "ig_n_sqlrpt"
 								},
 								{
-									"name": "Dashboard",
+									"name": "Form Builder",
 									"cls": "ig_n_dbd"
 								},
 								{
@@ -609,10 +623,6 @@
 					]
 				}
 			]
-		},
-		{
-			"name": "SQL Report",
-			"cls": "ig_sql_report"
 		}
 	] 
 }
