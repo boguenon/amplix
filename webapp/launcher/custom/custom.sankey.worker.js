@@ -77,6 +77,20 @@ IG$.__chartoption.chartext.sankey.prototype.buildNode = function(results, snode)
 }
 
 IG$.__chartoption.chartext.sankey.prototype.drawChart = function(owner, results) {
+	var me = this;
+	
+	if (me._draw_timer)
+	{
+		clearTimeout(me._draw_timer);
+		me._draw_timer = -1;
+	}
+	
+	me._draw_timer = setTimeout(function() {
+		me.drawChartTimer(owner, results);
+	}, 10);
+}
+
+IG$.__chartoption.chartext.sankey.prototype.drawChartTimer = function(owner, results) {
             
     var dragmove = function(d) {
         d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");

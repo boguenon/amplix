@@ -176,7 +176,7 @@ IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results
         cluster,
         contentString;
 
-    if (colfix > -1 && colfix < results.cols)
+    if (colfix > -1 && colfix < results.colcnt)
     {
         for (i=0; i < rowfix; i++)
         {
@@ -191,7 +191,7 @@ IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results
         p = results.geodata[i];
         p.lat = Number(p.lat);
         p.lng = Number(p.lng);
-        d = results.data[p.row];
+        d = results._tabledata[p.row];
         p.data = d;
         for (j=0; j < colfix; j++)
         {
@@ -221,11 +221,12 @@ IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results
         var mkey = p.lat + "_" + p.lng,
             pt = new google.maps.LatLng(p.lat, p.lng),
             dval,
+            h = results._tabledata[0],
             r, marker;
 
         if (cop.m_marker == "circle")
         {
-            dval = Number(p.data[colfix].code);
+            dval = p.data[colfix] ? Number(p.data[colfix].code) : 1;
 
             if (nmax - nmin > 0)
             {
@@ -250,7 +251,7 @@ IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results
         }
         else
         {
-            if (p.c)
+            if (p.c && p.cc)
             {
                 cluster = new ClusterMarker_(pt, p.cc, styles_, 60);
                 cluster.setMap(map);
@@ -258,10 +259,10 @@ IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results
             }
             else
             {
-                 marker = new google.maps.Marker(); // (oIcon, { title : '��Ŀ : ' + pt.toString() });
+            	marker = new google.maps.Marker(); // (oIcon, { title : '��Ŀ : ' + pt.toString() });
 
-                 marker.m_gdata = [p];
-                 marker.setPosition(pt);
+                marker.m_gdata = [p];
+                marker.setPosition(pt);
                 marker.setMap(map);
                 me.markers.push(marker);
                 
