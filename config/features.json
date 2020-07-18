@@ -83,6 +83,10 @@
 							"cls": "ig_sys_config"
 						},
 						{
+							"name": "UI Configurator",
+							"cls": "ig_sys_uiconfig"
+						},
+						{
 							"name": "SingleSignOn",
 							"cls": "ig_sys_sso"
 						},
