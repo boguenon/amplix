@@ -122,6 +122,12 @@
     "show" : true,
     "hide" : false
   }, {
+    "name" : "UI Configurator",
+    "cls" : "ig_sys_uiconfig",
+    "clspath" : "ig_mngr-ig_sys-ig_sys_uiconfig",
+    "show" : true,
+    "hide" : false
+  }, {
     "name" : "SingleSignOn",
     "cls" : "ig_sys_sso",
     "clspath" : "ig_mngr-ig_sys-ig_sys_sso",
