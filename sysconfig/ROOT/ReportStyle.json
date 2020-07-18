@@ -24,6 +24,7 @@
     "name" : "base_theme",
     "c_cset" : "office_2013",
     "gs_col" : "",
+    "gs_bs_brd_col" : "#F9F900",
     "gs_enable" : false,
     "gs_opa" : 0.6,
     "default_styles" : [ {
@@ -1281,8 +1282,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#575757",
-        "forecolor" : "#000000",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#000000"
       },
       "data" : {
         "autowidth" : true,
@@ -1348,8 +1349,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#575757",
-        "forecolor" : "#000000",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#000000"
       },
       "data" : {
         "autowidth" : true,
@@ -1415,8 +1416,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#000000",
-        "forecolor" : "#FFFFFF",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#FFFFFF"
       },
       "data" : {
         "autowidth" : true,
@@ -1586,8 +1587,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#000000",
-        "forecolor" : "#FFFFFF",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#FFFFFF"
       },
       "data" : {
         "autowidth" : true,
@@ -1653,8 +1654,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#000000",
-        "forecolor" : "#818181",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#818181"
       },
       "data" : {
         "autowidth" : true,
@@ -1720,8 +1721,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#D8D8D8",
-        "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -2468,8 +2469,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#D8D8D8",
-        "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -2535,8 +2536,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#D8D8D8",
-        "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -2602,8 +2603,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#9fd9ff",
-        "forecolor" : "#575757",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#575757"
       },
       "data" : {
         "autowidth" : true,
@@ -2773,8 +2774,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#9fd9ff",
-        "forecolor" : "#575757",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#575757"
       },
       "data" : {
         "autowidth" : true,
@@ -2840,8 +2841,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#9fd9ff",
-        "forecolor" : "#575757",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#575757"
       },
       "data" : {
         "autowidth" : true,
@@ -2907,8 +2908,8 @@
         "template" : "",
         "gradientmode" : -1,
         "backcolor" : "#D8D8D8",
-        "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4"
+        "bordercolor" : "#F4F4F4",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
