@@ -1205,19 +1205,19 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
             rowfix,
             rows,
             cols,
-            i, j, k, kname,
+            i, // j, k, kname,
             chart,
-            chartdiv,
+            // chartdiv,
             tw = container.width(),
-            th = container.height(),
-            px = 0, py = 0, pw, ph,
-            gtype,
-            sname,
-            sdata = [],
+            // th = container.height(),
+            // px = 0, py = 0, pw, ph,
+            // gtype,
+            // sname,
+            // sdata = [],
             nchart = 0,
-            f_ind_svalue_n = -1,
+            // f_ind_svalue_n = -1,
             ncnt,
-            boxlayout = cindopt.boxlayout,
+            // boxlayout = cindopt.boxlayout,
             tw = 0;
         
         cols = results.colcnt;
@@ -1292,7 +1292,8 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
             {
                 $.each(dataobj, function(i, m) {
                     var rg = $("#" + m.region, o),
-						copt = eval("(" + m.data + ")");
+						copt = eval("(" + m.data + ")"),
+						hc;
                     
                     switch (m.type)
                     {

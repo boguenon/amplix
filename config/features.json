@@ -119,6 +119,10 @@
 						{
 							"name": "Locale Dictionary",
 							"cls": "ig_dloc"
+						},
+						{
+							"name": "Chart Designer",
+							"cls": "ig_chart_dsgn"
 						}
 					]
 				},

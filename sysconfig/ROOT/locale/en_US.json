@@ -4065,5 +4065,93 @@
     "group" : "locale_en_US_0010",
     "name" : "L_REVOKE_WRITE",
     "value" : "Remoke Write"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_TODAY",
+    "value" : "Today"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_1D",
+    "value" : "Last 1 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_2D",
+    "value" : "Last 2 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_3D",
+    "value" : "Last 3 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_4D",
+    "value" : "Last 4 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_5D",
+    "value" : "Last 5 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_6D",
+    "value" : "Last 6 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_7D",
+    "value" : "Last 7 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_8D",
+    "value" : "Last 8 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_10D",
+    "value" : "Last 10 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_FROM_MON",
+    "value" : "From Monday"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_15D",
+    "value" : "Last 15 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_30D",
+    "value" : "Last 30 days"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_FROM_1ST_MON",
+    "value" : "From 1st month"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_1M",
+    "value" : "Last 1 month"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_2M",
+    "value" : "Last 2 month"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_6M",
+    "value" : "Last 6 month"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_1Y",
+    "value" : "Last 1 year"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_2Y",
+    "value" : "Last 2 year"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_3Y",
+    "value" : "Last 3 year"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_4Y",
+    "value" : "Last 4 year"
+  }, {
+    "group" : "locale_en_US_0011",
+    "name" : "L_LAST_5Y",
+    "value" : "Last 5 year"
   } ]
 }

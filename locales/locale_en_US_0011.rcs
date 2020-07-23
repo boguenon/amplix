@@ -1,0 +1,22 @@
+A;L_TODAY;Today
+A;L_LAST_1D;Last 1 days
+A;L_LAST_2D;Last 2 days
+A;L_LAST_3D;Last 3 days
+A;L_LAST_4D;Last 4 days
+A;L_LAST_5D;Last 5 days
+A;L_LAST_6D;Last 6 days
+A;L_LAST_7D;Last 7 days
+A;L_LAST_8D;Last 8 days
+A;L_LAST_10D;Last 10 days
+A;L_FROM_MON;From Monday
+A;L_LAST_15D;Last 15 days
+A;L_LAST_30D;Last 30 days
+A;L_FROM_1ST_MON;From 1st month
+A;L_LAST_1M;Last 1 month
+A;L_LAST_2M;Last 2 month
+A;L_LAST_6M;Last 6 month
+A;L_LAST_1Y;Last 1 year
+A;L_LAST_2Y;Last 2 year
+A;L_LAST_3Y;Last 3 year
+A;L_LAST_4Y;Last 4 year
+A;L_LAST_5Y;Last 5 year

@@ -4065,5 +4065,93 @@
     "group" : "locale_ko_KR_0010",
     "name" : "L_REVOKE_WRITE",
     "value" : "쓰기 제거"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_TODAY",
+    "value" : "오늘"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_1D",
+    "value" : "지난 1일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_2D",
+    "value" : "지난 2일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_3D",
+    "value" : "지난 3일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_4D",
+    "value" : "지난 4일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_5D",
+    "value" : "지난 5일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_6D",
+    "value" : "지난 6일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_7D",
+    "value" : "지난 7일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_8D",
+    "value" : "지난 8일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_10D",
+    "value" : "지난 10일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_FROM_MON",
+    "value" : "월요일 부터"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_15D",
+    "value" : "지난 15일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_30D",
+    "value" : "지난 30일"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_FROM_1ST_MON",
+    "value" : "현재월 1일부터"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_1M",
+    "value" : "지난 1월"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_2M",
+    "value" : "지난 2월"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_6M",
+    "value" : "지난 6월"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_1Y",
+    "value" : "지난 1년"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_2Y",
+    "value" : "지난 2년"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_3Y",
+    "value" : "지난 3년"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_4Y",
+    "value" : "지난 4년"
+  }, {
+    "group" : "locale_ko_KR_0011",
+    "name" : "L_LAST_5Y",
+    "value" : "지난 5년"
   } ]
 }
