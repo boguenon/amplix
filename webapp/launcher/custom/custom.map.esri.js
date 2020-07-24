@@ -1,0 +1,67 @@
+IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
+
+IG$.__chartoption.charttype.push(
+    {
+        label:"ArcGIS map",
+        charttype: "esri",
+        subtype: "esri",
+        img: "map",
+        grp: "scientific"
+    }
+);
+
+IG$.__chartoption.chartext.esri = function(owner) {
+    this.owner = owner;
+};
+
+// https://maps.googleapis.com/maps/api/js?&sensor=false
+
+IG$.__chartoption.chartext.esri.prototype = {
+    drawChart: function(owner, results) {
+        if (!IG$.__chartoption.chartext.esri._loaded)
+        {
+            var me = this,
+                js;
+
+			me._esri_version = 3;
+			
+			if (me._esri_version == 4)
+			{
+				// version 4 need proxy setting to allow COR issues
+				js = [
+					"https://js.arcgis.com/4.16/esri/themes/light/main.css",
+					"https://js.arcgis.com/4.16/",
+                    "./custom/custom.map.esri.worker.js",
+					"./custom/custom.map.esri.clustermarker.js",
+					"./custom/custom.map.esri.worker.v4.js"
+                ];
+			}
+			else
+			{
+				js = [
+					"https://js.arcgis.com/3.33/esri/css/esri.css",
+					"https://js.arcgis.com/3.33/",
+                    "./custom/custom.map.esri.worker.js"
+                ];
+			}
+            
+            IG$.getScriptCache(
+                js, 
+                new IG$.callBackObj(this, function() {
+                    IG$.__chartoption.chartext.esri._loaded = 1;
+                    me.drawChart.call(me, owner, results);
+                })
+            );
+        }
+    },
+
+    updatedisplay: function(owner, w, h) {
+        var me = this,
+	        map = me.map_inst;
+	        
+	    if (map)
+	    {
+	        map.resize();
+	    }
+    }
+};

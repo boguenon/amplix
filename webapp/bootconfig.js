@@ -1,5 +1,5 @@
 ig$.bootconfig = {
-	"cache": "202007231804",
+	"cache": "202007241519",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -28,8 +28,29 @@ ig$.bootconfig = {
             "./js/custom_viewer.min.js"
         ],
         "custom": [
-            "./js/custom.min.js",
-            "./custom/custom.timeline.css"
+            "./custom/custom.chart.options.js",
+			"./custom/custom.map.common.js",
+			"./custom/custom.map.google.js",
+			"./custom/custom.map.daum.js",
+			"./custom/custom.map.sgis.js",
+			"./custom/custom.map.naver.js",
+			"./custom/custom.map.vworld.js",
+			"./custom/custom.svg.airbus.js",
+			"./custom/custom.svg.korea.js",
+			
+			"./custom/custom.kpi.js",
+			"./custom/custom.sankey.js",
+			"./custom/custom.edu.js",
+			"./custom/custom.imageviewer.js",
+			"./custom/custom.timeline.js",
+			"./custom/custom.map.esri.js",
+			
+            "./custom/custom.timeline.css",
+
+			"./custom/custom.hstock.js",
+			
+			"./custom/pareto.js",
+			"./custom/quality_runchart.js"
         ],
         "sso": [
             "./custom/sso_client.js"

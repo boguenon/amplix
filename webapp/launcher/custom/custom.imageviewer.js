@@ -2,34 +2,32 @@ IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.__chartoption.charttype.push(
     {
-        label:"KPI Indicator",
-        charttype: "kpi",
-        subtype: "kpi",
-        img: "kpi",
+        label:"Image Viewer",
+        charttype: "imgviewer",
+        subtype: "imgviewer",
+        img: "imgviewer",
         grp: "scientific"
     }
 );
 
-IG$.__chartoption.chartext.kpi = function(owner) {
+IG$.__chartoption.chartext.imgviewer = function(owner) {
     this.owner = owner;
 }
 
-IG$.__chartoption.chartext.kpi.prototype = {
+IG$.__chartoption.chartext.imgviewer.prototype = {
     drawChart: function(owner, results) {
-        if (!IG$.__chartoption.chartext.kpi._loaded)
+        if (!IG$.__chartoption.chartext.imgviewer._loaded)
         {
             var me = this,
                 js = [
-                    "./custom/custom.kpi.worker.js",
-                    window.Highcharts ? "./js/modules/funnel.js" : null,
-                    window.Highcharts ? "./js/modules/solid-gauge.js" : null
+                    "./custom/custom.imageviewer.worker.js"
                 ],
                 ltest = 0;
             
             IG$.getScriptCache(
                 js, 
                 new IG$.callBackObj(this, function() {
-                    IG$.__chartoption.chartext.kpi._loaded = 1;
+                    IG$.__chartoption.chartext.imgviewer._loaded = true;
                     me.drawChart.call(me, owner, results);
                 })
             );
