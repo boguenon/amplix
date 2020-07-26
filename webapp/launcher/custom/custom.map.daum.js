@@ -28,10 +28,6 @@ IG$.__chartoption.chartext.daummap.prototype = {
             level: 3
         });
         me.map = map;
-        /*
-        daum.maps.event.addListener(map, "tick", function(e) {
-        });
-        */
         
         jcontainer.bind("mousedown", function(e) {
         });

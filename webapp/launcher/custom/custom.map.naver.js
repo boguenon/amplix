@@ -26,32 +26,26 @@ IG$.__chartoption.chartext.navermap.prototype = {
 				"https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=" + ig$.naver_map_api_key,
                 "./custom/custom.map.naver.worker.js"
             ];
-        
-        if (IG$.__chartoption.chartext.navermap_main)
+
+		if (IG$.__chartoption.chartext.navermap._loading)
+		{
+			setTimeout(function() {
+				me.drawChart.call(me, owner, results);
+			}, 500);
+			return;
+		}
+
+        if (!IG$.__chartoption.chartext.navermap._loaded)
         {
-            if (me.dmain)
-            {
-                me.dmain.dispose();
-                me.dmain = null;
-            }
-            
-            me.dmain = new IG$.__chartoption.chartext.navermap_main(owner);
-            me.dmain.drawChart.call(me.dmain, owner, results);
-        }
-        else
-        {
-            if (!IG$.__chartoption.chartext.navermap._loaded)
-            {
-                IG$.getScriptCache(
-                    js, 
-                    new IG$.callBackObj(this, function() {
-                        IG$.__chartoption.chartext.navermap._loaded = 1;
-                        var dmain = new IG$.__chartoption.chartext.navermap_main(owner);
-                        me.dmain = dmain;
-                        dmain.drawChart.call(dmain, owner, results);
-                    })
-                );
-            }
+			IG$.__chartoption.chartext.navermap._loading = true;
+			
+            IG$.getScriptCache(
+                js, 
+                new IG$.callBackObj(this, function() {
+                    IG$.__chartoption.chartext.navermap._loaded = 1;
+                    me.drawChart.call(me, owner, results);
+                })
+            );
         }
     },
     

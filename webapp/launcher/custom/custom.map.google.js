@@ -18,16 +18,27 @@ IG$.__chartoption.chartext.googlemap = function(owner) {
 
 IG$.__chartoption.chartext.googlemap.prototype = {
     drawChart: function(owner, results) {
+		var me = this;
+		
 		if (!ig$.google_map_api_key)
 		{
 			IG$.alertmsg(ig$.appname, "API key is missing!", null, null, 0, "error");
 			return;	
 		}
 		
+		if (IG$.__chartoption.chartext.googlemap._loading)
+		{
+			setTimeout(function() {
+				me.drawChart.call(me, owner, results);
+			}, 500);
+			
+			return;
+		}
+		
         if (!IG$.__chartoption.chartext.googlemap._loaded)
         {
-        	var me = this;
-        		
+			IG$.__chartoption.chartext.googlemap._loading = 1;
+			
         	IG$.getScriptCache([
         		{
         			src: "https://maps.googleapis.com/maps/api/js?key=" + ig$.google_map_api_key, // + "&callback=initMap",
@@ -38,8 +49,7 @@ IG$.__chartoption.chartext.googlemap.prototype = {
         		var js = [
 	                    "./custom/custom.map.google.worker.js",
 	                    "./custom/custom.map.google.clustermarker.js"
-	                ],
-	                ltest = 0;
+	                ];
 	            
 	            IG$.getScriptCache(
 	                js, 

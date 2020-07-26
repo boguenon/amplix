@@ -14,14 +14,25 @@ IG$.__chartoption.chartext.hstock = function(owner) {
 
 IG$.__chartoption.chartext.hstock.prototype = {    
     drawChart: function(owner, results) {
+		var me = this;
+		
+		if (IG$.__chartoption.chartext.hstock._loading)
+		{
+			setTimeout(function() {
+				me.drawChart.call(me, owner, results);
+			}, 500);
+			
+			return;
+		}
+		
         if (!IG$.__chartoption.chartext.hstock._loaded)
         {
-            var me = this,
-                js = [
+            var js = [
                     "./custom/custom.hstock.worker.js"
-                ],
-                ltest = 0;
+                ];
             
+			IG$.__chartoption.chartext.hstock._loading = 1;
+			
             IG$.getScriptCache(
                 js, 
                 new IG$.callBackObj(this, function() {

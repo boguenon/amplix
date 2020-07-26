@@ -16,15 +16,23 @@ IG$.__chartoption.chartext.kpi = function(owner) {
 
 IG$.__chartoption.chartext.kpi.prototype = {
     drawChart: function(owner, results) {
+		var me = this;
+		
+		if (IG$.__chartoption.chartext.kpi._loading)
+		{
+			setTimeout(function() {
+				me.drawChart.call(me, owner, results);
+			}, 500);
+			return;
+		}
+		
         if (!IG$.__chartoption.chartext.kpi._loaded)
         {
-            var me = this,
-                js = [
-                    "./custom/custom.kpi.worker.js",
-                    window.Highcharts ? "./js/modules/funnel.js" : null,
-                    window.Highcharts ? "./js/modules/solid-gauge.js" : null
-                ],
-                ltest = 0;
+            var js = [
+                    "./custom/custom.kpi.worker.js"
+                ];
+
+			IG$.__chartoption.chartext.kpi._loading = true;
             
             IG$.getScriptCache(
                 js, 

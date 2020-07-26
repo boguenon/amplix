@@ -18,10 +18,20 @@ IG$.__chartoption.chartext.esri = function(owner) {
 
 IG$.__chartoption.chartext.esri.prototype = {
     drawChart: function(owner, results) {
+		var me = this;
+		
+		if (IG$.__chartoption.chartext.esri._loading)
+		{
+			setTimeout(function() {
+				me.drawChart.call(me, owner, results);
+			}, 500);
+			
+			return;
+		}
+		
         if (!IG$.__chartoption.chartext.esri._loaded)
         {
-            var me = this,
-                js;
+            var js;
 
 			me._esri_version = 3;
 			
@@ -44,6 +54,8 @@ IG$.__chartoption.chartext.esri.prototype = {
                     "./custom/custom.map.esri.worker.js"
                 ];
 			}
+			
+			IG$.__chartoption.chartext.esri._loading = 1;
             
             IG$.getScriptCache(
                 js, 

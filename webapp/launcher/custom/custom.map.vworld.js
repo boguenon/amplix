@@ -19,41 +19,30 @@ IG$.__chartoption.chartext.vworldmap.prototype = {
             js = [
                 "./custom/custom.map.vworld.worker.js"
             ];
+
+		if (IG$.__chartoption.chartext.vworldmap._loading)
+		{
+			setTimeout(function() {
+				me.drawChart.call(me, owner, results);
+			}, 500);
+			
+			return;
+		}
         
-        if (IG$.__chartoption.chartext.vworldmap_main)
+        if (!IG$.__chartoption.chartext.vworldmap._loaded)
         {
-            if (me.dmain)
-            {
-                me.dmain.dispose();
-                me.dmain = null;
-            }
-            
-            me.dmain = new IG$.__chartoption.chartext.vworldmap_main(owner);
-            me.dmain.drawChart.call(me.dmain, owner, results);
-        }
-        else
-        {
-            if (!IG$.__chartoption.chartext.vworldmap._loaded)
-            {
-                IG$.getScriptCache(
-                    js, 
-                    new IG$.callBackObj(this, function() {
-                        IG$.__chartoption.chartext.vworldmap._loaded = 1;
-                        var dmain = new IG$.__chartoption.chartext.vworldmap_main(owner);
-                        me.dmain = dmain;
-                        dmain.drawChart.call(dmain, owner, results);
-                    })
-                );
-            }
+			IG$.__chartoption.chartext.vworldmap._loading = 1;
+			
+            IG$.getScriptCache(
+                js, 
+                new IG$.callBackObj(this, function() {
+                    IG$.__chartoption.chartext.vworldmap._loaded = 1;
+                    me.drawChart.call(me, owner, results);
+                })
+            );
         }
     },
     
     updatedisplay: function(owner, w, h) {
-        var me = this;
-        
-        if (me.dmain)
-        {
-            me.dmain.updatedisplay.call(me.dmain, owner, w, h);
-        }
     }
 };

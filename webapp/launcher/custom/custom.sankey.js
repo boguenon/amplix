@@ -18,14 +18,25 @@ IG$.__chartoption.chartext.sankey = function(owner) {
 
 IG$.__chartoption.chartext.sankey.prototype = {
     drawChart: function(owner, results) {
+		var me = this;
+		
+		if (IG$.__chartoption.chartext.sankey._loading)
+		{
+			setTimeout(function() {
+				me.drawChart.call(me, owner, results);
+			}, 500);
+			
+			return;
+		}
+		
         if (!IG$.__chartoption.chartext.sankey._loaded)
         {
-            var me = this,
-                js = [
+            var js = [
                     "./custom/custom.sankey.worker.js",
                     "./custom/sankey.js"
-                ],
-                ltest = 0;
+                ];
+
+			IG$.__chartoption.chartext.sankey._loading = 1;
             
             IG$.getScriptCache(
                 js, 

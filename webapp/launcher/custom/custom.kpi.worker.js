@@ -1162,6 +1162,89 @@ IG$.__chartoption.chartext.kpi.prototype.procTemplate = function(tmpl, results, 
     return otmpl;
 };
 
+/**
+ * draw multiple chart
+ */
+IG$.__chartoption.chartext.kpi.prototype._drawCharts = function(charts, chartdiv) {
+    var j;
+    $.each(charts, function(j, chart) {
+        var value = charts[j].c, 
+            jdiv = $("#" + charts[j].cid + "", chartdiv),
+            w = jdiv.width(),
+            h = jdiv.height(),
+            c = $('<div></div>')
+                .appendTo(jdiv)
+                .css({ 
+                    position: 'absolute', 
+                    margin:0, 
+                    padding:0, 
+                    left:0, 
+                    top: 0, 
+                    width: w, 
+                    height: h
+                })
+                .show();
+        
+        var opt = {defaultPixelsPerValue: w / value.chartData.elementdata.length},
+            chartData = value.chartData,
+            series = chartData.seriesdata;
+            
+        IG$.microChartType(chartData, opt);
+        
+        if (series && series.length > 0 && series[0].data.length > 0)
+        {
+            opt.defaultPixelsPerValue = w / (series[0].data.length);
+            opt.height = h; 
+            opt.tooltipFormat = '{{offset:offset}} {{y:val}}'; //{{value}}';
+            opt.tooltipValueLookups = {
+                offset: series[0].element
+            };
+        }
+        
+        chartdiv.bind("cresize", function() {
+            jdiv.empty();
+            
+            var w = jdiv.width(),
+                h = jdiv.height(),
+                c = $('<div></div>')
+                    .appendTo(jdiv)
+                    .css({ 
+                        position: 'absolute', 
+                        margin:0, 
+                        padding:0, 
+                        left:0, 
+                        top: 0, 
+                        width: w, 
+                        height: h
+                    })
+                    .show();
+                    
+            var chartData = value.chartData,
+                opt = {defaultPixelsPerValue: chartData.elementdata && chartData.elementdata.length ? w / chartData.elementdata.length : w},
+                series = chartData.seriesdata;
+                
+            IG$.microChartType(chartData, opt);
+            
+            if (series && series.length > 0 && series[0].data.length > 0)
+            {
+                opt.defaultPixelsPerValue = w / (series[0].data.length);
+                opt.height = h; 
+                opt.tooltipFormat = '{{offset:offset}} {{y:val}}'; //{{value}}';
+                opt.tooltipValueLookups = {
+                    offset: series[0].element
+                };
+            }
+            
+            c.sparkline((series && series.length > 0) ? series[0].data : [], opt);
+        });
+        
+        c.sparkline((series && series.length > 0) ? series[0].data : [], opt);
+    });
+};
+
+/**
+ * overrides base function after loading
+ */
 IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
     var me = this,
         container = $(owner.container),
@@ -1266,7 +1349,7 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
                 _bc = cindopt.boxconfig[i % cindopt.boxconfig.length];
             }
             
-            var chartdiv = $("<div class='igc-kpi-blk' style='position:absolute;top:400px'></div>").appendTo($("body")); // .appendTo(me.plotinner);
+            var chartdiv = $("<div class='igc-kpi-blk' style='position:absolute'></div>").appendTo(me.plotinner);
             
             var tmpl = "<div class='pind-box'><div class='pind-title'>"
                 + "<span class='pind-title-text'>" + (_bc ? _bc.name : "") + "</span>"
@@ -1285,7 +1368,7 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
             
             if (charts.length)
             {
-                me.drawCharts.call(me, charts, chartdiv);
+                me._drawCharts.call(me, charts, chartdiv);
             }
             
             if (dataobj)
@@ -1312,12 +1395,17 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 						
 						if (window.echarts)
 						{
+							var cw = IG$.j$ext._w(me.plotinner) || 100,
+								ch = IG$.j$ext._h(me.plotinner) || 100;
+							
+							rg.width(cw);
+							rg.height(ch);
 							hc = echarts.init(copt.chart.renderTo, ig$.echarts_theme || 'amplix', {
 								renderer: "canvas" // "svg"
 							});
 							
-							hc.setOption(copt);
 							hc.renderTo = copt.chart.renderTo;
+							hc.setOption(copt);
 							hcharts.push(hc);
 						}
 						break;
@@ -1500,83 +1588,6 @@ IG$.__chartoption.chartext.kpi.prototype.updateLayout = function(resized) {
         }
     }
 }
-
-IG$.__chartoption.chartext.kpi.prototype.drawCharts = function(charts, chartdiv) {
-    var j;
-    $.each(charts, function(j, chart) {
-        var value = charts[j].c, 
-            jdiv = $("#" + charts[j].cid + "", chartdiv),
-            w = jdiv.width(),
-            h = jdiv.height(),
-            c = $('<div></div>')
-                .appendTo(jdiv)
-                .css({ 
-                    position: 'absolute', 
-                    margin:0, 
-                    padding:0, 
-                    left:0, 
-                    top: 0, 
-                    width: w, 
-                    height: h
-                })
-                .show();
-        
-        var opt = {defaultPixelsPerValue: w / value.chartData.elementdata.length},
-            chartData = value.chartData,
-            series = chartData.seriesdata;
-            
-        IG$.microChartType(chartData, opt);
-        
-        if (series && series.length > 0 && series[0].data.length > 0)
-        {
-            opt.defaultPixelsPerValue = w / (series[0].data.length);
-            opt.height = h; 
-            opt.tooltipFormat = '{{offset:offset}} {{y:val}}'; //{{value}}';
-            opt.tooltipValueLookups = {
-                offset: series[0].element
-            };
-        }
-        
-        chartdiv.bind("cresize", function() {
-            jdiv.empty();
-            
-            var w = jdiv.width(),
-                h = jdiv.height(),
-                c = $('<div></div>')
-                    .appendTo(jdiv)
-                    .css({ 
-                        position: 'absolute', 
-                        margin:0, 
-                        padding:0, 
-                        left:0, 
-                        top: 0, 
-                        width: w, 
-                        height: h
-                    })
-                    .show();
-                    
-            var chartData = value.chartData,
-                opt = {defaultPixelsPerValue: chartData.elementdata && chartData.elementdata.length ? w / chartData.elementdata.length : w},
-                series = chartData.seriesdata;
-                
-            IG$.microChartType(chartData, opt);
-            
-            if (series && series.length > 0 && series[0].data.length > 0)
-            {
-                opt.defaultPixelsPerValue = w / (series[0].data.length);
-                opt.height = h; 
-                opt.tooltipFormat = '{{offset:offset}} {{y:val}}'; //{{value}}';
-                opt.tooltipValueLookups = {
-                    offset: series[0].element
-                };
-            }
-            
-            c.sparkline((series && series.length > 0) ? series[0].data : [], opt);
-        });
-        
-        c.sparkline((series && series.length > 0) ? series[0].data : [], opt);
-    });
-};
 
 IG$.__chartoption.chartext.kpi.prototype.updatedisplay = function(owner, w, h) {
     // this.map.m1.call(this.map);

@@ -16,13 +16,24 @@ IG$.__chartoption.chartext.imgviewer = function(owner) {
 
 IG$.__chartoption.chartext.imgviewer.prototype = {
     drawChart: function(owner, results) {
+		var me = this;
+		
+		if (IG$.__chartoption.chartext.imgviewer._loading)
+		{
+			setTimeout(function() {
+				me.drawChart.call(me, owner, results);
+			}, 500);
+			
+			return;
+		}
+		
         if (!IG$.__chartoption.chartext.imgviewer._loaded)
         {
-            var me = this,
-                js = [
+            var js = [
                     "./custom/custom.imageviewer.worker.js"
-                ],
-                ltest = 0;
+                ];
+
+			IG$.__chartoption.chartext.imgviewer._loading = 1;
             
             IG$.getScriptCache(
                 js, 
