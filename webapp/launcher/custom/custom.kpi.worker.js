@@ -1201,7 +1201,7 @@ IG$.__chartoption.chartext.kpi.prototype._drawCharts = function(charts, chartdiv
             };
         }
         
-        chartdiv.bind("cresize", function() {
+        chartdiv.bind("resize", function() {
             jdiv.empty();
             
             var w = jdiv.width(),
@@ -1395,11 +1395,6 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 						
 						if (window.echarts)
 						{
-							var cw = IG$.j$ext._w(me.plotinner) || 100,
-								ch = IG$.j$ext._h(me.plotinner) || 100;
-							
-							rg.width(cw);
-							rg.height(ch);
 							hc = echarts.init(copt.chart.renderTo, ig$.echarts_theme || 'amplix', {
 								renderer: "canvas" // "svg"
 							});
@@ -1415,7 +1410,7 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
             
             if (hcharts.length)
             {
-                chartdiv.bind("cresize", function() {
+                chartdiv.bind("resize", function() {
                     var i,
                         mdiv = $(this),
                         mw = IG$.j$ext._w(mdiv),
@@ -1448,7 +1443,7 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
                 
                 if (window.bowser && window.bowser.msie && Number(window.bowser.version) < 10)
                 {
-                    chartdiv.trigger("cresize");
+                    chartdiv.trigger("resize");
                 }
             }
             
@@ -1584,7 +1579,7 @@ IG$.__chartoption.chartext.kpi.prototype.updateLayout = function(resized) {
                 break;
             }
             
-            chartdiv.trigger("cresize");
+            chartdiv.trigger("resize");
         }
     }
 }
