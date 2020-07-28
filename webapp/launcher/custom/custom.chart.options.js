@@ -5,7 +5,7 @@ IG$.__chartoption.chartcateg.push({
 	value: "h-stock"
 });
 
-IG$.cSET/* chartOptionSet */= "f_palette;f_showvalues;m_zoom_level;f_gauge_type;f_gauge_refresh;m_marker;m_min;m_max;s_t_f;s_t_fo;e3d_en;e3d_al;e3d_be;e3d_de;e3d_vd;edu_val1;cdata_m_tmpl;m_xypos";
+IG$.cSET/* chartOptionSet */= "f_palette;f_showvalues;m_zoom_level;f_gauge_type;f_gauge_refresh;m_marker;m_min;m_max;s_t_f;s_t_fo;e3d_en;e3d_al;e3d_be;e3d_de;e3d_vd;edu_val1;cdata_m_tmpl;m_xypos;m_arc_basemap";
 
 IG$._customChartPanels = [
 	// for fusion chart extension
@@ -224,18 +224,22 @@ IG$._customChartPanels = [
 		defaults: {
 			anchor: "100%"
 		},
+		
 		initData: function() {
 			var me = this, 
 				ma = me.__main__,
 				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
 
 			if (option) {
+				option.settings = option.settings || {};
+				
 				me.down("[name=m_zoom_level]").setValue(option.m_zoom_level || "8");
 				me.down("[name=m_marker]").setValue(option.m_marker || "");
 				me.down("[name=m_min]").setValue(option.m_min || "1000");
 				me.down("[name=m_max]").setValue(option.m_max || "10000");
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
+				me.down("[name=m_arc_basemap]").setValue(option.settings.m_arc_basemap || "");
 			}
 		},
 
@@ -245,12 +249,15 @@ IG$._customChartPanels = [
 				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
 
 			if (option) {
+				option.settings = option.settings || {};
+				
 				option.m_zoom_level = "" + me.down("[name=m_zoom_level]").getValue();
 				option.m_marker = me.down("[name=m_marker]").getValue();
 				option.m_min = "" + me.down("[name=m_min]").getValue();
 				option.m_max = "" + me.down("[name=m_max]").getValue();
 				option.cdata_m_tmpl = me.down("[name=cdata_m_tmpl]").getValue();
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
+				option.settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
 			}
 		},
 		invalidateFields: function(opt) {
@@ -263,6 +270,7 @@ IG$._customChartPanels = [
 				subtype == "vworldmap");
 			me.down("[name=m_xypos]").setVisible(subtype == "vworldmap");
 			me.down("[name=pb02]").setVisible(subtype == "kpi");
+			me.down("[name=m_arc_basemap]").setVisible(subtype == "esri");
 		},
 		items: [
 			{
@@ -350,6 +358,35 @@ IG$._customChartPanels = [
 								fieldLabel: "Template",
 								name: "cdata_m_tmpl",
 								hidden: true
+							},
+							{
+								xtype: "combobox",
+								name: "m_arc_basemap",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "value",
+								hidden: true,
+								fieldLabel: "Base Map",
+								store: {
+									data: [
+										{name: "dark-gray", value: "dark-gray"},
+										{name: "dark-gray-vector", value: "dark-gray-vector"},
+										{name: "gray", value: "gray"},
+										{name: "gray-vector", value: "gray-vector"},
+										{name: "national-geographic", value: "national-geographic"},
+										{name: "oceans", value: "oceans"},
+										{name: "osm", value: "osm"},
+										{name: "satellite", value: "satellite"},
+										{name: "streets", value: "streets"},
+										{name: "streets-navigation-vector", value: "streets-navigation-vector"},
+										{name: "streets-night-vector", value: "streets-night-vector"},
+										{name: "streets-relief-vector", value: "streets-relief-vector"},
+										{name: "streets-vector", value: "streets-vector"},
+										{name: "terrain", value: "terrrain"},
+										{name: "topo", value: "topo"},
+										{name: "topo-vector", value: "topo-vector"}
+									]
+								}	
 							},
 							{
 								xtype: "combobox",

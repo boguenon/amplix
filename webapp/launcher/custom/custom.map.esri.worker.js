@@ -62,6 +62,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 // insert logic with report result
     var me = this,
         map_inst = me.map_inst,
+		cop = owner.cop,
         i;
     
 	require([
@@ -105,6 +106,15 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         {
             me.map_initialize(owner.container);
         }
+
+		map_inst = me.map_inst;
+		
+		cop.settings = cop.settings || {};
+
+		if (cop.settings.m_arc_basemap)
+		{
+			map_inst.setBasemap(cop.settings.m_arc_basemap);
+		}
         
         if (me._glayers)
         {

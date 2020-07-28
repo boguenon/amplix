@@ -19,6 +19,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -37,14 +38,14 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202007262351" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202007281453" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202007262351" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202007281453" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202007262351" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202007281453" />
 <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202007262351"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202007262351"></script>
+<script type="text/javascript" src="../config.js?_dc=202007281453"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202007281453"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";

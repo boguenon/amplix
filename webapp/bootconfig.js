@@ -1,5 +1,5 @@
 ig$.bootconfig = {
-	"cache": "202007262351",
+	"cache": "202007281453",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -40,7 +40,6 @@ ig$.bootconfig = {
 			
 			"./custom/custom.kpi.js",
 			"./custom/custom.sankey.js",
-			"./custom/custom.edu.js",
 			"./custom/custom.imageviewer.js",
 			"./custom/custom.timeline.js",
 			"./custom/custom.map.esri.js",
