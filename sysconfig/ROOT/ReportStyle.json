@@ -60,8 +60,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#575757",
-        "backcolor" : "#D5D5D5"
+        "backcolor" : "#D5D5D5",
+        "forecolor" : "#575757"
       },
       "data" : {
         "autowidth" : true,
@@ -92,8 +92,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#00004C",
-        "backcolor" : "#EFEFEF"
+        "backcolor" : "#EFEFEF",
+        "forecolor" : "#00004C"
       }
     }, {
       "fid" : "",
@@ -128,8 +128,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#575757",
-        "backcolor" : "#D5D5D5"
+        "backcolor" : "#D5D5D5",
+        "forecolor" : "#575757"
       },
       "data" : {
         "autowidth" : true,
@@ -160,8 +160,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#00004C",
-        "backcolor" : "#D5D5D5"
+        "backcolor" : "#D5D5D5",
+        "forecolor" : "#00004C"
       }
     }, {
       "fid" : "",
@@ -196,8 +196,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#333366",
-        "backcolor" : "#D8D8D8"
+        "backcolor" : "#D8D8D8",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -228,8 +228,62 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#575757",
-        "backcolor" : "#F6F6F6"
+        "backcolor" : "#F6F6F6",
+        "forecolor" : "#575757"
+      }
+    }, {
+      "fid" : "",
+      "name" : "Dimension String",
+      "rptseq" : 0,
+      "basestylename" : "Dimension",
+      "header" : {
+        "autowidth" : true,
+        "backalpha" : -1.0,
+        "bordertop" : -1,
+        "borderbottom" : -1,
+        "borderright" : -1,
+        "borderleft" : -1,
+        "borderouttop" : -1,
+        "borderoutbottom" : -1,
+        "borderoutright" : -1,
+        "borderoutleft" : -1,
+        "columnwidth" : -1,
+        "fontsize" : -1,
+        "fontstyle" : -1,
+        "name" : "Dimension String",
+        "paddingbottom" : -1,
+        "paddingleft" : -1,
+        "paddingright" : -1,
+        "paddingtop" : -1,
+        "textalign" : -1,
+        "width" : -1,
+        "widthmode" : -1,
+        "gradientmode" : -1
+      },
+      "data" : {
+        "autowidth" : true,
+        "backalpha" : -1.0,
+        "bordertop" : -1,
+        "borderbottom" : -1,
+        "borderright" : -1,
+        "borderleft" : -1,
+        "borderouttop" : -1,
+        "borderoutbottom" : -1,
+        "borderoutright" : -1,
+        "borderoutleft" : -1,
+        "columnwidth" : -1,
+        "fontsize" : -1,
+        "fontstyle" : -1,
+        "name" : "Dimension String",
+        "paddingbottom" : -1,
+        "paddingleft" : -1,
+        "paddingright" : -1,
+        "paddingtop" : -1,
+        "textalign" : -1,
+        "width" : -1,
+        "widthmode" : -1,
+        "formatstring" : "",
+        "gradientmode" : -1
       }
     }, {
       "fid" : "",
@@ -372,8 +426,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#333366",
-        "backcolor" : "#D8D8D8"
+        "backcolor" : "#D8D8D8",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -404,8 +458,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#575757",
-        "backcolor" : "#F6F6F6"
+        "backcolor" : "#F6F6F6",
+        "forecolor" : "#575757"
       }
     }, {
       "fid" : "",
@@ -440,8 +494,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#333366",
-        "backcolor" : "#D8D8D8"
+        "backcolor" : "#D8D8D8",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -472,8 +526,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#0000FF",
-        "backcolor" : "#FFFFFF"
+        "backcolor" : "#FFFFFF",
+        "forecolor" : "#0000FF"
       }
     }, {
       "fid" : "",
@@ -508,8 +562,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#333366",
-        "backcolor" : "#D8D8D8"
+        "backcolor" : "#D8D8D8",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : true,
@@ -540,8 +594,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#333366",
-        "backcolor" : "#FFFF99"
+        "backcolor" : "#FFFF99",
+        "forecolor" : "#333366"
       }
     } ],
     "custom_styles" : [ {
@@ -1241,8 +1295,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#F90000",
-        "backcolor" : "#FFFFA8"
+        "backcolor" : "#FFFFA8",
+        "forecolor" : "#F90000"
       }
     } ]
   }, {
@@ -1281,9 +1335,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#575757",
         "forecolor" : "#000000",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#575757"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -1313,8 +1367,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#F9F900",
-        "backcolor" : "#818181"
+        "backcolor" : "#818181",
+        "forecolor" : "#F9F900"
       }
     }, {
       "fid" : "",
@@ -1348,9 +1402,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#575757",
         "forecolor" : "#000000",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#575757"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -1380,8 +1434,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#F9F900",
-        "backcolor" : "#818181"
+        "backcolor" : "#818181",
+        "forecolor" : "#F9F900"
       }
     }, {
       "fid" : "",
@@ -1415,9 +1469,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#000000",
         "forecolor" : "#FFFFFF",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#000000"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -1447,8 +1501,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#D5D5D5",
-        "backcolor" : "#000000"
+        "backcolor" : "#000000",
+        "forecolor" : "#D5D5D5"
       }
     }, {
       "fid" : "",
@@ -1586,9 +1640,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#000000",
         "forecolor" : "#FFFFFF",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#000000"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -1618,8 +1672,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#D5D5D5",
-        "backcolor" : "#000000"
+        "backcolor" : "#000000",
+        "forecolor" : "#D5D5D5"
       }
     }, {
       "fid" : "",
@@ -1653,9 +1707,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#000000",
         "forecolor" : "#818181",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#000000"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -1685,8 +1739,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#D5D5D5",
-        "backcolor" : "#575757"
+        "backcolor" : "#575757",
+        "forecolor" : "#D5D5D5"
       }
     }, {
       "fid" : "",
@@ -1720,9 +1774,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#D8D8D8",
         "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#D8D8D8"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -1752,8 +1806,58 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#D5D5D5",
-        "backcolor" : "#00004C"
+        "backcolor" : "#00004C",
+        "forecolor" : "#D5D5D5"
+      }
+    }, {
+      "name" : "Dimension String",
+      "rptseq" : 0,
+      "basestylename" : "Dimension",
+      "header" : {
+        "autowidth" : true,
+        "backalpha" : -1.0,
+        "bordertop" : -1,
+        "borderbottom" : -1,
+        "borderright" : -1,
+        "borderleft" : -1,
+        "borderouttop" : -1,
+        "borderoutbottom" : -1,
+        "borderoutright" : -1,
+        "borderoutleft" : -1,
+        "columnwidth" : -1,
+        "fontsize" : -1,
+        "fontstyle" : -1,
+        "paddingbottom" : -1,
+        "paddingleft" : -1,
+        "paddingright" : -1,
+        "paddingtop" : -1,
+        "textalign" : -1,
+        "width" : -1,
+        "widthmode" : -1,
+        "gradientmode" : -1
+      },
+      "data" : {
+        "autowidth" : true,
+        "backalpha" : -1.0,
+        "bordertop" : -1,
+        "borderbottom" : -1,
+        "borderright" : -1,
+        "borderleft" : -1,
+        "borderouttop" : -1,
+        "borderoutbottom" : -1,
+        "borderoutright" : -1,
+        "borderoutleft" : -1,
+        "columnwidth" : -1,
+        "fontsize" : -1,
+        "fontstyle" : -1,
+        "paddingbottom" : -1,
+        "paddingleft" : -1,
+        "paddingright" : -1,
+        "paddingtop" : -1,
+        "textalign" : -1,
+        "width" : -1,
+        "widthmode" : -1,
+        "gradientmode" : -1
       }
     } ],
     "custom_styles" : [ {
@@ -2404,8 +2508,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#FFCC00",
-        "backcolor" : "#969696"
+        "backcolor" : "#969696",
+        "forecolor" : "#FFCC00"
       },
       "data" : {
         "autowidth" : false,
@@ -2468,9 +2572,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#D8D8D8",
         "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#D8D8D8"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -2500,8 +2604,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#F6F6F6"
+        "backcolor" : "#F6F6F6",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -2535,9 +2639,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#D8D8D8",
         "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#D8D8D8"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -2567,8 +2671,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#F6F6F6"
+        "backcolor" : "#F6F6F6",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -2602,9 +2706,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#9fd9ff",
         "forecolor" : "#575757",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#9fd9ff"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -2634,8 +2738,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#F6F6F6"
+        "backcolor" : "#F6F6F6",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -2773,9 +2877,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#9fd9ff",
         "forecolor" : "#575757",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#9fd9ff"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -2805,8 +2909,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#F6F6F6"
+        "backcolor" : "#F6F6F6",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -2840,9 +2944,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#9fd9ff",
         "forecolor" : "#575757",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#9fd9ff"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -2872,8 +2976,8 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#575757",
-        "backcolor" : "#FFFFFF"
+        "backcolor" : "#FFFFFF",
+        "forecolor" : "#575757"
       }
     }, {
       "fid" : "",
@@ -2907,9 +3011,9 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
+        "backcolor" : "#D8D8D8",
         "forecolor" : "#333366",
-        "bordercolor" : "#F4F4F4",
-        "backcolor" : "#D8D8D8"
+        "bordercolor" : "#F4F4F4"
       },
       "data" : {
         "autowidth" : true,
@@ -2939,8 +3043,58 @@
         "dateformat" : "",
         "template" : "",
         "gradientmode" : -1,
-        "forecolor" : "#333366",
-        "backcolor" : "#FFFF99"
+        "backcolor" : "#FFFF99",
+        "forecolor" : "#333366"
+      }
+    }, {
+      "name" : "Dimension String",
+      "rptseq" : 0,
+      "basestylename" : "Dimension",
+      "header" : {
+        "autowidth" : true,
+        "backalpha" : -1.0,
+        "bordertop" : -1,
+        "borderbottom" : -1,
+        "borderright" : -1,
+        "borderleft" : -1,
+        "borderouttop" : -1,
+        "borderoutbottom" : -1,
+        "borderoutright" : -1,
+        "borderoutleft" : -1,
+        "columnwidth" : -1,
+        "fontsize" : -1,
+        "fontstyle" : -1,
+        "paddingbottom" : -1,
+        "paddingleft" : -1,
+        "paddingright" : -1,
+        "paddingtop" : -1,
+        "textalign" : -1,
+        "width" : -1,
+        "widthmode" : -1,
+        "gradientmode" : -1
+      },
+      "data" : {
+        "autowidth" : true,
+        "backalpha" : -1.0,
+        "bordertop" : -1,
+        "borderbottom" : -1,
+        "borderright" : -1,
+        "borderleft" : -1,
+        "borderouttop" : -1,
+        "borderoutbottom" : -1,
+        "borderoutright" : -1,
+        "borderoutleft" : -1,
+        "columnwidth" : -1,
+        "fontsize" : -1,
+        "fontstyle" : -1,
+        "paddingbottom" : -1,
+        "paddingleft" : -1,
+        "paddingright" : -1,
+        "paddingtop" : -1,
+        "textalign" : -1,
+        "width" : -1,
+        "widthmode" : -1,
+        "gradientmode" : -1
       }
     } ],
     "custom_styles" : [ {
@@ -2970,8 +3124,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#333366",
-        "backcolor" : "#D8D8D8"
+        "backcolor" : "#D8D8D8",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : false,
@@ -3024,8 +3178,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3050,8 +3204,8 @@
         "widthmode" : -1,
         "formatstring" : "$ #,##0",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -3080,8 +3234,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3106,8 +3260,8 @@
         "widthmode" : -1,
         "formatstring" : "\\ #,##0",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -3136,8 +3290,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3162,8 +3316,8 @@
         "widthmode" : -1,
         "formatstring" : "#,##0,",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -3192,8 +3346,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3218,8 +3372,8 @@
         "widthmode" : -1,
         "formatstring" : "#,##0,,",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -3248,8 +3402,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3274,8 +3428,8 @@
         "widthmode" : -1,
         "formatstring" : "#,##0.00 '%'",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -3304,8 +3458,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3330,8 +3484,8 @@
         "widthmode" : -1,
         "formatstring" : "#,##0.00 %",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -3360,8 +3514,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3386,8 +3540,8 @@
         "widthmode" : -1,
         "formatstring" : "#,##0.00 '%'",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -3416,8 +3570,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3442,8 +3596,8 @@
         "widthmode" : -1,
         "formatstring" : "#,##0 %",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -3472,8 +3626,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3498,8 +3652,8 @@
         "widthmode" : -1,
         "template" : "<span>TEXT</span><span style='font-family: fontawesome; color:#00ff00'></span>",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "fid" : "",
@@ -3528,8 +3682,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3554,8 +3708,8 @@
         "widthmode" : -1,
         "template" : "<span>TEXT</span><span style='font-family: fontawesome; color:#ff0000'></span>",
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "name" : "2 decimal",
@@ -3583,8 +3737,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#99CCFF",
-        "backcolor" : "#FF00FF"
+        "backcolor" : "#FF00FF",
+        "forecolor" : "#99CCFF"
       },
       "data" : {
         "autowidth" : false,
@@ -3608,8 +3762,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#800000",
-        "backcolor" : "#99CC00"
+        "backcolor" : "#99CC00",
+        "forecolor" : "#800000"
       }
     }, {
       "name" : "highlight_type1",
@@ -3637,8 +3791,8 @@
         "width" : -1,
         "widthmode" : -1,
         "gradientmode" : -1,
-        "forecolor" : "#333366",
-        "backcolor" : "#D8D8D8"
+        "backcolor" : "#D8D8D8",
+        "forecolor" : "#333366"
       },
       "data" : {
         "autowidth" : false,

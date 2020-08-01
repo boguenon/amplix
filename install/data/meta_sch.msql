@@ -894,3 +894,18 @@ CREATE TABLE igcfh (
 );
 
 CREATE INDEX idx_igcfh_01 ON igcfh(mts, tuid, umid);
+
+CREATE TABLE igcacclog ( 
+	cdate #LONG#,  
+	lstat #CHAR#(1), 
+	lchannel #VARCHAR#(100),
+	userid #VARCHAR#(100), 
+	mts_name #VARCHAR#(100),  
+	lhost #VARCHAR#(100), 
+	lhostip #VARCHAR#(100), 
+	lloc #VARCHAR#(10),
+	lerrcode #NUMBER#(5)
+);
+
+CREATE INDEX idx_igcacclog_01 ON igcacclog(cdate, userid);
+
