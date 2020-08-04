@@ -29,3 +29,4 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (22, 2, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (23, 2, 'rest','rest','REST WebService','rest',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (24, 5, 'elasticsearch', '-', 'ElasticSearch', '-', 1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (25, 1, 'cubrid', 'cubrid.jdbc.driver.CUBRIDDriver', 'CUBRID', 'jdbc:cubrid:<server>:<30000>:<dbname>:<public>::', 1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (26, 5, 'impala','com.cloudera.impala.jdbc.Driver','Impala','jdbc:impala://<server>:<28000>',1);

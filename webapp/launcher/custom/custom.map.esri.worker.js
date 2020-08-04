@@ -338,4 +338,11 @@ IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) 
 
 IG$.__chartoption.chartext.esri.prototype.dispose = function() {
 	// called when need to dispose the component
+	var me = this,
+		map = map.map_inst;
+		
+	if (map)
+	{
+		map.destroy();
+	}
 }

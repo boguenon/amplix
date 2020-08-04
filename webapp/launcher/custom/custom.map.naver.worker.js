@@ -291,6 +291,11 @@ IG$.__chartoption.chartext.navermap.prototype.updatedisplay = function(owner, w,
     
 IG$.__chartoption.chartext.navermap.prototype.dispose = function() {
     var me = this;
+
+	if (me.map)
+	{
+		me.map.destory();
+	}
     
     me.owner && me.owner.container && $(me.owner.container).empty();
 };
