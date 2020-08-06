@@ -21,7 +21,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "RetirementPlanning",
       "uid" : "bd452798-64b44a60",
@@ -34,9 +36,18 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     } ],
-    "level" : 0
+    "level" : 0,
+    "options" : {
+      "ltype" : "report",
+      "html" : "",
+      "rptl" : "1.MicroChart",
+      "rptl_uid" : "31f5c862-2a1f40bc",
+      "scrp" : ""
+    }
   }, {
     "name" : "Test 1",
     "items" : [ {
@@ -51,7 +62,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "1. Cartesian",
       "uid" : "1e452fe6-79464eb4",
@@ -64,7 +77,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "2. Pie",
       "uid" : "40cadb95-1efe4ecb",
@@ -77,7 +92,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "3. Radar",
       "uid" : "6edd3ec4-46e64b12",
@@ -90,7 +107,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "4. Bubble",
       "uid" : "308fe1c4-eefd40c1",
@@ -103,7 +122,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "5. Scatter",
       "uid" : "298fb35c-4cff4a5b",
@@ -116,7 +137,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "6. Stacked Bar",
       "uid" : "6191abdc-0bd24e42",
@@ -129,7 +152,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "7. Logarithm Scale Axis",
       "uid" : "1c9e0683-55a04572",
@@ -142,7 +167,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "8. Dual Axis",
       "uid" : "cb0687b7-a90440ac",
@@ -155,7 +182,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "9. Band with Average",
       "uid" : "a5d647a0-066e4bb2",
@@ -168,7 +197,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "10. Regression",
       "uid" : "2ec80e68-c8fc45fb",
@@ -181,7 +212,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     }, {
       "name" : "11. Stacked Percentage",
       "uid" : "6f103ffc-6efb476c",
@@ -194,7 +227,9 @@
       "isnewitem" : false,
       "sequence" : 0,
       "updatedate" : 0,
-      "status" : 0
+      "status" : 0,
+      "has_error" : false,
+      "sql_id" : "sql_1"
     } ],
     "level" : 0
   } ]
