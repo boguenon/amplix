@@ -21,13 +21,10 @@ public class ${CLASS_NAME}
 	
 	public void execute()
 	{
-		Connection con = null;
 		PreparedStatement pstmt = null;
 		
 		try
 		{
-	        con = p_daemon.connMgr.getConnection(igcServer.IGCBASE);
-	        
 	        logger.info("------------ start custom code execution");
 	        
 	        ${JAVA_SOURCE}
@@ -49,11 +46,6 @@ public class ${CLASS_NAME}
 			catch (Exception e)
 			{
 			}
-			
-			if (p_daemon != null)
-			{
-				p_daemon.connMgr.freeConnection(igcServer.IGCBASE, con, 2);
-			}
 		}
 	}
 	
@@ -61,6 +53,6 @@ public class ${CLASS_NAME}
 	
 	@Override
 	public void dispose() {
-		
+		super.dispose();		
 	}
 }
