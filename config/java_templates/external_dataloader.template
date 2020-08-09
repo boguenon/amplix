@@ -52,7 +52,7 @@ public class ${CLASS_NAME}
 			
 			if (p_daemon != null)
 			{
-				p_daemon.connMgr.freeConnection(igcServer.IGCBASE, con);
+				p_daemon.connMgr.freeConnection(igcServer.IGCBASE, con, 2);
 			}
 		}
 	}
