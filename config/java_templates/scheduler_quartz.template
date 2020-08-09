@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.amplix.rpc.igcJob;
-import com.amplix.rpc.igcServer;
 
 ${IMPORT_CLASSES}
 
@@ -21,13 +20,10 @@ public class ${CLASS_NAME}
 	
 	public void execute()
 	{
-		Connection con = null;
 		PreparedStatement pstmt = null;
 		
 		try
 		{
-	        con = p_daemon.connMgr.getConnection(igcServer.IGCBASE);
-	        
 	        logger.info("------------ start custom code execution");
 	        
 	        ${JAVA_SOURCE}
@@ -49,16 +45,11 @@ public class ${CLASS_NAME}
 			catch (Exception e)
 			{
 			}
-			
-			if (p_daemon != null)
-			{
-				p_daemon.connMgr.freeConnection(igcServer.IGCBASE, con);
-			}
 		}
 	}
-
+	
 	@Override
 	public void dispose() {
-		super.dispose();
+		super.dispose();		
 	}
 }
