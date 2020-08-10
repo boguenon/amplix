@@ -41,7 +41,7 @@ IG$.__chartoption.chartext.esri.prototype = {
             var js;
 
 			me._esri_version = 3.33;
-			me._esri_version = 3.17;
+			// me._esri_version = 3.17;
 			
 			if (me._esri_version == 4)
 			{
@@ -59,7 +59,7 @@ IG$.__chartoption.chartext.esri.prototype = {
 				js = [
 					"https://js.arcgis.com/3.17/esri/css/esri.css",
 					"https://js.arcgis.com/3.17/",
-                    "./custom/custom.map.esri.worker_v3.17.js"
+                    "./custom/custom.map.esri.worker.v3.17.js"
                 ];
 			}
 			else
