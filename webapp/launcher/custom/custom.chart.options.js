@@ -218,12 +218,16 @@ IG$._customChartPanels = [
 	// p2 panel
 	// for map chart extension
 	{
-		layout: "anchor",
+		layout: {
+			type: "vbox",
+			align: "stretch"
+		},
 		border: 0,
 		title: "Extra Options",
 		defaults: {
 			anchor: "100%"
 		},
+		autoScroll: true,
 		
 		initData: function() {
 			var me = this, 
@@ -240,6 +244,32 @@ IG$._customChartPanels = [
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
 				me.down("[name=m_arc_basemap]").setValue(option.settings.m_arc_basemap || "");
+				
+				// arc layer selection
+				var esri_api_layers = me.down("[name=m_arc_layers]"),
+					esri_layer_options = IG$.__chartoption.chartext.esri_api_layers,
+					dp = [],
+					dpmap = {};
+					
+				if (esri_layer_options && esri_layer_options.data && esri_layer_options.data.length)
+				{
+					if (option.settings.m_arc_layers)
+					{
+						$.each(option.settings.m_arc_layers, function(i, d) {
+							dpmap[d] = 1;
+						});
+					}
+					
+					$.each(esri_layer_options.data, function(i, d) {
+						var m = {
+							name: d.name,
+							selected: dpmap[d.name] ? true : false
+						};
+						dp.push(m);
+					});
+					
+					esri_api_layers.store.loadData(dp);
+				}
 			}
 		},
 
@@ -258,6 +288,18 @@ IG$._customChartPanels = [
 				option.cdata_m_tmpl = me.down("[name=cdata_m_tmpl]").getValue();
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
 				option.settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
+				
+				// arc layer selection
+				option.settings.m_arc_layers = [];
+				
+				var m_arc_layers = me.down("[name=m_arc_layers]"),
+					sel = m_arc_layers.getSelectionModel().selected,
+					i;
+					
+				for (i=0; i < sel.length; i++)
+				{
+					option.settings.m_arc_layers.push(sel.items[i].get("name"));
+				}
 			}
 		},
 		invalidateFields: function(opt) {
@@ -271,6 +313,9 @@ IG$._customChartPanels = [
 			me.down("[name=m_xypos]").setVisible(subtype == "vworldmap");
 			me.down("[name=pb02]").setVisible(subtype == "kpi");
 			me.down("[name=m_arc_basemap]").setVisible(subtype == "esri");
+			
+			// arc layer selection
+			me.down("[name=m_arc_layers]").setVisible(subtype == "esri" && IG$.__chartoption.chartext.esri_api_layers && IG$.__chartoption.chartext.esri_api_layers.data && IG$.__chartoption.chartext.esri_api_layers.data.length);
 		},
 		items: [
 			{
@@ -418,7 +463,29 @@ IG$._customChartPanels = [
 								}
 							} 
 						]
-					} 
+					},
+					// arc layer selection
+					{
+						xtype: "gridpanel",
+						title: "ArcGid MapLayers",
+						name: "m_arc_layers",
+						hidden: true,
+						height: 300,
+						selType: "checkboxmodel",
+                        selModel: {
+                            mode: "MULTI"
+                        },
+						store: {
+							data: [
+							]
+						},
+						columns: [
+							{
+								text: "Name",
+								dataIndex: "name"
+							}
+						]
+					}
 				]
 			},
 			{

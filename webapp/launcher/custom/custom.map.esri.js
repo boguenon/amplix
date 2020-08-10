@@ -10,6 +10,13 @@ IG$.__chartoption.charttype.push(
     }
 );
 
+IG$.__chartoption.chartext.esri_api_layers = {
+	data: [
+		{name: "MapLayer1", loader: "ArcGISDynamicMapServiceLayer", url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer"},
+		{name: "MapLayer2", loader: "ArcGISDynamicMapServiceLayer", url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer"}
+	]
+};
+
 IG$.__chartoption.chartext.esri = function(owner) {
     this.owner = owner;
 };
@@ -33,7 +40,8 @@ IG$.__chartoption.chartext.esri.prototype = {
         {
             var js;
 
-			me._esri_version = 3;
+			me._esri_version = 3.33;
+			me._esri_version = 3.17;
 			
 			if (me._esri_version == 4)
 			{
@@ -44,6 +52,14 @@ IG$.__chartoption.chartext.esri.prototype = {
                     "./custom/custom.map.esri.worker.js",
 					"./custom/custom.map.esri.clustermarker.js",
 					"./custom/custom.map.esri.worker.v4.js"
+                ];
+			}
+			else if (me._esri_version == 3.17)
+			{
+				js = [
+					"https://js.arcgis.com/3.17/esri/css/esri.css",
+					"https://js.arcgis.com/3.17/",
+                    "./custom/custom.map.esri.worker_v3.17.js"
                 ];
 			}
 			else

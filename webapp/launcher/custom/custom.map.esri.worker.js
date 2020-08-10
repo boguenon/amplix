@@ -109,6 +109,8 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 
 		map_inst = me.map_inst;
 		
+		me.load_api_layers(owner, results);
+		
 		cop.settings = cop.settings || {};
 
 		if (cop.settings.m_arc_basemap)
@@ -128,6 +130,21 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
     
         me.setData(owner, results);
     });
+}
+
+IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, results) {
+	var me = this,
+		map_inst = me.map_inst,
+		esri = me.esri;
+	
+	var layers = [
+		// "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer"
+	];
+	
+	$.each(layers, function(i, url) {
+		var l = new esri.ArcGISDynamicMapServiceLayer(url);
+		map_inst.addLayer(l);
+	});
 }
 
 IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
