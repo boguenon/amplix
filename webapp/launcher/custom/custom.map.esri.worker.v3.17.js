@@ -108,6 +108,22 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
             i, l;
         
         me.esri = esri;
+
+		/* 3.17 errors with layer
+		if (cop.settings.m_arc_basemap)
+		{
+			map_inst.setBasemap(cop.settings.m_arc_basemap);
+		}
+		*/
+		
+		if (map_inst && cop.settings.m_arc_basemap && me._basemap != cop.settings.m_arc_basemap)
+		{
+			map_inst.destroy();
+			map_inst = me.map_inst = null;
+			me._glayers = [];
+		}
+		
+		me._basemap = cop.settings.m_arc_basemap || "streets";
         
         if (!map_inst)
         {
@@ -118,14 +134,6 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		
 		cop.settings = cop.settings || {};
 
-		// 3.17 not supported
-		/*
-		if (cop.settings.m_arc_basemap)
-		{
-			map_inst.setBasemap(cop.settings.m_arc_basemap);
-		}
-		*/
-        
         if (me._glayers)
         {
             for (i=0; i < me._glayers.length; i++)
@@ -152,8 +160,35 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 		m_arc_layers = cop.settings.m_arc_layers;
 	
 	var layers = [],
-		api_layers = IG$.__chartoption.chartext.esri_api_layers,
 		selected_map = {};
+		
+	if (ig$.arcgis_rest$)
+	{
+		
+	}
+	else if (ig$.arcgis_rest)
+	{
+		ig$.arcgis_rest$ = [];
+		var v = ig$.arcgis_rest.split("\n"),
+			i, sv;
+			
+		for (i=0; i < v.length; i++)
+		{
+			if (v[i])
+			{
+				sv = v[i].split(",");
+				
+				if (sv.length == 3 && sv[0] && sv[1] && sv[2])
+				{
+					ig$.arcgis_rest$.push({
+						name: sv[0],
+						loader: sv[1],
+						url: sv[2]
+					});
+				}
+			}
+		}
+	}
 		
 	if (m_arc_layers)
 	{
@@ -161,7 +196,7 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 			selected_map[layer] = 1;
 		});
 		
-		$.each(api_layers.data, function(i, l) {
+		$.each(ig$.arcgis_rest$, function(i, l) {
 			if (selected_map[l.name])
 			{
 				layers.push(l);
@@ -385,7 +420,7 @@ IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) 
 IG$.__chartoption.chartext.esri.prototype.dispose = function() {
 	// called when need to dispose the component
 	var me = this,
-		map = map.map_inst;
+		map = me.map_inst;
 		
 	if (map)
 	{

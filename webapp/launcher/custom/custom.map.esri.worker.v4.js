@@ -73,3 +73,14 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         me.setData(owner, results);
     });
 }
+
+IG$.__chartoption.chartext.esri.prototype.dispose = function() {
+	// called when need to dispose the component
+	var me = this,
+		map = me.map_inst;
+		
+	if (map)
+	{
+		map.destroy();
+	}
+}

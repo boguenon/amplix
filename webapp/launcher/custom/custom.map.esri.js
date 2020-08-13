@@ -10,13 +10,6 @@ IG$.__chartoption.charttype.push(
     }
 );
 
-IG$.__chartoption.chartext.esri_api_layers = {
-	data: [
-		{name: "MapLayer1", loader: "ArcGISDynamicMapServiceLayer", url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer"},
-		{name: "MapLayer2", loader: "ArcGISDynamicMapServiceLayer", url: "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer"}
-	]
-};
-
 IG$.__chartoption.chartext.esri = function(owner) {
     this.owner = owner;
 };
@@ -40,33 +33,32 @@ IG$.__chartoption.chartext.esri.prototype = {
         {
             var js;
 
-			me._esri_version = 3.33;
-			// me._esri_version = 3.17;
+			me._esri_version = ig$.arcgis_version || "3.33";
 			
-			if (me._esri_version == 4)
+			if (me._esri_version == "4.16")
 			{
 				// version 4 need proxy setting to allow COR issues
 				js = [
-					"https://js.arcgis.com/4.16/esri/themes/light/main.css",
-					"https://js.arcgis.com/4.16/",
+					ig$.arcgis_css || "https://js.arcgis.com/4.16/esri/themes/light/main.css",
+					ig$.arcgis_js || "https://js.arcgis.com/4.16/",
                     "./custom/custom.map.esri.worker.js",
 					"./custom/custom.map.esri.clustermarker.js",
 					"./custom/custom.map.esri.worker.v4.js"
                 ];
 			}
-			else if (me._esri_version == 3.17)
+			else if (me._esri_version == "3.17")
 			{
 				js = [
-					"https://js.arcgis.com/3.17/esri/css/esri.css",
-					"https://js.arcgis.com/3.17/",
+					ig$.arcgis_css || "https://js.arcgis.com/3.17/esri/css/esri.css",
+					ig$.arcgis_js || "https://js.arcgis.com/3.17/",
                     "./custom/custom.map.esri.worker.v3.17.js"
                 ];
 			}
 			else
 			{
 				js = [
-					"https://js.arcgis.com/3.33/esri/css/esri.css",
-					"https://js.arcgis.com/3.33/",
+					ig$.arcgis_css || "https://js.arcgis.com/3.33/esri/css/esri.css",
+					ig$.arcgis_js || "https://js.arcgis.com/3.33/",
                     "./custom/custom.map.esri.worker.js"
                 ];
 			}

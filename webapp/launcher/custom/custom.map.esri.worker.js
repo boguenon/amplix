@@ -1,7 +1,8 @@
-IG$.__chartoption.chartext.esri.prototype.map_initialize = function(container) {
+IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, container) {
     var me = this,
         esri = me.esri,
         map,
+		cop = owner.cop,
         mapOptions = {
             zoom: 8
         },
@@ -11,7 +12,7 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(container) {
     map = new esri.Map(container, {
         center: [-118, 34.5],
         zoom: 8,
-        basemap: "topo"
+        basemap: cop.settings && cop.settings.m_arc_basemap ? cop.settings.m_arc_basemap : "streets"
     });
     
     me.map_inst = map;
@@ -66,8 +67,10 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         i;
     
 	require([
+		"esri/config",
 		"esri/map", 
         "esri/symbols/MarkerSymbol",
+		"esri/layers/ArcGISDynamicMapServiceLayer",
         "esri/symbols/SimpleMarkerSymbol",
         "esri/geometry/Point",
         "esri/dijit/InfoWindowLite",
@@ -80,12 +83,14 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         "esri/Color",
         "dojo/dom-construct",
         "dojo/domReady!"
-	], function(Map, MarkerSymbol, SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, FeatureLayer, Graphic, GraphicsLayer, 
+	], function(esriConfig, Map, MarkerSymbol, ArcGISDynamicMapServiceLayer, SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, FeatureLayer, Graphic, GraphicsLayer, 
         Circle, SimpleFillSymbol, Color,
         domConstruct) {
         var esri = {
+				esriConfig: esriConfig,
                 Map: Map,
                 MarkerSymbol: MarkerSymbol,
+				ArcGISDynamicMapServiceLayer: ArcGISDynamicMapServiceLayer,
                 SimpleMarkerSymbol: SimpleMarkerSymbol,
                 Point: Point,
                 InfoWindowLite: InfoWindowLite,
@@ -104,12 +109,10 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         
         if (!map_inst)
         {
-            me.map_initialize(owner.container);
+            me.map_initialize(owner, owner.container);
         }
 
 		map_inst = me.map_inst;
-		
-		me.load_api_layers(owner, results);
 		
 		cop.settings = cop.settings || {};
 
@@ -127,6 +130,10 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
             
             me._glayers = [];
         }
+
+		me._glayers = me._glayers || [];
+
+		me.load_api_layers(owner, results);
     
         me.setData(owner, results);
     });
@@ -135,15 +142,59 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, results) {
 	var me = this,
 		map_inst = me.map_inst,
-		esri = me.esri;
+		esri = me.esri,
+		cop = owner.cop,
+		m_arc_layers = cop.settings.m_arc_layers;
 	
-	var layers = [
-		// "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer"
-	];
-	
-	$.each(layers, function(i, url) {
-		var l = new esri.ArcGISDynamicMapServiceLayer(url);
+	var layers = [],
+		selected_map = {};
+		
+	if (ig$.arcgis_rest$)
+	{
+		
+	}
+	else if (ig$.arcgis_rest)
+	{
+		ig$.arcgis_rest$ = [];
+		var v = ig$.arcgis_rest.split("\n"),
+			i, sv;
+			
+		for (i=0; i < v.length; i++)
+		{
+			if (v[i])
+			{
+				sv = v[i].split(",");
+				
+				if (sv.length == 3 && sv[0] && sv[1] && sv[2])
+				{
+					ig$.arcgis_rest$.push({
+						name: sv[0],
+						loader: sv[1],
+						url: sv[2]
+					});
+				}
+			}
+		}
+	}
+		
+	if (m_arc_layers)
+	{
+		$.each(m_arc_layers, function(i, layer) {
+			selected_map[layer] = 1;
+		});
+		
+		$.each(ig$.arcgis_rest$, function(i, l) {
+			if (selected_map[l.name])
+			{
+				layers.push(l);
+			}
+		});
+	}
+		
+	$.each(layers, function(i, lobj) {
+		var l = new esri[lobj.loader](lobj.url);
 		map_inst.addLayer(l);
+		me._glayers.push(l);
 	});
 }
 
@@ -356,7 +407,7 @@ IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) 
 IG$.__chartoption.chartext.esri.prototype.dispose = function() {
 	// called when need to dispose the component
 	var me = this,
-		map = map.map_inst;
+		map = me.map_inst;
 		
 	if (map)
 	{

@@ -247,11 +247,38 @@ IG$._customChartPanels = [
 				
 				// arc layer selection
 				var esri_api_layers = me.down("[name=m_arc_layers]"),
-					esri_layer_options = IG$.__chartoption.chartext.esri_api_layers,
 					dp = [],
 					dpmap = {};
 					
-				if (esri_layer_options && esri_layer_options.data && esri_layer_options.data.length)
+				if (ig$.arcgis_rest$)
+				{
+					
+				}
+				else if (ig$.arcgis_rest)
+				{
+					ig$.arcgis_rest$ = [];
+					var v = ig$.arcgis_rest.split("\n"),
+						i, sv;
+						
+					for (i=0; i < v.length; i++)
+					{
+						if (v[i])
+						{
+							sv = v[i].split(",");
+							
+							if (sv.length == 3 && sv[0] && sv[1] && sv[2])
+							{
+								ig$.arcgis_rest$.push({
+									name: sv[0],
+									loader: sv[1],
+									url: sv[2]
+								});
+							}
+						}
+					}
+				}
+					
+				if (ig$.arcgis_rest$ && ig$.arcgis_rest$.length)
 				{
 					if (option.settings.m_arc_layers)
 					{
@@ -260,7 +287,7 @@ IG$._customChartPanels = [
 						});
 					}
 					
-					$.each(esri_layer_options.data, function(i, d) {
+					$.each(ig$.arcgis_rest$, function(i, d) {
 						var m = {
 							name: d.name,
 							selected: dpmap[d.name] ? true : false
@@ -314,8 +341,36 @@ IG$._customChartPanels = [
 			me.down("[name=pb02]").setVisible(subtype == "kpi");
 			me.down("[name=m_arc_basemap]").setVisible(subtype == "esri");
 			
+			if (ig$.arcgis_rest$)
+			{
+				
+			}
+			else if (ig$.arcgis_rest)
+			{
+				ig$.arcgis_rest$ = [];
+				var v = ig$.arcgis_rest.split("\n"),
+					i, sv;
+					
+				for (i=0; i < v.length; i++)
+				{
+					if (v[i])
+					{
+						sv = v[i].split(",");
+						
+						if (sv.length == 3 && sv[0] && sv[1] && sv[2])
+						{
+							ig$.arcgis_rest$.push({
+								name: sv[0],
+								loader: sv[1],
+								url: sv[2]
+							});
+						}
+					}
+				}
+			}
+			
 			// arc layer selection
-			me.down("[name=m_arc_layers]").setVisible(subtype == "esri" && IG$.__chartoption.chartext.esri_api_layers && IG$.__chartoption.chartext.esri_api_layers.data && IG$.__chartoption.chartext.esri_api_layers.data.length);
+			me.down("[name=m_arc_layers]").setVisible(subtype == "esri" && ig$.arcgis_rest$ && ig$.arcgis_rest$.length);
 		},
 		items: [
 			{
