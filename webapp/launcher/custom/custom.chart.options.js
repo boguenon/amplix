@@ -243,6 +243,32 @@ IG$._customChartPanels = [
 				me.down("[name=m_max]").setValue(option.m_max || "10000");
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
+				
+				if (ig$.arcgis_basemap)
+				{
+					var basemaps = ig$.arcgis_basemap.split("\n"),
+						i, pbase = [],
+						prec;
+					
+					for (i=0; i < basemaps.length; i++)
+					{
+						prec = basemaps[i].split(",");
+						
+						if (prec.length > 1 && prec[0] && prec[1])
+						{
+							pbase.push({
+								name: prec[0],
+								value: prec[0] 
+							});
+						}
+					}
+					
+					if (pbase.length)
+					{
+						me.down("[name=m_arc_basemap]").store.loadData(pbase);
+					}
+				}
+				
 				me.down("[name=m_arc_basemap]").setValue(option.settings.m_arc_basemap || "");
 				
 				// arc layer selection

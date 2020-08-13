@@ -7,14 +7,67 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
             zoom: 8
         },
         infow,
-        infot;
+        infot,
+		mapconfig = {
+			center: [-118, 34.5],
+        	zoom: 8
+		};
+	
+	if (!ig$.arcgis_basemap$)
+	{
+		ig$.arcgis_basemap$ = {};
+		
+		if (ig$.arcgis_basemap)
+		{
+			var prows = ig$.arcgis_basemap.split("\n"),
+				i, prec, j,
+				pinst;
+				
+			for (i=0; i < prows.length; i++)
+			{
+				prec = prows[i].split(",");
+				
+				if (prec.length > 1 && prec[0] && prec[1])
+				{
+					pinst = {
+						name: prec[0],
+						urls: []
+					};
+					
+					for (j=1; j < prec.length; j++)
+					{
+						if (prec[j])
+						{
+							pinst.urls.push({
+								url: prec[j]
+							});
+						}
+					}
+					
+					ig$.arcgis_basemap$[prec[0]] = pinst;
+					
+					if (ig$.arcgis_basemap$dval)
+					{
+						ig$.arcgis_basemap$dval = prec[0];
+					}
+				}
+			}
+		}
+	}
+	
+	$.each(ig$.arcgis_basemap$, function(i, bmap) {
+		esri.Basemaps[bmap.name] = {
+			title: bmap.name,
+			baseMapLayers: bmap.urls
+		}
+	});
+	
+	var basemap = cop.settings && cop.settings.m_arc_basemap ? cop.settings.m_arc_basemap : (ig$.arcgis_basemap$dval || "streets");
+	
+	mapconfig.basemap = basemap;
 
-    map = new esri.Map(container, {
-        center: [-118, 34.5],
-        zoom: 8,
-        basemap: cop.settings && cop.settings.m_arc_basemap ? cop.settings.m_arc_basemap : "streets"
-    });
-    
+    map = new esri.Map(container, mapconfig);
+
     me.map_inst = map;
     
     infow = new esri.InfoWindowLite(null, esri.domConstruct.create("div", null, null, map.root));
@@ -69,6 +122,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 	require([
 		"esri/config",
 		"esri/map", 
+		"esri/basemaps",
         "esri/symbols/MarkerSymbol",
 		"esri/layers/ArcGISDynamicMapServiceLayer",
         "esri/symbols/SimpleMarkerSymbol",
@@ -83,12 +137,13 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         "esri/Color",
         "dojo/dom-construct",
         "dojo/domReady!"
-	], function(esriConfig, Map, MarkerSymbol, ArcGISDynamicMapServiceLayer, SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, FeatureLayer, Graphic, GraphicsLayer, 
+	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, FeatureLayer, Graphic, GraphicsLayer, 
         Circle, SimpleFillSymbol, Color,
         domConstruct) {
         var esri = {
 				esriConfig: esriConfig,
                 Map: Map,
+				Basemaps: Basemaps,
                 MarkerSymbol: MarkerSymbol,
 				ArcGISDynamicMapServiceLayer: ArcGISDynamicMapServiceLayer,
                 SimpleMarkerSymbol: SimpleMarkerSymbol,
@@ -116,7 +171,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		
 		cop.settings = cop.settings || {};
 
-		if (cop.settings.m_arc_basemap)
+		if (ig$.arcgis_basemap != "-" && cop.settings.m_arc_basemap)
 		{
 			map_inst.setBasemap(cop.settings.m_arc_basemap);
 		}
@@ -221,11 +276,11 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
             'width': sizes[i - 1]
         });
     }
+
+	defaultLevel = parseInt(cop.m_zoom_level) || 11;
         
     if (results.source != 1)
     {
-        defaultLevel = parseInt(cop.m_zoom_level) || 11;
-        
         if (geodata && geodata.length > 0)
         {
             for (i=0; i < geodata.length; i++)
@@ -243,6 +298,8 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
             map.centerAt(mpoint);
         }
     }
+
+	map.setZoom(defaultLevel);
 
     var colfix = results.colfix,
         rowfix = results.rowfix,
