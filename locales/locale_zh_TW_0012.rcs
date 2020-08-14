@@ -1,0 +1,6 @@
+A;L_CHART_SEL_RECT;Rectangle selection
+A;L_CHART_SEL_POLY;Polygon selection
+A;L_CHART_SEL_HOR;Horizontal selection
+A;L_CHART_SEL_VER;Vertical selection
+A;L_CHART_SEL_KEEP;Keep previous selection
+A;L_CHART_SEL_CLEAR;Clear selection

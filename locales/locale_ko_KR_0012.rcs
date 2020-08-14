@@ -1,0 +1,6 @@
+A;L_CHART_SEL_RECT;사각형 선택
+A;L_CHART_SEL_POLY;다각형 선택
+A;L_CHART_SEL_HOR;수평 선택
+A;L_CHART_SEL_VER;수직 선택
+A;L_CHART_SEL_KEEP;이전 선택 유지하기
+A;L_CHART_SEL_CLEAR;선택 취소
