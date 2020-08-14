@@ -486,7 +486,7 @@
 								},
 								{
 									"name": "view_formview",
-									"cls": "ig_r_anal"
+									"cls": "ig_r_fview"
 								},
 								{
 									"name": "view_r",
