@@ -10,11 +10,6 @@ var ig$ = {
     intropage: "navi_intro",
     timer_rsn: 300000,
     timer_ping: 0,
-    basemap: "googlemap",
-//    appInfo: {
-//        appversion:'1.2',
-//        apprelease:'1.2.060'
-//    },
     isdev: true,
     vmode: 0,
     _fix_split: 0,
@@ -73,20 +68,13 @@ var ig$ = {
     	{code: "DesertLight", disp: "Desert Light"},
     	{code: "DarkBrown", disp: "Dark Brown"}
     ],
-    sheet_toolbar: [
-        {name: "Custom1", key: "custom1", label: "Custom1", cls: "igc-btn-text", handler: function(view, key) {
-            window._btn_handler(view, key);
-        }},
-        {name: "Custom2", key: "custom2", label: "Custom2", cls: "igc-btn-text", handler: function(view, key) {
-            window._btn_handler(view, key);
-        }}
-    ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202008132016",
-		web_revision: "1348-4.13-275-g82d2e893"
+		date: "202008132134",
+		appversion: "",
+		apprelease: "",
+		web_revision: "1349-4.13-276-g072e0876"
 	}
-    // hide_report_help: true
 };
 
 // ig$.theme_id = "test1";

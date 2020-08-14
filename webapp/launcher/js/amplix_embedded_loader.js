@@ -3,8 +3,6 @@ if (!window.IG$)
 	window.IG$ = {};
 }
 
-ig$.bootconfig.cache = ig$.appInfo.apprelease + "_" + ig$.appInfo.date.replace(/[{}]/g, "");
-
 IG$.__amplix_loader = function(modules) {
 	var bc = ig$.bootconfig.boot,
 		all_modules = [],
