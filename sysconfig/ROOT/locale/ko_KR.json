@@ -4153,5 +4153,29 @@
     "group" : "locale_ko_KR_0011",
     "name" : "L_LAST_5Y",
     "value" : "지난 5년"
+  }, {
+    "group" : "locale_ko_KR_0012",
+    "name" : "L_CHART_SEL_RECT",
+    "value" : "사각형 선택"
+  }, {
+    "group" : "locale_ko_KR_0012",
+    "name" : "L_CHART_SEL_POLY",
+    "value" : "다각형 선택"
+  }, {
+    "group" : "locale_ko_KR_0012",
+    "name" : "L_CHART_SEL_HOR",
+    "value" : "수평 선택"
+  }, {
+    "group" : "locale_ko_KR_0012",
+    "name" : "L_CHART_SEL_VER",
+    "value" : "수직 선택"
+  }, {
+    "group" : "locale_ko_KR_0012",
+    "name" : "L_CHART_SEL_KEEP",
+    "value" : "이전 선택 유지하기"
+  }, {
+    "group" : "locale_ko_KR_0012",
+    "name" : "L_CHART_SEL_CLEAR",
+    "value" : "선택 취소"
   } ]
 }

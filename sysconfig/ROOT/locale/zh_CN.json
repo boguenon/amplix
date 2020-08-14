@@ -4153,5 +4153,29 @@
     "group" : "locale_zh_CN_0011",
     "name" : "L_LAST_5Y",
     "value" : "Last 5 year"
+  }, {
+    "group" : "locale_zh_CN_0012",
+    "name" : "L_CHART_SEL_RECT",
+    "value" : "Rectangle selection"
+  }, {
+    "group" : "locale_zh_CN_0012",
+    "name" : "L_CHART_SEL_POLY",
+    "value" : "Polygon selection"
+  }, {
+    "group" : "locale_zh_CN_0012",
+    "name" : "L_CHART_SEL_HOR",
+    "value" : "Horizontal selection"
+  }, {
+    "group" : "locale_zh_CN_0012",
+    "name" : "L_CHART_SEL_VER",
+    "value" : "Vertical selection"
+  }, {
+    "group" : "locale_zh_CN_0012",
+    "name" : "L_CHART_SEL_KEEP",
+    "value" : "Keep previous selection"
+  }, {
+    "group" : "locale_zh_CN_0012",
+    "name" : "L_CHART_SEL_CLEAR",
+    "value" : "Clear selection"
   } ]
 }
