@@ -55,10 +55,31 @@ IG$.__chartoption.chartext.runchart.prototype = {
 				meta_type: owner.meta_type || "report"
 			}, mctrl, function(jdoc) {
 				rsheet.anal_options = anal_options;
-				me.drawStatResult.call(me, owner, results, jdoc);
+				me.quality_stat = jdoc;
+				me.getStatInternal(owner, results);
 			}, function(jdoc) {
 				rsheet.anal_options = anal_options;
 			});
+		req.send();
+	},
+	
+	getStatInternal: function(owner, results) {
+		var me = this,
+			mctrl = owner.rpc.ownerCt,
+			req = new IG$._rpc$();
+			
+		req.init(mctrl, {
+			ack: "olapservice",
+			payload: { 
+				option: "statistics",
+				active: "" + owner.sheetoption.si,
+				jobid: owner.jobid
+			},
+			mbody: {}
+		}, mctrl, function(sdoc) {
+			results.statistics = sdoc.statistics;
+			me.drawStatResult.call(me, owner, results);
+		});
 		req.send();
 	},
 	
@@ -69,7 +90,8 @@ IG$.__chartoption.chartext.runchart.prototype = {
 			colcnt = results.colcnt,
             rowfix = results.rowfix,
             rowcnt = results.rowcnt,
-			cols = colcnt - colfix;			
+			cols = colcnt - colfix;
+						
 		if (colfix < 1)
 		{
 			IG$.ShowError("Parato chart need xaxis item", me);
@@ -91,8 +113,9 @@ IG$.__chartoption.chartext.runchart.prototype = {
 		me.getStat(owner, results);
     },
     
-    drawStatResult: function(owner, results, quality_stat) {
+    drawStatResult: function(owner, results) {
     	var me = this,
+			quality_stat = me.quality_stat,
 			container = owner.container,
 	        jcontainer = $(container),
 	        cop = owner.cop,
