@@ -193,7 +193,7 @@ function parseDate(val) {
     }
 
 
-IG$.__chartoption.chartext.hstock.prototype.drawChart = function(owner, results) {
+IG$.__chartoption.chartext.calendar.prototype.drawChart = function(owner, results) {
     var me = this,
         container = $(owner.container),
         sop = owner._ILb,
@@ -213,29 +213,23 @@ IG$.__chartoption.chartext.hstock.prototype.drawChart = function(owner, results)
             rows,
             cols,
             i, j, k,
-            chart,
-            chartdiv,
             tw = IG$.j$ext._w(container),
             th = IG$.j$ext._h(container),
             px = 0, py = 0, pw,
             gtype,
-            series = [],
+            series = {
+				type: "heatmap",
+				coordinateSystem: "calendar",
+				calendarIndex: 0,
+				yAxisIndex: 0,
+				data: []
+			},
             data,
             dtcol = 0, dt,
-            s, sname,
             dr,
             df,
 			dv,
-            v, y, m, d, h, mm, ss,
-            yaxis = [
-                {
-                    type: "value",
-                    position: "left",
-                    title: {
-                        text: null
-                    }
-                }
-            ];
+            v, y, m, d, h, mm, ss;
         
         cols = results.colcnt;
         data = results._tabledata;
@@ -246,6 +240,42 @@ IG$.__chartoption.chartext.hstock.prototype.drawChart = function(owner, results)
         container.empty();
         me.dataIndex = 0;
         me.results = results;
+
+		var copt = {
+            chart: {
+                renderTo: container[0]
+            },
+			tooltip: {
+		        position: 'top',
+		        formatter: function (p) {
+		            var format = echarts.format.formatTime('yyyy-MM-dd', p.data.value[0]);
+		            return format + ': ' + (p.data.label || "-");
+		        }
+		    },
+			visualMap: {
+				type: "piecewise",
+				orient: "horizontal",
+				left: "center",
+				top: 65,
+				textStyle: {
+					color: "#000"
+				}
+			},
+			
+            calendar: {
+				top: 120,
+				left: 30,
+				right: 30,
+				cellSize: ["auto", 13],
+				itemStyle: {
+					borderWidth: 0.5
+				},
+				yearLabel: {
+					show: true
+				},
+				range: []
+			}
+        }, vmin, vmax, cmax, cmin;
         
         if (cop.s_t_f)
         {
@@ -260,48 +290,6 @@ IG$.__chartoption.chartext.hstock.prototype.drawChart = function(owner, results)
         }
         
         df = cop.s_t_fo;
-        
-        for (i=colfix; i < cols; i++)
-        {
-            for (j=0; j < rowfix; j++)
-            {
-                sname = (j == 0) ? data[j][i].text : sname + "|" + data[j][i].text;
-            }
-            
-            s = {
-                name: sname,
-                _c: [i],
-                data: [],
-				type: "line"
-            };
-            series.push(s);
-        }
-        
-        if (usedualaxis && dualaxisitem && dualaxisitem.length > 0)
-        {
-            yaxis.push(
-                {
-                    type: "value",
-                    position: "right",
-                    title: {
-                        text: null
-                    }
-                }
-            );
-            
-            for (i=0; i < cop.dualaxisitem.length; i++)
-            {
-                if (series.length > i && cop.dualaxisitem[i] == true)
-                {
-                    series[i].yAxis = 1;
-                    yaxis[1].title.text = series[i].name;
-                }
-                else if (series.length > i && cop.dualaxisitem[i] != true)
-                {
-                    yaxis[0].title.text = series[i].name;
-                }
-            }
-        }
         
         for (i=0; i < series.length; i++)
         {
@@ -352,110 +340,113 @@ IG$.__chartoption.chartext.hstock.prototype.drawChart = function(owner, results)
                     dt = new Date(y, m, d, h, mm, ss).getTime();
                 }
             }
-            for (j=0; j < series.length; j++)
-            {
-                dr = [dt];
-                for (k=0; k < series[j]._c.length; k++)
-                {
-                    v = data[i][series[j]._c[k]].code;
-                    v = Number(v);
-                    dr.push(v || 0);
-                }
-                
-                series[j].data.push(dr);
-            }
-        }
-        
-        var copt = {
-            chart: {
-                renderTo: container[0]
-            },
-            rangeSelector: {
-                selected: 1
-            },
-            title: {
-                text: cop.title || null
-            },
-            xAix: {
-                type: "time"
-            },
-            yAxis: yaxis,
-            series: series
-        };
 
-        if (window.echarts)
-        {
-			copt.xAxis = [
-				{
-					type: "time"
-				}
-			];
-			
-			copt.dataZoom = [
-				{
-					type: "slider"
-				}	
-			];
-			
-			if (cop.enablezoom)
+			if (dt)
 			{
-				copt.toolbox = {
-					feature: {
-						dataZoom: {
-							show: true,
-							title: {
-								zoom: IRm$.r1("L_CHART_Z_A"),
-								back: IRm$.r1("L_CHART_Z_B")
-							}
-						}
+				if (!cmin)
+				{
+					cmin = dt;
+					cmax = dt;
+				}
+				else
+				{
+					if (cmin.getTime() > dt.getTime())
+					{
+						cmin = dt;
+					}
+					
+					if (cmax.getTime() < dt.getTime())
+					{
+						cmax = dt;
 					}
 				}
 			}
+
+            dr = {
+				value: [dt]
+			};
+			v = 0;
+			if (data[i][colfix])
+			{
+				v = data[i][colfix].code;
+                v = Number(v);
+				if (isNaN(v))
+				{
+					v = 0;
+				}
+				
+				dr.label = data[i][colfix].text;
+			}
 			
-            var hchart = echarts.init(copt.chart.renderTo, ig$.echarts_theme || 'amplix', {
-                    renderer: "svg"
-                });
+			if (isNaN(vmin))
+			{
+				vmin = vmax = v;
+			}
+			else
+			{
+				vmin = Math.min(vmin, v);
+				vmax = Math.max(vmax, v);
+			}
+			
+			dr.value.push(v);
+			// dr.push("TTTT");
+			// dr.push("TTTT");
+			// dr.push({disp: data[i][colfix].text});
+			
+            series.data.push(dr);
+        }
+        
+		if (cop.title)
+		{
+			copt.title = {
+				top: 30,
+				left: "center",
+				text: cop.title
+			};
+		}
+		
+		copt.series = series;
+		copt.visualMap.min = vmin;
+		copt.visualMap.max = vmax;
+		copt.calendar.range = [("" + cmin.getFullYear()) + "-01-01", ("" + cmax.getFullYear()) + "-12-31"];
+		// copt.calendar.range = [cmin, cmax];
 
-            me.hchart = hchart;
-            
-            hchart.setOption(copt);
-            
-            hchart.on("pieselectchanged", function(params) {
-                
+        var hchart = echarts.init(copt.chart.renderTo, ig$.echarts_theme || 'amplix', {
+                renderer: "svg"
             });
+
+        me.hchart = hchart;
+        
+        hchart.setOption(copt);
+        
+        hchart.on("pieselectchanged", function(params) {
             
-            hchart.on("click", function(params) {
-                if (params.componentType == "series")
-                {
-                    _chartview.procClickEvent(
-                        {
-                            series: {
-                                name: params.seriesName,
-                                type: params.seriesType
-                            }
-                        }, 
-                        {
-                        point: params.data
+        });
+        
+        hchart.on("click", function(params) {
+            if (params.componentType == "series")
+            {
+                _chartview.procClickEvent(
+                    {
+                        series: {
+                            name: params.seriesName,
+                            type: params.seriesType
                         }
-                    );
-                }
-            });
+                    }, 
+                    {
+                    point: params.data
+                    }
+                );
+            }
+        });
+        
+        hchart.on("brushselected", function(params) {
             
-            hchart.on("brushselected", function(params) {
-                
-            });
-
-			me.hchart = hchart;
-        }
-        else
-        {
-            hchart = new Highcharts.stock(copt);
-            me.hchart = hchart;
-        }
+        });
     }
 };
     
-IG$.__chartoption.chartext.hstock.prototype.updatedisplay = function(owner, w, h) {
+IG$.__chartoption.chartext.calendar.prototype.updatedisplay = function(owner, w, h) {
     var me = this,
 		hchart = me.hchart;
 
@@ -465,13 +456,12 @@ IG$.__chartoption.chartext.hstock.prototype.updatedisplay = function(owner, w, h
     }
 };
 
-IG$.__chartoption.chartext.hstock.prototype.dispose = function(owner, w, h) {
+IG$.__chartoption.chartext.calendar.prototype.dispose = function(owner, w, h) {
     var me = this,
 		hchart = me.hchart;
 
     if (hchart)
     {
-        hchart.dispose && hchart.dispose();
-		hchart.destroy && hchart.destroy();
+        hchart.dispose();
     }
 };
