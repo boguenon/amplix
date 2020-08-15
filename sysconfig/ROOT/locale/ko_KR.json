@@ -4177,5 +4177,13 @@
     "group" : "locale_ko_KR_0012",
     "name" : "L_CHART_SEL_CLEAR",
     "value" : "선택 취소"
+  }, {
+    "group" : "locale_ko_KR_0012",
+    "name" : "L_HOME_APP_TITLE",
+    "value" : "<h1>앰플릭스 비즈니스 분석 솔류션</h1>"
+  }, {
+    "group" : "locale_ko_KR_0012",
+    "name" : "L_HOME_APP_DESC",
+    "value" : "데이타 시각화를 활용한 분석 보고서를 생성해 보십시오.<br/>앰플릭스에서 제공하는 과학적인 도구 및 분석 UI는 당신의 과학적이고 직관적인 데이타 분석을 완료하고 성공적인 비즈니스 환경에 대응하는데 도움이 되도록 설계되어 있습니다."
   } ]
 }

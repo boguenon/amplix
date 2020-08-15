@@ -4177,5 +4177,13 @@
     "group" : "locale_ja_JP_0012",
     "name" : "L_CHART_SEL_CLEAR",
     "value" : "Clear selection"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_HOME_APP_TITLE",
+    "value" : "<h1>amplix Business Analytics for your business.</h1>"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_HOME_APP_DESC",
+    "value" : "Create scientific reports using amplixbi.com.<br/>amplix data science tool helps to make statistical analysis with easy guided user interfaces."
   } ]
 }
