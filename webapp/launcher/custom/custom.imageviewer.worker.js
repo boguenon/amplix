@@ -31,14 +31,15 @@ IG$.__chartoption.chartext.imgviewer.prototype.drawChart = function(owner, resul
             nchart = 0,
             f_ind_svalue_n = -1,
             ncnt,
-            img_path;
+            img_path,
+			tabledata = results._tabledata;
         
         cols = results.cols;
-        rows = results.data.length;
+        rows = tabledata.length;
         colfix = results.colfix;
         rowfix = results.rowfix;
         
-        img_path = results.data[1][1].code;
+        img_path = tabledata[1][1].code;
         
         img_path = "../main/images/intro-1200.jpg?tag=" + img_path;
         
@@ -76,4 +77,14 @@ IG$.__chartoption.chartext.imgviewer.prototype.updatedisplay = function(owner, w
         });
         // end of center align
     }
+}
+
+IG$.__chartoption.chartext.imgviewer.prototype.destroy = function() {
+	var me = this,
+		owner = me.owner;
+		
+	if (owner && owner.container)
+	{
+		$(owner.container).empty();
+	}
 }

@@ -465,7 +465,7 @@ IG$.__chartoption.chartext.hstock.prototype.updatedisplay = function(owner, w, h
     }
 };
 
-IG$.__chartoption.chartext.hstock.prototype.dispose = function(owner, w, h) {
+IG$.__chartoption.chartext.hstock.prototype.destroy = function(owner, w, h) {
     var me = this,
 		hchart = me.hchart;
 

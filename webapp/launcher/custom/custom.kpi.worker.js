@@ -1602,3 +1602,14 @@ IG$.__chartoption.chartext.kpi.prototype.updatedisplay = function(owner, w, h) {
         }, 10);
     }
 }
+
+
+IG$.__chartoption.chartext.kpi.prototype.destroy = function() {
+	var me = this,
+		owner = me.owner;
+		
+	if (owner && owner.container)
+	{
+		$(owner.container).empty();
+	}
+}

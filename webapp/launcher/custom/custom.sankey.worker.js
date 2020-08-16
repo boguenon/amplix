@@ -110,9 +110,10 @@ IG$.__chartoption.chartext.sankey.prototype.drawChartTimer = function(owner, res
     
     var formatNumber = d3.format(",.0f"),
         format = function(d) { return formatNumber(d); },
-        color = d3.scale.category20();
+        // color = d3.scale.category20();
+		color = d3.scaleOrdinal(d3.schemeCategory10);
     
-    var svg = d3.select(jcontainer[0]).append("svg")
+    var svg = me.pdev = d3.select(jcontainer[0]).append("svg")
         .attr("width", width)
         .attr("height", height)
         .append("g");
@@ -158,9 +159,12 @@ IG$.__chartoption.chartext.sankey.prototype.drawChartTimer = function(owner, res
         .enter().append("g")
         .attr("class", "node")
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-        .call(d3.behavior.drag()
-        .origin(function(d) { return d; })
-        .on("dragstart", function() { this.parentNode.appendChild(this); })
+        // .call(d3.behavior.drag()
+		.call(d3.drag()
+        // .origin(function(d) { return d; })
+        // .on("dragstart", function() { this.parentNode.appendChild(this); })
+        // .on("drag", dragmove));
+		.on("start", function() { this.parentNode.appendChild(this); })
         .on("drag", dragmove));
     
     node.append("rect")
@@ -181,4 +185,15 @@ IG$.__chartoption.chartext.sankey.prototype.drawChartTimer = function(owner, res
         .filter(function(d) { return d.x < width / 2; })
         .attr("x", 6 + sankey.nodeWidth())
         .attr("text-anchor", "start");
+}
+
+IG$.__chartoption.chartext.sankey.prototype.destroy = function() {
+	var me = this,
+		owner = me.owner;
+		
+	if (owner && owner.container)
+	{
+		$(me.owner.container).empty();
+	}
+	me.vis = null;
 }

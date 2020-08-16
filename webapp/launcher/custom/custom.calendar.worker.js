@@ -456,7 +456,7 @@ IG$.__chartoption.chartext.calendar.prototype.updatedisplay = function(owner, w,
     }
 };
 
-IG$.__chartoption.chartext.calendar.prototype.dispose = function(owner, w, h) {
+IG$.__chartoption.chartext.calendar.prototype.destroy = function(owner, w, h) {
     var me = this,
 		hchart = me.hchart;
 

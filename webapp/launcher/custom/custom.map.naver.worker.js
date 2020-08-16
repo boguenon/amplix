@@ -289,7 +289,7 @@ IG$.__chartoption.chartext.navermap.prototype.updatedisplay = function(owner, w,
     }
 };
     
-IG$.__chartoption.chartext.navermap.prototype.dispose = function() {
+IG$.__chartoption.chartext.navermap.prototype.destroy = function() {
     var me = this;
 
 	if (me.map)

@@ -353,7 +353,7 @@ IG$.__chartoption.chartext.vworldmap.prototype.updatedisplay = function(owner, w
     }
 };
     
-IG$.__chartoption.chartext.vworldmap.dispose = function() {
+IG$.__chartoption.chartext.vworldmap.destroy = function() {
     var me = this;
     
     me.owner && me.owner.container && $(me.owner.container).empty();

@@ -461,7 +461,7 @@ IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) 
     }
 }
 
-IG$.__chartoption.chartext.esri.prototype.dispose = function() {
+IG$.__chartoption.chartext.esri.prototype.destroy = function() {
 	// called when need to dispose the component
 	var me = this,
 		map = me.map_inst;
