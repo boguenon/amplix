@@ -6,7 +6,7 @@ IG$.__chartoption.charttype.push(
         charttype: "navermap",
         subtype: "navermap",
         img: "map_naver",
-        grp: "scientific"
+        grp: "map"
     }
 );
 

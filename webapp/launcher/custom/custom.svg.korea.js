@@ -6,7 +6,7 @@ IG$.__chartoption.charttype.push(
         charttype: "koreamap", 
         subtype: "koreamap", 
         img: "svg_korea", 
-        grp: "scientific"
+        grp: "map"
     }
 );
 

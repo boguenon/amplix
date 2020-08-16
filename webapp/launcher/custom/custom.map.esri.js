@@ -5,8 +5,8 @@ IG$.__chartoption.charttype.push(
         label:"ArcGIS map",
         charttype: "esri",
         subtype: "esri",
-        img: "map",
-        grp: "scientific"
+        img: "map_arcgis",
+        grp: "map"
     }
 );
 

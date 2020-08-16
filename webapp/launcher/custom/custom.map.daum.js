@@ -6,7 +6,7 @@ IG$.__chartoption.charttype.push(
         charttype: "daummap",
         subtype: "daummap",
         img: "map_daum",
-        grp: "scientific"
+        grp: "map"
     }
 );
 

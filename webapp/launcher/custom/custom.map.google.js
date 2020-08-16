@@ -6,7 +6,7 @@ IG$.__chartoption.charttype.push(
         charttype: "googlemap",
         subtype: "googlemap",
         img: "map_google",
-        grp: "scientific"
+        grp: "map"
     }
 );
 

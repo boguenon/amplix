@@ -6,7 +6,7 @@ IG$.__chartoption.charttype.push(
         charttype: "vworldmap",
         subtype: "vworldmap",
         img: "map",
-        grp: "scientific"
+        grp: "map"
     }
 );
 
