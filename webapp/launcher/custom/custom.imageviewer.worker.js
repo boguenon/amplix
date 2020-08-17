@@ -41,7 +41,7 @@ IG$.__chartoption.chartext.imgviewer.prototype.drawChart = function(owner, resul
         
         img_path = tabledata[1][1].code;
         
-        img_path = "../main/images/intro-1200.jpg?tag=" + img_path;
+        // img_path = "../main/images/intro-1200.jpg?tag=" + img_path;
         
         me.img_tag = $("<img src='" + img_path + "'></img>").appendTo(me.img_div);
         

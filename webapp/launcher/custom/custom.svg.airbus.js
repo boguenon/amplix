@@ -23,7 +23,7 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
         me.map = svgmap = new IG$.SVGLoader($(container));
         svgmap.load("./data/Airbus_A380_seatmap.svg");
 
-        svgmap.l5.bind("svgloaded", function() {
+        svgmap.container.bind("svgloaded", function() {
             var i,
 				j,
 				row,
@@ -48,11 +48,13 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
 
             if (results)
             {
+				var tabledata = results._tabledata;
+				
                 colfix = results.colfix;
                 rowfix = results.rowfix;
-                for (i=0; i < results.data.length; i++)
+                for (i=0; i < tabledata.length; i++)
                 {
-                    row = results.data[i];
+                    row = tabledata[i];
 
                     if (i < rowfix)
                     {
@@ -103,7 +105,8 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
                             else
                             {
                                 // data area
-                                measureindex = colfix - j;
+								celltext = cell.code || cell.text;
+                                measureindex = j - colfix;
                                 ptval = Number(celltext);
 
                                 if (isNaN(ptval) == false)
@@ -136,5 +139,14 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
 		var me = this,
 			map = me.map;
         map.m1.call(map);
-    }
+    },
+	dispose: function() {
+		var me = this,
+			owner = me.owner;
+			
+		if (owner && owner.container)
+		{
+			$(owner.container).empty();
+		}
+	}
 };
