@@ -1,5 +1,5 @@
 ig$.bootconfig = {
-	"cache": "202008171642",
+	"cache": "202008172028",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -47,6 +47,7 @@ ig$.bootconfig = {
 			"./custom/custom.bubblecloud.js",
 			"./custom/custom.wordcloud.js",
 			"./custom/custom.nation.js",
+			"./custom/custom.icicle.js",
 			
 			"./custom/pareto.js",
 			"./custom/quality_runchart.js"

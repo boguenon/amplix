@@ -186,6 +186,8 @@ IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
         dnation,
         segnames = {}, segindex, segname, segcnt=0, stemp,
         seglists = [], fs=[{m:0, M:0},{m:0, M:0},{m:0, M:0}],
+		btitle1,
+		btitle2,
 		ktag,
 		kcol,
         tvalue;
@@ -227,6 +229,12 @@ IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
         {
             segnames[seglists[i]] = i;
         }
+
+		for (i=0; i < fr; i++)
+		{
+			btitle1 = data[i][f1].text || data[i][f1].code;
+			btitle2 = data[i][f2].text || data[i][f2].code;
+		}
         
         for (i=fr; i < data.length; i++)
         {
@@ -328,7 +336,10 @@ IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
 		
 	xAxis = function xAxis(g) {
   		return g.attr("transform", "translate(0,".concat(height - margin.bottom, ")"))
-			.call(d3.axisBottom(x).ticks(width / 80, ","))
+			.call(d3.axisBottom(x)
+				.ticks(width / 80)
+				// .ticks(width / 80, ",")
+			)
 			.call(function (g) {
     			return g.select(".domain").remove();
   			})
@@ -338,12 +349,13 @@ IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
 					.attr("y", margin.bottom - 4)
 					.attr("fill", "currentColor")
 					.attr("text-anchor", "end")
-					.text(" →");
+					.text(btitle1 + " →");
   			});
 	};
 	
 	yAxis = function yAxis(g) {
-		return g.attr("transform", "translate(".concat(margin.left, ",0)")).call(d3.axisLeft(y))
+		return g.attr("transform", "translate(".concat(margin.left, ",0)"))
+			.call(d3.axisLeft(y))
 			.call(function (g) {
     			return g.select(".domain").remove();
   			})
@@ -353,7 +365,7 @@ IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
 					.attr("y", 10)
 					.attr("fill", "currentColor")
 					.attr("text-anchor", "start")
-					.text("↑ ");
+					.text(btitle2 + "↑ ");
   			});
 	};
 	
@@ -448,13 +460,16 @@ IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
 	svg.append("g")
 		.call(grid);
 		
-	var circle = svg.append("g")
+	var mg = svg.append("g");
+	
+	var circle = mg
 		.attr("stroke", "black")
 		.selectAll("circle")
 		.data(dataAt(0), function (d) {
   			return d.name;
 		})
-		.join("circle").sort(function (a, b) {
+		.join("circle")
+		.sort(function (a, b) {
   			return d3.descending(a.population, b.population);
 		})
 		.attr("cx", function (d) {
@@ -464,7 +479,7 @@ IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
   			return y(d.lifeExpectancy);
 		})
 		.attr("r", function (d) {
-  			return radius(d.population);
+  			return radius(d.population) || 1;
 		})
 		.attr("fill", function (d) {
   			return color(d.region);
@@ -474,6 +489,25 @@ IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
     			return [d.name, d.region].join("\n");
   			});
 		});
+		
+	var ctext = svg.append("g")
+		.append("text")
+		.selectAll("tspan")
+		.data(dataAt(0), function (d) {
+  			return d.name;
+		})
+		.join("tspan")
+		.attr("x", function(d) {
+			return x(d.income);
+		})
+		.attr("y", function(d) {
+			return y(d.lifeExpectancy);
+		})
+		.attr("text-anchor", "middle")
+		.text(function(d) {
+			var r = d.population ? radius(d.population) : 0;
+			return r > 5 ? d.name : "";
+		})
 			
 	var update = function(data) {
 		circle.data(data, function (d) {
@@ -491,6 +525,20 @@ IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
 		.attr("r", function (d) {
   			return radius(d.population);
 		});
+		
+		ctext.data(data, function(d) {
+			return d.name;
+		})
+		.attr("x", function(d) {
+			return x(d.income);
+		})
+		.attr("y", function(d) {
+			return y(d.lifeExpectancy);
+		})
+		.text(function(d) {
+			var r = d.population ? radius(d.population) : 0;
+			return r > 5 ? d.name : "";
+		})
 	}
 	
 	d3.select(year_scrubber).on("input", function() {
