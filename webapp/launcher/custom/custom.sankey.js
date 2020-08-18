@@ -32,6 +32,7 @@ IG$.__chartoption.chartext.sankey.prototype = {
         if (!IG$.__chartoption.chartext.sankey._loaded)
         {
             var js = [
+					"./custom/sankey.js",
                     "./custom/custom.sankey.worker.js"
                 ];
 
