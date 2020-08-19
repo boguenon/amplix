@@ -1,5 +1,5 @@
 ig$.bootconfig = {
-	"cache": "202008180207",
+	"cache": "202008191045",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -81,6 +81,9 @@ ig$.bootconfig = {
         ],
         "mg_disco": [
             "./js/mg_disco.min.js"
-        ]
+        ],
+		"mg_meta": [
+			"./js/mg_meta.min.js"
+		]
     }
 };

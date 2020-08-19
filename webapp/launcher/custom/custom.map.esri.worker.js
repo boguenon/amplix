@@ -13,6 +13,12 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
         	zoom: 8
 		};
 	
+	if (ig$.geo_map_center && ig$.geo_map_center.indexOf(",") > -1)
+	{
+		var geocenter = ig$.geo_map_center.split(",");
+		mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+	}
+	
 	if (!ig$.arcgis_basemap$)
 	{
 		ig$.arcgis_basemap$ = {};

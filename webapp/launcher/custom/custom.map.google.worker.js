@@ -6,6 +6,12 @@ IG$.__chartoption.chartext.googlemap.prototype.google_initialize = function(cont
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
+	if (ig$.geo_map_center && ig$.geo_map_center.indexOf(",") > -1)
+	{
+		var geocenter = ig$.geo_map_center.split(",");
+		mapOptions.center = [Number(geocenter[0]), Number(geocenter[1])];
+	}
+
     map = new google.maps.Map(container, mapOptions);
 
     google.maps.event.addListener(map, 'center_changed', function() {

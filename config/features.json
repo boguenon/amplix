@@ -219,6 +219,10 @@
 				{
 					"name": "Discoverer Migration",
 					"cls": "ig_disco"
+				},
+				{
+					"name": "Amplix Meta Upgrade",
+					"cls": "ig_meta_upgrade"
 				}
 			]
 		},

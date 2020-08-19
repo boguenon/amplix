@@ -6,14 +6,21 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(container) {
             zoom: 8
         },
         infow,
-        infot;
+        infot,
+		mapconfig = {
+	        center: [-118, 34.5],
+	        zoom: 8,
+	        basemap: "topo"
+	    };
 
-    map = new esri.Map(container, {
-        center: [-118, 34.5],
-        zoom: 8,
-        basemap: "topo"
-    });
-    
+	if (ig$.geo_map_center && ig$.geo_map_center.indexOf(",") > -1)
+	{
+		var geocenter = ig$.geo_map_center.split(",");
+		mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+	}
+	
+    map = new esri.Map(container, mapconfig);
+
     me.map_inst = map;
     
 /*
