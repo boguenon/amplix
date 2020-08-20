@@ -4185,5 +4185,13 @@
     "group" : "locale_en_US_0012",
     "name" : "L_HOME_APP_DESC",
     "value" : "Create scientific reports using amplixbi.com.<br/>amplix data science tool helps to make statistical analysis with easy guided user interfaces."
+  }, {
+    "group" : "locale_en_US_0013",
+    "name" : "L_META_UPGRADE",
+    "value" : "Meta Upgrade"
+  }, {
+    "group" : "locale_en_US_0013",
+    "name" : "T_MIG_META_UPGRADE",
+    "value" : "Meta Upgrade"
   } ]
 }
