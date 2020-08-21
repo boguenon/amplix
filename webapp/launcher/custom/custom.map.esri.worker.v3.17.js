@@ -2,10 +2,9 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
     var me = this,
         esri = me.esri,
         map,
-        mapOptions = {
-            zoom: 8
-        },
 		cop = owner.cop,
+		copsettings = cop.settings,
+		geocenter,
         infow,
         infot,
 		mapconfig = {
@@ -13,10 +12,29 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
         	zoom: 8
 		};
 		
-	if (ig$.geo_map_center && ig$.geo_map_center.indexOf(",") > -1)
+	if (copsettings && copsettings.m_map_center)
 	{
-		var geocenter = ig$.geo_map_center.split(",");
-		mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+		if (copsettings.m_map_center.indexOf(",") > -1)
+		{
+			geocenter = copsettings.m_map_center.split(",");
+			mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+		}
+		else if (copsettings.m_map_center == "-")
+		{
+			delete mapconfig["center"];
+		}
+	}
+	else if (ig$.geo_map_center)
+	{
+		if (ig$.geo_map_center.indexOf(",") > -1)
+		{
+			geocenter = ig$.geo_map_center.split(",");
+			mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+		}
+		else if (ig$.geo_map_center == "-")
+		{
+			delete mapconfig["center"];
+		}
 	}
 		
 	if (!ig$.arcgis_basemap$)
@@ -70,7 +88,10 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 	
 	var basemap = cop.settings && cop.settings.m_arc_basemap ? cop.settings.m_arc_basemap : (ig$.arcgis_basemap$dval || "streets");
 	
-	mapconfig.basemap = basemap;
+	if (basemap != "-")
+	{
+		mapconfig.basemap = basemap;
+	}
 
     map = new esri.Map(container, mapconfig);
     
@@ -133,6 +154,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		"esri/basemaps",
         "esri/symbols/MarkerSymbol",
 		"esri/layers/ArcGISDynamicMapServiceLayer",
+		"esri/layers/ArcGISTiledMapServiceLayer",
         "esri/symbols/SimpleMarkerSymbol",
         "esri/geometry/Point",
         "esri/dijit/InfoWindowLite",
@@ -145,7 +167,8 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         "esri/Color",
         "dojo/dom-construct",
         "dojo/domReady!"
-	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, FeatureLayer, Graphic, GraphicsLayer, 
+	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer, 
+		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, FeatureLayer, Graphic, GraphicsLayer, 
         Circle, SimpleFillSymbol, Color,
         domConstruct) {
         var esri = {
@@ -154,6 +177,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 				Basemaps: Basemaps,
                 MarkerSymbol: MarkerSymbol,
 				ArcGISDynamicMapServiceLayer: ArcGISDynamicMapServiceLayer,
+				ArcGISTiledMapServiceLayer: ArcGISTiledMapServiceLayer,
                 SimpleMarkerSymbol: SimpleMarkerSymbol,
                 Point: Point,
                 InfoWindowLite: InfoWindowLite,
@@ -276,6 +300,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
     var me = this,
         esri = me.esri,
         cop = owner.cop, // chart option information
+		copsettings = cop.settings,
         map = me.map_inst,
         seriesname,
         i, j,
@@ -314,7 +339,21 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
             mlat = (maxLat + minLat) / 2;
             
             var mpoint = new esri.Point(mlng, mlat);
-            map.centerAt(mpoint);
+            if (copsettings && copsettings.m_map_center == "-")
+			{
+				// ignore settings
+			}
+			else
+			{
+				if (copsettings && !copsettings.m_map_center && ig$.geo_map_center && ig$.geo_map_center == "-")
+				{
+					// ignore
+				}
+				else
+				{
+            		map.centerAt(mpoint);
+				}
+			}
         }
     }
 

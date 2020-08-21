@@ -243,6 +243,7 @@ IG$._customChartPanels = [
 				me.down("[name=m_max]").setValue(option.m_max || "10000");
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
+				me.down("[name=m_map_center]").setValue(option.settings.m_map_center || "");
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -254,7 +255,14 @@ IG$._customChartPanels = [
 					{
 						prec = basemaps[i].split(",");
 						
-						if (prec.length > 1 && prec[0] && prec[1])
+						if (basemaps[i] == "none")
+						{
+							pbase.push({
+								name: "No basemap",
+								value: "-"
+							})
+						}
+						else if (prec.length > 1 && prec[0] && prec[1])
 						{
 							pbase.push({
 								name: prec[0],
@@ -341,7 +349,7 @@ IG$._customChartPanels = [
 				option.cdata_m_tmpl = me.down("[name=cdata_m_tmpl]").getValue();
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
 				option.settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
-				
+				option.settings.m_map_center = me.down("[name=m_map_center]").getValue();
 				// arc layer selection
 				option.settings.m_arc_layers = [];
 				
@@ -486,6 +494,11 @@ IG$._customChartPanels = [
 								hidden: true
 							},
 							{
+								xtype: "textfield",
+								name: "m_map_center",
+								fieldLabel: "Map Center(Lat,Lng)"
+							},
+							{
 								xtype: "combobox",
 								name: "m_arc_basemap",
 								queryMode: "local",
@@ -542,13 +555,13 @@ IG$._customChartPanels = [
 										} 
 									]
 								}
-							} 
+							}
 						]
 					},
 					// arc layer selection
 					{
 						xtype: "gridpanel",
-						title: "ArcGid MapLayers",
+						title: "ArcGIS MapLayers",
 						name: "m_arc_layers",
 						hidden: true,
 						height: 300,
