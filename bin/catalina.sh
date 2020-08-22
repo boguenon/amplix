@@ -220,10 +220,10 @@ fi
 
 # Add tomcat-juli.jar to classpath
 # tomcat-juli.jar can be over-ridden per instance
-if [ -r "$CATALINA_BASE/lib/tomcat-juli-9.0.22.jar" ] ; then
-  CLASSPATH=$CLASSPATH:$CATALINA_BASE/lib/tomcat-juli-9.0.22.jar
+if [ -r "$CATALINA_BASE/lib/tomcat-juli-9.0.8.jar" ] ; then
+  CLASSPATH=$CLASSPATH:$CATALINA_BASE/lib/tomcat-juli-9.0.8.jar
 else
-  CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-juli-9.0.22.jar
+  CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-juli-9.0.8.jar
 fi
 
 # Bugzilla 37848: When no TTY is available, don't output to console
