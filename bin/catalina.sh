@@ -207,7 +207,7 @@ fi
 if [ ! -z "$CLASSPATH" ] ; then
   CLASSPATH="$CLASSPATH":
 fi
-CLASSPATH="$CLASSPATH""$CATALINA_HOME"/bin/amplix_launcher-3.0.0.jar:"$CATALINA_HOME"/bin/amplix-4.1.0.jar:"$CATALINA_HOME"/lib/slf4j-api-1.7.25.jar:"$CATALINA_HOME"/lib/logback-core-1.2.3.jar:"$CATALINA_HOME"/lib/logback-classic-1.2.3.jar:"$CATALINA_HOME"/lib/tomcat-embed-core-8.5.42.jar:"$CATALINA_HOME"/lib/joda-time-2.9.9.jar:"$CATALINA_HOME"/lib/commons-codec-1.11.jar
+CLASSPATH="$CLASSPATH""$CATALINA_HOME"/bin/amplix_launcher-4.1.0.jar:"$CATALINA_HOME"/bin/amplix-4.1.0.jar:"$CATALINA_HOME"/lib/slf4j-api-1.7.25.jar:"$CATALINA_HOME"/lib/logback-core-1.2.3.jar:"$CATALINA_HOME"/lib/logback-classic-1.2.3.jar:"$CATALINA_HOME"/lib/tomcat-embed-core-8.5.42.jar:"$CATALINA_HOME"/lib/joda-time-2.9.9.jar:"$CATALINA_HOME"/lib/commons-codec-1.11.jar
 
 if [ -z "$CATALINA_OUT" ] ; then
   CATALINA_OUT="$CATALINA_BASE"/logs/catalina.out
@@ -220,10 +220,10 @@ fi
 
 # Add tomcat-juli.jar to classpath
 # tomcat-juli.jar can be over-ridden per instance
-if [ -r "$CATALINA_BASE/lib/tomcat-juli-9.0.8.jar" ] ; then
-  CLASSPATH=$CLASSPATH:$CATALINA_BASE/lib/tomcat-juli-9.0.8.jar
+if [ -r "$CATALINA_BASE/lib/tomcat-juli-9.0.22.jar" ] ; then
+  CLASSPATH=$CLASSPATH:$CATALINA_BASE/lib/tomcat-juli-9.0.22.jar
 else
-  CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-juli-9.0.8.jar
+  CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-juli-9.0.22.jar
 fi
 
 # Bugzilla 37848: When no TTY is available, don't output to console
