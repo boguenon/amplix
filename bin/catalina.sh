@@ -323,7 +323,7 @@ if [ "$USE_NOHUP" = "true" ]; then
     _NOHUP="nohup"
 fi
 
-# Add the JAVA 9 specific start-up parameters required by Tomcat
+# Add the JAVA 9 specific start-up parameters required by Amplix
 JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS --add-opens=java.base/java.lang=ALL-UNNAMED"
 JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS --add-opens=java.base/java.io=ALL-UNNAMED"
 JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"
@@ -364,6 +364,8 @@ if [ "$1" = "jpda" ] ; then
   shift
 fi
 
+MAINCLASS="org.amplix.launcher.ServerService"
+
 # TODO: Bugzilla 63815
 # This doesn't currently work (and can't be made to work) if values used in
 # CATALINA_OPTS and/or JAVA_OPTS require quoting. See:
@@ -385,19 +387,21 @@ if [ "$1" = "debug" ] ; then
         -sourcepath "$CATALINA_HOME"/../../java \
         -Djava.security.manager \
         -Djava.security.policy=="$CATALINA_BASE"/conf/catalina.policy \
+		-DAPP_HOME="\"$CATALINA_HOME\"" \
         -Dcatalina.base="$CATALINA_BASE" \
         -Dcatalina.home="$CATALINA_HOME" \
         -Djava.io.tmpdir="$CATALINA_TMPDIR" \
-        org.apache.catalina.startup.Bootstrap "$@" start
+        $MAINCLASS "$@" start
     else
       exec "$_RUNJDB" "$CATALINA_LOGGING_CONFIG" $LOGGING_MANAGER $JAVA_OPTS $CATALINA_OPTS \
         -D$ENDORSED_PROP="$JAVA_ENDORSED_DIRS" \
         -classpath "$CLASSPATH" \
         -sourcepath "$CATALINA_HOME"/../../java \
+		-DAPP_HOME="\"$CATALINA_HOME\"" \
         -Dcatalina.base="$CATALINA_BASE" \
         -Dcatalina.home="$CATALINA_HOME" \
         -Djava.io.tmpdir="$CATALINA_TMPDIR" \
-        org.apache.catalina.startup.Bootstrap "$@" start
+        $MAINCLASS "$@" start
     fi
   fi
 
@@ -414,18 +418,20 @@ elif [ "$1" = "run" ]; then
       -classpath "\"$CLASSPATH\"" \
       -Djava.security.manager \
       -Djava.security.policy=="\"$CATALINA_BASE/conf/catalina.policy\"" \
+	  -DAPP_HOME="\"$CATALINA_HOME\"" \
       -Dcatalina.base="\"$CATALINA_BASE\"" \
       -Dcatalina.home="\"$CATALINA_HOME\"" \
       -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-      org.apache.catalina.startup.Bootstrap "$@" start
+      $MAINCLASS "$@" start
   else
     eval exec "\"$_RUNJAVA\"" "\"$CATALINA_LOGGING_CONFIG\"" $LOGGING_MANAGER "$JAVA_OPTS" "$CATALINA_OPTS" \
       -D$ENDORSED_PROP="\"$JAVA_ENDORSED_DIRS\"" \
       -classpath "\"$CLASSPATH\"" \
+	  -DAPP_HOME="\"$CATALINA_HOME\"" \
       -Dcatalina.base="\"$CATALINA_BASE\"" \
       -Dcatalina.home="\"$CATALINA_HOME\"" \
       -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-      org.apache.catalina.startup.Bootstrap "$@" start
+      $MAINCLASS "$@" start
   fi
 
 elif [ "$1" = "start" ] ; then
@@ -438,8 +444,8 @@ elif [ "$1" = "start" ] ; then
           PID=`cat "$CATALINA_PID"`
           ps -p $PID >/dev/null 2>&1
           if [ $? -eq 0 ] ; then
-            echo "Tomcat appears to still be running with PID $PID. Start aborted."
-            echo "If the following process is not a Tomcat process, remove the PID file and try again:"
+            echo "Amplix appears to still be running with PID $PID. Start aborted."
+            echo "If the following process is not a Amplix process, remove the PID file and try again:"
             ps -f -p $PID
             exit 1
           else
@@ -496,19 +502,21 @@ elif [ "$1" = "start" ] ; then
       -Djava.security.manager \
       -Djava.security.policy=="\"$CATALINA_BASE/conf/catalina.policy\"" \
       -Dcatalina.base="\"$CATALINA_BASE\"" \
+	  -DAPP_HOME="\"$CATALINA_HOME\"" \
       -Dcatalina.home="\"$CATALINA_HOME\"" \
       -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-      org.apache.catalina.startup.Bootstrap "$@" start \
+      $MAINCLASS "$@" start \
       >> "$CATALINA_OUT" 2>&1 "&"
 
   else
     eval $_NOHUP "\"$_RUNJAVA\"" "\"$CATALINA_LOGGING_CONFIG\"" $LOGGING_MANAGER "$JAVA_OPTS" "$CATALINA_OPTS" \
       -D$ENDORSED_PROP="\"$JAVA_ENDORSED_DIRS\"" \
       -classpath "\"$CLASSPATH\"" \
+	  -DAPP_HOME="\"$CATALINA_HOME\"" \
       -Dcatalina.base="\"$CATALINA_BASE\"" \
       -Dcatalina.home="\"$CATALINA_HOME\"" \
       -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-      org.apache.catalina.startup.Bootstrap "$@" start \
+      $MAINCLASS "$@" start \
       >> "$CATALINA_OUT" 2>&1 "&"
 
   fi
@@ -517,7 +525,7 @@ elif [ "$1" = "start" ] ; then
     echo $! > "$CATALINA_PID"
   fi
 
-  echo "Tomcat started."
+  echo "Amplix started."
 
 elif [ "$1" = "stop" ] ; then
 
@@ -550,7 +558,7 @@ elif [ "$1" = "stop" ] ; then
         echo "PID file is empty and has been ignored."
       fi
     else
-      echo "\$CATALINA_PID was set but the specified file does not exist. Is Tomcat running? Stop aborted."
+      echo "\$CATALINA_PID was set but the specified file does not exist. Is Amplix running? Stop aborted."
       exit 1
     fi
   fi
@@ -558,10 +566,11 @@ elif [ "$1" = "stop" ] ; then
   eval "\"$_RUNJAVA\"" $LOGGING_MANAGER "$JAVA_OPTS" \
     -D$ENDORSED_PROP="\"$JAVA_ENDORSED_DIRS\"" \
     -classpath "\"$CLASSPATH\"" \
+	-DAPP_HOME="\"$CATALINA_HOME\"" \
     -Dcatalina.base="\"$CATALINA_BASE\"" \
     -Dcatalina.home="\"$CATALINA_HOME\"" \
     -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-    org.apache.catalina.startup.Bootstrap "$@" stop
+    $MAINCLASS "$@" stop
 
   # stop failed. Shutdown port disabled? Try a normal kill.
   if [ $? != 0 ]; then
@@ -580,20 +589,20 @@ elif [ "$1" = "stop" ] ; then
           if [ $? != 0 ]; then
             if [ -w "$CATALINA_PID" ]; then
               cat /dev/null > "$CATALINA_PID"
-              # If Tomcat has stopped don't try and force a stop with an empty PID file
+              # If Amplix has stopped don't try and force a stop with an empty PID file
               FORCE=0
             else
               echo "The PID file could not be removed or cleared."
             fi
           fi
-          echo "Tomcat stopped."
+          echo "Amplix stopped."
           break
         fi
         if [ $SLEEP -gt 0 ]; then
           sleep 1
         fi
         if [ $SLEEP -eq 0 ]; then
-          echo "Tomcat did not stop in time."
+          echo "Amplix did not stop in time."
           if [ $FORCE -eq 0 ]; then
             echo "PID file was not removed."
           fi
@@ -612,7 +621,7 @@ elif [ "$1" = "stop" ] ; then
     else
       if [ -f "$CATALINA_PID" ]; then
         PID=`cat "$CATALINA_PID"`
-        echo "Killing Tomcat with the PID: $PID"
+        echo "Killing Amplix with the PID: $PID"
         kill -9 $PID
         while [ $KILL_SLEEP_INTERVAL -ge 0 ]; do
             kill -0 `cat "$CATALINA_PID"` >/dev/null 2>&1
@@ -625,7 +634,7 @@ elif [ "$1" = "stop" ] ; then
                         echo "The PID file could not be removed."
                     fi
                 fi
-                echo "The Tomcat process has been killed."
+                echo "The Amplix process has been killed."
                 break
             fi
             if [ $KILL_SLEEP_INTERVAL -gt 0 ]; then
@@ -634,7 +643,7 @@ elif [ "$1" = "stop" ] ; then
             KILL_SLEEP_INTERVAL=`expr $KILL_SLEEP_INTERVAL - 1 `
         done
         if [ $KILL_SLEEP_INTERVAL -lt 0 ]; then
-            echo "Tomcat has not been killed completely yet. The process might be waiting on some system call or might be UNINTERRUPTIBLE."
+            echo "Amplix has not been killed completely yet. The process might be waiting on some system call or might be UNINTERRUPTIBLE."
         fi
       fi
     fi
@@ -648,7 +657,7 @@ elif [ "$1" = "configtest" ] ; then
       -Dcatalina.base="\"$CATALINA_BASE\"" \
       -Dcatalina.home="\"$CATALINA_HOME\"" \
       -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-      org.apache.catalina.startup.Bootstrap configtest
+      $MAINCLASS configtest
     result=$?
     if [ $result -ne 0 ]; then
         echo "Configuration error detected!"
@@ -682,7 +691,7 @@ else
   echo "  stop -force       Stop Catalina, wait up to 5 seconds and then use kill -KILL if still running"
   echo "  stop n -force     Stop Catalina, wait up to n seconds and then use kill -KILL if still running"
   echo "  configtest        Run a basic syntax check on server.xml - check exit code for result"
-  echo "  version           What version of tomcat are you running?"
+  echo "  version           What version of Amplix are you running?"
   echo "Note: Waiting for the process to end and use of the -force option require that \$CATALINA_PID is defined"
   exit 1
 

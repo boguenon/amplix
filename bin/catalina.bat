@@ -31,7 +31,7 @@ rem   script will have no effect at all on Windows Services. As such, any
 rem   local customizations made in a CATALINA_BASE/bin/setenv.bat script
 rem   will also have no effect on Tomcat when launched as a Windows Service.
 rem   The configuration that controls Windows Services is stored in the Windows
-rem   Registry, and is most conveniently maintained using the "tomcat9w.exe"
+rem   Registry, and is most conveniently maintained using the "amplix.exe"
 rem   maintenance utility.
 rem
 rem   CATALINA_HOME   May point at your Catalina "build" directory.
@@ -195,7 +195,7 @@ rem quotes into the CLASSPATH
 if "%CLASSPATH%" == "" goto emptyClasspath
 set "CLASSPATH=%CLASSPATH%;"
 :emptyClasspath
-set "CLASSPATH=%CLASSPATH%%CATALINA_HOME%\bin\bootstrap.jar"
+set "CLASSPATH=%CATALINA_HOME%\bin\amplix_launcher-4.1.0.jar;%CATALINA_HOME%\bin\amplix-4.1.0.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-9.0.36.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
 
 if not "%CATALINA_TMPDIR%" == "" goto gotTmpdir
 set "CATALINA_TMPDIR=%CATALINA_BASE%\temp"
@@ -203,11 +203,11 @@ set "CATALINA_TMPDIR=%CATALINA_BASE%\temp"
 
 rem Add tomcat-juli.jar to classpath
 rem tomcat-juli.jar can be over-ridden per instance
-if not exist "%CATALINA_BASE%\bin\tomcat-juli.jar" goto juliClasspathHome
-set "CLASSPATH=%CLASSPATH%;%CATALINA_BASE%\bin\tomcat-juli.jar"
+if not exist "%CATALINA_BASE%\lib\tomcat-juli-9.0.22.jar" goto juliClasspathHome
+set "CLASSPATH=%CLASSPATH%;%CATALINA_BASE%\lib\tomcat-juli-9.0.22.jar"
 goto juliClasspathDone
 :juliClasspathHome
-set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\bin\tomcat-juli.jar"
+set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\lib\tomcat-juli-9.0.22.jar"
 :juliClasspathDone
 
 if not "%JSSE_OPTS%" == "" goto gotJsseOpts
@@ -268,7 +268,7 @@ echo Using JAVA_HOME:       "%JAVA_HOME%"
 echo Using CLASSPATH:       "%CLASSPATH%"
 
 set _EXECJAVA=%_RUNJAVA%
-set MAINCLASS=org.apache.catalina.startup.Bootstrap
+set MAINCLASS=org.amplix.launcher.ServerService
 set ACTION=start
 set SECURITY_POLICY_FILE=
 set DEBUG_OPTS=
@@ -309,7 +309,7 @@ echo   start             Start Catalina in a separate window
 echo   start -security   Start in a separate window with security manager
 echo   stop              Stop Catalina
 echo   configtest        Run a basic syntax check on server.xml
-echo   version           What version of tomcat are you running?
+echo   version           What version of amplix are you running?
 goto end
 
 :doDebug
@@ -332,7 +332,7 @@ goto execCmd
 
 :doStart
 shift
-if "%TITLE%" == "" set TITLE=Tomcat
+if "%TITLE%" == "" set TITLE=Amplix
 set _EXECJAVA=start "%TITLE%" %_RUNJAVA%
 if not ""%1"" == ""-security"" goto execCmd
 shift
@@ -370,17 +370,17 @@ goto setArgs
 rem Execute Java with the applicable properties
 if not "%JPDA%" == "" goto doJpda
 if not "%SECURITY_POLICY_FILE%" == "" goto doSecurity
-%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Dcatalina.base="%CATALINA_BASE%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
+%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
 goto end
 :doSecurity
-%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Djava.security.manager -Djava.security.policy=="%SECURITY_POLICY_FILE%" -Dcatalina.base="%CATALINA_BASE%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
+%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Djava.security.manager -Djava.security.policy=="%SECURITY_POLICY_FILE%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
 goto end
 :doJpda
 if not "%SECURITY_POLICY_FILE%" == "" goto doSecurityJpda
-%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %JPDA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Dcatalina.base="%CATALINA_BASE%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
+%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %JPDA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
 goto end
 :doSecurityJpda
-%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %JPDA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Djava.security.manager -Djava.security.policy=="%SECURITY_POLICY_FILE%" -Dcatalina.base="%CATALINA_BASE%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
+%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %JPDA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Djava.security.manager -Djava.security.policy=="%SECURITY_POLICY_FILE%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
 goto end
 
 :end
