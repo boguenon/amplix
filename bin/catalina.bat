@@ -268,7 +268,7 @@ echo Using JAVA_HOME:       "%JAVA_HOME%"
 echo Using CLASSPATH:       "%CLASSPATH%"
 
 set _EXECJAVA=%_RUNJAVA%
-set MAINCLASS=org.amplix.launcher.ServerService
+set MAINCLASS=com.amplix.launcher.ServerService
 set ACTION=start
 set SECURITY_POLICY_FILE=
 set DEBUG_OPTS=
