@@ -364,7 +364,7 @@ if [ "$1" = "jpda" ] ; then
   shift
 fi
 
-MAINCLASS="org.amplix.launcher.ServerService"
+MAINCLASS="com.amplix.launcher.ServerService"
 
 # TODO: Bugzilla 63815
 # This doesn't currently work (and can't be made to work) if values used in
