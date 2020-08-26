@@ -4306,5 +4306,13 @@
     "group" : "locale_ja_JP_0014",
     "name" : "L_MANUAL_VIEWER",
     "value" : "Manual Viewer"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_Z_A",
+    "value" : "Area zooming"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_Z_B",
+    "value" : "Restore area zooming"
   } ]
 }

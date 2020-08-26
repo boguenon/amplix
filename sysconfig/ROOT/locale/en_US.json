@@ -370,6 +370,7 @@
     "name" : "L_R_FIXSIZE",
     "value" : "Fixed Size"
   }, {
+    "group" : "locale_en_US_0014",
     "name" : "B_SHARE",
     "value" : "Share"
   }, {
@@ -3212,8 +3213,9 @@
     "name" : "L_SYS_BACKSCH",
     "value" : "Background Schedule"
   }, {
+    "group" : "locale_en_US_0014",
     "name" : "B_SEQUENCE",
-    "value" : "Order"
+    "value" : "Sequence"
   }, {
     "name" : "L_SUBSCRIBE",
     "value" : "Subscribe"
@@ -4245,5 +4247,541 @@
     "group" : "locale_en_US_0014",
     "name" : "L_INPUT_EMAIL",
     "value" : "Enter email or email addresses..."
+  }, {
+    "group" : "locale_en_US_0012",
+    "name" : "L_CHART_Z_A",
+    "value" : "Area zooming"
+  }, {
+    "group" : "locale_en_US_0012",
+    "name" : "L_CHART_Z_B",
+    "value" : "Restore area zooming"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_EMAIL_MSG",
+    "value" : "Email Messages"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_EMPTY_MSG",
+    "value" : "Messages..."
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_EMAIL_DESC",
+    "value" : "<span>This sends email with public link of this report who don't have access to system</span>"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_LOGIN",
+    "value" : "Login"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_NEED_LOGIN",
+    "value" : "Need Login"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_PUBLIC_LINK_URL",
+    "value" : "Public Link URL"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_GENERATE",
+    "value" : "Generate"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SHARE_HISTORY",
+    "value" : "<span><b>Shared History</b></span>"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_IS_PUBLIC",
+    "value" : "Public"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_VISIT_COUNT",
+    "value" : "Visit Count"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_LAST_VIEWED",
+    "value" : "Last Viewed"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MANUAL",
+    "value" : "Document Management"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MANUAL_MANAGER",
+    "value" : "Manual Documentation"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MANUAL_WRITER",
+    "value" : "Manual Writer"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MANUAL_VIEWER",
+    "value" : "Manual Viewer"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "T_MGR_MANUAL",
+    "value" : "Manual Manager"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_CREATE_SHARE_URL",
+    "value" : "Confirm to create shared URL?"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_CONFIRM_DELETE",
+    "value" : "Confirm to delete content?"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_CONFIRM_DISABLE",
+    "value" : "Confirm to disable?"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_CONFIRM_IMP",
+    "value" : "Are you sure to import meta content? Content will be over written if exists."
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_CONFIRM_TB_BATCH",
+    "value" : "Batch update schema for all tables in the folder. Would you continue?"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_CONFIRM_DS_CHANGE",
+    "value" : "already have datasource defined. Select another data source can cause report not running. Would you continue?"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_CONFIRM_DROP_FILE",
+    "value" : "Would you move content to dropped folder?"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_CONFIRM_OVERWRITE",
+    "value" : "already exist on the server. Would you overwrite existing item with this copy?"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "M_CONFIRM",
+    "value" : "Would you continue? Click Yes to continue."
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_CONFIG_FORMULA",
+    "value" : "Config Formula"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_NEW",
+    "value" : "New Item"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MOVE_UP",
+    "value" : "Move Up"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MOVE_DOWN",
+    "value" : "Move Down"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SEARCH_ITEM",
+    "value" : "Search Item"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_UP",
+    "value" : "Up"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_DOWN",
+    "value" : "Down"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_DB_POOL",
+    "value" : "Data Connection"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_GROUP_INDEX",
+    "value" : "Group Index"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_INDEX",
+    "value" : "Index"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_Y2_AXIS",
+    "value" : "Y2 Axis"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ADD_ROW",
+    "value" : "Add Row"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ADD_FORMULA",
+    "value" : "Add Formula"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_EXPORT_TYPE",
+    "value" : "Export As"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ERASE_GROUP",
+    "value" : "Erase Group"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_UNIQUE_VALUE",
+    "value" : "Unique Value"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_COLUMN_INDEX",
+    "value" : "Column Index"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_IS_MEASURE",
+    "value" : "Is Measure"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_OPTIONS",
+    "value" : "Options"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_TAB_SELECTOR",
+    "value" : "Tab Selector"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_PROMPT",
+    "value" : "Prompt"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_SELECT",
+    "value" : "Select"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_KEY",
+    "value" : "Key"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ROW_CNT",
+    "value" : "Rows"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ADD_CUR_SEL",
+    "value" : "Add Current Selection"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SEL_ALL",
+    "value" : "Select All"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_JAVA_CLASS",
+    "value" : "Java ActionModule"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_IMP_TABLES",
+    "value" : "Import Tables"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_INLINE_VIEW",
+    "value" : "Inline View"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_CURRENT",
+    "value" : "Current"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_LOCATION",
+    "value" : "Location"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_GEO_ADDRESS",
+    "value" : "Address"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_LAT",
+    "value" : "Latitude"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_LNG",
+    "value" : "Longitude"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_UPD_GEOCODE",
+    "value" : "Update GeoCode"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_RUN_SQL",
+    "value" : "Run SQL"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_EXISTS",
+    "value" : "Exists"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_LOG_RESULT",
+    "value" : "Log Result"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_CHANGE_REV",
+    "value" : "Change Revision"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_TEST_EMAIL",
+    "value" : "Test Email"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SSO_DESIGNER",
+    "value" : "SSO Designer"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SET",
+    "value" : "Set"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_CACHE_INFO",
+    "value" : "Cache Info"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_CONFIG_VAR",
+    "value" : "Config Variables"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SHORTCUT",
+    "value" : "Shortcut"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_GO_TOP",
+    "value" : "Go Top"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_BATCH_UPD_SCH",
+    "value" : "Batch Update Schema"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_EXTRACT_META",
+    "value" : "Extract Meta"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ALIAS_TO_DESC",
+    "value" : "Alias to Description"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ALIAS_TO_NAME",
+    "value" : "Alias to Name"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_USER",
+    "value" : "User"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_ROLE",
+    "value" : "Role"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_TENANT",
+    "value" : "Tenant"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_GROUP_ID",
+    "value" : "Group ID"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SERVER_TYPE",
+    "value" : "Server Type"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_EMAIL_FROM_ADDRESS",
+    "value" : "From Address"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ENCRYPTION",
+    "value" : "Encryption"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_AUTHEN_METHOD",
+    "value" : "Authentication Method"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SERVER_ADDRESS",
+    "value" : "Server Address"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_CREDENTIALS",
+    "value" : "Credentials"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_REPORT_HEALTH_CHECK",
+    "value" : "Report Health Check"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SYS_ERROR",
+    "value" : "System Error"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_LOG_LEVEL",
+    "value" : "Log Level"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SERVER_FULL_RUL",
+    "value" : "Server Full URL"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SCHEDULE_SERVICE",
+    "value" : "Scheduler Service"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_EXCEL_OUTPUT_TYPE",
+    "value" : "Excel Output Type"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_STORE_METAFILE",
+    "value" : "Store MetaFile"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_FILE_NAMERULE",
+    "value" : "File Name Rule"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MODULE_TYPE",
+    "value" : "Module Type"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_JUPYTER_URL",
+    "value" : "Jupyter URL"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_CREDENTIALS",
+    "value" : "Credentials"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SNOOZE_MASS_REQ",
+    "value" : "Snooze Mass Requests"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SNOOZE_TIME_MIN",
+    "value" : "Snooze time (min)"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SERVER_REQ_MAX_PROTECT",
+    "value" : "Server Request Max Protection"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_WRONG_PWD_COUNTS",
+    "value" : "Wrong Password Counts"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_PWD_FAIL_ACTION",
+    "value" : "Password Fail Action"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_PWD_RULE",
+    "value" : "Password Rule"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MAX_FILE_UPLOAD_MB",
+    "value" : "Max File Upload(MB)"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_BULK_MAX_FIILE_UPLOAD_MB",
+    "value" : "Bulk Max File Upload(MB)"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_TENANT_POST_CALL_MODULE",
+    "value" : "Tenant Post Call Module"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_H2_URL_FOR_MASH",
+    "value" : "H2 URL for Mashing"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_NLP_SVR_HOST",
+    "value" : "NLP Server Host"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_NLP_SVR_PORT",
+    "value" : "NLP Server Port"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_NLP_AGNTS",
+    "value" : "NLP Agent Thread Count"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_BOT_NICK",
+    "value" : "Bot Nickname"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_APPL_TITLE",
+    "value" : "Application Title"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_APPL_TITLE_HTML",
+    "value" : "Application Title(HTML)"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_COLLAPSE_MAIN_MENU",
+    "value" : "Collapase Main Menu"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_NAV_TAB",
+    "value" : "Navigation Tab"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MAX_TAB_COUNT",
+    "value" : "Max Tab Counts"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_HOME_TAB_TITLE",
+    "value" : "Home Tab Title"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_HOME_TAB_MSG",
+    "value" : "Home Tab Message"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_LOADING_MSG",
+    "value" : "Loading Message"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_GMAP_API",
+    "value" : "Google Map API Key"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_NVMAP_API",
+    "value" : "Nave Map API Key"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_DEFAULT_OPTIONS",
+    "value" : "Default Options"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MEASURE_NAMING",
+    "value" : "Measure Naming"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ECHART_THEM",
+    "value" : "Echart Theme"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_REPORT_SCRSHOT",
+    "value" : "Report ScreenShot"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_GEO_MAP_CENTER",
+    "value" : "Geo Map Center"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ARCGIS_REST_API",
+    "value" : "ArcGIS Rest API"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SSO",
+    "value" : "Single Sign On"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_EMAIL_FROM_ADDR",
+    "value" : "From Address"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_PYTHON_EXEC",
+    "value" : "Python Executable"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ALLOW_INSERT",
+    "value" : "Allow Insert"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_MASK_TYPE",
+    "value" : "Mask Type"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_USE_GEOCODE",
+    "value" : "Use GeoCode"
   } ]
 }

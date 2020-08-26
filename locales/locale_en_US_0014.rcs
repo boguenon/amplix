@@ -28,3 +28,122 @@ A;L_MANUAL_MANAGER;Manual Documentation
 A;L_MANUAL_WRITER;Manual Writer
 A;L_MANUAL_VIEWER;Manual Viewer
 A;T_MGR_MANUAL;Manual Manager
+A;M_CREATE_SHARE_URL;Confirm to create shared URL?
+A;M_CONFIRM_DELETE;Confirm to delete content?
+A;M_CONFIRM_DISABLE;Confirm to disable?
+A;M_CONFIRM_IMP;Are you sure to import meta content? Content will be over written if exists.
+A;M_CONFIRM_TB_BATCH;Batch update schema for all tables in the folder. Would you continue?
+A;M_CONFIRM_DS_CHANGE;already have datasource defined. Select another data source can cause report not running. Would you continue?
+A;M_CONFIRM_DROP_FILE;Would you move content to dropped folder?
+A;M_CONFIRM_OVERWRITE; already exist on the server. Would you overwrite existing item with this copy?
+A;M_CONFIRM;Would you continue? Click Yes to continue.
+A;L_CONFIG_FORMULA;Config Formula
+A;B_NEW;New Item
+A;L_MOVE_UP;Move Up
+A;L_MOVE_DOWN;Move Down
+A;L_SEARCH_ITEM;Search Item
+A;B_UP;Up
+A;B_DOWN;Down
+A;L_DB_POOL;Data Connection
+A;B_SEQUENCE;Sequence
+A;L_GROUP_INDEX;Group Index
+A;B_INDEX;Index
+A;L_Y2_AXIS;Y2 Axis
+A;L_ADD_ROW;Add Row
+A;L_ADD_FORMULA;Add Formula
+A;L_EXPORT_TYPE;Export As
+A;L_ERASE_GROUP;Erase Group
+A;L_UNIQUE_VALUE;Unique Value
+A;L_COLUMN_INDEX;Column Index
+A;L_IS_MEASURE;Is Measure
+A;B_OPTIONS;Options
+A;L_TAB_SELECTOR;Tab Selector
+A;L_PROMPT;Prompt
+A;B_SELECT;Select
+A;B_KEY;Key
+A;L_ROW_CNT;Rows
+A;L_ADD_CUR_SEL;Add Current Selection
+A;L_SEL_ALL;Select All
+A;B_JAVA_CLASS;Java ActionModule
+A;L_IMP_TABLES;Import Tables
+A;L_INLINE_VIEW;Inline View
+A;L_CURRENT;Current
+A;L_LOCATION;Location
+A;L_GEO_ADDRESS;Address
+A;B_LAT;Latitude
+A;B_LNG;Longitude
+A;L_UPD_GEOCODE;Update GeoCode
+A;L_RUN_SQL;Run SQL
+A;B_EXISTS;Exists
+A;L_LOG_RESULT;Log Result
+A;L_CHANGE_REV;Change Revision
+A;L_TEST_EMAIL;Test Email Settings
+A;L_SSO_DESIGNER;SSO Designer
+A;L_SET;Set
+A;L_CACHE_INFO;Cache Info
+A;L_CONFIG_VAR;Config Variables
+A;L_SHORTCUT;Shortcut
+A;L_GO_TOP;Go Top
+A;L_BATCH_UPD_SCH;Batch Update Schema
+A;L_EXTRACT_META;Extract Meta
+A;L_ALIAS_TO_DESC;Alias to Description
+A;L_ALIAS_TO_NAME;Alias to Name
+A;B_USER;User
+A;B_ROLE;Role
+A;B_TENANT;Tenant
+A;L_GROUP_ID;Group ID
+A;L_SERVER_TYPE;Server Type
+A;L_EMAIL_FROM_ADDR;From Address
+A;L_ENCRYPTION;Encryption
+A;L_AUTHEN_METHOD;Authentication Method
+A;L_SERVER_ADDRESS;Server Address
+A;L_CREDENTIALS;Credentials
+A;L_REPORT_HEALTH_CHECK;Report Health Check
+A;L_TEST_EMAIL;Test Email
+A;L_SYS_ERROR;System Error
+A;L_LOG_LEVEL;Log Level
+A;L_SERVER_FULL_RUL;Server Full URL
+A;L_SCHEDULE_SERVICE;Scheduler Service
+A;L_EXCEL_OUTPUT_TYPE;Excel Output Type
+A;L_STORE_METAFILE;Store MetaFile
+A;L_LOCATION;Location
+A;L_FILE_NAMERULE;File Name Rule
+A;L_MODULE_TYPE;Module Type
+A;L_PYTHON_EXEC;Python Executable
+A;L_JUPYTER_URL;Jupyter URL
+A;B_CREDENTIALS;Credentials
+A;L_SNOOZE_MASS_REQ;Snooze Mass Requests
+A;L_SNOOZE_TIME_MIN;Snooze time (min)
+A;L_SERVER_REQ_MAX_PROTECT;Server Request Max Protection
+A;L_WRONG_PWD_COUNTS;Wrong Password Counts
+A;L_PWD_FAIL_ACTION;Password Fail Action
+A;L_PWD_RULE;Password Rule
+A;L_MAX_FILE_UPLOAD_MB;Max File Upload(MB)
+A;L_BULK_MAX_FIILE_UPLOAD_MB;Bulk Max File Upload(MB)
+A;L_TENANT_POST_CALL_MODULE;Tenant Post Call Module
+A;L_H2_URL_FOR_MASH;H2 URL for Mashing
+A;L_NLP_SVR_HOST;NLP Server Host
+A;L_NLP_SVR_PORT;NLP Server Port
+A;L_NLP_AGNTS;NLP Agent Thread Count
+A;L_BOT_NICK;Bot Nickname
+A;L_APPL_TITLE;Application Title
+A;L_APPL_TITLE_HTML;Application Title(HTML)
+A;L_COLLAPSE_MAIN_MENU;Collapase Main Menu
+A;L_NAV_TAB;Navigation Tab
+A;L_MAX_TAB_COUNT;Max Tab Counts
+A;L_HOME_TAB_TITLE;Home Tab Title
+A;L_HOME_TAB_MSG;Home Tab Message
+A;L_LOADING_MSG;Loading Message
+A;L_GMAP_API;Google Map API Key
+A;L_NVMAP_API;Nave Map API Key
+A;L_DEFAULT_OPTIONS;Default Options
+A;L_MEASURE_NAMING;Measure Naming
+A;L_ECHART_THEM;Echart Theme
+A;L_REPORT_SCRSHOT;Report ScreenShot
+A;L_GEO_MAP_CENTER;Geo Map Center
+A;L_ARCGIS_REST_API;ArcGIS Rest API
+A;L_SSO;Single Sign On
+A;L_SSO_DESIGNER;SSO Designer
+A;L_ALLOW_INSERT;Allow Insert
+A;L_MASK_TYPE;Mask Type
+A;L_USE_GEOCODE;Use GeoCode

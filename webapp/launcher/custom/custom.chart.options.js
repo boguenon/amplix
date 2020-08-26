@@ -12,7 +12,7 @@ IG$._customChartPanels = [
 	{
 		layout: "anchor",
 		border: 0,
-		title: "Styles",
+		title: IRm$.r1("B_STYTLE"), // "Styles",
 		autoScroll: true,
 		defaults: {
 			anchor: "100%"
@@ -60,7 +60,7 @@ IG$._customChartPanels = [
 		items: [ 
 			{
 				xtype: "fieldset",
-				title: "Style options (Fusion Charts)",
+				title: IRm$.r1("L_STYLE_FUSION"), // "Style options (Fusion Charts)",
 				hidden: true,
 				layout: "anchor",
 
@@ -115,7 +115,7 @@ IG$._customChartPanels = [
 			}, 
 			{
 				xtype: "fieldset",
-				title: "3D Options",
+				title: IRm$.r1("L_3D_OPTIONS"), // "3D Options",
 				layout: "anchor",
 				items: [ 
 					{
@@ -164,7 +164,7 @@ IG$._customChartPanels = [
 			}, 
 			{
 				xtype: "fieldset",
-				title: "Gauge options",
+				title: IRm$.r1("L_GAUGE_OPTIONS"), // "Gauge options",
 				name: "pa01",
 				layout: "anchor",
 				hidden: true,
@@ -223,7 +223,7 @@ IG$._customChartPanels = [
 			align: "stretch"
 		},
 		border: 0,
-		title: "Extra Options",
+		title: IRm$.r1("L_EXTRA_OPTIONS"), // "Extra Options",
 		defaults: {
 			anchor: "100%"
 		},
@@ -415,7 +415,7 @@ IG$._customChartPanels = [
 				items: [
 					{
 						xtype: "fieldset",
-						title: "Map options",
+						title: IRm$.r1("L_MAP_OPTIONS"), // "Map options",
 						layout: "anchor",
 
 						items: [ 
@@ -430,7 +430,7 @@ IG$._customChartPanels = [
 					},
 					{
 						xtype: "fieldset",
-						title: "Map Draw options",
+						title: IRm$.r1("L_MAP_DRAW_OPTIONS"), // "Map Draw options",
 						layout: "anchor",
 						items: [
 							{
@@ -561,7 +561,7 @@ IG$._customChartPanels = [
 					// arc layer selection
 					{
 						xtype: "gridpanel",
-						title: "ArcGIS MapLayers",
+						title: IRm$.r1("L_ARCGIS_LAYERS"), // "ArcGIS MapLayers",
 						name: "m_arc_layers",
 						hidden: true,
 						height: 300,
@@ -575,7 +575,7 @@ IG$._customChartPanels = [
 						},
 						columns: [
 							{
-								text: "Name",
+								text: IRm$.r1("B_NAME"),
 								dataIndex: "name"
 							}
 						]
@@ -584,14 +584,14 @@ IG$._customChartPanels = [
 			},
 			{
 				xtype: "fieldset",
-				title: "KPI Indicator",
+				title: IRm$.r1("L_KPI_INDI"), // "KPI Indicator",
 				layout: "anchor",
 				hidden: true,
 				name: "pb02",
 				items: [ 
 					{
 						xtype: "button",
-						text: "Indicator Wizard",
+						text: IRm$.r1("L_INDICATOR_WIZARD"),
 						handler: function() {
 							var me = this,
 								ma = me.__main__,
@@ -648,7 +648,7 @@ IG$._customChartPanels = [
 		id: "card-8",
 		layout: "anchor",
 		border: 0,
-		title: "Stock Options",
+		title: IRm$.r1("L_STOCK_OPTIONS"), // "Stock Options",
 		defaults: {
 			anchor: "100%"
 		},
@@ -694,7 +694,7 @@ IG$._customChartPanels = [
 		items: [ 
 			{
 				xtype: "fieldset",
-				title: "Time Field",
+				title: IRm$.r1("L_TIME_FIELD"), // "Time Field",
 				layout: "anchor",
 				items: [ 
 					{
