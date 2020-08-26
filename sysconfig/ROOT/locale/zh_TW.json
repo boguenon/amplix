@@ -370,8 +370,9 @@
     "name" : "L_R_FIXSIZE",
     "value" : "固定尺寸"
   }, {
+    "group" : "locale_zh_TW_0014",
     "name" : "B_SHARE",
-    "value" : "分享"
+    "value" : "Share"
   }, {
     "name" : "I_RELATION",
     "value" : "關係"
@@ -4193,5 +4194,117 @@
     "group" : "locale_zh_TW_0013",
     "name" : "T_MIG_META_UPGRADE",
     "value" : "Meta Upgrade"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_REL_SCHEDULE",
+    "value" : "Related Schedules"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_JOB_HISTORY",
+    "value" : "Job History"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SCH_NAME",
+    "value" : "Schedule Name"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_UPD_DATE",
+    "value" : "Updated Date"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_LOAD_LAST_SCH",
+    "value" : "Load Schedule on Init"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_START_DATE",
+    "value" : "Start At"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_REGISTER",
+    "value" : "Register"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "T_SHARE_SETTINGS",
+    "value" : "Share Settings"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_EMBED_LINK",
+    "value" : "Embeddable Link"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_LINK_TO_SHARE",
+    "value" : "Link to Share"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "M_SHARE_PAGE",
+    "value" : "<span>Use above link url to embed on html pages.</span>"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SHARE_PUBLIC",
+    "value" : "Share with Public Link"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_INPUT_EMAIL",
+    "value" : "Enter email or email addresses..."
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_EMAIL_MSG",
+    "value" : "Email Messages"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_EMPTY_MSG",
+    "value" : "Messages..."
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "M_EMAIL_DESC",
+    "value" : "<span>This sends email with public link of this report who don't have access to system</span>"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_LOGIN",
+    "value" : "Login"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_NEED_LOGIN",
+    "value" : "Need Login"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_PUBLIC_LINK_URL",
+    "value" : "Public Link URL"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_GENERATE",
+    "value" : "Generate"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SHARE_HISTORY",
+    "value" : "<span><b>Shared History</b></span>"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_IS_PUBLIC",
+    "value" : "Public"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_VISIT_COUNT",
+    "value" : "Visit Count"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_LAST_VIEWED",
+    "value" : "Last Viewed"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_MANUAL",
+    "value" : "Document Management"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_MANUAL_MANAGER",
+    "value" : "Manual Documentation"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_MANUAL_WRITER",
+    "value" : "Manual Writer"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_MANUAL_VIEWER",
+    "value" : "Manual Viewer"
   } ]
 }

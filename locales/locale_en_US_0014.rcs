@@ -1,0 +1,30 @@
+A;L_REL_SCHEDULE;Related Schedules
+A;L_JOB_HISTORY;Job History
+A;L_SCH_NAME;Schedule Name
+A;B_UPD_DATE;Updated Date
+A;L_LOAD_LAST_SCH;Load Schedule on Init
+A;L_START_DATE;Start At
+A;B_REGISTER;Register
+A;T_SHARE_SETTINGS;Share Settings
+A;L_EMBED_LINK;Embeddable Link
+A;L_LINK_TO_SHARE;Link to Share
+A;M_SHARE_PAGE;<span>Use above link url to embed on html pages.</span>
+A;L_SHARE_PUBLIC;Share with Public Link
+A;L_INPUT_EMAIL;Enter email or email addresses...
+A;L_EMAIL_MSG;Email Messages
+A;L_EMPTY_MSG;Messages...
+A;M_EMAIL_DESC;<span>This sends email with public link of this report who don't have access to system</span>
+A;L_LOGIN;Login
+A;L_NEED_LOGIN;Need Login
+A;L_PUBLIC_LINK_URL;Public Link URL
+A;B_GENERATE;Generate
+A;B_SHARE;Share
+A;L_SHARE_HISTORY;<span><b>Shared History</b></span>
+A;B_IS_PUBLIC;Public
+A;L_VISIT_COUNT;Visit Count
+A;L_LAST_VIEWED;Last Viewed
+A;L_MANUAL;Document Management
+A;L_MANUAL_MANAGER;Manual Documentation
+A;L_MANUAL_WRITER;Manual Writer
+A;L_MANUAL_VIEWER;Manual Viewer
+A;T_MGR_MANUAL;Manual Manager
