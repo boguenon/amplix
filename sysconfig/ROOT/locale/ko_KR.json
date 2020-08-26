@@ -4779,5 +4779,505 @@
     "group" : "locale_ko_KR_0014",
     "name" : "L_USE_GEOCODE",
     "value" : "위치 코드 사용"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_URL_OF_SHARE_OBJ",
+    "value" : "공유 오브젝트 URL"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_DATE",
+    "value" : "일시"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_COMP_ID",
+    "value" : "컴포넌트 아이디"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_STYLE",
+    "value" : "스타일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FILTER_ITEMS",
+    "value" : "필터 아이템"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_VIEW_OPTIONS",
+    "value" : "뷰어 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FILTER_LAYOUT_OPTIONS",
+    "value" : "필터 레이아웃 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EXCEL_DOWN_OPTIONS",
+    "value" : "엑셀 다운로드 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_APPLY_TO_ALL",
+    "value" : "전체에 적용하기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_VALUE_SET",
+    "value" : "값 집합"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_REPORT_PATH",
+    "value" : "리포트 경로"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_TEMPLATE_NAME",
+    "value" : "템플리트 이름"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_START_DATE",
+    "value" : "시작일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_JOB_NAME",
+    "value" : "작업 이름"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DAY_OF_WEEK",
+    "value" : "주중의 요일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DAY_OF_MONTH",
+    "value" : "한달 중 특정일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PREEXE_STMT",
+    "value" : "선행 실행 쿼리문"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_POST_EXEC_STMT",
+    "value" : "후속 실행 쿼리문"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ANAL_ENV",
+    "value" : "분석 환경 변수"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SCH_SVR_STAT",
+    "value" : "스케쥴 서비스 상태"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_NICKNAME",
+    "value" : "별명"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_OBJNAME",
+    "value" : "개체 명칭"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PICK_TIME",
+    "value" : "예약일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_END_TIME",
+    "value" : "종료일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_HEART_BEAT",
+    "value" : "활성화 상태"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_CRT_DATE",
+    "value" : "생성 일자"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MOD_DATE",
+    "value" : "수정 일자"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PROGRAMS",
+    "value" : "프로그램"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_REG_SCHEDULE",
+    "value" : "스케쥴 등록"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_JOB_TYPE",
+    "value" : "작업 유형"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ADD_NEW_PROGRAM",
+    "value" : "신규 프로그램 추가"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LOAD_FILE",
+    "value" : "파일 불러오기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DATA",
+    "value" : "데이타"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_KEEP_MODI_DATES",
+    "value" : "수정일을 기존으로 유지"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_KEEP_OWNER_INFO",
+    "value" : "생성자 정보를 유지"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_IMP_SECURITY",
+    "value" : "개체 권한을 가져오기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_CLEAR_HIST",
+    "value" : "이력 초기화"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_IMPORT_SELECTED",
+    "value" : "선택 항목 임포트"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_AUTO_REF_SEC",
+    "value" : "자동 리프래시(초)"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_CONDITIONS",
+    "value" : "조건"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ELLAPSED_THEN_SEC",
+    "value" : "실행시간 초과건(초)"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_BUF_SIZE",
+    "value" : "버퍼 크기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_3D_OPTIONS",
+    "value" : "3D 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_VISIBLE",
+    "value" : "보기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_AXIS_SETTINGS",
+    "value" : "축 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_YAXIS_SETTINGS",
+    "value" : "Y 축 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SEC_YAXIS_SETTINGS",
+    "value" : "이중 Y 축 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_RIGHT_YAXIS_TITLE",
+    "value" : "축 타이틀"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EXTRA_OPTIONS",
+    "value" : "기타 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_STOCK_OPTIONS",
+    "value" : "스탁 챠트 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TIME_FIELD",
+    "value" : "시간 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_KPI_INDI",
+    "value" : "KPI 표시챠트 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_INDICATOR_WIZARD",
+    "value" : "인디케이터 마법사"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MAP_OPTIONS",
+    "value" : "지도 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MAP_DRAW_OPTIONS",
+    "value" : "지도 표시 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ARCGIS_LAYERS",
+    "value" : "Arc GIS 레이어 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_TEMPLATE",
+    "value" : "템플리트"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FOLDER_AND_TABLES",
+    "value" : "폴더 및 테이블"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FIELDS",
+    "value" : "필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_RELATIONS",
+    "value" : "상관관계"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MULTI_RENAME",
+    "value" : "복수개 이름 변경"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_REMOVE_UNDERLINE",
+    "value" : "밑줄 제거 하기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_RENAME_MASK",
+    "value" : "이름 변경 패턴"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PHYSICAL_NAME",
+    "value" : "물리적 이름"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_NEW_NAME",
+    "value" : "신규 이름"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MEASURE_NAME",
+    "value" : "매져 명"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FACT_NAME",
+    "value" : "팩트 디맨젼"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MASK_TEXT",
+    "value" : "텍스트 마스크"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MEASURES",
+    "value" : "매져"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_GEOCODE",
+    "value" : "지도 위치 코드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_INPUT_FORMAT",
+    "value" : "입력 양식"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_YAXIS_SETTING",
+    "value" : "Y 축 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MINIMUM",
+    "value" : "최소값"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MAXIMUM",
+    "value" : "최대값"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DATA_TYPE",
+    "value" : "데이타 유형"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_VALUE_FIELD",
+    "value" : "값 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FIELD_SELECTIONS",
+    "value" : "필드 선택"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_XAXIS_FIELD",
+    "value" : "X축 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LINE_COLOR",
+    "value" : "라인 색상"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FILL_COLOR",
+    "value" : "채움 색상"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TARGET_OPTIONS",
+    "value" : "대상 항목 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TARGET_ITEM",
+    "value" : "대상 항목"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_USE_SUM_ON_FOLDER",
+    "value" : "폴더별로 집계함수 사용"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EXPAND_ALL",
+    "value" : "전체 펼치기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_OTHER_VALUES",
+    "value" : "기타 값"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_CATEGORY",
+    "value" : "카테고리"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PAGE_FILTERING",
+    "value" : "페이지 필터링"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_AVAILABLE_FIELDS",
+    "value" : "사용가능 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PAGED_FILTER_FIELDS",
+    "value" : "페이지 필터 지정 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DATA_STYLE",
+    "value" : "데이타 스타일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_HEAD_STYLE",
+    "value" : "헤더 스타일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FORMAT_STRING",
+    "value" : "포맷 스트링"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_CSS_CLASS",
+    "value" : "CSS 클래스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TEMPLATE",
+    "value" : "템플리트"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_COLOR_SETTING",
+    "value" : "색상 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MAPPING_TYPE",
+    "value" : "맵핑 유형"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_STATIC_DATA_VALUES",
+    "value" : "정적 데이타값"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_USE_COLORSET",
+    "value" : "색상 집합 사용"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LABEL_VALUE",
+    "value" : "표시 값"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SQL_DATA_VALUES",
+    "value" : "SQL 데이타 값"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DATASOURCE",
+    "value" : "데이타 소스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_COLORSET",
+    "value" : "색상 집합"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_TABLE",
+    "value" : "테이블"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SORT_FIELD",
+    "value" : "정렬 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DATA_VIEW",
+    "value" : "데이타 보기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_RANGE_FILTER1",
+    "value" : "범위 필터 지정 1"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_RANGE_FILTER2",
+    "value" : "범위 필터 지정 2"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_RANGE_FILTER3",
+    "value" : "범위 필터 지정 3"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FILTER_FIELD",
+    "value" : "필터 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FILTER_VALUE",
+    "value" : "필터 값 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_GENERAL",
+    "value" : "일반 사항"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EMAIL_SETUP",
+    "value" : "이메일 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EMAIL_NOTI_RCP",
+    "value" : "이메일 알람 수신자 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_META_DATA",
+    "value" : "메타 데이타"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PYTHON_INT",
+    "value" : "파이선 연동"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SECURITY",
+    "value" : "보안"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MASS_REQ_PROTECT",
+    "value" : "대량 서비스 요청 보호"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DATA_MASHING",
+    "value" : "데이타 매싱"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LICENSE",
+    "value" : "라이센스 관리"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ASSIST_BOT",
+    "value" : "보조 AI Bot 서비스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_UI_CONFIG",
+    "value" : "사용자 UI 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_API_KEYS",
+    "value" : "API 키값"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SHORT_NAME",
+    "value" : "짧은 이름"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_AUTHEN_CLASS",
+    "value" : "사용자 입증 클래스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_AUTHOR_CLASS",
+    "value" : "권한 부여 클래스"
   } ]
 }
