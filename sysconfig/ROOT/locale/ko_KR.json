@@ -370,6 +370,7 @@
     "name" : "L_R_FIXSIZE",
     "value" : "고정 사이즈"
   }, {
+    "group" : "locale_ko_KR_0014",
     "name" : "B_SHARE",
     "value" : "공유하기"
   }, {
@@ -4193,5 +4194,117 @@
     "group" : "locale_ko_KR_0013",
     "name" : "T_MIG_META_UPGRADE",
     "value" : "메타 버전 업그레이드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_REL_SCHEDULE",
+    "value" : "관련 스케쥴 작 항목"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_JOB_HISTORY",
+    "value" : "작업 이력"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SCH_NAME",
+    "value" : "스케쥴명"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_UPD_DATE",
+    "value" : "최종 수정일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LOAD_LAST_SCH",
+    "value" : "리포트 열기시 스케쥴 결과 로드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_START_DATE",
+    "value" : "시작 시간"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_REGISTER",
+    "value" : "등록"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "T_SHARE_SETTINGS",
+    "value" : "공유 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EMBED_LINK",
+    "value" : "임베드 링크"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LINK_TO_SHARE",
+    "value" : "공유 웹 URL"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "M_SHARE_PAGE",
+    "value" : "<span>HTML 페이지에 링크하려면 위의 경로로 href 를 지정하십시오.</span>"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SHARE_PUBLIC",
+    "value" : "퍼블릭 링크로 공유하기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_INPUT_EMAIL",
+    "value" : "이메일 주소를 입력해 주십시오..."
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EMAIL_MSG",
+    "value" : "이메일 주소"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EMPTY_MSG",
+    "value" : "메시지를 입력해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "M_EMAIL_DESC",
+    "value" : "<span>시스템 로그인 권한이 없는 사용자도 보고서를 실행할 수 있는 공유 링크를 전송하게 됩니다.</span>"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LOGIN",
+    "value" : "로그인"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_NEED_LOGIN",
+    "value" : "로그인 필요"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PUBLIC_LINK_URL",
+    "value" : "퍼블릭 링크 URL"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_GENERATE",
+    "value" : "생성하기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SHARE_HISTORY",
+    "value" : "<span><b>공유 이력 관리</b></span>"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_IS_PUBLIC",
+    "value" : "퍼블릭 여부"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_VISIT_COUNT",
+    "value" : "방문자수"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LAST_VIEWED",
+    "value" : "최종 접속시간"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MANUAL",
+    "value" : "문서 관리"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MANUAL_MANAGER",
+    "value" : "매뉴얼 문서 관리"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MANUAL_WRITER",
+    "value" : "매뉴얼 편집 수정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MANUAL_VIEWER",
+    "value" : "매뉴얼 뷰어"
   } ]
 }

@@ -455,7 +455,7 @@ CREATE TABLE igcusers (
   iuid #CHAR#(17) #NULL#,
   userid #VARCHAR#(100) #NULL#,
   uname #VARCHAR#(100) #NULL#,
-  upasswd #VARCHAR#(100) #NULL#,
+  upasswd #VARCHAR#(256) #NULL#,
   email #VARCHAR#(100) #NULL#,
   active #NUMBER#(4) #NULL#,
   mdate #LONG# #NULL#,
