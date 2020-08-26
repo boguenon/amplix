@@ -26,7 +26,6 @@
 	
 	"140": "Login failed %s and will be %s with %s consecutive failure!",
 	"141": "Too manu wrong password tried! Locked session!",
-	"142": "LOCKED",
 	
 	"200": "Unknown command!",
 	"201": "One or more command parameters missing.",

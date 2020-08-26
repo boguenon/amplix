@@ -639,10 +639,6 @@
 					]
 				}
 			]
-		},
-		{
-			"name": "Manual Management",
-			"cls": "ig_manual"
 		}
 	] 
 }
