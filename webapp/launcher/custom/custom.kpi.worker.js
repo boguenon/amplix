@@ -48,7 +48,7 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
                         {
                             xtype: "combobox",
                             name: "ttype",
-                            fieldLabel: "Template Type",
+                            fieldLabel: IRm$.r1("L_TEMPLATE_TYPE"), // "Template Type",
                             queryMode: 'local',
                             displayField: 'name',
                             valueField: 'value',
@@ -605,7 +605,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
                     items: [
                         {
                             xtype: "textfield",
-                            fieldLabel: "Box Counts",
+                            fieldLabel: IRm$.r1("L_BOX_COUNTS"), // "Box Counts",
                             name: "boxcnt"
                         },
                         {
@@ -615,7 +615,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
                         },
                         {
                             xtype: "combobox",
-                            fieldLabel: "Layout Mode",
+                            fieldLabel: IRm$.r1("L_LAYOUT_MODE"), // "Layout Mode",
                             name: "boxlayout",
                             queryMode: "local",
                             displayField: "name",
@@ -658,7 +658,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
                             tbar: [
                                 {
                                     xtype: "button",
-                                    text: "Add Row",
+                                    text: IRm$.r1("L_ADD_ROW"), // "Add Row",
                                     handler: function() {
                                         var me = this,
                                             grd = me.down("[name=colconfig]");
@@ -672,7 +672,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
                                 },
                                 {
                                     xtype: "button",
-                                    text: "Remove Checked",
+                                    text: IRm$.r1("L_REMOVE_CHECKED"), // "Remove Checked",
                                     handler: function() {
                                         var me = this,
                                             grd = me.down("[name=colconfig]"),
@@ -688,7 +688,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
                                 },
                                 {
                                     xtype: "button",
-                                    text: "Move Up",
+                                    text: IRm$.r1("B_MOVE_UP"), // "Move Up",
                                     handler: function() {
                                         var me = this,
                                             grd = me.down("[name=colconfig]"),
@@ -720,7 +720,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
                                 },
                                 {
                                     xtype: "button",
-                                    text: "Move Down",
+                                    text: IRm$.r1("B_MOVE_DOWN"), // "Move Down",
                                     handler: function() {
                                         var me = this,
                                             grd = me.down("[name=colconfig]"),
@@ -754,7 +754,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
                             ],
                             columns: [
                                 {
-                                    text: "Title",
+                                    text: IRm$.r1("B_TITLE"), //"Title",
                                     width: 100,
                                     dataIndex: "name",
                                     editor: {
@@ -762,7 +762,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
                                     }
                                 },
                                 {
-                                    text: "Syntax",
+                                    text: IRm$.r1("B_SYNTAX"), // "Syntax",
                                     flex: 1,
                                     dataIndex: "syntax"
                                 },

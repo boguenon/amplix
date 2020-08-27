@@ -5279,5 +5279,169 @@
     "group" : "locale_ko_KR_0014",
     "name" : "L_AUTHOR_CLASS",
     "value" : "권한 부여 클래스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_GENERAL_OPTIONS",
+    "value" : "일반 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_GRID_STRIPES",
+    "value" : "그리드 스트라이프"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_OPACITY",
+    "value" : "투명도"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ADD_STYLE",
+    "value" : "스타일 추가"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ADD_THEME",
+    "value" : "테마 추가"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_SET",
+    "value" : "설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_CHART_COLOR_ORG",
+    "value" : "챠트 색상 관리자"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_CHART_COLOR",
+    "value" : "챠트 색상그룹"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_COLOR_SETS",
+    "value" : "색상표"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_INHERIT_STYLE_FROM",
+    "value" : "스타일 상속(베이스)"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_THEMES",
+    "value" : "테마"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_NEW_ACTION",
+    "value" : "신규 액션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_NEW_PARAM",
+    "value" : "신규 파라미터"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_EVENT",
+    "value" : "이벤트"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TABLE_LIST",
+    "value" : "테이블 목록"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_REGISTERED_TABLE",
+    "value" : "등록된 테이블"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SIMPLE_REL_VIEW",
+    "value" : "간단 관계도 보기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FIX_KEY",
+    "value" : "키컬럼 고정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_RELATIONS",
+    "value" : "상관 관계"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_I_FROM",
+    "value" : "시작점"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_I_TO",
+    "value" : "종료점"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_JOIN_REL_EDITOR",
+    "value" : "조인 관계 편집기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SOURCE_FIELD",
+    "value" : "소스 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TARGET_FIELD",
+    "value" : "대상 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SRC_TO_TGT_IS",
+    "value" : "소스 - 대상간 관계"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_REMOVE_RELATION",
+    "value" : "관계 삭제하기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_JOIN_REL_CUSTOM_FIELD",
+    "value" : "조인 관계 커스텀 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TABLE_ORDER",
+    "value" : "테이블 순서"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_INC_DEP",
+    "value" : "참조항목 포함"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_INC_SEC",
+    "value" : "권한정보 포함"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_INC_OWNER_INFO",
+    "value" : "사용자 정보 포함"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SHARE",
+    "value" : "공유"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LIST_OF_ITEMS",
+    "value" : "항목 목록"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FOLDER_INFO",
+    "value" : "폴더 정보"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_REVISION",
+    "value" : "리비젼"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_CUR_REVISION",
+    "value" : "현재 리비젼"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_REVISION_INFO",
+    "value" : "리비젼 정보"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_REVISION_MGR",
+    "value" : "리비젼 관리자"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_LOCATION",
+    "value" : "위치"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_CURRENT",
+    "value" : "현재"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TARGET_SHEET",
+    "value" : "대상 쉬트"
   } ]
 }

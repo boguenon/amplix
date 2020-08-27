@@ -273,3 +273,44 @@ A;L_API_KEYS;API Keys
 A;L_SHORT_NAME;Short Name
 A;L_AUTHEN_CLASS;Authentication Class
 A;L_AUTHOR_CLASS;Authorization Class
+A;L_GENERAL_OPTIONS;General Options
+A;L_GRID_STRIPES;Grid Stripes
+A;B_OPACITY;Opacity
+A;L_ADD_STYLE;Add Style
+A;L_ADD_THEME;Add Theme
+A;B_SET;Set
+A;L_CHART_COLOR_ORG;Chart Color Organizer
+A;L_CHART_COLOR;Chart ColorSet
+A;L_COLOR_SETS;Color Sets
+A;L_INHERIT_STYLE_FROM;Inherit Style From
+A;L_THEMES;Themes
+A;L_NEW_ACTION;New Action
+A;L_NEW_PARAM;New Parameter
+A;B_EVENT;Event
+A;L_TABLE_LIST;Table List
+A;L_REGISTERED_TABLE;Registered Table
+A;L_SIMPLE_REL_VIEW;Simple Relation View
+A;L_FIX_KEY;Fix Key
+A;L_RELATIONS;Relations
+A;L_I_FROM;From
+A;L_I_TO;To
+A;L_JOIN_REL_EDITOR;Join Relation Editor
+A;L_SOURCE_FIELD;Source Field
+A;L_TARGET_FIELD;Target Field
+A;L_SRC_TO_TGT_IS;Source to Target is
+A;L_REMOVE_RELATION;Remove Relation
+A;L_JOIN_REL_CUSTOM_FIELD;Join Relation Custom Field
+A;L_TABLE_ORDER;Table Order
+A;L_INC_DEP;Include Dependancies
+A;L_INC_SEC;Include Security
+A;L_INC_OWNER_INFO;Include Owner Info
+A;L_SHARE;Share
+A;L_LIST_OF_ITEMS;List of Items
+A;L_FOLDER_INFO;Folder Info
+A;B_REVISION;Revision
+A;L_CUR_REVISION;Current Revision
+A;L_REVISION_INFO;Revision Info
+A;L_REVISION_MGR;Revision Manager
+A;B_LOCATION;Location
+A;B_CURRENT;Current
+A;L_TARGET_SHEET;Target Sheet

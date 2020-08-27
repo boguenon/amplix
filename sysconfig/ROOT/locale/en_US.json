@@ -5283,5 +5283,169 @@
     "group" : "locale_en_US_0014",
     "name" : "L_AUTHOR_CLASS",
     "value" : "Authorization Class"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_GENERAL_OPTIONS",
+    "value" : "General Options"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_GRID_STRIPES",
+    "value" : "Grid Stripes"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_OPACITY",
+    "value" : "Opacity"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ADD_STYLE",
+    "value" : "Add Style"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_ADD_THEME",
+    "value" : "Add Theme"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_SET",
+    "value" : "Set"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_CHART_COLOR_ORG",
+    "value" : "Chart Color Organizer"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_CHART_COLOR",
+    "value" : "Chart ColorSet"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_COLOR_SETS",
+    "value" : "Color Sets"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_INHERIT_STYLE_FROM",
+    "value" : "Inherit Style From"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_THEMES",
+    "value" : "Themes"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_NEW_ACTION",
+    "value" : "New Action"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_NEW_PARAM",
+    "value" : "New Parameter"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_EVENT",
+    "value" : "Event"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_TABLE_LIST",
+    "value" : "Table List"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_REGISTERED_TABLE",
+    "value" : "Registered Table"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SIMPLE_REL_VIEW",
+    "value" : "Simple Relation View"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_FIX_KEY",
+    "value" : "Fix Key"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_RELATIONS",
+    "value" : "Relations"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_I_FROM",
+    "value" : "From"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_I_TO",
+    "value" : "To"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_JOIN_REL_EDITOR",
+    "value" : "Join Relation Editor"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SOURCE_FIELD",
+    "value" : "Source Field"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_TARGET_FIELD",
+    "value" : "Target Field"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SRC_TO_TGT_IS",
+    "value" : "Source to Target is"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_REMOVE_RELATION",
+    "value" : "Remove Relation"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_JOIN_REL_CUSTOM_FIELD",
+    "value" : "Join Relation Custom Field"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_TABLE_ORDER",
+    "value" : "Table Order"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_INC_DEP",
+    "value" : "Include Dependancies"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_INC_SEC",
+    "value" : "Include Security"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_INC_OWNER_INFO",
+    "value" : "Include Owner Info"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_SHARE",
+    "value" : "Share"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_LIST_OF_ITEMS",
+    "value" : "List of Items"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_FOLDER_INFO",
+    "value" : "Folder Info"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_REVISION",
+    "value" : "Revision"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_CUR_REVISION",
+    "value" : "Current Revision"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_REVISION_INFO",
+    "value" : "Revision Info"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_REVISION_MGR",
+    "value" : "Revision Manager"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_LOCATION",
+    "value" : "Location"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "B_CURRENT",
+    "value" : "Current"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_TARGET_SHEET",
+    "value" : "Target Sheet"
   } ]
 }
