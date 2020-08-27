@@ -27,10 +27,6 @@
 			"cls": "ig_anal",
 			"children": [
 				{
-					"name": "Database Connection",
-					"cls": "ig_dbcon"
-				},
-				{
 					"name": "Variables",
 					"cls": "ig_var"
 				},
@@ -45,9 +41,13 @@
 			]
 		},
 		{
-			"name": "Excel file loading",
+			"name": "Data Source",
 			"cls": "ig_dataset",
 			"children": [
+				{
+					"name": "Database Connection",
+					"cls": "ig_dbcon"
+				},
 				{
 					"name": "Create Data Set",
 					"cls": "ig_n_dataset"

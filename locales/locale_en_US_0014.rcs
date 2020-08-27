@@ -314,3 +314,6 @@ A;L_REVISION_MGR;Revision Manager
 A;B_LOCATION;Location
 A;B_CURRENT;Current
 A;L_TARGET_SHEET;Target Sheet
+A;L_OUTPUT_TYPE;Output Type
+A;L_SYNC_USER;Sync User
+A;L_SSO_MODULE;SSO Module
