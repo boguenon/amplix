@@ -1,1 +1,4 @@
 /* amplix customized css styles */
+#pg_links {
+	display: none !important;
+}

@@ -75,7 +75,7 @@ var ig$ = {
 		apprelease: "",
 		web_revision: "1478-4.13-405-gf60fecef"
 	},
-	$l_:0
+	$l_:9
 };
 
 // ig$.theme_id = "test1";
