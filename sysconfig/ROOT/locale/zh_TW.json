@@ -5443,5 +5443,281 @@
     "group" : "locale_zh_TW_0014",
     "name" : "L_TARGET_SHEET",
     "value" : "Target Sheet"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_OUTPUT_TYPE",
+    "value" : "Output Type"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SYNC_USER",
+    "value" : "Sync User"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SSO_MODULE",
+    "value" : "SSO Module"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_DUTY",
+    "value" : "Roles"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_FEASURES",
+    "value" : "Features"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_LOAD_AUTH",
+    "value" : "Refresh Roles"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_DYN_MODULE",
+    "value" : "Dynamic Module"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_GROUP",
+    "value" : "Groups"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_PARAMETERS",
+    "value" : "Parameters"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_KEYWORD",
+    "value" : "Keyword"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_IMPORT",
+    "value" : "Import"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_TEST",
+    "value" : "Test"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_MAX_POOL_SIZE",
+    "value" : "Max Pool Size"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_WEBSERVICES",
+    "value" : "Web Services"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SFORCE_CON",
+    "value" : "Salesforce Connections"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SECURITY_KEY",
+    "value" : "Security Key"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SFORCE_URL",
+    "value" : "Salesforce URL"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_LDAP_CON",
+    "value" : "LDAP Connections"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SAP_BW_CON",
+    "value" : "SAP BW Connections"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_HYP_ESSBASE_CON",
+    "value" : "Hyperion EssBase Connections"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_STORAGE_OPTIONS",
+    "value" : "Storage Options"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_DATA_STORAGE",
+    "value" : "Data Storage"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_STAGING_DB",
+    "value" : "Staging DB"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_UPLOADED_FILE",
+    "value" : "Loaded Files"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_CUSTOM_FIELDS",
+    "value" : "Custom Fields"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_DBA_REQ",
+    "value" : "DBA Requests"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_EDIT_SRC",
+    "value" : "Edit Source"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_TENANT_SETTINGS",
+    "value" : "Tenant Settings"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_GENERAL_INFO",
+    "value" : "General Information"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_LOGO_IMAGE",
+    "value" : "Logo Image"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_THEMS",
+    "value" : "Themes"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_URL",
+    "value" : "URL"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_EXPIRE_ON",
+    "value" : "Expire On"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_ERASE_TENANT",
+    "value" : "Erase Tenant"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_GROUPID",
+    "value" : "Group ID"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_START_DAEMON",
+    "value" : "Start Daemon"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_STOP_ALL_AGNT",
+    "value" : "Stop All Agents"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_TRAIN_AGENT",
+    "value" : "Train Agent"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_MAKE_NLP",
+    "value" : "Make NLP"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_CHN_NAME",
+    "value" : "Channel Name"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_THD_STATUS",
+    "value" : "Thread Status"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_ON_SVC",
+    "value" : "On Service"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_ADD_PROGRAM",
+    "value" : "Add Program"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_INTENT",
+    "value" : "Intent"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_COMPILE",
+    "value" : "Compile"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_PERIOD",
+    "value" : "Period"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_NICK_NAME",
+    "value" : "Nick Name"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_INTENT_NAME",
+    "value" : "Intent Name"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_JAVA_SOURCE",
+    "value" : "Java Source"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_BASE_LANG",
+    "value" : "Base Language"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_SEC_LANG",
+    "value" : "Second Language"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_DOWNLOAD",
+    "value" : "Download"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_UPLOAD",
+    "value" : "Upload"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_PAGE",
+    "value" : "Page"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_VALID_STATUS",
+    "value" : "Valid Status"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_EXECUTE",
+    "value" : "Execute"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_TST_CON",
+    "value" : "Test Connection"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_FULL_PATH",
+    "value" : "Full Path"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_EXE_RSLTS",
+    "value" : "Execution Results"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_OBJNAME_CLASS",
+    "value" : "Object Name or Class"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_PICKUP_TIME",
+    "value" : "Pickup Time"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_PKG_NAME",
+    "value" : "Package Name"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_JAVA_CLASS",
+    "value" : "Java Class"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_PROGRAM_PARTS",
+    "value" : "Program Parts"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_APPLY_CODES",
+    "value" : "Apply Codes"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_OUTPUT_MSG",
+    "value" : "Output Message"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_COMPILE",
+    "value" : "Compile"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_PKG_LIST",
+    "value" : "Package List"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "L_MULTIMEASURE",
+    "value" : "Multi Measure"
   } ]
 }

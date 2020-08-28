@@ -642,7 +642,47 @@
 		},
 		{
 			"name": "Manual Management",
-			"cls": "ig_manual"
+			"cls": "ig_manual",
+			"children": [
+				{
+					"name": "Manual Auth for Amplix",
+					"cls": "ig_manual_auth"
+        }
+      ]
+    },
+    {
+			"name": "Data Science Module",
+			"cls": "ig_sci",
+			"children": [
+				{
+					"name": "Data Science Service Manager",
+					"cls": "ig_sci_mgr",
+					"children": [
+						{
+							"name": "Data Sciense DataSet",
+							"cls": "ig_sci_mgr_dataset"
+						},
+						{
+							"name": "Data Sciense Logger",
+							"cls": "ig_sci_mgr_logger"
+						}
+					]
+				},
+				{
+					"name": "Data Science Service User",
+					"cls": "ig_sci_usr",
+					"children": [
+						{
+							"name": "Data Science Server Connector",
+							"cls": "ig_sci_usr_servers"
+						},
+						{
+							"name": "Data Science DataSet",
+							"cls": "ig_sci_usr_dataset"
+						}
+					]
+				}
+			]
 		}
 	] 
 }

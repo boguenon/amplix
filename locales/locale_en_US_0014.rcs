@@ -316,4 +316,75 @@ A;B_CURRENT;Current
 A;L_TARGET_SHEET;Target Sheet
 A;L_OUTPUT_TYPE;Output Type
 A;L_SYNC_USER;Sync User
+<<<<<<< HEAD
 A;L_SSO_MODULE;SSO Module
+=======
+A;L_SSO_MODULE;SSO Module
+A;L_DUTY;Roles
+A;L_FEASURES;Features
+A;L_LOAD_AUTH;Refresh Roles
+A;L_DYN_MODULE;Dynamic Module
+A;B_GROUP;Groups
+A;B_PARAMETERS;Parameters
+A;B_KEYWORD;Keyword
+A;B_IMPORT;Import
+A;B_TEST;Test
+A;L_MAX_POOL_SIZE;Max Pool Size
+A;L_WEBSERVICES;Web Services
+A;L_SFORCE_CON;Salesforce Connections
+A;L_SECURITY_KEY;Security Key
+A;L_SFORCE_URL;Salesforce URL
+A;L_LDAP_CON;LDAP Connections
+A;L_SAP_BW_CON;SAP BW Connections
+A;L_HYP_ESSBASE_CON;Hyperion EssBase Connections
+A;L_STORAGE_OPTIONS;Storage Options
+A;L_DATA_STORAGE;Data Storage
+A;L_STAGING_DB;Staging DB
+A;L_UPLOADED_FILE;Loaded Files
+A;L_CUSTOM_FIELDS;Custom Fields
+A;L_DBA_REQ;DBA Requests
+A;L_EDIT_SRC;Edit Source
+A;L_TENANT_SETTINGS;Tenant Settings
+A;L_GENERAL_INFO;General Information
+A;L_LOGO_IMAGE;Logo Image
+A;L_THEMS;Themes
+A;B_URL;URL
+A;L_EXPIRE_ON;Expire On
+A;L_ERASE_TENANT;Erase Tenant
+A;L_GROUPID;Group ID
+A;L_START_DAEMON;Start Daemon
+A;L_STOP_ALL_AGNT;Stop All Agents
+A;L_TRAIN_AGENT;Train Agent
+A;L_MAKE_NLP;Make NLP
+A;L_CHN_NAME;Channel Name
+A;L_THD_STATUS;Thread Status
+A;L_ON_SVC;On Service
+A;L_ADD_PROGRAM;Add Program
+A;L_INTENT;Intent
+A;L_COMPILE;Compile
+A;B_PERIOD;Period
+A;L_NICK_NAME;Nick Name
+A;L_INTENT_NAME;Intent Name
+A;L_JAVA_SOURCE;Java Source
+A;L_BASE_LANG;Base Language
+A;L_SEC_LANG;Second Language
+A;B_IMPORT;Import
+A;B_DOWNLOAD;Download
+A;B_UPLOAD;Upload
+A;L_PAGE;Page
+A;L_VALID_STATUS;Valid Status
+A;L_EXECUTE;Execute
+A;L_TST_CON;Test Connection
+A;L_FULL_PATH;Full Path
+A;L_EXE_RSLTS;Execution Results
+A;L_OBJNAME_CLASS;Object Name or Class
+A;L_PICKUP_TIME;Pickup Time
+A;L_PKG_NAME;Package Name
+A;L_JAVA_CLASS;Java Class
+A;L_PROGRAM_PARTS;Program Parts
+A;L_APPLY_CODES;Apply Codes
+A;L_OUTPUT_MSG;Output Message
+A;B_COMPILE;Compile
+A;L_PKG_LIST;Package List
+A;L_MULTIMEASURE;Multi Measure
+>>>>>>> master

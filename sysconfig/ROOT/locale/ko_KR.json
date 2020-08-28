@@ -5443,5 +5443,281 @@
     "group" : "locale_ko_KR_0014",
     "name" : "L_TARGET_SHEET",
     "value" : "대상 쉬트"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_OUTPUT_TYPE",
+    "value" : "출력 유형"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SYNC_USER",
+    "value" : "사용자 동기화"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SSO_MODULE",
+    "value" : "SSO 모듈"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DUTY",
+    "value" : "권한"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FEASURES",
+    "value" : "접근 항목"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LOAD_AUTH",
+    "value" : "권한 새로고침"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DYN_MODULE",
+    "value" : "다이나믹 모듈"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_GROUP",
+    "value" : "그룹"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_PARAMETERS",
+    "value" : "파라미터"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_KEYWORD",
+    "value" : "키워드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_IMPORT",
+    "value" : "불러오기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_TEST",
+    "value" : "테스트"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MAX_POOL_SIZE",
+    "value" : "최대 풀 사이즈"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_WEBSERVICES",
+    "value" : "웹 서비스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SFORCE_CON",
+    "value" : "세일즈포스 접속"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SECURITY_KEY",
+    "value" : "보안 키"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SFORCE_URL",
+    "value" : "세일즈포스 접속 URL"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LDAP_CON",
+    "value" : "LDAP 접속"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SAP_BW_CON",
+    "value" : "SAP BW 접속"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_HYP_ESSBASE_CON",
+    "value" : "Hyperion EssBase 접속"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_STORAGE_OPTIONS",
+    "value" : "저장 옵션"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DATA_STORAGE",
+    "value" : "데이타 저장"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_STAGING_DB",
+    "value" : "스테이징 데이타베이스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_UPLOADED_FILE",
+    "value" : "불러온 파일들"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_CUSTOM_FIELDS",
+    "value" : "커스텀 필드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_DBA_REQ",
+    "value" : "DBA 요청 항목"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EDIT_SRC",
+    "value" : "소스 편집"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TENANT_SETTINGS",
+    "value" : "테넌트 설정"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_GENERAL_INFO",
+    "value" : "일반 정보"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_LOGO_IMAGE",
+    "value" : "로고 이미지"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_THEMS",
+    "value" : "테마"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_URL",
+    "value" : "URL"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EXPIRE_ON",
+    "value" : "만료일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ERASE_TENANT",
+    "value" : "테넌트 삭제"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_GROUPID",
+    "value" : "그룹 아이디"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_START_DAEMON",
+    "value" : "데몬 시작"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_STOP_ALL_AGNT",
+    "value" : "모든 에이전트 중지"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TRAIN_AGENT",
+    "value" : "에이전트 교육"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MAKE_NLP",
+    "value" : "NLP 생성하기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_CHN_NAME",
+    "value" : "채널명"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_THD_STATUS",
+    "value" : "쓰레드 상태"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ON_SVC",
+    "value" : "서비스 여부"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_ADD_PROGRAM",
+    "value" : "프로그램 추가"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_INTENT",
+    "value" : "인텐트"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_COMPILE",
+    "value" : "컴파일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_PERIOD",
+    "value" : "기간"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_NICK_NAME",
+    "value" : "별명"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_INTENT_NAME",
+    "value" : "인텐트 명"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_JAVA_SOURCE",
+    "value" : "자바 소스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_BASE_LANG",
+    "value" : "기본 언어"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_SEC_LANG",
+    "value" : "비교 언어"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_DOWNLOAD",
+    "value" : "다운로드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_UPLOAD",
+    "value" : "업로드"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PAGE",
+    "value" : "페이지"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_VALID_STATUS",
+    "value" : "검증 상태"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EXECUTE",
+    "value" : "실행하기"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_TST_CON",
+    "value" : "접속 테스트"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_FULL_PATH",
+    "value" : "전체 경로"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_EXE_RSLTS",
+    "value" : "실행 결과"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_OBJNAME_CLASS",
+    "value" : "오브젝트 명/클래스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PICKUP_TIME",
+    "value" : "다음 실행 시간"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PKG_NAME",
+    "value" : "패키지명"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_JAVA_CLASS",
+    "value" : "자바 클래스"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PROGRAM_PARTS",
+    "value" : "프로그램 모듈 함수"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_APPLY_CODES",
+    "value" : "코드 적용"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_OUTPUT_MSG",
+    "value" : "출력 메시지"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "B_COMPILE",
+    "value" : "컴파일"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_PKG_LIST",
+    "value" : "패키지 목록"
+  }, {
+    "group" : "locale_ko_KR_0014",
+    "name" : "L_MULTIMEASURE",
+    "value" : "메져 복수 관리"
   } ]
 }

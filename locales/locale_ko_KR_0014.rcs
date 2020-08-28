@@ -314,4 +314,77 @@ A;L_REVISION_MGR;리비젼 관리자
 A;B_LOCATION;위치
 A;B_CURRENT;현재
 A;L_TARGET_SHEET;대상 쉬트
+<<<<<<< HEAD
 A;L_OUTPUT_TYPE;출력 유형
+=======
+A;L_OUTPUT_TYPE;출력 유형
+A;L_SYNC_USER;사용자 동기화
+A;L_SSO_MODULE;SSO 모듈
+A;L_DUTY;권한
+A;L_FEASURES;접근 항목
+A;L_LOAD_AUTH;권한 새로고침
+A;L_DYN_MODULE;다이나믹 모듈
+A;B_GROUP;그룹
+A;B_PARAMETERS;파라미터
+A;B_KEYWORD;키워드
+A;B_IMPORT;불러오기
+A;B_TEST;테스트
+A;L_MAX_POOL_SIZE;최대 풀 사이즈
+A;L_WEBSERVICES;웹 서비스
+A;L_SFORCE_CON;세일즈포스 접속
+A;L_SECURITY_KEY;보안 키
+A;L_SFORCE_URL;세일즈포스 접속 URL
+A;L_LDAP_CON;LDAP 접속
+A;L_SAP_BW_CON;SAP BW 접속
+A;L_HYP_ESSBASE_CON;Hyperion EssBase 접속
+A;L_STORAGE_OPTIONS;저장 옵션
+A;L_DATA_STORAGE;데이타 저장
+A;L_STAGING_DB;스테이징 데이타베이스
+A;L_UPLOADED_FILE;불러온 파일들
+A;L_CUSTOM_FIELDS;커스텀 필드
+A;L_DBA_REQ;DBA 요청 항목
+A;L_EDIT_SRC;소스 편집
+A;L_TENANT_SETTINGS;테넌트 설정
+A;L_GENERAL_INFO;일반 정보
+A;L_LOGO_IMAGE;로고 이미지
+A;L_THEMS;테마
+A;B_URL;URL
+A;L_EXPIRE_ON;만료일
+A;L_ERASE_TENANT;테넌트 삭제
+A;L_GROUPID;그룹 아이디
+A;L_START_DAEMON;데몬 시작
+A;L_STOP_ALL_AGNT;모든 에이전트 중지
+A;L_TRAIN_AGENT;에이전트 교육
+A;L_MAKE_NLP;NLP 생성하기
+A;L_CHN_NAME;채널명
+A;L_THD_STATUS;쓰레드 상태
+A;L_ON_SVC;서비스 여부
+A;L_ADD_PROGRAM;프로그램 추가
+A;L_INTENT;인텐트
+A;L_COMPILE;컴파일
+A;B_PERIOD;기간
+A;L_NICK_NAME;별명
+A;L_INTENT_NAME;인텐트 명
+A;L_JAVA_SOURCE;자바 소스
+A;L_BASE_LANG;기본 언어
+A;L_SEC_LANG;비교 언어
+A;B_IMPORT;불러오기
+A;B_DOWNLOAD;다운로드
+A;B_UPLOAD;업로드
+A;L_PAGE;페이지
+A;L_VALID_STATUS;검증 상태
+A;L_EXECUTE;실행하기
+A;L_TST_CON;접속 테스트
+A;L_FULL_PATH;전체 경로
+A;L_EXE_RSLTS;실행 결과
+A;L_OBJNAME_CLASS;오브젝트 명/클래스
+A;L_PICKUP_TIME;다음 실행 시간
+A;L_PKG_NAME;패키지명
+A;L_JAVA_CLASS;자바 클래스
+A;L_PROGRAM_PARTS;프로그램 모듈 함수
+A;L_APPLY_CODES;코드 적용
+A;L_OUTPUT_MSG;출력 메시지
+A;B_COMPILE;컴파일
+A;L_PKG_LIST;패키지 목록
+A;L_MULTIMEASURE;메져 복수 관리
+>>>>>>> master
