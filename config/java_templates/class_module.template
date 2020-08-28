@@ -59,7 +59,7 @@ public class ${CLASS_NAME}
 		}
 		finally
 		{
-			this.releaseConnection(__dbcon, __con);
+			this.releaseConnection(__dbcon, __con, true);
 		}
 	}
 	

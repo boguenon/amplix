@@ -12,7 +12,7 @@ IG$._customChartPanels = [
 	{
 		layout: "anchor",
 		border: 0,
-		title: "Styles",
+		title: IRm$.r1("B_STYTLE"), // "Styles",
 		autoScroll: true,
 		defaults: {
 			anchor: "100%"
@@ -60,7 +60,7 @@ IG$._customChartPanels = [
 		items: [ 
 			{
 				xtype: "fieldset",
-				title: "Style options (Fusion Charts)",
+				title: IRm$.r1("L_STYLE_FUSION"), // "Style options (Fusion Charts)",
 				hidden: true,
 				layout: "anchor",
 
@@ -73,7 +73,7 @@ IG$._customChartPanels = [
 						valueField: "value",
 						editable: false,
 						autoSelect: true,
-						fieldLabel: "Palette",
+						fieldLabel: IRm$.r1("L_PALETTE"), // Palette",
 						store: {
 							xtype: "store",
 							fields: [ "name", "value" ],
@@ -108,14 +108,14 @@ IG$._customChartPanels = [
 					{
 						xtype: "checkbox",
 						name: "f_showvalues",
-						fieldLabel: "Show values",
-						boxLabel: "Enable"
+						fieldLabel: IRm$.r1("L_SHOW_VALUES"), // Show values",
+						boxLabel: IRm$.r1("B_ENABLE")
 					} 
 				]
 			}, 
 			{
 				xtype: "fieldset",
-				title: "3D Options",
+				title: IRm$.r1("L_3D_OPTIONS"), // "3D Options",
 				layout: "anchor",
 				items: [ 
 					{
@@ -125,15 +125,15 @@ IG$._customChartPanels = [
 					{
 						xtype: "checkbox",
 						name: "e3d_en",
-						fieldLabel: "Enable 3D",
-						boxLabel: "Enable"
+						fieldLabel: IRm$.r1("L_ENABLE_3D"), // "Enable 3D",
+						boxLabel: IRm$.r1("B_ENABLE")
 					}, 
 					{
 						xtype: "numberfield",
 						name: "e3d_al",
 						minValue: 0,
 						maxValue: 45,
-						fieldLabel: "Alpha Angle",
+						fieldLabel: IRm$.r1("L_ALPHA_ANGLE"), // "Alpha Angle",
 						value: 10
 					}, 
 					{
@@ -141,7 +141,7 @@ IG$._customChartPanels = [
 						name: "e3d_be",
 						minValue: 0,
 						maxValue: 45,
-						fieldLabel: "Beta Angle",
+						fieldLabel: IRm$.r1("L_BETA_ANGLE"), // "Beta Angle",
 						value: 25
 					}, 
 					{
@@ -149,7 +149,7 @@ IG$._customChartPanels = [
 						name: "e3d_de",
 						minValue: 0,
 						maxValue: 100,
-						fieldLabel: "Depth",
+						fieldLabel: IRm$.r1("L_DEPTH"), // "Depth",
 						value: 70
 					}, 
 					{
@@ -157,14 +157,14 @@ IG$._customChartPanels = [
 						name: "e3d_vd",
 						minValue: 0,
 						maxValue: 100,
-						fieldLabel: "View Distance",
+						fieldLabel: IRm$.r1("L_VIEW_DIST"), // "View Distance",
 						value: 25
 					} 
 				]
 			}, 
 			{
 				xtype: "fieldset",
-				title: "Gauge options",
+				title: IRm$.r1("L_GAUGE_OPTIONS"), // "Gauge options",
 				name: "pa01",
 				layout: "anchor",
 				hidden: true,
@@ -177,7 +177,7 @@ IG$._customChartPanels = [
 						valueField: "value",
 						editable: false,
 						autoSelect: true,
-						fieldLabel: "Gauge Type",
+						fieldLabel: IRm$.r1("L_GAUGE_TYPE"), // "Gauge Type",
 						store: {
 							xtype: "store",
 							fields: [ "name", "value" ],
@@ -200,7 +200,7 @@ IG$._customChartPanels = [
 					{
 						xtype: "numberfield",
 						name: "f_gauge_refresh",
-						fieldLabel: "Refresh second",
+						fieldLabel: IRm$.r1("L_REFRESH_SEC"), // "Refresh second",
 						value: 2,
 						minValue: 1,
 						maxValue: 1000
@@ -223,7 +223,7 @@ IG$._customChartPanels = [
 			align: "stretch"
 		},
 		border: 0,
-		title: "Extra Options",
+		title: IRm$.r1("L_EXTRA_OPTIONS"), // "Extra Options",
 		defaults: {
 			anchor: "100%"
 		},
@@ -415,14 +415,14 @@ IG$._customChartPanels = [
 				items: [
 					{
 						xtype: "fieldset",
-						title: "Map options",
+						title: IRm$.r1("L_MAP_OPTIONS"), // "Map options",
 						layout: "anchor",
 
 						items: [ 
 							{
 								xtype: "numberfield",
 								name: "m_zoom_level",
-								fieldLabel: "Zoom Level",
+								fieldLabel: IRm$.r1("L_ZOOM_LEVEL"), // "Zoom Level",
 								minValue: 1,
 								maxValue: 10
 							} 
@@ -430,7 +430,7 @@ IG$._customChartPanels = [
 					},
 					{
 						xtype: "fieldset",
-						title: "Map Draw options",
+						title: IRm$.r1("L_MAP_DRAW_OPTIONS"), // "Map Draw options",
 						layout: "anchor",
 						items: [
 							{
@@ -441,7 +441,7 @@ IG$._customChartPanels = [
 								valueField: "value",
 								editable: false,
 								autoSelect: true,
-								fieldLabel: "Palette",
+								fieldLabel: IRm$.r1("L_PALETTE"), // "Palette",
 								store: {
 									xtype: "store",
 									fields: ["name", "value" ],
@@ -474,14 +474,14 @@ IG$._customChartPanels = [
 							},
 							{
 								xtype: "numberfield",
-								fieldLabel: "Min radius",
+								fieldLabel: IRm$.r1("L_MIN_RADIUS"), // "Min radius",
 								name: "m_min",
 								minValue: 100,
 								maxValue: 1000000
 							},
 							{
 								xtype: "numberfield",
-								fieldLabel: "Max radius",
+								fieldLabel: IRm$.r1("L_MAX_RADIUS"), // "Max radius",
 								name: "m_max",
 								minValue: 100,
 								maxValue: 10000000
@@ -489,14 +489,14 @@ IG$._customChartPanels = [
 							{
 								xtype: "textarea",
 								anchor: "100%",
-								fieldLabel: "Template",
+								fieldLabel: IRm$.r1("L_TEMPLATE"), // "Template",
 								name: "cdata_m_tmpl",
 								hidden: true
 							},
 							{
 								xtype: "textfield",
 								name: "m_map_center",
-								fieldLabel: "Map Center(Lat,Lng)"
+								fieldLabel: IRm$.r1("L_MAP_CENTER_LAT_LNG"), // "Map Center(Lat,Lng)"
 							},
 							{
 								xtype: "combobox",
@@ -505,7 +505,7 @@ IG$._customChartPanels = [
 								displayField: "name",
 								valueField: "value",
 								hidden: true,
-								fieldLabel: "Base Map",
+								fieldLabel: IRm$.r1("L_BASEMAP"), // "Base Map",
 								store: {
 									data: [
 										{name: "dark-gray", value: "dark-gray"},
@@ -536,7 +536,7 @@ IG$._customChartPanels = [
 								editable: false,
 								autoSelect: true,
 								hidden: true,
-								fieldLabel: "GeoCode",
+								fieldLabel: IRm$.r1("L_GEOCODE"), // "GeoCode",
 								store: {
 									xtype: "store",
 									fields: ["name","value" ],
@@ -561,7 +561,7 @@ IG$._customChartPanels = [
 					// arc layer selection
 					{
 						xtype: "gridpanel",
-						title: "ArcGIS MapLayers",
+						title: IRm$.r1("L_ARCGIS_LAYERS"), // "ArcGIS MapLayers",
 						name: "m_arc_layers",
 						hidden: true,
 						height: 300,
@@ -575,7 +575,7 @@ IG$._customChartPanels = [
 						},
 						columns: [
 							{
-								text: "Name",
+								text: IRm$.r1("B_NAME"),
 								dataIndex: "name"
 							}
 						]
@@ -584,14 +584,14 @@ IG$._customChartPanels = [
 			},
 			{
 				xtype: "fieldset",
-				title: "KPI Indicator",
+				title: IRm$.r1("L_KPI_INDI"), // "KPI Indicator",
 				layout: "anchor",
 				hidden: true,
 				name: "pb02",
 				items: [ 
 					{
 						xtype: "button",
-						text: "Indicator Wizard",
+						text: IRm$.r1("L_INDICATOR_WIZARD"),
 						handler: function() {
 							var me = this,
 								ma = me.__main__,
@@ -648,7 +648,7 @@ IG$._customChartPanels = [
 		id: "card-8",
 		layout: "anchor",
 		border: 0,
-		title: "Stock Options",
+		title: IRm$.r1("L_STOCK_OPTIONS"), // "Stock Options",
 		defaults: {
 			anchor: "100%"
 		},
@@ -694,13 +694,13 @@ IG$._customChartPanels = [
 		items: [ 
 			{
 				xtype: "fieldset",
-				title: "Time Field",
+				title: IRm$.r1("L_TIME_FIELD"), // "Time Field",
 				layout: "anchor",
 				items: [ 
 					{
 						xtype: "combobox",
 						name: "s_t_f",
-						fieldLabel: "Field Column",
+						fieldLabel: IRm$.r1("L_FIELD_COLUMN"), // "Field Column",
 						queryMode: "local",
 						valueField: "uid",
 						displayField: "name",
@@ -713,7 +713,7 @@ IG$._customChartPanels = [
 					{
 						xtype: "textfield",
 						name: "s_t_fo",
-						fieldLabel: "Date Format"
+						fieldLabel: IRm$.r1("L_DATE_FORMAT") // "Date Format"
 					} 
 				]
 			} 

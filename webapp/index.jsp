@@ -14,18 +14,18 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202008222014" />
+    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202008281405" />
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="./main/css/mainpage_ie.css" />
 <![endif]-->
     <link rel="icon" href="./favicon.png" type="image/png">
-    <script type="text/javascript" src="./main/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="./main/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
     var __mts_id = null;
     var __uri = "<%=uri%>";
    	</script>
-   	<script type="text/javascript" src="./config.js?_dc=202008222014"></script>
-    <script type="text/javascript" src="./main/js/main.min.js?_dc=202008222014"></script>
+   	<script type="text/javascript" src="./config.js?_dc=202008281405"></script>
+    <script type="text/javascript" src="./main/js/main.min.js?_dc=202008281405"></script>
 </head>
 <body class="index nav-light hoverable">
 	

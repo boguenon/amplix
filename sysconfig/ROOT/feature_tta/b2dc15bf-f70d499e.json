@@ -1,0 +1,407 @@
+{
+  "meta_type" : "features",
+  "objinfo" : { },
+  "type" : "Unknown",
+  "uid" : "b2dc15bf-f70d499e",
+  "writable" : false,
+  "manage" : false,
+  "is_sub" : false,
+  "attributes" : { },
+  "features" : [ {
+    "name" : "Navigator",
+    "cls" : "ig_nav",
+    "clspath" : "ig_nav",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Report Menu",
+    "cls" : "ig_report_menu",
+    "clspath" : "ig_report_menu",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "New Report",
+    "cls" : "ig_menu_rpt",
+    "clspath" : "ig_report_menu-ig_menu_rpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "New SQL Report",
+    "cls" : "ig_menu_sql_rpt",
+    "clspath" : "ig_report_menu-ig_menu_sql_rpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "New Report",
+    "cls" : "ig_menu_formbuilder",
+    "clspath" : "ig_report_menu-ig_menu_formbuilder",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Create Workspace",
+    "cls" : "ig_n_cw",
+    "clspath" : "ig_nav-ig_n_cw",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Create New",
+    "cls" : "ig_n_f",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Folder",
+    "cls" : "ig_n_f_f",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_f_f",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Database Model",
+    "cls" : "ig_n_dbm",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_dbm",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Business Object",
+    "cls" : "ig_n_bobj",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_bobj",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Report",
+    "cls" : "ig_n_rpt",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_rpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "SQL Report",
+    "cls" : "ig_n_sqlrpt",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_sqlrpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Form Builder",
+    "cls" : "ig_n_dbd",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_dbd",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Composite Report",
+    "cls" : "ig_n_crpt",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_crpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Hadoop BizOp",
+    "cls" : "ig_n_hb",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_hb",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Java Class",
+    "cls" : "ig_n_jc",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_jc",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "R Script",
+    "cls" : "ig_n_f_r",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_f_r",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Java Class Module",
+    "cls" : "ig_n_jcm",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_jcm",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Copy Item",
+    "cls" : "ig_n_cp",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_cp",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Rename Content",
+    "cls" : "ig_n_ren",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_ren",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Move to",
+    "cls" : "ig_n_mv",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_mv",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "private workspace",
+    "cls" : "ig_m_prv_ws",
+    "clspath" : "ig_nav-ig_m_ctrl-ig_m_prv_ws",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "team workspace",
+    "cls" : "ig_m_team_ws",
+    "clspath" : "ig_nav-ig_m_ctrl-ig_m_team_ws",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "toolbar",
+    "cls" : "ig_r_tbar",
+    "clspath" : "ig_report-ig_r_tbar",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "save",
+    "cls" : "ig_r_save",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_save",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "save as",
+    "cls" : "ig_r_saveas",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_saveas",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "run",
+    "cls" : "ig_r_run",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_run",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "design",
+    "cls" : "ig_r_design",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_design",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view selection",
+    "cls" : "ig_r_vsel",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view grid",
+    "cls" : "ig_r_grid",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_grid",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view_chart",
+    "cls" : "ig_r_chart",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_chart",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view_analysis",
+    "cls" : "ig_r_anal",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_anal",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view_r",
+    "cls" : "ig_r_r",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_r",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view_python",
+    "cls" : "ig_r_python",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_python",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Add ReportViewer",
+    "cls" : "ig_r_rpt_vr",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_rpt_vr",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Add StoryView",
+    "cls" : "ig_r_story",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_story",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Email Burstring",
+    "cls" : "ig_r_bursting",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_bursting",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Form Builder",
+    "cls" : "ig_r_formb",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_formb",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "share report",
+    "cls" : "ig_r_email",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_email",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "formula",
+    "cls" : "ig_r_fm",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_fm",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "export",
+    "cls" : "ig_r_exp",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "excel",
+    "cls" : "ig_r_xls",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_xls",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "ppt",
+    "cls" : "ig_r_ppt",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_ppt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "pdf",
+    "cls" : "ig_r_pdf",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_pdf",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "csv",
+    "cls" : "ig_r_csv",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_csv",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "html",
+    "cls" : "ig_r_html",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_html",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "jasper",
+    "cls" : "ig_r_jasper",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_jasper",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "clipboard",
+    "cls" : "ig_r_clb",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_clb",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "export option",
+    "cls" : "ig_r_eopt",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_eopt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "tools",
+    "cls" : "ig_r_tools",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_tools",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "change report type",
+    "cls" : "ig_r_crpt",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_tools-ig_r_crpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "basic statistics",
+    "cls" : "ig_r_stat",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_tools-ig_r_stat",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "analysis menus",
+    "cls" : "ig_anal_menu",
+    "clspath" : "ig_report-ig_r_tbar-ig_anal_menu",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "docking",
+    "cls" : "ig_r_dock",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_dock",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "edit dock panel",
+    "cls" : "ig_r_edpanel",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_dock-ig_r_edpanel",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "add panel",
+    "cls" : "ig_r_adpanel",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_dock-ig_r_adpanel",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "R Summary",
+    "cls" : "ig_r_rsum",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_rsum",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "R Script Editor",
+    "cls" : "ig_r_rsce",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_rsce",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "R Wizard",
+    "cls" : "ig_r_rwzd",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_rwzd",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "R Image Save",
+    "cls" : "ig_r_rimg",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_rimg",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Chart Wizard",
+    "cls" : "ig_r_cwz",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_cwz",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Chart Type",
+    "cls" : "ig_r_ct",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_ct",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Schedule",
+    "cls" : "ig_r_sch",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_sch",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "favorites",
+    "cls" : "ig_r_fav",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_fav",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "instruction",
+    "cls" : "ig_r_inst",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_inst",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "help",
+    "cls" : "ig_r_help",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_help",
+    "show" : true,
+    "hide" : false
+  } ]
+}

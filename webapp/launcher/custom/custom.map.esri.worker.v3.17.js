@@ -155,6 +155,8 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         "esri/symbols/MarkerSymbol",
 		"esri/layers/ArcGISDynamicMapServiceLayer",
 		"esri/layers/ArcGISTiledMapServiceLayer",
+		"esri/layers/ArcGISImageServiceLayer",
+		"esri/layers/ArcGISImageServiceVectorLayer",
         "esri/symbols/SimpleMarkerSymbol",
         "esri/geometry/Point",
         "esri/dijit/InfoWindowLite",
@@ -167,7 +169,8 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         "esri/Color",
         "dojo/dom-construct",
         "dojo/domReady!"
-	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer, 
+	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer,
+		ArcGISImageServiceLayer, ArcGISImageServiceVectorLayer,
 		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, FeatureLayer, Graphic, GraphicsLayer, 
         Circle, SimpleFillSymbol, Color,
         domConstruct) {
@@ -178,6 +181,8 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
                 MarkerSymbol: MarkerSymbol,
 				ArcGISDynamicMapServiceLayer: ArcGISDynamicMapServiceLayer,
 				ArcGISTiledMapServiceLayer: ArcGISTiledMapServiceLayer,
+				ArcGISImageServiceLayer: ArcGISImageServiceLayer,
+				ArcGISImageServiceVectorLayer: ArcGISImageServiceVectorLayer,
                 SimpleMarkerSymbol: SimpleMarkerSymbol,
                 Point: Point,
                 InfoWindowLite: InfoWindowLite,
