@@ -43,3 +43,9 @@ span.code_highlight {
 	font-weight:bold;
 	text-decoration:underline;
 }
+
+.doc_header_3 {
+	font-weight: 600;
+	font-size: 16px;
+	color: #7497f6;
+}
