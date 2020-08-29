@@ -17,7 +17,7 @@
 					"cls": "ig_menu_sql_rpt"
 				},
 				{
-					"name": "New Report",
+					"name": "New FormBuilder",
 					"cls": "ig_menu_formbuilder"
 				}
 			]

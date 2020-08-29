@@ -314,9 +314,6 @@ A;L_REVISION_MGR;리비젼 관리자
 A;B_LOCATION;위치
 A;B_CURRENT;현재
 A;L_TARGET_SHEET;대상 쉬트
-<<<<<<< HEAD
-A;L_OUTPUT_TYPE;출력 유형
-=======
 A;L_OUTPUT_TYPE;출력 유형
 A;L_SYNC_USER;사용자 동기화
 A;L_SSO_MODULE;SSO 모듈
@@ -387,4 +384,3 @@ A;L_OUTPUT_MSG;출력 메시지
 A;B_COMPILE;컴파일
 A;L_PKG_LIST;패키지 목록
 A;L_MULTIMEASURE;메져 복수 관리
->>>>>>> master

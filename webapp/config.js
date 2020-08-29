@@ -70,12 +70,12 @@ var ig$ = {
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202008281405",
+		date: "202008291137",
 		appversion: "",
 		apprelease: "",
-		web_revision: "1478-4.13-405-gf60fecef"
+		web_revision: "1476-4.13-403-gb5bebb6f"
 	},
-	$l_:9
+	$l_:0
 };
 
 // ig$.theme_id = "test1";

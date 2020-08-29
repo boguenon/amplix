@@ -314,9 +314,6 @@ A;L_REVISION_MGR;Revision Manager
 A;B_LOCATION;Location
 A;B_CURRENT;Current
 A;L_TARGET_SHEET;Target Sheet
-<<<<<<< HEAD
-A;L_OUTPUT_TYPE;Output Type
-=======
 A;L_OUTPUT_TYPE;Output Type
 A;L_SYNC_USER;Sync User
 A;L_SSO_MODULE;SSO Module
@@ -387,4 +384,3 @@ A;L_OUTPUT_MSG;Output Message
 A;B_COMPILE;Compile
 A;L_PKG_LIST;Package List
 A;L_MULTIMEASURE;Multi Measure
->>>>>>> master
