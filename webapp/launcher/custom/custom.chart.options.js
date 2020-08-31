@@ -7,12 +7,13 @@ IG$.__chartoption.chartcateg.push({
 
 IG$.cSET/* chartOptionSet */= "f_palette;f_showvalues;m_zoom_level;f_gauge_type;f_gauge_refresh;m_marker;m_min;m_max;s_t_f;s_t_fo;e3d_en;e3d_al;e3d_be;e3d_de;e3d_vd;edu_val1;cdata_m_tmpl;m_xypos;m_arc_basemap";
 
-IG$._customChartPanels = [
+IG$._customChartPanels = function() {
+	return [
 	// for fusion chart extension
 	{
 		layout: "anchor",
 		border: 0,
-		title: IRm$.r1("B_STYTLE"), // "Styles",
+		title: IRm$.r1("B_STYLE"), // "Styles",
 		autoScroll: true,
 		defaults: {
 			anchor: "100%"
@@ -725,6 +726,7 @@ IG$._customChartPanels = [
 		}
 	}
 ];
+};
 
 IG$.makeCustomChartOption = function(wizard, panel) {
 	var cpanels = [];
@@ -764,7 +766,8 @@ IG$.makeCustomChartOption = function(wizard, panel) {
 		}
 	}
 
-	$.each(IG$._customChartPanels, function(i, coption) {
+	var panels = IG$._customChartPanels(); 
+	$.each(panels, function(i, coption) {
 		var p = $s.create($s.formpanel, coption);
 		p.__main__ = wizard;
 		p.__mainp__ = panel;

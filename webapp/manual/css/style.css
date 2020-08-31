@@ -1058,7 +1058,7 @@ section.comments {
 .dropbtn {
   background-color: #1ab394;
   color: white;
-  padding: 6px 10px 6px
+  padding: 6px 10px 6px;
   font-size: 14px;
   line-height: 18px;
   border: none;
@@ -1212,6 +1212,7 @@ footer ul#menu-products a,footer ul#menu-services a,footer ul#menu-people a,foot
 
 footer div#footer-copyright {
     margin-top: 1em;
+    margin-bottom: 1em;
     color: #fff
 }
 

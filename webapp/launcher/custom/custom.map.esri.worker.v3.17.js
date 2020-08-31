@@ -1,3 +1,6 @@
+/**
+ * create chart instance
+ */
 IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, container) {
     var me = this,
         esri = me.esri,
@@ -139,6 +142,10 @@ IG$.__chartoption.chartext.esri.prototype.updateData = function() {
     }, 300);
 }
 
+/**
+ * main routine to draw chart
+ * called from report viewer, widget
+ */
 IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 // insert logic with report result
     var me = this,
@@ -147,7 +154,11 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
         i;
 		
 	me.owner = owner;
-    
+	
+	/**
+	 * arcgis module loading
+     * loaded module class is cached in esri object 
+	 */
 	require([
 		"esri/config",
 		"esri/map", 
@@ -174,6 +185,9 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, FeatureLayer, Graphic, GraphicsLayer, 
         Circle, SimpleFillSymbol, Color,
         domConstruct) {
+		/**
+		 * cache object for esri class library
+		 */
         var esri = {
 				esriConfig: esriConfig,
                 Map: Map,
@@ -206,6 +220,10 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		}
 		*/
 		
+		/**
+		 * create arcgis map
+	     * stores instance information in map_inst pointer
+		 */
 		if (ig$.arcgis_basemap != "-" && map_inst && cop.settings.m_arc_basemap && me._basemap != cop.settings.m_arc_basemap)
 		{
 			map_inst.destroy();
@@ -222,8 +240,14 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 
 		map_inst = me.map_inst;
 		
+		/**
+		 * cop : chart option from chart wizard
+		 */
 		cop.settings = cop.settings || {};
-
+		
+		/**
+	     * before drawing, clear layers already added on previous instance
+		 */
         if (me._glayers)
         {
             for (i=0; i < me._glayers.length; i++)
@@ -236,12 +260,21 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 
 		me._glayers = me._glayers || [];
 		
+		/** 
+		 * create api layer from chart option with user selected layers
+	     */
 		me.load_api_layers(owner, results);
     
+		/**
+		 * data visualization routine with report result set
+		 */
         me.setData(owner, results);
     });
 }
 
+/**
+ * create api layer from chart option with user selected layers
+ */
 IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, results) {
 	var me = this,
 		map_inst = me.map_inst,
@@ -301,6 +334,9 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 	});
 }
 
+/**
+ * data visualization routine with report result set
+ */
 IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
     var me = this,
         esri = me.esri,
@@ -514,6 +550,9 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
     });
 },
 
+/**
+ * event handler for report viewer resize
+ */
 IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) {
     var me = this,
         map = me.map_inst;
@@ -524,6 +563,9 @@ IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) 
     }
 }
 
+/**
+ * event handler to kill this instance
+ */
 IG$.__chartoption.chartext.esri.prototype.destroy = function() {
 	// called when need to dispose the component
 	var me = this,
