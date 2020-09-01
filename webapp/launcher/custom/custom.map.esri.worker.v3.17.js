@@ -548,7 +548,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
             });
         }
     });
-},
+};
 
 /**
  * event handler for report viewer resize
