@@ -140,7 +140,25 @@
 						},
 						{
 							"name": "System Log",
-							"cls": "ig_syslog"
+							"cls": "ig_syslog",
+							"children": [
+								{
+									"name": "Audit User",
+									"cls": "ig_audit_user"
+								},
+								{
+									"name": "Audit Report Log",
+									"cls": "ig_audit_rpt"
+								},
+								{
+									"name": "Audit JDBC",
+									"cls": "ig_audit_jdbc"
+								},
+								{
+									"name": "Audit Email Message",
+									"cls": "ig_audit_email"
+								}
+							]
 						},
 						{
 							"name": "System Resource",
