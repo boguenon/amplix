@@ -68,3 +68,33 @@ A;L_AUD_USER_FLT;사용자 검색 조건
 A;L_AUD_USER_GRID;사용자 감사 목록
 A;L_LAST_ACC_DT;접속일시
 A;L_LAST_ACCESSED;접속 호스트
+
+A;L_FIELD_VALUE;필드값
+A;L_ENCODING;인코딩
+A;L_SHEETNAME;쉬트 이름
+A;L_HEADER_NAME;헤더 이름
+A;L_SIZE;크기
+A;L_ADD_SYS_KEY;시스템키 추가
+A;L_CRT_TBL;테이블 생성하기
+A;L_SCRIPT;스크립트
+A;L_COLUMN_PROP;컬럼 속성
+A;L_DATA_SIZE;데이타 크기
+A;L_IS_KEY;키컬럼 여부
+A;L_LD_INTO_TBL;테이블에 로드하기
+A;L_CLR_TBL;테이블 초기화 하기
+A;L_FILE_UPLOAD_HIST;파일 로드 내역
+
+A;B_DATASET;데이타셋
+A;L_COUNT_ROWS;행개수 카운트
+A;L_DISTINCT_COUNT;중복제거 카운트
+A;L_SUM;합계
+A;B_MINIMUM;최소값
+A;B_MAXIMUM;최대값
+A;L_FILE_FIELD;파일 필드
+A;L_UNIQUE_FIELD;유니크 필드
+A;B_SCHEMA;스키마
+A;M_NO_DATA;조회된 값이 없습니다!
+A;L_IMPORT_TABLES;테이블 임포트
+A;L_AVAILABLE_ITEMS;사용가능 항목들
+A;L_SELECTED_ITEMS;선택된 항목들
+A;M_SELECT_ITEM;계속 하려면 항목을 선택해 주십시오!

@@ -68,3 +68,18 @@ A;L_AUD_USER_FLT;User Search Criteria
 A;L_AUD_USER_GRID;Audit User Lists
 A;L_LAST_ACC_DT;Last Access Date
 A;L_LAST_ACCESSED;Last Accessed
+
+A;L_FIELD_VALUE;Field Value
+A;L_ENCODING;Encoding
+A;L_SHEETNAME;Sheet Name
+A;L_HEADER_NAME;Header Name
+A;L_SIZE;Size
+A;L_ADD_SYS_KEY;Add System Key
+A;L_CRT_TBL;Create Table
+A;L_SCRIPT;Script
+A;L_COLUMN_PROP;Column Property
+A;L_DATA_SIZE;Data Size
+A;L_IS_KEY;Is Key
+A;L_LD_INTO_TBL;Load into Table
+A;L_CLR_TBL;Clear Table
+A;L_FILE_UPLOAD_HIST;File Upload History
