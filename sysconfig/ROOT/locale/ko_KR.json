@@ -1641,6 +1641,7 @@
     "name" : "L_LAYOUT_VERTICAL",
     "value" : "수직배열"
   }, {
+    "group" : "locale_ko_KR_0015",
     "name" : "L_HORIZONTAL",
     "value" : "수평"
   }, {
@@ -4188,11 +4189,11 @@
     "name" : "L_HOME_APP_DESC",
     "value" : "데이타 시각화를 활용한 분석 보고서를 생성해 보십시오.<br/>앰플릭스에서 제공하는 과학적인 도구 및 분석 UI는 당신의 과학적이고 직관적인 데이타 분석을 완료하고 성공적인 비즈니스 환경에 대응하는데 도움이 되도록 설계되어 있습니다."
   }, {
-    "group" : "locale_ko_KR_0013",
+    "group" : "locale_ko_KR_sci001",
     "name" : "L_META_UPGRADE",
     "value" : "메타 버전 업그레이드"
   }, {
-    "group" : "locale_ko_KR_0013",
+    "group" : "locale_ko_KR_sci001",
     "name" : "T_MIG_META_UPGRADE",
     "value" : "메타 버전 업그레이드"
   }, {
@@ -4324,9 +4325,9 @@
     "name" : "M_CREATE_SHARE_URL",
     "value" : "공유 URL을 만드시겠습니까?"
   }, {
-    "group" : "locale_ko_KR_0014",
+    "group" : "locale_ko_KR_0015",
     "name" : "M_CONFIRM_DELETE",
-    "value" : "항목을 삭제하시겠습니까?"
+    "value" : "삭제하려면 예 버튼을 클릭해주십시오."
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "M_CONFIRM_DISABLE",
@@ -5719,5 +5720,421 @@
     "group" : "locale_ko_KR_0014",
     "name" : "L_MULTIMEASURE",
     "value" : "메져 복수 관리"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI",
+    "value" : "데이타 분석 전문가"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_MANAGER",
+    "value" : "데이타 분석전문가 서버"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_DATA",
+    "value" : "데이타 퍼블리싱"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_USER",
+    "value" : "데이타 전문가 모듈"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_SERVERS",
+    "value" : "분석 서버"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_DATASET",
+    "value" : "나의 데이타 집합"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "I_SCI_DATASET",
+    "value" : "데이타 집합 동기화"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "I_SCI_PUB_DATASET",
+    "value" : "퍼블릭 데이타셋"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "M_SUC_TMPL",
+    "value" : "템플릿에 이미 값이 정의되어 있습니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SERVER_MESSAGE",
+    "value" : "서버 메시지"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_FILTER_SCRIPT",
+    "value" : "핉터 처리중 스크립트 오류 발생."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_LOCK_JOB",
+    "value" : "현재 다른 작업이 진행중입니다. 잠시만 기다려 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_SEL_DC",
+    "value" : "계속하시려면 데이타 커넥터를 선택해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_CHECK_DTYPE",
+    "value" : "스테이징 데이타베이스에서 데이타 유형을 체크해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_SEL_ITEM_TO_ADD",
+    "value" : "폴더에 추가할 항목을 선택해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_DS_NOT_ALLOW_UPLOAD",
+    "value" : "현재 데이타소스는 업로드 파일을 지원하지 않습니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_SAVE_CONTENT",
+    "value" : "계속하시려면 먼저 저장해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_INVALID_REV",
+    "value" : "유효하지 않는 리비젼 번호입니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_PRIV_ERR",
+    "value" : "컨텐츠를 사용할 권한이 없습니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_REMOVE_SELF",
+    "value" : "본인을 삭제할 수 없습니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_FOLDER_MOVE_SINGLE",
+    "value" : "단지 한개의 하위 폴더 항목만 이동할 수 있습니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_CHART_DRAWING",
+    "value" : "챠트 그리는 도중 오류가 발생하였습니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_CHART_LIB_LOADING",
+    "value" : "챠트 라이브러리를 로드 하는 중 오류가 발생하였습니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_CLICK_EVENT_HANDLER",
+    "value" : "클릭 이벤트 수행중 오류가 발생하였습니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_PROMPT_CONTROL_DEF",
+    "value" : "프롬프트 컨트롤 정의에 오류가 있습니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_SEL_TGT_ITEM",
+    "value" : "대상 항목을 먼저 선택해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_SEL_TGT",
+    "value" : "대상 항목을 선택하세요."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "M_CONFIRM_COMPILE",
+    "value" : "컨텐츠를 컴파일 하시겠습니까?"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_T_RECENT_VISIT",
+    "value" : "최근 방문 및 즐겨찾기 항목"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_PEOPLE",
+    "value" : "사람"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_CLICK_STYLE_TO_EDIT",
+    "value" : "수정할 스타일 항목을 클릭해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_VIEW_NAME",
+    "value" : "뷰 이름"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SQL_QUERY",
+    "value" : "SQL쿼리"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SRC_TABLES",
+    "value" : "원천 테이블"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_FIELD_MAPPING",
+    "value" : "필드 맵핑"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_LENGTH",
+    "value" : "길이"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_TGT_TBL_NAME",
+    "value" : "대상 테이블 이름"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "T_BO_EXTRACT_META",
+    "value" : "메타 추출하기"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_DATA",
+    "value" : "데이타"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SAVE_FIELD",
+    "value" : "필드 저장"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_EXAMPLE",
+    "value" : "예제"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_DATE_FORMAT_EX",
+    "value" : "날짜 포맷 예제"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_START_MIN",
+    "value" : "시작 최소값"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_END_MAX",
+    "value" : "종료 최대값"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_STEP_INT",
+    "value" : "증분치"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_UNDER_MIN",
+    "value" : "최소값 이하"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_OVER_MAX",
+    "value" : "최대값 초과"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_LABEL_TEXT",
+    "value" : "라벨 텍스트"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_NUMERIC_FORMAT",
+    "value" : "숫자 포맷"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_LINK_OPTION",
+    "value" : "링크 옵션"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_DISP_NAME",
+    "value" : "표시 명칭"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_TARGET_REPORT",
+    "value" : "대상 리포트"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_PARENT_CHILD_OPTIONS",
+    "value" : "상하위 계층 옵션"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_CALC_IN_RESULT",
+    "value" : "결과 내에서 메져 계산"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SHOW_HTML",
+    "value" : "HTML 보기"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_USE_TEMP",
+    "value" : "임시 사용"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_USE_STG",
+    "value" : "스테이징 데이타베이스 사용"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_BB_SG_RDR",
+    "value" : "다시 그릴 행 데이타"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_USE_EXPRESSION",
+    "value" : "수식 사용"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_DATE_FORMATTING",
+    "value" : "날짜 유형"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SQL_FUNC",
+    "value" : "SQL 함수"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_ENABLE_OTH_UPLOAD",
+    "value" : "사용 (다른사람의 업로드 허용)"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_ALLOW_MULTI_FILE",
+    "value" : "복수 파일 업로드 허용"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_IGN_BLK_VAL",
+    "value" : "빈값 무시"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_DT_TYPE_FIELD",
+    "value" : "날짜 유형 필드"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SET_DATE",
+    "value" : "날짜 지정"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SYNC_ROWS",
+    "value" : "행 동기화"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_READY",
+    "value" : "준비됨"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_CACHED",
+    "value" : "캐시된 결과"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SEL_DUTY",
+    "value" : "권한을 선택해 주세요."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_EMAIL",
+    "value" : "이메일"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_AUD_USER",
+    "value" : "사용자 감사"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_AUD_USER_FLT",
+    "value" : "사용자 검색 조건"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_AUD_USER_GRID",
+    "value" : "사용자 감사 목록"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_LAST_ACC_DT",
+    "value" : "접속일시"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_LAST_ACCESSED",
+    "value" : "접속 호스트"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_FIELD_VALUE",
+    "value" : "필드값"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_ENCODING",
+    "value" : "인코딩"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SHEETNAME",
+    "value" : "쉬트 이름"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_HEADER_NAME",
+    "value" : "헤더 이름"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SIZE",
+    "value" : "크기"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_ADD_SYS_KEY",
+    "value" : "시스템키 추가"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_CRT_TBL",
+    "value" : "테이블 생성하기"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SCRIPT",
+    "value" : "스크립트"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_COLUMN_PROP",
+    "value" : "컬럼 속성"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_DATA_SIZE",
+    "value" : "데이타 크기"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_IS_KEY",
+    "value" : "키컬럼 여부"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_LD_INTO_TBL",
+    "value" : "테이블에 로드하기"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_CLR_TBL",
+    "value" : "테이블 초기화 하기"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_FILE_UPLOAD_HIST",
+    "value" : "파일 로드 내역"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_DATASET",
+    "value" : "데이타셋"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_COUNT_ROWS",
+    "value" : "행개수 카운트"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_DISTINCT_COUNT",
+    "value" : "중복제거 카운트"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SUM",
+    "value" : "합계"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_MINIMUM",
+    "value" : "최소값"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_MAXIMUM",
+    "value" : "최대값"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_FILE_FIELD",
+    "value" : "파일 필드"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_UNIQUE_FIELD",
+    "value" : "유니크 필드"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "B_SCHEMA",
+    "value" : "스키마"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "M_NO_DATA",
+    "value" : "조회된 값이 없습니다!"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_IMPORT_TABLES",
+    "value" : "테이블 임포트"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_AVAILABLE_ITEMS",
+    "value" : "사용가능 항목들"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "L_SELECTED_ITEMS",
+    "value" : "선택된 항목들"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "M_SELECT_ITEM",
+    "value" : "계속 하려면 항목을 선택해 주십시오!"
   } ]
 }
