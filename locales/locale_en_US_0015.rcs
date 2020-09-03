@@ -98,3 +98,6 @@ A;L_IMPORT_TABLES;Import Tables
 A;L_AVAILABLE_ITEMS;Available Items
 A;L_SELECTED_ITEMS;Selected Items
 A;M_SELECT_ITEM;Select Item to continue!
+A;E_CANCEL_BOBJ_SEL;Cancelled business object selection. Need to setup business object to continue analysis!
+A;E_SEL_BOBJ;Business object not binded on the report. Select business object and try again.
+A;E_CONFIG_PIVOT;Pivot item not configured. Config pivot items and then try again.

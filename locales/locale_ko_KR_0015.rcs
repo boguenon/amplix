@@ -98,3 +98,6 @@ A;L_IMPORT_TABLES;테이블 임포트
 A;L_AVAILABLE_ITEMS;사용가능 항목들
 A;L_SELECTED_ITEMS;선택된 항목들
 A;M_SELECT_ITEM;계속 하려면 항목을 선택해 주십시오!
+A;E_CANCEL_BOBJ_SEL;비즈니스 오브젝트 선택이 취소되었습니다. 계속 분석 하시려면 비즈니스 오브젝트 선택이 필요합니다.
+A;E_SEL_BOBJ;비즈니스 오브젝트가 선택되어 있지 않습니다. 비즈니스 오브젝트를 지정하신 후 다시 시도해 주십시오.
+A;E_CONFIG_PIVOT;피벗 항목이 지정되어 있지 않습니다. 피벗 항목을 지정하신 후 다시 시도해 주십시오.
