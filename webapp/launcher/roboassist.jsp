@@ -41,9 +41,9 @@ input,select,textarea{
     background-color:inherit
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202008291241"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202009031558"></link>
 <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="./js/igccud.min.js?_dc=202008291241"></script>
+<script type="text/javascript" src="./js/igccud.min.js?_dc=202009031558"></script>
 <script type="text/javascript">
 function start_chat() {
 	$("#main_loading").show();

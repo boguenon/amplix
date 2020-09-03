@@ -38,14 +38,14 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202008291241" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202009031558" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202008291241" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202009031558" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202008291241" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202009031558" />
 <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202008291241"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202008291241"></script>
+<script type="text/javascript" src="../config.js?_dc=202009031558"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202009031558"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";
@@ -228,11 +228,17 @@ function initPage() {
 		return true;
 	});
 
-	IG$.chkSess(null, function() {
-		IG$.chkSvrInfo(function() {
-			$('#loginWindow').show();
-		});
-	});
+	IRm$.r2/*loadResources*/({
+        func: function() {
+        	IG$.chkSess(null, function() {
+                IG$.chkSvrInfo(function() {
+                    $('#loginWindow').show();
+                });
+            });
+            
+            IG$.showLogin();
+        }
+    }, false);
 }
 
 $(document).ready(function() {

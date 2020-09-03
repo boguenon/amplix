@@ -39,6 +39,7 @@
     border-radius: 5px;
     line-height: 130%;
     font-size: smaller;
+    margin-bottom: 20px;
 }
 
 #manual_body div.sphinxsidebar h3, #manual_body div.sphinxsidebar h4 {

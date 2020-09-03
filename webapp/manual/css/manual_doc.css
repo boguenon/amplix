@@ -49,3 +49,7 @@ span.code_highlight {
 	font-size: 16px;
 	color: #7497f6;
 }
+
+#main_slider h3.active {
+    color: #ec6565 !important;
+}
