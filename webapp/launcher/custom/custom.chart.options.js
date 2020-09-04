@@ -238,6 +238,51 @@ IG$._customChartPanels = function() {
 			if (option) {
 				option.settings = option.settings || {};
 				
+				var d1 = [{name: "Select Value", value: ""}],
+					d2 = [{name: "Select Value", value: ""}],
+					d1val = "", d2val = "";
+					
+				$.each(ma.sheetoption.model.rows, function(i, row) {
+					d1.push({
+						name: row.name,
+						value: row.uid
+					});
+					
+					d2.push({
+						name: row.name,
+						value: row.uid
+					});
+					
+					if (option.settings.m_lat == row.uid)
+					{
+						d1val = row.uid;
+					}
+					
+					if (option.settings.m_lng == row.uid)
+					{
+						d2val = row.uid;
+					}
+				});
+				
+				if (ig$.svg_renderers)
+				{
+					var dp = [{name: "Select", value: ""}],
+						renderers = ig$.svg_renderers.split("\n");
+					
+					$.each(renderers, function(i, r) {
+						var p = r.split(",");
+						if (p.length > 1)
+						{
+							dp.push({name: p[0], value: p[1]});
+						}
+					});
+					
+					me.down("[name=m_svgtype]").store.loadData(dp);
+				}
+				
+				me.down("[name=m_lat]").store.loadData(d1);
+				me.down("[name=m_lng]").store.loadData(d2);
+				
 				me.down("[name=m_zoom_level]").setValue(option.m_zoom_level || "8");
 				me.down("[name=m_marker]").setValue(option.m_marker || "");
 				me.down("[name=m_min]").setValue(option.m_min || "1000");
@@ -245,6 +290,9 @@ IG$._customChartPanels = function() {
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
 				me.down("[name=m_map_center]").setValue(option.settings.m_map_center || "");
+				me.down("[name=m_lat]").setValue(d1val);
+				me.down("[name=m_lng]").setValue(d2val);
+				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -351,6 +399,9 @@ IG$._customChartPanels = function() {
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
 				option.settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
 				option.settings.m_map_center = me.down("[name=m_map_center]").getValue();
+				option.settings.m_lat = me.down("[name=m_lat]").getValue();
+				option.settings.m_lng = me.down("[name=m_lng]").getValue();
+				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
 				// arc layer selection
 				option.settings.m_arc_layers = [];
 				
@@ -375,6 +426,7 @@ IG$._customChartPanels = function() {
 			me.down("[name=m_xypos]").setVisible(subtype == "vworldmap");
 			me.down("[name=pb02]").setVisible(subtype == "kpi");
 			me.down("[name=m_arc_basemap]").setVisible(subtype == "esri");
+			me.down("[name=pb03]").setVisible(subtype == "svgmap");
 			
 			if (ig$.arcgis_rest$)
 			{
@@ -486,6 +538,22 @@ IG$._customChartPanels = function() {
 								name: "m_max",
 								minValue: 100,
 								maxValue: 10000000
+							},
+							{
+								xtype: "combobox",
+								fieldLabel: IRm$.r1("B_LAT"),
+								name: "m_lat",
+								store: {},
+								displayField: "name",
+								valueField: "value"
+							},
+							{
+								xtype: "combobox",
+								fieldLabel: IRm$.r1("B_LNG"),
+								name: "m_lng",
+								store: {},
+								displayField: "name",
+								valueField: "value"
 							},
 							{
 								xtype: "textarea",
@@ -634,7 +702,29 @@ IG$._customChartPanels = function() {
 						scope: this
 					} 
 				]
-			} 
+			},
+			{
+				xtype: "fieldset",
+				title: IRm$.r1("L_SVG_DRAW_OPTIONS"),
+				layout: "anchor",
+				hidden: true,
+				name: "pb03",
+				items: [
+					{
+						xtype: "combobox",
+						fieldLabel: IRm$.r1("L_SVG_TYPE"), // "Field Column",
+						name: "m_svgtype",
+						queryMode: "local",
+						valueField: "value",
+						displayField: "name",
+						editable: false,
+						store: {
+							xtype: "store",
+							fields: [ "name", "value" ]
+						}
+					}
+				]	
+			}
 		],
 		listeners: {
 			afterrender: function(p) {

@@ -384,6 +384,7 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
     var me = this,
         esri = me.esri,
+		sop = owner.sheetoption ? owner.sheetoption.model : null,
         cop = owner.cop, // chart option information
 		copsettings = cop.settings,
         map = me.map_inst,
@@ -394,9 +395,13 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
         defaultLevel,
         mlng = 150.644,
         mlat = -34.397,
+		minLng, maxLng, minLat, maxLat,
+		m_lat, m_lng, trow,
+		c_lat =  -1, c_lng = -1,
         minLng, maxLng, minLat, maxLat,
 		geodata = results ? results.geodata : null,
-		tabledata = results._tabledata;
+		tabledata = results._tabledata,
+		rowfix = results.rowfix;
     
     for (i = 1; i <= 5; ++i) {
         styles_.push({
@@ -407,9 +412,48 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
     }
     
 	defaultLevel = parseInt(cop.m_zoom_level) || 11;
+	
+	m_lat = copsettings.m_lat;
+	m_lng = copsettings.m_lng;
    
     if (results.source != 1)
     {
+		if (m_lat && m_lng && sop)
+		{
+			$.each(sop.rows, function(i, s) {
+				if (s.uid == m_lat)
+				{
+					c_lat = i;
+				}
+				
+				if (s.uid == m_lng)
+				{
+					c_lng = i;
+				}
+			});
+		}
+		
+		if (c_lat > -1 && c_lng > -1)
+		{
+			geodata = results.geodata = [];
+			
+			for (i=rowfix; i < tabledata.length; i++)
+            {
+				trow = tabledata[i];
+				
+				var m = {
+					lng: trow[c_lng].code,
+					lat: trow[c_lat].code,
+					row: i
+				};
+				
+				if (m.lat && m.lng)
+				{
+					geodata.push(m);
+				}
+            }
+		}
+		
         if (geodata && geodata.length > 0)
         {
             for (i=0; i < geodata.length; i++)
@@ -574,6 +618,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
                 i, j, ct, t,
 				series_name = "", point_name = "",
                 mval = "<div>";
+
             for (i=0; i < p.data.length; i++)
             {
                 mval += (i > 0 ? "<br/>" : "");

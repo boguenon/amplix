@@ -118,7 +118,9 @@ IG$.__chartoption.chartext.googlemap.prototype.drawChart = function(owner, resul
 
 IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results) {
     var me = this,
+		sop = owner.sheetoption ? owner.sheetoption.model : null,
         cop = owner.cop, // chart option information
+		copsettings = cop.settings,
         map = me.map_inst,
         seriesname,
         i, j,
@@ -127,6 +129,11 @@ IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results
         defaultLevel,
         mlng = 150.644,
         mlat = -34.397,
+		m_lat, m_lng, trow,
+		c_lat =  -1, c_lng = -1,
+		tabledata = results._tabledata,
+		rowfix = results.rowfix,
+		geodata,
         minLng, maxLng, minLat, maxLat;
     
     for (i = 1; i <= 5; ++i) {
@@ -139,6 +146,45 @@ IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results
     
     me.markers = me.markers || [];
     me.clusters = me.clusters || [];
+
+	m_lat = copsettings.m_lat;
+	m_lng = copsettings.m_lng;
+	
+	if (m_lat && m_lng && sop)
+	{
+		$.each(sop.rows, function(i, s) {
+			if (s.uid == m_lat)
+			{
+				c_lat = i;
+			}
+			
+			if (s.uid == m_lng)
+			{
+				c_lng = i;
+			}
+		});
+	}
+	
+	if (c_lat > -1 && c_lng > -1)
+	{
+		geodata = results.geodata = [];
+		
+		for (i=rowfix; i < tabledata.length; i++)
+        {
+			trow = tabledata[i];
+			
+			var m = {
+				lng: trow[c_lng].code,
+				lat: trow[c_lat].code,
+				row: i
+			};
+			
+			if (m.lat && m.lng)
+			{
+				geodata.push(m);
+			}
+        }
+	}
     
     if (results.source != 1)
     {
