@@ -20,10 +20,17 @@ IG$.__chartoption.chartext.navermap.prototype.drawChart = function(owner, result
     var me = this,
         container = owner.container,
         jcontainer = $(container),
+		sop = owner.sheetoption ? owner.sheetoption.model : null,
         cop = owner.cop, // chart option information
+		copsettings = cop.settings,
         map,
         seriesname,
         markermap = {},
+		m_lat, m_lng, trow,
+		c_lat =  -1, c_lng = -1,
+		tabledata = results._tabledata,
+		rowfix = results.rowfix,
+		geodata,
         i, j;
     
     jcontainer.empty();
@@ -32,6 +39,45 @@ IG$.__chartoption.chartext.navermap.prototype.drawChart = function(owner, result
     var mlng = 126.9773356,
         mlat = 37.5675451,
         minLng, maxLng, minLat, maxLat;
+
+	m_lat = copsettings.m_lat;
+	m_lng = copsettings.m_lng;
+	
+	if (m_lat && m_lng && sop)
+	{
+		$.each(sop.rows, function(i, s) {
+			if (s.uid == m_lat)
+			{
+				c_lat = i;
+			}
+			
+			if (s.uid == m_lng)
+			{
+				c_lng = i;
+			}
+		});
+	}
+	
+	if (c_lat > -1 && c_lng > -1)
+	{
+		geodata = results.geodata = [];
+		
+		for (i=rowfix; i < tabledata.length; i++)
+        {
+			trow = tabledata[i];
+			
+			var m = {
+				lng: trow[c_lng].code,
+				lat: trow[c_lat].code,
+				row: i
+			};
+			
+			if (m.lat && m.lng)
+			{
+				geodata.push(m);
+			}
+        }
+	}
         
     if (results && results.geodata.length > 0)
     {
@@ -294,7 +340,7 @@ IG$.__chartoption.chartext.navermap.prototype.destroy = function() {
 
 	if (me.map)
 	{
-		me.map.destory();
+		me.map.destroy();
 	}
     
     me.owner && me.owner.container && $(me.owner.container).empty();

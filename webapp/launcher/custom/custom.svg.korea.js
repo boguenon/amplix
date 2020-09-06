@@ -21,9 +21,14 @@ IG$.__chartoption.chartext.koreamap.prototype = {
             svgmap;
         
         me.map = svgmap = new IG$.SVGLoader($(container));
+		
+		svgmap.container.unbind("svgloaded");
+
         svgmap.load("./data/korea_location_map3.svg");
 
-        svgmap.container.bind("svgloaded", function() {
+        svgmap.container.bind("svgloaded", function(e) {
+			e.stopPropagation();
+			
             var i,
 				j,
 				row,
@@ -125,7 +130,7 @@ IG$.__chartoption.chartext.koreamap.prototype = {
 		var me = this,
 			map = me.map;
 			
-        map.m1.call(map);
+        map && map.resizeTo.call(map);
     },
 	dispose: function() {
 		var me = this,

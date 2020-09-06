@@ -2,29 +2,62 @@ IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.__chartoption.charttype.push(
     {
-        label:"Air bus", 
-        charttype: "airbusseat", 
-        subtype: "airbusseat", 
-        img: "svg_airbus", 
+        label:"SVG", 
+        charttype: "svgmap", 
+        subtype: "svgmap", 
+        img: "svgmap", 
         grp: "scientific"
     }
 );
 
-IG$.__chartoption.chartext.airbusseat = function(owner) {
+IG$.__chartoption.chartext.svgmap = function(owner) {
     this.owner = owner;
 };
 
-IG$.__chartoption.chartext.airbusseat.prototype = {
+IG$.__chartoption.chartext.svgmap.prototype = {
     drawChart: function(owner, results) {
         var me = this,
 			container = owner.container,
-            svgmap;
-        
+			cop = owner.cop,
+			copsettings = cop.settings,
+			m_svgtype = copsettings ? copsettings.m_svgtype : "",
+            svgmap,
+			renderer;
+
+		
+		if (!m_svgtype)
+		{
+			IG$.ShowError(IRm$.r1("M_ERR_CHART_SEL"), me);
+			return;
+		}
+		
+		if (ig$.svg_renderers)
+		{
+			var p = ig$.svg_renderers.split("\n");
+			
+			$.each(p, function(i, r) {
+				var s = r.split(",");
+				
+				if (s.length > 1)
+				{
+					if (s[1] == m_svgtype)
+					{
+						renderer = {
+							name: s[0],
+							url: s[1],
+							idfield: s[2] || "id" 
+						};
+						return false;
+					}
+				}
+			});
+		}
+		
         me.map = svgmap = new IG$.SVGLoader($(container));
+		svgmap.idfield = renderer ? renderer.idfield : null;
+        svgmap.load(m_svgtype);
 
 		svgmap.container.unbind("svgloaded");
-
-        svgmap.load("./data/Airbus_A380_seatmap.svg");
 
         svgmap.container.bind("svgloaded", function() {
             var i,
@@ -39,15 +72,6 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
 					point: {},
 					measures: []
 				};
-            
-            // start random key generation -- test purpose
-            var rndkey = [];
-
-            for (key in svgmap.mapid)
-            {
-                rndkey.push(key);
-            }
-            //-- end random key generation -- test purpose
 
             if (results)
             {
@@ -90,11 +114,6 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
                                 // row data area
                                 if (j == 0)
                                 {
-                                    // start random key generation -- test purpose
-                                    rnd = Math.floor(Math.random() * rndkey.length);
-                                    celltext = rndkey[rnd];
-                                    //-- end random key generation -- test purpose
-                                    
                                     pt = chartoption.point[celltext];
                                     if (!pt)
                                     {
@@ -109,7 +128,7 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
                             {
                                 // data area
 								celltext = cell.code || cell.text;
-                                measureindex = j - colfix;
+                                measureindex = j-colfix;
                                 ptval = Number(celltext);
 
                                 if (isNaN(ptval) == false)
@@ -141,7 +160,8 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
     updatedisplay: function(owner, w, h) {
 		var me = this,
 			map = me.map;
-        map && map.resizeTo.call(map);
+			
+        map.resizeTo.call(map);
     },
 	dispose: function() {
 		var me = this,
