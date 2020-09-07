@@ -266,7 +266,7 @@ IG$._customChartPanels = function() {
 				
 				if (ig$.svg_renderers)
 				{
-					var dp = [{name: "Select", value: ""}],
+					var dp = [{name: IRm$.r1("B_SELECT"), value: ""}],
 						renderers = ig$.svg_renderers.split("\n");
 					
 					$.each(renderers, function(i, r) {
@@ -635,9 +635,9 @@ IG$._customChartPanels = function() {
 						hidden: true,
 						height: 300,
 						selType: "checkboxmodel",
-                        selModel: {
-                            mode: "MULTI"
-                        },
+						selModel: {
+							mode: "MULTI"
+						},
 						store: {
 							data: [
 							]

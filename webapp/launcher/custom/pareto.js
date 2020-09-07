@@ -1,28 +1,28 @@
 IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.__chartoption.charttype.push(
-    {
-        label: "Pareto",
-        charttype: "pareto",
-        subtype: "pareto",
-        img: "chart_pareto",
-        grp: "quality"
-    }
+	{
+		label: "Pareto",
+		charttype: "pareto",
+		subtype: "pareto",
+		img: "chart_pareto",
+		grp: "quality"
+	}
 );
 
 IG$.__chartoption.chartext.pareto = function(owner) {};
 
 IG$.__chartoption.chartext.pareto.prototype = {
-    drawChart: function(owner, results) {
-        var me = this,
+	drawChart: function(owner, results) {
+		var me = this,
 			container = owner.container,
-            jcontainer = $(container),
-            cop = owner.cop,
+			jcontainer = $(container),
+			cop = owner.cop,
 			data = results._tabledata,
 			colfix = results.colfix,
 			colcnt = results.colcnt,
-            rowfix = results.rowfix,
-            rowcnt = results.rowcnt,
+			rowfix = results.rowfix,
+			rowcnt = results.rowcnt,
 			opt,
 			c_cset = cop.colorset || results.c_cset,
 			masterChart,
@@ -51,22 +51,22 @@ IG$.__chartoption.chartext.pareto.prototype = {
 			IG$.ShowError("This need apache echarts module!", me);
 			return;
 		}
-        
-        me.destroy();
-        jcontainer.empty();
-        
-        chartarea = $("<div></div>").appendTo(jcontainer);
-        
-        chartarea.css({
-        	position: "relative",
-        	width: "100%"
-        });
-        
-        jcontainer.css({
-        	overflowY: "auto"
-        });
 		
-        opt = {
+		me.destroy();
+		jcontainer.empty();
+		
+		chartarea = $("<div></div>").appendTo(jcontainer);
+		
+		chartarea.css({
+			position: "relative",
+			width: "100%"
+		});
+		
+		jcontainer.css({
+			overflowY: "auto"
+		});
+		
+		opt = {
 			chart: {
 				renderTo: chartarea[0]
 			},
@@ -81,12 +81,12 @@ IG$.__chartoption.chartext.pareto.prototype = {
 			yAxis: [],
 			series: []
 		};
-        
-        for (sr=colfix; sr < colcnt; sr++)
-        {
-        	var t = sr - colfix,
-        		gridindex = opt.grid.length,
-        		xaxis = {
+		
+		for (sr=colfix; sr < colcnt; sr++)
+		{
+			var t = sr - colfix,
+				gridindex = opt.grid.length,
+				xaxis = {
 					type: "category",
 					axisTick: {
 						alignWithLabel: true
@@ -140,25 +140,25 @@ IG$.__chartoption.chartext.pareto.prototype = {
 					data: []
 				},
 				grid = {
-        			right: "5%",
-        			left: "5%"
-        			// top: (tinc * t) + "%",
-        			// bottom: tinc * (colcnt - sr - 1) + "%"
-	        	};
-        	
-        	if (cols > 1)
-        	{
-        		grid.top = ty + "px";
-    			grid.height = tincpx + "px";
-        	}
-        	ty += tincpx + tgap;
-        	
-        	opt.grid.push(grid);
-        	opt.xAxis.push(xaxis);
-        	opt.yAxis.push(yaxis1);
-        	opt.yAxis.push(yaxis2);
-        	opt.series.push(series1);
-        	opt.series.push(series2);
+					right: "5%",
+					left: "5%"
+					// top: (tinc * t) + "%",
+					// bottom: tinc * (colcnt - sr - 1) + "%"
+				};
+			
+			if (cols > 1)
+			{
+				grid.top = ty + "px";
+				grid.height = tincpx + "px";
+			}
+			ty += tincpx + tgap;
+			
+			opt.grid.push(grid);
+			opt.xAxis.push(xaxis);
+			opt.yAxis.push(yaxis1);
+			opt.yAxis.push(yaxis2);
+			opt.series.push(series1);
+			opt.series.push(series2);
 			
 			var tval = 0,
 				sdata = [];
@@ -207,28 +207,28 @@ IG$.__chartoption.chartext.pareto.prototype = {
 				var sv = v / tval * 100;
 				series2.data.push(sv);
 			});
-        }
-        
-        if (cols > 1)
-        {
-        	chartarea.height(ty);
-        }
-        else
-        {
-        	chartarea.height(jcontainer.height());
-        }
-        
+		}
+		
+		if (cols > 1)
+		{
+			chartarea.height(ty);
+		}
+		else
+		{
+			chartarea.height(jcontainer.height());
+		}
+		
 		if (IG$.__chartoption && IG$.__chartoption.chartcolors && IG$.__chartoption.chartcolors[c_cset])
 		{
 			opt.color =  IG$.__chartoption.chartcolors[c_cset];
 		}
 		
 		me.createChart(opt);
-    },
-    
-    createChart: function(opt) {
-    	var me = this,
-    		masterChart = echarts.init(opt.chart.renderTo, ig$.echarts_theme || 'amplix', {
+	},
+	
+	createChart: function(opt) {
+		var me = this,
+			masterChart = echarts.init(opt.chart.renderTo, ig$.echarts_theme || 'amplix', {
 				renderer: "canvas" // "svg"
 			});
 		
@@ -261,55 +261,55 @@ IG$.__chartoption.chartext.pareto.prototype = {
 		
 		me.dmain_opt = opt;
 		me.dmain = masterChart;
-    },
-    
-    updatedisplay: function(owner, w, h) {
-        var me = this,
-        	dmain = me.dmain,
-        	dmain_opt = me.dmain_opt;
-        
-        if (dmain_opt && dmain_opt.grid.length == 1)
-        {
-        	$(dmain.renderTo).css({
-        		width: w,
-        		height: h
-        	});
-        	dmain.resize.call(dmain, {width: w, height: h});
-        }
-        else
-        {
-	        if (dmain)
-	        {
-	        	dmain && dmain.destroy && dmain.destroy();
-	        	dmain && dmain.dispose && dmain.dispose();
-	        	me.dmain = null;
-	        }
-	        
-	        if (dmain_opt)
-	        {
-	        	var cols = dmain_opt.grid.length,
-	            	tincpx = Math.max(200, h / cols),
-	    			tgap = 50,
-	    			ty = tgap;
-	        	
-	        	$.each(dmain_opt.grid, function(i, grid) {
-	        		grid.top = ty + "px";
-	    			grid.height = tincpx + "px";
-	    			ty += tincpx + tgap;
-	        	});
-	        	
-	        	me.createChart(dmain_opt);
-	        }
-        }
-    },
-    
-    destroy: function() {
-    	var me = this,
-    		dmain = me.dmain;
-    	
-    	dmain && dmain.destroy && dmain.destroy();
-    	dmain && dmain.dispose && dmain.dispose();
-    	me.dmain = null;
-    	me.dmain_opt = null;
-    }
+	},
+	
+	updatedisplay: function(owner, w, h) {
+		var me = this,
+			dmain = me.dmain,
+			dmain_opt = me.dmain_opt;
+		
+		if (dmain_opt && dmain_opt.grid.length == 1)
+		{
+			$(dmain.renderTo).css({
+				width: w,
+				height: h
+			});
+			dmain.resize.call(dmain, {width: w, height: h});
+		}
+		else
+		{
+			if (dmain)
+			{
+				dmain && dmain.destroy && dmain.destroy();
+				dmain && dmain.dispose && dmain.dispose();
+				me.dmain = null;
+			}
+			
+			if (dmain_opt)
+			{
+				var cols = dmain_opt.grid.length,
+					tincpx = Math.max(200, h / cols),
+					tgap = 50,
+					ty = tgap;
+				
+				$.each(dmain_opt.grid, function(i, grid) {
+					grid.top = ty + "px";
+					grid.height = tincpx + "px";
+					ty += tincpx + tgap;
+				});
+				
+				me.createChart(dmain_opt);
+			}
+		}
+	},
+	
+	destroy: function() {
+		var me = this,
+			dmain = me.dmain;
+		
+		dmain && dmain.destroy && dmain.destroy();
+		dmain && dmain.dispose && dmain.dispose();
+		me.dmain = null;
+		me.dmain_opt = null;
+	}
 };

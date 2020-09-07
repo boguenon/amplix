@@ -1,21 +1,21 @@
 IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.__chartoption.charttype.push(
-    {
-        label:"KPI Indicator",
-        charttype: "kpi",
-        subtype: "kpi",
-        img: "kpi",
-        grp: "scientific"
-    }
+	{
+		label:"KPI Indicator",
+		charttype: "kpi",
+		subtype: "kpi",
+		img: "kpi",
+		grp: "scientific"
+	}
 );
 
 IG$.__chartoption.chartext.kpi = function(owner) {
-    this.owner = owner;
+	this.owner = owner;
 }
 
 IG$.__chartoption.chartext.kpi.prototype = {
-    drawChart: function(owner, results) {
+	drawChart: function(owner, results) {
 		var me = this;
 		
 		if (IG$.__chartoption.chartext.kpi._loading)
@@ -26,24 +26,24 @@ IG$.__chartoption.chartext.kpi.prototype = {
 			return;
 		}
 		
-        if (!IG$.__chartoption.chartext.kpi._loaded)
-        {
-            var js = [
-                    "./custom/custom.kpi.worker.js"
-                ];
+		if (!IG$.__chartoption.chartext.kpi._loaded)
+		{
+			var js = [
+					"./custom/custom.kpi.worker.js"
+				];
 
 			IG$.__chartoption.chartext.kpi._loading = true;
-            
-            IG$.getScriptCache(
-                js, 
-                new IG$.callBackObj(this, function() {
-                    IG$.__chartoption.chartext.kpi._loaded = 1;
-                    me.drawChart.call(me, owner, results);
-                })
-            );
-        }
-    },
-    
-    updatedisplay: function(owner, w, h) {
-    }
+			
+			IG$.getScriptCache(
+				js, 
+				new IG$.callBackObj(this, function() {
+					IG$.__chartoption.chartext.kpi._loaded = 1;
+					me.drawChart.call(me, owner, results);
+				})
+			);
+		}
+	},
+	
+	updatedisplay: function(owner, w, h) {
+	}
 };

@@ -1,13 +1,13 @@
 IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.__chartoption.charttype.push(
-    {
-        label: "Quality Runchart",
-        charttype: "runchart",
-        subtype: "runchart",
-        img: "chart_runchart",
-        grp: "quality"
-    }
+	{
+		label: "Quality Runchart",
+		charttype: "runchart",
+		subtype: "runchart",
+		img: "chart_runchart",
+		grp: "quality"
+	}
 );
 
 IG$.__chartoption.chartext.runchart = function(owner) {
@@ -83,13 +83,13 @@ IG$.__chartoption.chartext.runchart.prototype = {
 		req.send();
 	},
 	
-    drawChart: function(owner, results) {
-        var me = this,
+	drawChart: function(owner, results) {
+		var me = this,
 			data = results._tabledata,
 			colfix = results.colfix,
 			colcnt = results.colcnt,
-            rowfix = results.rowfix,
-            rowcnt = results.rowcnt,
+			rowfix = results.rowfix,
+			rowcnt = results.rowcnt,
 			cols = colcnt - colfix;
 						
 		if (colfix < 1)
@@ -111,19 +111,19 @@ IG$.__chartoption.chartext.runchart.prototype = {
 		}
 		
 		me.getStat(owner, results);
-    },
-    
-    drawStatResult: function(owner, results) {
-    	var me = this,
+	},
+	
+	drawStatResult: function(owner, results) {
+		var me = this,
 			quality_stat = me.quality_stat,
 			container = owner.container,
-	        jcontainer = $(container),
-	        cop = owner.cop,
+			jcontainer = $(container),
+			cop = owner.cop,
 			data = results._tabledata,
 			colfix = results.colfix,
 			colcnt = results.colcnt,
-	        rowfix = results.rowfix,
-	        rowcnt = results.rowcnt,
+			rowfix = results.rowfix,
+			rowcnt = results.rowcnt,
 			c_cset = cop.colorset || results.c_cset,
 			masterChart,
 			sr,
@@ -135,17 +135,17 @@ IG$.__chartoption.chartext.runchart.prototype = {
 			chartregion,
 			statistics = results.statistics,
 			qstatistics = quality_stat.table_data;
-    	
-    	me.destroy();
-        
-        jcontainer.empty();
-        
-        chartregion = $("<div></div>").appendTo(jcontainer);
-        
-        chartregion.css({
-        	position: "relative",
-        	width: "100%"
-        });
+		
+		me.destroy();
+		
+		jcontainer.empty();
+		
+		chartregion = $("<div></div>").appendTo(jcontainer);
+		
+		chartregion.css({
+			position: "relative",
+			width: "100%"
+		});
 		
 		for (sr=colfix; sr < colcnt; sr++)
 		{
@@ -199,7 +199,7 @@ IG$.__chartoption.chartext.runchart.prototype = {
 			};
 			
 			var t = sr - colfix,
-        		xaxis = {
+				xaxis = {
 					type: "category",
 					axisTick: {
 						alignWithLabel: true
@@ -236,68 +236,68 @@ IG$.__chartoption.chartext.runchart.prototype = {
 			$.each(qstat.rows, function(q, m) {
 				qstat_map[m[0].text] = m[2];
 			});
-        	
+			
 			chartarea.height(tincpx - tgap);
 			chartdesc.height(tgap);
 			
-        	ty += tincpx;
-        	
-        	series.markLine = {
-        		data: [
-        			{
-        				name: "Average",
-        				yAxis: stat.average,
-        				lineStyle: {
-            				color: "#00ff00",
-            				width: 2
-            			}
-        			}
-        		]
-        	}
-        	
-        	smin = stat.min;
-        	smax = stat.max;
-        	
-        	if (qstat_map["ucl"])
-        	{
-        		series.markLine.data.push({
-        			name: "UCL",
-        			yAxis: qstat_map["ucl"].value,
-        			lineStyle: {
-        				color: "#ff0000",
-        				width: 3
-        			}
-        		});
-        		
-        		if (qstat_map["ucl"].value > smax)
-        		{
-        			ymax = qstat_map["ucl"].value + 10;
-        		}
-        	}
-        	
-        	if (qstat_map["lcl"])
-        	{
-        		series.markLine.data.push({
-        			name: "LCL",
-        			yAxis: qstat_map["lcl"].value,
-        			lineStyle: {
-        				color: "#ff0000",
-        				width: 3
-        			}
-        		});
-        		
-        		if (qstat_map["lcl"].value < smin)
-        		{
-        			ymin = qstat_map["lcl"].value - 10;
-        		}
-        	}
-        	
-        	yaxis.min = ymin;
-        	yaxis.max = ymax;
-        	
-        	opt.xAxis.push(xaxis);
-        	opt.yAxis.push(yaxis);
-        	opt.series.push(series);
+			ty += tincpx;
+			
+			series.markLine = {
+				data: [
+					{
+						name: "Average",
+						yAxis: stat.average,
+						lineStyle: {
+							color: "#00ff00",
+							width: 2
+						}
+					}
+				]
+			}
+			
+			smin = stat.min;
+			smax = stat.max;
+			
+			if (qstat_map["ucl"])
+			{
+				series.markLine.data.push({
+					name: "UCL",
+					yAxis: qstat_map["ucl"].value,
+					lineStyle: {
+						color: "#ff0000",
+						width: 3
+					}
+				});
+				
+				if (qstat_map["ucl"].value > smax)
+				{
+					ymax = qstat_map["ucl"].value + 10;
+				}
+			}
+			
+			if (qstat_map["lcl"])
+			{
+				series.markLine.data.push({
+					name: "LCL",
+					yAxis: qstat_map["lcl"].value,
+					lineStyle: {
+						color: "#ff0000",
+						width: 3
+					}
+				});
+				
+				if (qstat_map["lcl"].value < smin)
+				{
+					ymin = qstat_map["lcl"].value - 10;
+				}
+			}
+			
+			yaxis.min = ymin;
+			yaxis.max = ymax;
+			
+			opt.xAxis.push(xaxis);
+			opt.yAxis.push(yaxis);
+			opt.series.push(series);
 			
 			var tval = 0;
 			
@@ -361,19 +361,19 @@ IG$.__chartoption.chartext.runchart.prototype = {
 			$(t_data.join("")).appendTo(chartdesc);
 		});
 		
-        if (cols > 1)
-        {
-        	chartregion.height(ty);
-        }
-        else
-        {
-        	chartregion.height(jcontainer.height());
-        }
-    },
-    
-    createChart: function(opt) {
-    	var me = this,
-    		masterChart = echarts.init(opt.chart.renderTo, ig$.echarts_theme || 'amplix', {
+		if (cols > 1)
+		{
+			chartregion.height(ty);
+		}
+		else
+		{
+			chartregion.height(jcontainer.height());
+		}
+	},
+	
+	createChart: function(opt) {
+		var me = this,
+			masterChart = echarts.init(opt.chart.renderTo, ig$.echarts_theme || 'amplix', {
 				renderer: "canvas" // "svg"
 			});
 		
@@ -405,35 +405,35 @@ IG$.__chartoption.chartext.runchart.prototype = {
 		});
 		
 		return masterChart;
-    },
-    
-    updatedisplay: function(owner, w, h) {
-        var me = this,
+	},
+	
+	updatedisplay: function(owner, w, h) {
+		var me = this,
 			dmain;
 		
 		if (!me._charts)
 			return;
 		
-        dmain = me.dmain,
-        dmain_opt = me.dmain_opt;
+		dmain = me.dmain,
+		dmain_opt = me.dmain_opt;
 		
 		var cols = me._charts.length,
 			tinc = (100 / cols),
 			tincpx = Math.max(me.theight, h / cols),
 			tgap = 50,
 			ty = 0;
-        
-        if (me._charts && me._charts.length == 1)
-        {
+		
+		if (me._charts && me._charts.length == 1)
+		{
 			dmain = me._charts[0].dmain;
-        	$(dmain.renderTo).css({
-        		width: w,
-        		height: h - tgap
-        	});
-        	// dmain.resize.call(dmain, {width: w, height: h - tgap});
-        }
-        else
-        {
+			$(dmain.renderTo).css({
+				width: w,
+				height: h - tgap
+			});
+			// dmain.resize.call(dmain, {width: w, height: h - tgap});
+		}
+		else
+		{
 			$.each(me._charts, function(r, mchart) {
 				var dmain = mchart.dmain,
 					dmain_opt = mchart.dmain_opt;
@@ -446,11 +446,11 @@ IG$.__chartoption.chartext.runchart.prototype = {
 					// dmain.resize.call(dmain, {width: w, height: h});
 				}
 			});
-        }
-    },
-    
-    destroy: function() {
-    	var me = this,
+		}
+	},
+	
+	destroy: function() {
+		var me = this,
 			_charts = me._charts;
 			
 		if (_charts)
@@ -465,5 +465,5 @@ IG$.__chartoption.chartext.runchart.prototype = {
 		}
 		
 		me._charts = [];
-    }
+	}
 };
