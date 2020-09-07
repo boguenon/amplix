@@ -566,6 +566,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
             var infow = map.infoWindow,
                 i, j, ct, t,
 				series_name = "", point_name = "",
+				sep = IG$._separator,
                 mval = "<div>";
 
             for (i=0; i < p.data.length; i++)
