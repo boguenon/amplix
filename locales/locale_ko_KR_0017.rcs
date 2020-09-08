@@ -60,3 +60,5 @@ A;L_UNDO;취소하기
 A;L_ALIAS;별명
 
 A;D_CLIPBOARD;클립보드에 복사하려면 아래 내용을 클릭한 후 Ctrl-A, Ctrl-C 키를 눌러주십시오.
+
+A;M_PIVOT_CHANGED;변경사항을 반영하려면 툴바의 실행 버튼을 클릭해 주십시오.

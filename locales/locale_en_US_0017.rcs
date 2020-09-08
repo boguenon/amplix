@@ -60,3 +60,5 @@ A;L_UNDO;Undo
 A;L_ALIAS;Alias
 
 A;D_CLIPBOARD;Press Ctrl-A then Ctrl-C to copy this content to clipboard!
+
+A;M_PIVOT_CHANGED;To apply pivot, click execute button on report toolbar!
