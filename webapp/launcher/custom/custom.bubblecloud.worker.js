@@ -52,10 +52,10 @@ IG$.__chartoption.chartext.bubblecloud.prototype.drawBubbleCloud = function() {
   		return d3.pack()
 			.size([width - 2, height - 2])
 			.padding(3)(d3.hierarchy({
-    			children: data
+				children: data
 			})
 			.sum(function (d) {
-    			return d.value;
+				return d.value;
   			}));
 	};
 	
@@ -132,7 +132,7 @@ IG$.__chartoption.chartext.bubblecloud.prototype.drawChart = function(owner, res
 	
 	me.drawBubbleCloud();
 };
-    
+	
 IG$.__chartoption.chartext.bubblecloud.prototype.updatedisplay = function(owner, w, h) {
 	var me = this;
 	
@@ -143,7 +143,7 @@ IG$.__chartoption.chartext.bubblecloud.prototype.updatedisplay = function(owner,
 };
 
 IG$.__chartoption.chartext.bubblecloud.prototype.destroy = function(owner, w, h) {
-    var me = this,
+	var me = this,
 		owner = me.owner;
 		
 	if (owner && owner.container)

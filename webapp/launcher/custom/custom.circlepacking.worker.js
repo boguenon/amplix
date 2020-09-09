@@ -202,7 +202,7 @@ IG$.__chartoption.chartext.circlepacking.prototype.updatedisplay = function(owne
 };
 
 IG$.__chartoption.chartext.circlepacking.prototype.destroy = function(owner, w, h) {
-    var me = this,
+	var me = this,
 		owner = me.owner;
 		
 	if (owner && owner.container)

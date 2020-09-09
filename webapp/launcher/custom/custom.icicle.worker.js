@@ -82,10 +82,10 @@ IG$.__chartoption.chartext.icicle.prototype.drawIcicle = function() {
 		
 	var partition = function partition(data) {
   		var root = d3.hierarchy(data).sum(function (d) {
-    		return d.value;
+			return d.value;
   		})
 		.sort(function (a, b) {
-    		return b.height - a.height || b.value - a.value;
+			return b.height - a.height || b.value - a.value;
   		});
   		
 		return d3.partition().size([height, (root.height + 1) * width / 3])(root);
@@ -123,21 +123,21 @@ IG$.__chartoption.chartext.icicle.prototype.drawIcicle = function() {
 		root.each(function (d) {
 			return d.target = {
 				x0: (d.x0 - p.x0) / (p.x1 - p.x0) * height,
-	      		x1: (d.x1 - p.x0) / (p.x1 - p.x0) * height,
-	      		y0: d.y0 - p.y0,
-	      		y1: d.y1 - p.y0
-	    	};
+		  		x1: (d.x1 - p.x0) / (p.x1 - p.x0) * height,
+		  		y0: d.y0 - p.y0,
+		  		y1: d.y1 - p.y0
+			};
 	  	});
 	  
 		var t = cell.transition()
 			.duration(750)
 			.attr("transform", function (d) {
-		    	return "translate(".concat(d.target.y0, ",").concat(d.target.x0, ")");
+				return "translate(".concat(d.target.y0, ",").concat(d.target.x0, ")");
 		  	});
 		
 		rect.transition(t)
 			.attr("height", function (d) {
-		    	return rectHeight(d.target);
+				return rectHeight(d.target);
 		  	});
 		
 		text.transition(t).attr("fill-opacity", function (d) {
@@ -158,7 +158,7 @@ IG$.__chartoption.chartext.icicle.prototype.drawIcicle = function() {
 	  		if (!d.depth) return "#ccc";
 	
 	  		while (d.depth > 1) {
-	    		d = d.parent;
+				d = d.parent;
 	  		}
 	
 	  		return color(d.data.name);
@@ -189,7 +189,7 @@ IG$.__chartoption.chartext.icicle.prototype.drawIcicle = function() {
 	cell.append("title")
 		.text(function (d) {
   		return "".concat(d.ancestors().map(function (d) {
-    		return d.data.name;
+			return d.data.name;
   		})
 		.reverse()
 		.join("/"), "\n")

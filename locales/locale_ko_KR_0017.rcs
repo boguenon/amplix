@@ -1,0 +1,78 @@
+A;L_PIE_DASHBOARD;파이 및 데시보드 위젯
+A;L_SCATTER_POINT;스캐터 및 포인트 챠트
+A;L_STOCK_LOW_HIGH;주식형 고저점 분석
+A;L_TREEMAP;트리맵
+A;L_RELATION_FINDING;상관관계 찾기 
+A;L_SCI_ANAL;과학적 분석 시각화
+A;L_STAT_VIS;통계적 데이타 시각화
+A;L_MAP_GEO;맵 및 지도
+A;L_QUALITY_CTRL;6시그마 품질 도표
+
+A;L_CH_COLUMN;컬럼
+A;L_CH_LINE;라인
+A;L_CH_SPLINE;스플라인
+A;L_CH_AREA;에어리어
+A;L_CH_SPLINE_AREA;스플라인 에어리어
+A;L_CH_BAR;바챠트
+A;L_CH_PIE;파이챠트
+A;L_CH_DOUGHNUT;도넛챠트
+A;L_CH_BUBBLE;버블챠트
+A;L_CH_SCATTER;스캐터 챠트
+A;L_CH_TREEMAP;트리맵 챠트
+A;L_CH_WATERFALL;폭포수 챠트
+A;L_CH_SYNC_CHART;동기화된 챠트
+A;L_CH_RADAR;레이다
+A;L_CH_FUNNEL;깔때기 챠트
+A;L_CH_PYRAMID;피라미드 챠트
+A;L_CH_MAP;지도
+A;L_CH_COMP_MATRIX;매트릭스 비교챠트
+A;L_CH_PARA_COORD;패러렐 추적챠트
+A;L_CH_MEAN_DEV;평균 & 표준편차
+A;L_CH_BOXPLOT;박스 플롯
+A;L_CH_NET_DIAG_POS;네트워크 다이어그램(+)
+A;L_CH_NET_DIAG_NEG;네트워크 다이어그램(-)
+A;L_CH_MATRIX_DIAGRAM;매트릭스 다이어그램
+A;L_CH_FORCE_DIRECT;힘 편향 레이아웃
+A;L_CH_CLUSTER;클러스터 챠트
+A;L_CH_CHORD;Chord 챠트
+A;L_CH_SUNBURST;썬 버스트 챠트
+A;L_CH_BUBBLE_MAP;버블 맵 챠트
+A;L_CH_FIXED_PLACE;고정 비교 챠트
+
+A;L_BTM_LEFT;아래쪽 왼편
+A;L_BTM_CENTER;아래쪽 중간
+A;L_BTM_RIGHT;아래쪽 오른편
+A;L_TOP_LEFT;상단 왼편
+A;L_TOP_CENTER;상단 중간
+A;L_TOP_RIGHT;상단 오른편
+A;L_RIGHT_TOP;오른편 상단
+A;L_RIGHT_CENTER;오른편 중간
+A;L_RIGHT_BTM;오른편 아래
+A;L_LEFT_TOP;왼편 상단
+A;L_LEFT_CENTER;왼편 중간
+A;L_LEFT_BTM;왼편 아래
+
+A;L_CH_PERCENT_GAUGE;퍼센트 게이지
+A;L_CH_WINLOSE;WinLose 챠트
+
+A;L_COL_SYNC;컬럼 동기화
+A;L_UNDO;취소하기
+A;L_ALIAS;별명
+
+A;D_CLIPBOARD;클립보드에 복사하려면 아래 내용을 클릭한 후 Ctrl-A, Ctrl-C 키를 눌러주십시오.
+
+A;M_PIVOT_CHANGED;변경사항을 반영하려면 툴바의 실행 버튼을 클릭해 주십시오.
+A;B_CENTER;가운데
+
+A;L_BOX_COUNTS;박스 개수
+A;L_LAYOUT_MODE;레이아웃 모드
+A;L_REMOVE_CHECKED;체크 항목 삭제
+A;B_SYNTAX;문법
+A;L_TEMPLATE_TYPE;템플릿 유형
+
+A;L_MIN_COLOR;최소값 색상
+A;L_MID_COLOR;중간값 색상
+A;L_MAX_COLOR;최대값 색상
+A;L_COLOR_CATEG;색상 카테고리
+A;L_MARKER_SIZE;마커 크기
+A;L_MARKER_SYMBOL;마커 심볼
