@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
+  "attributes" : { },
+  "type" : "Unknown",
   "objinfo" : { },
   "name" : "zh_TW",
-  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/zh_TW",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
-  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "*在此處拖動項目以定義此度量"
@@ -6080,5 +6080,477 @@
     "group" : "locale_zh_TW_0015",
     "name" : "L_FILE_UPLOAD_HIST",
     "value" : "File Upload History"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_API_VERSION",
+    "value" : "API Version"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_CSS_URL",
+    "value" : "CSS URL"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_JS_LOADER_URL",
+    "value" : "JS Loader URL"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_BASE_MAP",
+    "value" : "Base Map"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_REST_APIS",
+    "value" : "REST APIs"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_ZOOM_LEVEL",
+    "value" : "Zoom Level"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_PALETTE",
+    "value" : "Palette"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_MIN_RADIUS",
+    "value" : "Minimum Radius"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_MAX_RADIUS",
+    "value" : "Maximum Radius"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_MAP_CENTER_LAT_LNG",
+    "value" : "Map Center (Lat,Lng)"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_BASEMAP",
+    "value" : "Base Map"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_ENABLE_3D",
+    "value" : "Enable 3D"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_ALPHA_ANGLE",
+    "value" : "Alpha Angle"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_BETA_ANGLE",
+    "value" : "Beta Angle"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_DEPTH",
+    "value" : "Depth"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_VIEW_DIST",
+    "value" : "View Distance"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_FIELD_COLUMN",
+    "value" : "Field Column"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_DATA_SERIES",
+    "value" : "Data Series"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_SVG_DRAW_OPTIONS",
+    "value" : "SVG Drawing Options"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_SVG_RENDERERS",
+    "value" : "SVG Renderers"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_SVG_TYPE",
+    "value" : "SVG Type"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_SHEET_NAME",
+    "value" : "Sheet Name"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_UPD_DATE",
+    "value" : "Updated Date"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_DATE_IMPORTED",
+    "value" : "Imported Date"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_GEOMAPPING",
+    "value" : "Geo Mapping"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_AES_PASS_PHRASE",
+    "value" : "AES Pass Phrase"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_OBJECT_ID",
+    "value" : "Object ID"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_FIELDNAME",
+    "value" : "Field Name"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_VALUE_CONTROLS",
+    "value" : "Value Controls"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_CSS_NAME",
+    "value" : "CSS Name"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_STEP_INCREASE",
+    "value" : "Increase Step"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_SLIDER_OPTIONS",
+    "value" : "Slider Options"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_DATETIME_SETUP",
+    "value" : "Date Time Setup"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_PERIOD_SETUP",
+    "value" : "Period Setup"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_FILEUPLOAD_SETTINGS",
+    "value" : "File Upload Settings"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_UPLOAD_FILE",
+    "value" : "Upload File"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_SHOW_FILEHIST",
+    "value" : "Show File History"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_SHOW_ALLFILES",
+    "value" : "Show All Files"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_MULTIPLE_FILES",
+    "value" : "Multiple Files"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_VALUESET_OPTIONS",
+    "value" : "Value Set Options"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_ENABLE_OTH_UPL",
+    "value" : "Allow User Upload"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_TEMPLATE_CONTEXT",
+    "value" : "Template Context"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "B_LEFT",
+    "value" : "Left"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "B_RIGHT",
+    "value" : "Right"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_FV_OPT",
+    "value" : "Form Viewer Option"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_NEW_ANAL",
+    "value" : "New Analysis"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_ANAL_GROUP",
+    "value" : "Analysis Group"
+  }, {
+    "group" : "locale_zh_TW_0016",
+    "name" : "L_ANALYSIS_TYPE",
+    "value" : "Analysis Type"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_PIE_DASHBOARD",
+    "value" : "Pie and Dashboard"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_SCATTER_POINT",
+    "value" : "Scatter and Point"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_STOCK_LOW_HIGH",
+    "value" : "Stock and Low High Analysis"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_TREEMAP",
+    "value" : "Tree Map"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_RELATION_FINDING",
+    "value" : "Relation Finding"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_SCI_ANAL",
+    "value" : "Scientific Analysis"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_STAT_VIS",
+    "value" : "Statistical Data Visualization"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_MAP_GEO",
+    "value" : "Map and Geographical"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_QUALITY_CTRL",
+    "value" : "Quality Control"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_COLUMN",
+    "value" : "Column"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_LINE",
+    "value" : "Line"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_SPLINE",
+    "value" : "Spline"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_AREA",
+    "value" : "Area"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_SPLINE_AREA",
+    "value" : "Spline Area"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_BAR",
+    "value" : "Bar"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_PIE",
+    "value" : "Pie"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_DOUGHNUT",
+    "value" : "Doughnut"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_BUBBLE",
+    "value" : "Bubble"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_SCATTER",
+    "value" : "Scatter"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_TREEMAP",
+    "value" : "Treemap"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_WATERFALL",
+    "value" : "WaterFall"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_SYNC_CHART",
+    "value" : "Synchronized Chart"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_RADAR",
+    "value" : "Radar"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_FUNNEL",
+    "value" : "Funnel"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_PYRAMID",
+    "value" : "Pyramid"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_MAP",
+    "value" : "Map"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_COMP_MATRIX",
+    "value" : "Comparison Matrix"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_PARA_COORD",
+    "value" : "Parallel Coordinates"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_MEAN_DEV",
+    "value" : "Mean & Deviation"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_BOXPLOT",
+    "value" : "Box Plot"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_NET_DIAG_POS",
+    "value" : "Network Diagram(+)"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_NET_DIAG_NEG",
+    "value" : "Network Diagram(-)"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_MATRIX_DIAGRAM",
+    "value" : "Matrix Diagram"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_FORCE_DIRECT",
+    "value" : "Force Directed Layouts"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_CLUSTER",
+    "value" : "Cluster Chart"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_CHORD",
+    "value" : "Chord Chart"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_SUNBURST",
+    "value" : "Sun Burst Chart"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_BUBBLE_MAP",
+    "value" : "Bubble Map"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_FIXED_PLACE",
+    "value" : "Fixed Placement"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_BTM_LEFT",
+    "value" : "Bottom Left"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_BTM_CENTER",
+    "value" : "Bottom Center"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_BTM_RIGHT",
+    "value" : "Bottom Right"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_TOP_LEFT",
+    "value" : "Top Left"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_TOP_CENTER",
+    "value" : "Top Center"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_TOP_RIGHT",
+    "value" : "Top Right"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_RIGHT_TOP",
+    "value" : "Right Top"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_RIGHT_CENTER",
+    "value" : "Right Center"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_RIGHT_BTM",
+    "value" : "Right Bottom"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_LEFT_TOP",
+    "value" : "Left Top"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_LEFT_CENTER",
+    "value" : "Left Center"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_LEFT_BTM",
+    "value" : "Left Bottom"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_PERCENT_GAUGE",
+    "value" : "Percent Gauge"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_CH_WINLOSE",
+    "value" : "WinLose Chart"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_COL_SYNC",
+    "value" : "Column Sync"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_UNDO",
+    "value" : "Undo"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_ALIAS",
+    "value" : "Alias"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "D_CLIPBOARD",
+    "value" : "Press Ctrl-A then Ctrl-C to copy this content to clipboard!"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "M_PIVOT_CHANGED",
+    "value" : "To apply pivot, click execute button on report toolbar!"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "B_CENTER",
+    "value" : "Center"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_BOX_COUNTS",
+    "value" : "Box Counts"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_LAYOUT_MODE",
+    "value" : "Layout Mode"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_REMOVE_CHECKED",
+    "value" : "Remove Checked"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "B_SYNTAX",
+    "value" : "Syntax"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_TEMPLATE_TYPE",
+    "value" : "Template Type"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_MIN_COLOR",
+    "value" : "Min Color"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_MID_COLOR",
+    "value" : "Mid Color"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_MAX_COLOR",
+    "value" : "Max Color"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_COLOR_CATEG",
+    "value" : "Color Category"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_MARKER_SIZE",
+    "value" : "Marker Size"
+  }, {
+    "group" : "locale_zh_TW_0017",
+    "name" : "L_MARKER_SYMBOL",
+    "value" : "Marker Symbol"
   } ]
 }

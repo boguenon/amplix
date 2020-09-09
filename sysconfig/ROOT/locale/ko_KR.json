@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
+  "attributes" : { },
+  "type" : "Unknown",
   "objinfo" : { },
   "name" : "ko_KR",
-  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/ko_KR",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
-  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "* 메져 항목을 드래그 하여 추가해 주십시오."
@@ -4485,13 +4485,13 @@
     "name" : "L_GEO_ADDRESS",
     "value" : "주소"
   }, {
-    "group" : "locale_ko_KR_0014",
+    "group" : "locale_ko_KR_0016",
     "name" : "B_LAT",
-    "value" : "경도"
-  }, {
-    "group" : "locale_ko_KR_0014",
-    "name" : "B_LNG",
     "value" : "위도"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "B_LNG",
+    "value" : "경도"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_UPD_GEOCODE",
@@ -6136,5 +6136,489 @@
     "group" : "locale_ko_KR_0015",
     "name" : "M_SELECT_ITEM",
     "value" : "계속 하려면 항목을 선택해 주십시오!"
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_CANCEL_BOBJ_SEL",
+    "value" : "비즈니스 오브젝트 선택이 취소되었습니다. 계속 분석 하시려면 비즈니스 오브젝트 선택이 필요합니다."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_SEL_BOBJ",
+    "value" : "비즈니스 오브젝트가 선택되어 있지 않습니다. 비즈니스 오브젝트를 지정하신 후 다시 시도해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0015",
+    "name" : "E_CONFIG_PIVOT",
+    "value" : "피벗 항목이 지정되어 있지 않습니다. 피벗 항목을 지정하신 후 다시 시도해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_API_VERSION",
+    "value" : "API 버전"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_CSS_URL",
+    "value" : "CSS URL"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_JS_LOADER_URL",
+    "value" : "JS 로우더 URL"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_BASE_MAP",
+    "value" : "기반맵"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_REST_APIS",
+    "value" : "REST APIs"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_ZOOM_LEVEL",
+    "value" : "줌 레벨"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_PALETTE",
+    "value" : "팔레트"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_MIN_RADIUS",
+    "value" : "최소 반경"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_MAX_RADIUS",
+    "value" : "최대 반경"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_MAP_CENTER_LAT_LNG",
+    "value" : "맵 중심점 (위도,경도)"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_BASEMAP",
+    "value" : "기반맵"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_ENABLE_3D",
+    "value" : "3D 지원"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_ALPHA_ANGLE",
+    "value" : "알파 각도"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_BETA_ANGLE",
+    "value" : "베타 각도"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_DEPTH",
+    "value" : "깊이"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_VIEW_DIST",
+    "value" : "소실 거리"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_FIELD_COLUMN",
+    "value" : "필드 컬럼"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_DATA_SERIES",
+    "value" : "데이타 시리즈"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_SVG_DRAW_OPTIONS",
+    "value" : "SVG 챠트 옵션"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_SVG_RENDERERS",
+    "value" : "SVG 렌더러"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_SVG_TYPE",
+    "value" : "SVG 유형"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_SHEET_NAME",
+    "value" : "쉬트 이름"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_UPD_DATE",
+    "value" : "수정일자"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_DATE_IMPORTED",
+    "value" : "입력 일자"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_GEOMAPPING",
+    "value" : "지오코드 맵핑"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_AES_PASS_PHRASE",
+    "value" : "AES 패스워드문구"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_OBJECT_ID",
+    "value" : "오브젝트 아이디"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_FIELDNAME",
+    "value" : "필드명"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_VALUE_CONTROLS",
+    "value" : "값 제어"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_CSS_NAME",
+    "value" : "CSS 명칭"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_STEP_INCREASE",
+    "value" : "증분치"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_SLIDER_OPTIONS",
+    "value" : "슬라이더 옵션"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_DATETIME_SETUP",
+    "value" : "날짜 시간 설정"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_PERIOD_SETUP",
+    "value" : "기간 설정"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_FILEUPLOAD_SETTINGS",
+    "value" : "파일 업로드 설정"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_UPLOAD_FILE",
+    "value" : "파일 업로드"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_SHOW_FILEHIST",
+    "value" : "파일 이력 보이기"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_SHOW_ALLFILES",
+    "value" : "모든 파일 보이기"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_MULTIPLE_FILES",
+    "value" : "복수 파일 업로드"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_VALUESET_OPTIONS",
+    "value" : "값 선택 집합 옵션"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_ENABLE_OTH_UPL",
+    "value" : "사용자 업로드 허용"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_TEMPLATE_CONTEXT",
+    "value" : "템플리트 컨텍스트"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "B_LEFT",
+    "value" : "왼쪽"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "B_RIGHT",
+    "value" : "오른쪽"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_FV_OPT",
+    "value" : "폼뷰어 옵션"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_NEW_ANAL",
+    "value" : "신규 분석"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_ANAL_GROUP",
+    "value" : "분석 카테고리"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_ANALYSIS_TYPE",
+    "value" : "분석 유형"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PIE_DASHBOARD",
+    "value" : "파이 및 데시보드 위젯"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_SCATTER_POINT",
+    "value" : "스캐터 및 포인트 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_STOCK_LOW_HIGH",
+    "value" : "주식형 고저점 분석"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_TREEMAP",
+    "value" : "트리맵"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RELATION_FINDING",
+    "value" : "상관관계 찾기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_SCI_ANAL",
+    "value" : "과학적 분석 시각화"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_STAT_VIS",
+    "value" : "통계적 데이타 시각화"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MAP_GEO",
+    "value" : "맵 및 지도"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_QUALITY_CTRL",
+    "value" : "6시그마 품질 도표"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_COLUMN",
+    "value" : "컬럼"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_LINE",
+    "value" : "라인"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_SPLINE",
+    "value" : "스플라인"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_AREA",
+    "value" : "에어리어"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_SPLINE_AREA",
+    "value" : "스플라인 에어리어"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_BAR",
+    "value" : "바챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_PIE",
+    "value" : "파이챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_DOUGHNUT",
+    "value" : "도넛챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_BUBBLE",
+    "value" : "버블챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_SCATTER",
+    "value" : "스캐터 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_TREEMAP",
+    "value" : "트리맵 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_WATERFALL",
+    "value" : "폭포수 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_SYNC_CHART",
+    "value" : "동기화된 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_RADAR",
+    "value" : "레이다"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_FUNNEL",
+    "value" : "깔때기 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_PYRAMID",
+    "value" : "피라미드 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_MAP",
+    "value" : "지도"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_COMP_MATRIX",
+    "value" : "매트릭스 비교챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_PARA_COORD",
+    "value" : "패러렐 추적챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_MEAN_DEV",
+    "value" : "평균 & 표준편차"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_BOXPLOT",
+    "value" : "박스 플롯"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_NET_DIAG_POS",
+    "value" : "네트워크 다이어그램(+)"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_NET_DIAG_NEG",
+    "value" : "네트워크 다이어그램(-)"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_MATRIX_DIAGRAM",
+    "value" : "매트릭스 다이어그램"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_FORCE_DIRECT",
+    "value" : "힘 편향 레이아웃"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_CLUSTER",
+    "value" : "클러스터 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_CHORD",
+    "value" : "Chord 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_SUNBURST",
+    "value" : "썬 버스트 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_BUBBLE_MAP",
+    "value" : "버블 맵 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_FIXED_PLACE",
+    "value" : "고정 비교 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_BTM_LEFT",
+    "value" : "아래쪽 왼편"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_BTM_CENTER",
+    "value" : "아래쪽 중간"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_BTM_RIGHT",
+    "value" : "아래쪽 오른편"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_TOP_LEFT",
+    "value" : "상단 왼편"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_TOP_CENTER",
+    "value" : "상단 중간"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_TOP_RIGHT",
+    "value" : "상단 오른편"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RIGHT_TOP",
+    "value" : "오른편 상단"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RIGHT_CENTER",
+    "value" : "오른편 중간"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RIGHT_BTM",
+    "value" : "오른편 아래"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_LEFT_TOP",
+    "value" : "왼편 상단"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_LEFT_CENTER",
+    "value" : "왼편 중간"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_LEFT_BTM",
+    "value" : "왼편 아래"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_PERCENT_GAUGE",
+    "value" : "퍼센트 게이지"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CH_WINLOSE",
+    "value" : "WinLose 챠트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_COL_SYNC",
+    "value" : "컬럼 동기화"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_UNDO",
+    "value" : "취소하기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_ALIAS",
+    "value" : "별명"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "D_CLIPBOARD",
+    "value" : "클립보드에 복사하려면 아래 내용을 클릭한 후 Ctrl-A, Ctrl-C 키를 눌러주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_PIVOT_CHANGED",
+    "value" : "변경사항을 반영하려면 툴바의 실행 버튼을 클릭해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "B_CENTER",
+    "value" : "가운데"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_BOX_COUNTS",
+    "value" : "박스 개수"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_LAYOUT_MODE",
+    "value" : "레이아웃 모드"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_REMOVE_CHECKED",
+    "value" : "체크 항목 삭제"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "B_SYNTAX",
+    "value" : "문법"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_TEMPLATE_TYPE",
+    "value" : "템플릿 유형"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MIN_COLOR",
+    "value" : "최소값 색상"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MID_COLOR",
+    "value" : "중간값 색상"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MAX_COLOR",
+    "value" : "최대값 색상"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_COLOR_CATEG",
+    "value" : "색상 카테고리"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MARKER_SIZE",
+    "value" : "마커 크기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MARKER_SYMBOL",
+    "value" : "마커 심볼"
   } ]
 }
