@@ -6552,5 +6552,9 @@
     "group" : "locale_zh_CN_0017",
     "name" : "L_MARKER_SYMBOL",
     "value" : "Marker Symbol"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "M_ERR_CHART_SEL",
+    "value" : "Chart type need to be selected!"
   } ]
 }

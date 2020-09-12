@@ -6620,5 +6620,9 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_MARKER_SYMBOL",
     "value" : "마커 심볼"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_ERR_CHART_SEL",
+    "value" : "챠트 유형을 선택해 주셔야 합니다. 챠트 마법사에서 옵션을 선택해 주십시오."
   } ]
 }
