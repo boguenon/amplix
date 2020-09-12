@@ -76,3 +76,4 @@ A;L_MAX_COLOR;Max Color
 A;L_COLOR_CATEG;Color Category
 A;L_MARKER_SIZE;Marker Size
 A;L_MARKER_SYMBOL;Marker Symbol
+A;M_ERR_CHART_SEL;Chart type need to be selected!

@@ -3985,7 +3985,8 @@ div.webix_item_tab.webix_selected {
     -o-background-size: cover;
     background-size: cover;
     font-family: inherit;
-    color: #313131;
+    /* color: #313131; */
+    color: #a5a3a3;
 }
 
 .login-ic {

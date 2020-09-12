@@ -76,3 +76,5 @@ A;L_MAX_COLOR;최대값 색상
 A;L_COLOR_CATEG;색상 카테고리
 A;L_MARKER_SIZE;마커 크기
 A;L_MARKER_SYMBOL;마커 심볼
+
+A;M_ERR_CHART_SEL;챠트 유형을 선택해 주셔야 합니다. 챠트 마법사에서 옵션을 선택해 주십시오.

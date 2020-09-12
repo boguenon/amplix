@@ -587,6 +587,14 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 	{
 		colorsel =  IG$.__chartoption.chartcolors[c_cset];
 	}
+	else
+	{
+		$.each(IG$.__chartoption.chartcolors, function(k, value) {
+			c_cset = k;
+			return false;
+		});
+		colorsel = IG$.__chartoption.chartcolors[c_cset]
+	}
 
 	geodata && $.each(geodata, function(i, p) {
 		var mkey = p.lat + "_" + p.lng,
@@ -640,7 +648,14 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 						c2 = colors[m+1],
 						cr = nr * (colors.length - 1) - m;
 						
-					c = IG$._interpolate_color(c1, c2, cr);
+					if (m == colors.length-1)
+					{
+						c = colors[colors.length-1];
+					}
+					else
+					{
+						c = IG$._interpolate_color(c1, c2, cr);
+					}
 					c.push(0.5);
 				}
 			}
