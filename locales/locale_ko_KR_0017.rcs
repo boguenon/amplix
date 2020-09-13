@@ -62,3 +62,19 @@ A;L_ALIAS;별명
 A;D_CLIPBOARD;클립보드에 복사하려면 아래 내용을 클릭한 후 Ctrl-A, Ctrl-C 키를 눌러주십시오.
 
 A;M_PIVOT_CHANGED;변경사항을 반영하려면 툴바의 실행 버튼을 클릭해 주십시오.
+A;B_CENTER;가운데
+
+A;L_BOX_COUNTS;박스 개수
+A;L_LAYOUT_MODE;레이아웃 모드
+A;L_REMOVE_CHECKED;체크 항목 삭제
+A;B_SYNTAX;문법
+A;L_TEMPLATE_TYPE;템플릿 유형
+
+A;L_MIN_COLOR;최소값 색상
+A;L_MID_COLOR;중간값 색상
+A;L_MAX_COLOR;최대값 색상
+A;L_COLOR_CATEG;색상 카테고리
+A;L_MARKER_SIZE;마커 크기
+A;L_MARKER_SYMBOL;마커 심볼
+
+A;M_ERR_CHART_SEL;챠트 유형을 선택해 주셔야 합니다. 챠트 마법사에서 옵션을 선택해 주십시오.

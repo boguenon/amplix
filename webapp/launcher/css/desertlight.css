@@ -3048,7 +3048,8 @@ a:active .webix_custom_radio {
     -o-background-size: cover;
     background-size: cover;
     font-family: inherit;
-    color: #313131;
+    /* color: #313131; */
+    color: #7e939b;
 }
 
 .login-ic {

@@ -5,217 +5,10 @@ IG$.__chartoption.chartcateg.push({
 	value: "h-stock"
 });
 
-IG$.cSET/* chartOptionSet */= "f_palette;f_showvalues;m_zoom_level;f_gauge_type;f_gauge_refresh;m_marker;m_min;m_max;s_t_f;s_t_fo;e3d_en;e3d_al;e3d_be;e3d_de;e3d_vd;edu_val1;cdata_m_tmpl;m_xypos;m_arc_basemap";
+IG$.cSET/* chartOptionSet */= "f_palette;f_showvalues;m_zoom_level;m_marker;m_min;m_max;s_t_f;s_t_fo;e3d_en;e3d_al;e3d_be;e3d_de;e3d_vd;edu_val1;cdata_m_tmpl;m_xypos;m_arc_basemap";
 
 IG$._customChartPanels = function() {
 	return [
-	// for fusion chart extension
-	{
-		layout: "anchor",
-		border: 0,
-		title: IRm$.r1("B_STYLE"), // "Styles",
-		autoScroll: true,
-		defaults: {
-			anchor: "100%"
-		},
-		initData: function() {
-			var me = this, 
-				ma = me.__main__,
-				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
-
-			if (option) {
-				me.down("[name=f_palette]").setValue(option.f_palette);
-				me.down("[name=f_showvalues]").setValue(option.f_showvalues);
-				me.down("[name=f_gauge_type]").setValue(option.f_gauge_type);
-				me.down("[name=f_gauge_refresh]").setValue(option.f_gauge_refresh);
-				me.down("[name=e3d_en]").setValue(option.e3d_en === true);
-				me.down("[name=e3d_al]").setValue(option.e3d_al || 5);
-				me.down("[name=e3d_be]").setValue(option.e3d_be || 7);
-				me.down("[name=e3d_de]").setValue(option.e3d_de || 10);
-				me.down("[name=e3d_vd]").setValue(option.e3d_vd || 5);
-			}
-		},
-		updateOptionValues: function() {
-			var me = this, 
-				ma = me.__main__,
-				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
-
-			if (option) 
-			{
-				option.f_palette = me.down("[name=f_palette]").getValue();
-				option.f_showvalues = me.down("[name=f_showvalues]").getValue();
-				option.f_gauge_type = me.down("[name=f_gauge_type]").getValue();
-				option.f_gauge_refresh = me.down("[name=f_gauge_refresh]").getValue();
-				option.e3d_en = me.down("[name=e3d_en]").getValue();
-				option.e3d_al = "" + me.down("[name=e3d_al]").getValue();
-				option.e3d_be = "" + me.down("[name=e3d_be]").getValue();
-				option.e3d_de = "" + me.down("[name=e3d_de]").getValue();
-				option.e3d_vd = "" + me.down("[name=e3d_vd]").getValue();
-			}
-		},
-		invalidateFields: function(opt) {
-			var me = this, subtype = opt.subtype;
-
-			me.down("[name=pa01]").setVisible(subtype == "gauge");
-		},
-		items: [ 
-			{
-				xtype: "fieldset",
-				title: IRm$.r1("L_STYLE_FUSION"), // "Style options (Fusion Charts)",
-				hidden: true,
-				layout: "anchor",
-
-				items: [ 
-					{
-						xtype: "combobox",
-						name: "f_palette",
-						queryMode: "local",
-						displayField: "name",
-						valueField: "value",
-						editable: false,
-						autoSelect: true,
-						fieldLabel: IRm$.r1("L_PALETTE"), // Palette",
-						store: {
-							xtype: "store",
-							fields: [ "name", "value" ],
-							data: [ 
-								{
-									name: "Set 1",
-									value: "1"
-								}, 
-								{
-									name: "Set 2",
-									value: "2"
-								}, 
-								{
-									name: "Set 3",
-									value: "3"
-								}, 
-								{
-									name: "Set 4",
-									value: "4"
-								}, 
-								{
-									name: "Set 5",
-									value: "5"
-								}, 
-								{
-									name: "Set 6",
-									value: "6"
-								} 
-							]
-						}
-					}, 
-					{
-						xtype: "checkbox",
-						name: "f_showvalues",
-						fieldLabel: IRm$.r1("L_SHOW_VALUES"), // Show values",
-						boxLabel: IRm$.r1("B_ENABLE")
-					} 
-				]
-			}, 
-			{
-				xtype: "fieldset",
-				title: IRm$.r1("L_3D_OPTIONS"), // "3D Options",
-				layout: "anchor",
-				items: [ 
-					{
-						xtype: "displayfield",
-						value: "Apply only if 3D is available on chart type"
-					}, 
-					{
-						xtype: "checkbox",
-						name: "e3d_en",
-						fieldLabel: IRm$.r1("L_ENABLE_3D"), // "Enable 3D",
-						boxLabel: IRm$.r1("B_ENABLE")
-					}, 
-					{
-						xtype: "numberfield",
-						name: "e3d_al",
-						minValue: 0,
-						maxValue: 45,
-						fieldLabel: IRm$.r1("L_ALPHA_ANGLE"), // "Alpha Angle",
-						value: 10
-					}, 
-					{
-						xtype: "numberfield",
-						name: "e3d_be",
-						minValue: 0,
-						maxValue: 45,
-						fieldLabel: IRm$.r1("L_BETA_ANGLE"), // "Beta Angle",
-						value: 25
-					}, 
-					{
-						xtype: "numberfield",
-						name: "e3d_de",
-						minValue: 0,
-						maxValue: 100,
-						fieldLabel: IRm$.r1("L_DEPTH"), // "Depth",
-						value: 70
-					}, 
-					{
-						xtype: "numberfield",
-						name: "e3d_vd",
-						minValue: 0,
-						maxValue: 100,
-						fieldLabel: IRm$.r1("L_VIEW_DIST"), // "View Distance",
-						value: 25
-					} 
-				]
-			}, 
-			{
-				xtype: "fieldset",
-				title: IRm$.r1("L_GAUGE_OPTIONS"), // "Gauge options",
-				name: "pa01",
-				layout: "anchor",
-				hidden: true,
-				items: [ 
-					{
-						xtype: "combobox",
-						name: "f_gauge_type",
-						queryMode: "local",
-						displayField: "name",
-						valueField: "value",
-						editable: false,
-						autoSelect: true,
-						fieldLabel: IRm$.r1("L_GAUGE_TYPE"), // "Gauge Type",
-						store: {
-							xtype: "store",
-							fields: [ "name", "value" ],
-							data: [ 
-								{
-									name: "Angular gauge",
-									value: "angular"
-								}, 
-								{
-									name: "Cylinder",
-									value: "cylinder"
-								}, 
-								{
-									name: "Linear gauge",
-									value: "hlinear"
-								} 
-							]
-						}
-					}, 
-					{
-						xtype: "numberfield",
-						name: "f_gauge_refresh",
-						fieldLabel: IRm$.r1("L_REFRESH_SEC"), // "Refresh second",
-						value: 2,
-						minValue: 1,
-						maxValue: 1000
-					} 
-				]
-			} 
-		],
-		listeners: {
-			afterrender: function(p) {
-				p.initData.call(p);
-			}
-		}
-	},
-	
 	// p2 panel
 	// for map chart extension
 	{
@@ -240,6 +33,7 @@ IG$._customChartPanels = function() {
 				
 				var d1 = [{name: "Select Value", value: ""}],
 					d2 = [{name: "Select Value", value: ""}],
+					d3 = [{name: "Select Value", value: ""}],
 					d1val = "", d2val = "";
 					
 				$.each(ma.sheetoption.model.rows, function(i, row) {
@@ -249,6 +43,11 @@ IG$._customChartPanels = function() {
 					});
 					
 					d2.push({
+						name: row.name,
+						value: row.uid
+					});
+					
+					d3.push({
 						name: row.name,
 						value: row.uid
 					});
@@ -282,17 +81,24 @@ IG$._customChartPanels = function() {
 				
 				me.down("[name=m_lat]").store.loadData(d1);
 				me.down("[name=m_lng]").store.loadData(d2);
+				me.down("[name=m_color_categ]").store.loadData(d3);
 				
 				me.down("[name=m_zoom_level]").setValue(option.m_zoom_level || "8");
 				me.down("[name=m_marker]").setValue(option.m_marker || "");
 				me.down("[name=m_min]").setValue(option.m_min || "1000");
 				me.down("[name=m_max]").setValue(option.m_max || "10000");
+				me.down("[name=m_min_color]").setValue(option.settings.m_min_color || "#e60000"); // red
+				me.down("[name=m_mid_color]").setValue(option.settings.m_mid_color || "#0000e6"); // blue
+				me.down("[name=m_max_color]").setValue(option.settings.m_max_color || "#00e600"); // green
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
 				me.down("[name=m_map_center]").setValue(option.settings.m_map_center || "");
 				me.down("[name=m_lat]").setValue(d1val);
 				me.down("[name=m_lng]").setValue(d2val);
 				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
+				me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
+				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
+				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -395,6 +201,9 @@ IG$._customChartPanels = function() {
 				option.m_marker = me.down("[name=m_marker]").getValue();
 				option.m_min = "" + me.down("[name=m_min]").getValue();
 				option.m_max = "" + me.down("[name=m_max]").getValue();
+				option.settings.m_min_color = me.down("[name=m_min_color]").getValue();
+				option.settings.m_mid_color = me.down("[name=m_mid_color]").getValue();
+				option.settings.m_max_color = me.down("[name=m_max_color]").getValue();
 				option.cdata_m_tmpl = me.down("[name=cdata_m_tmpl]").getValue();
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
 				option.settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
@@ -402,6 +211,10 @@ IG$._customChartPanels = function() {
 				option.settings.m_lat = me.down("[name=m_lat]").getValue();
 				option.settings.m_lng = me.down("[name=m_lng]").getValue();
 				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
+				option.settings.m_color_categ = me.down("[name=m_color_categ]").getValue();
+				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
+				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
+				
 				// arc layer selection
 				option.settings.m_arc_layers = [];
 				
@@ -521,9 +334,203 @@ IG$._customChartPanels = function() {
 											sval = tobj.getValue();
 
 										mp.down("[name=cdata_m_tmpl]").setVisible(sval == "info");
+										mp.down("[name=mf_colors]").setVisible(sval == "circle");
+										mp.down("[name=mf_color_categ_c]").setVisible(sval != "circle");
 									},
 									scope: this
 								}
+							},
+							{
+								xtype: "fieldcontainer",
+								layout: {
+									type: "vbox",
+									align: "stretch"
+								},
+								name: "mf_color_categ_c",
+								hidden: true,
+								items: [
+									{
+										xtype: "combobox",
+										fieldLabel: IRm$.r1("L_COLOR_CATEG"),
+										name: "m_color_categ",
+										store: {},
+										displayField: "name",
+										valueField: "value"
+									},
+									{
+										xtype: "combobox",
+										fieldLabel: IRm$.r1("L_MARKER_SIZE"),
+										name: "m_marker_size",
+										store: {
+											data: [
+												{name: "5", value: "5"},
+												{name: "10", value: "10"},
+												{name: "20", value: "20"},
+												{name: "25", value: "25"},
+												{name: "30", value: "30"}
+											]
+										},
+										displayField: "name",
+										valueField: "value"
+									},
+									{
+										xtype: "combobox",
+										fieldLabel: IRm$.r1("L_MARKER_SYMBOL"),
+										name: "m_marker_symbol",
+										store: {
+											data: [
+												{name: "Circle", value: ""},
+												{name: "Cross", value: "STYLE_CROSS"},
+												{name: "Diamond", value: "STYLE_DIAMOND"},
+												{name: "Square", value: "STYLE_SQUARE"},
+												{name: "Triangle", value: "STYLE_TRIANGLE"},
+												{name: "Diagnoal Cross", value: "STYLE_X"},
+											]
+										},
+										displayField: "name",
+										valueField: "value"
+									}
+								]
+							},
+							{
+								xtype: "fieldcontainer",
+								layout: {
+									type: "vbox",
+									align: "stretch"
+								},
+								name: "mf_colors",
+								hidden: true,
+								items: [
+									{
+										xtype: "fieldcontainer",
+										anchor: "100%",
+										fieldLabel: IRm$.r1("L_MIN_COLOR"),
+										layout: {
+											type: "hbox",
+											align: "stretch"
+										},
+										items: [
+											{
+												xtype: "textfield",
+												name: "m_min_color",
+												width: 120
+											},
+											{
+												xtype: "splitter"
+											},
+											{
+												xtype: "splitbutton",
+												width: 30,
+												menu: {
+													showSeparator: false,
+													items: [
+														{
+															xtype: "colorpicker",
+															listeners: {
+																select: function(cp, color) {
+																	var ctrl = this.down("[name=m_min_color]");
+																	ctrl.setValue("#" + color);
+																},
+																scope: this
+															}
+														}, 
+														"-"
+													]
+												}
+											},
+											{
+												xtype: "container",
+												flex: 1
+											}
+										]
+									},
+									{
+										xtype: "fieldcontainer",
+										anchor: "100%",
+										fieldLabel: IRm$.r1("L_MID_COLOR"),
+										layout: {
+											type: "hbox",
+											align: "stretch"
+										},
+										items: [
+											{
+												xtype: "textfield",
+												name: "m_mid_color",
+												width: 120
+											},
+											{
+												xtype: "splitter"
+											},
+											{
+												xtype: "splitbutton",
+												width: 30,
+												menu: {
+													showSeparator: false,
+													items: [
+														{
+															xtype: "colorpicker",
+															listeners: {
+																select: function(cp, color) {
+																	var ctrl = this.down("[name=m_mid_color]");
+																	ctrl.setValue("#" + color);
+																},
+																scope: this
+															}
+														}, 
+														"-"
+													]
+												}
+											},
+											{
+												xtype: "container",
+												flex: 1
+											}
+										]
+									},
+									{
+										xtype: "fieldcontainer",
+										anchor: "100%",
+										fieldLabel: IRm$.r1("L_MAX_COLOR"),
+										layout: {
+											type: "hbox",
+											align: "stretch"
+										},
+										items: [
+											{
+												xtype: "textfield",
+												name: "m_max_color",
+												width: 120
+											},
+											{
+												xtype: "splitter"
+											},
+											{
+												xtype: "splitbutton",
+												width: 30,
+												menu: {
+													showSeparator: false,
+													items: [
+														{
+															xtype: "colorpicker",
+															listeners: {
+																select: function(cp, color) {
+																	var ctrl = this.down("[name=m_max_color]");
+																	ctrl.setValue("#" + color);
+																},
+																scope: this
+															}
+														}, 
+														"-"
+													]
+												}
+											},
+											{
+												xtype: "container",
+												flex: 1
+											}
+										]
+									}
+								]
 							},
 							{
 								xtype: "numberfield",
@@ -723,66 +730,8 @@ IG$._customChartPanels = function() {
 							fields: [ "name", "value" ]
 						}
 					}
-				]	
-			}
-		],
-		listeners: {
-			afterrender: function(p) {
-				p.initData.call(p);
-			}
-		}
-	},
-	
-	// p3 panel
-	// for map chart extension
-	{
-		id: "card-8",
-		layout: "anchor",
-		border: 0,
-		title: IRm$.r1("L_STOCK_OPTIONS"), // "Stock Options",
-		defaults: {
-			anchor: "100%"
-		},
-		initData: function() {
-			var me = this,
-				ma = me.__main__,
-				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null), 
-				rows = ma.sheetoption.model.rows, 
-				s_t_f = me.down("[name=s_t_f]"), 
-				s_t_fo = me.down("[name=s_t_fo]"), 
-				rdp = [ 
-					{
-						name: "Select Item",
-						uid: ""
-					} 
-				];
-
-			if (option) {
-				for (i = 0; i < rows.length; i++) {
-					rdp.push({
-						name: rows[i].name,
-						uid: rows[i].uid
-					});
-				}
-
-				s_t_f.store.loadData(rdp);
-				s_t_f.setValue(option.s_t_f || "");
-				s_t_fo.setValue(option.s_t_fo);
-			}
-		},
-
-		updateOptionValues: function() {
-			var me = this, 
-				ma = me.__main__,
-				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null), 
-				s_t_f = me.down("[name=s_t_f]");
-
-			if (option) {
-				option.s_t_f = s_t_f.getValue();
-				option.s_t_fo = me.down("[name=s_t_fo]").getValue();
-			}
-		},
-		items: [ 
+				]
+			},
 			{
 				xtype: "fieldset",
 				title: IRm$.r1("L_TIME_FIELD"), // "Time Field",
@@ -807,7 +756,7 @@ IG$._customChartPanels = function() {
 						fieldLabel: IRm$.r1("L_DATE_FORMAT") // "Date Format"
 					} 
 				]
-			} 
+			}
 		],
 		listeners: {
 			afterrender: function(p) {

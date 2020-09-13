@@ -337,7 +337,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		esri = me.esri,
 		sop = owner.sheetoption ? owner.sheetoption.model : null,
 		cop = owner.cop, // chart option information
-		copsettings = cop.settings,
+		copsettings = cop.settings || {},
 		map = me.map_inst,
 		seriesname,
 		i, j,
@@ -351,7 +351,15 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		c_lat =  -1, c_lng = -1,
 		geodata = results ? results.geodata : null,
 		tabledata = results._tabledata,
-		rowfix = results.rowfix;
+		rowfix = results.rowfix,
+		colors = [],
+		n_lat, n_lng, bs = 0,
+		c_color_categ = -1,
+		m_marker_symbol = copsettings.m_marker_symbol || "STYLE_CIRCLE";
+		
+	copsettings.m_min_color && colors.push(copsettings.m_min_color);
+	copsettings.m_mid_color && colors.push(copsettings.m_mid_color);
+	copsettings.m_max_color && colors.push(copsettings.m_max_color);
 	
 	for (i = 1; i <= 5; ++i) {
 		styles_.push({
@@ -383,6 +391,16 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			});
 		}
 		
+		if (copsettings.m_color_categ && sop)
+		{
+			$.each(sop.rows, function(i, s) {
+				if (s.uid == copsettings.m_color_categ)
+				{
+					c_color_categ = i;
+				}
+			});
+		}
+		
 		if (c_lat > -1 && c_lng > -1)
 		{
 			geodata = results.geodata = [];
@@ -408,10 +426,19 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		{
 			for (i=0; i < geodata.length; i++)
 			{
-				minLng = (i == 0) ? Number(geodata[i].lng) : Math.min(minLng, Number(geodata[i].lng));
-				maxLng = (i == 0) ? Number(geodata[i].lng) : Math.max(maxLng, Number(geodata[i].lng));
-				minLat = (i == 0) ? Number(geodata[i].lat) : Math.min(minLat, Number(geodata[i].lat));
-				maxLat = (i == 0) ? Number(geodata[i].lat) : Math.max(maxLat, Number(geodata[i].lat));
+				n_lat = Number(geodata[i].lat);
+				n_lng = Number(geodata[i].lng);
+				
+				if (isNaN(n_lat) || isNaN(n_lng))
+				{
+					continue;
+				}
+				
+				minLng = (!bs) ? n_lng : Math.min(minLng, n_lng);
+				maxLng = (!bs) ? n_lng : Math.max(maxLng, n_lng);
+				minLat = (!bs) ? n_lat : Math.min(minLat, n_lat);
+				maxLat = (!bs) ? n_lat : Math.max(maxLat, n_lat);
+				bs = 1;
 			}
 
 			mlng = (maxLng + minLng) / 2;
@@ -444,15 +471,11 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		d,
 		dval,
 		dindex = 0,
-		nmax, nmin, pt,
-		oLabel,
+		nmax, nmin,
 		n_min = parseInt(cop.m_min) || 1000, 
-		n_max = parseInt(cop.m_max) || 10000, 
-		r,
-		marker,
-		cluster,
-		contentString,
-		gl;
+		n_max = parseInt(cop.m_max) || 10000,
+		colormap = {},
+		colorseq = 0;
 
 	if (colfix > -1 && colfix < results.colcnt)
 	{
@@ -488,7 +511,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		}
 	}
 
-	if (!me.infowindow && me._esri_version != 4)
+	if (!me.infowindow)
 	{
 		me.infowindow = new esri.InfoWindowLite(null, esri.domConstruct.create("div", null, null, map.root));
 		me.infowindow.startup();
@@ -496,6 +519,33 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 	}
 	
 	me._glayers = [];
+	
+	var ratio = 1 / (nmax - nmin);
+	if (colors && colors.length)
+	{
+		for (n=0; n < colors.length; n++)
+		{
+			colors[n] = IG$._pcolor(colors[n]);
+			colors[n].push(0.3); // alpha
+		}
+	}
+	
+	var c_cset = cop.colorset || results.c_cset,
+		colorsel,
+		m_marker_size = Number(copsettings.m_marker_size || "20");
+	
+	if (IG$.__chartoption && IG$.__chartoption.chartcolors && IG$.__chartoption.chartcolors[c_cset])
+	{
+		colorsel =  IG$.__chartoption.chartcolors[c_cset];
+	}
+	else
+	{
+		$.each(IG$.__chartoption.chartcolors, function(k, value) {
+			c_cset = k;
+			return false;
+		});
+		colorsel = IG$.__chartoption.chartcolors[c_cset]
+	}
 
 	geodata && $.each(geodata, function(i, p) {
 		var mkey = p.lat + "_" + p.lng,
@@ -503,8 +553,9 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			dval,
 			r, marker,
 			symbol,
-			g, gp;
-
+			g, gp,
+			n, nr;
+			
 		if (cop.m_marker == "circle")
 		{
 			dval = Number(p.data[colfix].code);
@@ -530,7 +581,36 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 
 			gp = esri.Graphic(marker, symbol);
 			
-			symbol.setColor(new esri.Color([255,0,0,.3]));
+			var c = [255,0,0,.3];
+			
+			if (colors.length > 0)
+			{
+				if (colors.length == 1)
+				{
+					c = colors[0];
+				}
+				else
+				{
+					nr = ratio * (dval - nmin);
+					
+					var rng = nr * (colors.length - 1),
+						m = Math.floor(rng),
+						c1 = colors[m],
+						c2 = colors[m+1],
+						cr = nr * (colors.length - 1) - m;
+					if (m == colors.length - 1)
+					{
+						c = colors[colors.length-1];
+					}
+					else
+					{
+						c = IG$._interpolate_color(c1, c2, cr);
+					}
+					c.push(0.5);
+				}
+			}
+			
+			symbol.setColor(new esri.Color(c));
 			
 			marker.m_gdata = [p];
 			g.add(gp);
@@ -547,9 +627,35 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			{
 			*/``
 			marker = new esri.SimpleMarkerSymbol(); // (oIcon, { title : '��Ŀ : ' + pt.toString() });
-			marker.setSize(20);
-			marker.setStyle(esri.SimpleMarkerSymbol.STYLE_CIRCLE);
-			marker.setColor(new esri.Color([255,0,0,0.5]));
+			marker.setSize(m_marker_size);
+			marker.setStyle(esri.SimpleMarkerSymbol[m_marker_symbol]);
+			
+			var c = [255,0,0,0.5];
+			
+			if (c_color_categ > -1)
+			{
+				var row = p.data,
+					rval = row[c_color_categ],
+					t = rval ? rval.text || rval.code : null,
+					ct;
+					
+				if (t)
+				{
+					if (colormap[t])
+					{
+						c = colormap[t];
+					}
+					else
+					{
+						ct = colorsel[colorseq % (colorsel.length-1)];
+						colormap[t] = IG$._pcolor(ct);
+						colorseq++;
+						c = colormap[t];
+					}
+				}
+			}
+			
+			marker.setColor(new esri.Color(c));
 			marker.m_gdata = [p];
 			// marker.setPosition(pt);
 			// marker.setMap(map);
@@ -612,7 +718,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			owner.procClickEvent.call(owner, sender, param);
 		});
 	});
-},
+};
 
 IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) {
 	var me = this,

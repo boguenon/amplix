@@ -62,3 +62,18 @@ A;L_ALIAS;Alias
 A;D_CLIPBOARD;Press Ctrl-A then Ctrl-C to copy this content to clipboard!
 
 A;M_PIVOT_CHANGED;To apply pivot, click execute button on report toolbar!
+A;B_CENTER;Center
+
+A;L_BOX_COUNTS;Box Counts
+A;L_LAYOUT_MODE;Layout Mode
+A;L_REMOVE_CHECKED;Remove Checked
+A;B_SYNTAX;Syntax
+A;L_TEMPLATE_TYPE;Template Type
+
+A;L_MIN_COLOR;Min Color
+A;L_MID_COLOR;Mid Color
+A;L_MAX_COLOR;Max Color
+A;L_COLOR_CATEG;Color Category
+A;L_MARKER_SIZE;Marker Size
+A;L_MARKER_SYMBOL;Marker Symbol
+A;M_ERR_CHART_SEL;Chart type need to be selected!
