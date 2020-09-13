@@ -19,7 +19,7 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (12, 2, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (13, 3, 'sapbw','sapbw','SAP BW Data','sapbw',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (14, 3, 'essbase','essbase','Oralce Hyperion Essbase','essbase',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (15, 1, 'jdbcodbc','sun.jdbc.odbc.JdbcOdbcDriver','JDBC ODBC Bridge','jdbc:odbc:<alias>',1);
-INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (16, 5, 'hive','org.apache.hadoop.hive.jdbc.HiveDriver','Hive2','jdbc:hive://<server>:<10000>/default',1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (16, 5, 'hive','org.apache.hive.jdbc.HiveDriver','Hive2','jdbc:hive2://<server>:<10000>',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (17, 5, 'mongodb','-','MongoDB NoSQL Database','-',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (18, 4, 'apacheembd','org.apache.derby.jdbc.EmbeddedDriver','Apache Derby Embedded','jdbc:derby:<database>[;create=true]',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (19, 4, 'h2','org.h2.Driver','H2 Database','jdbc:h2:file:~/<location>',1);
@@ -27,4 +27,7 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (20, 3, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (21, 2, 'amplix','com.amplix.connector.metadb.MetaDBJdbcDriver','amplix meta readonly','jdbc:amplix:@:service_name',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (22, 2, 'soap','soap','SOAP WebService','soap',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (23, 2, 'rest','rest','REST WebService','rest',1);
-
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (24, 5, 'elasticsearch', '-', 'ElasticSearch', '-', 1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (25, 1, 'cubrid', 'cubrid.jdbc.driver.CUBRIDDriver', 'CUBRID', 'jdbc:cubrid:<server>:<30000>:<dbname>:<public>::', 1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (26, 5, 'impala','com.cloudera.impala.jdbc.Driver','Impala','jdbc:impala://<server>:<21050>',1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (27, 2, 'amplix_h2','com.amplix.connector.MemoryDBJdbcDriver','AMPLIX InMemoryDB','jdbc:amplix_memdb:<dbname>',1);

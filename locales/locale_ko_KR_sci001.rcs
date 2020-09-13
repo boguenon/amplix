@@ -1,0 +1,10 @@
+A;L_META_UPGRADE;메타 버전 업그레이드
+A;T_MIG_META_UPGRADE;메타 버전 업그레이드
+A;L_SCI;데이타 분석 전문가
+A;L_SCI_MANAGER;데이타 분석전문가 서버
+A;L_SCI_DATA;데이타 퍼블리싱
+A;L_SCI_USER;데이타 전문가 모듈
+A;L_SCI_SERVERS;분석 서버
+A;L_SCI_DATASET;나의 데이타 집합
+A;I_SCI_DATASET;데이타 집합 동기화
+A;I_SCI_PUB_DATASET;퍼블릭 데이타셋

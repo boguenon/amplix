@@ -1,0 +1,10 @@
+A;L_CHART_SEL_RECT;Rectangle selection
+A;L_CHART_SEL_POLY;Polygon selection
+A;L_CHART_SEL_HOR;Horizontal selection
+A;L_CHART_SEL_VER;Vertical selection
+A;L_CHART_SEL_KEEP;Keep previous selection
+A;L_CHART_SEL_CLEAR;Clear selection
+A;L_HOME_APP_TITLE;<h1>amplix Business Analytics for your business.</h1>
+A;L_HOME_APP_DESC;Create scientific reports using amplixbi.com.<br/>amplix data science tool helps to make statistical analysis with easy guided user interfaces.
+A;L_CHART_Z_A;Area zooming
+A;L_CHART_Z_B;Restore area zooming

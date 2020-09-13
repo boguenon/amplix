@@ -1,0 +1,85 @@
+A;M_SUC_TMPL;Template already have all values.
+A;L_SERVER_MESSAGE;Server Messages
+A;E_FILTER_SCRIPT;Filter processing script error.
+A;E_LOCK_JOB;Currently processing another job. Please wait while complete.
+A;E_SEL_DC;Select Data Connector to continue!
+A;E_CHECK_DTYPE;Check data type to staging database.
+A;E_SEL_ITEM_TO_ADD;Select item to add on the folder.
+A;E_DS_NOT_ALLOW_UPLOAD;The datasource does not allowed to upload file.
+A;E_SAVE_CONTENT;Save content to continue.
+A;E_INVALID_REV;Not valid revision number.
+A;E_PRIV_ERR;Privilege Error on content:
+A;E_REMOVE_SELF;You cannot remove yourself.
+A;E_FOLDER_MOVE_SINGLE;Only one sub folder content can be moved.
+A;E_CHART_DRAWING;Error on chart drawing.
+A;E_CHART_LIB_LOADING;Error while loading chart library.
+A;E_CLICK_EVENT_HANDLER;Error on click event handler: 
+A;E_PROMPT_CONTROL_DEF;Error on prompt control definition.
+A;E_SEL_TGT_ITEM;Select target item to continue.
+A;E_SEL_TGT;Select Target Item.
+A;M_CONFIRM_DELETE;Click Yes to confirm to delete the item
+A;M_CONFIRM_COMPILE;Are you sure to compile the content?
+A;L_T_RECENT_VISIT;Recent visit and Favorites
+A;L_PEOPLE;People
+A;L_CLICK_STYLE_TO_EDIT;Click Style Item to Edit
+A;L_VIEW_NAME;View Name
+A;L_SQL_QUERY;SQL Query
+A;L_SRC_TABLES;Source Tables
+A;L_FIELD_MAPPING;Field Mapping
+A;B_LENGTH;Length
+A;L_TGT_TBL_NAME;Target Table Name
+A;T_BO_EXTRACT_META;Extract Meta
+A;B_DATA;Data
+A;L_SAVE_FIELD;Save Field
+A;B_EXAMPLE;Example
+A;L_DATE_FORMAT_EX;Date Format Example
+A;L_START_MIN;Start Minimum
+A;L_END_MAX;End Maximum
+A;L_STEP_INT;Step Interval
+A;L_UNDER_MIN;Under Minimum
+A;L_OVER_MAX;Over Maximum
+A;L_LABEL_TEXT;Label Text
+A;L_NUMERIC_FORMAT;Numeric Format
+A;L_LINK_OPTION;Link Options
+A;L_DISP_NAME;Display Name
+A;L_TARGET_REPORT;Target Report
+A;L_PARENT_CHILD_OPTIONS;Parent Child Options
+A;L_CALC_IN_RESULT;Calculate in Result
+A;L_SHOW_HTML;Show HTML
+A;L_USE_TEMP;Use Temporary
+A;L_USE_STG;Use Staging DB
+A;L_BB_SG_RDR;Row Data to Redraw
+A;L_USE_EXPRESSION;Use Expression
+A;L_DATE_FORMATTING;Date Formatting
+A;L_SQL_FUNC;SQL Function
+A;L_ENABLE_OTH_UPLOAD;Enabled (Allow other user upload file)
+A;L_ALLOW_MULTI_FILE;Allow Multiple File Upload
+A;L_HORIZONTAL;Horizontal
+A;L_IGN_BLK_VAL;Ignore Blank Value
+A;L_DT_TYPE_FIELD;Date Type Field
+A;L_SET_DATE;Set Date
+A;L_SYNC_ROWS;Synchronize Rows
+A;B_READY;Ready
+A;B_CACHED;Cached
+A;L_SEL_DUTY;Select Role
+A;B_EMAIL;Email
+A;L_AUD_USER;Audit Users
+A;L_AUD_USER_FLT;User Search Criteria
+A;L_AUD_USER_GRID;Audit User Lists
+A;L_LAST_ACC_DT;Last Access Date
+A;L_LAST_ACCESSED;Last Accessed
+
+A;L_FIELD_VALUE;Field Value
+A;L_ENCODING;Encoding
+A;L_SHEETNAME;Sheet Name
+A;L_HEADER_NAME;Header Name
+A;L_SIZE;Size
+A;L_ADD_SYS_KEY;Add System Key
+A;L_CRT_TBL;Create Table
+A;L_SCRIPT;Script
+A;L_COLUMN_PROP;Column Property
+A;L_DATA_SIZE;Data Size
+A;L_IS_KEY;Is Key
+A;L_LD_INTO_TBL;Load into Table
+A;L_CLR_TBL;Clear Table
+A;L_FILE_UPLOAD_HIST;File Upload History

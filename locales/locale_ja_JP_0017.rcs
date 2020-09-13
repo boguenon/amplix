@@ -1,0 +1,79 @@
+A;L_PIE_DASHBOARD;Pie and Dashboard
+A;L_SCATTER_POINT;Scatter and Point
+A;L_STOCK_LOW_HIGH;Stock and Low High Analysis
+A;L_TREEMAP;Tree Map
+A;L_RELATION_FINDING;Relation Finding
+A;L_SCI_ANAL;Scientific Analysis
+A;L_STAT_VIS;Statistical Data Visualization
+A;L_MAP_GEO;Map and Geographical
+A;L_QUALITY_CTRL;Quality Control
+
+A;L_CH_COLUMN;Column
+A;L_CH_LINE;Line
+A;L_CH_SPLINE;Spline
+A;L_CH_AREA;Area
+A;L_CH_SPLINE_AREA;Spline Area
+A;L_CH_BAR;Bar
+A;L_CH_PIE;Pie
+A;L_CH_DOUGHNUT;Doughnut
+A;L_CH_BUBBLE;Bubble
+A;L_CH_SCATTER;Scatter
+A;L_CH_TREEMAP;Treemap
+A;L_CH_WATERFALL;WaterFall
+A;L_CH_SYNC_CHART;Synchronized Chart
+A;L_CH_RADAR;Radar
+A;L_CH_FUNNEL;Funnel
+A;L_CH_PYRAMID;Pyramid
+A;L_CH_MAP;Map
+A;L_CH_COMP_MATRIX;Comparison Matrix
+A;L_CH_PARA_COORD;Parallel Coordinates
+A;L_CH_MEAN_DEV;Mean & Deviation
+A;L_CH_BOXPLOT;Box Plot
+A;L_CH_NET_DIAG_POS;Network Diagram(+)
+A;L_CH_NET_DIAG_NEG;Network Diagram(-)
+A;L_CH_MATRIX_DIAGRAM;Matrix Diagram
+A;L_CH_FORCE_DIRECT;Force Directed Layouts
+A;L_CH_CLUSTER;Cluster Chart
+A;L_CH_CHORD;Chord Chart
+A;L_CH_SUNBURST;Sun Burst Chart
+A;L_CH_BUBBLE_MAP;Bubble Map
+A;L_CH_FIXED_PLACE;Fixed Placement
+
+A;L_BTM_LEFT;Bottom Left
+A;L_BTM_CENTER;Bottom Center
+A;L_BTM_RIGHT;Bottom Right
+A;L_TOP_LEFT;Top Left
+A;L_TOP_CENTER;Top Center
+A;L_TOP_RIGHT;Top Right
+A;L_RIGHT_TOP;Right Top
+A;L_RIGHT_CENTER;Right Center
+A;L_RIGHT_BTM;Right Bottom
+A;L_LEFT_TOP;Left Top
+A;L_LEFT_CENTER;Left Center
+A;L_LEFT_BTM;Left Bottom
+
+A;L_CH_PERCENT_GAUGE;Percent Gauge
+A;L_CH_WINLOSE;WinLose Chart
+
+A;L_COL_SYNC;Column Sync
+A;L_UNDO;Undo
+A;L_ALIAS;Alias
+
+A;D_CLIPBOARD;Press Ctrl-A then Ctrl-C to copy this content to clipboard!
+
+A;M_PIVOT_CHANGED;To apply pivot, click execute button on report toolbar!
+A;B_CENTER;Center
+
+A;L_BOX_COUNTS;Box Counts
+A;L_LAYOUT_MODE;Layout Mode
+A;L_REMOVE_CHECKED;Remove Checked
+A;B_SYNTAX;Syntax
+A;L_TEMPLATE_TYPE;Template Type
+
+A;L_MIN_COLOR;Min Color
+A;L_MID_COLOR;Mid Color
+A;L_MAX_COLOR;Max Color
+A;L_COLOR_CATEG;Color Category
+A;L_MARKER_SIZE;Marker Size
+A;L_MARKER_SYMBOL;Marker Symbol
+A;M_ERR_CHART_SEL;Chart type need to be selected!

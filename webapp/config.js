@@ -10,11 +10,6 @@ var ig$ = {
     intropage: "navi_intro",
     timer_rsn: 300000,
     timer_ping: 0,
-    basemap: "googlemap",
-//    appInfo: {
-//        appversion:'1.2',
-//        apprelease:'1.2.060'
-//    },
     isdev: true,
     vmode: 0,
     _fix_split: 0,
@@ -68,20 +63,19 @@ var ig$ = {
         {code: "ja_JP", disp: "Japan", l1: "ユーザーID", l2: "パスワード", l3: "ログイン"},
 		{code: "ko_KR", disp: "Korean", l1: "사용자 아이디", l2: "패스워드", l3: "로그인"}
     ],
-    sheet_toolbar: [
-        {name: "Custom1", key: "custom1", label: "Custom1", cls: "igc-btn-text", handler: function(view, key) {
-            window._btn_handler(view, key);
-        }},
-        {name: "Custom2", key: "custom2", label: "Custom2", cls: "igc-btn-text", handler: function(view, key) {
-            window._btn_handler(view, key);
-        }}
+    themes: [
+    	{code: "", disp: "Basic"},
+    	{code: "DesertLight", disp: "Desert Light"},
+    	{code: "DarkBrown", disp: "Dark Brown"}
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202003052311",
-		web_revision: "1071-3.5.67-233-g93140c71"
-	}
-    // hide_report_help: true
+		date: "202009130013",
+		appversion: "",
+		apprelease: "",
+		web_revision: "1543-4.13-470-gcf23374e"
+	},
+	$l_:0
 };
 
 // ig$.theme_id = "test1";

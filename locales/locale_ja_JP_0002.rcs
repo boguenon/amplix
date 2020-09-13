@@ -1,0 +1,38 @@
+A;B_PRIV_FLD;Private Folders
+A;B_PUB_FLD;My Team Folders
+A;L_FLT_VAL_SEL;Value Selection
+A;L_FLT_CASE_INS;Case Insensitive
+A;L_FLT_POP_DLG;Popup Window Selector
+A;L_FLT_VMODE;Value Mode
+A;L_FLT_RNG_VAL;Range Values
+A;L_FLT_RNG_TXT;Range Display Text
+A;L_FLT_NEC;Required Field
+A;L_FLT_SEL_ALL;Show Select All
+A;L_FLT_SEL_TXT;Select All Text
+A;L_FLT_HIE_FLT;Hierarchy Filters
+A;L_FLT_FMT_VAL;Value Format String
+A;L_FLT_U_PROMPT;Use as Prompt
+A;L_FLT_TAB_PNL;Tab Panel to Control
+A;L_FLT_LOOKUP;Code Mapping Field
+A;L_FLT_DEF_VAL;Default Values
+A;L_FLT_START_ROW;Start Row and First Column
+A;L_FLT_MERGE_LEFT;Title Merge on Left
+A;L_FLT_AUTO_WIDTH;Auto Width
+A;L_FLT_COLSPAN;Column Spans to
+A;L_FLT_CHECK_LAYOUT;Check button Layout
+A;L_FLT_DT_SEL_TYP;Date Selection Type
+A;L_FLT_YEAR_FR;Limits Year From
+A;L_FLT_YEAR_TO;Limits Year To
+A;L_FLT_SHOW_DT_SEL;Show Date Range Combo
+A;L_FLT_DT_START;Start Date
+A;L_FLT_DT_END;End Date
+A;L_FLT_INV_JS;External JS Validator
+A;L_FLT_SHOW_WHEN;Hide Condition
+A;L_FLT_SHOW_WHEN_VALUES;Show Values On
+A;L_FLT_VS_EN;Show ValueSet Group
+A;L_FLT_VS_TITLE;ValueSet Title
+A;L_FLT_VS_FORCE;Select Group OnLoad
+A;L_FLT_VS_EXP;Collapse/Expand Filters
+A;L_BTN_VALUESET;Value Set Group
+A;L_EDIT_META;Edit MetaContent
+A;L_RENDER_BY_MEA;Render by Measures

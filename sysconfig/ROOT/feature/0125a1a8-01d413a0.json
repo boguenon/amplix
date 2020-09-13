@@ -1,12 +1,12 @@
 {
   "meta_type" : "features",
-  "objinfo" : { },
+  "attributes" : { },
   "type" : "Unknown",
+  "objinfo" : { },
   "uid" : "0125a1a8-01d413a0",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
-  "attributes" : { },
   "features" : [ {
     "name" : "Navigator",
     "cls" : "ig_nav",
@@ -14,33 +14,57 @@
     "show" : true,
     "hide" : false
   }, {
+    "name" : "Report Menu",
+    "cls" : "ig_report_menu",
+    "clspath" : "ig_report_menu",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "New Report",
+    "cls" : "ig_menu_rpt",
+    "clspath" : "ig_report_menu-ig_menu_rpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "New SQL Report",
+    "cls" : "ig_menu_sql_rpt",
+    "clspath" : "ig_report_menu-ig_menu_sql_rpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "New Report",
+    "cls" : "ig_menu_formbuilder",
+    "clspath" : "ig_report_menu-ig_menu_formbuilder",
+    "show" : true,
+    "hide" : false
+  }, {
     "name" : "Analysis",
-    "cls" : "ig_anl",
-    "clspath" : "ig_anl",
+    "cls" : "ig_anal",
+    "clspath" : "ig_anal",
     "show" : true,
     "hide" : false
   }, {
     "name" : "Database Connection",
     "cls" : "ig_dbcon",
-    "clspath" : "ig_anl-ig_dbcon",
+    "clspath" : "ig_anal-ig_dbcon",
     "show" : true,
     "hide" : false
   }, {
     "name" : "Variables",
     "cls" : "ig_var",
-    "clspath" : "ig_anl-ig_var",
+    "clspath" : "ig_anal-ig_var",
     "show" : true,
     "hide" : false
   }, {
     "name" : "System Lookup",
     "cls" : "ig_lookup",
-    "clspath" : "ig_anl-ig_lookup",
+    "clspath" : "ig_anal-ig_lookup",
     "show" : true,
     "hide" : false
   }, {
-    "name" : "Dashboard Mgr",
+    "name" : "Form Builder Mgr",
     "cls" : "ig_dbd",
-    "clspath" : "ig_anl-ig_dbd",
+    "clspath" : "ig_anal-ig_dbd",
     "show" : true,
     "hide" : false
   }, {
@@ -224,6 +248,12 @@
     "show" : true,
     "hide" : false
   }, {
+    "name" : "Create Workspace",
+    "cls" : "ig_n_cw",
+    "clspath" : "ig_nav-ig_n_cw",
+    "show" : true,
+    "hide" : false
+  }, {
     "name" : "List",
     "cls" : "ig_n_lst",
     "clspath" : "ig_nav-ig_n_lst",
@@ -278,33 +308,9 @@
     "show" : true,
     "hide" : false
   }, {
-    "name" : "Workspace",
-    "cls" : "ig_n_cw",
-    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_cw",
-    "show" : true,
-    "hide" : false
-  }, {
     "name" : "Folder",
     "cls" : "ig_n_f_f",
     "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_f_f",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "Cube Analysis",
-    "cls" : "ig_n_cb",
-    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_cb",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "ROLAP Cube",
-    "cls" : "ig_n_c_rc",
-    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_cb-ig_n_c_rc",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "BigData Cube",
-    "cls" : "ig_n_c_b",
-    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_cb-ig_n_c_b",
     "show" : true,
     "hide" : false
   }, {
@@ -314,13 +320,25 @@
     "show" : true,
     "hide" : false
   }, {
+    "name" : "Business Object",
+    "cls" : "ig_n_bobj",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_bobj",
+    "show" : true,
+    "hide" : false
+  }, {
     "name" : "Report",
     "cls" : "ig_n_rpt",
     "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_rpt",
     "show" : true,
     "hide" : false
   }, {
-    "name" : "Dashboard",
+    "name" : "SQL Report",
+    "cls" : "ig_n_sqlrpt",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_sqlrpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Form Builder",
     "cls" : "ig_n_dbd",
     "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_dbd",
     "show" : true,
@@ -530,6 +548,12 @@
     "show" : true,
     "hide" : false
   }, {
+    "name" : "view_analysis",
+    "cls" : "ig_r_anal",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_anal",
+    "show" : true,
+    "hide" : false
+  }, {
     "name" : "view_r",
     "cls" : "ig_r_r",
     "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_r",
@@ -623,6 +647,12 @@
     "name" : "basic statistics",
     "cls" : "ig_r_stat",
     "clspath" : "ig_report-ig_r_tbar-ig_r_tools-ig_r_stat",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "analysis menus",
+    "cls" : "ig_anal_menu",
+    "clspath" : "ig_report-ig_r_tbar-ig_anal_menu",
     "show" : true,
     "hide" : false
   }, {

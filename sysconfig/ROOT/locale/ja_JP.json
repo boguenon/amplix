@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
+  "attributes" : { },
+  "type" : "Unknown",
   "objinfo" : { },
   "name" : "ja_JP",
-  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/ja_JP",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
-  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "ここで*ドラッグアイテムこのメジャ?を定義します"
@@ -345,8 +345,9 @@
     "name" : "L_LONGITUDE",
     "value" : "?度"
   }, {
+    "group" : "locale_ja_JP_0010",
     "name" : "B_PATH",
-    "value" : "パス"
+    "value" : "Path"
   }, {
     "name" : "L_C_DIR",
     "value" : "方向を計算します"
@@ -369,8 +370,9 @@
     "name" : "L_R_FIXSIZE",
     "value" : "固定サイズ"
   }, {
+    "group" : "locale_ja_JP_0014",
     "name" : "B_SHARE",
-    "value" : "シェア"
+    "value" : "Share"
   }, {
     "name" : "I_RELATION",
     "value" : "?係"
@@ -600,8 +602,9 @@
     "name" : "D_DASHBOARD",
     "value" : "ダッシュボ?ド"
   }, {
+    "group" : "locale_ja_JP_0004",
     "name" : "L_DASHBOARD",
-    "value" : "ダッシュボ?ド"
+    "value" : "FormBuilder"
   }, {
     "name" : "T_DASHBOARD",
     "value" : "ダッシュボ?ド"
@@ -1638,8 +1641,9 @@
     "name" : "L_LAYOUT_VERTICAL",
     "value" : "垂直"
   }, {
+    "group" : "locale_ja_JP_0015",
     "name" : "L_HORIZONTAL",
-    "value" : "水平の"
+    "value" : "Horizontal"
   }, {
     "name" : "L_LAYOUT_HORIZONTAL",
     "value" : "水平の"
@@ -3210,8 +3214,9 @@
     "name" : "L_SYS_BACKSCH",
     "value" : "バックグラウンドスケジュール"
   }, {
+    "group" : "locale_ja_JP_0014",
     "name" : "B_SEQUENCE",
-    "value" : "注文"
+    "value" : "Sequence"
   }, {
     "name" : "L_SUBSCRIBE",
     "value" : "申し込む"
@@ -3603,5 +3608,2953 @@
     "group" : "locale_ja_JP_0001",
     "name" : "L_ASTEP_2",
     "value" : "Statistics Option Step 2"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "B_PRIV_FLD",
+    "value" : "Private Folders"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "B_PUB_FLD",
+    "value" : "My Team Folders"
+  }, {
+    "group" : "locale_ja_JP_0001",
+    "name" : "L_BASE_CLASS",
+    "value" : "Base Class"
+  }, {
+    "group" : "locale_ja_JP_0001",
+    "name" : "L_LOGIC_TYPE",
+    "value" : "Select Logic Type"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_VAL_SEL",
+    "value" : "Value Selection"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_CASE_INS",
+    "value" : "Case Insensitive"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_POP_DLG",
+    "value" : "Popup Window Selector"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_VMODE",
+    "value" : "Value Mode"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_RNG_VAL",
+    "value" : "Range Values"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_RNG_TXT",
+    "value" : "Range Display Text"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_NEC",
+    "value" : "Required Field"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_SEL_ALL",
+    "value" : "Show Select All"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_SEL_TXT",
+    "value" : "Select All Text"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_HIE_FLT",
+    "value" : "Hierarchy Filters"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_FMT_VAL",
+    "value" : "Value Format String"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_U_PROMPT",
+    "value" : "Use as Prompt"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_TAB_PNL",
+    "value" : "Tab Panel to Control"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_LOOKUP",
+    "value" : "Code Mapping Field"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_DEF_VAL",
+    "value" : "Default Values"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_START_ROW",
+    "value" : "Start Row and First Column"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_MERGE_LEFT",
+    "value" : "Title Merge on Left"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_AUTO_WIDTH",
+    "value" : "Auto Width"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_COLSPAN",
+    "value" : "Column Spans to"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_CHECK_LAYOUT",
+    "value" : "Check button Layout"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_DT_SEL_TYP",
+    "value" : "Date Selection Type"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_YEAR_FR",
+    "value" : "Limits Year From"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_YEAR_TO",
+    "value" : "Limits Year To"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_SHOW_DT_SEL",
+    "value" : "Show Date Range Combo"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_DT_START",
+    "value" : "Start Date"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_DT_END",
+    "value" : "End Date"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_INV_JS",
+    "value" : "External JS Validator"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_SHOW_WHEN",
+    "value" : "Hide Condition"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_SHOW_WHEN_VALUES",
+    "value" : "Show Values On"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_VS_EN",
+    "value" : "Show ValueSet Group"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_VS_TITLE",
+    "value" : "ValueSet Title"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_VS_FORCE",
+    "value" : "Select Group OnLoad"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_FLT_VS_EXP",
+    "value" : "Collapse/Expand Filters"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_BTN_VALUESET",
+    "value" : "Value Set Group"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_EDIT_META",
+    "value" : "Edit MetaContent"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "L_BORDER_INNER",
+    "value" : "Inner Borders"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "L_BORDER_OUTER",
+    "value" : "Outer Borders"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "L_BORDER_LEFT",
+    "value" : "Border Left"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "L_BORDER_TOP",
+    "value" : "Border Top"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "B_SET_STYLE",
+    "value" : "Set Style"
+  }, {
+    "group" : "locale_ja_JP_0003",
+    "name" : "L_FETCH_MODE",
+    "value" : "Fetch Mode"
+  }, {
+    "group" : "locale_ja_JP_0002",
+    "name" : "L_RENDER_BY_MEA",
+    "value" : "Render by Measures"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "L_FETCH_APPPAGE",
+    "value" : "Paged Fetch"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "L_FETCH_DBPAGE",
+    "value" : "Database Page"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "L_P_mapping",
+    "value" : "Parameter Mapping"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "T_HIERARCHY",
+    "value" : "Hierarchy"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "B_FORMULA",
+    "value" : "Formula"
+  }, {
+    "group" : "locale_ja_JP_0004",
+    "name" : "L_RUN_RPT_FIRST",
+    "value" : "Run Report first to download file!"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "B_MM",
+    "value" : "Month"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_M_GROUP",
+    "value" : "Measure Group Combobox"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_FLT_PROPAGATION",
+    "value" : "Propagate Iniitialize"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_RENAME_TOOL",
+    "value" : "Rename Tool"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_SCREEN_CAPTURE",
+    "value" : "Screen Capture"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_F_SQL_EXISTS",
+    "value" : "SQL Exists operator (EXISTS)"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_PARENT_CHILD_NODES",
+    "value" : "Parent Child Hierarchy"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_PARENT_METRIC",
+    "value" : "Parent Dimension"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_PRIOR_START_WITH",
+    "value" : "Prior Start With"
+  }, {
+    "group" : "locale_ja_JP_0005",
+    "name" : "L_DISPLAY_OPTION",
+    "value" : "Display Option"
+  }, {
+    "group" : "locale_ja_JP_0006",
+    "name" : "L_REG_TEMPLATE",
+    "value" : "Register as Templates"
+  }, {
+    "group" : "locale_ja_JP_0006",
+    "name" : "L_C_REGTMPL",
+    "value" : "Do you want to register this report as Template?"
+  }, {
+    "group" : "locale_ja_JP_0006",
+    "name" : "L_T_TMPL_SEL",
+    "value" : "Template Selection"
+  }, {
+    "group" : "locale_ja_JP_0006",
+    "name" : "L_AUTO_REFRESH",
+    "value" : "Auto Refresh"
+  }, {
+    "group" : "locale_ja_JP_0006",
+    "name" : "L_REFRESH_CYCLE",
+    "value" : "Refresh Cycle(Sec)"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_SQL_REPORT",
+    "value" : "SQL Report"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "D_SQLREPORT",
+    "value" : "SQL Report"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_CON_STR",
+    "value" : "Connection Param"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "T_BURST_CONFIG",
+    "value" : "Burst Options"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_TB_PIVOT",
+    "value" : "Pivot Button"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_BURST_EMAIL",
+    "value" : "Email Field"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_SUB_QUERY",
+    "value" : "Sub SQL Query"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_SHOW_DETAIL",
+    "value" : "Show Detail"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "B_DETAIL",
+    "value" : "Detail"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_FLT_COND",
+    "value" : "Show only.."
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_KEYWORD",
+    "value" : "Keyword"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_QUICK_SELECT",
+    "value" : "----- Quick Select -----"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_ANAL_ITEMS",
+    "value" : "Analysis Items"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "B_ALL",
+    "value" : "All"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_FLT_DATE_PERIOD",
+    "value" : "Date Period"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_MINIMIZE",
+    "value" : "Minimize"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "L_MAXIMIZE",
+    "value" : "Maximize"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "B_NO_PIVOT",
+    "value" : "Need Pivot Fields"
+  }, {
+    "group" : "locale_ja_JP_0007",
+    "name" : "B_PIVOT_CONFIG",
+    "value" : "Click to config Pivot!"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_CLEAR_FORMULA",
+    "value" : "Clear Formula"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "B_MORE",
+    "value" : "More"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "F_STDEV",
+    "value" : "Standard Deviation"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "F_STDEVP",
+    "value" : "Standard Deviation P"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "F_PERCENTILE",
+    "value" : "Percentile"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "F_PERCENTILE_EXE",
+    "value" : "Percentile Excel"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_FORMULA_GROUP",
+    "value" : "Formula Group"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_EXPRESSION",
+    "value" : "Expression"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_USE_COL_FORMAT",
+    "value" : "Use Column Format"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_DISP_TEMPLATE",
+    "value" : "Display Template"
+  }, {
+    "group" : "locale_ja_JP_0009",
+    "name" : "L_C_EXCEL_CSV",
+    "value" : "Data count exceeds for Excel output. Would you download as CSV file?"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_SELECT_FIELD",
+    "value" : "Check select field to continue!"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_AU_APPLY_APPEND",
+    "value" : "Append Only"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_READ",
+    "value" : "Read"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_WRITE",
+    "value" : "Writable"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "E_PERMISSION",
+    "value" : "Error on permission of the item."
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_ADVANCED",
+    "value" : "Advanced Options"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "D_DATASET",
+    "value" : "DataSet"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_TABLE_NAME",
+    "value" : "Table name"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_FIELD_NAME",
+    "value" : "Field name"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_REFRESH",
+    "value" : "Refresh"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "B_ITEMNAME",
+    "value" : "Item name"
+  }, {
+    "group" : "locale_ja_JP_0008",
+    "name" : "L_C_REMSQL",
+    "value" : "Remove this sql can cause sheets that reconfiguration. Click confirm to continue."
+  }, {
+    "group" : "locale_ja_JP_0008",
+    "name" : "B_EDIT",
+    "value" : "Edit"
+  }, {
+    "group" : "locale_ja_JP_0008",
+    "name" : "L_C_SQL_NON",
+    "value" : "Need at least one sql and could not delete this one."
+  }, {
+    "group" : "locale_ja_JP_0008",
+    "name" : "L_C_SWAPSQL",
+    "value" : "Changing SQL need to reconfigure your pivot items. Click confirm to continue."
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "T_SEL_DB",
+    "value" : "Select Database Connector"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_REVOKE_READ",
+    "value" : "Revoke Read"
+  }, {
+    "group" : "locale_ja_JP_0010",
+    "name" : "L_REVOKE_WRITE",
+    "value" : "Remoke Write"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_TODAY",
+    "value" : "Today"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_1D",
+    "value" : "Last 1 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_2D",
+    "value" : "Last 2 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_3D",
+    "value" : "Last 3 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_4D",
+    "value" : "Last 4 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_5D",
+    "value" : "Last 5 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_6D",
+    "value" : "Last 6 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_7D",
+    "value" : "Last 7 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_8D",
+    "value" : "Last 8 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_10D",
+    "value" : "Last 10 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_FROM_MON",
+    "value" : "From Monday"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_15D",
+    "value" : "Last 15 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_30D",
+    "value" : "Last 30 days"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_FROM_1ST_MON",
+    "value" : "From 1st month"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_1M",
+    "value" : "Last 1 month"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_2M",
+    "value" : "Last 2 month"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_6M",
+    "value" : "Last 6 month"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_1Y",
+    "value" : "Last 1 year"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_2Y",
+    "value" : "Last 2 year"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_3Y",
+    "value" : "Last 3 year"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_4Y",
+    "value" : "Last 4 year"
+  }, {
+    "group" : "locale_ja_JP_0011",
+    "name" : "L_LAST_5Y",
+    "value" : "Last 5 year"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_SEL_RECT",
+    "value" : "Rectangle selection"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_SEL_POLY",
+    "value" : "Polygon selection"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_SEL_HOR",
+    "value" : "Horizontal selection"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_SEL_VER",
+    "value" : "Vertical selection"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_SEL_KEEP",
+    "value" : "Keep previous selection"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_SEL_CLEAR",
+    "value" : "Clear selection"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_HOME_APP_TITLE",
+    "value" : "<h1>amplix Business Analytics for your business.</h1>"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_HOME_APP_DESC",
+    "value" : "Create scientific reports using amplixbi.com.<br/>amplix data science tool helps to make statistical analysis with easy guided user interfaces."
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "L_META_UPGRADE",
+    "value" : "Meta Upgrade"
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "T_MIG_META_UPGRADE",
+    "value" : "Meta Version Upgrade"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REL_SCHEDULE",
+    "value" : "Related Schedules"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_JOB_HISTORY",
+    "value" : "Job History"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SCH_NAME",
+    "value" : "Schedule Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_UPD_DATE",
+    "value" : "Updated Date"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LOAD_LAST_SCH",
+    "value" : "Load Schedule on Init"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_START_DATE",
+    "value" : "Start At"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_REGISTER",
+    "value" : "Register"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "T_SHARE_SETTINGS",
+    "value" : "Share Settings"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EMBED_LINK",
+    "value" : "Embeddable Link"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LINK_TO_SHARE",
+    "value" : "Link to Share"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_SHARE_PAGE",
+    "value" : "<span>Use above link url to embed on html pages.</span>"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SHARE_PUBLIC",
+    "value" : "Share with Public Link"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INPUT_EMAIL",
+    "value" : "Enter email or email addresses..."
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EMAIL_MSG",
+    "value" : "Email Messages"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EMPTY_MSG",
+    "value" : "Messages..."
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_EMAIL_DESC",
+    "value" : "<span>This sends email with public link of this report who don't have access to system</span>"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LOGIN",
+    "value" : "Login"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NEED_LOGIN",
+    "value" : "Need Login"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PUBLIC_LINK_URL",
+    "value" : "Public Link URL"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_GENERATE",
+    "value" : "Generate"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SHARE_HISTORY",
+    "value" : "<span><b>Shared History</b></span>"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_IS_PUBLIC",
+    "value" : "Public"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_VISIT_COUNT",
+    "value" : "Visit Count"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LAST_VIEWED",
+    "value" : "Last Viewed"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MANUAL",
+    "value" : "Document Management"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MANUAL_MANAGER",
+    "value" : "Manual Documentation"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MANUAL_WRITER",
+    "value" : "Manual Writer"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MANUAL_VIEWER",
+    "value" : "Manual Viewer"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_Z_A",
+    "value" : "Area zooming"
+  }, {
+    "group" : "locale_ja_JP_0012",
+    "name" : "L_CHART_Z_B",
+    "value" : "Restore area zooming"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "T_MGR_MANUAL",
+    "value" : "Manual Manager"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_CREATE_SHARE_URL",
+    "value" : "Confirm to create shared URL?"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "M_CONFIRM_DELETE",
+    "value" : "Click Yes to confirm to delete the item"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_CONFIRM_DISABLE",
+    "value" : "Confirm to disable?"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_CONFIRM_IMP",
+    "value" : "Are you sure to import meta content? Content will be over written if exists."
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_CONFIRM_TB_BATCH",
+    "value" : "Batch update schema for all tables in the folder. Would you continue?"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_CONFIRM_DS_CHANGE",
+    "value" : "already have datasource defined. Select another data source can cause report not running. Would you continue?"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_CONFIRM_DROP_FILE",
+    "value" : "Would you move content to dropped folder?"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_CONFIRM_OVERWRITE",
+    "value" : "already exist on the server. Would you overwrite existing item with this copy?"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "M_CONFIRM",
+    "value" : "Would you continue? Click Yes to continue."
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CONFIG_FORMULA",
+    "value" : "Config Formula"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_NEW",
+    "value" : "New Item"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MOVE_UP",
+    "value" : "Move Up"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MOVE_DOWN",
+    "value" : "Move Down"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SEARCH_ITEM",
+    "value" : "Search Item"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_UP",
+    "value" : "Up"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_DOWN",
+    "value" : "Down"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DB_POOL",
+    "value" : "Data Connection"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GROUP_INDEX",
+    "value" : "Group Index"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_INDEX",
+    "value" : "Index"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_Y2_AXIS",
+    "value" : "Y2 Axis"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ADD_ROW",
+    "value" : "Add Row"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ADD_FORMULA",
+    "value" : "Add Formula"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EXPORT_TYPE",
+    "value" : "Export As"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ERASE_GROUP",
+    "value" : "Erase Group"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_UNIQUE_VALUE",
+    "value" : "Unique Value"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_COLUMN_INDEX",
+    "value" : "Column Index"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_IS_MEASURE",
+    "value" : "Is Measure"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_OPTIONS",
+    "value" : "Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TAB_SELECTOR",
+    "value" : "Tab Selector"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PROMPT",
+    "value" : "Prompt"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_SELECT",
+    "value" : "Select"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_KEY",
+    "value" : "Key"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ROW_CNT",
+    "value" : "Rows"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ADD_CUR_SEL",
+    "value" : "Add Current Selection"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SEL_ALL",
+    "value" : "Select All"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_JAVA_CLASS",
+    "value" : "Java ActionModule"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_IMP_TABLES",
+    "value" : "Import Tables"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INLINE_VIEW",
+    "value" : "Inline View"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CURRENT",
+    "value" : "Current"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LOCATION",
+    "value" : "Location"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GEO_ADDRESS",
+    "value" : "Address"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_LAT",
+    "value" : "Latitude"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_LNG",
+    "value" : "Longitude"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_UPD_GEOCODE",
+    "value" : "Update GeoCode"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_RUN_SQL",
+    "value" : "Run SQL"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_EXISTS",
+    "value" : "Exists"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LOG_RESULT",
+    "value" : "Log Result"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CHANGE_REV",
+    "value" : "Change Revision"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TEST_EMAIL",
+    "value" : "Test Email"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SSO_DESIGNER",
+    "value" : "SSO Designer"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SET",
+    "value" : "Set"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CACHE_INFO",
+    "value" : "Cache Info"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CONFIG_VAR",
+    "value" : "Config Variables"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SHORTCUT",
+    "value" : "Shortcut"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GO_TOP",
+    "value" : "Go Top"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_BATCH_UPD_SCH",
+    "value" : "Batch Update Schema"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EXTRACT_META",
+    "value" : "Extract Meta"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ALIAS_TO_DESC",
+    "value" : "Alias to Description"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ALIAS_TO_NAME",
+    "value" : "Alias to Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_USER",
+    "value" : "User"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_ROLE",
+    "value" : "Role"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_TENANT",
+    "value" : "Tenant"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GROUP_ID",
+    "value" : "Group ID"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SERVER_TYPE",
+    "value" : "Server Type"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EMAIL_FROM_ADDR",
+    "value" : "From Address"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ENCRYPTION",
+    "value" : "Encryption"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_AUTHEN_METHOD",
+    "value" : "Authentication Method"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SERVER_ADDRESS",
+    "value" : "Server Address"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CREDENTIALS",
+    "value" : "Credentials"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REPORT_HEALTH_CHECK",
+    "value" : "Report Health Check"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SYS_ERROR",
+    "value" : "System Error"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LOG_LEVEL",
+    "value" : "Log Level"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SERVER_FULL_RUL",
+    "value" : "Server Full URL"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SCHEDULE_SERVICE",
+    "value" : "Scheduler Service"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EXCEL_OUTPUT_TYPE",
+    "value" : "Excel Output Type"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_STORE_METAFILE",
+    "value" : "Store MetaFile"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FILE_NAMERULE",
+    "value" : "File Name Rule"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MODULE_TYPE",
+    "value" : "Module Type"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PYTHON_EXEC",
+    "value" : "Python Executable"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_JUPYTER_URL",
+    "value" : "Jupyter URL"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_CREDENTIALS",
+    "value" : "Credentials"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SNOOZE_MASS_REQ",
+    "value" : "Snooze Mass Requests"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SNOOZE_TIME_MIN",
+    "value" : "Snooze time (min)"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SERVER_REQ_MAX_PROTECT",
+    "value" : "Server Request Max Protection"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_WRONG_PWD_COUNTS",
+    "value" : "Wrong Password Counts"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PWD_FAIL_ACTION",
+    "value" : "Password Fail Action"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PWD_RULE",
+    "value" : "Password Rule"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MAX_FILE_UPLOAD_MB",
+    "value" : "Max File Upload(MB)"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_BULK_MAX_FIILE_UPLOAD_MB",
+    "value" : "Bulk Max File Upload(MB)"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TENANT_POST_CALL_MODULE",
+    "value" : "Tenant Post Call Module"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_H2_URL_FOR_MASH",
+    "value" : "H2 URL for Mashing"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NLP_SVR_HOST",
+    "value" : "NLP Server Host"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NLP_SVR_PORT",
+    "value" : "NLP Server Port"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NLP_AGNTS",
+    "value" : "NLP Agent Thread Count"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_BOT_NICK",
+    "value" : "Bot Nickname"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_APPL_TITLE",
+    "value" : "Application Title"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_APPL_TITLE_HTML",
+    "value" : "Application Title(HTML)"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_COLLAPSE_MAIN_MENU",
+    "value" : "Collapase Main Menu"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NAV_TAB",
+    "value" : "Navigation Tab"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MAX_TAB_COUNT",
+    "value" : "Max Tab Counts"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_HOME_TAB_TITLE",
+    "value" : "Home Tab Title"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_HOME_TAB_MSG",
+    "value" : "Home Tab Message"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LOADING_MSG",
+    "value" : "Loading Message"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GMAP_API",
+    "value" : "Google Map API Key"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NVMAP_API",
+    "value" : "Nave Map API Key"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DEFAULT_OPTIONS",
+    "value" : "Default Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MEASURE_NAMING",
+    "value" : "Measure Naming"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ECHART_THEM",
+    "value" : "Echart Theme"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REPORT_SCRSHOT",
+    "value" : "Report ScreenShot"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GEO_MAP_CENTER",
+    "value" : "Geo Map Center"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ARCGIS_REST_API",
+    "value" : "ArcGIS Rest API"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SSO",
+    "value" : "Single Sign On"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ALLOW_INSERT",
+    "value" : "Allow Insert"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MASK_TYPE",
+    "value" : "Mask Type"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_USE_GEOCODE",
+    "value" : "Use GeoCode"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_URL_OF_SHARE_OBJ",
+    "value" : "URL of Shared Objects"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_DATE",
+    "value" : "Date"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_COMP_ID",
+    "value" : "Component ID"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_STYLE",
+    "value" : "Style"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FILTER_ITEMS",
+    "value" : "Filter Items"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_VIEW_OPTIONS",
+    "value" : "View Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FILTER_LAYOUT_OPTIONS",
+    "value" : "Filter Layout Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EXCEL_DOWN_OPTIONS",
+    "value" : "Excel Download Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_APPLY_TO_ALL",
+    "value" : "Apply to All"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_VALUE_SET",
+    "value" : "Value Set"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REPORT_PATH",
+    "value" : "Report Path"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_TEMPLATE_NAME",
+    "value" : "Template Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_START_DATE",
+    "value" : "Start Date"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_JOB_NAME",
+    "value" : "Job Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DAY_OF_WEEK",
+    "value" : "Day of Week"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DAY_OF_MONTH",
+    "value" : "Day of Month"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PREEXE_STMT",
+    "value" : "Pre Execution Statement"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_POST_EXEC_STMT",
+    "value" : "Post Execution Statement"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ANAL_ENV",
+    "value" : "Analysis Environment"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SCH_SVR_STAT",
+    "value" : "Schedule Server Status"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_NICKNAME",
+    "value" : "Nick Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_OBJNAME",
+    "value" : "Object Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PICK_TIME",
+    "value" : "Pick Time"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_END_TIME",
+    "value" : "End Time"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_HEART_BEAT",
+    "value" : "Heart Beat"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CRT_DATE",
+    "value" : "Created Date"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MOD_DATE",
+    "value" : "Modified Date"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PROGRAMS",
+    "value" : "Programs"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REG_SCHEDULE",
+    "value" : "Register Schedule"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_JOB_TYPE",
+    "value" : "Job Type"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ADD_NEW_PROGRAM",
+    "value" : "Add New Program"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LOAD_FILE",
+    "value" : "Load File"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DATA",
+    "value" : "Data"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_KEEP_MODI_DATES",
+    "value" : "Keep Modified Dates"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_KEEP_OWNER_INFO",
+    "value" : "Keep Owner Info"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_IMP_SECURITY",
+    "value" : "Import Security"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CLEAR_HIST",
+    "value" : "Clear History"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_IMPORT_SELECTED",
+    "value" : "Import Selected"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_AUTO_REF_SEC",
+    "value" : "Auto Refresh (sec)"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_CONDITIONS",
+    "value" : "Conditions"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ELLAPSED_THEN_SEC",
+    "value" : "Ellapsed More than (sec)"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_BUF_SIZE",
+    "value" : "Buffer Size"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_3D_OPTIONS",
+    "value" : "3D Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_VISIBLE",
+    "value" : "Visible"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_AXIS_SETTINGS",
+    "value" : "Axis Settings"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_YAXIS_SETTINGS",
+    "value" : "Y Axis Settings"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SEC_YAXIS_SETTINGS",
+    "value" : "Second Y Axis Settings"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_RIGHT_YAXIS_TITLE",
+    "value" : "Axis Title"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EXTRA_OPTIONS",
+    "value" : "Extra Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_STOCK_OPTIONS",
+    "value" : "Stock Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TIME_FIELD",
+    "value" : "Time Field"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_KPI_INDI",
+    "value" : "KPI Indicator Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INDICATOR_WIZARD",
+    "value" : "Indicator Wizards"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MAP_OPTIONS",
+    "value" : "Map Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MAP_DRAW_OPTIONS",
+    "value" : "Map Draw Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ARCGIS_LAYERS",
+    "value" : "Arc GIS Layers"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_TEMPLATE",
+    "value" : "Template"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FOLDER_AND_TABLES",
+    "value" : "Folders and Tables"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FIELDS",
+    "value" : "Fields"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_RELATIONS",
+    "value" : "Relations"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MULTI_RENAME",
+    "value" : "Multi Rename"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REMOVE_UNDERLINE",
+    "value" : "Remove Underline"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_RENAME_MASK",
+    "value" : "Rename Mask"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PHYSICAL_NAME",
+    "value" : "Physical Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NEW_NAME",
+    "value" : "New Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MEASURE_NAME",
+    "value" : "Measure Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FACT_NAME",
+    "value" : "Fact Dimension"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MASK_TEXT",
+    "value" : "Mask Text"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MEASURES",
+    "value" : "Measures"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GEOCODE",
+    "value" : "GeoCode"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INPUT_FORMAT",
+    "value" : "Input Format"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_YAXIS_SETTING",
+    "value" : "Y Axis Settings"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MINIMUM",
+    "value" : "Minimum"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MAXIMUM",
+    "value" : "Maximum"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DATA_TYPE",
+    "value" : "Data Type"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_VALUE_FIELD",
+    "value" : "Value Field"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FIELD_SELECTIONS",
+    "value" : "Field Selections"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_XAXIS_FIELD",
+    "value" : "X Axis Field"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LINE_COLOR",
+    "value" : "Line Color"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FILL_COLOR",
+    "value" : "Fill Color"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TARGET_OPTIONS",
+    "value" : "Target Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TARGET_ITEM",
+    "value" : "Target Item"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_USE_SUM_ON_FOLDER",
+    "value" : "Use Sum on Folder"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EXPAND_ALL",
+    "value" : "Expand All"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_OTHER_VALUES",
+    "value" : "Other Values"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_CATEGORY",
+    "value" : "Category"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PAGE_FILTERING",
+    "value" : "Page Filtering"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_AVAILABLE_FIELDS",
+    "value" : "Available Fields"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PAGED_FILTER_FIELDS",
+    "value" : "Paged Filter Fields"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DATA_STYLE",
+    "value" : "Data Style"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_HEAD_STYLE",
+    "value" : "Header Style"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FORMAT_STRING",
+    "value" : "Format String"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CSS_CLASS",
+    "value" : "CSS Class"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TEMPLATE",
+    "value" : "Template"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_COLOR_SETTING",
+    "value" : "Color Settings"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MAPPING_TYPE",
+    "value" : "Mapping Type"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_STATIC_DATA_VALUES",
+    "value" : "Static Data Values"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_USE_COLORSET",
+    "value" : "Use ColorSet"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LABEL_VALUE",
+    "value" : "Label Value"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SQL_DATA_VALUES",
+    "value" : "SQL Data Values"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DATASOURCE",
+    "value" : "Data Source"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_COLORSET",
+    "value" : "Color Set"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_TABLE",
+    "value" : "Table"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SORT_FIELD",
+    "value" : "Sort Field"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DATA_VIEW",
+    "value" : "Data View"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_RANGE_FILTER1",
+    "value" : "Range Filter 1"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_RANGE_FILTER2",
+    "value" : "Range Filter 2"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_RANGE_FILTER3",
+    "value" : "Range Filter 3"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FILTER_FIELD",
+    "value" : "Filter Field"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FILTER_VALUE",
+    "value" : "Filter Value"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GENERAL",
+    "value" : "General"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EMAIL_SETUP",
+    "value" : "Email Setup"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EMAIL_NOTI_RCP",
+    "value" : "Email Notification Recipients"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_META_DATA",
+    "value" : "Meta Data"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PYTHON_INT",
+    "value" : "Python Integration"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SECURITY",
+    "value" : "Security"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MASS_REQ_PROTECT",
+    "value" : "Mass Request Protection"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DATA_MASHING",
+    "value" : "Data Mashing"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LICENSE",
+    "value" : "License Management"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ASSIST_BOT",
+    "value" : "Assistant Bot Service"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_UI_CONFIG",
+    "value" : "User Interface Config"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_API_KEYS",
+    "value" : "API Keys"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SHORT_NAME",
+    "value" : "Short Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_AUTHEN_CLASS",
+    "value" : "Authentication Class"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_AUTHOR_CLASS",
+    "value" : "Authorization Class"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GENERAL_OPTIONS",
+    "value" : "General Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GRID_STRIPES",
+    "value" : "Grid Stripes"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_OPACITY",
+    "value" : "Opacity"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ADD_STYLE",
+    "value" : "Add Style"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ADD_THEME",
+    "value" : "Add Theme"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_SET",
+    "value" : "Set"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CHART_COLOR_ORG",
+    "value" : "Chart Color Organizer"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CHART_COLOR",
+    "value" : "Chart ColorSet"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_COLOR_SETS",
+    "value" : "Color Sets"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INHERIT_STYLE_FROM",
+    "value" : "Inherit Style From"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_THEMES",
+    "value" : "Themes"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NEW_ACTION",
+    "value" : "New Action"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NEW_PARAM",
+    "value" : "New Parameter"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_EVENT",
+    "value" : "Event"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TABLE_LIST",
+    "value" : "Table List"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REGISTERED_TABLE",
+    "value" : "Registered Table"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SIMPLE_REL_VIEW",
+    "value" : "Simple Relation View"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FIX_KEY",
+    "value" : "Fix Key"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_RELATIONS",
+    "value" : "Relations"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_I_FROM",
+    "value" : "From"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_I_TO",
+    "value" : "To"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_JOIN_REL_EDITOR",
+    "value" : "Join Relation Editor"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SOURCE_FIELD",
+    "value" : "Source Field"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TARGET_FIELD",
+    "value" : "Target Field"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SRC_TO_TGT_IS",
+    "value" : "Source to Target is"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REMOVE_RELATION",
+    "value" : "Remove Relation"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_JOIN_REL_CUSTOM_FIELD",
+    "value" : "Join Relation Custom Field"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TABLE_ORDER",
+    "value" : "Table Order"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INC_DEP",
+    "value" : "Include Dependancies"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INC_SEC",
+    "value" : "Include Security"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INC_OWNER_INFO",
+    "value" : "Include Owner Info"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SHARE",
+    "value" : "Share"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LIST_OF_ITEMS",
+    "value" : "List of Items"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FOLDER_INFO",
+    "value" : "Folder Info"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_REVISION",
+    "value" : "Revision"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CUR_REVISION",
+    "value" : "Current Revision"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REVISION_INFO",
+    "value" : "Revision Info"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_REVISION_MGR",
+    "value" : "Revision Manager"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_LOCATION",
+    "value" : "Location"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_CURRENT",
+    "value" : "Current"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TARGET_SHEET",
+    "value" : "Target Sheet"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_OUTPUT_TYPE",
+    "value" : "Output Type"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SYNC_USER",
+    "value" : "Sync User"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SSO_MODULE",
+    "value" : "SSO Module"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DUTY",
+    "value" : "Roles"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FEASURES",
+    "value" : "Features"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LOAD_AUTH",
+    "value" : "Refresh Roles"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DYN_MODULE",
+    "value" : "Dynamic Module"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_GROUP",
+    "value" : "Groups"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_PARAMETERS",
+    "value" : "Parameters"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_KEYWORD",
+    "value" : "Keyword"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_IMPORT",
+    "value" : "Import"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_TEST",
+    "value" : "Test"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MAX_POOL_SIZE",
+    "value" : "Max Pool Size"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_WEBSERVICES",
+    "value" : "Web Services"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SFORCE_CON",
+    "value" : "Salesforce Connections"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SECURITY_KEY",
+    "value" : "Security Key"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SFORCE_URL",
+    "value" : "Salesforce URL"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LDAP_CON",
+    "value" : "LDAP Connections"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SAP_BW_CON",
+    "value" : "SAP BW Connections"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_HYP_ESSBASE_CON",
+    "value" : "Hyperion EssBase Connections"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_STORAGE_OPTIONS",
+    "value" : "Storage Options"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DATA_STORAGE",
+    "value" : "Data Storage"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_STAGING_DB",
+    "value" : "Staging DB"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_UPLOADED_FILE",
+    "value" : "Loaded Files"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CUSTOM_FIELDS",
+    "value" : "Custom Fields"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_DBA_REQ",
+    "value" : "DBA Requests"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EDIT_SRC",
+    "value" : "Edit Source"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TENANT_SETTINGS",
+    "value" : "Tenant Settings"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GENERAL_INFO",
+    "value" : "General Information"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_LOGO_IMAGE",
+    "value" : "Logo Image"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_THEMS",
+    "value" : "Themes"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_URL",
+    "value" : "URL"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EXPIRE_ON",
+    "value" : "Expire On"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ERASE_TENANT",
+    "value" : "Erase Tenant"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_GROUPID",
+    "value" : "Group ID"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_START_DAEMON",
+    "value" : "Start Daemon"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_STOP_ALL_AGNT",
+    "value" : "Stop All Agents"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TRAIN_AGENT",
+    "value" : "Train Agent"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MAKE_NLP",
+    "value" : "Make NLP"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_CHN_NAME",
+    "value" : "Channel Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_THD_STATUS",
+    "value" : "Thread Status"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ON_SVC",
+    "value" : "On Service"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_ADD_PROGRAM",
+    "value" : "Add Program"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INTENT",
+    "value" : "Intent"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_COMPILE",
+    "value" : "Compile"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_PERIOD",
+    "value" : "Period"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_NICK_NAME",
+    "value" : "Nick Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_INTENT_NAME",
+    "value" : "Intent Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_JAVA_SOURCE",
+    "value" : "Java Source"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_BASE_LANG",
+    "value" : "Base Language"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_SEC_LANG",
+    "value" : "Second Language"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_DOWNLOAD",
+    "value" : "Download"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_UPLOAD",
+    "value" : "Upload"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PAGE",
+    "value" : "Page"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_VALID_STATUS",
+    "value" : "Valid Status"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EXECUTE",
+    "value" : "Execute"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_TST_CON",
+    "value" : "Test Connection"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_FULL_PATH",
+    "value" : "Full Path"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_EXE_RSLTS",
+    "value" : "Execution Results"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_OBJNAME_CLASS",
+    "value" : "Object Name or Class"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PICKUP_TIME",
+    "value" : "Pickup Time"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PKG_NAME",
+    "value" : "Package Name"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_JAVA_CLASS",
+    "value" : "Java Class"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PROGRAM_PARTS",
+    "value" : "Program Parts"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_APPLY_CODES",
+    "value" : "Apply Codes"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_OUTPUT_MSG",
+    "value" : "Output Message"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "B_COMPILE",
+    "value" : "Compile"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_PKG_LIST",
+    "value" : "Package List"
+  }, {
+    "group" : "locale_ja_JP_0014",
+    "name" : "L_MULTIMEASURE",
+    "value" : "Multi Measure"
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "L_SCI",
+    "value" : "Data Scientist"
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "L_SCI_MANAGER",
+    "value" : "Data Scientist Server"
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "L_SCI_DATA",
+    "value" : "Data Publish"
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "L_SCI_USER",
+    "value" : "Data Scientist Module"
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "L_SCI_SERVERS",
+    "value" : "Analysis Servers"
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "L_SCI_DATASET",
+    "value" : "My DataSet Loader"
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "I_SCI_DATASET",
+    "value" : "Sync DataSet"
+  }, {
+    "group" : "locale_ja_JP_sci001",
+    "name" : "I_SCI_PUB_DATASET",
+    "value" : "Published DataSet"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "M_SUC_TMPL",
+    "value" : "Template already have all values."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SERVER_MESSAGE",
+    "value" : "Server Messages"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_FILTER_SCRIPT",
+    "value" : "Filter processing script error."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_LOCK_JOB",
+    "value" : "Currently processing another job. Please wait while complete."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_SEL_DC",
+    "value" : "Select Data Connector to continue!"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_CHECK_DTYPE",
+    "value" : "Check data type to staging database."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_SEL_ITEM_TO_ADD",
+    "value" : "Select item to add on the folder."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_DS_NOT_ALLOW_UPLOAD",
+    "value" : "The datasource does not allowed to upload file."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_SAVE_CONTENT",
+    "value" : "Save content to continue."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_INVALID_REV",
+    "value" : "Not valid revision number."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_PRIV_ERR",
+    "value" : "Privilege Error on content:"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_REMOVE_SELF",
+    "value" : "You cannot remove yourself."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_FOLDER_MOVE_SINGLE",
+    "value" : "Only one sub folder content can be moved."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_CHART_DRAWING",
+    "value" : "Error on chart drawing."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_CHART_LIB_LOADING",
+    "value" : "Error while loading chart library."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_CLICK_EVENT_HANDLER",
+    "value" : "Error on click event handler:"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_PROMPT_CONTROL_DEF",
+    "value" : "Error on prompt control definition."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_SEL_TGT_ITEM",
+    "value" : "Select target item to continue."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "E_SEL_TGT",
+    "value" : "Select Target Item."
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "M_CONFIRM_COMPILE",
+    "value" : "Are you sure to compile the content?"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_T_RECENT_VISIT",
+    "value" : "Recent visit and Favorites"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_PEOPLE",
+    "value" : "People"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_CLICK_STYLE_TO_EDIT",
+    "value" : "Click Style Item to Edit"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_VIEW_NAME",
+    "value" : "View Name"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SQL_QUERY",
+    "value" : "SQL Query"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SRC_TABLES",
+    "value" : "Source Tables"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_FIELD_MAPPING",
+    "value" : "Field Mapping"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "B_LENGTH",
+    "value" : "Length"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_TGT_TBL_NAME",
+    "value" : "Target Table Name"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "T_BO_EXTRACT_META",
+    "value" : "Extract Meta"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "B_DATA",
+    "value" : "Data"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SAVE_FIELD",
+    "value" : "Save Field"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "B_EXAMPLE",
+    "value" : "Example"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_DATE_FORMAT_EX",
+    "value" : "Date Format Example"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_START_MIN",
+    "value" : "Start Minimum"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_END_MAX",
+    "value" : "End Maximum"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_STEP_INT",
+    "value" : "Step Interval"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_UNDER_MIN",
+    "value" : "Under Minimum"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_OVER_MAX",
+    "value" : "Over Maximum"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_LABEL_TEXT",
+    "value" : "Label Text"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_NUMERIC_FORMAT",
+    "value" : "Numeric Format"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_LINK_OPTION",
+    "value" : "Link Options"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_DISP_NAME",
+    "value" : "Display Name"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_TARGET_REPORT",
+    "value" : "Target Report"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_PARENT_CHILD_OPTIONS",
+    "value" : "Parent Child Options"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_CALC_IN_RESULT",
+    "value" : "Calculate in Result"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SHOW_HTML",
+    "value" : "Show HTML"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_USE_TEMP",
+    "value" : "Use Temporary"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_USE_STG",
+    "value" : "Use Staging DB"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_BB_SG_RDR",
+    "value" : "Row Data to Redraw"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_USE_EXPRESSION",
+    "value" : "Use Expression"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_DATE_FORMATTING",
+    "value" : "Date Formatting"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SQL_FUNC",
+    "value" : "SQL Function"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_ENABLE_OTH_UPLOAD",
+    "value" : "Enabled (Allow other user upload file)"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_ALLOW_MULTI_FILE",
+    "value" : "Allow Multiple File Upload"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_IGN_BLK_VAL",
+    "value" : "Ignore Blank Value"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_DT_TYPE_FIELD",
+    "value" : "Date Type Field"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SET_DATE",
+    "value" : "Set Date"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SYNC_ROWS",
+    "value" : "Synchronize Rows"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "B_READY",
+    "value" : "Ready"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "B_CACHED",
+    "value" : "Cached"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SEL_DUTY",
+    "value" : "Select Role"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "B_EMAIL",
+    "value" : "Email"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_AUD_USER",
+    "value" : "Audit Users"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_AUD_USER_FLT",
+    "value" : "User Search Criteria"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_AUD_USER_GRID",
+    "value" : "Audit User Lists"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_LAST_ACC_DT",
+    "value" : "Last Access Date"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_LAST_ACCESSED",
+    "value" : "Last Accessed"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_FIELD_VALUE",
+    "value" : "Field Value"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_ENCODING",
+    "value" : "Encoding"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SHEETNAME",
+    "value" : "Sheet Name"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_HEADER_NAME",
+    "value" : "Header Name"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SIZE",
+    "value" : "Size"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_ADD_SYS_KEY",
+    "value" : "Add System Key"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_CRT_TBL",
+    "value" : "Create Table"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_SCRIPT",
+    "value" : "Script"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_COLUMN_PROP",
+    "value" : "Column Property"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_DATA_SIZE",
+    "value" : "Data Size"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_IS_KEY",
+    "value" : "Is Key"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_LD_INTO_TBL",
+    "value" : "Load into Table"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_CLR_TBL",
+    "value" : "Clear Table"
+  }, {
+    "group" : "locale_ja_JP_0015",
+    "name" : "L_FILE_UPLOAD_HIST",
+    "value" : "File Upload History"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_API_VERSION",
+    "value" : "API Version"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_CSS_URL",
+    "value" : "CSS URL"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_JS_LOADER_URL",
+    "value" : "JS Loader URL"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_BASE_MAP",
+    "value" : "Base Map"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_REST_APIS",
+    "value" : "REST APIs"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_ZOOM_LEVEL",
+    "value" : "Zoom Level"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_PALETTE",
+    "value" : "Palette"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_MIN_RADIUS",
+    "value" : "Minimum Radius"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_MAX_RADIUS",
+    "value" : "Maximum Radius"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_MAP_CENTER_LAT_LNG",
+    "value" : "Map Center (Lat,Lng)"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_BASEMAP",
+    "value" : "Base Map"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_ENABLE_3D",
+    "value" : "Enable 3D"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_ALPHA_ANGLE",
+    "value" : "Alpha Angle"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_BETA_ANGLE",
+    "value" : "Beta Angle"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_DEPTH",
+    "value" : "Depth"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_VIEW_DIST",
+    "value" : "View Distance"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_FIELD_COLUMN",
+    "value" : "Field Column"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_DATA_SERIES",
+    "value" : "Data Series"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_SVG_DRAW_OPTIONS",
+    "value" : "SVG Drawing Options"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_SVG_RENDERERS",
+    "value" : "SVG Renderers"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_SVG_TYPE",
+    "value" : "SVG Type"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_SHEET_NAME",
+    "value" : "Sheet Name"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_UPD_DATE",
+    "value" : "Updated Date"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_DATE_IMPORTED",
+    "value" : "Imported Date"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_GEOMAPPING",
+    "value" : "Geo Mapping"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_AES_PASS_PHRASE",
+    "value" : "AES Pass Phrase"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_OBJECT_ID",
+    "value" : "Object ID"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_FIELDNAME",
+    "value" : "Field Name"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_VALUE_CONTROLS",
+    "value" : "Value Controls"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_CSS_NAME",
+    "value" : "CSS Name"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_STEP_INCREASE",
+    "value" : "Increase Step"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_SLIDER_OPTIONS",
+    "value" : "Slider Options"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_DATETIME_SETUP",
+    "value" : "Date Time Setup"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_PERIOD_SETUP",
+    "value" : "Period Setup"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_FILEUPLOAD_SETTINGS",
+    "value" : "File Upload Settings"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_UPLOAD_FILE",
+    "value" : "Upload File"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_SHOW_FILEHIST",
+    "value" : "Show File History"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_SHOW_ALLFILES",
+    "value" : "Show All Files"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_MULTIPLE_FILES",
+    "value" : "Multiple Files"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_VALUESET_OPTIONS",
+    "value" : "Value Set Options"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_ENABLE_OTH_UPL",
+    "value" : "Allow User Upload"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_TEMPLATE_CONTEXT",
+    "value" : "Template Context"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "B_LEFT",
+    "value" : "Left"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "B_RIGHT",
+    "value" : "Right"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_FV_OPT",
+    "value" : "Form Viewer Option"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_NEW_ANAL",
+    "value" : "New Analysis"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_ANAL_GROUP",
+    "value" : "Analysis Group"
+  }, {
+    "group" : "locale_ja_JP_0016",
+    "name" : "L_ANALYSIS_TYPE",
+    "value" : "Analysis Type"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_PIE_DASHBOARD",
+    "value" : "Pie and Dashboard"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_SCATTER_POINT",
+    "value" : "Scatter and Point"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_STOCK_LOW_HIGH",
+    "value" : "Stock and Low High Analysis"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_TREEMAP",
+    "value" : "Tree Map"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_RELATION_FINDING",
+    "value" : "Relation Finding"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_SCI_ANAL",
+    "value" : "Scientific Analysis"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_STAT_VIS",
+    "value" : "Statistical Data Visualization"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_MAP_GEO",
+    "value" : "Map and Geographical"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_QUALITY_CTRL",
+    "value" : "Quality Control"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_COLUMN",
+    "value" : "Column"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_LINE",
+    "value" : "Line"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_SPLINE",
+    "value" : "Spline"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_AREA",
+    "value" : "Area"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_SPLINE_AREA",
+    "value" : "Spline Area"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_BAR",
+    "value" : "Bar"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_PIE",
+    "value" : "Pie"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_DOUGHNUT",
+    "value" : "Doughnut"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_BUBBLE",
+    "value" : "Bubble"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_SCATTER",
+    "value" : "Scatter"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_TREEMAP",
+    "value" : "Treemap"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_WATERFALL",
+    "value" : "WaterFall"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_SYNC_CHART",
+    "value" : "Synchronized Chart"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_RADAR",
+    "value" : "Radar"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_FUNNEL",
+    "value" : "Funnel"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_PYRAMID",
+    "value" : "Pyramid"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_MAP",
+    "value" : "Map"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_COMP_MATRIX",
+    "value" : "Comparison Matrix"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_PARA_COORD",
+    "value" : "Parallel Coordinates"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_MEAN_DEV",
+    "value" : "Mean & Deviation"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_BOXPLOT",
+    "value" : "Box Plot"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_NET_DIAG_POS",
+    "value" : "Network Diagram(+)"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_NET_DIAG_NEG",
+    "value" : "Network Diagram(-)"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_MATRIX_DIAGRAM",
+    "value" : "Matrix Diagram"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_FORCE_DIRECT",
+    "value" : "Force Directed Layouts"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_CLUSTER",
+    "value" : "Cluster Chart"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_CHORD",
+    "value" : "Chord Chart"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_SUNBURST",
+    "value" : "Sun Burst Chart"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_BUBBLE_MAP",
+    "value" : "Bubble Map"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_FIXED_PLACE",
+    "value" : "Fixed Placement"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_BTM_LEFT",
+    "value" : "Bottom Left"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_BTM_CENTER",
+    "value" : "Bottom Center"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_BTM_RIGHT",
+    "value" : "Bottom Right"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_TOP_LEFT",
+    "value" : "Top Left"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_TOP_CENTER",
+    "value" : "Top Center"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_TOP_RIGHT",
+    "value" : "Top Right"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_RIGHT_TOP",
+    "value" : "Right Top"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_RIGHT_CENTER",
+    "value" : "Right Center"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_RIGHT_BTM",
+    "value" : "Right Bottom"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_LEFT_TOP",
+    "value" : "Left Top"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_LEFT_CENTER",
+    "value" : "Left Center"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_LEFT_BTM",
+    "value" : "Left Bottom"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_PERCENT_GAUGE",
+    "value" : "Percent Gauge"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CH_WINLOSE",
+    "value" : "WinLose Chart"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_COL_SYNC",
+    "value" : "Column Sync"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_UNDO",
+    "value" : "Undo"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_ALIAS",
+    "value" : "Alias"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "D_CLIPBOARD",
+    "value" : "Press Ctrl-A then Ctrl-C to copy this content to clipboard!"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "M_PIVOT_CHANGED",
+    "value" : "To apply pivot, click execute button on report toolbar!"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "B_CENTER",
+    "value" : "Center"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_BOX_COUNTS",
+    "value" : "Box Counts"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_LAYOUT_MODE",
+    "value" : "Layout Mode"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_REMOVE_CHECKED",
+    "value" : "Remove Checked"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "B_SYNTAX",
+    "value" : "Syntax"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_TEMPLATE_TYPE",
+    "value" : "Template Type"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_MIN_COLOR",
+    "value" : "Min Color"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_MID_COLOR",
+    "value" : "Mid Color"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_MAX_COLOR",
+    "value" : "Max Color"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_COLOR_CATEG",
+    "value" : "Color Category"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_MARKER_SIZE",
+    "value" : "Marker Size"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_MARKER_SYMBOL",
+    "value" : "Marker Symbol"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "M_ERR_CHART_SEL",
+    "value" : "Chart type need to be selected!"
   } ]
 }

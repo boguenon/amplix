@@ -5,13 +5,27 @@
 			"cls": "ig_nav"
 		},
 		{
-			"name": "Analysis",
-			"cls": "ig_anl",
+			"name": "Report Menu",
+			"cls": "ig_report_menu",
 			"children": [
 				{
-					"name": "Database Connection",
-					"cls": "ig_dbcon"
+					"name": "New Report",
+					"cls": "ig_menu_rpt"
 				},
+				{
+					"name": "New SQL Report",
+					"cls": "ig_menu_sql_rpt"
+				},
+				{
+					"name": "New FormBuilder",
+					"cls": "ig_menu_formbuilder"
+				}
+			]
+		},
+		{
+			"name": "Analysis",
+			"cls": "ig_anal",
+			"children": [
 				{
 					"name": "Variables",
 					"cls": "ig_var"
@@ -21,15 +35,19 @@
 					"cls": "ig_lookup"
 				},
 				{
-					"name": "Dashboard Mgr",
+					"name": "Form Builder Mgr",
 					"cls": "ig_dbd"
 				}
 			]
 		},
 		{
-			"name": "Excel file loading",
+			"name": "Data Source",
 			"cls": "ig_dataset",
 			"children": [
+				{
+					"name": "Database Connection",
+					"cls": "ig_dbcon"
+				},
 				{
 					"name": "Create Data Set",
 					"cls": "ig_n_dataset"
@@ -65,6 +83,18 @@
 							"cls": "ig_sys_config"
 						},
 						{
+							"name": "UI Configurator",
+							"cls": "ig_sys_uiconfig"
+						},
+						{
+							"name": "SingleSignOn",
+							"cls": "ig_sys_sso"
+						},
+						{
+							"name": "SingleSignOnDesigner",
+							"cls": "ig_sys_sso_designer"
+						},
+						{
 							"name": "Features",
 							"cls": "ig_ft"
 						},
@@ -91,8 +121,8 @@
 							"cls": "ig_dloc"
 						},
 						{
-							"name": "Dashboard Mgr",
-							"cls": "ig_dbd"
+							"name": "Chart Designer",
+							"cls": "ig_chart_dsgn"
 						}
 					]
 				},
@@ -110,7 +140,25 @@
 						},
 						{
 							"name": "System Log",
-							"cls": "ig_syslog"
+							"cls": "ig_syslog",
+							"children": [
+								{
+									"name": "Audit User",
+									"cls": "ig_audit_user"
+								},
+								{
+									"name": "Audit Report Log",
+									"cls": "ig_audit_rpt"
+								},
+								{
+									"name": "Audit JDBC",
+									"cls": "ig_audit_jdbc"
+								},
+								{
+									"name": "Audit Email Message",
+									"cls": "ig_audit_email"
+								}
+							]
 						},
 						{
 							"name": "System Resource",
@@ -189,6 +237,10 @@
 				{
 					"name": "Discoverer Migration",
 					"cls": "ig_disco"
+				},
+				{
+					"name": "Amplix Meta Upgrade",
+					"cls": "ig_meta_upgrade"
 				}
 			]
 		},
@@ -214,6 +266,10 @@
 			"name": "Navigator",
 			"cls": "ig_nav",
 			"children": [
+				{
+					"name": "Create Workspace",
+					"cls": "ig_n_cw"
+				},
 				{
 					"name": "List",
 					"cls": "ig_n_lst",
@@ -253,37 +309,27 @@
 							"cls": "ig_n_f",
 							"children": [
 								{
-									"name": "Workspace",
-									"cls": "ig_n_cw"
-								},
-								{
 									"name": "Folder",
 									"cls": "ig_n_f_f"
-								},
-								{
-									"name": "Cube Analysis",
-									"cls": "ig_n_cb",
-									"children": [
-										{
-											"name": "ROLAP Cube",
-											"cls": "ig_n_c_rc"
-										},
-										{
-											"name": "BigData Cube",
-											"cls": "ig_n_c_b"
-										}
-									 ]
 								},
 								{
 									"name": "Database Model",
 									"cls": "ig_n_dbm"
 								},
 								{
+									"name": "Business Object",
+									"cls": "ig_n_bobj"
+								},
+								{
 									"name": "Report",
 									"cls": "ig_n_rpt"
 								},
 								{
-									"name": "Dashboard",
+									"name": "SQL Report",
+									"cls": "ig_n_sqlrpt"
+								},
+								{
+									"name": "Form Builder",
 									"cls": "ig_n_dbd"
 								},
 								{
@@ -407,6 +453,14 @@
 						{
 							"name": "save",
 							"cls": "ig_m_saveas"
+						},
+						{
+							"name": "private workspace",
+							"cls": "ig_m_prv_ws"
+						},
+						{
+							"name": "team workspace",
+							"cls": "ig_m_team_ws"
 						}
 					]
 				}
@@ -451,6 +505,10 @@
 								{
 									"name": "view_analysis",
 									"cls": "ig_r_anal"
+								},
+								{
+									"name": "view_formview",
+									"cls": "ig_r_fview"
 								},
 								{
 									"name": "view_r",
@@ -595,6 +653,50 @@
 						{
 							"name": "help",
 							"cls": "ig_r_help"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Manual Management",
+			"cls": "ig_manual",
+			"children": [
+				{
+					"name": "Manual Auth for Amplix",
+					"cls": "ig_manual_auth"
+        }
+      ]
+    },
+    {
+			"name": "Data Science Module",
+			"cls": "ig_sci",
+			"children": [
+				{
+					"name": "Data Science Service Manager",
+					"cls": "ig_sci_mgr",
+					"children": [
+						{
+							"name": "Data Sciense DataSet",
+							"cls": "ig_sci_mgr_dataset"
+						},
+						{
+							"name": "Data Sciense Logger",
+							"cls": "ig_sci_mgr_logger"
+						}
+					]
+				},
+				{
+					"name": "Data Science Service User",
+					"cls": "ig_sci_usr",
+					"children": [
+						{
+							"name": "Data Science Server Connector",
+							"cls": "ig_sci_usr_servers"
+						},
+						{
+							"name": "Data Science DataSet",
+							"cls": "ig_sci_usr_dataset"
 						}
 					]
 				}

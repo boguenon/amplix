@@ -455,7 +455,7 @@ CREATE TABLE igcusers (
   iuid #CHAR#(17) #NULL#,
   userid #VARCHAR#(100) #NULL#,
   uname #VARCHAR#(100) #NULL#,
-  upasswd #VARCHAR#(100) #NULL#,
+  upasswd #VARCHAR#(256) #NULL#,
   email #VARCHAR#(100) #NULL#,
   active #NUMBER#(4) #NULL#,
   mdate #LONG# #NULL#,
@@ -877,3 +877,35 @@ CREATE TABLE igccuddata (
 );
 
 CREATE UNIQUE INDEX idx_cuddata_01 ON igccuddata(suid, seq);
+
+CREATE TABLE igcfh (
+	mts #CHAR#(17),
+	iuid #CHAR#(17),
+	tuid #CHAR#(17),
+	cname #VARCHAR#(100),
+	fname #VARCHAR#(100),
+	uname #VARCHAR#(30),
+	muid #CHAR#(17),
+	cdate #LONG#,
+	mdate #LONG#,
+	pstatus #SMALL_NUMBER#,
+	umid #CHAR#(17),
+	nrows #LONG#
+);
+
+CREATE INDEX idx_igcfh_01 ON igcfh(mts, tuid, umid);
+
+CREATE TABLE igcacclog ( 
+	cdate #LONG#,  
+	lstat #CHAR#(1), 
+	lchannel #VARCHAR#(100),
+	userid #VARCHAR#(100), 
+	mts_name #VARCHAR#(100),  
+	lhost #VARCHAR#(100), 
+	lhostip #VARCHAR#(100), 
+	lloc #VARCHAR#(10),
+	lerrcode #NUMBER#(5)
+);
+
+CREATE INDEX idx_igcacclog_01 ON igcacclog(cdate, userid);
+

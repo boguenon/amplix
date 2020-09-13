@@ -443,6 +443,7 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (20, 3, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (21, 2, 'amplix','com.amplix.connector.metadb.MetaDBJdbcDriver','amplix meta readonly','jdbc:amplix:@:service_name',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (22, 2, 'soap','soap','SOAP WebService','soap',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (23, 2, 'rest','rest','REST WebService','rest',1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (24, 5, 'elasticsearch', '-', 'ElasticSearch', '-', 1);
 DELETE FROM igcserver;
 INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '4.0', 1574914457438);
 INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '4.13', 1574914457438);

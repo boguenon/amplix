@@ -12,17 +12,12 @@
 
     String version = com.amplix.rpc.igcServer.version;
     
-    String igc_theme = request.getParameter("igc_theme");
-    igc_theme = (igc_theme != null && "".equals(igc_theme) == true) ? null : igc_theme;
-    
-    String igc_theme_name = null;
-    
-    if (igc_theme != null)
-    {
-    	igc_theme_name = igc_theme.toLowerCase().replaceAll(" ", "");
-    }
+    String theme = request.getParameter("theme");
 	
 	boolean is_debug = (request.getParameter("debug") != null && request.getParameter("debug").equals("true") ? true : false);
+	
+	String objid = request.getParameter("objid");
+    objid = objid != null && objid.trim().length() > 0 ? objid : null;
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,23 +29,32 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202003052311" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202009130013" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003052311" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202009130013" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003052311" />
 <%
-if (igc_theme != null)
+if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/theme_" + igc_theme_name + ".css\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202009130013\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202003052311" />
+<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202009130013" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202009130013" />
 
-<script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202003052311"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202003052311"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202003052311"></script>
+<style>
+#wrap {
+	top: 0px;
+}
+#content {
+	top: <%= (objid == null ? "102" : "0") %> px;
+}
+</style>
+
+<script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>    
+<script type="text/javascript" src="../config.js?_dc=202009130013"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202009130013"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202009130013"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -80,13 +84,6 @@ function getLocale()
 }
 
 getLocale();
-
-<%
-	if (igc_theme != null)
-	{
-		out.println("ig$.theme_id=\"" + igc_theme + "\";");
-	}
-%>
 
 var _report_prompt = [];
 <%
@@ -122,14 +119,21 @@ function loadParameter(param) {
 }
 </script>
 <script type="text/javascript">
-ig$.appInfo.apprelease = "<%= version%>";
-ig$.bootconfig.cache = ig$.appInfo.apprelease + "_" + ig$.appInfo.date.replace(/[{}]/g, "");
+<%
+if (theme != null && theme.length() > 0)
+{
+	out.println("ig$.theme_id=\"" + theme + "\";");
+}
+%>
 
 var modules = ["framework", "vis_ec", "vis_ec_theme", "app_viewer", "custom_viewer", "appnc", "custom"];
 IG$.__microloader(modules);
 </script>
 </head>
 <body scroll="no">
+<%
+	if (objid == null) {
+%>
 <div id="top_viewer" style="display:none;">
 	<div id="slide_menu"></div>
 	<div id="header"> 
@@ -147,6 +151,7 @@ IG$.__microloader(modules);
 	  <h1>Dashboard Viewer</h1>
 	</div>
 </div>
+<% } %>
 <div id="wrap">
   <div id="content" style="top: 0px;">
     <div style="overflow-x:hidden;" width="100%" height="100%" name="mainview" id="mainview"></div>

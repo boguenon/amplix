@@ -1,0 +1,15 @@
+A;L_SELECT_FIELD;Check select field to continue!
+A;L_AU_APPLY_APPEND;Append Only
+A;B_READ;Read
+A;B_WRITE;Writable
+A;E_PERMISSION;Error on permission of the item.
+A;B_ADVANCED;Advanced Options
+A;D_DATASET;DataSet
+A;L_TABLE_NAME;Table name
+A;L_FIELD_NAME;Field name
+A;B_REFRESH;Refresh
+A;B_ITEMNAME;Item name
+A;B_PATH;Path
+A;T_SEL_DB;Select Database Connector
+A;L_REVOKE_READ;Revoke Read
+A;L_REVOKE_WRITE;Remoke Write

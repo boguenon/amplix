@@ -1,0 +1,115 @@
+package ${PACKAGE_NAME};
+
+import java.io.File;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.amplix.rpc.igcJob;
+import com.amplix.rpc.igcServer;
+
+import java.util.*;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.text.*;
+import com.amplix.plugin.*;
+
+
+${IMPORT_CLASSES}
+
+public class ${CLASS_NAME}
+	extends ControllerBase
+{
+	private static final Logger logger = LoggerFactory.getLogger(${CLASS_NAME}.class);
+	
+	public ${CLASS_NAME}() {
+		super();
+	}
+	
+	public void runMethod(String method, Map<String, String> param)
+		throws Exception 
+	{
+		Connection __con = null;
+		final String __dbcon = "${DBCON}";
+		
+		super.runMethod(method, param);
+		
+		try
+		{
+##MODULE
+			if(method.equals("${NAME}") == true) {
+				if (__dbcon != null && __dbcon.length() > 0)
+				{
+					__con = this.getDataConnection(__dbcon);
+				}
+				this.${NAME}(__con, this.iparam);
+			}
+##MODULE
+		}
+		catch (Exception ex)
+		{
+			logger.error("error on executing module", ex);
+			if (__con != null)
+				__con.close();
+			__con = null;
+			throw ex;
+		}
+		finally
+		{
+			this.releaseConnection(__dbcon, __con, true);
+		}
+	}
+	
+##MODULE_FUNC
+	public void ${NAME}(Connection __con, Map<String, Object> params)
+		throws Exception 
+	{
+		PreparedStatement __pstmt = null;
+		Statement __stmt = null;
+		
+		ResultSet __rs = null;
+		try {
+			${SCRIPT}
+		}
+		catch (Exception __ex) {
+			logger.error("error on function ${NAME}", __ex);
+			try
+			{
+				if (__rs != null) {
+					__rs.close();
+				}
+				__rs = null;
+				if (__stmt != null) {
+					__stmt.close();
+				}
+				__stmt = null;
+				if (__pstmt != null) {
+					__pstmt.close();
+				}
+			}
+			catch (Exception _e)
+			{
+			}
+			__pstmt = null;
+			throw __ex;
+		}
+		finally {
+			if (__rs != null) {
+				__rs.close();
+			}
+			__rs = null;
+			if (__stmt != null) {
+				__stmt.close();
+			}
+			__stmt = null;
+			if (__pstmt != null) {
+				__pstmt.close();
+			}
+			__pstmt = null;
+		}
+	}
+##MODULE_FUNC
+}

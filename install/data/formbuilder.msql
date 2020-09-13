@@ -1,0 +1,39 @@
+CREATE TABLE t_retirement_planning (
+	t_uid #VARCHAR#(20),
+	t_age #NUMBER#(4),
+	t_annual_income #NUMBER#(9,2),
+	t_annual_inflation_income_increases #NUMBER#(9,2),
+	t_retirement_savings_balance #NUMBER#(9,2),
+	t_annual_savings_amount #NUMBER#(9,2),
+	t_annual_savings_increases #NUMBER#(9,2),
+	t_investment_return #NUMBER#(9,2),
+	
+	t_annual_pension_benefit #NUMBER#(9,2),
+	t_annual_pension_benefit_increases #NUMBER#(9,2),
+	t_desired_retireemnt_age #NUMBER#(9,2),
+	t_number_of_years_of_retirement_income #NUMBER#(9,2),
+	t_income_replacement #NUMBER#(9,2),
+	t_retire_investment_return #NUMBER#(9,2),
+	
+	t_invest_return_uncertainty #NUMBER#(9,2),
+	t_annaul_savings_amount_uncertainty #NUMBER#(9,2),
+	t_annual_savings_increases_uncertainty #NUMBER#(9,2),
+	t_annual_pension_benefit_amount_uncertainty #NUMBER#(9,2),
+	t_annual_pension_benefit_increases_uncertainty #NUMBER#(9,2)
+);
+
+
+CREATE TABLE t_retirement_data
+(
+	t_uid #VARCHAR#(20),
+    age #NUMBER#(4),
+    salary #NUMBER#(9,2),
+    balance #NUMBER#(9,2),
+    interest #NUMBER#(9,2),
+    yearly_savings #NUMBER#(9,2),
+    desired_retirement_income #NUMBER#(9,2),
+    pension_income #NUMBER#(9,2),
+    end_balance #NUMBER#(9,2),
+    min_uncertain_end_balance #NUMBER#(9,2),
+    max_uncertain_end_balance #NUMBER#(9,2)
+);

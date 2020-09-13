@@ -1,0 +1,178 @@
+package ${PACKAGE_NAME};
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import javax.servlet.http.*;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.amplix.sso.AuthEntity;
+import com.amplix.sso.SSOPlugin;
+
+${IMPORT_CLASSES}
+
+public class ${CLASS_NAME}
+	extends SSOPlugin
+{
+	private static final Logger logger = LoggerFactory.getLogger(${CLASS_NAME}.class);
+	
+	public ${CLASS_NAME}()
+	{
+		super();
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	public String beforeLogin(String userid, String password, HashMap<String, Object> iprop, HashMap<String, String> secfilter)
+	{
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String uid = null;
+		logger.info("!!beforeLogin process call execution!!");
+		
+		HttpServletRequest request = (HttpServletRequest) iprop.get("request");
+		HttpSession session = request.getSession(true);
+		
+		try
+		{
+			this.setSecProp(iprop);
+			
+			${CODE_BEFORE_LOGIN}
+		}
+		catch (Exception e)
+		{
+			logger.error("error on singlesignon before login", e);
+			uid = null;
+		}
+		finally
+		{
+			try
+			{
+				if (rs != null)
+				{
+					rs.close();
+				}
+				rs = null;
+				
+				if (pstmt != null)
+				{
+					pstmt.close();
+				}
+				pstmt = null;
+				
+				if (con != null)
+				{
+					con.close();
+				}
+			}
+			catch (Exception e)
+			{
+				con = null;
+			}
+		}
+		
+		return uid;
+	}
+	
+	@Override
+	public String tryLogin(String userid, String password, HashMap<String, Object> iprop, HashMap<String, String> secfilter)
+	{
+		String uid = null;
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		logger.info("!!beforeLogin process call execution!!");
+		
+		HttpServletRequest request = (HttpServletRequest) iprop.get("request");
+		HttpSession session = request.getSession(true);
+		
+		try
+		{
+			${CODE_TRY_LOGIN}
+		}
+		catch (Exception e)
+		{
+			logger.error("error on single sign on trylogin", e);
+			uid = null;
+		}
+		finally
+		{
+			try
+			{
+				if (rs != null)
+				{
+					rs.close();
+				}
+				rs = null;
+				
+				if (pstmt != null)
+				{
+					pstmt.close();
+				}
+				pstmt = null;
+				
+				if (con != null)
+				{
+					con.close();
+				}
+			}
+			catch (Exception e)
+			{
+				con = null;
+			}
+		}
+		
+		return uid;
+	}
+	
+	@Override
+	public ArrayList<AuthEntity> getUserList(String filter, HashMap<String, Object> iprop) throws Exception {
+		ArrayList<AuthEntity> authEntities = null;
+		
+		${CODE_GET_USER_LIST}
+		
+		return authEntities;
+	}
+
+	@Override
+	public ArrayList<AuthEntity> getRoleList(String filter, HashMap<String, Object> iprop) throws Exception {
+		ArrayList<AuthEntity> authEntities = null;
+		
+		${CODE_GET_ROLE_LIST}
+		
+		return authEntities;
+	}
+
+	@Override
+	public ArrayList<AuthEntity> getGroupList(String filter, HashMap<String, Object> iprop) throws Exception {
+		ArrayList<AuthEntity> authEntities = null;
+		
+		${CODE_GET_GROUP_LIST}
+		
+		return authEntities;
+	}
+
+	@Override
+	public ArrayList<AuthEntity> getOptionFields() {
+		ArrayList<AuthEntity> authEntities = null;
+		
+		${CODE_GET_OPTION_FIELDS}
+		
+		return authEntities;
+	}
+	
+	@Override
+	public void dispose()
+	{
+		super.dispose();
+	}
+}

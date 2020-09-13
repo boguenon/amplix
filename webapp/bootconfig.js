@@ -1,5 +1,5 @@
 ig$.bootconfig = {
-	"cache": "202003052311",
+	"cache": "202009130013",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -10,6 +10,9 @@ ig$.bootconfig = {
         "vis_ec": [
         	"./js/vis_ec.min.js",
         	"./js/echarts.min.js"
+        ],
+        "vis_ec_theme": [
+        	"./js/vis_ec_theme.min.js"
         ],
         "app": [
             "./js/app.min.js"
@@ -25,8 +28,32 @@ ig$.bootconfig = {
             "./js/custom_viewer.min.js"
         ],
         "custom": [
-            "./js/custom.min.js",
-            "./custom/custom.timeline.css"
+			"./custom/custom.chart.options.js",
+			"./custom/custom.map.common.js",
+			"./custom/custom.map.google.js",
+			"./custom/custom.map.daum.js",
+			"./custom/custom.map.esri.js",
+			"./custom/custom.map.naver.js",
+			"./custom/custom.map.vworld.js",
+			"./custom/custom.svg.airbus.js",
+			"./custom/custom.svg.korea.js",
+			
+			"./custom/custom.kpi.js",
+			"./custom/custom.sankey.js",
+			"./custom/custom.imageviewer.js",
+			
+			"./custom/custom.hstock.js",
+			"./custom/custom.calendar.js",
+			"./custom/custom.bubblecloud.js",
+			"./custom/custom.wordcloud.js",
+			"./custom/custom.nation.js",
+			"./custom/custom.icicle.js",
+			"./custom/custom.barrace.js",
+			"./custom/custom.circlepacking.js",
+			
+			"./custom/pareto.js",
+			"./custom/quality_runchart.js",
+			"./custom/custom.svg.js"
         ],
         "sso": [
             "./custom/sso_client.js"
@@ -55,6 +82,9 @@ ig$.bootconfig = {
         ],
         "mg_disco": [
             "./js/mg_disco.min.js"
-        ]
+        ],
+		"mg_meta": [
+			"./js/mg_meta.min.js"
+		]
     }
 };

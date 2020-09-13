@@ -9,6 +9,9 @@
 	String mts = request.getParameter("mts");
 	mts = (mts == null) ? "" : mts;
 	
+	String theme = request.getParameter("theme");
+    theme = (theme == null) ? "" : theme;
+	
 	boolean is_debug = (request.getParameter("debug") != null && request.getParameter("debug").equals("true") ? true : false);
 %>
 <!DOCTYPE html>
@@ -16,6 +19,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -34,14 +38,14 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202003052311" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202009130013" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003052311" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202009130013" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003052311" />
-<script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202003052311"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202003052311"></script>
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202009130013" />
+<script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../config.js?_dc=202009130013"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202009130013"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";
@@ -71,6 +75,9 @@ function parseLocation() {
 			case 'lang':
 				useLocale = hvalue;
 				break;
+			case "theme":
+				ig$.theme_id = hvalue;
+            	break;
 			case 'app':
 				loadingApp = hvalue;
 				break;
@@ -79,10 +86,23 @@ function parseLocation() {
 	}
 }
 
+ig$.theme_id = ig$.theme_id || "<%=theme%>" || $.cookie("theme");
+
 function initPage() {
 	var uid = $.cookie("lui") || "",
 		upd = "",
-		mts = "<%=mts%>"
+		mts = "<%=mts%>";
+		
+	if (ig$.theme_id)
+    {
+    	IG$.getScriptCache(
+   	        ["./css/" + ig$.theme_id.toLowerCase() + ".css"], 
+   	        new IG$.callBackObj(this, function() {
+   	            // __microloader();
+   	        }),
+   	        true
+   	    );
+    }
 	
 	IG$.createLoginPanel(uid, upd, false);
 
@@ -134,6 +154,59 @@ function initPage() {
 			}
 		}
 	});
+	
+	$("#b_theme").bind("change", function(e) {
+        var b_theme = $("#b_theme"),
+            selvalue = $("option:selected", b_theme).val(),
+            redirect = $(location).attr('href'),
+            p, hv, h = {},
+            k, v,
+            i, s = false;
+        
+        if (selvalue != ig$.theme_id)
+        {
+        	$.removeCookie("theme");
+        	$.cookie("theme", selvalue, {
+        		path: "/"
+        	});
+        	
+            if (redirect.indexOf("?") > -1)
+            {
+                p = redirect.substring(0, redirect.indexOf("?"));
+                hv = redirect.substring(redirect.indexOf("?") + 1);
+                h = hv.split("&");
+                
+                for (i=0; i < h.length; i++)
+                {
+                    if (h[i].substring(0, 6) == "theme=")
+                    {
+                        h[i] = h[i].substring(0, 6) + selvalue;
+                        s = true;
+                        break;
+                    }
+                }
+                
+                if (!s)
+                {
+                	h.push("theme=" + selvalue);
+                	s = true;
+                }
+                
+                hv = h.join("&");
+                
+                redirect = p + "?" + hv;
+            }
+            
+            if (s == true)
+            {
+                bg.show();
+                
+                setTimeout(function() {
+                    window.location.replace(redirect);
+                }, 100);
+            }
+        }
+    });
 		
 	$('#login_btn').bind('click', function() {
 		var userid = $('#userid').val(),
@@ -155,11 +228,17 @@ function initPage() {
 		return true;
 	});
 
-	IG$.chkSess(null, function() {
-		IG$.chkSvrInfo(function() {
-			$('#loginWindow').show();
-		});
-	});
+	IRm$.r2/*loadResources*/({
+        func: function() {
+        	IG$.chkSess(null, function() {
+                IG$.chkSvrInfo(function() {
+                    $('#loginWindow').show();
+                });
+            });
+            
+            IG$.showLogin();
+        }
+    }, false);
 }
 
 $(document).ready(function() {

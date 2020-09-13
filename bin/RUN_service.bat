@@ -156,8 +156,8 @@ set JVM=auto
 :foundJvm
 echo Using JVM:              "%JVM%"
 
-set "CLASSPATH=%CATALINA_HOME%\bin\amplix_launcher-3.0.0.jar;%CATALINA_HOME%\bin\amplix-3.0.0.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-8.5.23.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
-if not "%CATALINA_HOME%" == "%CATALINA_BASE%" set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\bin\amplix_launcher-3.0.0.jar;%CATALINA_HOME%\bin\amplix-3.0.0d.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-8.5.23.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
+set "CLASSPATH=%CATALINA_HOME%\bin\amplix_launcher-3.0.0.jar;%CATALINA_HOME%\bin\amplix-4.1.0.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-8.5.42.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
+if not "%CATALINA_HOME%" == "%CATALINA_BASE%" set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\bin\amplix_launcher-3.0.0.jar;%CATALINA_HOME%\bin\amplix-4.1.0.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-8.5.42.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
 
 if "%SERVICE_STARTUP_MODE%" == "" set SERVICE_STARTUP_MODE=manual
 if "%JvmMs%" == "" set JvmMs=128

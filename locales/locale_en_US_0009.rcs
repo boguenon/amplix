@@ -1,0 +1,4 @@
+A;L_C_REMSQL;Remove this sql can cause sheets that reconfiguration. Click confirm to continue.
+A;B_EDIT;Edit
+A;L_C_SQL_NON;Need at least one sql and could not delete this one.
+A;L_C_SWAPSQL;Changing SQL need to reconfigure your pivot items. Click confirm to continue.

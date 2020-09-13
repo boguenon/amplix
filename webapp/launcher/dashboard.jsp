@@ -12,15 +12,7 @@
 
     String version = com.amplix.rpc.igcServer.version;
     
-    String igc_theme = request.getParameter("igc_theme");
-    igc_theme = (igc_theme != null && "".equals(igc_theme) == true) ? null : igc_theme;
-    
-    String igc_theme_name = null;
-    
-    if (igc_theme != null)
-    {
-    	igc_theme_name = igc_theme.toLowerCase().replaceAll(" ", "");
-    }
+    String theme = request.getParameter("theme");
 	
 	boolean is_debug = (request.getParameter("debug") != null && request.getParameter("debug").equals("true") ? true : false);
 %>
@@ -34,23 +26,22 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202003052311" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202009130013" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003052311" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202009130013" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003052311" />
-
 <%
-if (igc_theme != null)
+if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/theme_" + igc_theme_name + ".css\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202009130013\" />");
 }
 %>
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202009130013" />
 
-<script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202003052311"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202003052311"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202003052311"></script>
+<script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>    
+<script type="text/javascript" src="../config.js?_dc=202009130013"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202009130013"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202009130013"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -80,13 +71,6 @@ function getLocale()
 }
 
 getLocale();
-
-<%
-	if (igc_theme != null)
-	{
-		out.println("ig$.theme_id=\"" + igc_theme + "\";");
-	}
-%>
 
 var _report_prompt = [];
 <%
@@ -122,120 +106,53 @@ function loadParameter(param) {
 }
 </script>
 <script type="text/javascript">
-ig$.appInfo.apprelease = "<%= version%>";
-ig$.bootconfig.cache = ig$.appInfo.apprelease + "_" + ig$.appInfo.date.replace(/[{}]/g, "");
+<%
+if (theme != null && theme.length() > 0)
+{
+	out.println("ig$.theme_id=\"" + theme + "\";");
+}
+%>
 
 var modules = ["framework", "vis_ec", "vis_ec_theme", "app_dashboard", "appnc", "custom"];
 IG$.__microloader(modules);
 </script>
 <script type="text/javascript">
-$(document).ready(function() {
-	var btn_logout = $("#igc_logout"),
-		igc_login_dr = $("#igc_login_dr"),
-		m_user = $("#m_user"),
-		m_pwd = $("#m_pwd"),
-		m_passwd = $("#m_passwd", m_user),
-		m_logout = $("#m_logout", m_user),
-		m_style = $("#m_style"),
-		doc = $(document),
-		body = $("body"),
-		f = function(e) {
-			m_user.hide();
-			doc.unbind("click", f);
-		},
-		f1 = function(e) {
-			m_style.hide();
-			doc.unbind("click", f1);
-		},
-		b_style = $("#b_style");
-	
-	btn_logout.bind("click", function() {
-		IG$.showLogout();
-	});
-	
-	m_logout.bind("click", function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-		
-		m_user.hide();
-		doc.unbind("click", f);
-		
-		IG$.showLogout();
-	});
-	
-	m_passwd.bind("click", function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-
-		doc.unbind("click", f);
-		
-		var u1 = $("#u1", m_pwd),
-			u2 = $("#u2", m_pwd),
-			u3 = $("#u3", m_pwd);
-			
-		u1.val("");
-		u2.val("");
-		u3.val("");
-		
-		m_pwd.show();
-		
-		m_user.hide();
-	});
-	
-	igc_login_dr.bind("click", function(e) {
-		e.stopPropagation();
-		e.preventDefault();
-		
-		m_user.css({
-			top: 20,
-			left: "initial",
-			right: 10
-		});
-		m_user.toggle();
-		m_style.hide();
-		doc.bind("click", f);
-		doc.unbind("click", f1);
-	});
-	
-	b_style.bind("click", function(e) {
-		e.stopPropagation();
-		e.preventDefault();
-		
-		m_style.css({
-			top: 20,
-			left: "initial",
-			right: 10
-		});
-		
-		m_user.hide();
-		doc.unbind("click", f);
-		
-		m_style.toggle();
-		doc.bind("click", f1);
-	});
-	
-	window.app_themes = function(themes) {
-		var m_style = $("#m_style");
-		
-		if (themes && m_style)
+IG$.ready(function() {
+	var menu_logout = new IG$._menu_button($(".user-info"), [
 		{
-			$.each(themes, function(i, theme) {
-				var m = $("<li><a class='btn_button'>" + theme.name + "</a></li>").appendTo(m_style);
+			nmae: "b_passwd",
+			text: "Password",
+			handler: function() {
+				var m_pwd = $("#m_pwd"),
+					u1 = $("#u1", m_pwd),
+					u2 = $("#u2", m_pwd),
+					u3 = $("#u3", m_pwd);
+					
+				u1.val("");
+				u2.val("");
+				u3.val("");
 				
-				m.bind("click", function(e) {
-					e.preventDefault();
-					e.stopPropagation();
-					
-					window.set_themes(theme.name);
-					
-					m_style.hide();
-					doc.unbind("click", f1);
-				});
-			});
+				m_pwd.show();
+			}
+		},
+		{
+			nmae: "b_logout",
+			text: "Logout",
+			handler: function() {
+				IG$.showLogout();
+			}
 		}
-	};
+	], {
+		btn_styles: ["fadeInRight"],
+		menu_position: {
+			top: 20,
+			left: "initial",
+			right: 10
+		}
+	});
+	menu_logout.create();
 	
-	window.set_themes = function(themename) {
+	var set_themes = function(theme) {
 		var vars = {}, 
 			hash,
 			murl = window.location.href,
@@ -255,7 +172,7 @@ $(document).ready(function() {
 		    }
 	    }
 	    
-	    vars["igc_theme"] = themename;
+	    vars["theme"] = theme.code || "";
 	    
 	    nurl = url + "?";
 	    
@@ -266,25 +183,32 @@ $(document).ready(function() {
 	    
 	    window.location.replace(nurl);
 	};
+	
+	var theme_options = [];
+	
+	$.each(ig$.themes, function(i, theme) {
+		theme_options.push({
+			text: theme.disp,
+			handler: function() {
+				set_themes(theme);
+			}
+		})
+	});
+	
+	var menu_theme = new IG$._menu_button($("#b_style"), theme_options, {
+		btn_styles: ["fadeInRight"],
+		menu_position: {
+			top: 20,
+			left: "initial",
+			right: 10
+		}
+	});
+	menu_theme.create();
 });
 
-function _btn_handler(view, key) {
-	if (key == "custom1")
-	{
-		IG$._n2("013138da-01f4ab0a", "report", null, false);
-	}
-}
-
-ig$.dashboard_custom = {
-	menu_loaded: function(menus, panel, snav) {
-		var item = menus[0];
-		snav.empty();
-		panel.L3.call(panel, snav, item, 0);
-	}
-};
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003052311"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202009130013"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
@@ -350,10 +274,10 @@ $(document).ready(function() {
  	
  	<div id="navbar" class="navbar">
  		<div class="navbar-header">
+ 			<div id="navbar_dmenu" class="igc-nav-btn-menu"></div>
  			<a class="navbar-brand">
  				<%= com.amplix.launcher.App.CompanyName %>...
  			</a>
- 			<div id="navbar_dmenu" class="igc-nav-btn-menu"></div>
  		</div>
  		<div class="navbar-top-menu">
  		</div>
@@ -396,12 +320,6 @@ $(document).ready(function() {
  		</div>
  	</div>
  	
- 	<ul id="m_user" class="dropdown-menu animated fadeInRight m-t-xs">
-        <li><a class="btn_button" id="m_passwd">Password</a></li>
-        <li class="divider"></li>
-        <li><a class="btn_button" id="m_logout">Logout</a></li>
-    </ul>
-    
     <ul id="m_style" class="dropdown-menu animated fadeInRight m-t-xs">
     </ul>
     

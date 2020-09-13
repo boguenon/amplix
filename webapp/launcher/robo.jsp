@@ -17,8 +17,8 @@ body {
 	overflow-x: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003052311"></link>
-<script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202009130013"></link>
+<script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",

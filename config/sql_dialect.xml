@@ -227,6 +227,38 @@
 				TO_CHAR({field}, {format})
 			</extract>
 		</date_extract>
+		<date_extract type="cubrid">
+			<extract type="yyyy">
+				YEAR({field})
+			</extract>
+			<extract type="quarter">
+				QUARTER({field})
+			</extract>
+			<extract type="month">
+				MONTH({field})
+			</extract>
+			<extract type="day">
+				DAY({field})
+			</extract>
+			<extract type="weekmonth">
+				EXTRACT(DOW FROM {field})
+			</extract>
+			<extract type="week" begin="1">
+				WEEK({field})
+			</extract>
+			<extract type="ampm">
+				CASE WHEN HOUR({field}) BETWEEN 0 AND 11 THEN 'AM' ELSE 'PM' END
+			</extract>
+			<extract type="hour">
+				HOUR({field})
+			</extract>
+			<extract type="minute">
+				MINUTE({field})
+			</extract>
+			<extract type="custom">
+				EXTRACT({format} FROM DATETIME {field})
+			</extract>
+		</date_extract>
 	</date_expressions>
 	<date_format>
 		<item type="oracle">
@@ -244,6 +276,10 @@
 		<item type="h2">
 			<date><![CDATA[FORMATDATETIME({field}, 'yyyyMMddhhmmss')]]></date>
 			<datetime><![CDATA[FORMATDATETIME({field}, 'yyyyMMddhhmmss')]]></datetime>
+		</item>
+		<item type="cubrid">
+			<date><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></date>
+			<datetime><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></datetime>
 		</item>
 	</date_format>
 	<string_to_date>
@@ -276,6 +312,10 @@
 		<item type="h2">
 			<date><![CDATA[PARSEDATETIME({value}, 'yyyyMMddhhmmss')]]></date>
 			<datetime><![CDATA[PARSEDATETIME({value}, 'yyyyMMddhhmmss')]]></datetime>
+		</item>
+		<item type="cubrid">
+			<date><![CDATA[TO_DATE({value}, 'YYYYMMDD')]]></date>
+			<datetime><![CDATA[TO_DATETIME({value}, 'YYYYMMDDHH24MISS')]]></datetime>
 		</item>
 	</string_to_date>
 	<db_info>
@@ -318,6 +358,11 @@
 			<separator><![CDATA[""]]></separator>
 			<tablealias>AS</tablealias>
 			<dualtable></dualtable>
+		</item>
+		<item type="cubrid">
+			<separator><![CDATA[""]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable>FROM DUAL</dualtable>
 		</item>
 	</db_info>
 	<limit_query>
@@ -364,6 +409,13 @@
 			<postsql></postsql>
 		</item>
 		<item type="h2">
+			<presql></presql>
+			<append_select></append_select>
+			<append_where></append_where>
+			<limit_query><![CDATA[LIMIT {n}]]></limit_query>
+			<postsql></postsql>
+		</item>
+		<item type="cubrid">
 			<presql></presql>
 			<append_select></append_select>
 			<append_where></append_where>

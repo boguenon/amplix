@@ -1,0 +1,58 @@
+package ${PACKAGE_NAME};
+
+import java.io.File;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.amplix.rpc.igcJob;
+import com.amplix.rpc.igcServer;
+
+${IMPORT_CLASSES}
+
+public class ${CLASS_NAME}
+	extends igcJob
+{
+	private static final Logger logger = LoggerFactory.getLogger(${CLASS_NAME}.class);
+	
+	public void execute()
+	{
+		PreparedStatement pstmt = null;
+		
+		try
+		{
+	        logger.info("------------ start custom code execution");
+	        
+	        ${JAVA_SOURCE}
+	        
+	        logger.info("------------ custom code execution completed");
+		}
+		catch (Exception ex)
+		{
+			logger.error("execute quartz job", ex);
+		}
+		finally
+		{
+			try
+			{
+				if (pstmt != null)
+					pstmt.close();
+				pstmt = null;
+			}
+			catch (Exception e)
+			{
+			}
+		}
+	}
+	
+	${JAVA_EXTRA}
+	
+	@Override
+	public void dispose() {
+		super.dispose();		
+	}
+}

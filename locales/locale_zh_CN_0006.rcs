@@ -1,0 +1,5 @@
+A;L_REG_TEMPLATE;Register as Templates
+A;L_C_REGTMPL;Do you want to register this report as Template?
+A;L_T_TMPL_SEL;Template Selection
+A;L_AUTO_REFRESH;Auto Refresh
+A;L_REFRESH_CYCLE;Refresh Cycle(Sec)
