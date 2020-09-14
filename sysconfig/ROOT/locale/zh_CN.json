@@ -6556,5 +6556,17 @@
     "group" : "locale_zh_CN_0017",
     "name" : "M_ERR_CHART_SEL",
     "value" : "Chart type need to be selected!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MERGE_COL",
+    "value" : "Merge Column"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_ROW_LOCATION",
+    "value" : "Row Location"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PROMPT_VALUES",
+    "value" : "Prompt Values"
   } ]
 }
