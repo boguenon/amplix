@@ -78,3 +78,7 @@ A;L_MARKER_SIZE;마커 크기
 A;L_MARKER_SYMBOL;마커 심볼
 
 A;M_ERR_CHART_SEL;챠트 유형을 선택해 주셔야 합니다. 챠트 마법사에서 옵션을 선택해 주십시오.
+
+A;L_MERGE_COL;컬럼 병합하기
+A;L_ROW_LOCATION;행 위치
+A;L_PROMPT_VALUES;프롬프트 값

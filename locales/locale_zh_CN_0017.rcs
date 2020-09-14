@@ -77,3 +77,7 @@ A;L_COLOR_CATEG;Color Category
 A;L_MARKER_SIZE;Marker Size
 A;L_MARKER_SYMBOL;Marker Symbol
 A;M_ERR_CHART_SEL;Chart type need to be selected!
+
+A;L_MERGE_COL;Merge Column
+A;L_ROW_LOCATION;Row Location
+A;L_PROMPT_VALUES;Prompt Values
