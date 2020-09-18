@@ -332,6 +332,9 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 	});
 }
 
+/**
+ * data visualization routine with report result set
+ */
 IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 	var me = this,
 		esri = me.esri,
@@ -546,6 +549,10 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		});
 		colorsel = IG$.__chartoption.chartcolors[c_cset]
 	}
+	
+	var g = new esri.GraphicsLayer({});
+	map.addLayer(g);
+	me._glayers.push(g);
 
 	geodata && $.each(geodata, function(i, p) {
 		var mkey = p.lat + "_" + p.lng,
@@ -553,7 +560,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			dval,
 			r, marker,
 			symbol,
-			g, gp,
+			gp,
 			n, nr;
 			
 		if (cop.m_marker == "circle")
@@ -569,10 +576,6 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				r = n_min;
 			}
 
-			g = new esri.GraphicsLayer({});
-			map.addLayer(g);
-			me._glayers.push(g);
-			 
 			symbol = new esri.SimpleFillSymbol();
 			marker = new esri.Circle({
 				center: pt,
@@ -598,7 +601,8 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 						c1 = colors[m],
 						c2 = colors[m+1],
 						cr = nr * (colors.length - 1) - m;
-					if (m == colors.length - 1)
+						
+					if (m == colors.length-1)
 					{
 						c = colors[colors.length-1];
 					}
@@ -613,6 +617,8 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			symbol.setColor(new esri.Color(c));
 			
 			marker.m_gdata = [p];
+			gp.p = p;
+			gp.pt = pt;
 			g.add(gp);
 		}
 		else
@@ -659,64 +665,75 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			marker.m_gdata = [p];
 			// marker.setPosition(pt);
 			// marker.setMap(map);
-			
-			g = new esri.GraphicsLayer({});
-			map.addLayer(g);
-			me._glayers.push(g);
 
 			gp = new esri.Graphic(pt, marker);
+			gp.p = p;
+			gp.pt = pt;
 			g.add(gp);
 		}
+	});
+	
+	g.on("click", function(evt) {
+		var infow = map.infoWindow,
+			i, j, ct, t,
+			gp = evt.graphic,
+			series_name = "", point_name = "",
+			sep = IG$._separator,
+			mval = "<div>",
+			p,
+			pt;
 
-		g.on("click", function(evt) {
-			var infow = map.infoWindow,
-				i, j, ct, t,
-				series_name = "", point_name = "",
-				sep = IG$._separator,
-				mval = "<div>";
-
-			for (i=0; i < p.data.length; i++)
+		if (!gp)
+			return;
+			
+		p = gp.p;
+		
+		if (!p)
+			return;
+			
+		pt = gp.pt;
+			
+		for (i=0; i < p.data.length; i++)
+		{
+			mval += (i > 0 ? "<br/>" : "");
+			
+			if (i >= colfix)
 			{
-				mval += (i > 0 ? "<br/>" : "");
-				
-				if (i >= colfix)
+				for (j=0; j < rowfix; j++)
 				{
-					for (j=0; j < rowfix; j++)
+					t = tabledata[j][i].text || tabledata[j][i].code;
+					if (i == colfix)
 					{
-						t = tabledata[j][i].text || tabledata[j][i].code;
-						if (i == colfix)
-						{
-							series_name += (series_name ? sep : "") + (t || " ");
-						}
-						ct = (j == 0) ? t : ct + "|" + t;
+						series_name += (series_name ? sep : "") + (t || " ");
 					}
-					
-					mval += "<span>" + ct + ": </span>";
+					ct = (j == 0) ? t : ct + "|" + t;
 				}
 				
-				t = (p.data[i].text || p.data[i].code);
-				if (i < colfix)
-				{
-					point_name += (point_name ? sep : "") + (t || " ");
-				} 
-				mval += "<span>" + t + "</span>";
+				mval += "<span>" + ct + ": </span>";
 			}
-			mval += "</div>";
-			infow.setContent(mval);
-			infow.show(pt);
+			
+			t = (p.data[i].text || p.data[i].code);
+			if (i < colfix)
+			{
+				point_name += (point_name ? sep : "") + (t || " ");
+			} 
+			mval += "<span>" + t + "</span>";
+		}
+		mval += "</div>";
+		infow.setContent(mval);
+		infow.show(pt);
 
-			var param = {
-					point: {
-						name: point_name
-					}
-				},
-				sender = {
-					name: series_name
-				};
+		var param = {
+				point: {
+					name: point_name
+				}
+			},
+			sender = {
+				name: series_name
+			};
 
-			// drill event triggering
-			owner.procClickEvent.call(owner, sender, param);
-		});
+		// drill event triggering
+		owner.procClickEvent.call(owner, sender, param);
 	});
 };
 

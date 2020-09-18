@@ -81,3 +81,17 @@ A;M_ERR_CHART_SEL;Chart type need to be selected!
 A;L_MERGE_COL;Merge Column
 A;L_ROW_LOCATION;Row Location
 A;L_PROMPT_VALUES;Prompt Values
+
+A;M_PASS_MISMATCH;Password is not match with confirm value
+A;M_COMP_SUCCESS;Compiled Successfully
+A;L_COMP_CAPTURE;Capture completed!
+A;M_VALUESET_EXIST;ValueSet already exists in selection.
+A;M_CONFIRM_CLOSE;Close editing items and continue to confirm!
+A;M_SEL_SINGLE;Select 1 item to continue!
+A;M_TARGET_NOTFOUND;Target item not found
+A;M_NOTFOUND_IN_DIM;Item not found on dimension list!
+A;M_PROC_WAIT;Still progressing. Please wait!
+
+A;L_SHEET_TOOLBAR;Sheet Toolbar
+A;L_SHEET_SCRIPTS;Sheet Script
+A;L_CUST_LEGEND;Custom Legend

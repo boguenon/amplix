@@ -82,3 +82,18 @@ A;M_ERR_CHART_SEL;챠트 유형을 선택해 주셔야 합니다. 챠트 마법�
 A;L_MERGE_COL;컬럼 병합하기
 A;L_ROW_LOCATION;행 위치
 A;L_PROMPT_VALUES;프롬프트 값
+
+A;M_PASS_MISMATCH;패스워드 확인값이 일치하지 않습니다.
+A;M_COMP_SUCCESS;성공적으로 컴파일 하였습니다.
+A;L_COMP_CAPTURE;캡쳐가 성공하였습니다.
+A;M_VALUESET_EXIST;값집합이 이미 선택에 포함되어 있습니다.
+A;M_CONFIRM_CLOSE;편집하고 있는 항목을 닫은 다음 계속해 주십시오.
+A;M_SEL_SINGLE;계속하시려면 1개 항목을 선택해 주십시오.
+A;M_TARGET_NOTFOUND;대상항목이 존재하지 않습니다.
+A;M_NOTFOUND_IN_DIM;항목이 디멘젼 목록에 존재하지 않습니다.
+A;M_PROC_WAIT;아직 진행중입니다. 잠시 기다려 주십시오.
+
+A;L_SHEET_TOOLBAR;쉬트 툴바
+A;L_SHEET_SCRIPTS;쉬트 스크립트
+A;L_CUST_LEGEND;커스텀 범례
+A;L_SYS_LOG;시스템 로그
