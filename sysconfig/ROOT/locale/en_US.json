@@ -6640,5 +6640,53 @@
     "group" : "locale_en_US_0017",
     "name" : "L_PROMPT_VALUES",
     "value" : "Prompt Values"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_PASS_MISMATCH",
+    "value" : "Password is not match with confirm value"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_COMP_SUCCESS",
+    "value" : "Compiled Successfully"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_COMP_CAPTURE",
+    "value" : "Capture completed!"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_VALUESET_EXIST",
+    "value" : "ValueSet already exists in selection."
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_CONFIRM_CLOSE",
+    "value" : "Close editing items and continue to confirm!"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_SEL_SINGLE",
+    "value" : "Select 1 item to continue!"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_TARGET_NOTFOUND",
+    "value" : "Target item not found"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_NOTFOUND_IN_DIM",
+    "value" : "Item not found on dimension list!"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_PROC_WAIT",
+    "value" : "Still progressing. Please wait!"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_SHEET_TOOLBAR",
+    "value" : "Sheet Toolbar"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_SHEET_SCRIPTS",
+    "value" : "Sheet Script"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_CUST_LEGEND",
+    "value" : "Custom Legend"
   } ]
 }

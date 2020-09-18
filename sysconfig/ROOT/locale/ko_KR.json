@@ -903,8 +903,9 @@
     "name" : "L_P_onlinereport",
     "value" : "리포트 실행"
   }, {
+    "group" : "locale_ko_KR_0017",
     "name" : "L_SYS_LOG",
-    "value" : "리포트 실행 로그"
+    "value" : "시스템 로그"
   }, {
     "name" : "M_ERR_C_REP_PROC",
     "value" : "리포트 실행후 커스텀 처리중 오류가 발생하였습니다."
@@ -6636,5 +6637,53 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_PROMPT_VALUES",
     "value" : "프롬프트 값"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_PASS_MISMATCH",
+    "value" : "패스워드 확인값이 일치하지 않습니다."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_COMP_SUCCESS",
+    "value" : "성공적으로 컴파일 하였습니다."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_COMP_CAPTURE",
+    "value" : "캡쳐가 성공하였습니다."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_VALUESET_EXIST",
+    "value" : "값집합이 이미 선택에 포함되어 있습니다."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_CONFIRM_CLOSE",
+    "value" : "편집하고 있는 항목을 닫은 다음 계속해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_SEL_SINGLE",
+    "value" : "계속하시려면 1개 항목을 선택해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_TARGET_NOTFOUND",
+    "value" : "대상항목이 존재하지 않습니다."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_NOTFOUND_IN_DIM",
+    "value" : "항목이 디멘젼 목록에 존재하지 않습니다."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_PROC_WAIT",
+    "value" : "아직 진행중입니다. 잠시 기다려 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_SHEET_TOOLBAR",
+    "value" : "쉬트 툴바"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_SHEET_SCRIPTS",
+    "value" : "쉬트 스크립트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CUST_LEGEND",
+    "value" : "커스텀 범례"
   } ]
 }
