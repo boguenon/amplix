@@ -99,6 +99,7 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
 				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
+				me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -214,6 +215,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_color_categ = me.down("[name=m_color_categ]").getValue();
 				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
 				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
+				option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
 				
 				// arc layer selection
 				option.settings.m_arc_layers = [];
@@ -631,6 +633,12 @@ IG$._customChartPanels = function() {
 										} 
 									]
 								}
+							},
+							{
+								xtype: "textarea",
+								name: "m_map_legend",
+								fieldLabel: IRm$.r1("L_CUST_LEGEND"),
+								height: 120
 							}
 						]
 					},
