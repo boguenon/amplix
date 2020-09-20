@@ -95,3 +95,5 @@ A;M_PROC_WAIT;Still progressing. Please wait!
 A;L_SHEET_TOOLBAR;Sheet Toolbar
 A;L_SHEET_SCRIPTS;Sheet Script
 A;L_CUST_LEGEND;Custom Legend
+
+A;M_SELECT_FOLDER;Select Folder item to continue
