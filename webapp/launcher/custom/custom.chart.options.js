@@ -5,7 +5,7 @@ IG$.__chartoption.chartcateg.push({
 	value: "h-stock"
 });
 
-IG$.cSET/* chartOptionSet */= "f_palette;f_showvalues;m_zoom_level;m_marker;m_min;m_max;s_t_f;s_t_fo;e3d_en;e3d_al;e3d_be;e3d_de;e3d_vd;edu_val1;cdata_m_tmpl;m_xypos;m_arc_basemap";
+IG$.cSET/* chartOptionSet */= "f_palette;f_showvalues;m_zoom_level;m_marker;m_min;m_max;s_t_f;s_t_fo;e3d_en;e3d_al;e3d_be;e3d_de;e3d_vd;edu_val1;cdata_m_tmpl;m_xypos";
 
 IG$._customChartPanels = function() {
 	return [
@@ -100,6 +100,7 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
 				me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
+				me.down("[name=m_map_info]").setValue(option.settings.m_map_info);
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -216,6 +217,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
 				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
 				option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
+				option.settings.m_map_info = me.down("[name=m_map_info]").getValue();
 				
 				// arc layer selection
 				option.settings.m_arc_layers = [];
@@ -273,6 +275,7 @@ IG$._customChartPanels = function() {
 			
 			// arc layer selection
 			me.down("[name=m_arc_layers]").setVisible(subtype == "esri" && ig$.arcgis_rest$ && ig$.arcgis_rest$.length);
+			me.down("[name=m_arc_options]").setVisible(subtype == "esri");
 		},
 		items: [
 			{
@@ -578,35 +581,6 @@ IG$._customChartPanels = function() {
 							},
 							{
 								xtype: "combobox",
-								name: "m_arc_basemap",
-								queryMode: "local",
-								displayField: "name",
-								valueField: "value",
-								hidden: true,
-								fieldLabel: IRm$.r1("L_BASEMAP"), // "Base Map",
-								store: {
-									data: [
-										{name: "dark-gray", value: "dark-gray"},
-										{name: "dark-gray-vector", value: "dark-gray-vector"},
-										{name: "gray", value: "gray"},
-										{name: "gray-vector", value: "gray-vector"},
-										{name: "national-geographic", value: "national-geographic"},
-										{name: "oceans", value: "oceans"},
-										{name: "osm", value: "osm"},
-										{name: "satellite", value: "satellite"},
-										{name: "streets", value: "streets"},
-										{name: "streets-navigation-vector", value: "streets-navigation-vector"},
-										{name: "streets-night-vector", value: "streets-night-vector"},
-										{name: "streets-relief-vector", value: "streets-relief-vector"},
-										{name: "streets-vector", value: "streets-vector"},
-										{name: "terrain", value: "terrrain"},
-										{name: "topo", value: "topo"},
-										{name: "topo-vector", value: "topo-vector"}
-									]
-								}	
-							},
-							{
-								xtype: "combobox",
 								name: "m_xypos",
 								queryMode: "local",
 								displayField: "name",
@@ -633,34 +607,78 @@ IG$._customChartPanels = function() {
 										} 
 									]
 								}
+							}
+						]
+					},
+					// arc layer selection
+					{
+						xtype: "fieldset",
+						name: "m_arc_options",
+						hidden: true,
+						layout: {
+							type: "vbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "combobox",
+								name: "m_arc_basemap",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "value",
+								fieldLabel: IRm$.r1("L_BASEMAP"), // "Base Map",
+								store: {
+									data: [
+										{name: "dark-gray", value: "dark-gray"},
+										{name: "dark-gray-vector", value: "dark-gray-vector"},
+										{name: "gray", value: "gray"},
+										{name: "gray-vector", value: "gray-vector"},
+										{name: "national-geographic", value: "national-geographic"},
+										{name: "oceans", value: "oceans"},
+										{name: "osm", value: "osm"},
+										{name: "satellite", value: "satellite"},
+										{name: "streets", value: "streets"},
+										{name: "streets-navigation-vector", value: "streets-navigation-vector"},
+										{name: "streets-night-vector", value: "streets-night-vector"},
+										{name: "streets-relief-vector", value: "streets-relief-vector"},
+										{name: "streets-vector", value: "streets-vector"},
+										{name: "terrain", value: "terrrain"},
+										{name: "topo", value: "topo"},
+										{name: "topo-vector", value: "topo-vector"}
+									]
+								}	
 							},
 							{
 								xtype: "textarea",
 								name: "m_map_legend",
 								fieldLabel: IRm$.r1("L_CUST_LEGEND"),
 								height: 120
-							}
-						]
-					},
-					// arc layer selection
-					{
-						xtype: "gridpanel",
-						title: IRm$.r1("L_ARCGIS_LAYERS"), // "ArcGIS MapLayers",
-						name: "m_arc_layers",
-						hidden: true,
-						height: 300,
-						selType: "checkboxmodel",
-						selModel: {
-							mode: "MULTI"
-						},
-						store: {
-							data: [
-							]
-						},
-						columns: [
+							},
 							{
-								text: IRm$.r1("B_NAME"),
-								dataIndex: "name"
+								xtype: "textarea",
+								name: "m_map_info",
+								fieldLabel: IRm$.r1("L_CUST_INFO"),
+								height: 120
+							},
+							{
+								xtype: "gridpanel",
+								title: IRm$.r1("L_ARCGIS_LAYERS"), // "ArcGIS MapLayers",
+								name: "m_arc_layers",
+								height: 300,
+								selType: "checkboxmodel",
+								selModel: {
+									mode: "MULTI"
+								},
+								store: {
+									data: [
+									]
+								},
+								columns: [
+									{
+										text: IRm$.r1("B_NAME"),
+										dataIndex: "name"
+									}
+								]
 							}
 						]
 					}

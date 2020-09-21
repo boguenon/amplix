@@ -97,3 +97,5 @@ A;L_SHEET_TOOLBAR;쉬트 툴바
 A;L_SHEET_SCRIPTS;쉬트 스크립트
 A;L_CUST_LEGEND;커스텀 범례
 A;L_SYS_LOG;시스템 로그
+
+A;M_SELECT_FOLDER;계속 하시려면 폴더 항목을 선택해 주십시오.
