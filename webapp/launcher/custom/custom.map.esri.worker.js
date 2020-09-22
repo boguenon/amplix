@@ -183,7 +183,10 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		"esri/graphic",
 		"esri/layers/GraphicsLayer",
 		"esri/geometry/Circle",
+		"esri/renderers/SimpleRenderer",
+		"esri/renderers/ClassBreaksRenderer",
 		"esri/symbols/SimpleFillSymbol",
+		"esri/symbols/SimpleLineSymbol",
 		"esri/Color",
 		"dojo/dom-construct",
 		"dojo/domReady!"
@@ -194,7 +197,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		KMLLayer, LabelLayer, MapImageLayer, OpenStreetMapLayer, RasterLayer, StreamLayer, WebTiledLayer,
 		WFSLayer, WMSLayer, WMTSLayer,
 		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, Graphic, GraphicsLayer, 
-		Circle, SimpleFillSymbol, Color,
+		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color,
 		domConstruct) {
 		var esri = {
 				esriConfig: esriConfig,
@@ -234,7 +237,10 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 				GraphicsLayer: GraphicsLayer,
 				Circle: Circle,
 				Color: Color,
+				SimpleRenderer: SimpleRenderer,
+				ClassBreaksRenderer: ClassBreaksRenderer,
 				SimpleFillSymbol: SimpleFillSymbol,
+				SimpleLineSymbol: SimpleLineSymbol,
 				domConstruct: domConstruct
 			},
 			i, l;
@@ -299,13 +305,30 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 			{
 				sv = v[i].split(",");
 				
-				if (sv.length == 3 && sv[0] && sv[1] && sv[2])
+				if (sv.length > 2 && sv[0] && sv[1] && sv[2])
 				{
-					ig$.arcgis_rest$.push({
+					var c = {
 						name: sv[0],
 						loader: sv[1],
-						url: sv[2]
-					});
+						url: sv[2],
+						option: {}
+					};
+					
+					if (sv[3])
+					{
+						var cc = sv[3].split(";");
+						
+						$.each(cc, function(m, cv) {
+							if (cv && cv.indexOf("=") > 0)
+							{
+								var n = cv.substring(0, cv.indexOf("=")),
+									v = cv.substring(cv.indexOf("=") + 1);
+									
+								c.option[n] = v;
+							}
+						});
+					}
+					ig$.arcgis_rest$.push(c);
 				}
 			}
 		}
@@ -325,8 +348,26 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 		});
 	}
 		
+	me._api_layers = {};
+		
 	$.each(layers, function(i, lobj) {
-		var l = new esri[lobj.loader](lobj.url);
+		var cf,
+			l;
+			
+		if (lobj.loader == "FeatureLayer" && lobj.option.mapid)
+		{
+			cf = {
+				id: lobj.option.mapid,
+				outFields: ["*"]
+			};
+		}
+			
+		l = cf ? new esri[lobj.loader](lobj.url, cf) : new esri[lobj.loader](lobj.url);
+		me._api_layers[lobj.name] = {
+			layer: l,
+			config: lobj
+		};
+		
 		map_inst.addLayer(l);
 		me._glayers.push(l);
 	});
@@ -352,12 +393,14 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		minLng, maxLng, minLat, maxLat,
 		m_lat, m_lng, trow,
 		c_lat =  -1, c_lng = -1,
+		c_geofield = -1,
 		geodata = results ? results.geodata : null,
 		tabledata = results._tabledata,
 		rowfix = results.rowfix,
 		colors = [],
 		n_lat, n_lng, bs = 0,
 		c_color_categ = -1,
+		geofield_map = {},
 		m_marker_symbol = copsettings.m_marker_symbol || "STYLE_CIRCLE";
 		
 	copsettings.m_min_color && colors.push(copsettings.m_min_color);
@@ -400,6 +443,17 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				if (s.uid == copsettings.m_color_categ)
 				{
 					c_color_categ = i;
+				}
+			});
+		}
+		
+		if (cop.m_marker == "polygon" && copsettings.m_geofield && sop)
+		{
+			$.each(sop.rows, function(i, s) {
+				if (s.uid == copsettings.m_geofield)
+				{
+					c_geofield = i;
+					return false;
 				}
 			});
 		}
@@ -490,7 +544,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 
 	oLabel = new esri.SimpleMarkerSymbol();
 
-	if (geodata)
+	if (geodata && geodata.length)
 	{
 		for (i=0; i < geodata.length; i++)
 		{
@@ -511,6 +565,30 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				nmin = isNaN(nmin) ? dval : Math.min(nmin, dval);
 			}
 			p.dval = dval;
+		}
+	}
+	else if (c_geofield > -1)
+	{
+		for (i=rowfix; i < tabledata.length; i++)
+		{
+			d = tabledata[i];
+			
+			var m = {
+				code: d[c_geofield].code,
+				row: i
+			};
+			
+			if (m.code)
+			{
+				geofield_map[m.code] = m;
+			}
+			
+			dval = Number(d.length > colfix + dindex ? d[colfix + dindex].code : 0);
+			if (isNaN(dval) == false)
+			{
+				nmax = isNaN(nmax) ? dval : Math.max(nmax, dval);
+				nmin = isNaN(nmin) ? dval : Math.min(nmin, dval);
+			}
 		}
 	}
 
@@ -553,188 +631,258 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 	var g = new esri.GraphicsLayer({});
 	map.addLayer(g);
 	me._glayers.push(g);
-
-	geodata && $.each(geodata, function(i, p) {
-		var mkey = p.lat + "_" + p.lng,
-			pt = new esri.Point(p.lng, p.lat),
-			dval,
-			r, marker,
-			symbol,
-			gp,
-			n, nr;
-			
-		if (cop.m_marker == "circle")
+	
+	var polygon_layer;
+	
+	$.each(me._api_layers, function(i, layer) {
+		if (layer.config.loader == "FeatureLayer" && layer.config.option.mapid)
 		{
-			dval = Number(p.data[colfix].code);
-
-			if (nmax - nmin > 0)
-			{
-				r = n_min + (n_max - n_min) * (dval - nmin) / (nmax - nmin);
-			}
-			else
-			{
-				r = n_min;
-			}
-
-			symbol = new esri.SimpleFillSymbol();
-			marker = new esri.Circle({
-				center: pt,
-				radius: r
-			});
-
-			gp = esri.Graphic(marker, symbol);
-			
-			var c = [255,0,0,.3];
-			
-			if (colors.length > 0)
-			{
-				if (colors.length == 1)
-				{
-					c = colors[0];
-				}
-				else
-				{
-					nr = ratio * (dval - nmin);
-					
-					var rng = nr * (colors.length - 1),
-						m = Math.floor(rng),
-						c1 = colors[m],
-						c2 = colors[m+1],
-						cr = nr * (colors.length - 1) - m;
-						
-					if (m == colors.length-1)
-					{
-						c = colors[colors.length-1];
-					}
-					else
-					{
-						c = IG$._interpolate_color(c1, c2, cr);
-					}
-					c.push(0.5);
-				}
-			}
-			
-			symbol.setColor(new esri.Color(c));
-			
-			marker.m_gdata = [p];
-			gp.p = p;
-			gp.pt = pt;
-			g.add(gp);
-		}
-		else
-		{
-			/*
-			if (p.c)
-			{
-				cluster = new ClusterMarker_(pt, p.cc, styles_, 60);
-				cluster.setMap(map);
-			}
-			else
-			{
-			*/``
-			marker = new esri.SimpleMarkerSymbol(); // (oIcon, { title : '��Ŀ : ' + pt.toString() });
-			marker.setSize(m_marker_size);
-			marker.setStyle(esri.SimpleMarkerSymbol[m_marker_symbol]);
-			
-			var c = [255,0,0,0.5];
-			
-			if (c_color_categ > -1)
-			{
-				var row = p.data,
-					rval = row[c_color_categ],
-					t = rval ? rval.text || rval.code : null,
-					ct;
-					
-				if (t)
-				{
-					if (colormap[t])
-					{
-						c = colormap[t];
-					}
-					else
-					{
-						ct = colorsel[colorseq % (colorsel.length-1)];
-						colormap[t] = IG$._pcolor(ct);
-						colorseq++;
-						c = colormap[t];
-					}
-				}
-			}
-			
-			marker.setColor(new esri.Color(c));
-			marker.m_gdata = [p];
-			// marker.setPosition(pt);
-			// marker.setMap(map);
-
-			gp = new esri.Graphic(pt, marker);
-			gp.p = p;
-			gp.pt = pt;
-			g.add(gp);
+			polygon_layer = layer;
+			return false;
 		}
 	});
 	
-	g.on("click", function(evt) {
-		var infow = map.infoWindow,
-			i, j, ct, t,
-			gp = evt.graphic,
-			series_name = "", point_name = "",
-			sep = IG$._separator,
-			mval = "<div>",
-			p,
-			pt;
-
-		if (!gp)
-			return;
-			
-		p = gp.p;
+	if (polygon_layer && cop.m_marker == "polygon")
+	{
+		polygon_layer.layer.on("click", function() {
+		});
 		
-		if (!p)
-			return;
-			
-		pt = gp.pt;
-			
-		for (i=0; i < p.data.length; i++)
+		var steps = 1;
+		
+		if (isNaN(nmin) == false && isNaN(nmax) == false && nmin < nmax && colors.length)
 		{
-			mval += (i > 0 ? "<br/>" : "");
+			steps = (nmax - nmin) / colors.length;
+		}
+		
+		var renderer = new esri.ClassBreaksRenderer(null, function(value) {
+			var m = value.attributes[polygon_layer.config.option.mapid],
+				r = 0,
+				row,
+				f;
 			
-			if (i >= colfix)
+			if (geofield_map[m])
 			{
-				for (j=0; j < rowfix; j++)
+				f = geofield_map[m];
+				row = tabledata[f.row][colfix];
+				
+				r = Number(row.code) || 0;
+			}
+			/* for simulation
+			else
+			{
+				r = (nmax - nmin) * Math.random() + nmin; 
+			}
+			*/
+			
+			return r;
+		});
+		renderer.setMaxInclusive(true);
+		
+		for (i=0; i < colors.length; i++)
+		{
+			var color1 = new esri.Color(colors[i]);
+			
+			renderer.addBreak({
+          		minValue: nmin + steps * i,
+          		maxValue: nmin + steps * (i + 1),
+          		label: nmin + " ~ " + (nmin + steps),
+          		symbol: new esri.SimpleFillSymbol(
+            		"solid", 
+            		new esri.SimpleLineSymbol("solid", color1, 1), color1
+          		)
+        	});
+		}
+        
+		polygon_layer.layer.setRenderer(renderer);
+	}
+	else
+	{
+		geodata && $.each(geodata, function(i, p) {
+			var mkey = p.lat + "_" + p.lng,
+				pt = new esri.Point(p.lng, p.lat),
+				dval,
+				r, marker,
+				symbol,
+				gp,
+				n, nr;
+				
+			if (cop.m_marker == "circle")
+			{
+				dval = Number(p.data[colfix].code);
+	
+				if (nmax - nmin > 0)
 				{
-					t = tabledata[j][i].text || tabledata[j][i].code;
-					if (i == colfix)
+					r = n_min + (n_max - n_min) * (dval - nmin) / (nmax - nmin);
+				}
+				else
+				{
+					r = n_min;
+				}
+	
+				symbol = new esri.SimpleFillSymbol();
+				marker = new esri.Circle({
+					center: pt,
+					radius: r
+				});
+	
+				gp = esri.Graphic(marker, symbol);
+				
+				var c = [255,0,0,.3];
+				
+				if (colors.length > 0)
+				{
+					if (colors.length == 1)
 					{
-						series_name += (series_name ? sep : "") + (t || " ");
+						c = colors[0];
 					}
-					ct = (j == 0) ? t : ct + "|" + t;
+					else
+					{
+						nr = ratio * (dval - nmin);
+						
+						var rng = nr * (colors.length - 1),
+							m = Math.floor(rng),
+							c1 = colors[m],
+							c2 = colors[m+1],
+							cr = nr * (colors.length - 1) - m;
+							
+						if (m == colors.length-1)
+						{
+							c = colors[colors.length-1];
+						}
+						else
+						{
+							c = IG$._interpolate_color(c1, c2, cr);
+						}
+						c.push(0.5);
+					}
 				}
 				
-				mval += "<span>" + ct + ": </span>";
+				symbol.setColor(new esri.Color(c));
+				
+				marker.m_gdata = [p];
+				gp.p = p;
+				gp.pt = pt;
+				g.add(gp);
 			}
-			
-			t = (p.data[i].text || p.data[i].code);
-			if (i < colfix)
+			else if (polygon && polygon_layer)
 			{
-				point_name += (point_name ? sep : "") + (t || " ");
-			} 
-			mval += "<span>" + t + "</span>";
-		}
-		mval += "</div>";
-		infow.setContent(mval);
-		infow.show(pt);
-
-		var param = {
-				point: {
-					name: point_name
+				
+			}
+			else
+			{
+				/*
+				if (p.c)
+				{
+					cluster = new ClusterMarker_(pt, p.cc, styles_, 60);
+					cluster.setMap(map);
 				}
-			},
-			sender = {
-				name: series_name
-			};
-
-		// drill event triggering
-		owner.procClickEvent.call(owner, sender, param);
-	});
+				else
+				{
+				*/``
+				marker = new esri.SimpleMarkerSymbol(); // (oIcon, { title : '��Ŀ : ' + pt.toString() });
+				marker.setSize(m_marker_size);
+				marker.setStyle(esri.SimpleMarkerSymbol[m_marker_symbol]);
+				
+				var c = [255,0,0,0.5];
+				
+				if (c_color_categ > -1)
+				{
+					var row = p.data,
+						rval = row[c_color_categ],
+						t = rval ? rval.text || rval.code : null,
+						ct;
+						
+					if (t)
+					{
+						if (colormap[t])
+						{
+							c = colormap[t];
+						}
+						else
+						{
+							ct = colorsel[colorseq % (colorsel.length-1)];
+							colormap[t] = IG$._pcolor(ct);
+							colorseq++;
+							c = colormap[t];
+						}
+					}
+				}
+				
+				marker.setColor(new esri.Color(c));
+				marker.m_gdata = [p];
+				// marker.setPosition(pt);
+				// marker.setMap(map);
+	
+				gp = new esri.Graphic(pt, marker);
+				gp.p = p;
+				gp.pt = pt;
+				g.add(gp);
+			}
+		});
+		
+		g.on("click", function(evt) {
+			var infow = map.infoWindow,
+				i, j, ct, t,
+				gp = evt.graphic,
+				series_name = "", point_name = "",
+				sep = IG$._separator,
+				mval = "<div>",
+				p,
+				pt;
+	
+			if (!gp)
+				return;
+				
+			p = gp.p;
+			
+			if (!p)
+				return;
+				
+			pt = gp.pt;
+				
+			for (i=0; i < p.data.length; i++)
+			{
+				mval += (i > 0 ? "<br/>" : "");
+				
+				if (i >= colfix)
+				{
+					for (j=0; j < rowfix; j++)
+					{
+						t = tabledata[j][i].text || tabledata[j][i].code;
+						if (i == colfix)
+						{
+							series_name += (series_name ? sep : "") + (t || " ");
+						}
+						ct = (j == 0) ? t : ct + "|" + t;
+					}
+					
+					mval += "<span>" + ct + ": </span>";
+				}
+				
+				t = (p.data[i].text || p.data[i].code);
+				if (i < colfix)
+				{
+					point_name += (point_name ? sep : "") + (t || " ");
+				} 
+				mval += "<span>" + t + "</span>";
+			}
+			mval += "</div>";
+			infow.setContent(mval);
+			infow.show(pt);
+	
+			var param = {
+					point: {
+						name: point_name
+					}
+				},
+				sender = {
+					name: series_name
+				};
+	
+			// drill event triggering
+			owner.procClickEvent.call(owner, sender, param);
+		});
+	}
 };
 
 IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) {

@@ -99,3 +99,4 @@ A;L_CUST_LEGEND;커스텀 범례
 A;L_SYS_LOG;시스템 로그
 
 A;M_SELECT_FOLDER;계속 하시려면 폴더 항목을 선택해 주십시오.
+A;L_BOBJ;비즈니스 오브젝트
