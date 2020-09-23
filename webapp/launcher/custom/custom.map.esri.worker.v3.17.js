@@ -456,6 +456,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		n_lat, n_lng, bs = 0,
 		c_color_categ = -1,
 		geofield_map = {},
+		hidden_columns = results.hidden_columns || [],
 		m_marker_symbol = copsettings.m_marker_symbol || "STYLE_CIRCLE";
 		
 	copsettings.m_min_color && colors.push(copsettings.m_min_color);
@@ -596,6 +597,24 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			seriesname = (i==0) ? tabledata[i][colfix].code : seriesname + " " + tabledata[i][colfix].code;
 		}
 	}
+	
+	if (hidden_columns.length)
+	{
+		for (i=0; i < hidden_columns.length; i++)
+		{
+			if (hidden_columns[i] >= colfix)
+			{
+				if (dindex + colfix == hidden_columns[i])
+				{
+					dindex++;
+				}
+				else
+				{
+					break;
+				}
+			}
+		}
+	}
 
 	oLabel = new esri.SimpleMarkerSymbol();
 
@@ -620,6 +639,19 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				nmin = isNaN(nmin) ? dval : Math.min(nmin, dval);
 			}
 			p.dval = dval;
+			
+			if (c_geofield > -1)
+			{
+				var m = {
+					code: d[c_geofield].code,
+					row: i
+				};
+				
+				if (m.code)
+				{
+					geofield_map[m.code] = m;
+				}
+			}
 		}
 	}
 	else if (c_geofield > -1)
@@ -687,7 +719,8 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 	map.addLayer(g);
 	me._glayers.push(g);
 	
-	var polygon_layer;
+	var polygon_layer,
+		mapid;
 	
 	$.each(me._api_layers, function(i, layer) {
 		if (layer.config.loader == "FeatureLayer" && layer.config.option.mapid)
@@ -697,9 +730,80 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		}
 	});
 	
+	var _run_click_handler = function(row, pt) {
+		var infow = map.infoWindow,
+			i, j, ct, t,
+			series_name = "", point_name = "",
+			sep = IG$._separator,
+			mval = "<div>";
+		
+		for (i=0; i < row.length; i++)
+		{
+			mval += (i > 0 ? "<br/>" : "");
+			
+			if (i >= colfix)
+			{
+				for (j=0; j < rowfix; j++)
+				{
+					t = tabledata[j][i].text || tabledata[j][i].code;
+					if (i == colfix)
+					{
+						series_name += (series_name ? sep : "") + (t || " ");
+					}
+					ct = (j == 0) ? t : ct + "|" + t;
+				}
+				
+				mval += "<span>" + ct + ": </span>";
+			}
+			
+			t = (row[i].text || row[i].code);
+			if (i < colfix)
+			{
+				point_name += (point_name ? sep : "") + (t || " ");
+			} 
+			mval += "<span>" + t + "</span>";
+		}
+		mval += "</div>";
+		infow.setContent(mval);
+		infow.show(pt);
+
+		var param = {
+				point: {
+					name: point_name
+				}
+			},
+			sender = {
+				name: series_name
+			};
+
+		// drill event triggering
+		owner.procClickEvent.call(owner, sender, param);
+	}
+	
 	if (polygon_layer && cop.m_marker == "polygon")
 	{
-		polygon_layer.layer.on("click", function() {
+		mapid = polygon_layer.config.option.mapid;
+		
+		polygon_layer.layer.on("click", function(event) {
+			var attr = event.graphic ? event.graphic.attributes : null,
+				mapvalue;
+			
+			if (attr && attr[mapid])
+			{
+				mapvalue = geofield_map[attr[mapid]];
+				
+				/*
+				if (!mapvalue)
+				{
+					mapvalue = geofield_map["01"];
+				}
+				*/
+				
+				if (mapvalue)
+				{
+					_run_click_handler(tabledata[mapvalue.row], event.mapPoint);
+				}
+			}
 		});
 		
 		var steps = 1;
@@ -710,7 +814,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		}
 		
 		var renderer = new esri.ClassBreaksRenderer(null, function(value) {
-			var m = value.attributes[polygon_layer.config.option.mapid],
+			var m = value.attributes[mapid],
 				r = 0,
 				row,
 				f;
@@ -718,16 +822,16 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			if (geofield_map[m])
 			{
 				f = geofield_map[m];
-				row = tabledata[f.row][colfix];
+				row = tabledata[f.row][colfix + dindex];
 				
 				r = Number(row.code) || 0;
 			}
-			/* for simulation */
+			/* for simulation 
 			else
 			{
 				r = (nmax - nmin) * Math.random() + nmin; 
 			}
-			/* */
+			*/
 			
 			return r;
 		});
@@ -763,7 +867,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				
 			if (cop.m_marker == "circle")
 			{
-				dval = Number(p.data[colfix].code);
+				dval = Number(p.data[colfix + dindex].code);
 	
 				if (nmax - nmin > 0)
 				{
@@ -895,47 +999,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				
 			pt = gp.pt;
 				
-			for (i=0; i < p.data.length; i++)
-			{
-				mval += (i > 0 ? "<br/>" : "");
-				
-				if (i >= colfix)
-				{
-					for (j=0; j < rowfix; j++)
-					{
-						t = tabledata[j][i].text || tabledata[j][i].code;
-						if (i == colfix)
-						{
-							series_name += (series_name ? sep : "") + (t || " ");
-						}
-						ct = (j == 0) ? t : ct + "|" + t;
-					}
-					
-					mval += "<span>" + ct + ": </span>";
-				}
-				
-				t = (p.data[i].text || p.data[i].code);
-				if (i < colfix)
-				{
-					point_name += (point_name ? sep : "") + (t || " ");
-				} 
-				mval += "<span>" + t + "</span>";
-			}
-			mval += "</div>";
-			infow.setContent(mval);
-			infow.show(pt);
-	
-			var param = {
-					point: {
-						name: point_name
-					}
-				},
-				sender = {
-					name: series_name
-				};
-	
-			// drill event triggering
-			owner.procClickEvent.call(owner, sender, param);
+			_run_click_handler(p.data, pt);
 		});
 	}
 };
