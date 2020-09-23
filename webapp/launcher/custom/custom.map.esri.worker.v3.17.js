@@ -722,12 +722,12 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				
 				r = Number(row.code) || 0;
 			}
-			/* for simulation
+			/* for simulation */
 			else
 			{
 				r = (nmax - nmin) * Math.random() + nmin; 
 			}
-			*/
+			/* */
 			
 			return r;
 		});
@@ -819,7 +819,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				gp.pt = pt;
 				g.add(gp);
 			}
-			else if (polygon && polygon_layer)
+			else if (polygon_layer)
 			{
 				
 			}
