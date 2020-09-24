@@ -95,6 +95,25 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_color_categ]").store.loadData(d3);
 				me.down("[name=m_geofield]").store.loadData(d4);
 				
+				option.cdata_m_tmpl = option.cdata_m_tmpl || [
+					"{",
+					"	\"title\": \"\",",
+					"	\"content\": [",
+					"		\"<div class='igc-legend-container'>\",",
+					"		\"<ul class='igc-legend-item'>\",",
+					"		\"{row:<li><span class='igc-legend-title'>NAME</span><span class='igc-legend-value'>VALUE</span></li>}\",",
+					"		\"</ul>\",",
+					"		\"<ul class='igc-legend-item'>\",",
+					"		\"{measure:<li><span class='igc-legend-title'>NAME</span><span class='igc-legend-value'>VALUE</span></li>}\",",
+					"		\"</ul>\",",
+					"			\"<div class='igc-legend-chart'>\",",
+					"				\"{chart:values=measure;width=120;height=120}\",",
+					"			\"</div>\",",
+					"		\"</div>\"",
+					"	]",
+					"}"
+				].join("\n");
+				
 				me.down("[name=m_zoom_level]").setValue(option.m_zoom_level || "8");
 				me.down("[name=m_marker]").setValue(option.m_marker || "");
 				me.down("[name=m_min]").setValue(option.m_min || "1000");
@@ -113,7 +132,6 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
 				me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
-				me.down("[name=m_map_info]").setValue(option.settings.m_map_info);
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -248,7 +266,6 @@ IG$._customChartPanels = function() {
 				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
 				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
 				option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
-				option.settings.m_map_info = me.down("[name=m_map_info]").getValue();
 				
 				// arc layer selection
 				option.settings.m_arc_layers = [];
@@ -390,10 +407,10 @@ IG$._customChartPanels = function() {
 											mp = me.__mainp__,
 											sval = tobj.getValue();
 
-										mp.down("[name=cdata_m_tmpl]").setVisible(sval == "info");
+										// mp.down("[name=cdata_m_tmpl]").setVisible(sval == "info");
 										mp.down("[name=m_geofield]").setVisible(sval == "polygon");
-										mp.down("[name=mf_colors]").setVisible(sval == "circle");
-										mp.down("[name=mf_color_categ_c]").setVisible(sval != "circle");
+										mp.down("[name=mf_colors]").setVisible(sval == "circle" || sval == "polygon");
+										mp.down("[name=mf_color_categ_c]").setVisible(sval != "circle" && sval != "polygon");
 									},
 									scope: this
 								}
@@ -632,8 +649,8 @@ IG$._customChartPanels = function() {
 								xtype: "textarea",
 								anchor: "100%",
 								fieldLabel: IRm$.r1("L_TEMPLATE"), // "Template",
-								name: "cdata_m_tmpl",
-								hidden: true
+								name: "cdata_m_tmpl" //,
+								// hidden: true
 							},
 							{
 								xtype: "textfield",
@@ -713,12 +730,6 @@ IG$._customChartPanels = function() {
 								xtype: "textarea",
 								name: "m_map_legend",
 								fieldLabel: IRm$.r1("L_CUST_LEGEND"),
-								height: 120
-							},
-							{
-								xtype: "textarea",
-								name: "m_map_info",
-								fieldLabel: IRm$.r1("L_CUST_INFO"),
 								height: 120
 							},
 							{

@@ -104,3 +104,5 @@ A;M_UP_FILE_FRST;파일을 먼저 업로드 후 진행해 주십시오.
 
 A;L_DASHBOARD_OPTION;데시보드 옵션
 A;L_CUST_INFO;인포윈도우 템플릿
+
+A;L_GEOFIELD;맵 필드

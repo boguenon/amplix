@@ -402,7 +402,10 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		c_color_categ = -1,
 		geofield_map = {},
 		hidden_columns = results.hidden_columns || [],
-		m_marker_symbol = copsettings.m_marker_symbol || "STYLE_CIRCLE";
+		m_marker_symbol = copsettings.m_marker_symbol || "STYLE_CIRCLE",
+		cdata_m_tmpl = cop.cdata_m_tmpl;
+		
+	cop.m_marker = cop.m_marker || "marker";
 		
 	copsettings.m_min_color && colors.push(copsettings.m_min_color);
 	copsettings.m_mid_color && colors.push(copsettings.m_mid_color);
@@ -675,11 +678,30 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		}
 	});
 	
+	var info_tmpl = null;
+	
+	if (cdata_m_tmpl)
+	{
+		try
+		{
+			info_tmpl = JSON.parse(cdata_m_tmpl);
+		}
+		catch (e)
+		{
+		}
+		
+		info_tmpl = info_tmpl || {
+			title: ""
+		};
+	}
+	
 	var _run_click_handler = function(row, pt) {
 		var infow = map.infoWindow,
 			i, j, ct, t,
 			series_name = "", point_name = "",
 			sep = IG$._separator,
+			mvalues = {},
+			charts = [],
 			mval = "<div>";
 		
 		for (i=0; i < row.length; i++)
@@ -707,10 +729,166 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				point_name += (point_name ? sep : "") + (t || " ");
 			} 
 			mval += "<span>" + t + "</span>";
+			mvalues[ct] = row[i];
 		}
+		
 		mval += "</div>";
+		infow.setTitle(info_tmpl.title || "");
+		
+		if (info_tmpl.content)
+		{
+			mval = [];
+			
+			for (i=0; i < info_tmpl.content.length; i++)
+			{
+				var s = info_tmpl.content[i],
+					n1, n2, n,
+					v,
+					l = s.length;
+				
+				n1 = s.indexOf("{");
+				
+				while (n1 > -1)
+				{
+					n2 = s.indexOf("}", n1+1);
+					
+					if (n2 > -1)
+					{
+						n = s.substring(n1 + 1, n2);
+						
+						var cmd;
+						
+						if (n.indexOf(":") > -1)
+						{
+							cmd = n.substring(0, n.indexOf(":"));
+						}
+						
+						if (cmd && cmd == "chart")
+						{
+							var tl = n.substring(n.indexOf(":") + 1),
+								copt = {},
+								tm = tl.split(";");
+								
+							$.each(tm, function(l, opt) {
+								if (opt.indexOf("=") > 0)
+								{
+									var n = opt.substring(0, opt.indexOf("=")),
+										v = opt.substring(opt.indexOf("=") + 1);
+									
+									if (n == "values")
+									{
+										var mv = [];
+										
+										$.each(row, function(i, r) {
+											if (i < colfix)
+											{
+												return;
+											}
+											
+											var j,
+												ct,
+												tm = tl;
+											
+											for (j=0; j < rowfix; j++)
+											{
+												t = tabledata[j][i].text || tabledata[j][i].code;
+												ct = (j == 0) ? t : ct + "|" + t;
+											}
+																			
+											// replace value
+											t = Number(r.code);
+											
+											if (!isNaN(t))
+											{
+												if (v == "measure")
+												{
+													mv.push(t);
+												}
+												else if (v.indexOf(ct) > -1)
+												{
+													mv.push(t);
+												}
+											}
+										});
+											
+										v = mv;
+									}
+									copt[n] = v;
+								}
+							});
+							
+							charts.push(copt);
+							
+							copt.div = "mchart_" + charts.length;
+							v = "<div id='mchart_" + charts.length + "' class='igc-legend-chart'></div>";
+						}
+						else if (cmd && (cmd == "measure" || cmd == "row"))
+						{
+							v = [];
+							var tl = n.substring(n.indexOf(":") + 1);
+							$.each(row, function(i, r) {
+								if (cmd == "measure" && i < colfix)
+								{
+									return;
+								}
+								
+								if (cmd == "row" && i >= colfix)
+									return;
+									
+								var j,
+									ct,
+									tm = tl;
+								
+								for (j=0; j < rowfix; j++)
+								{
+									t = tabledata[j][i].text || tabledata[j][i].code;
+									ct = (j == 0) ? t : ct + "|" + t;
+								}
+																
+								if (tm.indexOf("NAME") > -1)
+								{
+									tm = tm.substring(0, tm.indexOf("NAME")) + ct + tm.substring(tm.indexOf("NAME") + "NAME".length);
+								}
+								
+								// replace value
+								t = (r.text || r.code);
+								if (tm.indexOf("VALUE") > -1)
+								{
+									tm = tm.substring(0, tm.indexOf("VALUE")) + t + tm.substring(tm.indexOf("VALUE") + "VALUE".length);
+								}
+								v.push(tm);
+							});
+							v = v.join("");
+						}
+						else
+						{
+							v = (mvalues[n] ? mvalues[n].text || mvalues[n].code : "");
+						}
+						s = s.substring(0, n1) + v + s.substring(n2 + 1);
+						n1 = s.indexOf("{", n1 + 1);
+					}
+					else
+					{
+						break;
+					}
+				}
+				
+				mval.push(s);
+			}
+			
+			mval = mval.join("");
+		}
+		
 		infow.setContent(mval);
 		infow.show(pt);
+		
+		if (charts.length > 0)
+		{
+			$.each(charts, function(i, chart) {
+				chart.type = chart.type || "pie";
+				$("#" + chart.div, infow.domNode).sparkline(chart.values || [], chart);
+			});
+		}
 
 		var param = {
 				point: {
@@ -771,12 +949,12 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				
 				r = Number(row.code) || 0;
 			}
-			/* for simulation 
+			/* for simulation */
 			else
 			{
 				r = (nmax - nmin) * Math.random() + nmin; 
 			}
-			*/
+			/* */
 			
 			return r;
 		});
@@ -868,7 +1046,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				gp.pt = pt;
 				g.add(gp);
 			}
-			else if (polygon_layer)
+			else if (polygon_layer && cop.m_marker == "polygon")
 			{
 				
 			}
