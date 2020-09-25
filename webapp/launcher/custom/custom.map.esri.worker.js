@@ -689,11 +689,11 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		catch (e)
 		{
 		}
-		
-		info_tmpl = info_tmpl || {
-			title: ""
-		};
 	}
+	
+	info_tmpl = info_tmpl || {
+		title: ""
+	};
 	
 	var _run_click_handler = function(row, pt) {
 		var infow = map.infoWindow,
