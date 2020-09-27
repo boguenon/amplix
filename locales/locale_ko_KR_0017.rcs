@@ -106,3 +106,6 @@ A;L_DASHBOARD_OPTION;데시보드 옵션
 A;L_CUST_INFO;인포윈도우 템플릿
 
 A;L_GEOFIELD;맵 필드
+
+A;L_IS_PARAM;파라미터 여부
+A;L_USE_VALUE_AS_PARAM;변수로 사용(WHERE 문구메 미포함)
