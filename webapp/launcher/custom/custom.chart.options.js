@@ -34,7 +34,8 @@ IG$._customChartPanels = function() {
 				var d1 = [{name: "Select Value", value: ""}],
 					d2 = [{name: "Select Value", value: ""}],
 					d3 = [{name: "Select Value", value: ""}],
-					d1val = "", d2val = "";
+					d4 = [{name: "Select Value", value: ""}],
+					d1val = "", d2val = "", d3val = "";
 					
 				$.each(ma.sheetoption.model.rows, function(i, row) {
 					d1.push({
@@ -52,6 +53,11 @@ IG$._customChartPanels = function() {
 						value: row.uid
 					});
 					
+					d4.push({
+						name: row.name,
+						value: row.uid
+					});
+					
 					if (option.settings.m_lat == row.uid)
 					{
 						d1val = row.uid;
@@ -60,6 +66,11 @@ IG$._customChartPanels = function() {
 					if (option.settings.m_lng == row.uid)
 					{
 						d2val = row.uid;
+					}
+					
+					if (option.settings.m_geofield == row.uid)
+					{
+						d3val = row.uid;
 					}
 				});
 				
@@ -82,6 +93,26 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_lat]").store.loadData(d1);
 				me.down("[name=m_lng]").store.loadData(d2);
 				me.down("[name=m_color_categ]").store.loadData(d3);
+				me.down("[name=m_geofield]").store.loadData(d4);
+				
+				option.cdata_m_tmpl = option.cdata_m_tmpl || [
+					"{",
+					"	\"title\": \"\",",
+					"	\"content\": [",
+					"		\"<div class='igc-legend-container'>\",",
+					"		\"<ul class='igc-legend-item'>\",",
+					"		\"{row:<li><span class='igc-legend-title'>NAME</span><span class='igc-legend-value'>VALUE</span></li>}\",",
+					"		\"</ul>\",",
+					"		\"<ul class='igc-legend-item'>\",",
+					"		\"{measure:<li><span class='igc-legend-title'>NAME</span><span class='igc-legend-value'>VALUE</span></li>}\",",
+					"		\"</ul>\",",
+					"			\"<div class='igc-legend-chart'>\",",
+					"				\"{chart:values=measure;width=120;height=120}\",",
+					"			\"</div>\",",
+					"		\"</div>\"",
+					"	]",
+					"}"
+				].join("\n");
 				
 				me.down("[name=m_zoom_level]").setValue(option.m_zoom_level || "8");
 				me.down("[name=m_marker]").setValue(option.m_marker || "");
@@ -95,12 +126,12 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_map_center]").setValue(option.settings.m_map_center || "");
 				me.down("[name=m_lat]").setValue(d1val);
 				me.down("[name=m_lng]").setValue(d2val);
+				me.down("[name=m_geofield]").setValue(d3val);
 				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
 				me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
 				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
 				me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
-				me.down("[name=m_map_info]").setValue(option.settings.m_map_info);
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -157,13 +188,30 @@ IG$._customChartPanels = function() {
 						{
 							sv = v[i].split(",");
 							
-							if (sv.length == 3 && sv[0] && sv[1] && sv[2])
+							if (sv.length > 2 && sv[0] && sv[1] && sv[2])
 							{
-								ig$.arcgis_rest$.push({
+								var c = {
 									name: sv[0],
 									loader: sv[1],
-									url: sv[2]
-								});
+									url: sv[2],
+									option: {}
+								};
+								
+								if (sv[3])
+								{
+									var cc = sv[3].split(";");
+									
+									$.each(cc, function(m, cv) {
+										if (cv && cv.indexOf("=") > 0)
+										{
+											var n = cv.substring(0, cv.indexOf("=")),
+												v = cv.substring(cv.indexOf("=") + 1);
+												
+											c.option[n] = v;
+										}
+									});
+								}
+								ig$.arcgis_rest$.push(c);
 							}
 						}
 					}
@@ -212,12 +260,12 @@ IG$._customChartPanels = function() {
 				option.settings.m_map_center = me.down("[name=m_map_center]").getValue();
 				option.settings.m_lat = me.down("[name=m_lat]").getValue();
 				option.settings.m_lng = me.down("[name=m_lng]").getValue();
+				option.settings.m_geofield = me.down("[name=m_geofield]").getValue();
 				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
 				option.settings.m_color_categ = me.down("[name=m_color_categ]").getValue();
 				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
 				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
 				option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
-				option.settings.m_map_info = me.down("[name=m_map_info]").getValue();
 				
 				// arc layer selection
 				option.settings.m_arc_layers = [];
@@ -261,13 +309,30 @@ IG$._customChartPanels = function() {
 					{
 						sv = v[i].split(",");
 						
-						if (sv.length == 3 && sv[0] && sv[1] && sv[2])
+						if (sv.length > 2 && sv[0] && sv[1] && sv[2])
 						{
-							ig$.arcgis_rest$.push({
+							var c = {
 								name: sv[0],
 								loader: sv[1],
-								url: sv[2]
-							});
+								url: sv[2],
+								option: {}
+							};
+							
+							if (sv[3])
+							{
+								var cc = sv[3].split(";");
+								
+								$.each(cc, function(m, cv) {
+									if (cv && cv.indexOf("=") > 0)
+									{
+										var n = cv.substring(0, cv.indexOf("=")),
+											v = cv.substring(cv.indexOf("=") + 1);
+											
+										c.option[n] = v;
+									}
+								});
+							}
+							ig$.arcgis_rest$.push(c);
 						}
 					}
 				}
@@ -326,6 +391,10 @@ IG$._customChartPanels = function() {
 											value: "circle"
 										},
 										{
+											name: "GeoPolygon",
+											value: "polygon"
+										},
+										{
 											name: "Info",
 											value: "info"
 										} 
@@ -338,9 +407,10 @@ IG$._customChartPanels = function() {
 											mp = me.__mainp__,
 											sval = tobj.getValue();
 
-										mp.down("[name=cdata_m_tmpl]").setVisible(sval == "info");
-										mp.down("[name=mf_colors]").setVisible(sval == "circle");
-										mp.down("[name=mf_color_categ_c]").setVisible(sval != "circle");
+										// mp.down("[name=cdata_m_tmpl]").setVisible(sval == "info");
+										mp.down("[name=m_geofield]").setVisible(sval == "polygon");
+										mp.down("[name=mf_colors]").setVisible(sval == "circle" || sval == "polygon");
+										mp.down("[name=mf_color_categ_c]").setVisible(sval != "circle" && sval != "polygon");
 									},
 									scope: this
 								}
@@ -568,11 +638,19 @@ IG$._customChartPanels = function() {
 								valueField: "value"
 							},
 							{
+								xtype: "combobox",
+								fieldLabel: IRm$.r1("L_GEOFIELD"),
+								name: "m_geofield",
+								store: {},
+								displayField: "name",
+								valueField: "value"
+							},
+							{
 								xtype: "textarea",
 								anchor: "100%",
 								fieldLabel: IRm$.r1("L_TEMPLATE"), // "Template",
-								name: "cdata_m_tmpl",
-								hidden: true
+								name: "cdata_m_tmpl" //,
+								// hidden: true
 							},
 							{
 								xtype: "textfield",
@@ -652,12 +730,6 @@ IG$._customChartPanels = function() {
 								xtype: "textarea",
 								name: "m_map_legend",
 								fieldLabel: IRm$.r1("L_CUST_LEGEND"),
-								height: 120
-							},
-							{
-								xtype: "textarea",
-								name: "m_map_info",
-								fieldLabel: IRm$.r1("L_CUST_INFO"),
 								height: 120
 							},
 							{

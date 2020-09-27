@@ -97,3 +97,12 @@ A;L_SHEET_SCRIPTS;Sheet Script
 A;L_CUST_LEGEND;Custom Legend
 
 A;M_SELECT_FOLDER;Select Folder item to continue
+A;M_UP_FILE_FRST;Upload file and continue to import process!
+
+A;L_DASHBOARD_OPTION;Dashboard Option
+A;L_CUST_INFO;InfoWindow Template
+
+A;L_GEOFIELD;Geo Field
+
+A;L_IS_PARAM;Is Parameter
+A;L_USE_VALUE_AS_PARAM;Use as Parameter (Not in WHERE clause)

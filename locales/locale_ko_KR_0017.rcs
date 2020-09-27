@@ -100,3 +100,12 @@ A;L_SYS_LOG;시스템 로그
 
 A;M_SELECT_FOLDER;계속 하시려면 폴더 항목을 선택해 주십시오.
 A;L_BOBJ;비즈니스 오브젝트
+A;M_UP_FILE_FRST;파일을 먼저 업로드 후 진행해 주십시오.
+
+A;L_DASHBOARD_OPTION;데시보드 옵션
+A;L_CUST_INFO;인포윈도우 템플릿
+
+A;L_GEOFIELD;맵 필드
+
+A;L_IS_PARAM;파라미터 여부
+A;L_USE_VALUE_AS_PARAM;변수로 사용(WHERE 문구메 미포함)

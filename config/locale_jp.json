@@ -88,6 +88,8 @@
 	"262": "Licensed user exceeds on system. Contact system administrator for more information.",
 	"263": "Email is not valid",
 	"264": "admin user cannot be single sign on configured",
+	"265": "File is too big to process!",
+	"266": "File format does not match for processing",
 	
 	"300": "指定されたアドレスには使用できませんコンテンツ。",
 	"301": "ユ?ザ?管理者は許可されません削除します！",
