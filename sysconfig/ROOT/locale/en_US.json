@@ -6688,5 +6688,33 @@
     "group" : "locale_en_US_0017",
     "name" : "L_CUST_LEGEND",
     "value" : "Custom Legend"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_SELECT_FOLDER",
+    "value" : "Select Folder item to continue"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "M_UP_FILE_FRST",
+    "value" : "Upload file and continue to import process!"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_DASHBOARD_OPTION",
+    "value" : "Dashboard Option"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_CUST_INFO",
+    "value" : "InfoWindow Template"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_GEOFIELD",
+    "value" : "Geo Field"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_IS_PARAM",
+    "value" : "Is Parameter"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_USE_VALUE_AS_PARAM",
+    "value" : "Use as Parameter (Not in WHERE clause)"
   } ]
 }

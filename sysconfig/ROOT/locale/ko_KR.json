@@ -3531,8 +3531,9 @@
     "name" : "L_SEL_DB",
     "value" : "데이터소스 선택"
   }, {
+    "group" : "locale_ko_KR_0017",
     "name" : "L_BOBJ",
-    "value" : "비즈니스 객체"
+    "value" : "비즈니스 오브젝트"
   }, {
     "name" : "L_SETTINGS",
     "value" : "설정"
@@ -6685,5 +6686,33 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_CUST_LEGEND",
     "value" : "커스텀 범례"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_SELECT_FOLDER",
+    "value" : "계속 하시려면 폴더 항목을 선택해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_UP_FILE_FRST",
+    "value" : "파일을 먼저 업로드 후 진행해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_DASHBOARD_OPTION",
+    "value" : "데시보드 옵션"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CUST_INFO",
+    "value" : "인포윈도우 템플릿"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_GEOFIELD",
+    "value" : "맵 필드"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_IS_PARAM",
+    "value" : "파라미터 여부"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_USE_VALUE_AS_PARAM",
+    "value" : "변수로 사용(WHERE 문구메 미포함)"
   } ]
 }
