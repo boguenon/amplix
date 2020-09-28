@@ -73,7 +73,7 @@
 	
 			<div class="row document">
 				<div class="col-lg-3 sphinxsidebar" role="navigation" aria-label="main navigation" id="sphinxsidebar">
-					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1.매뉴얼 정보</a></h3></div><div><h3 class="active">2.소프트웨어 서버 설치</h3><ul><li><a href="server_install_guide.html">2.1.서버 설치 가이드</a></li><li><a href="server_install_test.html">2.2. 설치 테스트</a></li></ul></div><div><h3><a href="sys_manager.html">3.시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7.리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8.문제해결</a></h3></div></div><p></p></div>
+					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1.매뉴얼 정보</a></h3></div><div><h3 class="active">2.소프트웨어 서버 설치</h3><ul><li><a href="server_install_guide.html">2.1.서버 설치 가이드</a></li><li><a href="server_install_test.html">2.2. 설치 테스트</a></li><li><a href="server_log_file.html">2.3. 서버 로그 파일</a></li></ul></div><div><h3><a href="sys_manager.html">3.시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7.리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8.문제해결</a></h3></div></div><p></p></div>
 				</div>
 				<div class="col-lg-9 text-left documentwrapper">
 					<div class="bodywrapper">
@@ -85,47 +85,13 @@
 							</p>
 							<div id="menu_template">
 <h2><a name="_Toc21218595">2.2. 설치 테스트</a></h2><p><span>
-로그 파일 </span><span>
-</p>
-<p>서버의 정상적인 설치 완료시 로그 파일이 logs/amplix.out.log 파일에 저장된다. 시스템 설치 이후 문제점 발생시 로그 파일의 내용을 통해 문제점 파악 후 다시 서비스를 시작한다.</p>
-<p></p>
-<p>로그 파일 저장에 대한 초기값은 일단위 아카이브 파일로 생성되어 logs/amplix.out.날짜.순번.log.gz 형태로 백업 저장 관리된다. 순번은 파일의 크기가 10 Mbyte 를 넘어서면 자동으로 생성되며 기존 파일은 압축된다. 최대 로그파일의 저장 기간은 30일로 설정되어 있다.</p>
-<p></p>
-<p>로그 설정 정보의 변경을 위해서는 다음 파일을 수정한 후 앰플릭스 서버 서비스를 재시작한다.</p>
-<p></p>
-<p>config/logback.xml</p>
-<p></p>
-<p>설정 부분 : </p>
-<p></span><spanstyle=";color:#008080">
- -. <</span><span>
-maxFileSize</span><spanstyle=";color:#008080">
-></span><spanstyle=";color:#000000">
-10MB</span><spanstyle=";color:#008080">
-</</span><span>
-maxFileSize</span><spanstyle=";color:#008080">
-></span><span>
-</p>
-<p></span><spanstyle=";color:#008080">
- -. <</span><span>
-maxHistory</span><spanstyle=";color:#008080">
-></span><spanstyle=";color:#000000">
-30</span><spanstyle=";color:#008080">
-</</span><span>
-maxHistory</span><spanstyle=";color:#008080">
->      (디폴트값 30일, 단위 (일).)</span><span>
-</p>
-<p></p>
-<p>예) logs/amplix.out.2020-01-01.0.log.gz</p>
-<p></p>
-<p>로그 파일의 내용은 시스템의 오류, 시스템에서 발생하는 알림 메시지를 시간 순서데로 저장된다.</p>
-<p></p>
-<p></span><span class="doc_header_3">설치 후 테스트</span><span>
+</span><span class="doc_header_3">설치 후 테스트</span><span>
 </p>
 <p>설치 후 사용자 PC의 웹 브라우져를 통해 서버에 접속한다.</p>
 <p></p>
 <p>http://server:8580</p>
 <p></p>
-<p>브라우저 접속 후 로그인을 하여 서버 접속이 원할 한지 점검한다.</p>
+<p>브라우저 접속 후 로그인을 하여 정상적인 서버접속 및 로그인을  점검한다.</p>
 <p></p>
 <p>샘플 리포트 실행하여 리포트가 정상적으로 처리되는지의 여부를 확인한다.</p>
 <p></p>
