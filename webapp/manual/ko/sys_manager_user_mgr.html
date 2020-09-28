@@ -73,7 +73,7 @@
 	
 			<div class="row document">
 				<div class="col-lg-3 sphinxsidebar" role="navigation" aria-label="main navigation" id="sphinxsidebar">
-					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1.매뉴얼 정보</a></h3></div><div><h3><a href="server_install.html">2.소프트웨어 서버 설치</a></h3></div><div><h3 class="active">3.시스템 관리</h3><ul><li><a href="sys_manager_ui.html">3.1.시스템 관리 화면</a></li><li><a href="sys_manager_settings_ui.html">3.2.시스템 설정 화면</a></li><li><a href="sys_manager_monitoring_ui.html">3.3.모니터링</a></li></ul></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7.리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8.문제해결</a></h3></div></div><p></p></div>
+					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1.매뉴얼 정보</a></h3></div><div><h3><a href="server_install.html">2.소프트웨어 서버 설치</a></h3></div><div><h3 class="active">3.시스템 관리</h3><ul><li><a href="sys_manager_ui.html">3.1.시스템 관리 화면</a></li><li><a href="sys_manager_monitoring_ui.html">3.2.모니터링</a></li></ul></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7.리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8.문제해결</a></h3></div></div><p></p></div>
 				</div>
 				<div class="col-lg-9 text-left documentwrapper">
 					<div class="bodywrapper">
@@ -84,7 +84,83 @@
 								
 							</p>
 							<div id="menu_template">
-<h2><a name="_Toc21218595">3.1.1.사용자 관리</a></h2>
+<h2><a name="_Toc21218595">3.1.1.사용자 관리</a></h2><p><span>
+</span><span class="doc_header_3">사용자 관리</span><span>
+</p>
+<p>사용자 관리 매뉴에 접근하려면 메인 매뉴의 관리를 클릭한 후 시스템 -> 사용자 관리 서브 매뉴를 클릭한다.</p>
+<p></p>
+<p></span><span>
+<img src="./images/sys_manager_user_mgr_2.png"></img>
+</span><span>
+</p>
+<p>(그림 : 사용자 관리 매뉴 접속)</p>
+<p></p>
+<p>1 메인 매뉴의 관리 를 클릭하여 세부 메뉴 항목을 팝업 메뉴를 생성한다.</p>
+<p>2 시스템 서브메뉴의 사용자 관리를 클릭한다.</p>
+<p>3 사용자 관리자 화면이 탭 작업 영역에 추가된다.</p>
+<p></span><span class="doc_header_3">사용자 관리</span><span>
+</p>
+<p></span><span>
+<img src="./images/sys_manager_user_mgr_5.png"></img>
+</span><span>
+</p>
+<p>(그림: 사용자 관리 화면 레이아웃 구성)</p>
+<p></span><span class="doc_header_3">사용자의 추가 / 편집</span><span>
+</p>
+<p>사용자를 그룹에 추가하려면 사용자 툴바의 사용자 추가 버튼을 클릭한다. 이미 존재하는 사용자를 변경하려면 사용자 목록 그리드의 항목을 클릭하여 사용자 설정 팝업 윈도우에서 내용을 수정한다.</p>
+<p></p>
+<p></span><span>
+<img src="./images/sys_manager_user_mgr_8.png"></img>
+</span><span>
+</p>
+<p>(그림 : 사용자 등록 화면 레이아웃)</p>
+<p></p>
+<p>사용자 아이디 : 시스템 전체에서 단일한 이름을 가지는 로그인 아이디 값을 입력한다.</p>
+<p>사용자 명 : 사용자의 실제 이름을 입력한다.</p>
+<p>이메일 : 사용자의 이메일 계정을 입력한다.</p>
+<p>패스워드 : 시스템 규칙에 맞는 패스워드를 입력한다. </p>
+<p>   생성하기 버튼 : 패스워드를 자동 생성한다.</p>
+<p>   보기  버튼 : 패스워드의 실제 값을 보여준다. 관리자가 계정 생성하고 해당 계정의 패스워드를 사용자에게 안내하는 경우 사용한다.</p>
+<p>그룹명 : 사용자를 생성할 그룹의 이름을 입력한다.</p>
+<p>최종수정일자 : 본 계정의 최종 수정일자에 대한 정보를 제공한다.</p>
+<p>사용자 권한 : (+) 버튼을 클릭하여 본 계정에 부여할 권한을 추가 / 삭제 할 수 있다. 자세한 사항은 사용자 권한설정 항목을 참조한다.</p>
+<p>상태 : 계정의 시용자를 임시로 로그인 하지 못하게 할 경우 계정 잠금을 클릭하여 상태를 변경할 수 있다.</p>
+<p>삭제 : 계정을 영구히 삭제한다.</p>
+<p></span><span class="doc_header_3">비밀 번호의 규칙</span><span>
+</p>
+<p>- 8자 이상의 영문 알파벳, 숫자, 대소문자의 조합</p>
+<p></p>
+<p></span><span class="doc_header_3">사용자 권한 설정</span><span>
+</p>
+<p>사용자 권한 목록 오른편의 (+) 아이콘을 클릭하여 사용자 권한 관리 팝업 화면을 호출한다.</p>
+<p></p>
+<p></span><span>
+<img src="./images/sys_manager_user_mgr_12.png"></img>
+</span><span>
+</p>
+<p>(그림 : 사용자 권한 관리)</p>
+<p></p>
+<p>사용자에게 이미 부여된 권한이 오른쪽 항목목록에 표시되며, 시스템에서 등록가능한 권한 목록이 왼쪽 그리드에 표시된다. 추가할 권한 혹은 삭제할 권한을 체크 버튼으로 선택한 이후 << 버튼 혹은 >> 버튼을 통해 삭제 / 추가 한 이후 확인 버튼을 클릭하여 변경사항을 저장한다.</p>
+<p></p>
+<p>사용자의 권한 변경 내용은 사용자의 다음 로그인 시 적용된다.</p>
+<p></span><span class="doc_header_3">권한 관리</span><span>
+</p>
+<p>메인 툴바의 권한 버튼을 클릭하면 권한 목록 탭으로 전환된다.</p>
+<p></p>
+<p></span><span>
+<img src="./images/sys_manager_user_mgr_15.png"></img>
+</span><span>
+</p>
+<p></p>
+<p>신규 권한의 추가 / 삭제의 작업을 수행할 수 있으며, 권한을 특정 사용자에게 추가로 부여할 수 있다.</p>
+<p></span><span class="doc_header_3">* 사용자 비밀 번호의 암호화</span><span>
+</p>
+<p>사용자의 비밀 번호는 SHA-256 해쉬키 방식으로 메타 데이타베이스에 저장된다.</p>
+<p></p>
+<p>저장되는 비밀 번호의 보안을 위해 솔트값이 적용되어 있으며, 솔트값과 조합된 원본 비밀번호가 SHA-256 방식으로 저장되며 복호화 되지 않는다.</p>
+<p></p>
+<p></span></p>
+
 <p>&nbsp;</p>
 							<p></p>
 							</div>
@@ -106,6 +182,14 @@
 						<!-- li><a href="./partnerships/">Partnerships</a></li -->
 					</ul>
 				</nav>
+				<div style="float:right;">
+					<ul>
+						<li>제품 지원 및 연락처</li>
+						<li>주소 : 서울시 송파구 송파동 21-6 대지빌딩 5층</li>
+						<li>전화번호 : 02-424-0303</li>
+						<li>이메일 : bzplug&amp;bzplug.co.kr</li>
+					</ul>
+				</div>
 			</div>
 			<!-- /.row -->
 			<div id="footer-copyright" class="row">
