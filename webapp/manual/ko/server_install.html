@@ -73,7 +73,7 @@
 	
 			<div class="row document">
 				<div class="col-lg-3 sphinxsidebar" role="navigation" aria-label="main navigation" id="sphinxsidebar">
-					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1.매뉴얼 정보</a></h3></div><div><h3 class="active">2.소프트웨어 서버 설치</h3><ul><li><a href="server_install_guide.html">2.1.서버 설치 가이드</a></li><li><a href="server_install_test.html">2.2. 설치 테스트</a></li></ul></div><div><h3><a href="sys_manager.html">3.시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7.리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8.문제해결</a></h3></div></div><p></p></div>
+					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1.매뉴얼 정보</a></h3></div><div><h3 class="active">2.소프트웨어 서버 설치</h3><ul><li><a href="server_install_guide.html">2.1.서버 설치 가이드</a></li><li><a href="server_install_test.html">2.2. 설치 테스트</a></li><li><a href="server_log_file.html">2.3. 서버 로그 파일</a></li></ul></div><div><h3><a href="sys_manager.html">3.시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7.리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8.문제해결</a></h3></div></div><p></p></div>
 				</div>
 				<div class="col-lg-9 text-left documentwrapper">
 					<div class="bodywrapper">
@@ -87,7 +87,7 @@
 <h2><a name="_Toc21218595">2.소프트웨어 서버 설치</a></h2><p><span>
 시스템 개요</span><span>
 </p>
-<p>앰플릭스 서버는 웹브라우저를 통한 사용자의 접근 제어, 서비스 처리를 수행하는 역할을 합니다. 이를 위해 내부 데이타베이스 시스템에 SQL 쿼리를 통해 데이타 결과를 수신하고 결과에 대한 포맷, 피벗 변환 등의 작업을 수행한 후 최종 사용자의 화면에 그리드 / 챠트의 형태로 데이타를 표현한다.</p>
+<p>AMPLIX 서버는 웹브라우저를 통한 사용자의 접근 제어, 서비스 처리를 수행하는 역할을 합니다. 이를 위해 내부 데이타베이스 시스템에 SQL 쿼리를 통해 데이타 결과를 수신하고 결과에 대한 포맷, 피벗 변환 등의 작업을 수행한 후 최종 사용자의 화면에 그리드 / 챠트의 형태로 데이타를 표현한다.</p>
 <p></span><span class="doc_header_3">하드웨어 요구사항</span><span>
 </p>
 <p>서버 구동을 실행하는 단일 서버 머신 :</p>
@@ -104,7 +104,7 @@
 <p>  - 8GByte RAM</p>
 <p></span><span class="doc_header_3">네트워크 요구사항</span><span>
 </p>
-<p>앰플릭스 서버는 사용자 PC 의 요청을 HTTP 혹은 HTTPS 프로토콜로 통신을 호출하고 있습니다. 이를 위한 네트쿼크의 포트 및 TCP/IP  연결이 될수 있도록 네트워크 방화벽, 라우팅 접근 가능하도록 설정한 후 진행하여야 한다.</p>
+<p>AMPLIX 서버는 사용자 PC 의 요청을 HTTP 혹은 HTTPS 프로토콜로 통신을 호출하고 있습니다. 이를 위한 네트워크 포트 및 TCP/IP  연결이 될수 있도록 네트워크 방화벽, 라우팅 접근 가능하도록 설정한 후 진행하여야 한다.</p>
 <p></span><span class="doc_header_3">소프트웨어 요구사항</span><span>
 </p>
 <p>서버 설치를 위해서 필요한 소프트웨어는 다음과 같다.</p>
@@ -114,9 +114,8 @@
 <p></p>
 <p></span><span class="doc_header_3">소프트웨어 설치</span><span>
 </p>
-<p>앰플릭스 서버를 사용하려면 먼저 필요 소프트웨어를 설치 구성하여야 합니다.  소프트웨어 요구사항 섹션에 정의된 필수 소프트웨어가 시스템에 설치되어 있는지, 또한 버전을 확인 한 후 설치를 진행하여야 합니다.</p>
-<p></p>
-<p>또한 먼저 앰플릭스 소프트웨어를 구매한 후 라이센스 파일을 발급 받아야 사용가능합니다. 라이센스 파일의 신청 및 구매를 위해서는 www.amplixbi.com 을 방문하여 문의할 수 있습니다.</p>
+<p>AMPLIX 서버를 사용하려면 먼저 필요 소프트웨어를 설치 구성하여야 합니다.  소프트웨어 요구사항 섹션에 정의된 필수 소프트웨어가 시스템에 설치되어 있는지, 또한 버전을 확인 한 후 설치를 진행하여야 합니다.</p>
+<p>또한 먼저 AMPLIX 소프트웨어를 구매한 후 라이센스 파일을 발급 받아야 사용가능합니다. 라이센스 파일의 신청 및 구매를 위해서는 www.amplixbi.com 을 방문하여 문의할 수 있습니다.</p>
 <p></p>
 <p></p>
 <p></span></p>
@@ -131,6 +130,10 @@
 				<p class="biglink">
 <a class="biglink" href="server_install_test.html">
 2.2. 설치 테스트</a>
+<br><span class="linkdescr"></span></p>
+				<p class="biglink">
+<a class="biglink" href="server_log_file.html">
+2.3. 서버 로그 파일</a>
 <br><span class="linkdescr"></span></p>
 </td>
 </tr>

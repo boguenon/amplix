@@ -201,6 +201,8 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		"esri/symbols/SimpleFillSymbol",
 		"esri/symbols/SimpleLineSymbol",
 		"esri/Color",
+		"esri/tasks/query",
+		"esri/tasks/QueryTask",
 		"dojo/dom-construct",
 		"dojo/domReady!"
 	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer,
@@ -210,7 +212,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		KMLLayer, LabelLayer, MapImageLayer, OpenStreetMapLayer, RasterLayer, StreamLayer, WebTiledLayer,
 		WFSLayer, WMSLayer, WMTSLayer,  
 		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, Graphic, GraphicsLayer, 
-		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color,
+		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color, Query, QueryTask,
 		domConstruct) {
 		/**
 		 * cache object for esri class library
@@ -253,6 +255,8 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 				GraphicsLayer: GraphicsLayer,
 				Circle: Circle,
 				Color: Color,
+				Query: Query,
+				QueryTask: QueryTask,
 				SimpleRenderer: SimpleRenderer,
 				ClassBreaksRenderer: ClassBreaksRenderer,
 				SimpleFillSymbol: SimpleFillSymbol,
@@ -302,6 +306,25 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 			me.map_legend$ = $("<div class='igc-map-legend'></div>").appendTo(owner.container);
 			$("<div class='igc-map-legend-bg'></div>").appendTo(me.map_legend$);
 			$(cop.settings.m_map_legend).appendTo(me.map_legend$);
+		}
+		
+		if (cop.settings.m_query_task)
+		{
+			try
+			{
+				ig$.___chart_dynscr = ig$.___chart_dynscr || 0;
+								
+				var uid =ig$.___chart_dynscr++,
+					dyn = new IG$.cDynScript('cls_query_task' + (uid), 0),
+					script = "var ___chart_dynscr_inst = " + cop.settings.m_query_task;
+					
+				dyn.loadScript(script);
+				
+				me._chart_handler = ___chart_dynscr_inst;
+			}
+			catch (e)
+			{
+			}
 		}
 		
 		/**
@@ -1179,6 +1202,11 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				
 			_run_click_handler(p.data, pt);
 		});
+	}
+	
+	if (me._chart_handler && me._chart_handler.after_load)
+	{
+		me._chart_handler.after_load.call(me, me, results);
 	}
 };
 
