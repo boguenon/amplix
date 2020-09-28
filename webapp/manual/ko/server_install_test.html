@@ -88,6 +88,37 @@
 로그 파일 </span><span>
 </p>
 <p>서버의 정상적인 설치 완료시 로그 파일이 logs/amplix.out.log 파일에 저장된다. 시스템 설치 이후 문제점 발생시 로그 파일의 내용을 통해 문제점 파악 후 다시 서비스를 시작한다.</p>
+<p></p>
+<p>로그 파일 저장에 대한 초기값은 일단위 아카이브 파일로 생성되어 logs/amplix.out.날짜.순번.log.gz 형태로 백업 저장 관리된다. 순번은 파일의 크기가 10 Mbyte 를 넘어서면 자동으로 생성되며 기존 파일은 압축된다. 최대 로그파일의 저장 기간은 30일로 설정되어 있다.</p>
+<p></p>
+<p>로그 설정 정보의 변경을 위해서는 다음 파일을 수정한 후 앰플릭스 서버 서비스를 재시작한다.</p>
+<p></p>
+<p>config/logback.xml</p>
+<p></p>
+<p>설정 부분 : </p>
+<p></span><spanstyle=";color:#008080">
+ -. <</span><span>
+maxFileSize</span><spanstyle=";color:#008080">
+></span><spanstyle=";color:#000000">
+10MB</span><spanstyle=";color:#008080">
+</</span><span>
+maxFileSize</span><spanstyle=";color:#008080">
+></span><span>
+</p>
+<p></span><spanstyle=";color:#008080">
+ -. <</span><span>
+maxHistory</span><spanstyle=";color:#008080">
+></span><spanstyle=";color:#000000">
+30</span><spanstyle=";color:#008080">
+</</span><span>
+maxHistory</span><spanstyle=";color:#008080">
+>      (디폴트값 30일, 단위 (일).)</span><span>
+</p>
+<p></p>
+<p>예) logs/amplix.out.2020-01-01.0.log.gz</p>
+<p></p>
+<p>로그 파일의 내용은 시스템의 오류, 시스템에서 발생하는 알림 메시지를 시간 순서데로 저장된다.</p>
+<p></p>
 <p></span><span class="doc_header_3">설치 후 테스트</span><span>
 </p>
 <p>설치 후 사용자 PC의 웹 브라우져를 통해 서버에 접속한다.</p>
@@ -123,6 +154,14 @@
 						<!-- li><a href="./partnerships/">Partnerships</a></li -->
 					</ul>
 				</nav>
+				<div style="float:right;">
+					<ul>
+						<li>제품 지원 및 연락처</li>
+						<li>주소 : 서울시 송파구 송파동 21-6 대지빌딩 5층</li>
+						<li>전화번호 : 02-424-0303</li>
+						<li>이메일 : bzplug&amp;bzplug.co.kr</li>
+					</ul>
+				</div>
 			</div>
 			<!-- /.row -->
 			<div id="footer-copyright" class="row">

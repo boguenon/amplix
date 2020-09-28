@@ -29,18 +29,18 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202009280102" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202009281129" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202009280102" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202009281129" />
 <% } %>
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202009280102\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202009281129\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202009280102" />
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202009280102" />
+<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202009281129" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202009281129" />
 
 <style>
 #wrap {
@@ -52,13 +52,13 @@ if (theme != null && theme.length() > 0)
 </style>
 
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202009280102"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202009280102"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202009280102"></script>
+<script type="text/javascript" src="../config.js?_dc=202009281129"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202009281129"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202009281129"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
-var m$mts = "<%=mts%>";
+var m$mts = "<%=mts%>" || "0122483f-0155fb46";
 var m$_d = "";
 
 function getLocale()
