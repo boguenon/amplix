@@ -70,10 +70,10 @@ var ig$ = {
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202009271236",
+		date: "202009280110",
 		appversion: "",
 		apprelease: "",
-		web_revision: "1601-4.13-528-g9bd3689d"
+		web_revision: "1605-4.13-532-g996c49ff"
 	},
 	$l_:0
 };
