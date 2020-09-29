@@ -6752,5 +6752,13 @@
     "group" : "locale_en_US_0017",
     "name" : "L_BLANK_PASSWORD",
     "value" : "Password should not be empty!"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_MAP_POST_EXEC",
+    "value" : "Post Exec Script"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_MAP_SAVE_POS",
+    "value" : "Remember Last Setting"
   } ]
 }

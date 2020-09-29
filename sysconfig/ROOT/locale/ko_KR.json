@@ -6750,5 +6750,13 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_BLANK_PASSWORD",
     "value" : "패스워드를 입력 후 다시 시도해 주십시오!"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MAP_POST_EXEC",
+    "value" : "실행 스크립트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MAP_SAVE_POS",
+    "value" : "최종 상태 저장"
   } ]
 }
