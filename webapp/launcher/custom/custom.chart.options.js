@@ -132,7 +132,7 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
 				me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
-				me.down("[name=m_query_task]").setValue(option.settings.m_query_task || "");
+				me.down("[name=m_map_post_exec]").setValue(option.settings.m_map_post_exec || "");
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -267,7 +267,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
 				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
 				option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
-				option.settings.m_query_task = me.down("[name=m_query_task]").getValue();
+				option.settings.m_map_post_exec = me.down("[name=m_map_post_exec]").getValue();
 				
 				// arc layer selection
 				option.settings.m_arc_layers = [];
@@ -649,6 +649,7 @@ IG$._customChartPanels = function() {
 							},
 							{
 								xtype: "textarea",
+								popup_editor: true,
 								anchor: "100%",
 								fieldLabel: IRm$.r1("L_TEMPLATE"), // "Template",
 								name: "cdata_m_tmpl" //,
@@ -730,15 +731,15 @@ IG$._customChartPanels = function() {
 							},
 							{
 								xtype: "textarea",
+								popup_editor: true,
 								name: "m_map_legend",
 								fieldLabel: IRm$.r1("L_CUST_LEGEND"),
 								height: 120
 							},
 							{
-								xtype: "textarea",
-								name: "m_query_task",
-								fieldLabel: IRm$.r1("L_MAP_QRY_TASK"),
-								height: 120
+								xtype: "textfield",
+								name: "m_map_post_exec",
+								fieldLabel: IRm$.r1("L_MAP_POST_EXEC")
 							},
 							{
 								xtype: "gridpanel",

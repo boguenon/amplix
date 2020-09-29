@@ -106,3 +106,14 @@ A;L_GEOFIELD;Geo Field
 
 A;L_IS_PARAM;Is Parameter
 A;L_USE_VALUE_AS_PARAM;Use as Parameter (Not in WHERE clause)
+
+A;L_PWD_F_CHAR;Start of string!
+A;L_PWD_F_NUM;At least one digit!
+A;L_PWD_F_LOW_CHAR;At least one lower case!
+A;L_PWD_F_UPP_CHAR;At least one upper case!
+A;L_PWD_F_SPEC_CHAR;One or more @ special character!
+A;L_PWD_F_WHT_SPACE;No white space allowed!
+A;L_PWD_F_LEN;At least @ places!
+
+A;L_BLANK_USERID;UserID should not be empty!
+A;L_BLANK_PASSWORD;Password should not be empty!
