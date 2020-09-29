@@ -6644,5 +6644,41 @@
     "group" : "locale_zh_CN_0017",
     "name" : "L_USE_VALUE_AS_PARAM",
     "value" : "Use as Parameter (Not in WHERE clause)"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PWD_F_CHAR",
+    "value" : "Start of string!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PWD_F_NUM",
+    "value" : "At least one digit!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PWD_F_LOW_CHAR",
+    "value" : "At least one lower case!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PWD_F_UPP_CHAR",
+    "value" : "At least one upper case!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PWD_F_SPEC_CHAR",
+    "value" : "One or more @ special character!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PWD_F_WHT_SPACE",
+    "value" : "No white space allowed!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PWD_F_LEN",
+    "value" : "At least @ places!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_BLANK_USERID",
+    "value" : "UserID should not be empty!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_BLANK_PASSWORD",
+    "value" : "Password should not be empty!"
   } ]
 }

@@ -6714,5 +6714,41 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_USE_VALUE_AS_PARAM",
     "value" : "변수로 사용(WHERE 문구메 미포함)"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PWD_F_CHAR",
+    "value" : "문자로 시작해야 합니다!"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PWD_F_NUM",
+    "value" : "최소 한개 이상의 숫자를 사용해 주십시오!"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PWD_F_LOW_CHAR",
+    "value" : "최소 한개 이상의 소문자를 사용해 주십시오!"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PWD_F_UPP_CHAR",
+    "value" : "최소 한개 이상의 대문자를 사용해 주십시오!"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PWD_F_SPEC_CHAR",
+    "value" : "최소 한개 이상의 @ 특수문자를 사용해 주십시오!"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PWD_F_WHT_SPACE",
+    "value" : "스페이스는 허용되지 않습니다!"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PWD_F_LEN",
+    "value" : "최소 @ 자 이상을 사용해 주십시오!"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_BLANK_USERID",
+    "value" : "사용자 아이디는 필수 항목입니다!"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_BLANK_PASSWORD",
+    "value" : "패스워드를 입력 후 다시 시도해 주십시오!"
   } ]
 }
