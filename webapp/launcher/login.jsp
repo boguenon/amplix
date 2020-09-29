@@ -38,14 +38,14 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202009290214" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202009291418" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202009290214" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202009291418" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202009290214" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202009291418" />
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202009290214"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202009290214"></script>
+<script type="text/javascript" src="../config.js?_dc=202009291418"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202009291418"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";
@@ -211,6 +211,19 @@ function initPage() {
 	$('#login_btn').bind('click', function() {
 		var userid = $('#userid').val(),
 			passwd = $('#userpassword').val();
+		
+		if (!userid)
+		{
+			IG$.ShowError(IRm$.r1("L_BLANK_USERID"));
+			return false;
+		}
+		
+		if (!passwd)
+		{
+			IG$.ShowError(IRm$.r1("L_BLANK_PASSWORD"));
+			return false;
+		}
+		
 		IG$.doStartSession(userid, passwd, bg, mts);
 		return false;
 	});
@@ -219,6 +232,18 @@ function initPage() {
 		{
 			var userid = $('#userid')[0].value,
 				passwd = $('#userpassword')[0].value;
+			
+			if (!userid)
+			{
+				IG$.ShowError(IRm$.r1("L_BLANK_USERID"));
+				return false;
+			}
+			
+			if (!passwd)
+			{
+				IG$.ShowError(IRm$.r1("L_BLANK_PASSWORD"));
+				return false;
+			}
 			
 			IG$.doStartSession(userid, passwd, bg, mts);
 			

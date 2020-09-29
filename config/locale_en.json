@@ -25,7 +25,7 @@
 	"130": "Content is locked for saving.",
 	
 	"140": "Login failed %s and will be %s with %s consecutive failure!",
-	"141": "Too manu wrong password tried! Locked session!",
+	"141": "Too manu wrong password tried within %s minutes! Locked session!",
 	"142": "LOCKED",
 	"143": "Ooops! password need to be stronger then provided!",
 	

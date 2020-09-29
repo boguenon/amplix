@@ -6,7 +6,7 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 		esri = me.esri,
 		map,
 		cop = owner.cop,
-		copsettings = cop.settings,
+		copsettings = cop.settings || {},
 		geocenter,
 		infow,
 		infot,
@@ -17,15 +17,26 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 			sliderPosition : 'top-right',
 			logo : false,
 			autoResize : true,
-			fadeOnZoom : true
-		};
+			fadeOnZoom : true,
+			isScrollWheelZoom: true
+		},
+		geo_extent;
 		
 	if (copsettings && copsettings.m_map_center)
 	{
 		if (copsettings.m_map_center.indexOf(",") > -1)
 		{
 			geocenter = copsettings.m_map_center.split(",");
-			mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+			
+			if (geocenter.length > 3)
+			{
+				geo_extent = [Number(geocenter[0]), Number(geocenter[1]), Number(geocenter[2]), Number(geocenter[3])];
+				delete mapconfig["center"];
+			}
+			else
+			{
+				mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+			}
 		}
 		else if (copsettings.m_map_center == "-")
 		{
@@ -104,6 +115,49 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 	map = new esri.Map(container, mapconfig);
 	
 	me.map_inst = map;
+	
+	if (geo_extent)
+	{
+		map.on("load", function() {
+			var next = new esri.Extent(geo_extent[0], geo_extent[1], geo_extent[2], geo_extent[3], map.spatialReference);
+			next.setSpatialReference(map.spatialReference);
+			map.setExtent(next);
+		});
+	}
+	
+	if (copsettings.m_map_save_stat == "T")
+	{
+		var update_setting = function(e) {
+			var extent = map.extent,
+				np, pt;
+			cop.m_zoom_level = "" + map.getZoom();
+			
+			if (extent)
+			{
+				// extent.setSpatialReference(map.spatialReference);
+				pt = extent.getCenter();
+				np = esri.webMercatorUtils.webMercatorToGeographic(pt);
+				if (np && isNaN(np.x) == false && isNaN(np.y) == false)
+				{
+					copsettings.m_map_center = "" + np.x + "," + np.y;
+				}
+				
+				// if (!isNaN(extent.xmin) && !isNaN(extent.xmax) && !isNaN(extent.ymin) && !isNaN(extent.ymax))
+				// {
+				// 	copsettings.m_map_center = "" + extent.xmin + "," + extent.ymin + "," + extent.xmax + "," + extent.ymax;
+				// }
+				// copsettings.m_map_center = "" + pt.x + "," + pt.y + ",extent";
+			}
+		}
+		
+		map.on("zoom-end", function(e) {
+			update_setting(e);
+		});
+		
+		map.on("extent-change", function(e) {
+			update_setting(e);
+		});
+	}
 	
 	infow = new esri.InfoWindowLite(null, esri.domConstruct.create("div", null, null, map.root));
 	infow.startup();
@@ -208,6 +262,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		"esri/Color",
 		"esri/tasks/query",
 		"esri/tasks/QueryTask",
+		"esri/geometry/webMercatorUtils",
 		"dojo/dom-construct",
 		"dojo/domReady!"
 	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer,
@@ -218,6 +273,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		WFSLayer, WMSLayer, WMTSLayer,  
 		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, Graphic, GraphicsLayer, 
 		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color, Query, QueryTask,
+		webMercatorUtils,
 		domConstruct) {
 		/**
 		 * cache object for esri class library
@@ -262,6 +318,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 				Color: Color,
 				Query: Query,
 				QueryTask: QueryTask,
+				webMercatorUtils: webMercatorUtils,
 				SimpleRenderer: SimpleRenderer,
 				ClassBreaksRenderer: ClassBreaksRenderer,
 				SimpleFillSymbol: SimpleFillSymbol,
@@ -759,7 +816,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		title: ""
 	};
 	
-	var _run_click_handler = function(row, pt) {
+	var _run_click_handler = function(row, pt, mouseover) {
 		var infow = map.infoWindow,
 			i, j, ct, t,
 			series_name = "", point_name = "",
@@ -767,6 +824,11 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			mvalues = {},
 			charts = [],
 			mval = "<div>";
+			
+		if (me._info_timer)
+		{
+			clearTimeout(me._info_timer);
+		}
 		
 		for (i=0; i < row.length; i++)
 		{
@@ -798,6 +860,11 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		
 		mval += "</div>";
 		infow.setTitle(info_tmpl.title || "");
+		
+		if (info_tmpl.width && info_tmpl.height)
+		{
+			infow.resize(Number(info_tmpl.width), Number(info_tmpl.height));
+		}
 		
 		if (info_tmpl.content)
 		{
@@ -953,18 +1020,25 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				$("#" + chart.div, infow.domNode).sparkline(chart.values || [], chart);
 			});
 		}
-
-		var param = {
-				point: {
-					name: point_name
-				}
-			},
-			sender = {
-				name: series_name
-			};
-
-		// drill event triggering
-		owner.procClickEvent.call(owner, sender, param);
+		
+		if (!mouseover)
+		{
+			var param = {
+					point: {
+						name: point_name
+					}
+				},
+				sender = {
+					name: series_name
+				};
+	
+			// drill event triggering
+			owner.procClickEvent.call(owner, sender, param);
+		}
+		
+		me._info_timer = setTimeout(function() {
+			infow.hide();
+		}, 3000); 
 	}
 	
 	if (polygon_layer && cop.m_marker == "polygon")
@@ -1167,12 +1241,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		});
 		
 		g.on("click", function(evt) {
-			var infow = map.infoWindow,
-				i, j, ct, t,
-				gp = evt.graphic,
-				series_name = "", point_name = "",
-				sep = IG$._separator,
-				mval = "<div>",
+			var gp = evt.graphic,
 				p,
 				pt;
 	
@@ -1187,6 +1256,24 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			pt = gp.pt;
 				
 			_run_click_handler(p.data, pt);
+		});
+		
+		g.on("mouse-over", function(evt) {
+			var gp = evt.graphic,
+				p,
+				pt;
+	
+			if (!gp)
+				return;
+				
+			p = gp.p;
+			
+			if (!p)
+				return;
+				
+			pt = gp.pt;
+				
+			_run_click_handler(p.data, pt, true);
 		});
 	}
 	

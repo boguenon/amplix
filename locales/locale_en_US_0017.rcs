@@ -116,3 +116,6 @@ A;L_PWD_F_LEN;At least @ places!
 
 A;L_BLANK_USERID;UserID should not be empty!
 A;L_BLANK_PASSWORD;Password should not be empty!
+
+A;L_MAP_POST_EXEC;Post Exec Script
+A;L_MAP_SAVE_POS;Remember Last Setting

@@ -120,3 +120,6 @@ A;L_PWD_F_LEN;최소 @ 자 이상을 사용해 주십시오!
 
 A;L_BLANK_USERID;사용자 아이디는 필수 항목입니다!
 A;L_BLANK_PASSWORD;패스워드를 입력 후 다시 시도해 주십시오!
+
+A;L_MAP_POST_EXEC;실행 스크립트
+A;L_MAP_SAVE_POS;최종 상태 저장

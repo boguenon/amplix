@@ -133,6 +133,7 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
 				me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
 				me.down("[name=m_map_post_exec]").setValue(option.settings.m_map_post_exec || "");
+				me.down("[name=m_map_save_stat]").setValue(option.settings.m_map_save_stat == "T");
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -268,6 +269,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
 				option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
 				option.settings.m_map_post_exec = me.down("[name=m_map_post_exec]").getValue();
+				option.settings.m_map_save_stat = me.down("[name=m_map_save_stat]").getValue() ? "T" : "F";
 				
 				// arc layer selection
 				option.settings.m_arc_layers = [];
@@ -740,6 +742,12 @@ IG$._customChartPanels = function() {
 								xtype: "textfield",
 								name: "m_map_post_exec",
 								fieldLabel: IRm$.r1("L_MAP_POST_EXEC")
+							},
+							{
+								xtype: "checkbox",
+								fieldLabel: IRm$.r1("L_MAP_SAVE_POS"),
+								boxLabel: IRm$.r1("B_ENABLED"),
+								name: "m_map_save_stat"	
 							},
 							{
 								xtype: "gridpanel",
