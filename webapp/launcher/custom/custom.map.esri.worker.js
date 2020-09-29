@@ -1,23 +1,42 @@
+/**
+ * create chart instance
+ */
 IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, container) {
 	var me = this,
 		esri = me.esri,
 		map,
 		cop = owner.cop,
-		copsettings = cop.settings,
+		copsettings = cop.settings || {},
 		geocenter,
 		infow,
 		infot,
 		mapconfig = {
 			center: [-118, 34.5],
-			zoom: 8
-		};
-	
+			zoom: 8,
+			// sliderStyle : 'large',
+			sliderPosition : 'top-right',
+			logo : false,
+			autoResize : true,
+			fadeOnZoom : true,
+			isScrollWheelZoom: true
+		},
+		geo_extent;
+		
 	if (copsettings && copsettings.m_map_center)
 	{
 		if (copsettings.m_map_center.indexOf(",") > -1)
 		{
 			geocenter = copsettings.m_map_center.split(",");
-			mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+			
+			if (geocenter.length > 3)
+			{
+				geo_extent = [Number(geocenter[0]), Number(geocenter[1]), Number(geocenter[2]), Number(geocenter[3])];
+				delete mapconfig["center"];
+			}
+			else
+			{
+				mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+			}
 		}
 		else if (copsettings.m_map_center == "-")
 		{
@@ -36,7 +55,7 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 			delete mapconfig["center"];
 		}
 	}
-	
+		
 	if (!ig$.arcgis_basemap$)
 	{
 		ig$.arcgis_basemap$ = {};
@@ -94,8 +113,51 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 	}
 
 	map = new esri.Map(container, mapconfig);
-
+	
 	me.map_inst = map;
+	
+	if (geo_extent)
+	{
+		map.on("load", function() {
+			var next = new esri.Extent(geo_extent[0], geo_extent[1], geo_extent[2], geo_extent[3], map.spatialReference);
+			next.setSpatialReference(map.spatialReference);
+			map.setExtent(next);
+		});
+	}
+	
+	if (copsettings.m_map_save_stat == "T")
+	{
+		var update_setting = function(e) {
+			var extent = map.extent,
+				np, pt;
+			cop.m_zoom_level = "" + map.getZoom();
+			
+			if (extent)
+			{
+				// extent.setSpatialReference(map.spatialReference);
+				pt = extent.getCenter();
+				np = esri.webMercatorUtils.webMercatorToGeographic(pt);
+				if (np && isNaN(np.x) == false && isNaN(np.y) == false)
+				{
+					copsettings.m_map_center = "" + np.x + "," + np.y;
+				}
+				
+				// if (!isNaN(extent.xmin) && !isNaN(extent.xmax) && !isNaN(extent.ymin) && !isNaN(extent.ymax))
+				// {
+				// 	copsettings.m_map_center = "" + extent.xmin + "," + extent.ymin + "," + extent.xmax + "," + extent.ymax;
+				// }
+				// copsettings.m_map_center = "" + pt.x + "," + pt.y + ",extent";
+			}
+		}
+		
+		map.on("zoom-end", function(e) {
+			update_setting(e);
+		});
+		
+		map.on("extent-change", function(e) {
+			update_setting(e);
+		});
+	}
 	
 	infow = new esri.InfoWindowLite(null, esri.domConstruct.create("div", null, null, map.root));
 	infow.startup();
@@ -123,7 +185,7 @@ IG$.__chartoption.chartext.esri.prototype.validateData = function(extent) {
 		me.req_cnt = 0;
 		me.updateData.call(me, extent);
 	}, 1000);
-},
+};
 
 IG$.__chartoption.chartext.esri.prototype.updateData = function() {
 	var me = this,
@@ -137,15 +199,25 @@ IG$.__chartoption.chartext.esri.prototype.updateData = function() {
 	setTimeout(function() {
 		me.updateData.call(me);
 	}, 300);
-}
+};
 
+/**
+ * main routine to draw chart
+ * called from report viewer, widget
+ */
 IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 // insert logic with report result
 	var me = this,
 		map_inst = me.map_inst,
 		cop = owner.cop,
 		i;
+		
+	me.owner = owner;
 	
+	/**
+	 * arcgis module loading
+	 * loaded module class is cached in esri object 
+	 */
 	require([
 		"esri/config",
 		"esri/map", 
@@ -188,17 +260,24 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		"esri/symbols/SimpleFillSymbol",
 		"esri/symbols/SimpleLineSymbol",
 		"esri/Color",
+		"esri/tasks/query",
+		"esri/tasks/QueryTask",
+		"esri/geometry/webMercatorUtils",
 		"dojo/dom-construct",
 		"dojo/domReady!"
-	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer, 
+	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer,
 		ArcGISImageServiceLayer, ArcGISImageServiceVectorLayer,
 		DataAdapterFeatureLayer, CSVLayer, DataSource, DimensionDefinition,
 		Domain, DynamicLayerInfo, DynamicMapServiceLayer, FeatureLayer, FeatureTemplate, FeatureType, KMLGroundOverlay,
 		KMLLayer, LabelLayer, MapImageLayer, OpenStreetMapLayer, RasterLayer, StreamLayer, WebTiledLayer,
-		WFSLayer, WMSLayer, WMTSLayer,
+		WFSLayer, WMSLayer, WMTSLayer,  
 		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, Graphic, GraphicsLayer, 
-		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color,
+		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color, Query, QueryTask,
+		webMercatorUtils,
 		domConstruct) {
+		/**
+		 * cache object for esri class library
+		 */
 		var esri = {
 				esriConfig: esriConfig,
 				Map: Map,
@@ -237,6 +316,9 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 				GraphicsLayer: GraphicsLayer,
 				Circle: Circle,
 				Color: Color,
+				Query: Query,
+				QueryTask: QueryTask,
+				webMercatorUtils: webMercatorUtils,
 				SimpleRenderer: SimpleRenderer,
 				ClassBreaksRenderer: ClassBreaksRenderer,
 				SimpleFillSymbol: SimpleFillSymbol,
@@ -246,6 +328,26 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 			i, l;
 		
 		me.esri = esri;
+
+		/* 3.17 errors with layer
+		if (cop.settings.m_arc_basemap)
+		{
+			map_inst.setBasemap(cop.settings.m_arc_basemap);
+		}
+		*/
+		
+		/**
+		 * create arcgis map
+		 * stores instance information in map_inst pointer
+		 */
+		if (ig$.arcgis_basemap != "-" && map_inst && cop.settings.m_arc_basemap && me._basemap != cop.settings.m_arc_basemap)
+		{
+			map_inst.destroy();
+			map_inst = me.map_inst = null;
+			me._glayers = [];
+		}
+		
+		me._basemap = cop.settings.m_arc_basemap || "streets";
 		
 		if (!map_inst)
 		{
@@ -254,13 +356,23 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 
 		map_inst = me.map_inst;
 		
+		/**
+		 * cop : chart option from chart wizard
+		 */
 		cop.settings = cop.settings || {};
-
-		if (ig$.arcgis_basemap != "-" && cop.settings.m_arc_basemap)
+		
+		me.map_legend$ && me.map_legend$.remove();
+		
+		if (cop.settings.m_map_legend)
 		{
-			map_inst.setBasemap(cop.settings.m_arc_basemap);
+			me.map_legend$ = $("<div class='igc-map-legend'></div>").appendTo(owner.container);
+			$("<div class='igc-map-legend-bg'></div>").appendTo(me.map_legend$);
+			$(cop.settings.m_map_legend).appendTo(me.map_legend$);
 		}
 		
+		/**
+		 * before drawing, clear layers already added on previous instance
+		 */
 		if (me._glayers)
 		{
 			for (i=0; i < me._glayers.length; i++)
@@ -272,13 +384,22 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		}
 
 		me._glayers = me._glayers || [];
-
+		
+		/** 
+		 * create api layer from chart option with user selected layers
+		 */
 		me.load_api_layers(owner, results);
 	
+		/**
+		 * data visualization routine with report result set
+		 */
 		me.setData(owner, results);
 	});
 }
 
+/**
+ * create api layer from chart option with user selected layers
+ */
 IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, results) {
 	var me = this,
 		map_inst = me.map_inst,
@@ -347,7 +468,7 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 			}
 		});
 	}
-		
+	
 	me._api_layers = {};
 		
 	$.each(layers, function(i, lobj) {
@@ -695,7 +816,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		title: ""
 	};
 	
-	var _run_click_handler = function(row, pt) {
+	var _run_click_handler = function(row, pt, mouseover) {
 		var infow = map.infoWindow,
 			i, j, ct, t,
 			series_name = "", point_name = "",
@@ -703,6 +824,11 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			mvalues = {},
 			charts = [],
 			mval = "<div>";
+			
+		if (me._info_timer)
+		{
+			clearTimeout(me._info_timer);
+		}
 		
 		for (i=0; i < row.length; i++)
 		{
@@ -734,6 +860,11 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		
 		mval += "</div>";
 		infow.setTitle(info_tmpl.title || "");
+		
+		if (info_tmpl.width && info_tmpl.height)
+		{
+			infow.resize(Number(info_tmpl.width), Number(info_tmpl.height));
+		}
 		
 		if (info_tmpl.content)
 		{
@@ -889,18 +1020,25 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				$("#" + chart.div, infow.domNode).sparkline(chart.values || [], chart);
 			});
 		}
-
-		var param = {
-				point: {
-					name: point_name
-				}
-			},
-			sender = {
-				name: series_name
-			};
-
-		// drill event triggering
-		owner.procClickEvent.call(owner, sender, param);
+		
+		if (!mouseover)
+		{
+			var param = {
+					point: {
+						name: point_name
+					}
+				},
+				sender = {
+					name: series_name
+				};
+	
+			// drill event triggering
+			owner.procClickEvent.call(owner, sender, param);
+		}
+		
+		me._info_timer = setTimeout(function() {
+			infow.hide();
+		}, 3000); 
 	}
 	
 	if (polygon_layer && cop.m_marker == "polygon")
@@ -949,12 +1087,12 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				
 				r = Number(row.code) || 0;
 			}
-			/* for simulation 
+			/* for simulation
 			else
 			{
 				r = (nmax - nmin) * Math.random() + nmin; 
 			}
-			 */
+			*/
 			
 			return r;
 		});
@@ -1103,12 +1241,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		});
 		
 		g.on("click", function(evt) {
-			var infow = map.infoWindow,
-				i, j, ct, t,
-				gp = evt.graphic,
-				series_name = "", point_name = "",
-				sep = IG$._separator,
-				mval = "<div>",
+			var gp = evt.graphic,
 				p,
 				pt;
 	
@@ -1124,9 +1257,40 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				
 			_run_click_handler(p.data, pt);
 		});
+		
+		g.on("mouse-over", function(evt) {
+			var gp = evt.graphic,
+				p,
+				pt;
+	
+			if (!gp)
+				return;
+				
+			p = gp.p;
+			
+			if (!p)
+				return;
+				
+			pt = gp.pt;
+				
+			_run_click_handler(p.data, pt, true);
+		});
+	}
+	
+	if (copsettings.m_map_post_exec && ig$.report_script$)
+	{
+		var cfunc = ig$.report_script$[copsettings.m_map_post_exec];
+		
+		if (cfunc && cfunc.handler)
+		{
+			cfunc.handler.call(me, me, results);
+		}
 	}
 };
 
+/**
+ * event handler for report viewer resize
+ */
 IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) {
 	var me = this,
 		map = me.map_inst;
@@ -1137,6 +1301,9 @@ IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) 
 	}
 }
 
+/**
+ * event handler to kill this instance
+ */
 IG$.__chartoption.chartext.esri.prototype.destroy = function() {
 	// called when need to dispose the component
 	var me = this,

@@ -60,6 +60,7 @@ IG$.__chartoption.chartext.esri.prototype = {
 					"./custom/custom.map.esri.worker.v4.js"
 				];
 			}
+			/*
 			else if (me._esri_version == "3.17")
 			{
 				js = [
@@ -68,6 +69,7 @@ IG$.__chartoption.chartext.esri.prototype = {
 					"./custom/custom.map.esri.worker.v3.17.js"
 				];
 			}
+			*/
 			else
 			{
 				js = [

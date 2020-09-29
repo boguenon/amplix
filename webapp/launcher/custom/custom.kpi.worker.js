@@ -495,6 +495,7 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 						},
 						{
 							xtype: "textarea",
+							popup_editor: true,
 							name: "tsyntax",
 							value: this.rec.get("syntax"),
 							height: 400

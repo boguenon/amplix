@@ -109,3 +109,17 @@ A;L_GEOFIELD;맵 필드
 
 A;L_IS_PARAM;파라미터 여부
 A;L_USE_VALUE_AS_PARAM;변수로 사용(WHERE 문구메 미포함)
+
+A;L_PWD_F_CHAR;문자로 시작해야 합니다!
+A;L_PWD_F_NUM;최소 한개 이상의 숫자를 사용해 주십시오!
+A;L_PWD_F_LOW_CHAR;최소 한개 이상의 소문자를 사용해 주십시오!
+A;L_PWD_F_UPP_CHAR;최소 한개 이상의 대문자를 사용해 주십시오!
+A;L_PWD_F_SPEC_CHAR;최소 한개 이상의 @ 특수문자를 사용해 주십시오!
+A;L_PWD_F_WHT_SPACE;스페이스는 허용되지 않습니다!
+A;L_PWD_F_LEN;최소 @ 자 이상을 사용해 주십시오!
+
+A;L_BLANK_USERID;사용자 아이디는 필수 항목입니다!
+A;L_BLANK_PASSWORD;패스워드를 입력 후 다시 시도해 주십시오!
+
+A;L_MAP_POST_EXEC;실행 스크립트
+A;L_MAP_SAVE_POS;최종 상태 저장
