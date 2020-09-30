@@ -26,27 +26,9 @@
     "show" : true,
     "hide" : false
   }, {
-    "name" : "New SQL Report",
-    "cls" : "ig_menu_sql_rpt",
-    "clspath" : "ig_report_menu-ig_menu_sql_rpt",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "New Report",
-    "cls" : "ig_menu_formbuilder",
-    "clspath" : "ig_report_menu-ig_menu_formbuilder",
-    "show" : true,
-    "hide" : false
-  }, {
     "name" : "Analysis",
     "cls" : "ig_anal",
     "clspath" : "ig_anal",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "Variables",
-    "cls" : "ig_var",
-    "clspath" : "ig_anal-ig_var",
     "show" : true,
     "hide" : false
   }, {
@@ -92,33 +74,33 @@
     "show" : true,
     "hide" : false
   }, {
-    "name" : "UI Configurator",
-    "cls" : "ig_sys_uiconfig",
-    "clspath" : "ig_mngr-ig_sys-ig_sys_uiconfig",
-    "show" : true,
-    "hide" : false
-  }, {
     "name" : "Features",
     "cls" : "ig_ft",
     "clspath" : "ig_mngr-ig_sys-ig_ft",
     "show" : true,
     "hide" : false
   }, {
-    "name" : "Settings",
-    "cls" : "ig_settings",
-    "clspath" : "ig_mngr-ig_settings",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "Look and Feel",
-    "cls" : "ig_lnf",
-    "clspath" : "ig_mngr-ig_settings-ig_lnf",
-    "show" : true,
-    "hide" : false
-  }, {
     "name" : "Monitoring",
     "cls" : "ig_mon",
     "clspath" : "ig_mngr-ig_mon",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Meta Import",
+    "cls" : "ig_imp",
+    "clspath" : "ig_mngr-ig_mon-ig_imp",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "System Log",
+    "cls" : "ig_syslog",
+    "clspath" : "ig_mngr-ig_mon-ig_syslog",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Audit User",
+    "cls" : "ig_audit_user",
+    "clspath" : "ig_mngr-ig_mon-ig_syslog-ig_audit_user",
     "show" : true,
     "hide" : false
   }, {
@@ -164,12 +146,6 @@
     "show" : true,
     "hide" : false
   }, {
-    "name" : "Database Model",
-    "cls" : "ig_n_dbm",
-    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_dbm",
-    "show" : true,
-    "hide" : false
-  }, {
     "name" : "Business Object",
     "cls" : "ig_n_bobj",
     "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_bobj",
@@ -179,12 +155,6 @@
     "name" : "Report",
     "cls" : "ig_n_rpt",
     "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_rpt",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "SQL Report",
-    "cls" : "ig_n_sqlrpt",
-    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_sqlrpt",
     "show" : true,
     "hide" : false
   }, {
@@ -239,18 +209,6 @@
     "name" : "Refresh",
     "cls" : "ig_n_ref",
     "clspath" : "ig_nav-ig_n_fp-ig_n_ref",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "Manage Folder",
-    "cls" : "ig_n_mgf",
-    "clspath" : "ig_nav-ig_n_fp-ig_n_mgf",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "Edit Cube",
-    "cls" : "ig_n_e_cube",
-    "clspath" : "ig_nav-ig_n_fp-ig_n_e_cube",
     "show" : true,
     "hide" : false
   }, {
@@ -326,21 +284,9 @@
     "show" : true,
     "hide" : false
   }, {
-    "name" : "Add ReportViewer",
-    "cls" : "ig_r_rpt_vr",
-    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_rpt_vr",
-    "show" : true,
-    "hide" : false
-  }, {
     "name" : "share report",
     "cls" : "ig_r_email",
     "clspath" : "ig_report-ig_r_tbar-ig_r_email",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "formula",
-    "cls" : "ig_r_fm",
-    "clspath" : "ig_report-ig_r_tbar-ig_r_fm",
     "show" : true,
     "hide" : false
   }, {
@@ -359,24 +305,6 @@
     "name" : "clipboard",
     "cls" : "ig_r_clb",
     "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_clb",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "tools",
-    "cls" : "ig_r_tools",
-    "clspath" : "ig_report-ig_r_tbar-ig_r_tools",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "change report type",
-    "cls" : "ig_r_crpt",
-    "clspath" : "ig_report-ig_r_tbar-ig_r_tools-ig_r_crpt",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "basic statistics",
-    "cls" : "ig_r_stat",
-    "clspath" : "ig_report-ig_r_tbar-ig_r_tools-ig_r_stat",
     "show" : true,
     "hide" : false
   }, {
@@ -425,12 +353,6 @@
     "name" : "instruction",
     "cls" : "ig_r_inst",
     "clspath" : "ig_report-ig_r_tbar-ig_r_inst",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "help",
-    "cls" : "ig_r_help",
-    "clspath" : "ig_report-ig_r_tbar-ig_r_help",
     "show" : true,
     "hide" : false
   } ]
