@@ -71,11 +71,11 @@ var ig$ = {
 	echarts_theme: "amplix",
 	appInfo: {
 		date: "202009301341",
-		appversion: "",
-		apprelease: "",
+		appversion$: "3.6",
+		apprelease$: "3.6.01",
 		web_revision: "1646-4.13-573-g6e8de6a1"
 	},
-	$l_:0
+	$l_: 9
 };
 
 // ig$.theme_id = "test1";
