@@ -13,7 +13,7 @@
 <meta name="keywords" content="JD Edwards,Salesforce reporting,R statistics,Python,Anaconda,Big Data,Data Visualization,Reporting,NoSQL,BI,Hadoop,Mongo,Amplix,web base bi,Python,Dashboard">
 <meta name="Subject" content="BI Amplix">
 <link rel="icon" href="../../favicon.png" type="image/png">
-<title>6.4.코드 맵핑</title>
+<title>6.4. 코드 맵핑</title>
 
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/animate.min.css" rel="stylesheet">
@@ -73,7 +73,7 @@
 	
 			<div class="row document">
 				<div class="col-lg-3 sphinxsidebar" role="navigation" aria-label="main navigation" id="sphinxsidebar">
-					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1.매뉴얼 정보</a></h3></div><div><h3><a href="server_install.html">2.소프트웨어 서버 설치</a></h3></div><div><h3><a href="sys_manager.html">3.시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3 class="active">6. 비즈니스 오브젝트</h3><ul><li><a href="dev_business_object.html">6.1.비즈니스 오브젝트 생성</a></li><li><a href="dev_business_ui_layout.html">6.2.비즈니스 오브젝트 화면 레이아웃</a></li><li><a href="dev_business_table_import.html">6.3.테이블 가져오기 및 인라인뷰</a></li><li><a href="dev_business_codemapping.html">6.4.코드 맵핑</a></li></ul></div><div><h3><a href="user_report.html">7.리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8.문제해결</a></h3></div></div><p></p></div>
+					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1. 매뉴얼 정보</a></h3></div><div><h3><a href="server_install.html">2. 소프트웨어 서버 설치</a></h3></div><div><h3><a href="sys_manager.html">3. 시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3 class="active">6. 비즈니스 오브젝트</h3><ul><li><a href="dev_business_object.html">6.1. 비즈니스 오브젝트 생성</a></li><li><a href="dev_business_ui_layout.html">6.2. 비즈니스 오브젝트 화면 레이아웃</a></li><li><a href="dev_business_table_import.html">6.3. 테이블 가져오기 및 인라인뷰</a></li><li><a href="dev_business_codemapping.html" class="active">6.4. 코드 맵핑</a></li></ul></div><div><h3><a href="user_report.html">7. 리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8. 문제해결</a></h3></div></div><p></p></div>
 				</div>
 				<div class="col-lg-9 text-left documentwrapper">
 					<div class="bodywrapper">
@@ -84,10 +84,53 @@
 								
 							</p>
 							<div id="menu_template">
-<h2><a name="_Toc21218595">6.4.코드 맵핑</a></h2><p><span>
-코드 맵핑은 데이타베이스의 값에 대한 설명을 맵핑하는 기능을 한다. 예를 들어 데이타베이스에 성별을 M, F 등 코드값으로만 표현되어 있는 경우 값에 대한 성별 설명인 남성, 여성으로 맵핑하는 기능을 의미한다.</p>
+<h2><a name="_Toc21218595">6.4. 코드 맵핑</a></h2><p><span>
+</span><span class="doc_header_3">코드맵핑</span><span>
+</p>
+<p>코드 맵핑은 데이타베이스의 값에 대한 설명을 맵핑하는 기능을 한다. 예를 들어 데이타베이스에 성별을 M, F 등 코드값으로만 표현되어 있는 경우 값에 대한 성별 설명인 남성, 여성으로 맵핑하는 기능을 의미한다.</p>
+<p></span><span class="doc_header_3">코드맵핑 등록 및 관리</span><span>
+</p>
+<p>메인 매뉴의 분석 항목을 클릭한 후 서브 매뉴 분석 - 코드맵핑을 선택한다. 시스템 코드맵 관리 화면이 탭영역에 추가된다.</p>
 <p></p>
+<p></span><span>
+<img src="./images/dev_business_codemapping_3.png"></img>
+</span><span>
+</p>
+<p>(그림 : 코드맵핑 메인 매뉴 접근 단계)</p>
+<p></span><span class="doc_header_3">코드맵핑 화면 레이아웃</span><span>
+</p>
+<p>코드맵핑 화면의 레이아웃 구조는 다음과 같다.</p>
 <p></p>
+<p></span><span>
+<img src="./images/dev_business_codemapping_6.png"></img>
+</span><span>
+</p>
+<p>(그림 : 코드맵핑 관리 화면 레이아웃)</p>
+<p></p>
+<p>폴더 매뉴를 클릭하여 현재 선택된 폴더의 하위 폴더를 생성할 수 있다. 코드맵핑 관리 폴더 클릭하면 해당 폴더에 등록된 코드맵핑 목록이 그리드에 나타난다. 코드맵핑을 수정하려면 목록의 설정 아이콘을 클릭한다.</p>
+<p>코드 맵핑을 추가하려면 코드맵핑 목록 툴바의 코드맵핑 버튼을 클릭하여 신규 항목을 생성한다.</p>
+<p></span><span class="doc_header_3">코드맵핑 수정</span><span>
+</p>
+<p>코드맵핑 항목 그리드에서 수정할 항목의 설정 버튼을 클릭한다. 신규 항목 등록을 위해서는 툴바의 코드 맵핑 버튼을 클릭하여 코드맵핑 수정 윈도우를 연다.</p>
+<p></p>
+<p></span><span>
+<img src="./images/dev_business_codemapping_9.png"></img>
+</span><span>
+</p>
+<p>(그림 : 코드맵핑 편집 화면)</p>
+<p></p>
+<p>신규로 등록할 코드맵핑의 이름 / 설명을 입력 한다.</p>
+<p></p>
+<p>코드맵핑 편집 툴바의 기능은 다음과 같다.</p>
+<p>-. 행추가 : 코드맵핑 데이타를 등록한다.</p>
+<p>-. 선택항목 삭제 : 그리드의 체크 컬럼을 통해 선택된 항목을 삭제한다.</p>
+<p>-. 위로 : 그리드에서 현재 선택된 항목을 한칸 위로 이동한다.</p>
+<p>-. 아래로 : 그리드에서 현재 선택된 항목을 한칸 아래로 이동한다.</p>
+<p></p>
+<p>행 추가 버튼 클릭 후 각 값은 코드값과 코드에 대한 표시값 (값) 으로 구분된다. 필터의 콤보박스에 표시되는 값은 값 컬럼에 정의된 내용이며, 실제 데이타의 필터링 및 맵핑은 코드값을 기준으로 반영된다.</p>
+<p>기존 코드맵핑의 값 / 코드값 을 변경하려면 해당 셀을 더블 클릭하여 편집 텍스트 입력창을 활성화 한후 새로운 값을 입력한다.</p>
+<p>편집 환료 후 확인 버튼을 클릭하여 변경사항을 시스템에 저장한다.</p>
+<p>코드맵핑 항목의 적용 범위는 필터 위젯의 프롬프트에 해당하는 값으로 사용된다. 보다 자세한 내용은 7.리포트 생성 및 활용 - 필터 위젯 편을 참고한다.</p>
 <p></span></p>
 
 <p>&nbsp;</p>
