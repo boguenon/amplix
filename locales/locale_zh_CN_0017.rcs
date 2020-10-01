@@ -123,3 +123,5 @@ A;L_MAP_SAVE_POS;Remember Last Setting
 
 A;L_RELEASE_LOCK;Click Yes to confirm to release lock of this user!
 A;L_SS_LOCKED;Login Lock
+
+A;L_SK_RPT;Search in navigation

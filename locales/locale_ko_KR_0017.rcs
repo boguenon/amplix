@@ -127,3 +127,5 @@ A;L_MAP_SAVE_POS;최종 상태 저장
 A;L_RELEASE_LOCK;사용자 로그인 락을 해제하려면 예를 클릭해 주십시오.
 A;L_SS_LOCKED;로그인 잠김
 A;L_USR_AUD_TITLE;세션 활동내역 @
+
+A;L_SK_RPT;폴더로 이동하기

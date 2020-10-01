@@ -31,6 +31,10 @@
 				{
 					"name": "Database Connection",
 					"cls": "ig_dbcon"
+				},
+				{
+					"name": "New Data Connection",
+					"cls": "ig_n_db_add"
 				}
 			]
 		},
