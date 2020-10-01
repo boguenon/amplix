@@ -6758,5 +6758,21 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_MAP_SAVE_POS",
     "value" : "최종 상태 저장"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RELEASE_LOCK",
+    "value" : "사용자 로그인 락을 해제하려면 예를 클릭해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_SS_LOCKED",
+    "value" : "로그인 잠김"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_USR_AUD_TITLE",
+    "value" : "세션 활동내역 @"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_SK_RPT",
+    "value" : "폴더로 이동하기"
   } ]
 }

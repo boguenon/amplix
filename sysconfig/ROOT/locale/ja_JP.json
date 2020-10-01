@@ -6688,5 +6688,21 @@
     "group" : "locale_ja_JP_0017",
     "name" : "L_MAP_SAVE_POS",
     "value" : "Remember Last Setting"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_RELEASE_LOCK",
+    "value" : "Click Yes to confirm to release lock of this user!"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_SS_LOCKED",
+    "value" : "Login Lock"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_USR_AUD_TITLE",
+    "value" : "User Audit @"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_SK_RPT",
+    "value" : "Search in navigation"
   } ]
 }

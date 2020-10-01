@@ -32,7 +32,7 @@
     "show" : true,
     "hide" : false
   }, {
-    "name" : "New Report",
+    "name" : "New FormBuilder",
     "cls" : "ig_menu_formbuilder",
     "clspath" : "ig_report_menu-ig_menu_formbuilder",
     "show" : true,
@@ -41,12 +41,6 @@
     "name" : "Analysis",
     "cls" : "ig_anal",
     "clspath" : "ig_anal",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "Database Connection",
-    "cls" : "ig_dbcon",
-    "clspath" : "ig_anal-ig_dbcon",
     "show" : true,
     "hide" : false
   }, {
@@ -68,9 +62,21 @@
     "show" : true,
     "hide" : false
   }, {
-    "name" : "Excel file loading",
+    "name" : "Data Source",
     "cls" : "ig_dataset",
     "clspath" : "ig_dataset",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Database Connection",
+    "cls" : "ig_dbcon",
+    "clspath" : "ig_dataset-ig_dbcon",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "New Data Connection",
+    "cls" : "ig_n_db_add",
+    "clspath" : "ig_dataset-ig_n_db_add",
     "show" : true,
     "hide" : false
   }, {
@@ -191,6 +197,30 @@
     "name" : "System Log",
     "cls" : "ig_syslog",
     "clspath" : "ig_mngr-ig_mon-ig_syslog",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Audit User",
+    "cls" : "ig_audit_user",
+    "clspath" : "ig_mngr-ig_mon-ig_syslog-ig_audit_user",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Audit Report Log",
+    "cls" : "ig_audit_rpt",
+    "clspath" : "ig_mngr-ig_mon-ig_syslog-ig_audit_rpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Audit JDBC",
+    "cls" : "ig_audit_jdbc",
+    "clspath" : "ig_mngr-ig_mon-ig_syslog-ig_audit_jdbc",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Audit Email Message",
+    "cls" : "ig_audit_email",
+    "clspath" : "ig_mngr-ig_mon-ig_syslog-ig_audit_email",
     "show" : true,
     "hide" : false
   }, {
