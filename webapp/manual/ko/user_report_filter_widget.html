@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="<%=page_desc%>">
+<meta name="author" content="amplix">
+<meta name="robots" content=ALL >
+<meta name="keywords" content="JD Edwards,Salesforce reporting,R statistics,Python,Anaconda,Big Data,Data Visualization,Reporting,NoSQL,BI,Hadoop,Mongo,Amplix,web base bi,Python,Dashboard">
+<meta name="Subject" content="BI Amplix">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<title>7.6. 필터 위젯 사용하기</title>
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/animate.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/theme.css" type="text/css" />
+<link rel="stylesheet" href="../css/manual_doc.css" type="text/css" />
+
+<script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="../js/pace.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/classie.js"></script>
+<script type="text/javascript" src="../js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="../js/cbpAnimatedHeader.js"></script>
+<script type="text/javascript" src="../js/wow.min.js"></script>
+<script type="text/javascript" src="../js/inspinia.js"></script>
+</head>
+<body id="page-top" scroll="no">
+<div id="main-wrapper">
+	<div class="navbar-wrapper">
+		<nav class="navbar navbar-default navbar-scroll navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse" style="background-color:white;">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="page-scroll" href="https://www.amplixbi.com">앰플릭스 홈페이지</a></li>
+						<li><a class="page-scroll" href="https://www.amplixbi.com/main/lang_en/#contactus">연락처</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<section class="content" style="margin-top: 80px;">
+		<div id="manual_body" class="container">
+			<div class="row related" role="navigation" aria-label="related navigation">
+				<div class="col-lg-12">
+					<h3>네비게이션</h3>
+					<ul>
+						<li><a href="http://www.amplixbi.com/">amplixbi.com</a> &#187;</li>
+						<!-- li>
+							<span class="language_switcher_placeholder">en</span> | 
+						</li -->
+						<li class="right" style="margin-right: 10px">
+							<a href="index.html" title="Home" accesskey="I">목차</a>
+						</li>
+		
+					</ul>
+				</div>
+			</div>    
+	
+			<div class="row document">
+				<div class="col-lg-3 sphinxsidebar" role="navigation" aria-label="main navigation" id="sphinxsidebar">
+					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1. 매뉴얼 정보</a></h3></div><div><h3><a href="server_install.html">2. 소프트웨어 서버 설치</a></h3></div><div><h3><a href="sys_manager.html">3. 시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3 class="active">7. 리포트 생성 및 활용</h3><ul><li><a href="user_report_create.html">7.1. 리포트 생성</a></li><li><a href="user_report_pivot.html">7.2. 쉬트 위젯 피벗</a></li><li><a href="user_report_layout.html">7.3. 리포트 화면 레이아웃 구성</a></li><li><a href="user_report_sheet_widget.html">7.4. 쉬트 위젯 설정하기</a></li><li><a href="user_report_chart.html">7.5. 챠트 보기</a></li><li><a href="user_report_filter_widget.html" class="active">7.6. 필터 위젯 사용하기</a></li><li><a href="user_report_widget_layout.html">7.7. 위젯 레이아웃 변경하기</a></li></ul></div><div><h3><a href="manual_troubleshoot.html">8. 문제해결</a></h3></div></div><p></p></div>
+				</div>
+				<div class="col-lg-9 text-left documentwrapper">
+					<div class="bodywrapper">
+						<div id="main_body" class="body" role="main">
+	            
+							<h1></h1>
+							<p>
+								
+							</p>
+							<div id="menu_template">
+<h2><a name="_Toc21218595">7.6. 필터 위젯 사용하기</a></h2><p><span>
+</span><span class="doc_header_3">필터 위젯</span><span>
+</p>
+<p>필터 위젯을 통해 사용자가 쉬트 위젯의 범위를 지정할 수 있는 필터 UI 를 구성할 수 있다. 리포트 툴바의 뷰 추가 를 클릭 하고 드랍 다운 매뉴 에서 필터 추가 버튼을 클릭한다. 필터의 옵션에 대한 속성 변경 윈도우가 나타난다.</p>
+<p></p>
+<p></span><span>
+<img src="./images/user_report_filter_widget_2.png"></img>
+</span><span>
+</p>
+<p>(그림 : 필터 위젯 추가하기)</p>
+<p></span><span class="doc_header_3">필터 위젯 속성 변경</span><span>
+</p>
+<p>신규 필터 위젯 추가 혹은 필터 위젯의 위젯 속성 편집 버튼을 클릭 하면 옵션 변경 윈도우가 표시된다.</p>
+<p></p>
+<p>뷰어 옵션 : 필터 위젯의 보기 옵션을 설정 한다.</p>
+<p> -. 실행 버튼 표시 : 필터 위젯에 조회 버튼을 표시할지의 여부를 지정한다.</p>
+<p> -. 값 : 실행 버튼의 텍스트 값을 입력 한다. {L_BTN_SEARCH} 는 언어별로 자동으로 값을 지정하며 한글은 "조회" 로 표현된다.</p>
+<p></p>
+<p></span><span>
+<img src="./images/user_report_filter_widget_5.png"></img>
+</span><span>
+</p>
+<p>(그림 : 위젯 속성 편집 하기)</p>
+<p></p>
+<p></span><span class="doc_header_3">필터 위젯에 항목 추가하기</span><span>
+</p>
+<p></span><span>
+<img src="./images/user_report_filter_widget_8.png"></img>
+</span><span>
+</p>
+<p>(그림 : 필터 피봇을 통한 필터 항목 추가 하기)</p>
+<p></span><span class="doc_header_3">필터 항목의 수정</span><span>
+</p>
+<p>필터 위젯의 각 항목을 수정하려면 리포트를 편집 모드로 전환한 후 필터의 라벨 링크를 클릭 한다.</p>
+<p></p>
+<p></span><span>
+<img src="./images/user_report_filter_widget_11.png"></img>
+</span><span>
+</p>
+<p>(그림 : 필터 항목 옵션 설정)</p>
+<p></p>
+<p>일반 사항 :</p>
+<p>-. 오브젝트 아이디 : 시스템에서 사용하는 키값을 의미한다.</p>
+<p>-. 필드명 : 현재 필드의 비즈니스 오브젝트 필드에 대한 이름이 표시된다. (읽기 전용)</p>
+<p>-. 타이틀 : 필드 라벨로 표시할 내용을 입력한다.</p>
+<p>-. 연산자 : 필터의 값에 대한 데이타베이스 연산자를 지정한다.</p>
+<p></p>
+<p>값 제어:</p>
+<p>-. 값선택 : 값 선택 방법, 컨트롤 옵션을 선택한다.</p>
+<p>    Text Input : 텍스트를 직접 입력 한다.</p>
+<p>    Single Selection : 값 목록을 콤보 박스에 표시하며 사용자가 값을 선택할 수 있도록 한다.</p>
+<p>-. 필수항목 : 사용자가 값을 입력하지 않은 경우 경고하고 리포트를 실행하지 않는다.</p>
+<p>-. 코드 맵핑 필드 : 코드맵핑에서 값 - 코드 맵핑 정보를 읽어와서 콤보 박스에 표시한다. 초기화 버튼을 클릭하면 선택된 내용이 초기화 된다.</p>
+<p></p>
+<p></p>
+<p> </p>
+<p></span></p>
+
+<p>&nbsp;</p>
+							<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clearer"></div>
+			</div>
+		</div>
+	</section>
+	<footer class="pull-footer" role="contentinfo">
+		<div class="container">
+			<div class="row">
+				<nav id="ancillary-menu" class="col-sm-2 footer-menu">
+					<ul id="menu-ancillary">
+						<li><a href="https://www.amplixbi.com/main/en/gridtable.jsp">Documents</a></li>
+						<li><a href="https://www.amplixbi.com/main/manual/">Manual</a></li>
+						<!-- li><a href="./partnerships/">Partnerships</a></li -->
+					</ul>
+				</nav>
+				<div style="float:right;">
+					<ul>
+						<li>제품 지원 및 연락처</li>
+						<li>주소 : 서울시 송파구 송파동 21-6 대지빌딩 5층</li>
+						<li>전화번호 : 02-424-0303</li>
+						<li>이메일 : bzplug&amp;bzplug.co.kr</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.row -->
+			<div id="footer-copyright" class="row">
+				<div class="col-sm-12 sub-footer">
+					<div class="footer-code">plntr-34f91bb8-4aca-11e7-a919-92ebcb67fe33</div>
+					<span class="legalese">&copy; 2020 amplixbi.com</span>
+					amplix we help your business success!
+					<ul class="social">
+						<li><a href="https://www.twitter.com/amplixbi"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/bor.guenon.9"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/amplixbi"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</footer>
+</div>
+<!-- script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-110159277-1', 'auto');
+  ga('send', 'pageview');
+
+</script -->
+</body>
+</html>

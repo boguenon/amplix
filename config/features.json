@@ -11,14 +11,6 @@
 				{
 					"name": "New Report",
 					"cls": "ig_menu_rpt"
-				},
-				{
-					"name": "New SQL Report",
-					"cls": "ig_menu_sql_rpt"
-				},
-				{
-					"name": "New FormBuilder",
-					"cls": "ig_menu_formbuilder"
 				}
 			]
 		},
@@ -27,16 +19,8 @@
 			"cls": "ig_anal",
 			"children": [
 				{
-					"name": "Variables",
-					"cls": "ig_var"
-				},
-				{
 					"name": "System Lookup",
 					"cls": "ig_lookup"
-				},
-				{
-					"name": "Form Builder Mgr",
-					"cls": "ig_dbd"
 				}
 			]
 		},
@@ -47,6 +31,10 @@
 				{
 					"name": "Database Connection",
 					"cls": "ig_dbcon"
+				},
+				{
+					"name": "New Data Connection",
+					"cls": "ig_n_db_add"
 				},
 				{
 					"name": "Create Data Set",
@@ -83,46 +71,8 @@
 							"cls": "ig_sys_config"
 						},
 						{
-							"name": "UI Configurator",
-							"cls": "ig_sys_uiconfig"
-						},
-						{
-							"name": "SingleSignOn",
-							"cls": "ig_sys_sso"
-						},
-						{
-							"name": "SingleSignOnDesigner",
-							"cls": "ig_sys_sso_designer"
-						},
-						{
 							"name": "Features",
 							"cls": "ig_ft"
-						},
-						{
-							"name": "Assistant Robot",
-							"cls": "ig_assist_robot"
-						}
-					]
-				},
-				{
-					"name": "Settings",
-					"cls": "ig_settings",
-					"children": [
-						{
-							"name": "Look and Feel",
-							"cls": "ig_lnf"
-						},
-						{
-							"name": "Locale Manager",
-							"cls": "ig_loc"
-						},
-						{
-							"name": "Locale Dictionary",
-							"cls": "ig_dloc"
-						},
-						{
-							"name": "Chart Designer",
-							"cls": "ig_chart_dsgn"
 						}
 					]
 				},
@@ -135,130 +85,20 @@
 							"cls": "ig_imp"
 						},
 						{
-							"name": "Migration",
-							"cls": "ig_migration"
-						},
-						{
 							"name": "System Log",
 							"cls": "ig_syslog",
 							"children": [
 								{
 									"name": "Audit User",
 									"cls": "ig_audit_user"
-								},
-								{
-									"name": "Audit Report Log",
-									"cls": "ig_audit_rpt"
-								},
-								{
-									"name": "Audit JDBC",
-									"cls": "ig_audit_jdbc"
-								},
-								{
-									"name": "Audit Email Message",
-									"cls": "ig_audit_email"
 								}
 							]
 						},
 						{
 							"name": "System Resource",
 							"cls": "ig_sysres"
-						},
-						{
-							"name": "Schedule Server Status",
-							"cls": "ig_schedule"
-						},
-						{
-							"name": "Schedule Programming",
-							"cls": "ig_schedule_prog"
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "BigData Analysis",
-			"cls": "ig_bdmgr",
-			"children": [
-				{
-					"name": "Hadoop",
-					"cls": "ig_hdoop",
-					"children": [
-						{
-							"name": "Hadoop BizFlow",
-							"cls": "ig_hd_flow"
-						},
-						{
-							"name": "Hadoop Map Reduce",
-							"cls": "ig_hd_mapr"
-						}
-					]
-				},
-				{
-					"name": "MongoDB",
-					"cls": "ig_mongo",
-					"children": [
-						{
-							"name": "Mongo Data Processor",
-							"cls": "ig_mg_dproc"
-						},
-						{
-							"name": "Mongo Data Collector",
-							"cls": "ig_mg_data"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Machine Learning",
-			"cls": "ig_mlmgr",
-			"children": [
-				{
-					"name": "Bayes Learning",
-					"cls": "ig_ml_bayes",
-					"children": [
-						{
-							"name": "Bayes Influence",
-							"cls": "ig_ml_bayes_rpt"
-						},
-						{
-							"name": "Learn from Data",
-							"cls": "ig_ml_learn"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Migration",
-			"cls": "ig_mig",
-			"children": [
-				{
-					"name": "Discoverer Migration",
-					"cls": "ig_disco"
-				},
-				{
-					"name": "Amplix Meta Upgrade",
-					"cls": "ig_meta_upgrade"
-				}
-			]
-		},
-		{
-			"name": "Send mail",
-			"cls": "ig_mail",
-			"children": [
-				{
-					"name": "Registration email",
-					"cls": "ig_mx_reg"
-				},
-				{
-					"name": "User Update email",
-					"cls": "ig_mx_upd"
-				},
-				{
-					"name": "Password reset",
-					"cls": "ig_mx_prs"
 				}
 			]
 		},
@@ -275,28 +115,8 @@
 					"cls": "ig_n_lst",
 					"children": [
 						{
-							"name": "Private Contents",
-							"cls": "ig_n_p"
-						},
-						{
-							"name": "All Content",
-							"cls": "ig_n_a"
-						},
-						{
-							"name": "Favorites",
-							"cls": "ig_n_fav"
-						},
-						{
 							"name": "Manage Workspace",
 							"cls": "ig_n_mw"
-						},
-						{
-							"name": "Most Recent",
-							"cls": "ig_n_rcnt"
-						},
-						{
-							"name": "Deleted Content",
-							"cls": "ig_n_del"
 						}
 					]
 				},
@@ -313,44 +133,12 @@
 									"cls": "ig_n_f_f"
 								},
 								{
-									"name": "Database Model",
-									"cls": "ig_n_dbm"
-								},
-								{
 									"name": "Business Object",
 									"cls": "ig_n_bobj"
 								},
 								{
 									"name": "Report",
 									"cls": "ig_n_rpt"
-								},
-								{
-									"name": "SQL Report",
-									"cls": "ig_n_sqlrpt"
-								},
-								{
-									"name": "Form Builder",
-									"cls": "ig_n_dbd"
-								},
-								{
-									"name": "Composite Report",
-									"cls": "ig_n_crpt"
-								},
-								{
-									"name": "Hadoop BizOp",
-									"cls": "ig_n_hb"
-								},
-								{
-									"name": "Java Class",
-									"cls": "ig_n_jc"
-								},
-								{
-									"name": "R Script",
-									"cls": "ig_n_f_r"
-								},
-								{
-									"name": "Java Class Module",
-									"cls": "ig_n_jcm"
 								},
 								{
 									"name": "Cube Items",
@@ -361,32 +149,8 @@
 											"cls": "ig_n_cm"
 										},
 										{
-											"name": "Date Metric",
-											"cls": "ig_n_dm"
-										},
-										{
-											"name": "Formula",
-											"cls": "ig_n_fm"
-										},
-										{
 											"name": "Measure",
 											"cls": "ig_n_ms"
-										},
-										{
-											"name": "Chart Measure",
-											"cls": "ig_n_cms"
-										},
-										{
-											"name": "UDG",
-											"cls": "ig_n_udg"
-										},
-										{
-											"name": "Group Measure",
-											"cls": "ig_n_gm"
-										},
-										{
-											"name": "Hierarchy",
-											"cls": "ig_n_hm"
 										}
 									]
 								}
@@ -397,16 +161,8 @@
 							"cls": "ig_n_exp"
 						},
 						{
-							"name": "Copy Item",
-							"cls": "ig_n_cp"
-						},
-						{
 							"name": "Rename Content",
 							"cls": "ig_n_ren"
-						},
-						{
-							"name": "Move to",
-							"cls": "ig_n_mv"
 						},
 						{
 							"name": "Delete Content",
@@ -417,28 +173,12 @@
 							"cls": "ig_n_oauth"
 						},
 						{
-							"name": "Object Subscribe",
-							"cls": "ig_n_osubscr"
-						},
-						{
 							"name": "Version Control",
 							"cls": "ig_n_rev"
 						},
 						{
 							"name": "Refresh",
 							"cls": "ig_n_ref"
-						},
-						{
-							"name": "Manage Folder",
-							"cls": "ig_n_mgf"
-						},
-						{
-							"name": "Edit Cube",
-							"cls": "ig_n_e_cube"
-						},
-						{
-							"name": "Edit Meta Content",
-							"cls": "ig_n_e_meta"
 						}
 					]
 				},
@@ -453,14 +193,6 @@
 						{
 							"name": "save",
 							"cls": "ig_m_saveas"
-						},
-						{
-							"name": "private workspace",
-							"cls": "ig_m_prv_ws"
-						},
-						{
-							"name": "team workspace",
-							"cls": "ig_m_team_ws"
 						}
 					]
 				}
@@ -503,46 +235,15 @@
 									"cls": "ig_r_chart"
 								},
 								{
-									"name": "view_analysis",
-									"cls": "ig_r_anal"
-								},
-								{
-									"name": "view_formview",
-									"cls": "ig_r_fview"
-								},
-								{
-									"name": "view_r",
-									"cls": "ig_r_r"
-								},
-                                {
-                                    "name": "view_python",
-                                    "cls": "ig_r_python"
-                                },
-                                {
                                 	"name": "Add ReportViewer",
                                 	"cls": "ig_r_rpt_vr"
-                                },
-                                {
-                                	"name": "Add StoryView",
-                                	"cls": "ig_r_story"
                                 }
 							]
 						},
-						{
-							"name": "Email Burstring",
-							"cls": "ig_r_bursting"
-						},
-						{
-							"name": "Form Builder",
-							"cls": "ig_r_formb"
-						},
+						
 						{
 							"name": "share report",
 							"cls": "ig_r_email"
-						},
-						{
-							"name": "formula",
-							"cls": "ig_r_fm"
 						},
 						{
 							"name": "export",
@@ -552,54 +253,14 @@
 									"name": "excel",
 									"cls": "ig_r_xls"
 								},
-								{
-									"name": "ppt",
-									"cls": "ig_r_ppt"
-								},
-								{
-									"name": "pdf",
-									"cls": "ig_r_pdf"
-								},
-								{
-									"name": "csv",
-									"cls": "ig_r_csv"
-								},
-								{
-									"name": "html",
-									"cls": "ig_r_html"
-								},
-								{
-									"name": "jasper",
-									"cls": "ig_r_jasper"
-								},
+								
 								{
 									"name": "clipboard",
 									"cls": "ig_r_clb"
 								}
 							]
 						},
-						{
-							"name": "export option",
-							"cls": "ig_r_eopt"
-						},
-						{
-							"name": "tools",
-							"cls": "ig_r_tools",
-							"children": [
-								{
-									"name": "change report type",
-									"cls": "ig_r_crpt"
-								},
-								{
-									"name": "basic statistics",
-									"cls": "ig_r_stat"
-								}
-							]
-						},
-						{
-							"name": "analysis menus",
-							"cls": "ig_anal_menu"
-						},
+						
 						{
 							"name": "docking",
 							"cls": "ig_r_dock",
@@ -614,22 +275,7 @@
 								}
 							]
 						},
-						{
-							"name": "R Summary",
-							"cls": "ig_r_rsum"
-						},
-						{
-							"name": "R Script Editor",
-							"cls": "ig_r_rsce"
-						},
-						{
-							"name": "R Wizard",
-							"cls": "ig_r_rwzd"
-						},
-						{
-							"name": "R Image Save",
-							"cls": "ig_r_rimg"
-						},
+						
 						{
 							"name": "Chart Wizard",
 							"cls": "ig_r_cwz"
@@ -649,10 +295,6 @@
 						{
 							"name": "instruction",
 							"cls": "ig_r_inst"
-						},
-						{
-							"name": "help",
-							"cls": "ig_r_help"
 						}
 					]
 				}
@@ -665,46 +307,8 @@
 				{
 					"name": "Manual Auth for Amplix",
 					"cls": "ig_manual_auth"
-        }
-      ]
-    },
-    {
-			"name": "Data Science Module",
-			"cls": "ig_sci",
-			"children": [
-				{
-					"name": "Data Science Service Manager",
-					"cls": "ig_sci_mgr",
-					"children": [
-						{
-							"name": "Data Sciense DataSet",
-							"cls": "ig_sci_mgr_dataset"
-						},
-						{
-							"name": "Data Sciense Logger",
-							"cls": "ig_sci_mgr_logger"
-						},
-						{
-							"name": "License Manager",
-							"cls": "ig_sci_mgr_lic"
-						}
-					]
-				},
-				{
-					"name": "Data Science Service User",
-					"cls": "ig_sci_usr",
-					"children": [
-						{
-							"name": "Data Science Server Connector",
-							"cls": "ig_sci_usr_servers"
-						},
-						{
-							"name": "Data Science DataSet",
-							"cls": "ig_sci_usr_dataset"
-						}
-					]
-				}
-			]
-		}
+        		}
+      		]
+    	}
 	] 
 }

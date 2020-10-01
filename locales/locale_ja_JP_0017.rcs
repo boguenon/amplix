@@ -120,3 +120,7 @@ A;L_BLANK_PASSWORD;Password should not be empty!
 
 A;L_MAP_POST_EXEC;Post Exec Script
 A;L_MAP_SAVE_POS;Remember Last Setting
+
+A;L_RELEASE_LOCK;Click Yes to confirm to release lock of this user!
+A;L_SS_LOCKED;Login Lock
+A;L_USR_AUD_TITLE;User Audit @
