@@ -260,6 +260,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		"esri/symbols/SimpleFillSymbol",
 		"esri/symbols/SimpleLineSymbol",
 		"esri/Color",
+		"esri/dijit/Legend",
 		"esri/tasks/query",
 		"esri/tasks/QueryTask",
 		"esri/geometry/webMercatorUtils",
@@ -272,7 +273,8 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		KMLLayer, LabelLayer, MapImageLayer, OpenStreetMapLayer, RasterLayer, StreamLayer, WebTiledLayer,
 		WFSLayer, WMSLayer, WMTSLayer,  
 		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, Graphic, GraphicsLayer, 
-		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color, Query, QueryTask,
+		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color, 
+		Legend, Query, QueryTask,
 		webMercatorUtils,
 		domConstruct) {
 		/**
@@ -316,6 +318,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 				GraphicsLayer: GraphicsLayer,
 				Circle: Circle,
 				Color: Color,
+				Legend: Legend,
 				Query: Query,
 				QueryTask: QueryTask,
 				webMercatorUtils: webMercatorUtils,
@@ -361,14 +364,19 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		 */
 		cop.settings = cop.settings || {};
 		
-		me.map_legend$ && me.map_legend$.remove();
-		
-		if (cop.settings.m_map_legend)
+		if (!me.map_legend$)
 		{
-			me.map_legend$ = $("<div class='igc-map-legend'></div>").appendTo(owner.container);
-			$("<div class='igc-map-legend-bg'></div>").appendTo(me.map_legend$);
-			$(cop.settings.m_map_legend).appendTo(me.map_legend$);
+			me.map_legend$ = $("<div class='igc-map-legend'><div id='legend-map'></div></div>")
+				.appendTo(owner.container);
 		}
+		
+		me.map_legend$.hide();
+		
+		// if (cop.settings.m_map_legend)
+		// {
+			//$("<div class='igc-map-legend-bg'></div>").appendTo(me.map_legend$);
+			// $(cop.settings.m_map_legend).appendTo(me.map_legend$);
+		// }
 		
 		/**
 		 * before drawing, clear layers already added on previous instance
@@ -486,7 +494,8 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 		l = cf ? new esri[lobj.loader](lobj.url, cf) : new esri[lobj.loader](lobj.url);
 		me._api_layers[lobj.name] = {
 			layer: l,
-			config: lobj
+			config: lobj,
+			legendEnabled: lobj.option && lobj.option.legend == "T"
 		};
 		
 		map_inst.addLayer(l);
@@ -524,7 +533,9 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		geofield_map = {},
 		hidden_columns = results.hidden_columns || [],
 		m_marker_symbol = copsettings.m_marker_symbol || "STYLE_CIRCLE",
-		cdata_m_tmpl = cop.cdata_m_tmpl;
+		cdata_m_tmpl = cop.cdata_m_tmpl,
+		_esri_version = me._esri_version,
+		_v = _esri_version.substring(0, _esri_version.indexOf("."));
 		
 	cop.m_marker = cop.m_marker || "marker";
 		
@@ -1100,12 +1111,14 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		
 		for (i=0; i < colors.length; i++)
 		{
-			var color1 = new esri.Color(colors[i]);
+			var color1 = new esri.Color(colors[i]),
+				minvalue = nmin + steps * i,
+				maxvalue = nmin + steps * (i+1);
 			
 			renderer.addBreak({
-          		minValue: nmin + steps * i,
-          		maxValue: nmin + steps * (i + 1),
-          		label: nmin + " ~ " + (nmin + steps),
+          		minValue: minvalue,
+          		maxValue: maxvalue,
+          		label: IG$.FormatNumber(minvalue) + " ~ " + IG$.FormatNumber(maxvalue),
           		symbol: new esri.SimpleFillSymbol(
             		"solid", 
             		new esri.SimpleLineSymbol("solid", color1, 1), color1
@@ -1277,6 +1290,49 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		});
 	}
 	
+	if (cop.showlegend)
+	{
+		var legend_layers = [];
+		
+		if ($.isEmptyObject(me._api_layers) == false)
+		{
+			$.each(me._api_layers, function(i, api_layer) {
+				if (api_layer.legendEnabled)
+				{
+					legend_layers.push({
+						layer: api_layer.layer
+					});
+				}
+			});
+		}
+		
+		if (polygon_layer && polygon_layer.layer)
+		{
+			legend_layers.push({
+				layer: polygon_layer.layer
+			});
+		}
+		
+		if (legend_layers.length)
+		{
+			me.map_legend$.show();
+			
+			if (!me.map_legend_inst)
+			{
+				me.map_legend_inst = new esri.Legend({
+					map: map,
+					layerInfos: legend_layers
+				}, $("#legend-map", me.map_legend$)[0]);
+				
+				me.map_legend_inst.startup();
+			}
+			else
+			{
+				me.map_legend_inst.refresh();
+			}
+		}
+	}
+	
 	if (copsettings.m_map_post_exec && ig$.report_script$)
 	{
 		var cfunc = ig$.report_script$[copsettings.m_map_post_exec];
@@ -1313,4 +1369,12 @@ IG$.__chartoption.chartext.esri.prototype.destroy = function() {
 	{
 		map.destroy();
 	}
+	
+	if (me.map_legend_inst)
+	{
+		me.map_legend_inst.destroy();
+	}
+	
+	me.map_inst = null;
+	me.map_legend_inst = null;
 }

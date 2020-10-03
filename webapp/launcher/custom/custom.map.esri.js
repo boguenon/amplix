@@ -12,6 +12,7 @@ IG$.__chartoption.charttype.push(
 
 IG$.__chartoption.chartext.esri = function(owner) {
 	this.owner = owner;
+	this._esri_version = ig$.arcgis_version || "3.33";
 };
 
 IG$.__chartoption.chartext.esri.prototype = {
@@ -47,16 +48,12 @@ IG$.__chartoption.chartext.esri.prototype = {
 			 * default value: arcgis version 3.33 latest
 			 */
 
-			me._esri_version = ig$.arcgis_version || "3.33";
-			
 			if (me._esri_version == "4.16")
 			{
 				// version 4 need proxy setting to allow COR issues
 				js = [
 					ig$.arcgis_css || "https://js.arcgis.com/4.16/esri/themes/light/main.css",
 					ig$.arcgis_js || "https://js.arcgis.com/4.16/",
-					"./custom/custom.map.esri.worker.js",
-					"./custom/custom.map.esri.clustermarker.js",
 					"./custom/custom.map.esri.worker.v4.js"
 				];
 			}
