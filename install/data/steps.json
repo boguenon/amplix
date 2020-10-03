@@ -68,46 +68,12 @@
 			]
 		},
 		{
-			"name": "sample_quality",
-			"desc": "Semiconductor Mfg Quality",
-			"steps": [
-				{
-					"type": "sql",
-					"name": "mfg_quality.msql"
-				}
-			]
-		},
-		{
-			"name": "sample_reports",
-			"desc": "Northwind sample report",
-			"steps": [
-				{
-					"type": "meta",
-					"name": "northwind.bku"
-				}
-			]
-		},
-		{
 			"name": "sample_qa",
 			"desc": "Six Sigma Examples",
 			"steps": [
 				{
 					"type": "meta",
 					"name": "sixsigma.bku"
-				}
-			]
-		},
-		{
-			"name": "sample_fb",
-			"desc": "Formbuilder Examples",
-			"steps": [
-				{
-					"type": "sql",
-					"name": "formbuilder.msql"
-				},
-				{
-					"type": "meta",
-					"name": "retirement_planning.bku"
 				}
 			]
 		}

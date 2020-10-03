@@ -905,7 +905,9 @@ CREATE TABLE igcacclog (
 	lhostip #VARCHAR#(100), 
 	lloc #VARCHAR#(10),
 	lerrcode #NUMBER#(5),
-	tuid #CHAR#(17)
+	tuid #CHAR#(17),
+	sessid #VARCHAR#(200) #NULL#,
+	ignore_err #CHAR#(1) #NULL#
 );
 
 CREATE INDEX idx_igcacclog_01 ON igcacclog(cdate, userid);

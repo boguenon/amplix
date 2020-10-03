@@ -115,7 +115,7 @@ IG$._customChartPanels = function() {
 				].join("\n");
 				
 				me.down("[name=m_zoom_level]").setValue(option.m_zoom_level || "8");
-				me.down("[name=m_marker]").setValue(option.m_marker || "");
+				me.down("[name=m_marker]").setValue(option.m_marker || "marker");
 				me.down("[name=m_min]").setValue(option.m_min || "1000");
 				me.down("[name=m_max]").setValue(option.m_max || "10000");
 				me.down("[name=m_min_color]").setValue(option.settings.m_min_color || "#e60000"); // red
@@ -131,7 +131,7 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
 				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
-				me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
+				// me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
 				me.down("[name=m_map_post_exec]").setValue(option.settings.m_map_post_exec || "");
 				me.down("[name=m_map_save_stat]").setValue(option.settings.m_map_save_stat == "T");
 				
@@ -168,6 +168,7 @@ IG$._customChartPanels = function() {
 				}
 				
 				me.down("[name=m_arc_basemap]").setValue(option.settings.m_arc_basemap || "");
+				me.down("[name=m_arc_view]").setValue(option.settings.m_arc_view || "MapView");
 				
 				// arc layer selection
 				var esri_api_layers = me.down("[name=m_arc_layers]"),
@@ -259,6 +260,7 @@ IG$._customChartPanels = function() {
 				option.cdata_m_tmpl = me.down("[name=cdata_m_tmpl]").getValue();
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
 				option.settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
+				option.settings.m_arc_view = me.down("[name=m_arc_view]").getValue();
 				option.settings.m_map_center = me.down("[name=m_map_center]").getValue();
 				option.settings.m_lat = me.down("[name=m_lat]").getValue();
 				option.settings.m_lng = me.down("[name=m_lng]").getValue();
@@ -267,7 +269,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_color_categ = me.down("[name=m_color_categ]").getValue();
 				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
 				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
-				option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
+				// option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
 				option.settings.m_map_post_exec = me.down("[name=m_map_post_exec]").getValue();
 				option.settings.m_map_save_stat = me.down("[name=m_map_save_stat]").getValue() ? "T" : "F";
 				
@@ -286,6 +288,10 @@ IG$._customChartPanels = function() {
 		},
 		invalidateFields: function(opt) {
 			var me = this, subtype = opt.subtype;
+			
+			var _esri_version = ig$.arcgis_version || "0";
+			
+			_esri_version = Math.floor(Number(_esri_version));
 
 			me.down("[name=pb01]").setVisible(
 				subtype == "googlemap" ||
@@ -295,6 +301,7 @@ IG$._customChartPanels = function() {
 			me.down("[name=m_xypos]").setVisible(subtype == "vworldmap");
 			me.down("[name=pb02]").setVisible(subtype == "kpi");
 			me.down("[name=m_arc_basemap]").setVisible(subtype == "esri");
+			me.down("[name=m_arc_view]").setVisible(subtype == "esri" && _esri_version > 3);
 			me.down("[name=pb03]").setVisible(subtype == "svgmap");
 			
 			if (ig$.arcgis_rest$)
@@ -375,6 +382,30 @@ IG$._customChartPanels = function() {
 						items: [
 							{
 								xtype: "combobox",
+								name: "m_arc_view",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "value",
+								editable: false,
+								autoSelect: true,
+								fieldLabel: IRm$.r1("L_ARC_VIEW"), // "Palette",
+								store: {
+									xtype: "store",
+									fields: ["name", "value" ],
+									data: [
+										{
+											name: "MapView",
+											value: "MapView"
+										},
+										{
+											name: "SceneView",
+											value: "SceneView"
+										}
+									]
+								}
+							},
+							{
+								xtype: "combobox",
 								name: "m_marker",
 								queryMode: "local",
 								displayField: "name",
@@ -388,7 +419,7 @@ IG$._customChartPanels = function() {
 									data: [
 										{
 											name: "Marker",
-											value: ""
+											value: "marker"
 										},
 										{
 											name: "Circle",
@@ -731,6 +762,7 @@ IG$._customChartPanels = function() {
 									]
 								}	
 							},
+							/*
 							{
 								xtype: "textarea",
 								popup_editor: true,
@@ -738,6 +770,7 @@ IG$._customChartPanels = function() {
 								fieldLabel: IRm$.r1("L_CUST_LEGEND"),
 								height: 120
 							},
+							*/
 							{
 								xtype: "textfield",
 								name: "m_map_post_exec",
