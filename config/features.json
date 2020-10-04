@@ -181,6 +181,24 @@
 			]
 		},
 		{
+			"name": "User Management",
+			"cls": "ig_mail",
+			"children": [
+				{
+					"name": "User Registration",
+					"cls": "ig_mx_reg"
+				},
+				{
+					"name": "Update User",
+					"cls": "ig_mx_upd"
+				},
+				{
+					"name": "Password reset",
+					"cls": "ig_mx_prs"
+				}
+			]
+		},
+		{
 			"name": "BigData Analysis",
 			"cls": "ig_bdmgr",
 			"children": [
@@ -248,24 +266,7 @@
 				}
 			]
 		},
-		{
-			"name": "Send mail",
-			"cls": "ig_mail",
-			"children": [
-				{
-					"name": "Registration email",
-					"cls": "ig_mx_reg"
-				},
-				{
-					"name": "User Update email",
-					"cls": "ig_mx_upd"
-				},
-				{
-					"name": "Password reset",
-					"cls": "ig_mx_prs"
-				}
-			]
-		},
+		
 		{
 			"name": "Navigator",
 			"cls": "ig_nav",

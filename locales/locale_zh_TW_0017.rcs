@@ -126,3 +126,9 @@ A;L_USR_AUD_TITLE;User Audit @
 
 A;L_SK_RPT;Search in navigation
 A;L_CATEGORY;Category
+
+A;L_CHECK_EMAIL;Check Email
+A;L_RCPTS;Recipients
+A;M_SMTP_TST;Wow! email sent with configuration. Please check on the INBOX test email from us!
+
+A;T_USERS;Users
