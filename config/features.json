@@ -87,6 +87,24 @@
 			]
 		},
 		{
+			"name": "User Management",
+			"cls": "ig_mail",
+			"children": [
+				{
+					"name": "User Registration",
+					"cls": "ig_mx_reg"
+				},
+				{
+					"name": "Update User",
+					"cls": "ig_mx_upd"
+				},
+				{
+					"name": "Password reset",
+					"cls": "ig_mx_prs"
+				}
+			]
+		},
+		{
 			"name": "Navigator",
 			"cls": "ig_nav",
 			"children": [
