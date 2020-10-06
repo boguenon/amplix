@@ -137,3 +137,16 @@ A;M_SMTP_TST;와우! 이메일이 설정 정보로 발송하였습니다. 수신
 
 A;T_USERS;사용자
 A;D_BOBJECT;비즈니스 오브젝트
+A;L_RECENT_SUBJECT;최근 항목들
+A;L_SEARCH_RESULT;검색 결과
+
+A;B_SUC;성공
+A;B_FAIL;실패
+
+A;S_READ;읽기
+A;S_UPDATE;업데이트
+A;S_LOGOUT;로그아웃
+A;S_DELETE;삭제
+A;S_WRITE;쓰기
+A;S_SECURITY;보안작업
+A;S_NA;기타사항

@@ -133,3 +133,16 @@ A;L_RCPTS;Recipients
 A;M_SMTP_TST;Wow! email sent with configuration. Please check on the INBOX test email from us!
 
 A;T_USERS;Users
+A;L_RECENT_SUBJECT;Recent Subject
+A;L_SEARCH_RESULT;Search Results
+
+A;B_SUC;Success
+A;B_FAIL;Fail
+
+A;S_READ;Read
+A;S_UPDATE;Update
+A;S_LOGOUT;Logout
+A;S_DELETE;Delete
+A;S_WRITE;Write
+A;S_SECURITY;Security
+A;S_NA;Not Available
