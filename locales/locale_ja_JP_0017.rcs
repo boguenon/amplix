@@ -152,3 +152,7 @@ A;L_H2_PERSIST_ENABLED;H2 Persist DB
 
 A;L_ARC_VIEW;ArcGIS View
 A;L_MAP_CAMERA;Map Camera
+
+A;L_DEL_FLT;Click to remove filter item
+A;L_FLT_MG_LEFT;Click to merge left
+A;L_FLT_ST_ROW;Click to start row

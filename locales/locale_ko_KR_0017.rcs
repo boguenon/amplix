@@ -155,3 +155,7 @@ A;L_TWOWAY_AUTH;2차 인증 사용
 A;L_H2_PERSIST_ENABLED;H2 데이타 메싱DB
 A;L_ARC_VIEW;ArcGIS 뷰
 A;L_MAP_CAMERA;맵 카메라
+
+A;L_DEL_FLT;필터 제거
+A;L_FLT_MG_LEFT;타이틀 왼편으로 붙이기
+A;L_FLT_ST_ROW;다음줄로 내리기
