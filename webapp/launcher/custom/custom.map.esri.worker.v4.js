@@ -9,8 +9,6 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 		cop = owner.cop,
 		copsettings = cop.settings || {},
 		geocenter,
-		infow,
-		infot,
 		mapconfig = {
 			center: [-118, 34.5],
 			zoom: 8,
@@ -55,6 +53,37 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 		{
 			delete mapconfig["center"];
 		}
+	}
+	
+	if (copsettings.m_map_camera)
+	{
+		var m_map_camera = copsettings.m_map_camera.split(",");
+		
+		if (m_map_camera.length > 2)
+		{
+			mapconfig.camera = {
+				position: {
+					latitude: Number(m_map_camera[0]),
+					longitude: Number(m_map_camera[1]),
+					z: Number(m_map_camera[2])
+				},
+				tilt: Number(m_map_camera[3]),
+				heading: Number(m_map_camera[4])
+			};
+		}
+	}
+	
+	if (!mapconfig.camera)
+	{
+		mapconfig.camera = {
+			position: {
+				latitude: 34.027,
+				longitude: -118.805,
+				z: 1534560
+			},
+			tilt: 45,
+			heading: 10
+		};
 	}
 		
 	if (!ig$.arcgis_basemap$)
@@ -137,17 +166,9 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 		view = new esri.SceneView({
 			container: container,
 			map: map,
-			center: [-118.805, 34.027], // longitude, latitude
+			center: mapconfig.center, // longitude, latitude
 			zoom: 13,
-			camera: {
-				position: {
-					latitude: 34.027,
-					longitude: -118.805,
-					z: 1534560
-				},
-				tilt: 45,
-				heading: 10
-			},
+			camera: mapconfig.camera,
 			highlightOptions: {
 				color: [255, 255, 0, 1],
 				haloOpacity: 0.9,
@@ -160,7 +181,7 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 		view = new esri.MapView({
 			container: container,
 			map: map,
-			center: [-118.805, 34.027], // longitude, latitude
+			center: mapconfig.center, // longitude, latitude
 			zoom: 13,
 			highlightOptions: {
 				color: [255, 255, 0, 1],
@@ -203,6 +224,18 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 				{
 					copsettings.m_map_center = "" + np.x + "," + np.y;
 				}
+			}
+			
+			if (view.camera)
+			{
+				var cam = [];
+				
+				cam.push(view.camera.position.latitude);
+				cam.push(view.camera.position.longitude);
+				cam.push(view.camera.position.z);
+				cam.push(view.camera.tilt);
+				cam.push(view.camera.heading);
+				copsettings.m_map_camera = cam.join(",");
 			}
 		}
 		
@@ -279,6 +312,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		"esri/layers/GraphicsLayer",
 		"esri/layers/FeatureLayer",
 		"esri/renderers/ClassBreaksRenderer",
+		"esri/renderers/UniqueValueRenderer",
 		"esri/symbols/SimpleMarkerSymbol",
 		"esri/symbols/SimpleFillSymbol",
 		"esri/symbols/SimpleLineSymbol",
@@ -294,7 +328,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		MapImageLayer, 
 		PopupTemplate, Point, 
 		GraphicsLayer, FeatureLayer,
-		ClassBreaksRenderer,
+		ClassBreaksRenderer, UniqueValueRenderer,
 		SimpleMarkerSymbol,
 		SimpleFillSymbol, SimpleLineSymbol, 
 		Graphic, Circle,
@@ -317,6 +351,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 				GraphicsLayer: GraphicsLayer,
 				FeatureLayer: FeatureLayer,
 				ClassBreaksRenderer: ClassBreaksRenderer,
+				UniqueValueRenderer: UniqueValueRenderer,
 				SimpleMarkerSymbol: SimpleMarkerSymbol,
 				SimpleFillSymbol: SimpleFillSymbol,
 				SimpleLineSymbol: SimpleLineSymbol,

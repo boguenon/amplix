@@ -124,6 +124,7 @@ IG$._customChartPanels = function() {
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
 				me.down("[name=m_map_center]").setValue(option.settings.m_map_center || "");
+				me.down("[name=m_map_camera]").setValue(option.settings.m_map_camera || "");
 				me.down("[name=m_lat]").setValue(d1val);
 				me.down("[name=m_lng]").setValue(d2val);
 				me.down("[name=m_geofield]").setValue(d3val);
@@ -262,6 +263,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
 				option.settings.m_arc_view = me.down("[name=m_arc_view]").getValue();
 				option.settings.m_map_center = me.down("[name=m_map_center]").getValue();
+				option.settings.m_map_camera = me.down("[name=m_map_camera]").getValue();
 				option.settings.m_lat = me.down("[name=m_lat]").getValue();
 				option.settings.m_lng = me.down("[name=m_lng]").getValue();
 				option.settings.m_geofield = me.down("[name=m_geofield]").getValue();
@@ -691,7 +693,12 @@ IG$._customChartPanels = function() {
 							{
 								xtype: "textfield",
 								name: "m_map_center",
-								fieldLabel: IRm$.r1("L_MAP_CENTER_LAT_LNG"), // "Map Center(Lat,Lng)"
+								fieldLabel: IRm$.r1("L_MAP_CENTER_LAT_LNG")
+							},
+							{
+								xtype: "textfield",
+								name: "m_map_camera",
+								fieldLabel: IRm$.r1("L_MAP_CAMERA")
 							},
 							{
 								xtype: "combobox",

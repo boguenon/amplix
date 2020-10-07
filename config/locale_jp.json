@@ -90,6 +90,7 @@
 	"264": "admin user cannot be single sign on configured",
 	"265": "File is too big to process!",
 	"266": "File format does not match for processing",
+	"270": "Login key does not match!",
 	
 	"300": "指定されたアドレスには使用できませんコンテンツ。",
 	"301": "ユ?ザ?管理者は許可されません削除します！",
