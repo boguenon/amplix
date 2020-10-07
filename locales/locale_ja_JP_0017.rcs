@@ -146,3 +146,13 @@ A;S_DELETE;Delete
 A;S_WRITE;Write
 A;S_SECURITY;Security
 A;S_NA;Not Available
+
+A;L_TWOWAY_AUTH;Two-way Auth
+A;L_H2_PERSIST_ENABLED;H2 Persist DB
+
+A;L_ARC_VIEW;ArcGIS View
+A;L_MAP_CAMERA;Map Camera
+
+A;L_DEL_FLT;Click to remove filter item
+A;L_FLT_MG_LEFT;Click to merge left
+A;L_FLT_ST_ROW;Click to start row

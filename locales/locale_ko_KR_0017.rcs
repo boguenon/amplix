@@ -150,3 +150,12 @@ A;S_DELETE;삭제
 A;S_WRITE;쓰기
 A;S_SECURITY;보안작업
 A;S_NA;기타사항
+
+A;L_TWOWAY_AUTH;2차 인증 사용
+A;L_H2_PERSIST_ENABLED;H2 데이타 메싱DB
+A;L_ARC_VIEW;ArcGIS 뷰
+A;L_MAP_CAMERA;맵 카메라
+
+A;L_DEL_FLT;필터 제거
+A;L_FLT_MG_LEFT;타이틀 왼편으로 붙이기
+A;L_FLT_ST_ROW;다음줄로 내리기
