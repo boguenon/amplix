@@ -1,4 +1,4 @@
 <%
-    String redirectURL = "../index_kr.html";
+    String redirectURL = "../index.html";
     response.sendRedirect(redirectURL);
 %>

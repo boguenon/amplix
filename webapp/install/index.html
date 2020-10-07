@@ -7,10 +7,23 @@
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>amplix installation wizard</title>
-<link rel="stylesheet" type="text/css" href="./css/igcf.min.css?_dc=202010071332" />
-<script type="text/javascript" src="../launcher/js/jquery-3.5.1.min.js?_dc=202010071332"></script>
-<script type="text/javascript" src="./js/igcf.min.js?_dc=202010071332"></script>
+<title>amplix 인스톨 마법사</title>
+<link rel="stylesheet" type="text/css" href="../launcher/css/jquery-ui.theme.css" />
+<link href="./css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../launcher/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../launcher/js/bowser.js"></script>
+<script type="text/javascript" src="../launcher/js/jquery-ui-1.12.1.js"></script>
+<script type="text/javascript" src="../launcher/common/mainapp.js"></script>
+<script type="text/javascript" src="../launcher/common/mainapp_wb.js"></script>
+<script type="text/javascript" src="../launcher/js/security/rsa/jsbn.js"></script>
+<script type="text/javascript" src="../launcher/js/security/rsa/rsa.js"></script>
+<script type="text/javascript" src="../launcher/js/security/rsa/prng4.js"></script>
+<script type="text/javascript" src="../launcher/js/security/rsa/rng.js"></script>
+
+<script type="text/javascript" src="../launcher/controls/base64.js"></script>
+<script type="text/javascript" src="./js/proc.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+<script type="text/javascript" src="../launcher/controls/resource.js"></script>
 </head>
 <body scroll="no">
 <div id="main-area" class="main-scroller">
@@ -19,244 +32,126 @@
 			<div class="content-top-area">
 				<div class="title">
 					<img src="./images/common_top_title.png" alt="title">
-					<span>Amplix BI Installer</span>
+					<span>Amplix BI 인스톨 마법사</span>
 				</div>
 			</div>
 		</div>
 		<div class="content-middle-area">
 			<div class="content-wrap">
-				<h3>Welcom in Amplix BI Installer.</h3>
+				<h3>Amplix BI 인스톨 마법사에 오신것을 환영합니다.</h3>
 				<p>
-					For security reasons this script will only work with a new and unmodified AmplixBI installation. You should either re-extract the files from the download package or consult the complete instruction.
+					보안상의 이유로 인스톨은 신규 설치 서버에만 적용되게 되어 있습니다. 재설치를 위해서는 패키지 파일을 다시 다운로드 받아 초기상태에서 진행해 주십시오.
 				</p>
 				<p>
-	           		This installation wizard provides you a guided setup configuration and instructions. With few steps, you can ready for using advanced data visualization on your desk and for your team!
+	           		인스톨 마법사를 통해 설정과 설치에 대한 단계를 안내하고 있습니다. 
+	           		단계를 따라 진행해 주십시오.
 	            </p>
 	            <p>
-	            	Thank you for choosing AmplixBi. We can make your data visualization more powerful, more easy without programming efforts.
+	            	AmplixBi 를 이용해 주셔서 감사합니다.
 	            </p>
 	            <p>
-	            	Please read below requirements for successful completion.
+	            	성공적인 설치를 위해 다음 필수사항 및 단계를 읽고 진행해 주십시오.
 	            </p>
 			</div>
 			
 			<div id="dpage_01">
 				<div class="menu-area">
-					<div class="menu selected" id="tab_01"><a>Package Installation</a></div>
-					<div class="menu" id="tab_02"><a>Deploy as Web Application</a></div>
+					<div class="menu selected" id="tab_01"><a>패키지 인스톨</a></div>
 				</div>
 				<div class="menu-content-wrap">
 					<div id="tab_content_01" class="menu-content">
 						<div class="title">
-							<span>Package Installation</span>
+							<span>패키지 인스톨</span>
 						</div>
 						<div class="content">
 							<div class="install-text install-text-fw">
-			                    <h4>1. Pre-requirements for amplix</h4>
+			                    <h4>1. 필수 소프트웨어 설치</h4>
 			                    <p>
-			                    	Install does not meet required environment to proceed.<br />
-			                    	Please check bellow steps for install and try again.
+			                    	다음 필수 소프트웨어 설치 없인느 설치를 진행할 수 없습니다.<br />
+			                    	성공적인 설치를 위해 다음 소프트웨어가 설치되어 있는지 점검하고 다시 시도해 주십시오.
 			                    	<ul>
-			                    		<li>Install the Java SDK(1.8.0 or later).</li>
-			                    		<li>Install MYSQL database</li>
+			                    		<li>Java SDK(1.8.0 또는 이후버전).</li>
+			                    		<li>MYSQL 데이타베이스</li>
 			                    		<li>
-			                    			<span class="install-title">Download and extract file.</span><br/>
-			                    			Download amplixbi.zip and extract to folder.<br/>
+			                    			<span class="install-title">패키지 파일 압축 풀기.</span><br/>
+			                    			AMPLIX 패키지 파일을 특정 폴더에 압축을 해제합니다.<br/>
 			                    			<br/>
 			                    			<code>
 			                    				unzip amplixbi.zip
 			                    			</code>
 			                    			<br/>
 			                    			<br/>
-			                    			Copy extracted folder to application installation location, for example /opt<br/>
+			                    			압축 해제한 패키지 파일을 어플리케이션 설치 폴더에 이동합니다. /opt 폴더에 설치하는 경우 다음과 같습니다.
+			                    			<br/>
 			                    			<code>
 			                    				mv amplixbi /opt/
 			                    			</code>
 			                    		</li>
 			                    	</ul>
 			                    </p>
-								<h4>2. Prepare database</h4>
+								<h4>2. 메타 데이타베이스 준비하기</h4>
 								<p>
 									<ul>
 										<li>
-											<span class="install-title">Install and Start MySQL database</span>
+											<span class="install-title">MySQL 데이타베이스를 설치하고 시작해 주십시오.</span>
 										</li>
 										<li>
-											<span class="install-title">Login as root user with the following command.</span><br>
+											<span class="install-title">root 사용자로 데이타베이스 관리툴에 로그인하여 다음 명령을 실행해 주십시오.</span><br>
 											<br>
 											<code>mysql -uroot -p</code><br><br>
 										</li>
 										<li>
-											<span class="install-title">Create empty database with the following command on the above database command shell.</span><br>
+											<span class="install-title">데이타베이스 명령 셀에서 다음 명령을 실행하여 빈 데이타베이스를 생성해 주십시오.</span><br>
 											<br>
-											<code>CREATE DATABASE amplix_meta;</code><br>
-											<code>CREATE USER 'amplix'@'localhost' IDENTIFIED BY 'password';</code>
+											<code>CREATE DATABASE amplix_meta default character set utf8 collate utf8_general_ci;</code><br>
+											<code>CREATE USER 'amplix_meta'@'localhost' IDENTIFIED BY 'password';</code>
 										</li>
 										<li>
-											<span class="install-title">Grant permission to database</span><br>
+											<span class="install-title">데이타베이스 접속 권한을 부여해 주십시오.</span><br>
 											<br />
-											<code>GRANT ALL PRIVILEGES ON amplix_meta.* TO 'amplix'@'localhost';</code><br/>
+											<code>GRANT ALL PRIVILEGES ON amplix_meta.* TO 'amplix_meta'@'localhost';</code><br/>
 											<code>FLUSH PRIVILEGES;</code>
 										</li>
 										<li>
-											<span class="install-title">Create Sample database user and database (Optional)</span><br/>
+											<span class="install-title">샘플 데이타베이스와 사용자를 생성해 주십시오.</span><br/>
 											<br/>
-											<code>CREATE DATABASE foodmeart;</code><br/>
-											<code>CREATE USER 'foodmart'@'localhost' IDENTIFIED BY 'password';</code><br/>
+											<code>CREATE DATABASE amplix_sample default character set utf8 collate utf8_general_ci;</code><br/>
+											<code>CREATE USER 'amplix_sample'@'localhost' IDENTIFIED BY 'password';</code><br/>
 											<br/>
-											<span class="install-title">Grant permission to foodmart user and database</span><br/>
+											<span class="install-title">샘플 데이타베이스 사용자 및 데이타베이스 접근 권한을 부여해 주십시오.</span><br/>
 											<br/>
-											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'amplix'@'localhost';</code><br/>
-											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'foodmart'@'localhost';</code><br/>
+											<code>GRANT ALL PRIVILEGES ON amplix_sample.* TO 'amplix_sample'@'localhost';</code><br/>
 											<code>FLUSH PRIVILEGES;</code>
 										</li>
 									</ul>
 								</p>
-								<h4>3. Start Application.</h4>
+								<h4>3. 어플리케이션 시작.</h4>
 								<p>
 									<ul>
 										<li>
-											<span class="install-title">Open Shell Command prompt. Execute following command.</span><br/>
+											<span class="install-title">쉘 커맨드 창을 열고 다음 명령을 실행해 주십시오.</span><br/>
 											<br/>
 											<code>./bin/RUN_startup.sh</code><br/>
-											<code>./bin/RUN_startup.bat</code>
 										</li>
 										<li>
-											<span class="install-title">Open this installation wizard on web browser, and follow instruction.</span><br/>
+											<span class="install-title">인스톨 마법사를 서버 접속 가능한 브라우져에서 다음 URL 을 통해 접속하고 설치 단계를 따라서 진행하십시오.</span><br/>
 											<br/>
-											<code>http://localhost:8080/amplix/install/</code>
+											<code>http://localhost:8580/amplix/install/kr</code>
 										</li>
 									</ul>
 								</p>
-								<h4>4. Stop Application.</h4>
+								<h4>4. 어플리케이션 중지.</h4>
 								<p>
 									<ul>
 										<li>
-											<span class="install-title">To stop application, run the following command.</span><br/>
+											<span class="install-title">어플리케이션을 중지하려면 다음 명령을 쉘 커맨드 창에서 실행해 주십시오.</span><br/>
 											<br/>
 											<code>./bin/RUN_shutdown.sh</code><br/>
-											<code>./bin/RUN_shutdown.bat</code>
 										</li>
 									</ul>
 								</p>
 			                </div>
 						</div>
-					</div>
-					
-					
-					<div id="tab_content_02" class="menu-content" style="display:none;">
-						<div class="title">
-		                	All-in-One Installation
-		                </div>
-		                <div class="content">
-		                	<div class="install-text install-text-fw">
-			                	<h4>1. Pre-requirements for amplix</h4>
-			                    <p>
-			                    	Install does not meet required environment to proceed.<br />
-			                    	Please check bellow steps for install and try again.
-			                    	<ul>
-			                    		<li>Install the Java SDK(1.8.0 or later).</li>
-			                    		<li>Install WebApplication Server (Tomcat)</li>
-			                    		<li>Install database for MetaData</li>
-			                    		<li>
-			                    			<span class="install-title">Download and extract file.</span><br/>
-			                    			Download amplixbi.zip and extract to folder.<br/>
-			                    			<br/>
-			                    			<code>
-			                    				unzip amplixbi.zip
-			                    			</code>
-			                    			<br/>
-			                    			<br/>
-			                    			Copy extracted folder to application installation location, for example /opt<br/>
-			                    			<code>
-			                    				mv amplixbi /opt/
-			                    			</code>
-			                    		</li>
-			                    	</ul>
-			                    </p>
-			                    <h4>2. Prepare database</h4>
-								<p>
-									<ul>
-										<li>
-											<span class="install-title">Install and Start MySQL database</span>
-										</li>
-										<li>
-											<span class="install-title">Login as root user with the following command.</span><br>
-											<br>
-											<code>mysql -uroot -p</code><br><br>
-										</li>
-										<li>
-											<span class="install-title">Create empty database with the following command on the above database command shell.</span><br>
-											<br>
-											<code>CREATE DATABASE amplix_meta;</code><br>
-											<code>CREATE USER 'amplix'@'localhost' IDENTIFIED BY 'password';</code>
-										</li>
-										<li>
-											<span class="install-title">Grant permission to database</span><br>
-											<br />
-											<code>GRANT ALL PRIVILEGES ON amplix_meta.* TO 'amplix'@'localhost';</code><br/>
-											<code>FLUSH PRIVILEGES;</code>
-										</li>
-										<li>
-											<span class="install-title">Create Sample database user and database (Optional)</span><br/>
-											<br/>
-											<code>CREATE DATABASE foodmeart;</code><br/>
-											<code>CREATE USER 'foodmart'@'localhost' IDENTIFIED BY 'password';</code><br/>
-											<br/>
-											<span class="install-title">Grant permission to foodmart user and database</span><br/>
-											<br/>
-											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'amplix'@'localhost';</code><br/>
-											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'foodmart'@'localhost';</code><br/>
-											<code>FLUSH PRIVILEGES;</code>
-										</li>
-									</ul>
-								</p>
-								<h4>3. Deploy amplix analysis application for your Tomcat Server.</h4>
-								<p>
-									<ul>
-										<li>
-											<span class="install-title">Edit web.xml file</span><br/>
-											Open the <code>web.xml</code> file in <code>/amplixbi/webapp/WEB-INF/web.xml</code>.<br/>
-											Edit <code>APP_HOME</code> for the folder that extracted. and uncomment the section<br/>
-											<br/>
-											<code>
-												&lt;context-param&gt;<br/>
-											    &nbsp;&nbsp;&nbsp;&nbsp;&lt;param-name&gt;APP_HOME&lt;/param-name&gt;<br/>
-											    &nbsp;&nbsp;&nbsp;&nbsp;&lt;param-value&gt;/opt/amplix&lt;/param-value&gt;<br/>
-											  	&lt;/context-param&gt;<br/>
-											</code>
-										</li>
-										<li>
-											<span class="install-title">Register Application</span><br/>
-											On tomcat need to register context.xml on tomcat configuration folder.<br/>
-											Create below file if not exists on your tomcat folder
-											<br/>
-											<code>TOMCAT/conf/Catalina/localhost/amplix.xml</code>
-											<br/>
-											<br/>
-											<code>
-												&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br/>
-												&lt;Context docBase="/opt/amplix/webapp"<br/>
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cachingAllowed="true" reloadable="false"&gt;<br/>
-												&nbsp;&nbsp;&nbsp;&nbsp;&lt;Parameter name="APP_HOME" value="/opt/amplix" override="true"/&gt;<br/>
-												&lt;/Context&gt;<br/>
-											</code>
-										</li>
-									</ul>
-								</p>
-			                    <h4>4. Deploy and run the web appication</h4>
-								<p>
-									<ul>
-										<li>Restart Apache Tomcat.</li>
-										<li>
-											Open this installation wizard on web browser, and follow instruction.<br/>
-											<br/>
-											<code>http://localhost:8080/amplix/install/</code>
-										</li>
-									</ul>
-								</p>
-			                </div>
-			             </div>
 					</div>
 				</div>
 				
@@ -266,33 +161,34 @@
 				
 				<div id="btn_start_01" class="button-area">
 					<div id="btn_start_form" class="button">
-						<a>Goto Configurations</a>
+						<a>설정 시작하기</a>
 					</div>
 				</div>
 			</div>
 			
+			
 			<div id="dpage_02" style="display:none;">
 				<div class="menu-area">
-					<div class="menu selected"><a>Settings</a></div>
+					<div class="menu selected"><a>설정</a></div>
 				</div>
 				<div class="menu-content-wrap">
 					<div class="menu-content">
 						<div class="title">
-							Server Version
+							서버 버전
 						</div>
 						<div class="content">
 							<table class="tb_form">
 								<tr>
 									<td colspan="2">
-										<span>Installation and Server starts on <code id="app_home"></code>.</span> <br />
-										<span>Version to install is <code id="s_version"></code></span>
+										<span>인스톨 폴더는 <code id="app_home"></code> 에 설치됩니다.</span> <br />
+										<span>인스톨 패키지의 버전은 <code id="s_version">3.7</code> 입니다.</span>
 									</td>
 								</tr>
 							</table>
 						</div>
 						
 						<div class="title">
-							Database Configuration
+							데이타베이스 설정
 						</div>
 						<div class="content">
 							<table id="form_db" class="tb_form">
@@ -300,45 +196,45 @@
 								<col width="*"></col>
 								<col width="*"></col>
 		               			<tr>
-		               				<td class="fieldname">Select MetaDatabase</td>
+		               				<td class="fieldname">메타 데이타베이스를 선택해 주십시오.</td>
 		               				<td colspan="2">
 		               					<select id="db_type">
 		               					</select>
 		               				</td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">Host Name</td>
+		               				<td class="fieldname">호스트 이름</td>
 		               				<td>
 		               					<input id="db_host" type="text"></input>
 		               				</td>
-									<td><span id="msg_db_host" class="ex_msg"></span></td>
+		               				<td><span id="msg_db_host" class="ex_msg"></span></td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">Port Number</td>
+		               				<td class="fieldname">포트 번호</td>
 		               				<td>
 		               					<input id="db_port" type="text"></input>
 		               				</td>
 		               				<td><span id="msg_db_port" class="ex_msg"></span></td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">Database Name</td>
+		               				<td class="fieldname">데이타베이스 명</td>
 		               				<td>
 		               					<input id="db_name" type="text"></input>
 		               				</td>
-		               				<td><span id="msg_db_name" class="ex_msg">Ex) amplix_meta</span></td>
+		               				<td><span id="msg_db_name" class="ex_msg">예) amplix_meta</span></td>
 		               			</tr>
 		               			<tr>
 		               				<td></td>
 		               				<td colspan="2">
 		               					<div class="button-area tb-button">
 			               					<button id="btn_check_dburl" class="button grey">
-												Auto Generate JDBC Information
+												JDBC 정보 자동 생성하기
 											</button>
 										</div>
 		               				</td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">JDBC Driver</td>
+		               				<td class="fieldname">JDBC 드라이버</td>
 		               				<td>
 		               					<input id="db_jdbc_driver" type="text"></input>
 		               				</td>
@@ -352,7 +248,7 @@
 		               				</td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">ValidateSQL</td>
+		               				<td class="fieldname">검증 SQL 쿼리</td>
 		               				<td>
 		               					<textarea id="db_validatesql"></textarea>
 		               				</td>
@@ -361,14 +257,14 @@
 		               				</td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">User name</td>
+		               				<td class="fieldname">데이타베이스 사용자 명</td>
 		               				<td>
 		               					<input id="db_user" type="text"></input>
 		               				</td>
 		               				<td><span id="msg_db_user" class="ex_msg">Ex) amplix</span></td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">User Password</td>
+		               				<td class="fieldname">데이타베이스 사용자 패스워드</td>
 		               				<td colspan="2">
 		               					<input id="db_passwd" type="password"></input>
 		               				</td>
@@ -378,7 +274,7 @@
 									<td>
 										<div class="button-area tb-button">
 											<button id="btn_check_con" class="button grey">
-												Check Connection
+												접속 체크
 											</button>
 										</div>
 									</td>
@@ -388,14 +284,14 @@
 						</div>
 						
 						<div class="title">
-							Admin User
+							Admin 사용자
 						</div>
 						<div class="content">
 							<table class="tb_form">
 								<col width="200px"></col>
 								<col width="*"></col>
 		               			<tr>
-		               				<td class="fieldname">Admin User Password</td>
+		               				<td class="fieldname">Admin 사용자 패스워드</td>
 		               				<td><input id="s2adminpwd" type="password" placeholder="Password"></input></td>
 		               			</tr>
 		               			<tr>
@@ -406,7 +302,7 @@
 						</div>
 						
 						<div class="title">
-							Additional Modules
+							추가 모듈
 						</div>
 						<div class="content">
 							<table id="sel_modules" class="tb_form">
@@ -419,21 +315,21 @@
 								<col width="*"></col>
 								<tr>
 									<td class="fieldname">
-										Module Database Name
+										모듈 데이타베이스 명
 									</td>
 									<td><input type="text" id="md_owner"></input></td>
-									<td><span id="msg_md_owner" class="ex_msg"></span></td>							
+									<td><span id="msg_md_owner" class="ex_msg"></span></td>
 								</tr>
 								<tr>
 									<td class="fieldname">
-										Module User
+										모듈 데이타베이스 사용자명
 									</td>
 									<td><input type="text" id="md_user"></input></td>
 									<td><span id="msg_md_user" class="ex_msg"></span></td>
 								</tr>
 								<tr>
 									<td class="fieldname">
-										Module Password
+										모듈 데이타베이스 패스워드
 									</td>
 									<td colspan="2"><input type="password" id="md_password"></input></td>
 								</tr>
@@ -442,7 +338,7 @@
 									<td colspan="2">
 										<div class="button-area tb-button">
 											<button id="btn_check_con2" class="button grey">
-												Check Connection
+												접속 체크
 											</button>
 										</div>
 									</td>
@@ -457,28 +353,31 @@
 				</div>
 				<div class="button-area">
 					<div id="btn_back_inst" class="button grey">
-						<a>Back to Instruction</a>
+						<a>이전화면 돌아가기</a>
 					</div>
 					<div id="btn_start_install" class="button">
-						<a>Start Installation</a>
+						<a>인스톨 시작</a>
 					</div>
 				</div>
 			</div>
-
+			
 			<div id="dpage_03" style="display:none;">
 				<div class="menu-area">
-					<div class="menu selected"><a>Installation</a></div>
+					<div class="menu selected"><a>설치</a></div>
 				</div>
 				<div class="menu-content-wrap">
 					<div class="menu-content">
 						<div class="title">
-							Installation Completed!
+							인스톨 과정이 완료되었습니다!
 						</div>
 						<div class="content">
 							<table class="final-table">
 								<tr>
 									<td class="warning" align="center">
-										PLEASE REMEMBER TO COMPLETELY<br/>REMOVE THE INSTALLATION DIRECTORY.<br />You will not be able to proceed beyond this point until the installation directory has been removed. This is a security feature of AMPLIX BI!.
+										보안을 위해 install 폴더를 반듯이 삭제해 주십시오. <br/>
+										<br/>
+										PLEASE REMEMBER TO COMPLETELY<br/>
+										REMOVE THE INSTALLATION DIRECTORY.
 									</td>
 								</tr>
 								<tr>
@@ -487,10 +386,10 @@
 								<tr>
 									<td>
 										<div class="title">
-						                	Administrator Login Details
+						                	관리자 로그인 상세
 						                </div>
 						                <div class="content">
-						                	Username: admin
+						                	관리자 아이디 : admin
 						               	</div>
 									</td>
 								</tr>
@@ -500,15 +399,15 @@
 								<tr>
 									<td>
 										<div class="title">
-						                	Important configuration check points
+						                	중요한 설치 체크 포인트는 다음과 같습니다.
 						                </div>
 						                <div class="content">
 						                	<div class="install-text install-text-fw">
 							                    <p>
 							                    	<ul>
 							                    		<li>
-							                    			<span class="install-title">JavaScript configuration for server connection.</span><br/>
-							                    			Open and edit this file, if 404 error while login.
+							                    			<span class="install-title">서버 접속을 위한 자바스크립트 설정.</span><br/>
+							                    			설치후 404 오류 발생시 다음 파일을 편집기에서 열어서 수정해 주십시오.
 							                    			<code>amplixbi/webapp/config.js</code><br/>
 							                    			<br/>
 							                    			<code>
@@ -516,19 +415,6 @@
 																&nbsp;&nbsp;&nbsp;&nbsp;useLocale: "en_US",<br/>
 																&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#ff0000">servlet: "../servlet/krcp",</b><br/>
 																&nbsp;&nbsp;&nbsp;&nbsp;...<br/>
-							                    			</code>
-							                    		</li>
-							                    		<li>
-							                    			<span class="install-title">Application main page configuration.</span><br/>
-							                    			Open and edit this file, if 404 error after login.<br/>
-							                    			Amplix intentionally hiding entry point of application, for security reason.
-							                    			<code>amplixbi/config/amplix.properties</code><br/>
-							                    			<br/>
-							                    			<code>
-							                    				[APPLICATION]<br/>
-																application.mainpage.mdi 					= "../launcher/analytics.jsp"<br/>
-																application.mainpage.dashboard 				= "../launcher/dashboard.jsp"<br/>
-																application.mainpage.viewer 				= "../launcher/viewer.jsp"<br/>
 							                    			</code>
 							                    		</li>
 							                    	</ul>
@@ -546,9 +432,9 @@
 											<div>
 												<div class="icon">
 													<br />
-													<b style="font-size: 18px;">Thank you.</b>
+													<b style="font-size: 18px;">감사합니다.</b>
 													<br />
-													Visit the <a href="https://amplibi.com">https://amplixbi.com</a> for more information and support!<br/>
+													보다 자세한 정보 및 지원을 위해서 웹사이트 <a href="https://amplibi.com">https://amplixbi.com</a> 를 방문해 주십시오!<br/>
 													<br />
 													
 													<br /><br />
@@ -566,7 +452,7 @@
 				</div>
 				<div class="button-area">
 					<div id="btn_start" class="button">
-						<a>Start your Analysis</a>
+						<a>AMPLIX 시작하기</a>
 					</div>
 				</div>
 			</div>
@@ -580,7 +466,7 @@
 	<div class="progress-bg">
 	</div>
 	<div class="progress-msg">
-		<span>Loading request to server! <br/> Please wait a moment!</span>
+		<span>서버에 요청을 진행중입니다! <br/>잠시만 기다려 주십시오!</span>
 		<div id="progressbar" class="progressbar">
 			<div id="progress_gauge" class="progress_gauge"></div>
 		</div>

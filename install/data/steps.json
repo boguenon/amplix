@@ -6,71 +6,13 @@
 	},
 	"modules": [
 		{
-			"name": "sample_northwind",
-			"desc": "Northwind sample database",
-			"steps": [
-				{
-					"type": "sql",
-					"name": "sample_sch.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat1.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat2.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat3.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat4.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat5.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat6.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat7.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat8.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat9.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat10.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat11.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_dat12.msql"
-				},
-				{
-					"type": "sql",
-					"name": "sample_idx.msql"
-				}
-			]
-		},
-		{
 			"name": "sample_qa",
 			"desc": "Six Sigma Examples",
 			"steps": [
+				{
+					"type": "sql",
+					"name": "mfg_quality.msql"
+				},
 				{
 					"type": "meta",
 					"name": "sixsigma.bku"
