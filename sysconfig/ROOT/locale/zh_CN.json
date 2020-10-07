@@ -6688,5 +6688,113 @@
     "group" : "locale_zh_CN_sci001",
     "name" : "I_SCI_PUB_DATASET",
     "value" : "Published DataSet"
+  }, {
+    "group" : "locale_zh_CN_0016",
+    "name" : "L_USR_AUD_TITLE",
+    "value" : "User Audit @"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_RELEASE_LOCK",
+    "value" : "Click Yes to confirm to release lock of this user!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_SS_LOCKED",
+    "value" : "Login Lock"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_SK_RPT",
+    "value" : "Search in navigation"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_CATEGORY",
+    "value" : "Category"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_CHECK_EMAIL",
+    "value" : "Check Email"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_RCPTS",
+    "value" : "Recipients"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "M_SMTP_TST",
+    "value" : "Wow! email sent with configuration. Please check on the INBOX test email from us!"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "T_USERS",
+    "value" : "Users"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_RECENT_SUBJECT",
+    "value" : "Recent Subject"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_SEARCH_RESULT",
+    "value" : "Search Results"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "B_SUC",
+    "value" : "Success"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "B_FAIL",
+    "value" : "Fail"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "S_READ",
+    "value" : "Read"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "S_UPDATE",
+    "value" : "Update"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "S_LOGOUT",
+    "value" : "Logout"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "S_DELETE",
+    "value" : "Delete"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "S_WRITE",
+    "value" : "Write"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "S_SECURITY",
+    "value" : "Security"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "S_NA",
+    "value" : "Not Available"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_TWOWAY_AUTH",
+    "value" : "Two-way Auth"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_H2_PERSIST_ENABLED",
+    "value" : "H2 Persist DB"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_ARC_VIEW",
+    "value" : "ArcGIS View"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MAP_CAMERA",
+    "value" : "Map Camera"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_DEL_FLT",
+    "value" : "Click to remove filter item"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_FLT_MG_LEFT",
+    "value" : "Click to merge left"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_FLT_ST_ROW",
+    "value" : "Click to start row"
   } ]
 }

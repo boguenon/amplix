@@ -3538,8 +3538,9 @@
     "name" : "L_SETTINGS",
     "value" : "설정"
   }, {
+    "group" : "locale_ko_KR_0017",
     "name" : "D_BOBJECT",
-    "value" : "Business Object"
+    "value" : "비즈니스 오브젝트"
   }, {
     "name" : "L_V_SYNC",
     "value" : "Sync with Sheet"
@@ -6758,5 +6759,113 @@
     "group" : "locale_ko_KR_sci001",
     "name" : "I_SCI_PUB_DATASET",
     "value" : "퍼블릭 데이타셋"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RELEASE_LOCK",
+    "value" : "사용자 로그인 락을 해제하려면 예를 클릭해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_SS_LOCKED",
+    "value" : "로그인 잠김"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_USR_AUD_TITLE",
+    "value" : "세션 활동내역 @"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_SK_RPT",
+    "value" : "폴더로 이동하기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CATEGORY",
+    "value" : "카테고리"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CHECK_EMAIL",
+    "value" : "이메일 체크"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RCPTS",
+    "value" : "수신자 이메일 목록"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "M_SMTP_TST",
+    "value" : "와우! 이메일이 설정 정보로 발송하였습니다. 수신자 이메일을 통해 수신 여부를 확인해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "T_USERS",
+    "value" : "사용자"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RECENT_SUBJECT",
+    "value" : "최근 항목들"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_SEARCH_RESULT",
+    "value" : "검색 결과"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "B_SUC",
+    "value" : "성공"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "B_FAIL",
+    "value" : "실패"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "S_READ",
+    "value" : "읽기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "S_UPDATE",
+    "value" : "업데이트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "S_LOGOUT",
+    "value" : "로그아웃"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "S_DELETE",
+    "value" : "삭제"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "S_WRITE",
+    "value" : "쓰기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "S_SECURITY",
+    "value" : "보안작업"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "S_NA",
+    "value" : "기타사항"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_TWOWAY_AUTH",
+    "value" : "2차 인증 사용"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_H2_PERSIST_ENABLED",
+    "value" : "H2 데이타 메싱DB"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_ARC_VIEW",
+    "value" : "ArcGIS 뷰"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MAP_CAMERA",
+    "value" : "맵 카메라"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_DEL_FLT",
+    "value" : "필터 제거"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_FLT_MG_LEFT",
+    "value" : "타이틀 왼편으로 붙이기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_FLT_ST_ROW",
+    "value" : "다음줄로 내리기"
   } ]
 }
