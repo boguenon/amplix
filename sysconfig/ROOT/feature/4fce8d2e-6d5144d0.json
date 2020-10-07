@@ -50,6 +50,12 @@
     "show" : true,
     "hide" : false
   }, {
+    "name" : "New Data Connection",
+    "cls" : "ig_n_db_add",
+    "clspath" : "ig_dataset-ig_n_db_add",
+    "show" : true,
+    "hide" : false
+  }, {
     "name" : "Management",
     "cls" : "ig_mngr",
     "clspath" : "ig_mngr",
@@ -107,6 +113,30 @@
     "name" : "System Resource",
     "cls" : "ig_sysres",
     "clspath" : "ig_mngr-ig_mon-ig_sysres",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "User Management",
+    "cls" : "ig_mail",
+    "clspath" : "ig_mail",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "User Registration",
+    "cls" : "ig_mx_reg",
+    "clspath" : "ig_mail-ig_mx_reg",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Update User",
+    "cls" : "ig_mx_upd",
+    "clspath" : "ig_mail-ig_mx_upd",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Password reset",
+    "cls" : "ig_mx_prs",
+    "clspath" : "ig_mail-ig_mx_prs",
     "show" : true,
     "hide" : false
   }, {
@@ -347,12 +377,6 @@
     "name" : "favorites",
     "cls" : "ig_r_fav",
     "clspath" : "ig_report-ig_r_tbar-ig_r_fav",
-    "show" : true,
-    "hide" : false
-  }, {
-    "name" : "instruction",
-    "cls" : "ig_r_inst",
-    "clspath" : "ig_report-ig_r_tbar-ig_r_inst",
     "show" : true,
     "hide" : false
   } ]
