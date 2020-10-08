@@ -1,7 +1,7 @@
 /**
  * create chart instance
  */
-IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, container) {
+IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, container, callback) {
 	var me = this,
 		esri = me.esri,
 		map,
@@ -11,7 +11,6 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 		infow,
 		infot,
 		mapconfig = {
-			center: [-118, 34.5],
 			zoom: 8,
 			// sliderStyle : 'large',
 			sliderPosition : 'top-right',
@@ -20,7 +19,10 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 			fadeOnZoom : true,
 			isScrollWheelZoom: true
 		},
-		geo_extent;
+		mapcenter = {
+			x: -118, 
+			y: 34.5
+		};
 		
 	if (copsettings && copsettings.m_map_center)
 	{
@@ -28,19 +30,17 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 		{
 			geocenter = copsettings.m_map_center.split(",");
 			
-			if (geocenter.length > 3)
+			if (geocenter.length > 1)
 			{
-				geo_extent = [Number(geocenter[0]), Number(geocenter[1]), Number(geocenter[2]), Number(geocenter[3])];
-				delete mapconfig["center"];
+				mapcenter.x = Number(geocenter[0]);
+				mapcenter.y = Number(geocenter[1]);
 			}
-			else
-			{
-				mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
-			}
+			
+			mapcenter.type = geocenter[2];
 		}
 		else if (copsettings.m_map_center == "-")
 		{
-			delete mapconfig["center"];
+			mapcenter = null;
 		}
 	}
 	else if (ig$.geo_map_center)
@@ -48,11 +48,13 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 		if (ig$.geo_map_center.indexOf(",") > -1)
 		{
 			geocenter = ig$.geo_map_center.split(",");
-			mapconfig.center = [Number(geocenter[0]), Number(geocenter[1])];
+			mapcenter.x = Number(geocenter[0]);
+			mapcenter.y = Number(geocenter[1]);
+			mapcenter.type = geocenter[2];
 		}
 		else if (ig$.geo_map_center == "-")
 		{
-			delete mapconfig["center"];
+			mapcenter = null;
 		}
 	}
 		
@@ -111,53 +113,68 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 	{
 		mapconfig.basemap = basemap;
 	}
-
+	
 	map = new esri.Map(container, mapconfig);
 	
 	me.map_inst = map;
 	
-	if (geo_extent)
-	{
-		map.on("load", function() {
-			var next = new esri.Extent(geo_extent[0], geo_extent[1], geo_extent[2], geo_extent[3], map.spatialReference);
-			next.setSpatialReference(map.spatialReference);
-			map.setExtent(next);
-		});
-	}
 	
-	if (copsettings.m_map_save_stat == "T")
-	{
-		var update_setting = function(e) {
-			var extent = map.extent,
-				np, pt;
-			cop.m_zoom_level = "" + map.getZoom();
+	map.on("load", function() {
+		if (mapcenter && !isNaN(mapcenter.x) && !isNaN(mapcenter.y))
+		{
+			var pt;
 			
-			if (extent)
+			if (mapcenter.type == "w")
 			{
-				// extent.setSpatialReference(map.spatialReference);
-				pt = extent.getCenter();
-				np = esri.webMercatorUtils.webMercatorToGeographic(pt);
-				if (np && isNaN(np.x) == false && isNaN(np.y) == false)
-				{
-					copsettings.m_map_center = "" + np.x + "," + np.y;
-				}
-				
-				// if (!isNaN(extent.xmin) && !isNaN(extent.xmax) && !isNaN(extent.ymin) && !isNaN(extent.ymax))
-				// {
-				// 	copsettings.m_map_center = "" + extent.xmin + "," + extent.ymin + "," + extent.xmax + "," + extent.ymax;
-				// }
-				// copsettings.m_map_center = "" + pt.x + "," + pt.y + ",extent";
+				pt = new esri.Point(mapcenter.x, mapcenter.y, map.spatialReference);
 			}
+			else
+			{
+				pt = new esri.Point(mapcenter.x, mapcenter.y);
+				pt = esri.webMercatorUtils.geographicToWebMercator(pt);
+			}
+			
+			pt && map.centerAt(pt);
 		}
 		
-		map.on("zoom-end", function(e) {
-			update_setting(e);
-		});
+		callback && callback.execute();
 		
-		map.on("extent-change", function(e) {
-			update_setting(e);
-		});
-	}
+		if (copsettings.m_map_save_stat == "T")
+		{
+			var update_setting = function(e) {
+				var extent = map.extent,
+					np, pt;
+				cop.m_zoom_level = "" + map.getZoom();
+				
+				if (extent)
+				{
+					extent.setSpatialReference(map.spatialReference);
+					pt = extent.getCenter();
+					/*
+					np = esri.webMercatorUtils.webMercatorToGeographic(pt);
+					if (np && isNaN(np.x) == false && isNaN(np.y) == false)
+					{
+						copsettings.m_map_center = "" + np.x + "," + np.y;
+					}
+					*/
+					// if (!isNaN(extent.xmin) && !isNaN(extent.xmax) && !isNaN(extent.ymin) && !isNaN(extent.ymax))
+					// {
+					// 	copsettings.m_map_center = "" + extent.xmin + "," + extent.ymin + "," + extent.xmax + "," + extent.ymax;
+					// }
+					// copsettings.m_map_center = "" + pt.x + "," + pt.y + ",extent";
+					copsettings.m_map_center = "" + pt.x + "," + pt.y + ",w";
+				}
+			}
+			
+			map.on("zoom-end", function(e) {
+				update_setting(e);
+			});
+			
+			map.on("extent-change", function(e) {
+				update_setting(e);
+			});
+		}
+	});
 	
 	infow = new esri.InfoWindowLite(null, esri.domConstruct.create("div", null, null, map.root));
 	infow.startup();
@@ -264,6 +281,8 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		"esri/tasks/query",
 		"esri/tasks/QueryTask",
 		"esri/geometry/webMercatorUtils",
+		"esri/SpatialReference",
+		"dojo/ready",
 		"dojo/dom-construct",
 		"dojo/domReady!"
 	], function(esriConfig, Map, Basemaps, MarkerSymbol, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer,
@@ -275,133 +294,144 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, Graphic, GraphicsLayer, 
 		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color, 
 		Legend, Query, QueryTask,
-		webMercatorUtils,
-		domConstruct) {
-		/**
-		 * cache object for esri class library
-		 */
-		var esri = {
-				esriConfig: esriConfig,
-				Map: Map,
-				Basemaps: Basemaps,
-				MarkerSymbol: MarkerSymbol,
-				ArcGISDynamicMapServiceLayer: ArcGISDynamicMapServiceLayer,
-				ArcGISTiledMapServiceLayer: ArcGISTiledMapServiceLayer,
-				ArcGISImageServiceLayer: ArcGISImageServiceLayer,
-				ArcGISImageServiceVectorLayer: ArcGISImageServiceVectorLayer,
-				DataAdapterFeatureLayer: DataAdapterFeatureLayer,
-				CSVLayer: CSVLayer,
-				DataSource: DataSource,
-				DimensionDefinition: DimensionDefinition,
-				Domain: Domain,
-				DynamicLayerInfo: DynamicLayerInfo,
-				DynamicMapServiceLayer: DynamicMapServiceLayer,
-				FeatureLayer: FeatureLayer,
-				FeatureTemplate: FeatureTemplate,
-				FeatureType: FeatureType,
-				KMLGroundOverlay: KMLGroundOverlay,
-				KMLLayer: KMLLayer,
-				LabelLayer: LabelLayer,
-				MapImageLayer: MapImageLayer,
-				OpenStreetMapLayer: OpenStreetMapLayer,
-				RasterLayer: RasterLayer,
-				StreamLayer: StreamLayer,
-				WebTiledLayer: WebTiledLayer,
-				WFSLayer: WFSLayer,
-				WMSLayer: WMSLayer,
-				WMTSLayer: WMTSLayer,
-				SimpleMarkerSymbol: SimpleMarkerSymbol,
-				Point: Point,
-				InfoWindowLite: InfoWindowLite,
-				InfoTemplate: InfoTemplate,
-				Graphic: Graphic,
-				GraphicsLayer: GraphicsLayer,
-				Circle: Circle,
-				Color: Color,
-				Legend: Legend,
-				Query: Query,
-				QueryTask: QueryTask,
-				webMercatorUtils: webMercatorUtils,
-				SimpleRenderer: SimpleRenderer,
-				ClassBreaksRenderer: ClassBreaksRenderer,
-				SimpleFillSymbol: SimpleFillSymbol,
-				SimpleLineSymbol: SimpleLineSymbol,
-				domConstruct: domConstruct
-			},
-			i, l;
-		
-		me.esri = esri;
-
-		/* 3.17 errors with layer
-		if (cop.settings.m_arc_basemap)
-		{
-			map_inst.setBasemap(cop.settings.m_arc_basemap);
-		}
-		*/
-		
-		/**
-		 * create arcgis map
-		 * stores instance information in map_inst pointer
-		 */
-		if (ig$.arcgis_basemap != "-" && map_inst && cop.settings.m_arc_basemap && me._basemap != cop.settings.m_arc_basemap)
-		{
-			map_inst.destroy();
-			map_inst = me.map_inst = null;
-			me._glayers = [];
-		}
-		
-		me._basemap = cop.settings.m_arc_basemap || "streets";
-		
-		if (!map_inst)
-		{
-			me.map_initialize(owner, owner.container);
-		}
-
-		map_inst = me.map_inst;
-		
-		/**
-		 * cop : chart option from chart wizard
-		 */
-		cop.settings = cop.settings || {};
-		
-		if (!me.map_legend$)
-		{
-			me.map_legend$ = $("<div class='igc-map-legend'><div id='legend-map'></div></div>")
-				.appendTo(owner.container);
-		}
-		
-		me.map_legend$.hide();
-		
-		// if (cop.settings.m_map_legend)
-		// {
-			//$("<div class='igc-map-legend-bg'></div>").appendTo(me.map_legend$);
-			// $(cop.settings.m_map_legend).appendTo(me.map_legend$);
-		// }
-		
-		/**
-		 * before drawing, clear layers already added on previous instance
-		 */
-		if (me._glayers)
-		{
-			for (i=0; i < me._glayers.length; i++)
+		webMercatorUtils, SpatialReference,
+		ready, domConstruct) {
+			
+		ready(function() {
+			/**
+			 * cache object for esri class library
+			 */
+			var esri = {
+					esriConfig: esriConfig,
+					Map: Map,
+					Basemaps: Basemaps,
+					MarkerSymbol: MarkerSymbol,
+					ArcGISDynamicMapServiceLayer: ArcGISDynamicMapServiceLayer,
+					ArcGISTiledMapServiceLayer: ArcGISTiledMapServiceLayer,
+					ArcGISImageServiceLayer: ArcGISImageServiceLayer,
+					ArcGISImageServiceVectorLayer: ArcGISImageServiceVectorLayer,
+					DataAdapterFeatureLayer: DataAdapterFeatureLayer,
+					CSVLayer: CSVLayer,
+					DataSource: DataSource,
+					DimensionDefinition: DimensionDefinition,
+					Domain: Domain,
+					DynamicLayerInfo: DynamicLayerInfo,
+					DynamicMapServiceLayer: DynamicMapServiceLayer,
+					FeatureLayer: FeatureLayer,
+					FeatureTemplate: FeatureTemplate,
+					FeatureType: FeatureType,
+					KMLGroundOverlay: KMLGroundOverlay,
+					KMLLayer: KMLLayer,
+					LabelLayer: LabelLayer,
+					MapImageLayer: MapImageLayer,
+					OpenStreetMapLayer: OpenStreetMapLayer,
+					RasterLayer: RasterLayer,
+					StreamLayer: StreamLayer,
+					WebTiledLayer: WebTiledLayer,
+					WFSLayer: WFSLayer,
+					WMSLayer: WMSLayer,
+					WMTSLayer: WMTSLayer,
+					SimpleMarkerSymbol: SimpleMarkerSymbol,
+					Point: Point,
+					InfoWindowLite: InfoWindowLite,
+					InfoTemplate: InfoTemplate,
+					Graphic: Graphic,
+					GraphicsLayer: GraphicsLayer,
+					Circle: Circle,
+					Color: Color,
+					Legend: Legend,
+					Query: Query,
+					QueryTask: QueryTask,
+					webMercatorUtils: webMercatorUtils,
+					SpatialReference: SpatialReference,
+					SimpleRenderer: SimpleRenderer,
+					ClassBreaksRenderer: ClassBreaksRenderer,
+					SimpleFillSymbol: SimpleFillSymbol,
+					SimpleLineSymbol: SimpleLineSymbol,
+					domConstruct: domConstruct
+				},
+				i, l;
+			
+			me.esri = esri;
+	
+			/* 3.17 errors with layer
+			if (cop.settings.m_arc_basemap)
 			{
-				me.map_inst.removeLayer(me._glayers[i]);
+				map_inst.setBasemap(cop.settings.m_arc_basemap);
+			}
+			*/
+			
+			/**
+			 * create arcgis map
+			 * stores instance information in map_inst pointer
+			 */
+			if (ig$.arcgis_basemap != "-" && map_inst && cop.settings.m_arc_basemap && me._basemap != cop.settings.m_arc_basemap)
+			{
+				map_inst.destroy();
+				map_inst = me.map_inst = null;
+				me._glayers = [];
 			}
 			
-			me._glayers = [];
-		}
-
-		me._glayers = me._glayers || [];
+			me._basemap = cop.settings.m_arc_basemap || "streets";
+			
+			var callback = new IG$.callBackObj(me, function() {
+				var i;
+				
+				/**
+				 * cop : chart option from chart wizard
+				 */
+				cop.settings = cop.settings || {};
+				
+				if (!me.map_legend$)
+				{
+					me.map_legend$ = $("<div class='igc-map-legend'><div id='legend-map'></div></div>")
+						.appendTo(owner.container);
+				}
+				
+				me.map_legend$.hide();
+				
+				// if (cop.settings.m_map_legend)
+				// {
+					//$("<div class='igc-map-legend-bg'></div>").appendTo(me.map_legend$);
+					// $(cop.settings.m_map_legend).appendTo(me.map_legend$);
+				// }
+				
+				/**
+				 * before drawing, clear layers already added on previous instance
+				 */
+				if (me._glayers)
+				{
+					for (i=0; i < me._glayers.length; i++)
+					{
+						me.map_inst.removeLayer(me._glayers[i]);
+					}
+					
+					me._glayers = [];
+				}
 		
-		/** 
-		 * create api layer from chart option with user selected layers
-		 */
-		me.load_api_layers(owner, results);
-	
-		/**
-		 * data visualization routine with report result set
-		 */
-		me.setData(owner, results);
+				me._glayers = me._glayers || [];
+				
+				/** 
+				 * create api layer from chart option with user selected layers
+				 */
+				me.load_api_layers(owner, results);
+			
+				/**
+				 * data visualization routine with report result set
+				 */
+				me.setData(owner, results);
+			});
+			
+			if (!map_inst)
+			{
+				me.map_initialize(owner, owner.container, callback);
+				map_inst = me.map_inst;
+			}
+			else
+			{
+				callback.execute();
+			}
+		})
 	});
 }
 
@@ -637,26 +667,28 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			mlng = (maxLng + minLng) / 2;
 			mlat = (maxLat + minLat) / 2;
 			
-			var mpoint = new esri.Point(mlng, mlat);
+			var mpoint = new esri.Point(mlng, mlat, new esri.SpatialReference({wkid:4326}));
 			if (copsettings && copsettings.m_map_center == "-")
 			{
 				// ignore settings
+				map.setZoom(defaultLevel);
 			}
 			else
 			{
+				mpoint = esri.webMercatorUtils.geographicToWebMercator(mpoint);
+				
 				if (copsettings && !copsettings.m_map_center && ig$.geo_map_center && ig$.geo_map_center == "-")
 				{
 					// ignore
+					map.setZoom(defaultLevel);
 				}
 				else
 				{
-					map.centerAt(mpoint);
+					map.centerAndZoom(mpoint, defaultLevel);
 				}
 			}
 		}
 	}
-
-	map.setZoom(defaultLevel);
 
 	var colfix = results.colfix,
 		rowfix = results.rowfix,
