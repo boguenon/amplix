@@ -118,7 +118,6 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 	
 	me.map_inst = map;
 	
-	
 	map.on("load", function() {
 		if (mapcenter && !isNaN(mapcenter.x) && !isNaN(mapcenter.y))
 		{
@@ -278,6 +277,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		"esri/symbols/SimpleLineSymbol",
 		"esri/Color",
 		"esri/dijit/Legend",
+		"esri/dijit/Print",
 		"esri/tasks/query",
 		"esri/tasks/QueryTask",
 		"esri/geometry/webMercatorUtils",
@@ -293,7 +293,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 		WFSLayer, WMSLayer, WMTSLayer,  
 		SimpleMarkerSymbol, Point, InfoWindowLite, InfoTemplate, Graphic, GraphicsLayer, 
 		Circle, SimpleRenderer, ClassBreaksRenderer, SimpleFillSymbol, SimpleLineSymbol, Color, 
-		Legend, Query, QueryTask,
+		Legend, Print, Query, QueryTask,
 		webMercatorUtils, SpatialReference,
 		ready, domConstruct) {
 			
@@ -340,6 +340,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 					Circle: Circle,
 					Color: Color,
 					Legend: Legend,
+					Print: Print,
 					Query: Query,
 					QueryTask: QueryTask,
 					webMercatorUtils: webMercatorUtils,
@@ -373,6 +374,17 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 			}
 			
 			me._basemap = cop.settings.m_arc_basemap || "streets";
+			
+			if (!me.mapcontainer)
+			{
+				me.mapcontainer = $("<div class='igc-map-container'></div>")
+					.appendTo(owner.container);
+				me.mapcontainer.css({
+					width: "100%",
+					height: "100%",
+					position: "absolute"
+				});
+			}
 			
 			var callback = new IG$.callBackObj(me, function() {
 				var i;
@@ -424,7 +436,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 			
 			if (!map_inst)
 			{
-				me.map_initialize(owner, owner.container, callback);
+				me.map_initialize(owner, me.mapcontainer[0], callback);
 				map_inst = me.map_inst;
 			}
 			else
@@ -545,8 +557,6 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		map = me.map_inst,
 		seriesname,
 		i, j,
-		styles_ = [],
-		sizes = [53, 56, 66, 78, 90],
 		defaultLevel,
 		mlng = 150.644,
 		mlat = -34.397,
@@ -573,18 +583,20 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 	copsettings.m_mid_color && colors.push(copsettings.m_mid_color);
 	copsettings.m_max_color && colors.push(copsettings.m_max_color);
 	
-	for (i = 1; i <= 5; ++i) {
-		styles_.push({
-			'url': "./images/m" + i + ".png",
-			'height': sizes[i - 1],
-			'width': sizes[i - 1]
-		});
-	}
-
 	defaultLevel = parseInt(cop.m_zoom_level) || 11;
 	
 	m_lat = copsettings.m_lat;
 	m_lng = copsettings.m_lng;
+	
+	if (copsettings.m_map_post_exec && ig$.report_script$)
+	{
+		var cfunc = ig$.report_script$[copsettings.m_map_post_exec];
+		
+		if (cfunc && cfunc.pre_handler)
+		{
+			cfunc.pre_handler.call(me, me, results);
+		}
+	}
 		
 	if (results.source != 1)
 	{
@@ -687,6 +699,10 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 					map.centerAndZoom(mpoint, defaultLevel);
 				}
 			}
+		}
+		else
+		{
+			map.setZoom(defaultLevel);
 		}
 	}
 
@@ -1150,7 +1166,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			renderer.addBreak({
           		minValue: minvalue,
           		maxValue: maxvalue,
-          		label: IG$.FormatNumber(minvalue) + " ~ " + IG$.FormatNumber(maxvalue),
+          		label: IG$.FormatNumber(Math.floor(minvalue)) + " ~ " + IG$.FormatNumber(Math.floor(maxvalue)),
           		symbol: new esri.SimpleFillSymbol(
             		"solid", 
             		new esri.SimpleLineSymbol("solid", color1, 1), color1
@@ -1235,15 +1251,6 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			}
 			else
 			{
-				/*
-				if (p.c)
-				{
-					cluster = new ClusterMarker_(pt, p.cc, styles_, 60);
-					cluster.setMap(map);
-				}
-				else
-				{
-				*/``
 				marker = new esri.SimpleMarkerSymbol(); // (oIcon, { title : '��Ŀ : ' + pt.toString() });
 				marker.setSize(m_marker_size);
 				marker.setStyle(esri.SimpleMarkerSymbol[m_marker_symbol]);
@@ -1363,6 +1370,14 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 				me.map_legend_inst.refresh();
 			}
 		}
+		else
+		{
+			me.map_legend$.hide();
+		}
+	}
+	else
+	{
+		me.map_legend$.hide();
 	}
 	
 	if (copsettings.m_map_post_exec && ig$.report_script$)

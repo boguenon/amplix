@@ -9,18 +9,19 @@ IG$.cSET/* chartOptionSet */= "f_palette;f_showvalues;m_zoom_level;m_marker;m_mi
 
 IG$._customChartPanels = function() {
 	return [
-	// p2 panel
-	// for map chart extension
+	// p1 panel
+	// for map chart options
 	{
 		layout: {
 			type: "vbox",
 			align: "stretch"
 		},
 		border: 0,
-		title: IRm$.r1("L_EXTRA_OPTIONS"), // "Extra Options",
+		title: IRm$.r1("L_MAP_OPTIONS"), // "Extra Options",
 		defaults: {
 			anchor: "100%"
 		},
+		
 		autoScroll: true,
 		
 		initData: function() {
@@ -74,23 +75,7 @@ IG$._customChartPanels = function() {
 					}
 				});
 				
-				if (ig$.svg_renderers)
-				{
-					var dp = [{name: IRm$.r1("B_SELECT"), value: ""}],
-						renderers = ig$.svg_renderers.split("\n");
-					
-					$.each(renderers, function(i, r) {
-						var p = r.split(",");
-						if (p.length > 1)
-						{
-							dp.push({name: p[0], value: p[1]});
-						}
-					});
-					
-					me.down("[name=m_svgtype]").store.loadData(dp);
-				}
-				
-				me.down("[name=m_lat]").store.loadData(d1);
+								me.down("[name=m_lat]").store.loadData(d1);
 				me.down("[name=m_lng]").store.loadData(d2);
 				me.down("[name=m_color_categ]").store.loadData(d3);
 				me.down("[name=m_geofield]").store.loadData(d4);
@@ -128,8 +113,8 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_lat]").setValue(d1val);
 				me.down("[name=m_lng]").setValue(d2val);
 				me.down("[name=m_geofield]").setValue(d3val);
-				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
-				me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
+				
+								me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
 				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
 				// me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
@@ -242,7 +227,7 @@ IG$._customChartPanels = function() {
 				}
 			}
 		},
-
+		
 		updateOptionValues: function() {
 			var me = this, 
 				ma = me.__main__,
@@ -267,7 +252,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_lat = me.down("[name=m_lat]").getValue();
 				option.settings.m_lng = me.down("[name=m_lng]").getValue();
 				option.settings.m_geofield = me.down("[name=m_geofield]").getValue();
-				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
+				
 				option.settings.m_color_categ = me.down("[name=m_color_categ]").getValue();
 				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
 				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
@@ -288,23 +273,26 @@ IG$._customChartPanels = function() {
 				}
 			}
 		},
+		
 		invalidateFields: function(opt) {
 			var me = this, subtype = opt.subtype;
 			
 			var _esri_version = ig$.arcgis_version || "0";
 			
 			_esri_version = Math.floor(Number(_esri_version));
-
+			
+			/*
 			me.down("[name=pb01]").setVisible(
 				subtype == "googlemap" ||
 				subtype == "navermap" ||
 				subtype == "esri" ||
 				subtype == "vworldmap");
+			*/
+				
 			me.down("[name=m_xypos]").setVisible(subtype == "vworldmap");
-			me.down("[name=pb02]").setVisible(subtype == "kpi");
 			me.down("[name=m_arc_basemap]").setVisible(subtype == "esri");
 			me.down("[name=m_arc_view]").setVisible(subtype == "esri" && _esri_version > 3);
-			me.down("[name=pb03]").setVisible(subtype == "svgmap");
+			me.down("[name=m_map_camera]").setVisible(subtype == "esri" && _esri_version > 3);
 			
 			if (ig$.arcgis_rest$)
 			{
@@ -355,12 +343,13 @@ IG$._customChartPanels = function() {
 			me.down("[name=m_arc_layers]").setVisible(subtype == "esri" && ig$.arcgis_rest$ && ig$.arcgis_rest$.length);
 			me.down("[name=m_arc_options]").setVisible(subtype == "esri");
 		},
+		
 		items: [
 			{
 				xtype: "container",
 				layout: "anchor",
 				name: "pb01",
-				hidden: true,
+				// hidden: true,
 				items: [
 					{
 						xtype: "fieldset",
@@ -812,7 +801,76 @@ IG$._customChartPanels = function() {
 						]
 					}
 				]
-			},
+			}
+		],
+		listeners: {
+			afterrender: function(p) {
+				p.initData.call(p);
+			}
+		}
+	},
+	// p2 panel
+	// for extra chart extension
+	{
+		layout: {
+			type: "vbox",
+			align: "stretch"
+		},
+		border: 0,
+		title: IRm$.r1("L_EXTRA_OPTIONS"), // "Extra Options",
+		defaults: {
+			anchor: "100%"
+		},
+		
+		autoScroll: true,
+		
+		initData: function() {
+			var me = this, 
+				ma = me.__main__,
+				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
+
+			if (option) {
+				option.settings = option.settings || {};
+				
+				if (ig$.svg_renderers)
+				{
+					var dp = [{name: IRm$.r1("B_SELECT"), value: ""}],
+						renderers = ig$.svg_renderers.split("\n");
+					
+					$.each(renderers, function(i, r) {
+						var p = r.split(",");
+						if (p.length > 1)
+						{
+							dp.push({name: p[0], value: p[1]});
+						}
+					});
+					
+					me.down("[name=m_svgtype]").store.loadData(dp);
+				}
+				
+				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
+
+			}
+		},
+
+		updateOptionValues: function() {
+			var me = this, 
+				ma = me.__main__,
+				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
+
+			if (option) {
+				option.settings = option.settings || {};
+				
+				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
+			}
+		},
+		invalidateFields: function(opt) {
+			var me = this, subtype = opt.subtype;
+			
+			me.down("[name=pb02]").setVisible(subtype == "kpi");
+			me.down("[name=pb03]").setVisible(subtype == "svgmap");
+		},
+		items: [
 			{
 				xtype: "fieldset",
 				title: IRm$.r1("L_KPI_INDI"), // "KPI Indicator",
