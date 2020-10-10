@@ -86,6 +86,10 @@
 	<appender name="FILE_ASYNC" class="ch.qos.logback.classic.AsyncAppender">
 		<appender-ref ref="FILE"/>
 	</appender>
+	
+	<logger name="org.apache" level="WARN" />
+    <logger name="httpclient" level="WARN" />
+     
 	<!-- TRACE, DEBUG, INFO, WARN and ERROR -->
 	<root level="debug">
 		<appender-ref ref="STDOUT"/>
