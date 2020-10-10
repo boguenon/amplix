@@ -6704,5 +6704,97 @@
     "group" : "locale_ja_JP_0017",
     "name" : "L_SK_RPT",
     "value" : "Search in navigation"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CATEGORY",
+    "value" : "Category"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_CHECK_EMAIL",
+    "value" : "Check Email"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_RCPTS",
+    "value" : "Recipients"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "M_SMTP_TST",
+    "value" : "Wow! email sent with configuration. Please check on the INBOX test email from us!"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "T_USERS",
+    "value" : "Users"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_RECENT_SUBJECT",
+    "value" : "Recent Subject"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_SEARCH_RESULT",
+    "value" : "Search Results"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "B_SUC",
+    "value" : "Success"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "B_FAIL",
+    "value" : "Fail"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "S_READ",
+    "value" : "Read"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "S_UPDATE",
+    "value" : "Update"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "S_LOGOUT",
+    "value" : "Logout"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "S_DELETE",
+    "value" : "Delete"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "S_WRITE",
+    "value" : "Write"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "S_SECURITY",
+    "value" : "Security"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "S_NA",
+    "value" : "Not Available"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_TWOWAY_AUTH",
+    "value" : "Two-way Auth"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_H2_PERSIST_ENABLED",
+    "value" : "H2 Persist DB"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_ARC_VIEW",
+    "value" : "ArcGIS View"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_MAP_CAMERA",
+    "value" : "Map Camera"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_DEL_FLT",
+    "value" : "Click to remove filter item"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_FLT_MG_LEFT",
+    "value" : "Click to merge left"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_FLT_ST_ROW",
+    "value" : "Click to start row"
   } ]
 }
