@@ -22,9 +22,6 @@
   },
   "themes" : [ {
     "name" : "base_theme",
-    "c_cset" : "office_2013",
-    "gs_col" : "",
-    "gs_bs_brd_col" : "",
     "gs_enable" : false,
     "gs_opa" : 0.6,
     "default_styles" : [ {
@@ -1352,7 +1349,7 @@
     } ]
   }, {
     "name" : "DesertLight",
-    "c_cset" : "",
+    "c_cset" : "office_2013",
     "gs_col" : "",
     "gs_bs_brd_col" : "",
     "gs_enable" : false,
@@ -2644,9 +2641,6 @@
     } ]
   }, {
     "name" : "DarkBrown",
-    "c_cset" : "",
-    "gs_col" : "",
-    "gs_bs_brd_col" : "",
     "gs_enable" : false,
     "gs_opa" : 0.6,
     "default_styles" : [ {
