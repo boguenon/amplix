@@ -156,3 +156,14 @@ A;L_MAP_CAMERA;Map Camera
 A;L_DEL_FLT;Click to remove filter item
 A;L_FLT_MG_LEFT;Click to merge left
 A;L_FLT_ST_ROW;Click to start row
+
+A;L_PKG_LST;Java Import
+A;L_DETAILED_STAT;Status Detail
+A;L_EDIT_JOB;Edit Job
+A;L_CANCEL_JOB;Cancel Job
+A;L_PURGE_JOB;Purge Job
+A;L_PICKUP_DATE;Pickup Date
+A;L_STARTED_DATE;Started Date
+A;L_EXEC_LOG;Execution Log
+A;L_MIN_A_COLOR;Level 2 Color
+A;L_MID_A_COLOR;Level 4 Color
