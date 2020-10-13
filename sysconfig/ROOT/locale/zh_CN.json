@@ -6796,5 +6796,45 @@
     "group" : "locale_zh_CN_0017",
     "name" : "L_FLT_ST_ROW",
     "value" : "Click to start row"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PKG_LST",
+    "value" : "Java Import"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_DETAILED_STAT",
+    "value" : "Status Detail"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_EDIT_JOB",
+    "value" : "Edit Job"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_CANCEL_JOB",
+    "value" : "Cancel Job"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PURGE_JOB",
+    "value" : "Purge Job"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PICKUP_DATE",
+    "value" : "Pickup Date"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_STARTED_DATE",
+    "value" : "Started Date"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_EXEC_LOG",
+    "value" : "Execution Log"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MIN_A_COLOR",
+    "value" : "Level 2 Color"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MID_A_COLOR",
+    "value" : "Level 4 Color"
   } ]
 }

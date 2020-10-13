@@ -6867,5 +6867,45 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_FLT_ST_ROW",
     "value" : "다음줄로 내리기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PKG_LST",
+    "value" : "자바 패키지"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_DETAILED_STAT",
+    "value" : "상세 현황"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_EDIT_JOB",
+    "value" : "작업 편집하기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CANCEL_JOB",
+    "value" : "작업 취소하기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PURGE_JOB",
+    "value" : "작업 영구삭제"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PICKUP_DATE",
+    "value" : "픽업 일시"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_STARTED_DATE",
+    "value" : "시작 일시"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_EXEC_LOG",
+    "value" : "실행 로그"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MIN_A_COLOR",
+    "value" : "2단계 색상"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MID_A_COLOR",
+    "value" : "4단계 색상"
   } ]
 }
