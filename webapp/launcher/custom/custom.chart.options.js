@@ -104,8 +104,10 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_min]").setValue(option.m_min || "1000");
 				me.down("[name=m_max]").setValue(option.m_max || "10000");
 				me.down("[name=m_min_color]").setValue(option.settings.m_min_color || "#e60000"); // red
-				me.down("[name=m_mid_color]").setValue(option.settings.m_mid_color || "#0000e6"); // blue
-				me.down("[name=m_max_color]").setValue(option.settings.m_max_color || "#00e600"); // green
+				me.down("[name=m_min_a_color]").setValue(option.settings.m_min_a_color || "#A3A300"); // red
+				me.down("[name=m_mid_color]").setValue(option.settings.m_mid_color || "#00e600"); // blue
+				me.down("[name=m_mid_a_color]").setValue(option.settings.m_mid_a_color || "#51FFFF"); // red
+				me.down("[name=m_max_color]").setValue(option.settings.m_max_color || "#0000e6"); // green
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
 				me.down("[name=m_map_center]").setValue(option.settings.m_map_center || "");
@@ -241,7 +243,9 @@ IG$._customChartPanels = function() {
 				option.m_min = "" + me.down("[name=m_min]").getValue();
 				option.m_max = "" + me.down("[name=m_max]").getValue();
 				option.settings.m_min_color = me.down("[name=m_min_color]").getValue();
+				option.settings.m_min_a_color = me.down("[name=m_min_a_color]").getValue();
 				option.settings.m_mid_color = me.down("[name=m_mid_color]").getValue();
+				option.settings.m_mid_a_color = me.down("[name=m_mid_a_color]").getValue();
 				option.settings.m_max_color = me.down("[name=m_max_color]").getValue();
 				option.cdata_m_tmpl = me.down("[name=cdata_m_tmpl]").getValue();
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
@@ -548,6 +552,49 @@ IG$._customChartPanels = function() {
 									{
 										xtype: "fieldcontainer",
 										anchor: "100%",
+										fieldLabel: IRm$.r1("L_MIN_A_COLOR"),
+										layout: {
+											type: "hbox",
+											align: "stretch"
+										},
+										items: [
+											{
+												xtype: "textfield",
+												name: "m_min_a_color",
+												width: 120
+											},
+											{
+												xtype: "splitter"
+											},
+											{
+												xtype: "splitbutton",
+												width: 30,
+												menu: {
+													showSeparator: false,
+													items: [
+														{
+															xtype: "colorpicker",
+															listeners: {
+																select: function(cp, color) {
+																	var ctrl = this.down("[name=m_min_a_color]");
+																	ctrl.setValue("#" + color);
+																},
+																scope: this
+															}
+														}, 
+														"-"
+													]
+												}
+											},
+											{
+												xtype: "container",
+												flex: 1
+											}
+										]
+									},
+									{
+										xtype: "fieldcontainer",
+										anchor: "100%",
 										fieldLabel: IRm$.r1("L_MID_COLOR"),
 										layout: {
 											type: "hbox",
@@ -573,6 +620,49 @@ IG$._customChartPanels = function() {
 															listeners: {
 																select: function(cp, color) {
 																	var ctrl = this.down("[name=m_mid_color]");
+																	ctrl.setValue("#" + color);
+																},
+																scope: this
+															}
+														}, 
+														"-"
+													]
+												}
+											},
+											{
+												xtype: "container",
+												flex: 1
+											}
+										]
+									},
+									{
+										xtype: "fieldcontainer",
+										anchor: "100%",
+										fieldLabel: IRm$.r1("L_MID_A_COLOR"),
+										layout: {
+											type: "hbox",
+											align: "stretch"
+										},
+										items: [
+											{
+												xtype: "textfield",
+												name: "m_mid_a_color",
+												width: 120
+											},
+											{
+												xtype: "splitter"
+											},
+											{
+												xtype: "splitbutton",
+												width: 30,
+												menu: {
+													showSeparator: false,
+													items: [
+														{
+															xtype: "colorpicker",
+															listeners: {
+																select: function(cp, color) {
+																	var ctrl = this.down("[name=m_mid_a_color]");
 																	ctrl.setValue("#" + color);
 																},
 																scope: this

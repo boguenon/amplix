@@ -580,7 +580,9 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 	cop.m_marker = cop.m_marker || "marker";
 		
 	copsettings.m_min_color && colors.push(copsettings.m_min_color);
+	copsettings.m_min_a_color && colors.push(copsettings.m_min_a_color);
 	copsettings.m_mid_color && colors.push(copsettings.m_mid_color);
+	copsettings.m_mid_a_color && colors.push(copsettings.m_mid_a_color);
 	copsettings.m_max_color && colors.push(copsettings.m_max_color);
 	
 	defaultLevel = parseInt(cop.m_zoom_level) || 11;
