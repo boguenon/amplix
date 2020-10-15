@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
     request.setCharacterEncoding("utf-8");
 %>
@@ -13,11 +13,11 @@
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
 
-<script type="text/javascript" src="./js/jquery-3.5.1.min.js?_dc=202010071820"></script>
+<script type="text/javascript" src="./js/jquery-3.5.1.min.js?_dc=202010151149"></script>
 
-<script type="text/javascript" src="../config.js?_dc=202010071820"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202010071820"></script>
-<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202010071820"></script>
+<script type="text/javascript" src="../config.js?_dc=202010151149"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202010151149"></script>
+<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202010151149"></script>
 <script type="text/javascript">
 $(function(){
   $("#nav > ul > li > a").mouseover(function(){      

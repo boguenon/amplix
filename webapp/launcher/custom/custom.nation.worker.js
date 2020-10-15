@@ -1,4 +1,4 @@
-IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
+﻿IG$.__chartoption.chartext.nation.prototype.drawNationChart = function() {
 	var me = this,
 		owner = me.owner,
 		results = me.results,

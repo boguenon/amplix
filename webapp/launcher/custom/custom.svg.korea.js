@@ -1,4 +1,4 @@
-IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
+﻿IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.__chartoption.charttype.push(
 	{

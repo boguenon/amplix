@@ -19,6 +19,7 @@ public class ${CLASS_NAME}
 	private static final Logger logger = LoggerFactory.getLogger(${CLASS_NAME}.class);
 	
 	public void execute()
+		throws Exception
 	{
 		PreparedStatement pstmt = null;
 		
@@ -33,6 +34,7 @@ public class ${CLASS_NAME}
 		catch (Exception ex)
 		{
 			logger.error("execute quartz job", ex);
+			throw ex;
 		}
 		finally
 		{
@@ -47,6 +49,8 @@ public class ${CLASS_NAME}
 			}
 		}
 	}
+	
+	${JAVA_EXTRA}
 	
 	@Override
 	public void dispose() {

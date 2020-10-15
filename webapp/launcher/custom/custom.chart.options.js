@@ -1,4 +1,4 @@
-// make custom chart wizard panels
+﻿// make custom chart wizard panels
 
 IG$.__chartoption.chartcateg.push({
 	name: "Time based Stock Chart",
@@ -9,18 +9,19 @@ IG$.cSET/* chartOptionSet */= "f_palette;f_showvalues;m_zoom_level;m_marker;m_mi
 
 IG$._customChartPanels = function() {
 	return [
-	// p2 panel
-	// for map chart extension
+	// p1 panel
+	// for map chart options
 	{
 		layout: {
 			type: "vbox",
 			align: "stretch"
 		},
 		border: 0,
-		title: IRm$.r1("L_EXTRA_OPTIONS"), // "Extra Options",
+		title: IRm$.r1("L_MAP_OPTIONS"), // "Extra Options",
 		defaults: {
 			anchor: "100%"
 		},
+		
 		autoScroll: true,
 		
 		initData: function() {
@@ -74,23 +75,7 @@ IG$._customChartPanels = function() {
 					}
 				});
 				
-				if (ig$.svg_renderers)
-				{
-					var dp = [{name: IRm$.r1("B_SELECT"), value: ""}],
-						renderers = ig$.svg_renderers.split("\n");
-					
-					$.each(renderers, function(i, r) {
-						var p = r.split(",");
-						if (p.length > 1)
-						{
-							dp.push({name: p[0], value: p[1]});
-						}
-					});
-					
-					me.down("[name=m_svgtype]").store.loadData(dp);
-				}
-				
-				me.down("[name=m_lat]").store.loadData(d1);
+								me.down("[name=m_lat]").store.loadData(d1);
 				me.down("[name=m_lng]").store.loadData(d2);
 				me.down("[name=m_color_categ]").store.loadData(d3);
 				me.down("[name=m_geofield]").store.loadData(d4);
@@ -119,8 +104,10 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_min]").setValue(option.m_min || "1000");
 				me.down("[name=m_max]").setValue(option.m_max || "10000");
 				me.down("[name=m_min_color]").setValue(option.settings.m_min_color || "#e60000"); // red
-				me.down("[name=m_mid_color]").setValue(option.settings.m_mid_color || "#0000e6"); // blue
-				me.down("[name=m_max_color]").setValue(option.settings.m_max_color || "#00e600"); // green
+				me.down("[name=m_min_a_color]").setValue(option.settings.m_min_a_color || "#A3A300"); // red
+				me.down("[name=m_mid_color]").setValue(option.settings.m_mid_color || "#00e600"); // blue
+				me.down("[name=m_mid_a_color]").setValue(option.settings.m_mid_a_color || "#51FFFF"); // red
+				me.down("[name=m_max_color]").setValue(option.settings.m_max_color || "#0000e6"); // green
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
 				me.down("[name=m_map_center]").setValue(option.settings.m_map_center || "");
@@ -128,8 +115,8 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_lat]").setValue(d1val);
 				me.down("[name=m_lng]").setValue(d2val);
 				me.down("[name=m_geofield]").setValue(d3val);
-				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
-				me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
+				
+								me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
 				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
 				// me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
@@ -242,7 +229,7 @@ IG$._customChartPanels = function() {
 				}
 			}
 		},
-
+		
 		updateOptionValues: function() {
 			var me = this, 
 				ma = me.__main__,
@@ -256,7 +243,9 @@ IG$._customChartPanels = function() {
 				option.m_min = "" + me.down("[name=m_min]").getValue();
 				option.m_max = "" + me.down("[name=m_max]").getValue();
 				option.settings.m_min_color = me.down("[name=m_min_color]").getValue();
+				option.settings.m_min_a_color = me.down("[name=m_min_a_color]").getValue();
 				option.settings.m_mid_color = me.down("[name=m_mid_color]").getValue();
+				option.settings.m_mid_a_color = me.down("[name=m_mid_a_color]").getValue();
 				option.settings.m_max_color = me.down("[name=m_max_color]").getValue();
 				option.cdata_m_tmpl = me.down("[name=cdata_m_tmpl]").getValue();
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
@@ -267,7 +256,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_lat = me.down("[name=m_lat]").getValue();
 				option.settings.m_lng = me.down("[name=m_lng]").getValue();
 				option.settings.m_geofield = me.down("[name=m_geofield]").getValue();
-				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
+				
 				option.settings.m_color_categ = me.down("[name=m_color_categ]").getValue();
 				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
 				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
@@ -288,23 +277,26 @@ IG$._customChartPanels = function() {
 				}
 			}
 		},
+		
 		invalidateFields: function(opt) {
 			var me = this, subtype = opt.subtype;
 			
 			var _esri_version = ig$.arcgis_version || "0";
 			
 			_esri_version = Math.floor(Number(_esri_version));
-
+			
+			/*
 			me.down("[name=pb01]").setVisible(
 				subtype == "googlemap" ||
 				subtype == "navermap" ||
 				subtype == "esri" ||
 				subtype == "vworldmap");
+			*/
+				
 			me.down("[name=m_xypos]").setVisible(subtype == "vworldmap");
-			me.down("[name=pb02]").setVisible(subtype == "kpi");
 			me.down("[name=m_arc_basemap]").setVisible(subtype == "esri");
 			me.down("[name=m_arc_view]").setVisible(subtype == "esri" && _esri_version > 3);
-			me.down("[name=pb03]").setVisible(subtype == "svgmap");
+			me.down("[name=m_map_camera]").setVisible(subtype == "esri" && _esri_version > 3);
 			
 			if (ig$.arcgis_rest$)
 			{
@@ -355,12 +347,13 @@ IG$._customChartPanels = function() {
 			me.down("[name=m_arc_layers]").setVisible(subtype == "esri" && ig$.arcgis_rest$ && ig$.arcgis_rest$.length);
 			me.down("[name=m_arc_options]").setVisible(subtype == "esri");
 		},
+		
 		items: [
 			{
 				xtype: "container",
 				layout: "anchor",
 				name: "pb01",
-				hidden: true,
+				// hidden: true,
 				items: [
 					{
 						xtype: "fieldset",
@@ -559,6 +552,49 @@ IG$._customChartPanels = function() {
 									{
 										xtype: "fieldcontainer",
 										anchor: "100%",
+										fieldLabel: IRm$.r1("L_MIN_A_COLOR"),
+										layout: {
+											type: "hbox",
+											align: "stretch"
+										},
+										items: [
+											{
+												xtype: "textfield",
+												name: "m_min_a_color",
+												width: 120
+											},
+											{
+												xtype: "splitter"
+											},
+											{
+												xtype: "splitbutton",
+												width: 30,
+												menu: {
+													showSeparator: false,
+													items: [
+														{
+															xtype: "colorpicker",
+															listeners: {
+																select: function(cp, color) {
+																	var ctrl = this.down("[name=m_min_a_color]");
+																	ctrl.setValue("#" + color);
+																},
+																scope: this
+															}
+														}, 
+														"-"
+													]
+												}
+											},
+											{
+												xtype: "container",
+												flex: 1
+											}
+										]
+									},
+									{
+										xtype: "fieldcontainer",
+										anchor: "100%",
 										fieldLabel: IRm$.r1("L_MID_COLOR"),
 										layout: {
 											type: "hbox",
@@ -584,6 +620,49 @@ IG$._customChartPanels = function() {
 															listeners: {
 																select: function(cp, color) {
 																	var ctrl = this.down("[name=m_mid_color]");
+																	ctrl.setValue("#" + color);
+																},
+																scope: this
+															}
+														}, 
+														"-"
+													]
+												}
+											},
+											{
+												xtype: "container",
+												flex: 1
+											}
+										]
+									},
+									{
+										xtype: "fieldcontainer",
+										anchor: "100%",
+										fieldLabel: IRm$.r1("L_MID_A_COLOR"),
+										layout: {
+											type: "hbox",
+											align: "stretch"
+										},
+										items: [
+											{
+												xtype: "textfield",
+												name: "m_mid_a_color",
+												width: 120
+											},
+											{
+												xtype: "splitter"
+											},
+											{
+												xtype: "splitbutton",
+												width: 30,
+												menu: {
+													showSeparator: false,
+													items: [
+														{
+															xtype: "colorpicker",
+															listeners: {
+																select: function(cp, color) {
+																	var ctrl = this.down("[name=m_mid_a_color]");
 																	ctrl.setValue("#" + color);
 																},
 																scope: this
@@ -812,7 +891,76 @@ IG$._customChartPanels = function() {
 						]
 					}
 				]
-			},
+			}
+		],
+		listeners: {
+			afterrender: function(p) {
+				p.initData.call(p);
+			}
+		}
+	},
+	// p2 panel
+	// for extra chart extension
+	{
+		layout: {
+			type: "vbox",
+			align: "stretch"
+		},
+		border: 0,
+		title: IRm$.r1("L_EXTRA_OPTIONS"), // "Extra Options",
+		defaults: {
+			anchor: "100%"
+		},
+		
+		autoScroll: true,
+		
+		initData: function() {
+			var me = this, 
+				ma = me.__main__,
+				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
+
+			if (option) {
+				option.settings = option.settings || {};
+				
+				if (ig$.svg_renderers)
+				{
+					var dp = [{name: IRm$.r1("B_SELECT"), value: ""}],
+						renderers = ig$.svg_renderers.split("\n");
+					
+					$.each(renderers, function(i, r) {
+						var p = r.split(",");
+						if (p.length > 1)
+						{
+							dp.push({name: p[0], value: p[1]});
+						}
+					});
+					
+					me.down("[name=m_svgtype]").store.loadData(dp);
+				}
+				
+				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
+
+			}
+		},
+
+		updateOptionValues: function() {
+			var me = this, 
+				ma = me.__main__,
+				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
+
+			if (option) {
+				option.settings = option.settings || {};
+				
+				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
+			}
+		},
+		invalidateFields: function(opt) {
+			var me = this, subtype = opt.subtype;
+			
+			me.down("[name=pb02]").setVisible(subtype == "kpi");
+			me.down("[name=pb03]").setVisible(subtype == "svgmap");
+		},
+		items: [
 			{
 				xtype: "fieldset",
 				title: IRm$.r1("L_KPI_INDI"), // "KPI Indicator",

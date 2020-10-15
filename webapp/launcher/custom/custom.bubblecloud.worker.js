@@ -1,4 +1,4 @@
-IG$.__chartoption.chartext.bubblecloud.prototype.drawBubbleCloud = function() {
+﻿IG$.__chartoption.chartext.bubblecloud.prototype.drawBubbleCloud = function() {
 	var me = this,
 		owner = me.owner,
 		results = me.results,

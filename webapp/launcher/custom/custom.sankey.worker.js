@@ -1,4 +1,4 @@
-IG$.__chartoption.chartext.sankey.prototype.buildNode = function(results, snode) {
+﻿IG$.__chartoption.chartext.sankey.prototype.buildNode = function(results, snode) {
 	var colfix = results.colfix,
 		rowfix = results.rowfix,
 		data = results._tabledata,

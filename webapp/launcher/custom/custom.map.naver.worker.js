@@ -1,4 +1,4 @@
-IG$.__chartoption.chartext.navermap.prototype._tmpl = function(tmpl, dpoint, gmap) {
+﻿IG$.__chartoption.chartext.navermap.prototype._tmpl = function(tmpl, dpoint, gmap) {
 	var r = tmpl,
 		pdata = dpoint.data,
 		k, s, m, c;

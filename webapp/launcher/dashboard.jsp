@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
     request.setCharacterEncoding("utf-8");
 	String _d = request.getParameter("_d");
@@ -26,22 +26,22 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202010071820" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202010151149" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202010071820" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202010151149" />
 <% } %>
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202010071820\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202010151149\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202010071820" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202010151149" />
 
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202010071820"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202010071820"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202010071820"></script>
+<script type="text/javascript" src="../config.js?_dc=202010151149"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202010151149"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202010151149"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -71,30 +71,6 @@ function getLocale()
 }
 
 getLocale();
-
-var _report_prompt = [];
-<%
-String param_names = request.getParameter("param_names");
-String[] params = (param_names != null && param_names.equals("") == false) ? param_names.split(";") : null;
-
-if (params != null)
-{
-    for (int i=0; i < params.length; i++)
-    {
-        String pname = params[i];
-        
-        if (pname.equals("") == false)
-        {
-            String pvalue = request.getParameter(pname);
-            
-            if (pvalue != null && pvalue.equals("") == false)
-            {
-                out.println("_report_prompt.push({name: \"" + pname + "\", values: [{code: \"" + pvalue + "\", value: \"" + pvalue + "\"}]});\n");
-            }
-        }
-    }
-} 
-%>
 
 function loadParameter(param) {
     window._report_prompt = [];
@@ -208,7 +184,7 @@ IG$.ready(function() {
 
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202010071820"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202010151149"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",

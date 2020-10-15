@@ -159,3 +159,14 @@ A;L_MAP_CAMERA;맵 카메라
 A;L_DEL_FLT;필터 제거
 A;L_FLT_MG_LEFT;타이틀 왼편으로 붙이기
 A;L_FLT_ST_ROW;다음줄로 내리기
+
+A;L_PKG_LST;자바 패키지
+A;L_DETAILED_STAT;상세 현황
+A;L_EDIT_JOB;작업 편집하기
+A;L_CANCEL_JOB;작업 취소하기
+A;L_PURGE_JOB;작업 영구삭제
+A;L_PICKUP_DATE;픽업 일시
+A;L_STARTED_DATE;시작 일시
+A;L_EXEC_LOG;실행 로그
+A;L_MIN_A_COLOR;2단계 색상
+A;L_MID_A_COLOR;4단계 색상

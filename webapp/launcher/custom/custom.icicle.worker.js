@@ -1,4 +1,4 @@
-IG$.__chartoption.chartext.icicle.prototype.drawIcicle = function() {
+﻿IG$.__chartoption.chartext.icicle.prototype.drawIcicle = function() {
 	var me = this,
 		owner = me.owner,
 		results = me.results,

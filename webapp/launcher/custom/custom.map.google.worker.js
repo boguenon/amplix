@@ -1,4 +1,4 @@
-IG$.__chartoption.chartext.googlemap.prototype.google_initialize = function(container) {
+﻿IG$.__chartoption.chartext.googlemap.prototype.google_initialize = function(container) {
 	var me = this,
 		mapOptions = {
 		zoom: 8,
