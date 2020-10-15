@@ -1,4 +1,4 @@
-IG$.__chartoption.chartext.circlepacking.prototype.drawCirclePacking = function() {
+﻿IG$.__chartoption.chartext.circlepacking.prototype.drawCirclePacking = function() {
 	var me = this,
 		owner = me.owner,
 		results = me.results,

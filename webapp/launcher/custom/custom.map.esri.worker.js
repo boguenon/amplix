@@ -1,4 +1,4 @@
-/**
+﻿/**
  * create chart instance
  */
 IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, container, callback) {

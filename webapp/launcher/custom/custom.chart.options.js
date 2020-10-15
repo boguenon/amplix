@@ -1,4 +1,4 @@
-// make custom chart wizard panels
+﻿// make custom chart wizard panels
 
 IG$.__chartoption.chartcateg.push({
 	name: "Time based Stock Chart",

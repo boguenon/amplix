@@ -1,4 +1,4 @@
-if (!IG$.geocoder)
+﻿if (!IG$.geocoder)
 {
 	IG$.geocoder = {};
 }

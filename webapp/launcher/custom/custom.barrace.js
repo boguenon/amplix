@@ -1,4 +1,4 @@
-IG$.__chartoption.charttype.push(
+﻿IG$.__chartoption.charttype.push(
     {
         label: "Bar Chart Race",
         charttype: "barrace",

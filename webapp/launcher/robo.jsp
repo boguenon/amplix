@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
     request.setCharacterEncoding("utf-8");
 %>
@@ -17,7 +17,7 @@ body {
 	overflow-x: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202010141419"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202010151146"></link>
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript">
 var assist_message = [

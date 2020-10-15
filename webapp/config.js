@@ -1,4 +1,4 @@
-var ig$ = {
+﻿var ig$ = {
     useLocale: "en_US",
     servlet: "../servlet/krcp",
     companyname: "amplix",
@@ -70,10 +70,10 @@ var ig$ = {
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202010141419",
+		date: "202010151146",
 		appversion: "",
 		apprelease: "",
-		web_revision: "1740-4.13-667-g8ccbcb4a"
+		web_revision: "1743-4.13-670-g889d12d7"
 	},
 	$l_:0
 };

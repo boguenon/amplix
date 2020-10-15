@@ -1,4 +1,4 @@
-IG$.__chartoption.chartext.barrace.prototype.drawBarChartRace = function() {
+﻿IG$.__chartoption.chartext.barrace.prototype.drawBarChartRace = function() {
 	var me = this,
 		owner = me.owner,
 		results = me.results,

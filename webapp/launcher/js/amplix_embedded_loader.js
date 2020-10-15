@@ -1,4 +1,4 @@
-if (!window.IG$)
+﻿if (!window.IG$)
 {
 	window.IG$ = {};
 }

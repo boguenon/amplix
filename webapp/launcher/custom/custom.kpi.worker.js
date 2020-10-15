@@ -1,4 +1,4 @@
-IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
+﻿IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 	title: "Indicator Syntax",

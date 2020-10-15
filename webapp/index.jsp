@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
     request.setCharacterEncoding("utf-8");
     java.text.SimpleDateFormat formatter = new java.text.SimpleDateFormat("yyyyMMddHHmmss");
@@ -14,7 +14,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202010141419" />
+    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202010151146" />
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="./main/css/mainpage_ie.css" />
 <![endif]-->
@@ -24,8 +24,8 @@
     var __mts_id = null;
     var __uri = "<%=uri%>";
    	</script>
-   	<script type="text/javascript" src="./config.js?_dc=202010141419"></script>
-    <script type="text/javascript" src="./main/js/main.min.js?_dc=202010141419"></script>
+   	<script type="text/javascript" src="./config.js?_dc=202010151146"></script>
+    <script type="text/javascript" src="./main/js/main.min.js?_dc=202010151146"></script>
 </head>
 <body class="index nav-light hoverable">
 	
