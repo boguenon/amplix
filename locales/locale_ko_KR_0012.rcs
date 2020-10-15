@@ -4,7 +4,7 @@ A;L_CHART_SEL_HOR;수평 선택
 A;L_CHART_SEL_VER;수직 선택
 A;L_CHART_SEL_KEEP;이전 선택 유지하기
 A;L_CHART_SEL_CLEAR;선택 취소
-A;L_HOME_APP_TITLE;<h1AMPLIX 비즈니스 분석 솔류션</h1>
+A;L_HOME_APP_TITLE;<h1>AMPLIX 비즈니스 분석 솔류션</h1>
 A;L_HOME_APP_DESC;데이타 시각화를 활용한 분석 보고서를 생성해 보십시오.<br/>AMPLIX에서 제공하는 과학적인 도구 및 분석 UI는 당신의 과학적이고 직관적인 데이타 분석을 완료하고 성공적인 비즈니스 환경에 대응하는데 도움이 되도록 설계되어 있습니다.
 A;L_CHART_Z_A;영역 확대
 A;L_CHART_Z_B;확대 초기화
