@@ -1312,23 +1312,26 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 			_run_click_handler(p.data, pt);
 		});
 		
-		g.on("mouse-over", function(evt) {
-			var gp = evt.graphic,
-				p,
-				pt;
-	
-			if (!gp)
-				return;
+		if (copsettings.m_map_popup_hover)
+		{
+			g.on("mouse-over", function(evt) {
+				var gp = evt.graphic,
+					p,
+					pt;
+		
+				if (!gp)
+					return;
+					
+				p = gp.p;
 				
-			p = gp.p;
-			
-			if (!p)
-				return;
+				if (!p)
+					return;
+					
+				pt = gp.pt;
 				
-			pt = gp.pt;
-				
-			_run_click_handler(p.data, pt, true);
-		});
+				_run_click_handler(p.data, pt, true);
+			});
+		}
 	}
 	
 	if (cop.showlegend)

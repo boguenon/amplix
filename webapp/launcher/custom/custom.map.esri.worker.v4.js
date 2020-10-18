@@ -1341,67 +1341,70 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		
 		var highlight;
 		
-		map_view.whenLayerView(g).then(function(layerView){
-			map_view.on("pointer-move", function(event) {
-				map_view.hitTest(event).then(function(response) {
-					if (response.results.length) {
-		                var graphics = response.results.filter(function (result) {
-		                  return result.graphic.layer === g;
-		                });
-
-						var graphic = graphics && graphics.length ? graphics[0].graphic : null;
+		if (copsettings.m_map_popup_hover)
+		{
+			map_view.whenLayerView(g).then(function(layerView){
+				map_view.on("pointer-move", function(event) {
+					map_view.hitTest(event).then(function(response) {
+						if (response.results.length) {
+			                var graphics = response.results.filter(function (result) {
+			                  return result.graphic.layer === g;
+			                });
 	
-						if (graphic)
-						{
-							if (highlight)
+							var graphic = graphics && graphics.length ? graphics[0].graphic : null;
+		
+							if (graphic)
 							{
-								if (highlight.target == graphic)
-									return;
-								
-								if (highlight.type == "simple-marker")
+								if (highlight)
 								{
-									highlight.target.symbol = highlight.osymbol;
+									if (highlight.target == graphic)
+										return;
+									
+									if (highlight.type == "simple-marker")
+									{
+										highlight.target.symbol = highlight.osymbol;
+									}
 								}
+									
+								highlight = null;
+								
+								// highlight = layerView.highlight(graphic);
+								
+								if (graphic.symbol && graphic.symbol.type == "simple-marker")
+								{
+									highlight = {
+										type: graphic.symbol.type,
+										target: graphic,
+										size: graphic.symbol.size
+									};
+									
+									var ns = graphic.symbol.clone();
+									ns.size = graphic.symbol.size * 2;
+									highlight.osymbol = graphic.symbol;
+									graphic.symbol = ns;
+								}
+								
+								var gp = graphic,
+									p,
+									pt;
+						
+								if (!gp)
+									return;
+									
+								p = gp.p;
+								
+								if (!p)
+									return;
+									
+								pt = gp.pt;
+									
+								_run_click_handler(p.data, pt, true);
 							}
-								
-							highlight = null;
-							
-							// highlight = layerView.highlight(graphic);
-							
-							if (graphic.symbol && graphic.symbol.type == "simple-marker")
-							{
-								highlight = {
-									type: graphic.symbol.type,
-									target: graphic,
-									size: graphic.symbol.size
-								};
-								
-								var ns = graphic.symbol.clone();
-								ns.size = graphic.symbol.size * 2;
-								highlight.osymbol = graphic.symbol;
-								graphic.symbol = ns;
-							}
-							
-							var gp = graphic,
-								p,
-								pt;
-					
-							if (!gp)
-								return;
-								
-							p = gp.p;
-							
-							if (!p)
-								return;
-								
-							pt = gp.pt;
-								
-							_run_click_handler(p.data, pt, true);
 						}
-					}
+					});
 				});
 			});
-		});
+		}
 		
 		map_view.on("click", function(event) {
 			map_view.hitTest(event).then(function(response) {

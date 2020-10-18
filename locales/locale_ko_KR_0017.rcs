@@ -170,3 +170,12 @@ A;L_STARTED_DATE;시작 일시
 A;L_EXEC_LOG;실행 로그
 A;L_MIN_A_COLOR;2단계 색상
 A;L_MID_A_COLOR;4단계 색상
+
+A;L_PANEL_CSS;패널 CSS
+
+A;L_FLOAT_PANEL;플로트 패널
+A;L_FLOAT_OPTION;플로트 패널 옵션
+
+A;L_RESIZABLE;패널 크기변경
+A;L_MOVEABLE;패널 위치이동
+A;L_MAP_POPUP_HOVER;마우스 오버 팝업창
