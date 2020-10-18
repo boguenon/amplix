@@ -116,12 +116,13 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_lng]").setValue(d2val);
 				me.down("[name=m_geofield]").setValue(d3val);
 				
-								me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
+				me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
 				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
 				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
 				// me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
 				me.down("[name=m_map_post_exec]").setValue(option.settings.m_map_post_exec || "");
 				me.down("[name=m_map_save_stat]").setValue(option.settings.m_map_save_stat == "T");
+				me.down("[name=m_map_popup_hover]").setValue(option.settings.m_map_popup_hover == "T");
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -263,6 +264,7 @@ IG$._customChartPanels = function() {
 				// option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
 				option.settings.m_map_post_exec = me.down("[name=m_map_post_exec]").getValue();
 				option.settings.m_map_save_stat = me.down("[name=m_map_save_stat]").getValue() ? "T" : "F";
+				option.settings.m_map_popup_hover = me.down("[name=m_map_popup_hover]").getValue() ? "T" : "F";
 				
 				// arc layer selection
 				option.settings.m_arc_layers = [];
@@ -867,6 +869,12 @@ IG$._customChartPanels = function() {
 								fieldLabel: IRm$.r1("L_MAP_SAVE_POS"),
 								boxLabel: IRm$.r1("B_ENABLED"),
 								name: "m_map_save_stat"	
+							},
+							{
+								xtype: "checkbox",
+								fieldLabel: IRm$.r1("L_MAP_POPUP_HOVER"),
+								boxLabel: IRm$.r1("B_ENABLED"),
+								name: "m_map_popup_hover"	
 							},
 							{
 								xtype: "gridpanel",

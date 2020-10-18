@@ -166,3 +166,12 @@ A;L_STARTED_DATE;Started Date
 A;L_EXEC_LOG;Execution Log
 A;L_MIN_A_COLOR;Level 2 Color
 A;L_MID_A_COLOR;Level 4 Color
+
+A;L_PANEL_CSS;Panel CSS
+
+A;L_FLOAT_PANEL;Float Panel
+A;L_FLOAT_OPTION;Float Panel Options
+
+A;L_RESIZABLE;Resizable
+A;L_MOVEABLE;Moveable
+A;L_MAP_POPUP_HOVER;Mouse over Popup
