@@ -6907,5 +6907,29 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_MID_A_COLOR",
     "value" : "4단계 색상"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PANEL_CSS",
+    "value" : "패널 CSS"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_FLOAT_PANEL",
+    "value" : "플로트 패널"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_FLOAT_OPTION",
+    "value" : "플로트 패널 옵션"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RESIZABLE",
+    "value" : "패널 크기변경"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MOVEABLE",
+    "value" : "패널 위치이동"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MAP_POPUP_HOVER",
+    "value" : "마우스 오버 팝업창"
   } ]
 }

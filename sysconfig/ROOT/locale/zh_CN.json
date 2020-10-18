@@ -6836,5 +6836,29 @@
     "group" : "locale_zh_CN_0017",
     "name" : "L_MID_A_COLOR",
     "value" : "Level 4 Color"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PANEL_CSS",
+    "value" : "Panel CSS"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_FLOAT_PANEL",
+    "value" : "Float Panel"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_FLOAT_OPTION",
+    "value" : "Float Panel Options"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_RESIZABLE",
+    "value" : "Resizable"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MOVEABLE",
+    "value" : "Moveable"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MAP_POPUP_HOVER",
+    "value" : "Mouse over Popup"
   } ]
 }
