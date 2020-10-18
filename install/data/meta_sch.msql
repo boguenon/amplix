@@ -119,6 +119,7 @@ CREATE UNIQUE INDEX idx_igcerror_f1 ON igcerror(errorcode);
 
 CREATE TABLE igcfab (
   mts #CHAR#(17) NOT NULL,
+  kuid #CHAR#(17) NOT NULL,
   iuid #CHAR#(17) #NULL#,
   pid #CHAR#(17) #NULL#,
   mdate #LONG# #NULL#,
@@ -223,6 +224,7 @@ CREATE INDEX idx_igclimp_f3 ON igclimp(mdate);
 
 CREATE TABLE igclu (
   mts #CHAR#(17) NOT NULL,
+  kuid #CHAR#(17) NOT NULL,
   iuid #CHAR#(17) #NULL#,
   pstatus #NUMBER#(4) #NULL#,
   mdate #LONG# #NULL#,
@@ -684,7 +686,8 @@ CREATE INDEX idx_igcaccl_01 ON igcaccl (tuid, cuid);
 
 CREATE TABLE igcaccls (
 	tuid #CHAR#(17) NOT NULL, 
-	suid #CHAR#(17) NOT NULL, 
+	suid #CHAR#(17) NOT NULL,
+	kuid #CHAR#(17) NOT NULL, 
 	mdate #LONG#, 
 	lstat #CHAR#(1),
 	lloc #VARCHAR#(10)
@@ -895,7 +898,8 @@ CREATE TABLE igcfh (
 
 CREATE INDEX idx_igcfh_01 ON igcfh(mts, tuid, umid);
 
-CREATE TABLE igcacclog ( 
+CREATE TABLE igcacclog (
+	kuid #CHAR#(17) NOT NULL, 
 	cdate #LONG#,  
 	lstat #CHAR#(1), 
 	lchannel #VARCHAR#(100),
