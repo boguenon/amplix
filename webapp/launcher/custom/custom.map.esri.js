@@ -1,4 +1,10 @@
-﻿IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
+﻿/**
+ * @module custom/map/esri
+ * @desc esri boot loader
+ *
+ * @property {object} owner - chart module owner
+ */
+IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.__chartoption.charttype.push(
 	{
@@ -16,15 +22,16 @@ IG$.__chartoption.chartext.esri = function(owner) {
 };
 
 IG$.__chartoption.chartext.esri.prototype = {
+	/**
+	 * dynamic loading worker javascript and necessary arcgis javascript / css file in browser
+ 	 * @memberof module:custom/map/esri
+	 */
 	drawChart: function(owner, results) {
-		/**
-		 * dynamic loading worker javascript and necessary arcgis javascript / css file in browser
-		 */
 		var me = this;
 		
 		if (IG$.__chartoption.chartext.esri._loading)
 		{
-			/**
+			/*
 			 * case javascript is loading and before initialization
 			 * Keep monitoring drawchart api in worker is ready
 			 */
@@ -87,7 +94,11 @@ IG$.__chartoption.chartext.esri.prototype = {
 			);
 		}
 	},
-
+	
+	/**
+	 * custom chart resize handler
+ 	 * @memberof module:custom/map/esri
+	 */
 	updatedisplay: function(owner, w, h) {
 		var me = this,
 			map = me.map_inst;
