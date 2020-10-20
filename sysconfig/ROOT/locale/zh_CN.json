@@ -5721,6 +5721,38 @@
     "name" : "L_MULTIMEASURE",
     "value" : "Multi Measure"
   }, {
+    "group" : "locale_zh_CN_sci001",
+    "name" : "L_SCI",
+    "value" : "Data Scientist"
+  }, {
+    "group" : "locale_zh_CN_sci001",
+    "name" : "L_SCI_MANAGER",
+    "value" : "Data Scientist Server"
+  }, {
+    "group" : "locale_zh_CN_sci001",
+    "name" : "L_SCI_DATA",
+    "value" : "Data Publish"
+  }, {
+    "group" : "locale_zh_CN_sci001",
+    "name" : "L_SCI_USER",
+    "value" : "Data Scientist Module"
+  }, {
+    "group" : "locale_zh_CN_sci001",
+    "name" : "L_SCI_SERVERS",
+    "value" : "Analysis Servers"
+  }, {
+    "group" : "locale_zh_CN_sci001",
+    "name" : "L_SCI_DATASET",
+    "value" : "My DataSet Loader"
+  }, {
+    "group" : "locale_zh_CN_sci001",
+    "name" : "I_SCI_DATASET",
+    "value" : "Sync DataSet"
+  }, {
+    "group" : "locale_zh_CN_sci001",
+    "name" : "I_SCI_PUB_DATASET",
+    "value" : "Published DataSet"
+  }, {
     "group" : "locale_zh_CN_0015",
     "name" : "M_SUC_TMPL",
     "value" : "Template already have all values."
@@ -6657,38 +6689,6 @@
     "name" : "L_MAP_SAVE_POS",
     "value" : "Remember Last Setting"
   }, {
-    "group" : "locale_zh_CN_sci001",
-    "name" : "L_SCI",
-    "value" : "Data Scientist"
-  }, {
-    "group" : "locale_zh_CN_sci001",
-    "name" : "L_SCI_MANAGER",
-    "value" : "Data Scientist Server"
-  }, {
-    "group" : "locale_zh_CN_sci001",
-    "name" : "L_SCI_DATA",
-    "value" : "Data Publish"
-  }, {
-    "group" : "locale_zh_CN_sci001",
-    "name" : "L_SCI_USER",
-    "value" : "Data Scientist Module"
-  }, {
-    "group" : "locale_zh_CN_sci001",
-    "name" : "L_SCI_SERVERS",
-    "value" : "Analysis Servers"
-  }, {
-    "group" : "locale_zh_CN_sci001",
-    "name" : "L_SCI_DATASET",
-    "value" : "My DataSet Loader"
-  }, {
-    "group" : "locale_zh_CN_sci001",
-    "name" : "I_SCI_DATASET",
-    "value" : "Sync DataSet"
-  }, {
-    "group" : "locale_zh_CN_sci001",
-    "name" : "I_SCI_PUB_DATASET",
-    "value" : "Published DataSet"
-  }, {
     "group" : "locale_zh_CN_0016",
     "name" : "L_USR_AUD_TITLE",
     "value" : "User Audit @"
@@ -6796,5 +6796,69 @@
     "group" : "locale_zh_CN_0017",
     "name" : "L_FLT_ST_ROW",
     "value" : "Click to start row"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PKG_LST",
+    "value" : "Java Import"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_DETAILED_STAT",
+    "value" : "Status Detail"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_EDIT_JOB",
+    "value" : "Edit Job"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_CANCEL_JOB",
+    "value" : "Cancel Job"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PURGE_JOB",
+    "value" : "Purge Job"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PICKUP_DATE",
+    "value" : "Pickup Date"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_STARTED_DATE",
+    "value" : "Started Date"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_EXEC_LOG",
+    "value" : "Execution Log"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MIN_A_COLOR",
+    "value" : "Level 2 Color"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MID_A_COLOR",
+    "value" : "Level 4 Color"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_PANEL_CSS",
+    "value" : "Panel CSS"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_FLOAT_PANEL",
+    "value" : "Float Panel"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_FLOAT_OPTION",
+    "value" : "Float Panel Options"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_RESIZABLE",
+    "value" : "Resizable"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MOVEABLE",
+    "value" : "Moveable"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MAP_POPUP_HOVER",
+    "value" : "Mouse over Popup"
   } ]
 }

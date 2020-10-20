@@ -4186,11 +4186,11 @@
   }, {
     "group" : "locale_ko_KR_0012",
     "name" : "L_HOME_APP_TITLE",
-    "value" : "<h1>앰플릭스 비즈니스 분석 솔류션</h1>"
+    "value" : "<h1>AMPLIX 비즈니스 분석 솔류션</h1>"
   }, {
     "group" : "locale_ko_KR_0012",
     "name" : "L_HOME_APP_DESC",
-    "value" : "데이타 시각화를 활용한 분석 보고서를 생성해 보십시오.<br/>앰플릭스에서 제공하는 과학적인 도구 및 분석 UI는 당신의 과학적이고 직관적인 데이타 분석을 완료하고 성공적인 비즈니스 환경에 대응하는데 도움이 되도록 설계되어 있습니다."
+    "value" : "데이타 시각화를 활용한 분석 보고서를 생성해 보십시오.<br/>AMPLIX에서 제공하는 과학적인 도구 및 분석 UI는 당신의 과학적이고 직관적인 데이타 분석을 완료하고 성공적인 비즈니스 환경에 대응하는데 도움이 되도록 설계되어 있습니다."
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "L_META_UPGRADE",
@@ -5724,6 +5724,38 @@
     "name" : "L_MULTIMEASURE",
     "value" : "메져 복수 관리"
   }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI",
+    "value" : "데이타 분석 전문가"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_MANAGER",
+    "value" : "데이타 분석전문가 서버"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_DATA",
+    "value" : "데이타 퍼블리싱"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_USER",
+    "value" : "데이타 전문가 모듈"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_SERVERS",
+    "value" : "분석 서버"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "L_SCI_DATASET",
+    "value" : "나의 데이타 집합"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "I_SCI_DATASET",
+    "value" : "데이타 집합 동기화"
+  }, {
+    "group" : "locale_ko_KR_sci001",
+    "name" : "I_SCI_PUB_DATASET",
+    "value" : "퍼블릭 데이타셋"
+  }, {
     "group" : "locale_ko_KR_0015",
     "name" : "M_SUC_TMPL",
     "value" : "템플릿에 이미 값이 정의되어 있습니다."
@@ -6728,38 +6760,6 @@
     "name" : "L_MAP_SAVE_POS",
     "value" : "최종 상태 저장"
   }, {
-    "group" : "locale_ko_KR_sci001",
-    "name" : "L_SCI",
-    "value" : "데이타 분석 전문가"
-  }, {
-    "group" : "locale_ko_KR_sci001",
-    "name" : "L_SCI_MANAGER",
-    "value" : "데이타 분석전문가 서버"
-  }, {
-    "group" : "locale_ko_KR_sci001",
-    "name" : "L_SCI_DATA",
-    "value" : "데이타 퍼블리싱"
-  }, {
-    "group" : "locale_ko_KR_sci001",
-    "name" : "L_SCI_USER",
-    "value" : "데이타 전문가 모듈"
-  }, {
-    "group" : "locale_ko_KR_sci001",
-    "name" : "L_SCI_SERVERS",
-    "value" : "분석 서버"
-  }, {
-    "group" : "locale_ko_KR_sci001",
-    "name" : "L_SCI_DATASET",
-    "value" : "나의 데이타 집합"
-  }, {
-    "group" : "locale_ko_KR_sci001",
-    "name" : "I_SCI_DATASET",
-    "value" : "데이타 집합 동기화"
-  }, {
-    "group" : "locale_ko_KR_sci001",
-    "name" : "I_SCI_PUB_DATASET",
-    "value" : "퍼블릭 데이타셋"
-  }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_RELEASE_LOCK",
     "value" : "사용자 로그인 락을 해제하려면 예를 클릭해 주십시오."
@@ -6867,5 +6867,69 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_FLT_ST_ROW",
     "value" : "다음줄로 내리기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PKG_LST",
+    "value" : "자바 패키지"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_DETAILED_STAT",
+    "value" : "상세 현황"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_EDIT_JOB",
+    "value" : "작업 편집하기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CANCEL_JOB",
+    "value" : "작업 취소하기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PURGE_JOB",
+    "value" : "작업 영구삭제"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PICKUP_DATE",
+    "value" : "픽업 일시"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_STARTED_DATE",
+    "value" : "시작 일시"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_EXEC_LOG",
+    "value" : "실행 로그"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MIN_A_COLOR",
+    "value" : "2단계 색상"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MID_A_COLOR",
+    "value" : "4단계 색상"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_PANEL_CSS",
+    "value" : "패널 CSS"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_FLOAT_PANEL",
+    "value" : "플로트 패널"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_FLOAT_OPTION",
+    "value" : "플로트 패널 옵션"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_RESIZABLE",
+    "value" : "패널 크기변경"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MOVEABLE",
+    "value" : "패널 위치이동"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_MAP_POPUP_HOVER",
+    "value" : "마우스 오버 팝업창"
   } ]
 }
