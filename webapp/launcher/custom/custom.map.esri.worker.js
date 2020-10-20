@@ -1,5 +1,13 @@
 ﻿/**
+ * @module custom/map/esri/worker
+ * @desc esri data visualization renderer
+ *
+ * @property {object} owner - chart module owner
+ */
+
+/**
  * create chart instance
+ * @memberof module:custom/map/esri/worker
  */
 IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, container, callback) {
 	var me = this,
@@ -192,6 +200,10 @@ IG$.__chartoption.chartext.esri.prototype.map_initialize = function(owner, conta
 	return map;
 };
 
+/**
+ * chart data validator
+ * @memberof module:custom/map/esri/worker
+ */
 IG$.__chartoption.chartext.esri.prototype.validateData = function(extent) {
 	var me = this;
 
@@ -203,6 +215,11 @@ IG$.__chartoption.chartext.esri.prototype.validateData = function(extent) {
 	}, 1000);
 };
 
+/**
+ * update data
+ * 
+ * @memberof module:custom/map/esri/worker
+ */
 IG$.__chartoption.chartext.esri.prototype.updateData = function() {
 	var me = this,
 		map = me.map_inst,
@@ -220,6 +237,8 @@ IG$.__chartoption.chartext.esri.prototype.updateData = function() {
 /**
  * main routine to draw chart
  * called from report viewer, widget
+ * 
+ * @memberof module:custom/map/esri/worker
  */
 IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 // insert logic with report result
@@ -449,6 +468,7 @@ IG$.__chartoption.chartext.esri.prototype.drawChart = function(owner, results) {
 
 /**
  * create api layer from chart option with user selected layers
+ * @memberof module:custom/map/esri/worker
  */
 IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, results) {
 	var me = this,
@@ -547,6 +567,7 @@ IG$.__chartoption.chartext.esri.prototype.load_api_layers = function(owner, resu
 
 /**
  * data visualization routine with report result set
+ * @memberof module:custom/map/esri/worker
  */
 IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 	var me = this,
@@ -1398,6 +1419,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 
 /**
  * event handler for report viewer resize
+ * @memberof module:custom/map/esri/worker
  */
 IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) {
 	var me = this,
@@ -1411,6 +1433,7 @@ IG$.__chartoption.chartext.esri.prototype.updatedisplay = function(owner, w, h) 
 
 /**
  * event handler to kill this instance
+ * @memberof module:custom/map/esri/worker
  */
 IG$.__chartoption.chartext.esri.prototype.destroy = function() {
 	// called when need to dispose the component
