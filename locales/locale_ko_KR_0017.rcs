@@ -179,3 +179,10 @@ A;L_FLOAT_OPTION;플로트 패널 옵션
 A;L_RESIZABLE;패널 크기변경
 A;L_MOVEABLE;패널 위치이동
 A;L_MAP_POPUP_HOVER;마우스 오버 팝업창
+
+A;L_HIDE_MAX;최대창 숨기기
+A;L_COLLAPSE;접기 사용
+A;L_CLP_START;접은 상태로 열기
+A;L_CLP_CSS;접은 상태 아이콘 CSS
+A;L_HTML;HTML코드
+A;L_JSCRIPT;자바스크립트

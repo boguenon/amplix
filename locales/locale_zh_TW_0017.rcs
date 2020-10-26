@@ -175,3 +175,10 @@ A;L_RESIZABLE;Resizable
 A;L_MOVEABLE;Moveable
 
 A;L_MAP_POPUP_HOVER;Mouse over Popup
+
+A;L_HIDE_MAX;Hide Maximize
+A;L_COLLAPSE;Collapsible
+A;L_CLP_START;Open Collapsed
+A;L_CLP_CSS;Collapse Icon CSS
+A;L_HTML;HTML Code
+A;L_JSCRIPT;JavaScript
