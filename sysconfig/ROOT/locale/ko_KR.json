@@ -6931,5 +6931,29 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_MAP_POPUP_HOVER",
     "value" : "마우스 오버 팝업창"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_HIDE_MAX",
+    "value" : "최대창 숨기기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_COLLAPSE",
+    "value" : "접기 사용"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CLP_START",
+    "value" : "접은 상태로 열기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CLP_CSS",
+    "value" : "접은 상태 아이콘 CSS"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_HTML",
+    "value" : "HTML코드"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_JSCRIPT",
+    "value" : "자바스크립트"
   } ]
 }

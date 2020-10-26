@@ -6860,5 +6860,29 @@
     "group" : "locale_zh_CN_0017",
     "name" : "L_MAP_POPUP_HOVER",
     "value" : "Mouse over Popup"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_HIDE_MAX",
+    "value" : "Hide Maximize"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_COLLAPSE",
+    "value" : "Collapsible"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_CLP_START",
+    "value" : "Open Collapsed"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_CLP_CSS",
+    "value" : "Collapse Icon CSS"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_HTML",
+    "value" : "HTML Code"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_JSCRIPT",
+    "value" : "JavaScript"
   } ]
 }
