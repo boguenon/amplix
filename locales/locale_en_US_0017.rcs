@@ -185,3 +185,6 @@ A;L_JSCRIPT;JavaScript
 A;L_TB_CHART;Toolbar ChartWizard
 
 A;L_ENABLE_DISABLE;Set Enable
+A;L_INC_USERS;Include Users
+A;L_INC_DEPTS;Include Departments
+A;L_INC_ROLES;Include Roles
