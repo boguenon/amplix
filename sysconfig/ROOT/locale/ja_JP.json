@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
-  "attributes" : { },
-  "type" : "Unknown",
   "objinfo" : { },
   "name" : "ja_JP",
+  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/ja_JP",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
+  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "ここで*ドラッグアイテムこのメジャ?を定義します"
@@ -6884,5 +6884,29 @@
     "group" : "locale_ja_JP_0017",
     "name" : "L_JSCRIPT",
     "value" : "JavaScript"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_TB_CHART",
+    "value" : "Toolbar ChartWizard"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_ENABLE_DISABLE",
+    "value" : "Set Enable"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_INC_USERS",
+    "value" : "Include Users"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_INC_DEPTS",
+    "value" : "Include Departments"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_INC_ROLES",
+    "value" : "Include Roles"
+  }, {
+    "group" : "locale_ja_JP_0017",
+    "name" : "L_WIDGET_OPTION",
+    "value" : "Widget Options"
   } ]
 }
