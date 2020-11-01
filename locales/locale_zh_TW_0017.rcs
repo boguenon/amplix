@@ -188,3 +188,5 @@ A;L_ENABLE_DISABLE;Set Enable
 A;L_INC_USERS;Include Users
 A;L_INC_DEPTS;Include Departments
 A;L_INC_ROLES;Include Roles
+
+A;L_WIDGET_OPTION;Widget Options

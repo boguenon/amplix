@@ -461,115 +461,126 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 	}
 });
 
-IG$.__chartoption.chartext.kpi.prototype.replaceCellValue = function(pval, results, _bc, n, tmplvars, colfix) {
-	var r = "",
-		n,
-		n0, c, cm, cr, cro,
-		b_eval = 1,
-		iscode = 0;
+IG$.__chartoption.chartext.kpi_util = {};
+
+IG$.__chartoption.chartext.kpi_util.procTemplate = function(tmpl, results, _bc, nseq, charts, dataobj, colfix) {
+	var me = this,
+		i = 0,
+		n = tmpl.indexOf("##"),
+		n2 = 0,
+		otmpl = "",
+		in_block = 0,
+		block_str = "",
+		block_nm = "",
+		block_type = "",
+		block_region = "",
+		b,
+		cid,
+		tmplvars = {c : colfix + nseq, r: nseq + results.rowfix, colfix: colfix, rowfix: results.rowfix};
 		
-	$.each(tmplvars, function(k, v) {
-		var kn = "$" + k,
-			ki;
-		
-		ki = pval.indexOf(kn);
-		
-		while (ki > -1)
-		{
-			pval = pval.substring(0, ki) + v + pval.substring(ki+ kn.length);
-			ki = pval.indexOf(kn, ki + 1);
-		}
-	});
-	
-	n = pval.indexOf("[");
-	
-	if (n > -1)
+	if (n < 0)
 	{
-		while (n > -1)
+		otmpl = tmpl;
+	}
+	
+	me._cindex = 0;
+	
+	while (n > -1)
+	{
+		n2 = tmpl.indexOf("##", n+2);
+		
+		if (n2 > -1)
 		{
-			n0 = pval.indexOf("]", n + 1);
-			
-			if (n0 > -1)
+			if (in_block)
 			{
-				r += pval.substring(0, n);
-				c = pval.substring(n+1, n0);
-				
-				cr = "";
-				
-				if (c.indexOf(",") > -1)
-				{
-					if (pval[n0+1] == "c")
-					{
-						iscode = 1;
-						b_eval = 0;
-						n0++;
-					}
-					
-					cm = c.split(",");
-					if (cm[0] == "n")
-					{
-						cm[0] = n + colfix;
-					}
-					else if (cm[0] == "c")
-					{
-						cm[0] = n;
-					}
-					if (cm[1] == "n")
-					{
-						cm[1] = n + colfix;
-					}
-					else if (cm[1] == "c")
-					{
-						cm[1] = n;
-					}
-					
-					try
-					{
-						cm[0] = parseInt(eval(cm[0]));
-						cm[1] = parseInt(eval(cm[1]));
-					}
-					catch (e)
-					{
-						
-					}
-					
-					if (results._tabledata.length > cm[0] && results._tabledata[cm[0]].length > cm[1])
-					{
-						cro = results._tabledata[cm[0]][cm[1]];
-						cr = iscode ? (cro.code) : (cro.text || cro.code);
-						b_eval = 0;
-					}
-				}
-				
-				r += cr;
-				
-				pval = pval.substring(n0+1);
-				n = pval.indexOf("[");
-				
-				if (n == -1)
-				{
-					r += pval;
-				}
+				block_str += tmpl.substring(0, n);
 			}
 			else
 			{
-				r += pval;
-				break;
+				otmpl += tmpl.substring(0, n);
+			}
+			
+			pname = tmpl.substring(n+2, n2);
+			
+			if (pname.substring(0, "define_data".length) == "define_data")
+			{
+				in_block = 1;
+				block_str = "";
+				b = pname.split(":");
+				block_type = b[1];
+				block_nm = b[2];
+				block_region = b[3];
+			}
+			else if (pname.substring(0, "define_end_data".length) == "define_end_data")
+			{
+				in_block = 0;
+				dataobj.push({
+					type: block_type,
+					name: block_nm,
+					region: block_region,
+					data: block_str
+				});
+			}
+			else
+			{
+				var pval = me.getParamValue(pname, results, _bc, n, tmplvars, colfix);
+				
+				if (pval.c)
+				{
+					cid = "mchart_" + (me._cindex++)
+					otmpl += "<div id='" + cid + "' class='igc-kpi-mco'></div>";
+					charts.push({
+						cid: cid,
+						c: pval.c
+					});
+				}
+				else
+				{
+					if (in_block)
+					{
+						block_str += pval.t;
+					}
+					else
+					{
+						otmpl += pval.t;
+					}
+				}
+			}
+			
+			tmpl = tmpl.substring(n2+2);
+			n = tmpl.indexOf("##");
+				
+			if (n == -1)
+			{
+				if (in_block)
+				{
+					block_str += tmpl;
+				}
+				else
+				{
+					otmpl += tmpl;
+				}
 			}
 		}
-	}
-	else
-	{
-		r = pval;
+		else
+		{
+			if (in_block)
+			{
+				block_str += tmpl;
+			}
+			else
+			{
+				otmpl += tmpl;
+			}
+			n = -1;
+			break;
+		}
 	}
 	
-	return {
-		r: r,
-		b_eval: b_eval
-	};
+	return otmpl;
 };
-	
-IG$.__chartoption.chartext.kpi.prototype.getParamValue = function(pval, results, _bc, n, tmplvars, colfix) {
+
+IG$.__chartoption.chartext.kpi_util.getParamValue = function(pval, results, _bc, n, tmplvars, colfix) {
 	var r = "-",
 		c,
 		b_eval = 1;
@@ -692,124 +703,119 @@ IG$.__chartoption.chartext.kpi.prototype.getParamValue = function(pval, results,
 		t: r,
 		c: c
 	};
-}
-	
-IG$.__chartoption.chartext.kpi.prototype.procTemplate = function(tmpl, results, _bc, nseq, charts, dataobj, colfix) {
-	var me = this,
-		i = 0,
-		n = tmpl.indexOf("##"),
-		n2 = 0,
-		otmpl = "",
-		in_block = 0,
-		block_str = "",
-		block_nm = "",
-		block_type = "",
-		block_region = "",
-		b,
-		cid,
-		tmplvars = {c : colfix + nseq, r: nseq + results.rowfix, colfix: colfix, rowfix: results.rowfix};
-		
-	if (n < 0)
-	{
-		otmpl = tmpl;
-	}
-	
-	me._cindex = 0;
-	
-	while (n > -1)
-	{
-		n2 = tmpl.indexOf("##", n+2);
-		
-		if (n2 > -1)
-		{
-			if (in_block)
-			{
-				block_str += tmpl.substring(0, n);
-			}
-			else
-			{
-				otmpl += tmpl.substring(0, n);
-			}
-			
-			pname = tmpl.substring(n+2, n2);
-			
-			if (pname.substring(0, "define_data".length) == "define_data")
-			{
-				in_block = 1;
-				block_str = "";
-				b = pname.split(":");
-				block_type = b[1];
-				block_nm = b[2];
-				block_region = b[3];
-			}
-			else if (pname.substring(0, "define_end_data".length) == "define_end_data")
-			{
-				in_block = 0;
-				dataobj.push({
-					type: block_type,
-					name: block_nm,
-					region: block_region,
-					data: block_str
-				});
-			}
-			else
-			{
-				var pval = me.getParamValue(pname, results, _bc, n, tmplvars, colfix);
-				
-				if (pval.c)
-				{
-					cid = "mchart_" + (me._cindex++)
-					otmpl += "<div id='" + cid + "' class='igc-kpi-mco'></div>";
-					charts.push({
-						cid: cid,
-						c: pval.c
-					});
-				}
-				else
-				{
-					if (in_block)
-					{
-						block_str += pval.t;
-					}
-					else
-					{
-						otmpl += pval.t;
-					}
-				}
-			}
-			
-			tmpl = tmpl.substring(n2+2);
-			n = tmpl.indexOf("##");
-				
-			if (n == -1)
-			{
-				if (in_block)
-				{
-					block_str += tmpl;
-				}
-				else
-				{
-					otmpl += tmpl;
-				}
-			}
-		}
-		else
-		{
-			if (in_block)
-			{
-				block_str += tmpl;
-			}
-			else
-			{
-				otmpl += tmpl;
-			}
-			n = -1;
-			break;
-		}
-	}
-	
-	return otmpl;
 };
+
+IG$.__chartoption.chartext.kpi_util.replaceCellValue = function(pval, results, _bc, n, tmplvars, colfix) {
+	var r = "",
+		n,
+		n0, c, cm, cr, cro,
+		b_eval = 1,
+		iscode = 0;
+		
+	$.each(tmplvars, function(k, v) {
+		var kn = "$" + k,
+			ki;
+		
+		ki = pval.indexOf(kn);
+		
+		while (ki > -1)
+		{
+			pval = pval.substring(0, ki) + v + pval.substring(ki+ kn.length);
+			ki = pval.indexOf(kn, ki + 1);
+		}
+	});
+	
+	n = pval.indexOf("[");
+	
+	if (n > -1)
+	{
+		while (n > -1)
+		{
+			n0 = pval.indexOf("]", n + 1);
+			
+			if (n0 > -1)
+			{
+				r += pval.substring(0, n);
+				c = pval.substring(n+1, n0);
+				
+				cr = "";
+				
+				if (c.indexOf(",") > -1)
+				{
+					if (pval[n0+1] == "c")
+					{
+						iscode = 1;
+						b_eval = 0;
+						n0++;
+					}
+					
+					cm = c.split(",");
+					if (cm[0] == "n")
+					{
+						cm[0] = n + colfix;
+					}
+					else if (cm[0] == "c")
+					{
+						cm[0] = n;
+					}
+					if (cm[1] == "n")
+					{
+						cm[1] = n + colfix;
+					}
+					else if (cm[1] == "c")
+					{
+						cm[1] = n;
+					}
+					
+					try
+					{
+						cm[0] = parseInt(eval(cm[0]));
+						cm[1] = parseInt(eval(cm[1]));
+					}
+					catch (e)
+					{
+						
+					}
+					
+					if (results._tabledata.length > cm[0] && results._tabledata[cm[0]].length > cm[1])
+					{
+						cro = results._tabledata[cm[0]][cm[1]];
+						cr = iscode ? (cro.code) : (cro.text || cro.code);
+						b_eval = 0;
+					}
+				}
+				
+				r += cr;
+				
+				pval = pval.substring(n0+1);
+				n = pval.indexOf("[");
+				
+				if (n == -1)
+				{
+					r += pval;
+				}
+			}
+			else
+			{
+				r += pval;
+				break;
+			}
+		}
+	}
+	else
+	{
+		r = pval;
+	}
+	
+	return {
+		r: r,
+		b_eval: b_eval
+	};
+};
+
+IG$.__chartoption.chartext.kpi.prototype.replaceCellValue = IG$.__chartoption.chartext.kpi_util.replaceCellValue;
+IG$.__chartoption.chartext.kpi.prototype.getParamValue = IG$.__chartoption.chartext.kpi_util.getParamValue;	
+IG$.__chartoption.chartext.kpi.prototype.procTemplate = IG$.__chartoption.chartext.kpi_util.procTemplate;
 
 /**
  * draw multiple chart
@@ -1316,25 +1322,28 @@ IG$.kpiTWc = $s.extend($s.window, {
 		});
 	},
 	
-	_confirm: function(rec) {
+	_confirm: function(b_close) {
 		var me = this,
 			toptions = me.down("[name=toptions]"),
 			tsel,
-			thtml,
-			tjs;
+			thtml;
 			
 		if (toptions.getAllValues(me.tsel))
 			return;
 			
 		tsel = me.tsel;
 		
-		thtml = me._proc(me.dhtml.html, tsel);
-		if (me.djs)
+		thtml = me._proc(me.syntax.split("\n"), tsel);
+		
+		if (b_close !== false)
 		{
-			tjs = me._proc(me.djs.jscript, tsel);
+			me.callback && me.callback.execute(thtml);
+			me.close();
 		}
-		me.callback && me.callback.execute(thtml, tjs);
-		me.close();
+		else
+		{
+			return thtml;
+		}
 	},
 	
 	_proc: function(tarr, tsel) {
@@ -1388,10 +1397,40 @@ IG$.kpiTWc = $s.extend($s.window, {
 	_preview: function() {
 		var me = this,
 			gpreview = me.down("[name=gpreview]"),
-			gpreview_dom = gpreview.body.dom;
+			gpreview_dom = $("#gpreview", gpreview.body.dom),
+			thtml
 			
 		gpreview_dom.empty();
+		
+		thtml = me._confirm(false);
+		
+		if (thtml)
+		{
+			var charts = [],
+				dataobj = [];
+				
+			var arg = [
+				thtml,
+				{
+					rowfix: 1,
+					colfix: 1,
+					_tabledata: []
+				},
+				null,
+				0,
+				charts,
+				dataobj,
+				1
+			];
+			
+			var rhtml = me.procTemplate.apply(this, arg);
+			$(rhtml).appendTo(gpreview_dom);
+		}
 	},
+	
+	replaceCellValue: IG$.__chartoption.chartext.kpi_util.replaceCellValue,
+	getParamValue: IG$.__chartoption.chartext.kpi_util.getParamValue,
+	procTemplate: IG$.__chartoption.chartext.kpi_util.procTemplate,
 	
 	initComponent: function(){
 		var me = this;
