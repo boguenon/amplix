@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
-  "attributes" : { },
-  "type" : "Unknown",
   "objinfo" : { },
   "name" : "ko_KR",
+  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/ko_KR",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
+  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "* 메져 항목을 드래그 하여 추가해 주십시오."
@@ -118,7 +118,7 @@
     "value" : "MongoDB"
   }, {
     "name" : "L_MONGO_DATA",
-    "value" : "MongoDB 데이타"
+    "value" : "MongoDB 데이터"
   }, {
     "name" : "L_MONGO_DPROC",
     "value" : "MongoDB 프로세스"
@@ -136,7 +136,7 @@
     "value" : "MS 파워포인트 저장"
   }, {
     "name" : "D_NOSQL",
-    "value" : "NoSQL 데이타베이스"
+    "value" : "NoSQL 데이터베이스"
   }, {
     "name" : "L_OP_NOT",
     "value" : "NOT 연산자"
@@ -331,7 +331,7 @@
     "value" : "검색"
   }, {
     "name" : "L_NEW_SHEET",
-    "value" : "결과쉬트 추가"
+    "value" : "결과시트 추가"
   }, {
     "name" : "L_ML_CEFF_D",
     "value" : "결정요인 분석"
@@ -441,7 +441,7 @@
     "value" : "그리드 스크롤 숨김 영역에 대한 표시여부를 오버플로우에서 지정해 주십시오."
   }, {
     "name" : "T_STYLE_WIZARD",
-    "value" : "그리드 스타일 마법사"
+    "value" : "스타일 관리"
   }, {
     "name" : "L_TB_PRT_GRD",
     "value" : "그리드 출력"
@@ -462,7 +462,7 @@
     "value" : "기간 옵션"
   }, {
     "name" : "T_FEATURES",
-    "value" : "기능 함수"
+    "value" : "메뉴 사용권한 관리"
   }, {
     "name" : "L_BASE_STYLE",
     "value" : "기본 스타일"
@@ -591,7 +591,7 @@
     "value" : "대상 브라우져 탭명"
   }, {
     "name" : "L_DRILL_PARAM_DESC",
-    "value" : "대상 쉬트에 필터로 지정할 항목을 체크박스 선택해 주십시오."
+    "value" : "대상 시트에 필터로 지정할 항목을 체크박스 선택해 주십시오."
   }, {
     "name" : "L_BASE_METRIC",
     "value" : "대상 필드"
@@ -616,61 +616,61 @@
     "value" : "데시보드 맵핑"
   }, {
     "name" : "I_MGR_DBD",
-    "value" : "데시보드 플러그인"
+    "value" : "데시보드 관리"
   }, {
     "name" : "L_CSTEP_2",
-    "value" : "데이타"
+    "value" : "데이터"
   }, {
     "name" : "L_DATA_LABEL",
-    "value" : "데이타 라벨"
+    "value" : "데이터 라벨"
   }, {
     "name" : "L_T_CUBE_SEL",
-    "value" : "데이타 선택 마법사"
+    "value" : "데이터 선택 마법사"
   }, {
     "name" : "L_EDIT_DATA",
-    "value" : "데이타 편집"
+    "value" : "데이터 편집"
   }, {
     "name" : "T_Filter",
-    "value" : "데이타 필터"
+    "value" : "데이터 필터"
   }, {
     "name" : "L_EMPTY",
-    "value" : "데이타가 없습니다."
+    "value" : "데이터가 없습니다."
   }, {
     "name" : "L_BB_STEP_1",
-    "value" : "데이타를 준비하고 있습니다."
+    "value" : "데이터를 준비하고 있습니다."
   }, {
     "name" : "L_MENU_DB_MODEL",
-    "value" : "데이타베이스 모델"
+    "value" : "데이터베이스 모델"
   }, {
     "name" : "T_DB_CON",
-    "value" : "데이타베이스 연결"
+    "value" : "데이터베이스 연결"
   }, {
     "name" : "L_DB_INSTANCE",
-    "value" : "데이타베이스 연결"
+    "value" : "데이터베이스 연결"
   }, {
     "name" : "L_DB_TYPE",
-    "value" : "데이타베이스 유형"
+    "value" : "데이터베이스 유형"
   }, {
     "name" : "L_DB_NAME",
-    "value" : "데이타베이스 이름"
+    "value" : "데이터베이스 이름"
   }, {
     "name" : "M_S_S1",
-    "value" : "데이타베이스 인스턴스에의 조건에 만족하는 소스결과가 없습니다."
+    "value" : "데이터베이스 인스턴스에의 조건에 만족하는 소스결과가 없습니다."
   }, {
     "name" : "L_ADD_DB_INST",
-    "value" : "데이타베이스 접속 인스턴스 추가"
+    "value" : "데이터베이스 접속 인스턴스 추가"
   }, {
     "name" : "L_VIEW_MODE",
-    "value" : "데이타보기"
+    "value" : "데이터보기"
   }, {
     "name" : "L_DATASET",
-    "value" : "데이타집합"
+    "value" : "데이터집합"
   }, {
     "name" : "L_B_ADC",
-    "value" : "데이타파일"
+    "value" : "데이터파일"
   }, {
     "name" : "D_TABDIMENSION",
-    "value" : "데이타파일 구분 디멘젼"
+    "value" : "데이터파일 구분 디멘젼"
   }, {
     "name" : "L_DATA_LABEL_FMT",
     "value" : "데이터 라벨 포맷"
@@ -712,7 +712,7 @@
     "value" : "데이터베이스 관리자"
   }, {
     "name" : "L_REG_DATABASE",
-    "value" : "데이터베이스 등록"
+    "value" : "데이터베이스 연결"
   }, {
     "name" : "I_DATABASE_CONNECTION",
     "value" : "데이터베이스 연결 설정"
@@ -1028,7 +1028,7 @@
     "value" : "메져 위치"
   }, {
     "name" : "L_MEASURE_ON",
-    "value" : "메져 피봇 영역"
+    "value" : "메져 피벗 영역"
   }, {
     "name" : "L_BB_STEP_3",
     "value" : "메져와 시간함수를 생성하고 있습니다."
@@ -1040,10 +1040,10 @@
     "value" : "메타 파일 복구"
   }, {
     "name" : "I_META_IMP",
-    "value" : "메타 파일 불러오기"
+    "value" : "메타 파일 복구"
   }, {
     "name" : "T_META_IMP",
-    "value" : "메타 파일 불러오기"
+    "value" : "메타 파일 복구"
   }, {
     "name" : "T_META_EDITOR",
     "value" : "메타 편집기"
@@ -1058,7 +1058,7 @@
     "value" : "메트릭"
   }, {
     "name" : "L_MC_ELEM_EDT",
-    "value" : "메트릭 데이타 관리"
+    "value" : "메트릭 데이터 관리"
   }, {
     "name" : "L_T_LOOKUP",
     "value" : "메트릭 룩업 옵션"
@@ -1193,7 +1193,7 @@
     "value" : "변수 삭제"
   }, {
     "name" : "I_BD_CONFIG",
-    "value" : "변수 정의"
+    "value" : "분석 변수"
   }, {
     "name" : "L_ADD_VAR",
     "value" : "변수 추가"
@@ -1226,10 +1226,10 @@
     "value" : "복합 리포트 목록"
   }, {
     "name" : "L_V_RPT",
-    "value" : "복합 피봇 모드"
+    "value" : "복합 피벗 모드"
   }, {
     "name" : "L_P_RPT",
-    "value" : "복합 피봇 설정"
+    "value" : "복합 피벗 설정"
   }, {
     "name" : "T_COMPOSITE_REPORT",
     "value" : "복합리포트"
@@ -1307,13 +1307,13 @@
     "value" : "비활성 사용자"
   }, {
     "name" : "D_BIGDATA",
-    "value" : "빅데이타"
+    "value" : "빅데이터"
   }, {
     "name" : "L_BIGDATA",
-    "value" : "빅데이타"
+    "value" : "빅데이터"
   }, {
     "name" : "T_NOSQLDATA_TITLE",
-    "value" : "빅데이타 옵션 설정"
+    "value" : "빅데이터 옵션 설정"
   }, {
     "name" : "T_NOSQL_CUBE",
     "value" : "빅데이터 분석 큐브"
@@ -1361,10 +1361,10 @@
     "value" : "사용자 관리"
   }, {
     "name" : "I_USER_MANAGER",
-    "value" : "사용자 관리자"
+    "value" : "사용자 관리"
   }, {
     "name" : "L_MGR_USER",
-    "value" : "사용자 관리자"
+    "value" : "사용자 관리"
   }, {
     "name" : "L_USER_DUTY",
     "value" : "사용자 권한"
@@ -1424,7 +1424,7 @@
     "value" : "사용자 정의 필드"
   }, {
     "name" : "L_ADD_USER",
-    "value" : "사용자 추가"
+    "value" : "사용자 등록"
   }, {
     "name" : "L_ADD_EXISTING_USER",
     "value" : "기존 사용자 추가"
@@ -1680,22 +1680,22 @@
     "value" : "쉘 명령"
   }, {
     "name" : "B_SHEET_NAME",
-    "value" : "쉬트 명"
+    "value" : "시트 명"
   }, {
     "name" : "L_R_ANAL_CUBE_LBL",
-    "value" : "쉬트 분석 주제"
+    "value" : "시트 분석 주제"
   }, {
     "name" : "T_SHEET_OPTION",
-    "value" : "쉬트 옵션"
+    "value" : "시트 옵션"
   }, {
     "name" : "L_SHEET_OPTIONS",
-    "value" : "쉬트 옵션"
+    "value" : "시트 옵션"
   }, {
     "name" : "L_SHEET_NUM",
-    "value" : "쉬트번호"
+    "value" : "시트번호"
   }, {
     "name" : "L_ADD_SHEET",
-    "value" : "쉬트추가"
+    "value" : "시트추가"
   }, {
     "name" : "L_C_SCH",
     "value" : "스케쥴 결과가 로드 되어 있습니다. 서버에서 조회하시겠습니까?"
@@ -1704,7 +1704,7 @@
     "value" : "스케쥴 등록"
   }, {
     "name" : "I_SCHEDULE",
-    "value" : "스케쥴 모니터링"
+    "value" : "백그라운드 작업"
   }, {
     "name" : "I_SCHEDULE_MOD",
     "value" : "스케쥴 모듈"
@@ -1821,7 +1821,7 @@
     "value" : "시스템 정보"
   }, {
     "name" : "L_S_LK",
-    "value" : "시스템 코드맵"
+    "value" : "코드맵핑"
   }, {
     "name" : "B_T_FR",
     "value" : "시작 시간"
@@ -1905,7 +1905,7 @@
     "value" : "언어설정"
   }, {
     "name" : "L_R_UT_DRILL",
-    "value" : "업데이트 대상 쉬트"
+    "value" : "업데이트 대상 시트"
   }, {
     "name" : "L_DATA_TAB",
     "value" : "업로드 데이터"
@@ -2208,16 +2208,16 @@
     "value" : "전달 파라미터 항목"
   }, {
     "name" : "L_FETCH_ALL",
-    "value" : "전체 데이타 보기"
+    "value" : "전체 데이터 보기"
   }, {
     "name" : "B_SHOW_ALL",
     "value" : "전체 보기"
   }, {
     "name" : "L_EN_DRILL",
-    "value" : "전체 쉬트로 필터링"
+    "value" : "전체 시트로 필터링"
   }, {
     "name" : "L_EN_DRILL_DESC",
-    "value" : "전체 쉬트에 필터적용할 경우 선택해 주십시오."
+    "value" : "전체 시트에 필터적용할 경우 선택해 주십시오."
   }, {
     "name" : "L_CFIT_SS",
     "value" : "전체 시리즈 분석"
@@ -2295,7 +2295,7 @@
     "value" : "조회 결과에 해당하는 항목이 없습니다."
   }, {
     "name" : "L_VIEW_MODE_LBL",
-    "value" : "조회성 데이타보기"
+    "value" : "조회성 데이터보기"
   }, {
     "name" : "B_PROC",
     "value" : "조회중입니다..<br>잠시 기다려주십시오."
@@ -2586,7 +2586,7 @@
     "value" : "큐브"
   }, {
     "name" : "L_MC_DATA_EDT",
-    "value" : "큐브 데이타 편집기"
+    "value" : "큐브 데이터 편집기"
   }, {
     "name" : "B_BUILD",
     "value" : "큐브 생성"
@@ -2958,16 +2958,16 @@
     "value" : "피벗 기능 사용"
   }, {
     "name" : "L_PIVOT",
-    "value" : "피봇"
+    "value" : "피벗 정보"
   }, {
     "name" : "L_V_PIVOT",
-    "value" : "피봇 모드"
+    "value" : "피벗 모드"
   }, {
     "name" : "T_PIVOT_EDITOR",
-    "value" : "피봇 편집"
+    "value" : "피벗 편집"
   }, {
     "name" : "L_PIVOT_REPORT",
-    "value" : "피봇정보"
+    "value" : "피벗 정보"
   }, {
     "name" : "B_REQ",
     "value" : "필수 항목"
@@ -3027,7 +3027,7 @@
     "value" : "한글"
   }, {
     "name" : "L_EXPORT_ODF_EXCEL",
-    "value" : "한글2010 쉬트"
+    "value" : "한글2010 시트"
   }, {
     "name" : "L_EXPORT_ODF_WORD",
     "value" : "한글2010 워드"
@@ -3108,10 +3108,10 @@
     "value" : "행"
   }, {
     "name" : "L_BB_YA",
-    "value" : "행 데이타를 Y축에 표시"
+    "value" : "행 데이터를 Y축에 표시"
   }, {
     "name" : "L_BB_SL",
-    "value" : "행 데이타에 대한 범례 표시"
+    "value" : "행 데이터에 대한 범례 표시"
   }, {
     "name" : "L_P_ROW",
     "value" : "행 디멘젼"
@@ -3346,7 +3346,7 @@
     "value" : "템플릿"
   }, {
     "name" : "B_CONFIG",
-    "value" : "구성"
+    "value" : "설정"
   }, {
     "name" : "B_VIEWMODE",
     "value" : "보기 모드"
@@ -3364,7 +3364,7 @@
     "value" : "유효성 검사"
   }, {
     "name" : "L_AUTH",
-    "value" : "입증"
+    "value" : "검증"
   }, {
     "name" : "T_GRD_CFG",
     "value" : "그리드 구성"
@@ -3418,13 +3418,13 @@
     "value" : "모듈을로드하는 중 오류가 발생했습니다!"
   }, {
     "name" : "I_DLOC_MGR",
-    "value" : "사전 관리"
+    "value" : "사전 언어 설정"
   }, {
     "name" : "I_META_MIG",
     "value" : "메타 마이그레이션"
   }, {
     "name" : "L_REG_DATASET",
-    "value" : "데이터 세트 등록"
+    "value" : "데이터 집합"
   }, {
     "name" : "T_MIG_DISCO",
     "value" : "Oracle Discoverer 마이그레이션"
@@ -3790,7 +3790,7 @@
   }, {
     "group" : "locale_ko_KR_0003",
     "name" : "L_FETCH_MODE",
-    "value" : "데이타 조회 모드"
+    "value" : "데이터 조회 모드"
   }, {
     "group" : "locale_ko_KR_0002",
     "name" : "L_RENDER_BY_MEA",
@@ -3802,7 +3802,7 @@
   }, {
     "group" : "locale_ko_KR_0004",
     "name" : "L_FETCH_DBPAGE",
-    "value" : "데이타베이스 패치"
+    "value" : "데이터베이스 패치"
   }, {
     "group" : "locale_ko_KR_0004",
     "name" : "L_P_mapping",
@@ -3942,11 +3942,11 @@
   }, {
     "group" : "locale_ko_KR_0007",
     "name" : "L_MINIMIZE",
-    "value" : "창 원래화면"
+    "value" : "이전화면으로 복원"
   }, {
     "group" : "locale_ko_KR_0007",
     "name" : "L_MAXIMIZE",
-    "value" : "창 초대화면"
+    "value" : "창 크게보기"
   }, {
     "group" : "locale_ko_KR_0007",
     "name" : "B_NO_PIVOT",
@@ -3958,7 +3958,7 @@
   }, {
     "group" : "locale_ko_KR_0009",
     "name" : "L_C_REMSQL",
-    "value" : "SQL쿼리를 삭제하시면 쉬트의 피벗을 새로 정의하여야 합니다. 계속하시려면 확인을 눌러 주십시오."
+    "value" : "SQL쿼리를 삭제하시면 시트의 피벗을 새로 정의하여야 합니다. 계속하시려면 확인을 눌러 주십시오."
   }, {
     "group" : "locale_ko_KR_0009",
     "name" : "B_EDIT",
@@ -3998,7 +3998,7 @@
   }, {
     "group" : "locale_ko_KR_0010",
     "name" : "D_DATASET",
-    "value" : "데이타셋"
+    "value" : "데이터셋"
   }, {
     "group" : "locale_ko_KR_0010",
     "name" : "L_TABLE_NAME",
@@ -4062,7 +4062,7 @@
   }, {
     "group" : "locale_ko_KR_0010",
     "name" : "T_SEL_DB",
-    "value" : "데이타베이스 커넥터 선택"
+    "value" : "데이터베이스 커넥터 선택"
   }, {
     "group" : "locale_ko_KR_0010",
     "name" : "L_REVOKE_READ",
@@ -4190,7 +4190,7 @@
   }, {
     "group" : "locale_ko_KR_0012",
     "name" : "L_HOME_APP_DESC",
-    "value" : "데이타 시각화를 활용한 분석 보고서를 생성해 보십시오.<br/>AMPLIX에서 제공하는 과학적인 도구 및 분석 UI는 당신의 과학적이고 직관적인 데이타 분석을 완료하고 성공적인 비즈니스 환경에 대응하는데 도움이 되도록 설계되어 있습니다."
+    "value" : "데이터 시각화를 활용한 분석 보고서를 생성해 보십시오.<br/>AMPLIX에서 제공하는 과학적인 도구 및 분석 UI는 당신의 과학적이고 직관적인 데이터 분석을 완료하고 성공적인 비즈니스 환경에 대응하는데 도움이 되도록 설계되어 있습니다."
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "L_META_UPGRADE",
@@ -4346,7 +4346,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "M_CONFIRM_DS_CHANGE",
-    "value" : "이미 정의된 데이타소스가 존재합니다. 다른 데이타 소스 선택시 문제를 발생할 수 있습니다. 계속하시겠습니까?"
+    "value" : "이미 정의된 데이터소스가 존재합니다. 다른 데이터 소스 선택시 문제를 발생할 수 있습니다. 계속하시겠습니까?"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "M_CONFIRM_DROP_FILE",
@@ -4390,7 +4390,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_DB_POOL",
-    "value" : "데이타컨넥션"
+    "value" : "데이터컨넥션"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_GROUP_INDEX",
@@ -4582,7 +4582,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_EMAIL_FROM_ADDR",
-    "value" : "보네는 주소"
+    "value" : "보내는 주소"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_ENCRYPTION",
@@ -4686,7 +4686,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_H2_URL_FOR_MASH",
-    "value" : "H2 데이타 매싱 연"
+    "value" : "H2 데이터 매싱 연"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_NLP_SVR_HOST",
@@ -4774,7 +4774,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_ALLOW_INSERT",
-    "value" : "데이타 입력 허용"
+    "value" : "데이터 입력 허용"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_MASK_TYPE",
@@ -4914,7 +4914,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_DATA",
-    "value" : "데이타"
+    "value" : "데이터"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_KEEP_MODI_DATES",
@@ -5082,7 +5082,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_DATA_TYPE",
-    "value" : "데이타 유형"
+    "value" : "데이터 유형"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_VALUE_FIELD",
@@ -5142,7 +5142,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_DATA_STYLE",
-    "value" : "데이타 스타일"
+    "value" : "데이터 스타일"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_HEAD_STYLE",
@@ -5170,7 +5170,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_STATIC_DATA_VALUES",
-    "value" : "정적 데이타값"
+    "value" : "정적 데이터값"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_USE_COLORSET",
@@ -5182,11 +5182,11 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_SQL_DATA_VALUES",
-    "value" : "SQL 데이타 값"
+    "value" : "SQL 데이터 값"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_DATASOURCE",
-    "value" : "데이타 소스"
+    "value" : "데이터 소스"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_COLORSET",
@@ -5202,7 +5202,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_DATA_VIEW",
-    "value" : "데이타 보기"
+    "value" : "데이터 보기"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_RANGE_FILTER1",
@@ -5238,7 +5238,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_META_DATA",
-    "value" : "메타 데이타"
+    "value" : "메타 데이터"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_PYTHON_INT",
@@ -5254,7 +5254,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_DATA_MASHING",
-    "value" : "데이타 매싱"
+    "value" : "데이터 매싱"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_LICENSE",
@@ -5446,7 +5446,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_TARGET_SHEET",
-    "value" : "대상 쉬트"
+    "value" : "대상 시트"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_OUTPUT_TYPE",
@@ -5534,11 +5534,11 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_DATA_STORAGE",
-    "value" : "데이타 저장"
+    "value" : "데이터 저장"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_STAGING_DB",
-    "value" : "스테이징 데이타베이스"
+    "value" : "스테이징 데이터베이스"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_UPLOADED_FILE",
@@ -5726,19 +5726,19 @@
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "L_SCI",
-    "value" : "데이타 분석 전문가"
+    "value" : "데이터 분석 전문가"
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "L_SCI_MANAGER",
-    "value" : "데이타 분석전문가 서버"
+    "value" : "데이터 분석전문가 서버"
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "L_SCI_DATA",
-    "value" : "데이타 퍼블리싱"
+    "value" : "데이터 퍼블리싱"
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "L_SCI_USER",
-    "value" : "데이타 전문가 모듈"
+    "value" : "데이터 전문가 모듈"
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "L_SCI_SERVERS",
@@ -5746,15 +5746,15 @@
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "L_SCI_DATASET",
-    "value" : "나의 데이타 집합"
+    "value" : "나의 데이터 집합"
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "I_SCI_DATASET",
-    "value" : "데이타 집합 동기화"
+    "value" : "데이터 집합 동기화"
   }, {
     "group" : "locale_ko_KR_sci001",
     "name" : "I_SCI_PUB_DATASET",
-    "value" : "퍼블릭 데이타셋"
+    "value" : "퍼블릭 데이터셋"
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "M_SUC_TMPL",
@@ -5774,11 +5774,11 @@
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "E_SEL_DC",
-    "value" : "계속하시려면 데이타 커넥터를 선택해 주십시오."
+    "value" : "계속하시려면 데이터 커넥터를 선택해 주십시오."
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "E_CHECK_DTYPE",
-    "value" : "스테이징 데이타베이스에서 데이타 유형을 체크해 주십시오."
+    "value" : "스테이징 데이터베이스에서 데이터 유형을 체크해 주십시오."
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "E_SEL_ITEM_TO_ADD",
@@ -5786,7 +5786,7 @@
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "E_DS_NOT_ALLOW_UPLOAD",
-    "value" : "현재 데이타소스는 업로드 파일을 지원하지 않습니다."
+    "value" : "현재 데이터소스는 업로드 파일을 지원하지 않습니다."
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "E_SAVE_CONTENT",
@@ -5878,7 +5878,7 @@
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "B_DATA",
-    "value" : "데이타"
+    "value" : "데이터"
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "L_SAVE_FIELD",
@@ -5950,11 +5950,11 @@
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "L_USE_STG",
-    "value" : "스테이징 데이타베이스 사용"
+    "value" : "스테이징 데이터베이스 사용"
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "L_BB_SG_RDR",
-    "value" : "다시 그릴 행 데이타"
+    "value" : "다시 그릴 행 데이터"
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "L_USE_EXPRESSION",
@@ -6038,7 +6038,7 @@
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "L_SHEETNAME",
-    "value" : "쉬트 이름"
+    "value" : "시트 이름"
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "L_HEADER_NAME",
@@ -6066,7 +6066,7 @@
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "L_DATA_SIZE",
-    "value" : "데이타 크기"
+    "value" : "데이터 크기"
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "L_IS_KEY",
@@ -6086,7 +6086,7 @@
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "B_DATASET",
-    "value" : "데이타셋"
+    "value" : "데이터셋"
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "L_COUNT_ROWS",
@@ -6222,7 +6222,7 @@
   }, {
     "group" : "locale_ko_KR_0016",
     "name" : "L_DATA_SERIES",
-    "value" : "데이타 시리즈"
+    "value" : "데이터 시리즈"
   }, {
     "group" : "locale_ko_KR_0016",
     "name" : "L_SVG_DRAW_OPTIONS",
@@ -6238,7 +6238,7 @@
   }, {
     "group" : "locale_ko_KR_0016",
     "name" : "L_SHEET_NAME",
-    "value" : "쉬트 이름"
+    "value" : "시트 이름"
   }, {
     "group" : "locale_ko_KR_0016",
     "name" : "L_UPD_DATE",
@@ -6370,7 +6370,7 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_STAT_VIS",
-    "value" : "통계적 데이타 시각화"
+    "value" : "통계적 데이터 시각화"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_MAP_GEO",
@@ -6678,11 +6678,11 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_SHEET_TOOLBAR",
-    "value" : "쉬트 툴바"
+    "value" : "시트 툴바"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_SHEET_SCRIPTS",
-    "value" : "쉬트 스크립트"
+    "value" : "시트 스크립트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CUST_LEGEND",
@@ -6846,7 +6846,7 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_H2_PERSIST_ENABLED",
-    "value" : "H2 데이타 메싱DB"
+    "value" : "H2 데이터 메싱DB"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_ARC_VIEW",
@@ -6931,5 +6931,53 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_MAP_POPUP_HOVER",
     "value" : "마우스 오버 팝업창"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_HIDE_MAX",
+    "value" : "최대창 숨기기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_COLLAPSE",
+    "value" : "접기 사용"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CLP_START",
+    "value" : "접은 상태로 열기"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_CLP_CSS",
+    "value" : "접은 상태 아이콘 CSS"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_HTML",
+    "value" : "HTML코드"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_JSCRIPT",
+    "value" : "자바스크립트"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_TB_CHART",
+    "value" : "시트 챠트마법사 도구"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_ENABLE_DISABLE",
+    "value" : "사용여부 설정"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_INC_USERS",
+    "value" : "사용자 포함"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_INC_DEPTS",
+    "value" : "그룹 포함"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_INC_ROLES",
+    "value" : "권한 포함"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_WIDGET_OPTION",
+    "value" : "위젯 옵션"
   } ]
 }

@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
-  "attributes" : { },
-  "type" : "Unknown",
   "objinfo" : { },
   "name" : "en_US",
+  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/en_US",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
+  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "* Drag Items here to define this measure"
@@ -6932,5 +6932,53 @@
     "group" : "locale_en_US_0017",
     "name" : "L_MAP_POPUP_HOVER",
     "value" : "Mouse over Popup"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_HIDE_MAX",
+    "value" : "Hide Maximize"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_COLLAPSE",
+    "value" : "Collapsible"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_CLP_START",
+    "value" : "Open Collapsed"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_CLP_CSS",
+    "value" : "Collapse Icon CSS"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_HTML",
+    "value" : "HTML Code"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_JSCRIPT",
+    "value" : "JavaScript"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_TB_CHART",
+    "value" : "Toolbar ChartWizard"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_ENABLE_DISABLE",
+    "value" : "Set Enable"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_INC_USERS",
+    "value" : "Include Users"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_INC_DEPTS",
+    "value" : "Include Departments"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_INC_ROLES",
+    "value" : "Include Roles"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_WIDGET_OPTION",
+    "value" : "Widget Options"
   } ]
 }
