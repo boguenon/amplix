@@ -27,11 +27,72 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 	},
 	
 	initApp: function() {
-		var ttype = this.down("[name=ttype]"),
+		var me = this,
+			ttype = this.down("[name=ttype]"),
 			tsyntax = this.down("[name=tsyntax]");
 			
-		ttype.setValue("");
-		tsyntax.setValue(this.rec.get("syntax"));
+		var do_proc = function() {
+			var templates = IG$.__chartoption.chartext.kpi_templates,
+				dp = [
+					{
+						name: IRm$.r1("B_SELECT"),
+						value: "",
+						syntax: ""
+					}
+				];
+			
+			if (templates)
+			{
+				$.each(templates, function(i, t){
+					dp.push({
+						name: t.name,
+						value: t.name,
+						syntax: t.syntax.join("\n"),
+						parameters: t.parameters
+					});
+				});
+			}
+			ttype.store.loadData(dp);
+			ttype.setValue("");
+			tsyntax.setValue(me.rec.get("syntax"));
+		}
+			
+		if (!IG$.__chartoption.chartext.kpi_templates)
+		{
+			IG$.lDF("./custom/custom.kpi.template.json", new IG$.callBackObj(me, function(data) {
+				IG$.__chartoption.chartext.kpi_templates = data.templates;
+				do_proc();
+			}));
+		}
+		else
+		{
+			do_proc();
+		}
+	},
+	
+	_edit_tmpl: function(r) {
+		var me = this,
+			tsyntax = me.down("[name=tsyntax]"),
+			parameters = r ? r.get("parameters") : null,
+			syntax = r ? r.get("syntax") : null,
+			dlg;
+		
+		if (parameters)
+		{
+			dlg = new IG$.kpiTWc({
+				syntax: syntax,
+				parameters: parameters,
+				callback: new IG$.callBackObj(me, function(thtml) {
+					tsyntax.setValue(thtml);
+				})
+			});
+			
+			dlg.show();
+		}
+		else
+		{
+			tsyntax.setValue(syntax || "");
+		}
 	},
 	
 	initComponent: function() {
@@ -60,425 +121,11 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 									"name", "value", "syntax"
 								],
 								data: [
-									{
-										name: IRm$.r1("B_SELECT"),
-										value: "",
-										syntax: ""
-									},
-									{
-										name: "Template 1",
-										value: "tmpl_1",
-										syntax: [
-											'##define(k, $c * 2 + 1)##',
-											'##define(_pval, [$r,$k]) ##',
-											'##define(_cval, [$r+1,$k]) ##',
-											'##define(_gap, $_pval - $_cval) ##',
-											'##define(_plbl, [0, $k]) ##',
-											'##define(_mlbl, [$r, 0]) ##',
-											'<div class="idc-kpi-box">',
-											'    <table class="idc-kpi-table">',
-											'        <tr>',
-											'            <td class="idc-kpi-tb-l0" style="background-color:#29663D; text-align:center; vertical-align:middle;">',
-											'                <span style="font-family: fontawesome; font-size: 80px;color:white">&#xf001;</span>',
-											'            </td>',
-											'            <td class="idc-kpi-tb-l1" style="background-color: #52CC7A; line-height: 18px">',
-											'                <h2>',
-											'                    <span style="##{$_gap > 0 ? "color:red" : "color:green"}##">##{$_gap}##</span> ',
-											'                    <span style="font-family: fontawesome">##{$_gap > 0 ? "&#xf062;" : "&#xf063;"}##</span>',
-											'                </h2>',
-											'            <div style="font-size:28px; line-height: 28px">##{$_plbl}##</div>',
-											'               <div style="font-size: 15px; color: ">##{$_mlbl}## : <span style="color: red">##{$_pval}##</span></div>',
-											'               <div class="igc-kpi-micro-chart" style="height: 60px">##CHART(0)##</div></div>',
-											'            </td>',
-											'        </tr>',
-											'    </table>',
-											'</div>'
-										].join("\n")
-									},
-									{
-										name: "Template 2",
-										value: "tmpl_2",
-										syntax: [
-											'##define(k, $c * 2 + 1)##',
-											'##define(_pval, [$r,$k]) ##',
-											'##define(_cval, [$r+1,$k]) ##',
-											'##define(_gap, $_pval - $_cval) ##',
-											'##define(_plbl, [0, $k]) ##',
-											'##define(_mlbl, [$r, 0]) ##',
-											'<div class="idc-kpi-box">',
-											'	<table class="idc-kpi-table">',
-											'		<tr>',
-											'			<td class="idc-kpi-tb-l0" style="background-color:#293D66; text-align:center; vertical-align:middle;">',
-											'				<span style="font-family: fontawesome; font-size: 80px;color:white">&#xf0a0;</span>',
-											'			</td>',
-											'			<td class="idc-kpi-tb-l1" style="background-color: #6699ff; line-height: 18px">',
-											'				<h2>',
-											'					<span style="##{$_gap > 0 ? \"color:red\" : \"color:green\"}##">##{$_gap}##</span> ',
-											'					<span style="font-family: fontawesome">##{$_gap > 0 ? \"&#xf062;\" : \"&#xf063;\"}##</span>',
-											'				</h2>',
-											'				<div  style="font-size:28px; line-height: 28px">##{$_plbl}##</div>',
-											'				<div style="font-size: 15px; color: ">##{$_mlbl}## : <span style="color: red">##{$_pval}##</span></div>',
-											'				<div class="igc-kpi-micro-chart" style="height: 60px">##CHART(0)##</div></div>',
-											'			</td>',
-											'		</tr>',
-											'	</table>',
-											'</div>'
-										].join("\n")
-									},
-									{
-										name: "Template 3",
-										value: "tmpl_3",
-										syntax: [
-											'##define(k, $c * 2 + 1)##',
-											'##define(_pval, [$r,$k]) ##',
-											'##define(_cval, [$r+1,$k]) ##',
-											'##define(_gap, $_pval - $_cval) ##',
-											'##define(_plbl, [0, $k]) ##',
-											'##define(_mlbl, [$r, 0]) ##',
-											'<div class="idc-kpi-box">',
-											'	<table class="idc-kpi-table">',
-											'		<tr>',
-											'			<td class="idc-kpi-tb-l0" style="background-color:#7A5C00; text-align:center; vertical-align:middle;">',
-											'				<span style="font-family: fontawesome; font-size: 80px;color:white">&#xf099;</span>',
-											'			</td>',
-											'			<td class="idc-kpi-tb-l1" style="background-color: #CC9900; line-height: 18px">',
-											'				<h2>',
-											'					<span style="##{$_gap > 0 ? \"color:red\" : \"color:green\"}##">##{$_gap}##</span> ',
-											'					<span style="font-family: fontawesome">##{$_gap > 0 ? \"&#xf062;\" : \"&#xf063;\"}##</span>',
-											'				</h2>',
-											'				<div  style="font-size:28px; line-height: 28px">##{$_plbl}##</div>',
-											'				<div style="font-size: 15px; color: ">##{$_mlbl}## : <span style="color: red">##{$_pval}##</span></div>',
-											'				<div class="igc-kpi-micro-chart" style="height: 60px">##CHART(0)##</div></div>',
-											'			</td>',
-											'		</tr>',
-											'	</table>',
-											'</div>'
-										].join("")
-									},
-									{
-										name: "Template 4",
-										value: "tmpl_4",
-										syntax: [
-											'##define(k, $c * 2 + 1)##',
-											'##define(_pval, [$r,$k]) ##',
-											'##define(_cval, [$r+1,$k]) ##',
-											'##define(_gap, $_pval - $_cval) ##',
-											'##define(_plbl, [0, $k]) ##',
-											'##define(_mlbl, [$r, 0]) ##',
-											'<div class="idc-kpi-box">',
-											'	<table class="idc-kpi-table">',
-											'		<tr>',
-											'			<td class="idc-kpi-tb-l0" style="text-align:center; vertical-align:middle;">',
-											'				<span style="font-size:14px;line-height:1.42857;float:right!important;">9,214</span>',
-											'				<span style="font-size:14px;line-height:1.42857;">Chrome</span>',
-											'			</td>',
-											'		</tr>',
-											'		<tr>',
-											'			<td class="idc-kpi-tb-l0" style="text-align:center; vertical-align:middle;">',
-											'				<div style="height:6px;overflow:hidden;background-color:#E6E9ED;border-radius:2px;margin-bottom:20px;">',
-											'					<div style="box-shadow:none;text-align:right;float:left;height:100%;font-size:12px;line-height:20px;background-color:#48CFAD;width:85%"></div>',
-											'				</div>',
-											'			</td>',
-											'		</tr>',
-											'	</table>',
-											'</div>'
-										].join("\n")
-									},
-									{
-										name: "Gauge 1",
-										value: "gauge_1",
-										syntax: [
-											'##define(_mval, [$r, $c]) ##',
-											'##define(_header, [0, $c]) ##',
-											'<div class="idc-kpi-box">',
-											'	<table class="idc-kpi-table" style="width:100%">',
-											'		<tr>',
-											'			<td width="100%" style="text-align:center; vertical-align:middle;">',
-											'			 <div id="chart01" style="width:100%;height:100%"></div>',
-											'			</td>',
-											'		</tr>',
-											'	</table>',
-											'</div>',
-											'##define_data:echarts:data01:chart01##',
-											'{',
-											'	series: [{',
-											'		name: "##{$_header}##",',
-											'		type: "gauge",',
-											'		radius: "140%",',
-											'		center: ["50%", "90%"],',
-											'		startAngle: 180,',
-											'		endAngle: 0,',
-											'		pointer: {width: 3},',
-											'		axisTick: {show: false},',
-											'		detail: {show: false, formatter: "{value}%", fontSize: 10},',
-											'		data: [{value: ##{$_mval}##, name: "##{$_header}##"}]',
-											'	}]',
-											'}',
-											'##define_end_data:data01##'
-										].join("\n")
-									},
-									{
-										name: "Gauge 2",
-										value: "gauge_2",
-										syntax: [
-											'##define(_mval, [$r, $c]) ##',
-											'##define(_header, [0, $c]) ##',
-											'<div class="idc-kpi-box">',
-											'	<table class="idc-kpi-table" style="width:100%">',
-											'		<tr>',
-											'			<td width="100%" style="text-align:center; vertical-align:middle;">',
-											'			 <div id="chart01" style="width:100%;height:100%"></div>',
-											'			</td>',
-											'		</tr>',
-											'	</table>',
-											'</div>',
-											'##define_data:echarts:data02:chart01##',
-											'{',
-											'series: [{',
-											'	name: "##{$_header}##",',
-											'	type: "gauge",',
-											'	z: 3,',
-											'	min: 0,',
-											'	max: 220,',
-											'	splitNumber: 11,',
-											'	radius: "50%",',
-											'	axisLine: {',
-											'		lineStyle: {',
-											'			width: 10',
-											'		}',
-											'	},',
-											'	axisTick: {',
-											'		length: 15,',
-											'		lineStyle: {',
-											'			color: "auto"',
-											'		}',
-											'	},',
-											'	splitLine: {',
-											'		length: 20,',
-											'		lineStyle: {',
-											'			color: "auto"',
-											'		}',
-											'	},',
-											'	axisLabel: {',
-											'		backgroundColor: "auto",',
-											'		borderRadius: 2,',
-											'		color: "#eee",',
-											'		padding: 3,',
-											'		textShadowBlur: 2,',
-											'		textShadowOffsetX: 1,',
-											'		textShadowOffsetY: 1,',
-											'		textShadowColor: "#222"',
-											'	},',
-											'	title: {',
-											'		fontWeight: "bolder",',
-											'		fontSize: 20,',
-											'		fontStyle: "italic"',
-											'	},',
-											'	detail: {',
-											'		formatter: function (value) {',
-											'			value = (value + "").split(".");',
-											'			value.length < 2 && (value.push("00"));',
-											'			return ("00" + value[0]).slice(-2)',
-											'				+ "." + (value[1] + "00").slice(0, 2);',
-											'		},',
-											'		fontWeight: "bolder",',
-											'		borderRadius: 3,',
-											'		backgroundColor: "#444",',
-											'		borderColor: "#aaa",',
-											'		shadowBlur: 5,',
-											'		shadowColor: "#333",',
-											'		shadowOffsetX: 0,',
-											'		shadowOffsetY: 3,',
-											'		borderWidth: 2,',
-											'		textBorderColor: "#000",',
-											'		textBorderWidth: 2,',
-											'		textShadowBlur: 2,',
-											'		textShadowColor: "#fff",',
-											'		textShadowOffsetX: 0,',
-											'		textShadowOffsetY: 0,',
-											'		fontFamily: "Arial",',
-											'		width: 100,',
-											'		color: "#eee",',
-											'		rich: {}',
-											'	},',
-											'	data: [{value: ##{$_mval}##, name: "km/h"}]',
-											'},',
-											'{',
-											'	name: "Speed",',
-											'	type: "gauge",',
-											'	center: ["20%", "55%"],',
-											'	radius: "35%",',
-											'	min: 0,',
-											'	max: 7,',
-											'	endAngle: 45,',
-											'	splitNumber: 7,',
-											'	axisLine: {',
-											'		lineStyle: {',
-											'			width: 8',
-											'		}',
-											'	},',
-											'	axisTick: {',
-											'		length: 12,',
-											'		lineStyle: {',
-											'			color: "auto"',
-											'		}',
-											'	},',
-											'	splitLine: {',
-											'		length: 20,',
-											'		lineStyle: {',
-											'			color: "auto"',
-											'		}',
-											'	},',
-											'	pointer: {',
-											'		width: 5',
-											'	},',
-											'	title: {',
-											'		offsetCenter: [0, "-30%"],',
-											'	},',
-											'	detail: {',
-											'		fontWeight: "bolder"',
-											'	},',
-											'	data: [{value: 1.5, name: "x1000 r/min"}]',
-											'},',
-											'{',
-											'	name: "Gas",',
-											'	type: "gauge",',
-											'	center: ["77%", "50%"],',
-											'	radius: "25%",',
-											'	min: 0,',
-											'	max: 2,',
-											'	startAngle: 135,',
-											'	endAngle: 45,',
-											'	splitNumber: 2,',
-											'	axisLine: {',
-											'		lineStyle: {',
-											'			width: 8',
-											'		}',
-											'	},',
-											'	axisTick: {',
-											'		splitNumber: 5,',
-											'		length: 10,',
-											'		lineStyle: {',
-											'			color: "auto"',
-											'		}',
-											'	},',
-											'	axisLabel: {',
-											'		formatter: function (v){',
-											'			switch (v + "") {',
-											'				case "0" : return "E";',
-											'				case "1" : return "Gas";',
-											'				case "2" : return "F";',
-											'			}',
-											'		}',
-											'	},',
-											'	splitLine: {',
-											'		length: 15,',
-											'		lineStyle: {',
-											'			color: "auto"',
-											'		}',
-											'	},',
-											'	pointer: {',
-											'		width: 2',
-											'	},',
-											'	title: {',
-											'		show: false',
-											'	},',
-											'	detail: {',
-											'		show: false',
-											'	},',
-											'	data: [{value: 0.5, name: "gas"}]',
-											'},',
-											'{',
-											'	name: "temparature",',
-											'	type: "gauge",',
-											'	center: ["77%", "50%"],',
-											'	radius: "25%",',
-											'	min: 0,',
-											'	max: 2,',
-											'	startAngle: 315,',
-											'	endAngle: 225,',
-											'	splitNumber: 2,',
-											'	axisLine: {',
-											'		lineStyle: {',
-											'			width: 8',
-											'		}',
-											'	},',
-											'	axisTick: {',
-											'		show: false',
-											'	},',
-											'	axisLabel: {',
-											'		formatter: function(v){',
-											'			switch (v + "") {',
-											'				case "0" : return "H";',
-											'				case "1" : return "Water";',
-											'				case "2" : return "C";',
-											'			}',
-											'		}',
-											'	},',
-											'	splitLine: {',
-											'		length: 15,',
-											'		lineStyle: {',
-											'			color: "auto"',
-											'		}',
-											'	},',
-											'	pointer: {',
-											'		width:2',
-											'	},',
-											'	title: {',
-											'		show: false',
-											'	},',
-											'	detail: {',
-											'		show: false',
-											'	},',
-											'	data: [{value: 0.5, name: "gas"}]',
-											'}]',
-											'}',
-											'##define_end_data:data02##'
-										].join("\n")
-									},
-									{
-										// https://themes.getbootstrap.com/preview/?theme_id=33181&show_new=
-										name: "Dashboard 1",
-										value: "dashboard_1",
-										syntax: [
-											'<div class="pr-lg-2 col-lg-4">',
-											'	<div class="h-100 bg-gradient card">',
-											'		<div class="bg-transparent card-header">',
-											'			<h5 class="text-white">Active users right now</h5>',
-											'			<div class="real-time-user display-1 font-weight-normal text-white">111</div>',
-											'		</div>',
-											'		<div class="text-white fs--1 card-body">',
-											'			<div class="chartjs-size-monitor">',
-											'				<div class="chartjs-size-monitor-expand">',
-											'					<div class=""></div>',
-											'				</div>',
-											'			<div class="chartjs-size-monitor-shrink">',
-											'				<div class=""></div>',
-											'			</div>',
-											'		</div>',
-											'		<p class="pb-2" style="border-bottom: 1px solid rgba(255, 255, 255, 0.15);">Page views per second</p>',
-											'		<canvas height="104" width="262" class="chartjs-render-monitor" style="display: block; width: 262px; height: 104px;"></canvas>',
-											'		<ul class="mt-4 list-group list-group-flush">',
-											'			<li class="bg-transparent d-flex justify-content-between px-0 py-1 font-weight-semi-bold border-top-0 list-group-item" style="border-color: rgba(255, 255, 255, 0.05);"><p class="mb-0">Top Active Pages</p><p class="mb-0">Active Users</p></li>',
-											'			<li class="bg-transparent d-flex justify-content-between px-0 py-1 list-group-item" style="border-color: rgba(255, 255, 255, 0.05);"><p class="mb-0">/bootstrap-themes/</p><p class="mb-0">3</p></li>',
-											'			<li class="bg-transparent d-flex justify-content-between px-0 py-1 list-group-item" style="border-color: rgba(255, 255, 255, 0.05);"><p class="mb-0">/tags/html5/</p><p class="mb-0">3</p></li>',
-											'			<li class="bg-transparent d-xxl-flex justify-content-between px-0 py-1 d-none list-group-item" style="border-color: rgba(255, 255, 255, 0.05);"><p class="mb-0">/</p><p class="mb-0">2</p></li>',
-											'			<li class="bg-transparent d-xxl-flex justify-content-between px-0 py-1 d-none list-group-item" style="border-color: rgba(255, 255, 255, 0.05);"><p class="mb-0">/preview/falcon/dashboard/</p><p class="mb-0">2</p></li>',
-											'			<li class="bg-transparent d-flex justify-content-between px-0 py-1 list-group-item" style="border-color: rgba(255, 255, 255, 0.05);"><p class="mb-0">/100-best-themes...all-time/</p><p class="mb-0">1</p></li>',
-											'		</ul>',
-											'	</div>',
-											'	<div class="text-right bg-transparent card-footer" style="border-top: 1px solid rgba(255, 255, 255, 0.15);">',
-											'		<a class="text-white" href="/#!">Real-time report<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10 ml-1 fs--1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="transform-origin: 0.3125em 0.5625em;"><g transform="translate(160 256)"><g transform="translate(0, 32)  scale(1, 1)  rotate(0 0 0)"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" transform="translate(-160 -256)"></path></g></g></svg></a>',
-											'	</div>',
-											'</div>'
-										].join("\n")
-									}
 								]
 							},
 							listeners: {
 								change: function(tobj, newvalue, oldvalue, eopts) {
-									var tsyntax = this.down("[name=tsyntax]"),
-										r, i;
+									var r, i;
 									
 									for (i=0; i < tobj.store.data.items.length; i++)
 									{
@@ -488,7 +135,7 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 										}	
 									}
 									
-									tsyntax.setValue(r ? r.get("syntax") : "");
+									this._edit_tmpl(r);
 								},
 								scope: this
 							}
@@ -814,114 +461,126 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 	}
 });
 
-IG$.__chartoption.chartext.kpi.prototype.replaceCellValue = function(pval, results, _bc, n, tmplvars, colfix) {
-	var r = "",
-		n,
-		n0, c, cm, cr, cro,
-		b_eval = 1,
-		iscode = 0;
+IG$.__chartoption.chartext.kpi_util = {};
+
+IG$.__chartoption.chartext.kpi_util.procTemplate = function(tmpl, results, _bc, nseq, charts, dataobj, colfix) {
+	var me = this,
+		i = 0,
+		n = tmpl.indexOf("##"),
+		n2 = 0,
+		otmpl = "",
+		in_block = 0,
+		block_str = "",
+		block_nm = "",
+		block_type = "",
+		block_region = "",
+		b,
+		cid,
+		tmplvars = {c : colfix + nseq, r: nseq + results.rowfix, colfix: colfix, rowfix: results.rowfix};
 		
-	$.each(tmplvars, function(k, v) {
-		var kn = "$" + k,
-			ki;
-		
-		ki = pval.indexOf(kn);
-		
-		while (ki > -1)
-		{
-			pval = pval.substring(0, ki) + v + pval.substring(ki+ kn.length);
-			ki = pval.indexOf(kn, ki + 1);
-		}
-	});
-	
-	n = pval.indexOf("[");
-	
-	if (n > -1)
+	if (n < 0)
 	{
-		while (n > -1)
+		otmpl = tmpl;
+	}
+	
+	me._cindex = 0;
+	
+	while (n > -1)
+	{
+		n2 = tmpl.indexOf("##", n+2);
+		
+		if (n2 > -1)
 		{
-			n0 = pval.indexOf("]", n + 1);
-			
-			if (n0 > -1)
+			if (in_block)
 			{
-				r += pval.substring(0, n);
-				c = pval.substring(n+1, n0);
-				
-				cr = "";
-				
-				if (c.indexOf(",") > -1)
-				{
-					if (pval[n0+1] == "c")
-					{
-						iscode = 1;
-						b_eval = 0;
-						n0++;
-					}
-					
-					cm = c.split(",");
-					if (cm[0] == "n")
-					{
-						cm[0] = n + colfix;
-					}
-					else if (cm[0] == "c")
-					{
-						cm[0] = n;
-					}
-					if (cm[1] == "n")
-					{
-						cm[1] = n + colfix;
-					}
-					else if (cm[1] == "c")
-					{
-						cm[1] = n;
-					}
-					
-					try
-					{
-						cm[0] = parseInt(eval(cm[0]));
-						cm[1] = parseInt(eval(cm[1]));
-					}
-					catch (e)
-					{
-						
-					}
-					
-					if (results._tabledata.length > cm[0] && results._tabledata[cm[0]].length > cm[1])
-					{
-						cro = results._tabledata[cm[0]][cm[1]];
-						cr = iscode ? cro.text : cro.code;
-					}
-				}
-				
-				r += cr;
-				
-				pval = pval.substring(n0+1);
-				n = pval.indexOf("[");
-				
-				if (n == -1)
-				{
-					r += pval;
-				}
+				block_str += tmpl.substring(0, n);
 			}
 			else
 			{
-				r += pval;
-				break;
+				otmpl += tmpl.substring(0, n);
+			}
+			
+			pname = tmpl.substring(n+2, n2);
+			
+			if (pname.substring(0, "define_data".length) == "define_data")
+			{
+				in_block = 1;
+				block_str = "";
+				b = pname.split(":");
+				block_type = b[1];
+				block_nm = b[2];
+				block_region = b[3];
+			}
+			else if (pname.substring(0, "define_end_data".length) == "define_end_data")
+			{
+				in_block = 0;
+				dataobj.push({
+					type: block_type,
+					name: block_nm,
+					region: block_region,
+					data: block_str
+				});
+			}
+			else
+			{
+				var pval = me.getParamValue(pname, results, _bc, n, tmplvars, colfix);
+				
+				if (pval.c)
+				{
+					cid = "mchart_" + (me._cindex++)
+					otmpl += "<div id='" + cid + "' class='igc-kpi-mco'></div>";
+					charts.push({
+						cid: cid,
+						c: pval.c
+					});
+				}
+				else
+				{
+					if (in_block)
+					{
+						block_str += pval.t;
+					}
+					else
+					{
+						otmpl += pval.t;
+					}
+				}
+			}
+			
+			tmpl = tmpl.substring(n2+2);
+			n = tmpl.indexOf("##");
+				
+			if (n == -1)
+			{
+				if (in_block)
+				{
+					block_str += tmpl;
+				}
+				else
+				{
+					otmpl += tmpl;
+				}
 			}
 		}
-	}
-	else
-	{
-		r = pval;
+		else
+		{
+			if (in_block)
+			{
+				block_str += tmpl;
+			}
+			else
+			{
+				otmpl += tmpl;
+			}
+			n = -1;
+			break;
+		}
 	}
 	
-	return {
-		r: r,
-		b_eval: b_eval
-	};
+	return otmpl;
 };
-	
-IG$.__chartoption.chartext.kpi.prototype.getParamValue = function(pval, results, _bc, n, tmplvars, colfix) {
+
+IG$.__chartoption.chartext.kpi_util.getParamValue = function(pval, results, _bc, n, tmplvars, colfix) {
 	var r = "-",
 		c,
 		b_eval = 1;
@@ -1044,124 +703,119 @@ IG$.__chartoption.chartext.kpi.prototype.getParamValue = function(pval, results,
 		t: r,
 		c: c
 	};
-}
-	
-IG$.__chartoption.chartext.kpi.prototype.procTemplate = function(tmpl, results, _bc, nseq, charts, dataobj, colfix) {
-	var me = this,
-		i = 0,
-		n = tmpl.indexOf("##"),
-		n2 = 0,
-		otmpl = "",
-		in_block = 0,
-		block_str = "",
-		block_nm = "",
-		block_type = "",
-		block_region = "",
-		b,
-		cid,
-		tmplvars = {c : colfix + nseq, r: nseq + results.rowfix, colfix: colfix, rowfix: results.rowfix};
-		
-	if (n < 0)
-	{
-		otmpl = tmpl;
-	}
-	
-	me._cindex = 0;
-	
-	while (n > -1)
-	{
-		n2 = tmpl.indexOf("##", n+2);
-		
-		if (n2 > -1)
-		{
-			if (in_block)
-			{
-				block_str += tmpl.substring(0, n);
-			}
-			else
-			{
-				otmpl += tmpl.substring(0, n);
-			}
-			
-			pname = tmpl.substring(n+2, n2);
-			
-			if (pname.substring(0, "define_data".length) == "define_data")
-			{
-				in_block = 1;
-				block_str = "";
-				b = pname.split(":");
-				block_type = b[1];
-				block_nm = b[2];
-				block_region = b[3];
-			}
-			else if (pname.substring(0, "define_end_data".length) == "define_end_data")
-			{
-				in_block = 0;
-				dataobj.push({
-					type: block_type,
-					name: block_nm,
-					region: block_region,
-					data: block_str
-				});
-			}
-			else
-			{
-				var pval = me.getParamValue(pname, results, _bc, n, tmplvars, colfix);
-				
-				if (pval.c)
-				{
-					cid = "mchart_" + (me._cindex++)
-					otmpl += "<div id='" + cid + "' class='igc-kpi-mco'></div>";
-					charts.push({
-						cid: cid,
-						c: pval.c
-					});
-				}
-				else
-				{
-					if (in_block)
-					{
-						block_str += pval.t;
-					}
-					else
-					{
-						otmpl += pval.t;
-					}
-				}
-			}
-			
-			tmpl = tmpl.substring(n2+2);
-			n = tmpl.indexOf("##");
-				
-			if (n == -1)
-			{
-				if (in_block)
-				{
-					block_str += tmpl;
-				}
-				else
-				{
-					otmpl += tmpl;
-				}
-			}
-		}
-		else
-		{
-			if (in_block)
-			{
-				block_str += tmpl;
-			}
-			else
-			{
-				otmpl += tmpl;
-			}
-			n = -1;
-			break;
-		}
-	}
-	
-	return otmpl;
 };
+
+IG$.__chartoption.chartext.kpi_util.replaceCellValue = function(pval, results, _bc, n, tmplvars, colfix) {
+	var r = "",
+		n,
+		n0, c, cm, cr, cro,
+		b_eval = 1,
+		iscode = 0;
+		
+	$.each(tmplvars, function(k, v) {
+		var kn = "$" + k,
+			ki;
+		
+		ki = pval.indexOf(kn);
+		
+		while (ki > -1)
+		{
+			pval = pval.substring(0, ki) + v + pval.substring(ki+ kn.length);
+			ki = pval.indexOf(kn, ki + 1);
+		}
+	});
+	
+	n = pval.indexOf("[");
+	
+	if (n > -1)
+	{
+		while (n > -1)
+		{
+			n0 = pval.indexOf("]", n + 1);
+			
+			if (n0 > -1)
+			{
+				r += pval.substring(0, n);
+				c = pval.substring(n+1, n0);
+				
+				cr = "";
+				
+				if (c.indexOf(",") > -1)
+				{
+					if (pval[n0+1] == "c")
+					{
+						iscode = 1;
+						b_eval = 0;
+						n0++;
+					}
+					
+					cm = c.split(",");
+					if (cm[0] == "n")
+					{
+						cm[0] = n + colfix;
+					}
+					else if (cm[0] == "c")
+					{
+						cm[0] = n;
+					}
+					if (cm[1] == "n")
+					{
+						cm[1] = n + colfix;
+					}
+					else if (cm[1] == "c")
+					{
+						cm[1] = n;
+					}
+					
+					try
+					{
+						cm[0] = parseInt(eval(cm[0]));
+						cm[1] = parseInt(eval(cm[1]));
+					}
+					catch (e)
+					{
+						
+					}
+					
+					if (results._tabledata.length > cm[0] && results._tabledata[cm[0]].length > cm[1])
+					{
+						cro = results._tabledata[cm[0]][cm[1]];
+						cr = iscode ? (cro.code) : (cro.text || cro.code);
+						b_eval = 0;
+					}
+				}
+				
+				r += cr;
+				
+				pval = pval.substring(n0+1);
+				n = pval.indexOf("[");
+				
+				if (n == -1)
+				{
+					r += pval;
+				}
+			}
+			else
+			{
+				r += pval;
+				break;
+			}
+		}
+	}
+	else
+	{
+		r = pval;
+	}
+	
+	return {
+		r: r,
+		b_eval: b_eval
+	};
+};
+
+IG$.__chartoption.chartext.kpi.prototype.replaceCellValue = IG$.__chartoption.chartext.kpi_util.replaceCellValue;
+IG$.__chartoption.chartext.kpi.prototype.getParamValue = IG$.__chartoption.chartext.kpi_util.getParamValue;	
+IG$.__chartoption.chartext.kpi.prototype.procTemplate = IG$.__chartoption.chartext.kpi_util.procTemplate;
 
 /**
  * draw multiple chart
@@ -1614,3 +1268,239 @@ IG$.__chartoption.chartext.kpi.prototype.destroy = function() {
 		$(owner.container).empty();
 	}
 }
+
+IG$.kpiTWc = $s.extend($s.window, {
+
+	width: 500,
+	height: 520,
+	layout: "fit",
+	padding: 5,
+	
+	_init: function() {
+		var me = this,
+			toptions = me.down("[name=toptions]"),
+			controls = [];
+		
+		me.tsel = {};
+			
+		me._add_ctrl(me.parameters, controls);
+		
+		$.each(controls, function(i, ctrl) {
+			toptions.add(ctrl);
+		});
+	},
+	
+	_add_ctrl: function(params, controls) {
+		var me = this,
+			rop = me.rop;
+		
+		$.each(params, function(i, param) {
+			var ctrl = {
+				xtype: "textfield",
+				fieldLabel: param.name,
+				name: param.name,
+				required: param.required,
+				value: param.value,
+				emptyText: param.emptyText
+			};
+			
+			if (param.xtype == "combobox")
+			{
+				ctrl.xtype = param.xtype;
+				ctrl.displayField = "name";
+				ctrl.valueField = "value";
+				ctrl.store = {
+					data: param.data
+				};
+			}
+			else
+			{
+				ctrl.xtype = param.xtype || "textfield";
+			}
+			
+			controls.push(ctrl);
+		});
+	},
+	
+	_confirm: function(b_close) {
+		var me = this,
+			toptions = me.down("[name=toptions]"),
+			tsel,
+			thtml;
+			
+		if (toptions.getAllValues(me.tsel))
+			return;
+			
+		tsel = me.tsel;
+		
+		thtml = me._proc(me.syntax.split("\n"), tsel);
+		
+		if (b_close !== false)
+		{
+			me.callback && me.callback.execute(thtml);
+			me.close();
+		}
+		else
+		{
+			return thtml;
+		}
+	},
+	
+	_proc: function(tarr, tsel) {
+		var r = [];
+		
+		if (tarr && tarr.length)
+		{
+			$.each(tarr, function(i, c) {
+				var s = c,
+					n1 = s.indexOf("{"),
+					n2;
+				
+				while (n1 > -1)
+				{
+					n2 = s.indexOf("}", n1);
+					
+					if (n2 > -1)
+					{
+						var mm = s.substring(n1 + 1, n2);
+						
+						if (mm.indexOf(".") > -1)
+						{
+							var mm1 = mm.substring(0, mm.indexOf(".")),
+								mm2 = mm.substring(mm.indexOf(".") + 1);
+								
+							if (tsel[mm1])
+							{
+								s = s.substring(0, n1) + (tsel[mm1][mm2] || "") + s.substring(n2 + 1);
+							}
+						}
+						else if (tsel[mm])
+						{
+							s = s.substring(0, n1) + tsel[mm] + s.substring(n2 + 1);
+						}
+					}
+					else
+					{
+						break;
+					}
+					
+					n1 = s.indexOf("{", n1 + 1);
+				}
+				
+				r.push(s);
+			});
+		}
+		
+		return r.join("\n");
+	},
+	
+	_preview: function() {
+		var me = this,
+			gpreview = me.down("[name=gpreview]"),
+			gpreview_dom = $("#gpreview", gpreview.body.dom),
+			thtml
+			
+		gpreview_dom.empty();
+		
+		thtml = me._confirm(false);
+		
+		if (thtml)
+		{
+			var charts = [],
+				dataobj = [];
+				
+			var arg = [
+				thtml,
+				{
+					rowfix: 1,
+					colfix: 1,
+					_tabledata: []
+				},
+				null,
+				0,
+				charts,
+				dataobj,
+				1
+			];
+			
+			var rhtml = me.procTemplate.apply(this, arg);
+			$(rhtml).appendTo(gpreview_dom);
+		}
+	},
+	
+	replaceCellValue: IG$.__chartoption.chartext.kpi_util.replaceCellValue,
+	getParamValue: IG$.__chartoption.chartext.kpi_util.getParamValue,
+	procTemplate: IG$.__chartoption.chartext.kpi_util.procTemplate,
+	
+	initComponent: function(){
+		var me = this;
+		
+		$s.apply(me, {
+			title: "Option Values",
+			items: [
+				{
+					xtype: "panel",
+					padding: 10,
+					layout: {
+						type: "vbox",
+						align: "stretch"
+					},
+					autoScroll: true,
+					items: [
+						{
+							xtype: "fieldset",
+							title: "Option Values",
+							name: "toptions",
+							layout: {
+								type: "vbox",
+								align: "stretch"
+							},
+							items: [
+								
+							]
+						},
+						{
+							xtype: "button",
+							text: "Preview",
+							handler: function() {
+								this._preview();
+							},
+							scope: this
+						},
+						{
+							html: "<div id='gpreview'></div>",
+							name: "gpreview",
+							height: 400
+						}
+					]
+				}
+			],
+			buttons: [
+				"->",
+				{
+					xtype: "button",
+					text: IRm$.r1("B_CONFIRM"),
+					handler: function() {
+						this._confirm();
+					},
+					scope: this
+				},
+				{
+					xtype: "button",
+					text: IRm$.r1("B_CANCEL"),
+					handler: function() {
+						this.close();
+					},
+					scope: this
+				}
+			],
+			listeners: {
+				afterrender: function(tobj) {
+					tobj._init();
+				}
+			}
+		});
+		
+		IG$.kpiTWc.superclass.initComponent.call(this);
+	}
+});

@@ -1,0 +1,299 @@
+{
+	"sample_html": [
+		{
+			"name": "Card item with control",
+			"description": "Card with title and description",
+			"html": [
+				"<div class=\"e-card\" id=\"{id}\">",
+				"\t<div class=\"e-card-header\">",
+				"\t\t<div class=\"e-card-header-caption\">",
+				"\t\t\t<div class=\"e-card-header-title\">{title}</div>",
+				"\t\t</div>",
+				"\t</div>",
+				"\t<div class=\"e-card-content\">{text}</div>",
+				"</div>"
+			],
+			"parameters": [
+				{
+					"name": "title",
+					"xtype": "textfield",
+					"required": true
+				},
+				{
+					"name": "text",
+					"xtype": "textarea",
+					"required": true
+				}
+			]
+		},
+		{
+			"name": "Card item with chart type",
+			"description": "Card with title and description",
+			"html": [
+				"<div class=\"e-card\" id=\"{id}\">",
+				"\t<div class=\"e-card-header\">",
+				"\t\t<div class=\"e-card-header-caption\">",
+				"\t\t\t<div class=\"e-card-header-title\">{title}",
+				"\t\t<select id=\"sel_chart\">",
+				"\t\t\t<option value=\"\">Select chart</option>",
+				"\t\t\t<option value=\"column\">Column</option>",
+				"\t\t\t<option value=\"area\">Area</option>",
+				"\t\t\t<option value=\"line\">Line</option>",
+				"\t\t\t<option value=\"bar\">Bar</option>",
+				"\t\t\t<option value=\"pie\">Pie</option>",
+				"\t\t\t<option value=\"doughnut\">Doughnut</option>",
+				"\t\t\t<option value=\"bubble\">Bubble</option>",
+				"\t\t\t<option value=\"scatter\">Scatter</option>",
+				"\t\t</select>",
+				"\t\t\t</div>",
+				"\t\t</div>",
+				"\t</div>",
+				"\t<div class=\"e-card-content\">{text}</div>",
+				"</div>"
+			],
+			"parameters": [
+				{
+					"name": "title",
+					"xtype": "textfield",
+					"required": true
+				},
+				{
+					"name": "text",
+					"xtype": "textarea",
+					"required": true
+				}
+			],
+			"jscript": "Chart Selection"
+		}
+	],
+	"sample_js": [
+		{
+			"name": "Show Pivot",
+			"jscript": [
+				"$(\"#{id}\", html).bind(\"click\", function(e) {",
+				"\te.stopPropagation();",
+				"\te.preventDefault();",
+				"",
+				"\tconsole.log(\"click button {id}\");",
+				"\t",
+				"\t// add button effect with selected",
+				"\tvar tbutton = $(this);",
+				"\ttbutton.addClass(\"e-selection\");",
+				"\tsetTimeout(function() {",
+				"\t\ttbutton.removeClass(\"e-selection\");",
+				"\t}, 2000);",
+				"",
+				"\tvar report_main = owner.$report_view;",
+				"\tvar sheets = report_main. sheets,",
+				"\t\tsheet = sheets[0];",
+				"       // show pivot config",
+				"\treport_main.showPivotConfig(sheet.renderBox);",
+				"});"
+			]
+		},
+		{
+			"name": "Set Advanced Filtering",
+			"jscript": [
+				"$(\"#{id}\", html).bind(\"click\", function(e) {",
+				"\te.stopPropagation();",
+				"\te.preventDefault();",
+				"",
+				"\tconsole.log(\"click button {id}\");",
+				"",
+				"\t// add button effect with selected",
+				"\tvar tbutton = $(this);",
+				"\t// toggle button in filter",
+				"\t",
+				"\tvar report_main = owner.$report_view;",
+				"\tvar sheets = report_main.sheets,",
+				"\t\tsheet = sheets[0];",
+				"       // filtering data with field.",
+				"",
+				"\tvar filtername = \"textarea_{id}\";   // unique name for this drill filter",
+				"\tvar sheetoption = sheet.sheetoption;",
+				"\tvar auxfilter = sheetoption.model.aux_filter; // filter from another widget",
+				"",
+				"\t// first delete previous filter condition",
+				"\tif (auxfilter[filtername])",
+				"\t{",
+				"\t\t// if already filtered, clear and shows all value",
+				"\t\ttbutton.removeClass(\"e-selection\");",
+				"\t\tdelete auxfilter[filtername];",
+				"\t}",
+				"\telse",
+				"\t{",
+				"\t\ttbutton.addClass(\"e-selection\");",
+				"",
+				"\t\t// addding new filter condition",
+				"\t\tauxfilter[filtername] = {",
+				"\t\t\tftype: \"group\",",
+				"\t\t\tchildren: [",
+				"\t\t\t\t{",
+				"\t\t\t\t\tftype: \"condition\",",
+				"\t\t\t\t\tfields: [",
+				"\t\t\t\t\t\t{",
+				"\t\t\t\t\t\t\tname: \"{metric.name}\", uid: \"{metric.uid}\", type: \"{metric.type}\"",
+				"\t\t\t\t\t\t}",
+				"\t\t\t\t\t],",
+				"\t\t\t\t\toperator: \"{operator}\",",
+				"\t\t\t\t\tuseprompt: false,",
+				"\t\t\t\t\tvalues: [",
+				"\t\t\t\t\t\t{code: \"NP02\", value: \"NP02\", valueformat: \"\"}",
+				"\t\t\t\t\t]",
+				"\t\t\t\t}",
+				"\t\t\t]",
+				"\t\t};",
+				"\t}",
+				"",
+				"\t// run report",
+				"\tsheet.procRunReport();",
+				"});"
+			],
+			"parameters": [
+				{
+					"name": "metric",
+					"xtype": "bo_selector",
+					"required": true
+				},
+				{
+					"name": "operator",
+					"xtype": "combobox",
+					"required": true,
+					"data": [
+						{
+							"name": "Equal",
+							"value": "EQ"
+						},
+						{
+							"name": "Greater Equal",
+							"value": "GTE"
+						},
+						{
+							"name": "Greater",
+							"value": "GT"
+						},
+						{
+							"name": "Lesser Equal",
+							"value": "LTE"
+						},
+						{
+							"name": "Lesser",
+							"value": "LT"
+						},
+						{
+							"name": "IN",
+							"value": "IN"
+						},
+						{
+							"name": "NOT In",
+							"value": "NOTIN"
+						},
+						{
+							"name": "Like",
+							"value": "LIKE"
+						},
+						{
+							"name": "Between",
+							"value": "BETWEEN"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Chart View",
+			"jscript": [
+				"$(\"#{id}\", html).bind(\"click\", function(e) {",
+				"\te.stopPropagation();",
+				"\te.preventDefault();",
+				"",
+				"\tconsole.log(\"click button {id}\");",
+				"",
+				"\t// add button effect with selected",
+				"\tvar tbutton = $(this);",
+				"\ttbutton.addClass(\"e-selection\");",
+				"\tsetTimeout(function() {",
+				"\t\ttbutton.removeClass(\"e-selection\");",
+				"\t}, 2000);",
+				"",
+				"\tvar report_main = owner.$report_view;",
+				"\tvar sheets = report_main. sheets,",
+				"\t\tsheet = sheets[0];",
+				"",
+				"\t// control chart via toolbar",
+				"\t",
+				"\t// 1. set active sheet for toolbar",
+				"\tvar sheet_render = sheet. renderBox;",
+				"\tvar sheet_panel = report_main.dzone.getBox(sheet_render);",
+				"\treport_main.setActSheet(sheet_panel);",
+				"",
+				"\t// 2. update view mode to chart ",
+				"        // chart - to chart, grid -> to grid",
+				"\treport_main.updateViewMode(\"chart\");",
+				"",
+				"\t// 3. get chart component",
+				"\tvar chartview = sheet.chart$._chartPnls[0]._chartview;",
+				"",
+				"\t// 4. master charts from chartview (multiple charts are shown on single widget and lists all possible)",
+				"\tvar master_charts = chartview. _masterCharts;",
+				"\t",
+				"\tif (master_charts && master_charts.length)",
+				"\t{",
+				"\t\t// adding data to the current chart",
+				"\t\tvar echart = master_charts[0];",
+				"\t\tif (echart.setOption)",
+				"\t\t{",
+				"\t\t\towner._custom_seq = owner._custom_seq || 0;",
+				"\t\t\tvar cur_options = echart.getOption();",
+				"\t\t\tvar new_col_name = \"custom \" + (++owner._custom_seq);",
+				"\t\t\tcur_options.xAxis[0].data.push(new_col_name);",
+				"\t\t\tcur_options.series[0].data.push({",
+				"\t\t\t\tfval: \"custom value\",",
+				"\t\t\t\tname: new_col_name,",
+				"\t\t\t\tvalue: Math.random() * 1000000,",
+				"\t\t\t\tx: cur_options.xAxis[0].data.length - 1",
+				"\t\t\t});",
+				"\t\t\tmaster_charts[0].setOption(cur_options);",	
+				"\t\t}",
+				"\t}",
+				"\telse if (chartview. customchart)",
+				"\t{",
+				"\t\t// for custom chart. ex: arcgis chart",
+				"\t}",	
+				"});"
+			]
+		},
+		{
+			"name": "Chart Selection",
+			"jscript": [
+				"$(\"#sel_chart\", $(\"#{id}\", html)).bind(\"change\", function(e) {",
+				"",
+				"\tvar new_chart = $(this).val();",
+				"\tconsole.log(\"chart type change \" + new_chart);",
+				"",
+				"\tif (!new_chart)",
+				"\t\treturn;",
+				"",
+				"\tvar report_main = owner.$report_view;",
+				"\tvar sheets = report_main. sheets,",
+				"\t\tsheet = sheets[0];",
+				"",
+				"\t// 1. set active sheet for toolbar",
+				"\tvar sheet_render = sheet. renderBox;",
+				"\tvar sheet_panel = report_main.dzone.getBox(sheet_render);",
+				"\treport_main.setActSheet(sheet_panel);",
+				"",
+				"\t// 2. update view mode to chart ",
+				"        // chart - to chart, grid -> to grid",
+				"\treport_main.updateViewMode(\"chart\");",
+				"",
+				"\t// 3. set chart type ",
+				"\treport_main.changeChartType({",
+				"\t\tcharttype: \"cartesian\",",
+				"\t\tsubtype: new_chart",
+				"\t});",
+				"});"
+			]
+		}
+	]
+}

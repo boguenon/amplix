@@ -13,7 +13,7 @@
 <meta name="keywords" content="JD Edwards,Salesforce reporting,R statistics,Python,Anaconda,Big Data,Data Visualization,Reporting,NoSQL,BI,Hadoop,Mongo,Amplix,web base bi,Python,Dashboard">
 <meta name="Subject" content="BI Amplix">
 <link rel="icon" href="../../favicon.png" type="image/png">
-<title>5. 데이타베이스 연결</title>
+<title>5. 데이터베이스 연결</title>
 
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/animate.min.css" rel="stylesheet">
@@ -73,7 +73,7 @@
 	
 			<div class="row document">
 				<div class="col-lg-3 sphinxsidebar" role="navigation" aria-label="main navigation" id="sphinxsidebar">
-					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1. 매뉴얼 정보</a></h3></div><div><h3><a href="server_install.html">2. 소프트웨어 서버 설치</a></h3></div><div><h3><a href="sys_manager.html">3. 시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3 class="active">5. 데이타베이스 연결</h3><ul></ul></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7. 리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8. 문제해결</a></h3></div></div><p></p></div>
+					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1. 매뉴얼 정보</a></h3></div><div><h3><a href="server_install.html">2. 소프트웨어 서버 설치</a></h3></div><div><h3><a href="sys_manager.html">3. 시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3 class="active">5. 데이터베이스 연결</h3><ul></ul></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7. 리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8. 문제해결</a></h3></div></div><p></p></div>
 				</div>
 				<div class="col-lg-9 text-left documentwrapper">
 					<div class="bodywrapper">
@@ -84,46 +84,46 @@
 								
 							</p>
 							<div id="menu_template">
-<h2><a name="_Toc21218595">5. 데이타베이스 연결</a></h2><p><span>
-분석을 위한 데이타베이스 접속 방법에 대해 안내합니다.</p>
+<h2><a name="_Toc21218595">5. 데이터베이스 연결</a></h2><p><span>
+분석을 위한 데이터베이스 연결  방법에 대해 안내합니다.</p>
 <p></p>
-<p>메인 메뉴의 분석 메뉴의 데이타베이스 연결 항목을 선택합니다.</p>
+<p>메인 메뉴의 분석 메뉴의 데이터베이스 연결 항목을 선택합니다.</p>
 <p></p>
 <p></span><span>
 <img src="./images/dev_database_connection_1.png"></img>
 </span><span>
 </p>
-<p>(그림 : 데이타베이스 연결 메인 메뉴)</p>
+<p>(그림 : 데이터베이스 연결 메인 메뉴)</p>
 <p></p>
-<p></span><span class="doc_header_3">데이타베이스 등록 화면 레이아웃 </span><span>
+<p></span><span class="doc_header_3">데이터베이스 연결 화면 레이아웃 </span><span>
 </p>
-<p>데이타베이스 등록 화면이 탭 작업 영역에 나타난다. 화면 레이아웃 구성은 아래와 같다.</p>
+<p>데이터베이스 연결 화면이 탭 작업 영역에 나타난다. 화면 레이아웃 구성은 아래와 같다.</p>
 <p></p>
 <p></span><span>
 <img src="./images/dev_database_connection_4.png"></img>
 </span><span>
 </p>
-<p>(그림 : 데이타베이스 등록 화면 레이아웃 및 기능)</p>
+<p>(그림 : 데이터베이스 연결 화면 레이아웃 및 기능)</p>
 <p></p>
 <p></span><spanstyle="background-color:#ffff00;color:#e60000">
-* 데이타베이스 접속 정보 삭제시, 접속정보를 사용하는 리포트 / 비즈니스 오브젝트가 실행 되지 않으며, 오류 처리 된다. 기존 작업된 내용이 있는 경우 하위 문서를 삭제하고 인스턴스를 삭제할 것을 권고 한다.</span><span>
+* 데이터베이스 접속 정보 삭제시, 접속정보를 사용하는 리포트 / 비즈니스 오브젝트가 실행 되지 않으며, 오류 처리 된다. 기존 작업된 내용이 있는 경우 하위 문서를 삭제하고 인스턴스를 삭제할 것을 권고 한다.</span><span>
 </p>
 <p></p>
-<p></span><span class="doc_header_3">데이타베이스 접속 인스턴스 추가</span><span>
+<p></span><span class="doc_header_3">데이터베이스 접속 인스턴스 추가</span><span>
 </p>
-<p>툴바의 데이타베이스 접속 인스턴스 추가 버튼을 클릭 하여 새로운 데이타베이스 인스턴스를 생성한다.</p>
-<p></span><span class="doc_header_3">데이타베이스 접속 정보 입력</span><span>
+<p>툴바의 데이터베이스 접속 인스턴스 추가 버튼을 클릭 하여 새로운 데이터베이스 인스턴스를 생성한다.</p>
+<p></span><span class="doc_header_3">데이터베이스 접속 정보 입력</span><span>
 </p>
 <p></span><span>
 <img src="./images/dev_database_connection_10.png"></img>
 </span><span>
 </p>
-<p>(그림 : 데이타베이스 연결 설정 화면 레이아웃 및 기능)</p>
+<p>(그림 : 데이터베이스 연결 설정 화면 레이아웃 및 기능)</p>
 <p></span><span class="doc_header_3"></span><span>
 고급설정</span><span>
 </p>
-<p>DB값 : SQL 접속을 검증할 수 있는 기본 SQL 쿼리를 입력 한다. 데이타베이스 접속 성공 / 실패 여부를 판별하는 쿼리 문장의 의미를 가진다.</p>
-<p>최대 풀 사이즈 : 데이타베이스 접속 풀의 사이즈를 설정한다. </p>
+<p>DB값 : SQL 접속을 검증할 수 있는 기본 SQL 쿼리를 입력 한다. 데이터베이스 접속 성공 / 실패 여부를 판별하는 쿼리 문장의 의미를 가진다.</p>
+<p>최대 풀 사이즈 : 데이터베이스 접속 풀의 사이즈를 설정한다. </p>
 <p> - 기본값 : 0 (최대 풀 사이즈를 커넥션 풀의 디폴트값으로 사용)</p>
 <p>쿼리 제한 시간 : 리포트에서 실행되는 쿼리의 제한 시간을 초 단위로 지정하여 지정시간을 초과하는 경우 사용자에게 오류 메시지를 보여 준다.</p>
 <p> - 기본값 : 0 (쿼리 실항시간을 커넥션 풀의 디폴트값으로 사용)</p>

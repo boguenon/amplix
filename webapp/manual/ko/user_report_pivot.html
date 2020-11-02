@@ -13,7 +13,7 @@
 <meta name="keywords" content="JD Edwards,Salesforce reporting,R statistics,Python,Anaconda,Big Data,Data Visualization,Reporting,NoSQL,BI,Hadoop,Mongo,Amplix,web base bi,Python,Dashboard">
 <meta name="Subject" content="BI Amplix">
 <link rel="icon" href="../../favicon.png" type="image/png">
-<title>7.2. 결과 쉬트 위젯 피벗</title>
+<title>7.2. 결과 시트 위젯 피벗</title>
 
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/animate.min.css" rel="stylesheet">
@@ -73,7 +73,7 @@
 	
 			<div class="row document">
 				<div class="col-lg-3 sphinxsidebar" role="navigation" aria-label="main navigation" id="sphinxsidebar">
-					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1. 매뉴얼 정보</a></h3></div><div><h3><a href="server_install.html">2. 소프트웨어 서버 설치</a></h3></div><div><h3><a href="sys_manager.html">3. 시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3 class="active">7. 리포트 생성 및 활용</h3><ul><li><a href="user_report_create.html">7.1. 리포트 생성</a></li><li><a href="user_report_pivot.html" class="active">7.2. 결과 쉬트 위젯 피벗</a></li><li><a href="user_report_layout.html">7.3. 리포트 화면 레이아웃 구성</a></li><li><a href="user_report_sheet_widget.html">7.4. 결과 쉬트 위젯 설정하기</a></li><li><a href="user_report_chart.html">7.5. 챠트 보기</a></li><li><a href="user_report_filter_widget.html">7.6. 필터 위젯 사용하기</a></li><li><a href="user_report_widget_layout.html">7.7. 위젯 레이아웃 변경하기</a></li></ul></div><div><h3><a href="manual_troubleshoot.html">8. 문제해결</a></h3></div></div><p></p></div>
+					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1. 매뉴얼 정보</a></h3></div><div><h3><a href="server_install.html">2. 소프트웨어 서버 설치</a></h3></div><div><h3><a href="sys_manager.html">3. 시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이터베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3 class="active">7. 리포트 생성 및 활용</h3><ul><li><a href="user_report_create.html">7.1. 리포트 생성</a></li><li><a href="user_report_pivot.html" class="active">7.2. 결과 시트 위젯 피벗</a></li><li><a href="user_report_layout.html">7.3. 리포트 화면 레이아웃 구성</a></li><li><a href="user_report_sheet_widget.html">7.4. 결과 시트 위젯 설정하기</a></li><li><a href="user_report_chart.html">7.5. 챠트 보기</a></li><li><a href="user_report_filter_widget.html">7.6. 필터 위젯 사용하기</a></li><li><a href="user_report_widget_layout.html">7.7. 위젯 레이아웃 변경하기</a></li></ul></div><div><h3><a href="manual_troubleshoot.html">8. 문제해결</a></h3></div></div><p></p></div>
 				</div>
 				<div class="col-lg-9 text-left documentwrapper">
 					<div class="bodywrapper">
@@ -84,23 +84,23 @@
 								
 							</p>
 							<div id="menu_template">
-<h2><a name="_Toc21218595">7.2. 결과 쉬트 위젯 피벗</a></h2><p><span>
-</span><span class="doc_header_3">결과 쉬트 위젯 피봇 변경</span><span>
+<h2><a name="_Toc21218595">7.2. 결과 시트 위젯 피벗</a></h2><p><span>
+</span><span class="doc_header_3">결과 시트 위젯 피벗 변경</span><span>
 </p>
-<p>결과 쉬트 위젯의 피봇을 수정/변경하려면 위젯 툴바의 피봇 편집 버튼을 클릭하여 피봇 정보 화면을 통해 수정한다.</p>
+<p>결과 시트 위젯의 피벗을 수정/변경하려면 위젯 툴바의 피벗 편집 버튼을 클릭하여 피벗 정보 화면을 통해 수정한다.</p>
 <p></p>
 <p></span><span>
 <img src="./images/user_report_pivot_2.png"></img>
 </span><span>
 </p>
-<p>(그림 : 결과 쉬트 피봇 편집 화면 레이아웃)</p>
+<p>(그림 : 결과 시트 피벗 편집 화면 레이아웃)</p>
 <p></p>
-<p>피봇 편집 화면의 각 레이아웃별 설명은 다음과 같다.</p>
+<p>피벗 편집 화면의 각 레이아웃별 설명은 다음과 같다.</p>
 <p>-. 비즈니스 오브젝트 테이블 / 인라인뷰 항목 : 선택된 비즈니스 오브젝트의 테이블 / 인라인뷰 항목 및 각 항목에 등록된 디멘젼 목록을 조회 할 수 있다.</p>
 <p>-. 비즈니스 오브젝트 검색 : 비즈니스 오브젝트에서 필요한 항목을 검색하는 기능을 제공한다.</p>
-<p>-. 피봇 행디멘젼 항목 목록 : 피봇의 행영역에 표현되는 디멘젼을 추가한다.</p>
-<p>-. 피봇 메져 항목 목록 : 피봇 결과 그리드의 수치값에 해당하는 디멘젼/메져를 추가한다.</p>
-<p>-. 피봇 열 항목 목록 : 피봇 결과 그리드의 헤더에 해당하는 디멘젼 항목을 추가한다.</p>
+<p>-. 피벗 행디멘젼 항목 목록 : 피벗의 행영역에 표현되는 디멘젼을 추가한다.</p>
+<p>-. 피벗 메져 항목 목록 : 피벗 결과 그리드의 수치값에 해당하는 디멘젼/메져를 추가한다.</p>
+<p>-. 피벗 열 항목 목록 : 피벗 결과 그리드의 헤더에 해당하는 디멘젼 항목을 추가한다.</p>
 <p></p>
 <p>그림의 리포트를 실행하면 다음의 그리드 결과 형태로 나타난다.</p>
 <p></p>
@@ -108,7 +108,7 @@
 <img src="./images/user_report_pivot_4.png"></img>
 </span><span>
 </p>
-<p>(그림 : 리포트 결과 쉬트 피봇 조회 결과 예제 - 그리드)</p>
+<p>(그림 : 리포트 결과 시트 피벗 조회 결과 예제 - 그리드)</p>
 <p></p>
 <p></p>
 <p></span></p>

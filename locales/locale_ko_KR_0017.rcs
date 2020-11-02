@@ -4,7 +4,7 @@ A;L_STOCK_LOW_HIGH;주식형 고저점 분석
 A;L_TREEMAP;트리맵
 A;L_RELATION_FINDING;상관관계 찾기 
 A;L_SCI_ANAL;과학적 분석 시각화
-A;L_STAT_VIS;통계적 데이타 시각화
+A;L_STAT_VIS;통계적 데이터 시각화
 A;L_MAP_GEO;맵 및 지도
 A;L_QUALITY_CTRL;6시그마 품질 도표
 
@@ -93,8 +93,8 @@ A;M_TARGET_NOTFOUND;대상항목이 존재하지 않습니다.
 A;M_NOTFOUND_IN_DIM;항목이 디멘젼 목록에 존재하지 않습니다.
 A;M_PROC_WAIT;아직 진행중입니다. 잠시 기다려 주십시오.
 
-A;L_SHEET_TOOLBAR;쉬트 툴바
-A;L_SHEET_SCRIPTS;쉬트 스크립트
+A;L_SHEET_TOOLBAR;시트 툴바
+A;L_SHEET_SCRIPTS;시트 스크립트
 A;L_CUST_LEGEND;커스텀 범례
 A;L_SYS_LOG;시스템 로그
 
@@ -152,7 +152,7 @@ A;S_SECURITY;보안작업
 A;S_NA;기타사항
 
 A;L_TWOWAY_AUTH;2차 인증 사용
-A;L_H2_PERSIST_ENABLED;H2 데이타 메싱DB
+A;L_H2_PERSIST_ENABLED;H2 데이터 메싱DB
 A;L_ARC_VIEW;ArcGIS 뷰
 A;L_MAP_CAMERA;맵 카메라
 
@@ -179,3 +179,18 @@ A;L_FLOAT_OPTION;플로트 패널 옵션
 A;L_RESIZABLE;패널 크기변경
 A;L_MOVEABLE;패널 위치이동
 A;L_MAP_POPUP_HOVER;마우스 오버 팝업창
+
+A;L_HIDE_MAX;최대창 숨기기
+A;L_COLLAPSE;접기 사용
+A;L_CLP_START;접은 상태로 열기
+A;L_CLP_CSS;접은 상태 아이콘 CSS
+A;L_HTML;HTML코드
+A;L_JSCRIPT;자바스크립트
+A;L_TB_CHART;시트 챠트마법사 도구
+
+A;L_ENABLE_DISABLE;사용여부 설정
+A;L_INC_USERS;사용자 포함
+A;L_INC_DEPTS;그룹 포함
+A;L_INC_ROLES;권한 포함
+
+A;L_WIDGET_OPTION;위젯 옵션

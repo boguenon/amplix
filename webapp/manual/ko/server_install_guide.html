@@ -73,7 +73,7 @@
 	
 			<div class="row document">
 				<div class="col-lg-3 sphinxsidebar" role="navigation" aria-label="main navigation" id="sphinxsidebar">
-					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1. 매뉴얼 정보</a></h3></div><div><h3 class="active">2. 소프트웨어 서버 설치</h3><ul><li><a href="server_install_guide.html" class="active">2.1. 서버 설치 가이드</a></li><li><a href="server_install_test.html">2.2. 설치 테스트</a></li><li><a href="server_log_file.html">2.3. 서버 로그 파일</a></li></ul></div><div><h3><a href="sys_manager.html">3. 시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이타베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7. 리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8. 문제해결</a></h3></div></div><p></p></div>
+					<div class="sphinxsidebarwrapper"><p></p><div id="main_slider"><div><h3><a href="manual_general.html">1. 매뉴얼 정보</a></h3></div><div><h3 class="active">2. 소프트웨어 서버 설치</h3><ul><li><a href="server_install_guide.html" class="active">2.1. 서버 설치 가이드</a></li><li><a href="server_install_test.html">2.2. 설치 테스트</a></li><li><a href="server_log_file.html">2.3. 서버 로그 파일</a></li></ul></div><div><h3><a href="sys_manager.html">3. 시스템 관리</a></h3></div><div><h3><a href="user_general.html">4. 화면 UI 구성 및 사용법</a></h3></div><div><h3><a href="dev_database_connection.html">5. 데이터베이스 연결</a></h3></div><div><h3><a href="dev_business_object_menu.html">6. 비즈니스 오브젝트</a></h3></div><div><h3><a href="user_report.html">7. 리포트 생성 및 활용</a></h3></div><div><h3><a href="manual_troubleshoot.html">8. 문제해결</a></h3></div></div><p></p></div>
 				</div>
 				<div class="col-lg-9 text-left documentwrapper">
 					<div class="bodywrapper">
@@ -85,7 +85,7 @@
 							</p>
 							<div id="menu_template">
 <h2><a name="_Toc21218595">2.1. 서버 설치 가이드</a></h2><p><span>
-AMPLIX 서버의 설치는 서버 소프트웨어의 시스템에서의 설치 및 메타 데이타베이스 생성의 단계로 구성된다.</p>
+AMPLIX 서버의 설치는 서버 소프트웨어의 시스템에서의 설치 및 메타 데이터베이스 생성의 단계로 구성된다.</p>
 <p></span><span class="doc_header_3">단계 1: 서버 소프트웨어의 설치</span><span>
 </p>
 <p>AMPLIX 파트너를 통해 구매한 소프트웨어를 서버 시스템의 폴더에 다운로드 한후 소프트웨어의 압축을 해제하여 압축파일의 소프트웨어 패키지를 구성한다.</p>
@@ -93,13 +93,13 @@ AMPLIX 서버의 설치는 서버 소프트웨어의 시스템에서의 설치 �
 <p>예제: c:/amplix/에 패키지 파일 복사 후 압축을 해제한다.</p>
 <p></p>
 <p>구매 시 발급된 라이센스 키 파일을 c:/amplix 폴더에 복사한다. 라이센스 키 파일은 “license.dat” 의 이름으로 되어 있다.</p>
-<p></span><span class="doc_header_3">단계 2: 메타 데이타베이스 서버 설정</span><span>
+<p></span><span class="doc_header_3">단계 2: 메타 데이터베이스 서버 설정</span><span>
 </p>
-<p>필요 소프트웨어 에 기술된 데이타베이스 시스템에 메타 데이타베이스를 생성한다.</p>
+<p>필요 소프트웨어 에 기술된 데이터베이스 시스템에 메타 데이터베이스를 생성한다.</p>
 <p></p>
 <p>생성에 필요한 스크립트는 다음과 같다.</p>
 <p></p>
-<p>a. 데이타베이스 생성</p>
+<p>a. 데이터베이스 생성</p>
 <p></p>
 <p>create database amplix_meta default character set utf8 collate by utf8_general_ci;</p>
 <p></p>
@@ -107,15 +107,15 @@ AMPLIX 서버의 설치는 서버 소프트웨어의 시스템에서의 설치 �
 <p></p>
 <p>create user 'amplix_meta'@'localhost' identified by '패스워드';</p>
 <p></p>
-<p>* 패스워드 를 사용할 데이타베이스 사용자 패스워드로 변경 후 스크립트를 실행한다.</p>
+<p>* 패스워드 를 사용할 데이터베이스 사용자 패스워드로 변경 후 스크립트를 실행한다.</p>
 <p></p>
 <p>c. 테이블의 권한 부여</p>
 <p></p>
 <p>grant all privileges on amplix_meta.* to 'amplix_meta'@'localhost';</p>
 <p>flush privileges;</p>
-<p></span><span class="doc_header_3">단계 3 : 샘플 데이타베이스 생성</span><span>
+<p></span><span class="doc_header_3">단계 3 : 샘플 데이터베이스 생성</span><span>
 </p>
-<p>a. 데이타베이스 생성</p>
+<p>a. 데이터베이스 생성</p>
 <p></p>
 <p>create database amplix_sample default character set utf8 collate by utf8_general_ci;</p>
 <p></p>
@@ -123,7 +123,7 @@ AMPLIX 서버의 설치는 서버 소프트웨어의 시스템에서의 설치 �
 <p></p>
 <p>create user 'amplix_sample'@'localhost' identified by '패스워드';</p>
 <p></p>
-<p>* 패스워드를 사용할 데이타베이스 사용자 패스워드로 변경 후 스크립트를 실행한다.</p>
+<p>* 패스워드를 사용할 데이터베이스 사용자 패스워드로 변경 후 스크립트를 실행한다.</p>
 <p></p>
 <p>c. 테이블의 권한 부여</p>
 <p></p>
@@ -132,7 +132,7 @@ AMPLIX 서버의 설치는 서버 소프트웨어의 시스템에서의 설치 �
 </p>
 <p>서버 패키지 설치 폴더의 bin/RUN_startup.bat 파일을 실행하여 서버를 시작한다.</p>
 <p></p>
-<p>웹브라우져를 통해 서버 인스톨 마법사 페이지를 호출하여 메타 데이타베이스 등 설정을 마무리 한다.</p>
+<p>웹브라우져를 통해 서버 인스톨 마법사 페이지를 호출하여 메타 데이터베이스 등 설정을 마무리 한다.</p>
 <p></p>
 <p>http://serverip:8580/install/kr</p>
 <p></span><span class="doc_header_3">단계 5 : 서버 인스톨 마법사</span><span>
@@ -147,7 +147,7 @@ AMPLIX 서버의 설치는 서버 소프트웨어의 시스템에서의 설치 �
 <p></p>
 <p>(그림 : 인스톨 마법사 화면 구성)</p>
 <p></p>
-<p>설치 준비 단계에 대한 내용 확인 후 하단의 Goto Configurations 버튼을 클릭하여 메타 데이타베이스에 대한 정보 입력 등 세부 설정 작업 단계로 진행한다.</p>
+<p>설치 준비 단계에 대한 내용 확인 후 하단의 Goto Configurations 버튼을 클릭하여 메타 데이터베이스에 대한 정보 입력 등 세부 설정 작업 단계로 진행한다.</p>
 <p></p>
 <p></p>
 <p></span><span class="doc_header_3">서버의 시작 및 종료</span><span>

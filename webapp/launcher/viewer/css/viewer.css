@@ -1,199 +1,25 @@
 @charset "utf-8";
-
-@charset "utf-8";
-/*  폰트적용:나눔바른고딕 */
-@font-face {
-  font-family: 'NanumBarunGothic';
-  src: url(../font/NanumBarunGothic.ttf) format('truetype');
-}
-
-/*Reset*/
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
-abbr, address, big, cite, code, del, dfn, em, font, img, ins,q, s, samp, small, strike, 
-strong, sub, sup, tt, var, b,u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
-table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: none 0; }
-
-* {margin:0}
-*html{height:1px;} 
-html, body { width:100%; height:100%; }
-body, input, button, textarea { font-size:12px; line-height:1.5em; font-family: Verdana, "돋움", Dotum, Helvetica, AppleGothic, Sans-serif; color:#444; }
-textarea, input {outline-color:-moz-use-text-color; outline-style:none; outline-width:medium;}
-h1, h2, h3, h4, h5, h6 { font-size:12px; text-align:left; }
-img, fieldset, iframe { border:0 none;}
-
-table, div { border-collapse: collapse;}
-select, textarea { border: 1px solid #B7B6B6; background: #FFFFFF; color: #000000; font-size: 12px; vertical-align: middle; }
-textarea { overflow:auto; }
-select, input, img, li { vertical-align: middle; text-align:left; }
-address, caption, cite, code, dfn, em, strong, th, var { font-style : normal; font-weight : normal; }
-
-ul, li, ol { list-style-type: none;}
-
-ul, li{font-size:0px;}
-legend, caption { display: none; }
-hr { border-collapse:collapse; display:none; }
-strong{font-weight:bold;}
-/* font */
-
-/*anchor*/
-a:link, a:visited { text-decoration:none; color: #666; }
-a:hover {text-decoration:none; cursor:pointer; }
-
-/*hidden*/
-#accessibility,.skipnavi { position: absolute ; width: 0px; height: 0px; font-size: 0px; line-height: 0px; overflow: hidden; visibility: hidden; text-indent: -1000px; }
-.hidden {display:none;}
- 
-/*align*/
-.t_left{text-align:left;}
-.t_center{text-align:center;}
-.t_right{text-align:right;}
-
-/* float */
-.f_left {float:left} 
-.f_right {float:right} 
-.f_clear {clear:both} 
-.clear {overflow:hidden;_zoom:1; clear:both}
-
-/* none 시리즈 속성 정의 */
-.none_bor {border:none !important;}
-.none_bg {background:none !important;}
-.none_dp {display:none !important;}
-.none_ma {margin:0px !important;}
-.none_pa {padding:0px !important;}
-.none_clear {clear:both  !important;}
-.none_pb {border:none !important; padding:0px !important;}
-
-/* display */
-.block_dp {display:block}
-
-/* 공통패딩 */
-.pt5{padding-top:5px;} 
-.pt10{padding-top:10px;} 
-.pt15{padding-top:15px;} 
-.pt20{padding-top:20px;} 
-.pt25{padding-top:25px;} 
-.pt30{padding-top:30px;} 
-.pt35{padding-top:35px;} 
-.pt40{padding-top:40px;} 
-.pt50{padding-top:50px;} 
-.pt60{padding-top:60px;}
-
-.pb5{padding-bottom:5px;} 
-.pb10{padding-bottom:10px;} 
-.pb15{padding-bottom:15px;} 
-.pb20{padding-bottom:20px;} 
-.pb25{padding-bottom:25px;} 
-.pb30{padding-bottom:30px;} 
-.pb35{padding-bottom:35px;}
-.pb40{padding-bottom:40px;} 
-.pb50{padding-bottom:50px;} 
-.pb60{padding-bottom:60px;}
-
-.pl5{padding-left:5px;} 
-.pl10{padding-left:10px;} 
-.pl15{padding-left:15px;} 
-.pl20{padding-left:20px;} 
-.pl25{padding-left:25px;} 
-.pl30{padding-left:30px;} 
-.pl35{padding-left:35px;} 
-.pl40{padding-left:40px;}
-
-.pr5{padding-right:5px;} 
-.pr10{padding-right:10px;} 
-.pr15{padding-right:15px;} 
-.pr20{padding-right:20px;} 
-.pr25{padding-right:25px;} 
-.pr30{padding-right:30px;} 
-.pr35{padding-right:35px;}
-.pr40{padding-right:40px;}
-
-.padd5{padding:5px;} 
-.padd10{padding:10px;} 
-.padd15{padding:15px;} 
-.padd20{padding:20px;} 
-.padd25{padding:25px;} 
-.padd30{padding:30px;}
-.padd35{padding:35px;} 
-.padd40{padding:40px;}
- 
-/* 공통마진 */
-.mt5{margin-top:5px;} 
-.mt10{margin-top:10px;} 
-.mt15{margin-top:15px;} 
-.mt20{margin-top:20px;} 
-.mt25{margin-top:25px;} 
-.mt30{margin-top:30px;}
-.mt35{margin-top:35px;}
-.mt40{margin-top:40px;}
-
-.mb5{margin-bottom:5px;} 
-.mb10{margin-bottom:10px;} 
-.mb15{margin-bottom:15px;} 
-.mb20{margin-bottom:20px;} 
-.mb25{margin-bottom:25px;} 
-.mb30{margin-bottom:30px;} 
-.mb35{margin-bottom:35px;} 
-.mb40{margin-bottom:40px;}
-
-.ml5{margin-left:5px;} 
-.ml10{margin-left:10px;} 
-.ml15{margin-left:15px;} 
-.ml20{margin-left:20px;} 
-.ml25{margin-left:25px;} 
-.ml30{margin-left:30px;} 
-.ml35{margin-left:35px;} 
-.ml40{margin-left:40px;}
-
-.mr5{margin-right:5px;} 
-.mr10{margin-right:10px;} 
-.mr15{margin-right:15px;} 
-.mr20{margin-right:20px;} 
-.mr25{margin-right:25px;} 
-.mr30{margin-right:30px;} 
-.mr35{margin-right:35px;} 
-.mr40{margin-right:40px;}
-
-.margin5{margin:5px;}
-.margin10{margin:10px;} 
-.margin15{margin:15px;} 
-.margin20{margin:20px;} 
-.margin25{margin:25px;} 
-.margin30{margin:30px;} 
-.margin35{margin:35px;}
-
-
-/* font style 시리즈 속성 정의 */
-.bold {font-weight:bold !important;}
-.underline { text-decoration:underline !important; }
-.f11 {font-size:11px !important;}
-a.wtxt{color:#FFFFFF;}
-
-/* form 시리즈 속성 정의 */
-input[type="text"] { height:17px;}
-input.radio {display:block;} 
-input.check {display:block;} 
-select.selectbox{padding:3px; color:#999}
-input.inputbox{padding:3px;}
-
-
 /*  common  */
-html, body {height:100%; overflow:hidden; font:12px 'NanumBarunGothic', sans-serif;}
-* html, #wrap {height:100%;}/* IE하위버전 맞춤 */
-#wrap {width:100%; overflow:hidden;}
+html, body {height:100%; overflow:hidden;}
+#wrap {
+	position: absolute;
+	width:100%;
+	top: 50px;
+	bottom: 0px;
+	overflow:hidden;
+}
 ul,li {margin:0; padding:0;} 
 #content {
   overflow:hidden;
-  position:absolute;
-  margin:0;
-  width: 100%;
-  top: 0px;
-  bottom: 0px;  
+  position:relative;
+  margin:0 auto;
+  height:100%;  
 }
 
 /*  header  */
 #slide_menu {
   background:#3179C1;
-  z-index:1;
+  z-index:2;
   width:100%;
   /*height:75px;*/
   position:absolute;
@@ -224,11 +50,11 @@ ul,li {margin:0; padding:0;}
   z-index:3;
   padding:20px 10px 17px; 
   color:#888;
-  background:url(../images/Button_nor.png) center 40px no-repeat; 
+  background:url(../images/button_nor.png) center 40px no-repeat; 
 }
 #header #nav > ul > li > a:hover {
   color:#4278A5;
-  background:url(../images/Button_sel.png) center 40px no-repeat; 
+  background:url(../images/button_sel.png) center 40px no-repeat; 
 }
 
 
@@ -261,9 +87,14 @@ ul,li {margin:0; padding:0;}
 }
 
 .logo {
-	line-height: 30px;
+	line-height: 35px;
+    font-size: 28px;
 }
 
 #title_area {
 	position: relative;
+}
+
+.ui-menu-item {
+	font-size: 12px;
 }

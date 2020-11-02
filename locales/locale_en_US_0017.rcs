@@ -175,3 +175,18 @@ A;L_FLOAT_OPTION;Float Panel Options
 A;L_RESIZABLE;Resizable
 A;L_MOVEABLE;Moveable
 A;L_MAP_POPUP_HOVER;Mouse over Popup
+
+A;L_HIDE_MAX;Hide Maximize
+A;L_COLLAPSE;Collapsible
+A;L_CLP_START;Open Collapsed
+A;L_CLP_CSS;Collapse Icon CSS
+A;L_HTML;HTML Code
+A;L_JSCRIPT;JavaScript
+A;L_TB_CHART;Toolbar ChartWizard
+
+A;L_ENABLE_DISABLE;Set Enable
+A;L_INC_USERS;Include Users
+A;L_INC_DEPTS;Include Departments
+A;L_INC_ROLES;Include Roles
+
+A;L_WIDGET_OPTION;Widget Options

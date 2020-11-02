@@ -61,7 +61,7 @@ var useLocale = "ko_KR";
 			                    	성공적인 설치를 위해 다음 소프트웨어가 설치되어 있는지 점검하고 다시 시도해 주십시오.
 			                    	<ul>
 			                    		<li>Java SDK(1.8.0 또는 이후버전).</li>
-			                    		<li>MYSQL 데이타베이스</li>
+			                    		<li>MYSQL 데이터베이스</li>
 			                    		<li>
 			                    			<span class="install-title">패키지 파일 압축 풀기.</span><br/>
 			                    			AMPLIX 패키지 파일을 특정 폴더에 압축을 해제합니다.<br/>
@@ -79,36 +79,36 @@ var useLocale = "ko_KR";
 			                    		</li>
 			                    	</ul>
 			                    </p>
-								<h4>2. 메타 데이타베이스 준비하기</h4>
+								<h4>2. 메타 데이터베이스 준비하기</h4>
 								<p>
 									<ul>
 										<li>
-											<span class="install-title">MySQL 데이타베이스를 설치하고 시작해 주십시오.</span>
+											<span class="install-title">MySQL 데이터베이스를 설치하고 시작해 주십시오.</span>
 										</li>
 										<li>
-											<span class="install-title">root 사용자로 데이타베이스 관리툴에 로그인하여 다음 명령을 실행해 주십시오.</span><br>
+											<span class="install-title">root 사용자로 데이터베이스 관리툴에 로그인하여 다음 명령을 실행해 주십시오.</span><br>
 											<br>
 											<code>mysql -uroot -p</code><br><br>
 										</li>
 										<li>
-											<span class="install-title">데이타베이스 명령 셀에서 다음 명령을 실행하여 빈 데이타베이스를 생성해 주십시오.</span><br>
+											<span class="install-title">데이터베이스 명령 셀에서 다음 명령을 실행하여 빈 데이터베이스를 생성해 주십시오.</span><br>
 											<br>
 											<code>CREATE DATABASE amplix_meta default character set utf8 collate utf8_general_ci;</code><br>
 											<code>CREATE USER 'amplix_meta'@'localhost' IDENTIFIED BY 'password';</code>
 										</li>
 										<li>
-											<span class="install-title">데이타베이스 접속 권한을 부여해 주십시오.</span><br>
+											<span class="install-title">데이터베이스 접속 권한을 부여해 주십시오.</span><br>
 											<br />
 											<code>GRANT ALL PRIVILEGES ON amplix_meta.* TO 'amplix_meta'@'localhost';</code><br/>
 											<code>FLUSH PRIVILEGES;</code>
 										</li>
 										<li>
-											<span class="install-title">샘플 데이타베이스와 사용자를 생성해 주십시오.</span><br/>
+											<span class="install-title">샘플 데이터베이스와 사용자를 생성해 주십시오.</span><br/>
 											<br/>
 											<code>CREATE DATABASE amplix_sample default character set utf8 collate utf8_general_ci;</code><br/>
 											<code>CREATE USER 'amplix_sample'@'localhost' IDENTIFIED BY 'password';</code><br/>
 											<br/>
-											<span class="install-title">샘플 데이타베이스 사용자 및 데이타베이스 접근 권한을 부여해 주십시오.</span><br/>
+											<span class="install-title">샘플 데이터베이스 사용자 및 데이터베이스 접근 권한을 부여해 주십시오.</span><br/>
 											<br/>
 											<code>GRANT ALL PRIVILEGES ON amplix_sample.* TO 'amplix_sample'@'localhost';</code><br/>
 											<code>FLUSH PRIVILEGES;</code>
@@ -178,7 +178,7 @@ var useLocale = "ko_KR";
 						</div>
 						
 						<div class="title">
-							데이타베이스 설정
+							데이터베이스 설정
 						</div>
 						<div class="content">
 							<table id="form_db" class="tb_form">
@@ -186,7 +186,7 @@ var useLocale = "ko_KR";
 								<col width="*"></col>
 								<col width="*"></col>
 		               			<tr>
-		               				<td class="fieldname">메타 데이타베이스를 선택해 주십시오.</td>
+		               				<td class="fieldname">메타 데이터베이스를 선택해 주십시오.</td>
 		               				<td colspan="2">
 		               					<select id="db_type">
 		               					</select>
@@ -207,7 +207,7 @@ var useLocale = "ko_KR";
 		               				<td><span id="msg_db_port" class="ex_msg"></span></td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">데이타베이스 명</td>
+		               				<td class="fieldname">데이터베이스 명</td>
 		               				<td>
 		               					<input id="db_name" type="text"></input>
 		               				</td>
@@ -247,14 +247,14 @@ var useLocale = "ko_KR";
 		               				</td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">데이타베이스 사용자 명</td>
+		               				<td class="fieldname">데이터베이스 사용자 명</td>
 		               				<td>
 		               					<input id="db_user" type="text"></input>
 		               				</td>
 		               				<td><span id="msg_db_user" class="ex_msg">Ex) amplix</span></td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">데이타베이스 사용자 패스워드</td>
+		               				<td class="fieldname">데이터베이스 사용자 패스워드</td>
 		               				<td colspan="2">
 		               					<input id="db_passwd" type="password"></input>
 		               				</td>
@@ -305,21 +305,21 @@ var useLocale = "ko_KR";
 								<col width="*"></col>
 								<tr>
 									<td class="fieldname">
-										모듈 데이타베이스 명
+										모듈 데이터베이스 명
 									</td>
 									<td><input type="text" id="md_owner"></input></td>
 									<td><span id="msg_md_owner" class="ex_msg"></span></td>
 								</tr>
 								<tr>
 									<td class="fieldname">
-										모듈 데이타베이스 사용자명
+										모듈 데이터베이스 사용자명
 									</td>
 									<td><input type="text" id="md_user"></input></td>
 									<td><span id="msg_md_user" class="ex_msg"></span></td>
 								</tr>
 								<tr>
 									<td class="fieldname">
-										모듈 데이타베이스 패스워드
+										모듈 데이터베이스 패스워드
 									</td>
 									<td colspan="2"><input type="password" id="md_password"></input></td>
 								</tr>

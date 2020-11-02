@@ -33,7 +33,7 @@ A;M_CONFIRM_DELETE;항목을 삭제하시겠습니까?
 A;M_CONFIRM_DISABLE;항목을 비활성화 하시겠습니까?
 A;M_CONFIRM_IMP;메타 컨텐츠를 임포트 하시겠습니까? 이미 존재하는 항목은 새로운 항목으로 업데이트 됩니다.
 A;M_CONFIRM_TB_BATCH;모든 테이블 안에의 필드 정보가 배치 업데이트 됩니다. 계속하시겠습니까?
-A;M_CONFIRM_DS_CHANGE;이미 정의된 데이타소스가 존재합니다. 다른 데이타 소스 선택시 문제를 발생할 수 있습니다. 계속하시겠습니까?
+A;M_CONFIRM_DS_CHANGE;이미 정의된 데이터소스가 존재합니다. 다른 데이터 소스 선택시 문제를 발생할 수 있습니다. 계속하시겠습니까?
 A;M_CONFIRM_DROP_FILE;항목을 드랍한 폴더에 이동하시겠습니까?
 A;M_CONFIRM_OVERWRITE; 항목이 이미 서버에 존재합니다. 기존 항목을 새로운 항목으로 업데이트 하시겠습니까?
 A;M_CONFIRM;계속 진행하시려면 예 버튼을 클릭해 주십시오.
@@ -44,7 +44,7 @@ A;L_MOVE_DOWN;아래로 이동
 A;L_SEARCH_ITEM;항목 검색
 A;B_UP;위로
 A;B_DOWN;아래로
-A;L_DB_POOL;데이타컨넥션
+A;L_DB_POOL;데이터컨넥션
 A;B_SEQUENCE;순서
 A;L_GROUP_INDEX;그룹 인덱스
 A;B_INDEX;순서
@@ -93,7 +93,7 @@ A;B_ROLE;권한
 A;B_TENANT;테넌트
 A;L_GROUP_ID;그룹 아이디
 A;L_SERVER_TYPE;서버 유형
-A;L_EMAIL_FROM_ADDR;보네는 주소
+A;L_EMAIL_FROM_ADDR;보내는 주소
 A;L_ENCRYPTION;암호화 유형
 A;L_AUTHEN_METHOD;인증 방식
 A;L_SERVER_ADDRESS;서버 주소
@@ -121,7 +121,7 @@ A;L_PWD_RULE;비밀번호 규칙
 A;L_MAX_FILE_UPLOAD_MB;최대 파일 업로드(MB)
 A;L_BULK_MAX_FIILE_UPLOAD_MB;벌크 최대 파일 업로드(MB)
 A;L_TENANT_POST_CALL_MODULE;테넌트 생성후 작업 모듈
-A;L_H2_URL_FOR_MASH;H2 데이타 매싱 연
+A;L_H2_URL_FOR_MASH;H2 데이터 매싱 연
 A;L_NLP_SVR_HOST;NLP 서버 주소
 A;L_NLP_SVR_PORT;NLP 서버 포트
 A;L_NLP_AGNTS;NLP 에이젼트 쓰래드 개수
@@ -144,7 +144,7 @@ A;L_GEO_MAP_CENTER;맵 중심 위치
 A;L_ARCGIS_REST_API;ArcGIS Rest API
 A;L_SSO;싱글 사인온
 A;L_SSO_DESIGNER;SSO 디자이너
-A;L_ALLOW_INSERT;데이타 입력 허용
+A;L_ALLOW_INSERT;데이터 입력 허용
 A;L_MASK_TYPE;마스크 유형
 A;L_USE_GEOCODE;위치 코드 사용
 A;L_URL_OF_SHARE_OBJ;공유 오브젝트 URL
@@ -179,7 +179,7 @@ A;L_REG_SCHEDULE;스케쥴 등록
 A;L_JOB_TYPE;작업 유형
 A;L_ADD_NEW_PROGRAM;신규 프로그램 추가
 A;L_LOAD_FILE;파일 불러오기
-A;L_DATA;데이타
+A;L_DATA;데이터
 A;L_KEEP_MODI_DATES;수정일을 기존으로 유지
 A;L_KEEP_OWNER_INFO;생성자 정보를 유지
 A;L_IMP_SECURITY;개체 권한을 가져오기
@@ -221,7 +221,7 @@ A;L_INPUT_FORMAT;입력 양식
 A;L_YAXIS_SETTING;Y 축 설정
 A;L_MINIMUM;최소값
 A;L_MAXIMUM;최대값
-A;L_DATA_TYPE;데이타 유형
+A;L_DATA_TYPE;데이터 유형
 A;L_VALUE_FIELD;값 필드
 A;L_FIELD_SELECTIONS;필드 선택
 A;L_XAXIS_FIELD;X축 필드
@@ -236,23 +236,23 @@ A;B_CATEGORY;카테고리
 A;L_PAGE_FILTERING;페이지 필터링
 A;L_AVAILABLE_FIELDS;사용가능 필드
 A;L_PAGED_FILTER_FIELDS;페이지 필터 지정 필드
-A;L_DATA_STYLE;데이타 스타일
+A;L_DATA_STYLE;데이터 스타일
 A;L_HEAD_STYLE;헤더 스타일
 A;L_FORMAT_STRING;포맷 스트링
 A;L_CSS_CLASS;CSS 클래스
 A;L_TEMPLATE;템플리트
 A;L_COLOR_SETTING;색상 설정
 A;L_MAPPING_TYPE;맵핑 유형
-A;L_STATIC_DATA_VALUES;정적 데이타값
+A;L_STATIC_DATA_VALUES;정적 데이터값
 A;L_USE_COLORSET;색상 집합 사용
 A;L_LABEL_VALUE;표시 값 
-A;L_SQL_DATA_VALUES;SQL 데이타 값
-A;L_DATASOURCE;데이타 소스
+A;L_SQL_DATA_VALUES;SQL 데이터 값
+A;L_DATASOURCE;데이터 소스
 A;L_COLORSET;색상 집합
 A;B_TABLE;테이블
 A;L_VALUE_FIELD;값 필드
 A;L_SORT_FIELD;정렬 필드
-A;L_DATA_VIEW;데이타 보기
+A;L_DATA_VIEW;데이터 보기
 A;L_RANGE_FILTER1;범위 필터 지정 1
 A;L_RANGE_FILTER2;범위 필터 지정 2
 A;L_RANGE_FILTER3;범위 필터 지정 3
@@ -261,11 +261,11 @@ A;L_FILTER_VALUE;필터 값 필드
 A;L_GENERAL;일반 사항
 A;L_EMAIL_SETUP;이메일 설정
 A;L_EMAIL_NOTI_RCP;이메일 알람 수신자 설정
-A;L_META_DATA;메타 데이타
+A;L_META_DATA;메타 데이터
 A;L_PYTHON_INT;파이선 연동
 A;L_SECURITY;보안
 A;L_MASS_REQ_PROTECT;대량 서비스 요청 보호
-A;L_DATA_MASHING;데이타 매싱
+A;L_DATA_MASHING;데이터 매싱
 A;L_LICENSE;라이센스 관리
 A;L_ASSIST_BOT;보조 AI Bot 서비스
 A;L_UI_CONFIG;사용자 UI 설정
@@ -313,7 +313,7 @@ A;L_REVISION_INFO;리비젼 정보
 A;L_REVISION_MGR;리비젼 관리자
 A;B_LOCATION;위치
 A;B_CURRENT;현재
-A;L_TARGET_SHEET;대상 쉬트
+A;L_TARGET_SHEET;대상 시트
 A;L_OUTPUT_TYPE;출력 유형
 A;L_SYNC_USER;사용자 동기화
 A;L_SSO_MODULE;SSO 모듈
@@ -335,8 +335,8 @@ A;L_LDAP_CON;LDAP 접속
 A;L_SAP_BW_CON;SAP BW 접속
 A;L_HYP_ESSBASE_CON;Hyperion EssBase 접속
 A;L_STORAGE_OPTIONS;저장 옵션
-A;L_DATA_STORAGE;데이타 저장
-A;L_STAGING_DB;스테이징 데이타베이스
+A;L_DATA_STORAGE;데이터 저장
+A;L_STAGING_DB;스테이징 데이터베이스
 A;L_UPLOADED_FILE;불러온 파일들
 A;L_CUSTOM_FIELDS;커스텀 필드
 A;L_DBA_REQ;DBA 요청 항목
