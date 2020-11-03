@@ -192,3 +192,6 @@ A;L_INC_ROLES;Include Roles
 A;L_WIDGET_OPTION;Widget Options
 A;L_LOADING;Loading... Please wait for processing
 A;E_SHEET_EXP;Error on sheet export. Please run report and try again.
+
+A;B_ROW;Row
+A;B_COL;Column
