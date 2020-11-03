@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
+  "attributes" : { },
+  "type" : "Unknown",
   "objinfo" : { },
   "name" : "en_US",
-  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/en_US",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
-  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "* Drag Items here to define this measure"
@@ -6980,5 +6980,13 @@
     "group" : "locale_en_US_0017",
     "name" : "L_WIDGET_OPTION",
     "value" : "Widget Options"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_LOADING",
+    "value" : "Loading... Please wait for processing"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "E_SHEET_EXP",
+    "value" : "Error on sheet export. Please run report and try again."
   } ]
 }

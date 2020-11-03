@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
+  "attributes" : { },
+  "type" : "Unknown",
   "objinfo" : { },
   "name" : "zh_CN",
-  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/zh_CN",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
-  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "*在此处拖动项目以定义此度量"
@@ -6908,5 +6908,13 @@
     "group" : "locale_zh_CN_0017",
     "name" : "L_WIDGET_OPTION",
     "value" : "Widget Options"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_LOADING",
+    "value" : "Loading... Please wait for processing"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "E_SHEET_EXP",
+    "value" : "Error on sheet export. Please run report and try again."
   } ]
 }

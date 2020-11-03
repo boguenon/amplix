@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
+  "attributes" : { },
+  "type" : "Unknown",
   "objinfo" : { },
   "name" : "ko_KR",
-  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/ko_KR",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
-  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "* 메져 항목을 드래그 하여 추가해 주십시오."
@@ -6979,5 +6979,13 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_WIDGET_OPTION",
     "value" : "위젯 옵션"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_LOADING",
+    "value" : "로딩중입니다... 잠시만 기다려 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "E_SHEET_EXP",
+    "value" : "조회된 결과가 없어 시트를 출력할 수 없습니다. 리포트 실행 후 다시 시도해 주십시오."
   } ]
 }
