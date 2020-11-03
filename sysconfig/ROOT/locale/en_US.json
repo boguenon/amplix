@@ -6988,5 +6988,13 @@
     "group" : "locale_en_US_0017",
     "name" : "E_SHEET_EXP",
     "value" : "Error on sheet export. Please run report and try again."
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "B_ROW",
+    "value" : "Row"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "B_COL",
+    "value" : "Column"
   } ]
 }

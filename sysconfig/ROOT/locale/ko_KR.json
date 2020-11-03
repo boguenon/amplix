@@ -6987,5 +6987,13 @@
     "group" : "locale_ko_KR_0017",
     "name" : "E_SHEET_EXP",
     "value" : "조회된 결과가 없어 시트를 출력할 수 없습니다. 리포트 실행 후 다시 시도해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "B_ROW",
+    "value" : "행"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "B_COL",
+    "value" : "열"
   } ]
 }
