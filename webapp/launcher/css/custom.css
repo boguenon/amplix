@@ -1,6 +1,6 @@
 /* amplix customized css styles */
 #pg_links {
-	display: none !important;
+        display: none !important;
 }
 
 #login_locale {
@@ -8,9 +8,13 @@
 }
 
 #login_theme {
-	display: none !important;
+        display: none !important;
 }
 
 .idv-lic-ul li:last-child .idv-os-val:before {
         content: "3.6" !important;
+}
+
+.igc-toolbar-more {
+	display: none !important;
 }

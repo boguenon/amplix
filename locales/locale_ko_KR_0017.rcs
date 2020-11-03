@@ -194,3 +194,5 @@ A;L_INC_DEPTS;그룹 포함
 A;L_INC_ROLES;권한 포함
 
 A;L_WIDGET_OPTION;위젯 옵션
+A;L_LOADING;로딩중입니다... 잠시만 기다려 주십시오.
+A;E_SHEET_EXP;조회된 결과가 없어 시트를 출력할 수 없습니다. 리포트 실행 후 다시 시도해 주십시오.
