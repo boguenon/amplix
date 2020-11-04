@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
-  "attributes" : { },
-  "type" : "Unknown",
   "objinfo" : { },
   "name" : "ko_KR",
+  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/ko_KR",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
+  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "* 메져 항목을 드래그 하여 추가해 주십시오."
@@ -6995,5 +6995,45 @@
     "group" : "locale_ko_KR_0017",
     "name" : "B_COL",
     "value" : "열"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_C_TXT",
+    "value" : "텍스트 입력"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_C_SINGLE_SEL",
+    "value" : "콤보박스 한개값 선택"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_C_MULTI_SEL",
+    "value" : "콤보박스 복수개 선택"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_C_RADIO",
+    "value" : "라디오 버튼"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_C_CHECK",
+    "value" : "체크 버튼"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_C_SLIDER",
+    "value" : "슬라이더 바"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_C_CALENDAR",
+    "value" : "달력 컨트롤"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_C_PERIOD",
+    "value" : "기간 달력 선택"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_C_FILEUPLOAD",
+    "value" : "파일 업로드"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_F_NOTEQ",
+    "value" : "같지 않다 (!=)"
   } ]
 }

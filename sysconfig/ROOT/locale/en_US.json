@@ -1,13 +1,13 @@
 {
   "meta_type" : "locales",
-  "attributes" : { },
-  "type" : "Unknown",
   "objinfo" : { },
   "name" : "en_US",
+  "type" : "Unknown",
   "nodepath" : "/SYS_Config/locale/en_US",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
+  "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
     "value" : "* Drag Items here to define this measure"
@@ -6996,5 +6996,45 @@
     "group" : "locale_en_US_0017",
     "name" : "B_COL",
     "value" : "Column"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_C_TXT",
+    "value" : "Text Input"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_C_SINGLE_SEL",
+    "value" : "Single Selection"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_C_MULTI_SEL",
+    "value" : "Multi Selection"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_C_RADIO",
+    "value" : "Radio Buttons"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_C_CHECK",
+    "value" : "Check Buttons"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_C_SLIDER",
+    "value" : "Slider Bar"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_C_CALENDAR",
+    "value" : "Calendar"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_C_PERIOD",
+    "value" : "Period"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_C_FILEUPLOAD",
+    "value" : "File Upload"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_F_NOTEQ",
+    "value" : "Not Equal"
   } ]
 }
