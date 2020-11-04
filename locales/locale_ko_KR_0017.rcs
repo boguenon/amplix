@@ -199,3 +199,15 @@ A;E_SHEET_EXP;조회된 결과가 없어 시트를 출력할 수 없습니다. �
 
 A;B_ROW;행
 A;B_COL;열
+
+A;L_C_TXT;텍스트 입력
+A;L_C_SINGLE_SEL;콤보박스 한개값 선택
+A;L_C_MULTI_SEL;콤보박스 복수개 선택
+A;L_C_RADIO;라디오 버튼
+A;L_C_CHECK;체크 버튼
+A;L_C_SLIDER;슬라이더 바
+A;L_C_CALENDAR;달력 컨트롤
+A;L_C_PERIOD;기간 달력 선택
+A;L_C_FILEUPLOAD;파일 업로드
+
+A;L_F_NOTEQ;같지 않다 (!=)

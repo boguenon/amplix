@@ -987,7 +987,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 					{
 						n = s.substring(n1 + 1, n2);
 						
-						var cmd;
+						var cmd = "";
 						
 						if (n.indexOf(":") > -1)
 						{
