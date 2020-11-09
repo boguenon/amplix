@@ -11,8 +11,8 @@ A;E_INVALID_REV;유효하지 않는 리비젼 번호입니다.
 A;E_PRIV_ERR;컨텐츠를 사용할 권한이 없습니다.
 A;E_REMOVE_SELF;본인을 삭제할 수 없습니다.
 A;E_FOLDER_MOVE_SINGLE;단지 한개의 하위 폴더 항목만 이동할 수 있습니다.
-A;E_CHART_DRAWING;챠트 그리는 도중 오류가 발생하였습니다.
-A;E_CHART_LIB_LOADING;챠트 라이브러리를 로드 하는 중 오류가 발생하였습니다.
+A;E_CHART_DRAWING;차트 그리는 도중 오류가 발생하였습니다.
+A;E_CHART_LIB_LOADING;차트 라이브러리를 로드 하는 중 오류가 발생하였습니다.
 A;E_CLICK_EVENT_HANDLER;클릭 이벤트 수행중 오류가 발생하였습니다. 
 A;E_PROMPT_CONTROL_DEF;프롬프트 컨트롤 정의에 오류가 있습니다.
 A;E_SEL_TGT_ITEM;대상 항목을 먼저 선택해 주십시오.

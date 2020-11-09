@@ -195,3 +195,15 @@ A;E_SHEET_EXP;Error on sheet export. Please run report and try again.
 
 A;B_ROW;Row
 A;B_COL;Column
+
+A;L_C_TXT;Text Input
+A;L_C_SINGLE_SEL;Single Selection
+A;L_C_MULTI_SEL;Multi Selection
+A;L_C_RADIO;Radio Buttons
+A;L_C_CHECK;Check Buttons
+A;L_C_SLIDER;Slider Bar
+A;L_C_CALENDAR;Calendar
+A;L_C_PERIOD;Period
+A;L_C_FILEUPLOAD;File Upload
+
+A;L_F_NOTEQ;Not Equal

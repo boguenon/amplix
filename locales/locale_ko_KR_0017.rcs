@@ -1,5 +1,5 @@
 A;L_PIE_DASHBOARD;파이 및 데시보드 위젯
-A;L_SCATTER_POINT;스캐터 및 포인트 챠트
+A;L_SCATTER_POINT;스캐터 및 포인트 차트
 A;L_STOCK_LOW_HIGH;주식형 고저점 분석
 A;L_TREEMAP;트리맵
 A;L_RELATION_FINDING;상관관계 찾기 
@@ -13,31 +13,31 @@ A;L_CH_LINE;라인
 A;L_CH_SPLINE;스플라인
 A;L_CH_AREA;에어리어
 A;L_CH_SPLINE_AREA;스플라인 에어리어
-A;L_CH_BAR;바챠트
-A;L_CH_PIE;파이챠트
-A;L_CH_DOUGHNUT;도넛챠트
-A;L_CH_BUBBLE;버블챠트
-A;L_CH_SCATTER;스캐터 챠트
-A;L_CH_TREEMAP;트리맵 챠트
-A;L_CH_WATERFALL;폭포수 챠트
-A;L_CH_SYNC_CHART;동기화된 챠트
+A;L_CH_BAR;바차트
+A;L_CH_PIE;파이차트
+A;L_CH_DOUGHNUT;도넛차트
+A;L_CH_BUBBLE;버블차트
+A;L_CH_SCATTER;스캐터 차트
+A;L_CH_TREEMAP;트리맵 차트
+A;L_CH_WATERFALL;폭포수 차트
+A;L_CH_SYNC_CHART;동기화된 차트
 A;L_CH_RADAR;레이다
-A;L_CH_FUNNEL;깔때기 챠트
-A;L_CH_PYRAMID;피라미드 챠트
+A;L_CH_FUNNEL;깔때기 차트
+A;L_CH_PYRAMID;피라미드 차트
 A;L_CH_MAP;지도
-A;L_CH_COMP_MATRIX;매트릭스 비교챠트
-A;L_CH_PARA_COORD;패러렐 추적챠트
+A;L_CH_COMP_MATRIX;매트릭스 비교차트
+A;L_CH_PARA_COORD;패러렐 추적차트
 A;L_CH_MEAN_DEV;평균 & 표준편차
 A;L_CH_BOXPLOT;박스 플롯
 A;L_CH_NET_DIAG_POS;네트워크 다이어그램(+)
 A;L_CH_NET_DIAG_NEG;네트워크 다이어그램(-)
 A;L_CH_MATRIX_DIAGRAM;매트릭스 다이어그램
 A;L_CH_FORCE_DIRECT;힘 편향 레이아웃
-A;L_CH_CLUSTER;클러스터 챠트
-A;L_CH_CHORD;Chord 챠트
-A;L_CH_SUNBURST;썬 버스트 챠트
-A;L_CH_BUBBLE_MAP;버블 맵 챠트
-A;L_CH_FIXED_PLACE;고정 비교 챠트
+A;L_CH_CLUSTER;클러스터 차트
+A;L_CH_CHORD;Chord 차트
+A;L_CH_SUNBURST;썬 버스트 차트
+A;L_CH_BUBBLE_MAP;버블 맵 차트
+A;L_CH_FIXED_PLACE;고정 비교 차트
 
 A;L_BTM_LEFT;아래쪽 왼편
 A;L_BTM_CENTER;아래쪽 중간
@@ -53,7 +53,7 @@ A;L_LEFT_CENTER;왼편 중간
 A;L_LEFT_BTM;왼편 아래
 
 A;L_CH_PERCENT_GAUGE;퍼센트 게이지
-A;L_CH_WINLOSE;WinLose 챠트
+A;L_CH_WINLOSE;WinLose 차트
 
 A;L_COL_SYNC;컬럼 동기화
 A;L_UNDO;취소하기
@@ -77,7 +77,7 @@ A;L_COLOR_CATEG;색상 카테고리
 A;L_MARKER_SIZE;마커 크기
 A;L_MARKER_SYMBOL;마커 심볼
 
-A;M_ERR_CHART_SEL;챠트 유형을 선택해 주셔야 합니다. 챠트 마법사에서 옵션을 선택해 주십시오.
+A;M_ERR_CHART_SEL;차트 유형을 선택해 주셔야 합니다. 차트 마법사에서 옵션을 선택해 주십시오.
 
 A;L_MERGE_COL;컬럼 병합하기
 A;L_ROW_LOCATION;행 위치
@@ -186,7 +186,7 @@ A;L_CLP_START;접은 상태로 열기
 A;L_CLP_CSS;접은 상태 아이콘 CSS
 A;L_HTML;HTML코드
 A;L_JSCRIPT;자바스크립트
-A;L_TB_CHART;시트 챠트마법사 도구
+A;L_TB_CHART;시트 차트마법사 도구
 
 A;L_ENABLE_DISABLE;사용여부 설정
 A;L_INC_USERS;사용자 포함
@@ -199,3 +199,15 @@ A;E_SHEET_EXP;조회된 결과가 없어 시트를 출력할 수 없습니다. �
 
 A;B_ROW;행
 A;B_COL;열
+
+A;L_C_TXT;텍스트 입력
+A;L_C_SINGLE_SEL;콤보박스 한개값 선택
+A;L_C_MULTI_SEL;콤보박스 복수개 선택
+A;L_C_RADIO;라디오 버튼
+A;L_C_CHECK;체크 버튼
+A;L_C_SLIDER;슬라이더 바
+A;L_C_CALENDAR;달력 컨트롤
+A;L_C_PERIOD;기간 달력 선택
+A;L_C_FILEUPLOAD;파일 업로드
+
+A;L_F_NOTEQ;같지 않다 (!=)
