@@ -31,3 +31,4 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (24, 5, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (25, 1, 'cubrid', 'cubrid.jdbc.driver.CUBRIDDriver', 'CUBRID', 'jdbc:cubrid:<server>:<30000>:<dbname>:<public>::', 1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (26, 5, 'impala','com.cloudera.impala.jdbc.Driver','Impala','jdbc:impala://<server>:<21050>',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (27, 2, 'amplix_h2','com.amplix.connector.MemoryDBJdbcDriver','AMPLIX InMemoryDB','jdbc:amplix_memdb:<dbname>',1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (28, 1, 'tibero','com.tmax.tibero.jdbc.TbDriver','Tmax Tibero','jdbc:tibero:thin:@<server>[:<8629>]:<service_name>',1);
