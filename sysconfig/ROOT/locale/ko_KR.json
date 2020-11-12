@@ -938,10 +938,10 @@
     "value" : "마법사"
   }, {
     "name" : "D_CHARTMEASURE",
-    "value" : "마이크로챠트"
+    "value" : "마이크로차트"
   }, {
     "name" : "L_CHART_MEASURE",
-    "value" : "마이크로챠트"
+    "value" : "마이크로차트"
   }, {
     "name" : "L_RNK_LST",
     "value" : "마지막 순위가 같은 경우 모두 표시"
@@ -2370,40 +2370,40 @@
     "value" : "차이값"
   }, {
     "name" : "L_CSTEP_1",
-    "value" : "챠트"
+    "value" : "차트"
   }, {
     "name" : "T_CHART_WIZARD",
-    "value" : "챠트 마법사"
+    "value" : "차트 마법사"
   }, {
     "name" : "L_CLR_SET",
-    "value" : "챠트 색상표"
+    "value" : "차트 색상표"
   }, {
     "name" : "T_CHART_SERIES",
-    "value" : "챠트 시리즈"
+    "value" : "차트 시리즈"
   }, {
     "name" : "L_CSTEP_4",
-    "value" : "챠트 영역"
+    "value" : "차트 영역"
   }, {
     "name" : "L_CHART_OPTION",
-    "value" : "챠트 옵션"
+    "value" : "차트 옵션"
   }, {
     "name" : "L_CHART_GROUP",
-    "value" : "챠트 유형그룹"
+    "value" : "차트 유형그룹"
   }, {
     "name" : "L_CHART_THEME",
-    "value" : "챠트 테마"
+    "value" : "차트 테마"
   }, {
     "name" : "T_CHART_PLOTBAND",
-    "value" : "챠트 플롯 밴드"
+    "value" : "차트 플롯 밴드"
   }, {
     "name" : "L_VIEW_CHART",
-    "value" : "챠트로 보기"
+    "value" : "차트로 보기"
   }, {
     "name" : "L_CHART_TYPE",
-    "value" : "챠트유형"
+    "value" : "차트유형"
   }, {
     "name" : "L_MAX_CHART_ELEMENT",
-    "value" : "챠트최대결과"
+    "value" : "차트최대결과"
   }, {
     "name" : "T_BG_SCR",
     "value" : "처리결과"
@@ -2769,7 +2769,7 @@
     "value" : "특정 시간에 매일 수행"
   }, {
     "name" : "L_PIE_OPTION",
-    "value" : "파이챠트 옵션"
+    "value" : "파이차트 옵션"
   }, {
     "name" : "L_IMPORT_FILE",
     "value" : "파일 불러오기"
@@ -4754,7 +4754,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_ECHART_THEM",
-    "value" : "챠트 테마"
+    "value" : "차트 테마"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_REPORT_SCRSHOT",
@@ -4982,7 +4982,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_STOCK_OPTIONS",
-    "value" : "스탁 챠트 옵션"
+    "value" : "스탁 차트 옵션"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_TIME_FIELD",
@@ -4990,7 +4990,7 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_KPI_INDI",
-    "value" : "KPI 표시챠트 옵션"
+    "value" : "KPI 표시차트 옵션"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_INDICATOR_WIZARD",
@@ -5310,11 +5310,11 @@
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_CHART_COLOR_ORG",
-    "value" : "챠트 색상 관리자"
+    "value" : "차트 색상 관리자"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_CHART_COLOR",
-    "value" : "챠트 색상그룹"
+    "value" : "차트 색상그룹"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_COLOR_SETS",
@@ -5810,11 +5810,11 @@
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "E_CHART_DRAWING",
-    "value" : "챠트 그리는 도중 오류가 발생하였습니다."
+    "value" : "차트 그리는 도중 오류가 발생하였습니다."
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "E_CHART_LIB_LOADING",
-    "value" : "챠트 라이브러리를 로드 하는 중 오류가 발생하였습니다."
+    "value" : "차트 라이브러리를 로드 하는 중 오류가 발생하였습니다."
   }, {
     "group" : "locale_ko_KR_0015",
     "name" : "E_CLICK_EVENT_HANDLER",
@@ -6226,7 +6226,7 @@
   }, {
     "group" : "locale_ko_KR_0016",
     "name" : "L_SVG_DRAW_OPTIONS",
-    "value" : "SVG 챠트 옵션"
+    "value" : "SVG 차트 옵션"
   }, {
     "group" : "locale_ko_KR_0016",
     "name" : "L_SVG_RENDERERS",
@@ -6350,7 +6350,7 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_SCATTER_POINT",
-    "value" : "스캐터 및 포인트 챠트"
+    "value" : "스캐터 및 포인트 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_STOCK_LOW_HIGH",
@@ -6402,35 +6402,35 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_BAR",
-    "value" : "바챠트"
+    "value" : "바차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_PIE",
-    "value" : "파이챠트"
+    "value" : "파이차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_DOUGHNUT",
-    "value" : "도넛챠트"
+    "value" : "도넛차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_BUBBLE",
-    "value" : "버블챠트"
+    "value" : "버블차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_SCATTER",
-    "value" : "스캐터 챠트"
+    "value" : "스캐터 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_TREEMAP",
-    "value" : "트리맵 챠트"
+    "value" : "트리맵 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_WATERFALL",
-    "value" : "폭포수 챠트"
+    "value" : "폭포수 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_SYNC_CHART",
-    "value" : "동기화된 챠트"
+    "value" : "동기화된 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_RADAR",
@@ -6438,11 +6438,11 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_FUNNEL",
-    "value" : "깔때기 챠트"
+    "value" : "깔때기 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_PYRAMID",
-    "value" : "피라미드 챠트"
+    "value" : "피라미드 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_MAP",
@@ -6450,11 +6450,11 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_COMP_MATRIX",
-    "value" : "매트릭스 비교챠트"
+    "value" : "매트릭스 비교차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_PARA_COORD",
-    "value" : "패러렐 추적챠트"
+    "value" : "패러렐 추적차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_MEAN_DEV",
@@ -6482,23 +6482,23 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_CLUSTER",
-    "value" : "클러스터 챠트"
+    "value" : "클러스터 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_CHORD",
-    "value" : "Chord 챠트"
+    "value" : "Chord 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_SUNBURST",
-    "value" : "썬 버스트 챠트"
+    "value" : "썬 버스트 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_BUBBLE_MAP",
-    "value" : "버블 맵 챠트"
+    "value" : "버블 맵 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_FIXED_PLACE",
-    "value" : "고정 비교 챠트"
+    "value" : "고정 비교 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_BTM_LEFT",
@@ -6554,7 +6554,7 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_CH_WINLOSE",
-    "value" : "WinLose 챠트"
+    "value" : "WinLose 차트"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_COL_SYNC",
@@ -6626,7 +6626,7 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "M_ERR_CHART_SEL",
-    "value" : "챠트 유형을 선택해 주셔야 합니다. 챠트 마법사에서 옵션을 선택해 주십시오."
+    "value" : "차트 유형을 선택해 주셔야 합니다. 차트 마법사에서 옵션을 선택해 주십시오."
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_MERGE_COL",
@@ -6958,7 +6958,7 @@
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_TB_CHART",
-    "value" : "시트 챠트마법사 도구"
+    "value" : "시트 차트마법사 도구"
   }, {
     "group" : "locale_ko_KR_0017",
     "name" : "L_ENABLE_DISABLE",
