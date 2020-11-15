@@ -207,3 +207,11 @@ A;L_C_PERIOD;Period
 A;L_C_FILEUPLOAD;File Upload
 
 A;L_F_NOTEQ;Not Equal
+
+A;L_ON_X_AXIS;On X Axis
+A;L_DT_MASHING;Mashing
+A;L_DEPLOY;Deploy
+A;L_DEPLOY_TARGET;Deploy Target
+A;B_NORMAL;Normal
+A;B_SQL;SQL
+A;L_OUTER_RADIUS;Outer Radius

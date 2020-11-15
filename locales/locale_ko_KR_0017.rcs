@@ -211,3 +211,11 @@ A;L_C_PERIOD;기간 달력 선택
 A;L_C_FILEUPLOAD;파일 업로드
 
 A;L_F_NOTEQ;같지 않다 (!=)
+
+A;L_ON_X_AXIS;X축에 위치
+A;L_DT_MASHING;매싱
+A;L_DEPLOY;디플로이
+A;L_DEPLOY_TARGET;대상 디플로이
+A;B_NORMAL;일반
+A;B_SQL;SQL쿼리
+A;L_OUTER_RADIUS;바깥쪽 지름
