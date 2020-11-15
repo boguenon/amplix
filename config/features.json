@@ -15,10 +15,6 @@
 				{
 					"name": "New SQL Report",
 					"cls": "ig_menu_sql_rpt"
-				},
-				{
-					"name": "New FormBuilder",
-					"cls": "ig_menu_formbuilder"
 				}
 			]
 		},
@@ -51,22 +47,6 @@
 				{
 					"name": "New Data Connection",
 					"cls": "ig_n_db_add"
-				},
-				{
-					"name": "Create Data Set",
-					"cls": "ig_n_dataset"
-				},
-				{
-					"name": "Data Set DBA",
-					"cls": "ig_n_dataset_dba"
-				},
-				{
-					"name": "DDL request button",
-					"cls": "ig_n_ds_reqb"
-				},
-				{
-					"name": "DDL create button",
-					"cls": "ig_n_ds_sddlb"
 				}
 			]
 		},
@@ -101,10 +81,6 @@
 						{
 							"name": "Features",
 							"cls": "ig_ft"
-						},
-						{
-							"name": "Assistant Robot",
-							"cls": "ig_assist_robot"
 						}
 					]
 				},
@@ -137,10 +113,6 @@
 						{
 							"name": "Meta Import",
 							"cls": "ig_imp"
-						},
-						{
-							"name": "Migration",
-							"cls": "ig_migration"
 						},
 						{
 							"name": "System Log",
@@ -198,74 +170,7 @@
 				}
 			]
 		},
-		{
-			"name": "BigData Analysis",
-			"cls": "ig_bdmgr",
-			"children": [
-				{
-					"name": "Hadoop",
-					"cls": "ig_hdoop",
-					"children": [
-						{
-							"name": "Hadoop BizFlow",
-							"cls": "ig_hd_flow"
-						},
-						{
-							"name": "Hadoop Map Reduce",
-							"cls": "ig_hd_mapr"
-						}
-					]
-				},
-				{
-					"name": "MongoDB",
-					"cls": "ig_mongo",
-					"children": [
-						{
-							"name": "Mongo Data Processor",
-							"cls": "ig_mg_dproc"
-						},
-						{
-							"name": "Mongo Data Collector",
-							"cls": "ig_mg_data"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Machine Learning",
-			"cls": "ig_mlmgr",
-			"children": [
-				{
-					"name": "Bayes Learning",
-					"cls": "ig_ml_bayes",
-					"children": [
-						{
-							"name": "Bayes Influence",
-							"cls": "ig_ml_bayes_rpt"
-						},
-						{
-							"name": "Learn from Data",
-							"cls": "ig_ml_learn"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Migration",
-			"cls": "ig_mig",
-			"children": [
-				{
-					"name": "Discoverer Migration",
-					"cls": "ig_disco"
-				},
-				{
-					"name": "Amplix Meta Upgrade",
-					"cls": "ig_meta_upgrade"
-				}
-			]
-		},
+		
 		
 		{
 			"name": "Navigator",
@@ -334,16 +239,8 @@
 									"cls": "ig_n_sqlrpt"
 								},
 								{
-									"name": "Form Builder",
-									"cls": "ig_n_dbd"
-								},
-								{
 									"name": "Composite Report",
 									"cls": "ig_n_crpt"
-								},
-								{
-									"name": "Hadoop BizOp",
-									"cls": "ig_n_hb"
 								},
 								{
 									"name": "Java Class",
@@ -512,10 +409,6 @@
 									"cls": "ig_r_anal"
 								},
 								{
-									"name": "view_formview",
-									"cls": "ig_r_fview"
-								},
-								{
 									"name": "view_r",
 									"cls": "ig_r_r"
 								},
@@ -526,20 +419,8 @@
                                 {
                                 	"name": "Add ReportViewer",
                                 	"cls": "ig_r_rpt_vr"
-                                },
-                                {
-                                	"name": "Add StoryView",
-                                	"cls": "ig_r_story"
                                 }
 							]
-						},
-						{
-							"name": "Email Burstring",
-							"cls": "ig_r_bursting"
-						},
-						{
-							"name": "Form Builder",
-							"cls": "ig_r_formb"
 						},
 						{
 							"name": "share report",
@@ -658,54 +539,6 @@
 						{
 							"name": "help",
 							"cls": "ig_r_help"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Manual Management",
-			"cls": "ig_manual",
-			"children": [
-				{
-					"name": "Manual Auth for Amplix",
-					"cls": "ig_manual_auth"
-        }
-      ]
-    },
-    {
-			"name": "Data Science Module",
-			"cls": "ig_sci",
-			"children": [
-				{
-					"name": "Data Science Service Manager",
-					"cls": "ig_sci_mgr",
-					"children": [
-						{
-							"name": "Data Sciense DataSet",
-							"cls": "ig_sci_mgr_dataset"
-						},
-						{
-							"name": "Data Sciense Logger",
-							"cls": "ig_sci_mgr_logger"
-						},
-						{
-							"name": "License Manager",
-							"cls": "ig_sci_mgr_lic"
-						}
-					]
-				},
-				{
-					"name": "Data Science Service User",
-					"cls": "ig_sci_usr",
-					"children": [
-						{
-							"name": "Data Science Server Connector",
-							"cls": "ig_sci_usr_servers"
-						},
-						{
-							"name": "Data Science DataSet",
-							"cls": "ig_sci_usr_dataset"
 						}
 					]
 				}
