@@ -7036,5 +7036,29 @@
     "group" : "locale_en_US_0017",
     "name" : "L_F_NOTEQ",
     "value" : "Not Equal"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_ON_X_AXIS",
+    "value" : "On X Axis"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_DT_MASHING",
+    "value" : "Mashing"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_DEPLOY",
+    "value" : "Deploy"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "L_DEPLOY_TARGET",
+    "value" : "Deploy Target"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "B_NORMAL",
+    "value" : "Normal"
+  }, {
+    "group" : "locale_en_US_0017",
+    "name" : "B_SQL",
+    "value" : "SQL"
   } ]
 }

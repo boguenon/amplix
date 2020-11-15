@@ -1418,10 +1418,10 @@
     "value" : "사용자 정의 그룹핑"
   }, {
     "name" : "T_CUSTOM_METRIC",
-    "value" : "사용자 정의 메트릭"
+    "value" : "커스텀 디멘"
   }, {
     "name" : "L_CUSTOM_FIELD",
-    "value" : "사용자 정의 필드"
+    "value" : "커스텀 필드"
   }, {
     "name" : "L_ADD_USER",
     "value" : "사용자 등록"
@@ -1433,10 +1433,10 @@
     "value" : "사용자에게 부여할 권한을 선택하여 추가해 주십시오."
   }, {
     "name" : "D_CUSTOMMETRIC",
-    "value" : "사용자정의 메트릭"
+    "value" : "커스텀 디멘젼"
   }, {
     "name" : "L_CUSTOM_METRIC",
-    "value" : "사용자정의 메트릭"
+    "value" : "커스텀 디멘젼"
   }, {
     "name" : "L_FIXEDSIZE",
     "value" : "사이즈 고정모드"
@@ -3373,7 +3373,7 @@
     "value" : "양식 뷰어"
   }, {
     "name" : "L_M_TITLE",
-    "value" : "제목 측정"
+    "value" : "메져 타이틀 표시"
   }, {
     "name" : "L_M_EXT_TITLE",
     "value" : "추가 제목"
@@ -3382,13 +3382,13 @@
     "value" : "페이지 필터"
   }, {
     "name" : "L_TENANT_NAME",
-    "value" : "임차인 이름"
+    "value" : "테넌트 이름"
   }, {
     "name" : "L_LICENSE_INFO",
     "value" : "라이센스 정보"
   }, {
     "name" : "L_ALLOWED_USERS",
-    "value" : "허용 된 사용자"
+    "value" : "허용된 사용자"
   }, {
     "name" : "L_REG_DATE",
     "value" : "등록일"
@@ -3517,7 +3517,7 @@
     "value" : "양식 뷰어"
   }, {
     "name" : "L_EMAIL_BURSTING",
-    "value" : "이메일 파열"
+    "value" : "이메일 버스팅"
   }, {
     "name" : "L_BAYES",
     "value" : "머신 러닝"
@@ -7035,5 +7035,33 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_F_NOTEQ",
     "value" : "같지 않다 (!=)"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_ON_X_AXIS",
+    "value" : "X축에 위치"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_DT_MASHING",
+    "value" : "매싱"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_DEPLOY",
+    "value" : "디플로이"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_DEPLOY_TARGET",
+    "value" : "대상 디플로이"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "B_NORMAL",
+    "value" : "일반"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "B_SQL",
+    "value" : "SQL쿼리"
+  }, {
+    "group" : "locale_ko_KR_0017",
+    "name" : "L_OUTER_RADIUS",
+    "value" : "바깥쪽 지름"
   } ]
 }
