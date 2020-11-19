@@ -219,3 +219,5 @@ A;L_DEPLOY_TARGET;대상 디플로이
 A;B_NORMAL;일반
 A;B_SQL;SQL쿼리
 A;L_OUTER_RADIUS;바깥쪽 지름
+
+A;L_MAX_POOL_WAIT_MILLS;최대시 대기시간(밀리초)
