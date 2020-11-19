@@ -6992,5 +6992,9 @@
     "group" : "locale_zh_CN_0017",
     "name" : "L_OUTER_RADIUS",
     "value" : "Outer Radius"
+  }, {
+    "group" : "locale_zh_CN_0017",
+    "name" : "L_MAX_POOL_WAIT_MILLS",
+    "value" : "Max Wait Mills"
   } ]
 }
