@@ -215,3 +215,4 @@ A;L_DEPLOY_TARGET;Deploy Target
 A;B_NORMAL;Normal
 A;B_SQL;SQL
 A;L_OUTER_RADIUS;Outer Radius
+A;L_MAX_POOL_WAIT_MILLS;Max Wait Mills
