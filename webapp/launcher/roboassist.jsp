@@ -1,6 +1,29 @@
 ﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
     request.setCharacterEncoding("utf-8");
+
+	java.util.Map<String, String> params = new java.util.HashMap<>();
+	java.util.Enumeration<String> param_names = request.getParameterNames();
+	
+	// XSS vulnerabilities
+	while (param_names.hasMoreElements())
+	{
+		String pname = param_names.nextElement();
+		
+		if (pname != null && pname.length() > 0)
+		{
+			String pvalue = request.getParameter(pname);
+			if (pvalue != null && pvalue.length() > 0)
+			{
+				pvalue = pvalue.replaceAll("\\\\", "");
+				pvalue = pvalue.replaceAll("\'", "\\\\\'");
+				pvalue = pvalue.replaceAll("\"", "\\\\\"");
+				pvalue = pvalue.replaceAll("<", "&lt;");
+				pvalue = pvalue.replaceAll(">", "&gt;");
+				params.put(pname, pvalue);
+			}
+		}
+	}
 %>
 <!DOCTYPE html>
 <html>
@@ -41,9 +64,9 @@ input,select,textarea{
     background-color:inherit
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202011191412"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202011221623"></link>
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="./js/igccud.min.js?_dc=202011191412"></script>
+<script type="text/javascript" src="./js/igccud.min.js?_dc=202011221623"></script>
 <script type="text/javascript">
 function start_chat() {
 	$("#main_loading").show();
@@ -71,8 +94,8 @@ function close_chat() {
 function start_cuddle() {
 	var robo = new IG$._wcollab({
 		html: $("#app_cuddle"),
-		_mts_: <%=request.getParameter("_mts_") != null ? "'" + request.getParameter("_mts_") + "'" : "null" %>,
-		channel_name: <%=request.getParameter("channel_name") != null ? "'" + request.getParameter("channel_name") + "'" : "null" %>,
+		_mts_: <%=params.get("_mts_") != null ? "'" + params.get("_mts_") + "'" : "null" %>,
+		channel_name: <%=params.get("channel_name") != null ? "'" + params.get("channel_name") + "'" : "null" %>,
 		request_url: "<%=request.getContextPath()%>/servlet/krcp",
 		ws_path: "<%=request.getContextPath()%>/websocket/collaborate",
 		message: {
