@@ -1,6 +1,29 @@
 ﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
     request.setCharacterEncoding("utf-8");
+
+	java.util.Map<String, String> params = new java.util.HashMap<>();
+	java.util.Enumeration<String> param_names = request.getParameterNames();
+	
+	// XSS vulnerabilities
+	while (param_names.hasMoreElements())
+	{
+		String pname = param_names.nextElement();
+		
+		if (pname != null && pname.length() > 0)
+		{
+			String pvalue = request.getParameter(pname);
+			if (pvalue != null && pvalue.length() > 0)
+			{
+				pvalue = pvalue.replaceAll("\\\\", "");
+				pvalue = pvalue.replaceAll("\'", "\\\\\'");
+				pvalue = pvalue.replaceAll("\"", "\\\\\"");
+				pvalue = pvalue.replaceAll("<", "&lt;");
+				pvalue = pvalue.replaceAll(">", "&gt;");
+				params.put(pname, pvalue);
+			}
+		}
+	}
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +36,11 @@
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
 
-<script type="text/javascript" src="./js/jquery-3.5.1.min.js?_dc=202011191357"></script>
+<script type="text/javascript" src="./js/jquery-3.5.1.min.js?_dc=202011221618"></script>
 
-<script type="text/javascript" src="../config.js?_dc=202011191357"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202011191357"></script>
-<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202011191357"></script>
+<script type="text/javascript" src="../config.js?_dc=202011221618"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202011221618"></script>
+<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202011221618"></script>
 <script type="text/javascript">
 $(function(){
   $("#nav > ul > li > a").mouseover(function(){      

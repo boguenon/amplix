@@ -1,18 +1,42 @@
 ﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
 	request.setCharacterEncoding("utf-8");
-	String _d = request.getParameter("_d");
+
+	java.util.Map<String, String> params = new java.util.HashMap<>();
+	java.util.Enumeration<String> param_names = request.getParameterNames();
+	
+	// XSS vulnerabilities
+	while (param_names.hasMoreElements())
+	{
+		String pname = param_names.nextElement();
+		
+		if (pname != null && pname.length() > 0)
+		{
+			String pvalue = request.getParameter(pname);
+			if (pvalue != null && pvalue.length() > 0)
+			{
+				pvalue = pvalue.replaceAll("\\\\", "");
+				pvalue = pvalue.replaceAll("\'", "\\\\\'");
+				pvalue = pvalue.replaceAll("\"", "\\\\\"");
+				pvalue = pvalue.replaceAll("<", "&lt;");
+				pvalue = pvalue.replaceAll(">", "&gt;");
+				params.put(pname, pvalue);
+			}
+		}
+	}
+
+	String _d = params.get("_d");
 	String ukey = "?_d=" + _d;
-	String lang = request.getParameter("lang");
+	String lang = params.get("lang");
 	lang = (lang == null) ? "en_US" : lang;
 	
-	String mts = request.getParameter("mts");
+	String mts = params.get("mts");
 	mts = (mts == null) ? "" : mts;
 	
-	String theme = request.getParameter("theme");
+	String theme = params.get("theme");
     theme = (theme == null) ? "" : theme;
 	
-	boolean is_debug = (request.getParameter("debug") != null && request.getParameter("debug").equals("true") ? true : false);
+	boolean is_debug = (params.get("debug") != null && params.get("debug").equals("true") ? true : false);
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,14 +62,14 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202011191357" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202011221618" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202011191357" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202011221618" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202011191357" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202011221618" />
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202011191357"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202011191357"></script>
+<script type="text/javascript" src="../config.js?_dc=202011221618"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202011221618"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";
