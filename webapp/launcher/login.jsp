@@ -48,7 +48,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<title><%= com.amplix.launcher.App.CompanyName %></title>
+<title>amplixBI Login</title>
 
 <style type="text/css">
 body {
@@ -62,14 +62,14 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202011231555" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202011231936" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202011231555" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202011231936" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202011231555" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202011231936" />
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202011231555"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202011231555"></script>
+<script type="text/javascript" src="../config.js?_dc=202011231936"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202011231936"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";
