@@ -3099,3 +3099,20 @@ a:active .webix_custom_radio {
 .igc-disabled {
     color: #676767;
 }
+
+.idv-dtab-area li {
+	background-color: #666;
+	color: #dadada;
+}
+
+.idv-dtab-area li.selected {
+	background-color: #393939;
+}
+
+.dock_content {
+	background-color: initial;
+}
+
+.dock_inner {
+	background-color: initial;
+}
