@@ -550,6 +550,10 @@
 							"cls": "ig_r_fm"
 						},
 						{
+							"name": "Pivot CustomField",
+							"cls": "ig_p_cmt"
+						},
+						{
 							"name": "export",
 							"cls": "ig_r_exp",
 							"children": [
