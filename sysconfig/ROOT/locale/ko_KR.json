@@ -3462,8 +3462,9 @@
     "name" : "M_DEF_DATE",
     "value" : "기본 날짜"
   }, {
+    "group" : "locale_ko_KR_0018",
     "name" : "L_DB_VAL",
-    "value" : "DB 값"
+    "value" : "커넥션 검증 SQL"
   }, {
     "name" : "L_SF_AUTHMETHOD",
     "value" : "Salesforce 인증 방법"
@@ -7067,5 +7068,33 @@
     "group" : "locale_ko_KR_0017",
     "name" : "L_MAX_POOL_WAIT_MILLS",
     "value" : "최대시 대기시간(밀리초)"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_RSCRIPT",
+    "value" : "R 스크립트"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_R_PROMPT",
+    "value" : "R 프롬프트"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "B_REQUEST",
+    "value" : "스크립트 실행"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_POSITION",
+    "value" : "위치"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "B_OUTSIDE",
+    "value" : "바깥쪽"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "B_OPERATION",
+    "value" : "연산자"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_CHART_SEP",
+    "value" : "차트 X축 구분자"
   } ]
 }
