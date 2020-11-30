@@ -6996,5 +6996,33 @@
     "group" : "locale_zh_TW_0017",
     "name" : "L_MAX_POOL_WAIT_MILLS",
     "value" : "Max Wait Mills"
+  }, {
+    "group" : "locale_zh_TW_0018",
+    "name" : "L_RSCRIPT",
+    "value" : "R Script"
+  }, {
+    "group" : "locale_zh_TW_0018",
+    "name" : "L_R_PROMPT",
+    "value" : "R Prompt"
+  }, {
+    "group" : "locale_zh_TW_0018",
+    "name" : "B_REQUEST",
+    "value" : "Request"
+  }, {
+    "group" : "locale_zh_TW_0018",
+    "name" : "L_POSITION",
+    "value" : "Position"
+  }, {
+    "group" : "locale_zh_TW_0018",
+    "name" : "B_OUTSIDE",
+    "value" : "Outside"
+  }, {
+    "group" : "locale_zh_TW_0018",
+    "name" : "B_OPERATION",
+    "value" : "Operation"
+  }, {
+    "group" : "locale_zh_TW_0018",
+    "name" : "L_CHART_SEP",
+    "value" : "Chart Separator"
   } ]
 }

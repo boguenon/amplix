@@ -47,6 +47,22 @@
 				{
 					"name": "New Data Connection",
 					"cls": "ig_n_db_add"
+				},
+				{
+					"name": "Create Data Set",
+					"cls": "ig_n_dataset"
+				},
+				{
+					"name": "Data Set DBA",
+					"cls": "ig_n_dataset_dba"
+				},
+				{
+					"name": "DDL request button",
+					"cls": "ig_n_ds_reqb"
+				},
+				{
+					"name": "DDL create button",
+					"cls": "ig_n_ds_sddlb"
 				}
 			]
 		},
