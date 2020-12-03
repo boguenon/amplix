@@ -216,8 +216,9 @@
     "name" : "L_EXPORT_XML",
     "value" : "XML 파일출력"
   }, {
+    "group" : "locale_ko_KR_0018",
     "name" : "L_CSTEP_5",
-    "value" : "Y 축"
+    "value" : "축 설정"
   }, {
     "name" : "L_YAXIS_FORMAT",
     "value" : "Y축 수식서식"
@@ -7096,5 +7097,17 @@
     "group" : "locale_ko_KR_0018",
     "name" : "L_CHART_SEP",
     "value" : "차트 X축 구분자"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_C_TIP_EN",
+    "value" : "툴팁 보여주기"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_ROT_ANGLE",
+    "value" : "회전 각도"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_XAXIS_SETTINGS",
+    "value" : "X축 설정"
   } ]
 }
