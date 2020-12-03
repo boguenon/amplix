@@ -216,8 +216,9 @@
     "name" : "L_EXPORT_XML",
     "value" : "XMLエクスポート"
   }, {
+    "group" : "locale_ja_JP_0018",
     "name" : "L_CSTEP_5",
-    "value" : "YAXIS"
+    "value" : "Axis"
   }, {
     "name" : "L_YAXIS_FORMAT",
     "value" : "Y軸のフォ?マット"
@@ -7024,5 +7025,17 @@
     "group" : "locale_ja_JP_0018",
     "name" : "L_CHART_SEP",
     "value" : "Chart Separator"
+  }, {
+    "group" : "locale_ja_JP_0018",
+    "name" : "L_C_TIP_EN",
+    "value" : "Enable Tooltip"
+  }, {
+    "group" : "locale_ja_JP_0018",
+    "name" : "L_ROT_ANGLE",
+    "value" : "Rotation Angle"
+  }, {
+    "group" : "locale_ja_JP_0018",
+    "name" : "L_XAXIS_SETTINGS",
+    "value" : "X Axis Settings"
   } ]
 }
