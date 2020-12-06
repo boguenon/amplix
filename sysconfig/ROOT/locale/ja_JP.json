@@ -7037,5 +7037,13 @@
     "group" : "locale_ja_JP_0018",
     "name" : "L_XAXIS_SETTINGS",
     "value" : "X Axis Settings"
+  }, {
+    "group" : "locale_ja_JP_0018",
+    "name" : "B_UPD",
+    "value" : "Update"
+  }, {
+    "group" : "locale_ja_JP_0018",
+    "name" : "F_P_POT_COL",
+    "value" : "Percent of parent"
   } ]
 }
