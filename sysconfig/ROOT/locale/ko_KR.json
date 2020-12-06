@@ -7109,5 +7109,13 @@
     "group" : "locale_ko_KR_0018",
     "name" : "L_XAXIS_SETTINGS",
     "value" : "X축 설정"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "B_UPD",
+    "value" : "업데이트"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "F_P_POT_COL",
+    "value" : "상위 그룹값에 대한 퍼센트"
   } ]
 }
