@@ -71,6 +71,10 @@ if (theme != null && theme.length() > 0)
 #content {
 	top: <%= (objid == null ? "102" : "0") %> px;
 }
+
+.igc-alert .detail {
+	display: none !important;
+}
 </style>
 
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>    
