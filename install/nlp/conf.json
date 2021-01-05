@@ -1,0 +1,49 @@
+{
+  "pathPlugins": "./plugins",
+  "pathPipeline": "./pipelines.md",
+  "settings": {
+    "nlp": {
+      "languages": [
+        "en",
+        "ko"
+      ],
+      "trainByDomain": false,
+      "threshold": 0.5,
+      "autoLoad": true,
+      "autoSave": true,
+      "modelFileName": "nlp_set_1580080445.753.nlp",
+      "corpora": [
+      ]
+    },
+    "api-server": {
+      "port": 3000,
+      "serveBot": false
+    }
+  },
+  "use": [
+    {
+      "className": "logger",
+      "path": "@nlpjs/logger"
+    },
+    {
+      "className": "Nlp",
+      "path": "@nlpjs/nlp"
+    },
+    {
+      "className": "LangEn",
+      "path": "@nlpjs/lang-en"
+    },
+    {
+      "className": "LangJa",
+      "path": "@nlpjs/lang-ja"
+    },
+    {
+      "className": "ExpressApiServer",
+      "path": "@nlpjs/express-api-server"
+    },
+    {
+      "className": "DirectlineConnector",
+      "path": "@nlpjs/directline-connector"
+    }
+  ]
+}
