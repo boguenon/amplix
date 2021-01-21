@@ -36,8 +36,13 @@ IG$._customChartPanels = function() {
 					d2 = [{name: "Select Value", value: ""}],
 					d3 = [{name: "Select Value", value: ""}],
 					d4 = [{name: "Select Value", value: ""}],
+					d5 = [{name: "Select Value", value: ""}],
+					maptype = me.down("[name=maptype]"),
 					d1val = "", d2val = "", d3val = "";
 					
+				maptype.store.loadData(IG$.mLU ? IG$.mLU.maptype : []);
+				maptype.setValue(option.maptype);
+				
 				$.each(ma.sheetoption.model.rows, function(i, row) {
 					d1.push({
 						name: row.name,
@@ -59,6 +64,11 @@ IG$._customChartPanels = function() {
 						value: row.uid
 					});
 					
+					d5.push({
+						name: row.name,
+						value: row.uid
+					});
+					
 					if (option.settings.m_lat == row.uid)
 					{
 						d1val = row.uid;
@@ -75,10 +85,12 @@ IG$._customChartPanels = function() {
 					}
 				});
 				
-								me.down("[name=m_lat]").store.loadData(d1);
+				me.down("[name=m_lat]").store.loadData(d1);
 				me.down("[name=m_lng]").store.loadData(d2);
 				me.down("[name=m_color_categ]").store.loadData(d3);
 				me.down("[name=m_geofield]").store.loadData(d4);
+				me.down("[name=mapcategory]").store.loadData(d5);
+				me.down("[name=mapcategory]").setValue(option.mapcategory);
 				
 				option.cdata_m_tmpl = option.cdata_m_tmpl || [
 					"{",
@@ -266,6 +278,9 @@ IG$._customChartPanels = function() {
 				option.settings.m_map_save_stat = me.down("[name=m_map_save_stat]").getValue() ? "T" : "F";
 				option.settings.m_map_popup_hover = me.down("[name=m_map_popup_hover]").getValue() ? "T" : "F";
 				
+				option.maptype = me.down("[name=maptype]").getValue();
+				option.mapcategory = me.down("[name=mapcategory]").getValue();
+				
 				// arc layer selection
 				option.settings.m_arc_layers = [];
 				
@@ -294,7 +309,8 @@ IG$._customChartPanels = function() {
 				subtype == "esri" ||
 				subtype == "vworldmap");
 			*/
-				
+			
+			me.down("[name=mapoptions]").setVisible(subtype == "map");
 			me.down("[name=m_xypos]").setVisible(subtype == "vworldmap");
 			me.down("[name=m_arc_basemap]").setVisible(subtype == "esri");
 			me.down("[name=m_arc_view]").setVisible(subtype == "esri" && _esri_version > 3);
@@ -357,6 +373,48 @@ IG$._customChartPanels = function() {
 				name: "pb01",
 				// hidden: true,
 				items: [
+					{
+						xtype: "fieldset",
+						title: IRm$.r1("L_MAP_OPT"),
+						name: "mapoptions",
+						defaults: {
+							width: 280
+						},
+						items: [
+							{
+								name: "maptype",
+								fieldLabel: IRm$.r1("L_MAP_TYPE"),
+								xtype: "combobox",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "subtype",
+								editable: false,
+								autoSelect: false,
+								store: {
+									xtype: "store",
+									fields: [
+										"name", "subtype", "filename"
+									]
+								}
+							},
+							{
+								name: "mapcategory",
+								fieldLabel: IRm$.r1("L_MAP_AXIS"),
+								xtype: "combobox",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "value",
+								editable: false,
+								autoSelect: false,
+								store: {
+									xtype: "store",
+									fields: [
+										"name", "uid", "type", "nodepath"
+									]
+								}
+							}
+						]
+					},
 					{
 						xtype: "fieldset",
 						title: IRm$.r1("L_MAP_OPTIONS"), // "Map options",
