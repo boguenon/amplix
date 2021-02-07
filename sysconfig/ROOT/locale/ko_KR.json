@@ -7117,5 +7117,21 @@
     "group" : "locale_ko_KR_0018",
     "name" : "F_P_POT_COL",
     "value" : "상위 그룹값에 대한 퍼센트"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_HIDE_PROGRESS",
+    "value" : "로딩 메시지 숨기기"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_WC_OPT",
+    "value" : "워드 클라우드 옵션"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_WC_MIN",
+    "value" : "최소 폰트 사이즈"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_WC_MAX",
+    "value" : "최대 폰트 사이즈"
   } ]
 }

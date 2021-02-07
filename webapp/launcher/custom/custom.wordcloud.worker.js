@@ -61,14 +61,37 @@ module.exports = function() {
         d.x = (size[0] * (random() + .5)) >> 1;
         d.y = (size[1] * (random() + .5)) >> 1;
         cloudSprite(contextAndRatio, d, data, i);
-        if (d.hasText && place(board, d, bounds)) {
-          tags.push(d);
-          event.call("word", cloud, d);
-          if (bounds) cloudBounds(bounds, d);
-          else bounds = [{x: d.x + d.x0, y: d.y + d.y0}, {x: d.x + d.x1, y: d.y + d.y1}];
-          // Temporary hack
-          d.x -= size[0] >> 1;
-          d.y -= size[1] >> 1;
+        if (d.hasText) {
+          if (place(board, d, bounds))
+          {
+	          tags.push(d);
+	          event.call("word", cloud, d);
+	          if (bounds) cloudBounds(bounds, d);
+	          else bounds = [{x: d.x + d.x0, y: d.y + d.y0}, {x: d.x + d.x1, y: d.y + d.y1}];
+	          // Temporary hack
+	          d.x -= size[0] >> 1;
+	          d.y -= size[1] >> 1;
+	          // console.log(d); -- actual drawing
+	      }
+	      else
+	      {
+	      	delete d.sprite;
+	      	// console.log(d);
+	      	tags.push(d);
+	      	event.call("word", cloud, d);
+	      	d.x -= size[0] >> 1;
+	      	d.y -= size[1] >> 1;
+	      	
+	      	if (d.x < (size[0] * (-.5)))
+	      		d.x = 0;
+	      	else if (d.x > size[0] * .5)
+	      		d.x = 0;
+	      		
+	      	if (d.y < size[1] * (-.5))
+	      		d.y = 0;
+	      	else if (d.y > size[1] * .5)
+	      		d.y = 0;
+	      }
         }
       }
       if (i >= n) {
@@ -146,6 +169,7 @@ module.exports = function() {
         }
       }
     }
+    
     return false;
   }
 
@@ -515,7 +539,13 @@ IG$.__chartoption.chartext.wordcloud.prototype.drawWordcloud = function() {
 		cols = results.cols,
 		rec, d, t,
 		width,
-		height, vmin, vmax, fmin = 10, fmax = 90, fratio;
+		height, vmin, vmax, fmin = 8, fmax = 32, fratio;
+		
+	if (cop && cop.settings)
+	{
+		fmin = cop.settings.m_wc_min || 8;
+		fmax = cop.settings.m_wc_max || 32;
+	}
 	
 	container.empty();
 	jcontainer = $("<div class='igc-tg-gr'></div>").appendTo(container);
@@ -539,7 +569,8 @@ IG$.__chartoption.chartext.wordcloud.prototype.drawWordcloud = function() {
 	{
 		rec = rdata[i];
 		d = {};
-		d.text = rec[colfix-1].text || rec[colfix-1].code; 
+		d.text = rec[colfix-1].text || rec[colfix-1].code;
+		d.text += " 한글 테스트 123 한글 테스트 123 한글 테스트 123";
 		if (rec[colfix])
 		{
 			t = rec[colfix].code;

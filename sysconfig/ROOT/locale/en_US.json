@@ -7117,5 +7117,29 @@
     "group" : "locale_en_US_0018",
     "name" : "F_P_POT_COL",
     "value" : "Percent of parent"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_HIDE_PROGRESS",
+    "value" : "Hide Progressbar"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_DEFAULT_VALUE",
+    "value" : "Default Value"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_ACTION_NAME",
+    "value" : "Action Name"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_WC_OPT",
+    "value" : "Word Cloud Options"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_WC_MIN",
+    "value" : "Min font size"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_WC_MAX",
+    "value" : "Max font size"
   } ]
 }
