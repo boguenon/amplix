@@ -1005,7 +1005,8 @@ IG$._customChartPanels = function() {
 				}
 				
 				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
-
+				me.down("[name=m_wc_min]").setValue(option.settings.m_wc_min || 8);
+				me.down("[name=m_wc_max]").setValue(option.settings.m_wc_max || 32);
 			}
 		},
 
@@ -1018,6 +1019,8 @@ IG$._customChartPanels = function() {
 				option.settings = option.settings || {};
 				
 				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
+				option.settings.m_wc_min = me.down("[name=m_wc_min]").getValue();
+				option.settings.m_wc_max = me.down("[name=m_wc_max]").getValue();
 			}
 		},
 		invalidateFields: function(opt) {
@@ -1025,6 +1028,7 @@ IG$._customChartPanels = function() {
 			
 			me.down("[name=pb02]").setVisible(subtype == "kpi");
 			me.down("[name=pb03]").setVisible(subtype == "svgmap");
+			me.down("[name=m_wc_opt]").setVisible(subtype == "wordcloud");
 		},
 		items: [
 			{
@@ -1098,6 +1102,29 @@ IG$._customChartPanels = function() {
 							xtype: "store",
 							fields: [ "name", "value" ]
 						}
+					}
+				]
+			},
+			{
+				xtype: "fieldset",
+				title: IRm$.r1("L_WC_OPT"),
+				name: "m_wc_opt",
+				hidden: true,
+				layout: "anchor",
+				items: [
+					{
+						xtype: "numberfield",
+						name: "m_wc_min",
+						fieldLabel: IRm$.r1("L_WC_MIN"),
+						minValue: 1,
+						maxValue: 10
+					},
+					{
+						xtype: "numberfield",
+						name: "m_wc_max",
+						fieldLabel: IRm$.r1("L_WC_MAX"),
+						minValue: 1,
+						maxValue: 10
 					}
 				]
 			},

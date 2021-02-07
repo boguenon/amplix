@@ -1,0 +1,17 @@
+A;L_RSCRIPT;R Script
+A;L_R_PROMPT;R Prompt
+A;B_REQUEST;Request
+A;L_POSITION;Position
+A;B_OUTSIDE;Outside
+A;B_OPERATION;Operation
+A;L_CHART_SEP;Chart Separator
+A;L_C_TIP_EN;Enable Tooltip
+A;L_ROT_ANGLE;Rotation Angle
+A;L_CSTEP_5;Axis
+A;L_XAXIS_SETTINGS;X Axis Settings
+A;B_UPD;Update
+A;F_P_POT_COL;Percent of parent
+A;L_HIDE_PROGRESS;Hide Progressbar
+A;L_WC_OPT;Word Cloud Options
+A;L_WC_MIN;Min font size
+A;L_WC_MAX;Max font size
