@@ -1,0 +1,18 @@
+A;L_RSCRIPT;R 스크립트
+A;L_R_PROMPT;R 프롬프트
+A;B_REQUEST;스크립트 실행
+A;L_POSITION;위치
+A;B_OUTSIDE;바깥쪽
+A;L_DB_VAL;커넥션 검증 SQL
+A;B_OPERATION;연산자
+A;L_CHART_SEP;차트 X축 구분자
+A;L_C_TIP_EN;툴팁 보여주기
+A;L_ROT_ANGLE;회전 각도
+A;L_CSTEP_5;축 설정
+A;L_XAXIS_SETTINGS;X축 설정
+A;B_UPD;업데이트
+A;F_P_POT_COL;상위 그룹값에 대한 퍼센트
+A;L_HIDE_PROGRESS;로딩 메시지 숨기기
+A;L_WC_OPT;워드 클라우드 옵션
+A;L_WC_MIN;최소 폰트 사이즈
+A;L_WC_MAX;최대 폰트 사이즈
