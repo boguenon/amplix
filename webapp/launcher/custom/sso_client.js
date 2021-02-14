@@ -1,10 +1,25 @@
+﻿/**
+ * @module framework/login/custom/sso_client
+ * @desc sso login loader
+ */
+
+
+/**
+ * override show login
+ * rs: 0 (first page load)
+ * rs: 1 (logout button clicked)
+ * rs: 2 (session expired)
+ * rs: 3 (print page login)
+ *
+ * ig$.$sso_module_name : module short name to specify single sign on server class
+ * @param rs {integer} login source
+ * @memberof module:framework/login/custom/sso_client
+ */
 IG$.showLogin = function(callback, rs) // show login screen
 {
 	$("#idv-mnu-pnl").hide();
 
 	var nmts;
-	
-	var max_try_count = 3;
 	
 	window.$sso_try_count = window.$sso_try_count || 0;
 
@@ -18,6 +33,7 @@ IG$.showLogin = function(callback, rs) // show login screen
 	{
 		IG$.dlgLogin.callback = new IG$.callBackObj(this, function() {
 			$("#loginWindow").hide();
+			IG$.showLoginProc.call(this);
 		});
 	}
 	
@@ -74,7 +90,9 @@ IG$.showLogin = function(callback, rs) // show login screen
 					sform.show();
 					mc.hide();
 					
-					$(".login-sso-msg", sform).html("<span>Session key expired! Please refresh browser and login again!</span>");
+					ig$.$sso_config = ig$.$sso_config || {};
+					
+					$(".login-sso-msg", sform).html(ig$.$sso_config.sso_fail_msg || "<span>Session key expired! Please refresh browser and login again!</span>");
 					progress.hide();
 					
 					var location_hash = window.location.href,
@@ -84,6 +102,7 @@ IG$.showLogin = function(callback, rs) // show login screen
 						nhash,
 						thashmap = {},
 						retrycount = 0,
+						bproc,
 						i;
 					
 					if (location_hash && location_hash.indexOf("?") > 0)
@@ -104,7 +123,7 @@ IG$.showLogin = function(callback, rs) // show login screen
 						
 						thashmap["retry"] = "" + (++retrycount);
 						
-						if (retrycount < 3)
+						if (window.$sso_try_count > 0 && retrycount < window.$sso_try_count)
 						{
 							nhash = [];
 
@@ -113,16 +132,34 @@ IG$.showLogin = function(callback, rs) // show login screen
 							});
 							
 							newhash = nhash.join("&");
-							window.location.href = lurl + "?" + newhash;
+							
+							bproc = 1;
+							
+							setTimeout(function() {
+								window.location.href = lurl + "?" + newhash;
+							}, 5000);
 						}
 					}
 					
-					if (thash && retrycount < 3)
+					if (!bproc && thash && window.$sso_try_count > 0 && retrycount < window.$sso_try_count)
 					{
+						bproc = 1;
+						
 						setTimeout(function() {
 							window.location.reload(false);
-						}, 100);
+						}, 5000);
 					}
+					else if (!bproc)
+					{
+						ig$.$sso_config = ig$.$sso_config || {};
+						
+						if (ig$.$sso_config.sso_fail_handler)
+						{
+							ig$.$sso_config.sso_fail_handler.apply(null);
+						}
+					}
+					
+					return false;
 				})
 			, ig$.$sso_module_name || "dbsync");
 		}
@@ -141,7 +178,7 @@ IG$.showLogin = function(callback, rs) // show login screen
 	// rs: 1 (logout button clicked)
 	// rs: 2 (session expired)
 	// rs: 3 (print page login)
-	if (rs != 1 && window.$sso_try_count < max_try_count) 
+	if (rs != 1) 
 	{
 		sform.show();
 		mc.hide();
@@ -149,8 +186,6 @@ IG$.showLogin = function(callback, rs) // show login screen
 		// request automatic login
 		setTimeout(function() {
 			var fkey = window.$session_key || "sso_sim_b6118e61573e4aaa_key_map:";
-
-			window.$sso_try_count++;
 
 			if (nmts && nmts.length)
 			{
@@ -192,14 +227,13 @@ IG$.showLogin = function(callback, rs) // show login screen
 	}
 	else
 	{
-		if (window.$sso_try_count > max_try_count)
-			return;
-
+		ig$.$sso_config = ig$.$sso_config || {};
+		
 		// sform.hide();
 		// mc.show();
 		sform.show();
 		mc.hide();
-		$(".login-sso-msg", sform).html("<span>Session expired! Please refresh browser and login again!</span>");
+		$(".login-sso-msg", sform).html(ig$.$sso_config.logout_msg || "<span>Session expired! Please refresh browser and login again!</span>");
 		progress.hide();
 	}
 }
