@@ -570,7 +570,7 @@ IG$.__chartoption.chartext.wordcloud.prototype.drawWordcloud = function() {
 		rec = rdata[i];
 		d = {};
 		d.text = rec[colfix-1].text || rec[colfix-1].code;
-		d.text += " 한글 테스트 123 한글 테스트 123 한글 테스트 123";
+
 		if (rec[colfix])
 		{
 			t = rec[colfix].code;
