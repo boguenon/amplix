@@ -14,7 +14,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202102141009" />
+    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202102221211" />
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="./main/css/mainpage_ie.css" />
 <![endif]-->
@@ -24,8 +24,8 @@
     var __mts_id = null;
     var __uri = "<%=uri%>";
    	</script>
-   	<script type="text/javascript" src="./config.js?_dc=202102141009"></script>
-    <script type="text/javascript" src="./main/js/main.min.js?_dc=202102141009"></script>
+   	<script type="text/javascript" src="./config.js?_dc=202102221211"></script>
+    <script type="text/javascript" src="./main/js/main.min.js?_dc=202102221211"></script>
 </head>
 <body class="index nav-light hoverable">
 	
