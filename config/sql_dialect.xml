@@ -64,7 +64,7 @@
 				DATE_FORMAT({field}, '%i')
 			</extract>
 			<extract type="custom">
-				DATE_FORMAT({field}, '%b %e, %Y %k-%i')
+				DATE_FORMAT({field}, '{format}')
 			</extract>
 		</date_extract>
 		<date_extract type="mssql">
@@ -286,10 +286,12 @@
 		<item type="oracle">
 			<date><![CDATA[TO_DATE({value},'yyyymmdd')]]></date>
 			<datetime><![CDATA[TO_DATE({value},'yyyymmddhh24miss')]]></datetime>
+			<datetime_expression><![CDATA[TO_DATE({field},'{format}')]]></datetime_expression>
 		</item>
 		<item type="mysql">
 			<date><![CDATA[STR_TO_DATE({value}, '%Y%m%d')]]></date>
 			<datetime><![CDATA[STR_TO_DATE({value}, '%Y%m%d%H%i%s')]]></datetime>
+			<datetime_expression><![CDATA[STR_TO_DATE({field}, '{format}')]]></datetime_expression>
 		</item>
 		<item type="sybase">
 			<date><![CDATA[CONVERT(DATETIME, {value}, 112)]]></date>
@@ -299,10 +301,12 @@
 		<item type="postgre">
 			<date><![CDATA[TO_DATE({value}, 'YYYYMMDD')]]></date>
 			<datetime><![CDATA[TO_TIMESTAMP({value}, 'YYYYMMDDHH24MISS')]]></datetime>
+			<datetime_expression><![CDATA[TO_DATE({field}, '{format}')]]></datetime_expression>
 		</item>
 		<item type="teradata">
 			<date><![CDATA[CAST({value} AS DATE FORMAT 'YYYYMMDD')]]></date>
 			<datetime><![CDATA[CAST({value} AS TIMESTAMP FORMAT 'YYYYMMDDHHMISS')]]></datetime>
+			<datetime_expression><![CDATA[CAST({value} AS DATE FORMAT '{format}')]]></datetime_expression>
 		</item>
 		<item type="mssql">
 			<date><![CDATA[CONVERT(DATE, {value}, 112)]]></date>
@@ -312,10 +316,12 @@
 		<item type="h2">
 			<date><![CDATA[PARSEDATETIME({value}, 'yyyyMMddhhmmss')]]></date>
 			<datetime><![CDATA[PARSEDATETIME({value}, 'yyyyMMddhhmmss')]]></datetime>
+			<datetime_expression><![CDATA[PARSEDATETIME({field}, '{format}')]]></datetime_expression>
 		</item>
 		<item type="cubrid">
 			<date><![CDATA[TO_DATE({value}, 'YYYYMMDD')]]></date>
 			<datetime><![CDATA[TO_DATETIME({value}, 'YYYYMMDDHH24MISS')]]></datetime>
+			<datetime_expression><![CDATA[TO_DATE({field}, '{format}')]]></datetime_expression>
 		</item>
 	</string_to_date>
 	<db_info>
