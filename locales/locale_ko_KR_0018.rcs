@@ -16,3 +16,4 @@ A;L_HIDE_PROGRESS;로딩 메시지 숨기기
 A;L_WC_OPT;워드 클라우드 옵션
 A;L_WC_MIN;최소 폰트 사이즈
 A;L_WC_MAX;최대 폰트 사이즈
+A;L_FILTER_VALUESET;선택값 목록
