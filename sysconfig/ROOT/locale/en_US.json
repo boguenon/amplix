@@ -7145,5 +7145,9 @@
     "group" : "locale_en_US_0018",
     "name" : "L_FILTER_VALUESET",
     "value" : "Value Set"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_GROUP_CATEG",
+    "value" : "Grouped Category"
   } ]
 }

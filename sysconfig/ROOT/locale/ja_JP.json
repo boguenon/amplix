@@ -7065,5 +7065,9 @@
     "group" : "locale_ja_JP_0018",
     "name" : "L_FILTER_VALUESET",
     "value" : "Value Set"
+  }, {
+    "group" : "locale_ja_JP_0018",
+    "name" : "L_GROUP_CATEG",
+    "value" : "Grouped Category"
   } ]
 }
