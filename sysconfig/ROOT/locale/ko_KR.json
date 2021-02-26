@@ -7133,5 +7133,13 @@
     "group" : "locale_ko_KR_0018",
     "name" : "L_WC_MAX",
     "value" : "최대 폰트 사이즈"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_FILTER_VALUESET",
+    "value" : "선택값 목록"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_GROUP_CATEG",
+    "value" : "카테고리 그룹핑"
   } ]
 }

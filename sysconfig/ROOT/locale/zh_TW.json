@@ -7061,5 +7061,13 @@
     "group" : "locale_zh_TW_0018",
     "name" : "L_WC_MAX",
     "value" : "Max font size"
+  }, {
+    "group" : "locale_zh_TW_0018",
+    "name" : "L_FILTER_VALUESET",
+    "value" : "Value Set"
+  }, {
+    "group" : "locale_zh_TW_0018",
+    "name" : "L_GROUP_CATEG",
+    "value" : "Grouped Category"
   } ]
 }

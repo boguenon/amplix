@@ -17,3 +17,5 @@ A;L_ACTION_NAME;Action Name
 A;L_WC_OPT;Word Cloud Options
 A;L_WC_MIN;Min font size
 A;L_WC_MAX;Max font size
+A;L_FILTER_VALUESET;Value Set
+A;L_GROUP_CATEG;Grouped Category
