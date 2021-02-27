@@ -266,7 +266,7 @@ JAVA_OPTS="$JAVA_OPTS $JSSE_OPTS"
 
 # Register custom URL handlers
 # Do this here so custom URL handles (specifically 'war:...') can be used in the security policy
-JAVA_OPTS="$JAVA_OPTS -Djava.protocol.handler.pkgs=org.apache.catalina.webresources"
+JAVA_OPTS="$JAVA_OPTS -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Djava.awt.headless=true"
 
 # Check for the deprecated LOGGING_CONFIG
 # Only use it if CATALINA_LOGGING_CONFIG is not set and LOGGING_CONFIG starts with "-D..."
