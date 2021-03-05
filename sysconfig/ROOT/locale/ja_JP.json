@@ -4190,11 +4190,11 @@
     "name" : "L_HOME_APP_DESC",
     "value" : "Create scientific reports using amplixbi.com.<br/>amplix data science tool helps to make statistical analysis with easy guided user interfaces."
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "L_META_UPGRADE",
     "value" : "Meta Upgrade"
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "T_MIG_META_UPGRADE",
     "value" : "Meta Version Upgrade"
   }, {
@@ -5722,35 +5722,35 @@
     "name" : "L_MULTIMEASURE",
     "value" : "Multi Measure"
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "L_SCI",
     "value" : "Data Scientist"
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "L_SCI_MANAGER",
     "value" : "Data Scientist Server"
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "L_SCI_DATA",
     "value" : "Data Publish"
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "L_SCI_USER",
     "value" : "Data Scientist Module"
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "L_SCI_SERVERS",
     "value" : "Analysis Servers"
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "L_SCI_DATASET",
     "value" : "My DataSet Loader"
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "I_SCI_DATASET",
     "value" : "Sync DataSet"
   }, {
-    "group" : "locale_ja_JP_sci001",
+    "group" : "locale_ja_JP_0018",
     "name" : "I_SCI_PUB_DATASET",
     "value" : "Published DataSet"
   }, {
@@ -7069,5 +7069,9 @@
     "group" : "locale_ja_JP_0018",
     "name" : "L_GROUP_CATEG",
     "value" : "Grouped Category"
+  }, {
+    "group" : "locale_ja_JP_0018",
+    "name" : "M_CONFIRM_SHARE_URL",
+    "value" : "Click Yes to confirm creating shared url for this report."
   } ]
 }
