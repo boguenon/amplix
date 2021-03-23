@@ -31,3 +31,7 @@ A;L_SCI_SERVERS;Analysis Servers
 A;L_SCI_DATASET;My DataSet Loader
 A;I_SCI_DATASET;Sync DataSet
 A;I_SCI_PUB_DATASET;Published DataSet
+
+A;L_TRASHBIN;Trashbin
+A;L_PCT_PREC;Percent Precision
+A;L_RNK_D_NAME;Column name to SUM
