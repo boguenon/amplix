@@ -7157,5 +7157,21 @@
     "group" : "locale_ko_KR_0018",
     "name" : "L_RNK_D_NAME",
     "value" : "합산 대상 컬럼이름"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_R_INT",
+    "value" : "R 통계 연동"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_R_SVR",
+    "value" : "R 서브 호스트"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_R_SVR_PORT",
+    "value" : "R 서브 포트"
+  }, {
+    "group" : "locale_ko_KR_0018",
+    "name" : "L_R_TEMP",
+    "value" : "임시 폴더"
   } ]
 }
