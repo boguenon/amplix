@@ -29,3 +29,12 @@ A;L_SCI_SERVERS;Analysis Servers
 A;L_SCI_DATASET;My DataSet Loader
 A;I_SCI_DATASET;Sync DataSet
 A;I_SCI_PUB_DATASET;Published DataSet
+
+A;L_TRASHBIN;Trashbin
+A;L_PCT_PREC;Percent Precision
+A;L_RNK_D_NAME;Column name to SUM
+
+A;L_R_INT;R statistics Integration
+A;L_R_SVR;R serve host
+A;L_R_SVR_PORT;R server port
+A;L_R_TEMP;Temp folder

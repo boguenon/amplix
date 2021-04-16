@@ -7153,5 +7153,33 @@
     "group" : "locale_en_US_0018",
     "name" : "M_CONFIRM_SHARE_URL",
     "value" : "Click Yes to confirm creating shared url for this report."
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_TRASHBIN",
+    "value" : "Trashbin"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_PCT_PREC",
+    "value" : "Percent Precision"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_RNK_D_NAME",
+    "value" : "Column name to SUM"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_R_INT",
+    "value" : "R statistics Integration"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_R_SVR",
+    "value" : "R serve host"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_R_SVR_PORT",
+    "value" : "R server port"
+  }, {
+    "group" : "locale_en_US_0018",
+    "name" : "L_R_TEMP",
+    "value" : "Temp folder"
   } ]
 }
