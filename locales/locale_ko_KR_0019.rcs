@@ -1,0 +1,162 @@
+A;LR_IG_NAV;폴더 네비게이션 설정
+A;LR_IG_REPORT_MENU;리포트 메인 메뉴
+A;LR_IG_MENU_RPT;새 리포트 생성 옵션
+A;LR_IG_MENU_SQL_RPT;새 SQL 리포트 생성 옵션
+A;LR_IG_MENU_FORMBUILDER;새 폼뷜더 생성 옵션
+A;LR_IG_ANAL;분석 메인 메뉴
+A;LR_IG_VAR;분석 변수 설정 관리자
+A;LR_IG_LOOKUP;코드맵핑 설정 관리자
+A;LR_IG_DBD;폼뷜더 관리자 메
+A;LR_IG_DATASET;데이터집합 메인 메뉴
+A;LR_IG_DBCON;데이터베이스 인스턴스 접속 관리자
+A;LR_IG_N_DB_ADD;신규 데이터베이스 접속 추가 권한
+A;LR_IG_N_DATASET;신규 데이터 집합 생성 권한
+A;LR_IG_N_DATASET_DBA;데이터 집합 DBA 권한
+A;LR_IG_N_DS_REQB;테이블 생성 권한
+A;LR_IG_N_DS_SDDLB;데이터 집합 테이블 생성 버튼 활성화
+A;LR_IG_MNGR;시스템 관리 메인 메뉴 
+A;LR_IG_SYS;시스템 설정 서브 메뉴
+A;LR_IG_USER;사용자 관리 권한 여부
+A;LR_IG_SYS_CONFIG;시스템 설정 변경 권한
+A;LR_IG_SYS_UICONFIG;시스템 UI 설정 변경 권한
+A;LR_IG_SYS_SSO;싱글사인온 설정 메뉴 접근 권한
+A;LR_IG_SYS_SSO_DESIGNER;싱글 사인온 프로그램 디자이너 권한
+A;LR_IG_FT;메뉴 접근 권한 변경 권한
+A;LR_IG_ASSIST_ROBOT;어시스트 로봇 설정 권한
+A;LR_IG_SETTINGS;설정 서브 메뉴 활성화 여부
+A;LR_IG_LNF;리포트 스타일 및 테마 관리 권한 
+A;LR_IG_LOC;언어 설정 메뉴 접근 권한
+A;LR_IG_DLOC;사전언어 관리 메뉴 접근 권한 
+A;LR_IG_CHART_DSGN;스타일 관리 차트 디자이너 및 설정 권한
+A;LR_IG_MON;모니터링 서브 메뉴 접근 권한
+A;LR_IG_IMP;메타 파일 복구 및 임포트 권한
+A;LR_IG_MIGRATION;서버간 메터 데이타 이동관리 권한
+A;LR_IG_SYSLOG;시스템 로그 접근 권한
+A;LR_IG_AUDIT_USER;사용자 감사 조회 권한
+A;LR_IG_AUDIT_RPT;사용자 리포트 조회 이력 접근 권한
+A;LR_IG_AUDIT_JDBC;JDBC 모니터링 권한
+A;LR_IG_AUDIT_EMAIL;이메일 전송 이력 조회 권한
+A;LR_IG_SYSRES;시스템 리소스 관리 접근 권한
+A;LR_IG_SCHEDULE;스케쥴 조회 리포트 실행에 대한 모니터링 권한
+A;LR_IG_SCHEDULE_PROG;스케쥴 프로그램 개발자 권한
+A;LR_IG_MAIL;사용자 관리 메뉴 접근 권한
+A;LR_IG_MX_REG;다른 사용자 등록 권한 여부
+A;LR_IG_MX_UPD;다른 사용자 수정 권한 여부
+A;LR_IG_MX_PRS;다른 사용자 패스워드 변경 권한
+A;LR_IG_BDMGR;빅데이터 메인 메뉴 권한
+A;LR_IG_HDOOP;하둡 개발자 서브 메뉴
+A;LR_IG_HD_FLOW;하둡 비즈니스 플로우 개발 권한
+A;LR_IG_HD_MAPR;맵리듀스 프로그래머 권한
+A;LR_IG_MONGO;MongoDB 개발 서브 메뉴
+A;LR_IG_MG_DPROC;MongoDB 데이터 프로세싱 서브 메뉴
+A;LR_IG_MG_DATA;MongoDB 데이터 컬렉터 개발자 권한
+A;LR_IG_MLMGR;머신 러닝 개발 관리 메뉴
+A;LR_IG_ML_BAYES;Bayes 머신 러닝
+A;LR_IG_ML_BAYES_RPT;Bayes 리포트 생성 권한
+A;LR_IG_ML_LEARN;리포트의 자동학습 버튼 추가 여부
+A;LR_IG_MIG;타 프로그램 연동 및 마이그레이션 모듈
+A;LR_IG_DISCO;오라클 디스커버러 마이그레이션 도구
+A;LR_IG_META_UPGRADE;앰플릭스 이전버전에 대한 메타 업그레이드 유틸리티
+A;LR_IG_NAV;폴더 네비게이션 옵션
+A;LR_IG_N_CW;신규 작업영역 생성 권한
+A;LR_IG_N_LST;네비게이션 툴바 드랍다운 메뉴 옵션
+A;LR_IG_N_P;개인 영역 컨텐츠 보기
+A;LR_IG_N_A;모든 컨텐츠 보기
+A;LR_IG_N_FAV;자주 사용하는 컨텐츠 보기
+A;LR_IG_N_MW;워크스페이스 관리자 사용 권한
+A;LR_IG_N_RCNT;최근 컨텐츠 보기
+A;LR_IG_N_DEL;삭제된 컨텐츠 복구 권한
+A;LR_IG_N_FP;폴더 팝업 메뉴 보기
+A;LR_IG_N_F;신규 옵션 메뉴 항목 설정
+A;LR_IG_N_F_F;폴더 생성 가능 여부
+A;LR_IG_N_DBM;데이터베이스 모델 생성 가능 여부
+A;LR_IG_N_BOBJ;비즈니스 오브젝트 생성 가능 여부
+A;LR_IG_N_RPT;리포트 생성 가능 여부
+A;LR_IG_N_SQLRPT;SQL 리포트 생성 가능 여부
+A;LR_IG_N_DBD;폼뷜더 생성 가능 여부
+A;LR_IG_N_CRPT;콤파지트 리포트 생성 가능 여부(사용안함)
+A;LR_IG_N_N_HB;하둡 비즈니스 플로우 생성 가능 여부
+A;LR_IG_N_JC;자바 클래스 모듈 생성 가능 여부
+A;LR_IG_N_F_R;R 통계 스크립트 생성 가능 여부
+A;LR_IG_N_JCM;자바 클래스 모듈 개발자 여부
+A;LR_IG_CC;신규 큐브 항목 생성 메뉴 옵션
+A;LR_IG_N_CM;커스텀 디멘젼 생성 가능 여부
+A;LR_IG_N_DM;날짜 디멘젼 생성 가능 여부
+A;LR_IG_N_FM;수식 메져 생성 가능 여부
+A;LR_IG_N_MS;메져 생성 가능 여부
+A;LR_IG_N_CMS;차트 메져 신규 생성 가능 여부
+A;LR_IG_N_UDG;사용자 정의 그룹핑 디멘젼 생성 가능 여부
+A;LR_IG_N_GM;그룹 메져 생성 가능 여부
+A;LR_IG_N_HM;계층 디멘젼 생성 가능 여부
+A;LR_IG_N_EXP;메타 컨텐츠를 파일로 반출 권한
+A;LR_IG_N_CP;항목을 클립보드에 복사하기
+A;LR_IG_N_REN;항목 이름 변경 권한
+A;LR_IG_N_MV;항목을 다른 폴더에 이동 권한
+A;LR_IG_N_DEL;컨텐츠 삭제 권한
+A;LR_IG_N_OAUTH;컨텐츠 접근 권한 및 공유 설정 권한
+A;LR_IG_N_OSUBSCR;다른 테넌트에 컨텐츠 공유 하는 권한
+A;LR_IG_N_REV;컨텐츠 버전 관리 및 복구 기능
+A;LR_IG_N_REF;폴더 새로고침 메뉴 사용 여부
+A;LR_IG_N_MGF;폴더 관리 사용 여부
+A;LR_IG_N_E_CUBE;작업영역에 비즈니스 오브젝트 편집 메뉴 사용 여부
+A;LR_IG_N_E_META;메타 컨텐츠 JSON 파일로 편집 수정기 사용 여부
+A;LR_IG_M_CTRL;메타 컨텐츠의 팝업 메뉴 옵션
+A;LR_IG_M_SAVE;컨텐츠 저장 버튼 활성화 여부
+A;LR_IG_M_SAVEAS;컨텐츠 다른이름으로 저장 버튼 활성화 여부
+A;LR_IG_M_PRV_WS;개인 작업영역 폴더 생성 권한
+A;LR_IG_M_TEAM_WS;팀 작업영역 폴더 생성 권한
+A;LR_IG_REPORT;리포트 툴바 버튼 권한 관리 옵션
+A;LR_IG_R_TBAR;툴바 사용 여부
+A;LR_IG_R_SAVE;리포트 저장 버튼 활성화 여부
+A;LR_IG_R_SAVEAS;리포트 다른이름으로 저장 버튼 활성화 여부
+A;LR_IG_R_RUN;실행 버튼 활성화 여부
+A;LR_IG_R_DESIGN;피벗 변경 버튼 활성화 여부
+A;LR_IG_R_VSEL;결과 보기 모드 토글 버튼 사용 여부
+A;LR_IG_R_GRID;그리드 보기 사용 가능 여부
+A;LR_IG_R_CHART;차트 보기 사용 가능 여부
+A;LR_IG_R_ANAL;통계 분석 보기 사용 가능 여부 
+A;LR_IG_R_FVIEW;폼 뷰어 사용하기
+A;LR_IG_R_R;R 통계 결과 보기 사용 가능 여부
+A;LR_IG_R_PYTHON;파이선 결과 보기 사용 가능 여부
+A;LR_IG_R_RPT_VR;리포트 뷰어 추가 기능 사용 여부
+A;LR_IG_R_STORY;스토리 뷰어 버튼 활성화 여부
+A;LR_IG_R_BURSTING;이메일 버스팅 사용가능 여부
+A;LR_IG_R_FORMB;폼 뷜더 사용가능 여부
+A;LR_IG_R_EMAIL;리포트 공유 사용가능 여부
+A;LR_IG_FM;리포트에 수식 추가 기능 사용 여부
+A;LR_IG_P_CMT;리포트에 커스텀 디멘젼 생성 기능 사용 여부
+A;LR_IG_R_EXP;리포트 출력 기능 사용 여부
+A;LR_IG_R_XLS;엑셀파일로 다운로드
+A;LR_IG_R_PPT;파워포인트로 다운로드
+A;LR_IG_R_PDF;PDF 파일로 다운로드
+A;LR_IG_R_CSV;CSV 파일로 다운로드
+A;LR_IG_R_HTML;HTML 파일로 다운로드
+A;LR_IG_R_JASPER;Jasper 템플릿 사용가능 여부
+A;LR_IG_R_CLB;클립보드 복사 기능 사용 여부
+A;LR_IG_R_EOPT;툴바 버튼에 출력 옵션 표시 여부
+A;LR_IG_R_TOOLS;툴바에 도구 버튼 표시 여부
+A;LR_IG_R_CRPT;리포트 유형 변경 버튼 표시 여부
+A;LR_IG_R_STAT;기본 통계 보기 도구 표시 여부
+A;LR_IG_ANAL_MENU;통계 분석 메뉴 옵션
+A;LR_IG_R_DOCK;드래그 드랍 도킹 레이아웃 변경 허용 여부
+A;LR_IG_R_EDPANEL;레이아웃 변경 허용 여부
+A;LR_IG_R_ADPANEL;리포트에 위젯 패널 추가 허용
+A;LR_IG_R_RSUM;R 통계 요약 버튼 표시 여부
+A;LR_IG_R_RSCE;R 통계 스크립트 편집 개발자 권한
+A;LR_IG_R_RWZD;R 마법사 관리 권한
+A;LR_IG_R_RIMG;R 결과물을 이미지 출력 버튼 표시 여부
+A;LR_IG_R_CWZ;차트 마법사 버튼 표시 여부
+A;LR_IG_R_CT;툴바에서 차트 유형 변경 버튼 표시 여부
+A;LR_IG_R_SCH;리포트 조회를 백그라운드 스케쥴 버튼 표시 여부
+A;LR_IG_R_FAV;리포트 즐겨찾기 추가 버튼 표시 여부
+A;LR_IG_R_INST;리포트 설명 및 도움말 관리 버튼 표시 여부
+A;LR_IG_R_HELP;리포트 및 도움말 추가 관리자 여부
+A;LR_IG_MANUAL;메뉴얼 관리 메인 메뉴
+A;LR_IG_MANUAL_AUTH;메뉴얼 퍼블리셔 권한
+A;LR_IG_SCI;Data Science module main menu
+A;LR_IG_SCI_MGR;Data Science management sub menu
+A;LR_IG_SCI_MGR_DATASET;Data Science public dataset management
+A;LR_IG_SCI_MGR_LOGGER;Data Science logging and history
+A;LR_IG_SCI_USR;Data Science user sub menu
+A;LR_IG_SCI_USER_SERVERS;List all Data Science server and connections
+A;LR_IG_SCI_DATASET;Data Science available dataset lists

@@ -7101,5 +7101,649 @@
     "group" : "locale_zh_TW_0018",
     "name" : "L_R_TEMP",
     "value" : "Temp folder"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_NAV",
+    "value" : "Folder navigation options"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_REPORT_MENU",
+    "value" : "Report main menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MENU_RPT",
+    "value" : "New report option"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MENU_SQL_RPT",
+    "value" : "New SQL Report option"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MENU_FORMBUILDER",
+    "value" : "New Formbuilder option"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_ANAL",
+    "value" : "Analysis main menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_VAR",
+    "value" : "Variable management"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_LOOKUP",
+    "value" : "Lookup management"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_DBD",
+    "value" : "Form builder management"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_DATASET",
+    "value" : "Dataset main menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_DBCON",
+    "value" : "Database connection manager"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_DB_ADD",
+    "value" : "Adding new database connection"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_DATASET",
+    "value" : "Create Dataset privileges"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_DATASET_DBA",
+    "value" : "Dataset DBA role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_DS_REQB",
+    "value" : "DBA create table privileges"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_DS_SDDLB",
+    "value" : "Dataset create sql button"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MNGR",
+    "value" : "Management main menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SYS",
+    "value" : "System sub menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_USER",
+    "value" : "User management menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SYS_CONFIG",
+    "value" : "System config menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SYS_UICONFIG",
+    "value" : "System UI setting menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SYS_SSO",
+    "value" : "Single sign on setting menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SYS_SSO_DESIGNER",
+    "value" : "Single sign on designer programmer"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_FT",
+    "value" : "Feature control privileges"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_ASSIST_ROBOT",
+    "value" : "Assist robot setting role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SETTINGS",
+    "value" : "Settings sub menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_LNF",
+    "value" : "Look and feel setting"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_LOC",
+    "value" : "Locale management role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_DLOC",
+    "value" : "Locale dictionary setting"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_CHART_DSGN",
+    "value" : "Chart designer in look and feel"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MON",
+    "value" : "Monitoring sub menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_IMP",
+    "value" : "Meta import role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MIGRATION",
+    "value" : "AMPLIX update manager role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SYSLOG",
+    "value" : "System log role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_AUDIT_USER",
+    "value" : "Audit user activity role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_AUDIT_RPT",
+    "value" : "Audit user report execution role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_AUDIT_JDBC",
+    "value" : "JDBC monitoring role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_AUDIT_EMAIL",
+    "value" : "Email notification history role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SYSRES",
+    "value" : "System Resource management"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SCHEDULE",
+    "value" : "Schedule execution monitoring"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SCHEDULE_PROG",
+    "value" : "Schedule programmer role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MAIL",
+    "value" : "User management sub menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MX_REG",
+    "value" : "User registeration role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MX_UPD",
+    "value" : "Update user role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MX_PRS",
+    "value" : "Password reset role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_BDMGR",
+    "value" : "Big Data main menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_HDOOP",
+    "value" : "Hadoop developer sub menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_HD_FLOW",
+    "value" : "Hadoop flow developer"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_HD_MAPR",
+    "value" : "Map reduce programmer role"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MONGO",
+    "value" : "MongoDB developer sub menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MG_DPROC",
+    "value" : "MongoDB data processor developer"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MG_DATA",
+    "value" : "MongoDB Data collector developer"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MLMGR",
+    "value" : "Machine learning developer"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_ML_BAYES",
+    "value" : "Bayes Machine Learning"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_ML_BAYES_RPT",
+    "value" : "Bayes report developer"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_ML_LEARN",
+    "value" : "Learn button on report"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MIG",
+    "value" : "Migration utility"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_DISCO",
+    "value" : "Oracle Discoverer migration utility"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_META_UPGRADE",
+    "value" : "Meta upgrade utility for amplix previous version"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_CW",
+    "value" : "Create new workspace menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_LST",
+    "value" : "Navigation option drop down menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_P",
+    "value" : "Private contents"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_A",
+    "value" : "All contents"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_FAV",
+    "value" : "Favorite contents"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_MW",
+    "value" : "Manage workspace"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_RCNT",
+    "value" : "Most recent contents"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_DEL",
+    "value" : "Delete content"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_FP",
+    "value" : "Folder popup menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_F",
+    "value" : "Create new option menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_F_F",
+    "value" : "Create folder menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_DBM",
+    "value" : "New database model menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_BOBJ",
+    "value" : "New business object menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_RPT",
+    "value" : "New report menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_SQLRPT",
+    "value" : "New SQL report menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_DBD",
+    "value" : "New Formbuilder menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_CRPT",
+    "value" : "New Composite menu (Deprecated)"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_N_HB",
+    "value" : "New Hadoop business flow"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_JC",
+    "value" : "New Javaclass program module"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_F_R",
+    "value" : "R statistics script"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_JCM",
+    "value" : "Java class module developer"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_CC",
+    "value" : "New Cube Items"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_CM",
+    "value" : "New Custom Dimension"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_DM",
+    "value" : "New Date Dimension"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_FM",
+    "value" : "New Calculation formula"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_MS",
+    "value" : "New Measure"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_CMS",
+    "value" : "New Chart Measure Dimension"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_UDG",
+    "value" : "New User Defined Group Dimension"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_GM",
+    "value" : "New Group Measure"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_HM",
+    "value" : "New Hierarchy Dimension"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_EXP",
+    "value" : "Export Meta content to file"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_CP",
+    "value" : "Copy item to memory"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_REN",
+    "value" : "Rename item"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_MV",
+    "value" : "Move item to other folder"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_OAUTH",
+    "value" : "Item access control privileges"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_OSUBSCR",
+    "value" : "Item subscription to other tenant"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_REV",
+    "value" : "Item version control and recovery"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_REF",
+    "value" : "Refresh folder"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_MGF",
+    "value" : "Manage folder"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_E_CUBE",
+    "value" : "Edit Cube in workspace"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_N_E_META",
+    "value" : "Edit meta content in text editor (JSON)"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_M_CTRL",
+    "value" : "Options for meta item on popup menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_M_SAVE",
+    "value" : "Enable save content"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_M_SAVEAS",
+    "value" : "Enable save as content"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_M_PRV_WS",
+    "value" : "Create private workspace folder"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_M_TEAM_WS",
+    "value" : "Create team workspace folder"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_REPORT",
+    "value" : "Report toolbar access control"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_TBAR",
+    "value" : "Enable toolbar"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_SAVE",
+    "value" : "Enable save report"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_SAVEAS",
+    "value" : "Enable saveas report"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_RUN",
+    "value" : "Enable run button"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_DESIGN",
+    "value" : "Enable pivot design"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_VSEL",
+    "value" : "View selection toggle button"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_GRID",
+    "value" : "Enable grid view mode"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_CHART",
+    "value" : "Enable chart view mode"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_ANAL",
+    "value" : "Enable analysis mode"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_FVIEW",
+    "value" : "Enable formviewer"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_R",
+    "value" : "Enable R statistics view mode"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_PYTHON",
+    "value" : "Enable python view mode"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_RPT_VR",
+    "value" : "Enable add Report Viewer"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_STORY",
+    "value" : "Enable story viewer button"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_BURSTING",
+    "value" : "Enable email bursting"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_FORMB",
+    "value" : "Enable form builder"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_EMAIL",
+    "value" : "Enable Share report"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_FM",
+    "value" : "Enable formula in report"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_P_CMT",
+    "value" : "Enable adding custom dimension in report"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_EXP",
+    "value" : "Enable report export to office document"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_XLS",
+    "value" : "Enable excel export"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_PPT",
+    "value" : "Enable power point export"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_PDF",
+    "value" : "Enable PDF export"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_CSV",
+    "value" : "Enable CSV export"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_HTML",
+    "value" : "Enable HTML export"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_JASPER",
+    "value" : "Enable Jasper template export"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_CLB",
+    "value" : "Enable clipboard copy"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_EOPT",
+    "value" : "Enable export option toolbar button"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_TOOLS",
+    "value" : "Enable tools button on toolbar"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_CRPT",
+    "value" : "Enable change report type"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_STAT",
+    "value" : "Enable basic statistics"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_ANAL_MENU",
+    "value" : "Analysis menu options"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_DOCK",
+    "value" : "Enable drag and drop docking layout changes"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_EDPANEL",
+    "value" : "Enable edit layouts"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_ADPANEL",
+    "value" : "Enable adding widget panel on report"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_RSUM",
+    "value" : "R statistics summary button"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_RSCE",
+    "value" : "R statistics script editor developer privileges"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_RWZD",
+    "value" : "R wizard management privileges"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_RIMG",
+    "value" : "R export to image button"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_CWZ",
+    "value" : "Chart wizard button"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_CT",
+    "value" : "Chart type selection button on toolbar"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_SCH",
+    "value" : "Enable scheduling report on background"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_FAV",
+    "value" : "Enable favorite button"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_INST",
+    "value" : "Enable add instruction description on report"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_HELP",
+    "value" : "Enable add document on report"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MANUAL",
+    "value" : "Manual management main menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_MANUAL_AUTH",
+    "value" : "Manual publisher menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SCI",
+    "value" : "Data Science module main menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SCI_MGR",
+    "value" : "Data Science management sub menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SCI_MGR_DATASET",
+    "value" : "Data Science public dataset management"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SCI_MGR_LOGGER",
+    "value" : "Data Science logging and history"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SCI_USR",
+    "value" : "Data Science user sub menu"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SCI_USER_SERVERS",
+    "value" : "List all Data Science server and connections"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_SCI_DATASET",
+    "value" : "Data Science available dataset lists"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_R_DOCK",
+    "value" : "Enable drag and drop docking layout changes"
   } ]
 }
