@@ -7817,5 +7817,9 @@
     "group" : "locale_ko_KR_0019",
     "name" : "LR_IG_R_DOCK",
     "value" : "드래그 드랍 도킹 레이아웃 변경 허용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_PURGE",
+    "value" : "영구삭제"
   } ]
 }

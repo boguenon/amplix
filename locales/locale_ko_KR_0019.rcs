@@ -160,3 +160,5 @@ A;LR_IG_SCI_MGR_LOGGER;Data Science logging and history
 A;LR_IG_SCI_USR;Data Science user sub menu
 A;LR_IG_SCI_USER_SERVERS;List all Data Science server and connections
 A;LR_IG_SCI_DATASET;Data Science available dataset lists
+
+A;B_PURGE;영구삭제
