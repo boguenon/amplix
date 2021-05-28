@@ -105,6 +105,10 @@
 						{
 							"name": "Assistant Robot",
 							"cls": "ig_assist_robot"
+						},
+						{
+							"name": "Trashbin",
+							"cls": "ig_trashbin"
 						}
 					]
 				},

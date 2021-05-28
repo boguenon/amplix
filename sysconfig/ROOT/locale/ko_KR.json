@@ -7821,5 +7821,9 @@
     "group" : "locale_ko_KR_0019",
     "name" : "B_PURGE",
     "value" : "영구삭제"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_TRASHBIN",
+    "value" : "휴지통 보관함"
   } ]
 }

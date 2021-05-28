@@ -7749,5 +7749,9 @@
     "group" : "locale_zh_TW_0019",
     "name" : "B_PURGE",
     "value" : "Purge"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "LR_IG_TRASHBIN",
+    "value" : "Trashbin"
   } ]
 }
