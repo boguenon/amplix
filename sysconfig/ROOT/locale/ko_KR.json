@@ -7173,5 +7173,653 @@
     "group" : "locale_ko_KR_0018",
     "name" : "L_R_TEMP",
     "value" : "임시 폴더"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_NAV",
+    "value" : "폴더 네비게이션 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_REPORT_MENU",
+    "value" : "리포트 메인 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MENU_RPT",
+    "value" : "새 리포트 생성 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MENU_SQL_RPT",
+    "value" : "새 SQL 리포트 생성 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MENU_FORMBUILDER",
+    "value" : "새 폼뷜더 생성 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_ANAL",
+    "value" : "분석 메인 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_VAR",
+    "value" : "분석 변수 설정 관리자"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_LOOKUP",
+    "value" : "코드맵핑 설정 관리자"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_DBD",
+    "value" : "폼뷜더 관리자 메"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_DATASET",
+    "value" : "데이터집합 메인 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_DBCON",
+    "value" : "데이터베이스 인스턴스 접속 관리자"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_DB_ADD",
+    "value" : "신규 데이터베이스 접속 추가 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_DATASET",
+    "value" : "신규 데이터 집합 생성 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_DATASET_DBA",
+    "value" : "데이터 집합 DBA 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_DS_REQB",
+    "value" : "테이블 생성 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_DS_SDDLB",
+    "value" : "데이터 집합 테이블 생성 버튼 활성화"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MNGR",
+    "value" : "시스템 관리 메인 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SYS",
+    "value" : "시스템 설정 서브 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_USER",
+    "value" : "사용자 관리 권한 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SYS_CONFIG",
+    "value" : "시스템 설정 변경 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SYS_UICONFIG",
+    "value" : "시스템 UI 설정 변경 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SYS_SSO",
+    "value" : "싱글사인온 설정 메뉴 접근 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SYS_SSO_DESIGNER",
+    "value" : "싱글 사인온 프로그램 디자이너 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_FT",
+    "value" : "메뉴 접근 권한 변경 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_ASSIST_ROBOT",
+    "value" : "어시스트 로봇 설정 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SETTINGS",
+    "value" : "설정 서브 메뉴 활성화 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_LNF",
+    "value" : "리포트 스타일 및 테마 관리 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_LOC",
+    "value" : "언어 설정 메뉴 접근 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_DLOC",
+    "value" : "사전언어 관리 메뉴 접근 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_CHART_DSGN",
+    "value" : "스타일 관리 차트 디자이너 및 설정 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MON",
+    "value" : "모니터링 서브 메뉴 접근 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_IMP",
+    "value" : "메타 파일 복구 및 임포트 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MIGRATION",
+    "value" : "서버간 메터 데이타 이동관리 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SYSLOG",
+    "value" : "시스템 로그 접근 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_AUDIT_USER",
+    "value" : "사용자 감사 조회 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_AUDIT_RPT",
+    "value" : "사용자 리포트 조회 이력 접근 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_AUDIT_JDBC",
+    "value" : "JDBC 모니터링 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_AUDIT_EMAIL",
+    "value" : "이메일 전송 이력 조회 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SYSRES",
+    "value" : "시스템 리소스 관리 접근 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SCHEDULE",
+    "value" : "스케쥴 조회 리포트 실행에 대한 모니터링 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SCHEDULE_PROG",
+    "value" : "스케쥴 프로그램 개발자 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MAIL",
+    "value" : "사용자 관리 메뉴 접근 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MX_REG",
+    "value" : "다른 사용자 등록 권한 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MX_UPD",
+    "value" : "다른 사용자 수정 권한 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MX_PRS",
+    "value" : "다른 사용자 패스워드 변경 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_BDMGR",
+    "value" : "빅데이터 메인 메뉴 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_HDOOP",
+    "value" : "하둡 개발자 서브 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_HD_FLOW",
+    "value" : "하둡 비즈니스 플로우 개발 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_HD_MAPR",
+    "value" : "맵리듀스 프로그래머 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MONGO",
+    "value" : "MongoDB 개발 서브 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MG_DPROC",
+    "value" : "MongoDB 데이터 프로세싱 서브 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MG_DATA",
+    "value" : "MongoDB 데이터 컬렉터 개발자 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MLMGR",
+    "value" : "머신 러닝 개발 관리 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_ML_BAYES",
+    "value" : "Bayes 머신 러닝"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_ML_BAYES_RPT",
+    "value" : "Bayes 리포트 생성 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_ML_LEARN",
+    "value" : "리포트의 자동학습 버튼 추가 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MIG",
+    "value" : "타 프로그램 연동 및 마이그레이션 모듈"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_DISCO",
+    "value" : "오라클 디스커버러 마이그레이션 도구"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_META_UPGRADE",
+    "value" : "앰플릭스 이전버전에 대한 메타 업그레이드 유틸리티"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_CW",
+    "value" : "신규 작업영역 생성 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_LST",
+    "value" : "네비게이션 툴바 드랍다운 메뉴 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_P",
+    "value" : "개인 영역 컨텐츠 보기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_A",
+    "value" : "모든 컨텐츠 보기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_FAV",
+    "value" : "자주 사용하는 컨텐츠 보기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_MW",
+    "value" : "워크스페이스 관리자 사용 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_RCNT",
+    "value" : "최근 컨텐츠 보기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_DEL",
+    "value" : "컨텐츠 삭제 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_FP",
+    "value" : "폴더 팝업 메뉴 보기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_F",
+    "value" : "신규 옵션 메뉴 항목 설정"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_F_F",
+    "value" : "폴더 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_DBM",
+    "value" : "데이터베이스 모델 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_BOBJ",
+    "value" : "비즈니스 오브젝트 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_RPT",
+    "value" : "리포트 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_SQLRPT",
+    "value" : "SQL 리포트 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_DBD",
+    "value" : "폼뷜더 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_CRPT",
+    "value" : "콤파지트 리포트 생성 가능 여부(사용안함)"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_N_HB",
+    "value" : "하둡 비즈니스 플로우 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_JC",
+    "value" : "자바 클래스 모듈 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_F_R",
+    "value" : "R 통계 스크립트 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_JCM",
+    "value" : "자바 클래스 모듈 개발자 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_CC",
+    "value" : "신규 큐브 항목 생성 메뉴 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_CM",
+    "value" : "커스텀 디멘젼 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_DM",
+    "value" : "날짜 디멘젼 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_FM",
+    "value" : "수식 메져 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_MS",
+    "value" : "메져 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_CMS",
+    "value" : "차트 메져 신규 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_UDG",
+    "value" : "사용자 정의 그룹핑 디멘젼 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_GM",
+    "value" : "그룹 메져 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_HM",
+    "value" : "계층 디멘젼 생성 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_EXP",
+    "value" : "메타 컨텐츠를 파일로 반출 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_CP",
+    "value" : "항목을 클립보드에 복사하기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_REN",
+    "value" : "항목 이름 변경 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_MV",
+    "value" : "항목을 다른 폴더에 이동 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_OAUTH",
+    "value" : "컨텐츠 접근 권한 및 공유 설정 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_OSUBSCR",
+    "value" : "다른 테넌트에 컨텐츠 공유 하는 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_REV",
+    "value" : "컨텐츠 버전 관리 및 복구 기능"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_REF",
+    "value" : "폴더 새로고침 메뉴 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_MGF",
+    "value" : "폴더 관리 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_E_CUBE",
+    "value" : "작업영역에 비즈니스 오브젝트 편집 메뉴 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_N_E_META",
+    "value" : "메타 컨텐츠 JSON 파일로 편집 수정기 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_M_CTRL",
+    "value" : "메타 컨텐츠의 팝업 메뉴 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_M_SAVE",
+    "value" : "컨텐츠 저장 버튼 활성화 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_M_SAVEAS",
+    "value" : "컨텐츠 다른이름으로 저장 버튼 활성화 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_M_PRV_WS",
+    "value" : "개인 작업영역 폴더 생성 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_M_TEAM_WS",
+    "value" : "팀 작업영역 폴더 생성 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_REPORT",
+    "value" : "리포트 툴바 버튼 권한 관리 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_TBAR",
+    "value" : "툴바 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_SAVE",
+    "value" : "리포트 저장 버튼 활성화 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_SAVEAS",
+    "value" : "리포트 다른이름으로 저장 버튼 활성화 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_RUN",
+    "value" : "실행 버튼 활성화 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_DESIGN",
+    "value" : "피벗 변경 버튼 활성화 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_VSEL",
+    "value" : "결과 보기 모드 토글 버튼 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_GRID",
+    "value" : "그리드 보기 사용 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_CHART",
+    "value" : "차트 보기 사용 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_ANAL",
+    "value" : "통계 분석 보기 사용 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_FVIEW",
+    "value" : "폼 뷰어 사용하기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_R",
+    "value" : "R 통계 결과 보기 사용 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_PYTHON",
+    "value" : "파이선 결과 보기 사용 가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_RPT_VR",
+    "value" : "리포트 뷰어 추가 기능 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_STORY",
+    "value" : "스토리 뷰어 버튼 활성화 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_BURSTING",
+    "value" : "이메일 버스팅 사용가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_FORMB",
+    "value" : "폼 뷜더 사용가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_EMAIL",
+    "value" : "리포트 공유 사용가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_FM",
+    "value" : "리포트에 수식 추가 기능 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_P_CMT",
+    "value" : "리포트에 커스텀 디멘젼 생성 기능 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_EXP",
+    "value" : "리포트 출력 기능 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_XLS",
+    "value" : "엑셀파일로 다운로드"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_PPT",
+    "value" : "파워포인트로 다운로드"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_PDF",
+    "value" : "PDF 파일로 다운로드"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_CSV",
+    "value" : "CSV 파일로 다운로드"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_HTML",
+    "value" : "HTML 파일로 다운로드"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_JASPER",
+    "value" : "Jasper 템플릿 사용가능 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_CLB",
+    "value" : "클립보드 복사 기능 사용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_EOPT",
+    "value" : "툴바 버튼에 출력 옵션 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_TOOLS",
+    "value" : "툴바에 도구 버튼 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_CRPT",
+    "value" : "리포트 유형 변경 버튼 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_STAT",
+    "value" : "기본 통계 보기 도구 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_ANAL_MENU",
+    "value" : "통계 분석 메뉴 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_DOCK",
+    "value" : "드래그 드랍 도킹 레이아웃 변경 허용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_EDPANEL",
+    "value" : "레이아웃 변경 허용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_ADPANEL",
+    "value" : "리포트에 위젯 패널 추가 허용"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_RSUM",
+    "value" : "R 통계 요약 버튼 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_RSCE",
+    "value" : "R 통계 스크립트 편집 개발자 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_RWZD",
+    "value" : "R 마법사 관리 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_RIMG",
+    "value" : "R 결과물을 이미지 출력 버튼 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_CWZ",
+    "value" : "차트 마법사 버튼 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_CT",
+    "value" : "툴바에서 차트 유형 변경 버튼 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_SCH",
+    "value" : "리포트 조회를 백그라운드 스케쥴 버튼 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_FAV",
+    "value" : "리포트 즐겨찾기 추가 버튼 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_INST",
+    "value" : "리포트 설명 및 도움말 관리 버튼 표시 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_HELP",
+    "value" : "리포트 및 도움말 추가 관리자 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MANUAL",
+    "value" : "메뉴얼 관리 메인 메뉴"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_MANUAL_AUTH",
+    "value" : "메뉴얼 퍼블리셔 권한"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SCI",
+    "value" : "Data Science module main menu"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SCI_MGR",
+    "value" : "Data Science management sub menu"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SCI_MGR_DATASET",
+    "value" : "Data Science public dataset management"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SCI_MGR_LOGGER",
+    "value" : "Data Science logging and history"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SCI_USR",
+    "value" : "Data Science user sub menu"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SCI_USER_SERVERS",
+    "value" : "List all Data Science server and connections"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_SCI_DATASET",
+    "value" : "Data Science available dataset lists"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "LR_IG_R_DOCK",
+    "value" : "드래그 드랍 도킹 레이아웃 변경 허용 여부"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_PURGE",
+    "value" : "영구삭제"
   } ]
 }
