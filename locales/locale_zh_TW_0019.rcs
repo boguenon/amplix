@@ -1,0 +1,164 @@
+A;LR_IG_NAV;Folder Navigate
+A;LR_IG_REPORT_MENU;Report main menu
+A;LR_IG_MENU_RPT;New report option
+A;LR_IG_MENU_SQL_RPT;New SQL Report option
+A;LR_IG_MENU_FORMBUILDER;New Formbuilder option
+A;LR_IG_ANAL;Analysis main menu
+A;LR_IG_VAR;Variable management
+A;LR_IG_LOOKUP;Lookup management
+A;LR_IG_DBD;Form builder management
+A;LR_IG_DATASET;Dataset main menu
+A;LR_IG_DBCON;Database connection manager
+A;LR_IG_N_DB_ADD;Adding new database connection
+A;LR_IG_N_DATASET;Create Dataset privileges
+A;LR_IG_N_DATASET_DBA;Dataset DBA role
+A;LR_IG_N_DS_REQB;DBA create table privileges
+A;LR_IG_N_DS_SDDLB;Dataset create sql button
+A;LR_IG_MNGR;Management main menu
+A;LR_IG_SYS;System sub menu
+A;LR_IG_USER;User management menu
+A;LR_IG_SYS_CONFIG;System config menu
+A;LR_IG_SYS_UICONFIG;System UI setting menu
+A;LR_IG_SYS_SSO;Single sign on setting menu
+A;LR_IG_SYS_SSO_DESIGNER;Single sign on designer programmer
+A;LR_IG_FT;Feature control privileges
+A;LR_IG_ASSIST_ROBOT;Assist robot setting role
+A;LR_IG_SETTINGS;Settings sub menu
+A;LR_IG_LNF;Look and feel setting
+A;LR_IG_LOC;Locale management role
+A;LR_IG_DLOC;Locale dictionary setting
+A;LR_IG_CHART_DSGN;Chart designer in look and feel
+A;LR_IG_MON;Monitoring sub menu
+A;LR_IG_IMP;Meta import role
+A;LR_IG_MIGRATION;AMPLIX update manager role
+A;LR_IG_SYSLOG;System log role
+A;LR_IG_AUDIT_USER;Audit user activity role
+A;LR_IG_AUDIT_RPT;Audit user report execution role
+A;LR_IG_AUDIT_JDBC;JDBC monitoring role
+A;LR_IG_AUDIT_EMAIL;Email notification history role
+A;LR_IG_SYSRES;System Resource management
+A;LR_IG_SCHEDULE;Schedule execution monitoring
+A;LR_IG_SCHEDULE_PROG;Schedule programmer role
+A;LR_IG_MAIL;User management sub menu
+A;LR_IG_MX_REG;User registeration role
+A;LR_IG_MX_UPD;Update user role
+A;LR_IG_MX_PRS;Password reset role
+A;LR_IG_BDMGR;Big Data main menu
+A;LR_IG_HDOOP;Hadoop developer sub menu
+A;LR_IG_HD_FLOW;Hadoop flow developer
+A;LR_IG_HD_MAPR;Map reduce programmer role
+A;LR_IG_MONGO;MongoDB developer sub menu
+A;LR_IG_MG_DPROC;MongoDB data processor developer
+A;LR_IG_MG_DATA;MongoDB Data collector developer
+A;LR_IG_MLMGR;Machine learning developer
+A;LR_IG_ML_BAYES;Bayes Machine Learning
+A;LR_IG_ML_BAYES_RPT;Bayes report developer
+A;LR_IG_ML_LEARN;Learn button on report
+A;LR_IG_MIG;Migration utility
+A;LR_IG_DISCO;Oracle Discoverer migration utility
+A;LR_IG_META_UPGRADE;Meta upgrade utility for amplix previous version
+A;LR_IG_NAV;Folder navigation options
+A;LR_IG_N_CW;Create new workspace menu
+A;LR_IG_N_LST;Navigation option drop down menu
+A;LR_IG_N_P;Private contents
+A;LR_IG_N_A;All contents
+A;LR_IG_N_FAV;Favorite contents
+A;LR_IG_N_MW;Manage workspace
+A;LR_IG_N_RCNT;Most recent contents
+A;LR_IG_N_DEL;Deleted contents
+A;LR_IG_N_FP;Folder popup menu
+A;LR_IG_N_F;Create new option menu
+A;LR_IG_N_F_F;Create folder menu
+A;LR_IG_N_DBM;New database model menu
+A;LR_IG_N_BOBJ;New business object menu
+A;LR_IG_N_RPT;New report menu
+A;LR_IG_N_SQLRPT;New SQL report menu
+A;LR_IG_N_DBD;New Formbuilder menu
+A;LR_IG_N_CRPT;New Composite menu (Deprecated)
+A;LR_IG_N_N_HB;New Hadoop business flow
+A;LR_IG_N_JC;New Javaclass program module
+A;LR_IG_N_F_R;R statistics script
+A;LR_IG_N_JCM;Java class module developer
+A;LR_IG_CC;New Cube Items
+A;LR_IG_N_CM;New Custom Dimension
+A;LR_IG_N_DM;New Date Dimension
+A;LR_IG_N_FM;New Calculation formula
+A;LR_IG_N_MS;New Measure
+A;LR_IG_N_CMS;New Chart Measure Dimension
+A;LR_IG_N_UDG;New User Defined Group Dimension
+A;LR_IG_N_GM;New Group Measure
+A;LR_IG_N_HM;New Hierarchy Dimension
+A;LR_IG_N_EXP;Export Meta content to file
+A;LR_IG_N_CP;Copy item to memory
+A;LR_IG_N_REN;Rename item
+A;LR_IG_N_MV;Move item to other folder
+A;LR_IG_N_DEL;Delete content
+A;LR_IG_N_OAUTH;Item access control privileges
+A;LR_IG_N_OSUBSCR;Item subscription to other tenant
+A;LR_IG_N_REV;Item version control and recovery
+A;LR_IG_N_REF;Refresh folder
+A;LR_IG_N_MGF;Manage folder
+A;LR_IG_N_E_CUBE;Edit Cube in workspace
+A;LR_IG_N_E_META;Edit meta content in text editor (JSON)
+A;LR_IG_M_CTRL;Options for meta item on popup menu
+A;LR_IG_M_SAVE;Enable save content
+A;LR_IG_M_SAVEAS;Enable save as content
+A;LR_IG_M_PRV_WS;Create private workspace folder
+A;LR_IG_M_TEAM_WS;Create team workspace folder
+A;LR_IG_REPORT;Report toolbar access control
+A;LR_IG_R_TBAR;Enable toolbar
+A;LR_IG_R_SAVE;Enable save report
+A;LR_IG_R_SAVEAS;Enable saveas report
+A;LR_IG_R_RUN;Enable run button
+A;LR_IG_R_DESIGN;Enable pivot design
+A;LR_IG_R_VSEL;View selection toggle button
+A;LR_IG_R_GRID;Enable grid view mode
+A;LR_IG_R_CHART;Enable chart view mode
+A;LR_IG_R_ANAL;Enable analysis mode
+A;LR_IG_R_FVIEW;Enable formviewer
+A;LR_IG_R_R;Enable R statistics view mode
+A;LR_IG_R_PYTHON;Enable python view mode
+A;LR_IG_R_RPT_VR;Enable add Report Viewer
+A;LR_IG_R_STORY;Enable story viewer button
+A;LR_IG_R_BURSTING;Enable email bursting
+A;LR_IG_R_FORMB;Enable form builder
+A;LR_IG_R_EMAIL;Enable Share report
+A;LR_IG_FM;Enable formula in report
+A;LR_IG_P_CMT;Enable adding custom dimension in report
+A;LR_IG_R_EXP;Enable report export to office document
+A;LR_IG_R_XLS;Enable excel export
+A;LR_IG_R_PPT;Enable power point export
+A;LR_IG_R_PDF;Enable PDF export
+A;LR_IG_R_CSV;Enable CSV export
+A;LR_IG_R_HTML;Enable HTML export
+A;LR_IG_R_JASPER;Enable Jasper template export
+A;LR_IG_R_CLB;Enable clipboard copy
+A;LR_IG_R_EOPT;Enable export option toolbar button
+A;LR_IG_R_TOOLS;Enable tools button on toolbar
+A;LR_IG_R_CRPT;Enable change report type
+A;LR_IG_R_STAT;Enable basic statistics
+A;LR_IG_ANAL_MENU;Analysis menu options
+A;LR_IG_R_DOCK;Enable drag and drop docking layout changes
+A;LR_IG_R_EDPANEL;Enable edit layouts
+A;LR_IG_R_ADPANEL;Enable adding widget panel on report
+A;LR_IG_R_RSUM;R statistics summary button
+A;LR_IG_R_RSCE;R statistics script editor developer privileges
+A;LR_IG_R_RWZD;R wizard management privileges
+A;LR_IG_R_RIMG;R export to image button
+A;LR_IG_R_CWZ;Chart wizard button
+A;LR_IG_R_CT;Chart type selection button on toolbar
+A;LR_IG_R_SCH;Enable scheduling report on background
+A;LR_IG_R_FAV;Enable favorite button
+A;LR_IG_R_INST;Enable add instruction description on report
+A;LR_IG_R_HELP;Enable add document on report
+A;LR_IG_MANUAL;Manual management main menu
+A;LR_IG_MANUAL_AUTH;Manual publisher menu
+A;LR_IG_SCI;Data Science module main menu
+A;LR_IG_SCI_MGR;Data Science management sub menu
+A;LR_IG_SCI_MGR_DATASET;Data Science public dataset management
+A;LR_IG_SCI_MGR_LOGGER;Data Science logging and history
+A;LR_IG_SCI_USR;Data Science user sub menu
+A;LR_IG_SCI_USER_SERVERS;List all Data Science server and connections
+A;LR_IG_SCI_DATASET;Data Science available dataset lists
+A;LR_IG_TRASHBIN;Trashbin
+A;B_PURGE;Purge

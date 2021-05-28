@@ -97,6 +97,10 @@
 						{
 							"name": "Features",
 							"cls": "ig_ft"
+						},
+						{
+							"name": "Trashbin",
+							"cls": "ig_trashbin"
 						}
 					]
 				},

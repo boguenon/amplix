@@ -202,7 +202,8 @@ CREATE TABLE igclexp (
   luid #CHAR#(17) #NULL#,
   lname #VARCHAR#(255) #NULL#,
   pstatus #NUMBER#(4) #NULL#,
-  fext #VARCHAR#(10) #NULL#
+  fext #VARCHAR#(10) #NULL#,
+  file_bin #BLOB# #NULL#
 );
 
 CREATE INDEX idx_igclexp_f1 ON igclexp(iuid);
@@ -216,7 +217,8 @@ CREATE TABLE igclimp (
   lname #VARCHAR#(255) #NULL#,
   pstatus #NUMBER#(4) #NULL#,
   fext #VARCHAR#(10) #NULL#,
-  mid #CHAR#(17) #NULL#
+  mid #CHAR#(17) #NULL#,
+  file_bin #BLOB# #NULL#
 );
 
 CREATE INDEX idx_igclimp_f1 ON igclimp(iuid);
@@ -423,12 +425,31 @@ CREATE TABLE igctrashbin (
   mts #CHAR#(17) NOT NULL,
   iuid #CHAR#(17) #NULL#,
   pid #CHAR#(17) #NULL#,
-  mdate #LONG# #NULL#
+  mctype #NUMBER#(4) #NULL#,
+  cname #VARCHAR#(100) #NULL#,
+  mdate #LONG# #NULL#,
+  pstatus #NUMBER#(4) NOT NULL,
+  node #VARCHAR#(1000),
+  description #VARCHAR#(1000),
+  memo #VARCHAR#(100) #NULL#,
+  sid #CHAR#(17),
+  mid #CHAR#(17),
+  objinfo #VARCHAR#(500) #NULL#,
+  revise #NUMBER#(4) NOT NULL,
+  mrevise #NUMBER#(4) NOT NULL,
+  trid #CHAR#(17) #NULL#,
+  qdes #VARCHAR#(100) #NULL#,
+  attrb1 #VARCHAR#(100) #NULL#,
+  attrb2 #VARCHAR#(100) #NULL#,
+  attrb3 #VARCHAR#(100) #NULL#,
+  attrb4 #VARCHAR#(100) #NULL#,
+  attrb5 #VARCHAR#(100) #NULL#,
+  is_sub #NUMBER#(4) NOT NULL
 );
 
-CREATE INDEX idx_igctrashbin_f1 ON igctrashbin(pid);
-CREATE INDEX idx_igctrashbin_f2 ON igctrashbin(iuid);
-CREATE INDEX idx_igctrashbin_tenant ON igctrashbin(mts);
+CREATE INDEX idx_igctrashbin_f1 ON igctrashbin(iuid);
+CREATE INDEX idx_igctrashbin_f2 ON igctrashbin(pid, cname, mts, pstatus);
+CREATE UNIQUE INDEX idx_igctrashbin_f3 ON igctrashbin(iuid, mts);
 
 CREATE TABLE igcum (
   iuid #CHAR#(17) #NULL#,
