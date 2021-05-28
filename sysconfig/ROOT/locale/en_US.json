@@ -7829,5 +7829,9 @@
     "group" : "locale_en_US_0019",
     "name" : "B_PURGE",
     "value" : "Purge"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "LR_IG_TRASHBIN",
+    "value" : "Trashbin"
   } ]
 }
