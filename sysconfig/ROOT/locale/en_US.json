@@ -7833,5 +7833,17 @@
     "group" : "locale_en_US_0019",
     "name" : "LR_IG_TRASHBIN",
     "value" : "Trashbin"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_PARDOT_BUNIT",
+    "value" : "Pardot Business Unit"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_PARDOT_CLNT_SECRET",
+    "value" : "Client Secret"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_PARDOT_URL",
+    "value" : "Pardot Endpoint"
   } ]
 }
