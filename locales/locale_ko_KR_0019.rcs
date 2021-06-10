@@ -162,3 +162,6 @@ A;LR_IG_SCI_USER_SERVERS;List all Data Science server and connections
 A;LR_IG_SCI_DATASET;Data Science available dataset lists
 A;LR_IG_TRASHBIN;휴지통 보관함
 A;B_PURGE;영구삭제
+A;L_PARDOT_BUNIT;Pardot 비즈니스 유닛
+A;L_PARDOT_CLNT_SECRET;클라이언트 보안키
+A;L_PARDOT_URL;Pardot 접속 URL
