@@ -55,11 +55,11 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 	        bottom: 10 // '15%'
 	    },
 	    series: [{
-	        name: 'Punch Card',
+	        name: 'wday_serie',
 	        type: 'heatmap',
 	        data: data,
 	        label: {
-	            show: true
+	            show: mcr.dl_enable
 	        },
 	        emphasis: {
 	            itemStyle: {
@@ -221,6 +221,7 @@ IG$.__chartoption.chartext.weekday.prototype.drawChart = function(owner, results
 			days = [],
 			mapdata = [],
 			vmin, vmax,
+			drec,
 			dval,
 			nr = 0;
 		
@@ -260,8 +261,8 @@ IG$.__chartoption.chartext.weekday.prototype.drawChart = function(owner, results
 			for (j=colfix; j < cols; j++)
 			{
 				// dval = data[i][colfix].code ? Number(data[i][colfix].code) : NaN;
-				
-				dval = data[i][j].code ? Number(data[i][j].code) : NaN;
+				drec = data[i][j];
+				dval = drec.code ? Number(drec.code) : NaN;
 				
 				if (!isNaN(dval))
 				{
