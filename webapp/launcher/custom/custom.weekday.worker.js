@@ -70,10 +70,11 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 	    }]
 	};
 	
+	cgrid = option.grid;
+	
 	if (mcr.showtitle && mcr.title)
 	{
 		option.visualMap.bottom = 10;
-		cgrid = option.grid;
 		
 		ctitle = option.title = {
 			text: mcr.title,
@@ -116,7 +117,8 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 	else
 	{
 		ctitle = option.title = {
-			show: false
+			show: false,
+			bottom: 0
 		};
 	}
 	
