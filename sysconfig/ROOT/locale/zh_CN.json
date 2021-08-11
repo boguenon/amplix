@@ -7765,5 +7765,9 @@
     "group" : "locale_zh_CN_0019",
     "name" : "L_PARDOT_URL",
     "value" : "Pardot Endpoint"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_REQ_CRT_TABLE",
+    "value" : "Request Table Create"
   } ]
 }
