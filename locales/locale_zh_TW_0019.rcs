@@ -165,3 +165,4 @@ A;B_PURGE;Purge
 A;L_PARDOT_BUNIT;Pardot Business Unit
 A;L_PARDOT_CLNT_SECRET;Client Secret
 A;L_PARDOT_URL;Pardot Endpoint
+A;L_REQ_CRT_TABLE;Request Table Create
