@@ -18,6 +18,7 @@
         {name: "UTF-8", value: "UTF-8"},
         {name: "MS949", value: "MS949"},
         {name: "ISO8859-1", value: "ISO-8859-1"},
+        {name: "EUC-KR", value: "EUC-KR"},
         {name: "US-ASCII", value: "US-ASCII"},
         {name: "UTF-16", value: "UTF-16"},
         {name: "UTF-16BE", value: "UTF-16BE"},
@@ -70,10 +71,10 @@
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202108181621",
+		date: "202108181631",
 		appversion: "",
 		apprelease: "",
-		web_revision: "2202-version_20201215-318-g71e81d7c"
+		web_revision: "2204-version_20201215-320-g22576656"
 	},
 	$l_:0
 };
