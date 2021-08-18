@@ -1,5 +1,5 @@
 ﻿ig$.bootconfig = {
-	"cache": "202108111527",
+	"cache": "202108181617",
     "boot": {
         "framework": [
             "./js/framework.min.js"
