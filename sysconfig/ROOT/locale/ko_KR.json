@@ -7841,5 +7841,13 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_REQ_CRT_TABLE",
     "value" : "테이블 생성 승인요청"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_DATA_PREC",
+    "value" : "소수점 자리"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_HELPER_TMPL",
+    "value" : "예제 템플릿"
   } ]
 }
