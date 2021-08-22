@@ -166,3 +166,6 @@ A;L_PARDOT_BUNIT;Pardot 비즈니스 유닛
 A;L_PARDOT_CLNT_SECRET;클라이언트 보안키
 A;L_PARDOT_URL;Pardot 접속 URL
 A;L_REQ_CRT_TABLE;테이블 생성 승인요청
+
+A;L_DATA_PREC;소수점 자리
+A;L_HELPER_TMPL;예제 템플릿
