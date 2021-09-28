@@ -1,10 +1,6 @@
 {
 	"children": [
 		{
-			"name": "Navigator",
-			"cls": "ig_nav"
-		},
-		{
 			"name": "Report Menu",
 			"cls": "ig_report_menu",
 			"children": [
