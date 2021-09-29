@@ -7765,5 +7765,17 @@
     "group" : "locale_ja_JP_0019",
     "name" : "L_PARDOT_URL",
     "value" : "Pardot Endpoint"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_REQ_CRT_TABLE",
+    "value" : "Request Table Create"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_DATA_PREC",
+    "value" : "Precision"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_HELPER_TMPL",
+    "value" : "Helper Templates"
   } ]
 }
