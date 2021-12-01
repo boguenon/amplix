@@ -169,3 +169,12 @@ A;L_REQ_CRT_TABLE;Request Table Create
 
 A;L_DATA_PREC;Precision
 A;L_HELPER_TMPL;Helper Templates
+A;L_CHART_DESIGN;Chart Designer
+
+A;L_PREDEFINED;Predefined Roles
+A;L_CUSTOM+_DUTY;Custom Roles
+A;L_GROUP_DUTY;Group Roles
+
+A;L_EVT_LOAD;Data Loaded Handler
+A;L_EVT_CLICK;Cell Click Handler
+A;L_EVT_DBCLK;Double Click Handler

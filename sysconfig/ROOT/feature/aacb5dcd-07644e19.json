@@ -1,0 +1,387 @@
+{
+  "meta_type" : "features",
+  "objinfo" : { },
+  "name" : "aacb5dcd-07644e19",
+  "type" : "Feature",
+  "uid" : "c534e450-6ece4724",
+  "description" : "",
+  "pid" : "3479a06a-c1294b85",
+  "nodepath" : "/aacb5dcd-07644e19",
+  "writable" : true,
+  "manage" : true,
+  "is_sub" : false,
+  "attributes" : { },
+  "features" : [ {
+    "name" : "Report Menu",
+    "cls" : "ig_report_menu",
+    "clspath" : "ig_report_menu",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "New Report",
+    "cls" : "ig_menu_rpt",
+    "clspath" : "ig_report_menu-ig_menu_rpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "New SQL Report",
+    "cls" : "ig_menu_sql_rpt",
+    "clspath" : "ig_report_menu-ig_menu_sql_rpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Analysis",
+    "cls" : "ig_anal",
+    "clspath" : "ig_anal",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "System Lookup",
+    "cls" : "ig_lookup",
+    "clspath" : "ig_anal-ig_lookup",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Form Builder Mgr",
+    "cls" : "ig_dbd",
+    "clspath" : "ig_anal-ig_dbd",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Data Source",
+    "cls" : "ig_dataset",
+    "clspath" : "ig_dataset",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Create Data Set",
+    "cls" : "ig_n_dataset",
+    "clspath" : "ig_dataset-ig_n_dataset",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Create Workspace",
+    "cls" : "ig_n_cw",
+    "clspath" : "ig_nav-ig_n_cw",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Create New",
+    "cls" : "ig_n_f",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Folder",
+    "cls" : "ig_n_f_f",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_f_f",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Database Model",
+    "cls" : "ig_n_dbm",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_dbm",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Business Object",
+    "cls" : "ig_n_bobj",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_bobj",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Report",
+    "cls" : "ig_n_rpt",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_rpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "SQL Report",
+    "cls" : "ig_n_sqlrpt",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_n_sqlrpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Cube Items",
+    "cls" : "ig_cc",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_cc",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Custom Metric",
+    "cls" : "ig_n_cm",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_cc-ig_n_cm",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Date Metric",
+    "cls" : "ig_n_dm",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_cc-ig_n_dm",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Formula",
+    "cls" : "ig_n_fm",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_cc-ig_n_fm",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Measure",
+    "cls" : "ig_n_ms",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_cc-ig_n_ms",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Chart Measure",
+    "cls" : "ig_n_cms",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_cc-ig_n_cms",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "UDG",
+    "cls" : "ig_n_udg",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_cc-ig_n_udg",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Group Measure",
+    "cls" : "ig_n_gm",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_cc-ig_n_gm",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Hierarchy",
+    "cls" : "ig_n_hm",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_f-ig_cc-ig_n_hm",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Export Content",
+    "cls" : "ig_n_exp",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_exp",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Copy Item",
+    "cls" : "ig_n_cp",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_cp",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Rename Content",
+    "cls" : "ig_n_ren",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_ren",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Move to",
+    "cls" : "ig_n_mv",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_mv",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Delete Content",
+    "cls" : "ig_n_del",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_del",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Object Auth",
+    "cls" : "ig_n_oauth",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_oauth",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Version Control",
+    "cls" : "ig_n_rev",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_rev",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Refresh",
+    "cls" : "ig_n_ref",
+    "clspath" : "ig_nav-ig_n_fp-ig_n_ref",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "save",
+    "cls" : "ig_m_save",
+    "clspath" : "ig_nav-ig_m_ctrl-ig_m_save",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "save",
+    "cls" : "ig_m_saveas",
+    "clspath" : "ig_nav-ig_m_ctrl-ig_m_saveas",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "toolbar",
+    "cls" : "ig_r_tbar",
+    "clspath" : "ig_report-ig_r_tbar",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "save",
+    "cls" : "ig_r_save",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_save",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "save as",
+    "cls" : "ig_r_saveas",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_saveas",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "run",
+    "cls" : "ig_r_run",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_run",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "design",
+    "cls" : "ig_r_design",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_design",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view selection",
+    "cls" : "ig_r_vsel",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view grid",
+    "cls" : "ig_r_grid",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_grid",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view_chart",
+    "cls" : "ig_r_chart",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_chart",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "export",
+    "cls" : "ig_r_exp",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "excel",
+    "cls" : "ig_r_xls",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_xls",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "ppt",
+    "cls" : "ig_r_ppt",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_ppt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "pdf",
+    "cls" : "ig_r_pdf",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_pdf",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "csv",
+    "cls" : "ig_r_csv",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_csv",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "html",
+    "cls" : "ig_r_html",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_html",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "jasper",
+    "cls" : "ig_r_jasper",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_jasper",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "clipboard",
+    "cls" : "ig_r_clb",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_exp-ig_r_clb",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "export option",
+    "cls" : "ig_r_eopt",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_eopt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "tools",
+    "cls" : "ig_r_tools",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_tools",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "change report type",
+    "cls" : "ig_r_crpt",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_tools-ig_r_crpt",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "basic statistics",
+    "cls" : "ig_r_stat",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_tools-ig_r_stat",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "docking",
+    "cls" : "ig_r_dock",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_dock",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "edit dock panel",
+    "cls" : "ig_r_edpanel",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_dock-ig_r_edpanel",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "add panel",
+    "cls" : "ig_r_adpanel",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_dock-ig_r_adpanel",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Chart Wizard",
+    "cls" : "ig_r_cwz",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_cwz",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Chart Type",
+    "cls" : "ig_r_ct",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_ct",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Schedule",
+    "cls" : "ig_r_sch",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_sch",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "favorites",
+    "cls" : "ig_r_fav",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_fav",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "help",
+    "cls" : "ig_r_help",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_help",
+    "show" : true,
+    "hide" : false
+  } ]
+}

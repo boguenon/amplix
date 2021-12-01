@@ -1,0 +1,45 @@
+{
+  "meta_type" : "features",
+  "objinfo" : { },
+  "name" : "0c150ca5-785c43b0",
+  "type" : "Feature",
+  "uid" : "0bf499e8-63964357",
+  "description" : "",
+  "pid" : "3479a06a-c1294b85",
+  "nodepath" : "/0c150ca5-785c43b0",
+  "writable" : true,
+  "manage" : true,
+  "is_sub" : false,
+  "attributes" : { },
+  "features" : [ {
+    "name" : "toolbar",
+    "cls" : "ig_r_tbar",
+    "clspath" : "ig_report-ig_r_tbar",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "run",
+    "cls" : "ig_r_run",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_run",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view grid",
+    "cls" : "ig_r_grid",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_grid",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "view_chart",
+    "cls" : "ig_r_chart",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_vsel-ig_r_chart",
+    "show" : true,
+    "hide" : false
+  }, {
+    "name" : "Chart Type",
+    "cls" : "ig_r_ct",
+    "clspath" : "ig_report-ig_r_tbar-ig_r_ct",
+    "show" : true,
+    "hide" : false
+  } ]
+}

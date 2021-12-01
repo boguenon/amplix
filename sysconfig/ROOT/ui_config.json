@@ -13,8 +13,8 @@
   "manage" : false,
   "is_sub" : false,
   "config" : {
-    "application_title" : "amplix demo",
-    "application_title_html" : "amplix <span style=\"font-size:12px;color:#fff900\">demo</span>",
+    "application_title" : "BWEB",
+    "application_title_html" : "BWEB <span style=\"font-size:12px;color:#fff900\">demo</span>",
     "collapse_main_menu" : true,
     "main_navigator" : true,
     "maxtapcount" : 10,
