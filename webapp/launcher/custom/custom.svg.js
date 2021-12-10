@@ -70,7 +70,9 @@ IG$.__chartoption.chartext.svgmap.prototype = {
 				ptval,
 				chartoption = {
 					point: {},
-					measures: []
+					measures: [],
+					m_svg_min_color: copsettings.m_svg_min_color,
+					m_svg_max_color: copsettings.m_svg_max_color
 				};
 
 			if (results)
@@ -119,7 +121,8 @@ IG$.__chartoption.chartext.svgmap.prototype = {
 									{
 										pt = {
 											mapid: celltext,
-											data: []
+											data: [],
+											text: []
 										};
 									}
 								}
@@ -140,10 +143,12 @@ IG$.__chartoption.chartext.svgmap.prototype = {
 								if (pt.data.length > measureindex)
 								{
 									pt.data[measureindex] = ptval;
+									pt.text[measureindex] = cell.text || cell.code;
 								}
 								else
 								{
 									pt.data.push(ptval);
+									pt.text.push(cell.text || cell.code);
 								}
 							}
 						}
