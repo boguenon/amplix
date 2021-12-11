@@ -169,3 +169,12 @@ A;L_REQ_CRT_TABLE;테이블 생성 승인요청
 
 A;L_DATA_PREC;소수점 자리
 A;L_HELPER_TMPL;예제 템플릿
+A;L_CHART_DESIGN;차트 디자이너
+
+A;L_PREDEFINED;시스템 권한
+A;L_CUSTOM+_DUTY;커스텀 권한
+A;L_GROUP_DUTY;그룹 권한
+
+A;L_EVT_LOAD;데이터 로딩 핸들러
+A;L_EVT_CLICK;셀 클릭 핸들러
+A;L_EVT_DBCLK;더블 클릭 핸들러

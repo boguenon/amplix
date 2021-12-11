@@ -67,6 +67,41 @@
 				DATE_FORMAT({field}, '{format}')
 			</extract>
 		</date_extract>
+		<date_extract type="mariadb">
+			<extract type="yyyy">
+				DATE_FORMAT({field}, '%Y')
+			</extract>
+			<extract type="quarter">
+				QUARTER({field})
+			</extract>
+			<extract type="month">
+				DATE_FORMAT({field}, '%c')
+			</extract>
+			<extract type="day">
+				DATE_FORMAT({field}, '%e')
+			</extract>
+			<extract type="weekmonth">
+				WEEK({field}, 5) - WEEK(DATE_SUB({field}, INTERVAL DAYOFMONTH({field}) - 1 DAY), 5) + 1
+			</extract>
+			<!-- 
+			// Day of the week (0=Sunday, 6=Saturday)
+			-->
+			<extract type="week" begin="0">
+				DATE_FORMAT({field}, '%w')
+			</extract>
+			<extract type="ampm">
+				DATE_FORMAT({field}, '%p')
+			</extract>
+			<extract type="hour">
+				DATE_FORMAT({field}, '%k')
+			</extract>
+			<extract type="minute">
+				DATE_FORMAT({field}, '%i')
+			</extract>
+			<extract type="custom">
+				DATE_FORMAT({field}, '{format}')
+			</extract>
+		</date_extract>
 		<date_extract type="mssql">
 			<extract type="yyyy">
 				DATEPART(yyyy, {field})
@@ -269,6 +304,10 @@
 			<date><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></date>
 			<datetime><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></datetime>
 		</item>
+		<item type="mariadb">
+			<date><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></date>
+			<datetime><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></datetime>
+		</item>
 		<item type="mssql">
 			<date><![CDATA[replace(replace(replace(convert(varchar, {field}, 20), '-', ''), ' ', ''), ':', '')]]></date>
 			<datetime><![CDATA[replace(replace(replace(convert(varchar, {field}, 20), '-', ''), ' ', ''), ':', '')]]></datetime>
@@ -289,6 +328,11 @@
 			<datetime_expression><![CDATA[TO_DATE({field},'{format}')]]></datetime_expression>
 		</item>
 		<item type="mysql">
+			<date><![CDATA[STR_TO_DATE({value}, '%Y%m%d')]]></date>
+			<datetime><![CDATA[STR_TO_DATE({value}, '%Y%m%d%H%i%s')]]></datetime>
+			<datetime_expression><![CDATA[STR_TO_DATE({field}, '{format}')]]></datetime_expression>
+		</item>
+		<item type="mariadb">
 			<date><![CDATA[STR_TO_DATE({value}, '%Y%m%d')]]></date>
 			<datetime><![CDATA[STR_TO_DATE({value}, '%Y%m%d%H%i%s')]]></datetime>
 			<datetime_expression><![CDATA[STR_TO_DATE({field}, '{format}')]]></datetime_expression>
@@ -345,6 +389,11 @@
 			<tablealias>AS</tablealias>
 			<dualtable></dualtable>
 		</item>
+		<item type="mariadb">
+			<separator><![CDATA[``]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable></dualtable>
+		</item>
 		<item type="sybase">
 			<separator><![CDATA[""]]></separator>
 			<tablealias>AS</tablealias>
@@ -394,6 +443,13 @@
 			<postsql></postsql>
 		</item>
 		<item type="mysql">
+			<presql></presql>
+			<append_select></append_select>
+			<append_where></append_where>
+			<limit_query><![CDATA[LIMIT {n}]]></limit_query>
+			<postsql></postsql>
+		</item>
+		<item type="mariadb">
 			<presql></presql>
 			<append_select></append_select>
 			<append_where></append_where>

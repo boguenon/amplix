@@ -1,11 +1,25 @@
 {
   "meta_type" : "sys_config",
-  "objinfo" : { },
+  "attributes" : { },
   "type" : "Unknown",
+  "objinfo" : { },
+  "python_password" : "{ENC}o2ArfU4wxko=",
+  "email_authpass" : "{ENC}uAFKLxL0H5pfPkHH9Z1bAw==",
+  "h2_password" : "{ENC}o2ArfU4wxko=",
+  "r_password" : "{ENC}o2ArfU4wxko=",
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
-  "attributes" : { },
+  "server_address" : "http://localhost:8580",
+  "email_enabled" : false,
+  "email_encryption" : "",
+  "email_address" : "",
+  "email_auth" : false,
+  "email_server" : "",
+  "email_port" : "",
+  "email_authuser" : "admin",
+  "email_noti_report_health_check" : "",
+  "email_noti_system_error" : "",
   "sys_loglevel" : "INFO",
   "sch_method" : "internal",
   "excel_type" : "xlsx",
@@ -17,6 +31,11 @@
   "python_jupyter" : "http://localhost:8888/",
   "python_need_auth" : false,
   "python_username" : "",
+  "r_serve" : "",
+  "r_serve_port" : "",
+  "r_tempfolder" : "",
+  "r_username" : "",
+  "r_need_auth" : false,
   "sec_enable_snooze" : true,
   "sec_post_limit_count" : 1000,
   "sec_snooze_time" : 5,
@@ -25,10 +44,14 @@
   "maxfileupload" : 30,
   "maxfileuploadbulk" : 50,
   "sec_wrong_passwd" : 5,
+  "sec_wrong_passwd_action" : "snooze5m",
+  "sec_twoway_auth" : false,
+  "h2_jdbcurl" : "jdbc:h2:~/amplix;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE",
+  "h2_username" : "sa",
   "sso_modules" : [ {
     "name" : "dbsync",
     "desc" : "Amplix Guest Auth",
-    "enabled" : true,
+    "enabled" : false,
     "authentication" : {
       "options" : {
         "class" : "com.amplix.sso.amplix.GuestUserAuth"
@@ -44,7 +67,7 @@
   }, {
     "name" : "foodmart",
     "desc" : "Foodmart Guest Auth",
-    "enabled" : true,
+    "enabled" : false,
     "authentication" : {
       "options" : {
         "class" : "com.amplix.sso.amplix.FoodmartUserAuth"
@@ -60,7 +83,7 @@
   }, {
     "name" : "oracle_ebs",
     "desc" : "Oracle EBS",
-    "enabled" : true,
+    "enabled" : false,
     "authentication" : {
       "options" : {
         "class" : "com.amplix.sso.ebs.EBSAuth"
@@ -76,7 +99,7 @@
   }, {
     "name" : "apache_ldap",
     "desc" : "Apache LDAP",
-    "enabled" : true,
+    "enabled" : false,
     "authentication" : {
       "options" : {
         "class" : " com.amplix.sso.ibk.UserDBSync"
@@ -89,5 +112,9 @@
       },
       "parameters" : [ ]
     }
-  } ]
+  } ],
+  "abot_nlp_host" : "localhost",
+  "abot_nlp_port" : 3000,
+  "abot_agent_thread" : 2,
+  "abot_nickname" : "amplixBot"
 }

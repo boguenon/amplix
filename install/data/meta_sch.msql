@@ -266,7 +266,8 @@ CREATE TABLE igcms (
   attrb3 #VARCHAR#(100) #NULL#,
   attrb4 #VARCHAR#(100) #NULL#,
   attrb5 #VARCHAR#(100) #NULL#,
-  is_sub #NUMBER#(4) NOT NULL
+  is_sub #NUMBER#(4) NOT NULL,
+  sortseq #NUMBER#(4) DEFAULT 0 NOT NULL 
 );
 
 CREATE INDEX idx_igcms_f1 ON igcms(iuid);
@@ -444,7 +445,8 @@ CREATE TABLE igctrashbin (
   attrb3 #VARCHAR#(100) #NULL#,
   attrb4 #VARCHAR#(100) #NULL#,
   attrb5 #VARCHAR#(100) #NULL#,
-  is_sub #NUMBER#(4) NOT NULL
+  is_sub #NUMBER#(4) NOT NULL,
+  sortseq #NUMBER#(4) DEFAULT 0 NOT NULL
 );
 
 CREATE INDEX idx_igctrashbin_f1 ON igctrashbin(iuid);

@@ -1007,6 +1007,8 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
 				me.down("[name=m_wc_min]").setValue(option.settings.m_wc_min || 8);
 				me.down("[name=m_wc_max]").setValue(option.settings.m_wc_max || 32);
+				me.down("[name=m_svg_min_color]").setValue(option.settings.m_svg_min_color || "#ffff51");
+				me.down("[name=m_svg_max_color]").setValue(option.settings.m_svg_max_color || "#ff0000");
 			}
 		},
 
@@ -1021,6 +1023,8 @@ IG$._customChartPanels = function() {
 				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
 				option.settings.m_wc_min = me.down("[name=m_wc_min]").getValue();
 				option.settings.m_wc_max = me.down("[name=m_wc_max]").getValue();
+				option.settings.m_svg_min_color = me.down("[name=m_svg_min_color]").getValue();
+				option.settings.m_svg_max_color = me.down("[name=m_svg_max_color]").getValue();
 			}
 		},
 		invalidateFields: function(opt) {
@@ -1102,6 +1106,93 @@ IG$._customChartPanels = function() {
 							xtype: "store",
 							fields: [ "name", "value" ]
 						}
+					},
+					{
+						xtype: "fieldcontainer",
+						anchor: "100%",
+						fieldLabel: IRm$.r1("L_MIN_COLOR"),
+						layout: {
+							type: "hbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "textfield",
+								name: "m_svg_min_color",
+								width: 120
+							},
+							{
+								xtype: "splitter"
+							},
+							{
+								xtype: "splitbutton",
+								width: 30,
+								menu: {
+									showSeparator: false,
+									items: [
+										{
+											xtype: "colorpicker",
+											listeners: {
+												select: function(cp, color) {
+													var ctrl = this.down("[name=m_svg_min_color]");
+													ctrl.setValue("#" + color);
+												},
+												scope: this
+											}
+										}, 
+										"-"
+									]
+								}
+							},
+							{
+								xtype: "container",
+								flex: 1
+							}
+						]
+					},
+					
+					{
+						xtype: "fieldcontainer",
+						anchor: "100%",
+						fieldLabel: IRm$.r1("L_MAX_COLOR"),
+						layout: {
+							type: "hbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "textfield",
+								name: "m_svg_max_color",
+								width: 120
+							},
+							{
+								xtype: "splitter"
+							},
+							{
+								xtype: "splitbutton",
+								width: 30,
+								menu: {
+									showSeparator: false,
+									items: [
+										{
+											xtype: "colorpicker",
+											listeners: {
+												select: function(cp, color) {
+													var ctrl = this.down("[name=m_svg_max_color]");
+													ctrl.setValue("#" + color);
+												},
+												scope: this
+											}
+										}, 
+										"-"
+									]
+								}
+							},
+							{
+								xtype: "container",
+								flex: 1
+							}
+						]
 					}
 				]
 			},
