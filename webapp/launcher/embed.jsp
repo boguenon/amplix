@@ -28,7 +28,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>amplix</title>
+<title>@APP_NAME@</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -36,11 +36,11 @@
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
 
-<script type="text/javascript" src="./js/jquery-3.5.1.min.js?_dc=202112110855"></script>
+<script type="text/javascript" src="./js/jquery-3.5.1.min.js?_dc=202112140733"></script>
 
-<script type="text/javascript" src="../config.js?_dc=202112110855"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202112110855"></script>
-<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202112110855"></script>
+<script type="text/javascript" src="../config.js?_dc=202112140733"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202112140733"></script>
+<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202112140733"></script>
 <script type="text/javascript">
 $(function(){
   $("#nav > ul > li > a").mouseover(function(){      
@@ -133,8 +133,7 @@ $(document).ready(function() {
 				<div id="loading">
 					<div class="cmsg">
 						<div class="msg">
-							Loading
-							amplix...
+							Loading @APP_NAME@...
 						</div>
 						<div class="lpb">
 							<div id="lpt" style="width: 10%;"></div>

@@ -34,13 +34,13 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<title>amplix</title>
+<title>@APP_NAME@</title>
 <style>
 body {
 	overflow-x: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202112110855"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202112140733"></link>
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript">
 var assist_message = [
