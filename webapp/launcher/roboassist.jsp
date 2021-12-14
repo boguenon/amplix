@@ -33,7 +33,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>@APP_NAME@</title>
+<title>Amplix</title>
 <style>
 body,html{
     height:100%;
@@ -64,9 +64,9 @@ input,select,textarea{
     background-color:inherit
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202112140727"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202112140741"></link>
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="./js/igccud.min.js?_dc=202112140727"></script>
+<script type="text/javascript" src="./js/igccud.min.js?_dc=202112140741"></script>
 <script type="text/javascript">
 function start_chat() {
 	$("#main_loading").show();
