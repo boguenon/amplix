@@ -36,11 +36,11 @@
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
 
-<script type="text/javascript" src="./js/jquery-3.5.1.min.js?_dc=202112140911"></script>
+<script type="text/javascript" src="./js/jquery-3.5.1.min.js?_dc=202112151621"></script>
 
-<script type="text/javascript" src="../config.js?_dc=202112140911"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202112140911"></script>
-<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202112140911"></script>
+<script type="text/javascript" src="../config.js?_dc=202112151621"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202112151621"></script>
+<script type="text/javascript" src="./js/amplix_embedded_loader.js?_dc=202112151621"></script>
 <script type="text/javascript">
 $(function(){
   $("#nav > ul > li > a").mouseover(function(){      
@@ -105,6 +105,9 @@ $(function(){
 <script type="text/javascript">
 var m$mts = "ROOT";
 ig$.mainview = "amplix_panel";
+//Fix issues on chrome iframe session persistency.
+//var use_session_key = true;
+
 IG$.amplix_ready(function() {
 	IG$.open_url({
 		uid: "/Northwind Examples/1. Basic Functions/5. Page Filter"
