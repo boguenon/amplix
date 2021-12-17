@@ -68,7 +68,8 @@ IG$.__chartoption.chartext.pareto.prototype = {
 		
 		opt = {
 			chart: {
-				renderTo: chartarea[0]
+				renderTo: chartarea[0],
+				echart_theme: cop.echart_theme
 			},
 			tooltip: {
 				trigger: "axis",
@@ -228,7 +229,7 @@ IG$.__chartoption.chartext.pareto.prototype = {
 	
 	createChart: function(opt) {
 		var me = this,
-			masterChart = echarts.init(opt.chart.renderTo, ig$.echarts_theme || 'amplix', {
+			masterChart = echarts.init(opt.chart.renderTo, opt.chart.echarts_theme || ig$.echarts_theme || 'amplix', {
 				renderer: "canvas" // "svg"
 			});
 		
