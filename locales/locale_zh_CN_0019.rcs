@@ -178,3 +178,10 @@ A;L_GROUP_DUTY;Group Roles
 A;L_EVT_LOAD;Data Loaded Handler
 A;L_EVT_CLICK;Cell Click Handler
 A;L_EVT_DBCLK;Double Click Handler
+
+A;L_THEME;Theme
+A;L_EC_THEME_LST;Chart Theme Lists
+A;L_ADD_NEW_CHART;Add new chart
+A;B_LABEL;Label
+A;L_CHART_SUBTYPE;Chart Subtype
+A;L_CHART_IMG;Icon Image

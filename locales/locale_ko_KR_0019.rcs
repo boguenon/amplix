@@ -178,3 +178,10 @@ A;L_GROUP_DUTY;그룹 권한
 A;L_EVT_LOAD;데이터 로딩 핸들러
 A;L_EVT_CLICK;셀 클릭 핸들러
 A;L_EVT_DBCLK;더블 클릭 핸들러
+
+A;L_THEME;테마
+A;L_EC_THEME_LST;차트 테마 목록
+A;L_ADD_NEW_CHART;신규 차트 등록
+A;B_LABEL;라벨
+A;L_CHART_SUBTYPE;차트 세부 구분
+A;L_CHART_IMG;아이콘 이미지
