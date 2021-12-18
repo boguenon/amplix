@@ -411,7 +411,7 @@ IG$.__chartoption.chartext.calendar.prototype.drawChart = function(owner, result
 		copt.calendar.range = [("" + cmin.getFullYear()) + "-01-01", ("" + cmax.getFullYear()) + "-12-31"];
 		// copt.calendar.range = [cmin, cmax];
 
-		var hchart = echarts.init(copt.chart.renderTo, ig$.echarts_theme || 'amplix', {
+		var hchart = echarts.init(copt.chart.renderTo, cop.echart_theme || ig$.echarts_theme || 'amplix', {
 				renderer: "svg"
 			});
 

@@ -71,10 +71,10 @@
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202112151611",
+		date: "202112180026",
 		appversion: "",
 		apprelease: "",
-		web_revision: "2396-version_20201215-512-g0ddaece7"
+		web_revision: "2408-version_20201215-524-g2a0b2969"
 	},
 	$l_:0
 };

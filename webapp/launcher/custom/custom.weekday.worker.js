@@ -287,7 +287,7 @@ IG$.__chartoption.chartext.weekday.prototype.drawChart = function(owner, results
 		
 		if (!me.customchart)
 		{
-			me.customchart = echarts.init(me.container[0], ig$.echarts_theme || 'amplix', {
+			me.customchart = echarts.init(me.container[0], cop.echart_theme || ig$.echarts_theme || 'amplix', {
 				renderer: "svg"
 			});
 		}

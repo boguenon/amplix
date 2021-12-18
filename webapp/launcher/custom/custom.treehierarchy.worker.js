@@ -140,7 +140,7 @@ IG$.__chartoption.chartext.treehierarchy.prototype.drawChart = function(owner, r
 		
 		if (!me.customchart)
 		{
-			me.customchart = echarts.init(me.container[0], ig$.echarts_theme || 'amplix', {
+			me.customchart = echarts.init(me.container[0], cop.echart_theme || ig$.echarts_theme || 'amplix', {
 				renderer: "canvas"
 			});
 		}
