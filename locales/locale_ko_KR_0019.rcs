@@ -185,3 +185,5 @@ A;L_ADD_NEW_CHART;신규 차트 등록
 A;B_LABEL;라벨
 A;L_CHART_SUBTYPE;차트 세부 구분
 A;L_CHART_IMG;아이콘 이미지
+
+A;I_META_EDIT;메타 편집기
