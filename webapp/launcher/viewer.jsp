@@ -44,25 +44,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>amplix</title>
+<title>Amplix</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202112201701" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202112271734" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202112201701" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202112271734" />
 <% } %>
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202112201701\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202112271734\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202112201701" />
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202112201701" />
+<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202112271734" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202112271734" />
 
 <style>
 #wrap {
@@ -78,9 +78,9 @@ if (theme != null && theme.length() > 0)
 </style>
 
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202112201701"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202112201701"></script>
-<script type="text/javascript" src="./js/igca.min.js?_dc=202112201701"></script>
+<script type="text/javascript" src="../config.js?_dc=202112271734"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202112271734"></script>
+<script type="text/javascript" src="./js/igca.min.js?_dc=202112271734"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -147,27 +147,17 @@ IG$.__microloader(modules);
     </ul>
   </div>
 </div>
-<%
-	if (objid == null) {
-%>
-<div id="top_viewer" style="display:none;">
-	<div id="slide_menu"></div>
-	<div id="header"> 
-	  <div id="nav">
-	    <span class="f_left logo">
-	    amplix
-	    <!-- a href="./"><img src="./images/logo.png" width="300" height="38" alt="logo"/></a -->
-	    </span>
-	    <ul id="d_nav">
-	      
-	    </ul>
-	  </div>
-	</div>
-	<div id="title_area">
-	  <h1>Dashboard Viewer</h1>
+
+<div id="loading-mask" style=""></div>
+<div id="loading">
+	<div class="cmsg">
+		<div class="msg">Loading Amplix...</div>
+		<div class="lpb">
+			<div id="lpt" style="width: 10%;"></div>
+		</div>
 	</div>
 </div>
-<% } %>
+
 <div id="wrap">
   <div id="content" style="top: 0px;">
     <div style="overflow-x:hidden;" width="100%" height="100%" name="mainview" id="mainview"></div>

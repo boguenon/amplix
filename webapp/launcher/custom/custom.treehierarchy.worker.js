@@ -85,7 +85,6 @@ IG$.__chartoption.chartext.treehierarchy.prototype.drawChart = function(owner, r
 		
 		if (colfix == 0)
 		{
-			
 			return;
 		}
 		
