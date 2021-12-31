@@ -1,5 +1,5 @@
 ﻿ig$.bootconfig = {
-	"cache": "202109281958",
+	"cache": "202112310753",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -12,7 +12,15 @@
         	"./js/echarts.min.js"
         ],
         "vis_ec_theme": [
-        	"./js/vis_ec_theme.min.js"
+        	"./js/echarts_themes/infographic.js",
+			"./js/echarts_themes/dark.js",
+			"./js/echarts_themes/macarons.js",
+			"./js/echarts_themes/roma.js",
+			"./js/echarts_themes/vintage.js",
+			"./js/echarts_themes/shine.js",
+			"./js/echarts_themes/desertlight.js",
+			"./js/echarts_themes/darkbrown.js",
+			"./js/echarts_themes/amplix.js"
         ],
         "app": [
             "./js/app.min.js"
@@ -49,7 +57,6 @@
 			"./custom/custom.nation.js",
 			"./custom/custom.icicle.js",
 			"./custom/custom.barrace.js",
-			"./custom/custom.circlepacking.js",
 			
 			"./custom/pareto.js",
 			"./custom/quality_runchart.js",
@@ -57,7 +64,8 @@
 			
 			"./custom/custom.hierarchy.js",
 			"./custom/custom.treehierarchy.js",
-			"./custom/custom.weekday.js"
+			"./custom/custom.weekday.js",
+			"./custom/custom.hierarchial_graph.js"
         ],
         "sso": [
             "./custom/sso_client.js"

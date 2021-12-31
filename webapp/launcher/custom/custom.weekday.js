@@ -2,7 +2,7 @@ IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.__chartoption.charttype.push(
 	{
-		label:"Weekday",
+		label:"Heatmap",
 		charttype: "weekday",
 		subtype: "weekday",
 		img: "weekday",

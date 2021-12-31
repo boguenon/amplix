@@ -1050,7 +1050,7 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 						
 						if (window.echarts)
 						{
-							hc = echarts.init(copt.chart.renderTo, ig$.echarts_theme || 'amplix', {
+							hc = echarts.init(copt.chart.renderTo, cop.echart_theme || ig$.echarts_theme || 'amplix', {
 								renderer: "canvas" // "svg"
 							});
 							

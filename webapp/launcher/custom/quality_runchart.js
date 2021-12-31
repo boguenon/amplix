@@ -185,7 +185,8 @@ IG$.__chartoption.chartext.runchart.prototype = {
 				chart: {
 					renderTo: chartarea[0],
 					chartregion: chartregion,
-					chartdesc: chartdesc
+					chartdesc: chartdesc,
+					echart_theme: cop.echart_theme
 				},
 				tooltip: {
 					trigger: "axis",
@@ -373,7 +374,7 @@ IG$.__chartoption.chartext.runchart.prototype = {
 	
 	createChart: function(opt) {
 		var me = this,
-			masterChart = echarts.init(opt.chart.renderTo, ig$.echarts_theme || 'amplix', {
+			masterChart = echarts.init(opt.chart.renderTo, opt.chart.echart_theme || ig$.echarts_theme || 'amplix', {
 				renderer: "canvas" // "svg"
 			});
 		

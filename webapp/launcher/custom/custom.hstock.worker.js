@@ -412,7 +412,7 @@ IG$.__chartoption.chartext.hstock.prototype.drawChart = function(owner, results)
 				}
 			}
 			
-			var hchart = echarts.init(copt.chart.renderTo, ig$.echarts_theme || 'amplix', {
+			var hchart = echarts.init(copt.chart.renderTo, cop.echart_theme || ig$.echarts_theme || 'amplix', {
 					renderer: "svg"
 				});
 

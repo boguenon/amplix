@@ -15,7 +15,7 @@
  * @param rs {integer} login source
  * @memberof module:framework/login/custom/sso_client
  */
-IG$.showLogin = function(callback, rs) // show login screen
+IG$.showLogin = function(callback, rs, __encrypt) // show login screen
 {
 	$("#idv-mnu-pnl").hide();
 
@@ -79,89 +79,119 @@ IG$.showLogin = function(callback, rs) // show login screen
 		if (IG$.sessionUtils)
 		{
 			var sess = IG$.dlgLogin;
-			sess.getKeyPair(fkey, "", progress, IG$._g$a, 
-				// login error handler
-				new IG$.callBackObj(this, function(xdoc) {
-					// move to portal login page if necessary
-					// sform.fadeOut();
-					// progress.hide();
-					// mc.fadeIn();
-					
-					sform.show();
-					mc.hide();
-					
-					ig$.$sso_config = ig$.$sso_config || {};
-					
-					$(".login-sso-msg", sform).html(ig$.$sso_config.sso_fail_msg || "<span>Session key expired! Please refresh browser and login again!</span>");
-					progress.hide();
-					
-					var location_hash = window.location.href,
-						lurl,
-						thash,
-						newhash,
-						nhash,
-						thashmap = {},
-						retrycount = 0,
-						bproc,
-						i;
-					
-					if (location_hash && location_hash.indexOf("?") > 0)
+			
+			if (__encrypt == false)
+			{
+				var req = new IG$._rpc$();
+				
+				var encpwd = [fkey, ""];
+				// passwd = encpwd.toString(CryptoJS.enc.Hex);
+				req.init(sess, 
 					{
-						lurl = location_hash.substring(0, location_hash.indexOf("?"));
-						location_hash = location_hash.substring(location_hash.indexOf("?") + 1);
-						thash = location_hash.split("&");
-						retrycount = 0;
+						ack: "login",
+						payload: {userid: encpwd[0], passwd: encpwd[1], sso_module: ig$.$sso_module_name || "dbsync", encrypt: "no", keyvar: IG$.rsa_kinfo},
+						mbody: {lang: useLocale, mts: IG$._g$a || "", app: '', session_expire: ("" + ig$.session_expire) || "0"}
+					}, sess, sess.rdoStartSession, function(xdoc) {
+						var r;
 						
-						$.each(thash, function(i, tstr) {
-							if (tstr.indexOf("=") > 0)
-							{
-								thashmap[tstr.substring(0, tstr.indexOf("="))] = tstr.substring(tstr.indexOf("=") + 1);
-							}
-						});
+						if (callback)
+							r = callback.execute(xdoc);
 						
-						retrycount = Number(thashmap["retry"] || "0") || 0;
-						
-						thashmap["retry"] = "" + (++retrycount);
-						
-						if (window.$sso_try_count > 0 && retrycount < window.$sso_try_count)
+						if (progress)
 						{
-							nhash = [];
-
-							$.each(thashmap, function(i, tstr) {
-								nhash.push("" + i + "=" + tstr);
+							progress.hide();
+						}
+						
+						return r;
+					}, progress);
+				req.send();
+			}
+			else
+			{
+				sess.getKeyPair(fkey, "", progress, IG$._g$a, 
+					// login error handler
+					new IG$.callBackObj(this, function(xdoc) {
+						// move to portal login page if necessary
+						// sform.fadeOut();
+						// progress.hide();
+						// mc.fadeIn();
+						
+						sform.show();
+						mc.hide();
+						
+						ig$.$sso_config = ig$.$sso_config || {};
+						
+						$(".login-sso-msg", sform).html(ig$.$sso_config.sso_fail_msg || "<span>Session key expired! Please refresh browser and login again!</span>");
+						progress.hide();
+						
+						var location_hash = window.location.href,
+							lurl,
+							thash,
+							newhash,
+							nhash,
+							thashmap = {},
+							retrycount = 0,
+							bproc,
+							i;
+						
+						if (location_hash && location_hash.indexOf("?") > 0)
+						{
+							lurl = location_hash.substring(0, location_hash.indexOf("?"));
+							location_hash = location_hash.substring(location_hash.indexOf("?") + 1);
+							thash = location_hash.split("&");
+							retrycount = 0;
+							
+							$.each(thash, function(i, tstr) {
+								if (tstr.indexOf("=") > 0)
+								{
+									thashmap[tstr.substring(0, tstr.indexOf("="))] = tstr.substring(tstr.indexOf("=") + 1);
+								}
 							});
 							
-							newhash = nhash.join("&");
+							retrycount = Number(thashmap["retry"] || "0") || 0;
 							
+							thashmap["retry"] = "" + (++retrycount);
+							
+							if (window.$sso_try_count > 0 && retrycount < window.$sso_try_count)
+							{
+								nhash = [];
+	
+								$.each(thashmap, function(i, tstr) {
+									nhash.push("" + i + "=" + tstr);
+								});
+								
+								newhash = nhash.join("&");
+								
+								bproc = 1;
+								
+								setTimeout(function() {
+									window.location.href = lurl + "?" + newhash;
+								}, 5000);
+							}
+						}
+						
+						if (!bproc && thash && window.$sso_try_count > 0 && retrycount < window.$sso_try_count)
+						{
 							bproc = 1;
 							
 							setTimeout(function() {
-								window.location.href = lurl + "?" + newhash;
+								window.location.reload(false);
 							}, 5000);
 						}
-					}
-					
-					if (!bproc && thash && window.$sso_try_count > 0 && retrycount < window.$sso_try_count)
-					{
-						bproc = 1;
-						
-						setTimeout(function() {
-							window.location.reload(false);
-						}, 5000);
-					}
-					else if (!bproc)
-					{
-						ig$.$sso_config = ig$.$sso_config || {};
-						
-						if (ig$.$sso_config.sso_fail_handler)
+						else if (!bproc)
 						{
-							ig$.$sso_config.sso_fail_handler.apply(null);
+							ig$.$sso_config = ig$.$sso_config || {};
+							
+							if (ig$.$sso_config.sso_fail_handler)
+							{
+								ig$.$sso_config.sso_fail_handler.apply(null);
+							}
 						}
-					}
-					
-					return false;
-				})
-			, ig$.$sso_module_name || "dbsync");
+						
+						return false;
+					})
+				, ig$.$sso_module_name || "dbsync");
+			}
 		}
 		else
 		{
@@ -205,6 +235,7 @@ IG$.showLogin = function(callback, rs) // show login screen
 						{
 							IG$.rsaPublicKeyModules = p1;
 							IG$.rsaPublicKeyExpoenent = p2;
+							IG$.rsa_kinfo = item.p3;
 							IG$._g$a = item.mts;
 							
 							do_session(fkey);

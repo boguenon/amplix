@@ -43,34 +43,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>amplix</title>
+<title>Amplix</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202109281958" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202112310753" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202109281958" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202112310753" />
 <% } %>
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202109281958\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202112310753\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202109281958" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202112310753" />
 
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202109281958"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202109281958"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202109281958"></script>
+<script type="text/javascript" src="../config.js?_dc=202112310753"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202112310753"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202112310753"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
 var m$mts = "<%=mts%>";
 var m$_d = "";
+//Fix issues on chrome iframe session persistency.
+//var use_session_key = true;
 
 function getLocale()
 {
@@ -208,7 +210,7 @@ IG$.ready(function() {
 
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202109281958"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202112310753"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
@@ -263,7 +265,7 @@ $(document).ready(function() {
 	<div id="loading-mask" style=""></div>
 	<div id="loading">
 		<div class="cmsg">
-			<div class="msg">Loading amplix...</div>
+			<div class="msg">Loading Amplix...</div>
 			<div class="lpb">
 				<div id="lpt" style="width: 10%;"></div>
 			</div>
@@ -276,7 +278,7 @@ $(document).ready(function() {
  		<div class="navbar-header">
  			<div id="navbar_dmenu" class="igc-nav-btn-menu"></div>
  			<a class="navbar-brand">
- 				amplix...
+ 				Amplix...
  			</a>
  		</div>
  		<div class="navbar-top-menu">

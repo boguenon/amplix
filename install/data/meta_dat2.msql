@@ -6,6 +6,7 @@ INSERT INTO igcdbhgrp (seq, tname, tdesc, mstat) VALUES (5, 'Bigdata Connector',
 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (1, 1, 'oracle','oracle.jdbc.OracleDriver','Oracle Thin Driver','jdbc:oracle:thin:@<server>[:<1521>]:<service_name>',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (2, 1, 'mysql','com.mysql.jdbc.Driver','MySQL Driver','jdbc:mysql://<hostname>[,<failoverhost>][:<3306>]/<dbname>[?<param1>=<value1>][&<param2>=<value2>]',1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (2, 1, 'mariadb','org.mariadb.jdbc.Driver','MariaDB Driver','jdbc:mariadb://<hostname>[,<failoverhost>][:<3306>]/<dbname>[?<param1>=<value1>][&<param2>=<value2>]',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (3, 1, 'db2','com.ibm.as400.access.AS400JDBCDriver','IBM DB2 Driver','jdbc:db2:<dbname>',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (4, 1, 'as400','com.ibm.as400.access.AS400JDBCDriver','IBM AS400 DB2 Driver','jdbc:as400:<dbname>',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (5, 1, 'mssql','com.microsoft.sqlserver.jdbc.SQLServerDriver','Microsoft MSSQL Server JDBC Driver','jdbc:microsoft:sqlserver://<server_name>:<1433>;databaseName=<dbname>;integratedSecurity=true;',1);

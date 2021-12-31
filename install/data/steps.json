@@ -6,6 +6,17 @@
 	},
 	"modules": [
 		{
+			"name": "demo users",
+			"desc": "basic application users",
+			"steps": [
+				{
+					"type": "sql",
+					"name": "demo_users.msql",
+					"targetdb": "meta"
+				}
+			]
+		},
+		{
 			"name": "sample_northwind",
 			"desc": "Northwind sample database",
 			"steps": [

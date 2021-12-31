@@ -48,7 +48,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<title>amplix Login</title>
+<title>Amplix Login</title>
 
 <style type="text/css">
 body {
@@ -62,18 +62,20 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202109281958" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202112310753" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202109281958" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202112310753" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202109281958" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202112310753" />
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202109281958"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202109281958"></script>
+<script type="text/javascript" src="../config.js?_dc=202112310753"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202112310753"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";
 var loadingApp;
+//Fix issues on chrome iframe session persistency.
+//var use_session_key = true;
 
 function parseLocation() {
 	var hash = window.location.hash.substring(1);
@@ -304,7 +306,7 @@ $(document).ready(function() {
 	<div id="loading-mask" style=""></div>
 	<div id="loading">
 		<div class="cmsg">
-			<div class="msg">Loading amplix...</div>
+			<div class="msg">Loading Amplix...</div>
 			<div class="lpb">
 				<div id="lpt" style="width: 10%;"></div>
 			</div>

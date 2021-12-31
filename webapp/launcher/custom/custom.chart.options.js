@@ -1007,6 +1007,15 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
 				me.down("[name=m_wc_min]").setValue(option.settings.m_wc_min || 8);
 				me.down("[name=m_wc_max]").setValue(option.settings.m_wc_max || 32);
+				me.down("[name=m_svg_min_color]").setValue(option.settings.m_svg_min_color || "#ffff51");
+				me.down("[name=m_svg_max_color]").setValue(option.settings.m_svg_max_color || "#ff0000");
+				
+				me.down("[name=m_h_min]").setValue(Number(option.settings.m_h_min || "3"));
+				me.down("[name=m_h_max]").setValue(Number(option.settings.m_h_max || "15"));
+				me.down("[name=m_h_gravity]").setValue(Number(option.settings.m_h_gravity || "0.2"));
+				me.down("[name=m_h_repulsion]").setValue(Number(option.settings.m_h_repulsion || "20"));
+				me.down("[name=m_h_edgelength]").setValue(Number(option.settings.m_h_edgelength || "5"));
+				me.down("[name=m_h_ratio]").setValue(Number(option.settings.m_h_ratio || "50"));
 			}
 		},
 
@@ -1021,6 +1030,16 @@ IG$._customChartPanels = function() {
 				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
 				option.settings.m_wc_min = me.down("[name=m_wc_min]").getValue();
 				option.settings.m_wc_max = me.down("[name=m_wc_max]").getValue();
+				option.settings.m_svg_min_color = me.down("[name=m_svg_min_color]").getValue();
+				option.settings.m_svg_max_color = me.down("[name=m_svg_max_color]").getValue();
+				
+				option.settings.m_h_min = "" + me.down("[name=m_h_min]").getValue();
+				option.settings.m_h_max = "" + me.down("[name=m_h_max]").getValue();
+				
+				option.settings.m_h_gravity = "" + me.down("[name=m_h_gravity]").getValue();
+				option.settings.m_h_repulsion = "" + me.down("[name=m_h_repulsion]").getValue();
+				option.settings.m_h_edgelength = "" + me.down("[name=m_h_edgelength]").getValue();
+				option.settings.m_h_ratio = "" + me.down("[name=m_h_ratio]").getValue();
 			}
 		},
 		invalidateFields: function(opt) {
@@ -1029,6 +1048,7 @@ IG$._customChartPanels = function() {
 			me.down("[name=pb02]").setVisible(subtype == "kpi");
 			me.down("[name=pb03]").setVisible(subtype == "svgmap");
 			me.down("[name=m_wc_opt]").setVisible(subtype == "wordcloud");
+			me.down("[name=m_hier_options]").setVisible(subtype == "hierarchialgraph");
 		},
 		items: [
 			{
@@ -1102,6 +1122,93 @@ IG$._customChartPanels = function() {
 							xtype: "store",
 							fields: [ "name", "value" ]
 						}
+					},
+					{
+						xtype: "fieldcontainer",
+						anchor: "100%",
+						fieldLabel: IRm$.r1("L_MIN_COLOR"),
+						layout: {
+							type: "hbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "textfield",
+								name: "m_svg_min_color",
+								width: 120
+							},
+							{
+								xtype: "splitter"
+							},
+							{
+								xtype: "splitbutton",
+								width: 30,
+								menu: {
+									showSeparator: false,
+									items: [
+										{
+											xtype: "colorpicker",
+											listeners: {
+												select: function(cp, color) {
+													var ctrl = this.down("[name=m_svg_min_color]");
+													ctrl.setValue("#" + color);
+												},
+												scope: this
+											}
+										}, 
+										"-"
+									]
+								}
+							},
+							{
+								xtype: "container",
+								flex: 1
+							}
+						]
+					},
+					
+					{
+						xtype: "fieldcontainer",
+						anchor: "100%",
+						fieldLabel: IRm$.r1("L_MAX_COLOR"),
+						layout: {
+							type: "hbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "textfield",
+								name: "m_svg_max_color",
+								width: 120
+							},
+							{
+								xtype: "splitter"
+							},
+							{
+								xtype: "splitbutton",
+								width: 30,
+								menu: {
+									showSeparator: false,
+									items: [
+										{
+											xtype: "colorpicker",
+											listeners: {
+												select: function(cp, color) {
+													var ctrl = this.down("[name=m_svg_max_color]");
+													ctrl.setValue("#" + color);
+												},
+												scope: this
+											}
+										}, 
+										"-"
+									]
+								}
+							},
+							{
+								xtype: "container",
+								flex: 1
+							}
+						]
 					}
 				]
 			},
@@ -1151,6 +1258,55 @@ IG$._customChartPanels = function() {
 						name: "s_t_fo",
 						fieldLabel: IRm$.r1("L_DATE_FORMAT") // "Date Format"
 					} 
+				]
+			},
+			// hierarchy chart options
+			{
+				xtype: "fieldset",
+				title: "Hierarchy Options",
+				name: "m_hier_options",
+				hidden: true,
+				layout: {
+					type: "vbox",
+					align: "stretch"
+				},
+				items: [
+					{
+						xtype: "numberfield",
+						name: "m_h_min",
+						fieldLabel: "Min Symbol",
+						value: 3
+					},
+					{
+						xtype: "numberfield",
+						name: "m_h_max",
+						fieldLabel: "Max Symbol",
+						value: 15
+					},
+					{
+						xtype: "numberfield",
+						name: "m_h_edgelength",
+						fieldLabel: "edgeLength",
+						value: 5
+					},
+					{
+						xtype: "numberfield",
+						name: "m_h_repulsion",
+						fieldLabel: "Repulsion",
+						value: 20
+					},
+					{
+						xtype: "numberfield",
+						name: "m_h_gravity",
+						fieldLabel: "Gravity",
+						value: 0.2
+					},
+					{
+						xtype: "numberfield",
+						name: "m_h_ratio",
+						fieldLabel: "Show Label Above",
+						value: 50
+					}
 				]
 			}
 		],
