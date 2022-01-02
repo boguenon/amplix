@@ -158,8 +158,6 @@ CREATE TABLE igchelp (
   mdate #LONG# #NULL#
 );
 
-CREATE INDEX idx_igchelp_f1 ON igchelp(pid);
-
 CREATE TABLE igcinst (
   iuid #CHAR#(17) NOT NULL,
   mid #CHAR#(17) #NULL#,
@@ -192,7 +190,6 @@ CREATE TABLE igcinstl (
 
 CREATE INDEX idx_igcinstl_f1 ON igcinstl(iuid);
 CREATE INDEX idx_igcinstl_f2 ON igcinstl(mid);
-CREATE INDEX idx_igcinstl_f3 ON igcinstl(iid);
 CREATE INDEX idx_igcinstl_f4 ON igcinstl(mdate);
 
 CREATE TABLE igclexp (
@@ -616,7 +613,6 @@ CREATE TABLE igcscp (
   pstatus #NUMBER#(4) NOT NULL
 );
 
-CREATE INDEX idx_igcscp_01 ON igcscp(mid, sid, seq);
 CREATE INDEX idx_igcscp_02 ON igcscp(uptdate);
 
 CREATE TABLE igcsj (
@@ -648,8 +644,6 @@ CREATE TABLE igcctlduty (
   iuid #CHAR#(17) NOT NULL,
   sid #CHAR#(17)
 );
-
-CREATE INDEX idx_igcctlduty_f1 ON igcctlduty (iuid);
 
 
 CREATE TABLE igctk (
@@ -881,7 +875,6 @@ CREATE TABLE igcshare (
 );
 
 CREATE UNIQUE INDEX idx_share_01 ON igcshare(suid);
-CREATE INDEX idx_share_02 ON igcshare(suid, mtu, muid);
 
 CREATE TABLE igccudlog (
 	suid #CHAR#(17) NOT NULL,
