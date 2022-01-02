@@ -327,10 +327,10 @@ CREATE INDEX idx_igcobjectauth_f2 ON igcobjectauth(sid);
 CREATE INDEX idx_igcobjectauth_tenant ON igcobjectauth(mts);
 
 CREATE TABLE igcrelation (
-  iuid #CHAR#(17) #NULL#,
-  rid #CHAR#(17) #NULL#,
+  iuid #CHAR#(17) NOT NULL,
+  rid #CHAR#(17) NOT NULL,
   mdate #LONG# #NULL#,
-  pstatus #NUMBER#(4) #NULL#,
+  pstatus #NUMBER#(4) NOT NULL,
   rtype #NUMBER#(4) #NULL#,
   utype #NUMBER#(4) #NULL#
 );

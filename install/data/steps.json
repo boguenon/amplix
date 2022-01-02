@@ -130,6 +130,10 @@
 		},
 		{
 			"type": "sql",
+			"name": "meta_key.msql"
+		},
+		{
+			"type": "sql",
 			"name": "meta_dat1.msql"
 		},
 		{
