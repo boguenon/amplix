@@ -81,16 +81,9 @@ ALTER TABLE igcusers ADD CONSTRAINT idx_igcusers_fk_gid FOREIGN KEY (gid) REFERE
 ALTER TABLE igcfab ADD CONSTRAINT idx_igcfab_fk_iuid FOREIGN KEY (iuid) REFERENCES igcusers(iuid);
 ALTER TABLE igcfab ADD CONSTRAINT idx_igcfab_fk_pid FOREIGN KEY (pid) REFERENCES igcms(iuid);
 
-ALTER TABLE igcjoins ADD CONSTRAINT idx_igcjoins_fk_fm FOREIGN KEY (fr_model) REFERENCES igcms(iuid);
-ALTER TABLE igcjoins ADD CONSTRAINT idx_igcjoins_fk_ft FOREIGN KEY (fr_table) REFERENCES igcms(iuid);
-ALTER TABLE igcjoins ADD CONSTRAINT idx_igcjoins_fk_ff FOREIGN KEY (fr_field) REFERENCES igcms(iuid);
-ALTER TABLE igcjoins ADD CONSTRAINT idx_igcjoins_fk_tm FOREIGN KEY (to_model) REFERENCES igcms(iuid);
-ALTER TABLE igcjoins ADD CONSTRAINT idx_igcjoins_fk_tt FOREIGN KEY (to_table) REFERENCES igcms(iuid);
-ALTER TABLE igcjoins ADD CONSTRAINT idx_igcjoins_fk_tf FOREIGN KEY (to_field) REFERENCES igcms(iuid);
 
 ALTER TABLE igcobjectauth ADD CONSTRAINT idx_igcobjecauth_fk_mts FOREIGN KEY (mts) REFERENCES igcmts(mtu);
 ALTER TABLE igcobjectauth ADD CONSTRAINT idx_igcobjecauth_fk_sid FOREIGN KEY (sid) REFERENCES igcduty(sid);
 ALTER TABLE igcobjectauth ADD CONSTRAINT idx_igcobjecauth_fk_iuid FOREIGN KEY (iuid) REFERENCES igcms(iuid);
 
 ALTER TABLE igcrelation ADD CONSTRAINT idx_igcrelation_fk_iuid FOREIGN KEY (iuid) REFERENCES igcms(iuid);
-ALTER TABLE igcrelation ADD CONSTRAINT idx_igcrelation_fk_rid FOREIGN KEY (rid) REFERENCES igcms(iuid);
