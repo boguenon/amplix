@@ -8,7 +8,8 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
     	cop = owner.cop,
 		copsettings = cop.settings || {},
 		symbol = [Number(copsettings.m_h_min || "3"), Number(copsettings.m_h_max || "15")],
-		symbol_ratio = Number(copsettings.m_h_ratio || "50") / 100;
+		symbol_ratio = Number(copsettings.m_h_ratio || "50") / 100,
+		endsymbol = copsettings.m_h_end_symbol || "arrow";
     
 	data.nodes.forEach(function(node) {
 		node.label = {
@@ -72,6 +73,11 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
                 }
             }
         ]
+    }
+    
+    if (endsymbol)
+    {
+    	option.series[0].edgeSymbol = ["none", endsymbol];
     }
     
     myChart.setOption(option);
