@@ -1016,6 +1016,7 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_h_repulsion]").setValue(Number(option.settings.m_h_repulsion || "20"));
 				me.down("[name=m_h_edgelength]").setValue(Number(option.settings.m_h_edgelength || "5"));
 				me.down("[name=m_h_ratio]").setValue(Number(option.settings.m_h_ratio || "50"));
+				me.down("[name=m_h_end_symbol]").setValue(option.settings.m_h_end_symbol || "arrow");
 			}
 		},
 
@@ -1040,6 +1041,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_h_repulsion = "" + me.down("[name=m_h_repulsion]").getValue();
 				option.settings.m_h_edgelength = "" + me.down("[name=m_h_edgelength]").getValue();
 				option.settings.m_h_ratio = "" + me.down("[name=m_h_ratio]").getValue();
+				option.settings.m_h_end_symbol = me.down("[name=m_h_end_symbol]").getValue();
 			}
 		},
 		invalidateFields: function(opt) {
@@ -1306,6 +1308,24 @@ IG$._customChartPanels = function() {
 						name: "m_h_ratio",
 						fieldLabel: "Show Label Above",
 						value: 50
+					},
+					{
+						xtype: "combobox",
+						fieldLabel: "End Symbol",
+						queryMode: "local",
+						displayField: "name",
+						valueField: "m_h_end_symbol",
+						editable: false,
+						autoSelect: false,
+						store: {
+							xtype: "store",
+							fields: [],
+							data: [
+								{name: "None", value: "none"},
+								{name: "Circle", value: "circle"},
+								{name: "Arrow", value: "arrow"}
+							]
+						}
 					}
 				]
 			}
