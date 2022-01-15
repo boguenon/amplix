@@ -74,3 +74,10 @@ ALTER TABLE igcusers ADD CONSTRAINT idx_igcusers_fk_gid FOREIGN KEY (mts, gid) R
 ALTER TABLE igcfab ADD CONSTRAINT idx_igcfab_fk_iuid FOREIGN KEY (mts, iuid) REFERENCES igcusers(mts, iuid);
 ALTER TABLE igcobjectauth ADD CONSTRAINT idx_igcobjecauth_fk_mts FOREIGN KEY (mts) REFERENCES igcmts(mtu);
 ALTER TABLE igcobjectauth ADD CONSTRAINT idx_igcobjecauth_fk_sid FOREIGN KEY (mts, sid) REFERENCES igcduty(mts, sid);
+
+ALTER TABLE igcbrdmain ADD CONSTRAINT idx_igcbrdmain_pk PRIMARY KEY(iuid);
+ALTER TABLE igcbrdrep ADD CONSTRAINT idx_igcbrdrep_pk PRIMARY KEY(ruid);
+ALTER TABLE igcbrdcateg ADD CONSTRAINT idx_igcbrdcateg_pk PRIMARY KEY(cuid);
+ALTER TABLE igcbrdcnt ADD CONSTRAINT idx_igcbrdcnt_pk PRIMARY KEY(cuid);
+ALTER TABLE igcbrdmain ADD CONSTRAINT idx_igcbrdm_fk_cuid FOREIGN KEY (cuid) REFERENCES igcbrdcateg(cuid);
+ALTER TABLE igcbrdrep ADD CONSTRAINT idx_igcbrdr_fk_pid FOREIGN KEY (pid) REFERENCES igcbrdmain(iuid);

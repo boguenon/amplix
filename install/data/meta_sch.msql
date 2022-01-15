@@ -943,3 +943,37 @@ CREATE TABLE igcacclaud (
 );
 
 CREATE INDEX idx_igcacclaud_01 ON igcacclaud(cdate, muid);
+
+
+CREATE TABLE igcbrdmain (
+	iuid #CHAR#(17) NOT NULL,
+    cuid #CHAR#(17) NOT NULL,
+    sid #CHAR#(17),
+    title #VARCHAR#(255) NOT NULL,
+    cdate #LONG#,
+    mdate #LONG#
+);
+
+CREATE TABLE igcbrdrep (
+	ruid #CHAR#(17) NOT NULL,
+    pid #CHAR#(17) NOT NULL,
+    sid #CHAR#(17),
+    title #VARCHAR#(255) NOT NULL,
+    cdate #LONG#,
+    mdate #LONG#
+);
+
+CREATE TABLE igcbrdcateg (
+	cuid #CHAR#(17) NOT NULL,
+    title #VARCHAR#(255) NOT NULL,
+    sid #CHAR#(17),
+    cdate #LONG#,
+    mdate #LONG#
+);
+
+CREATE TABLE igcbrdcnt (
+	cuid #CHAR#(17) NOT NULL,
+    iuid #CHAR#(17),
+    seq #NUMBER#(4),
+    content #VARCHAR#(255)
+);
