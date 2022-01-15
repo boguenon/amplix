@@ -1312,9 +1312,10 @@ IG$._customChartPanels = function() {
 					{
 						xtype: "combobox",
 						fieldLabel: "End Symbol",
+						name: "m_h_end_symbol",
 						queryMode: "local",
 						displayField: "name",
-						valueField: "m_h_end_symbol",
+						valueField: "value",
 						editable: false,
 						autoSelect: false,
 						store: {
