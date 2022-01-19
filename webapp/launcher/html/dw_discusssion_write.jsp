@@ -45,7 +45,7 @@
 			                            </div>
 			                        </div>
 			                        <div class="ibox-content">
-			                            <form method="get" class="form-horizontal">
+			                            <form method="post" id="frm_bbs_write" class="form-horizontal">
 			                                <div class="form-group">
 			                                	<label class="col-sm-2 control-label">$L_TITLE$</label>
 			                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
