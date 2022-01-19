@@ -187,3 +187,10 @@ A;L_CHART_SUBTYPE;Chart Subtype
 A;L_CHART_IMG;Icon Image
 
 A;I_META_EDIT;Meta Editor
+
+A;L_SKIP_HEADER;Skip Header
+A;L_SKIP_COLUMN;Skip Column
+A;L_HEADER_COUNT;Header Counts
+
+A;L_READONLY;Read Only
+A;L_HIDDEN;Hidden

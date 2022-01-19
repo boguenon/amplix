@@ -187,3 +187,10 @@ A;L_CHART_SUBTYPE;차트 세부 구분
 A;L_CHART_IMG;아이콘 이미지
 
 A;I_META_EDIT;메타 편집기
+
+A;L_SKIP_HEADER;행 제외 개수
+A;L_SKIP_COLUMN;컬럼 제외 개수
+A;L_HEADER_COUNT;이름행 개수
+
+A;L_READONLY;읽기 전용
+A;L_HIDDEN;숨기기

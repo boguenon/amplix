@@ -7,6 +7,7 @@
   "writable" : false,
   "manage" : false,
   "is_sub" : false,
+  "sortseq" : 0,
   "attributes" : { },
   "data" : [ {
     "name" : "L_CM_DISP_2",
@@ -7857,5 +7858,81 @@
     "group" : "locale_en_US_0019",
     "name" : "L_HELPER_TMPL",
     "value" : "Helper Templates"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_CHART_DESIGN",
+    "value" : "Chart Designer"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_PREDEFINED",
+    "value" : "Predefined Roles"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_CUSTOM+_DUTY",
+    "value" : "Custom Roles"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_GROUP_DUTY",
+    "value" : "Group Roles"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_EVT_LOAD",
+    "value" : "Data Loaded Handler"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_EVT_CLICK",
+    "value" : "Cell Click Handler"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_EVT_DBCLK",
+    "value" : "Double Click Handler"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_THEME",
+    "value" : "Theme"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_EC_THEME_LST",
+    "value" : "Chart Theme Lists"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_ADD_NEW_CHART",
+    "value" : "Add new chart"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "B_LABEL",
+    "value" : "Label"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_CHART_SUBTYPE",
+    "value" : "Chart Subtype"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_CHART_IMG",
+    "value" : "Icon Image"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "I_META_EDIT",
+    "value" : "Meta Editor"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_SKIP_HEADER",
+    "value" : "Skip Header"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_SKIP_COLUMN",
+    "value" : "Skip Column"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_HEADER_COUNT",
+    "value" : "Header Counts"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_READONLY",
+    "value" : "Read Only"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_HIDDEN",
+    "value" : "Hidden"
   } ]
 }
