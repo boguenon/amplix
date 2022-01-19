@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" debug="true">
 	<contextName>mplix</contextName>
-	<appender name="FILE" class="ch.qos.logback.classic.sift.SiftingAppender">
+	<appender name="FILE" class="ch.qos.logback.classic.sift.SiftingAppender"> 
 		<discriminator>
-			<key>logFileName</key>
+			<key>logfilename</key>
 			<defaultValue>amplix.out</defaultValue>
 		</discriminator>
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 			<level>${LOG_LEVEL}</level>
 		</filter>
 		<sift>
-			<appender name="FILE-${logFileName}"
+			<appender name="FILE-${log_filename}"
 				class="ch.qos.logback.core.rolling.RollingFileAppender">
-				<file>${app_home}/logs/${logFileName}.log</file>
+				<file>${app_home}/${log_filename}.log</file>
 				<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 					<charset>UTF-8</charset>
 					<Pattern>
@@ -21,7 +21,7 @@
 				</encoder>
 				<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
 					<!-- daily rollover -->
-					<fileNamePattern>${app_home}/logs/${logFileName}.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+					<fileNamePattern>${app_home}/${log_filename}.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
 					<!-- or whenever the file size reaches 50MB -->
 					<maxFileSize>10MB</maxFileSize>
 					<totalSizeCap>10GB</totalSizeCap>
@@ -46,7 +46,7 @@
 		</filter>
 		<sift>
 			<appender name="FILE_JOB_${run_id}" class="ch.qos.logback.core.FileAppender">
-				<file>${app_home}/logs/job_${run_id}.log</file>
+				<file>${app_home}/job_${run_id}.log</file>
 				<encoder>
 					<Pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %level %logger{35} - %msg%n </Pattern>
 				</encoder>

@@ -18,7 +18,14 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
 	});
 	
 	var option = {
-        tooltip: {},
+        tooltip: {
+        	formatter: function(item) {
+        		if (item.dataType == "edge")
+        		{
+        			return "edge " + item.name;
+        		}
+        	}
+        },
         legend: [
         	{
         		data: data.categories.map(function(a) {
@@ -40,6 +47,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
 				roam: true,
 				animation: false,
 				draggable: true,
+				zoom: 10,
 				force: {
 					edgeLength: Number(copsettings.m_h_edgelength || "5"),
 					repulsion: Number(copsettings.m_h_repulsion || "20"),
@@ -118,6 +126,9 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 			col_categ = -1,
 			col_src = -1,
 			col_tgt = -1,
+			col_mcmt = -1,
+			col_msrc = -1,
+			col_mtgt = -1,
 			src_val,
 			tgt_val;
 		
@@ -142,6 +153,21 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 		{
 			col_src = 0;
 			col_tgt = 1;
+		}
+		
+		if (cols - colfix > -1)
+		{
+			col_msrc = colfix;
+			
+			if (cols - colfix > 0)
+			{
+				col_mtgt = colfix + 1;
+				
+				if (cols - colfix > 1)
+				{
+					col_mcmt = colfix + 2;
+				}
+			}
 		}
 		
 		base = {
@@ -194,7 +220,8 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 				tval = Number(data[i][colfix+1].code || "0");
 			}
 			
-			var snode, tnode;
+			var snode, tnode,
+				lnk, mlnk;
 				
 			if (nodemap[src_val])
 			{
@@ -245,12 +272,32 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 			
 			if (!linkmap[src_val + "=>" + tgt_val])
 			{
-				base.links.push({
+				lnk = {
 					source: snode.id,
 					target: tnode.id
-				});
+				};
 				
-				linkmap[src_val + "=>" + tgt_val] = 1;
+				base.links.push(lnk);
+				
+				if (col_mcmt > -1)
+				{
+					lnk.label = {show: true, formatter: data[i][col_mcmt].text};
+				}
+				
+				mlnk = linkmap[tgt_val + "=>" + src_val];
+				
+				if (mlnk)
+				{
+					lnk.lineStyle = {
+						curveness: 0.2
+					};
+					
+					mlnk.lineStyle = {
+						curveness: 0.2
+					};
+				}
+				
+				linkmap[src_val + "=>" + tgt_val] = lnk;
 			}
 		}
 		

@@ -37,6 +37,22 @@ persist.validatesql = "select 1"
 application.mainpage.mdi 					= "../launcher/analytics.jsp"
 application.mainpage.dashboard 				= "../launcher/dashboard.jsp"
 
+application.folder.plugins								= ""
+application.folder.upload								= ""
+application.folder.repository							= ""
+application.folder.temp									= ""
+application.folder.schedule								= ""
+application.folder.logs									= ""
+application.folder.cache								= ""
+application.folder.font									= ""
+application.folder.template								= ""
+application.folder.resources							= ""
+application.folder.phantom								= ""
+application.folder.pdf_fonts							= ""
+application.folder.datafiles							= ""
+application.folder.aliasmap								= ""
+application.folder.sysconfig							= ""
+application.folder.log_filename							= ""
 
 [SCHEDULE_SERVER]
 ############################################################################
@@ -70,4 +86,9 @@ https_ssl_protocol 	= TLS
 context_root 		= "/"
 
 shutdown_port		= 6680
+
+
+
+
+
 
