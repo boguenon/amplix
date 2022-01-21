@@ -62,14 +62,14 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202201192246" type="text/css">
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202201211417" type="text/css">
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202201192246" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202201211417" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202201192246" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202201211417" />
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202201192246"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202201192246"></script>
+<script type="text/javascript" src="../config.js?_dc=202201211417"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202201211417"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";
@@ -130,12 +130,15 @@ function initPage() {
    	    );
     }
 	
-	IG$.createLoginPanel(uid, upd, false);
+	var instance = new IG$.amplix_instance({
+	});
+	
+	IG$.createLoginPanel(instance, uid, upd, false);
 
 	var bg = $("div.login-progress").hide();
 
-	$("#b_loc").bind("change", function(e) {
-		var b_loc = $("#b_loc"),
+	$("#b_loc" + (instance.id)).bind("change", function(e) {
+		var b_loc = $("#b_loc" + (instance.id)),
 			selvalue = $("option:selected", b_loc).val(),
 			redirect = $(location).attr('href'),
 			p, hv, h = {},
@@ -181,8 +184,8 @@ function initPage() {
 		}
 	});
 	
-	$("#b_theme").bind("change", function(e) {
-        var b_theme = $("#b_theme"),
+	$("#b_theme" + (instance.id)).bind("change", function(e) {
+        var b_theme = $("#b_theme" + (instance.id)),
             selvalue = $("option:selected", b_theme).val(),
             redirect = $(location).attr('href'),
             p, hv, h = {},
@@ -234,9 +237,9 @@ function initPage() {
         }
     });
 		
-	$('#login_btn').bind('click', function() {
-		var userid = $('#userid').val(),
-			passwd = $('#userpassword').val();
+	$('#login_btn' + (instance.id)).bind('click', function() {
+		var userid = $('#userid' + (instance.id)).val(),
+			passwd = $('#userpassword' + (instance.id)).val();
 		
 		if (!userid)
 		{
@@ -250,14 +253,14 @@ function initPage() {
 			return false;
 		}
 		
-		IG$.doStartSession(userid, passwd, bg, mts);
+		IG$.doStartSession(instance, userid, passwd, bg, mts);
 		return false;
 	});
-	$('#userpassword').bind('keypress', function(e) {
+	$('#userpassword' + (instance.id)).bind('keypress', function(e) {
 		if (e.keyCode == 13)
 		{
-			var userid = $('#userid')[0].value,
-				passwd = $('#userpassword')[0].value;
+			var userid = $('#userid' + (instance.id))[0].value,
+				passwd = $('#userpassword' + (instance.id))[0].value;
 			
 			if (!userid)
 			{
@@ -271,7 +274,7 @@ function initPage() {
 				return false;
 			}
 			
-			IG$.doStartSession(userid, passwd, bg, mts);
+			IG$.doStartSession(instance, userid, passwd, bg, mts);
 			
 			return false;
 		}
@@ -282,12 +285,12 @@ function initPage() {
 	IRm$.r2/*loadResources*/({
         func: function() {
         	IG$.chkSess(null, function() {
-                IG$.chkSvrInfo(function() {
+                IG$.chkSvrInfo(instance, function() {
                     $('#loginWindow').show();
                 });
             });
             
-            IG$.showLogin();
+            IG$.showLogin(instance);
         }
     }, false);
 }

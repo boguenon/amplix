@@ -80,6 +80,7 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 		if (parameters)
 		{
 			dlg = new IG$.kpiTWc({
+				instance: me.instance,
 				syntax: syntax,
 				parameters: parameters,
 				callback: new IG$.callBackObj(me, function(thtml) {
@@ -87,7 +88,7 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 				})
 			});
 			
-			dlg.show();
+			IG$.showDlg(me, dlg);
 		}
 		else
 		{
@@ -422,9 +423,10 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 											iconCls: "icon-grid-config",
 											handler: function (grid, rowIndex, colIndex) {
 												var dlg = new IG$.kpi_3/*dlg_vsyntax*/({
+													instance: me.instance,
 													rec: grid.store.getAt(rowIndex)
 												});
-												dlg.show();
+												IG$.showDlg(me, dlg);
 											}
 										}
 									]
@@ -927,10 +929,11 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 		me.btn_cfg = $("<div class='igc-kpi-cfg'></div>").appendTo(container);
 		me.btn_cfg.bind("click", function() {
 			var dlg = new IG$.kpi_1/*dlg_vindicator*/({
+				instance: me.instance,
 				cop: cop,
 				cindicator: cindopt
 			});
-			dlg.show();
+			IG$.showDlg(me, dlg);
 		});
 	}
 	

@@ -1081,10 +1081,11 @@ IG$._customChartPanels = function() {
 										function() {
 											var dlg = new IG$.kpi_1/* dlg_vindicator */(
 													{
+														instance: me.instance,
 														cop: chartoption,
 														cindicator: cindopt
 													});
-											dlg.show();
+											IG$.showDlg(me, dlg);
 										}
 									)
 								);
@@ -1094,10 +1095,11 @@ IG$._customChartPanels = function() {
 								var cindopt = chartoption.cindicator ? JSON.parse(chartoption.cindicator) : {};
 								var dlg = new IG$.kpi_1/* dlg_vindicator */(
 									{
+										instance: me.instance,
 										cop: chartoption,
 										cindicator: cindopt
 									});
-								dlg.show();
+								IG$.showDlg(me, dlg);
 							}
 							
 						},
@@ -1380,6 +1382,7 @@ IG$.makeCustomChartOption = function(wizard, panel) {
 
 	var panels = IG$._customChartPanels(); 
 	$.each(panels, function(i, coption) {
+		coption.instance = wizard.instance;
 		var p = $s.create($s.formpanel, coption);
 		p.__main__ = wizard;
 		p.__mainp__ = panel;
