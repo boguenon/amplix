@@ -50,22 +50,22 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202201200905" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202201211506" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202201200905" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202201211506" />
 <% } %>
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202201200905\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202201211506\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202201200905" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202201211506" />
 
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202201200905"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202201200905"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202201200905"></script>
+<script type="text/javascript" src="../config.js?_dc=202201211506"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202201211506"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202201211506"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -115,11 +115,7 @@ if (theme != null && theme.length() > 0)
 }
 %>
 
-var modules = ["framework", "vis_ec", "vis_ec_theme", "app_dashboard", "appnc", "custom"];
-IG$.__microloader(modules);
-</script>
-<script type="text/javascript">
-IG$.ready(function() {
+var init_dashboard = function() {
 	var menu_logout = new IG$._menu_button($(".user-info"), [
 		{
 			nmae: "b_passwd",
@@ -206,11 +202,26 @@ IG$.ready(function() {
 		}
 	});
 	menu_theme.create();
-});
+}
 
+var modules = ["framework", "vis_ec", "vis_ec_theme", "app_dashboard", "appnc", "custom"];
+IG$.__microloader(modules, function() {
+	$s.ready(function() {
+		var dasboard_inst = new IG$.amplix_instance({
+			target: "#mainview"
+		});
+		
+		dasboard_inst.onLoad(function() {
+			var me = this;
+			init_dashboard();
+		});
+		
+		dasboard_inst.create();
+	});
+});
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202201200905"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202201211506"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
@@ -262,17 +273,17 @@ $(document).ready(function() {
 <!-- end cuddler -->
 </head>
 <body scroll="no">
-	<div id="loading-mask" style=""></div>
-	<div id="loading">
-		<div class="cmsg">
-			<div class="msg">Loading Amplix...</div>
-			<div class="lpb">
-				<div id="lpt" style="width: 10%;"></div>
+ 	<div id="mainview">
+ 		<div id="loading-mask" style=""></div>
+		<div id="loading">
+			<div class="cmsg">
+				<div class="msg">Loading Amplix...</div>
+				<div class="lpb">
+					<div id="lpt" style="width: 10%;"></div>
+				</div>
 			</div>
 		</div>
-	</div>
-
- 	<div id="mainview"></div>
+ 	</div>
  	
  	<div id="navbar" class="navbar">
  		<div class="navbar-header">

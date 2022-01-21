@@ -15,11 +15,12 @@
  * @param rs {integer} login source
  * @memberof module:framework/login/custom/sso_client
  */
-IG$.showLogin = function(callback, rs, __encrypt) // show login screen
+IG$.showLogin = function(instance, callback, rs, __encrypt) // show login screen
 {
-	$("#idv-mnu-pnl").hide();
+	$("#idv-mnu-pnl", instance.target).hide();
 
-	var nmts;
+	var nmts,
+		dlgLogin = instance.dlgLogin;
 	
 	window.$sso_try_count = window.$sso_try_count || 0;
 
@@ -29,11 +30,11 @@ IG$.showLogin = function(callback, rs, __encrypt) // show login screen
 		nmts = url_params["mts"] || "ROOT";
 	}
 	
-	if (IG$.dlgLogin)
+	if (dlgLogin)
 	{
-		IG$.dlgLogin.callback = new IG$.callBackObj(this, function() {
-			$("#loginWindow").hide();
-			IG$.showLoginProc.call(this);
+		dlgLogin.callback = new IG$.callBackObj(this, function() {
+			$("#loginWindow", instance.target).hide();
+			IG$.showLoginProc.call(this, instance);
 		});
 	}
 	
@@ -42,7 +43,7 @@ IG$.showLogin = function(callback, rs, __encrypt) // show login screen
 		window.hist.addHistory("");
 	}
 	
-	var lform = $("#loginWindow"),
+	var lform = $("#loginWindow", instance.target),
 		login_container = $(".login-container", lform),
 		mc,
 		progress = $("#login-progress", lform),
@@ -78,7 +79,7 @@ IG$.showLogin = function(callback, rs, __encrypt) // show login screen
 	var do_session = function(fkey) {
 		if (IG$.sessionUtils)
 		{
-			var sess = IG$.dlgLogin;
+			var sess = instance.dlgLogin;
 			
 			if (__encrypt == false)
 			{
@@ -195,7 +196,7 @@ IG$.showLogin = function(callback, rs, __encrypt) // show login screen
 		}
 		else
 		{
-			IG$.doStartSession(fkey, "", progress, null, new IG$.callBackObj(this, function(xdoc) {
+			IG$.doStartSession(instance, fkey, "", progress, null, new IG$.callBackObj(this, function(xdoc) {
 				// move to portal login page if necessary
 				sform.fadeOut();
 				progress.hide();
@@ -233,9 +234,9 @@ IG$.showLogin = function(callback, rs, __encrypt) // show login screen
 						
 						if (p1 && p2)
 						{
-							IG$.rsaPublicKeyModules = p1;
-							IG$.rsaPublicKeyExpoenent = p2;
-							IG$.rsa_kinfo = item.p3;
+							instance.rsaPublicKeyModules = p1;
+							instance.rsaPublicKeyExpoenent = p2;
+							instance.rsa_kinfo = item.p3;
 							IG$._g$a = item.mts;
 							
 							do_session(fkey);
@@ -248,7 +249,7 @@ IG$.showLogin = function(callback, rs, __encrypt) // show login screen
 						do_session(fkey);
 					});
 			
-				lreq.send();
+				lreq.send(instance);
 			}
 			else
 			{
