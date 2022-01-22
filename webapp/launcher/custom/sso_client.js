@@ -90,7 +90,7 @@ IG$.showLogin = function(instance, callback, rs, __encrypt) // show login screen
 				req.init(sess, 
 					{
 						ack: "login",
-						payload: {userid: encpwd[0], passwd: encpwd[1], sso_module: ig$.$sso_module_name || "dbsync", encrypt: "no", keyvar: IG$.rsa_kinfo},
+						payload: {userid: encpwd[0], passwd: encpwd[1], sso_module: ig$.$sso_module_name || "dbsync", encrypt: "no", keyvar: instance.rsa_kinfo},
 						mbody: {lang: useLocale, mts: IG$._g$a || "", app: '', session_expire: ("" + ig$.session_expire) || "0"}
 					}, sess, sess.rdoStartSession, function(xdoc) {
 						var r;
