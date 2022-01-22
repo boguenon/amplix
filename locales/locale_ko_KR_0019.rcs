@@ -194,3 +194,5 @@ A;L_HEADER_COUNT;이름행 개수
 
 A;L_READONLY;읽기 전용
 A;L_HIDDEN;숨기기
+
+A;L_UNPIVOT_DEF;언 피벗 정의

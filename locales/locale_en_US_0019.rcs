@@ -194,3 +194,6 @@ A;L_HEADER_COUNT;Header Counts
 
 A;L_READONLY;Read Only
 A;L_HIDDEN;Hidden
+
+A;L_UNPIVOT_DEF;Un Pivot Definition
+A;B_FILESIZE;File Size
