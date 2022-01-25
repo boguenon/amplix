@@ -1017,6 +1017,25 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_h_edgelength]").setValue(Number(option.settings.m_h_edgelength || "5"));
 				me.down("[name=m_h_ratio]").setValue(Number(option.settings.m_h_ratio || "50"));
 				me.down("[name=m_h_end_symbol]").setValue(option.settings.m_h_end_symbol || "arrow");
+				
+				var barr = ma.sheetoption.model.rows.concat(ma.sheetoption.model.measures);
+				
+				$.each(["m_h_axis_categ", "m_h_axis_src", "m_h_axis_tgt", "m_h_axis_srcdt", "m_h_axis_tgtdt", "m_h_axis_cmt"], function(i, k) {
+					var dp = [{name: "Select Value", uid: ""}],
+						i, bf = 0,
+						ctrl = me.down("[name=" + k + "]");
+					
+					for (i=0; i < barr.length; i++)
+					{
+						dp.push({
+							uid: barr[i].uid,
+							name: barr[i].name
+						});
+					}
+					
+					ctrl.store.loadData(dp);
+					ctrl.setValue(option.settings[k] || "");
+				});
 			}
 		},
 
@@ -1042,6 +1061,11 @@ IG$._customChartPanels = function() {
 				option.settings.m_h_edgelength = "" + me.down("[name=m_h_edgelength]").getValue();
 				option.settings.m_h_ratio = "" + me.down("[name=m_h_ratio]").getValue();
 				option.settings.m_h_end_symbol = me.down("[name=m_h_end_symbol]").getValue();
+				
+				$.each(["m_h_axis_categ", "m_h_axis_src", "m_h_axis_tgt", "m_h_axis_srcdt", "m_h_axis_tgtdt", "m_h_axis_cmt"], function(i, k) {
+					var ctrl = me.down("[name=" + k + "]");
+					option.settings[k] = ctrl.getValue();
+				});
 			}
 		},
 		invalidateFields: function(opt) {
@@ -1329,6 +1353,99 @@ IG$._customChartPanels = function() {
 								{name: "Arrow", value: "arrow"}
 							]
 						}
+					},
+					{
+						xtype: "fieldset",
+						layout: {
+							type: "vbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "combobox",
+								fieldLabel: "Source Axis",
+								name: "m_h_axis_src",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "uid",
+								editable: false,
+								autoSelect: false,
+								store: {
+									xtype: "store",
+									fields: []
+								}
+							},
+							{
+								xtype: "combobox",
+								fieldLabel: "Target Axis",
+								name: "m_h_axis_tgt",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "uid",
+								editable: false,
+								autoSelect: false,
+								store: {
+									xtype: "store",
+									fields: []
+								}
+							},
+							{
+								xtype: "combobox",
+								fieldLabel: "Category Axis",
+								name: "m_h_axis_categ",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "uid",
+								editable: false,
+								autoSelect: false,
+								store: {
+									xtype: "store",
+									fields: []
+								}
+							},
+							{
+								xtype: "combobox",
+								fieldLabel: "Comment Axis",
+								name: "m_h_axis_cmt",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "uid",
+								editable: false,
+								autoSelect: false,
+								store: {
+									xtype: "store",
+									fields: []
+								}
+							},
+							{
+								xtype: "combobox",
+								fieldLabel: "Source Value",
+								name: "m_h_axis_srcdt",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "uid",
+								editable: false,
+								autoSelect: false,
+								store: {
+									xtype: "store",
+									fields: []
+								}
+							},
+							{
+								xtype: "combobox",
+								fieldLabel: "Target Value",
+								name: "m_h_axis_tgtdt",
+								queryMode: "local",
+								displayField: "name",
+								valueField: "uid",
+								editable: false,
+								autoSelect: false,
+								store: {
+									xtype: "store",
+									fields: []
+								}
+							}
+						]
 					}
 				]
 			}
