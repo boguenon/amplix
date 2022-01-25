@@ -20,15 +20,6 @@ CREATE TABLE igcappoption (
 
 CREATE INDEX idx_igcappoption_tenant ON igcappoption(mts);
 
-CREATE TABLE igcdatapools (
-  iuid #CHAR#(17) NOT NULL,
-  pname #VARCHAR#(100) #NULL#,
-  pstatus #NUMBER#(4) #NULL#,
-  mdate #LONG# #NULL#
-);
-
-CREATE UNIQUE INDEX idx_igcdatapools_f1 ON igcdatapools(iuid);
-
 CREATE TABLE igcdepts (
   mts #CHAR#(17) NOT NULL,
   gid #CHAR#(17) NOT NULL,
@@ -109,14 +100,6 @@ CREATE TABLE igcelog (
   pstatus #NUMBER# #NULL#
 );
 
-CREATE TABLE igcerror (
-  errorcode #NUMBER#(4) NOT NULL,
-  description #VARCHAR#(1000),
-  detail #VARCHAR#(1000)
-);
-
-CREATE UNIQUE INDEX idx_igcerror_f1 ON igcerror(errorcode);
-
 CREATE TABLE igcfab (
   kuid #CHAR#(17) NOT NULL,
   mts #CHAR#(17) NOT NULL,
@@ -146,33 +129,6 @@ CREATE TABLE igcgeo (
 );
 
 CREATE INDEX idx_igcgeo_f1 ON igcgeo(loccode);
-
-CREATE TABLE igchelp (
-  pid #CHAR#(10) NOT NULL,
-  lang #CHAR#(6) DEFAULT 'EN',
-  title #VARCHAR#(255) #NULL#,
-  hctype #NUMBER#(4) #NULL#,
-  content #VARCHAR#(1000),
-  pstatus #NUMBER#(4) #NULL#,
-  seq #NUMBER# #NULL#,
-  mdate #LONG# #NULL#
-);
-
-CREATE TABLE igcinst (
-  iuid #CHAR#(17) NOT NULL,
-  mid #CHAR#(17) #NULL#,
-  iid #CHAR#(17) #NULL#,
-  rptname #VARCHAR#(255) #NULL#,
-  content #VARCHAR#(1000),
-  seq #NUMBER# #NULL#,
-  mdate #LONG# #NULL#,
-  cdate #LONG# #NULL#
-);
-
-CREATE INDEX idx_igcinst_f1 ON igcinst(iuid);
-CREATE INDEX idx_igcinst_f2 ON igcinst(mid);
-CREATE INDEX idx_igcinst_f3 ON igcinst(iid);
-CREATE INDEX idx_igcinst_f4 ON igcinst(mdate);
 
 CREATE TABLE igcinstl (
   iid #CHAR#(17) NOT NULL,
@@ -294,23 +250,6 @@ CREATE INDEX idx_igcmcc_f1 ON igcmcc(iuid);
 CREATE UNIQUE INDEX idx_igcmcc_f2 ON igcmcc(iuid, revise, seq, mts);
 CREATE INDEX idx_igcmcc_tenant ON igcmcc(mts);
 
-CREATE TABLE igcmce (
-  mts #CHAR#(17) NOT NULL,
-  iuid #CHAR#(17) NOT NULL,
-  seq #NUMBER#(4) NOT NULL,
-  mctype #NUMBER#(4) NOT NULL,
-  mdate #LONG# #NULL#,
-  content #VARCHAR#(1000),
-  revise #NUMBER#(4) NOT NULL,
-  description #VARCHAR#(1000),
-  sid #CHAR#(17)
-);
-
-CREATE INDEX idx_igcmce_f1 ON igcmce(iuid);
-CREATE UNIQUE INDEX idx_igcmce_f2 ON igcmce(iuid, revise, seq, mts);
-CREATE INDEX idx_igcmce_tenant ON igcmce(mts);
-
-
 CREATE TABLE igcobjectauth (
   mts #CHAR#(17) NOT NULL,
   sid #CHAR#(17) NOT NULL,
@@ -335,52 +274,6 @@ CREATE TABLE igcrelation (
 CREATE INDEX idx_igcrelation_f1 ON igcrelation(iuid);
 CREATE INDEX idx_igcrelation_f2 ON igcrelation(rid);
 
-CREATE TABLE igcslog (
-  mts #CHAR#(17) NOT NULL,
-  iuid #CHAR#(17) NOT NULL,
-  seq #NUMBER#(4) NOT NULL,
-  userid #VARCHAR#(50) #NULL#,
-  mid #CHAR#(17) #NULL#,
-  eid #CHAR#(17) #NULL#,
-  cname #VARCHAR#(255) #NULL#,
-  mctype #NUMBER#(4) #NULL#,
-  content #VARCHAR#(1000),
-  pstatus #NUMBER#(4) #NULL#,
-  description #VARCHAR#(1000),
-  mdate #LONG# #NULL#,
-  title #VARCHAR#(255) #NULL#,
-  message #VARCHAR#(1000)
-);
-
-CREATE INDEX idx_igcslog_f1 ON igcslog(iuid);
-CREATE INDEX idx_igcslog_f2 ON igcslog(mid);
-CREATE INDEX idx_igcslog_f3 ON igcslog(eid);
-CREATE INDEX idx_igcslog_tenant ON igcslog(mts);
-
-CREATE TABLE igcsnap (
-  iuid #CHAR#(17) NOT NULL,
-  mid #CHAR#(17) NOT NULL,
-  eid #CHAR#(17) NOT NULL,
-  seq #NUMBER#(4) NOT NULL,
-  cname #VARCHAR#(255) #NULL#,
-  mctype #NUMBER#(4) #NULL#,
-  content #VARCHAR#(1000),
-  execcontent #VARCHAR#(1000),
-  pstatus #NUMBER#(4) #NULL#,
-  description #VARCHAR#(1000),
-  mdate #LONG# #NULL#
-);
-
-CREATE INDEX idx_igcsnap_f1 ON igcsnap(iuid);
-CREATE INDEX idx_igcsnap_f2 ON igcsnap(mid);
-CREATE INDEX idx_igcsnap_f3 ON igcsnap(eid);
-
-CREATE TABLE igcstatus (
-  pstatus #NUMBER#(4) NOT NULL,
-  stype #NUMBER#(4) NOT NULL,
-  description #VARCHAR#(128) #NULL#
-);
-
 CREATE TABLE igcsystemlogs (
   lid #CHAR#(17) NOT NULL,
   ltype #NUMBER#(4) #NULL#,
@@ -389,35 +282,6 @@ CREATE TABLE igcsystemlogs (
 );
 
 CREATE UNIQUE INDEX idx_igcsystemlogs_f1 ON igcsystemlogs(lid);
-
-CREATE TABLE igctables (
-  iuid #CHAR#(17) NOT NULL,
-  pid #CHAR#(17) NOT NULL,
-  mctype #NUMBER#(4) #NULL#,
-  seq #NUMBER#(4) #NULL#,
-  tname #VARCHAR#(100) #NULL#,
-  mdate #LONG# #NULL#,
-  content #VARCHAR#(1000) #NULL#,
-  pstatus #NUMBER#(4) #NULL#
-);
-
-CREATE INDEX idx_igctables_f1 ON igctables(iuid);
-CREATE INDEX idx_igctables_f2 ON igctables(pid);
-CREATE INDEX idx_igctables_f3 ON igctables(mctype);
-CREATE INDEX idx_igctables_f4 ON igctables(tname);
-CREATE INDEX idx_igctables_f5 ON igctables(mdate);
-
-CREATE TABLE igctlog (
-  tid #CHAR#(17) NOT NULL,
-  iuid #CHAR#(17) NOT NULL,
-  userid #VARCHAR#(50) #NULL#,
-  content #VARCHAR#(255) #NULL#,
-  mdate #LONG# #NULL#,
-  pstatus #NUMBER#(4) #NULL#
-);
-
-CREATE INDEX idx_igctlog_f1 ON igctlog(tid);
-CREATE INDEX idx_igctlog_f2 ON igctlog(iuid);
 
 CREATE TABLE igctrashbin (
   mts #CHAR#(17) NOT NULL,
@@ -500,20 +364,6 @@ CREATE INDEX idx_igcusers_f1 ON igcusers(iuid);
 CREATE UNIQUE INDEX idx_igcusers_f2 ON igcusers(userid);
 CREATE INDEX idx_igcusers_f3 ON igcusers(uname);
 CREATE INDEX idx_igcusers_tenant ON igcusers(mts);
-
-CREATE TABLE igclocale (
-  mts #CHAR#(17) NOT NULL,
-  iuid #CHAR#(17) NOT NULL,
-  lid #CHAR#(17) NOT NULL,
-  mloc #VARCHAR#(5) NOT NULL,
-  lname #VARCHAR#(255) NOT NULL,
-  LDESC #VARCHAR#(255) #NULL#
-);
-
-CREATE INDEX idx_igclocale_f1 ON igclocale(iuid);
-CREATE INDEX idx_igclocale_f2 ON igclocale(lid);
-CREATE INDEX idx_igclocale_f3 ON igclocale(lname);
-CREATE INDEX idx_igclocale_tenant ON igclocale(mts);
 
 CREATE TABLE igcdbhgrp (
 	seq #NUMBER#(4) NOT NULL,
@@ -626,19 +476,6 @@ CREATE TABLE igcsj (
   nexec_time #LONG#,
   jobkeyname #VARCHAR#(100)
 );
-
-CREATE TABLE igcsjm (
-  jid #CHAR#(17) NOT NULL,
-  seq #NUMBER#(4) NOT NULL,  
-  executeid #CHAR#(17), 
-  content #VARCHAR#(1000), 
-  uptdate #CHAR#(24) #NULL#, 
-  pstatus #NUMBER#(4), 
-  memo #VARCHAR#(100)
-);
-
-CREATE INDEX idx_igcsjm_01 ON igcsjm(jid, executeid, seq);
-CREATE INDEX idx_igcsjm_02 ON igcsjm(uptdate);
 
 CREATE TABLE igcctlduty (
   iuid #CHAR#(17) NOT NULL,
