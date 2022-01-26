@@ -242,6 +242,8 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 	},
 	
 	initComponent: function() {
+		var me = this;
+		
 		$s.apply(this, {
 			items: [
 				{
