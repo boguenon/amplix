@@ -87,7 +87,7 @@ context_root 		= "/"
 
 cluster_enabled					= false
 cluster_sending_options 		= 8
-cluster_membership_address		= "127.0.0.1"
+cluster_membership_address		= "228.0.0.4"
 cluster_membership_port			= 45564
 cluster_membership_frequency	= 500
 cluster_membership_droptime		= 3000
