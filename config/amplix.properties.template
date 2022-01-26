@@ -85,6 +85,19 @@ https_keystore_file = "keystore.jks"
 https_ssl_protocol 	= TLS
 context_root 		= "/"
 
+cluster_enabled					= false
+cluster_sending_options 		= 8
+cluster_membership_address		= "228.0.0.4"
+cluster_membership_port			= 45564
+cluster_membership_frequency	= 500
+cluster_membership_droptime		= 3000
+
+cluster_receiver_address		= "auto"
+cluster_receiver_port			= 4000
+cluster_receiver_autobind		= 100
+cluster_receiver_timeout		= 5000
+cluster_reciever_maxthreads		= 6
+
 shutdown_port		= 6680
 
 
