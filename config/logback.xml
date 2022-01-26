@@ -12,7 +12,7 @@
 		<sift>
 			<appender name="FILE-${log_filename}"
 				class="ch.qos.logback.core.rolling.RollingFileAppender">
-				<file>${app_home}/${log_filename}.log</file>
+				<file>${app_home}/${log_filename}-${hostname}.log</file>
 				<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 					<charset>UTF-8</charset>
 					<Pattern>
@@ -21,7 +21,7 @@
 				</encoder>
 				<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
 					<!-- daily rollover -->
-					<fileNamePattern>${app_home}/${log_filename}.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+					<fileNamePattern>${app_home}/${log_filename}-${hostname}.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
 					<!-- or whenever the file size reaches 50MB -->
 					<maxFileSize>10MB</maxFileSize>
 					<totalSizeCap>10GB</totalSizeCap>
