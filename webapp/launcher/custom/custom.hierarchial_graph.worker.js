@@ -18,7 +18,14 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
 	});
 	
 	var option = {
-        tooltip: {},
+        tooltip: {
+        	formatter: function(item) {
+        		if (item.dataType == "edge")
+        		{
+        			return "edge " + item.name;
+        		}
+        	}
+        },
         legend: [
         	{
         		data: data.categories.map(function(a) {
@@ -40,6 +47,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
 				roam: true,
 				animation: false,
 				draggable: true,
+				zoom: 10,
 				force: {
 					edgeLength: Number(copsettings.m_h_edgelength || "5"),
 					repulsion: Number(copsettings.m_h_repulsion || "20"),
@@ -87,6 +95,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 	var me = this,
 		container = $(owner.container),
 		cop = owner.cop,
+		sop = owner.sheetoption ? owner.sheetoption.model : null,
 		copsettings = cop.settings || {};
 	
 	me.owner = owner;
@@ -118,13 +127,27 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 			col_categ = -1,
 			col_src = -1,
 			col_tgt = -1,
+			col_mcmt = -1,
+			col_msrc = -1,
+			col_mtgt = -1,
 			src_val,
-			tgt_val;
+			tgt_val,
+			fieldmap = {},
+			fields;
 		
 		cols = results.colcnt;
 		rows = data.length;
 		colfix = results.colfix;
 		rowfix = results.rowfix;
+		
+		if (sop)
+		{
+			fields = sop.rows.concat(sop.measures);
+			for (i=0; i < fields.length; i++)
+			{
+				fieldmap[fields[i].uid] = i;
+			}
+		}
 		
 		if (colfix < 2)
 		{
@@ -134,14 +157,60 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 		
 		if (colfix > 2)
 		{
-			col_categ = 0;
-			col_src = 1;
-			col_tgt = 2;
+			if (copsettings.m_h_axis_src && copsettings.m_h_axis_tgt)
+			{
+				if (copsettings.m_h_axis_categ)
+				{
+					col_categ = fieldmap[copsettings.m_h_axis_categ] || 0;
+				}
+			}
+			else
+			{
+				col_categ = fieldmap[copsettings.m_h_axis_categ] || 0;
+			}
+			col_src = fieldmap[copsettings.m_h_axis_src] || 1;
+			col_tgt = fieldmap[copsettings.m_h_axis_tgt] || 2;
 		}
 		else
 		{
-			col_src = 0;
-			col_tgt = 1;
+			col_src = fieldmap[copsettings.m_h_axis_src] || 0;
+			col_tgt = fieldmap[copsettings.m_h_axis_tgt] || 1;
+		}
+		
+		if (copsettings.m_h_axis_srcdt && copsettings.m_h_axis_srcdt in fieldmap)
+		{
+			col_msrc = fieldmap[copsetting.m_h_axis_srcdt];
+		}
+		
+		if (copsettings.m_h_axis_tgtdt && copsettings.m_h_axis_tgtdt in fieldmap)
+		{
+			col_mtgt = fieldmap[copsetting.m_h_axis_tgtdt];
+		}
+		
+		if (copsettings.m_h_axis_cmt && copsettings.m_h_axis_cmt in fieldmap)
+		{
+			col_mcmt = fieldmap[copsettings.m_h_axis_cmt];
+		}
+		
+		if (cols - colfix > 0)
+		{
+			if (col_msrc < 0 && !copsettings.m_h_axis_srcdt)
+			{
+				col_msrc = colfix;
+			}
+			
+			if (cols - colfix > 1)
+			{
+				if (col_mtgt < 0 && !copsettings.m_h_axis_tgtdt)
+				{
+					col_mtgt = colfix + 1;
+				}
+				
+				if (cols - colfix > 2 && col_mcmt < 0 && !copsettings.m_h_axis_cmt)
+				{
+					col_mcmt = colfix + 2;
+				}
+			}
 		}
 		
 		base = {
@@ -194,7 +263,8 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 				tval = Number(data[i][colfix+1].code || "0");
 			}
 			
-			var snode, tnode;
+			var snode, tnode,
+				lnk, mlnk;
 				
 			if (nodemap[src_val])
 			{
@@ -245,12 +315,32 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 			
 			if (!linkmap[src_val + "=>" + tgt_val])
 			{
-				base.links.push({
+				lnk = {
 					source: snode.id,
 					target: tnode.id
-				});
+				};
 				
-				linkmap[src_val + "=>" + tgt_val] = 1;
+				base.links.push(lnk);
+				
+				if (col_mcmt > -1)
+				{
+					lnk.label = {show: true, formatter: data[i][col_mcmt].text};
+				}
+				
+				mlnk = linkmap[tgt_val + "=>" + src_val];
+				
+				if (mlnk)
+				{
+					lnk.lineStyle = {
+						curveness: 0.2
+					};
+					
+					mlnk.lineStyle = {
+						curveness: 0.2
+					};
+				}
+				
+				linkmap[src_val + "=>" + tgt_val] = lnk;
 			}
 		}
 		
