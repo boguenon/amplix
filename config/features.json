@@ -177,6 +177,16 @@
 							"cls": "ig_schedule_prog"
 						}
 					]
+				},
+				{
+					"name": "BBS Management",
+					"cls": "ig_bbs",
+					"children": [
+						{
+							"name": "BBS Manager",
+							"cls": "ig_mgr_bbs"
+						}
+					]
 				}
 			]
 		},
