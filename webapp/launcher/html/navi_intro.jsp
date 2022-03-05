@@ -33,7 +33,7 @@
 	    	</div>
 	    </div>
 	    <div class="intro-line-break"></div>
-        <div class="introbox introbox_1">
+        <div id="idv_intro_cnt" class="introbox introbox_1">
     		<h2 id="mbutton1">
     			Recent visit and favorites..
     		</h2>

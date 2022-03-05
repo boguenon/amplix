@@ -786,6 +786,7 @@ CREATE TABLE igcbrdmain (
 	iuid #CHAR#(17) NOT NULL,
     cuid #CHAR#(17) NOT NULL,
     sid #CHAR#(17),
+    priority #NUMBER#(4),
     title #VARCHAR#(255) NOT NULL,
     cdate #LONG#,
     mdate #LONG#
@@ -802,10 +803,17 @@ CREATE TABLE igcbrdrep (
 
 CREATE TABLE igcbrdcateg (
 	cuid #CHAR#(17) NOT NULL,
+	name #VARCHAR#(50) NOT NULL,
     title #VARCHAR#(255) NOT NULL,
     sid #CHAR#(17),
     cdate #LONG#,
     mdate #LONG#
+);
+
+CREATE TABLE igcbrdfiles (
+	buid #CHAR#(17) NOT NULL,
+	fuid #CHAR#(17) NOT NULL,
+	name #VARCHAR#(50) NOT NULL
 );
 
 CREATE TABLE igcbrdcnt (
@@ -813,4 +821,22 @@ CREATE TABLE igcbrdcnt (
     iuid #CHAR#(17),
     seq #NUMBER#(4),
     content #VARCHAR#(255)
+);
+
+CREATE TABLE igcnotice (
+	nuid #CHAR#(17) NOT NULL,
+	title #VARCHAR#(255) NOT NULL,
+	sid #CHAR#(17),
+	mwidth #NUMBER#(5),
+	mheight #NUMBER#(5),
+	cdate #LONG#,
+	mdate #LONG#,
+	fromdate #LONG#,
+	todate #LONG#
+);
+
+CREATE TABLE igcnoticecnt (
+	nuid #CHAR#(17) NOT NULL,
+	seq #NUMBER#(4) NOT NULL,
+	content #VARCHAR#(1000)
 );
