@@ -179,12 +179,12 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 		
 		if (copsettings.m_h_axis_srcdt && copsettings.m_h_axis_srcdt in fieldmap)
 		{
-			col_msrc = fieldmap[copsetting.m_h_axis_srcdt];
+			col_msrc = fieldmap[copsettings.m_h_axis_srcdt];
 		}
 		
 		if (copsettings.m_h_axis_tgtdt && copsettings.m_h_axis_tgtdt in fieldmap)
 		{
-			col_mtgt = fieldmap[copsetting.m_h_axis_tgtdt];
+			col_mtgt = fieldmap[copsettings.m_h_axis_tgtdt];
 		}
 		
 		if (copsettings.m_h_axis_cmt && copsettings.m_h_axis_cmt in fieldmap)
