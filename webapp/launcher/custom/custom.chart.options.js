@@ -1018,6 +1018,10 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_h_ratio]").setValue(Number(option.settings.m_h_ratio || "50"));
 				me.down("[name=m_h_end_symbol]").setValue(option.settings.m_h_end_symbol || "arrow");
 				
+				me.down("[name=m_run_target]").setValue(option.settings.m_run_target);
+				me.down("[name=m_run_ucl]").setValue(option.settings.m_run_ucl);
+				me.down("[name=m_run_lcl]").setValue(option.settings.m_run_lcl);
+				
 				var barr = ma.sheetoption.model.rows.concat(ma.sheetoption.model.measures);
 				
 				$.each(["m_h_axis_categ", "m_h_axis_src", "m_h_axis_tgt", "m_h_axis_srcdt", "m_h_axis_tgtdt", "m_h_axis_cmt"], function(i, k) {
@@ -1062,6 +1066,10 @@ IG$._customChartPanels = function() {
 				option.settings.m_h_ratio = "" + me.down("[name=m_h_ratio]").getValue();
 				option.settings.m_h_end_symbol = me.down("[name=m_h_end_symbol]").getValue();
 				
+				option.settings.m_run_target = me.down("[name=m_run_target]").getValue();
+				option.settings.m_run_ucl = me.down("[name=m_run_ucl]").getValue();
+				option.settings.m_run_lcl = me.down("[name=m_run_lcl]").getValue();
+				
 				$.each(["m_h_axis_categ", "m_h_axis_src", "m_h_axis_tgt", "m_h_axis_srcdt", "m_h_axis_tgtdt", "m_h_axis_cmt"], function(i, k) {
 					var ctrl = me.down("[name=" + k + "]");
 					option.settings[k] = ctrl.getValue();
@@ -1075,6 +1083,7 @@ IG$._customChartPanels = function() {
 			me.down("[name=pb03]").setVisible(subtype == "svgmap");
 			me.down("[name=m_wc_opt]").setVisible(subtype == "wordcloud");
 			me.down("[name=m_hier_options]").setVisible(subtype == "hierarchialgraph");
+			me.down("[name=pbrunchart]").setVisible(subtype == "runchart");
 		},
 		items: [
 			{
@@ -1129,6 +1138,30 @@ IG$._customChartPanels = function() {
 						},
 						scope: this
 					} 
+				]
+			},
+			{
+				xtype: "fieldset",
+				title: "Process",
+				layout: "anchor",
+				hidden: true,
+				name: "pbrunchart",
+				items: [
+					{
+						xtype: "textfield",
+						fieldLabel: "Target Value",
+						name: "m_run_target"
+					},
+					{
+						xtype: "textfield",
+						fieldLabel: "Upper Spec Limit",
+						name: "m_run_ucl"
+					},
+					{
+						xtype: "textfield",
+						fieldLabel: "Lower Spec Limit",
+						name: "m_run_lcl"
+					}
 				]
 			},
 			{

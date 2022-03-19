@@ -20,6 +20,7 @@ IG$.__chartoption.chartext.runchart = function(owner) {
 IG$.__chartoption.chartext.runchart.prototype = {
 	getStat: function(owner, results) {
 		var me = this,
+			cop = owner.cop,
 			mctrl = owner.rpc.ownerCt,
 			req = new IG$._rpc$(),
 			rpt = owner.reportoption.getCurrentPivot(),
@@ -29,12 +30,16 @@ IG$.__chartoption.chartext.runchart.prototype = {
 		
 		anal_options = rsheet.anal_options;
 		
+		cop.settings = cop.settings || {};
+		
 		n_options.push({
 			name: "quality_runchart",
 			description: "auto generated",
 			analtype: "proc_cap_index",
 			options: {
-				
+				ucl: cop.settings.m_run_ucl,
+				lcl: cop.settings.m_run_lcl,
+				t: cop.settings.m_run_target
 			},
 			input_fields: []
 		});
@@ -314,14 +319,16 @@ IG$.__chartoption.chartext.runchart.prototype = {
 				}
 				
 				$.each(row, function(j, cell) {
-					var cval = cell.text || cell.code,
+					var cval,
 						nval;
 					if (j < colfix) // category
 					{
+						cval = cell.text || cell.code;
 						cname = (j == 0) ? cval : cname + " " + cval; 
 					}
 					else if (j == sr) // one metric
 					{
+						cval = cell.code || cell.text;
 						nval = Number(cval);
 						
 						if (isNaN(nval) == false)
