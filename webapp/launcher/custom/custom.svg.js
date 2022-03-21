@@ -58,6 +58,15 @@ IG$.__chartoption.chartext.svgmap.prototype = {
 		svgmap.load(m_svgtype);
 
 		svgmap.container.unbind("svgloaded");
+		
+		svgmap.container.unbind("region_clicked");
+		
+		svgmap.container.bind("region_clicked", function(e, opt) {
+			if (opt.sender && opt.param)
+			{
+				owner.procClickEvent.call(owner, opt.sender, opt.param);
+			}
+		}); 
 
 		svgmap.container.bind("svgloaded", function() {
 			var i,
