@@ -1018,6 +1018,10 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_h_ratio]").setValue(Number(option.settings.m_h_ratio || "50"));
 				me.down("[name=m_h_end_symbol]").setValue(option.settings.m_h_end_symbol || "arrow");
 				
+				me.down("[name=m_iv_bgimg]").setValue(option.settings.m_iv_bgimg);
+				me.down("[name=m_iv_data]").setValue(option.settings.m_iv_data);
+				me.down("[name=m_iv_type]").setValue(option.settings.m_iv_type);
+				
 				me.down("[name=m_run_target]").setValue(option.settings.m_run_target);
 				me.down("[name=m_run_ucl]").setValue(option.settings.m_run_ucl);
 				me.down("[name=m_run_lcl]").setValue(option.settings.m_run_lcl);
@@ -1066,6 +1070,10 @@ IG$._customChartPanels = function() {
 				option.settings.m_h_ratio = "" + me.down("[name=m_h_ratio]").getValue();
 				option.settings.m_h_end_symbol = me.down("[name=m_h_end_symbol]").getValue();
 				
+				option.settings.m_iv_bgimg = me.down("[name=m_iv_bgimg]").getValue();
+				option.settings.m_iv_data = me.down("[name=m_iv_data]").getValue();
+				option.settings.m_iv_type = me.down("[name=m_iv_type]").getValue();
+				
 				option.settings.m_run_target = me.down("[name=m_run_target]").getValue();
 				option.settings.m_run_ucl = me.down("[name=m_run_ucl]").getValue();
 				option.settings.m_run_lcl = me.down("[name=m_run_lcl]").getValue();
@@ -1084,6 +1092,7 @@ IG$._customChartPanels = function() {
 			me.down("[name=m_wc_opt]").setVisible(subtype == "wordcloud");
 			me.down("[name=m_hier_options]").setVisible(subtype == "hierarchialgraph");
 			me.down("[name=pbrunchart]").setVisible(subtype == "runchart");
+			me.down("[name=m_imgviewer_options]").setVisible(subtype == "imgviewer");
 		},
 		items: [
 			{
@@ -1319,6 +1328,48 @@ IG$._customChartPanels = function() {
 						name: "s_t_fo",
 						fieldLabel: IRm$.r1("L_DATE_FORMAT") // "Date Format"
 					} 
+				]
+			},
+			// imgviewer chart options
+			{
+				xtype: "fieldset",
+				title: "Image Viewer Options",
+				name: "m_imgviewer_options",
+				hidden: true,
+				layout: {
+					type: "vbox",
+					align: "stretch"
+				},
+				items: [
+					{
+						xtype: "textfield",
+						name: "m_iv_bgimg",
+						fieldLabel: "Background Image"
+					},
+					{
+						xtype: "textfield",
+						name: "m_iv_data",
+						fieldLabel: "Data Url"
+					},
+					{
+						xtype: "combobox",
+						name: "m_iv_type",
+						fieldLabel: "Draw Type",
+						queryMode: "local",
+						displayField: "name",
+						valueField: "value",
+						editable: false,
+						autoSelect: false,
+						store: {
+							xtype: "store",
+							fields: [],
+							data: [
+								{name: "None", value: ""},
+								{name: "Pie Chart", value: "pie"},
+								{name: "Bar Chart", value: "bar"}
+							]
+						}
+					}
 				]
 			},
 			// hierarchy chart options

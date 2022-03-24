@@ -22,7 +22,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
         	formatter: function(item) {
         		if (item.dataType == "edge")
         		{
-        			return "edge " + item.name;
+        			return item.data.desc || ("edge " + item.name);
         		}
         	}
         },
@@ -317,7 +317,9 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 			{
 				lnk = {
 					source: snode.id,
-					target: tnode.id
+					target: tnode.id,
+					
+					desc: src_val + " => " + tgt_val
 				};
 				
 				base.links.push(lnk);
