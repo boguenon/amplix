@@ -63,12 +63,16 @@ IG$.__chartoption.chartext.imgviewer.prototype._draw_charts = function(result, r
 			tabledata = result._tabledata,
 			colfix = result.colfix,
 			isnodata = result.rowfix == result.rowcnt,
-			i,
-			row, t,
+			i, j,
+			row, t, tc,
 			header = [],
 			map_position,
-			center = [html.width()/2, html.height()/2];
-			
+			center = [html.width()/2, html.height()/2],
+			cop = owner.cop,
+			sep = cop.xaxissep || ig$.chart_separator || IG$._separator;
+		
+		sep = sep == "nl" ? "\n" : sep;
+		
 		me.map_position = map_position = {};
 		
 		if (me.data.data)
@@ -115,7 +119,13 @@ IG$.__chartoption.chartext.imgviewer.prototype._draw_charts = function(result, r
 				row = tabledata[0];
 				for (i=colfix; i < result.colcnt; i++)
 				{
-					t = row[i].text || row[i].code;
+					t = "";
+					for (j=0; j < result.rowfix; j++)
+					{
+						tc = row[i].text || row[i].code;
+						
+						t = (j == 0) ? tc : t + sep + tc;
+					}
 					header.push(t);
 				}
 				
