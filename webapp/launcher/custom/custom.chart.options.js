@@ -1018,6 +1018,8 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_h_ratio]").setValue(Number(option.settings.m_h_ratio || "50"));
 				me.down("[name=m_h_end_symbol]").setValue(option.settings.m_h_end_symbol || "arrow");
 				
+				me.down("[name=m_html_basestyle]").setValue(option.settings.m_html_basestyle);
+				
 				me.down("[name=m_iv_bgimg]").setValue(option.settings.m_iv_bgimg);
 				me.down("[name=m_iv_data]").setValue(option.settings.m_iv_data);
 				me.down("[name=m_iv_type]").setValue(option.settings.m_iv_type);
@@ -1070,6 +1072,8 @@ IG$._customChartPanels = function() {
 				option.settings.m_h_ratio = "" + me.down("[name=m_h_ratio]").getValue();
 				option.settings.m_h_end_symbol = me.down("[name=m_h_end_symbol]").getValue();
 				
+				option.settings.m_html_basestyle = me.down("[name=m_html_basestyle]").setValue();
+				
 				option.settings.m_iv_bgimg = me.down("[name=m_iv_bgimg]").getValue();
 				option.settings.m_iv_data = me.down("[name=m_iv_data]").getValue();
 				option.settings.m_iv_type = me.down("[name=m_iv_type]").getValue();
@@ -1093,6 +1097,7 @@ IG$._customChartPanels = function() {
 			me.down("[name=m_hier_options]").setVisible(subtype == "hierarchialgraph");
 			me.down("[name=pbrunchart]").setVisible(subtype == "runchart");
 			me.down("[name=m_imgviewer_options]").setVisible(subtype == "imgviewer");
+			me.down("[name=m_html_options]").setVisible(subtype == "htmltable" || subtype == "html_ranktable");
 		},
 		items: [
 			{
@@ -1372,6 +1377,25 @@ IG$._customChartPanels = function() {
 					}
 				]
 			},
+			// html table options
+			{
+				xtype: "fieldset",
+				title: "HTML Table Options",
+				name: "m_html_options",
+				hidden: true,
+				layout: {
+					type: "vbox",
+					align: "stretch"
+				},
+				items: [
+					{
+						xtype: "textfield",
+						name: "m_html_basestyle",
+						fieldLabel: "Base CSS Style"
+					}
+				]
+			},
+			
 			// hierarchy chart options
 			{
 				xtype: "fieldset",
