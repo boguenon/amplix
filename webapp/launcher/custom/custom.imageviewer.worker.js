@@ -12,6 +12,8 @@ IG$.__chartoption.chartext.imgviewer.prototype.drawChart = function(owner, resul
 	
 	me.owner = owner;
 	me.container = container;
+	me.results = results;
+	me.rendertype = rendertype;
 	
 	if (me.html)
 	{
@@ -60,9 +62,9 @@ IG$.__chartoption.chartext.imgviewer.prototype.drawChart = function(owner, resul
 IG$.__chartoption.chartext.imgviewer.prototype._draw_charts = function(result, rendertype) {
 		var me = this,
 			owner = me.owner,
-			tabledata = result._tabledata,
-			colfix = result.colfix,
-			isnodata = result.rowfix == result.rowcnt,
+			tabledata = result ? result._tabledata : null,
+			colfix = result ? result.colfix : 0,
+			isnodata = result ? result.rowfix == result.rowcnt : true,
 			i, j,
 			row, t, tc,
 			header = [],
@@ -85,30 +87,48 @@ IG$.__chartoption.chartext.imgviewer.prototype._draw_charts = function(result, r
 				
 				map_position[k] = d;
 				
-				d.ehtml = $("<div class='idv-imgview-region' title='" + k + "'></div>").appendTo(me.html)
-				d.ehtml.css({
-					position: "absolute",
-					width: d.w,
-					height: d.h,
-					left: center[0] + d.x - imgwidth / 2,
-					top: center[1] + d.y - imgheight / 2,
-					border: "none",
-					backgroundColor: "#efefef",
-					cursor: "pointer"
-				});
+				if (!d.ehtml)
+				{
+					d.ehtml = $("<div class='idv-imgview-region' title='" + k + "'></div>").appendTo(me.html)
+					d.ehtml.css({
+						position: "absolute",
+						width: d.w,
+						height: d.h,
+						left: center[0] + d.x - imgwidth / 2,
+						top: center[1] + d.y - imgheight / 2,
+						border: "none",
+						backgroundColor: "#efefef",
+						cursor: "pointer"
+					});
+					
+					d.ehtml.bind("click", function(e) {
+						var sender = {
+								name: header.length ? header[0] : ""
+							},
+							param = {
+								point: {
+									category: k
+								}
+							};
+					
+						owner.procClickEvent.call(owner, sender, param);
+					});
+				}
+				else
+				{
+					d.ehtml.css({
+						left: center[0] + d.x - imgwidth / 2,
+						top: center[1] + d.y - imgheight / 2
+					});
+				}
 				
-				d.ehtml.bind("click", function(e) {
-					var sender = {
-							name: header.length ? header[0] : ""
-						},
-						param = {
-							point: {
-								category: k
-							}
-						};
-				
-					owner.procClickEvent.call(owner, sender, param);
-				});
+				if (d.html)
+				{
+					d.html.css({
+						left: center[0] + d.x - imgwidth / 2,
+						top: center[1] + d.y - imgheight / 2
+					});
+				}
 			});
 		}
 			
@@ -229,10 +249,9 @@ IG$.__chartoption.chartext.imgviewer.prototype._draw_echart = function(pos, row,
 
 IG$.__chartoption.chartext.imgviewer.prototype.updatedisplay = function(owner, w, h) {
 	// this.map.m1.call(this.map);
-	var me = this,
-		i,
-		px = 0, py = 0, pw, ph = h,
-		img_w, img_h;
+	var me = this;
+	
+	me._draw_charts();
 }
 
 IG$.__chartoption.chartext.imgviewer.prototype.destroy = function() {

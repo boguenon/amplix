@@ -1,5 +1,5 @@
 ﻿ig$.bootconfig = {
-	"cache": "202203242041",
+	"cache": "202203251639",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -65,7 +65,10 @@
 			"./custom/custom.hierarchy.js",
 			"./custom/custom.treehierarchy.js",
 			"./custom/custom.weekday.js",
-			"./custom/custom.hierarchial_graph.js"
+			"./custom/custom.hierarchial_graph.js",
+			
+			"./custom/custom.html.table.js",
+			"./custom/custom.html.rank_table.js"
         ],
         "sso": [
             "./custom/sso_client.js"
