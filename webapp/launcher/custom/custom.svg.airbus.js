@@ -20,7 +20,7 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
 			container = owner.container,
 			svgmap;
 		
-		me.map = svgmap = new IG$.SVGLoader($(container));
+		me.map = svgmap = new IG$.SVGLoader($(container), me, owner);
 
 		svgmap.container.unbind("svgloaded");
 
