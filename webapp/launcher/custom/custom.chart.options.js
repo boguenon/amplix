@@ -1013,6 +1013,7 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_svg_line_width]").setValue(Number(option.settings.m_svg_line_width || "2"));
 				me.down("[name=m_svg_font_color]").setValue(option.settings.m_svg_font_color || "#ff0000");
 				me.down("[name=m_svg_font_size]").setValue(Number(option.settings.m_svg_font_size || "20"));
+				me.down("[name=m_svg_label_option]").setValue(option.settings.m_svg_label_option);
 				
 				me.down("[name=m_h_min]").setValue(Number(option.settings.m_h_min || "3"));
 				me.down("[name=m_h_max]").setValue(Number(option.settings.m_h_max || "15"));
@@ -1070,6 +1071,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_svg_line_width = "" + me.down("[name=m_svg_line_width]").getValue();
 				option.settings.m_svg_font_color = me.down("[name=m_svg_font_color]").getValue();
 				option.settings.m_svg_font_size = "" + me.down("[name=m_svg_font_size]").getValue();
+				option.settings.m_svg_label_option = me.down("[name=m_svg_label_option]").getValue();
 				
 				option.settings.m_h_min = "" + me.down("[name=m_h_min]").getValue();
 				option.settings.m_h_max = "" + me.down("[name=m_h_max]").getValue();
@@ -1395,6 +1397,11 @@ IG$._customChartPanels = function() {
 						xtype: "numberfield",
 						name: "m_svg_font_size",
 						fieldLabel: "L_FONT_SIZE"
+					},
+					{
+						xtype: "textfield",
+						name: "m_svg_label_option",
+						fieldLabel: "L_LABEL_OPTION"
 					}
 				]
 			},

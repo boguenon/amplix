@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg style='background:#eaeaea;overflow:visible' height="1107" width="800" xmlns="http://www.w3.org/2000/svg">
+<svg style='background:#eaeaea;overflow:visible' height="1107" width="500" xmlns="http://www.w3.org/2000/svg">
 <defs>
     <filter id="dropshadow">
         <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
