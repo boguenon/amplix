@@ -40,7 +40,7 @@ body {
 	overflow-x: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202203311348"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202203311355"></link>
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript">
 var assist_message = [
