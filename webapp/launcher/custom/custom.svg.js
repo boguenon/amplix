@@ -53,7 +53,7 @@ IG$.__chartoption.chartext.svgmap.prototype = {
 			});
 		}
 		
-		me.map = svgmap = new IG$.SVGLoader($(container));
+		me.map = svgmap = new IG$.SVGLoader($(container), me, owner);
 		svgmap.idfield = renderer ? renderer.idfield : null;
 		svgmap.load(m_svgtype);
 

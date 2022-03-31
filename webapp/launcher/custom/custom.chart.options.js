@@ -1009,6 +1009,11 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_wc_max]").setValue(option.settings.m_wc_max || 32);
 				me.down("[name=m_svg_min_color]").setValue(option.settings.m_svg_min_color || "#ffff51");
 				me.down("[name=m_svg_max_color]").setValue(option.settings.m_svg_max_color || "#ff0000");
+				me.down("[name=m_svg_line_color]").setValue(option.settings.m_svg_line_color || "#000000");
+				me.down("[name=m_svg_line_width]").setValue(Number(option.settings.m_svg_line_width || "2"));
+				me.down("[name=m_svg_font_color]").setValue(option.settings.m_svg_font_color || "#ff0000");
+				me.down("[name=m_svg_font_size]").setValue(Number(option.settings.m_svg_font_size || "20"));
+				me.down("[name=m_svg_label_option]").setValue(option.settings.m_svg_label_option);
 				
 				me.down("[name=m_h_min]").setValue(Number(option.settings.m_h_min || "3"));
 				me.down("[name=m_h_max]").setValue(Number(option.settings.m_h_max || "15"));
@@ -1062,6 +1067,11 @@ IG$._customChartPanels = function() {
 				option.settings.m_wc_max = me.down("[name=m_wc_max]").getValue();
 				option.settings.m_svg_min_color = me.down("[name=m_svg_min_color]").getValue();
 				option.settings.m_svg_max_color = me.down("[name=m_svg_max_color]").getValue();
+				option.settings.m_svg_line_color = me.down("[name=m_svg_line_color]").getValue();
+				option.settings.m_svg_line_width = "" + me.down("[name=m_svg_line_width]").getValue();
+				option.settings.m_svg_font_color = me.down("[name=m_svg_font_color]").getValue();
+				option.settings.m_svg_font_size = "" + me.down("[name=m_svg_font_size]").getValue();
+				option.settings.m_svg_label_option = me.down("[name=m_svg_label_option]").getValue();
 				
 				option.settings.m_h_min = "" + me.down("[name=m_h_min]").getValue();
 				option.settings.m_h_max = "" + me.down("[name=m_h_max]").getValue();
@@ -1235,6 +1245,7 @@ IG$._customChartPanels = function() {
 									]
 								}
 							},
+							
 							{
 								xtype: "container",
 								flex: 1
@@ -1284,6 +1295,113 @@ IG$._customChartPanels = function() {
 								flex: 1
 							}
 						]
+					},
+					
+					{
+						xtype: "fieldcontainer",
+						anchor: "100%",
+						fieldLabel: IRm$.r1("L_LINE_COLOR"),
+						layout: {
+							type: "hbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "textfield",
+								name: "m_svg_line_color",
+								width: 120
+							},
+							{
+								xtype: "splitter"
+							},
+							{
+								xtype: "splitbutton",
+								width: 30,
+								menu: {
+									showSeparator: false,
+									items: [
+										{
+											xtype: "colorpicker",
+											listeners: {
+												select: function(cp, color) {
+													var ctrl = this.down("[name=m_svg_line_color]");
+													ctrl.setValue("#" + color);
+												},
+												scope: this
+											}
+										}, 
+										"-"
+									]
+								}
+							},
+							
+							{
+								xtype: "container",
+								flex: 1
+							}
+						]
+					},
+					
+					{
+						xtype: "numberfield",
+						name: "m_svg_line_width",
+						fieldLabel: "L_LINE_WIDTH"
+					},
+					
+					{
+						xtype: "fieldcontainer",
+						anchor: "100%",
+						fieldLabel: IRm$.r1("L_FONT_COLOR"),
+						layout: {
+							type: "hbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "textfield",
+								name: "m_svg_font_color",
+								width: 120
+							},
+							{
+								xtype: "splitter"
+							},
+							{
+								xtype: "splitbutton",
+								width: 30,
+								menu: {
+									showSeparator: false,
+									items: [
+										{
+											xtype: "colorpicker",
+											listeners: {
+												select: function(cp, color) {
+													var ctrl = this.down("[name=m_svg_font_color]");
+													ctrl.setValue("#" + color);
+												},
+												scope: this
+											}
+										}, 
+										"-"
+									]
+								}
+							},
+							
+							{
+								xtype: "container",
+								flex: 1
+							}
+						]
+					},
+					
+					{
+						xtype: "numberfield",
+						name: "m_svg_font_size",
+						fieldLabel: "L_FONT_SIZE"
+					},
+					{
+						xtype: "textfield",
+						name: "m_svg_label_option",
+						fieldLabel: "L_LABEL_OPTION"
 					}
 				]
 			},
