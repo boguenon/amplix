@@ -103,6 +103,9 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 				td.addClass("ig-dvrtbl-fixed");
 			}
 			
+			td = $("<td></td>").appendTo(thr);
+			td.addClass("ig-dvrtbl-header");
+			
 			for (i=0; i < slength; i++)
 			{
 				td = $("<td></td>").appendTo(thr);
@@ -119,10 +122,22 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 					
 					var td_row = [];
 					
-					for (j=0; j < colfix + slength; j++)
+					for (j=0; j < colfix + slength + 1; j++)
 					{
 						var tm = $("<td></td>").appendTo(tr);
-						tm.addClass(j == 0 ? "ig-dvrtbl-fixed" : "ig-dvrtbl-data");
+						if (j == 0)
+						{
+							tm.addClass("ig-dvrtbl-fixed");
+						}
+						else if (j == 1)
+						{
+							tm.addClass("ig-drvtbl-header");
+						}
+						else
+						{
+							tm.addClass("ig-dvrtbl-data");
+						}
+						
 						td_row.push(tm);
 					}
 					
@@ -141,7 +156,26 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 						owner.procClickEvent.call(owner, sender, {});
 					});
 					
-					var seq = 1;
+					td = td_row[1];
+					var hrow = tabledata[0];
+					
+					$("<div class='ig-dvrtbl-category ig-dvrtbl-category-head'>" + (hrow[1].text || hrow[1].code) + "</div>")
+						.appendTo(td);
+						
+					var n = 0;
+					
+					for (n=colfix; n < colcnt; n++)
+					{
+						var cell = hrow[n],
+							celltext = cell.text || cell.code || "",
+							cls = "ig-dvrtbl-measure-head";
+							
+						cls += " ig-dvrtbl-measure-head_" + (cell.index);
+						var div_meas = $("<div class='" + cls + "'>" + celltext + "</div>")
+							.appendTo(td);
+					}
+					
+					var seq = 2;
 					
 					$.each(tabledata, function(j, row) {
 						if (j < i)
