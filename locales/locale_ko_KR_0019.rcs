@@ -196,3 +196,14 @@ A;L_READONLY;읽기 전용
 A;L_HIDDEN;숨기기
 
 A;L_UNPIVOT_DEF;언 피벗 정의
+
+A;L_HIDE_LINE;선 숨기기
+A;L_FLEX;플랙스 레이아웃
+A;L_FLEX_MIN_WIDTH;위젯 최소 크기
+A;L_CH_CUST_XLABEL;커스텀 X축 라벨
+A;L_CUST_XLABEL_TYPE;커스텀 X축 유형
+
+A;L_NODATA_COLOR;데이터없음 색상
+A;L_LINE_WIDTH;라인폭
+A;L_FONT_COLOR;폰트 색상
+A;L_LABEL_OPTION;라벨 옵션

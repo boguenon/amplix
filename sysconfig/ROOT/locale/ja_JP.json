@@ -3587,7 +3587,7 @@
     "name" : "L_LINE_TYPE",
     "value" : "Line Type"
   }, {
-    "group" : "locale_ja_JP_0001",
+    "group" : "locale_ja_JP_0019",
     "name" : "L_LINE_WIDTH",
     "value" : "Line Width"
   }, {
@@ -7854,5 +7854,41 @@
     "group" : "locale_ja_JP_0019",
     "name" : "L_HIDDEN",
     "value" : "Hidden"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_UNPIVOT_DEF",
+    "value" : "Un Pivot Definition"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_HIDE_LINE",
+    "value" : "Hide Line"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_FLEX",
+    "value" : "Flex"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_FLEX_MIN_WIDTH",
+    "value" : "Widget Min Width"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_CH_CUST_XLABEL",
+    "value" : "Custom X Label"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_CUST_XLABEL_TYPE",
+    "value" : "Custom X Type"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_NODATA_COLOR",
+    "value" : "NoData Color"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_FONT_COLOR",
+    "value" : "Font Color"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_LABEL_OPTION",
+    "value" : "Label Option"
   } ]
 }
