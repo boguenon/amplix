@@ -196,3 +196,14 @@ A;L_READONLY;Read Only
 A;L_HIDDEN;Hidden
 
 A;L_UNPIVOT_DEF;Un Pivot Definition
+
+A;L_HIDE_LINE;Hide Line
+A;L_FLEX;Flex
+A;L_FLEX_MIN_WIDTH;Widget Min Width
+A;L_CH_CUST_XLABEL;Custom X Label
+A;L_CUST_XLABEL_TYPE;Custom X Type
+
+A;L_NODATA_COLOR;NoData Color
+A;L_LINE_WIDTH;Line Width
+A;L_FONT_COLOR;Font Color
+A;L_LABEL_OPTION;Label Option

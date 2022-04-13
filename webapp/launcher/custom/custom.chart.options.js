@@ -1391,7 +1391,7 @@ IG$._customChartPanels = function() {
 					{
 						xtype: "numberfield",
 						name: "m_svg_line_width",
-						fieldLabel: "L_LINE_WIDTH"
+						fieldLabel: IRm$.r1("L_LINE_WIDTH")
 					},
 					
 					{
@@ -1442,12 +1442,12 @@ IG$._customChartPanels = function() {
 					{
 						xtype: "numberfield",
 						name: "m_svg_font_size",
-						fieldLabel: "L_FONT_SIZE"
+						fieldLabel: IRm$.r1("L_FONTSIZE")
 					},
 					{
 						xtype: "textfield",
 						name: "m_svg_label_option",
-						fieldLabel: "L_LABEL_OPTION"
+						fieldLabel: IRm$.r1("L_LABEL_OPTION")
 					}
 				]
 			},
