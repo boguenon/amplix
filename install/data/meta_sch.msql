@@ -789,7 +789,9 @@ CREATE TABLE igcbrdmain (
     priority #NUMBER#(4),
     title #VARCHAR#(255) NOT NULL,
     cdate #LONG#,
-    mdate #LONG#
+    mdate #LONG#,
+    author #VARCHAR#(200),
+    read_cnt #NUMBER#(7) DEFAULT 0
 );
 
 CREATE TABLE igcbrdrep (
