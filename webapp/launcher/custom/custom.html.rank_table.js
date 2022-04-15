@@ -22,12 +22,20 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 			copsettings = cop.settings || {},
 			m_html_basestyle = copsettings.m_html_basestyle || "",
 			html = me.html,
-			html_tb;
+			html_tb,
+			expdata;
 
 		if (html)
 		{
 			html.remove();
 		}
+		
+		expdata = me.expdata = {
+			rowcnt: 0,
+			colcnt: 0,
+			styles: {},
+			rows: []
+		};
 		
 		html = me.html = $("<div class='ig-dvtbl-cnt'></div>").appendTo(container);
 		$("<div class='ig-dvtbl-head'></div>").appendTo(me.html);
@@ -120,30 +128,58 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 				{
 					tr = $("<tr></tr>");
 					
-					var td_row = [];
+					var td_row = [],
+						exp_row,
+						exp_crows = [],
+						exp_cell;
+					
+					for (j=colfix; j < colcnt + 1; j++)
+					{
+						exp_row = [];
+						exp_crows.push(exp_row);
+						expdata.rows.push(exp_row);
+						
+						for (k=0; k < colfix + slength + 1; k++)
+						{
+							exp_row.push({});
+						}
+					}
+					
+					exp_row = exp_crows[0];
+					exp_row[0].rowspan = colcnt - colfix + 1;
 					
 					for (j=0; j < colfix + slength + 1; j++)
 					{
-						var tm = $("<td></td>").appendTo(tr);
+						var tm = $("<td></td>").appendTo(tr),
+							stname;
+						
 						if (j == 0)
 						{
-							tm.addClass("ig-dvrtbl-fixed");
+							stname = "ig-dvrtbl-fixed";
 						}
 						else if (j == 1)
 						{
-							tm.addClass("ig-drvtbl-header");
+							stname = "ig-drvtbl-header";
 						}
 						else
 						{
-							tm.addClass("ig-dvrtbl-data");
+							stname = "ig-dvrtbl-data";
 						}
 						
+						tm.addClass(stname);
 						td_row.push(tm);
+						
+						for (k=0; k < exp_crows.length; k++)
+						{
+							exp_crows[k][j].style = exp_crows[k][j].style || [];
+							exp_crows[k][j].style.push(stname);
+						}
 					}
 					
 					var cell = row[0],
 						celltext = cell.text || cell.code || "";
 					td_row[0].html(celltext);
+					exp_crows[0][0].text = celltext;
 					
 					cell.r = i;
 					cell.c = 0;
@@ -162,6 +198,11 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 					$("<div class='ig-dvrtbl-category ig-dvrtbl-category-head'>" + (hrow[1].text || hrow[1].code) + "</div>")
 						.appendTo(td);
 						
+					exp_crows[0][1].text = hrow[1].text || hrow[1].code;
+					exp_crows[0][1].style = exp_crows[0][1].style || [];
+					exp_crows[0][1].style.push("ig-dvrtbl-category");
+					exp_crows[0][1].style.push("ig-dvrtbl-head"); 
+						
 					var n = 0;
 					
 					for (n=colfix; n < colcnt; n++)
@@ -173,6 +214,9 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 						cls += " ig-dvrtbl-measure-head_" + (cell.index);
 						var div_meas = $("<div class='" + cls + "'>" + celltext + "</div>")
 							.appendTo(td);
+						exp_crows[n-colfix + 1][1].text = celltext; 
+						exp_crows[n-colfix + 1][1].style = exp_crows[n-colfix + 1][1].style || [];
+						exp_crows[n-colfix + 1][1].style.push(cls); 
 					}
 					
 					var seq = 2;
@@ -189,6 +233,10 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 							var celltext = cell.text || cell.code || "";
 							cell.r = j;
 							cell.c = 1;
+							
+							exp_crows[0][seq].text = celltext;
+							exp_crows[0][seq].style = exp_crows[0][seq].style || [];
+							exp_crows[0][seq].style.push("ig-dvrtbl-category"); 
 							
 							var div_categ = $("<div class='ig-dvrtbl-category'>" + celltext + "</div>")
 								.appendTo(td);
@@ -216,6 +264,9 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 								cls += " ig-dvrtbl-measure_" + (cell.index);
 								var div_meas = $("<div class='" + cls + "'>" + celltext + "</div>")
 									.appendTo(td);
+									
+								exp_crows[k - colfix + 1][seq].text = celltext;
+								exp_crows[k - colfix + 1].styles = cls.split(" "); 
 								
 								div_meas.bind("click", function(e) {
 									var sender = {
@@ -259,6 +310,22 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 
 	updatedisplay: function(owner, w, h) {
 		var me = this;
+	},
+	
+	getExportData: function() {
+		var me = this,
+			data = {
+				image_type: "html_json",
+				image_data: null
+			},
+			html_data = me.expdata;
+			
+		html_data.rowcnt = html_data.rows.length;
+		html_data.colcnt = (html_data.rows.length ? html_data.rows[0].length : 0);
+		
+		data.image_data = JSON.stringify(html_data);
+		
+		return data;
 	},
 	dispose: function() {
 		var me = this,
