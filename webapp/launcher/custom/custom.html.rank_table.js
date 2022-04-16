@@ -23,7 +23,8 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 			m_html_basestyle = copsettings.m_html_basestyle || "",
 			html = me.html,
 			html_tb,
-			expdata;
+			expdata,
+			styles = results._styles;
 
 		if (html)
 		{
@@ -174,12 +175,28 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 							exp_crows[k][j].style = exp_crows[k][j].style || [];
 							exp_crows[k][j].style.push(stname);
 						}
+						
+						if (j < 2)
+						{
+							stname = exp_crows[0][j].style.join(" "); 
+					
+							es = expdata.styles[stname];
+										
+							if (!es)
+							{
+								es = expdata.styles[stname] = {};
+								es.cell = {
+									html: tm
+								};
+							} 
+						}
 					}
 					
 					var cell = row[0],
 						celltext = cell.text || cell.code || "";
 					td_row[0].html(celltext);
 					exp_crows[0][0].text = celltext;
+					exp_crows[0][0].code = cell.code;
 					
 					cell.r = i;
 					cell.c = 0;
@@ -195,13 +212,26 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 					td = td_row[1];
 					var hrow = tabledata[0];
 					
-					$("<div class='ig-dvrtbl-category ig-dvrtbl-category-head'>" + (hrow[1].text || hrow[1].code) + "</div>")
+					var dcell = $("<div class='ig-dvrtbl-category ig-dvrtbl-category-head'>" + (hrow[1].text || hrow[1].code) + "</div>")
 						.appendTo(td);
 						
 					exp_crows[0][1].text = hrow[1].text || hrow[1].code;
+					exp_crows[0][1].code = hrow[1].code;
 					exp_crows[0][1].style = exp_crows[0][1].style || [];
 					exp_crows[0][1].style.push("ig-dvrtbl-category");
-					exp_crows[0][1].style.push("ig-dvrtbl-head"); 
+					exp_crows[0][1].style.push("ig-dvrtbl-head");
+					
+					stname = exp_crows[0][1].style.join(" "); 
+					
+					es = expdata.styles[stname];
+								
+					if (!es)
+					{
+						es = expdata.styles[stname] = {};
+						es.cell = {
+							html: dcell
+						};
+					} 
 						
 					var n = 0;
 					
@@ -215,8 +245,20 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 						var div_meas = $("<div class='" + cls + "'>" + celltext + "</div>")
 							.appendTo(td);
 						exp_crows[n-colfix + 1][1].text = celltext; 
+						exp_crows[n-colfix + 1][1].code = cell.code;
 						exp_crows[n-colfix + 1][1].style = exp_crows[n-colfix + 1][1].style || [];
 						exp_crows[n-colfix + 1][1].style.push(cls); 
+						
+						var stname = exp_crows[n-colfix + 1][1].style.join(" "); 
+						es = expdata.styles[stname];
+								
+						if (!es)
+						{
+							es = expdata.styles[stname] = {};
+							es.cell = {
+								html: div_meas
+							};
+						} 
 					}
 					
 					var seq = 2;
@@ -230,16 +272,31 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 							var td = td_row[seq];
 							
 							var cell = row[1];
-							var celltext = cell.text || cell.code || "";
+							var celltext = cell.text || cell.code || "",
+								stylename = cell.stylename,
+								cs = styles[stylename];
 							cell.r = j;
 							cell.c = 1;
 							
 							exp_crows[0][seq].text = celltext;
+							exp_crows[0][seq].code = cell.code;
 							exp_crows[0][seq].style = exp_crows[0][seq].style || [];
 							exp_crows[0][seq].style.push("ig-dvrtbl-category"); 
 							
 							var div_categ = $("<div class='ig-dvrtbl-category'>" + celltext + "</div>")
 								.appendTo(td);
+								
+							var stname = exp_crows[0][seq].style.join(" ");
+							
+							es = expdata.styles[stname];
+								
+							if (!es)
+							{
+								es = expdata.styles[stname] = {};
+								es.cell = {
+									html: div_categ
+								};
+							} 
 								
 							div_categ.bind("click", function(e) {
 								var sender = {
@@ -257,6 +314,9 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 								
 								var cell = row[k],
 									celltext = cell.text || cell.code || "",
+									stylename = cell.stylename,
+									cs = styles[stylename],
+									es, 
 									cls = "ig-dvrtbl-measure";
 									
 								cell.r = j;
@@ -266,7 +326,19 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 									.appendTo(td);
 									
 								exp_crows[k - colfix + 1][seq].text = celltext;
-								exp_crows[k - colfix + 1].styles = cls.split(" "); 
+								exp_crows[k - colfix + 1][seq].code = cell.code;
+								exp_crows[k - colfix + 1][seq].style = cls.split(" ");
+								
+								es = expdata.styles[cls];
+								
+								if (!es)
+								{
+									es = expdata.styles[cls] = {};
+									es.cell = {
+										html: div_meas,
+										style: cs
+									};
+								} 
 								
 								div_meas.bind("click", function(e) {
 									var sender = {
@@ -319,6 +391,92 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 				image_data: null
 			},
 			html_data = me.expdata;
+			
+		var rgb2hex = function(rgb) {
+			var m,
+				hex;
+				
+			if (rgb.charAt(0) == '#')
+				return rgb;
+			
+			m = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+			
+			if (m)
+			{
+				hex = "#" +
+					("0" + parseInt(m[1],10).toString(16)).slice(-2) +
+					("0" + parseInt(m[2],10).toString(16)).slice(-2) +
+					("0" + parseInt(m[3],10).toString(16)).slice(-2);
+			}
+			else
+			{
+				m = rgb.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+\.{0,1}\d*))?\)$/);
+				if (m)
+				{
+					var a = parseInt(m[3],10);
+					
+					if (a == 0)
+					{
+						return null;
+					}
+					
+					hex = "#" +
+						("0" + parseInt(m[1],10).toString(16)).slice(-2) +
+						("0" + parseInt(m[2],10).toString(16)).slice(-2) +
+						("0" + parseInt(m[3],10).toString(16)).slice(-2);
+				}
+			}
+			return hex;
+		}
+		
+		var fontsize = function(val) {
+			if (val && val.length)
+			{
+				if (val.endsWith("px"))
+				{
+					val = val.substring(0, val.length - 2);
+				}
+				
+				if (typeof(val) == "string")
+					val = parseInt(val);
+			}
+			
+			return val;
+		}
+			
+		$.each(html_data.styles, function(i, style) {
+			if (style.cell)
+			{
+				var cell = style.cell,
+					html = cell.html,
+					cs = cell.style;
+				
+				if (html)
+				{
+					style.fontsize = fontsize(html.css("font-size"));
+					style.forecolor = html.css("color");
+					style.backcolor = html.css("background-color");
+					style.textalign = html.css("text-align"); 
+				}
+				
+				if (cs)
+				{
+					style.formatstring = cs.formatstring;
+				}
+				
+				if (style.forecolor)
+				{
+					style.forecolor = rgb2hex(style.forecolor);
+				}
+				
+				if (style.backcolor)
+				{
+					style.backcolor = rgb2hex(style.backcolor);
+				}
+				
+				delete style["cell"];
+			}
+		});
 			
 		html_data.rowcnt = html_data.rows.length;
 		html_data.colcnt = (html_data.rows.length ? html_data.rows[0].length : 0);
