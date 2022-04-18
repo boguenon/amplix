@@ -109,7 +109,7 @@ IG$.__chartoption.chartext.esri.prototype = {
 		}
 	},
 	
-	getExportData: function(callback) {
+	getExportData: function(pobj, callback) {
 		var me = this,
 			container = me.owner.container,
 			opt = {logging:false, useCORS:true, imageTimeout:0};
