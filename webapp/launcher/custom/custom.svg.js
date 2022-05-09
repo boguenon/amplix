@@ -177,18 +177,7 @@ IG$.__chartoption.chartext.svgmap.prototype = {
 			
 		map.resizeTo.call(map);
 	},
-	getExportData: function(pobj, callback) {
-		var me = this,
-			container = me.owner.container,
-			opt = {logging:false, useCORS:true, imageTimeout:0};
-		html2canvas(container, opt).then(function(canvas) {
-			document.body.appendChild(canvas);
-			var canvasData = canvas.toDataURL("image/png"),
-				r = {image_type: "png", image_data: canvasData};
-			callback.execute(r);
-		});
-		return false;
-	},
+	getExportData: IG$.__chartoption.chartext.$export_html,
 	dispose: function() {
 		var me = this,
 			owner = me.owner;

@@ -60,6 +60,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
                 left: '1%',
                 bottom: '1%',
                 right: '1%',
+				// fontSize:15,
 
                 // symbolSize: 1,
 
@@ -67,7 +68,8 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
                     position: 'right',
                     verticalAlign: 'middle',
                     align: 'center',
-                    fontSize: 9,
+                    // fontSize: 15,
+                    // fontFamily: 'NanumSquareRound',
                     formatter: "{b}"
                 },
 				/*
