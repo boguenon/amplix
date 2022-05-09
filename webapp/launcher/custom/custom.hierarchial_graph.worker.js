@@ -18,6 +18,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
 	});
 	
 	var option = {
+		title: {show: false},
         tooltip: {
         	formatter: function(item) {
         		if (item.dataType == "edge")
@@ -28,6 +29,8 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
         },
         legend: [
         	{
+				type: "scroll",
+				show: false,
         		data: data.categories.map(function(a) {
         			return a.name;
         		})
@@ -57,6 +60,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
                 left: '1%',
                 bottom: '1%',
                 right: '1%',
+				// fontSize:15,
 
                 // symbolSize: 1,
 
@@ -64,7 +68,8 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
                     position: 'right',
                     verticalAlign: 'middle',
                     align: 'center',
-                    fontSize: 9,
+                    // fontSize: 15,
+                    // fontFamily: 'NanumSquareRound',
                     formatter: "{b}"
                 },
 				/*
@@ -81,7 +86,77 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
                 }
             }
         ]
-    }
+    },
+    legendposition,
+    clegend,
+    ctitle;
+    
+    
+    if (cop.showlegend == true)
+    {
+		clegend = option.legend[0];
+		ctitle = option.title;
+		clegend.show = true;
+		legendposition = cop.legendposition = cop.legendposition || "BOTTOM_CENTER";
+		
+		if (legendposition.indexOf("BOTTOM_") > -1)
+		{
+			clegend.orient = "horizontal";
+			if (ctitle.show && ctitle.bottom > 0)
+			{
+				clegend.bottom = ctitle.bottom + 30;
+			}
+			else
+			{
+				clegend.bottom = 10;
+			}
+		}
+		else if (legendposition.indexOf("TOP_") > -1)
+		{
+			clegend.orient = "horizontal";
+			clegend.top = 10; // coption.grid.top + 10;
+		}
+		else
+		{
+			clegend.orient = "vertical";
+			
+			if (legendposition.indexOf("_TOP") > -1)
+			{
+				clegend.top = 10;
+			}
+			else if (legendposition.indexOf("_BOTTOM") > -1)
+			{
+				clegend.bottom = 10;
+			}
+			else if (legendposition.indexOf("_CENTER") > -1)
+			{
+				clegend.top = h / 2;
+			}
+		}
+		
+		if (clegend.orient == "horizontal")
+		{
+			if (legendposition.indexOf("_RIGHT") > -1)
+			{
+				clegend.right = 20;
+			}
+			else if (legendposition.indexOf("_LEFT") > -1)
+			{
+				clegend.left = 20; // - w / 2 + 200;
+			}
+		}
+		else
+		{
+			if (legendposition.indexOf("RIGHT_") > -1)
+			{
+				clegend.right = 20;
+			}
+			else if (legendposition.indexOf("LEFT_") > -1)
+			{
+				clegend.left = 20; // - w / 2 + 200;
+			}
+		}
+	}
     
     if (endsymbol)
     {

@@ -45,5 +45,7 @@ IG$.__chartoption.chartext.kpi.prototype = {
 	},
 	
 	updatedisplay: function(owner, w, h) {
-	}
+	},
+	
+	getExportData: IG$.__chartoption.chartext.$export_html
 };
