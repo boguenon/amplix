@@ -51,18 +51,18 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="https://cloud.amplixbi.com/launcher/css/apps.min.css?_dc=202205082255" />
+<link rel="stylesheet" type="text/css" href="https://cloud.amplixbi.com/launcher/css/apps.min.css?_dc=202205112229" />
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="https://cloud.amplixbi.com/launcher/fonts/hangul_nanum.css?_dc=202205082255" />
+<link rel="stylesheet" type="text/css" href="https://cloud.amplixbi.com/launcher/fonts/hangul_nanum.css?_dc=202205112229" />
 <% } %>
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cloud.amplixbi.com/launcher/css/" + theme.toLowerCase() + ".css?_dc=202205082255\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cloud.amplixbi.com/launcher/css/" + theme.toLowerCase() + ".css?_dc=202205112229\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="https://cloud.amplixbi.com/launcher/viewer/css/viewer.css?_dc=202205082255" />
-<link rel="stylesheet" type="text/css" href="https://cloud.amplixbi.com/launcher/css/custom.css?_dc=202205082255" />
+<link rel="stylesheet" type="text/css" href="https://cloud.amplixbi.com/launcher/viewer/css/viewer.css?_dc=202205112229" />
+<link rel="stylesheet" type="text/css" href="https://cloud.amplixbi.com/launcher/css/custom.css?_dc=202205112229" />
 
 <style>
 #wrap {
@@ -74,9 +74,9 @@ if (theme != null && theme.length() > 0)
 </style>
 
 <script type="text/javascript" src="https://cloud.amplixbi.com/launcher/js/jquery-3.5.1.min.js"></script>    
-<script type="text/javascript" src="https://cloud.amplixbi.com/config.js?_dc=202205082255"></script>
-<script type="text/javascript" src="../bootconfig_cdn.js?_dc=202205082255"></script>
-<script type="text/javascript" src="https://cloud.amplixbi.com/launcher/js/igca.min.js?_dc=202205082255"></script>
+<script type="text/javascript" src="https://cloud.amplixbi.com/config.js?_dc=202205112229"></script>
+<script type="text/javascript" src="../bootconfig_cdn.js?_dc=202205112229"></script>
+<script type="text/javascript" src="https://cloud.amplixbi.com/launcher/js/igca.min.js?_dc=202205112229"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
