@@ -7962,5 +7962,41 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_LABEL_OPTION",
     "value" : "라벨 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_MARKER_TYPE",
+    "value" : "마커 유형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_CIRCLE",
+    "value" : "원형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_RECT",
+    "value" : "사각형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_ROUND_RECT",
+    "value" : "라운딩 사각형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_TRIANGLE",
+    "value" : "삼각형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_DIAMOND",
+    "value" : "다이아몬드"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_WORDWRAP",
+    "value" : "줄바꿈 최대 행높이"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_PIN",
+    "value" : "핀"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_ARROW",
+    "value" : "화살표"
   } ]
 }
