@@ -207,3 +207,13 @@ A;L_NODATA_COLOR;NoData Color
 A;L_LINE_WIDTH;Line Width
 A;L_FONT_COLOR;Font Color
 A;L_LABEL_OPTION;Label Option
+
+A;L_MARKER_TYPE;Marker Type
+A;L_M_CIRCLE;Circle
+A;L_M_RECT;Rectangle
+A;L_M_ROUND_RECT;Round Rectangle
+A;L_M_TRIANGLE;Triangle
+A;L_M_DIAMOND;Diamond
+A;L_M_PIN;Pin
+A;L_M_ARROW;Arrow
+A;L_WORDWRAP;Word Wrap

@@ -7890,5 +7890,41 @@
     "group" : "locale_zh_TW_0019",
     "name" : "L_LABEL_OPTION",
     "value" : "Label Option"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_MARKER_TYPE",
+    "value" : "Marker Type"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_M_CIRCLE",
+    "value" : "Circle"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_M_RECT",
+    "value" : "Rectangle"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_M_ROUND_RECT",
+    "value" : "Round Rectangle"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_M_TRIANGLE",
+    "value" : "Triangle"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_M_DIAMOND",
+    "value" : "Diamond"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_WORDWRAP",
+    "value" : "Word Wrap"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_M_PIN",
+    "value" : "Pin"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_M_ARROW",
+    "value" : "Arrow"
   } ]
 }
