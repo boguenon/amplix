@@ -54,6 +54,7 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 	        left: 'center',
 	        bottom: 10 // '15%'
 	    },
+	    
 	    series: [{
 	        name: 'wday_serie',
 	        type: 'heatmap',
@@ -66,7 +67,16 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 	                shadowBlur: 10,
 	                shadowColor: 'rgba(0, 0, 0, 0.5)'
 	            }
-	        }
+	        },
+	        tooltip: {
+				position: "inside",
+				formatter: function() {
+					var arg = arguments,
+						a0 = arg[0],
+						dt = a0.data;
+					return "<b>" + a0.name + "</b><br/>" + (dt && dt.length == 3 && days[dt[1]] ? days[dt[1]] : "") + "<br/>" + (dt && dt.length == 3 ? dt[2] : "");
+				}
+			}
 	    }]
 	};
 	
