@@ -1009,6 +1009,12 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_wc_max]").setValue(option.settings.m_wc_max || 32);
 				me.down("[name=m_svg_min_color]").setValue(option.settings.m_svg_min_color || "#ffff51");
 				me.down("[name=m_svg_max_color]").setValue(option.settings.m_svg_max_color || "#ff0000");
+				me.down("[name=m_svg_nodata_color]").setValue(option.settings.m_svg_nodata_color || "#FFFFFF");
+				me.down("[name=m_svg_line_color]").setValue(option.settings.m_svg_line_color || "#000000");
+				me.down("[name=m_svg_line_width]").setValue(Number(option.settings.m_svg_line_width || "2"));
+				me.down("[name=m_svg_font_color]").setValue(option.settings.m_svg_font_color || "#ff0000");
+				me.down("[name=m_svg_font_size]").setValue(Number(option.settings.m_svg_font_size || "20"));
+				me.down("[name=m_svg_label_option]").setValue(option.settings.m_svg_label_option);
 				
 				me.down("[name=m_h_min]").setValue(Number(option.settings.m_h_min || "3"));
 				me.down("[name=m_h_max]").setValue(Number(option.settings.m_h_max || "15"));
@@ -1017,6 +1023,16 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_h_edgelength]").setValue(Number(option.settings.m_h_edgelength || "5"));
 				me.down("[name=m_h_ratio]").setValue(Number(option.settings.m_h_ratio || "50"));
 				me.down("[name=m_h_end_symbol]").setValue(option.settings.m_h_end_symbol || "arrow");
+				
+				me.down("[name=m_html_basestyle]").setValue(option.settings.m_html_basestyle);
+				
+				me.down("[name=m_iv_bgimg]").setValue(option.settings.m_iv_bgimg);
+				me.down("[name=m_iv_data]").setValue(option.settings.m_iv_data);
+				me.down("[name=m_iv_type]").setValue(option.settings.m_iv_type);
+				
+				me.down("[name=m_run_target]").setValue(option.settings.m_run_target);
+				me.down("[name=m_run_ucl]").setValue(option.settings.m_run_ucl);
+				me.down("[name=m_run_lcl]").setValue(option.settings.m_run_lcl);
 				
 				var barr = ma.sheetoption.model.rows.concat(ma.sheetoption.model.measures);
 				
@@ -1052,6 +1068,12 @@ IG$._customChartPanels = function() {
 				option.settings.m_wc_max = me.down("[name=m_wc_max]").getValue();
 				option.settings.m_svg_min_color = me.down("[name=m_svg_min_color]").getValue();
 				option.settings.m_svg_max_color = me.down("[name=m_svg_max_color]").getValue();
+				option.settings.m_svg_nodata_color = me.down("[name=m_svg_nodata_color]").getValue();
+				option.settings.m_svg_line_color = me.down("[name=m_svg_line_color]").getValue();
+				option.settings.m_svg_line_width = "" + me.down("[name=m_svg_line_width]").getValue();
+				option.settings.m_svg_font_color = me.down("[name=m_svg_font_color]").getValue();
+				option.settings.m_svg_font_size = "" + me.down("[name=m_svg_font_size]").getValue();
+				option.settings.m_svg_label_option = me.down("[name=m_svg_label_option]").getValue();
 				
 				option.settings.m_h_min = "" + me.down("[name=m_h_min]").getValue();
 				option.settings.m_h_max = "" + me.down("[name=m_h_max]").getValue();
@@ -1061,6 +1083,16 @@ IG$._customChartPanels = function() {
 				option.settings.m_h_edgelength = "" + me.down("[name=m_h_edgelength]").getValue();
 				option.settings.m_h_ratio = "" + me.down("[name=m_h_ratio]").getValue();
 				option.settings.m_h_end_symbol = me.down("[name=m_h_end_symbol]").getValue();
+				
+				option.settings.m_html_basestyle = me.down("[name=m_html_basestyle]").setValue();
+				
+				option.settings.m_iv_bgimg = me.down("[name=m_iv_bgimg]").getValue();
+				option.settings.m_iv_data = me.down("[name=m_iv_data]").getValue();
+				option.settings.m_iv_type = me.down("[name=m_iv_type]").getValue();
+				
+				option.settings.m_run_target = me.down("[name=m_run_target]").getValue();
+				option.settings.m_run_ucl = me.down("[name=m_run_ucl]").getValue();
+				option.settings.m_run_lcl = me.down("[name=m_run_lcl]").getValue();
 				
 				$.each(["m_h_axis_categ", "m_h_axis_src", "m_h_axis_tgt", "m_h_axis_srcdt", "m_h_axis_tgtdt", "m_h_axis_cmt"], function(i, k) {
 					var ctrl = me.down("[name=" + k + "]");
@@ -1075,6 +1107,9 @@ IG$._customChartPanels = function() {
 			me.down("[name=pb03]").setVisible(subtype == "svgmap");
 			me.down("[name=m_wc_opt]").setVisible(subtype == "wordcloud");
 			me.down("[name=m_hier_options]").setVisible(subtype == "hierarchialgraph");
+			me.down("[name=pbrunchart]").setVisible(subtype == "runchart");
+			me.down("[name=m_imgviewer_options]").setVisible(subtype == "imgviewer");
+			me.down("[name=m_html_options]").setVisible(subtype == "htmltable" || subtype == "html_ranktable");
 		},
 		items: [
 			{
@@ -1129,6 +1164,30 @@ IG$._customChartPanels = function() {
 						},
 						scope: this
 					} 
+				]
+			},
+			{
+				xtype: "fieldset",
+				title: "Process",
+				layout: "anchor",
+				hidden: true,
+				name: "pbrunchart",
+				items: [
+					{
+						xtype: "textfield",
+						fieldLabel: "Target Value",
+						name: "m_run_target"
+					},
+					{
+						xtype: "textfield",
+						fieldLabel: "Upper Spec Limit",
+						name: "m_run_ucl"
+					},
+					{
+						xtype: "textfield",
+						fieldLabel: "Lower Spec Limit",
+						name: "m_run_lcl"
+					}
 				]
 			},
 			{
@@ -1188,6 +1247,7 @@ IG$._customChartPanels = function() {
 									]
 								}
 							},
+							
 							{
 								xtype: "container",
 								flex: 1
@@ -1237,6 +1297,157 @@ IG$._customChartPanels = function() {
 								flex: 1
 							}
 						]
+					},
+					
+					{
+						xtype: "fieldcontainer",
+						anchor: "100%",
+						fieldLabel: IRm$.r1("L_NODATA_COLOR"),
+						layout: {
+							type: "hbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "textfield",
+								name: "m_svg_nodata_color",
+								width: 120
+							},
+							{
+								xtype: "splitter"
+							},
+							{
+								xtype: "splitbutton",
+								width: 30,
+								menu: {
+									showSeparator: false,
+									items: [
+										{
+											xtype: "colorpicker",
+											listeners: {
+												select: function(cp, color) {
+													var ctrl = this.down("[name=m_svg_nodata_color]");
+													ctrl.setValue("#" + color);
+												},
+												scope: this
+											}
+										}, 
+										"-"
+									]
+								}
+							},
+							{
+								xtype: "container",
+								flex: 1
+							}
+						]
+					},
+					
+					{
+						xtype: "fieldcontainer",
+						anchor: "100%",
+						fieldLabel: IRm$.r1("L_LINE_COLOR"),
+						layout: {
+							type: "hbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "textfield",
+								name: "m_svg_line_color",
+								width: 120
+							},
+							{
+								xtype: "splitter"
+							},
+							{
+								xtype: "splitbutton",
+								width: 30,
+								menu: {
+									showSeparator: false,
+									items: [
+										{
+											xtype: "colorpicker",
+											listeners: {
+												select: function(cp, color) {
+													var ctrl = this.down("[name=m_svg_line_color]");
+													ctrl.setValue("#" + color);
+												},
+												scope: this
+											}
+										}, 
+										"-"
+									]
+								}
+							},
+							
+							{
+								xtype: "container",
+								flex: 1
+							}
+						]
+					},
+					
+					{
+						xtype: "numberfield",
+						name: "m_svg_line_width",
+						fieldLabel: IRm$.r1("L_LINE_WIDTH")
+					},
+					
+					{
+						xtype: "fieldcontainer",
+						anchor: "100%",
+						fieldLabel: IRm$.r1("L_FONT_COLOR"),
+						layout: {
+							type: "hbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "textfield",
+								name: "m_svg_font_color",
+								width: 120
+							},
+							{
+								xtype: "splitter"
+							},
+							{
+								xtype: "splitbutton",
+								width: 30,
+								menu: {
+									showSeparator: false,
+									items: [
+										{
+											xtype: "colorpicker",
+											listeners: {
+												select: function(cp, color) {
+													var ctrl = this.down("[name=m_svg_font_color]");
+													ctrl.setValue("#" + color);
+												},
+												scope: this
+											}
+										}, 
+										"-"
+									]
+								}
+							},
+							
+							{
+								xtype: "container",
+								flex: 1
+							}
+						]
+					},
+					
+					{
+						xtype: "numberfield",
+						name: "m_svg_font_size",
+						fieldLabel: IRm$.r1("L_FONTSIZE")
+					},
+					{
+						xtype: "textfield",
+						name: "m_svg_label_option",
+						fieldLabel: IRm$.r1("L_LABEL_OPTION")
 					}
 				]
 			},
@@ -1288,6 +1499,67 @@ IG$._customChartPanels = function() {
 					} 
 				]
 			},
+			// imgviewer chart options
+			{
+				xtype: "fieldset",
+				title: "Image Viewer Options",
+				name: "m_imgviewer_options",
+				hidden: true,
+				layout: {
+					type: "vbox",
+					align: "stretch"
+				},
+				items: [
+					{
+						xtype: "textfield",
+						name: "m_iv_bgimg",
+						fieldLabel: "Background Image"
+					},
+					{
+						xtype: "textfield",
+						name: "m_iv_data",
+						fieldLabel: "Data Url"
+					},
+					{
+						xtype: "combobox",
+						name: "m_iv_type",
+						fieldLabel: "Draw Type",
+						queryMode: "local",
+						displayField: "name",
+						valueField: "value",
+						editable: false,
+						autoSelect: false,
+						store: {
+							xtype: "store",
+							fields: [],
+							data: [
+								{name: "None", value: ""},
+								{name: "Pie Chart", value: "pie"},
+								{name: "Bar Chart", value: "bar"}
+							]
+						}
+					}
+				]
+			},
+			// html table options
+			{
+				xtype: "fieldset",
+				title: "HTML Table Options",
+				name: "m_html_options",
+				hidden: true,
+				layout: {
+					type: "vbox",
+					align: "stretch"
+				},
+				items: [
+					{
+						xtype: "textfield",
+						name: "m_html_basestyle",
+						fieldLabel: "Base CSS Style"
+					}
+				]
+			},
+			
 			// hierarchy chart options
 			{
 				xtype: "fieldset",

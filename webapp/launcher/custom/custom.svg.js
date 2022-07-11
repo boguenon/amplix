@@ -53,11 +53,20 @@ IG$.__chartoption.chartext.svgmap.prototype = {
 			});
 		}
 		
-		me.map = svgmap = new IG$.SVGLoader($(container));
+		me.map = svgmap = new IG$.SVGLoader($(container), me, owner);
 		svgmap.idfield = renderer ? renderer.idfield : null;
 		svgmap.load(m_svgtype);
 
 		svgmap.container.unbind("svgloaded");
+		
+		svgmap.container.unbind("region_clicked");
+		
+		svgmap.container.bind("region_clicked", function(e, opt) {
+			if (opt.sender && opt.param)
+			{
+				owner.procClickEvent.call(owner, opt.sender, opt.param);
+			}
+		}); 
 
 		svgmap.container.bind("svgloaded", function() {
 			var i,
@@ -168,6 +177,7 @@ IG$.__chartoption.chartext.svgmap.prototype = {
 			
 		map.resizeTo.call(map);
 	},
+	getExportData: IG$.__chartoption.chartext.$export_html,
 	dispose: function() {
 		var me = this,
 			owner = me.owner;

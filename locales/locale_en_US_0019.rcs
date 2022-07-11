@@ -197,3 +197,24 @@ A;L_HIDDEN;Hidden
 
 A;L_UNPIVOT_DEF;Un Pivot Definition
 A;B_FILESIZE;File Size
+
+A;L_HIDE_LINE;Hide Line
+A;L_FLEX;Flex
+A;L_FLEX_MIN_WIDTH;Widget Min Width
+A;L_CH_CUST_XLABEL;Custom X Label
+A;L_CUST_XLABEL_TYPE;Custom X Type
+
+A;L_NODATA_COLOR;NoData Color
+A;L_LINE_WIDTH;Line Width
+A;L_FONT_COLOR;Font Color
+A;L_LABEL_OPTION;Label Option
+
+A;L_MARKER_TYPE;Marker Type
+A;L_M_CIRCLE;Circle
+A;L_M_RECT;Rectangle
+A;L_M_ROUND_RECT;Round Rectangle
+A;L_M_TRIANGLE;Triangle
+A;L_M_DIAMOND;Diamond
+A;L_M_PIN;Pin
+A;L_M_ARROW;Arrow
+A;L_WORDWRAP;Word Wrap

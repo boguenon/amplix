@@ -3591,7 +3591,7 @@
     "name" : "L_LINE_TYPE",
     "value" : "라인유형"
   }, {
-    "group" : "locale_ko_KR_0001",
+    "group" : "locale_ko_KR_0019",
     "name" : "L_LINE_WIDTH",
     "value" : "라인폭"
   }, {
@@ -7926,5 +7926,77 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_HIDDEN",
     "value" : "숨기기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_UNPIVOT_DEF",
+    "value" : "언 피벗 정의"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_HIDE_LINE",
+    "value" : "선 숨기기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_FLEX",
+    "value" : "플랙스 레이아웃"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_FLEX_MIN_WIDTH",
+    "value" : "위젯 최소 크기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_CH_CUST_XLABEL",
+    "value" : "커스텀 X축 라벨"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_CUST_XLABEL_TYPE",
+    "value" : "커스텀 X축 유형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_NODATA_COLOR",
+    "value" : "데이터없음 색상"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_FONT_COLOR",
+    "value" : "폰트 색상"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_LABEL_OPTION",
+    "value" : "라벨 옵션"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_MARKER_TYPE",
+    "value" : "마커 유형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_CIRCLE",
+    "value" : "원형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_RECT",
+    "value" : "사각형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_ROUND_RECT",
+    "value" : "라운딩 사각형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_TRIANGLE",
+    "value" : "삼각형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_DIAMOND",
+    "value" : "다이아몬드"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_WORDWRAP",
+    "value" : "줄바꿈 최대 행높이"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_PIN",
+    "value" : "핀"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_M_ARROW",
+    "value" : "화살표"
   } ]
 }

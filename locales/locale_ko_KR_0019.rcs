@@ -196,3 +196,24 @@ A;L_READONLY;읽기 전용
 A;L_HIDDEN;숨기기
 
 A;L_UNPIVOT_DEF;언 피벗 정의
+
+A;L_HIDE_LINE;선 숨기기
+A;L_FLEX;플랙스 레이아웃
+A;L_FLEX_MIN_WIDTH;위젯 최소 크기
+A;L_CH_CUST_XLABEL;커스텀 X축 라벨
+A;L_CUST_XLABEL_TYPE;커스텀 X축 유형
+
+A;L_NODATA_COLOR;데이터없음 색상
+A;L_LINE_WIDTH;라인폭
+A;L_FONT_COLOR;폰트 색상
+A;L_LABEL_OPTION;라벨 옵션
+
+A;L_MARKER_TYPE;마커 유형
+A;L_M_CIRCLE;원형
+A;L_M_RECT;사각형
+A;L_M_ROUND_RECT;라운딩 사각형
+A;L_M_TRIANGLE;삼각형
+A;L_M_DIAMOND;다이아몬드
+A;L_M_PIN;핀
+A;L_M_ARROW;화살표
+A;L_WORDWRAP;줄바꿈 최대 행높이

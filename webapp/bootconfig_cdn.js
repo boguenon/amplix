@@ -65,7 +65,10 @@
 			"https://cloud.amplixbi.com/launcher/custom/custom.hierarchy.js",
 			"https://cloud.amplixbi.com/launcher/custom/custom.treehierarchy.js",
 			"https://cloud.amplixbi.com/launcher/custom/custom.weekday.js",
-			"https://cloud.amplixbi.com/launcher/custom/custom.hierarchial_graph.js"
+			"https://cloud.amplixbi.com/launcher/custom/custom.hierarchial_graph.js",
+			
+			"https://cloud.amplixbi.com/launcher/custom/custom.html.table.js",
+			"https://cloud.amplixbi.com/launcher/custom/custom.html.rank_table.js"
         ],
         "sso": [
             "https://cloud.amplixbi.com/launcher/custom/sso_client.js"
