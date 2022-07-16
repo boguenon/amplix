@@ -212,10 +212,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 			me.down("[name=boxlayout]").setValue(copt.boxlayout || "");
 			
 			$.each(copt.boxconfig, function(i, b) {
-				if (b.syntax && b.syntax.length > 4 && b.syntax.substring(0, 5) == "{enc}")
-				{
-					b.syntax = Base64.decode(b.syntax.substring(5));
-				}
+				b.syntax = IG$._decodeVal(b.syntax);
 			});
 			
 			colconfig.store.loadData(copt.boxconfig);
@@ -243,7 +240,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 				
 				cc = {
 					name: rec.get("name"),
-					syntax: "{enc}" + Base64.encode(syntax)
+					syntax: IG$._encodeVal(syntax)
 				};
 				copt.boxconfig.push(cc);
 			}
@@ -1032,10 +1029,7 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 			if (_bc && _bc.syntax)
 			{
 				tmpl = _bc.syntax;
-				if (tmpl.length > 5 && tmpl.substring(0, 5) == "{enc}")
-				{
-					tmpl = Base64.decode(tmpl.substring(5));
-				}
+				tmpl = IG$._decodeVal(tmpl);
 			}
 			
 			var tout = me.procTemplate(tmpl, results, _bc, i, charts, dataobj, colfix);
