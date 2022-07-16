@@ -19,9 +19,10 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 	
    _confirm: function() {
 		var me = this,
-			tsyntax = me.down("[name=tsyntax]");
+			tsyntax = me.down("[name=tsyntax]"),
+			sval = tsyntax.getValue();
 			
-		me.rec.set("syntax", tsyntax.getValue());
+		me.rec.set("syntax", sval);
 			
 		this.close();
 	},
@@ -209,6 +210,11 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 			
 			me.down("[name=boxcnt]").setValue(copt.boxcnt);
 			me.down("[name=boxlayout]").setValue(copt.boxlayout || "");
+			
+			$.each(copt.boxconfig, function(i, b) {
+				b.syntax = IG$._decodeVal(b.syntax);
+			});
+			
 			colconfig.store.loadData(copt.boxconfig);
 		}
 	},
@@ -218,7 +224,8 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 			copt = me.cindicator,
 			colconfig = me.down("[name=colconfig]"),
 			colconfig_store = colconfig.store,
-			rec, i, cc;
+			rec, i, cc,
+			syntax;
 			
 		if (copt)
 		{
@@ -229,10 +236,12 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 			for (i=0; i < colconfig_store.data.items.length; i++)
 			{
 				rec = colconfig_store.data.items[i];
+				syntax = rec.get("syntax");
+				
 				cc = {
 					name: rec.get("name"),
-					syntax: rec.get("syntax")
-				}
+					syntax: IG$._encodeVal(syntax)
+				};
 				copt.boxconfig.push(cc);
 			}
 			
@@ -1020,6 +1029,7 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 			if (_bc && _bc.syntax)
 			{
 				tmpl = _bc.syntax;
+				tmpl = IG$._decodeVal(tmpl);
 			}
 			
 			var tout = me.procTemplate(tmpl, results, _bc, i, charts, dataobj, colfix);
