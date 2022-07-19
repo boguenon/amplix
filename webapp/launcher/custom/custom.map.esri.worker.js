@@ -612,7 +612,7 @@ IG$.__chartoption.chartext.esri.prototype.setData = function(owner, results) {
 		geofield_map = {},
 		hidden_columns = results.hidden_columns || [],
 		m_marker_symbol = copsettings.m_marker_symbol || "STYLE_CIRCLE",
-		cdata_m_tmpl = cop.cdata_m_tmpl,
+		cdata_m_tmpl = IG$._decodeVal(cop.cdata_m_tmpl),
 		_esri_version = me._esri_version,
 		_v = _esri_version.substring(0, _esri_version.indexOf("."));
 		

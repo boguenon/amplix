@@ -111,6 +111,8 @@ IG$._customChartPanels = function() {
 					"}"
 				].join("\n");
 				
+				option.cdata_m_tmpl = IG$._decodeVal(option.cdata_m_tmpl);
+				
 				me.down("[name=m_zoom_level]").setValue(option.m_zoom_level || "8");
 				me.down("[name=m_marker]").setValue(option.m_marker || "marker");
 				me.down("[name=m_min]").setValue(option.m_min || "1000");
@@ -260,7 +262,7 @@ IG$._customChartPanels = function() {
 				option.settings.m_mid_color = me.down("[name=m_mid_color]").getValue();
 				option.settings.m_mid_a_color = me.down("[name=m_mid_a_color]").getValue();
 				option.settings.m_max_color = me.down("[name=m_max_color]").getValue();
-				option.cdata_m_tmpl = me.down("[name=cdata_m_tmpl]").getValue();
+				option.cdata_m_tmpl = IG$._encodeVal(me.down("[name=cdata_m_tmpl]").getValue());
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
 				option.settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
 				option.settings.m_arc_view = me.down("[name=m_arc_view]").getValue();
@@ -1133,7 +1135,7 @@ IG$._customChartPanels = function() {
 									js = [ "./custom/custom.kpi.worker.js" ], 
 									ltest = 0; 
 								
-								var cindopt = chartoption.cindicator ? JSON.parse(chartoption.cindicator) : {};
+								var cindopt = chartoption.cindicator ? JSON.parse(IG$._decodeVal(chartoption.cindicator)) : {};
 	
 								IG$.getScriptCache(js,
 									new IG$.callBackObj(me,
@@ -1151,7 +1153,7 @@ IG$._customChartPanels = function() {
 							}
 							else
 							{
-								var cindopt = chartoption.cindicator ? JSON.parse(chartoption.cindicator) : {};
+								var cindopt = chartoption.cindicator ? JSON.parse(IG$._decodeVal(chartoption.cindicator)) : {};
 								var dlg = new IG$.kpi_1/* dlg_vindicator */(
 									{
 										instance: me.instance,

@@ -48,7 +48,7 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 					dp.push({
 						name: t.name,
 						value: t.name,
-						syntax: t.syntax.join("\n"),
+						syntax: IG$._decodeVal(t.syntax),
 						parameters: t.parameters
 					});
 				});
@@ -245,7 +245,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 				copt.boxconfig.push(cc);
 			}
 			
-			me.cop.cindicator = JSON.stringify(copt);
+			me.cop.cindicator = IG$._encodeVal(JSON.stringify(copt));
 		}
 		this.close();
 	},
@@ -933,7 +933,7 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 	
 	me.plotinner = $("<div class='igc-kpi-inner'></div>").appendTo(me.plotarea);
 	
-	me.cindopt = cindopt = cop.cindicator ? JSON.parse(cop.cindicator) : {};
+	me.cindopt = cindopt = cop.cindicator ? JSON.parse(IG$._decodeVal(cop.cindicator)) : {};
 	
 	if (!me.btn_cfg)
 	{

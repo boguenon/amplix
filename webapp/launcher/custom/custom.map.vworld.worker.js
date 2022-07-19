@@ -265,7 +265,7 @@ IG$.__chartoption.chartext.vworldmap.prototype.drawChart = function(owner, resul
 		}
 		else if (cop.m_marker == "info")
 		{
-			tmpl = cop.cdata_m_tmpl;
+			tmpl = IG$._decodeVal(cop.cdata_m_tmpl);
 			if (tmpl)
 			{
 				tmpl = me._tmpl(tmpl, p, gmap);
