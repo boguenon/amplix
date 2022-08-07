@@ -7998,5 +7998,17 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_M_ARROW",
     "value" : "화살표"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_RPT_RUN",
+    "value" : "실행중입니다."
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_BULK_LOAD",
+    "value" : "쉬트 동시 실행"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_RPT_ERR",
+    "value" : "실행 중 오류가 발생하였습니다."
   } ]
 }

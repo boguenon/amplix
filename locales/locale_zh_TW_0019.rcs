@@ -217,3 +217,6 @@ A;L_M_DIAMOND;Diamond
 A;L_M_PIN;Pin
 A;L_M_ARROW;Arrow
 A;L_WORDWRAP;Word Wrap
+A;B_RPT_RUN;Executing Report
+A;L_BULK_LOAD;Bulk Run Sheets
+A;B_RPT_ERR;Error on Report
