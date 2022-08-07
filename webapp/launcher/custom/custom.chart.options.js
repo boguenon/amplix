@@ -27,10 +27,11 @@ IG$._customChartPanels = function() {
 		initData: function() {
 			var me = this, 
 				ma = me.__main__,
-				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
+				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null),
+				settings;
 
 			if (option) {
-				option.settings = option.settings || {};
+				settings = option.settings = option.settings || {};
 				
 				var d1 = [{name: "Select Value", value: ""}],
 					d2 = [{name: "Select Value", value: ""}],
@@ -69,17 +70,17 @@ IG$._customChartPanels = function() {
 						value: row.uid
 					});
 					
-					if (option.settings.m_lat == row.uid)
+					if (settings.m_lat == row.uid)
 					{
 						d1val = row.uid;
 					}
 					
-					if (option.settings.m_lng == row.uid)
+					if (settings.m_lng == row.uid)
 					{
 						d2val = row.uid;
 					}
 					
-					if (option.settings.m_geofield == row.uid)
+					if (settings.m_geofield == row.uid)
 					{
 						d3val = row.uid;
 					}
@@ -117,26 +118,26 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_marker]").setValue(option.m_marker || "marker");
 				me.down("[name=m_min]").setValue(option.m_min || "1000");
 				me.down("[name=m_max]").setValue(option.m_max || "10000");
-				me.down("[name=m_min_color]").setValue(option.settings.m_min_color || "#e60000"); // red
-				me.down("[name=m_min_a_color]").setValue(option.settings.m_min_a_color || "#A3A300"); // red
-				me.down("[name=m_mid_color]").setValue(option.settings.m_mid_color || "#00e600"); // blue
-				me.down("[name=m_mid_a_color]").setValue(option.settings.m_mid_a_color || "#51FFFF"); // red
-				me.down("[name=m_max_color]").setValue(option.settings.m_max_color || "#0000e6"); // green
+				me.down("[name=m_min_color]").setValue(settings.m_min_color || "#e60000"); // red
+				me.down("[name=m_min_a_color]").setValue(settings.m_min_a_color || "#A3A300"); // red
+				me.down("[name=m_mid_color]").setValue(settings.m_mid_color || "#00e600"); // blue
+				me.down("[name=m_mid_a_color]").setValue(settings.m_mid_a_color || "#51FFFF"); // red
+				me.down("[name=m_max_color]").setValue(settings.m_max_color || "#0000e6"); // green
 				me.down("[name=cdata_m_tmpl]").setValue(option.cdata_m_tmpl);
 				me.down("[name=m_xypos]").setValue(option.m_xypos || "");
-				me.down("[name=m_map_center]").setValue(option.settings.m_map_center || "");
-				me.down("[name=m_map_camera]").setValue(option.settings.m_map_camera || "");
+				me.down("[name=m_map_center]").setValue(settings.m_map_center || "");
+				me.down("[name=m_map_camera]").setValue(settings.m_map_camera || "");
 				me.down("[name=m_lat]").setValue(d1val);
 				me.down("[name=m_lng]").setValue(d2val);
 				me.down("[name=m_geofield]").setValue(d3val);
 				
-				me.down("[name=m_color_categ]").setValue(option.settings.m_color_categ || "");
-				me.down("[name=m_marker_size]").setValue(option.settings.m_marker_size || "20");
-				me.down("[name=m_marker_symbol]").setValue(option.settings.m_marker_symbol || "");
-				// me.down("[name=m_map_legend]").setValue(option.settings.m_map_legend || "");
-				me.down("[name=m_map_post_exec]").setValue(option.settings.m_map_post_exec || "");
-				me.down("[name=m_map_save_stat]").setValue(option.settings.m_map_save_stat == "T");
-				me.down("[name=m_map_popup_hover]").setValue(option.settings.m_map_popup_hover == "T");
+				me.down("[name=m_color_categ]").setValue(settings.m_color_categ || "");
+				me.down("[name=m_marker_size]").setValue(settings.m_marker_size || "20");
+				me.down("[name=m_marker_symbol]").setValue(settings.m_marker_symbol || "");
+				// me.down("[name=m_map_legend]").setValue(settings.m_map_legend || "");
+				me.down("[name=m_map_post_exec]").setValue(settings.m_map_post_exec || "");
+				me.down("[name=m_map_save_stat]").setValue(settings.m_map_save_stat == "T");
+				me.down("[name=m_map_popup_hover]").setValue(settings.m_map_popup_hover == "T");
 				
 				if (ig$.arcgis_basemap)
 				{
@@ -170,8 +171,8 @@ IG$._customChartPanels = function() {
 					}
 				}
 				
-				me.down("[name=m_arc_basemap]").setValue(option.settings.m_arc_basemap || "");
-				me.down("[name=m_arc_view]").setValue(option.settings.m_arc_view || "MapView");
+				me.down("[name=m_arc_basemap]").setValue(settings.m_arc_basemap || "");
+				me.down("[name=m_arc_view]").setValue(settings.m_arc_view || "MapView");
 				
 				// arc layer selection
 				var esri_api_layers = me.down("[name=m_arc_layers]"),
@@ -225,9 +226,9 @@ IG$._customChartPanels = function() {
 					
 				if (ig$.arcgis_rest$ && ig$.arcgis_rest$.length)
 				{
-					if (option.settings.m_arc_layers)
+					if (settings.m_arc_layers)
 					{
-						$.each(option.settings.m_arc_layers, function(i, d) {
+						$.each(settings.m_arc_layers, function(i, d) {
 							dpmap[d] = 1;
 						});
 					}
@@ -248,43 +249,44 @@ IG$._customChartPanels = function() {
 		updateOptionValues: function() {
 			var me = this, 
 				ma = me.__main__,
-				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
+				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null),
+				settings;
 
 			if (option) {
-				option.settings = option.settings || {};
+				settings = option.settings = option.settings || {};
 				
 				option.m_zoom_level = "" + me.down("[name=m_zoom_level]").getValue();
 				option.m_marker = me.down("[name=m_marker]").getValue();
 				option.m_min = "" + me.down("[name=m_min]").getValue();
 				option.m_max = "" + me.down("[name=m_max]").getValue();
-				option.settings.m_min_color = me.down("[name=m_min_color]").getValue();
-				option.settings.m_min_a_color = me.down("[name=m_min_a_color]").getValue();
-				option.settings.m_mid_color = me.down("[name=m_mid_color]").getValue();
-				option.settings.m_mid_a_color = me.down("[name=m_mid_a_color]").getValue();
-				option.settings.m_max_color = me.down("[name=m_max_color]").getValue();
+				settings.m_min_color = me.down("[name=m_min_color]").getValue();
+				settings.m_min_a_color = me.down("[name=m_min_a_color]").getValue();
+				settings.m_mid_color = me.down("[name=m_mid_color]").getValue();
+				settings.m_mid_a_color = me.down("[name=m_mid_a_color]").getValue();
+				settings.m_max_color = me.down("[name=m_max_color]").getValue();
 				option.cdata_m_tmpl = IG$._encodeVal(me.down("[name=cdata_m_tmpl]").getValue());
 				option.m_xypos = me.down("[name=m_xypos]").getValue();
-				option.settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
-				option.settings.m_arc_view = me.down("[name=m_arc_view]").getValue();
-				option.settings.m_map_center = me.down("[name=m_map_center]").getValue();
-				option.settings.m_map_camera = me.down("[name=m_map_camera]").getValue();
-				option.settings.m_lat = me.down("[name=m_lat]").getValue();
-				option.settings.m_lng = me.down("[name=m_lng]").getValue();
-				option.settings.m_geofield = me.down("[name=m_geofield]").getValue();
+				settings.m_arc_basemap = me.down("[name=m_arc_basemap]").getValue();
+				settings.m_arc_view = me.down("[name=m_arc_view]").getValue();
+				settings.m_map_center = me.down("[name=m_map_center]").getValue();
+				settings.m_map_camera = me.down("[name=m_map_camera]").getValue();
+				settings.m_lat = me.down("[name=m_lat]").getValue();
+				settings.m_lng = me.down("[name=m_lng]").getValue();
+				settings.m_geofield = me.down("[name=m_geofield]").getValue();
 				
-				option.settings.m_color_categ = me.down("[name=m_color_categ]").getValue();
-				option.settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
-				option.settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
-				// option.settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
-				option.settings.m_map_post_exec = me.down("[name=m_map_post_exec]").getValue();
-				option.settings.m_map_save_stat = me.down("[name=m_map_save_stat]").getValue() ? "T" : "F";
-				option.settings.m_map_popup_hover = me.down("[name=m_map_popup_hover]").getValue() ? "T" : "F";
+				settings.m_color_categ = me.down("[name=m_color_categ]").getValue();
+				settings.m_marker_size = me.down("[name=m_marker_size]").getValue();
+				settings.m_marker_symbol = me.down("[name=m_marker_symbol]").getValue();
+				// settings.m_map_legend = me.down("[name=m_map_legend]").getValue();
+				settings.m_map_post_exec = me.down("[name=m_map_post_exec]").getValue();
+				settings.m_map_save_stat = me.down("[name=m_map_save_stat]").getValue() ? "T" : "F";
+				settings.m_map_popup_hover = me.down("[name=m_map_popup_hover]").getValue() ? "T" : "F";
 				
 				option.maptype = me.down("[name=maptype]").getValue();
 				option.mapcategory = me.down("[name=mapcategory]").getValue();
 				
 				// arc layer selection
-				option.settings.m_arc_layers = [];
+				settings.m_arc_layers = [];
 				
 				var m_arc_layers = me.down("[name=m_arc_layers]"),
 					sel = m_arc_layers.getSelectionModel().selected,
@@ -292,7 +294,7 @@ IG$._customChartPanels = function() {
 					
 				for (i=0; i < sel.length; i++)
 				{
-					option.settings.m_arc_layers.push(sel.items[i].get("name"));
+					settings.m_arc_layers.push(sel.items[i].get("name"));
 				}
 			}
 		},
@@ -985,10 +987,11 @@ IG$._customChartPanels = function() {
 		initData: function() {
 			var me = this, 
 				ma = me.__main__,
-				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
+				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null),
+				settings;
 
 			if (option) {
-				option.settings = option.settings || {};
+				settings = option.settings = option.settings || {};
 				
 				if (ig$.svg_renderers)
 				{
@@ -1006,35 +1009,44 @@ IG$._customChartPanels = function() {
 					me.down("[name=m_svgtype]").store.loadData(dp);
 				}
 				
-				me.down("[name=m_svgtype]").setValue(option.settings.m_svgtype || "");
-				me.down("[name=m_wc_min]").setValue(option.settings.m_wc_min || 8);
-				me.down("[name=m_wc_max]").setValue(option.settings.m_wc_max || 32);
-				me.down("[name=m_svg_min_color]").setValue(option.settings.m_svg_min_color || "#ffff51");
-				me.down("[name=m_svg_max_color]").setValue(option.settings.m_svg_max_color || "#ff0000");
-				me.down("[name=m_svg_nodata_color]").setValue(option.settings.m_svg_nodata_color || "#FFFFFF");
-				me.down("[name=m_svg_line_color]").setValue(option.settings.m_svg_line_color || "#000000");
-				me.down("[name=m_svg_line_width]").setValue(Number(option.settings.m_svg_line_width || "2"));
-				me.down("[name=m_svg_font_color]").setValue(option.settings.m_svg_font_color || "#ff0000");
-				me.down("[name=m_svg_font_size]").setValue(Number(option.settings.m_svg_font_size || "20"));
-				me.down("[name=m_svg_label_option]").setValue(option.settings.m_svg_label_option);
+				me.down("[name=m_svgtype]").setValue(settings.m_svgtype || "");
+				me.down("[name=m_wc_min]").setValue(settings.m_wc_min || 8);
+				me.down("[name=m_wc_max]").setValue(settings.m_wc_max || 32);
+				me.down("[name=m_svg_min_color]").setValue(settings.m_svg_min_color || "#ffff51");
+				me.down("[name=m_svg_max_color]").setValue(settings.m_svg_max_color || "#ff0000");
+				me.down("[name=m_svg_nodata_color]").setValue(settings.m_svg_nodata_color || "#FFFFFF");
+				me.down("[name=m_svg_line_color]").setValue(settings.m_svg_line_color || "#000000");
+				me.down("[name=m_svg_line_width]").setValue(Number(settings.m_svg_line_width || "2"));
+				me.down("[name=m_svg_font_color]").setValue(settings.m_svg_font_color || "#ff0000");
+				me.down("[name=m_svg_font_size]").setValue(Number(settings.m_svg_font_size || "20"));
+				me.down("[name=m_svg_label_option]").setValue(settings.m_svg_label_option);
 				
-				me.down("[name=m_h_min]").setValue(Number(option.settings.m_h_min || "3"));
-				me.down("[name=m_h_max]").setValue(Number(option.settings.m_h_max || "15"));
-				me.down("[name=m_h_gravity]").setValue(Number(option.settings.m_h_gravity || "0.2"));
-				me.down("[name=m_h_repulsion]").setValue(Number(option.settings.m_h_repulsion || "20"));
-				me.down("[name=m_h_edgelength]").setValue(Number(option.settings.m_h_edgelength || "5"));
-				me.down("[name=m_h_ratio]").setValue(Number(option.settings.m_h_ratio || "50"));
-				me.down("[name=m_h_end_symbol]").setValue(option.settings.m_h_end_symbol || "arrow");
+				me.down("[name=m_h_min]").setValue(Number(settings.m_h_min || "3"));
+				me.down("[name=m_h_max]").setValue(Number(settings.m_h_max || "15"));
+				me.down("[name=m_h_gravity]").setValue(Number(settings.m_h_gravity || "0.2"));
+				me.down("[name=m_h_repulsion]").setValue(Number(settings.m_h_repulsion || "20"));
+				me.down("[name=m_h_edgelength]").setValue(Number(settings.m_h_edgelength || "5"));
+				me.down("[name=m_h_ratio]").setValue(Number(settings.m_h_ratio || "50"));
+				me.down("[name=m_h_end_symbol]").setValue(settings.m_h_end_symbol || "arrow");
 				
-				me.down("[name=m_html_basestyle]").setValue(option.settings.m_html_basestyle);
+				me.down("[name=m_html_basestyle]").setValue(settings.m_html_basestyle);
 				
-				me.down("[name=m_iv_bgimg]").setValue(option.settings.m_iv_bgimg);
-				me.down("[name=m_iv_data]").setValue(option.settings.m_iv_data);
-				me.down("[name=m_iv_type]").setValue(option.settings.m_iv_type);
+				me.down("[name=m_iv_bgimg]").setValue(settings.m_iv_bgimg);
+				me.down("[name=m_iv_data]").setValue(settings.m_iv_data);
+				me.down("[name=m_iv_type]").setValue(settings.m_iv_type);
 				
-				me.down("[name=m_run_target]").setValue(option.settings.m_run_target);
-				me.down("[name=m_run_ucl]").setValue(option.settings.m_run_ucl);
-				me.down("[name=m_run_lcl]").setValue(option.settings.m_run_lcl);
+				me.down("[name=m_run_target]").setValue(settings.m_run_target);
+				me.down("[name=m_run_ucl]").setValue(settings.m_run_ucl);
+				me.down("[name=m_run_lcl]").setValue(settings.m_run_lcl);
+				
+				if (!settings.m_rngclr_0 && !settings.m_rngclr_1 && !settings.m_rngclr_2 && !settings.m_rngclr_3 && !settings.m_rngclr_4)
+				{
+					settings.m_rngclr_0 = "#bf444c";
+					settings.m_rngclr_2 = "#d88273";
+					settings.m_rngclr_4 = "#f6efa6";
+				}
+				
+				me.down("[name=m_color_range]").setAllValues(settings);
 				
 				var barr = ma.sheetoption.model.rows.concat(ma.sheetoption.model.measures);
 				
@@ -1052,7 +1064,7 @@ IG$._customChartPanels = function() {
 					}
 					
 					ctrl.store.loadData(dp);
-					ctrl.setValue(option.settings[k] || "");
+					ctrl.setValue(settings[k] || "");
 				});
 			}
 		},
@@ -1060,45 +1072,48 @@ IG$._customChartPanels = function() {
 		updateOptionValues: function() {
 			var me = this, 
 				ma = me.__main__,
-				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null);
+				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null),
+				settings;
 
 			if (option) {
-				option.settings = option.settings || {};
+				settings = option.settings = option.settings || {};
 				
-				option.settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
-				option.settings.m_wc_min = me.down("[name=m_wc_min]").getValue();
-				option.settings.m_wc_max = me.down("[name=m_wc_max]").getValue();
-				option.settings.m_svg_min_color = me.down("[name=m_svg_min_color]").getValue();
-				option.settings.m_svg_max_color = me.down("[name=m_svg_max_color]").getValue();
-				option.settings.m_svg_nodata_color = me.down("[name=m_svg_nodata_color]").getValue();
-				option.settings.m_svg_line_color = me.down("[name=m_svg_line_color]").getValue();
-				option.settings.m_svg_line_width = "" + me.down("[name=m_svg_line_width]").getValue();
-				option.settings.m_svg_font_color = me.down("[name=m_svg_font_color]").getValue();
-				option.settings.m_svg_font_size = "" + me.down("[name=m_svg_font_size]").getValue();
-				option.settings.m_svg_label_option = me.down("[name=m_svg_label_option]").getValue();
+				settings.m_svgtype = me.down("[name=m_svgtype]").getValue();
+				settings.m_wc_min = me.down("[name=m_wc_min]").getValue();
+				settings.m_wc_max = me.down("[name=m_wc_max]").getValue();
+				settings.m_svg_min_color = me.down("[name=m_svg_min_color]").getValue();
+				settings.m_svg_max_color = me.down("[name=m_svg_max_color]").getValue();
+				settings.m_svg_nodata_color = me.down("[name=m_svg_nodata_color]").getValue();
+				settings.m_svg_line_color = me.down("[name=m_svg_line_color]").getValue();
+				settings.m_svg_line_width = "" + me.down("[name=m_svg_line_width]").getValue();
+				settings.m_svg_font_color = me.down("[name=m_svg_font_color]").getValue();
+				settings.m_svg_font_size = "" + me.down("[name=m_svg_font_size]").getValue();
+				settings.m_svg_label_option = me.down("[name=m_svg_label_option]").getValue();
 				
-				option.settings.m_h_min = "" + me.down("[name=m_h_min]").getValue();
-				option.settings.m_h_max = "" + me.down("[name=m_h_max]").getValue();
+				settings.m_h_min = "" + me.down("[name=m_h_min]").getValue();
+				settings.m_h_max = "" + me.down("[name=m_h_max]").getValue();
 				
-				option.settings.m_h_gravity = "" + me.down("[name=m_h_gravity]").getValue();
-				option.settings.m_h_repulsion = "" + me.down("[name=m_h_repulsion]").getValue();
-				option.settings.m_h_edgelength = "" + me.down("[name=m_h_edgelength]").getValue();
-				option.settings.m_h_ratio = "" + me.down("[name=m_h_ratio]").getValue();
-				option.settings.m_h_end_symbol = me.down("[name=m_h_end_symbol]").getValue();
+				settings.m_h_gravity = "" + me.down("[name=m_h_gravity]").getValue();
+				settings.m_h_repulsion = "" + me.down("[name=m_h_repulsion]").getValue();
+				settings.m_h_edgelength = "" + me.down("[name=m_h_edgelength]").getValue();
+				settings.m_h_ratio = "" + me.down("[name=m_h_ratio]").getValue();
+				settings.m_h_end_symbol = me.down("[name=m_h_end_symbol]").getValue();
 				
-				option.settings.m_html_basestyle = me.down("[name=m_html_basestyle]").setValue();
+				settings.m_html_basestyle = me.down("[name=m_html_basestyle]").setValue();
 				
-				option.settings.m_iv_bgimg = me.down("[name=m_iv_bgimg]").getValue();
-				option.settings.m_iv_data = me.down("[name=m_iv_data]").getValue();
-				option.settings.m_iv_type = me.down("[name=m_iv_type]").getValue();
+				settings.m_iv_bgimg = me.down("[name=m_iv_bgimg]").getValue();
+				settings.m_iv_data = me.down("[name=m_iv_data]").getValue();
+				settings.m_iv_type = me.down("[name=m_iv_type]").getValue();
 				
-				option.settings.m_run_target = me.down("[name=m_run_target]").getValue();
-				option.settings.m_run_ucl = me.down("[name=m_run_ucl]").getValue();
-				option.settings.m_run_lcl = me.down("[name=m_run_lcl]").getValue();
+				settings.m_run_target = me.down("[name=m_run_target]").getValue();
+				settings.m_run_ucl = me.down("[name=m_run_ucl]").getValue();
+				settings.m_run_lcl = me.down("[name=m_run_lcl]").getValue();
+				
+				me.down("[name=m_color_range]").getAllValues(settings);
 				
 				$.each(["m_h_axis_categ", "m_h_axis_src", "m_h_axis_tgt", "m_h_axis_srcdt", "m_h_axis_tgtdt", "m_h_axis_cmt"], function(i, k) {
 					var ctrl = me.down("[name=" + k + "]");
-					option.settings[k] = ctrl.getValue();
+					settings[k] = ctrl.getValue();
 				});
 			}
 		},
@@ -1112,6 +1127,7 @@ IG$._customChartPanels = function() {
 			me.down("[name=pbrunchart]").setVisible(subtype == "runchart");
 			me.down("[name=m_imgviewer_options]").setVisible(subtype == "imgviewer");
 			me.down("[name=m_html_options]").setVisible(subtype == "htmltable" || subtype == "html_ranktable");
+			me.down("[name=m_color_range]").setVisible(subtype == "weekday");
 		},
 		items: [
 			{
@@ -1558,6 +1574,243 @@ IG$._customChartPanels = function() {
 						xtype: "textfield",
 						name: "m_html_basestyle",
 						fieldLabel: "Base CSS Style"
+					}
+				]
+			},
+			// for general color range
+			{
+				xtype: "fieldset",
+				title: "Color Range",
+				name: "m_color_range",
+				hidden: true,
+				layout: {
+					type: "vbox",
+					align: "stretch"
+				},
+				items: [
+					{
+						xtype: "fieldcontainer",
+						layout: {
+							type: "vbox",
+							align: "stretch"
+						},
+						items: [
+							{
+								xtype: "fieldcontainer",
+								anchor: "100%",
+								fieldLabel: IRm$.r1("L_MIN_COLOR"),
+								layout: {
+									type: "hbox",
+									align: "stretch"
+								},
+								items: [
+									{
+										xtype: "textfield",
+										name: "m_rngclr_0",
+										width: 120
+									},
+									{
+										xtype: "splitter"
+									},
+									{
+										xtype: "splitbutton",
+										width: 30,
+										menu: {
+											showSeparator: false,
+											items: [
+												{
+													xtype: "colorpicker",
+													listeners: {
+														select: function(cp, color) {
+															var ctrl = this.down("[name=m_rngclr_0]");
+															ctrl.setValue("#" + color);
+														},
+														scope: this
+													}
+												}, 
+												"-"
+											]
+										}
+									},
+									{
+										xtype: "container",
+										flex: 1
+									}
+								]
+							},
+							{
+								xtype: "fieldcontainer",
+								anchor: "100%",
+								fieldLabel: IRm$.r1("L_MIN_A_COLOR"),
+								layout: {
+									type: "hbox",
+									align: "stretch"
+								},
+								items: [
+									{
+										xtype: "textfield",
+										name: "m_rngclr_1",
+										width: 120
+									},
+									{
+										xtype: "splitter"
+									},
+									{
+										xtype: "splitbutton",
+										width: 30,
+										menu: {
+											showSeparator: false,
+											items: [
+												{
+													xtype: "colorpicker",
+													listeners: {
+														select: function(cp, color) {
+															var ctrl = this.down("[name=m_rngclr_1]");
+															ctrl.setValue("#" + color);
+														},
+														scope: this
+													}
+												}, 
+												"-"
+											]
+										}
+									},
+									{
+										xtype: "container",
+										flex: 1
+									}
+								]
+							},
+							{
+								xtype: "fieldcontainer",
+								anchor: "100%",
+								fieldLabel: IRm$.r1("L_MID_COLOR"),
+								layout: {
+									type: "hbox",
+									align: "stretch"
+								},
+								items: [
+									{
+										xtype: "textfield",
+										name: "m_rngclr_2",
+										width: 120
+									},
+									{
+										xtype: "splitter"
+									},
+									{
+										xtype: "splitbutton",
+										width: 30,
+										menu: {
+											showSeparator: false,
+											items: [
+												{
+													xtype: "colorpicker",
+													listeners: {
+														select: function(cp, color) {
+															var ctrl = this.down("[name=m_rngclr_2]");
+															ctrl.setValue("#" + color);
+														},
+														scope: this
+													}
+												}, 
+												"-"
+											]
+										}
+									},
+									{
+										xtype: "container",
+										flex: 1
+									}
+								]
+							},
+							{
+								xtype: "fieldcontainer",
+								anchor: "100%",
+								fieldLabel: IRm$.r1("L_MID_A_COLOR"),
+								layout: {
+									type: "hbox",
+									align: "stretch"
+								},
+								items: [
+									{
+										xtype: "textfield",
+										name: "m_rngclr_3",
+										width: 120
+									},
+									{
+										xtype: "splitter"
+									},
+									{
+										xtype: "splitbutton",
+										width: 30,
+										menu: {
+											showSeparator: false,
+											items: [
+												{
+													xtype: "colorpicker",
+													listeners: {
+														select: function(cp, color) {
+															var ctrl = this.down("[name=m_rngclr_3]");
+															ctrl.setValue("#" + color);
+														},
+														scope: this
+													}
+												}, 
+												"-"
+											]
+										}
+									},
+									{
+										xtype: "container",
+										flex: 1
+									}
+								]
+							},
+							{
+								xtype: "fieldcontainer",
+								anchor: "100%",
+								fieldLabel: IRm$.r1("L_MAX_COLOR"),
+								layout: {
+									type: "hbox",
+									align: "stretch"
+								},
+								items: [
+									{
+										xtype: "textfield",
+										name: "m_rngclr_4",
+										width: 120
+									},
+									{
+										xtype: "splitter"
+									},
+									{
+										xtype: "splitbutton",
+										width: 30,
+										menu: {
+											showSeparator: false,
+											items: [
+												{
+													xtype: "colorpicker",
+													listeners: {
+														select: function(cp, color) {
+															var ctrl = this.down("[name=m_rngclr_4]");
+															ctrl.setValue("#" + color);
+														},
+														scope: this
+													}
+												}, 
+												"-"
+											]
+										}
+									},
+									{
+										xtype: "container",
+										flex: 1
+									}
+								]
+							}
+						]
 					}
 				]
 			},

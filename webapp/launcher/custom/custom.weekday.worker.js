@@ -15,10 +15,21 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 		legendposition,
 		container = me.container,
 		w = $(container).width(),
-		h = $(container).height();
+		h = $(container).height(),
+		colors = [],
+		settings = mcr.settings || {};
 	
 	data = data.map(function (item) {
 	    return [item[1], item[0], item[2] || '-'];
+	});
+	
+	$.each(["0", "1", "2", "3", "4"], function(i, clr) {
+		var cval = settings["m_rngclr_" + clr];
+		
+		if (cval)
+		{
+			colors.push(cval);
+		}
 	});
 	
 	option = {
@@ -52,6 +63,7 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 	        calculable: true,
 	        orient: 'horizontal',
 	        left: 'center',
+	        color: ["#bf444c", "#d88273", "#f6efa6"],
 	        bottom: 10 // '15%'
 	    },
 	    
@@ -68,6 +80,7 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 	                shadowColor: 'rgba(0, 0, 0, 0.5)'
 	            }
 	        },
+	        
 	        tooltip: {
 				position: "inside",
 				formatter: function() {
@@ -79,6 +92,11 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 			}
 	    }]
 	};
+	
+	if (colors && colors.length)
+	{
+		option.visualMap.color = colors;
+	}
 	
 	cgrid = option.grid;
 	

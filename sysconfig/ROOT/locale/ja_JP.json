@@ -7926,5 +7926,17 @@
     "group" : "locale_ja_JP_0019",
     "name" : "L_M_ARROW",
     "value" : "Arrow"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "B_RPT_RUN",
+    "value" : "Executing Report"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_BULK_LOAD",
+    "value" : "Bulk Run Sheets"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "B_RPT_ERR",
+    "value" : "Error on Report"
   } ]
 }
