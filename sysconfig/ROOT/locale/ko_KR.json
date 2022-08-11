@@ -8010,5 +8010,9 @@
     "group" : "locale_ko_KR_0019",
     "name" : "B_RPT_ERR",
     "value" : "실행 중 오류가 발생하였습니다."
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_ERR_MSEL",
+    "value" : "기간 선택을 확인해 주십시오."
   } ]
 }
