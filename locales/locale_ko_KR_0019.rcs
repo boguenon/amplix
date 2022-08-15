@@ -220,3 +220,4 @@ A;L_WORDWRAP;줄바꿈 최대 행높이
 A;B_RPT_RUN;실행중입니다.
 A;L_BULK_LOAD;쉬트 동시 실행
 A;B_RPT_ERR;실행 중 오류가 발생하였습니다.
+A;L_ERR_MSEL;기간 선택을 확인해 주십시오.

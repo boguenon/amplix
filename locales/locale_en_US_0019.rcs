@@ -221,3 +221,4 @@ A;L_WORDWRAP;Word Wrap
 A;B_RPT_RUN;Executing Report
 A;L_BULK_LOAD;Bulk Run Sheets
 A;B_RPT_ERR;Error on Report
+A;L_ERR_MSEL;Error on calendar selection

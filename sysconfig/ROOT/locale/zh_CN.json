@@ -7938,5 +7938,9 @@
     "group" : "locale_zh_CN_0019",
     "name" : "B_RPT_ERR",
     "value" : "Error on Report"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_ERR_MSEL",
+    "value" : "Error on calendar selection"
   } ]
 }

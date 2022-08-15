@@ -20,10 +20,13 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 		settings = mcr.settings || {};
 	
 	data = data.map(function (item) {
-	    return [item[1], item[0], item[2] || '-'];
+	    return {
+			value: [item[1], item[0], item[2] || '-'],
+			label: {value: item[3]}
+		};
 	});
 	
-	$.each(["0", "1", "2", "3", "4"], function(i, clr) {
+	$.each(["4", "3", "2", "1", "0"], function(i, clr) {
 		var cval = settings["m_rngclr_" + clr];
 		
 		if (cval)
@@ -72,7 +75,10 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 	        type: 'heatmap',
 	        data: data,
 	        label: {
-	            show: mcr.dl_enable
+	            show: mcr.dl_enable,
+	            formatter: function(value, index) {
+					return value.data.label ? value.data.label.value : value.data.value[2];
+				}
 	        },
 	        emphasis: {
 	            itemStyle: {
@@ -80,14 +86,14 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
 	                shadowColor: 'rgba(0, 0, 0, 0.5)'
 	            }
 	        },
-	        
 	        tooltip: {
 				position: "inside",
 				formatter: function() {
 					var arg = arguments,
 						a0 = arg[0],
-						dt = a0.data;
-					return "<b>" + a0.name + "</b><br/>" + (dt && dt.length == 3 && days[dt[1]] ? days[dt[1]] : "") + "<br/>" + (dt && dt.length == 3 ? dt[2] : "");
+						dt = a0.data.value || a0.data,
+						lt = a0.data.label;
+					return "<b>" + a0.name + "</b><br/>" + (dt && dt.length > 1 && days[dt[1]] ? days[dt[1]] : "") + "<br/>" + (lt ? lt.value : "");
 				}
 			}
 	    }]
@@ -296,7 +302,7 @@ IG$.__chartoption.chartext.weekday.prototype.drawChart = function(owner, results
 				
 				if (!isNaN(dval))
 				{
-					mapdata.push([nr, j - colfix, dval]); // j-colfix, i - rowfix, dval]);
+					mapdata.push([nr, j - colfix, dval, drec.text || drec.code]); // j-colfix, i - rowfix, dval]);
 					
 					if (isNaN(vmin))
 					{
