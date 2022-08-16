@@ -1019,7 +1019,7 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_svg_line_width]").setValue(Number(settings.m_svg_line_width || "2"));
 				me.down("[name=m_svg_font_color]").setValue(settings.m_svg_font_color || "#ff0000");
 				me.down("[name=m_svg_font_size]").setValue(Number(settings.m_svg_font_size || "20"));
-				me.down("[name=m_svg_label_option]").setValue(settings.m_svg_label_option);
+				me.down("[name=m_svg_label_option]").setValue(IG$._decodeVal(settings.m_svg_label_option));
 				
 				me.down("[name=m_h_min]").setValue(Number(settings.m_h_min || "3"));
 				me.down("[name=m_h_max]").setValue(Number(settings.m_h_max || "15"));
@@ -1088,7 +1088,7 @@ IG$._customChartPanels = function() {
 				settings.m_svg_line_width = "" + me.down("[name=m_svg_line_width]").getValue();
 				settings.m_svg_font_color = me.down("[name=m_svg_font_color]").getValue();
 				settings.m_svg_font_size = "" + me.down("[name=m_svg_font_size]").getValue();
-				settings.m_svg_label_option = me.down("[name=m_svg_label_option]").getValue();
+				settings.m_svg_label_option = IG$._encodeVal(me.down("[name=m_svg_label_option]").getValue());
 				
 				settings.m_h_min = "" + me.down("[name=m_h_min]").getValue();
 				settings.m_h_max = "" + me.down("[name=m_h_max]").getValue();
