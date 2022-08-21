@@ -8026,5 +8026,21 @@
     "group" : "locale_en_US_0019",
     "name" : "L_ERR_MSEL",
     "value" : "Error on calendar selection"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_RPT_CONF",
+    "value" : "Report Config"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_SHEETS",
+    "value" : "Sheets"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "B_PG_NEXT",
+    "value" : "&gt;&gt;"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "B_PG_PREV",
+    "value" : "&lt;&lt;"
   } ]
 }
