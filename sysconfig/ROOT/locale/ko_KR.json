@@ -8014,5 +8014,21 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_ERR_MSEL",
     "value" : "기간 선택을 확인해 주십시오."
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_RPT_CONF",
+    "value" : "리포트 설정"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_SHEETS",
+    "value" : "쉬트 위젯"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_PG_NEXT",
+    "value" : "&gt;&gt;"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_PG_PREV",
+    "value" : "&lt;&lt;"
   } ]
 }

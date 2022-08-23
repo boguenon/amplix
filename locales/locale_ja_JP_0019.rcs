@@ -221,3 +221,8 @@ A;B_RPT_RUN;Executing Report
 A;L_BULK_LOAD;Bulk Run Sheets
 A;B_RPT_ERR;Error on Report
 A;L_ERR_MSEL;Error on calendar selection
+
+A;B_PG_NEXT;&gt;&gt;
+A;B_PG_PREV;&lt;&lt;
+A;L_RPT_CONF;Report Config
+A;L_SHEETS;Sheets

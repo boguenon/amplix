@@ -221,3 +221,8 @@ A;B_RPT_RUN;실행중입니다.
 A;L_BULK_LOAD;쉬트 동시 실행
 A;B_RPT_ERR;실행 중 오류가 발생하였습니다.
 A;L_ERR_MSEL;기간 선택을 확인해 주십시오.
+
+A;B_PG_NEXT;&gt;&gt;
+A;B_PG_PREV;&lt;&lt;
+A;L_RPT_CONF;리포트 설정
+A;L_SHEETS;쉬트 위젯
