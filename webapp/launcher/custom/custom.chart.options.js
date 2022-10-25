@@ -16,6 +16,7 @@ IG$._customChartPanels = function() {
 			type: "vbox",
 			align: "stretch"
 		},
+		name: "_cust_options",
 		border: 0,
 		title: IRm$.r1("L_MAP_OPTIONS"), // "Extra Options",
 		defaults: {
@@ -1088,6 +1089,7 @@ IG$._customChartPanels = function() {
 				settings.m_svg_line_width = "" + me.down("[name=m_svg_line_width]").getValue();
 				settings.m_svg_font_color = me.down("[name=m_svg_font_color]").getValue();
 				settings.m_svg_font_size = "" + me.down("[name=m_svg_font_size]").getValue();
+				delete options["m_svg_label_option"];
 				settings.m_svg_label_option = IG$._encodeVal(me.down("[name=m_svg_label_option]").getValue());
 				
 				settings.m_h_min = "" + me.down("[name=m_h_min]").getValue();

@@ -447,11 +447,11 @@ IG$.__chartoption.chartext.hstock.prototype.drawChart = function(owner, results)
 
 			me.hchart = hchart;
 		}
-		else
-		{
-			hchart = new Highcharts.stock(copt);
-			me.hchart = hchart;
-		}
+		// else
+		// {
+		// 	hchart = new Highcharts.stock(copt);
+		// 	me.hchart = hchart;
+		// }
 	}
 };
 	

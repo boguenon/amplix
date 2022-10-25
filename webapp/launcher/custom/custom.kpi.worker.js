@@ -1050,15 +1050,16 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 					
 					switch (m.type)
 					{
-					case "highcharts":
-						copt.chart.renderTo = rg[0];
+					// case "highcharts":
+					// 	copt.chart.renderTo = rg[0];
 						
-						if (window.Highcharts)
-						{
-							hc = new Highcharts.Chart(copt);
-							hcharts.push(hc);
-						}
-						break;
+						// if (window.Highcharts)
+						// {
+						// 	hc = new Highcharts.Chart(copt);
+						// 	hcharts.push(hc);
+						// }
+					// 	break;
+					case "_modc_":
 					case "echarts":
 						copt.chart = copt.chart || {};
 						copt.chart.renderTo = rg[0];
@@ -1098,15 +1099,15 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 						
 						if (w > 0 && h > 0)
 						{
-							if (window.Highcharts)
-							{
-								mchart.setSize.call(mchart, w, h, doAnimation = true);
-								dom.hide().show(0);
-							}
-							else
-							{
+							// if (window.Highcharts)
+							// {
+							// 	mchart.setSize.call(mchart, w, h, doAnimation = true);
+							// 	dom.hide().show(0);
+							// }
+							// else
+							// {
 								mchart.resize({width: w, height: h});
-							}
+							// }
 						}
 					}
 				});
@@ -1149,12 +1150,8 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 		
 		if (me.cindopt.boxlayout == "vscr" || me.cindopt.boxlayout == "hscr")
 		{
-			me.plotarea.mCustomScrollbar({
-				axis: me.cindopt.boxlayout == "vscr" ? "y" : "x",
-				theme: "minimal-dark",
-				autoHideScrollbar: true,
-				scrollbarPosition: "outside",
-				autoDraggerLength: true
+			IG$.setScrRect(me.plotarea, {
+				axis: me.cindopt.boxlayout == "vscr" ? "y" : "x"
 			});
 		}
 	}
