@@ -746,10 +746,6 @@
 						{
 							"name": "Business Process Modeler",
 							"cls": "ig_bpmn_modeler"
-						},
-						{
-							"name": "Business Process Form",
-							"cls": "ig_bpmn_form"
 						}
 					]
 				}
