@@ -34,4 +34,4 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (26, 5, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (27, 2, 'amplix_h2','com.amplix.connector.MemoryDBJdbcDriver','AMPLIX InMemoryDB','jdbc:amplix_memdb:<dbname>',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (28, 1, 'tibero','com.tmax.tibero.jdbc.TbDriver','Tmax Tibero','jdbc:tibero:thin:@<server>[:<8629>]:<service_name>',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (29, 2, 'pardot','pardot','Pardot connection','pardot',1);
-INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (30, 5, 'elasticsearch_jdbc', 'org.elasticsearch.xpack.sql.jdbc.EsDriver', 'ElasticSearchJDBC', 'jdbc:elasticsearch://https://<server>[:<9200>]/?timezone=UTC&page.size=250', 1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (30, 5, 'elasticsearch_jdbc', 'org.elasticsearch.xpack.sql.jdbc.EsDriver', 'ElasticSearch JDBC', 'jdbc:elasticsearch://https://<server>[:<9200>]/?timezone=UTC&page.size=250', 1);

@@ -2990,6 +2990,19 @@ a:active .webix_custom_radio {
 	color: #ffffff;
 }
 
+.df-filter-text .df-item-row input[type="text"],
+.df-filter-fileupload .df-item-row input[type="text"],
+.df-filter-combobox .idv-sel-combo input[type="text"],
+.df-filter-combobox .idv-checkbox-inp input[type="text"],
+.df-filter-checkbox .idv-sel-combo input[type="text"],
+.df-filter-calendar .df-item-row input[type="text"],
+.df-filter-calendarperiod .df-item-row input[type="text"]
+{
+  background-color: #5a5a5a;
+	background-image: none;
+	color: #ffffff;
+}
+
 .df-item-row .df-filter-valuset select {
 	background-color: #5a5a5a;
 	color: #ffffff;
@@ -3115,4 +3128,16 @@ a:active .webix_custom_radio {
 
 .dock_inner {
 	background-color: initial;
+}
+
+.idv-st-abar {
+  background-color: initial;
+}
+
+.idv-wz-cntl .idv-st-sel-desc {
+  background-color: initial;
+}
+
+.m-datagrid-container {
+  background: initial;
 }
