@@ -51,7 +51,7 @@ ALTER TABLE igcudbauth ADD CONSTRAINT idx_igcudbauth_pk PRIMARY KEY(sid, mid);
 ALTER TABLE igcum ADD CONSTRAINT idx_igcum_pk PRIMARY KEY(iuid, mdate);
 ALTER TABLE igcuserduty ADD CONSTRAINT idx_igcuserduty_pk PRIMARY KEY(mts, iuid, sid);
 ALTER TABLE igcusers ADD CONSTRAINT idx_igcusers_pk PRIMARY KEY(mts, iuid);
-ALTER TABLE igcacclaud ADD CONSTRAINT idx_igcacclaud_pk PRIMARY KEY(cdate, tuid);
+ALTER TABLE igcacclaud ADD CONSTRAINT idx_igcacclaud_pk PRIMARY KEY(auid);
 ALTER TABLE igcacclog ADD CONSTRAINT idx_igcacclog_pk PRIMARY KEY(kuid);
 
 ALTER TABLE igcms ADD CONSTRAINT idx_igcms_fk_mts FOREIGN KEY (mts) REFERENCES igcmts(mtu);
