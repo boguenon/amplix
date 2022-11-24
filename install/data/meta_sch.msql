@@ -769,7 +769,8 @@ CREATE TABLE igcacclog (
 
 CREATE INDEX idx_igcacclog_01 ON igcacclog(cdate, userid);
 
-CREATE TABLE igcacclaud ( 
+CREATE TABLE igcacclaud (
+	auid #CHAR#(17) NOT NULL, 
     tuid #CHAR#(17) NOT NULL,
 	cdate #LONG# NOT NULL, 
 	lstat #CHAR#(1),
