@@ -49,21 +49,21 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202302211953" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202302231333" />
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202302211953\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202302231333\" />");
 }
 %>
 <% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202302211953" />
+<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202302231333" />
 <% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202302211953" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202302231333" />
 <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202302211953"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202302211953"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202302211953"></script>
+<script type="text/javascript" src="../config.js?_dc=202302231333"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202302231333"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202302231333"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -125,7 +125,7 @@ IG$.__microloader(modules, function() {
 });
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202302211953"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202302231333"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",

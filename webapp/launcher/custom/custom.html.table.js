@@ -145,7 +145,7 @@ IG$.__chartoption.chartext.htmltable.prototype = {
 							{
 								sn = sn.toLowerCase();
 								sn = IG$.replaceAll(sn, " ", "_");
-								sn = IG$.replaceAll(sn, "&#x2044;", "_");
+								sn = IG$.replaceAll(sn, "&#x2f;", "_");
 							}
 							
 							sn = "ig-dvcell-" + sn;
