@@ -1,6 +1,6 @@
 IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
-IG$.__chartoption.chartext.hierarchy.prototype.initChart = function(seriesData, maxDepth) {
+IG$.cVis.hierarchy.prototype.initChart = function(seriesData, maxDepth) {
     var displayRoot = stratify();
     
     var myChart = this.customchart;
@@ -170,12 +170,12 @@ IG$.__chartoption.chartext.hierarchy.prototype.initChart = function(seriesData, 
     });
 }
 
-IG$.__chartoption.chartext.hierarchy.prototype.drawChart = function(owner, results) {
+IG$.cVis.hierarchy.prototype.draw = function(results) {
 	var me = this,
-		container = $(owner.container),
-		cop = owner.cop;
+        chartview = me.chartview,
+		container = $(chartview.container),
+		cop = chartview.cop;
 	
-	me.owner = owner;
 	me.container = container;
 		
 	if (results)
@@ -186,7 +186,7 @@ IG$.__chartoption.chartext.hierarchy.prototype.drawChart = function(owner, resul
 			cols,
 			i, j,
 			data = results._tabledata,
-			cop = owner.cop,
+			cop = chartview.cop,
 			seriesData = [],
 			keymap,
 			base,
@@ -258,7 +258,7 @@ IG$.__chartoption.chartext.hierarchy.prototype.drawChart = function(owner, resul
 	}
 };
 
-IG$.__chartoption.chartext.hierarchy.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.hierarchy.prototype.updatedisplay = function(w, h) {
 	var me = this,
 		customchart = me.customchart;
 	
@@ -268,7 +268,7 @@ IG$.__chartoption.chartext.hierarchy.prototype.updatedisplay = function(owner, w
 	}
 }
 
-IG$.__chartoption.chartext.hierarchy.prototype.dispose = function() {
+IG$.cVis.hierarchy.prototype.dispose = function() {
 	var me = this,
 		customchart = me.customchart;
 		

@@ -826,14 +826,14 @@ IG$.__chartoption.chartext.kpi_util.replaceCellValue = function(pval, results, _
 	};
 };
 
-IG$.__chartoption.chartext.kpi.prototype.replaceCellValue = IG$.__chartoption.chartext.kpi_util.replaceCellValue;
-IG$.__chartoption.chartext.kpi.prototype.getParamValue = IG$.__chartoption.chartext.kpi_util.getParamValue;	
-IG$.__chartoption.chartext.kpi.prototype.procTemplate = IG$.__chartoption.chartext.kpi_util.procTemplate;
+IG$.cVis.kpi.prototype.replaceCellValue = IG$.__chartoption.chartext.kpi_util.replaceCellValue;
+IG$.cVis.kpi.prototype.getParamValue = IG$.__chartoption.chartext.kpi_util.getParamValue;	
+IG$.cVis.kpi.prototype.procTemplate = IG$.__chartoption.chartext.kpi_util.procTemplate;
 
 /**
  * draw multiple chart
  */
-IG$.__chartoption.chartext.kpi.prototype._drawCharts = function(charts, chartdiv) {
+IG$.cVis.kpi.prototype._drawCharts = function(charts, chartdiv) {
 	var j;
 	$.each(charts, function(j, chart) {
 		var value = charts[j].c, 
@@ -913,13 +913,13 @@ IG$.__chartoption.chartext.kpi.prototype._drawCharts = function(charts, chartdiv
 /**
  * overrides base function after loading
  */
-IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
+IG$.cVis.kpi.prototype.draw = function(results) {
 	var me = this,
-		container = $(owner.container),
-		cop = owner.cop,
+		chartview = me.chartview,
+		container = $(chartview.container),
+		cop = chartview.cop,
 		cindopt;
 	
-	me.owner = owner;
 	me.container = container;
 	
 	if (me.plotarea)
@@ -1157,7 +1157,7 @@ IG$.__chartoption.chartext.kpi.prototype.drawChart = function(owner, results) {
 	}
 };
 
-IG$.__chartoption.chartext.kpi.prototype.updateLayout = function(resized) {
+IG$.cVis.kpi.prototype.updateLayout = function(resized) {
 	var me = this,
 		cindopt = me.cindopt,
 		container = me.container,
@@ -1251,7 +1251,7 @@ IG$.__chartoption.chartext.kpi.prototype.updateLayout = function(resized) {
 	}
 }
 
-IG$.__chartoption.chartext.kpi.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.kpi.prototype.updatedisplay = function(w, h) {
 	// this.map.m1.call(this.map);
 	var me = this,
 		i,
@@ -1271,13 +1271,13 @@ IG$.__chartoption.chartext.kpi.prototype.updatedisplay = function(owner, w, h) {
 }
 
 
-IG$.__chartoption.chartext.kpi.prototype.destroy = function() {
+IG$.cVis.kpi.prototype.dispose = function() {
 	var me = this,
-		owner = me.owner;
+		chartview = me.chartview;
 		
-	if (owner && owner.container)
+	if (chartview && chartview.container)
 	{
-		$(owner.container).empty();
+		$(chartview.container).empty();
 	}
 }
 

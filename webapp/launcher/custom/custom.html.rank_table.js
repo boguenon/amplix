@@ -10,15 +10,12 @@ IG$.__chartoption.charttype.push(
 	}
 );
 
-IG$.__chartoption.chartext.html_ranktable = function(owner) {
-	this.owner = owner;
-};
-
-IG$.__chartoption.chartext.html_ranktable.prototype = {
-	drawChart: function(owner, results) {
+IG$.cVis.html_ranktable = $s.extend(IG$.cVis.base, {
+	draw: function(results) {
 		var me = this,
-			container = owner.container,
-			cop = owner.cop,
+			chartview = me.chartview,
+			container = chartview.container,
+			cop = chartview.cop,
 			copsettings = cop.settings || {},
 			m_html_basestyle = copsettings.m_html_basestyle || "",
 			html = me.html,
@@ -57,7 +54,7 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 				rowcnt = results.rowcnt,
 				i, j, k, row, cell, celltext,
 				p, idx, sn, title,
-				sheetoption = owner.sheetoption ? owner.sheetoption.model : null,
+				sheetoption = chartview.sheetoption ? chartview.sheetoption.model : null,
 				headers = {},
 				tname,
 				cspan, rspan,
@@ -206,7 +203,7 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 							amplix_selected: [cell]
 						};
 					
-						owner.procClickEvent.call(owner, sender, {});
+						chartview.procClickEvent.call(chartview, sender, {});
 					});
 					
 					td = td_row[1];
@@ -303,7 +300,7 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 									amplix_selected: [cell]
 								};
 							
-								owner.procClickEvent.call(owner, sender, {});
+								chartview.procClickEvent.call(chartview, sender, {});
 							});
 							
 							$.each(row, function(k, cell) {
@@ -345,7 +342,7 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 										amplix_selected: [cell]
 									};
 								
-									owner.procClickEvent.call(owner, sender, {});
+									chartview.procClickEvent.call(chartview, sender, {});
 								});
 							});
 							
@@ -380,7 +377,7 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 		}
 	},
 
-	updatedisplay: function(owner, w, h) {
+	updatedisplay: function(w, h) {
 		var me = this;
 	},
 	
@@ -487,11 +484,11 @@ IG$.__chartoption.chartext.html_ranktable.prototype = {
 	},
 	dispose: function() {
 		var me = this,
-			owner = me.owner;
+			chartview = me.chartview;
 			
-		if (owner && owner.container)
+		if (chartview && chartview.container)
 		{
-			$(owner.container).empty();
+			$(chartview.container).empty();
 		}
 	}
-};
+});

@@ -1,10 +1,10 @@
-﻿IG$.__chartoption.chartext.bubblecloud.prototype.drawBubbleCloud = function() {
+﻿IG$.cVis.bubblecloud.prototype.drawBubbleCloud = function() {
 	var me = this,
-		owner = me.owner,
+		chartview = me.chartview,
 		results = me.results,
-		container = $(owner.container),
-		sop = owner._ILb,
-		cop = owner.cop,
+		container = $(chartview.container),
+		sop = chartview._ILb,
+		cop = chartview.cop,
 		i, j,
 		rdata = results._tabledata,
 		jcontainer,
@@ -125,29 +125,28 @@
 		});
 }
 
-IG$.__chartoption.chartext.bubblecloud.prototype.drawChart = function(owner, results) {
+IG$.cVis.bubblecloud.prototype.draw = function(results) {
 	var me = this;
-	me.owner = owner;
 	me.results = results;
 	
 	me.drawBubbleCloud();
 };
 	
-IG$.__chartoption.chartext.bubblecloud.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.bubblecloud.prototype.updatedisplay = function(w, h) {
 	var me = this;
 	
-	if (me.owner && me.results)
+	if (me.chartview && me.results)
 	{
 		me.drawBubbleCloud();
 	}
 };
 
-IG$.__chartoption.chartext.bubblecloud.prototype.destroy = function(owner, w, h) {
+IG$.cVis.bubblecloud.prototype.dispose = function() {
 	var me = this,
-		owner = me.owner;
+		chartview = me.chartview;
 		
-	if (owner && owner.container)
+	if (chartview && chartview.container)
 	{
-		$(owner.container).empty();
+		$(chartview.container).empty();
 	}
 };

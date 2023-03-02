@@ -1,4 +1,4 @@
-﻿IG$.__chartoption.chartext.sankey.prototype.buildNode = function(results, snode) {
+﻿IG$.cVis.sankey.prototype.buildNode = function(results, snode) {
 	var colfix = results.colfix,
 		rowfix = results.rowfix,
 		data = results._tabledata,
@@ -76,7 +76,7 @@
 	}
 }
 
-IG$.__chartoption.chartext.sankey.prototype.drawChart = function(owner, results) {
+IG$.cVis.sankey.prototype.draw = function(results) {
 	var me = this;
 	
 	if (me._draw_timer)
@@ -86,11 +86,11 @@ IG$.__chartoption.chartext.sankey.prototype.drawChart = function(owner, results)
 	}
 	
 	me._draw_timer = setTimeout(function() {
-		me.drawChartTimer(owner, results);
+		me.drawChartTimer(results);
 	}, 10);
 }
 
-IG$.__chartoption.chartext.sankey.prototype.drawChartTimer = function(owner, results) {
+IG$.cVis.sankey.prototype.drawChartTimer = function(results) {
 			
 	var dragmove = function(d) {
 		d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
@@ -99,11 +99,18 @@ IG$.__chartoption.chartext.sankey.prototype.drawChartTimer = function(owner, res
 	}
 	
 	var me = this,
-		container = owner.container,
+		chartview = me.chartview,
+		container = chartview.container,
 		jcontainer = $(container);
 		
 	jcontainer.empty();
 	jcontainer.addClass("igc-sankey");
+
+	if (results.colfix < 2)
+	{
+		IG$.ShowError(IRm$.r1("E_CHART_DRAWING") + " Need 2 Column on pivot definition!");
+		return;
+	}
 	
 	var width = jcontainer.width(),
 		height = jcontainer.height();
@@ -131,11 +138,7 @@ IG$.__chartoption.chartext.sankey.prototype.drawChartTimer = function(owner, res
 		};
 	
 	me._results = results;
-	me._owner = owner;
 	
-	if (results.colfix < 2)
-		return;
-		
 	me.buildNode(results, snode);
 	
 	sankey
@@ -187,13 +190,13 @@ IG$.__chartoption.chartext.sankey.prototype.drawChartTimer = function(owner, res
 		.attr("text-anchor", "start");
 }
 
-IG$.__chartoption.chartext.sankey.prototype.destroy = function() {
+IG$.cVis.sankey.prototype.destroy = function() {
 	var me = this,
-		owner = me.owner;
+		chartview = me.chartview;
 		
-	if (owner && owner.container)
+	if (chartview && chartview.container)
 	{
-		$(me.owner.container).empty();
+		$(me.chartview.container).empty();
 	}
 	me.vis = null;
 }

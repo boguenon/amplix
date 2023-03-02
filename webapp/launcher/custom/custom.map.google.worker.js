@@ -1,4 +1,4 @@
-﻿IG$.__chartoption.chartext.googlemap.prototype.google_initialize = function(container) {
+﻿IG$.cVis.googlemap.prototype.google_initialize = function(container) {
 	var me = this,
 		mapOptions = {
 		zoom: 8,
@@ -29,7 +29,7 @@
 	return map;
 };
 
-IG$.__chartoption.chartext.googlemap.prototype.validateData = function() {
+IG$.cVis.googlemap.prototype.validateData = function() {
 	var me = this;
 
 	clearTimeout(me._ptimer);
@@ -40,7 +40,7 @@ IG$.__chartoption.chartext.googlemap.prototype.validateData = function() {
 	}, 1000);
 },
 
-IG$.__chartoption.chartext.googlemap.prototype.updateData = function() {
+IG$.cVis.googlemap.prototype.updateData = function() {
 	var me = this,
 		map = me.map_inst,
 		bnd = map.getBounds(),
@@ -48,7 +48,7 @@ IG$.__chartoption.chartext.googlemap.prototype.updateData = function() {
 		sw = bnd ? bnd.getSouthWest() : null,
 		cnt = bnd ? map.getCenter() : null,
 		zoom = map.getZoom(),
-		owner = me.owner,
+		chartview = me.chartview,
 		bopt;
 	
 	if (bnd && ne)
@@ -69,7 +69,7 @@ IG$.__chartoption.chartext.googlemap.prototype.updateData = function() {
 		};
 
 		me.req_cnt = 0;
-		owner._reqData.call(owner, bopt);
+		chartview._reqData.call(chartview, bopt);
 	}
 	else
 	{
@@ -83,9 +83,10 @@ IG$.__chartoption.chartext.googlemap.prototype.updateData = function() {
 	}
 }
 
-IG$.__chartoption.chartext.googlemap.prototype.drawChart = function(owner, results) {
+IG$.cVis.googlemap.prototype.draw = function(results) {
 // insert logic with report result
 	var me = this,
+		chartview = me.chartview,
 		map_inst = me.map_inst,
 		i;
 		
@@ -94,7 +95,7 @@ IG$.__chartoption.chartext.googlemap.prototype.drawChart = function(owner, resul
 
 	if (!map_inst)
 	{
-		me.map_inst = map_inst = me.google_initialize(owner.container);
+		me.map_inst = map_inst = me.google_initialize(chartview.container);
 	}
 	else
 	{
@@ -113,17 +114,17 @@ IG$.__chartoption.chartext.googlemap.prototype.drawChart = function(owner, resul
 		me.clusters = [];
 	}
 
-	me.setData(owner, results);
+	me.setData(chartview, results);
 }
 
-IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results) {
+IG$.cVis.googlemap.prototype.setData = function(chartview, results) {
 	var me = this,
-		sop = owner.sheetoption ? owner.sheetoption.model : null,
-		cop = owner.cop, // chart option information
+		sop = chartview.sheetoption ? chartview.sheetoption.model : null,
+		cop = chartview.cop, // chart option information
 		copsettings = cop.settings,
 		map = me.map_inst,
 		seriesname,
-		i, j,
+		i, j, p,
 		styles_ = [],
 		sizes = [53, 56, 66, 78, 90],
 		defaultLevel,
@@ -194,10 +195,11 @@ IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results
 		{
 			for (i=0; i < results.geodata.length; i++)
 			{
-				minLng = (i == 0) ? Number(results.geodata[i].lng) : Math.min(minLng, Number(results.geodata[i].lng));
-				maxLng = (i == 0) ? Number(results.geodata[i].lng) : Math.max(maxLng, Number(results.geodata[i].lng));
-				minLat = (i == 0) ? Number(results.geodata[i].lat) : Math.min(minLat, Number(results.geodata[i].lat));
-				maxLat = (i == 0) ? Number(results.geodata[i].lat) : Math.max(maxLat, Number(results.geodata[i].lat));
+				p = results.geodata[i];
+				minLng = (i == 0) ? Number(p.lng) : Math.min(minLng, Number(p.lng));
+				maxLng = (i == 0) ? Number(p.lng) : Math.max(maxLng, Number(p.lng));
+				minLat = (i == 0) ? Number(p.lat) : Math.min(minLat, Number(p.lat));
+				maxLat = (i == 0) ? Number(p.lat) : Math.max(maxLat, Number(p.lat));
 			}
 
 			mlng = (maxLng + minLng) / 2;
@@ -340,7 +342,7 @@ IG$.__chartoption.chartext.googlemap.prototype.setData = function(owner, results
 	});
 },
 
-IG$.__chartoption.chartext.googlemap.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.googlemap.prototype.updatedisplay = function(w, h) {
 	var me = this,
 		map = me.map;
 		

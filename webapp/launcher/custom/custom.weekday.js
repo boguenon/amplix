@@ -10,41 +10,37 @@ IG$.__chartoption.charttype.push(
 	}
 );
 
-IG$.__chartoption.chartext.weekday = function(owner) {
-	this.owner = owner;
-}
-
-IG$.__chartoption.chartext.weekday.prototype = {
-	drawChart: function(owner, results) {
+IG$.cVis.weekday = $s.extend(IG$.cVis.base, {
+	draw: function(results) {
 		var me = this;
 		
-		if (IG$.__chartoption.chartext.weekday._loading)
+		if (IG$.cVis.weekday._loading)
 		{ 
 			setTimeout(function() {
-				me.drawChart.call(me, owner, results);
+				me.draw.call(me, results);
 			}, 500);
 		}
 		
-		if (!IG$.__chartoption.chartext.weekday._loaded)
+		if (!IG$.cVis.weekday._loaded)
 		{
 			var js = [
 					"./custom/custom.weekday.worker.js"
 				];
 			
-			IG$.__chartoption.chartext.weekday._loading = 1;
+			IG$.cVis.weekday._loading = 1;
 			
 			IG$.getScriptCache(
 				js, 
 				new IG$.callBackObj(this, function() {
-					IG$.__chartoption.chartext.weekday._loaded = 1;
-					me.drawChart.call(me, owner, results);
+					IG$.cVis.weekday._loaded = 1;
+					me.draw.call(me, results);
 				})
 			);
 		}
 	},
 	
-	updatedisplay: function(owner, w, h) {
+	updatedisplay: function(w, h) {
 	},
 	
 	getExportData: IG$.__chartoption.chartext.$export_echart
-};
+});

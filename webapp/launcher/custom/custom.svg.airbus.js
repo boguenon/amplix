@@ -10,17 +10,14 @@ IG$.__chartoption.charttype.push(
 	}
 );
 
-IG$.__chartoption.chartext.airbusseat = function(owner) {
-	this.owner = owner;
-};
-
-IG$.__chartoption.chartext.airbusseat.prototype = {
-	drawChart: function(owner, results) {
+IG$.cVis.airbusseat = $s.extend(IG$.cVis.base, {
+	draw: function(results) {
 		var me = this,
-			container = owner.container,
+			chartview = me.chartview,
+			container = chartview.container,
 			svgmap;
 		
-		me.map = svgmap = new IG$.SVGLoader($(container), me, owner);
+		me.map = svgmap = new IG$.SVGLoader($(container), me, chartview);
 
 		svgmap.container.unbind("svgloaded");
 
@@ -138,18 +135,18 @@ IG$.__chartoption.chartext.airbusseat.prototype = {
 		});
 	},
 
-	updatedisplay: function(owner, w, h) {
+	updatedisplay: function(w, h) {
 		var me = this,
 			map = me.map;
 		map && map.resizeTo.call(map);
 	},
 	dispose: function() {
 		var me = this,
-			owner = me.owner;
+			chartview = me.chartview;
 			
-		if (owner && owner.container)
+		if (chartview && chartview.container)
 		{
-			$(owner.container).empty();
+			$(chartview.container).empty();
 		}
 	}
-};
+});

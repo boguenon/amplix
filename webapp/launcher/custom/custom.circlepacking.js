@@ -8,41 +8,37 @@
 	}
 );
 
-IG$.__chartoption.chartext.circlepacking = function(owner) {
-	this.owner = owner;
-}
-
-IG$.__chartoption.chartext.circlepacking.prototype = {
-	drawChart: function(owner, results) {
+IG$.cVis.circlepacking = $s.extend(IG$.cVis.base, {
+	draw: function(results) {
 		var me = this;
 		
-		if (IG$.__chartoption.chartext.circlepacking._loading)
+		if (IG$.cVis.circlepacking._loading)
 		{
 			setTimeout(function() {
-				me.drawChart.call(me, owner, results);
+				me.draw.call(me, results);
 			}, 500);
 			
 			return;
 		}
 		
-		if (!IG$.__chartoption.chartext.circlepacking._loaded)
+		if (!IG$.cVis.circlepacking._loaded)
 		{
 			var js = [
 					"./custom/d3-array.v2.min.js",
 					"./custom/custom.circlepacking.worker.js"
 				];
 			
-			IG$.__chartoption.chartext.circlepacking._loading = 1;
+			IG$.cVis.circlepacking._loading = 1;
 			
 			IG$.getScriptCache(
 				js, 
 				new IG$.callBackObj(this, function() {
-					IG$.__chartoption.chartext.circlepacking._loaded = 1;
-					me.drawChart.call(me, owner, results);
+					IG$.cVis.circlepacking._loaded = 1;
+					me.draw.call(me, results);
 				})
 			);
 		}
 	},
-	updatedisplay: function(owner, w, h) {
+	updatedisplay: function(w, h) {
 	}
-}
+});

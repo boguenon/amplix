@@ -2,7 +2,6 @@
  * @module custom/map/esri
  * @desc esri boot loader
  *
- * @property {object} owner - chart module owner
  */
 IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
@@ -16,27 +15,24 @@ IG$.__chartoption.charttype.push(
 	}
 );
 
-IG$.__chartoption.chartext.esri = function(owner) {
-	this.owner = owner;
-	this._esri_version = ig$.arcgis_version || "3.33";
-};
+IG$.cVis.esri = $s.extend(IG$.cVis.base, {
+	initComponent: function() {
+		var me = this;
+		me._esri_version = ig$.arcgis_version || "3.33";
 
-IG$.__chartoption.chartext.esri.prototype = {
-	/**
-	 * dynamic loading worker javascript and necessary arcgis javascript / css file in browser
- 	 * @memberof module:custom/map/esri
-	 */
-	drawChart: function(owner, results) {
+		IG$.cVis.esri.superclass.initComponent.apply(me, arguments);
+	},
+	draw: function(results) {
 		var me = this;
 		
-		if (IG$.__chartoption.chartext.esri._loading)
+		if (IG$.cVis.esri._loading)
 		{
 			/*
-			 * case javascript is loading and before initialization
-			 * Keep monitoring drawchart api in worker is ready
-			 */
+				* case javascript is loading and before initialization
+				* Keep monitoring draw api in worker is ready
+				*/
 			setTimeout(function() {
-				me.drawChart.call(me, owner, results);
+				me.draw.call(me, results);
 			}, 500);
 			
 			return;
@@ -45,7 +41,7 @@ IG$.__chartoption.chartext.esri.prototype = {
 		/**
 		 * dynamic loading based on version
 		 */
-		if (!IG$.__chartoption.chartext.esri._loaded)
+		if (!IG$.cVis.esri._loaded)
 		{
 			var js;
 
@@ -83,23 +79,18 @@ IG$.__chartoption.chartext.esri.prototype = {
 				];
 			}
 			
-			IG$.__chartoption.chartext.esri._loading = 1;
+			IG$.cVis.esri._loading = 1;
 			
 			IG$.getScriptCache(
 				js, 
 				new IG$.callBackObj(this, function() {
-					IG$.__chartoption.chartext.esri._loaded = 1;
-					me.drawChart.call(me, owner, results);
+					IG$.cVis.esri._loaded = 1;
+					me.draw(results);
 				})
 			);
 		}
 	},
-	
-	/**
-	 * custom chart resize handler
- 	 * @memberof module:custom/map/esri
-	 */
-	updatedisplay: function(owner, w, h) {
+	updatedisplay: function(w, h) {
 		var me = this,
 			map = me.map_inst;
 			
@@ -108,6 +99,6 @@ IG$.__chartoption.chartext.esri.prototype = {
 			map.resize();
 		}
 	},
-	
 	getExportData: IG$.__chartoption.chartext.$export_html
-};
+});
+

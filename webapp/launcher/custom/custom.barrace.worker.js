@@ -1,10 +1,10 @@
-﻿IG$.__chartoption.chartext.barrace.prototype.drawBarChartRace = function() {
+﻿IG$.cVis.barrace.prototype.drawBarChartRace = function() {
 	var me = this,
-		owner = me.owner,
+		chartview = me.chartview,
 		results = me.results,
-		container = $(owner.container),
-		sop = owner._ILb,
-		cop = owner.cop,
+		container = $(chartview.container),
+		sop = chartview._ILb,
+		cop = chartview.cop,
 		i, j,
 		rdata = results._tabledata,
 		jcontainer,
@@ -423,29 +423,28 @@
 	
 }
 
-IG$.__chartoption.chartext.barrace.prototype.drawChart = function(owner, results) {
+IG$.cVis.barrace.prototype.draw = function(results) {
 	var me = this;
-	me.owner = owner;
 	me.results = results;
 	
 	me.drawBarChartRace();
 };
 	  
-IG$.__chartoption.chartext.barrace.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.barrace.prototype.updatedisplay = function(w, h) {
 	var me = this;
 	
-	if (me.owner && me.results)
+	if (me.chartview && me.results)
 	{
 		me.drawBarChartRace();
 	}
 };
 
-IG$.__chartoption.chartext.barrace.prototype.destroy = function(owner, w, h) {
+IG$.cVis.barrace.prototype.dispose = function() {
     var me = this,
-		owner = me.owner;
+		chartview = me.chartview;
 		
-	if (owner && owner.container)
+	if (chartview && chartview.container)
 	{
-		$(owner.container).empty();
+		$(chartview.container).empty();
 	}
 };

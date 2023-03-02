@@ -1,11 +1,10 @@
 IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
-IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data) {
+IG$.cVis.hierarchialgraph.prototype.initChart = function(data) {
     var me = this,
     	myChart = this.customchart,
-    	
-    	owner = me.owner,
-    	cop = owner.cop,
+    	chartview = me.chartview,
+    	cop = chartview.cop,
 		copsettings = cop.settings || {},
 		symbol = [Number(copsettings.m_h_min || "3"), Number(copsettings.m_h_max || "15")],
 		symbol_ratio = Number(copsettings.m_h_ratio || "50") / 100,
@@ -166,14 +165,14 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.initChart = function(data)
     myChart.setOption(option);
 }
 
-IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner, results) {
+IG$.cVis.hierarchialgraph.prototype.draw = function(results) {
 	var me = this,
-		container = $(owner.container),
-		cop = owner.cop,
-		sop = owner.sheetoption ? owner.sheetoption.model : null,
+		chartview = me.chartview,
+		container = $(chartview.container),
+		cop = chartview.cop,
+		sop = chartview.sheetoption ? chartview.sheetoption.model : null,
 		copsettings = cop.settings || {};
 	
-	me.owner = owner;
 	me.container = container;
 		
 	if (results)
@@ -184,7 +183,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 			cols,
 			i, j,
 			data = results._tabledata,
-			cop = owner.cop,
+			cop = chartview.cop,
 			seriesData = [],
 			keymap,
 			base,
@@ -443,7 +442,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.drawChart = function(owner
 	}
 };
 
-IG$.__chartoption.chartext.hierarchialgraph.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.hierarchialgraph.prototype.updatedisplay = function(w, h) {
 	var me = this,
 		customchart = me.customchart;
 	
@@ -453,7 +452,7 @@ IG$.__chartoption.chartext.hierarchialgraph.prototype.updatedisplay = function(o
 	}
 }
 
-IG$.__chartoption.chartext.hierarchialgraph.prototype.dispose = function() {
+IG$.cVis.hierarchialgraph.prototype.dispose = function() {
 	var me = this,
 		customchart = me.customchart;
 		

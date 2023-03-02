@@ -1,6 +1,6 @@
 IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
-IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
+IG$.cVis.weekday.prototype.initChart = function(seriesdata) {
 	// https://echarts.apache.org/examples/en/editor.html?c=heatmap-cartesian
 	
     var me = this,
@@ -234,12 +234,12 @@ IG$.__chartoption.chartext.weekday.prototype.initChart = function(seriesdata) {
     myChart.setOption(option);
 }
 
-IG$.__chartoption.chartext.weekday.prototype.drawChart = function(owner, results) {
+IG$.cVis.weekday.prototype.draw = function(results) {
 	var me = this,
-		container = $(owner.container),
-		cop = owner.cop;
+		chartview = me.chartview,
+		container = $(chartview.container),
+		cop = chartview.cop;
 	
-	me.owner = owner;
 	me.container = container;
 		
 	if (results)
@@ -250,7 +250,7 @@ IG$.__chartoption.chartext.weekday.prototype.drawChart = function(owner, results
 			cols,
 			i, j,
 			data = results._tabledata,
-			cop = owner.cop,
+			cop = chartview.cop,
 			tval,
 			d, dl, n = 0, pd,
 			hours = [],
@@ -330,7 +330,7 @@ IG$.__chartoption.chartext.weekday.prototype.drawChart = function(owner, results
 	}
 };
 
-IG$.__chartoption.chartext.weekday.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.weekday.prototype.updatedisplay = function(w, h) {
 	var me = this,
 		customchart = me.customchart;
 	
@@ -340,7 +340,7 @@ IG$.__chartoption.chartext.weekday.prototype.updatedisplay = function(owner, w, 
 	}
 }
 
-IG$.__chartoption.chartext.weekday.prototype.dispose = function() {
+IG$.cVis.weekday.prototype.dispose = function() {
 	var me = this,
 		customchart = me.customchart;
 		

@@ -10,41 +10,37 @@ IG$.__chartoption.charttype.push(
 	}
 );
 
-IG$.__chartoption.chartext.treehierarchy = function(owner) {
-	this.owner = owner;
-}
-
-IG$.__chartoption.chartext.treehierarchy.prototype = {
-	drawChart: function(owner, results) {
+IG$.cVis.treehierarchy = $s.extend(IG$.cVis.base, {
+	draw: function(results) {
 		var me = this;
 		
-		if (IG$.__chartoption.chartext.treehierarchy._loading)
+		if (IG$.cVis.treehierarchy._loading)
 		{ 
 			setTimeout(function() {
-				me.drawChart.call(me, owner, results);
+				me.draw.call(me, results);
 			}, 500);
 		}
 		
-		if (!IG$.__chartoption.chartext.treehierarchy._loaded)
+		if (!IG$.cVis.treehierarchy._loaded)
 		{
 			var js = [
 					"./custom/custom.treehierarchy.worker.js"
 				];
 			
-			IG$.__chartoption.chartext.treehierarchy._loading = 1;
+			IG$.cVis.treehierarchy._loading = 1;
 			
 			IG$.getScriptCache(
 				js, 
 				new IG$.callBackObj(this, function() {
-					IG$.__chartoption.chartext.treehierarchy._loaded = 1;
-					me.drawChart.call(me, owner, results);
+					IG$.cVis.treehierarchy._loaded = 1;
+					me.draw.call(me, results);
 				})
 			);
 		}
 	},
 	
-	updatedisplay: function(owner, w, h) {
+	updatedisplay: function(w, h) {
 	},
 	
-	getExportData: IG$.__chartoption.chartext.$export_echart
-};
+	getExportData: IG$.cVis.$export_echart
+});

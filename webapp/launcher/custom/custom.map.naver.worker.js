@@ -1,4 +1,4 @@
-﻿IG$.__chartoption.chartext.navermap.prototype._tmpl = function(tmpl, dpoint, gmap) {
+﻿IG$.cVis.navermap.prototype._tmpl = function(tmpl, dpoint, gmap) {
 	var r = tmpl,
 		pdata = dpoint.data,
 		k, s, m, c;
@@ -16,12 +16,13 @@
 	return r;
 };
 	
-IG$.__chartoption.chartext.navermap.prototype.drawChart = function(owner, results) {
+IG$.cVis.navermap.prototype.draw = function(results) {
 	var me = this,
-		container = owner.container,
+		chartview = me.chartview,
+		container = chartview.container,
 		jcontainer = $(container),
-		sop = owner.sheetoption ? owner.sheetoption.model : null,
-		cop = owner.cop, // chart option information
+		sop = chartview.sheetoption ? chartview.sheetoption.model : null,
+		cop = chartview.cop, // chart option information
 		copsettings = cop.settings,
 		map,
 		seriesname,
@@ -31,9 +32,16 @@ IG$.__chartoption.chartext.navermap.prototype.drawChart = function(owner, result
 		tabledata = results._tabledata,
 		rowfix = results.rowfix,
 		geodata,
-		i, j;
+		i, j, p;
 	
 	jcontainer.empty();
+
+	if (!window.naver)
+	{
+		IG$.ShowError(IRm$.r1("E_CHART_DRAWING") + " Map library not loaded properly!");
+		return;
+	}
+
 	var defaultLevel = parseInt(cop.m_zoom_level) || 11;
 	
 	var mlng = 126.9773356,
@@ -83,10 +91,11 @@ IG$.__chartoption.chartext.navermap.prototype.drawChart = function(owner, result
 	{
 		for (i=0; i < results.geodata.length; i++)
 		{
-			minLng = (i == 0) ? Number(results.geodata[i].lng) : Math.min(minLng, Number(results.geodata[i].lng));
-			maxLng = (i == 0) ? Number(results.geodata[i].lng) : Math.max(maxLng, Number(results.geodata[i].lng));
-			minLat = (i == 0) ? Number(results.geodata[i].lat) : Math.min(minLat, Number(results.geodata[i].lat));
-			maxLat = (i == 0) ? Number(results.geodata[i].lat) : Math.max(maxLat, Number(results.geodata[i].lat));
+			p = results.geodata[i];
+			minLng = (i == 0) ? Number(p.lng) : Math.min(minLng, Number(p.lng));
+			maxLng = (i == 0) ? Number(p.lng) : Math.max(maxLng, Number(p.lng));
+			minLat = (i == 0) ? Number(p.lat) : Math.min(minLat, Number(p.lat));
+			maxLat = (i == 0) ? Number(p.lat) : Math.max(maxLat, Number(p.lat));
 		}
 		
 		mlng = (maxLng + minLng) / 2;
@@ -227,7 +236,7 @@ IG$.__chartoption.chartext.navermap.prototype.drawChart = function(owner, result
 				{
 					mapInfoTestWindow.open(map, marker);
 				}
-				owner.procClickEvent.call(owner, sender, param);
+				chartview.procClickEvent.call(chartview, sender, param);
 			}
 		}
 	}
@@ -325,7 +334,7 @@ IG$.__chartoption.chartext.navermap.prototype.drawChart = function(owner, result
 
 };
 
-IG$.__chartoption.chartext.navermap.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.navermap.prototype.updatedisplay = function(w, h) {
 	var me = this,
 		map = me.map;
 		
@@ -335,7 +344,7 @@ IG$.__chartoption.chartext.navermap.prototype.updatedisplay = function(owner, w,
 	}
 };
 	
-IG$.__chartoption.chartext.navermap.prototype.destroy = function() {
+IG$.cVis.navermap.prototype.destroy = function() {
 	var me = this;
 
 	if (me.map)
@@ -343,5 +352,5 @@ IG$.__chartoption.chartext.navermap.prototype.destroy = function() {
 		me.map.destroy();
 	}
 	
-	me.owner && me.owner.container && $(me.owner.container).empty();
+	me.chartview && me.chartview.container && $(me.chartview.container).empty();
 };

@@ -1,11 +1,11 @@
-﻿IG$.__chartoption.chartext.circlepacking.prototype.drawCirclePacking = function() {
+﻿IG$.cVis.circlepacking.prototype.drawCirclePacking = function() {
 	var me = this,
-		owner = me.owner,
+		chartview = me.chartview,
 		results = me.results,
 		tabledata = results._tabledata,
-		container = $(owner.container),
-		sop = owner._ILb,
-		cop = owner.cop,
+		container = $(chartview.container),
+		sop = chartview._ILb,
+		cop = chartview.cop,
 		i, j,
 		jcontainer,
 		data = [],
@@ -184,29 +184,29 @@
 	zoomTo([root.x, root.y, root.r * 2]);
 }
 
-IG$.__chartoption.chartext.circlepacking.prototype.drawChart = function(owner, results) {
+IG$.cVis.circlepacking.prototype.draw = function(results) {
 	var me = this;
-	me.owner = owner;
+
 	me.results = results;
 	
 	me.drawCirclePacking();
 };
 	  
-IG$.__chartoption.chartext.circlepacking.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.circlepacking.prototype.updatedisplay = function(w, h) {
 	var me = this;
 	
-	if (me.owner && me.results)
+	if (me.chartview && me.results)
 	{
 		me.drawCirclePacking();
 	}
 };
 
-IG$.__chartoption.chartext.circlepacking.prototype.destroy = function(owner, w, h) {
+IG$.cVis.circlepacking.prototype.dispose = function() {
 	var me = this,
-		owner = me.owner;
+		chartview = me.chartview;
 		
-	if (owner && owner.container)
+	if (chartview && chartview.container)
 	{
-		$(owner.container).empty();
+		$(chartview.container).empty();
 	}
 };

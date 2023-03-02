@@ -10,14 +10,9 @@ IG$.__chartoption.charttype.push(
 	}
 );
 
-IG$.__chartoption.chartext.googlemap = function(owner) {
-	this.owner = owner;
-};
-
 // https://maps.googleapis.com/maps/api/js?&sensor=false
-
-IG$.__chartoption.chartext.googlemap.prototype = {
-	drawChart: function(owner, results) {
+IG$.cVis.googlemap = $s.extend(IG$.cVis.base, {
+	draw: function(results) {
 		var me = this;
 		
 		if (!ig$.google_map_api_key)
@@ -26,18 +21,18 @@ IG$.__chartoption.chartext.googlemap.prototype = {
 			return;	
 		}
 		
-		if (IG$.__chartoption.chartext.googlemap._loading)
+		if (IG$.cVis.googlemap._loading)
 		{
 			setTimeout(function() {
-				me.drawChart.call(me, owner, results);
+				me.draw(results);
 			}, 500);
 			
 			return;
 		}
 		
-		if (!IG$.__chartoption.chartext.googlemap._loaded)
+		if (!IG$.cVis.googlemap._loaded)
 		{
-			IG$.__chartoption.chartext.googlemap._loading = 1;
+			IG$.cVis.googlemap._loading = 1;
 			
 			IG$.getScriptCache([
 				{
@@ -54,15 +49,15 @@ IG$.__chartoption.chartext.googlemap.prototype = {
 				IG$.getScriptCache(
 					js, 
 					new IG$.callBackObj(this, function() {
-						IG$.__chartoption.chartext.googlemap._loaded = 1;
-						me.drawChart.call(me, owner, results);
+						IG$.cVis.googlemap._loaded = 1;
+						me.draw.call(me, results);
 					})
 				);
 			}));
 		}
 	},
 
-	updatedisplay: function(owner, w, h) {
+	updatedisplay: function(w, h) {
 		var me = this,
 			map = me.map;
 			
@@ -71,4 +66,5 @@ IG$.__chartoption.chartext.googlemap.prototype = {
 			google.maps.event.trigger(map, "resize");
 		}
 	}
-};
+});
+

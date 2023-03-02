@@ -193,15 +193,15 @@ function parseDate(val) {
 	}
 
 
-IG$.__chartoption.chartext.hstock.prototype.drawChart = function(owner, results) {
+IG$.cVis.hstock.prototype.draw = function(results) {
 	var me = this,
-		container = $(owner.container),
-		sop = owner._ILb,
-		cop = owner.cop,
+		chartview = me.chartview,
+		container = $(chartview.container),
+		sop = chartview._ILb,
+		cop = chartview.cop,
 		usedualaxis = cop.usedualaxis,
 		dualaxisitem = cop.dualaxisitem;
 	
-	me.owner = owner;
 	me.container = container;
 	
 	container.empty();
@@ -455,7 +455,7 @@ IG$.__chartoption.chartext.hstock.prototype.drawChart = function(owner, results)
 	}
 };
 	
-IG$.__chartoption.chartext.hstock.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.hstock.prototype.updatedisplay = function(w, h) {
 	var me = this,
 		hchart = me.hchart;
 
@@ -465,7 +465,7 @@ IG$.__chartoption.chartext.hstock.prototype.updatedisplay = function(owner, w, h
 	}
 };
 
-IG$.__chartoption.chartext.hstock.prototype.destroy = function(owner, w, h) {
+IG$.cVis.hstock.prototype.destroy = function() {
 	var me = this,
 		hchart = me.hchart;
 

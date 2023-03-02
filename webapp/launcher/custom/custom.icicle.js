@@ -10,54 +10,50 @@ IG$.__chartoption.charttype.push(
 	}
 );
 
-IG$.__chartoption.chartext.icicle = function(owner) {
-	this.owner = owner;
-};
-
 // https://maps.googleapis.com/maps/api/js?&sensor=false
 
-IG$.__chartoption.chartext.icicle.prototype = {
-	drawChart: function(owner, results) {
+IG$.cVis.icicle = $s.extend(IG$.cVis.base, {
+	draw: function(results) {
 		var me = this;
 		
-		if (IG$.__chartoption.chartext.icicle._loading)
+		if (IG$.cVis.icicle._loading)
 		{
 			setTimeout(function() {
-				me.drawChart.call(me, owner, results);
+				me.draw.call(me, results);
 			}, 500);
 			
 			return;
 		}
 		
-		if (!IG$.__chartoption.chartext.icicle._loaded)
+		if (!IG$.cVis.icicle._loaded)
 		{
 			var js = [
 					"./custom/custom.icicle.worker.js"
 				];
 
-			IG$.__chartoption.chartext.icicle._loading = 1;
+			IG$.cVis.icicle._loading = 1;
 			
 			IG$.getScriptCache(
 				js, 
 				new IG$.callBackObj(this, function() {
-					IG$.__chartoption.chartext.icicle._loaded = 1;
-					me.drawChart.call(me, owner, results);
+					IG$.cVis.icicle._loaded = 1;
+					me.draw.call(me, results);
 				})
 			);
 		}
 	},
 
-	updatedisplay: function(owner, w, h) {
+	updatedisplay: function(w, h) {
 		var me = this;
 		
-		if (me._owner && me._results)
+		if (me._results)
 		{
-			me.drawChart.call(me, me._owner, me._results);
+			me.draw(me._results);
 		}
 	},
 	
-	destroy: function() {
+	dispose: function() {
 		var me = this;
 	}
-};
+});
 

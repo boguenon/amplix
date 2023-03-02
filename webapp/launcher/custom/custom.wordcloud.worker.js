@@ -523,13 +523,13 @@ Object.defineProperty(exports, '__esModule', { value: true });
 },{}]},{},[1])(1)
 });
 
-IG$.__chartoption.chartext.wordcloud.prototype.drawWordcloud = function() {
+IG$.cVis.wordcloud.prototype.drawWordcloud = function() {
 	var me = this,
-		owner = me.owner,
+		chartview = me.chartview,
 		results = me.results,
-		container = $(owner.container),
-		// sop = owner._ILb,
-		cop = owner.cop,
+		container = $(chartview.container),
+		// sop = chartview._ILb,
+		cop = chartview.cop,
 		i, j,
 		rdata = results._tabledata,
 		jcontainer,
@@ -725,29 +725,28 @@ IG$.__chartoption.chartext.wordcloud.prototype.drawWordcloud = function() {
 	layout.start();
 }
 
-IG$.__chartoption.chartext.wordcloud.prototype.drawChart = function(owner, results) {
+IG$.cVis.wordcloud.prototype.draw = function(results) {
 	var me = this;
-	me.owner = owner;
 	me.results = results;
 	
 	me.drawWordcloud();
 };
 	
-IG$.__chartoption.chartext.wordcloud.prototype.updatedisplay = function(owner, w, h) {
+IG$.cVis.wordcloud.prototype.updatedisplay = function(w, h) {
 	var me = this;
 	
-	if (me.owner && me.results)
+	if (me.chartview && me.results)
 	{
 		me.drawWordcloud();
 	}
 };
 
-IG$.__chartoption.chartext.wordcloud.prototype.destroy = function(owner, w, h) {
+IG$.cVis.wordcloud.prototype.destroy = function() {
 	var me = this,
-		owner = me.owner;
+		chartview = me.chartview;
 		
-	if (owner && owner.container)
+	if (chartview && chartview.container)
 	{
-		$(owner.container).empty();
+		$(chartview.container).empty();
 	}
 };

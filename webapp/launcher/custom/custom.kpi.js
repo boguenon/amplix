@@ -10,42 +10,34 @@ IG$.__chartoption.charttype.push(
 	}
 );
 
-IG$.__chartoption.chartext.kpi = function(owner) {
-	this.owner = owner;
-}
-
-IG$.__chartoption.chartext.kpi.prototype = {
-	drawChart: function(owner, results) {
+IG$.cVis.kpi = $s.extend(IG$.cVis.base, {
+	draw: function(results) {
 		var me = this;
 		
-		if (IG$.__chartoption.chartext.kpi._loading)
+		if (IG$.cVis.kpi._loading)
 		{
 			setTimeout(function() {
-				me.drawChart.call(me, owner, results);
+				me.draw.call(me, results);
 			}, 500);
 			return;
 		}
 		
-		if (!IG$.__chartoption.chartext.kpi._loaded)
+		if (!IG$.cVis.kpi._loaded)
 		{
 			var js = [
 					"./custom/custom.kpi.worker.js"
 				];
 
-			IG$.__chartoption.chartext.kpi._loading = true;
+			IG$.cVis.kpi._loading = true;
 			
 			IG$.getScriptCache(
 				js, 
 				new IG$.callBackObj(this, function() {
-					IG$.__chartoption.chartext.kpi._loaded = 1;
-					me.drawChart.call(me, owner, results);
+					IG$.cVis.kpi._loaded = 1;
+					me.draw.call(me, results);
 				})
 			);
 		}
 	},
-	
-	updatedisplay: function(owner, w, h) {
-	},
-	
 	getExportData: IG$.__chartoption.chartext.$export_html
-};
+});
