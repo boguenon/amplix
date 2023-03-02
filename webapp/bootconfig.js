@@ -1,5 +1,5 @@
 ﻿ig$.bootconfig = {
-	"cache": "202303012315",
+	"cache": "202303012332",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -21,6 +21,12 @@
 			"./js/echarts_themes/desertlight.js",
 			"./js/echarts_themes/darkbrown.js",
 			"./js/echarts_themes/amplix.js"
+        ],
+        "vis_hc": [
+        	"./js/vis_hc.min.js",
+        ],
+        "vis_ac": [
+        	"./js/vis_ac.min.js",
         ],
         "app": [
             "./js/app.min.js"
