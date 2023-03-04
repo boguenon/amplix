@@ -203,11 +203,11 @@ set "CATALINA_TMPDIR=%CATALINA_BASE%\temp"
 
 rem Add tomcat-juli.jar to classpath
 rem tomcat-juli.jar can be over-ridden per instance
-if not exist "%CATALINA_BASE%\lib\tomcat-juli-9.0.22.jar" goto juliClasspathHome
-set "CLASSPATH=%CLASSPATH%;%CATALINA_BASE%\lib\tomcat-juli-9.0.22.jar"
+if not exist "%CATALINA_BASE%\lib\tomcat-juli-9.0.71.jar" goto juliClasspathHome
+set "CLASSPATH=%CLASSPATH%;%CATALINA_BASE%\lib\tomcat-juli-9.0.71.jar"
 goto juliClasspathDone
 :juliClasspathHome
-set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\lib\tomcat-juli-9.0.22.jar"
+set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\lib\tomcat-juli-9.0.71.jar"
 :juliClasspathDone
 
 if not "%JSSE_OPTS%" == "" goto gotJsseOpts
