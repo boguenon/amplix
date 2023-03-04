@@ -1,5 +1,5 @@
 .webix_view {
-  font-family: 'PT Sans', Tahoma;
+  
   
   color: #ffffff;
   cursor: default;
@@ -228,7 +228,7 @@ body {
   border: 1px solid #818181;
   cursor: pointer;
   background-color: white;
-  font-family: 'PT Sans', Tahoma;
+  
   
 }
 /*selected  button of pager*/
@@ -298,7 +298,7 @@ body {
 .webix_dt_editor input,
 .webix_dt_editor select {
   border: 1px solid #ffd700;
-  font-family: 'PT Sans', Tahoma;
+  
   
   color: #ffffff;
 }
@@ -307,7 +307,7 @@ body {
   opacity: 0;
 }
 .webix_info {
-  font-family: Tahoma, Arial;
+  
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -316,7 +316,7 @@ body {
 .webix_modal_box {
   background-color: #393939;
   box-shadow: 0px 3px 6px #c8c8c8;
-  font-family: 'PT Sans', Tahoma;
+  
   border-radius: 0px;
   border: 1px solid #ffffff;
 }
@@ -356,7 +356,7 @@ div.webix_modal_cover {
 .webix_button input,
 .webix_popup_button div {
   
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   color: #ffffff;
@@ -365,7 +365,7 @@ div.webix_modal_cover {
 }
 .webix_popup_button.confirm div {
   
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   background: #1f884c;
   border-color: #28b263;
@@ -407,7 +407,7 @@ div.webix_modal_cover {
 .webix_drag_zone {
   box-shadow: 1px 1px 5px #818181;
   background-color: #393939;
-  font-family: 'PT Sans', Tahoma;
+  
   
   color: #ffffff;
 }
@@ -814,7 +814,7 @@ div.webix_modal_cover {
   border-radius: 2px;
   border: 1px solid #818181;
   
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   background: #1f884c;
@@ -840,7 +840,7 @@ div.webix_modal_cover {
 .webix_tooltip {
   background-color: #393939;
   border: 1px solid #818181;
-  font-family: 'PT Sans', Tahoma;
+  
   
   color: #ffffff;
   border-radius: 0px;
@@ -892,7 +892,7 @@ div.webix_modal_cover {
   border-radius: 2px;
   border: 1px solid #818181;
   color: #ffffff;
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   -webkit-appearance: none;
@@ -922,7 +922,7 @@ div.webix_modal_cover {
   background: #800080;
   border-bottom: 1px solid #a400a4;
   color: #ffffff;
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   border: 0px;
@@ -1036,7 +1036,7 @@ div.webix_modal_cover {
 .webix_inp_label,
 .webix_inp_top_label,
 .webix_inp_bottom_label {
-  font-family: 'PT Sans', Tahoma;
+  
 }
 .webix_el_text input,
 .webix_el_search input,
@@ -1046,7 +1046,7 @@ div.webix_modal_cover {
   border: 1px solid #818181;
   color: #ffffff;
   background: #535353;
-  font-family: 'PT Sans', Tahoma;
+  
   border-color: #797979;
   -webkit-appearance: none;
   border-radius: 0;
@@ -1071,7 +1071,7 @@ div.webix_modal_cover {
   color: #ffffff;
 }
 .webix_el_select select {
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #818181;
 }
 body:not(:-moz-handler-blocked) .webix_el_select select {
@@ -1093,7 +1093,7 @@ body:not(:-moz-handler-blocked) .webix_el_select select {
 	 position:relative; top:-1px;
 }*/
 .webix_inp_counter_prev {
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   color: #ffffff;
@@ -1113,7 +1113,7 @@ body:not(:-moz-handler-blocked) .webix_el_select select {
   border-bottom-right-radius: 0;
 }
 .webix_inp_counter_next {
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   color: #ffffff;
@@ -1136,7 +1136,7 @@ body:not(:-moz-handler-blocked) .webix_el_select select {
   border: 1px solid #818181;
   color: #ffffff;
   resize: none;
-  font-family: 'PT Sans', Tahoma;
+  
 }
 .webix_segment_0,
 .webix_segment_1 {
@@ -1233,7 +1233,7 @@ body:not(:-moz-handler-blocked) .webix_el_select select {
 .webix_el_search .webix_inp_static {
   color: #ffffff;
   background: #535353;
-  font-family: 'PT Sans', Tahoma;
+  
   border-color: #797979;
   -webkit-appearance: none;
 }
@@ -1298,7 +1298,7 @@ label.webix_required:after {
   background-color: transparent;
   border: 0;
   color: #ffffff;
-  font-family: 'PT Sans', Tahoma;
+  
 }
 .webix_el_text .webix_multicombo_input:focus {
   border: 0;
@@ -1793,7 +1793,7 @@ label.webix_required:after {
   background-color: #fff;
 }
 .mainFont {
-  font-family: 'PT Sans', Tahoma;
+  
   
   color: #ffffff;
 }
@@ -1931,7 +1931,7 @@ label.webix_required:after {
 }
 .confirmButton {
   
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   background: #1f884c;
@@ -2013,7 +2013,7 @@ label.webix_required:after {
   border-right-color: #4d4d4d;
 }
 .webix_view .webix_pager_item {
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   color: #ffffff;
@@ -2028,7 +2028,7 @@ label.webix_required:after {
   background-color: #9f009f;
 }
 .webix_view .webix_pager_item_selected {
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   background: #1f884c;
@@ -2180,14 +2180,14 @@ textarea.webix_invalid {
 .buttonStyle {
   color: #ffffff;
   
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
 }
 .inputButtonStyle {
   color: #ffffff;
   
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #797979;
   border-bottom: 1px solid #797979;
   outline: none;
@@ -2195,13 +2195,13 @@ textarea.webix_invalid {
 div.webix_inp_static,
 .webix_el_textarea textarea {
   background: #535353;
-  font-family: 'PT Sans', Tahoma;
+  
   border-color: #797979;
 }
 .webix_el_select select {
   color: #ffffff;
   background: #535353;
-  font-family: 'PT Sans', Tahoma;
+  
   border-color: #797979;
 }
 .webix_el_checkbox input {
@@ -2209,7 +2209,7 @@ div.webix_inp_static,
 }
 .webix_el_counter .webix_inp_counter_value {
   background: #535353;
-  font-family: 'PT Sans', Tahoma;
+  
   border-color: #797979;
 }
 .webix_el_counter .webix_inp_counter_prev,
@@ -2217,12 +2217,12 @@ div.webix_inp_static,
   background: #797979;
   color: #ffffff;
   
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #797979;
   border-bottom: 1px solid #797979;
   outline: none;
   font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
+
 }
 .webix_el_counter .webix_inp_counter_prev:focus,
 .webix_el_counter .webix_inp_counter_next:focus {
@@ -2564,13 +2564,13 @@ a:active .webix_custom_radio {
 .webix_dt_editor input,
 .webix_dt_editor select {
   background: #393939;
-  font-family: 'PT Sans', Tahoma;
+  
   border-color: #797979;
   box-shadow: 0 0 0 1px #ffffff inset;
 }
 .headerFilterStyle {
   background: #3e3e3e;
-  font-family: 'PT Sans', Tahoma;
+  
   
   color: #ffffff;
   border-color: #878787;
@@ -2578,7 +2578,7 @@ a:active .webix_custom_radio {
 .webix_ss_filter input,
 .webix_ss_filter select {
   background: #3e3e3e;
-  font-family: 'PT Sans', Tahoma;
+  
   
   color: #ffffff;
   border-color: #878787;
@@ -2586,7 +2586,7 @@ a:active .webix_custom_radio {
 .webix_ss_header .webix_inp_static,
 .webix_ss_header input {
   background: #3e3e3e;
-  font-family: 'PT Sans', Tahoma;
+  
   
   color: #ffffff;
   border-color: #878787;
@@ -2645,7 +2645,7 @@ a:active .webix_custom_radio {
 .webix_time_footer .webix_cal_done,
 .webix_cal_footer .webix_cal_done {
   
-  font-family: 'PT Sans', Tahoma;
+  
   border: 1px solid #cd00cc;
   outline: none;
   color: #ffffff;
@@ -3060,7 +3060,6 @@ a:active .webix_custom_radio {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: inherit;
     /* color: #313131; */
     color: #7e939b;
 }

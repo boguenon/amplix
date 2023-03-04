@@ -69,7 +69,6 @@
 	var svg = d3.select(jcontainer[0]).append("svg:svg") 
 		.attr("viewBox", [0, 0, width, height])
 		.attr("font-size", 10)
-		.attr("font-family", "sans-serif")
 		.attr("text-anchor", "middle");
 		
 	var leaf = svg

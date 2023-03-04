@@ -688,7 +688,6 @@ button,
 .webix_modal_box {
   background-color: #ffffff;
   box-shadow: 0px 3px 6px #c8c8c8;
-  font-family: 'PT Sans', Tahoma;
   border-radius: 0px;
   border: 1px solid #ffffff;
 }
@@ -740,8 +739,6 @@ div.webix_modal_cover {
   border-bottom: 1px solid #2386c8;
 }
 .webix_popup_button.confirm div {
-  
-  font-family: 'PT Sans', Tahoma;
   border: 1px solid #3498db;
   border-bottom: 1px solid #268fd5;
   background: #27ae60;
@@ -785,7 +782,6 @@ div.webix_modal_cover {
 .webix_drag_zone {
   box-shadow: 1px 1px 5px #dddddd;
   background-color: #ffffff;
-  font-family: 'PT Sans', Tahoma;
 }
 .webix_drag_over,
 .webix_drop_zone {
@@ -2914,7 +2910,6 @@ label.webix_required:after {
   background-color: #fff;
 }
 .mainFont {
-  font-family: 'PT Sans', Tahoma; 
   color: #666666;
 }
 /*[L]*/
@@ -3466,13 +3461,11 @@ label.webix_required:after {
 div.webix_inp_static,
 .webix_el_textarea textarea {
   background: #ffffff;
-  font-family: 'PT Sans', Tahoma;
   border-color: #cccccc;
   /*.altBackColor;
 	.altBackBorderColor;*/
 }
 .webix_el_select select {
-  font-family: 'PT Sans', Tahoma;
   border-color: #dddddd;
 }
 .webix_el_checkbox input {
@@ -3480,7 +3473,6 @@ div.webix_inp_static,
 }
 .webix_el_counter .webix_inp_counter_value {
   background: #ffffff;
-  font-family: 'PT Sans', Tahoma;
   border-color: #cccccc;
   /*.altBackColor;
 	.altBackBorderColor;*/
@@ -3494,7 +3486,6 @@ div.webix_inp_static,
   border-bottom: 1px solid #268fd5;
   outline: none;
   font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
 }
 .webix_view.webix_control.webix_el_tabbar {
   background: transparent;
@@ -3984,7 +3975,6 @@ div.webix_item_tab.webix_selected {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: inherit;
     /* color: #313131; */
     color: #a5a3a3;
 }

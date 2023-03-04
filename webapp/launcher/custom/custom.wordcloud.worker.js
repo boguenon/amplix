@@ -669,7 +669,6 @@ IG$.cVis.wordcloud.prototype.drawWordcloud = function() {
 			.attr("width", width)
 			.attr("height", height)
 			.attr("font-size", 10)
-			.attr("font-family", "sans-serif")
 			.attr("text-anchor", "middle");
 			
 		var fill = function(t) {
