@@ -226,3 +226,23 @@ A;B_PG_NEXT;&gt;&gt;
 A;B_PG_PREV;&lt;&lt;
 A;L_RPT_CONF;Report Config
 A;L_SHEETS;Sheets
+
+A;L_OCR;Optical Character Recognition
+A;L_OCR_ENGINE;OCR Engine
+A;L_TESS_LOC;Tessaract location
+
+A;L_BPMN;BPMN
+A;L_BPMN_MGR;BPMN Manager
+A;L_BPMN_TASKS;BPMN Tasks
+A;L_BPMN_MODELER;BPMN Moduler
+
+A;L_MULTI_LINE;MultiLine
+A;L_MAX_CHAR;Maximum Characters
+A;L_HIDE_OVERLAP;Hide Overlap
+A;L_RANGE;Ranges
+A;L_HIDDEN_SELECTOR;Hidden Selector
+A;L_JMOD;Java Module
+A;L_REST;RESTful Service
+
+A;L_SCI_LIC;Data Science Licenses
+A;L_LIC_KEY;License Keys

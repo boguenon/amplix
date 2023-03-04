@@ -226,3 +226,23 @@ A;B_PG_NEXT;&gt;&gt;
 A;B_PG_PREV;&lt;&lt;
 A;L_RPT_CONF;리포트 설정
 A;L_SHEETS;쉬트 위젯
+
+A;L_OCR;Optical Character Recognition
+A;L_OCR_ENGINE;OCR Engine
+A;L_TESS_LOC;Tessaract 설치위치
+
+A;L_BPMN;BPMN
+A;L_BPMN_MGR;BPMN 관리자
+A;L_BPMN_TASKS;BPMN 작업
+A;L_BPMN_MODELER;BPMN 모델러
+
+A;L_MULTI_LINE;여러줄표시
+A;L_MAX_CHAR;최대 문자수
+A;L_HIDE_OVERLAP;중복 숨기기
+A;L_RANGE;범위
+A;L_HIDDEN_SELECTOR;맵범례 숨김
+A;L_JMOD;자바 모듈
+A;L_REST;RESTful 서비스
+
+A;L_SCI_LIC;Data Science 라이센스
+A;L_LIC_KEY;라이센스 키

@@ -8027,5 +8027,69 @@
     "group" : "locale_ko_KR_0019",
     "name" : "B_PG_PREV",
     "value" : "&lt;&lt;"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_OCR",
+    "value" : "Optical Character Recognition"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_OCR_ENGINE",
+    "value" : "OCR Engine"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_TESS_LOC",
+    "value" : "Tessaract 설치위치"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_BPMN",
+    "value" : "BPMN"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_BPMN_MGR",
+    "value" : "BPMN 관리자"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_BPMN_TASKS",
+    "value" : "BPMN 작업"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_BPMN_MODELER",
+    "value" : "BPMN 모델러"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_MULTI_LINE",
+    "value" : "여러줄표시"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_MAX_CHAR",
+    "value" : "최대 문자수"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_HIDE_OVERLAP",
+    "value" : "중복 숨기기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_RANGE",
+    "value" : "범위"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_HIDDEN_SELECTOR",
+    "value" : "맵범례 숨김"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_JMOD",
+    "value" : "자바 모듈"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_REST",
+    "value" : "RESTful 서비스"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_SCI_LIC",
+    "value" : "Data Science 라이센스"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_LIC_KEY",
+    "value" : "라이센스 키"
   } ]
 }

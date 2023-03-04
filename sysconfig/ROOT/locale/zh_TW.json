@@ -7955,5 +7955,69 @@
     "group" : "locale_zh_TW_0019",
     "name" : "B_PG_PREV",
     "value" : "&lt;&lt;"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_OCR",
+    "value" : "Optical Character Recognition"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_OCR_ENGINE",
+    "value" : "OCR Engine"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_TESS_LOC",
+    "value" : "Tessaract location"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_BPMN",
+    "value" : "BPMN"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_BPMN_MGR",
+    "value" : "BPMN Manager"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_BPMN_TASKS",
+    "value" : "BPMN Tasks"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_BPMN_MODELER",
+    "value" : "BPMN Moduler"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_MULTI_LINE",
+    "value" : "MultiLine"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_MAX_CHAR",
+    "value" : "Maximum Characters"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_HIDE_OVERLAP",
+    "value" : "Hide Overlap"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_RANGE",
+    "value" : "Ranges"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_HIDDEN_SELECTOR",
+    "value" : "Hidden Selector"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_JMOD",
+    "value" : "Java Module"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_REST",
+    "value" : "RESTful Service"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_SCI_LIC",
+    "value" : "Data Science Licenses"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "L_LIC_KEY",
+    "value" : "License Keys"
   } ]
 }
