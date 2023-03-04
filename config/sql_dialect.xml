@@ -378,6 +378,7 @@
 			<separator><![CDATA[[]]]></separator>
 			<tablealias>AS</tablealias>
 			<dualtable></dualtable>
+			<schemaseparator>..</schemaseparator>
 		</item>
 		<item type="db2">
 			<separator><![CDATA[[]]]></separator>
