@@ -102,7 +102,7 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 			items: [
 				{
 					xtype: "panel",
-					bodyPadding: 5,
+					bodyPadding: ig$.padding,
 					layout: {
 						type: "vbox",
 						align: "stretch"
@@ -257,7 +257,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 			items: [
 				{
 					xtype: "panel",
-					bodyPadding: 5,
+					bodyPadding: ig$.padding,
 					layout: "anchor",
 					defaults: {
 						labelAlign: "left"
@@ -1286,7 +1286,7 @@ IG$.kpiTWc = $s.extend($s.window, {
 	width: 500,
 	height: 520,
 	layout: "fit",
-	padding: 5,
+	padding: ig$.padding,
 	
 	_init: function() {
 		var me = this,
@@ -1452,7 +1452,7 @@ IG$.kpiTWc = $s.extend($s.window, {
 			items: [
 				{
 					xtype: "panel",
-					padding: 10,
+					padding: ig$.padding,
 					layout: {
 						type: "vbox",
 						align: "stretch"
