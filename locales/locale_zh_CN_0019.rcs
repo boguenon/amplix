@@ -246,3 +246,8 @@ A;L_REST;RESTful Service
 
 A;L_SCI_LIC;Data Science Licenses
 A;L_LIC_KEY;License Keys
+
+A;L_WIDGET;Widget
+A;L_ADD_LABEL;Add Label
+A;L_FLT_HEIGHT;Filter Height
+A;L_FULL_HEIGHT;Full Height

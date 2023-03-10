@@ -238,7 +238,7 @@ IG$.cVis.esri.prototype.updateData = function() {
 		bopt;
 	
 	setTimeout(function() {
-		me.updateData.call(me);
+		me.updateData();
 	}, 300);
 };
 

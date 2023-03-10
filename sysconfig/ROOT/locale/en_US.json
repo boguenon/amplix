@@ -8103,5 +8103,21 @@
     "group" : "locale_en_US_0019",
     "name" : "L_LIC_KEY",
     "value" : "License Keys"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_WIDGET",
+    "value" : "Widget"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_ADD_LABEL",
+    "value" : "Add Label"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_FLT_HEIGHT",
+    "value" : "Filter Height"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_FULL_HEIGHT",
+    "value" : "Full Height"
   } ]
 }

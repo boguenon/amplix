@@ -8091,5 +8091,21 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_LIC_KEY",
     "value" : "라이센스 키"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_WIDGET",
+    "value" : "위젯"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_ADD_LABEL",
+    "value" : "레이블 추가"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_FLT_HEIGHT",
+    "value" : "필터 높이"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_FULL_HEIGHT",
+    "value" : "최대 높이로 지정"
   } ]
 }

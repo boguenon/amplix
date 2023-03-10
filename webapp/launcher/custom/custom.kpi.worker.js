@@ -1134,7 +1134,7 @@ IG$.cVis.kpi.prototype.draw = function(results) {
 			nchart++;
 		});
 		
-		me.updateLayout.call(me);
+		me.updateLayout();
 		
 		me.plotarea.removeClass("horizontal");
 		

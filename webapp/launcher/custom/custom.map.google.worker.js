@@ -15,15 +15,15 @@
 	map = new google.maps.Map(container, mapOptions);
 
 	google.maps.event.addListener(map, 'center_changed', function() {
-		me.validateData.call(me);
+		me.validateData();
 	});
 
 	google.maps.event.addListener(map, 'bounds_changed', function() {
-		me.validateData.call(me);
+		me.validateData();
 	});
 
 	google.maps.event.addListener(map, 'zoom_changed', function() {
-		me.validateData.call(me);
+		me.validateData();
 	});
 
 	return map;
@@ -36,7 +36,7 @@ IG$.cVis.googlemap.prototype.validateData = function() {
 
 	me._ptimer = setTimeout(function() {
 		me.req_cnt = 0;
-		me.updateData.call(me);
+		me.updateData();
 	}, 1000);
 },
 
@@ -76,7 +76,7 @@ IG$.cVis.googlemap.prototype.updateData = function() {
 		if (me.req_cnt < 5)
 		{
 			setTimeout(function() {
-				me.updateData.call(me);
+				me.updateData();
 			}, 300);
 		}
 		me.req_cnt++;
@@ -210,7 +210,7 @@ IG$.cVis.googlemap.prototype.setData = function(chartview, results) {
 		
 		map.setCenter(mpoint);
 		
-		me.validateData.call(me);
+		me.validateData();
 		
 		return;
 	}
