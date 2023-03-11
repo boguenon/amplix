@@ -93,6 +93,8 @@ IG$._customChartPanels = function() {
 				me.down("[name=m_geofield]").store.loadData(d4);
 				me.down("[name=mapcategory]").store.loadData(d5);
 				me.down("[name=mapcategory]").setValue(option.mapcategory);
+
+				option.cdata_m_tmpl = IG$._decodeVal(option.cdata_m_tmpl);
 				
 				option.cdata_m_tmpl = option.cdata_m_tmpl || [
 					"{",
@@ -112,8 +114,6 @@ IG$._customChartPanels = function() {
 					"	]",
 					"}"
 				].join("\n");
-				
-				option.cdata_m_tmpl = IG$._decodeVal(option.cdata_m_tmpl);
 				
 				me.down("[name=m_zoom_level]").setValue(option.m_zoom_level || "8");
 				me.down("[name=m_marker]").setValue(option.m_marker || "marker");
