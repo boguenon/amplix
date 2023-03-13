@@ -8107,5 +8107,61 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_FULL_HEIGHT",
     "value" : "최대 높이로 지정"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "D_BPMN",
+    "value" : "BPMN"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_ADD_REST",
+    "value" : "RESTful 서비스 추가"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_SVC_URL",
+    "value" : "서비스 URL"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_BASE_URL",
+    "value" : "베이스 URL"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_HOST",
+    "value" : "호스트명"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_SUMMARY",
+    "value" : "요약"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_AUTH_TOKEN",
+    "value" : "인증토큰"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_AUTH_URL",
+    "value" : "인증 URL"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_REST_MGR",
+    "value" : "RESTful 관리"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_FIELD",
+    "value" : "필드"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_JSON_FORMAT",
+    "value" : "JSON 양식"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_PARAM_IN",
+    "value" : "입력 파라미터"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_REF",
+    "value" : "참조자"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_ENUM",
+    "value" : "Enumerator"
   } ]
 }

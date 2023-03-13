@@ -8119,5 +8119,61 @@
     "group" : "locale_en_US_0019",
     "name" : "L_FULL_HEIGHT",
     "value" : "Full Height"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "D_BPMN",
+    "value" : "BPMN"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_ADD_REST",
+    "value" : "Add RESTful Service"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_SVC_URL",
+    "value" : "Service URL"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_BASE_URL",
+    "value" : "Base URL"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_HOST",
+    "value" : "Hostname"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "B_SUMMARY",
+    "value" : "Summary"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_AUTH_TOKEN",
+    "value" : "Auth Token"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_AUTH_URL",
+    "value" : "Auth URL"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_REST_MGR",
+    "value" : "RESTful Management"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "B_FIELD",
+    "value" : "Field"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_JSON_FORMAT",
+    "value" : "JSON Format"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "B_PARAM_IN",
+    "value" : "Param In"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_REF",
+    "value" : "Reference"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_ENUM",
+    "value" : "Enumerator"
   } ]
 }

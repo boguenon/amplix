@@ -251,3 +251,18 @@ A;L_WIDGET;위젯
 A;L_ADD_LABEL;레이블 추가
 A;L_FLT_HEIGHT;필터 높이
 A;L_FULL_HEIGHT;최대 높이로 지정
+
+A;D_BPMN;BPMN
+A;L_ADD_REST;RESTful 서비스 추가
+A;L_SVC_URL;서비스 URL
+A;L_BASE_URL;베이스 URL
+A;L_HOST;호스트명
+A;B_SUMMARY;요약
+A;L_AUTH_TOKEN;인증토큰
+A;L_AUTH_URL;인증 URL
+A;L_REST_MGR;RESTful 관리
+A;B_FIELD;필드
+A;L_JSON_FORMAT;JSON 양식
+A;B_PARAM_IN;입력 파라미터
+A;L_REF;참조자
+A;L_ENUM;Enumerator

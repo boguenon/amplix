@@ -252,3 +252,18 @@ A;L_WIDGET;Widget
 A;L_ADD_LABEL;Add Label
 A;L_FLT_HEIGHT;Filter Height
 A;L_FULL_HEIGHT;Full Height
+
+A;D_BPMN;BPMN
+A;L_ADD_REST;Add RESTful Service
+A;L_SVC_URL;Service URL
+A;L_BASE_URL;Base URL
+A;L_HOST;Hostname
+A;B_SUMMARY;Summary
+A;L_AUTH_TOKEN;Auth Token
+A;L_AUTH_URL;Auth URL
+A;L_REST_MGR;RESTful Management
+A;B_FIELD;Field
+A;L_JSON_FORMAT;JSON Format
+A;B_PARAM_IN;Param In
+A;L_REF;Reference
+A;L_ENUM;Enumerator
