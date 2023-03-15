@@ -474,7 +474,8 @@ CREATE TABLE igcsj (
   message #VARCHAR#(255) #NULL#,
   pstatus #CHAR#(1) #NULL#,
   nexec_time #LONG#,
-  jobkeyname #VARCHAR#(100)
+  jobkeyname #VARCHAR#(100),
+  pickdate #CHAR#(24) #NULL#
 );
 
 CREATE TABLE igcctlduty (
