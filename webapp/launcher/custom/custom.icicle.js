@@ -19,7 +19,7 @@ IG$.cVis.icicle = $s.extend(IG$.cVis.base, {
 		if (IG$.cVis.icicle._loading)
 		{
 			setTimeout(function() {
-				me.draw.call(me, results);
+				me.draw(results);
 			}, 500);
 			
 			return;
@@ -37,7 +37,7 @@ IG$.cVis.icicle = $s.extend(IG$.cVis.base, {
 				js, 
 				new IG$.callBackObj(this, function() {
 					IG$.cVis.icicle._loaded = 1;
-					me.draw.call(me, results);
+					me.draw(results);
 				})
 			);
 		}

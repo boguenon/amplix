@@ -3140,3 +3140,11 @@ a:active .webix_custom_radio {
 .m-datagrid-container {
   background: initial;
 }
+
+.m-datagrid-container table > thead > tr > th, .m-datagrid-container table > tbody > tr > th {
+  background-color: #000000;
+}
+
+.m-datagrid-cell-selected {
+  background: #9b9b9b !important;
+}

@@ -1038,7 +1038,7 @@ IG$.cVis.kpi.prototype.draw = function(results) {
 			
 			if (charts.length)
 			{
-				me._drawCharts.call(me, charts, chartdiv);
+				me._drawCharts(charts, chartdiv);
 			}
 			
 			if (dataobj)
@@ -1265,7 +1265,7 @@ IG$.cVis.kpi.prototype.updatedisplay = function(w, h) {
 	if (me.charts && me.charts.length > 0)
 	{
 		setTimeout(function() {
-			me.updateLayout.call(me, 1);
+			me.updateLayout(1);
 		}, 10);
 	}
 }

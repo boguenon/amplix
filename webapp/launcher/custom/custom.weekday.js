@@ -17,7 +17,7 @@ IG$.cVis.weekday = $s.extend(IG$.cVis.base, {
 		if (IG$.cVis.weekday._loading)
 		{ 
 			setTimeout(function() {
-				me.draw.call(me, results);
+				me.draw(results);
 			}, 500);
 		}
 		
@@ -33,7 +33,7 @@ IG$.cVis.weekday = $s.extend(IG$.cVis.base, {
 				js, 
 				new IG$.callBackObj(this, function() {
 					IG$.cVis.weekday._loaded = 1;
-					me.draw.call(me, results);
+					me.draw(results);
 				})
 			);
 		}

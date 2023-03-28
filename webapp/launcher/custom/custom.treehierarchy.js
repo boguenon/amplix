@@ -17,7 +17,7 @@ IG$.cVis.treehierarchy = $s.extend(IG$.cVis.base, {
 		if (IG$.cVis.treehierarchy._loading)
 		{ 
 			setTimeout(function() {
-				me.draw.call(me, results);
+				me.draw(results);
 			}, 500);
 		}
 		
@@ -33,7 +33,7 @@ IG$.cVis.treehierarchy = $s.extend(IG$.cVis.base, {
 				js, 
 				new IG$.callBackObj(this, function() {
 					IG$.cVis.treehierarchy._loaded = 1;
-					me.draw.call(me, results);
+					me.draw(results);
 				})
 			);
 		}

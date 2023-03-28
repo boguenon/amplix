@@ -50,7 +50,7 @@ IG$.cVis.googlemap = $s.extend(IG$.cVis.base, {
 					js, 
 					new IG$.callBackObj(this, function() {
 						IG$.cVis.googlemap._loaded = 1;
-						me.draw.call(me, results);
+						me.draw(results);
 					})
 				);
 			}));

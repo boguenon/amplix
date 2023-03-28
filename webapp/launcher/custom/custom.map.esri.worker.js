@@ -196,7 +196,7 @@ IG$.cVis.esri.prototype.map_initialize = function(chartview, container, callback
 	// map.infoWindow.resize(200, 75);
 	
 //	dojo.connect(map, "onExtentChange", function(extent) {
-//		me.validateData.call(me, extent);
+//		me.validateData(extent);
 //	});
 
 	return map;
@@ -216,7 +216,7 @@ IG$.cVis.esri.prototype.validateData = function(extent) {
 
 	me._ptimer = setTimeout(function() {
 		me.req_cnt = 0;
-		me.updateData.call(me, extent);
+		me.updateData(extent);
 	}, 1000);
 };
 

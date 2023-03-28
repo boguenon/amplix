@@ -79,7 +79,7 @@ IG$.cVis.runchart = $s.extend(IG$.cVis.base, {
 			mbody: {}
 		}, mctrl, function(sdoc) {
 			results.statistics = sdoc.statistics;
-			me.drawStatResult.call(me, chartview, results);
+			me.drawStatResult(chartview, results);
 		});
 		req.send();
 	},

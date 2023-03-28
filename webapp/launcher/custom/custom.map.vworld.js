@@ -34,7 +34,7 @@ IG$.cVis.vworldmap = $s.extend(IG$.cVis.base, {
 				js, 
 				new IG$.callBackObj(this, function() {
 					IG$.cVis.vworldmap._loaded = 1;
-					me.draw.call(me, results);
+					me.draw(results);
 				})
 			);
 		}

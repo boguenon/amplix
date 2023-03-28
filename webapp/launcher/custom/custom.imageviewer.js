@@ -17,7 +17,7 @@ IG$.cVis.imgviewer = $s.extend(IG$.cVis.base, {
 		if (IG$.cVis.imgviewer._loading)
 		{
 			setTimeout(function() {
-				me.draw.call(me, results);
+				me.draw(results);
 			}, 500);
 			
 			return;
@@ -35,7 +35,7 @@ IG$.cVis.imgviewer = $s.extend(IG$.cVis.base, {
 				js, 
 				new IG$.callBackObj(this, function() {
 					IG$.cVis.imgviewer._loaded = true;
-					me.draw.call(me, results);
+					me.draw(results);
 				})
 			);
 		}

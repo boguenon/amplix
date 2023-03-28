@@ -48,7 +48,7 @@ IG$.cVis.sankey = $s.extend(IG$.cVis.base, {
 		
 		if (me.chartview && me.$mresult)
 		{
-			me.draw.call(me, me.$mresult);
+			me.draw(me.$mresult);
 		}
 	},
 	

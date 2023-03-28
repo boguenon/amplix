@@ -264,7 +264,7 @@ IG$.cVis.esri.prototype.validateData = function(extent) {
 
 	me._ptimer = setTimeout(function() {
 		me.req_cnt = 0;
-		me.updateData.call(me, extent);
+		me.updateData(extent);
 	}, 1000);
 };
 

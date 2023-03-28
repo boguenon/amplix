@@ -32,7 +32,7 @@ IG$.cVis.esri = $s.extend(IG$.cVis.base, {
 				* Keep monitoring draw api in worker is ready
 				*/
 			setTimeout(function() {
-				me.draw.call(me, results);
+				me.draw(results);
 			}, 500);
 			
 			return;

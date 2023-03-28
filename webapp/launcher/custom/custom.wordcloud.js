@@ -15,7 +15,7 @@ IG$.cVis.wordcloud = $s.extend(IG$.cVis.base, {
 		if (IG$.cVis.wordcloud._loading)
 		{
 			setTimeout(function() {
-				me.draw.call(me, results);
+				me.draw(results);
 			}, 500);
 			
 			return;
@@ -33,7 +33,7 @@ IG$.cVis.wordcloud = $s.extend(IG$.cVis.base, {
 				js, 
 				new IG$.callBackObj(this, function() {
 					IG$.cVis.wordcloud._loaded = 1;
-					me.draw.call(me, results);
+					me.draw(results);
 				})
 			);
 		}
