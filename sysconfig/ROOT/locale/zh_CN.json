@@ -47,7 +47,7 @@
     "value" : "关于 @"
   }, {
     "name" : "E_D_EVNT",
-    "value" : "处理evnet @时出错。"
+    "value" : "处理event @时出错。"
   }, {
     "name" : "L_C_TOTAL",
     "value" : "总计@"
