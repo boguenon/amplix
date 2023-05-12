@@ -29,6 +29,7 @@ public class ${CLASS_NAME}
 	@SuppressWarnings("unchecked")
 	@Override
 	public String beforeLogin(String userid, String password, HashMap<String, Object> iprop, HashMap<String, String> secfilter)
+		throws GenericException
 	{
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -50,6 +51,7 @@ public class ${CLASS_NAME}
 		{
 			logger.error("error on singlesignon before login", e);
 			uid = null;
+			throw new GenericException(e);
 		}
 		finally
 		{
@@ -83,6 +85,7 @@ public class ${CLASS_NAME}
 	
 	@Override
 	public String tryLogin(String userid, String password, HashMap<String, Object> iprop, HashMap<String, String> secfilter)
+		throws GenericException
 	{
 		String uid = null;
 		
@@ -103,6 +106,7 @@ public class ${CLASS_NAME}
 		{
 			logger.error("error on single sign on trylogin", e);
 			uid = null;
+			throw new GenericException(e);
 		}
 		finally
 		{
@@ -135,7 +139,9 @@ public class ${CLASS_NAME}
 	}
 	
 	@Override
-	public ArrayList<AuthEntity> getUserList(String filter, HashMap<String, Object> iprop) throws Exception {
+	public ArrayList<AuthEntity> getUserList(String filter, HashMap<String, Object> iprop) 
+		throws GenericException 
+	{
 		ArrayList<AuthEntity> authEntities = null;
 		
 		${CODE_GET_USER_LIST}
@@ -144,7 +150,9 @@ public class ${CLASS_NAME}
 	}
 
 	@Override
-	public ArrayList<AuthEntity> getRoleList(String filter, HashMap<String, Object> iprop) throws Exception {
+	public ArrayList<AuthEntity> getRoleList(String filter, HashMap<String, Object> iprop) 
+		throws GenericException 
+	{
 		ArrayList<AuthEntity> authEntities = null;
 		
 		${CODE_GET_ROLE_LIST}
@@ -153,7 +161,9 @@ public class ${CLASS_NAME}
 	}
 
 	@Override
-	public ArrayList<AuthEntity> getGroupList(String filter, HashMap<String, Object> iprop) throws Exception {
+	public ArrayList<AuthEntity> getGroupList(String filter, HashMap<String, Object> iprop) 
+		throws GenericException 
+	{
 		ArrayList<AuthEntity> authEntities = null;
 		
 		${CODE_GET_GROUP_LIST}
@@ -162,7 +172,8 @@ public class ${CLASS_NAME}
 	}
 
 	@Override
-	public ArrayList<AuthEntity> getOptionFields() {
+	public ArrayList<AuthEntity> getOptionFields() 
+	{
 		ArrayList<AuthEntity> authEntities = null;
 		
 		${CODE_GET_OPTION_FIELDS}
