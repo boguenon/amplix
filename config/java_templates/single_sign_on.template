@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import com.amplix.sso.AuthEntity;
 import com.amplix.sso.SSOPlugin;
+import com.amplix.exceptions.GenericException;
 
 ${IMPORT_CLASSES}
 
