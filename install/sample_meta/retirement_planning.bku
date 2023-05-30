@@ -4813,5 +4813,271 @@
     "sql_prompts" : [ ],
     "b_sc_load" : false,
     "ploader" : true
+  }, {
+    "meta_type" : "metacontent",
+    "objinfo" : { },
+    "name" : "com.amplix.demo",
+    "type" : "Folder",
+    "uid" : "bb3dada5-f6cc4d65",
+    "description" : "",
+    "memo" : "",
+    "pid" : "9b947567-c95b4819",
+    "nodepath" : "/BusinessProcess/com.amplix.demo",
+    "writable" : true,
+    "manage" : true,
+    "is_sub" : true,
+    "sortseq" : 0,
+    "attributes" : { },
+    "auth" : [ {
+      "sid" : "0122483f-0155fb4d",
+      "dutytype" : "A",
+      "status" : 1,
+      "name" : "EveryOne",
+      "writable" : true,
+      "readable" : true,
+      "manage" : false
+    } ]
+  }, {
+    "meta_type" : "class_module",
+    "objinfo" : { },
+    "name" : "RetirementPlanner",
+    "type" : "ClassModule",
+    "uid" : "62d98ba7-a07d4166",
+    "description" : "",
+    "memo" : "",
+    "pid" : "bb3dada5-f6cc4d65",
+    "nodepath" : "/BusinessProcess/com.amplix.demo/RetirementPlanner",
+    "writable" : true,
+    "manage" : true,
+    "is_sub" : false,
+    "sortseq" : 0,
+    "attributes" : { },
+    "auth" : [ {
+      "sid" : "0122483f-0155fb4d",
+      "dutytype" : "A",
+      "status" : 1,
+      "name" : "EveryOne",
+      "writable" : true,
+      "readable" : true,
+      "manage" : false
+    } ],
+    "data_source" : "b2c43159-d62e4ffe",
+    "modules" : [ {
+      "name" : "SaveConfig",
+      "description" : "",
+      "script" : "String t_uid = genUniqueID();\n\nparams.put(\"t_uid\", t_uid);\n\n@SQL_START\nINSERT INTO\nt_retirement_planning (\n    t_uid,\n    t_age,\n\tt_annual_income,\n\tt_annual_inflation_income_increases,\n\tt_retirement_savings_balance,\n\tt_annual_savings_amount,\n\tt_annual_savings_increases,\n\tt_investment_return,\n\t\n\tt_annual_pension_benefit,\n\tt_annual_pension_benefit_increases,\n\tt_desired_retireemnt_age,\n\tt_number_of_years_of_retirement_income,\n\tt_income_replacement,\n\tt_retire_investment_return,\n\t\n\tt_invest_return_uncertainty,\n\tt_annaul_savings_amount_uncertainty,\n\tt_annual_savings_increases_uncertainty,\n\tt_annual_pension_benefit_amount_uncertainty,\n\tt_annual_pension_benefit_increases_uncertainty\n) VALUES (\n    :t_uid,\n    :t_age,\n\t:t_annual_income,\n\t:t_annual_inflation_income_increases,\n\t:t_retirement_savings_balance,\n\t:t_annual_savings_amount,\n\t:t_annual_savings_increases,\n\t:t_investment_return,\n\t\n\t:t_annual_pension_benefit,\n\t:t_annual_pension_benefit_increases,\n\t:t_desired_retireemnt_age,\n\t:t_number_of_years_of_retirement_income,\n\t:t_income_replacement,\n\t:t_retire_investment_return,\n\t\n\t:t_invest_return_uncertainty,\n\t:t_annaul_savings_amount_uncertainty,\n\t:t_annual_savings_increases_uncertainty,\n\t:t_annual_pension_benefit_amount_uncertainty,\n\t:t_annual_pension_benefit_increases_uncertainty\n)\n@SQL_END\n\nthis.set(\"t_uid\", t_uid);",
+      "iparams" : [ {
+        "name" : "t_age",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_income",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_inflation_income_increases",
+        "isdefault" : false
+      }, {
+        "name" : "t_retirement_savings_balance",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_savings_amount",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_savings_increases",
+        "isdefault" : false
+      }, {
+        "name" : "t_investment_return",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_pension_benefit",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_pension_benefit_increases",
+        "isdefault" : false
+      }, {
+        "name" : "t_desired_retireemnt_age",
+        "isdefault" : false
+      }, {
+        "name" : "t_number_of_years_of_retirement_income",
+        "isdefault" : false
+      }, {
+        "name" : "t_income_replacement",
+        "isdefault" : false
+      }, {
+        "name" : "t_retire_investment_return",
+        "isdefault" : false
+      }, {
+        "name" : "t_invest_return_uncertainty",
+        "isdefault" : false
+      }, {
+        "name" : "t_annaul_savings_amount_uncertainty",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_savings_increases_uncertainty",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_pension_benefit_amount_uncertainty",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_pension_benefit_increases_uncertainty",
+        "isdefault" : false
+      } ],
+      "oparams" : [ {
+        "name" : "t_uid",
+        "isdefault" : false
+      } ]
+    }, {
+      "name" : "GetConfig",
+      "description" : "",
+      "script" : "@SQL_START\nSELECT\n    t_age,\n\tt_annual_income,\n\tt_annual_inflation_income_increases,\n\tt_retirement_savings_balance,\n\tt_annual_savings_amount,\n\tt_annual_savings_increases,\n\tt_investment_return,\n\t\n\tt_annual_pension_benefit,\n\tt_annual_pension_benefit_increases,\n\tt_desired_retireemnt_age,\n\tt_number_of_years_of_retirement_income,\n\tt_income_replacement,\n\tt_retire_investment_return,\n\t\n\tt_invest_return_uncertainty,\n\tt_annaul_savings_amount_uncertainty,\n\tt_annual_savings_increases_uncertainty,\n\tt_annual_pension_benefit_amount_uncertainty,\n\tt_annual_pension_benefit_increases_uncertainty\nFROM \n    t_retirement_planning\nWHERE\n    t_uid = :t_uid\n@SQL_END",
+      "iparams" : [ {
+        "name" : "t_uid",
+        "isdefault" : false
+      } ],
+      "oparams" : [ {
+        "name" : "t_age",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_income",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_inflation_income_increases",
+        "isdefault" : false
+      }, {
+        "name" : "t_retirement_savings_balance",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_savings_amount",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_savings_increases",
+        "isdefault" : false
+      }, {
+        "name" : "t_investment_return",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_pension_benefit",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_pension_benefit_increases",
+        "isdefault" : false
+      }, {
+        "name" : "t_desired_retireemnt_age",
+        "isdefault" : false
+      }, {
+        "name" : "t_number_of_years_of_retirement_income",
+        "isdefault" : false
+      }, {
+        "name" : "t_income_replacement",
+        "isdefault" : false
+      }, {
+        "name" : "t_retire_investment_return",
+        "isdefault" : false
+      }, {
+        "name" : "t_invest_return_uncertainty",
+        "isdefault" : false
+      }, {
+        "name" : "t_annaul_savings_amount_uncertainty",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_savings_increases_uncertainty",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_pension_benefit_amount_uncertainty",
+        "isdefault" : false
+      }, {
+        "name" : "t_annual_pension_benefit_increases_uncertainty",
+        "isdefault" : false
+      } ]
+    }, {
+      "name" : "Calculator",
+      "description" : "",
+      "script" : "@SQL_START=calcparams\r\nSELECT\r\n    t_age,\r\n\tt_annual_income,\r\n\tt_annual_inflation_income_increases,\r\n\tt_retirement_savings_balance,\r\n\tt_annual_savings_amount,\r\n\tt_annual_savings_increases,\r\n\tt_investment_return,\r\n\t\r\n\tt_annual_pension_benefit,\r\n\tt_annual_pension_benefit_increases,\r\n\tt_desired_retireemnt_age,\r\n\tt_number_of_years_of_retirement_income,\r\n\tt_income_replacement,\r\n\tt_retire_investment_return,\r\n\t\r\n\tt_invest_return_uncertainty,\r\n\tt_annaul_savings_amount_uncertainty,\r\n\tt_annual_savings_increases_uncertainty,\r\n\tt_annual_pension_benefit_amount_uncertainty,\r\n\tt_annual_pension_benefit_increases_uncertainty\r\nFROM \r\n    t_retirement_planning\r\nWHERE\r\n    t_uid = :t_uid\r\n@SQL_END\r\n\r\nint year = 0;\r\n\r\nint t_age = (int) Math.round((double) getOutputListValue(\"calcparams\", \"t_age\"));\r\ndouble t_annual_income = (double) getOutputListValue(\"calcparams\", \"t_annual_income\");\r\ndouble t_annual_inflation_income_increases = (double) getOutputListValue(\"calcparams\", \"t_annual_inflation_income_increases\");\r\ndouble t_retirement_savings_balance = (double) getOutputListValue(\"calcparams\", \"t_retirement_savings_balance\");\r\ndouble t_annual_savings_amount = (double) getOutputListValue(\"calcparams\", \"t_annual_savings_amount\");\r\ndouble t_annual_savings_increases = (double) getOutputListValue(\"calcparams\", \"t_annual_savings_increases\");\r\ndouble t_investment_return =  (double) getOutputListValue(\"calcparams\", \"t_investment_return\");\r\n\r\ndouble t_annual_pension_benefit = (double) getOutputListValue(\"calcparams\", \"t_annual_pension_benefit\");\r\ndouble t_annual_pension_benefit_increases = (double) getOutputListValue(\"calcparams\", \"t_annual_pension_benefit_increases\");\r\nint t_desired_retireemnt_age = (int) Math.round((double) getOutputListValue(\"calcparams\", \"t_desired_retireemnt_age\"));\r\nint t_number_of_years_of_retirement_income = (int) Math.round((double) getOutputListValue(\"calcparams\", \"t_number_of_years_of_retirement_income\"));\r\ndouble t_income_replacement = (double) getOutputListValue(\"calcparams\", \"t_income_replacement\");\r\ndouble t_retire_investment_return = (double) getOutputListValue(\"calcparams\", \"t_retire_investment_return\");\r\n\r\ndouble t_invest_return_uncertainty = (double) getOutputListValue(\"calcparams\", \"t_invest_return_uncertainty\");\r\ndouble t_annaul_savings_amount_uncertainty = (double) getOutputListValue(\"calcparams\", \"t_annaul_savings_amount_uncertainty\");\r\ndouble t_annual_savings_increases_uncertainty = (double) getOutputListValue(\"calcparams\", \"t_annual_savings_increases_uncertainty\");\r\ndouble t_annual_pension_benefit_amount_uncertainty = (double) getOutputListValue(\"calcparams\", \"t_annual_pension_benefit_amount_uncertainty\");\r\ndouble t_annual_pension_benefit_increases_uncertainty = (double) getOutputListValue(\"calcparams\", \"t_annual_pension_benefit_increases_uncertainty\");\r\n\r\ndouble salary = 0d;\r\ndouble balance = 0d;\r\ndouble interest = 0d;\r\ndouble yearly_savings = 0d;\r\ndouble desired_retirement_income = 0d;\r\ndouble pension_income = t_annual_pension_benefit;\r\ndouble end_balance = 0d;\r\n\r\nList<String> h1 = new ArrayList<String>();\r\nList<List<Object>> d1 = new ArrayList<List<Object>>();\r\n\r\nyear = t_desired_retireemnt_age - t_age + t_number_of_years_of_retirement_income;\r\n\r\nint retire_year = t_desired_retireemnt_age - t_age;\r\n\r\nString[] headers = \"age;salary;balance;interest;yearly_savings;desired_retirement_income;pension_income;end_balance;min_uncertain_end_balance;max_uncertain_end_balance\".split(\";\");\r\n\r\nfor (int i=0; i < headers.length; i++)\r\n{\r\n\th1.add(headers[i]);\r\n}\r\n\r\ndouble max_salary = 0d;\r\ndouble max_balance = 0d;\r\ndouble max_interest = 0d;\r\ndouble max_yearly_savings = 0d;\r\ndouble max_desired_retirement_income = 0d;\r\ndouble max_pension_income = t_annual_pension_benefit * (100 + t_annual_pension_benefit_amount_uncertainty) / 100d;\r\ndouble max_end_balance = 0d;\r\n\r\ndouble min_salary = 0d;\r\ndouble min_balance = 0d;\r\ndouble min_interest = 0d;\r\ndouble min_yearly_savings = 0d;\r\ndouble min_desired_retirement_income = 0d;\r\ndouble min_pension_income = t_annual_pension_benefit * (100 - t_annual_pension_benefit_amount_uncertainty) / 100d;\r\ndouble min_end_balance = 0d;\r\n\r\nfor (int i=0; i < year; i++)\r\n{\r\n    List<Object> d = new ArrayList<Object>();\r\n    d1.add(d);\r\n    \r\n    int age = t_age + i;\r\n    \r\n\tif (i >= retire_year)\r\n\t{\r\n\t\tif (i == retire_year)\r\n\t\t{\r\n\t\t\tdesired_retirement_income = (salary) * t_income_replacement / 100d;\r\n\t\t\tmax_desired_retirement_income = (max_salary) * t_income_replacement / 100d\r\n\t\t\t\t* (100 - t_invest_return_uncertainty) / 100d;\r\n\t\t\t\t\r\n\t\t\tmin_desired_retirement_income = (min_salary) * t_income_replacement / 100d\r\n\t\t\t\t* (100 + t_invest_return_uncertainty) / 100d;\r\n\t\t}\r\n\t\telse\r\n\t\t{\r\n\t\t\tdouble retire_increase = desired_retirement_income * t_annual_inflation_income_increases / 100d;\r\n\t\t\tdesired_retirement_income += retire_increase;\r\n\t\t\t\r\n\t\t\tdouble max_retire_increase = max_desired_retirement_income * t_annual_inflation_income_increases / 100d\r\n\t\t\t\t* (100 - t_invest_return_uncertainty) / 100d;\r\n\t\t\tmax_desired_retirement_income += max_retire_increase;\r\n\t\t\t\r\n\t\t\tdouble min_retire_increase = min_desired_retirement_income * t_annual_inflation_income_increases / 100d\r\n\t\t\t\t* (100 + t_invest_return_uncertainty) / 100d;\r\n\t\t\tmin_desired_retirement_income += min_retire_increase;\r\n\t\t}\r\n\t\t\r\n\t\tdouble pension_interest = pension_income * t_annual_pension_benefit_increases / 100d;\r\n\t\tpension_income += pension_interest;\r\n\t\t\r\n\t\tdouble max_pension_interest = max_pension_income * t_annual_pension_benefit_increases / 100d\r\n\t\t\t* (100 + t_annual_pension_benefit_amount_uncertainty) / 100d;\r\n\t\tmax_pension_income += max_pension_interest;\r\n\t\t\r\n\t\tdouble min_pension_interest = min_pension_income * t_annual_pension_benefit_increases / 100d\r\n\t\t\t* (100 - t_annual_pension_benefit_amount_uncertainty) / 100d;\r\n\t\tmin_pension_income += min_pension_interest;\r\n\t}\r\n\telse\r\n\t{\r\n\t\tdesired_retirement_income = 0d;\r\n\t\tpension_income = 0d;\r\n\t\t\r\n\t\tmax_desired_retirement_income = 0d;\r\n\t\tmax_pension_income = 0d;\r\n\t\t\r\n\t\tmin_desired_retirement_income = 0d;\r\n\t\tmin_pension_income = 0d;\r\n\t}\r\n\t\r\n\tif (i < retire_year)\r\n\t{\r\n\t    if (i == 0)\r\n\t    {\r\n\t        salary = t_annual_income;\r\n\t        balance = t_retirement_savings_balance;\r\n\t        interest = balance * t_investment_return / 100d;\r\n\t\t\t\r\n\t\t\tmax_salary = t_annual_income * (100 + t_invest_return_uncertainty) / 100d;\r\n\t\t\tmax_balance = t_retirement_savings_balance;\r\n\t\t\tmax_interest = max_balance * t_investment_return / 100d\r\n\t\t\t\t* (100 + t_invest_return_uncertainty) / 100d;\r\n\t\t\t\t\r\n\t\t\tmin_salary = t_annual_income * (100 - t_invest_return_uncertainty) / 100d;\r\n\t\t\tmin_balance = t_retirement_savings_balance;\r\n\t\t\tmin_interest = min_balance * t_investment_return / 100d\r\n\t\t\t\t* (100 - t_invest_return_uncertainty) / 100d;\r\n\t    }\r\n\t    else\r\n\t    {\r\n    \t\tdouble salary_interest = salary * t_annual_inflation_income_increases / 100d;\r\n    \t\tsalary += salary_interest;\r\n    \t\tbalance = end_balance;\r\n    \t\tinterest = balance * t_investment_return / 100d;\r\n\t\t\t\r\n\t\t\tdouble max_salary_interest = max_salary * t_annual_inflation_income_increases / 100d\r\n\t\t\t\t* (100 + t_invest_return_uncertainty) / 100d;\r\n\t\t\tmax_salary += max_salary_interest;\r\n\t\t\tmax_balance = max_end_balance;\r\n\t\t\tmax_interest = max_balance * t_investment_return / 100d\r\n\t\t\t\t* (100 + t_invest_return_uncertainty) / 100d;\r\n\t\t\t\r\n\t\t\tdouble min_salary_interest = min_salary * t_annual_inflation_income_increases / 100d\r\n\t\t\t\t* (100 - t_invest_return_uncertainty) / 100d;\r\n\t\t\tmin_salary += min_salary_interest;\r\n\t\t\tmin_balance = min_end_balance;\r\n\t\t\tmin_interest = min_balance * t_investment_return / 100d\r\n\t\t\t\t* (100 - t_invest_return_uncertainty) / 100d;\r\n\t    }\r\n\r\n\t\tyearly_savings = t_annual_savings_amount;\r\n\t\tmax_yearly_savings = t_annual_savings_amount * (100 + t_annaul_savings_amount_uncertainty) / 100d;\r\n\t\tmin_yearly_savings = t_annual_savings_amount * (100 - t_annaul_savings_amount_uncertainty) / 100d;\r\n\t}\r\n\telse\r\n\t{\r\n\t    balance = end_balance;\r\n\t\tsalary = 0d;\r\n\t\tyearly_savings = 0d;\r\n\t\tinterest = balance * t_retire_investment_return / 100d;\r\n\t\t\r\n\t\tmax_balance = max_end_balance;\r\n\t\tmax_salary = 0d;\r\n\t\tmax_yearly_savings = 0d;\r\n\t\tmax_interest = max_balance * t_retire_investment_return / 100d\r\n\t\t\t* (100 + t_invest_return_uncertainty) / 100d;\r\n\t\t\r\n\t\tmin_balance = min_end_balance;\r\n\t\tmin_salary = 0d;\r\n\t\tmin_yearly_savings = 0d;\r\n\t\tmin_interest = min_balance * t_retire_investment_return / 100d\r\n\t\t\t* (100 - t_invest_return_uncertainty) / 100d;\r\n\t}\r\n\t\r\n\tend_balance = balance + interest + yearly_savings + pension_income - desired_retirement_income;\r\n\t\r\n\tmin_end_balance = min_balance + min_interest + min_yearly_savings + min_pension_income - min_desired_retirement_income;\r\n\tmax_end_balance = max_balance + max_interest + max_yearly_savings + max_pension_income - max_desired_retirement_income;\r\n\t\r\n\td.add(age);\r\n\td.add(salary);\r\n\td.add(balance);\r\n\td.add(interest);\r\n\td.add(yearly_savings);\r\n\td.add(desired_retirement_income);\r\n\td.add(pension_income);\r\n\td.add(end_balance);\r\n\td.add(min_end_balance);\r\n\td.add(max_end_balance);\r\n}\r\n\r\nint n_minus = 0;\r\n\r\nfor (int i=0; i < d1.size(); i++)\r\n{\r\n    params.put(\"age\", d1.get(i).get(0));\r\n    params.put(\"salary\", d1.get(i).get(1));\r\n    params.put(\"balance\", d1.get(i).get(2));\r\n    params.put(\"interest\", d1.get(i).get(3));\r\n    params.put(\"yearly_savings\", d1.get(i).get(4));\r\n    params.put(\"desired_retirement_income\", d1.get(i).get(5));\r\n    params.put(\"pension_income\", d1.get(i).get(6));\r\n    params.put(\"end_balance\", d1.get(i).get(7));\r\n\tparams.put(\"min_uncertain_end_balance\", d1.get(i).get(8));\r\n\tparams.put(\"max_uncertain_end_balance\", d1.get(i).get(9));\r\n\t\r\n\tdouble b_balance = (double) d1.get(i).get(7);\r\n\t\r\n\tif (b_balance < 0)\r\n\t{\r\n\t    n_minus++;\r\n\t    \r\n\t    if (n_minus == 3)\r\n\t        break;\r\n\t}\r\n    \r\n    @SQL_START\r\n    INSERT INTO t_retirement_data (\r\n    \tt_uid,\r\n        age,\r\n        salary,\r\n        balance,\r\n        interest,\r\n        yearly_savings,\r\n        desired_retirement_income,\r\n        pension_income,\r\n        end_balance,\r\n\t\tmin_uncertain_end_balance,\r\n\t\tmax_uncertain_end_balance\r\n    ) VALUES (\r\n        :t_uid,\r\n        :age,\r\n        :salary,\r\n        :balance,\r\n        :interest,\r\n        :yearly_savings,\r\n        :desired_retirement_income,\r\n        :pension_income,\r\n        :end_balance,\r\n\t\t:min_uncertain_end_balance,\r\n\t\t:max_uncertain_end_balance\r\n    )\r\n    @SQL_END\r\n}\r\n\r\nGridOutputModel gparam = new GridOutputModel();\r\ngparam.setHeaders(h1);\r\ngparam.setData(d1);\r\nthis.oparam.put(\"retire_calculator\", gparam);",
+      "iparams" : [ {
+        "name" : "t_uid",
+        "isdefault" : false
+      } ],
+      "oparams" : [ {
+        "name" : "retire_calculator",
+        "isdefault" : false
+      } ]
+    } ],
+    "cls" : "// import com.amplix.utility.ClassUtils;"
+  }, {
+    "meta_type" : "class_module",
+    "objinfo" : { },
+    "name" : "SolarCalculator",
+    "type" : "ClassModule",
+    "uid" : "8ef9717e-c80949cb",
+    "description" : "",
+    "memo" : "",
+    "pid" : "bb3dada5-f6cc4d65",
+    "nodepath" : "/BusinessProcess/com.amplix.demo/SolarCalculator",
+    "writable" : true,
+    "manage" : true,
+    "is_sub" : false,
+    "sortseq" : 0,
+    "attributes" : { },
+    "auth" : [ {
+      "sid" : "0122483f-0155fb4d",
+      "dutytype" : "A",
+      "status" : 1,
+      "name" : "EveryOne",
+      "writable" : true,
+      "readable" : true,
+      "manage" : false
+    } ],
+    "data_source" : "",
+    "modules" : [ {
+      "name" : "calculateSolar",
+      "description" : "",
+      "script" : "List<Map<String, String>> headers = new ArrayList<Map<String, String>>();\r\nList<Map<String, String>> data = new ArrayList<Map<String, String>>();\r\n\r\ndouble latitude = 0d;\r\ndouble longitude = 0d;\r\nString date = params.get(\"date\").toString();\r\nint ndate = 0;\r\nint timezone = Integer.parseInt(params.get(\"timezone\").toString());\r\n\r\nfor (int i=0; i < 24*6; i++)\r\n{\r\n    int time = i * 10;\r\n    double julian_day = ndate+2415018.5D+time-timezone/24;\r\n    double julian_century = (julian_day-2451545)/36525;\r\n    double geom_mean_long_sun = 280.46646+julian_century*(36000.76983 + julian_century*0.0003032) % 360;\r\n    double geom_mean_anom_sun = 357.52911+julian_century*(35999.05029 - 0.0001537*julian_century);\r\n    double eccent_earth_orbit = 0.016708634-julian_century*(0.000042037+0.0000001267*julian_century);\r\n    double sun_eq_of_ctr = Math.sin(Math.toRadians(geom_mean_anom_sun))*(1.914602-julian_century*(0.004817+0.000014*julian_century))\r\n        +Math.sin(Math.toRadians(2*geom_mean_anom_sun))*(0.019993-0.000101*julian_century)\r\n        +Math.sin(Math.toRadians(3*geom_mean_anom_sun))*0.000289;\r\n        \r\n    double sun_true_long = geom_mean_long_sun + sun_eq_of_ctr;\r\n    double sun_true_anom = geom_mean_anom_sun + sun_eq_of_ctr;\r\n    \r\n    double sun_rad_vector = (1.000001018*(1-eccent_earth_orbit*eccent_earth_orbit))/(1+eccent_earth_orbit*Math.cos(Math.toRadians(sun_true_anom)));\r\n    double sun_app_long = sun_true_long-0.00569-0.00478*Math.sin(Math.toRadians(125.04-1934.136*julian_century));\r\n    \r\n    double mean_obilq_ecliptic = 23+(26+((21.448-julian_century*(46.815+julian_century*(0.00059-julian_century*0.001813))))/60)/60;\r\n    \r\n    double obliq_corr = mean_obilq_ecliptic+0.00256*Math.cos(Math.toRadians(125.04-1934.136*julian_century));\r\n    \r\n    double sun_rt_ascen_deg\t= Math.toDegrees(\r\n\tMath.atan2(\r\n\t\tMath.cos(Math.toRadians(sun_app_long)), Math.cos(Math.toRadians(obliq_corr))*Math.sin(Math.toRadians(sun_app_long))));\r\n\t\t\r\n    double sun_declin_deg = Math.toDegrees(Math.asin(Math.sin(Math.toRadians(obliq_corr))*Math.sin(Math.toRadians(sun_app_long))));\r\n    double var_y =Math.tan(Math.toRadians(obliq_corr/2))*Math.tan(Math.toRadians(obliq_corr/2));\r\n\r\n    double eq_of_time_minutes = 4*Math.toDegrees(var_y*Math.sin(2*Math.toRadians(geom_mean_long_sun))-2*eccent_earth_orbit*Math.sin(Math.toRadians(geom_mean_anom_sun))+4*eccent_earth_orbit*var_y*Math.sin(Math.toRadians(geom_mean_anom_sun))*Math.cos(2*Math.toRadians(geom_mean_long_sun))-0.5*var_y*var_y*Math.sin(4*Math.toRadians(geom_mean_long_sun))-1.25*eccent_earth_orbit*eccent_earth_orbit*Math.sin(2*Math.toRadians(geom_mean_anom_sun)));\r\n\r\n    double ha_sunrise_deg\t= Math.toDegrees(Math.acos(Math.cos(Math.toRadians(90.833))/(Math.cos(Math.toRadians(latitude))*Math.cos(Math.toRadians(sun_declin_deg)))-Math.tan(Math.toRadians(latitude))*Math.tan(Math.toRadians(sun_declin_deg))));\r\n    double solar_noon_lst\t=(720-4*longitude-eq_of_time_minutes+timezone*60)/1440;\r\n    double sunrise_time_lst\t=solar_noon_lst-ha_sunrise_deg*4/1440;\r\n    double sunset_time_lst\t=solar_noon_lst+ha_sunrise_deg*4/1440;\r\n    double sunlight_duration_minutes\t=8*ha_sunrise_deg;\r\n    double true_solar_time_min\t=(time*1440+eq_of_time_minutes+4*longitude-60*timezone % 1440);\r\n    double hour_angle_deg\t= (true_solar_time_min/4<0 ? true_solar_time_min/4+180 : true_solar_time_min/4-180);\r\n    double solar_zenith_angle_deg\t=Math.toDegrees(Math.acos(Math.sin(Math.toRadians(latitude))*Math.sin(Math.toRadians(sun_declin_deg))+Math.cos(Math.toRadians(latitude))*Math.cos(Math.toRadians(sun_declin_deg))*Math.cos(Math.toRadians(hour_angle_deg))));\r\n    double solar_elevation_angle_deg\t=90-solar_zenith_angle_deg;\r\n\t\r\n    double approx_atmospheric_refraction_deg =\r\n\t(solar_elevation_angle_deg>85 ? 0 : \r\n\t(solar_elevation_angle_deg>5 ? \r\n\t\t58.1/Math.tan(Math.toRadians(solar_elevation_angle_deg))-0.07/Math.pow(Math.tan(Math.toRadians(solar_elevation_angle_deg)),3)+0.000086/Math.pow(Math.tan(Math.toRadians(solar_elevation_angle_deg)),5) :\r\n\t\t(solar_elevation_angle_deg>-0.575 ? \r\n\t\t\t1735+solar_elevation_angle_deg*(-518.2+solar_elevation_angle_deg*(103.4+solar_elevation_angle_deg*(-12.79+solar_elevation_angle_deg*0.711))) :\r\n\t\t\t-20.772/Math.tan(Math.toRadians(solar_elevation_angle_deg)))))\r\n\t/3600;\r\n\t\r\n    double solar_elevation_corrected_for_atm_refraction_deg\t=solar_elevation_angle_deg+approx_atmospheric_refraction_deg;\r\n\t\r\n    double solar_azimuth_angle_deg_cw_from_n = (hour_angle_deg>0 ? \r\n\t(Math.toDegrees(Math.acos(((Math.sin(Math.toRadians(latitude))*Math.cos(Math.toRadians(solar_zenith_angle_deg)))-Math.sin(Math.toRadians(sun_declin_deg)))/(Math.cos(Math.toRadians(latitude))*Math.sin(Math.toRadians(solar_zenith_angle_deg)))))+180 % 360) : \r\n\t(540-Math.toDegrees(Math.acos(((Math.sin(Math.toRadians(latitude))*Math.cos(Math.toRadians(solar_zenith_angle_deg)))-Math.sin(Math.toRadians(sun_declin_deg)))/(Math.cos(Math.toRadians(latitude))*Math.sin(Math.toRadians(solar_zenith_angle_deg))))) % 360));\r\n\r\n}",
+      "iparams" : [ {
+        "name" : "latitude",
+        "isdefault" : false
+      }, {
+        "name" : "longitude",
+        "isdefault" : false
+      }, {
+        "name" : "timezone",
+        "isdefault" : false
+      }, {
+        "name" : "date",
+        "isdefault" : false
+      } ],
+      "oparams" : [ {
+        "name" : "date",
+        "isdefault" : false
+      }, {
+        "name" : "time",
+        "isdefault" : false
+      }, {
+        "name" : "julian_century",
+        "isdefault" : false
+      }, {
+        "name" : "geom_mean_long_sun",
+        "isdefault" : false
+      }, {
+        "name" : "geom_mean_anom_sun",
+        "isdefault" : false
+      }, {
+        "name" : "eccent_earch_orbit",
+        "isdefault" : false
+      }, {
+        "name" : "sun_eq_of_ctr",
+        "isdefault" : false
+      }, {
+        "name" : "sun_true_long",
+        "isdefault" : false
+      }, {
+        "name" : "sun_true_anom",
+        "isdefault" : false
+      }, {
+        "name" : "sun_rad_vector",
+        "isdefault" : false
+      }, {
+        "name" : "sun_app_long",
+        "isdefault" : false
+      } ]
+    } ]
   } ]
 }
