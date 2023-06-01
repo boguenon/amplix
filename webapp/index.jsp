@@ -14,7 +14,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202305301931" />
+    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202305312202" />
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="./main/css/mainpage_ie.css" />
 <![endif]-->
@@ -24,8 +24,8 @@
     var __mts_id = null;
     var __uri = "<%=uri%>";
    	</script>
-   	<script type="text/javascript" src="./config.js?_dc=202305301931"></script>
-    <script type="text/javascript" src="./main/js/main.min.js?_dc=202305301931"></script>
+   	<script type="text/javascript" src="./config.js?_dc=202305312202"></script>
+    <script type="text/javascript" src="./main/js/main.min.js?_dc=202305312202"></script>
 </head>
 <body class="index nav-light hoverable">
 	
@@ -67,7 +67,7 @@
 	   <div class="section-centered section-vertical-align js-vertical-align js-parallax-image" data-origin="0" data-parallax-fade="true" data-parallax-speed="3" data-reverse-parallax="true" style="opacity: 1;">
 	      <div class="one-whole">
 	         <h1 class="section-headline section-headline-large section-headline-white">
-	            Scientific Analytics, ready for you
+	            Augmented Analytics, ready for you
 	         </h1>
 	         <a class="maia-button button-download mobile-is-hidden get-started" href="#start">Go to Demo</a>
 	      </div>
