@@ -51,17 +51,17 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202306021134" />
-<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202306021134" />
-<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202306021134" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202306030917" />
+<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202306030917" />
+<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202306030917" />
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202306021134\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202306030917\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202306021134" />
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202306021134" />
+<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202306030917" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202306030917" />
 
 <style>
 #wrap {
@@ -73,9 +73,9 @@ if (theme != null && theme.length() > 0)
 </style>
 
 <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202306021134"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202306021134"></script>
-<script type="text/javascript" src="./js/igca.min.js?_dc=202306021134"></script>
+<script type="text/javascript" src="../config.js?_dc=202306030917"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202306030917"></script>
+<script type="text/javascript" src="./js/igca.min.js?_dc=202306030917"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
