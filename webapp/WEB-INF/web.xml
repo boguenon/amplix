@@ -37,17 +37,6 @@
 		<max-request-size>31457280</max-request-size>
 		<file-size-threshold>0</file-size-threshold>
 	</multipart-config>
-	<servlet>
-		<servlet-name>remoteproc</servlet-name>
-		<servlet-class>
-			com.amplix.rpc.igcRpc
-		</servlet-class>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>remoteproc</servlet-name>
-		<url-pattern>/servlet/krcp</url-pattern>
-	</servlet-mapping>
 	<!-- please remove this section after install -->
 	<servlet>
 		<servlet-name>installproc</servlet-name>
@@ -66,6 +55,16 @@
   	<listener>
   		<listener-class>com.amplix.rpc.igcFileUploadListener</listener-class>
   	</listener>
+	<filter>
+	    <filter-name>amplix_rest</filter-name>
+	    <filter-class>com.amplix.rpc.igcAppMain</filter-class>
+	</filter>
+	<filter-mapping>
+	    <filter-name>amplix_rest</filter-name>
+	    <url-pattern>/krcp/*</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
   	<filter>
 	    <filter-name>UrlRewriteFilter</filter-name>
 	    <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
