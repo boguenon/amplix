@@ -64,10 +64,10 @@ input,select,textarea{
     background-color:inherit
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202306091839"></link>
-<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202306091839" />
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202306091855"></link>
+<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202306091855" />
 <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>
-<script type="text/javascript" src="./js/igccud.min.js?_dc=202306091839"></script>
+<script type="text/javascript" src="./js/igccud.min.js?_dc=202306091855"></script>
 <script type="text/javascript">
 function start_chat() {
 	$("#main_loading").show();
