@@ -55,16 +55,7 @@
   	<listener>
   		<listener-class>com.amplix.rpc.igcFileUploadListener</listener-class>
   	</listener>
-	<filter>
-	    <filter-name>amplix_rest</filter-name>
-	    <filter-class>com.amplix.rpc.igcAppMain</filter-class>
-	</filter>
-	<filter-mapping>
-	    <filter-name>amplix_rest</filter-name>
-	    <url-pattern>/krcp/*</url-pattern>
-	    <dispatcher>REQUEST</dispatcher>
-	    <dispatcher>FORWARD</dispatcher>
-	</filter-mapping>
+	
   	<filter>
 	    <filter-name>UrlRewriteFilter</filter-name>
 	    <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
@@ -78,6 +69,17 @@
 	<filter-mapping>
 	    <filter-name>UrlRewriteFilter</filter-name>
 	    <url-pattern>/run/*</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+
+	<filter>
+	    <filter-name>amplix_rest</filter-name>
+	    <filter-class>com.amplix.rpc.igcAppMain</filter-class>
+	</filter>
+	<filter-mapping>
+	    <filter-name>amplix_rest</filter-name>
+	    <url-pattern>/krcp/*</url-pattern>
 	    <dispatcher>REQUEST</dispatcher>
 	    <dispatcher>FORWARD</dispatcher>
 	</filter-mapping>
