@@ -948,16 +948,11 @@
     "name" : "L_L_TAB",
     "value" : "마지막 탭만 로드하기"
   }, {
+    "group" : "locale_ko_KR_0019",
     "name" : "D_CUBEMODEL",
-    "value" : "마트분석 모델"
-  }, {
-    "name" : "L_ROLAP_CUBE_MODEL",
-    "value" : "마트분석 모델"
+    "value" : "비즈니스 모델"
   }, {
     "name" : "D_CUBE",
-    "value" : "마트분석 큐브"
-  }, {
-    "name" : "L_ROLAP_CUBE",
     "value" : "마트분석 큐브"
   }, {
     "name" : "B_EVERY",
@@ -3288,7 +3283,7 @@
     "value" : "대시 보드 선택"
   }, {
     "name" : "L_DESIGN",
-    "value" : "디자인 모드"
+    "value" : "디자인"
   }, {
     "name" : "L_APPL_THEME",
     "value" : "응용 프로그램 테마"
@@ -5327,6 +5322,14 @@
     "group" : "locale_ko_KR_0014",
     "name" : "L_THEMES",
     "value" : "테마"
+  }, {
+    "group" : "locale_zh_TW_0014",
+    "name" : "B_ACTION",
+    "value" : "액션"
+  }, {
+    "group" : "locale_en_US_0014",
+    "name" : "L_NEW_ACTION_GROUP",
+    "value" : "신규 액션 그룹"
   }, {
     "group" : "locale_ko_KR_0014",
     "name" : "L_NEW_ACTION",
@@ -8163,5 +8166,29 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_ENUM",
     "value" : "Enumerator"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "D_BAYESNET",
+    "value" : "머신러닝 리포트"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_THREAD_ST",
+    "value" : "쓰레드 시작"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_THREAD_END",
+    "value" : "쓰레드 종료"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_IF",
+    "value" : "IF 조건"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_IF_ELSE",
+    "value" : "ELSE IF 조건"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_IF_END",
+    "value" : "IF 종료"
   } ]
 }

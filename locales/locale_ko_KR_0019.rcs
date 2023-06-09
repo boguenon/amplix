@@ -266,3 +266,14 @@ A;L_JSON_FORMAT;JSON 양식
 A;B_PARAM_IN;입력 파라미터
 A;L_REF;참조자
 A;L_ENUM;Enumerator
+
+A;D_BAYESNET;머신러닝 리포트
+D;L_ROLAP_CUBE_MODEL
+D;L_ROLAP_CUBE
+A;D_CUBEMODEL;비즈니스 모델
+
+A;L_THREAD_ST;쓰레드 시작
+A;L_THREAD_END;쓰레드 종료
+A;L_IF;IF 조건
+A;L_IF_ELSE;ELSE IF 조건
+A;L_IF_END;IF 종료

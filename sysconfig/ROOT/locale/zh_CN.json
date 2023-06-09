@@ -947,16 +947,11 @@
     "name" : "L_L_TAB",
     "value" : "仅加载最后一个选项卡"
   }, {
+    "group" : "locale_zh_CN_0019",
     "name" : "D_CUBEMODEL",
-    "value" : "ROLAP立方体模型"
-  }, {
-    "name" : "L_ROLAP_CUBE_MODEL",
-    "value" : "ROLAP立方体模型"
+    "value" : "Business Model"
   }, {
     "name" : "D_CUBE",
-    "value" : "ROLAP Cube"
-  }, {
-    "name" : "L_ROLAP_CUBE",
     "value" : "ROLAP Cube"
   }, {
     "name" : "B_EVERY",
@@ -8091,5 +8086,29 @@
     "group" : "locale_zh_CN_0019",
     "name" : "L_ENUM",
     "value" : "Enumerator"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "D_BAYESNET",
+    "value" : "ML Report"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_THREAD_ST",
+    "value" : "Thread Start"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_THREAD_END",
+    "value" : "Thread End"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_IF",
+    "value" : "IF"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_IF_ELSE",
+    "value" : "ELSE IF"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_IF_END",
+    "value" : "END IF"
   } ]
 }
