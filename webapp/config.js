@@ -1,12 +1,12 @@
 ﻿var ig$ = {
     useLocale: "en_US",
-    servlet: "../servlet/krcp",
+    servlet: "../krcp",
     companyname: "amplix",
     appname: "amplix",
     appbg: "bg_7186.png",
     companydomain: "http://www.amplixbi.com",
     applink: "launcher/viewer.jsp?objid={objid}",
-    copy: "&copy; 2005-" + "202306091059".substring(0, 4) + " amplixbi.com Inc. <br />ALL RIGHTS RESERVED. <br />amplix. Confidential Information",
+    copy: "&copy; 2005-" + "202306091134".substring(0, 4) + " amplixbi.com Inc. <br />ALL RIGHTS RESERVED. <br />amplix. Confidential Information",
     intropage: "navi_intro",
     timer_rsn: 300000,
     timer_ping: 0,
@@ -71,10 +71,10 @@
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202306091059",
+		date: "202306091134",
 		appversion: "",
 		apprelease: "",
-		web_revision: "3277-ver5.01-151-g1eebdf8e"
+		web_revision: "3278-ver5.01-152-g57231a56"
 	},
 	$l_:0
 };
