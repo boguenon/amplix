@@ -74,27 +74,10 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 	_edit_tmpl: function(r) {
 		var me = this,
 			tsyntax = me.down("[name=tsyntax]"),
-			parameters = r ? r.get("parameters") : null,
 			syntax = r ? r.get("syntax") : null,
 			dlg;
 		
-		if (parameters)
-		{
-			dlg = new IG$.kpiTWc({
-				instance: me.instance,
-				syntax: syntax,
-				parameters: parameters,
-				callback: new IG$.callBackObj(me, function(thtml) {
-					tsyntax.setValue(thtml);
-				})
-			});
-			
-			IG$.showDlg(me, dlg);
-		}
-		else
-		{
-			tsyntax.setValue(syntax || "");
-		}
+		tsyntax.setValue(syntax || "");
 	},
 	
 	initComponent: function() {
@@ -474,362 +457,6 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 	}
 });
 
-IG$.__chartoption.chartext.kpi_util = {};
-
-IG$.__chartoption.chartext.kpi_util.procTemplate = function(tmpl, results, _bc, nseq, charts, dataobj, colfix) {
-	var me = this,
-		i = 0,
-		n = tmpl.indexOf("##"),
-		n2 = 0,
-		otmpl = "",
-		in_block = 0,
-		block_str = "",
-		block_nm = "",
-		block_type = "",
-		block_region = "",
-		b,
-		cid,
-		tmplvars = {c : colfix + nseq, r: nseq + results.rowfix, colfix: colfix, rowfix: results.rowfix};
-		
-	if (n < 0)
-	{
-		otmpl = tmpl;
-	}
-	
-	me._cindex = 0;
-	
-	while (n > -1)
-	{
-		n2 = tmpl.indexOf("##", n+2);
-		
-		if (n2 > -1)
-		{
-			if (in_block)
-			{
-				block_str += tmpl.substring(0, n);
-			}
-			else
-			{
-				otmpl += tmpl.substring(0, n);
-			}
-			
-			pname = tmpl.substring(n+2, n2);
-			
-			if (pname.substring(0, "define_data".length) == "define_data")
-			{
-				in_block = 1;
-				block_str = "";
-				b = pname.split(":");
-				block_type = b[1];
-				block_nm = b[2];
-				block_region = b[3];
-			}
-			else if (pname.substring(0, "define_end_data".length) == "define_end_data")
-			{
-				in_block = 0;
-				dataobj.push({
-					type: block_type,
-					name: block_nm,
-					region: block_region,
-					data: block_str
-				});
-			}
-			else
-			{
-				var pval = me.getParamValue(pname, results, _bc, n, tmplvars, colfix);
-				
-				if (pval.c)
-				{
-					cid = "mchart_" + (me._cindex++)
-					otmpl += "<div id='" + cid + "' class='igc-kpi-mco'></div>";
-					charts.push({
-						cid: cid,
-						c: pval.c
-					});
-				}
-				else
-				{
-					if (in_block)
-					{
-						block_str += pval.t;
-					}
-					else
-					{
-						otmpl += pval.t;
-					}
-				}
-			}
-			
-			tmpl = tmpl.substring(n2+2);
-			n = tmpl.indexOf("##");
-				
-			if (n == -1)
-			{
-				if (in_block)
-				{
-					block_str += tmpl;
-				}
-				else
-				{
-					otmpl += tmpl;
-				}
-			}
-		}
-		else
-		{
-			if (in_block)
-			{
-				block_str += tmpl;
-			}
-			else
-			{
-				otmpl += tmpl;
-			}
-			n = -1;
-			break;
-		}
-	}
-	
-	return otmpl;
-};
-
-IG$.__chartoption.chartext.kpi_util.getParamValue = function(pval, results, _bc, n, tmplvars, colfix) {
-	var r = "-",
-		c,
-		b_eval = 1;
-	
-	if (pval.charAt(0) == "{" && pval.charAt(pval.length-1) == "}")
-	{
-		if (pval.charAt(1) == "C")
-		{
-			b_eval = 0;
-		}
-		
-		pval = pval.substring(b_eval == 0 ? 2 : 1, pval.length-1);
-		pval = this.replaceCellValue(pval, results, _bc, n, tmplvars, colfix);
-		
-		if (pval.b_eval && b_eval)
-		{
-			try
-			{
-				r = eval(pval.r);
-				if (isNaN(r) == false)
-				{
-					r = r.toFixed(0);
-				}
-			}
-			catch (e)
-			{
-				r = pval.r;
-			}
-		}
-		else
-		{
-			r = pval.r;
-		}
-	}
-	else if (pval.substring(0, "define".length) == "define")
-	{
-		r = "";
-		var m = pval.indexOf("("),
-			pname,
-			peval,
-			pr;
-		if (m > -1)
-		{
-			pval = pval.substring(m+1);
-			m = pval.indexOf(")");
-			
-			if (m > -1)
-			{
-				pval = pval.substring(0, m);
-			}
-			
-			m = pval.indexOf(",");
-			if (m > -1)
-			{
-				pname = pval.substring(0, m);
-				peval = pval.substring(m+1);
-				
-				if (pname)
-				{
-					peval = this.replaceCellValue(peval, results, _bc, n, tmplvars, colfix);
-					
-					if (peval.b_eval)
-					{
-						try
-						{
-							pr = eval(peval.r);
-						}
-						catch (e)
-						{
-							pr = peval.r;
-						}
-					}
-					else
-					{
-						pr = peval.r;
-					}
-					
-					tmplvars[pname] = pr;
-				}
-			}
-		}
-	}
-	else if (pval.substring(0, "CHART".length) == "CHART")
-	{
-		var m = pval.indexOf("(");
-		
-		if (m > -1)
-		{
-			pval = pval.substring(m+1);
-			
-			m = pval.indexOf(")");
-			
-			if (m > -1)
-			{
-				pval = pval.substring(0, m);
-			}
-			
-			pval = parseInt(pval);
-			
-			if (results.microcharts && results.microcharts.length > pval)
-			{
-				c = results.microcharts[pval];
-			}
-		}
-	}
-	else
-	{
-		switch (pval)
-		{
-		case "NAME":
-			r = _bc.name;
-			break;
-		default:
-			r = pval;
-			break;
-		}
-	}
-	
-	return {
-		t: r,
-		c: c
-	};
-};
-
-IG$.__chartoption.chartext.kpi_util.replaceCellValue = function(pval, results, _bc, n, tmplvars, colfix) {
-	var r = "",
-		n,
-		n0, c, cm, cr, cro,
-		b_eval = 1,
-		iscode = 0;
-		
-	$.each(tmplvars, function(k, v) {
-		var kn = "$" + k,
-			ki;
-		
-		ki = pval.indexOf(kn);
-		
-		while (ki > -1)
-		{
-			pval = pval.substring(0, ki) + v + pval.substring(ki+ kn.length);
-			ki = pval.indexOf(kn, ki + 1);
-		}
-	});
-	
-	n = pval.indexOf("[");
-	
-	if (n > -1)
-	{
-		while (n > -1)
-		{
-			n0 = pval.indexOf("]", n + 1);
-			
-			if (n0 > -1)
-			{
-				r += pval.substring(0, n);
-				c = pval.substring(n+1, n0);
-				
-				cr = "";
-				
-				if (c.indexOf(",") > -1)
-				{
-					if (pval[n0+1] == "c")
-					{
-						iscode = 1;
-						b_eval = 0;
-						n0++;
-					}
-					
-					cm = c.split(",");
-					if (cm[0] == "n")
-					{
-						cm[0] = n + colfix;
-					}
-					else if (cm[0] == "c")
-					{
-						cm[0] = n;
-					}
-					if (cm[1] == "n")
-					{
-						cm[1] = n + colfix;
-					}
-					else if (cm[1] == "c")
-					{
-						cm[1] = n;
-					}
-					
-					try
-					{
-						cm[0] = parseInt(eval(cm[0]));
-						cm[1] = parseInt(eval(cm[1]));
-					}
-					catch (e)
-					{
-						
-					}
-					
-					if (results._tabledata.length > cm[0] && results._tabledata[cm[0]].length > cm[1])
-					{
-						cro = results._tabledata[cm[0]][cm[1]];
-						cr = iscode ? (cro.code) : (cro.text || cro.code);
-						b_eval = 0;
-					}
-				}
-				
-				r += cr;
-				
-				pval = pval.substring(n0+1);
-				n = pval.indexOf("[");
-				
-				if (n == -1)
-				{
-					r += pval;
-				}
-			}
-			else
-			{
-				r += pval;
-				break;
-			}
-		}
-	}
-	else
-	{
-		r = pval;
-	}
-	
-	return {
-		r: r,
-		b_eval: b_eval
-	};
-};
-
-IG$.cVis.kpi.prototype.replaceCellValue = IG$.__chartoption.chartext.kpi_util.replaceCellValue;
-IG$.cVis.kpi.prototype.getParamValue = IG$.__chartoption.chartext.kpi_util.getParamValue;	
-IG$.cVis.kpi.prototype.procTemplate = IG$.__chartoption.chartext.kpi_util.procTemplate;
-
 /**
  * draw multiple chart
  */
@@ -927,11 +554,13 @@ IG$.cVis.kpi.prototype.draw = function(results) {
 		me.plotarea.remove();
 		me.plotarea = null;
 	}
+
+	me.$cobj = null;
 	
 	me.plotarea = $("<div class='igc-kpi-cnt'></div>").appendTo(container);
 	me.plotarea.width(container.width()).height(container.height());
 	
-	me.plotinner = $("<div class='igc-kpi-inner'></div>").appendTo(me.plotarea);
+	me.plotinner = $("<div class='igc-kpi-inner text-center'></div>").appendTo(me.plotarea);
 	
 	me.cindopt = cindopt = cop.cindicator ? JSON.parse(IG$._decodeVal(cop.cindicator)) : {};
 	
@@ -952,6 +581,7 @@ IG$.cVis.kpi.prototype.draw = function(results) {
 	{
 		cindopt.boxcnt = cindopt.boxcnt || "{cols}";
 		cindopt.boxconfig = cindopt.boxconfig || []; 
+		cindopt.boxlayout = cindopt.boxlayout || "hfit";
 		
 		var colfix,
 			rowfix,
@@ -996,18 +626,29 @@ IG$.cVis.kpi.prototype.draw = function(results) {
 		
 		ncnt = ncnt || 1;
 		
-		var cobj = [];
+		var cobj = me.$cobj || [];
 		
-		for (i=0; i < ncnt; i++)
+		for (i=cobj.length; i < ncnt; i++)
 		{
 			cobj.push({
 				seq: i
 			});
 		}
+
+		me.$cobj = cobj;
+
+		var pnode = me.plotinner,
+			span = 12;
+
+		if (me.cindopt.boxlayout == "hscr" || me.cindopt.boxlayout == "hfit")
+		{
+			pnode = $("<div class='row'></div>").appendTo(me.plotinner);
+			span = Math.floor(12 / cobj.length);
+			span = span < 1 ? 1 : span;
+		}
 		
 		$.each(cobj, function(i, c) {
-			var charts = [],
-				dataobj = [],
+			var dataobj = [],
 				hcharts = [],
 				hc;
 			
@@ -1018,60 +659,66 @@ IG$.cVis.kpi.prototype.draw = function(results) {
 				_bc = cindopt.boxconfig[i % cindopt.boxconfig.length];
 			}
 			
-			var chartdiv = $("<div class='igc-kpi-blk' style='position:absolute'></div>").appendTo(me.plotinner);
+			var chartdiv = null,
+				cnode = pnode;
+
+			if (me.cindopt.boxlayout == "vscr" || me.cindopt.boxlayout == "vfit")
+			{
+				cnode = $("<div class='row'></div>").appendTo(pnode);
+			}
 			
-			var tmpl = "<div class='pind-box'><div class='pind-title'>"
-				+ "<span class='pind-title-text'>" + (_bc ? _bc.name : "") + "</span>"
-				+ "</div>"
-				+ "<div class='pind-content'>"
-				+ "<h1 class='pind-value'></h1><div class='pind-s-text'></div><small></small></div></div>";
+			chartdiv = $("<div class='igc-kpi-blk col-lg-" + span + " col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative'></div>").appendTo(cnode);
+			
+			var tmpl = [
+
+			].join("\n");
 				
 			if (_bc && _bc.syntax)
 			{
 				tmpl = _bc.syntax;
 				tmpl = IG$._decodeVal(tmpl);
 			}
-			
-			var tout = me.procTemplate(tmpl, results, _bc, i, charts, dataobj, colfix);
-			
-			var o = $(tout).appendTo(chartdiv);
-			
-			if (charts.length)
+
+			if (!c._dyn_sc)
 			{
-				me._drawCharts(charts, chartdiv);
+				try
+				{
+					IG$.cVis.kpi.$dyn_id = IG$.cVis.kpi.$dyn_id || 0;
+					IG$.cVis.kpi.$dyn_sc = IG$.cVis.kpi.$dyn_sc || {};
+					var id = "kpi_chart_" + (IG$.cVis.kpi.$dyn_id++);
+					var dyn = new IG$.cDynScript(id, 0),
+						script = "IG$.cVis.kpi.$dyn_sc[\"" + id + "\"]=function(html, data, i, charts) {" + tmpl + "}";
+						
+					dyn.loadScript(script);
+
+					c._dyn_sc = IG$.cVis.kpi.$dyn_sc[id];
+				}
+				catch (e)
+				{
+					console.log("error on dynamic script loader", e);
+					IG$.ShowError("Error on dynamic script loader", null, null, {errstack: e.stack});
+				}
 			}
 			
-			if (dataobj)
+			c._dyn_sc.apply(me, [chartdiv, results._tabledata, i, dataobj]);
+			
+			if (dataobj && dataobj.length)
 			{
 				$.each(dataobj, function(i, m) {
-					var rg = $("#" + m.region, o),
-						copt = eval("(" + m.data + ")"),
-						hc;
+					var hc;
 					
 					switch (m.type)
 					{
-					// case "highcharts":
-					// 	copt.chart.renderTo = rg[0];
-						
-						// if (window.Highcharts)
-						// {
-						// 	hc = new Highcharts.Chart(copt);
-						// 	hcharts.push(hc);
-						// }
-					// 	break;
 					case "_modc_":
 					case "echarts":
-						copt.chart = copt.chart || {};
-						copt.chart.renderTo = rg[0];
-						
-						if (window.echarts)
+						if (window.echarts && m.option && m.option.renderTo)
 						{
-							hc = echarts.init(copt.chart.renderTo, cop.echart_theme || ig$.echarts_theme || 'amplix', {
+							hc = echarts.init(m.option.renderTo, cop.echart_theme || ig$.echarts_theme || 'amplix', {
 								renderer: "canvas" // "svg"
 							});
 							
-							hc.renderTo = copt.chart.renderTo;
-							hc.setOption(copt);
+							hc.renderTo = m.option.renderTo;
+							hc.setOption(m.option);
 							hcharts.push(hc);
 						}
 						break;
@@ -1119,16 +766,10 @@ IG$.cVis.kpi.prototype.draw = function(results) {
 			}
 			
 			tw += chartdiv.outerWidth();
-			chartdiv.appendTo(me.plotinner);
-			chartdiv.css({
-				position: "relative",
-				top: "initial"
-			});
 			
 			me.charts.push({
 				chart: chart,
-				chartdiv: chartdiv,
-				mcharts: charts
+				chartdiv: chartdiv
 			});
 			
 			nchart++;
@@ -1173,32 +814,6 @@ IG$.cVis.kpi.prototype.updateLayout = function(resized) {
 	if (cindopt && charts && charts.length)
 	{
 		ncnt = charts.length;
-		
-		boxlayout = cindopt.boxlayout;
-		
-		switch (boxlayout)
-		{
-		case "vfit":
-			pw = tw;
-			ph = th / ncnt;
-			break;
-		case "vscr":
-			pw = tw;
-			ph = 0;
-			oy = "auto";
-			break;
-		case "hscr":
-			pw = 0;
-			ph = th;
-			ox = "auto";
-			break;
-		default:
-			pw = tw / ncnt;
-			ph = th;
-			break;
-		}
-		
-		// plotarea.css({overflowX: ox, overflowY: oy});
 		
 		for (i=0; i < charts.length; i++)
 		{
@@ -1280,239 +895,3 @@ IG$.cVis.kpi.prototype.dispose = function() {
 		$(chartview.container).empty();
 	}
 }
-
-IG$.kpiTWc = $s.extend($s.window, {
-
-	width: 500,
-	height: 520,
-	layout: "fit",
-	padding: ig$.padding,
-	
-	_init: function() {
-		var me = this,
-			toptions = me.down("[name=toptions]"),
-			controls = [];
-		
-		me.tsel = {};
-			
-		me._add_ctrl(me.parameters, controls);
-		
-		$.each(controls, function(i, ctrl) {
-			toptions.add(ctrl);
-		});
-	},
-	
-	_add_ctrl: function(params, controls) {
-		var me = this,
-			rop = me.rop;
-		
-		$.each(params, function(i, param) {
-			var ctrl = {
-				xtype: "textfield",
-				fieldLabel: param.name,
-				name: param.name,
-				required: param.required,
-				value: param.value,
-				emptyText: param.emptyText
-			};
-			
-			if (param.xtype == "combobox")
-			{
-				ctrl.xtype = param.xtype;
-				ctrl.displayField = "name";
-				ctrl.valueField = "value";
-				ctrl.store = {
-					data: param.data
-				};
-			}
-			else
-			{
-				ctrl.xtype = param.xtype || "textfield";
-			}
-			
-			controls.push(ctrl);
-		});
-	},
-	
-	_confirm: function(b_close) {
-		var me = this,
-			toptions = me.down("[name=toptions]"),
-			tsel,
-			thtml;
-			
-		if (toptions.getAllValues(me.tsel))
-			return;
-			
-		tsel = me.tsel;
-		
-		thtml = me._proc(me.syntax.split("\n"), tsel);
-		
-		if (b_close !== false)
-		{
-			me.callback && me.callback.execute(thtml);
-			me.close();
-		}
-		else
-		{
-			return thtml;
-		}
-	},
-	
-	_proc: function(tarr, tsel) {
-		var r = [];
-		
-		if (tarr && tarr.length)
-		{
-			$.each(tarr, function(i, c) {
-				var s = c,
-					n1 = s.indexOf("{"),
-					n2;
-				
-				while (n1 > -1)
-				{
-					n2 = s.indexOf("}", n1);
-					
-					if (n2 > -1)
-					{
-						var mm = s.substring(n1 + 1, n2);
-						
-						if (mm.indexOf(".") > -1)
-						{
-							var mm1 = mm.substring(0, mm.indexOf(".")),
-								mm2 = mm.substring(mm.indexOf(".") + 1);
-								
-							if (tsel[mm1])
-							{
-								s = s.substring(0, n1) + (tsel[mm1][mm2] || "") + s.substring(n2 + 1);
-							}
-						}
-						else if (tsel[mm])
-						{
-							s = s.substring(0, n1) + tsel[mm] + s.substring(n2 + 1);
-						}
-					}
-					else
-					{
-						break;
-					}
-					
-					n1 = s.indexOf("{", n1 + 1);
-				}
-				
-				r.push(s);
-			});
-		}
-		
-		return r.join("\n");
-	},
-	
-	_preview: function() {
-		var me = this,
-			gpreview = me.down("[name=gpreview]"),
-			gpreview_dom = $("#gpreview", gpreview.body.dom),
-			thtml
-			
-		gpreview_dom.empty();
-		
-		thtml = me._confirm(false);
-		
-		if (thtml)
-		{
-			var charts = [],
-				dataobj = [];
-				
-			var arg = [
-				thtml,
-				{
-					rowfix: 1,
-					colfix: 1,
-					_tabledata: []
-				},
-				null,
-				0,
-				charts,
-				dataobj,
-				1
-			];
-			
-			var rhtml = me.procTemplate.apply(this, arg);
-			$(rhtml).appendTo(gpreview_dom);
-		}
-	},
-	
-	replaceCellValue: IG$.__chartoption.chartext.kpi_util.replaceCellValue,
-	getParamValue: IG$.__chartoption.chartext.kpi_util.getParamValue,
-	procTemplate: IG$.__chartoption.chartext.kpi_util.procTemplate,
-	
-	initComponent: function(){
-		var me = this;
-		
-		$s.apply(me, {
-			title: "Option Values",
-			items: [
-				{
-					xtype: "panel",
-					padding: ig$.padding,
-					layout: {
-						type: "vbox",
-						align: "stretch"
-					},
-					autoScroll: true,
-					items: [
-						{
-							xtype: "fieldset",
-							title: "Option Values",
-							name: "toptions",
-							layout: {
-								type: "vbox",
-								align: "stretch"
-							},
-							items: [
-								
-							]
-						},
-						{
-							xtype: "button",
-							text: "Preview",
-							handler: function() {
-								this._preview();
-							},
-							scope: this
-						},
-						{
-							html: "<div id='gpreview'></div>",
-							name: "gpreview",
-							height: 400
-						}
-					]
-				}
-			],
-			buttons: [
-				"->",
-				{
-					xtype: "button",
-					text: IRm$.r1("B_CONFIRM"),
-					handler: function() {
-						this._confirm();
-					},
-					scope: this
-				},
-				{
-					xtype: "button",
-					text: IRm$.r1("B_CANCEL"),
-					handler: function() {
-						this.close();
-					},
-					scope: this
-				}
-			],
-			listeners: {
-				afterrender: function(tobj) {
-					tobj._init();
-				}
-			}
-		});
-		
-		IG$.kpiTWc.superclass.initComponent.call(this);
-	}
-});
