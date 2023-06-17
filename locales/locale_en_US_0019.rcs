@@ -273,8 +273,8 @@ D;L_ROLAP_CUBE_MODEL
 D;L_ROLAP_CUBE
 A;D_CUBEMODEL;Business Model
 
-A;L_THREAD_ST;Thread Start
-A;L_THREAD_END;Thread End
-A;L_IF;IF
-A;L_IF_ELSE;ELSE IF
-A;L_IF_END;END IF
+A;L_P_thread_start;Thread Start
+A;L_P_thread_end;Thread End
+A;L_P_cond_if;IF
+A;L_P_cond_else;ELSE IF
+A;L_P_cond_end;END IF

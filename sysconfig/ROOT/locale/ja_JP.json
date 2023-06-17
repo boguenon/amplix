@@ -1530,8 +1530,11 @@
     "name" : "M_ERR_CONNECT",
     "value" : "サ?バ?上の接?を取得できませんでした！後で再試行してください"
   }, {
-    "name" : "L_P_inv_svc",
+    "name" : "L_P_servercall",
     "value" : "サ?ビスの呼び出し"
+  }, {
+    "name" : "L_P_restcall",
+    "value" : "Invoke REST Service"
   }, {
     "name" : "B_SEL",
     "value" : "選?"
@@ -8100,23 +8103,23 @@
     "value" : "ML Report"
   }, {
     "group" : "locale_ja_JP_0019",
-    "name" : "L_THREAD_ST",
+    "name" : "L_P_thread_start",
     "value" : "Thread Start"
   }, {
     "group" : "locale_ja_JP_0019",
-    "name" : "L_THREAD_END",
+    "name" : "L_P_thread_end",
     "value" : "Thread End"
   }, {
     "group" : "locale_ja_JP_0019",
-    "name" : "L_IF",
+    "name" : "L_P_cond_if",
     "value" : "IF"
   }, {
     "group" : "locale_ja_JP_0019",
-    "name" : "L_IF_ELSE",
+    "name" : "L_P_cond_else",
     "value" : "ELSE IF"
   }, {
     "group" : "locale_ja_JP_0019",
-    "name" : "L_IF_END",
+    "name" : "L_P_cond_end",
     "value" : "END IF"
   } ]
 }

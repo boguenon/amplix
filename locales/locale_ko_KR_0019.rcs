@@ -272,8 +272,8 @@ D;L_ROLAP_CUBE_MODEL
 D;L_ROLAP_CUBE
 A;D_CUBEMODEL;비즈니스 모델
 
-A;L_THREAD_ST;쓰레드 시작
-A;L_THREAD_END;쓰레드 종료
-A;L_IF;IF 조건
-A;L_IF_ELSE;ELSE IF 조건
-A;L_IF_END;IF 종료
+A;L_P_thread_start;쓰레드 시작
+A;L_P_thread_end;쓰레드 종료
+A;L_P_cond_if;IF 조건
+A;L_P_cond_else;ELSE IF 조건
+A;L_P_cond_end;IF 종료

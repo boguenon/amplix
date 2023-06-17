@@ -1531,8 +1531,11 @@
     "name" : "M_ERR_CONNECT",
     "value" : "서버 접속에 실패하였습니다. 다시 시도해 주십시오."
   }, {
-    "name" : "L_P_inv_svc",
+    "name" : "L_P_servercall",
     "value" : "서비스 호출"
+  }, {
+    "name" : "L_P_restcall",
+    "value" : "REST 서비스 호출"
   }, {
     "name" : "B_SEL",
     "value" : "선택"
@@ -8172,23 +8175,23 @@
     "value" : "머신러닝 리포트"
   }, {
     "group" : "locale_ko_KR_0019",
-    "name" : "L_THREAD_ST",
+    "name" : "L_P_thread_start",
     "value" : "쓰레드 시작"
   }, {
     "group" : "locale_ko_KR_0019",
-    "name" : "L_THREAD_END",
+    "name" : "L_P_thread_end",
     "value" : "쓰레드 종료"
   }, {
     "group" : "locale_ko_KR_0019",
-    "name" : "L_IF",
+    "name" : "L_P_cond_if",
     "value" : "IF 조건"
   }, {
     "group" : "locale_ko_KR_0019",
-    "name" : "L_IF_ELSE",
+    "name" : "L_P_cond_else",
     "value" : "ELSE IF 조건"
   }, {
     "group" : "locale_ko_KR_0019",
-    "name" : "L_IF_END",
+    "name" : "L_P_cond_end",
     "value" : "IF 종료"
   } ]
 }
