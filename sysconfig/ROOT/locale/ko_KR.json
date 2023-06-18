@@ -3131,7 +3131,7 @@
     "name" : "L_C_CUR",
     "value" : "현재,"
   }, {
-    "name" : "L_P_cls",
+    "name" : "L_P_close",
     "value" : "화면 닫기"
   }, {
     "name" : "L_APPL_TMPL",
