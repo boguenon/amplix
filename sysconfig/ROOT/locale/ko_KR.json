@@ -4184,7 +4184,7 @@
   }, {
     "group" : "locale_ko_KR_0012",
     "name" : "L_HOME_APP_TITLE",
-    "value" : "<h1>AMPLIX 비즈니스 분석 솔류션</h1>"
+    "value" : "<h1>Augmented Analytics - AMPLIX</h1>"
   }, {
     "group" : "locale_ko_KR_0012",
     "name" : "L_HOME_APP_DESC",

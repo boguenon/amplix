@@ -4,7 +4,7 @@
 
     <div class="col">
     	<div class="introblock" id="home_app_title">
-	    	<h1>amplix Business Analytics for your business.</h1>
+	    	<h1>Augmented Analytics for your business - AMPLIX.</h1>
 	    </div>
     	<div class="intro-top">
 	    	<div class="introblock" id="home_app_desc">
