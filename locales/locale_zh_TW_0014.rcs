@@ -1,0 +1,386 @@
+A;L_REL_SCHEDULE;Related Schedules
+A;L_JOB_HISTORY;Job History
+A;L_SCH_NAME;Schedule Name
+A;B_UPD_DATE;Updated Date
+A;L_LOAD_LAST_SCH;Load Schedule on Init
+A;L_START_DATE;Start At
+A;B_REGISTER;Register
+A;T_SHARE_SETTINGS;Share Settings
+A;L_EMBED_LINK;Embeddable Link
+A;L_LINK_TO_SHARE;Link to Share
+A;M_SHARE_PAGE;<span>Use above link url to embed on html pages.</span>
+A;L_SHARE_PUBLIC;Share with Public Link
+A;L_INPUT_EMAIL;Enter email or email addresses...
+A;L_EMAIL_MSG;Email Messages
+A;L_EMPTY_MSG;Messages...
+A;M_EMAIL_DESC;<span>This sends email with public link of this report who don't have access to system</span>
+A;L_LOGIN;Login
+A;L_NEED_LOGIN;Need Login
+A;L_PUBLIC_LINK_URL;Public Link URL
+A;B_GENERATE;Generate
+A;B_SHARE;Share
+A;L_SHARE_HISTORY;<span><b>Shared History</b></span>
+A;B_IS_PUBLIC;Public
+A;L_VISIT_COUNT;Visit Count
+A;L_LAST_VIEWED;Last Viewed
+A;L_MANUAL;Document Management
+A;L_MANUAL_MANAGER;Manual Documentation
+A;L_MANUAL_WRITER;Manual Writer
+A;L_MANUAL_VIEWER;Manual Viewer
+A;T_MGR_MANUAL;Manual Manager
+A;M_CREATE_SHARE_URL;Confirm to create shared URL?
+A;M_CONFIRM_DELETE;Confirm to delete content?
+A;M_CONFIRM_DISABLE;Confirm to disable?
+A;M_CONFIRM_IMP;Are you sure to import meta content? Content will be over written if exists.
+A;M_CONFIRM_TB_BATCH;Batch update schema for all tables in the folder. Would you continue?
+A;M_CONFIRM_DS_CHANGE;already have datasource defined. Select another data source can cause report not running. Would you continue?
+A;M_CONFIRM_DROP_FILE;Would you move content to dropped folder?
+A;M_CONFIRM_OVERWRITE; already exist on the server. Would you overwrite existing item with this copy?
+A;M_CONFIRM;Would you continue? Click Yes to continue.
+A;L_CONFIG_FORMULA;Config Formula
+A;B_NEW;New Item
+A;L_MOVE_UP;Move Up
+A;L_MOVE_DOWN;Move Down
+A;L_SEARCH_ITEM;Search Item
+A;B_UP;Up
+A;B_DOWN;Down
+A;L_DB_POOL;Data Connection
+A;B_SEQUENCE;Sequence
+A;L_GROUP_INDEX;Group Index
+A;B_INDEX;Index
+A;L_Y2_AXIS;Y2 Axis
+A;L_ADD_ROW;Add Row
+A;L_ADD_FORMULA;Add Formula
+A;L_EXPORT_TYPE;Export As
+A;L_ERASE_GROUP;Erase Group
+A;L_UNIQUE_VALUE;Unique Value
+A;L_COLUMN_INDEX;Column Index
+A;L_IS_MEASURE;Is Measure
+A;B_OPTIONS;Options
+A;L_TAB_SELECTOR;Tab Selector
+A;L_PROMPT;Prompt
+A;B_SELECT;Select
+A;B_KEY;Key
+A;L_ROW_CNT;Rows
+A;L_ADD_CUR_SEL;Add Current Selection
+A;L_SEL_ALL;Select All
+A;B_JAVA_CLASS;Java ActionModule
+A;L_IMP_TABLES;Import Tables
+A;L_INLINE_VIEW;Inline View
+A;L_CURRENT;Current
+A;L_LOCATION;Location
+A;L_GEO_ADDRESS;Address
+A;B_LAT;Latitude
+A;B_LNG;Longitude
+A;L_UPD_GEOCODE;Update GeoCode
+A;L_RUN_SQL;Run SQL
+A;B_EXISTS;Exists
+A;L_LOG_RESULT;Log Result
+A;L_CHANGE_REV;Change Revision
+A;L_TEST_EMAIL;Test Email Settings
+A;L_SSO_DESIGNER;SSO Designer
+A;L_SET;Set
+A;L_CACHE_INFO;Cache Info
+A;L_CONFIG_VAR;Config Variables
+A;L_SHORTCUT;Shortcut
+A;L_GO_TOP;Go Top
+A;L_BATCH_UPD_SCH;Batch Update Schema
+A;L_EXTRACT_META;Extract Meta
+A;L_ALIAS_TO_DESC;Alias to Description
+A;L_ALIAS_TO_NAME;Alias to Name
+A;B_USER;User
+A;B_ROLE;Role
+A;B_TENANT;Tenant
+A;L_GROUP_ID;Group ID
+A;L_SERVER_TYPE;Server Type
+A;L_EMAIL_FROM_ADDR;From Address
+A;L_ENCRYPTION;Encryption
+A;L_AUTHEN_METHOD;Authentication Method
+A;L_SERVER_ADDRESS;Server Address
+A;L_CREDENTIALS;Credentials
+A;L_REPORT_HEALTH_CHECK;Report Health Check
+A;L_TEST_EMAIL;Test Email
+A;L_SYS_ERROR;System Error
+A;L_LOG_LEVEL;Log Level
+A;L_SERVER_FULL_RUL;Server Full URL
+A;L_SCHEDULE_SERVICE;Scheduler Service
+A;L_EXCEL_OUTPUT_TYPE;Excel Output Type
+A;L_STORE_METAFILE;Store MetaFile
+A;L_LOCATION;Location
+A;L_FILE_NAMERULE;File Name Rule
+A;L_MODULE_TYPE;Module Type
+A;L_PYTHON_EXEC;Python Executable
+A;L_JUPYTER_URL;Jupyter URL
+A;B_CREDENTIALS;Credentials
+A;L_SNOOZE_MASS_REQ;Snooze Mass Requests
+A;L_SNOOZE_TIME_MIN;Snooze time (min)
+A;L_SERVER_REQ_MAX_PROTECT;Server Request Max Protection
+A;L_WRONG_PWD_COUNTS;Wrong Password Counts
+A;L_PWD_FAIL_ACTION;Password Fail Action
+A;L_PWD_RULE;Password Rule
+A;L_MAX_FILE_UPLOAD_MB;Max File Upload(MB)
+A;L_BULK_MAX_FIILE_UPLOAD_MB;Bulk Max File Upload(MB)
+A;L_TENANT_POST_CALL_MODULE;Tenant Post Call Module
+A;L_H2_URL_FOR_MASH;H2 URL for Mashing
+A;L_NLP_SVR_HOST;NLP Server Host
+A;L_NLP_SVR_PORT;NLP Server Port
+A;L_NLP_AGNTS;NLP Agent Thread Count
+A;L_BOT_NICK;Bot Nickname
+A;L_APPL_TITLE;Application Title
+A;L_APPL_TITLE_HTML;Application Title(HTML)
+A;L_COLLAPSE_MAIN_MENU;Collapase Main Menu
+A;L_NAV_TAB;Navigation Tab
+A;L_MAX_TAB_COUNT;Max Tab Counts
+A;L_HOME_TAB_TITLE;Home Tab Title
+A;L_HOME_TAB_MSG;Home Tab Message
+A;L_LOADING_MSG;Loading Message
+A;L_GMAP_API;Google Map API Key
+A;L_NVMAP_API;Nave Map API Key
+A;L_DEFAULT_OPTIONS;Default Options
+A;L_MEASURE_NAMING;Measure Naming
+A;L_ECHART_THEM;Echart Theme
+A;L_REPORT_SCRSHOT;Report ScreenShot
+A;L_GEO_MAP_CENTER;Geo Map Center
+A;L_ARCGIS_REST_API;ArcGIS Rest API
+A;L_SSO;Single Sign On
+A;L_SSO_DESIGNER;SSO Designer
+A;L_ALLOW_INSERT;Allow Insert
+A;L_MASK_TYPE;Mask Type
+A;L_USE_GEOCODE;Use GeoCode
+A;L_URL_OF_SHARE_OBJ;URL of Shared Objects
+A;B_DATE;Date
+A;L_COMP_ID;Component ID
+A;B_STYLE;Style
+A;L_FILTER_ITEMS;Filter Items
+A;L_VIEW_OPTIONS;View Options
+A;L_FILTER_LAYOUT_OPTIONS;Filter Layout Options
+A;L_EXCEL_DOWN_OPTIONS;Excel Download Options
+A;L_APPLY_TO_ALL;Apply to All
+A;L_VALUE_SET;Value Set
+A;L_REPORT_PATH;Report Path
+A;B_TEMPLATE_NAME;Template Name
+A;B_START_DATE;Start Date
+A;L_JOB_NAME;Job Name
+A;L_DAY_OF_WEEK;Day of Week
+A;L_DAY_OF_MONTH;Day of Month
+A;L_PREEXE_STMT;Pre Execution Statement
+A;L_POST_EXEC_STMT;Post Execution Statement
+A;L_ANAL_ENV;Analysis Environment
+A;L_SCH_SVR_STAT;Schedule Server Status
+A;B_NICKNAME;Nick Name
+A;L_OBJNAME;Object Name
+A;L_PICK_TIME;Pick Time
+A;L_END_TIME;End Time
+A;L_HEART_BEAT;Heart Beat
+A;L_CRT_DATE;Created Date
+A;L_MOD_DATE;Modified Date
+A;L_PROGRAMS;Programs
+A;L_REG_SCHEDULE;Register Schedule
+A;L_JOB_TYPE;Job Type
+A;L_ADD_NEW_PROGRAM;Add New Program
+A;L_LOAD_FILE;Load File
+A;L_DATA;Data
+A;L_KEEP_MODI_DATES;Keep Modified Dates
+A;L_KEEP_OWNER_INFO;Keep Owner Info
+A;L_IMP_SECURITY;Import Security
+A;L_CLEAR_HIST;Clear History
+A;L_IMPORT_SELECTED;Import Selected
+A;L_AUTO_REF_SEC;Auto Refresh (sec)
+A;B_CONDITIONS;Conditions
+A;L_ELLAPSED_THEN_SEC;Ellapsed More than (sec)
+A;L_BUF_SIZE;Buffer Size
+A;L_3D_OPTIONS;3D Options
+A;B_VISIBLE;Visible
+A;L_AXIS_SETTINGS;Axis Settings
+A;L_YAXIS_SETTINGS;Y Axis Settings
+A;L_SEC_YAXIS_SETTINGS;Second Y Axis Settings
+A;L_RIGHT_YAXIS_TITLE;Axis Title 
+A;L_EXTRA_OPTIONS;Extra Options
+A;L_STOCK_OPTIONS;Stock Options
+A;L_TIME_FIELD;Time Field
+A;L_KPI_INDI;KPI Indicator Options
+A;L_INDICATOR_WIZARD;Indicator Wizards
+A;L_MAP_OPTIONS;Map Options
+A;L_MAP_DRAW_OPTIONS;Map Draw Options
+A;L_ARCGIS_LAYERS;Arc GIS Layers
+A;B_TEMPLATE;Template
+A;L_FOLDER_AND_TABLES;Folders and Tables
+A;L_FIELDS;Fields
+A;B_RELATIONS;Relations
+A;L_MULTI_RENAME;Multi Rename
+A;L_REMOVE_UNDERLINE;Remove Underline
+A;L_RENAME_MASK;Rename Mask
+A;L_PHYSICAL_NAME;Physical Name
+A;L_NEW_NAME;New Name
+A;L_MEASURE_NAME;Measure Name
+A;L_FACT_NAME;Fact Dimension
+A;L_MASK_TEXT;Mask Text
+A;L_MEASURES;Measures
+A;L_GEOCODE;GeoCode
+A;L_INPUT_FORMAT;Input Format
+A;L_YAXIS_SETTING;Y Axis Settings
+A;L_MINIMUM;Minimum
+A;L_MAXIMUM;Maximum
+A;L_DATA_TYPE;Data Type
+A;L_VALUE_FIELD;Value Field
+A;L_FIELD_SELECTIONS;Field Selections
+A;L_XAXIS_FIELD;X Axis Field
+A;L_LINE_COLOR;Line Color
+A;L_FILL_COLOR;Fill Color
+A;L_TARGET_OPTIONS;Target Options
+A;L_TARGET_ITEM;Target Item
+A;L_USE_SUM_ON_FOLDER;Use Sum on Folder
+A;L_EXPAND_ALL;Expand All
+A;L_OTHER_VALUES;Other Values
+A;B_CATEGORY;Category
+A;L_PAGE_FILTERING;Page Filtering
+A;L_AVAILABLE_FIELDS;Available Fields
+A;L_PAGED_FILTER_FIELDS;Paged Filter Fields
+A;L_DATA_STYLE;Data Style
+A;L_HEAD_STYLE;Header Style
+A;L_FORMAT_STRING;Format String
+A;L_CSS_CLASS;CSS Class
+A;L_TEMPLATE;Template
+A;L_COLOR_SETTING;Color Settings
+A;L_MAPPING_TYPE;Mapping Type
+A;L_STATIC_DATA_VALUES;Static Data Values
+A;L_USE_COLORSET;Use ColorSet
+A;L_LABEL_VALUE;Label Value
+A;L_SQL_DATA_VALUES;SQL Data Values
+A;L_DATASOURCE;Data Source
+A;L_COLORSET;Color Set
+A;B_TABLE;Table
+A;L_VALUE_FIELD;Value Field
+A;L_SORT_FIELD;Sort Field
+A;L_DATA_VIEW;Data View
+A;L_RANGE_FILTER1;Range Filter 1
+A;L_RANGE_FILTER2;Range Filter 2
+A;L_RANGE_FILTER3;Range Filter 3
+A;L_FILTER_FIELD;Filter Field
+A;L_FILTER_VALUE;Filter Value
+A;L_GENERAL;General
+A;L_EMAIL_SETUP;Email Setup
+A;L_EMAIL_NOTI_RCP;Email Notification Recipients
+A;L_META_DATA;Meta Data
+A;L_PYTHON_INT;Python Integration
+A;L_SECURITY;Security
+A;L_MASS_REQ_PROTECT;Mass Request Protection
+A;L_DATA_MASHING;Data Mashing
+A;L_LICENSE;License Management
+A;L_ASSIST_BOT;Assistant Bot Service
+A;L_UI_CONFIG;User Interface Config
+A;L_API_KEYS;API Keys
+A;L_SHORT_NAME;Short Name
+A;L_AUTHEN_CLASS;Authentication Class
+A;L_AUTHOR_CLASS;Authorization Class
+A;L_GENERAL_OPTIONS;General Options
+A;L_GRID_STRIPES;Grid Stripes
+A;B_OPACITY;Opacity
+A;L_ADD_STYLE;Add Style
+A;L_ADD_THEME;Add Theme
+A;B_SET;Set
+A;L_CHART_COLOR_ORG;Chart Color Organizer
+A;L_CHART_COLOR;Chart ColorSet
+A;L_COLOR_SETS;Color Sets
+A;L_INHERIT_STYLE_FROM;Inherit Style From
+A;L_THEMES;Themes
+A;L_NEW_ACTION;New Action
+A;L_NEW_PARAM;New Parameter
+A;B_EVENT;Event
+A;L_TABLE_LIST;Table List
+A;L_REGISTERED_TABLE;Registered Table
+A;L_SIMPLE_REL_VIEW;Simple Relation View
+A;L_FIX_KEY;Fix Key
+A;L_RELATIONS;Relations
+A;L_I_FROM;From
+A;L_I_TO;To
+A;L_JOIN_REL_EDITOR;Join Relation Editor
+A;L_SOURCE_FIELD;Source Field
+A;L_TARGET_FIELD;Target Field
+A;L_SRC_TO_TGT_IS;Source to Target is
+A;L_REMOVE_RELATION;Remove Relation
+A;L_JOIN_REL_CUSTOM_FIELD;Join Relation Custom Field
+A;L_TABLE_ORDER;Table Order
+A;L_INC_DEP;Include Dependancies
+A;L_INC_SEC;Include Security
+A;L_INC_OWNER_INFO;Include Owner Info
+A;L_SHARE;Share
+A;L_LIST_OF_ITEMS;List of Items
+A;L_FOLDER_INFO;Folder Info
+A;B_REVISION;Revision
+A;L_CUR_REVISION;Current Revision
+A;L_REVISION_INFO;Revision Info
+A;L_REVISION_MGR;Revision Manager
+A;B_LOCATION;Location
+A;B_CURRENT;Current
+A;L_TARGET_SHEET;Target Sheet
+A;L_OUTPUT_TYPE;Output Type
+A;L_SYNC_USER;Sync User
+A;L_SSO_MODULE;SSO Module
+A;L_DUTY;Roles
+A;L_FEASURES;Features
+A;L_LOAD_AUTH;Refresh Roles
+A;L_DYN_MODULE;Dynamic Module
+A;B_GROUP;Groups
+A;B_PARAMETERS;Parameters
+A;B_KEYWORD;Keyword
+A;B_IMPORT;Import
+A;B_TEST;Test
+A;L_MAX_POOL_SIZE;Max Pool Size
+A;L_WEBSERVICES;Web Services
+A;L_SFORCE_CON;Salesforce Connections
+A;L_SECURITY_KEY;Security Key
+A;L_SFORCE_URL;Salesforce URL
+A;L_LDAP_CON;LDAP Connections
+A;L_SAP_BW_CON;SAP BW Connections
+A;L_HYP_ESSBASE_CON;Hyperion EssBase Connections
+A;L_STORAGE_OPTIONS;Storage Options
+A;L_DATA_STORAGE;Data Storage
+A;L_STAGING_DB;Staging DB
+A;L_UPLOADED_FILE;Loaded Files
+A;L_CUSTOM_FIELDS;Custom Fields
+A;L_DBA_REQ;DBA Requests
+A;L_EDIT_SRC;Edit Source
+A;L_TENANT_SETTINGS;Tenant Settings
+A;L_GENERAL_INFO;General Information
+A;L_LOGO_IMAGE;Logo Image
+A;L_THEMS;Themes
+A;B_URL;URL
+A;L_EXPIRE_ON;Expire On
+A;L_ERASE_TENANT;Erase Tenant
+A;L_GROUPID;Group ID
+A;L_START_DAEMON;Start Daemon
+A;L_STOP_ALL_AGNT;Stop All Agents
+A;L_TRAIN_AGENT;Train Agent
+A;L_MAKE_NLP;Make NLP
+A;L_CHN_NAME;Channel Name
+A;L_THD_STATUS;Thread Status
+A;L_ON_SVC;On Service
+A;L_ADD_PROGRAM;Add Program
+A;L_INTENT;Intent
+A;L_COMPILE;Compile
+A;B_PERIOD;Period
+A;L_NICK_NAME;Nick Name
+A;L_INTENT_NAME;Intent Name
+A;L_JAVA_SOURCE;Java Source
+A;L_BASE_LANG;Base Language
+A;L_SEC_LANG;Second Language
+A;B_IMPORT;Import
+A;B_DOWNLOAD;Download
+A;B_UPLOAD;Upload
+A;L_PAGE;Page
+A;L_VALID_STATUS;Valid Status
+A;L_EXECUTE;Execute
+A;L_TST_CON;Test Connection
+A;L_FULL_PATH;Full Path
+A;L_EXE_RSLTS;Execution Results
+A;L_OBJNAME_CLASS;Object Name or Class
+A;L_PICKUP_TIME;Pickup Time
+A;L_PKG_NAME;Package Name
+A;L_JAVA_CLASS;Java Class
+A;L_PROGRAM_PARTS;Program Parts
+A;L_APPLY_CODES;Apply Codes
+A;L_OUTPUT_MSG;Output Message
+A;B_COMPILE;Compile
+A;L_PKG_LIST;Package List
+A;L_MULTIMEASURE;Multi Measure

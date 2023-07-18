@@ -1,6 +1,29 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
     request.setCharacterEncoding("utf-8");
+
+	java.util.Map<String, String> params = new java.util.HashMap<>();
+	java.util.Enumeration<String> param_names = request.getParameterNames();
+	
+	// XSS vulnerabilities
+	while (param_names.hasMoreElements())
+	{
+		String pname = param_names.nextElement();
+		
+		if (pname != null && pname.length() > 0)
+		{
+			String pvalue = request.getParameter(pname);
+			if (pvalue != null && pvalue.length() > 0)
+			{
+				pvalue = pvalue.replaceAll("\\\\", "");
+				pvalue = pvalue.replaceAll("\'", "\\\\\'");
+				pvalue = pvalue.replaceAll("\"", "\\\\\"");
+				pvalue = pvalue.replaceAll("<", "&lt;");
+				pvalue = pvalue.replaceAll(">", "&gt;");
+				params.put(pname, pvalue);
+			}
+		}
+	}
 %>
 <!DOCTYPE html>
 <html>
@@ -11,14 +34,14 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<title>amplix</title>
+<title>BWEB</title>
 <style>
 body {
 	overflow-x: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003090019"></link>
-<script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202307180845"></link>
+<script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",

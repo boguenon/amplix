@@ -1,0 +1,38 @@
+A;B_PRIV_FLD;나의 작업공간
+A;B_PUB_FLD;팀 작업공간
+A;L_FLT_VAL_SEL;값 선택
+A;L_FLT_CASE_INS;대소문자 구별
+A;L_FLT_POP_DLG;값 선택 팝업 윈도우
+A;L_FLT_VMODE;값보기 모드
+A;L_FLT_RNG_VAL;범위값 지정
+A;L_FLT_RNG_TXT;범위값 표시 텍스트
+A;L_FLT_NEC;필수 항목
+A;L_FLT_SEL_ALL;전체 선택 가능
+A;L_FLT_SEL_TXT;전체 선택 표시 텍스트
+A;L_FLT_HIE_FLT;상위 필터 목록
+A;L_FLT_FMT_VAL;값 포맷 형식
+A;L_FLT_U_PROMPT;프롬프트로 처리
+A;L_FLT_TAB_PNL;탭 패널 선택
+A;L_FLT_LOOKUP;코드 맵핑 필드
+A;L_FLT_DEF_VAL;기본값 선택
+A;L_FLT_START_ROW;다음행 첫열에 표시
+A;L_FLT_MERGE_LEFT;타이틀을 왼쪽에 붙임
+A;L_FLT_AUTO_WIDTH;자동 폭 계산
+A;L_FLT_COLSPAN;컬럼 폭 스팬 지정
+A;L_FLT_CHECK_LAYOUT;체크 버튼 레이아웃
+A;L_FLT_DT_SEL_TYP;날짜 선택 유형
+A;L_FLT_YEAR_FR;시작 년도 제한
+A;L_FLT_YEAR_TO;종료 년도 제한
+A;L_FLT_SHOW_DT_SEL;날짜 선택 콤보 표시
+A;L_FLT_DT_START;시작일
+A;L_FLT_DT_END;종료일
+A;L_FLT_INV_JS;외부 JavaScript 검증
+A;L_FLT_SHOW_WHEN;프롬프트 표시(숨김) 조건
+A;L_FLT_SHOW_WHEN_VALUES;숨김 조건 선택값 지정
+A;L_FLT_VS_EN;선택값 그룹핑 표시
+A;L_FLT_VS_TITLE;선택값 그룹 타이틀
+A;L_FLT_VS_FORCE;선택 그룹값 자동 선택
+A;L_FLT_VS_EXP;상세 필터링 버튼 표시
+A;L_BTN_VALUESET;값 선택 목록
+A;L_EDIT_META;메타 편집기
+A;L_RENDER_BY_MEA;메져별로 적용

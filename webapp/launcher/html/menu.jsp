@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@include file="locale.jsp" %>
 <div class="ig-mgr-nav">
 	<div class="ig-mgr-panel">

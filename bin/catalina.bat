@@ -17,6 +17,9 @@ rem limitations under the License.
 rem ---------------------------------------------------------------------------
 rem Start/Stop Script for the CATALINA Server
 rem
+rem For supported commands call "catalina.bat help" or see the usage section
+rem towards the end of this file.
+rem
 rem Environment Variable Prerequisites
 rem
 rem   Do not set the variables in this script. Instead put them into a script
@@ -28,9 +31,8 @@ rem   script will have no effect at all on Windows Services. As such, any
 rem   local customizations made in a CATALINA_BASE/bin/setenv.bat script
 rem   will also have no effect on Tomcat when launched as a Windows Service.
 rem   The configuration that controls Windows Services is stored in the Windows
-rem   Registry, and is most conveniently maintained using the "tomcatXw.exe"
-rem   maintenance utility, where "X" is the major version of Tomcat you are
-rem   running.
+rem   Registry, and is most conveniently maintained using the "amplix.exe"
+rem   maintenance utility.
 rem
 rem   CATALINA_HOME   May point at your Catalina "build" directory.
 rem
@@ -92,9 +94,14 @@ rem   JSSE_OPTS       (Optional) Java runtime options used to control the TLS
 rem                   implementation when JSSE is used. Default is:
 rem                   "-Djdk.tls.ephemeralDHKeySize=2048"
 rem
-rem   LOGGING_CONFIG  (Optional) Override Tomcat's logging config file
+rem   CATALINA_LOGGING_CONFIG (Optional) Override Tomcat's logging config file
 rem                   Example (all one line)
-rem                   set LOGGING_CONFIG="-Djava.util.logging.config.file=%CATALINA_BASE%\conf\logging.properties"
+rem                   set CATALINA_LOGGING_CONFIG="-Djava.util.logging.config.file=%CATALINA_BASE%\conf\logging.properties"
+rem
+rem   LOGGING_CONFIG  Deprecated
+rem                   Use CATALINA_LOGGING_CONFIG
+rem                   This is only used if CATALINA_LOGGING_CONFIG is not set
+rem                   and LOGGING_CONFIG starts with "-D..."
 rem
 rem   LOGGING_MANAGER (Optional) Override Tomcat's logging manager
 rem                   Example (all one line)
@@ -118,10 +125,10 @@ echo Y>"%TEMP%\%~nx0.Y"
 call "%~f0" %* <"%TEMP%\%~nx0.Y"
 rem Use provided errorlevel
 set RETVAL=%ERRORLEVEL%
-rem del /Q "%TEMP%\%~nx0.Y" >NUL 2>&1
+del /Q "%TEMP%\%~nx0.Y" >NUL 2>&1
 exit /B %RETVAL%
 :mainEntry
-rem del /Q "%TEMP%\%~nx0.run" >NUL 2>&1
+del /Q "%TEMP%\%~nx0.run" >NUL 2>&1
 
 rem Guess CATALINA_HOME if not defined
 set "CURRENT_DIR=%cd%"
@@ -188,7 +195,7 @@ rem quotes into the CLASSPATH
 if "%CLASSPATH%" == "" goto emptyClasspath
 set "CLASSPATH=%CLASSPATH%;"
 :emptyClasspath
-set "CLASSPATH=%CATALINA_HOME%\bin\amplix_launcher-3.0.0.jar;%CATALINA_HOME%\bin\amplix-3.0.0.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-8.5.42.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
+set "CLASSPATH=%CATALINA_HOME%\bin\amplix_launcher-4.1.0.jar;%CATALINA_HOME%\bin\amplix-4.1.0.jar;%CATALINA_HOME%\lib\slf4j-api-2.0.7.jar;%CATALINA_HOME%\lib\logback-core-1.3.6.jar;%CATALINA_HOME%\lib\logback-classic-1.3.6.jar;%CATALINA_HOME%\lib\tomcat-embed-core-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-annotations-api-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-api-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-el-api-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-embed-core-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-embed-el-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-embed-jasper-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-jasper-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-jasper-el-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-jsp-api-9.0.71.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar;%CATALINA_HOME%\lib\jackson-databind-2.11.0.jar;%CATALINA_HOME%\lib\jackson-core-2.11.0.jar;%CATALINA_HOME%\lib\jackson-annotations-2.11.0.jar;%CATALINA_HOME%\lib\javax.servlet-api-3.1.0.jar;%CATALINA_HOME%\lib\ecj-4.6.1.jar;%CATALINA_HOME%\lib\javax.annotation-api-1.2.jar;%CATALINA_HOME%\lib\tomcat-websocket-9.0.71.jar;%CATALINA_HOME%\lib\javax.websocket-api-1.1.jar;%CATALINA_HOME%\lib\tomcat-catalina-ha-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-tribes-9.0.71.jar"
 
 if not "%CATALINA_TMPDIR%" == "" goto gotTmpdir
 set "CATALINA_TMPDIR=%CATALINA_BASE%\temp"
@@ -196,26 +203,33 @@ set "CATALINA_TMPDIR=%CATALINA_BASE%\temp"
 
 rem Add tomcat-juli.jar to classpath
 rem tomcat-juli.jar can be over-ridden per instance
-if not exist "%CATALINA_BASE%\lib\tomcat-juli-9.0.22.jar" goto juliClasspathHome
-set "CLASSPATH=%CLASSPATH%;%CATALINA_BASE%\lib\tomcat-juli-9.0.22.jar"
+if not exist "%CATALINA_BASE%\lib\tomcat-juli-9.0.71.jar" goto juliClasspathHome
+set "CLASSPATH=%CLASSPATH%;%CATALINA_BASE%\lib\tomcat-juli-9.0.71.jar"
 goto juliClasspathDone
 :juliClasspathHome
-set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\lib\tomcat-juli-9.0.22.jar"
+set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\lib\tomcat-juli-9.0.71.jar"
 :juliClasspathDone
 
 if not "%JSSE_OPTS%" == "" goto gotJsseOpts
-set JSSE_OPTS="-Djdk.tls.ephemeralDHKeySize=2048"
+set "JSSE_OPTS=-Djdk.tls.ephemeralDHKeySize=2048"
 :gotJsseOpts
 set "JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS%"
 
 rem Register custom URL handlers
 rem Do this here so custom URL handles (specifically 'war:...') can be used in the security policy
-set "JAVA_OPTS=%JAVA_OPTS% -Djava.protocol.handler.pkgs=org.apache.catalina.webresources"
+set "JAVA_OPTS=%JAVA_OPTS% -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Djava.awt.headless=true"
 
-if not "%LOGGING_CONFIG%" == "" goto noJuliConfig
-set LOGGING_CONFIG=-Dnop
+rem Check for the deprecated LOGGING_CONFIG
+rem Only use it if CATALINA_LOGGING_CONFIG is not set and LOGGING_CONFIG starts with "-D..."
+if not "%LOGGING_CONFIG:~0,2%"=="-D" goto noLoggingDeprecation
+if not "%CATALINA_LOGGING_CONFIG%" == "" goto noLoggingDeprecation
+set "CATALINA_LOGGING_CONFIG=%LOGGING_CONFIG%"
+:noLoggingDeprecation
+
+if not "%CATALINA_LOGGING_CONFIG%" == "" goto noJuliConfig
+set CATALINA_LOGGING_CONFIG=-Dnop
 if not exist "%CATALINA_BASE%\conf\logging.properties" goto noJuliConfig
-set LOGGING_CONFIG=-Djava.util.logging.config.file="%CATALINA_BASE%\conf\logging.properties"
+set CATALINA_LOGGING_CONFIG=-Djava.util.logging.config.file="%CATALINA_BASE%\conf\logging.properties"
 :noJuliConfig
 
 if not "%LOGGING_MANAGER%" == "" goto noJuliManager
@@ -342,6 +356,7 @@ goto execCmd
 %_EXECJAVA% -classpath "%CATALINA_HOME%\lib\catalina.jar" org.apache.catalina.util.ServerInfo
 goto end
 
+
 :execCmd
 rem Get remaining unshifted command line arguments and save them in the
 set CMD_LINE_ARGS=
@@ -355,17 +370,17 @@ goto setArgs
 rem Execute Java with the applicable properties
 if not "%JPDA%" == "" goto doJpda
 if not "%SECURITY_POLICY_FILE%" == "" goto doSecurity
-%_EXECJAVA% %LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
+%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
 goto end
 :doSecurity
-%_EXECJAVA% %LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Djava.security.manager -Djava.security.policy=="%SECURITY_POLICY_FILE%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
+%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Djava.security.manager -Djava.security.policy=="%SECURITY_POLICY_FILE%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
 goto end
 :doJpda
 if not "%SECURITY_POLICY_FILE%" == "" goto doSecurityJpda
-%_EXECJAVA% %LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %JPDA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
+%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %JPDA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
 goto end
 :doSecurityJpda
-%_EXECJAVA% %LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %JPDA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Djava.security.manager -Djava.security.policy=="%SECURITY_POLICY_FILE%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
+%_EXECJAVA% %CATALINA_LOGGING_CONFIG% %LOGGING_MANAGER% %JAVA_OPTS% %JPDA_OPTS% %CATALINA_OPTS% %DEBUG_OPTS% -D%ENDORSED_PROP%="%JAVA_ENDORSED_DIRS%" -classpath "%CLASSPATH%" -Djava.security.manager -Djava.security.policy=="%SECURITY_POLICY_FILE%" -Dcatalina.base="%CATALINA_BASE%" -DAPP_HOME="%CATALINA_HOME%" -Dcatalina.home="%CATALINA_HOME%" -Djava.io.tmpdir="%CATALINA_TMPDIR%" %MAINCLASS% %CMD_LINE_ARGS% %ACTION%
 goto end
 
 :end

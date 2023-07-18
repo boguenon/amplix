@@ -1,0 +1,167 @@
+{
+  "meta_type" : "ui_config",
+  "attributes" : {
+    "attrb1" : "0122483f-0155fb46"
+  },
+  "type" : "SysUIConfig",
+  "objinfo" : { },
+  "name" : "ui_config",
+  "uid" : "ba6606a1-36e949ca",
+  "description" : "",
+  "pid" : "ba6606a1-36e949ca",
+  "writable" : false,
+  "manage" : false,
+  "is_sub" : false,
+  "config" : {
+    "application_title" : "BWEB demo",
+    "application_title_html" : "BWEB <span style=\"font-size:12px;color:#fff900\">demo</span>",
+    "collapse_main_menu" : true,
+    "main_navigator" : true,
+    "maxtapcount" : 10,
+    "loading_msg" : "Loading... Please wait for processing",
+    "helper" : [ {
+      "name" : "Format Unit (KR)",
+      "type" : "formatstring",
+      "value" : "#,###;UNIT,천=1000,만=10000,십만=100000,백만=1000000",
+      "issql" : false
+    }, {
+      "name" : "no border children",
+      "type" : "panel_style",
+      "value" : "no_border_children",
+      "issql" : false
+    }, {
+      "name" : "no border",
+      "type" : "panel_style",
+      "value" : "no_border",
+      "issql" : false
+    }, {
+      "name" : "substring",
+      "type" : "filter_valueformat",
+      "value" : "#helper.substring(value, 0, 4)",
+      "issql" : false
+    }, {
+      "name" : "System date",
+      "type" : "filter_valueformat",
+      "value" : "#helper.systemDate('yyyyMMdd')",
+      "issql" : false
+    }, {
+      "name" : "Value template",
+      "type" : "filter_valueformat",
+      "value" : "${value}",
+      "issql" : false
+    }, {
+      "name" : "150 px width",
+      "type" : "filter_style",
+      "value" : "select-wide-15x",
+      "issql" : false
+    }, {
+      "name" : "200 px width",
+      "type" : "filter_style",
+      "value" : "select-wide-20x",
+      "issql" : false
+    }, {
+      "name" : "250 px width",
+      "type" : "filter_style",
+      "value" : "select-wide-25x",
+      "issql" : false
+    }, {
+      "name" : "Thousand Separator",
+      "type" : "formatstring",
+      "value" : "#,###",
+      "issql" : false
+    }, {
+      "name" : "Thousand Separator 2 Decimal Precision",
+      "type" : "formatstring",
+      "value" : "#,##0.00",
+      "issql" : false
+    }, {
+      "name" : "Minus with bracket",
+      "type" : "formatstring",
+      "value" : "#,##0;(#,##0)",
+      "issql" : false
+    }, {
+      "name" : "Percentage multiply 100",
+      "type" : "formatstring",
+      "value" : "#,##0 %",
+      "issql" : false
+    }, {
+      "name" : "Percentage Symbol",
+      "type" : "formatstring",
+      "value" : "#,### '%'",
+      "issql" : false
+    }, {
+      "name" : "Format unit division (ENG)",
+      "type" : "formatstring",
+      "value" : "#,##0;UNIT,1000=K,1000000=M,1000000000=G",
+      "issql" : false
+    }, {
+      "name" : "Format to time ellapsed",
+      "type" : "formatstring",
+      "value" : "DATE: HH:mm:ss",
+      "issql" : false
+    }, {
+      "name" : "Discard Thousand",
+      "type" : "formatstring",
+      "value" : "#,###,,",
+      "issql" : false
+    }, {
+      "name" : "2001.07.04 AM 12:08:56",
+      "type" : "dateformat",
+      "value" : "yyyy.MM.dd a HH:mm:ss",
+      "issql" : false
+    }, {
+      "name" : "Wed, Jul 4, '01",
+      "type" : "dateformat",
+      "value" : "EEE, MMM d, ''yy",
+      "issql" : false
+    }, {
+      "name" : "20010704120856",
+      "type" : "dateformat",
+      "value" : "yyyyMMddHHmmss",
+      "issql" : false
+    }, {
+      "name" : "DATE",
+      "type" : "dateformat",
+      "value" : "DATE",
+      "issql" : true
+    }, {
+      "name" : "DATETIME",
+      "type" : "dateformat",
+      "value" : "DATETIME",
+      "issql" : true
+    }, {
+      "name" : "TIMESTAMP",
+      "type" : "dateformat",
+      "value" : "TIMESTAMP",
+      "issql" : true
+    }, {
+      "name" : "EPOCH time value",
+      "type" : "dateformat",
+      "value" : "EPOCH",
+      "issql" : false
+    }, {
+      "name" : "Arrow UP/Down",
+      "type" : "cell_tmpl",
+      "value" : "<span>TEXT</span><span style='font-family: fontawesome; color:$$#00ff00|#ff0000$$'>$$|$$</span>",
+      "issql" : false
+    }, {
+      "name" : "Negative Red color",
+      "type" : "cell_tmpl",
+      "value" : "<span style=\"color:$$|#ff0000$$;\">TEXT</span>",
+      "issql" : false
+    } ],
+    "measure_naming" : "[formula] [field]",
+    "echarts_theme" : "amplix",
+    "report_screenshot" : false,
+    "geo_map_center" : "127,35",
+    "chart_separator" : "nl",
+    "sheet_toolbar" : "[\n    {\n        \"name\": \"Custom1\", \n        \"key\": \"custom1\", \n        \"label\": \"상세보기\", \n        \"cls\": \"igc-btn-text\", \n        \"handler\": function(view, key) {\n\t        console.log(\"button click\");\n            var reportoption = view.reportoption,\n                reportname = reportoption && reportoption._mc ? reportoption._mc.name : null,\n                sheetoption = view.sheetoption,\n                sheetname = sheetoption && sheetoption.model ? sheetoption.model.name : null ,\n                mresults = view.mresults;\n\n            console.log(\"reportname\", reportname);\n            console.log(\"sheetname\", sheetname);\n\n            window.open(\"http://www.naver.com\", \"_blank\");\n        }\n    }\n]\n",
+    "report_script" : "script_01: {\n\thandler: function(view, item) {\n\t\tconsole.log(\"script_01\");\n\t\titem.value = [];\n\t\tview.updateFilterValue(item);\n\t\tvar f = {model: {tabid: \"dock_6\"}, value: [{code: \"dock_1\"}]};\n\t\tif (item. value && item.value.length)\n\t\t{\n\t\t\tf.value[0].code = \"dock_4\";\n\t\t}\n\t\tview.changeActiveTab(f, false, true);\n\t}\n},\nquery_chart: {\n\thandler: function(view, results) {\n\t\tconsole.log(\"chart handler\");\n\t\tvar me = this,\n\t\t\tesri = me.esri,\n\t\t\t\t\tmap = me.map_inst;\n\n\t\tvar _params = results. _params;\n\n\t\tvar queryTask = new esri.QueryTask(\n\t\t\t\"http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer/0\"\n\t\t);\n\t\tvar query = new esri.Query();\n\t\tquery.where = \"STATE_NAME='GA'\";\n\t\tquery.returnGeometry = true;\n\t\tquery.outFields = [ \"*\" ];\n\n\t\tqueryTask.execute(query, function(fset) {\n\t\t\tif (!me._query_layer)\n\t\t\t{\n\t\t\t\tme._query_layer = new esri.GraphicsLayer();\n\t\t\t\tmap.addLayer(me._query_layer);\n\t\t\t\tme._glayers.push(me._query_layer);\n\t\t\t}\n\n\t\t\tif (fset.features.length > 0) {\n\t\t\t\tme._query_layer.clear();\n\t\t\t\tvar defaultFillSymbol = new esri.SimpleFillSymbol(esri.SimpleFillSymbol.STYLE_SOLID, \n\t\t\t\t\tnew esri.SimpleLineSymbol(esri.SimpleLineSymbol.STYLE_SOLID, \n\t\t\t\t\tnew esri.Color([ 0, 255, 255, 1]), 5), \n\t\t\t\t\tnew esri.Color([ 0, 0, 0, 0 ]));\n\n\t\t\t\t var graphic = new esri.Graphic(fset.features[0].geometry, defaultFillSymbol, fset.features[0].attributes, null);\n\t\t\t\tme._query_layer.add(graphic);\n\t\t\t\tmap.setExtent(fset.features[0].geometry.getExtent());\n\t\t\t}\n\t\t},\n\t\tfunction(error) {\n\t\t\tIG$.ShowError(\"오류가 발생하였습니다.\");\n\t\t});\n\t}\n},\nwurman_point_renderer: {\n\trenderer: {\n\t\t\ttype: \"simple\",\n\t\t\tsymbol: {\n\t\t\t  type: \"cim\",\n\t\t\t  data: {\n\t\t\t\ttype: \"CIMSymbolReference\",\n\t\t\t\tsymbol: {\n\t\t\t\t  type: \"CIMPointSymbol\",\n\t\t\t\t  symbolLayers: [\n\t\t\t\t\t{\n\t\t\t\t\t  type: \"CIMVectorMarker\",\n\t\t\t\t\t  enable: true,\n\t\t\t\t\t  anchorPoint: { x: 0, y: 0 },\n\t\t\t\t\t  anchorPointUnits: \"Relative\",\n\t\t\t\t\t  primitiveName: \"innerSizeOverride\",\n\t\t\t\t\t  frame: { xmin: 0.0, ymin: 0.0, xmax: 17.0, ymax: 17.0 },\n\t\t\t\t\t  markerGraphics: [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t  type: \"CIMMarkerGraphic\",\n\t\t\t\t\t\t  geometry: {\n\t\t\t\t\t\t\trings: [\n\t\t\t\t\t\t\t  [\n\t\t\t\t\t\t\t\t[8.5, 0.2],\n\t\t\t\t\t\t\t\t[7.06, 0.33],\n\t\t\t\t\t\t\t\t[5.66, 0.7],\n\t\t\t\t\t\t\t\t[4.35, 1.31],\n\t\t\t\t\t\t\t\t[3.16, 2.14],\n\t\t\t\t\t\t\t\t[2.14, 3.16],\n\t\t\t\t\t\t\t\t[1.31, 4.35],\n\t\t\t\t\t\t\t\t[0.7, 5.66],\n\t\t\t\t\t\t\t\t[0.33, 7.06],\n\t\t\t\t\t\t\t\t[0.2, 8.5],\n\t\t\t\t\t\t\t\t[0.33, 9.94],\n\t\t\t\t\t\t\t\t[0.7, 11.34],\n\t\t\t\t\t\t\t\t[1.31, 12.65],\n\t\t\t\t\t\t\t\t[2.14, 13.84],\n\t\t\t\t\t\t\t\t[3.16, 14.86],\n\t\t\t\t\t\t\t\t[4.35, 15.69],\n\t\t\t\t\t\t\t\t[5.66, 16.3],\n\t\t\t\t\t\t\t\t[7.06, 16.67],\n\t\t\t\t\t\t\t\t[8.5, 16.8],\n\t\t\t\t\t\t\t\t[9.94, 16.67],\n\t\t\t\t\t\t\t\t[11.34, 16.3],\n\t\t\t\t\t\t\t\t[12.65, 15.69],\n\t\t\t\t\t\t\t\t[13.84, 14.86],\n\t\t\t\t\t\t\t\t[14.86, 13.84],\n\t\t\t\t\t\t\t\t[15.69, 12.65],\n\t\t\t\t\t\t\t\t[16.3, 11.34],\n\t\t\t\t\t\t\t\t[16.67, 9.94],\n\t\t\t\t\t\t\t\t[16.8, 8.5],\n\t\t\t\t\t\t\t\t[16.67, 7.06],\n\t\t\t\t\t\t\t\t[16.3, 5.66],\n\t\t\t\t\t\t\t\t[15.69, 4.35],\n\t\t\t\t\t\t\t\t[14.86, 3.16],\n\t\t\t\t\t\t\t\t[13.84, 2.14],\n\t\t\t\t\t\t\t\t[12.65, 1.31],\n\t\t\t\t\t\t\t\t[11.34, 0.7],\n\t\t\t\t\t\t\t\t[9.94, 0.33],\n\t\t\t\t\t\t\t\t[8.5, 0.2]\n\t\t\t\t\t\t\t  ]\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t  },\n\t\t\t\t\t\t  symbol: {\n\t\t\t\t\t\t\ttype: \"CIMPolygonSymbol\",\n\t\t\t\t\t\t\tsymbolLayers: [\n\t\t\t\t\t\t\t  {\n\t\t\t\t\t\t\t\ttype: \"CIMSolidFill\",\n\t\t\t\t\t\t\t\tenable: true,\n\t\t\t\t\t\t\t\tcolor: [0, 0, 0, 30]\n\t\t\t\t\t\t\t  }\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t  }\n\t\t\t\t\t\t}\n\t\t\t\t\t  ],\n\t\t\t\t\t  scaleSymbolsProportionally: true,\n\t\t\t\t\t  respectFrame: true\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  type: \"CIMVectorMarker\",\n\t\t\t\t\t  enable: true,\n\t\t\t\t\t  anchorPoint: { x: 0, y: 0 },\n\t\t\t\t\t  anchorPointUnits: \"Relative\",\n\t\t\t\t\t  primitiveName: \"outerSizeOverride\",\n\t\t\t\t\t  frame: { xmin: 0.0, ymin: 0.0, xmax: 17.0, ymax: 17.0 },\n\t\t\t\t\t  markerGraphics: [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t  type: \"CIMMarkerGraphic\",\n\t\t\t\t\t\t  geometry: {\n\t\t\t\t\t\t\trings: [\n\t\t\t\t\t\t\t  [\n\t\t\t\t\t\t\t\t[8.5, 0.2],\n\t\t\t\t\t\t\t\t[7.06, 0.33],\n\t\t\t\t\t\t\t\t[5.66, 0.7],\n\t\t\t\t\t\t\t\t[4.35, 1.31],\n\t\t\t\t\t\t\t\t[3.16, 2.14],\n\t\t\t\t\t\t\t\t[2.14, 3.16],\n\t\t\t\t\t\t\t\t[1.31, 4.35],\n\t\t\t\t\t\t\t\t[0.7, 5.66],\n\t\t\t\t\t\t\t\t[0.33, 7.06],\n\t\t\t\t\t\t\t\t[0.2, 8.5],\n\t\t\t\t\t\t\t\t[0.33, 9.94],\n\t\t\t\t\t\t\t\t[0.7, 11.34],\n\t\t\t\t\t\t\t\t[1.31, 12.65],\n\t\t\t\t\t\t\t\t[2.14, 13.84],\n\t\t\t\t\t\t\t\t[3.16, 14.86],\n\t\t\t\t\t\t\t\t[4.35, 15.69],\n\t\t\t\t\t\t\t\t[5.66, 16.3],\n\t\t\t\t\t\t\t\t[7.06, 16.67],\n\t\t\t\t\t\t\t\t[8.5, 16.8],\n\t\t\t\t\t\t\t\t[9.94, 16.67],\n\t\t\t\t\t\t\t\t[11.34, 16.3],\n\t\t\t\t\t\t\t\t[12.65, 15.69],\n\t\t\t\t\t\t\t\t[13.84, 14.86],\n\t\t\t\t\t\t\t\t[14.86, 13.84],\n\t\t\t\t\t\t\t\t[15.69, 12.65],\n\t\t\t\t\t\t\t\t[16.3, 11.34],\n\t\t\t\t\t\t\t\t[16.67, 9.94],\n\t\t\t\t\t\t\t\t[16.8, 8.5],\n\t\t\t\t\t\t\t\t[16.67, 7.06],\n\t\t\t\t\t\t\t\t[16.3, 5.66],\n\t\t\t\t\t\t\t\t[15.69, 4.35],\n\t\t\t\t\t\t\t\t[14.86, 3.16],\n\t\t\t\t\t\t\t\t[13.84, 2.14],\n\t\t\t\t\t\t\t\t[12.65, 1.31],\n\t\t\t\t\t\t\t\t[11.34, 0.7],\n\t\t\t\t\t\t\t\t[9.94, 0.33],\n\t\t\t\t\t\t\t\t[8.5, 0.2]\n\t\t\t\t\t\t\t  ]\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t  },\n\t\t\t\t\t\t  symbol: {\n\t\t\t\t\t\t\ttype: \"CIMLineSymbol\",\n\t\t\t\t\t\t\tsymbolLayers: [\n\t\t\t\t\t\t\t  {\n\t\t\t\t\t\t\t\ttype: \"CIMSolidStroke\",\n\t\t\t\t\t\t\t\tenable: true,\n\t\t\t\t\t\t\t\tcolor: [150, 150, 150, 50],\n\t\t\t\t\t\t\t\twidth: 1\n\t\t\t\t\t\t\t  }\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t  }\n\t\t\t\t\t\t}\n\t\t\t\t\t  ],\n\t\t\t\t\t  scaleSymbolsProportionally: true,\n\t\t\t\t\t  respectFrame: true\n\t\t\t\t\t}\n\t\t\t\t  ]\n\t\t\t\t},\n\t\t\t\tprimitiveOverrides: [\n\t\t\t\t  {\n\t\t\t\t\ttype: \"CIMPrimitiveOverride\",\n\t\t\t\t\tprimitiveName: \"outerSizeOverride\",\n\t\t\t\t\tpropertyName: \"Size\",\n\t\t\t\t\tvalueExpressionInfo: {\n\t\t\t\t\t  type: \"CIMExpressionInfo\",\n\t\t\t\t\t  title: \"Size in pixels of outer ring at maxScale\",\n\t\t\t\t\t  // the pixel size at the largest scale\n\t\t\t\t\t  // 42 represents the pixel size of the\n\t\t\t\t\t  // circles at the view's largest scale (1:2,311,161)\n\t\t\t\t\t  expression: \"42 * 2311161 / $view.scale\",\n\t\t\t\t\t  returnType: \"Default\"\n\t\t\t\t\t}\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\ttype: \"CIMPrimitiveOverride\",\n\t\t\t\t\tprimitiveName: \"innerSizeOverride\",\n\t\t\t\t\tpropertyName: \"Size\",\n\t\t\t\t\tvalueExpressionInfo: {\n\t\t\t\t\t  type: \"CIMExpressionInfo\",\n\t\t\t\t\t  title: \"Size in pixels of inner ring at maxScale\",\n\t\t\t\t\t  // outerSize is the pixel size at the largest scale\n\t\t\t\t\t  // The innerSize is determined by multiplying\n\t\t\t\t\t  // the outerSize by the forest ratio\n\t\t\t\t\t  expression: `\n\t\t\t\t\t\tvar forestRatio = $feature.NLCDfrstPt / 100;\n\t\t\t\t\t\tvar outerSize = 42 * 2311161 / $view.scale;\n\t\t\t\t\t\tvar innerSize = outerSize * forestRatio;\n\t\t\t\t\t\treturn IIF( innerSize < 3, 3, innerSize );\n\t\t\t\t\t  `,\n\t\t\t\t\t  returnType: \"Default\"\n\t\t\t\t\t}\n\t\t\t\t  }\n\t\t\t\t]\n\t\t\t  }\n\t\t\t},\n\t\t\tvisualVariables: [\n\t\t\t  {\n\t\t\t\ttype: \"color\",\n\t\t\t\tfield: \"POP2010\",\n\t\t\t\tstops: [\n\t\t\t\t  {\n\t\t\t\t\tvalue: 0,\n\t\t\t\t\tcolor: [57, 74, 53]\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\tvalue: 15000,\n\t\t\t\t\tcolor: [94, 120, 89]\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\tvalue: 30000,\n\t\t\t\t\tcolor: [235, 227, 215]\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\tvalue: 90000,\n\t\t\t\t\tcolor: [199, 143, 70]\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\tvalue: 150000,\n\t\t\t\t\tcolor: [201, 114, 0]\n\t\t\t\t  }\n\t\t\t\t]\n\t\t\t  }\n\t\t\t]\n\t\t  },\n\t\t  popupTemplate: {\n\t\t\tcontent: [\n\t\t\t  {\n\t\t\t\ttype: \"fields\",\n\t\t\t\tfieldInfos: [\n\t\t\t\t  {\n\t\t\t\t\tfieldName: \"NLCDfrstPt\",\n\t\t\t\t\tlabel: \"% forested land (NLCD)\",\n\t\t\t\t\tformat: {\n\t\t\t\t\t  places: 0\n\t\t\t\t\t}\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\tfieldName: \"POP2010\",\n\t\t\t\t\tlabel: \"Population (2010)\",\n\t\t\t\t\tformat: {\n\t\t\t\t\t  places: 0,\n\t\t\t\t\t  digitSeparator: true\n\t\t\t\t\t}\n\t\t\t\t  }\n\t\t\t\t]\n\t\t\t  }\n\t\t\t]\n\t\t  },\n\t\t  definitionExpression: \"NLCDfrstPt > 1\"\n\t\t},\narc_3d_renderer: {\n\trenderer: {\n\t\ttype: \"simple\", // autocasts as new SimpleRenderer()\n\t\tsymbol: {\n\t\t\ttype: \"polygon-3d\", // autocasts as new PolygonSymbol3D()\n\t\t\tsymbolLayers: [\n\t\t\t\t{\n\t\t\t\t\ttype: \"extrude\" // autocasts as new ExtrudeSymbol3DLayer()\n\t\t\t\t}\n\t\t\t]\n\t\t},\n\t\tvisualVariables: [\n\t\t\t{\n\t\t\t\ttype: \"size\",\n\t\t\t\tfield: \"POP_POVERTY\",\n\t\t\t\tstops: [\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 1000,\n\t\t\t\t\t\tsize: 10000,\n\t\t\t\t\t\tlabel: \"1,000\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 150000,\n\t\t\t\t\t\tsize: 300000,\n\t\t\t\t\t\tlabel: \">150,000\"\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t},\n\t\t\t{\n\t\t\t\ttype: \"color\",\n\t\t\t\tfield: \"POP_POVERTY\",\n\t\t\t\tnormalizationField: \"TOTPOP_CY\",\n\t\t\t\tlegendOptions: {\n\t\t\t\t\ttitle: \"% population with income below poverty level\"\n\t\t\t\t},\n\t\t\t\tstops: [\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 0.1,\n\t\t\t\t\t\tcolor: \"#FFFCD4\",\n\t\t\t\t\t\tlabel: \"<15%\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\tvalue: 0.35,\n\t\t\t\t\t\tcolor: [153, 83, 41],\n\t\t\t\t\t\tlabel: \">35%\"\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t]\n\t}\n}",
+    "arcgis_version" : "4.16",
+    "arcgis_css" : "https://js.arcgis.com/4.16/esri/themes/light/main.css",
+    "arcgis_js" : "https://js.arcgis.com/4.16/",
+    "arcgis_basemap" : "지적도_esri,https://services.arcgisonline.com/ArcGIS/rest/services/Specialty/DeLorme_World_Base_Map/MapServer\nnone,",
+    "arcgis_rest" : "MapLayer1,ArcGISDynamicMapServiceLayer,http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer,\nv4layer1,FeatureLayer,https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads/FeatureServer/0,\nv4 Trail Line,FeatureLayer,https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trails/FeatureServer/0,\nv4 Parks,FeatureLayer,https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Parks_and_Open_Space/FeatureServer/0,mapid= PARK_NAME\nv4 Wurman Dots,FeatureLayer,https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/Landcover_30km_centroids_from_hex/FeatureServer,renderer=wurman_point_renderer\nv4 3D renderer,FeatureLayer,https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/counties_politics_poverty/FeatureServer/0,renderer=arc_3d_renderer\nv4 transit,FeatureLayer,http://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/subway_tcl_stations_lines_wgs84/FeatureServer/0,legend=T",
+    "svg_renderers" : "대한민국,./data/korea_2019.svg\n대구:./data/korea_DAEGU_2019.svg\n대전:./data/korea_DAEJEON_SIG.svg\n서울:./data/korea_SEOUL_SIG.svg\n세종시,./data/korea_SEJONGSI_EMD.svg\n전라남도,./data/korea_JEONLANAMDO_SIG.svg\n전라북도,./data/korea_JEONLABUKDO_2019.svg\n"
+  }
+}

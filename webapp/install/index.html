@@ -8,9 +8,12 @@
 <link rel="icon" href="../favicon.png" type="image/png">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>amplix installation wizard</title>
-<link rel="stylesheet" type="text/css" href="./css/igcf.min.css" />
-<script type="text/javascript" src="../launcher/js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="./js/igcf.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/igcf.min.css?_dc=202307180845" />
+<script type="text/javascript" src="../launcher/js/jquery-3.6.4.min.js?_dc=202307180845"></script>
+<script type="text/javascript" src="./js/igcf.min.js?_dc=202307180845"></script>
+<script type="text/javascript">
+var useLocale = "en_US";
+</script>
 </head>
 <body scroll="no">
 <div id="main-area" class="main-scroller">
@@ -271,7 +274,6 @@
 				</div>
 			</div>
 			
-			
 			<div id="dpage_02" style="display:none;">
 				<div class="menu-area">
 					<div class="menu selected"><a>Settings</a></div>
@@ -308,69 +310,101 @@
 		               				</td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">Host Name</td>
+		               				<td class="fieldname">Use JNDI DataSource</td>
 		               				<td colspan="2">
-		               					<input id="db_host" type="text" placeholder="localhost"></input>
+		               					<input id="db_isjndi" type="checkbox">
+		               					</input>
 		               				</td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">Port Number</td>
-		               				<td colspan="2">
-		               					<input id="db_port" type="text" placeholder="3306"></input>
+		               				<td colspan="3">
+		               					<table id="form_db_jdbc">
+		               						<col width="200px"></col>
+											<col width="*"></col>
+											<col width="*"></col>
+		               						<tr>
+					               				<td class="fieldname">Host Name</td>
+					               				<td>
+					               					<input id="db_host" type="text"></input>
+					               				</td>
+					               				<td><span id="msg_db_host" class="ex_msg"></span></td>
+					               			</tr>
+					               			<tr>
+					               				<td class="fieldname">Port Number</td>
+					               				<td>
+					               					<input id="db_port" type="text"></input>
+					               				</td>
+					               				<td><span id="msg_db_port" class="ex_msg"></span></td>
+					               			</tr>
+					               			<tr>
+					               				<td class="fieldname">Database Name</td>
+					               				<td>
+					               					<input id="db_name" type="text"></input>
+					               				</td>
+					               				<td><span id="msg_db_name" class="ex_msg">Ex) amplix_meta</span></td>
+					               			</tr>
+					               			<tr>
+					               				<td></td>
+					               				<td colspan="2">
+					               					<div class="button-area tb-button">
+						               					<button id="btn_check_dburl" class="button grey">
+															Auto Generate JDBC Information
+														</button>
+													</div>
+					               				</td>
+					               			</tr>
+					               			<tr>
+					               				<td class="fieldname">JDBC Driver</td>
+					               				<td>
+					               					<input id="db_jdbc_driver" type="text"></input>
+					               				</td>
+					               				<td>
+					               				</td>
+					               			</tr>
+					               			<tr>
+					               				<td class="fieldname">JDBC URL</td>
+					               				<td colspan="2">
+					               					<textarea id="db_jdbc_url"></textarea>
+					               				</td>
+					               			</tr>
+					               			<tr>
+					               				<td class="fieldname">ValidateSQL</td>
+					               				<td>
+					               					<textarea id="db_validatesql"></textarea>
+					               				</td>
+					               				<td>
+					               					
+					               				</td>
+					               			</tr>
+					               			<tr>
+					               				<td class="fieldname">User name</td>
+					               				<td>
+					               					<input id="db_user" type="text"></input>
+					               				</td>
+					               				<td><span id="msg_db_user" class="ex_msg">Ex) amplix</span></td>
+					               			</tr>
+					               			<tr>
+					               				<td class="fieldname">User Password</td>
+					               				<td colspan="2">
+					               					<input id="db_passwd" type="password"></input>
+					               				</td>
+					               			</tr>
+		               					</table>
+		               					<table id="form_db_jndi" style="display:none">
+		               						<col width="200px"></col>
+											<col width="*"></col>
+											<col width="*"></col>
+		               						<tr>
+					               				<td class="fieldname">Resource Path</td>
+					               				<td>
+					               					<input id="db_path" type="text"></input>
+					               				</td>
+					               				<td><span id="msg_db_path" class="ex_msg"></span></td>
+					               			</tr>
+					               		</table>
 		               				</td>
 		               			</tr>
 		               			<tr>
-		               				<td class="fieldname">Database Name</td>
-		               				<td colspan="2">
-		               					<input id="db_name" type="text" placeholder="amplix_meta"></input>
-		               				</td>
-		               			</tr>
-		               			<tr>
-		               				<td></td>
-		               				<td colspan="2">
-		               					<div class="button-area tb-button">
-			               					<button id="btn_check_dburl" class="button grey">
-												Auto Generate JDBC Information
-											</button>
-										</div>
-		               				</td>
-		               			</tr>
-		               			<tr>
-		               				<td class="fieldname">JDBC Driver</td>
-		               				<td>
-		               					<input id="db_jdbc_driver" type="text"></input>
-		               				</td>
-		               				<td>
-		               				</td>
-		               			</tr>
-		               			<tr>
-		               				<td class="fieldname">JDBC URL</td>
-		               				<td colspan="2">
-		               					<textarea id="db_jdbc_url"></textarea>
-		               				</td>
-		               			</tr>
-		               			<tr>
-		               				<td class="fieldname">ValidateSQL</td>
-		               				<td>
-		               					<textarea id="db_validatesql"></textarea>
-		               				</td>
-		               				<td>
-		               					
-		               				</td>
-		               			</tr>
-		               			<tr>
-		               				<td class="fieldname">User name</td>
-		               				<td colspan="2">
-		               					<input id="db_user" type="text" placeholder="amplix"></input>
-		               				</td>
-		               			</tr>
-		               			<tr>
-		               				<td class="fieldname">User Password</td>
-		               				<td colspan="2">
-		               					<input id="db_passwd" type="password"></input>
-		               				</td>
-		               			</tr>
-								<tr>
 									<td colspan="1"></td>
 									<td>
 										<div class="button-area tb-button">
@@ -391,6 +425,10 @@
 							<table class="tb_form">
 								<col width="200px"></col>
 								<col width="*"></col>
+								<tr>
+		               				<td class="fieldname">Admin User Name</td>
+		               				<td><input id="s2adminname" type="text" placeholder="admin"></input></td>
+		               			</tr>
 		               			<tr>
 		               				<td class="fieldname">Admin User Password</td>
 		               				<td><input id="s2adminpwd" type="password" placeholder="Password"></input></td>
@@ -410,30 +448,33 @@
 							</table>
 						</div>
 						<div class="content">
-							<table class="tb_form">
+							<table class="tb_form" id="dd_jdbc">
 								<col width="200px"></col>
+								<col width="*"></col>
 								<col width="*"></col>
 								<tr>
 									<td class="fieldname">
 										Module Database Name
 									</td>
 									<td><input type="text" id="md_owner"></input></td>
+									<td><span id="msg_md_owner" class="ex_msg"></span></td>
 								</tr>
 								<tr>
 									<td class="fieldname">
 										Module User
 									</td>
 									<td><input type="text" id="md_user"></input></td>
+									<td><span id="msg_md_user" class="ex_msg"></span></td>
 								</tr>
 								<tr>
 									<td class="fieldname">
 										Module Password
 									</td>
-									<td><input type="password" id="md_password"></input></td>
+									<td colspan="2"><input type="password" id="md_password"></input></td>
 								</tr>
 								<tr>
 									<td colspan="1"></td>
-									<td>
+									<td colspan="2">
 										<div class="button-area tb-button">
 											<button id="btn_check_con2" class="button grey">
 												Check Connection
@@ -441,6 +482,18 @@
 										</div>
 									</td>
 									<td><span id="db_con_status2"></span></td>
+								</tr>
+							</table>
+							<table class="tb_form" id="dd_jndi" style="display:none;">
+								<col width="200px"></col>
+								<col width="*"></col>
+								<col width="*"></col>
+								<tr>
+									<td class="fieldname">
+										Module Database Name
+									</td>
+									<td><input type="text" id="md_path"></input></td>
+									<td><span id="msg_md_path" class="ex_msg"></span></td>
 								</tr>
 							</table>
 						</div>
@@ -458,7 +511,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="dpage_03" style="display:none;">
 				<div class="menu-area">
 					<div class="menu selected"><a>Installation</a></div>

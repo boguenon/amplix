@@ -1,0 +1,745 @@
+/*
+ * basic.css
+ * ~~~~~~~~~
+ *
+ * Sphinx stylesheet -- basic theme.
+ *
+ * :copyright: Copyright 2007-2019 by the Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+
+/* -- main layout ----------------------------------------------------------- */
+
+#manual_body div.clearer {
+    clear: both;
+}
+
+/* -- relbar ---------------------------------------------------------------- */
+
+#manual_body div.related {
+    width: 100%;
+    font-size: 90%;
+}
+
+#manual_body div.related h3 {
+    display: none;
+}
+
+#manual_body div.related ul {
+    margin: 0;
+    padding: 0 0 0 10px;
+    list-style: none;
+}
+
+#manual_body div.related li {
+    display: inline;
+}
+
+#manual_body div.related li.right {
+    float: right;
+    margin-right: 5px;
+}
+
+/* -- sidebar --------------------------------------------------------------- */
+
+#manual_body div.sphinxsidebarwrapper {
+    padding: 10px 5px 0 10px;
+}
+
+#manual_body div.sphinxsidebar {
+    margin-left: 0%;
+    font-size: 90%;
+    word-wrap: break-word;
+    overflow-wrap : break-word;
+}
+
+#manual_body div.sphinxsidebar ul {
+    list-style: none;
+}
+
+#manual_body div.sphinxsidebar ul ul,
+#manual_body div.sphinxsidebar ul.want-points {
+    margin-left: 20px;
+    list-style: none;
+}
+
+#manual_body div.sphinxsidebar ul ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#manual_body div.sphinxsidebar form {
+    margin-top: 10px;
+}
+
+#manual_body div.sphinxsidebar input {
+    border: 1px solid #98dbcc;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+#manual_body div.sphinxsidebar #searchbox form.search {
+    overflow: hidden;
+}
+
+#manual_body div.sphinxsidebar #searchbox input[type="text"] {
+    float: left;
+    width: 80%;
+    padding: 0.25em;
+    box-sizing: border-box;
+}
+
+#manual_body div.sphinxsidebar #searchbox input[type="submit"] {
+    float: left;
+    width: 20%;
+    border-left: none;
+    padding: 0.25em;
+    box-sizing: border-box;
+}
+
+
+#manual_body img {
+    border: 0;
+    max-width: 100%;
+}
+
+/* -- search page ----------------------------------------------------------- */
+
+#manual_body ul.search {
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+#manual_body ul.search li {
+    padding: 5px 0 5px 20px;
+    background-image: url(file.png);
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+}
+
+#manual_body ul.search li a {
+    font-weight: bold;
+}
+
+#manual_body ul.search li div.context {
+    color: #888;
+    margin: 2px 0 0 30px;
+    text-align: left;
+}
+
+#manual_body ul.keywordmatches li.goodmatch a {
+    font-weight: bold;
+}
+
+/* -- index page ------------------------------------------------------------ */
+
+#manual_body table.contentstable {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#manual_body table.contentstable p.biglink {
+    line-height: 150%;
+}
+
+#manual_body a.biglink {
+    font-size: 1.0em;
+}
+
+#manual_body span.linkdescr {
+    font-style: italic;
+    padding-top: 5px;
+    font-size: 90%;
+}
+
+/* -- general index --------------------------------------------------------- */
+
+#manual_body table.indextable {
+    width: 100%;
+}
+
+#manual_body table.indextable td {
+    text-align: left;
+    vertical-align: top;
+}
+
+#manual_body table.indextable ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+#manual_body table.indextable > tbody > tr > td > ul {
+    padding-left: 0em;
+}
+
+#manual_body table.indextable tr.pcap {
+    height: 10px;
+}
+
+#manual_body table.indextable tr.cap {
+    margin-top: 10px;
+    background-color: #f2f2f2;
+}
+
+#manual_body img.toggler {
+    margin-right: 3px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+#manual_body div.modindex-jumpbox {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 1em 0 1em 0;
+    padding: 0.4em;
+}
+
+#manual_body div.genindex-jumpbox {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 1em 0 1em 0;
+    padding: 0.4em;
+}
+
+/* -- domain module index --------------------------------------------------- */
+
+table.modindextable td {
+    padding: 2px;
+    border-collapse: collapse;
+}
+
+/* -- general body styles --------------------------------------------------- */
+
+#manual_body div.body {
+}
+
+#manual_body div.body p, #manual_body div.body dd, #manual_body div.body li, #manual_body div.body blockquote {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+#manual_body a.headerlink {
+    visibility: hidden;
+}
+
+#manual_body a.brackets:before,
+span.brackets > a:before{
+    content: "[";
+}
+
+#manual_body a.brackets:after,
+span.brackets > a:after {
+    content: "]";
+}
+
+#manual_body h1:hover > a.headerlink,
+#manual_body h2:hover > a.headerlink,
+#manual_body h3:hover > a.headerlink,
+#manual_body h4:hover > a.headerlink,
+#manual_body h5:hover > a.headerlink,
+#manual_body h6:hover > a.headerlink,
+#manual_body dt:hover > a.headerlink,
+#manual_body caption:hover > a.headerlink,
+#manual_body p.caption:hover > a.headerlink,
+#manual_body div.code-block-caption:hover > a.headerlink {
+    visibility: visible;
+}
+
+#manual_body div.body p.caption {
+    text-align: inherit;
+}
+
+#manual_body div.body td {
+    text-align: left;
+	vertical-align: top;
+}
+
+#manual_body .first {
+    margin-top: 0 !important;
+}
+
+#manual_body p.rubric {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#manual_body img.align-left,#manual_body  .figure.align-left,#manual_body  object.align-left {
+    clear: left;
+    float: left;
+    margin-right: 1em;
+}
+
+#manual_body img.align-right, #manual_body .figure.align-right, #manual_body object.align-right {
+    clear: right;
+    float: right;
+    margin-left: 1em;
+}
+
+#manual_body img.align-center, #manual_body .figure.align-center, #manual_body object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#manual_body .align-left {
+    text-align: left;
+}
+
+#manual_body .align-center {
+    text-align: center;
+}
+
+#manual_body .align-right {
+    text-align: right;
+}
+
+/* -- sidebars -------------------------------------------------------------- */
+
+#manual_body div.sidebar {
+    margin: 0 0 0.5em 1em;
+    border: 1px solid #ddb;
+    padding: 7px 7px 0 7px;
+    background-color: #ffe;
+    width: 40%;
+    float: right;
+}
+
+#manual_body p.sidebar-title {
+    font-weight: bold;
+}
+
+/* -- topics ---------------------------------------------------------------- */
+
+#manual_body div.topic {
+    border: 1px solid #ccc;
+    padding: 7px 7px 0 7px;
+    margin: 10px 0 10px 0;
+}
+
+#manual_body p.topic-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* -- admonitions ----------------------------------------------------------- */
+
+#manual_body div.admonition {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+#manual_body div.admonition dt {
+    font-weight: bold;
+}
+
+#manual_body div.admonition dl {
+    margin-bottom: 0;
+}
+
+#manual_body p.admonition-title {
+    margin: 0px 10px 5px 0px;
+    font-weight: bold;
+}
+
+#manual_body div.body p.centered {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* -- tables ---------------------------------------------------------------- */
+
+#manual_body table.docutils {
+    border: 0;
+    border-collapse: collapse;
+}
+
+#manual_body table.align-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#manual_body table caption span.caption-number {
+    font-style: italic;
+}
+
+#manual_body table caption span.caption-text {
+}
+
+#manual_body table.docutils td, table.docutils th {
+    padding: 1px 8px 1px 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #aaa;
+}
+
+#manual_body table.footnote td, table.footnote th {
+    border: 0 !important;
+}
+
+#manual_body th {
+    text-align: left;
+    padding-right: 5px;
+}
+
+#manual_body table.citation {
+    border-left: solid 1px gray;
+    margin-left: 1px;
+}
+
+#manual_body table.citation td {
+    border-bottom: none;
+}
+
+#manual_body th > p:first-child,
+#manual_body td > p:first-child {
+    margin-top: 0px;
+}
+
+#manual_body th > p:last-child,
+#manual_body td > p:last-child {
+    margin-bottom: 0px;
+}
+
+/* -- figures --------------------------------------------------------------- */
+
+#manual_body div.figure {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+#manual_body div.figure p.caption {
+    padding: 0.3em;
+}
+
+#manual_body div.figure p.caption span.caption-number {
+    font-style: italic;
+}
+
+#manual_body div.figure p.caption span.caption-text {
+}
+
+/* -- field list styles ----------------------------------------------------- */
+
+#manual_body table.field-list td, #manual_body table.field-list th {
+    border: 0 !important;
+}
+
+#manual_body .field-list ul {
+    margin: 0;
+    padding-left: 1em;
+}
+
+#manual_body .field-list p {
+    margin: 0;
+}
+
+#manual_body .field-name {
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+}
+
+/* -- hlist styles ---------------------------------------------------------- */
+
+#manual_body table.hlist td {
+    vertical-align: top;
+}
+
+
+/* -- other body styles ----------------------------------------------------- */
+
+#manual_body ol.arabic {
+    list-style: decimal;
+}
+
+#manual_body ol.loweralpha {
+    list-style: lower-alpha;
+}
+
+#manual_body ol.upperalpha {
+    list-style: upper-alpha;
+}
+
+#manual_body ol.lowerroman {
+    list-style: lower-roman;
+}
+
+#manual_body ol.upperroman {
+    list-style: upper-roman;
+}
+
+#manual_body li > p:first-child {
+    margin-top: 0px;
+}
+
+#manual_body li > p:last-child {
+    margin-bottom: 0px;
+}
+
+#manual_body dl.footnote > dt,
+#manual_body dl.citation > dt {
+    float: left;
+}
+
+#manual_body dl.footnote > dd,
+#manual_body dl.citation > dd {
+    margin-bottom: 0em;
+}
+
+#manual_body dl.footnote > dd:after,
+#manual_body dl.citation > dd:after {
+    content: "";
+    clear: both;
+}
+
+#manual_body dl.field-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#manual_body dl.field-list > dt {
+    flex-basis: 20%;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+#manual_body dl.field-list > dt:after {
+    content: ":";
+}
+
+#manual_body dl.field-list > dd {
+    flex-basis: 70%;
+    padding-left: 1em;
+    margin-left: 0em;
+    margin-bottom: 0em;
+}
+
+#manual_body dl {
+    margin-bottom: 15px;
+}
+
+#manual_body dd > p:first-child {
+    margin-top: 0px;
+}
+
+#manual_body dd ul, dd table {
+    margin-bottom: 10px;
+}
+
+#manual_body dd {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+#manual_body dt:target, #manual_body span.highlighted {
+    background-color: #fbe54e;
+}
+
+#manual_body rect.highlighted {
+    fill: #fbe54e;
+}
+
+#manual_body dl.glossary dt {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#manual_body .optional {
+    font-size: 1.3em;
+}
+
+#manual_body .sig-paren {
+    font-size: larger;
+}
+
+#manual_body .versionmodified {
+    font-style: italic;
+}
+
+#manual_body .system-message {
+    background-color: #fda;
+    padding: 5px;
+    border: 3px solid red;
+}
+
+#manual_body .footnote:target  {
+    background-color: #ffa;
+}
+
+#manual_body .line-block {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#manual_body .line-block .line-block {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+
+#manual_body .guilabel,#manual_body  .menuselection {
+    font-family: sans-serif;
+}
+
+#manual_body .accelerator {
+    text-decoration: underline;
+}
+
+#manual_body .classifier {
+    font-style: oblique;
+}
+
+#manual_body .classifier:before {
+    font-style: normal;
+    margin: 0.5em;
+    content: ":";
+}
+
+#manual_body abbr, #manual_body acronym {
+    border-bottom: dotted 1px;
+    cursor: help;
+}
+
+/* -- code displays --------------------------------------------------------- */
+
+#manual_body pre {
+    overflow: auto;
+    overflow-y: hidden;  /* fixes display issues on Chrome browsers */
+}
+
+#manual_body span.pre {
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+}
+
+#manual_body td.linenos pre {
+    padding: 5px 0px;
+    border: 0;
+    background-color: transparent;
+    color: #aaa;
+}
+
+#manual_body table.highlighttable {
+    margin-left: 0.5em;
+}
+
+#manual_body table.highlighttable td {
+    padding: 0 0.5em 0 0.5em;
+}
+
+#manual_body div.code-block-caption {
+    padding: 2px 5px;
+    font-size: small;
+}
+
+#manual_body div.code-block-caption code {
+    background-color: transparent;
+}
+
+#manual_body div.code-block-caption + div > div.highlight > pre {
+    margin-top: 0;
+}
+
+#manual_body div.code-block-caption span.caption-number {
+    padding: 0.1em 0.3em;
+    font-style: italic;
+}
+
+#manual_body div.code-block-caption span.caption-text {
+}
+
+#manual_body div.literal-block-wrapper {
+    padding: 1em 1em 0;
+}
+
+#manual_body div.literal-block-wrapper div.highlight {
+    margin: 0;
+}
+
+#manual_body code.descname {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#manual_body code.descclassname {
+    background-color: transparent;
+}
+
+#manual_body code.xref, #manual_body a code {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#manual_body h1 code, #manual_body h2 code, #manual_body h3 code, #manual_body h4 code, #manual_body h5 code, #manual_body h6 code {
+    background-color: transparent;
+}
+
+#manual_body .viewcode-link {
+    float: right;
+}
+
+#manual_body .viewcode-back {
+    float: right;
+    font-family: sans-serif;
+}
+
+#manual_body div.viewcode-block:target {
+    margin: -1px -10px;
+    padding: 0 10px;
+}
+
+/* -- math display ---------------------------------------------------------- */
+
+#manual_body img.math {
+    vertical-align: middle;
+}
+
+#manual_body div.body div.math p {
+    text-align: center;
+}
+
+#manual_body span.eqno {
+    float: right;
+}
+
+#manual_body span.eqno a.headerlink {
+    position: relative;
+    left: 0px;
+    z-index: 1;
+}
+
+#manual_body div.math:hover a.headerlink {
+    visibility: visible;
+}
+
+/* -- printout stylesheet --------------------------------------------------- */
+
+@media print {
+    #manual_body div.document,
+    #manual_body div.documentwrapper,
+    #manual_body div.bodywrapper {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    #manual_body div.sphinxsidebar,
+    #manual_body div.related,
+    #manual_body div.footer,
+    #manual_body #top-link {
+        display: none;
+    }
+}

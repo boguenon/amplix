@@ -1,0 +1,10 @@
+A;B_MM;Month
+A;L_M_GROUP;메져 그룹 콤보박스
+A;L_FLT_PROPAGATION;타 항목 초기화
+A;L_RENAME_TOOL;이름 변경 도구
+A;L_SCREEN_CAPTURE;스크린 캡쳐
+A;L_F_SQL_EXISTS;SQL Exists 함수 (EXISTS)
+A;L_PARENT_CHILD_NODES;상위 계층 디멘젼 필드
+A;L_PARENT_METRIC;상위 디멘젼
+A;L_PRIOR_START_WITH;최상위 노드 값
+A;L_DISPLAY_OPTION;디스플레이 옵션

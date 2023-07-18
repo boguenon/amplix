@@ -1,20 +1,15 @@
-var ig$ = {
+﻿var ig$ = {
     useLocale: "en_US",
     servlet: "../servlet/krcp",
-    companyname: "amplix",
+    companyname: "bweb",
     appname: "amplix",
     appbg: "bg_7186.png",
     companydomain: "http://www.amplixbi.com",
     applink: "launcher/viewer.jsp?objid={objid}",
-    copy: "&copy; 2005-" + (new Date()).getFullYear() + " amplixbi.com Inc. <br />ALL RIGHTS RESERVED. <br />amplix. Confidential Information",
+    copy: "&copy; 2005-" + "202307180845".substring(0, 4) + " amplixbi.com Inc. <br />ALL RIGHTS RESERVED. <br />amplix. Confidential Information",
     intropage: "navi_intro",
     timer_rsn: 300000,
     timer_ping: 0,
-    basemap: "googlemap",
-//    appInfo: {
-//        appversion:'1.2',
-//        apprelease:'1.2.060'
-//    },
     isdev: true,
     vmode: 0,
     _fix_split: 0,
@@ -68,20 +63,17 @@ var ig$ = {
         {code: "ja_JP", disp: "Japan", l1: "ユーザーID", l2: "パスワード", l3: "ログイン"},
 		{code: "ko_KR", disp: "Korean", l1: "사용자 아이디", l2: "패스워드", l3: "로그인"}
     ],
-    sheet_toolbar: [
-        {name: "Custom1", key: "custom1", label: "Custom1", cls: "igc-btn-text", handler: function(view, key) {
-            window._btn_handler(view, key);
-        }},
-        {name: "Custom2", key: "custom2", label: "Custom2", cls: "igc-btn-text", handler: function(view, key) {
-            window._btn_handler(view, key);
-        }}
+    themes: [
+    	{code: "", disp: "Basic"},
+    	{code: "DesertLight", disp: "Desert Light"},
+    	{code: "DarkBrown", disp: "Dark Brown"}
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202003090019",
-		web_revision: "1087-4.13-14-g04efeca9"
-	}
-    // hide_report_help: true
+		date: "202307180845",
+		appversion: "",
+		apprelease: "",
+		web_revision: "3307-ver5.01-181-g93497f01"
+	},
+	$l_:0
 };
-
-// ig$.theme_id = "test1";

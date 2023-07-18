@@ -1,0 +1,5 @@
+A;L_REG_TEMPLATE;템플릿으로 등록
+A;L_C_REGTMPL;현재 리포트를 템플릿으로 등록하시겠습니까?
+A;L_T_TMPL_SEL;템플릿 선택
+A;L_AUTO_REFRESH;자동 리프레시
+A;L_REFRESH_CYCLE;리프레시 주기(초)

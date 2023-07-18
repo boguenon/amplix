@@ -1,0 +1,11 @@
+A;L_CLEAR_FORMULA;수식 삭제하기
+A;B_MORE;추가옵션
+A;F_STDEV;표준편차
+A;F_STDEVP;표준편차 P
+A;F_PERCENTILE;퍼센타일
+A;F_PERCENTILE_EXE;퍼센타일(엑셀)
+A;L_FORMULA_GROUP;수식 그룹
+A;L_EXPRESSION;수식
+A;L_USE_COL_FORMAT;컬럼 포맷 사용
+A;L_DISP_TEMPLATE;셀 표시 템플릿
+A;L_C_EXCEL_CSV;엑셀 다운로드를 위한 건수를 초과합니다. CSV 파일로 다운로드 받으시겠습니까?

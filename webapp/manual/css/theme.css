@@ -1,0 +1,213 @@
+@import url("default.css");
+
+#manual_body {
+    background-color: white;
+}
+
+#manual_body p {
+	font-size: 13px;
+}
+
+#manual_body div.related {
+    margin-bottom: 1.2em;
+    padding: 0.5em 0;
+    border-top: 1px solid #ccc;
+    margin-top: 0.5em;
+}
+
+#manual_body div.related a:hover {
+    color: #0095C4;
+}
+
+#manual_body div.related:first-child {
+    border-top: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#manual_body .inline-search {
+    display: inline;
+}
+#manual_body form.inline-search input {
+    display: inline;
+}
+#manual_body form.inline-search input[type="submit"] {
+    width: 30px;
+}
+
+#manual_body div.sphinxsidebar {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    line-height: 130%;
+    font-size: smaller;
+    margin-bottom: 20px;
+}
+
+#manual_body div.sphinxsidebar h3, #manual_body div.sphinxsidebar h4 {
+    margin-top: 1.5em;
+}
+
+#manual_body div.sphinxsidebarwrapper > h3:first-child {
+    margin-top: 0.2em;
+}
+
+#manual_body div.sphinxsidebarwrapper > ul > li > ul > li {
+    margin-bottom: 0.4em;
+}
+
+#manual_body div.sphinxsidebar a:hover {
+    color: #0095C4;
+}
+
+#manual_body form.inline-search input,
+#manual_body div.sphinxsidebar input {
+    font-family: 'Lucida Grande',Arial,sans-serif;
+    border: 1px solid #999999;
+    font-size: smaller;
+    border-radius: 3px;
+}
+
+#manual_body div.sphinxsidebar input[type=text] {
+    max-width: 150px;
+}
+
+#manual_body div.body {
+    padding: 0 0 0 1.2em;
+}
+
+#manual_body div.body p {
+    line-height: 140%;
+}
+
+#manual_body div.body h1, #manual_body div.body h2, #manual_body div.body h3, #manual_body div.body h4, #manual_body div.body h5, #manual_body div.body h6 {
+    margin: 0;
+    border: 0;
+    padding: 0.3em 0;
+}
+
+#manual_body div.body hr {
+    border: 0;
+    background-color: #ccc;
+    height: 1px;
+}
+
+#manual_body div.body pre {
+    border-radius: 3px;
+    border: 1px solid #ac9;
+}
+
+#manual_body div.body #manual_body div.admonition, #manual_body div.body div.impl-detail {
+    border-radius: 3px;
+}
+
+#manual_body div.body div.impl-detail > p {
+    margin: 0;
+}
+
+#manual_body div.body div.seealso {
+    border: 1px solid #dddd66;
+}
+
+#manual_body div.body a {
+    color: #0072aa;
+}
+
+#manual_body div.body a:visited {
+    color: #6363bb;
+}
+
+#manual_body div.body a:hover {
+    color: #00B0E4;
+}
+
+#manual_body tt, #manual_body code, #manual_body pre {
+    font-family: monospace, sans-serif;
+    font-size: 96.5%;
+}
+
+#manual_body div.body tt, #manual_body div.body code {
+    border-radius: 3px;
+}
+
+#manual_body div.body tt.descname, #manual_body div.body code.descname {
+    font-size: 120%;
+}
+
+#manual_body div.body tt.xref, #manual_body div.body a tt, #manual_body div.body code.xref,#manual_body  div.body a code {
+    font-weight: normal;
+}
+
+#manual_body .deprecated {
+    border-radius: 3px;
+}
+
+#manual_body table.docutils {
+    border: 1px solid #ddd;
+    min-width: 20%;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#manual_body table.docutils td, #manual_body table.docutils th {
+    border: 1px solid #ddd !important;
+    border-radius: 3px;
+}
+
+#manual_body table p,#manual_body  table li {
+    text-align: left !important;
+}
+
+#manual_body table.docutils th {
+    background-color: #eee;
+    padding: 0.3em 0.5em;
+}
+
+#manual_body table.docutils td {
+    background-color: white;
+    padding: 0.3em 0.5em;
+}
+
+#manual_body table.footnote, #manual_body table.footnote td {
+    border: 0 !important;
+}
+
+#manual_body div.footer {
+    line-height: 150%;
+    margin-top: -2em;
+    text-align: right;
+    width: auto;
+    margin-right: 10px;
+}
+
+#manual_body div.footer a:hover {
+    color: #0095C4;
+}
+
+#manual_body .refcount {
+    color: #060;
+}
+
+#manual_body .stableabi {
+    color: #229;
+}
+
+#manual_body .highlight {
+    background: none !important;
+}
+
+#main_slider a {
+	text-decoration: none;
+	font-style: normal;
+}
+
+#main_slider .current {
+	font-weight: 800 !important;
+}
+
+#main_slider h3 {
+	font-size: 16px;
+}
+
+#main_slider ul li a {
+	font-size: 12px;
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="/opt/amplix/webapp" cachingAllowed="true" reloadable="false">
+    <Parameter name="APP_HOME" value="/opt/amplix" override="true"/>
+</Context>

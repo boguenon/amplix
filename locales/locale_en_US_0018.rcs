@@ -1,0 +1,42 @@
+A;L_RSCRIPT;R Script
+A;L_R_PROMPT;R Prompt
+A;B_REQUEST;Request
+A;L_POSITION;Position
+A;B_OUTSIDE;Outside
+A;B_OPERATION;Operation
+A;L_CHART_SEP;Chart Separator
+A;L_C_TIP_EN;Enable Tooltip
+A;L_ROT_ANGLE;Rotation Angle
+A;L_CSTEP_5;Axis
+A;L_XAXIS_SETTINGS;X Axis Settings
+A;B_UPD;Update
+A;F_P_POT_COL;Percent of parent
+A;L_HIDE_PROGRESS;Hide Progressbar
+A;L_DEFAULT_VALUE;Default Value
+A;L_ACTION_NAME;Action Name
+A;L_WC_OPT;Word Cloud Options
+A;L_WC_MIN;Min font size
+A;L_WC_MAX;Max font size
+A;L_FILTER_VALUESET;Value Set
+A;L_GROUP_CATEG;Grouped Category
+A;M_CONFIRM_SHARE_URL;Click Yes to confirm creating shared url for this report.
+
+A;L_META_UPGRADE;Meta Upgrade
+A;T_MIG_META_UPGRADE;Meta Version Upgrade
+A;L_SCI;Data Scientist
+A;L_SCI_MANAGER;Data Scientist Server
+A;L_SCI_DATA;Data Publish
+A;L_SCI_USER;Data Scientist Module
+A;L_SCI_SERVERS;Analysis Servers
+A;L_SCI_DATASET;My DataSet Loader
+A;I_SCI_DATASET;Sync DataSet
+A;I_SCI_PUB_DATASET;Published DataSet
+
+A;L_TRASHBIN;Trashbin
+A;L_PCT_PREC;Percent Precision
+A;L_RNK_D_NAME;Column name to SUM
+
+A;L_R_INT;R statistics Integration
+A;L_R_SVR;R serve host
+A;L_R_SVR_PORT;R server port
+A;L_R_TEMP;Temp folder

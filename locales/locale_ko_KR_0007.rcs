@@ -1,0 +1,19 @@
+A;L_SQL_REPORT;SQL 리포트
+A;D_SQLREPORT;SQL 리포트
+A;L_CON_STR;연결 파라미터
+A;T_BURST_CONFIG;이메일 버스트 옵션
+A;L_TB_PIVOT;피벗 버튼
+A;L_BURST_EMAIL;이메일 필드
+A;L_SUB_QUERY;서브 SQL 쿼리
+A;L_SHOW_DETAIL;상세정보보기
+A;B_DETAIL;상세
+A;L_FLT_COND;필터 조건...
+A;L_KEYWORD;검색어
+A;L_QUICK_SELECT;----- 빠른 선택 도움 -----
+A;L_ANAL_ITEMS;분석 디멘젼/메져 항목
+A;B_ALL;전체
+A;L_FLT_DATE_PERIOD;날짜 범위 지정
+A;L_MINIMIZE;이전화면으로 복원
+A;L_MAXIMIZE;창 크게보기 
+A;B_NO_PIVOT;피벗항목을 설정해 주세요.
+A;B_PIVOT_CONFIG;피벗 설정 바로가기

@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="icon" href="../favicon.png" type="image/png">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>amplix 인스톨 마법사</title>
+<link rel="stylesheet" type="text/css" href="./css/igcf.min.css?_dc=202307180845" />
+<script type="text/javascript" src="../launcher/js/jquery-3.6.4.min.js?_dc=202307180845"></script>
+<script type="text/javascript" src="./js/igcf.min.js?_dc=202307180845"></script>
+<script type="text/javascript">
+var useLocale = "ko_KR";
+</script>
+</head>
+<body scroll="no">
+<div id="main-area" class="main-scroller">
+	<div class="body-wrap">
+		<div class="content-top-area-wrap">
+			<div class="content-top-area">
+				<div class="title">
+					<img src="./images/common_top_title.png" alt="title">
+					<span>Amplix BI 인스톨 마법사</span>
+				</div>
+			</div>
+		</div>
+		<div class="content-middle-area">
+			<div class="content-wrap">
+				<h3>Amplix BI 인스톨 마법사에 오신것을 환영합니다.</h3>
+				<p>
+					보안상의 이유로 인스톨은 신규 설치 서버에만 적용되게 되어 있습니다. 재설치를 위해서는 패키지 파일을 다시 다운로드 받아 초기상태에서 진행해 주십시오.
+				</p>
+				<p>
+	           		인스톨 마법사를 통해 설정과 설치에 대한 단계를 안내하고 있습니다. 
+	           		단계를 따라 진행해 주십시오.
+	            </p>
+	            <p>
+	            	AmplixBi 를 이용해 주셔서 감사합니다.
+	            </p>
+	            <p>
+	            	성공적인 설치를 위해 다음 필수사항 및 단계를 읽고 진행해 주십시오.
+	            </p>
+			</div>
+			
+			<div id="dpage_01">
+				<div class="menu-area">
+					<div class="menu selected" id="tab_01"><a>패키지 인스톨</a></div>
+				</div>
+				<div class="menu-content-wrap">
+					<div id="tab_content_01" class="menu-content">
+						<div class="title">
+							<span>패키지 인스톨</span>
+						</div>
+						<div class="content">
+							<div class="install-text install-text-fw">
+			                    <h4>1. 필수 소프트웨어 설치</h4>
+			                    <p>
+			                    	다음 필수 소프트웨어 설치 없인느 설치를 진행할 수 없습니다.<br />
+			                    	성공적인 설치를 위해 다음 소프트웨어가 설치되어 있는지 점검하고 다시 시도해 주십시오.
+			                    	<ul>
+			                    		<li>Java SDK(1.8.0 또는 이후버전).</li>
+			                    		<li>MYSQL 데이터베이스</li>
+			                    		<li>
+			                    			<span class="install-title">패키지 파일 압축 풀기.</span><br/>
+			                    			AMPLIX 패키지 파일을 특정 폴더에 압축을 해제합니다.<br/>
+			                    			<br/>
+			                    			<code>
+			                    				unzip amplixbi.zip
+			                    			</code>
+			                    			<br/>
+			                    			<br/>
+			                    			압축 해제한 패키지 파일을 어플리케이션 설치 폴더에 이동합니다. /opt 폴더에 설치하는 경우 다음과 같습니다.
+			                    			<br/>
+			                    			<code>
+			                    				mv amplixbi /opt/
+			                    			</code>
+			                    		</li>
+			                    	</ul>
+			                    </p>
+								<h4>2. 메타 데이터베이스 준비하기</h4>
+								<p>
+									<ul>
+										<li>
+											<span class="install-title">MySQL 데이터베이스를 설치하고 시작해 주십시오.</span>
+										</li>
+										<li>
+											<span class="install-title">root 사용자로 데이터베이스 관리툴에 로그인하여 다음 명령을 실행해 주십시오.</span><br>
+											<br>
+											<code>mysql -uroot -p</code><br><br>
+										</li>
+										<li>
+											<span class="install-title">데이터베이스 명령 셀에서 다음 명령을 실행하여 빈 데이터베이스를 생성해 주십시오.</span><br>
+											<br>
+											<code>CREATE DATABASE amplix_meta;</code><br>
+											<code>CREATE USER 'amplix'@'localhost' IDENTIFIED BY 'password';</code>
+										</li>
+										<li>
+											<span class="install-title">데이터베이스 접속 권한을 부여해 주십시오.</span><br>
+											<br />
+											<code>GRANT ALL PRIVILEGES ON amplix_meta.* TO 'amplix'@'localhost';</code><br/>
+											<code>FLUSH PRIVILEGES;</code>
+										</li>
+										<li>
+											<span class="install-title">샘플 데이터베이스와 사용자를 생성해 주십시오.</span><br/>
+											<br/>
+											<code>CREATE DATABASE foodmeart;</code><br/>
+											<code>CREATE USER 'foodmart'@'localhost' IDENTIFIED BY 'password';</code><br/>
+											<br/>
+											<span class="install-title">샘플 데이터베이스 사용자 및 데이터베이스 접근 권한을 부여해 주십시오.</span><br/>
+											<br/>
+											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'amplix'@'localhost';</code><br/>
+											<code>GRANT ALL PRIVILEGES ON foodmart.* TO 'foodmart'@'localhost';</code><br/>
+											<code>FLUSH PRIVILEGES;</code>
+										</li>
+									</ul>
+								</p>
+								<h4>3. 어플리케이션 시작.</h4>
+								<p>
+									<ul>
+										<li>
+											<span class="install-title">쉘 커맨드 창을 열고 다음 명령을 실행해 주십시오.</span><br/>
+											<br/>
+											<code>./bin/RUN_startup.sh</code><br/>
+										</li>
+										<li>
+											<span class="install-title">인스톨 마법사를 서버 접속 가능한 브라우져에서 다음 URL 을 통해 접속하고 설치 단계를 따라서 진행하십시오.</span><br/>
+											<br/>
+											<code>http://localhost:8080/amplix/install/kr</code>
+										</li>
+									</ul>
+								</p>
+								<h4>4. 어플리케이션 중지.</h4>
+								<p>
+									<ul>
+										<li>
+											<span class="install-title">어플리케이션을 중지하려면 다음 명령을 쉘 커맨드 창에서 실행해 주십시오.</span><br/>
+											<br/>
+											<code>./bin/RUN_shutdown.sh</code><br/>
+										</li>
+									</ul>
+								</p>
+			                </div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="d_error_01" class="error" style="display:none;">
+					<div class="error-desc"></div>
+				</div>
+				
+				<div id="btn_start_01" class="button-area">
+					<div id="btn_start_form" class="button">
+						<a>설정 시작하기</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="dpage_02" style="display:none;">
+				<div class="menu-area">
+					<div class="menu selected"><a>설정</a></div>
+				</div>
+				<div class="menu-content-wrap">
+					<div class="menu-content">
+						<div class="title">
+							서버 버전
+						</div>
+						<div class="content">
+							<table class="tb_form">
+								<tr>
+									<td colspan="2">
+										<span>인스톨 폴더는 <code id="app_home"></code> 에 설치됩니다.</span> <br />
+										<span>인스톨 패키지의 버전은 <code id="s_version">3.7</code> 입니다.</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="title">
+							데이터베이스 설정
+						</div>
+						<div class="content">
+							<table id="form_db" class="tb_form">
+								<col width="200px"></col>
+								<col width="*"></col>
+								<col width="*"></col>
+		               			<tr>
+		               				<td class="fieldname">메타 데이터베이스를 선택해 주십시오.</td>
+		               				<td colspan="2">
+		               					<select id="db_type">
+		               					</select>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">호스트 이름</td>
+		               				<td>
+		               					<input id="db_host" type="text"></input>
+		               				</td>
+		               				<td><span id="msg_db_host" class="ex_msg"></span></td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">포트 번호</td>
+		               				<td>
+		               					<input id="db_port" type="text"></input>
+		               				</td>
+		               				<td><span id="msg_db_port" class="ex_msg"></span></td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">데이터베이스 명</td>
+		               				<td>
+		               					<input id="db_name" type="text"></input>
+		               				</td>
+		               				<td><span id="msg_db_name" class="ex_msg">예) amplix_meta</span></td>
+		               			</tr>
+		               			<tr>
+		               				<td></td>
+		               				<td colspan="2">
+		               					<div class="button-area tb-button">
+			               					<button id="btn_check_dburl" class="button grey">
+												JDBC 정보 자동 생성하기
+											</button>
+										</div>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">JDBC 드라이버</td>
+		               				<td>
+		               					<input id="db_jdbc_driver" type="text"></input>
+		               				</td>
+		               				<td>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">JDBC URL</td>
+		               				<td colspan="2">
+		               					<textarea id="db_jdbc_url"></textarea>
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">검증 SQL 쿼리</td>
+		               				<td>
+		               					<textarea id="db_validatesql"></textarea>
+		               				</td>
+		               				<td>
+		               					
+		               				</td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">데이터베이스 사용자 명</td>
+		               				<td>
+		               					<input id="db_user" type="text"></input>
+		               				</td>
+		               				<td><span id="msg_db_user" class="ex_msg">Ex) amplix</span></td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">데이터베이스 사용자 패스워드</td>
+		               				<td colspan="2">
+		               					<input id="db_passwd" type="password"></input>
+		               				</td>
+		               			</tr>
+								<tr>
+									<td colspan="1"></td>
+									<td>
+										<div class="button-area tb-button">
+											<button id="btn_check_con" class="button grey">
+												접속 체크
+											</button>
+										</div>
+									</td>
+									<td><span id="db_con_status"></span></td>
+								</tr>
+		               		</table>
+						</div>
+						
+						<div class="title">
+							Admin 사용자
+						</div>
+						<div class="content">
+							<table class="tb_form">
+								<col width="200px"></col>
+								<col width="*"></col>
+								<tr>
+		               				<td class="fieldname">Admin 사용자 아이디</td>
+		               				<td><input id="s2adminname" type="text" placeholder="admin"></input></td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">Admin 사용자 패스워드</td>
+		               				<td><input id="s2adminpwd" type="password" placeholder="Password"></input></td>
+		               			</tr>
+		               			<tr>
+		               				<td class="fieldname">&nbsp;</td>
+		               				<td><input id="s2adminpwd_confirm" type="password" placeholder="Password confirm"></input></td>
+		               			</tr>
+		               		</table>
+						</div>
+						
+						<div class="title">
+							추가 모듈
+						</div>
+						<div class="content">
+							<table id="sel_modules" class="tb_form">
+							</table>
+						</div>
+						<div class="content">
+							<table class="tb_form">
+								<col width="200px"></col>
+								<col width="*"></col>
+								<col width="*"></col>
+								<tr>
+									<td class="fieldname">
+										모듈 데이터베이스 명
+									</td>
+									<td><input type="text" id="md_owner"></input></td>
+									<td><span id="msg_md_owner" class="ex_msg"></span></td>
+								</tr>
+								<tr>
+									<td class="fieldname">
+										모듈 데이터베이스 사용자명
+									</td>
+									<td><input type="text" id="md_user"></input></td>
+									<td><span id="msg_md_user" class="ex_msg"></span></td>
+								</tr>
+								<tr>
+									<td class="fieldname">
+										모듈 데이터베이스 패스워드
+									</td>
+									<td colspan="2"><input type="password" id="md_password"></input></td>
+								</tr>
+								<tr>
+									<td colspan="1"></td>
+									<td colspan="2">
+										<div class="button-area tb-button">
+											<button id="btn_check_con2" class="button grey">
+												접속 체크
+											</button>
+										</div>
+									</td>
+									<td><span id="db_con_status2"></span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div id="d_error_02" class="error" style="display:none;">
+					<div class="error-desc"></div>
+				</div>
+				<div class="button-area">
+					<div id="btn_back_inst" class="button grey">
+						<a>이전화면 돌아가기</a>
+					</div>
+					<div id="btn_start_install" class="button">
+						<a>인스톨 시작</a>
+					</div>
+				</div>
+			</div>
+			
+			<div id="dpage_03" style="display:none;">
+				<div class="menu-area">
+					<div class="menu selected"><a>설치</a></div>
+				</div>
+				<div class="menu-content-wrap">
+					<div class="menu-content">
+						<div class="title">
+							인스톨 과정이 완료되었습니다!
+						</div>
+						<div class="content">
+							<table class="final-table">
+								<tr>
+									<td class="warning" align="center">
+										보안을 위해 install 폴더를 반듯이 삭제해 주십시오. <br/>
+										<br/>
+										PLEASE REMEMBER TO COMPLETELY<br/>
+										REMOVE THE INSTALLATION DIRECTORY.
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="title">
+						                	관리자 로그인 상세
+						                </div>
+						                <div class="content">
+						                	관리자 아이디 : admin
+						               	</div>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="title">
+						                	중요한 설치 체크 포인트는 다음과 같습니다.
+						                </div>
+						                <div class="content">
+						                	<div class="install-text install-text-fw">
+							                    <p>
+							                    	<ul>
+							                    		<li>
+							                    			<span class="install-title">서버 접속을 위한 자바스크립트 설정.</span><br/>
+							                    			설치후 404 오류 발생시 다음 파일을 편집기에서 열어서 수정해 주십시오.
+							                    			<code>amplixbi/webapp/config.js</code><br/>
+							                    			<br/>
+							                    			<code>
+							                    				var ig$ = { <br/>
+																&nbsp;&nbsp;&nbsp;&nbsp;useLocale: "en_US",<br/>
+																&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#ff0000">servlet: "../servlet/krcp",</b><br/>
+																&nbsp;&nbsp;&nbsp;&nbsp;...<br/>
+							                    			</code>
+							                    		</li>
+							                    	</ul>
+							                    </p>
+							                </div>
+							            </div>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="center" class="notice">
+										<div id="cpanel">
+											<div>
+												<div class="icon">
+													<br />
+													<b style="font-size: 18px;">감사합니다.</b>
+													<br />
+													보다 자세한 정보 및 지원을 위해서 웹사이트 <a href="https://amplibi.com">https://amplixbi.com</a> 를 방문해 주십시오!<br/>
+													<br />
+													
+													<br /><br />
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="button-area">
+					<div id="btn_start" class="button">
+						<a>AMPLIX 시작하기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-bottom">
+			<a href="http://www.amplixbi.com" target="_blank">amplixbi.com</a> All right reserved.
+		</div>
+	</div>
+</div>
+<div id="loading" class="progress">
+	<div class="progress-bg">
+	</div>
+	<div class="progress-msg">
+		<span>서버에 요청을 진행중입니다! <br/>잠시만 기다려 주십시오!</span>
+		<div id="progressbar" class="progressbar">
+			<div id="progress_gauge" class="progress_gauge"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

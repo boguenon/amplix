@@ -6,6 +6,17 @@
 	},
 	"modules": [
 		{
+			"name": "demo users",
+			"desc": "basic application users",
+			"steps": [
+				{
+					"type": "sql",
+					"name": "demo_users.msql",
+					"targetdb": "meta"
+				}
+			]
+		},
+		{
 			"name": "sample_northwind",
 			"desc": "Northwind sample database",
 			"steps": [
@@ -96,12 +107,30 @@
 					"name": "sixsigma.bku"
 				}
 			]
+		},
+		{
+			"name": "sample_fb",
+			"desc": "Formbuilder Examples",
+			"steps": [
+				{
+					"type": "sql",
+					"name": "formbuilder.msql"
+				},
+				{
+					"type": "meta",
+					"name": "retirement_planning.bku"
+				}
+			]
 		}
 	],
 	"meta_data": [
 		{
 			"type": "sql",
 			"name": "meta_sch.msql"
+		},
+		{
+			"type": "sql",
+			"name": "meta_key.msql"
 		},
 		{
 			"type": "sql",

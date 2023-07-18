@@ -1,0 +1,223 @@
+A;L_PIE_DASHBOARD;파이 및 데시보드 위젯
+A;L_SCATTER_POINT;스캐터 및 포인트 차트
+A;L_STOCK_LOW_HIGH;주식형 고저점 분석
+A;L_TREEMAP;트리맵
+A;L_RELATION_FINDING;상관관계 찾기 
+A;L_SCI_ANAL;과학적 분석 시각화
+A;L_STAT_VIS;통계적 데이터 시각화
+A;L_MAP_GEO;맵 및 지도
+A;L_QUALITY_CTRL;6시그마 품질 도표
+
+A;L_CH_COLUMN;컬럼
+A;L_CH_LINE;라인
+A;L_CH_SPLINE;스플라인
+A;L_CH_AREA;에어리어
+A;L_CH_SPLINE_AREA;스플라인 에어리어
+A;L_CH_BAR;바차트
+A;L_CH_PIE;파이차트
+A;L_CH_DOUGHNUT;도넛차트
+A;L_CH_BUBBLE;버블차트
+A;L_CH_SCATTER;스캐터 차트
+A;L_CH_TREEMAP;트리맵 차트
+A;L_CH_WATERFALL;폭포수 차트
+A;L_CH_SYNC_CHART;동기화된 차트
+A;L_CH_RADAR;레이다
+A;L_CH_FUNNEL;깔때기 차트
+A;L_CH_PYRAMID;피라미드 차트
+A;L_CH_MAP;지도
+A;L_CH_COMP_MATRIX;매트릭스 비교차트
+A;L_CH_PARA_COORD;패러렐 추적차트
+A;L_CH_MEAN_DEV;평균 & 표준편차
+A;L_CH_BOXPLOT;박스 플롯
+A;L_CH_NET_DIAG_POS;네트워크 다이어그램(+)
+A;L_CH_NET_DIAG_NEG;네트워크 다이어그램(-)
+A;L_CH_MATRIX_DIAGRAM;매트릭스 다이어그램
+A;L_CH_FORCE_DIRECT;힘 편향 레이아웃
+A;L_CH_CLUSTER;클러스터 차트
+A;L_CH_CHORD;Chord 차트
+A;L_CH_SUNBURST;썬 버스트 차트
+A;L_CH_BUBBLE_MAP;버블 맵 차트
+A;L_CH_FIXED_PLACE;고정 비교 차트
+
+A;L_BTM_LEFT;아래쪽 왼편
+A;L_BTM_CENTER;아래쪽 중간
+A;L_BTM_RIGHT;아래쪽 오른편
+A;L_TOP_LEFT;상단 왼편
+A;L_TOP_CENTER;상단 중간
+A;L_TOP_RIGHT;상단 오른편
+A;L_RIGHT_TOP;오른편 상단
+A;L_RIGHT_CENTER;오른편 중간
+A;L_RIGHT_BTM;오른편 아래
+A;L_LEFT_TOP;왼편 상단
+A;L_LEFT_CENTER;왼편 중간
+A;L_LEFT_BTM;왼편 아래
+
+A;L_CH_PERCENT_GAUGE;퍼센트 게이지
+A;L_CH_WINLOSE;WinLose 차트
+
+A;L_COL_SYNC;컬럼 동기화
+A;L_UNDO;취소하기
+A;L_ALIAS;별명
+
+A;D_CLIPBOARD;클립보드에 복사하려면 아래 내용을 클릭한 후 Ctrl-A, Ctrl-C 키를 눌러주십시오.
+
+A;M_PIVOT_CHANGED;변경사항을 반영하려면 툴바의 실행 버튼을 클릭해 주십시오.
+A;B_CENTER;가운데
+
+A;L_BOX_COUNTS;박스 개수
+A;L_LAYOUT_MODE;레이아웃 모드
+A;L_REMOVE_CHECKED;체크 항목 삭제
+A;B_SYNTAX;문법
+A;L_TEMPLATE_TYPE;템플릿 유형
+
+A;L_MIN_COLOR;최소값 색상
+A;L_MID_COLOR;중간값 색상
+A;L_MAX_COLOR;최대값 색상
+A;L_COLOR_CATEG;색상 카테고리
+A;L_MARKER_SIZE;마커 크기
+A;L_MARKER_SYMBOL;마커 심볼
+
+A;M_ERR_CHART_SEL;차트 유형을 선택해 주셔야 합니다. 차트 마법사에서 옵션을 선택해 주십시오.
+
+A;L_MERGE_COL;컬럼 병합하기
+A;L_ROW_LOCATION;행 위치
+A;L_PROMPT_VALUES;프롬프트 값
+
+A;M_PASS_MISMATCH;패스워드 확인값이 일치하지 않습니다.
+A;M_COMP_SUCCESS;성공적으로 컴파일 하였습니다.
+A;L_COMP_CAPTURE;캡쳐가 성공하였습니다.
+A;M_VALUESET_EXIST;값집합이 이미 선택에 포함되어 있습니다.
+A;M_CONFIRM_CLOSE;편집하고 있는 항목을 닫은 다음 계속해 주십시오.
+A;M_SEL_SINGLE;계속하시려면 1개 항목을 선택해 주십시오.
+A;M_TARGET_NOTFOUND;대상항목이 존재하지 않습니다.
+A;M_NOTFOUND_IN_DIM;항목이 디멘젼 목록에 존재하지 않습니다.
+A;M_PROC_WAIT;아직 진행중입니다. 잠시 기다려 주십시오.
+
+A;L_SHEET_TOOLBAR;시트 툴바
+A;L_SHEET_SCRIPTS;시트 스크립트
+A;L_CUST_LEGEND;커스텀 범례
+A;L_SYS_LOG;시스템 로그
+
+A;M_SELECT_FOLDER;계속 하시려면 폴더 항목을 선택해 주십시오.
+A;L_BOBJ;비즈니스 오브젝트
+A;M_UP_FILE_FRST;파일을 먼저 업로드 후 진행해 주십시오.
+
+A;L_DASHBOARD_OPTION;데시보드 옵션
+A;L_CUST_INFO;인포윈도우 템플릿
+
+A;L_GEOFIELD;맵 필드
+
+A;L_IS_PARAM;파라미터 여부
+A;L_USE_VALUE_AS_PARAM;변수로 사용(WHERE 문구메 미포함)
+
+A;L_PWD_F_CHAR;문자로 시작해야 합니다!
+A;L_PWD_F_NUM;최소 한개 이상의 숫자를 사용해 주십시오!
+A;L_PWD_F_LOW_CHAR;최소 한개 이상의 소문자를 사용해 주십시오!
+A;L_PWD_F_UPP_CHAR;최소 한개 이상의 대문자를 사용해 주십시오!
+A;L_PWD_F_SPEC_CHAR;최소 한개 이상의 @ 특수문자를 사용해 주십시오!
+A;L_PWD_F_WHT_SPACE;스페이스는 허용되지 않습니다!
+A;L_PWD_F_LEN;최소 @ 자 이상을 사용해 주십시오!
+
+A;L_BLANK_USERID;사용자 아이디는 필수 항목입니다!
+A;L_BLANK_PASSWORD;패스워드를 입력 후 다시 시도해 주십시오!
+
+A;L_MAP_POST_EXEC;실행 스크립트
+A;L_MAP_SAVE_POS;최종 상태 저장
+
+A;L_RELEASE_LOCK;사용자 로그인 락을 해제하려면 예를 클릭해 주십시오.
+A;L_SS_LOCKED;로그인 잠김
+A;L_USR_AUD_TITLE;세션 활동내역 @
+
+A;L_SK_RPT;폴더로 이동하기
+A;L_CATEGORY;카테고리
+
+A;L_CHECK_EMAIL;이메일 체크
+A;L_RCPTS;수신자 이메일 목록
+A;M_SMTP_TST;와우! 이메일이 설정 정보로 발송하였습니다. 수신자 이메일을 통해 수신 여부를 확인해 주십시오.
+
+A;T_USERS;사용자
+A;D_BOBJECT;비즈니스 오브젝트
+A;L_RECENT_SUBJECT;최근 항목들
+A;L_SEARCH_RESULT;검색 결과
+
+A;B_SUC;성공
+A;B_FAIL;실패
+
+A;S_READ;읽기
+A;S_UPDATE;업데이트
+A;S_LOGOUT;로그아웃
+A;S_DELETE;삭제
+A;S_WRITE;쓰기
+A;S_SECURITY;보안작업
+A;S_NA;기타사항
+
+A;L_TWOWAY_AUTH;2차 인증 사용
+A;L_H2_PERSIST_ENABLED;H2 데이터 메싱DB
+A;L_ARC_VIEW;ArcGIS 뷰
+A;L_MAP_CAMERA;맵 카메라
+
+A;L_DEL_FLT;필터 제거
+A;L_FLT_MG_LEFT;타이틀 왼편으로 붙이기
+A;L_FLT_ST_ROW;다음줄로 내리기
+
+A;L_PKG_LST;자바 패키지
+A;L_DETAILED_STAT;상세 현황
+A;L_EDIT_JOB;작업 편집하기
+A;L_CANCEL_JOB;작업 취소하기
+A;L_PURGE_JOB;작업 영구삭제
+A;L_PICKUP_DATE;픽업 일시
+A;L_STARTED_DATE;시작 일시
+A;L_EXEC_LOG;실행 로그
+A;L_MIN_A_COLOR;2단계 색상
+A;L_MID_A_COLOR;4단계 색상
+
+A;L_PANEL_CSS;패널 CSS
+
+A;L_FLOAT_PANEL;플로트 패널
+A;L_FLOAT_OPTION;플로트 패널 옵션
+
+A;L_RESIZABLE;패널 크기변경
+A;L_MOVEABLE;패널 위치이동
+A;L_MAP_POPUP_HOVER;마우스 오버 팝업창
+
+A;L_HIDE_MAX;최대창 숨기기
+A;L_COLLAPSE;접기 사용
+A;L_CLP_START;접은 상태로 열기
+A;L_CLP_CSS;접은 상태 아이콘 CSS
+A;L_HTML;HTML코드
+A;L_JSCRIPT;자바스크립트
+A;L_TB_CHART;시트 차트마법사 도구
+
+A;L_ENABLE_DISABLE;사용여부 설정
+A;L_INC_USERS;사용자 포함
+A;L_INC_DEPTS;그룹 포함
+A;L_INC_ROLES;권한 포함
+
+A;L_WIDGET_OPTION;위젯 옵션
+A;L_LOADING;로딩중입니다... 잠시만 기다려 주십시오.
+A;E_SHEET_EXP;조회된 결과가 없어 시트를 출력할 수 없습니다. 리포트 실행 후 다시 시도해 주십시오.
+
+A;B_ROW;행
+A;B_COL;열
+
+A;L_C_TXT;텍스트 입력
+A;L_C_SINGLE_SEL;콤보박스 한개값 선택
+A;L_C_MULTI_SEL;콤보박스 복수개 선택
+A;L_C_RADIO;라디오 버튼
+A;L_C_CHECK;체크 버튼
+A;L_C_SLIDER;슬라이더 바
+A;L_C_CALENDAR;달력 컨트롤
+A;L_C_PERIOD;기간 달력 선택
+A;L_C_FILEUPLOAD;파일 업로드
+
+A;L_F_NOTEQ;같지 않다 (!=)
+
+A;L_ON_X_AXIS;X축에 위치
+A;L_DT_MASHING;매싱
+A;L_DEPLOY;디플로이
+A;L_DEPLOY_TARGET;대상 디플로이
+A;B_NORMAL;일반
+A;B_SQL;SQL쿼리
+A;L_OUTER_RADIUS;바깥쪽 지름
+
+A;L_MAX_POOL_WAIT_MILLS;최대시 대기시간(밀리초)

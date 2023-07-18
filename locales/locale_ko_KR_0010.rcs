@@ -1,0 +1,15 @@
+A;L_SELECT_FIELD;필트를 선택하신 후 계속 진행해 주십시오!
+A;L_AU_APPLY_APPEND;추가하기
+A;B_READ;보기
+A;B_WRITE;쓰기
+A;E_PERMISSION;항목을 사용할 권한이 없습니다.
+A;B_ADVANCED;고급 옵션
+A;D_DATASET;데이터셋
+A;L_TABLE_NAME;테이블 명
+A;L_FIELD_NAME;필드 명
+A;B_REFRESH;새로고침
+A;B_ITEMNAME;아이템명
+A;B_PATH;경로
+A;T_SEL_DB;데이터베이스 커넥터 선택
+A;L_REVOKE_READ;읽기 제거
+A;L_REVOKE_WRITE;쓰기 제거

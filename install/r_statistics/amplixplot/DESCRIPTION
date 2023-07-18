@@ -1,0 +1,9 @@
+Package: amplixplot
+Version: 0.5-0
+Title: R graphics device for amplix visualization.
+Author: Anne Jie <anne.jie@amplixbi.com>
+Maintainer: Anne Jie <anne.jie@amplixbi.com>
+Depends: R (>= 2.8.1)
+Description: amplixbi implements the HTML5 canvas.
+License: GPL version 2
+URL: http://www.rforge.net/amplixplot/

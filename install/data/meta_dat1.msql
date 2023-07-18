@@ -4,19 +4,15 @@ INSERT INTO igcmts (mtu, mtname, mdate, pstatus, a1, a2) VALUES ('0122483f-0155f
 INSERT INTO igcdepts (mts, gid, dname, active, mdate, pid, node, mid, description, dtype, privilege, lacc, cacc, dept_id) VALUES ('0122483f-0155fb46','0122483f-0155fb46','AdminGroup',1,1260464461000,'0125a045-017ae681','NODE@0125A045-017AE681@0122483F-0155FB46',NULL,'lll','A',NULL,0,0,NULL);
 INSERT INTO igcdepts (mts, gid, dname, active, mdate, pid, node, mid, description, dtype, privilege, lacc, cacc, dept_id) VALUES ('0122483f-0155fb46','0125a045-017ae681','RootGroup',1,1261069261000,NULL,'NODE@0125A045-017AE681','0125a5a3-0145447c',NULL,'A',NULL,0,0,NULL);
 
-INSERT INTO igcduty (mts, sid, dname, pstatus, dutytype, mdate, description, node) VALUES ('0122483f-0155fb46','4fce8d2e-6d5144d0','Admins',1,'A',NULL,'lll','');
+INSERT INTO igcduty (mts, sid, dname, pstatus, dutytype, mdate, description, node) VALUES ('0122483f-0155fb46','4fce8d2e-6d5144d0','BWEB Admins',1,'A',NULL,'lll','');
 INSERT INTO igcduty (mts, sid, dname, pstatus, dutytype, mdate, description, node) VALUES ('0122483f-0155fb46','0122483f-0155fb4d','EveryOne',1,'A',NULL,NULL,'');
-INSERT INTO igcduty (mts, sid, dname, pstatus, dutytype, mdate, description, node) VALUES ('0122483f-0155fb46','0125a1a8-01d413a0','LocalAdmin',1,'A',NULL,NULL,'');
+INSERT INTO igcduty (mts, sid, dname, pstatus, dutytype, mdate, description, node) VALUES ('0122483f-0155fb46','0125a1a8-01d413a0','BWEB LocalAdmin',1,'A',NULL,NULL,'');
+INSERT INTO igcduty (mts, sid, dname, pstatus, dutytype, mdate, description, node) VALUES ('0122483f-0155fb46','0aeb9fee-36c042b7','BWEB BI Developer',1,'A',NULL,NULL,'');
+INSERT INTO igcduty (mts, sid, dname, pstatus, dutytype, mdate, description, node) VALUES ('0122483f-0155fb46','aacb5dcd-07644e19','BWEB Report Super User',1,'A',NULL,NULL,'');
+INSERT INTO igcduty (mts, sid, dname, pstatus, dutytype, mdate, description, node) VALUES ('0122483f-0155fb46','0c150ca5-785c43b0','BWEB Report User',1,'A',NULL,NULL,'');
+INSERT INTO igcduty (mts, sid, dname, pstatus, dutytype, mdate, description, node) VALUES ('0122483f-0155fb46','7dcd1351-ca4a4d14','BWEB Report Viewer User',1,'A',NULL,NULL,'');
 
-INSERT INTO igcstatus (pstatus, description, STYPE) VALUES (1,'Active',1);
-INSERT INTO igcstatus (pstatus, description, STYPE) VALUES (2,'Deleted',1);
-INSERT INTO igcstatus (pstatus, description, STYPE) VALUES (1,'Locked',2);
-INSERT INTO igcstatus (pstatus, description, STYPE) VALUES (2,'UnLocked',2);
-INSERT INTO igcstatus (pstatus, description, STYPE) VALUES (3,'ForcedUnLocked',2);
-INSERT INTO igcstatus (pstatus, description, STYPE) VALUES (4,'LogoutUnLock',2);
-INSERT INTO igcstatus (pstatus, description, STYPE) VALUES (5,'CloseUnLock',2);
-
-INSERT INTO igcusers (mts, iuid, userid, uname, upasswd, email, active, mdate, gid, pid, company, position, node, lacc, dfrm, dtz, a1, euser_id) VALUES ('0122483f-0155fb46','54c1cce7-d7734fac','admin','Admin','D033E22AE348AEB5660FC2140AEC35850C4DA997','admin@company.com',1,1407568418000,'0122483f-0155fb46','01259d66-01915308',NULL,NULL,'NODE@0125A045-017AE681@0122483F-0155FB46@0122483f-0155fb46',0,NULL,NULL,NULL,NULL);
+INSERT INTO igcusers (mts, iuid, userid, uname, upasswd, email, active, mdate, gid, pid, company, node, lacc, dfrm, dtz, a1, euser_id) VALUES ('0122483f-0155fb46','54c1cce7-d7734fac','admin','Admin','D033E22AE348AEB5660FC2140AEC35850C4DA997','admin@company.com',1,1407568418000,'0122483f-0155fb46','01259d66-01915308',NULL,'NODE@0125A045-017AE681@0122483F-0155FB46@0122483f-0155fb46',0,NULL,NULL,NULL,NULL);
 
 INSERT INTO igcuserduty (mts, iuid, sid) VALUES ('0122483f-0155fb46','54c1cce7-d7734fac','4fce8d2e-6d5144d0');
 INSERT INTO igcuserduty (mts, iuid, sid) VALUES ('0122483f-0155fb46','54c1cce7-d7734fac','0122483f-0155fb4d');

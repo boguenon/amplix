@@ -1,0 +1,267 @@
+/*
+ * classic.css_t
+ * ~~~~~~~~~~~~~
+ *
+ * Sphinx stylesheet -- classic theme.
+ *
+ * :copyright: Copyright 2007-2019 by the Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+
+@import url("basic.css");
+
+/* -- page layout ----------------------------------------------------------- */
+
+#manual_body  {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    color: #000;
+}
+
+#manual_body div.document {
+    background-color: white;
+}
+
+#manual_body div.bodywrapper {
+    margin: 0 0 0 20px;
+}
+
+#manual_body div.body {
+    background-color: white;
+    color: #222222;
+    padding: 0 20px 30px 20px;
+}
+
+#manual_body div.footer {
+    color: #555555;
+    width: 100%;
+    padding: 9px 0 9px 0;
+    text-align: center;
+    font-size: 75%;
+}
+
+#manual_body div.footer a {
+    color: #555555;
+    text-decoration: underline;
+}
+
+#manual_body div.related {
+    background-color: white;
+    line-height: 30px;
+    color: #666666;
+}
+
+#manual_body div.related a {
+    color: #444444;
+}
+
+#manual_body div.sphinxsidebar {
+}
+
+#manual_body div.sphinxsidebar h3 {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    color: #444444;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#manual_body div.sphinxsidebar h3 a {
+    color: #444444;
+}
+
+#manual_body div.sphinxsidebar h4 {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    color: #444444;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+#manual_body div.sphinxsidebar p {
+    color: #444444;
+}
+
+#manual_body div.sphinxsidebar p.topless {
+    margin: 5px 10px 10px 10px;
+}
+
+#manual_body div.sphinxsidebar ul {
+    margin: 10px;
+    padding: 0;
+    color: #444444;
+}
+
+#manual_body div.sphinxsidebar a {
+    color: #444444;
+}
+
+#manual_body div.sphinxsidebar a.active {
+    color: #ec6565 !important;
+}
+
+#manual_body div.sphinxsidebar input {
+    border: 1px solid #444444;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+
+/* for collapsible sidebar */
+#manual_body div#sidebarbutton {
+    background-color: #3c6e83;
+}
+
+
+/* -- hyperlink styles ------------------------------------------------------ */
+
+#manual_body a {
+    color: #0090c0;
+    text-decoration: none;
+}
+
+#manual_body a:visited {
+    color: #00608f;
+    text-decoration: none;
+}
+
+#manual_body a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* -- body styles ----------------------------------------------------------- */
+
+#manual_body div.body h1,
+#manual_body div.body h2,
+#manual_body div.body h3,
+#manual_body div.body h4,
+#manual_body div.body h5,
+#manual_body div.body h6 {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    background-color: white;
+    font-weight: normal;
+    color: #1a1a1a;
+    border-bottom: 1px solid #ccc;
+    margin: 20px -20px 10px -20px;
+    padding: 3px 0 3px 10px;
+}
+
+#manual_body div.body h1 { margin-top: 0; font-size: 200%; }
+#manual_body div.body h2 { font-size: 160%; }
+#manual_body div.body h3 { font-size: 140%; }
+#manual_body div.body h4 { font-size: 120%; }
+#manual_body div.body h5 { font-size: 110%; }
+#manual_body div.body h6 { font-size: 100%; }
+
+#manual_body a.headerlink {
+    color: #aaaaaa;
+    font-size: 0.8em;
+    padding: 0 4px 0 4px;
+    text-decoration: none;
+}
+
+#manual_body a.headerlink:hover {
+    background-color: #aaaaaa;
+    color: white;
+}
+
+#manual_body div.body p, #manual_body div.body dd, #manual_body div.body li, #manual_body div.body blockquote {
+    text-align: justify;
+    line-height: 130%;
+}
+
+#manual_body div.admonition p.admonition-title + p {
+    display: inline;
+}
+
+#manual_body div.admonition p {
+    margin-bottom: 5px;
+}
+
+#manual_body div.admonition pre {
+    margin-bottom: 5px;
+}
+
+#manual_body div.admonition ul, #manual_body div.admonition ol {
+    margin-bottom: 5px;
+}
+
+#manual_body div.note {
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+#manual_body div.seealso {
+    background-color: #ffc;
+    border: 1px solid #ff6;
+}
+
+#manual_body div.topic {
+    background-color: #eee;
+}
+
+#manual_body div.warning {
+    background-color: #ffe4e4;
+    border: 1px solid #f66;
+}
+
+#manual_body p.admonition-title {
+    display: inline;
+}
+
+#manual_body p.admonition-title:after {
+    content: ":";
+}
+
+#manual_body pre {
+    padding: 5px;
+    background-color: #eeffcc;
+    color: #333333;
+    line-height: 120%;
+    border: 1px solid #ac9;
+    border-left: none;
+    border-right: none;
+}
+
+#manual_body code {
+    background-color: #ecf0f3;
+    padding: 0 1px 0 1px;
+    font-size: 0.95em;
+}
+
+#manual_body th {
+    background-color: #ede;
+}
+
+#manual_body .warning code {
+    background: #efc2c2;
+}
+
+#manual_body .note code {
+    background: #d6d6d6;
+}
+
+#manual_body .viewcode-back {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+}
+
+#manual_body div.viewcode-block:target {
+    background-color: #f4debf;
+    border-top: 1px solid #ac9;
+    border-bottom: 1px solid #ac9;
+}
+
+#manual_body div.code-block-caption {
+    color: #efefef;
+    background-color: #1c4e63;
+}
+
+.content #main_slider ul {
+	font-size: 12px;
+}

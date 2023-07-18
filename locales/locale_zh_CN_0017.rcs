@@ -1,0 +1,218 @@
+A;L_PIE_DASHBOARD;Pie and Dashboard
+A;L_SCATTER_POINT;Scatter and Point
+A;L_STOCK_LOW_HIGH;Stock and Low High Analysis
+A;L_TREEMAP;Tree Map
+A;L_RELATION_FINDING;Relation Finding
+A;L_SCI_ANAL;Scientific Analysis
+A;L_STAT_VIS;Statistical Data Visualization
+A;L_MAP_GEO;Map and Geographical
+A;L_QUALITY_CTRL;Quality Control
+
+A;L_CH_COLUMN;Column
+A;L_CH_LINE;Line
+A;L_CH_SPLINE;Spline
+A;L_CH_AREA;Area
+A;L_CH_SPLINE_AREA;Spline Area
+A;L_CH_BAR;Bar
+A;L_CH_PIE;Pie
+A;L_CH_DOUGHNUT;Doughnut
+A;L_CH_BUBBLE;Bubble
+A;L_CH_SCATTER;Scatter
+A;L_CH_TREEMAP;Treemap
+A;L_CH_WATERFALL;WaterFall
+A;L_CH_SYNC_CHART;Synchronized Chart
+A;L_CH_RADAR;Radar
+A;L_CH_FUNNEL;Funnel
+A;L_CH_PYRAMID;Pyramid
+A;L_CH_MAP;Map
+A;L_CH_COMP_MATRIX;Comparison Matrix
+A;L_CH_PARA_COORD;Parallel Coordinates
+A;L_CH_MEAN_DEV;Mean & Deviation
+A;L_CH_BOXPLOT;Box Plot
+A;L_CH_NET_DIAG_POS;Network Diagram(+)
+A;L_CH_NET_DIAG_NEG;Network Diagram(-)
+A;L_CH_MATRIX_DIAGRAM;Matrix Diagram
+A;L_CH_FORCE_DIRECT;Force Directed Layouts
+A;L_CH_CLUSTER;Cluster Chart
+A;L_CH_CHORD;Chord Chart
+A;L_CH_SUNBURST;Sun Burst Chart
+A;L_CH_BUBBLE_MAP;Bubble Map
+A;L_CH_FIXED_PLACE;Fixed Placement
+
+A;L_BTM_LEFT;Bottom Left
+A;L_BTM_CENTER;Bottom Center
+A;L_BTM_RIGHT;Bottom Right
+A;L_TOP_LEFT;Top Left
+A;L_TOP_CENTER;Top Center
+A;L_TOP_RIGHT;Top Right
+A;L_RIGHT_TOP;Right Top
+A;L_RIGHT_CENTER;Right Center
+A;L_RIGHT_BTM;Right Bottom
+A;L_LEFT_TOP;Left Top
+A;L_LEFT_CENTER;Left Center
+A;L_LEFT_BTM;Left Bottom
+
+A;L_CH_PERCENT_GAUGE;Percent Gauge
+A;L_CH_WINLOSE;WinLose Chart
+
+A;L_COL_SYNC;Column Sync
+A;L_UNDO;Undo
+A;L_ALIAS;Alias
+
+A;D_CLIPBOARD;Press Ctrl-A then Ctrl-C to copy this content to clipboard!
+
+A;M_PIVOT_CHANGED;To apply pivot, click execute button on report toolbar!
+A;B_CENTER;Center
+
+A;L_BOX_COUNTS;Box Counts
+A;L_LAYOUT_MODE;Layout Mode
+A;L_REMOVE_CHECKED;Remove Checked
+A;B_SYNTAX;Syntax
+A;L_TEMPLATE_TYPE;Template Type
+
+A;L_MIN_COLOR;Min Color
+A;L_MID_COLOR;Mid Color
+A;L_MAX_COLOR;Max Color
+A;L_COLOR_CATEG;Color Category
+A;L_MARKER_SIZE;Marker Size
+A;L_MARKER_SYMBOL;Marker Symbol
+A;M_ERR_CHART_SEL;Chart type need to be selected!
+
+A;L_MERGE_COL;Merge Column
+A;L_ROW_LOCATION;Row Location
+A;L_PROMPT_VALUES;Prompt Values
+
+A;M_PASS_MISMATCH;Password is not match with confirm value
+A;M_COMP_SUCCESS;Compiled Successfully
+A;L_COMP_CAPTURE;Capture completed!
+A;M_VALUESET_EXIST;ValueSet already exists in selection.
+A;M_CONFIRM_CLOSE;Close editing items and continue to confirm!
+A;M_SEL_SINGLE;Select 1 item to continue!
+A;M_TARGET_NOTFOUND;Target item not found
+A;M_NOTFOUND_IN_DIM;Item not found on dimension list!
+A;M_PROC_WAIT;Still progressing. Please wait!
+
+A;L_SHEET_TOOLBAR;Sheet Toolbar
+A;L_SHEET_SCRIPTS;Sheet Script
+A;L_CUST_LEGEND;Custom Legend
+
+A;M_SELECT_FOLDER;Select Folder item to continue
+A;M_UP_FILE_FRST;Upload file and continue to import process!
+
+A;L_DASHBOARD_OPTION;Dashboard Option
+A;L_CUST_INFO;InfoWindow Template
+
+A;L_GEOFIELD;Geo Field
+
+A;L_IS_PARAM;Is Parameter
+A;L_USE_VALUE_AS_PARAM;Use as Parameter (Not in WHERE clause)
+
+A;L_PWD_F_CHAR;Start of string!
+A;L_PWD_F_NUM;At least one digit!
+A;L_PWD_F_LOW_CHAR;At least one lower case!
+A;L_PWD_F_UPP_CHAR;At least one upper case!
+A;L_PWD_F_SPEC_CHAR;One or more @ special character!
+A;L_PWD_F_WHT_SPACE;No white space allowed!
+A;L_PWD_F_LEN;At least @ places!
+
+A;L_BLANK_USERID;UserID should not be empty!
+A;L_BLANK_PASSWORD;Password should not be empty!
+
+A;L_MAP_POST_EXEC;Post Exec Script
+A;L_MAP_SAVE_POS;Remember Last Setting
+
+A;L_RELEASE_LOCK;Click Yes to confirm to release lock of this user!
+A;L_SS_LOCKED;Login Lock
+
+A;L_SK_RPT;Search in navigation
+A;L_CATEGORY;Category
+
+A;L_CHECK_EMAIL;Check Email
+A;L_RCPTS;Recipients
+A;M_SMTP_TST;Wow! email sent with configuration. Please check on the INBOX test email from us!
+
+A;T_USERS;Users
+A;L_RECENT_SUBJECT;Recent Subject
+A;L_SEARCH_RESULT;Search Results
+
+A;B_SUC;Success
+A;B_FAIL;Fail
+
+A;S_READ;Read
+A;S_UPDATE;Update
+A;S_LOGOUT;Logout
+A;S_DELETE;Delete
+A;S_WRITE;Write
+A;S_SECURITY;Security
+A;S_NA;Not Available
+
+A;L_TWOWAY_AUTH;Two-way Auth
+A;L_H2_PERSIST_ENABLED;H2 Persist DB
+A;L_ARC_VIEW;ArcGIS View
+A;L_MAP_CAMERA;Map Camera
+
+A;L_DEL_FLT;Click to remove filter item
+A;L_FLT_MG_LEFT;Click to merge left
+A;L_FLT_ST_ROW;Click to start row
+
+A;L_PKG_LST;Java Import
+A;L_DETAILED_STAT;Status Detail
+A;L_EDIT_JOB;Edit Job
+A;L_CANCEL_JOB;Cancel Job
+A;L_PURGE_JOB;Purge Job
+A;L_PICKUP_DATE;Pickup Date
+A;L_STARTED_DATE;Started Date
+A;L_EXEC_LOG;Execution Log
+A;L_MIN_A_COLOR;Level 2 Color
+A;L_MID_A_COLOR;Level 4 Color
+
+A;L_PANEL_CSS;Panel CSS
+
+A;L_FLOAT_PANEL;Float Panel
+A;L_FLOAT_OPTION;Float Panel Options
+
+A;L_RESIZABLE;Resizable
+A;L_MOVEABLE;Moveable
+
+A;L_MAP_POPUP_HOVER;Mouse over Popup
+
+A;L_HIDE_MAX;Hide Maximize
+A;L_COLLAPSE;Collapsible
+A;L_CLP_START;Open Collapsed
+A;L_CLP_CSS;Collapse Icon CSS
+A;L_HTML;HTML Code
+A;L_JSCRIPT;JavaScript
+A;L_TB_CHART;Toolbar ChartWizard
+
+A;L_ENABLE_DISABLE;Set Enable
+A;L_INC_USERS;Include Users
+A;L_INC_DEPTS;Include Departments
+A;L_INC_ROLES;Include Roles
+
+A;L_WIDGET_OPTION;Widget Options
+A;L_LOADING;Loading... Please wait for processing
+A;E_SHEET_EXP;Error on sheet export. Please run report and try again.
+
+A;B_ROW;Row
+A;B_COL;Column
+
+A;L_C_TXT;Text Input
+A;L_C_SINGLE_SEL;Single Selection
+A;L_C_MULTI_SEL;Multi Selection
+A;L_C_RADIO;Radio Buttons
+A;L_C_CHECK;Check Buttons
+A;L_C_SLIDER;Slider Bar
+A;L_C_CALENDAR;Calendar
+A;L_C_PERIOD;Period
+A;L_C_FILEUPLOAD;File Upload
+
+A;L_F_NOTEQ;Not Equal
+
+A;L_ON_X_AXIS;On X Axis
+A;L_DT_MASHING;Mashing
+A;L_DEPLOY;Deploy
+A;L_DEPLOY_TARGET;Deploy Target
+A;B_NORMAL;Normal
+A;B_SQL;SQL
+A;L_OUTER_RADIUS;Outer Radius
+A;L_MAX_POOL_WAIT_MILLS;Max Wait Mills

@@ -1,0 +1,386 @@
+A;L_REL_SCHEDULE;관련 스케쥴 작 항목
+A;L_JOB_HISTORY;작업 이력
+A;L_SCH_NAME;스케쥴명
+A;B_UPD_DATE;최종 수정일
+A;L_LOAD_LAST_SCH;리포트 열기시 스케쥴 결과 로드
+A;L_START_DATE;시작 시간
+A;B_REGISTER;등록
+A;T_SHARE_SETTINGS;공유 설정
+A;L_EMBED_LINK;임베드 링크
+A;L_LINK_TO_SHARE;공유 웹 URL
+A;M_SHARE_PAGE;<span>HTML 페이지에 링크하려면 위의 경로로 href 를 지정하십시오.</span>
+A;L_SHARE_PUBLIC;퍼블릭 링크로 공유하기
+A;L_INPUT_EMAIL;이메일 주소를 입력해 주십시오...
+A;L_EMAIL_MSG;이메일 주소
+A;L_EMPTY_MSG;메시지를 입력해 주십시오.
+A;M_EMAIL_DESC;<span>시스템 로그인 권한이 없는 사용자도 보고서를 실행할 수 있는 공유 링크를 전송하게 됩니다.</span>
+A;L_LOGIN;로그인
+A;L_NEED_LOGIN;로그인 필요
+A;L_PUBLIC_LINK_URL;퍼블릭 링크 URL
+A;B_GENERATE;생성하기
+A;B_SHARE;공유하기
+A;L_SHARE_HISTORY;<span><b>공유 이력 관리</b></span>
+A;B_IS_PUBLIC;퍼블릭 여부
+A;L_VISIT_COUNT;방문자수 
+A;L_LAST_VIEWED;최종 접속시간
+A;L_MANUAL;문서 관리
+A;L_MANUAL_MANAGER;매뉴얼 문서 관리
+A;L_MANUAL_WRITER;매뉴얼 편집 수정
+A;L_MANUAL_VIEWER;매뉴얼 뷰어
+A;T_MGR_MANUAL;매뉴얼 관리자
+A;M_CREATE_SHARE_URL;공유 URL을 만드시겠습니까?
+A;M_CONFIRM_DELETE;항목을 삭제하시겠습니까?
+A;M_CONFIRM_DISABLE;항목을 비활성화 하시겠습니까?
+A;M_CONFIRM_IMP;메타 컨텐츠를 임포트 하시겠습니까? 이미 존재하는 항목은 새로운 항목으로 업데이트 됩니다.
+A;M_CONFIRM_TB_BATCH;모든 테이블 안에의 필드 정보가 배치 업데이트 됩니다. 계속하시겠습니까?
+A;M_CONFIRM_DS_CHANGE;이미 정의된 데이터소스가 존재합니다. 다른 데이터 소스 선택시 문제를 발생할 수 있습니다. 계속하시겠습니까?
+A;M_CONFIRM_DROP_FILE;항목을 드랍한 폴더에 이동하시겠습니까?
+A;M_CONFIRM_OVERWRITE; 항목이 이미 서버에 존재합니다. 기존 항목을 새로운 항목으로 업데이트 하시겠습니까?
+A;M_CONFIRM;계속 진행하시려면 예 버튼을 클릭해 주십시오.
+A;L_CONFIG_FORMULA;수식 설정
+A;B_NEW;신규 항목
+A;L_MOVE_UP;위로 이동
+A;L_MOVE_DOWN;아래로 이동
+A;L_SEARCH_ITEM;항목 검색
+A;B_UP;위로
+A;B_DOWN;아래로
+A;L_DB_POOL;데이터컨넥션
+A;B_SEQUENCE;순서
+A;L_GROUP_INDEX;그룹 인덱스
+A;B_INDEX;순서
+A;L_Y2_AXIS;Y2 축 
+A;L_ADD_ROW;행 추가
+A;L_ADD_FORMULA;수식 추가
+A;L_EXPORT_TYPE;출력 유형
+A;L_ERASE_GROUP;그룹 삭제
+A;L_UNIQUE_VALUE;유일한 값
+A;L_COLUMN_INDEX;컬럼 순서
+A;L_IS_MEASURE;메져 여부
+A;B_OPTIONS;옵션
+A;L_TAB_SELECTOR;탭 선택기
+A;L_PROMPT;프롬프트
+A;B_SELECT;선택
+A;B_KEY;키값
+A;L_ROW_CNT;행 개수
+A;L_ADD_CUR_SEL;현재 선택 항목 추가
+A;L_SEL_ALL;전체 선택
+A;B_JAVA_CLASS;자바 액션 모듈
+A;L_IMP_TABLES;테이블 임포트
+A;L_INLINE_VIEW;인라인 뷰
+A;L_CURRENT;현재
+A;L_LOCATION;위치
+A;L_GEO_ADDRESS;주소
+A;B_LAT;경도
+A;B_LNG;위도
+A;L_UPD_GEOCODE;위치코드 업데이트
+A;L_RUN_SQL;SQL 실행
+A;B_EXISTS;존재 여부
+A;L_LOG_RESULT;로그 결과
+A;L_CHANGE_REV;리비젼 변경
+A;L_TEST_EMAIL;테스트 이메일 설정
+A;L_SSO_DESIGNER;SSO 디자이너
+A;L_SET;설정
+A;L_CACHE_INFO;캐시 정보
+A;L_CONFIG_VAR;설정 변수
+A;L_SHORTCUT;단축키
+A;L_GO_TOP;상위로 이동
+A;L_BATCH_UPD_SCH;스키마 배치 업데이트
+A;L_EXTRACT_META;메타 추출하기
+A;L_ALIAS_TO_DESC;별칭을 설명으로 이동
+A;L_ALIAS_TO_NAME;별칭을 이름으로 이동
+A;B_USER;사용자
+A;B_ROLE;권한
+A;B_TENANT;테넌트
+A;L_GROUP_ID;그룹 아이디
+A;L_SERVER_TYPE;서버 유형
+A;L_EMAIL_FROM_ADDR;보내는 주소
+A;L_ENCRYPTION;암호화 유형
+A;L_AUTHEN_METHOD;인증 방식
+A;L_SERVER_ADDRESS;서버 주소
+A;L_CREDENTIALS;사용자 인증
+A;L_REPORT_HEALTH_CHECK;리포트 건강 점검 보고
+A;L_TEST_EMAIL;이메일 테스트
+A;L_SYS_ERROR;시스템 오류 정보 보고
+A;L_LOG_LEVEL;로그 레벨
+A;L_SERVER_FULL_RUL;서버 전체 URL
+A;L_SCHEDULE_SERVICE;스케쥴러 서비스
+A;L_EXCEL_OUTPUT_TYPE;엑셀 출력 유형
+A;L_STORE_METAFILE;메타 파일로 저장
+A;L_LOCATION;위치
+A;L_FILE_NAMERULE;파일 이름 규칙
+A;L_MODULE_TYPE;모듈 유형
+A;L_PYTHON_EXEC;파이선 실행 파일
+A;L_JUPYTER_URL;쥬피터 URL
+A;B_CREDENTIALS;사용자 인증
+A;L_SNOOZE_MASS_REQ;대량 접속 요청 제한
+A;L_SNOOZE_TIME_MIN;접속 중단 시간(분)
+A;L_SERVER_REQ_MAX_PROTECT;일괄접속 재한 건수
+A;L_WRONG_PWD_COUNTS;비밀번호 오류 제한 회수
+A;L_PWD_FAIL_ACTION;비밀번호 오류시 액션
+A;L_PWD_RULE;비밀번호 규칙
+A;L_MAX_FILE_UPLOAD_MB;최대 파일 업로드(MB)
+A;L_BULK_MAX_FIILE_UPLOAD_MB;벌크 최대 파일 업로드(MB)
+A;L_TENANT_POST_CALL_MODULE;테넌트 생성후 작업 모듈
+A;L_H2_URL_FOR_MASH;H2 데이터 매싱 연
+A;L_NLP_SVR_HOST;NLP 서버 주소
+A;L_NLP_SVR_PORT;NLP 서버 포트
+A;L_NLP_AGNTS;NLP 에이젼트 쓰래드 개수
+A;L_BOT_NICK;챗봇 별명
+A;L_APPL_TITLE;어플리케이션 타이틀
+A;L_APPL_TITLE_HTML;어플리케이션 타이틀(HTML)
+A;L_COLLAPSE_MAIN_MENU;메인 메뉴를 닫음
+A;L_NAV_TAB;탭 네비게이션
+A;L_MAX_TAB_COUNT;최대 탭 개수
+A;L_HOME_TAB_TITLE;시작 탭 타이틀
+A;L_HOME_TAB_MSG;시작 탭 메시지
+A;L_LOADING_MSG;진행중 메시지 문구
+A;L_GMAP_API;구글 지도 API키
+A;L_NVMAP_API;네이버 지도 API키
+A;L_DEFAULT_OPTIONS;기본값 옵션
+A;L_MEASURE_NAMING;메져 이름 규칙
+A;L_ECHART_THEM;차트 테마
+A;L_REPORT_SCRSHOT;리포트 스크린샷
+A;L_GEO_MAP_CENTER;맵 중심 위치
+A;L_ARCGIS_REST_API;ArcGIS Rest API
+A;L_SSO;싱글 사인온
+A;L_SSO_DESIGNER;SSO 디자이너
+A;L_ALLOW_INSERT;데이터 입력 허용
+A;L_MASK_TYPE;마스크 유형
+A;L_USE_GEOCODE;위치 코드 사용
+A;L_URL_OF_SHARE_OBJ;공유 오브젝트 URL
+A;B_DATE;일시
+A;L_COMP_ID;컴포넌트 아이디
+A;B_STYLE;스타일
+A;L_FILTER_ITEMS;필터 아이템
+A;L_VIEW_OPTIONS;뷰어 옵션
+A;L_FILTER_LAYOUT_OPTIONS;필터 레이아웃 옵션
+A;L_EXCEL_DOWN_OPTIONS;엑셀 다운로드 옵션
+A;L_APPLY_TO_ALL;전체에 적용하기
+A;L_VALUE_SET;값 집합
+A;L_REPORT_PATH;리포트 경로
+A;B_TEMPLATE_NAME;템플리트 이름
+A;B_START_DATE;시작일
+A;L_JOB_NAME;작업 이름
+A;L_DAY_OF_WEEK;주중의 요일
+A;L_DAY_OF_MONTH;한달 중 특정일
+A;L_PREEXE_STMT;선행 실행 쿼리문
+A;L_POST_EXEC_STMT;후속 실행 쿼리문
+A;L_ANAL_ENV;분석 환경 변수
+A;L_SCH_SVR_STAT;스케쥴 서비스 상태
+A;B_NICKNAME;별명
+A;L_OBJNAME;개체 명칭
+A;L_PICK_TIME;예약일
+A;L_END_TIME;종료일
+A;L_HEART_BEAT;활성화 상태
+A;L_CRT_DATE;생성 일자
+A;L_MOD_DATE;수정 일자
+A;L_PROGRAMS;프로그램
+A;L_REG_SCHEDULE;스케쥴 등록
+A;L_JOB_TYPE;작업 유형
+A;L_ADD_NEW_PROGRAM;신규 프로그램 추가
+A;L_LOAD_FILE;파일 불러오기
+A;L_DATA;데이터
+A;L_KEEP_MODI_DATES;수정일을 기존으로 유지
+A;L_KEEP_OWNER_INFO;생성자 정보를 유지
+A;L_IMP_SECURITY;개체 권한을 가져오기
+A;L_CLEAR_HIST;이력 초기화
+A;L_IMPORT_SELECTED;선택 항목 임포트
+A;L_AUTO_REF_SEC;자동 리프래시(초)
+A;B_CONDITIONS;조건
+A;L_ELLAPSED_THEN_SEC;실행시간 초과건(초)
+A;L_BUF_SIZE;버퍼 크기
+A;L_3D_OPTIONS;3D 옵션
+A;B_VISIBLE;보기
+A;L_AXIS_SETTINGS;축 설정
+A;L_YAXIS_SETTINGS;Y 축 설정
+A;L_SEC_YAXIS_SETTINGS;이중 Y 축 설정
+A;L_RIGHT_YAXIS_TITLE;축 타이틀 
+A;L_EXTRA_OPTIONS;기타 옵션
+A;L_STOCK_OPTIONS;스탁 차트 옵션
+A;L_TIME_FIELD;시간 필드
+A;L_KPI_INDI;KPI 표시차트 옵션
+A;L_INDICATOR_WIZARD;인디케이터 마법사
+A;L_MAP_OPTIONS;지도 옵션
+A;L_MAP_DRAW_OPTIONS;지도 표시 옵션
+A;L_ARCGIS_LAYERS;Arc GIS 레이어 옵션
+A;B_TEMPLATE;템플리트
+A;L_FOLDER_AND_TABLES;폴더 및 테이블
+A;L_FIELDS;필드
+A;B_RELATIONS;상관관계
+A;L_MULTI_RENAME;복수개 이름 변경
+A;L_REMOVE_UNDERLINE;밑줄 제거 하기
+A;L_RENAME_MASK;이름 변경 패턴
+A;L_PHYSICAL_NAME;물리적 이름
+A;L_NEW_NAME;신규 이름
+A;L_MEASURE_NAME;매져 명
+A;L_FACT_NAME;팩트 디맨젼
+A;L_MASK_TEXT;텍스트 마스크
+A;L_MEASURES;매져
+A;L_GEOCODE;지도 위치 코드
+A;L_INPUT_FORMAT;입력 양식
+A;L_YAXIS_SETTING;Y 축 설정
+A;L_MINIMUM;최소값
+A;L_MAXIMUM;최대값
+A;L_DATA_TYPE;데이터 유형
+A;L_VALUE_FIELD;값 필드
+A;L_FIELD_SELECTIONS;필드 선택
+A;L_XAXIS_FIELD;X축 필드
+A;L_LINE_COLOR;라인 색상
+A;L_FILL_COLOR;채움 색상
+A;L_TARGET_OPTIONS;대상 항목 옵션
+A;L_TARGET_ITEM;대상 항목
+A;L_USE_SUM_ON_FOLDER;폴더별로 집계함수 사용
+A;L_EXPAND_ALL;전체 펼치기
+A;L_OTHER_VALUES;기타 값
+A;B_CATEGORY;카테고리
+A;L_PAGE_FILTERING;페이지 필터링
+A;L_AVAILABLE_FIELDS;사용가능 필드
+A;L_PAGED_FILTER_FIELDS;페이지 필터 지정 필드
+A;L_DATA_STYLE;데이터 스타일
+A;L_HEAD_STYLE;헤더 스타일
+A;L_FORMAT_STRING;포맷 스트링
+A;L_CSS_CLASS;CSS 클래스
+A;L_TEMPLATE;템플리트
+A;L_COLOR_SETTING;색상 설정
+A;L_MAPPING_TYPE;맵핑 유형
+A;L_STATIC_DATA_VALUES;정적 데이터값
+A;L_USE_COLORSET;색상 집합 사용
+A;L_LABEL_VALUE;표시 값 
+A;L_SQL_DATA_VALUES;SQL 데이터 값
+A;L_DATASOURCE;데이터 소스
+A;L_COLORSET;색상 집합
+A;B_TABLE;테이블
+A;L_VALUE_FIELD;값 필드
+A;L_SORT_FIELD;정렬 필드
+A;L_DATA_VIEW;데이터 보기
+A;L_RANGE_FILTER1;범위 필터 지정 1
+A;L_RANGE_FILTER2;범위 필터 지정 2
+A;L_RANGE_FILTER3;범위 필터 지정 3
+A;L_FILTER_FIELD;필터 필드
+A;L_FILTER_VALUE;필터 값 필드 
+A;L_GENERAL;일반 사항
+A;L_EMAIL_SETUP;이메일 설정
+A;L_EMAIL_NOTI_RCP;이메일 알람 수신자 설정
+A;L_META_DATA;메타 데이터
+A;L_PYTHON_INT;파이선 연동
+A;L_SECURITY;보안
+A;L_MASS_REQ_PROTECT;대량 서비스 요청 보호
+A;L_DATA_MASHING;데이터 매싱
+A;L_LICENSE;라이센스 관리
+A;L_ASSIST_BOT;보조 AI Bot 서비스
+A;L_UI_CONFIG;사용자 UI 설정
+A;L_API_KEYS;API 키값
+A;L_SHORT_NAME;짧은 이름
+A;L_AUTHEN_CLASS;사용자 입증 클래스
+A;L_AUTHOR_CLASS;권한 부여 클래스
+A;L_GENERAL_OPTIONS;일반 옵션
+A;L_GRID_STRIPES;그리드 스트라이프
+A;B_OPACITY;투명도
+A;L_ADD_STYLE;스타일 추가
+A;L_ADD_THEME;테마 추가
+A;B_SET;설정
+A;L_CHART_COLOR_ORG;차트 색상 관리자
+A;L_CHART_COLOR;차트 색상그룹
+A;L_COLOR_SETS;색상표
+A;L_INHERIT_STYLE_FROM;스타일 상속(베이스)
+A;L_THEMES;테마
+A;L_NEW_ACTION;신규 액션
+A;L_NEW_PARAM;신규 파라미터
+A;B_EVENT;이벤트
+A;L_TABLE_LIST;테이블 목록
+A;L_REGISTERED_TABLE;등록된 테이블
+A;L_SIMPLE_REL_VIEW;간단 관계도 보기
+A;L_FIX_KEY;키컬럼 고정
+A;L_RELATIONS;상관 관계
+A;L_I_FROM;시작점
+A;L_I_TO;종료점
+A;L_JOIN_REL_EDITOR;조인 관계 편집기
+A;L_SOURCE_FIELD;소스 필드
+A;L_TARGET_FIELD;대상 필드
+A;L_SRC_TO_TGT_IS;소스 - 대상간 관계
+A;L_REMOVE_RELATION;관계 삭제하기
+A;L_JOIN_REL_CUSTOM_FIELD;조인 관계 커스텀 필드
+A;L_TABLE_ORDER;테이블 순서
+A;L_INC_DEP;참조항목 포함
+A;L_INC_SEC;권한정보 포함
+A;L_INC_OWNER_INFO;사용자 정보 포함
+A;L_SHARE;공유
+A;L_LIST_OF_ITEMS;항목 목록
+A;L_FOLDER_INFO;폴더 정보
+A;B_REVISION;리비젼
+A;L_CUR_REVISION;현재 리비젼
+A;L_REVISION_INFO;리비젼 정보
+A;L_REVISION_MGR;리비젼 관리자
+A;B_LOCATION;위치
+A;B_CURRENT;현재
+A;L_TARGET_SHEET;대상 시트
+A;L_OUTPUT_TYPE;출력 유형
+A;L_SYNC_USER;사용자 동기화
+A;L_SSO_MODULE;SSO 모듈
+A;L_DUTY;권한
+A;L_FEASURES;접근 항목
+A;L_LOAD_AUTH;권한 새로고침
+A;L_DYN_MODULE;다이나믹 모듈
+A;B_GROUP;그룹
+A;B_PARAMETERS;파라미터
+A;B_KEYWORD;키워드
+A;B_IMPORT;불러오기
+A;B_TEST;테스트
+A;L_MAX_POOL_SIZE;최대 풀 사이즈
+A;L_WEBSERVICES;웹 서비스
+A;L_SFORCE_CON;세일즈포스 접속
+A;L_SECURITY_KEY;보안 키
+A;L_SFORCE_URL;세일즈포스 접속 URL
+A;L_LDAP_CON;LDAP 접속
+A;L_SAP_BW_CON;SAP BW 접속
+A;L_HYP_ESSBASE_CON;Hyperion EssBase 접속
+A;L_STORAGE_OPTIONS;저장 옵션
+A;L_DATA_STORAGE;데이터 저장
+A;L_STAGING_DB;스테이징 데이터베이스
+A;L_UPLOADED_FILE;불러온 파일들
+A;L_CUSTOM_FIELDS;커스텀 필드
+A;L_DBA_REQ;DBA 요청 항목
+A;L_EDIT_SRC;소스 편집
+A;L_TENANT_SETTINGS;테넌트 설정
+A;L_GENERAL_INFO;일반 정보
+A;L_LOGO_IMAGE;로고 이미지
+A;L_THEMS;테마
+A;B_URL;URL
+A;L_EXPIRE_ON;만료일
+A;L_ERASE_TENANT;테넌트 삭제
+A;L_GROUPID;그룹 아이디
+A;L_START_DAEMON;데몬 시작
+A;L_STOP_ALL_AGNT;모든 에이전트 중지
+A;L_TRAIN_AGENT;에이전트 교육
+A;L_MAKE_NLP;NLP 생성하기
+A;L_CHN_NAME;채널명
+A;L_THD_STATUS;쓰레드 상태
+A;L_ON_SVC;서비스 여부
+A;L_ADD_PROGRAM;프로그램 추가
+A;L_INTENT;인텐트
+A;L_COMPILE;컴파일
+A;B_PERIOD;기간
+A;L_NICK_NAME;별명
+A;L_INTENT_NAME;인텐트 명
+A;L_JAVA_SOURCE;자바 소스
+A;L_BASE_LANG;기본 언어
+A;L_SEC_LANG;비교 언어
+A;B_IMPORT;불러오기
+A;B_DOWNLOAD;다운로드
+A;B_UPLOAD;업로드
+A;L_PAGE;페이지
+A;L_VALID_STATUS;검증 상태
+A;L_EXECUTE;실행하기
+A;L_TST_CON;접속 테스트
+A;L_FULL_PATH;전체 경로
+A;L_EXE_RSLTS;실행 결과
+A;L_OBJNAME_CLASS;오브젝트 명/클래스
+A;L_PICKUP_TIME;다음 실행 시간
+A;L_PKG_NAME;패키지명
+A;L_JAVA_CLASS;자바 클래스
+A;L_PROGRAM_PARTS;프로그램 모듈 함수
+A;L_APPLY_CODES;코드 적용
+A;L_OUTPUT_MSG;출력 메시지
+A;B_COMPILE;컴파일
+A;L_PKG_LIST;패키지 목록
+A;L_MULTIMEASURE;메져 복수 관리

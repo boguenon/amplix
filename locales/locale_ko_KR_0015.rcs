@@ -1,0 +1,103 @@
+A;M_SUC_TMPL;템플릿에 이미 값이 정의되어 있습니다.
+A;L_SERVER_MESSAGE;서버 메시지
+A;E_FILTER_SCRIPT;핉터 처리중 스크립트 오류 발생.
+A;E_LOCK_JOB;현재 다른 작업이 진행중입니다. 잠시만 기다려 주십시오.
+A;E_SEL_DC;계속하시려면 데이터 커넥터를 선택해 주십시오.
+A;E_CHECK_DTYPE;스테이징 데이터베이스에서 데이터 유형을 체크해 주십시오.
+A;E_SEL_ITEM_TO_ADD;폴더에 추가할 항목을 선택해 주십시오.
+A;E_DS_NOT_ALLOW_UPLOAD;현재 데이터소스는 업로드 파일을 지원하지 않습니다.
+A;E_SAVE_CONTENT;계속하시려면 먼저 저장해 주십시오.
+A;E_INVALID_REV;유효하지 않는 리비젼 번호입니다. 
+A;E_PRIV_ERR;컨텐츠를 사용할 권한이 없습니다.
+A;E_REMOVE_SELF;본인을 삭제할 수 없습니다.
+A;E_FOLDER_MOVE_SINGLE;단지 한개의 하위 폴더 항목만 이동할 수 있습니다.
+A;E_CHART_DRAWING;차트 그리는 도중 오류가 발생하였습니다.
+A;E_CHART_LIB_LOADING;차트 라이브러리를 로드 하는 중 오류가 발생하였습니다.
+A;E_CLICK_EVENT_HANDLER;클릭 이벤트 수행중 오류가 발생하였습니다. 
+A;E_PROMPT_CONTROL_DEF;프롬프트 컨트롤 정의에 오류가 있습니다.
+A;E_SEL_TGT_ITEM;대상 항목을 먼저 선택해 주십시오.
+A;E_SEL_TGT;대상 항목을 선택하세요.
+A;M_CONFIRM_DELETE;삭제하려면 예 버튼을 클릭해주십시오.
+A;M_CONFIRM_COMPILE;컨텐츠를 컴파일 하시겠습니까?
+A;L_T_RECENT_VISIT;최근 방문 및 즐겨찾기 항목
+A;L_PEOPLE;사람
+A;L_CLICK_STYLE_TO_EDIT;수정할 스타일 항목을 클릭해 주십시오.
+A;L_VIEW_NAME;뷰 이름
+A;L_SQL_QUERY;SQL쿼리
+A;L_SRC_TABLES;원천 테이블
+A;L_FIELD_MAPPING;필드 맵핑
+A;B_LENGTH;길이
+A;L_TGT_TBL_NAME;대상 테이블 이름
+A;T_BO_EXTRACT_META;메타 추출하기
+A;B_DATA;데이터
+A;L_SAVE_FIELD;필드 저장
+A;B_EXAMPLE;예제
+A;L_DATE_FORMAT_EX;날짜 포맷 예제
+A;L_START_MIN;시작 최소값
+A;L_END_MAX;종료 최대값 
+A;L_STEP_INT;증분치
+A;L_UNDER_MIN;최소값 이하
+A;L_OVER_MAX;최대값 초과
+A;L_LABEL_TEXT;라벨 텍스트
+A;L_NUMERIC_FORMAT;숫자 포맷
+A;L_LINK_OPTION;링크 옵션
+A;L_DISP_NAME;표시 명칭
+A;L_TARGET_REPORT;대상 리포트
+A;L_PARENT_CHILD_OPTIONS;상하위 계층 옵션
+A;L_CALC_IN_RESULT;결과 내에서 메져 계산
+A;L_SHOW_HTML;HTML 보기
+A;L_USE_TEMP;임시 사용
+A;L_USE_STG;스테이징 데이터베이스 사용
+A;L_BB_SG_RDR;다시 그릴 행 데이터
+A;L_USE_EXPRESSION;수식 사용
+A;L_DATE_FORMATTING;날짜 유형
+A;L_SQL_FUNC;SQL 함수
+A;L_ENABLE_OTH_UPLOAD;사용 (다른사람의 업로드 허용)
+A;L_ALLOW_MULTI_FILE;복수 파일 업로드 허용
+A;L_HORIZONTAL;수평
+A;L_IGN_BLK_VAL;빈값 무시
+A;L_DT_TYPE_FIELD;날짜 유형 필드
+A;L_SET_DATE;날짜 지정
+A;L_SYNC_ROWS;행 동기화
+A;B_READY;준비됨
+A;B_CACHED;캐시된 결과
+A;L_SEL_DUTY;권한을 선택해 주세요.
+A;B_EMAIL;이메일
+A;L_AUD_USER;사용자 감사
+A;L_AUD_USER_FLT;사용자 검색 조건
+A;L_AUD_USER_GRID;사용자 감사 목록
+A;L_LAST_ACC_DT;접속일시
+A;L_LAST_ACCESSED;접속 호스트
+
+A;L_FIELD_VALUE;필드값
+A;L_ENCODING;인코딩
+A;L_SHEETNAME;시트 이름
+A;L_HEADER_NAME;헤더 이름
+A;L_SIZE;크기
+A;L_ADD_SYS_KEY;시스템키 추가
+A;L_CRT_TBL;테이블 생성하기
+A;L_SCRIPT;스크립트
+A;L_COLUMN_PROP;컬럼 속성
+A;L_DATA_SIZE;데이터 크기
+A;L_IS_KEY;키컬럼 여부
+A;L_LD_INTO_TBL;테이블에 로드하기
+A;L_CLR_TBL;테이블 초기화 하기
+A;L_FILE_UPLOAD_HIST;파일 로드 내역
+
+A;B_DATASET;데이터셋
+A;L_COUNT_ROWS;행개수 카운트
+A;L_DISTINCT_COUNT;중복제거 카운트
+A;L_SUM;합계
+A;B_MINIMUM;최소값
+A;B_MAXIMUM;최대값
+A;L_FILE_FIELD;파일 필드
+A;L_UNIQUE_FIELD;유니크 필드
+A;B_SCHEMA;스키마
+A;M_NO_DATA;조회된 값이 없습니다!
+A;L_IMPORT_TABLES;테이블 임포트
+A;L_AVAILABLE_ITEMS;사용가능 항목들
+A;L_SELECTED_ITEMS;선택된 항목들
+A;M_SELECT_ITEM;계속 하려면 항목을 선택해 주십시오!
+A;E_CANCEL_BOBJ_SEL;비즈니스 오브젝트 선택이 취소되었습니다. 계속 분석 하시려면 비즈니스 오브젝트 선택이 필요합니다.
+A;E_SEL_BOBJ;비즈니스 오브젝트가 선택되어 있지 않습니다. 비즈니스 오브젝트를 지정하신 후 다시 시도해 주십시오.
+A;E_CONFIG_PIVOT;피벗 항목이 지정되어 있지 않습니다. 피벗 항목을 지정하신 후 다시 시도해 주십시오.

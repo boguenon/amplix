@@ -1,41 +1,43 @@
-IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
+﻿IG$.__chartoption.charttype = IG$.__chartoption.charttype || [];
 
 IG$.__chartoption.charttype.push(
-    {
-        label:"KPI Indicator",
-        charttype: "kpi",
-        subtype: "kpi",
-        img: "kpi",
-        grp: "scientific"
-    }
+	{
+		label:"KPI Indicator",
+		charttype: "kpi",
+		subtype: "kpi",
+		img: "kpi",
+		grp: "scientific"
+	}
 );
 
-IG$.__chartoption.chartext.kpi = function(owner) {
-    this.owner = owner;
-}
+IG$.cVis.kpi = $s.extend(IG$.cVis.base, {
+	draw: function(results) {
+		var me = this;
+		
+		if (IG$.cVis.kpi._loading)
+		{
+			setTimeout(function() {
+				me.draw(results);
+			}, 500);
+			return;
+		}
+		
+		if (!IG$.cVis.kpi._loaded)
+		{
+			var js = [
+					"./custom/custom.kpi.worker.js"
+				];
 
-IG$.__chartoption.chartext.kpi.prototype = {
-    drawChart: function(owner, results) {
-        if (!IG$.__chartoption.chartext.kpi._loaded)
-        {
-            var me = this,
-                js = [
-                    "./custom/custom.kpi.worker.js",
-                    "./js/modules/funnel.js",
-                    "./js/modules/solid-gauge.js"
-                ],
-                ltest = 0;
-            
-            IG$.getScriptCache(
-                js, 
-                new IG$.callBackObj(this, function() {
-                    IG$.__chartoption.chartext.kpi._loaded = 1;
-                    me.drawChart.call(me, owner, results);
-                })
-            );
-        }
-    },
-    
-    updatedisplay: function(owner, w, h) {
-    }
-};
+			IG$.cVis.kpi._loading = true;
+			
+			IG$.getScriptCache(
+				js, 
+				new IG$.callBackObj(this, function() {
+					IG$.cVis.kpi._loaded = 1;
+					me.draw(results);
+				})
+			);
+		}
+	},
+	getExportData: IG$.__chartoption.chartext.$export_html
+});

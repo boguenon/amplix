@@ -1,0 +1,6 @@
+A;L_BORDER_INNER;안쪽 보더
+A;L_BORDER_OUTER;바깥쪽 보더
+A;L_BORDER_LEFT;좌측 보더
+A;L_BORDER_TOP;상단 보더
+A;B_SET_STYLE;스타일 설정
+A;L_FETCH_MODE;데이터 조회 모드

@@ -1,61 +1,77 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
     request.setCharacterEncoding("utf-8");
-	String _d = request.getParameter("_d");
+
+	java.util.Map<String, String> params = new java.util.HashMap<>();
+	java.util.Enumeration<String> param_names = request.getParameterNames();
+	
+	// XSS vulnerabilities
+	while (param_names.hasMoreElements())
+	{
+		String pname = param_names.nextElement();
+		
+		if (pname != null && pname.length() > 0)
+		{
+			String pvalue = request.getParameter(pname);
+			if (pvalue != null && pvalue.length() > 0)
+			{
+				pvalue = pvalue.replaceAll("\\\\", "");
+				pvalue = pvalue.replaceAll("\'", "\\\\\'");
+				pvalue = pvalue.replaceAll("\"", "\\\\\"");
+				pvalue = pvalue.replaceAll("<", "&lt;");
+				pvalue = pvalue.replaceAll(">", "&gt;");
+				params.put(pname, pvalue);
+			}
+		}
+	}
+
+	String _d = params.get("_d");
 	String ukey = "?_d=" + _d;
-	String lang = request.getParameter("lang");
+	String lang = params.get("lang");
 	lang = (lang == null) ? "en_US" : lang;
-	String mts = request.getParameter("mts");
+	String mts = params.get("mts");
 	mts = (mts == null) ? "" : mts;
-	String tmp = request.getParameter("tmp");
+	String tmp = params.get("tmp");
 	tmp = (tmp == null) ? "" : tmp;
 
     String version = com.amplix.rpc.igcServer.version;
     
-    String igc_theme = request.getParameter("igc_theme");
-    igc_theme = (igc_theme != null && "".equals(igc_theme) == true) ? null : igc_theme;
-    
-    String igc_theme_name = null;
-    
-    if (igc_theme != null)
-    {
-    	igc_theme_name = igc_theme.toLowerCase().replaceAll(" ", "");
-    }
+    String theme = params.get("theme");
 	
-	boolean is_debug = (request.getParameter("debug") != null && request.getParameter("debug").equals("true") ? true : false);
+	boolean is_debug = (params.get("debug") != null && params.get("debug").equals("true") ? true : false);
 %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title><%= com.amplix.launcher.App.CompanyName %></title>
+<title>BWEB</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202003090019" />
-<% if (lang.equals("ko_KR")) {%>
-<link rel="stylesheet" type="text/css" href="./fonts/hangul_nanum.css?_dc=202003090019" />
-<% } %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202003090019" />
-
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202307180845" />
+<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202307180845" />
+<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202307180845" />
 <%
-if (igc_theme != null)
+if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/theme_" + igc_theme_name + ".css\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202307180845\" />");
 }
 %>
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202307180845" />
 
-<script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202003090019"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202003090019"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202003090019"></script>
+<script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>    
+<script type="text/javascript" src="../config.js?_dc=202307180845"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202307180845"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202307180845"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
 var m$mts = "<%=mts%>";
 var m$_d = "";
+//Fix issues on chrome iframe session persistency.
+//var use_session_key = true;
 
 function getLocale()
 {
@@ -81,37 +97,6 @@ function getLocale()
 
 getLocale();
 
-<%
-	if (igc_theme != null)
-	{
-		out.println("ig$.theme_id=\"" + igc_theme + "\";");
-	}
-%>
-
-var _report_prompt = [];
-<%
-String param_names = request.getParameter("param_names");
-String[] params = (param_names != null && param_names.equals("") == false) ? param_names.split(";") : null;
-
-if (params != null)
-{
-    for (int i=0; i < params.length; i++)
-    {
-        String pname = params[i];
-        
-        if (pname.equals("") == false)
-        {
-            String pvalue = request.getParameter(pname);
-            
-            if (pvalue != null && pvalue.equals("") == false)
-            {
-                out.println("_report_prompt.push({name: \"" + pname + "\", values: [{code: \"" + pvalue + "\", value: \"" + pvalue + "\"}]});\n");
-            }
-        }
-    }
-} 
-%>
-
 function loadParameter(param) {
     window._report_prompt = [];
     var i;
@@ -122,14 +107,14 @@ function loadParameter(param) {
 }
 </script>
 <script type="text/javascript">
-ig$.appInfo.apprelease = "<%= version%>";
-ig$.bootconfig.cache = ig$.appInfo.apprelease + "_" + ig$.appInfo.date.replace(/[{}]/g, "");
+<%
+if (theme != null && theme.length() > 0)
+{
+	out.println("ig$.theme_id=\"" + theme + "\";");
+}
+%>
 
-var modules = ["framework", "vis_ec", "vis_ec_theme", "app_dashboard", "appnc", "custom"];
-IG$.__microloader(modules);
-</script>
-<script type="text/javascript">
-IG$.ready(function() {
+var init_dashboard = function() {
 	var menu_logout = new IG$._menu_button($(".user-info"), [
 		{
 			nmae: "b_passwd",
@@ -164,28 +149,7 @@ IG$.ready(function() {
 	});
 	menu_logout.create();
 	
-	window.app_themes = function(themes) {
-		var m_style = $("#m_style");
-		
-		if (themes && m_style)
-		{
-			$.each(themes, function(i, theme) {
-				var m = $("<li><a class='btn_button'>" + theme.name + "</a></li>").appendTo(m_style);
-				
-				m.bind("click", function(e) {
-					e.preventDefault();
-					e.stopPropagation();
-					
-					window.set_themes(theme.name);
-					
-					m_style.hide();
-					doc.unbind("click", f1);
-				});
-			});
-		}
-	};
-	
-	window.set_themes = function(themename) {
+	var set_themes = function(theme) {
 		var vars = {}, 
 			hash,
 			murl = window.location.href,
@@ -205,7 +169,7 @@ IG$.ready(function() {
 		    }
 	    }
 	    
-	    vars["igc_theme"] = themename;
+	    vars["theme"] = theme.code || "";
 	    
 	    nurl = url + "?";
 	    
@@ -216,25 +180,47 @@ IG$.ready(function() {
 	    
 	    window.location.replace(nurl);
 	};
-});
-
-function _btn_handler(view, key) {
-	if (key == "custom1")
-	{
-		IG$._n2("013138da-01f4ab0a", "report", null, false);
-	}
+	
+	var theme_options = [];
+	
+	$.each(ig$.themes, function(i, theme) {
+		theme_options.push({
+			text: theme.disp,
+			handler: function() {
+				set_themes(theme);
+			}
+		})
+	});
+	
+	var menu_theme = new IG$._menu_button($("#b_style"), theme_options, {
+		btn_styles: ["fadeInRight"],
+		menu_position: {
+			top: 20,
+			left: "initial",
+			right: 10
+		}
+	});
+	menu_theme.create();
 }
 
-ig$.dashboard_custom = {
-	menu_loaded: function(menus, panel, snav) {
-		var item = menus[0];
-		snav.empty();
-		panel.L3.call(panel, snav, item, 0);
-	}
-};
+var modules = ["framework", "app_dashboard", "appnc", "vis_ec", "vis_ec_theme", "custom"];
+IG$.__microloader(modules, function() {
+	$s.ready(function() {
+		var dasboard_inst = new IG$.amplix_instance({
+			target: "#mainview"
+		});
+		
+		dasboard_inst.onLoad(function() {
+			var me = this;
+			init_dashboard();
+		});
+		
+		dasboard_inst.create();
+	});
+});
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202003090019"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202307180845"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
@@ -286,23 +272,23 @@ $(document).ready(function() {
 <!-- end cuddler -->
 </head>
 <body scroll="no">
-	<div id="loading-mask" style=""></div>
-	<div id="loading">
-		<div class="cmsg">
-			<div class="msg">Loading <%= com.amplix.launcher.App.CompanyName %>...</div>
-			<div class="lpb">
-				<div id="lpt" style="width: 10%;"></div>
+ 	<div id="mainview">
+ 		<div id="loading-mask" style=""></div>
+		<div id="loading">
+			<div class="cmsg">
+				<div class="msg">Loading BWEB...</div>
+				<div class="lpb">
+					<div id="lpt" style="width: 10%;"></div>
+				</div>
 			</div>
 		</div>
-	</div>
-
- 	<div id="mainview"></div>
+ 	</div>
  	
  	<div id="navbar" class="navbar">
  		<div class="navbar-header">
  			<div id="navbar_dmenu" class="igc-nav-btn-menu"></div>
  			<a class="navbar-brand">
- 				<%= com.amplix.launcher.App.CompanyName %>...
+ 				BWEB...
  			</a>
  		</div>
  		<div class="navbar-top-menu">

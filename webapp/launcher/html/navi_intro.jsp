@@ -3,13 +3,13 @@
 <div id="welcome">
 
     <div class="col">
-    	<div class="introblock">
-	    	<h1><%= com.amplix.launcher.App.CompanyName %> Intelligence for your business.</h1>
+    	<div class="introblock" id="home_app_title">
+	    	<h1>Augmented Analytics for your business - AMPLIX.</h1>
 	    </div>
     	<div class="intro-top">
-	    	<div class="introblock">
-	            Create scientific reports using <%= com.amplix.launcher.App.CompanyName %>. 
-	            The <%= com.amplix.launcher.App.CompanyName %> helps to make statistical analysis with easy guided user interfaces.
+	    	<div class="introblock" id="home_app_desc">
+	            Create scientific reports using amplixbi.com. 
+	            amplix data science tool helps to make statistical analysis with easy guided user interfaces.
 	        </div>
 	        <div id="pg_links" class="intro-pg-links">
 
@@ -33,7 +33,7 @@
 	    	</div>
 	    </div>
 	    <div class="intro-line-break"></div>
-        <div class="introbox introbox_1">
+        <div id="idv_intro_cnt" class="introbox introbox_1">
     		<h2 id="mbutton1">
     			Recent visit and favorites..
     		</h2>

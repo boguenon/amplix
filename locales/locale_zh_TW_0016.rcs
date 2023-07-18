@@ -1,0 +1,53 @@
+A;L_API_VERSION;API Version
+A;L_CSS_URL;CSS URL
+A;L_JS_LOADER_URL;JS Loader URL
+A;L_BASE_MAP;Base Map
+A;L_REST_APIS;REST APIs
+A;L_ZOOM_LEVEL;Zoom Level
+A;L_PALETTE;Palette
+A;L_MIN_RADIUS;Minimum Radius
+A;L_MAX_RADIUS;Maximum Radius
+A;L_MAP_CENTER_LAT_LNG;Map Center (Lat,Lng)
+A;L_BASEMAP;Base Map
+A;L_ENABLE_3D;Enable 3D
+A;L_ALPHA_ANGLE;Alpha Angle
+A;L_BETA_ANGLE;Beta Angle
+A;L_DEPTH;Depth
+A;L_VIEW_DIST;View Distance
+A;L_FIELD_COLUMN;Field Column
+A;L_DATA_SERIES;Data Series
+
+A;L_SVG_DRAW_OPTIONS;SVG Drawing Options
+A;L_SVG_RENDERERS;SVG Renderers
+A;L_SVG_TYPE;SVG Type
+
+A;L_SHEET_NAME;Sheet Name
+A;L_UPD_DATE;Updated Date
+A;L_DATE_IMPORTED;Imported Date
+A;L_GEOMAPPING;Geo Mapping
+A;L_AES_PASS_PHRASE;AES Pass Phrase
+
+A;L_OBJECT_ID;Object ID
+A;L_FIELDNAME;Field Name
+A;L_VALUE_CONTROLS;Value Controls
+A;L_CSS_NAME;CSS Name
+A;L_STEP_INCREASE;Increase Step
+A;L_SLIDER_OPTIONS;Slider Options
+A;L_DATETIME_SETUP;Date Time Setup
+A;L_PERIOD_SETUP;Period Setup
+A;L_FILEUPLOAD_SETTINGS;File Upload Settings
+A;L_UPLOAD_FILE;Upload File
+A;L_SHOW_FILEHIST;Show File History
+A;L_SHOW_ALLFILES;Show All Files
+A;L_MULTIPLE_FILES;Multiple Files
+A;L_VALUESET_OPTIONS;Value Set Options
+A;L_ENABLE_OTH_UPL;Allow User Upload
+
+A;L_TEMPLATE_CONTEXT;Template Context
+A;B_LEFT;Left
+A;B_RIGHT;Right
+A;L_FV_OPT;Form Viewer Option
+
+A;L_NEW_ANAL;New Analysis
+A;L_ANAL_GROUP;Analysis Group
+A;L_ANALYSIS_TYPE;Analysis Type

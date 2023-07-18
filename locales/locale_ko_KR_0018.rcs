@@ -1,0 +1,41 @@
+A;L_RSCRIPT;R 스크립트
+A;L_R_PROMPT;R 프롬프트
+A;B_REQUEST;스크립트 실행
+A;L_POSITION;위치
+A;B_OUTSIDE;바깥쪽
+A;L_DB_VAL;커넥션 검증 SQL
+A;B_OPERATION;연산자
+A;L_CHART_SEP;차트 X축 구분자
+A;L_C_TIP_EN;툴팁 보여주기
+A;L_ROT_ANGLE;회전 각도
+A;L_CSTEP_5;축 설정
+A;L_XAXIS_SETTINGS;X축 설정
+A;B_UPD;업데이트
+A;F_P_POT_COL;상위 그룹값에 대한 퍼센트
+A;L_HIDE_PROGRESS;로딩 메시지 숨기기
+A;L_WC_OPT;워드 클라우드 옵션
+A;L_WC_MIN;최소 폰트 사이즈
+A;L_WC_MAX;최대 폰트 사이즈
+A;L_FILTER_VALUESET;선택값 목록
+A;L_GROUP_CATEG;카테고리 그룹핑
+A;M_CONFIRM_SHARE_URL;리포트에 대한 공유 링크를 생성하려면 확인 버튼을 눌러 주십시오.
+
+A;L_META_UPGRADE;메타 버전 업그레이드
+A;T_MIG_META_UPGRADE;메타 버전 업그레이드
+A;L_SCI;데이터 분석 전문가
+A;L_SCI_MANAGER;데이터 분석전문가 서버
+A;L_SCI_DATA;데이터 퍼블리싱
+A;L_SCI_USER;데이터 전문가 모듈
+A;L_SCI_SERVERS;분석 서버
+A;L_SCI_DATASET;나의 데이터 집합
+A;I_SCI_DATASET;데이터 집합 동기화
+A;I_SCI_PUB_DATASET;퍼블릭 데이터셋
+
+A;L_TRASHBIN;휴지통 보관함
+A;L_PCT_PREC;퍼센트 정밀도
+A;L_RNK_D_NAME;합산 대상 컬럼이름
+
+A;L_R_INT;R 통계 연동
+A;L_R_SVR;R 서브 호스트
+A;L_R_SVR_PORT;R 서브 포트
+A;L_R_TEMP;임시 폴더

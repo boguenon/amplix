@@ -1,0 +1,16 @@
+yum install readline 
+yum install zlib zlib-devel
+yum install bzip2 bzip2-libs bzip2-devel 
+yum install lzma-sdk lzma-sdk-devel
+yum install xz xz-libs xz-devel xz-lzma-compat
+yum install pcre pcre-devel
+yum install libcurl libcurl-devel
+
+./configure --enable-R-shlib --with-readline=no --with-x=no
+
+make; make install 
+
+install.packages("Rserve");
+
+q();
+

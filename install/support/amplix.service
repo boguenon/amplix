@@ -1,0 +1,40 @@
+# /etc/systemd/system/amplix.service
+# sudo useradd -r -m -U -d /opt/amplix -s /bin/false amplix
+# sudo chown -R amplix: /opt/amplix
+# sudo chmod u+x /opt/amplix/bin/*.sh
+# systemctl daemon-reload
+# systemctl enable amplix.service
+# systemctl start amplix.service
+# ufw allow 8580/tcp
+
+[Unit]
+Description=Amplixbi Web Application
+Wants=network.target
+After=network.target
+
+[Service]
+Type=forking
+
+User=amplix
+Group=amplix
+UMask=0007
+
+WorkingDirectory=/opt/amplix
+
+Environment=JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+
+Environment=CATALINA_PID=/opt/amplix/temp/amplix.pid
+Environment=CATALINA_HOME=/opt/amplix
+Environment='CATALINA_OPTS=-Xms1024M -Xmx2048M -server -XX:+UseParallelGC -Djava.net.preferIPv4Stack=true'
+Environment='JAVA_OPTS=-Djava.awt.headless=true'
+
+ExecStart=/opt/amplix/bin/RUN_startup.sh
+ExecStop=/opt/amplix/bin/RUN_shutdown.sh
+
+SuccessExitStatus=143
+
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

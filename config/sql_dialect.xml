@@ -64,7 +64,42 @@
 				DATE_FORMAT({field}, '%i')
 			</extract>
 			<extract type="custom">
-				DATE_FORMAT({field}, '%b %e, %Y %k-%i')
+				DATE_FORMAT({field}, '{format}')
+			</extract>
+		</date_extract>
+		<date_extract type="mariadb">
+			<extract type="yyyy">
+				DATE_FORMAT({field}, '%Y')
+			</extract>
+			<extract type="quarter">
+				QUARTER({field})
+			</extract>
+			<extract type="month">
+				DATE_FORMAT({field}, '%c')
+			</extract>
+			<extract type="day">
+				DATE_FORMAT({field}, '%e')
+			</extract>
+			<extract type="weekmonth">
+				WEEK({field}, 5) - WEEK(DATE_SUB({field}, INTERVAL DAYOFMONTH({field}) - 1 DAY), 5) + 1
+			</extract>
+			<!-- 
+			// Day of the week (0=Sunday, 6=Saturday)
+			-->
+			<extract type="week" begin="0">
+				DATE_FORMAT({field}, '%w')
+			</extract>
+			<extract type="ampm">
+				DATE_FORMAT({field}, '%p')
+			</extract>
+			<extract type="hour">
+				DATE_FORMAT({field}, '%k')
+			</extract>
+			<extract type="minute">
+				DATE_FORMAT({field}, '%i')
+			</extract>
+			<extract type="custom">
+				DATE_FORMAT({field}, '{format}')
 			</extract>
 		</date_extract>
 		<date_extract type="mssql">
@@ -81,7 +116,7 @@
 				DATEPART(d, {field})
 			</extract>
 			<extract type="weekmonth">
-				DATEDIFF(week, DATEADD(week, DATEDIFF(week, 0, DATEADD(month, DATEDIFF(month, 0, {field}), 0)), 0), {field} - 1) + 1
+				DATEDIFF(week, DATEADD(week, DATEDIFF(week, 0, DATEADD(month, DATEDIFF(month, 0, {field}), 0)), 0), {field}) + 1
 			</extract>
 			<extract type="week" begin="0">
 				DATEPART(weekday, {field})
@@ -227,6 +262,38 @@
 				TO_CHAR({field}, {format})
 			</extract>
 		</date_extract>
+		<date_extract type="cubrid">
+			<extract type="yyyy">
+				YEAR({field})
+			</extract>
+			<extract type="quarter">
+				QUARTER({field})
+			</extract>
+			<extract type="month">
+				MONTH({field})
+			</extract>
+			<extract type="day">
+				DAY({field})
+			</extract>
+			<extract type="weekmonth">
+				EXTRACT(DOW FROM {field})
+			</extract>
+			<extract type="week" begin="1">
+				WEEK({field})
+			</extract>
+			<extract type="ampm">
+				CASE WHEN HOUR({field}) BETWEEN 0 AND 11 THEN 'AM' ELSE 'PM' END
+			</extract>
+			<extract type="hour">
+				HOUR({field})
+			</extract>
+			<extract type="minute">
+				MINUTE({field})
+			</extract>
+			<extract type="custom">
+				EXTRACT({format} FROM DATETIME {field})
+			</extract>
+		</date_extract>
 	</date_expressions>
 	<date_format>
 		<item type="oracle">
@@ -234,6 +301,10 @@
 			<datetime><![CDATA[TO_CHAR({field}, 'YYYYMMDDHH24MISS')]]></datetime>
 		</item>
 		<item type="mysql">
+			<date><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></date>
+			<datetime><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></datetime>
+		</item>
+		<item type="mariadb">
 			<date><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></date>
 			<datetime><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></datetime>
 		</item>
@@ -245,15 +316,26 @@
 			<date><![CDATA[FORMATDATETIME({field}, 'yyyyMMddhhmmss')]]></date>
 			<datetime><![CDATA[FORMATDATETIME({field}, 'yyyyMMddhhmmss')]]></datetime>
 		</item>
+		<item type="cubrid">
+			<date><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></date>
+			<datetime><![CDATA[DATE_FORMAT({field}, '%Y%m%d%H%i%S')]]></datetime>
+		</item>
 	</date_format>
 	<string_to_date>
 		<item type="oracle">
 			<date><![CDATA[TO_DATE({value},'yyyymmdd')]]></date>
 			<datetime><![CDATA[TO_DATE({value},'yyyymmddhh24miss')]]></datetime>
+			<datetime_expression><![CDATA[TO_DATE({field},'{format}')]]></datetime_expression>
 		</item>
 		<item type="mysql">
 			<date><![CDATA[STR_TO_DATE({value}, '%Y%m%d')]]></date>
 			<datetime><![CDATA[STR_TO_DATE({value}, '%Y%m%d%H%i%s')]]></datetime>
+			<datetime_expression><![CDATA[STR_TO_DATE({field}, '{format}')]]></datetime_expression>
+		</item>
+		<item type="mariadb">
+			<date><![CDATA[STR_TO_DATE({value}, '%Y%m%d')]]></date>
+			<datetime><![CDATA[STR_TO_DATE({value}, '%Y%m%d%H%i%s')]]></datetime>
+			<datetime_expression><![CDATA[STR_TO_DATE({field}, '{format}')]]></datetime_expression>
 		</item>
 		<item type="sybase">
 			<date><![CDATA[CONVERT(DATETIME, {value}, 112)]]></date>
@@ -263,10 +345,12 @@
 		<item type="postgre">
 			<date><![CDATA[TO_DATE({value}, 'YYYYMMDD')]]></date>
 			<datetime><![CDATA[TO_TIMESTAMP({value}, 'YYYYMMDDHH24MISS')]]></datetime>
+			<datetime_expression><![CDATA[TO_DATE({field}, '{format}')]]></datetime_expression>
 		</item>
 		<item type="teradata">
 			<date><![CDATA[CAST({value} AS DATE FORMAT 'YYYYMMDD')]]></date>
 			<datetime><![CDATA[CAST({value} AS TIMESTAMP FORMAT 'YYYYMMDDHHMISS')]]></datetime>
+			<datetime_expression><![CDATA[CAST({value} AS DATE FORMAT '{format}')]]></datetime_expression>
 		</item>
 		<item type="mssql">
 			<date><![CDATA[CONVERT(DATE, {value}, 112)]]></date>
@@ -276,6 +360,12 @@
 		<item type="h2">
 			<date><![CDATA[PARSEDATETIME({value}, 'yyyyMMddhhmmss')]]></date>
 			<datetime><![CDATA[PARSEDATETIME({value}, 'yyyyMMddhhmmss')]]></datetime>
+			<datetime_expression><![CDATA[PARSEDATETIME({field}, '{format}')]]></datetime_expression>
+		</item>
+		<item type="cubrid">
+			<date><![CDATA[TO_DATE({value}, 'YYYYMMDD')]]></date>
+			<datetime><![CDATA[TO_DATETIME({value}, 'YYYYMMDDHH24MISS')]]></datetime>
+			<datetime_expression><![CDATA[TO_DATE({field}, '{format}')]]></datetime_expression>
 		</item>
 	</string_to_date>
 	<db_info>
@@ -288,6 +378,7 @@
 			<separator><![CDATA[[]]]></separator>
 			<tablealias>AS</tablealias>
 			<dualtable></dualtable>
+			<enclosed><![CDATA[[]]]></enclosed>
 		</item>
 		<item type="db2">
 			<separator><![CDATA[[]]]></separator>
@@ -295,6 +386,11 @@
 			<dualtable>sysibm.sysdummy1</dualtable>
 		</item>
 		<item type="mysql">
+			<separator><![CDATA[``]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable></dualtable>
+		</item>
+		<item type="mariadb">
 			<separator><![CDATA[``]]></separator>
 			<tablealias>AS</tablealias>
 			<dualtable></dualtable>
@@ -318,6 +414,11 @@
 			<separator><![CDATA[""]]></separator>
 			<tablealias>AS</tablealias>
 			<dualtable></dualtable>
+		</item>
+		<item type="cubrid">
+			<separator><![CDATA[""]]></separator>
+			<tablealias>AS</tablealias>
+			<dualtable>FROM DUAL</dualtable>
 		</item>
 	</db_info>
 	<limit_query>
@@ -349,6 +450,13 @@
 			<limit_query><![CDATA[LIMIT {n}]]></limit_query>
 			<postsql></postsql>
 		</item>
+		<item type="mariadb">
+			<presql></presql>
+			<append_select></append_select>
+			<append_where></append_where>
+			<limit_query><![CDATA[LIMIT {n}]]></limit_query>
+			<postsql></postsql>
+		</item>
 		<item type="sybase">
 			<presql><![CDATA[SET ROWCOUNT={n}]]></presql>
 			<append_select></append_select>
@@ -364,6 +472,13 @@
 			<postsql></postsql>
 		</item>
 		<item type="h2">
+			<presql></presql>
+			<append_select></append_select>
+			<append_where></append_where>
+			<limit_query><![CDATA[LIMIT {n}]]></limit_query>
+			<postsql></postsql>
+		</item>
+		<item type="cubrid">
 			<presql></presql>
 			<append_select></append_select>
 			<append_where></append_where>

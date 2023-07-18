@@ -6,6 +6,7 @@ connection_method		= "tomcat_dbcp"
 connectionpool			= true
 autocommit				= true 
 maxpoolsize				= 20 
+max_wait_mills			= 50000
 monitor					= false 
 
 # data base connection information only system applies first matching values
@@ -36,6 +37,22 @@ persist.validatesql = "select 1"
 application.mainpage.mdi 					= "../launcher/analytics.jsp"
 application.mainpage.dashboard 				= "../launcher/dashboard.jsp"
 
+application.folder.plugins								= ""
+application.folder.upload								= ""
+application.folder.repository							= ""
+application.folder.temp									= ""
+application.folder.schedule								= ""
+application.folder.logs									= ""
+application.folder.cache								= ""
+application.folder.font									= ""
+application.folder.template								= ""
+application.folder.resources							= ""
+application.folder.phantom								= ""
+application.folder.pdf_fonts							= ""
+application.folder.datafiles							= ""
+application.folder.aliasmap								= ""
+application.folder.sysconfig							= ""
+application.folder.log_filename							= ""
 
 [SCHEDULE_SERVER]
 ############################################################################
@@ -68,5 +85,23 @@ https_keystore_file = "keystore.jks"
 https_ssl_protocol 	= TLS
 context_root 		= "/"
 
+cluster_enabled					= false
+cluster_sending_options 		= 8
+cluster_membership_address		= "228.0.0.4"
+cluster_membership_port			= 45564
+cluster_membership_frequency	= 500
+cluster_membership_droptime		= 3000
+
+cluster_receiver_address		= "auto"
+cluster_receiver_port			= 4000
+cluster_receiver_autobind		= 100
+cluster_receiver_timeout		= 5000
+cluster_reciever_maxthreads		= 6
+
 shutdown_port		= 6680
+
+
+
+
+
 

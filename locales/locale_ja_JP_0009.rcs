@@ -1,0 +1,11 @@
+A;L_CLEAR_FORMULA;Clear Formula
+A;B_MORE;More
+A;F_STDEV;Standard Deviation
+A;F_STDEVP;Standard Deviation P
+A;F_PERCENTILE;Percentile
+A;F_PERCENTILE_EXE;Percentile Excel
+A;L_FORMULA_GROUP;Formula Group
+A;L_EXPRESSION;Expression
+A;L_USE_COL_FORMAT;Use Column Format
+A;L_DISP_TEMPLATE;Display Template
+A;L_C_EXCEL_CSV;Data count exceeds for Excel output. Would you download as CSV file?
