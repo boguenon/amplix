@@ -37,18 +37,20 @@
 		<max-request-size>31457280</max-request-size>
 		<file-size-threshold>0</file-size-threshold>
 	</multipart-config>
+
 	<servlet>
-		<servlet-name>remoteproc</servlet-name>
+		<servlet-name>amplix_rest</servlet-name>
 		<servlet-class>
 			com.amplix.rpc.igcRpc
 		</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>remoteproc</servlet-name>
-		<url-pattern>/servlet/krcp</url-pattern>
+		<servlet-name>amplix_rest</servlet-name>
+		<url-pattern>/krcp/*</url-pattern>
 	</servlet-mapping>
-	<!-- please remove this section after install -->
+
+	<!-- remove after install -->
 	<servlet>
 		<servlet-name>installproc</servlet-name>
 		<servlet-class>
@@ -57,15 +59,33 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>installproc</servlet-name>
-		<url-pattern>/servlet/ircp</url-pattern>
+		<url-pattern>/servlet/ircp/*</url-pattern>
 	</servlet-mapping>
-	<!-- // end of remove section after install -->
+	<!-- end of remove after install -->
+	
+	<!-- bridged connection to load balancing api
+	     need to setup with bridge.properties
+	<servlet>
+		<servlet-name>amplix_api_bridge</servlet-name>
+		<servlet-class>com.amplix.rpc.igcBridge</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>amplix_api_bridge</servlet-name>
+		<url-pattern>/servlet/brcp</url-pattern>
+	</servlet-mapping>
+	-->
+	
   	<listener>
   		<listener-class>com.amplix.rpc.igcSessionListener</listener-class>
   	</listener>
   	<listener>
   		<listener-class>com.amplix.rpc.igcFileUploadListener</listener-class>
   	</listener>
+  	<listener>
+  		<listener-class>com.amplix.rpc.igcContextListener</listener-class>
+  	</listener>
+  	
   	<filter>
 	    <filter-name>UrlRewriteFilter</filter-name>
 	    <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
@@ -82,4 +102,53 @@
 	    <dispatcher>REQUEST</dispatcher>
 	    <dispatcher>FORWARD</dispatcher>
 	</filter-mapping>
+	
+	<filter>
+	    <filter-name>httpHeaderSecurity</filter-name>
+	    <filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class>
+	    <init-param>
+	        <param-name>antiClickJackingOption</param-name>
+	        <param-value>SAMEORIGIN</param-value>
+	    </init-param>
+	</filter>
+	
+	<filter-mapping>
+	    <filter-name>httpHeaderSecurity</filter-name>
+	    <url-pattern>/*</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<!-- 
+	<filter>
+  		<filter-name>CorsFilter</filter-name>
+  		<filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+  		<init-param>
+  			<param-name>cors.allowed.origins</param-name>
+  			<param-value>*</param-value>
+  		</init-param>
+  		<init-param>
+			<param-name>cors.allowed.methods</param-name>
+			<param-value>GET,POST,HEAD,OPTIONS,PUT</param-value>
+		</init-param>
+		<init-param>
+			<param-name>cors.allowed.headers</param-name>
+			<param-value>Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers</param-value>
+		</init-param>
+		<init-param>
+			<param-name>cors.exposed.headers</param-name>
+			<param-value>Access-Control-Allow-Origin,Access-Control-Allow-Credentials</param-value>
+		</init-param>
+		<init-param>
+			<param-name>cors.support.credentials</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<init-param>
+			<param-name>cors.preflight.maxage</param-name>
+			<param-value>10</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+  		<filter-name>CorsFilter</filter-name>
+  		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	 -->
 </web-app>
