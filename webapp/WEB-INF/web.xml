@@ -82,9 +82,6 @@
   	<listener>
   		<listener-class>com.amplix.rpc.igcFileUploadListener</listener-class>
   	</listener>
-  	<listener>
-  		<listener-class>com.amplix.rpc.igcContextListener</listener-class>
-  	</listener>
   	
   	<filter>
 	    <filter-name>UrlRewriteFilter</filter-name>
