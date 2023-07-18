@@ -33,13 +33,13 @@ rem Guess CATALINA_HOME if not defined
 set "CURRENT_DIR=%cd%"
 if not "%CATALINA_HOME%" == "" goto gotHome
 set "CATALINA_HOME=%cd%"
-if exist "%CATALINA_HOME%\bin\tomcat8.exe" goto okHome
+if exist "%CATALINA_HOME%\bin\amplix.exe" goto okHome
 rem CD to the upper dir
 cd ..
 set "CATALINA_HOME=%cd%"
 :gotHome
-if exist "%CATALINA_HOME%\bin\tomcat8.exe" goto okHome
-echo The tomcat8.exe was not found...
+if exist "%CATALINA_HOME%\bin\amplix.exe" goto okHome
+echo The amplix.exe was not found...
 echo The CATALINA_HOME environment variable is not defined correctly.
 echo This environment variable is needed to run this program
 goto end
@@ -75,10 +75,10 @@ if not "%CATALINA_BASE%" == "" goto gotBase
 set "CATALINA_BASE=%CATALINA_HOME%"
 :gotBase
 
-set "EXECUTABLE=%CATALINA_HOME%\bin\tomcat8.exe"
+set "EXECUTABLE=%CATALINA_HOME%\bin\amplix.exe"
 
 rem Set default Service name
-set SERVICE_NAME=Tomcat8
+set SERVICE_NAME=Tomcat9
 set DISPLAYNAME=Amplix 5.1 %SERVICE_NAME%
 
 rem Java 9 no longer supports the java.endorsed.dirs
@@ -156,8 +156,8 @@ set JVM=auto
 :foundJvm
 echo Using JVM:              "%JVM%"
 
-set "CLASSPATH=%CATALINA_HOME%\bin\amplix_launcher-3.0.0.jar;%CATALINA_HOME%\bin\amplix-3.0.0.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-8.5.23.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
-if not "%CATALINA_HOME%" == "%CATALINA_BASE%" set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\bin\amplix_launcher-3.0.0.jar;%CATALINA_HOME%\bin\amplix-3.0.0d.jar;%CATALINA_HOME%\lib\slf4j-api-1.7.25.jar;%CATALINA_HOME%\lib\logback-core-1.2.3.jar;%CATALINA_HOME%\lib\logback-classic-1.2.3.jar;%CATALINA_HOME%\lib\tomcat-embed-core-8.5.23.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar"
+set "CLASSPATH=%CATALINA_HOME%\bin\amplix_launcher-4.1.0.jar;%CATALINA_HOME%\bin\amplix-4.1.0.jar;%CATALINA_HOME%\lib\slf4j-api-2.0.7.jar;%CATALINA_HOME%\lib\logback-core-1.3.6.jar;%CATALINA_HOME%\lib\logback-classic-1.3.6.jar;%CATALINA_HOME%\lib\tomcat-embed-core-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-annotations-api-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-api-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-el-api-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-embed-core-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-embed-el-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-embed-jasper-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-jasper-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-jasper-el-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-jsp-api-9.0.71.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar;%CATALINA_HOME%\lib\jackson-databind-2.11.0.jar;%CATALINA_HOME%\lib\jackson-core-2.11.0.jar;%CATALINA_HOME%\lib\jackson-annotations-2.11.0.jar;%CATALINA_HOME%\lib\javax.servlet-api-3.1.0.jar;%CATALINA_HOME%\lib\ecj-4.6.1.jar;%CATALINA_HOME%\lib\javax.annotation-api-1.2.jar;%CATALINA_HOME%\lib\tomcat-websocket-9.0.71.jar;%CATALINA_HOME%\lib\javax.websocket-api-1.1.jar;%CATALINA_HOME%\lib\tomcat-catalina-ha-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-tribes-9.0.71.jar"
+if not "%CATALINA_HOME%" == "%CATALINA_BASE%" set "CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\bin\amplix_launcher-4.1.0.jar;%CATALINA_HOME%\bin\amplix-4.1.0.jar;%CATALINA_HOME%\lib\slf4j-api-2.0.7.jar;%CATALINA_HOME%\lib\logback-core-1.3.6.jar;%CATALINA_HOME%\lib\logback-classic-1.3.6.jar;%CATALINA_HOME%\lib\tomcat-embed-core-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-annotations-api-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-api-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-el-api-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-embed-core-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-embed-el-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-embed-jasper-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-jasper-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-jasper-el-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-jsp-api-9.0.71.jar;%CATALINA_HOME%\lib\joda-time-2.9.9.jar;%CATALINA_HOME%\lib\commons-codec-1.11.jar;%CATALINA_HOME%\lib\jackson-databind-2.11.0.jar;%CATALINA_HOME%\lib\jackson-core-2.11.0.jar;%CATALINA_HOME%\lib\jackson-annotations-2.11.0.jar;%CATALINA_HOME%\lib\javax.servlet-api-3.1.0.jar;%CATALINA_HOME%\lib\ecj-4.6.1.jar;%CATALINA_HOME%\lib\javax.annotation-api-1.2.jar;%CATALINA_HOME%\lib\tomcat-websocket-9.0.71.jar;%CATALINA_HOME%\lib\javax.websocket-api-1.1.jar;%CATALINA_HOME%\lib\tomcat-catalina-ha-9.0.71.jar;%CATALINA_HOME%\lib\tomcat-tribes-9.0.71.jar"
 
 if "%SERVICE_STARTUP_MODE%" == "" set SERVICE_STARTUP_MODE=manual
 if "%JvmMs%" == "" set JvmMs=128
