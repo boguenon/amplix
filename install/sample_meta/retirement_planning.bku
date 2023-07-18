@@ -5155,6 +5155,7 @@
     "manage" : true,
     "is_sub" : true,
     "sortseq" : 0,
+    "pstatus": "8",
     "auth" : [ {
       "sid" : "0122483f-0155fb4d",
       "dutytype" : "A",

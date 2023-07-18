@@ -35,6 +35,26 @@
       "value" : "no_border",
       "issql" : false
     }, {
+      "name" : "panel padding-left 20",
+      "type" : "panel_style",
+      "value" : "panel-pading-left-20",
+      "issql" : false
+    }, {
+      "name" : "panel padding-right 20",
+      "type" : "panel_style",
+      "value" : "panel-pading-right-20",
+      "issql" : false
+    }, {
+      "name" : "panel padding-top 20",
+      "type" : "panel_style",
+      "value" : "panel-pading-top-20",
+      "issql" : false
+    }, {
+      "name" : "panel padding-bottom 20",
+      "type" : "panel_style",
+      "value" : "panel-pading-bottom-20",
+      "issql" : false
+    }, {
       "name" : "substring",
       "type" : "filter_valueformat",
       "value" : "#helper.substring(value, 0, 4)",
