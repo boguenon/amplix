@@ -538,6 +538,10 @@
 									"cls": "ig_r_rpt_vr"
 								},
 								{
+									"name": "Add FormViewer",
+									"cls": "ig_r_frm_vr"
+								},
+								{
 									"name": "Add StoryView",
 									"cls": "ig_r_story"
 								}
