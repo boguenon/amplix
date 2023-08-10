@@ -4895,10 +4895,6 @@
     "value" : "Programs"
   }, {
     "group" : "locale_en_US_0014",
-    "name" : "L_REG_SCHEDULE",
-    "value" : "Register Schedule"
-  }, {
-    "group" : "locale_en_US_0014",
     "name" : "L_JOB_TYPE",
     "value" : "Job Type"
   }, {
@@ -8205,5 +8201,17 @@
     "group" : "locale_en_US_0019",
     "name" : "L_P_cond_end",
     "value" : "END IF"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_MONGO_SCH",
+    "value" : "Mongo Schedule"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_MR_SRC",
+    "value" : "Data Source"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_MR_TGT",
+    "value" : "Data Target"
   } ]
 }

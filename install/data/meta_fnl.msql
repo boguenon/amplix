@@ -1,6 +1,6 @@
 DELETE FROM igcserver;
 INSERT INTO igcserver (pname, content, mdate) VALUES ('VERSION', '5.0', {CURUTCTIME});
-INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '5.01', {CURUTCTIME});
+INSERT INTO igcserver (pname, content, mdate) VALUES ('ProductVersion', '5.02', {CURUTCTIME});
 
 
 UPDATE igcms SET pstatus=8 WHERE iuid='dda88d1e-6e764ed9';

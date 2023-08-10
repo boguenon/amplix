@@ -278,3 +278,7 @@ A;L_P_thread_end;Thread End
 A;L_P_cond_if;IF
 A;L_P_cond_else;ELSE IF
 A;L_P_cond_end;END IF
+
+A;L_MONGO_SCH;Mongo Schedule
+A;L_MR_SRC;Data Source
+A;L_MR_TGT;Data Target
