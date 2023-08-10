@@ -277,3 +277,7 @@ A;L_P_thread_end;쓰레드 종료
 A;L_P_cond_if;IF 조건
 A;L_P_cond_else;ELSE IF 조건
 A;L_P_cond_end;IF 종료
+
+A;L_MONGO_SCH;Mongo 작업관리자
+A;L_MR_SRC;데이터 소스
+A;L_MR_TGT;데이터 타겟

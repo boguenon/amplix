@@ -451,7 +451,8 @@ CREATE TABLE igcsc (
   a1 #CHAR#(1),
   a1a #VARCHAR#(10),
   a1b #VARCHAR#(100),
-  a1c #VARCHAR#(200)
+  a1c #VARCHAR#(200),
+  sccmd #VARCHAR#(24)
 );
 
 CREATE TABLE igcscp (

@@ -175,7 +175,6 @@ A;L_HEART_BEAT;활성화 상태
 A;L_CRT_DATE;생성 일자
 A;L_MOD_DATE;수정 일자
 A;L_PROGRAMS;프로그램
-A;L_REG_SCHEDULE;스케쥴 등록
 A;L_JOB_TYPE;작업 유형
 A;L_ADD_NEW_PROGRAM;신규 프로그램 추가
 A;L_LOAD_FILE;파일 불러오기
