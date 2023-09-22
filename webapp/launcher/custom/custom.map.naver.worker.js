@@ -31,7 +31,16 @@ IG$.__chartoption.chartext.navermap.prototype.drawChart = function(owner, result
 		tabledata = results._tabledata,
 		rowfix = results.rowfix,
 		geodata,
-		i, j;
+		i, j,
+		hidden_columns = {};
+		
+	if (results.hidden_columns)
+	{
+		for (i=0; i < results.hidden_columns.length; i++)
+		{
+			hidden_columns[results.hidden_columns[i]] = 1;
+		}
+	}
 	
 	jcontainer.empty();
 	var defaultLevel = parseInt(cop.m_zoom_level) || 11;
@@ -203,6 +212,9 @@ IG$.__chartoption.chartext.navermap.prototype.drawChart = function(owner, result
 					
 					for (n=colfix; n<row.length; n++)
 					{
+						if (hidden_columns[n])
+							continue;
+						
 						var t = "";
 						for (k=0; k < rowfix; k++)
 						{
