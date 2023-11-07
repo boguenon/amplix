@@ -1,5 +1,5 @@
 ﻿ig$.bootconfig = {
-	"cache": "202311022303",
+	"cache": "202311062045",
     "boot": {
         "framework": [
             "./js/framework.min.js"
@@ -47,6 +47,7 @@
 			"./custom/custom.chart.options.js",
 			"./custom/custom.map.common.js",
 			"./custom/custom.map.google.js",
+            "./custom/custom.map.openstreet.js",
 			"./custom/custom.map.daum.js",
 			"./custom/custom.map.esri.js",
 			"./custom/custom.map.naver.js",

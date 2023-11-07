@@ -6,7 +6,7 @@
     appbg: "bg_7186.png",
     companydomain: "http://www.amplixbi.com",
     applink: "launcher/viewer.jsp?objid={objid}",
-    copy: "&copy; 2005-" + "202311022303".substring(0, 4) + " amplixbi.com Inc. <br />ALL RIGHTS RESERVED. <br />amplix. Confidential Information",
+    copy: "&copy; 2005-" + "202311062045".substring(0, 4) + " amplixbi.com Inc. <br />ALL RIGHTS RESERVED. <br />amplix. Confidential Information",
     intropage: "navi_intro",
     timer_rsn: 300000,
     timer_ping: 0,
@@ -71,10 +71,10 @@
     ],
 	echarts_theme: "amplix",
 	appInfo: {
-		date: "202311022303",
+		date: "202311062045",
 		appversion: "",
 		apprelease: "",
-		web_revision: "3354-ver5.01-228-g42bafabe"
+		web_revision: "3357-ver5.01-231-g1d7a2ab1"
 	},
 	$l_:0
 };
