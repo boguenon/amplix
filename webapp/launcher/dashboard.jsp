@@ -50,21 +50,21 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202311062045" />
-<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202311062045" />
-<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202311062045" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202311220718" />
+<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202311220718" />
+<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202311220718" />
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202311062045\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202311220718\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202311062045" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202311220718" />
 
 <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202311062045"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202311062045"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202311062045"></script>
+<script type="text/javascript" src="../config.js?_dc=202311220718"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202311220718"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202311220718"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -114,7 +114,7 @@ if (theme != null && theme.length() > 0)
 }
 %>
 
-var init_dashboard = function() {
+var init_dashboard = function(instance) {
 	var menu_logout = new IG$._menu_button($(".user-info"), [
 		{
 			nmae: "b_passwd",
@@ -142,7 +142,7 @@ var init_dashboard = function() {
 	], {
 		btn_styles: ["fadeInRight"],
 		menu_position: {
-			top: 20,
+			top: 40,
 			left: "initial",
 			right: 10
 		}
@@ -195,12 +195,27 @@ var init_dashboard = function() {
 	var menu_theme = new IG$._menu_button($("#b_style"), theme_options, {
 		btn_styles: ["fadeInRight"],
 		menu_position: {
-			top: 20,
+			top: 40,
 			left: "initial",
 			right: 10
 		}
 	});
 	menu_theme.create();
+
+	// play dashboard
+	var is_playing = false,
+		b_play = $("#b_play");
+
+	b_play.bind("click", function() {
+		var mainPanel = instance.mainPanel;
+		is_playing = !is_playing;
+		b_play.removeClass("fa-play")
+			.removeClass("fa-pause");
+
+		b_play.addClass(is_playing ? "fa-pause" : "fa-play");
+		mainPanel.stopPlay();
+		is_playing && mainPanel.startPlay();
+	});
 }
 
 var modules = ["framework", "app_dashboard", "appnc", "vis_ec", "vis_ec_theme", "custom"];
@@ -212,7 +227,7 @@ IG$.__microloader(modules, function() {
 		
 		dasboard_inst.onLoad(function() {
 			var me = this;
-			init_dashboard();
+			init_dashboard(dashboard_inst);
 		});
 		
 		dasboard_inst.create();
@@ -220,7 +235,7 @@ IG$.__microloader(modules, function() {
 });
 </script>
 <!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202311062045"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202311220718"></link>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
@@ -287,8 +302,8 @@ $(document).ready(function() {
  	<div id="navbar" class="navbar">
  		<div class="navbar-header">
  			<div id="navbar_dmenu" class="igc-nav-btn-menu"></div>
- 			<a class="navbar-brand">
- 				Amplix...
+ 			<a class="navbar-brand" id="logo_txt">
+ 				Amplix
  			</a>
  		</div>
  		<div class="navbar-top-menu">
@@ -297,7 +312,12 @@ $(document).ready(function() {
  			<ul class="navbar-btns">
  				<li class="light-blue">
  					<span class="user-info">
- 						<span class="fa fa-tasks" style="font-size:14px;" id="b_style"></span><span class="igc-uname" id="igc_login_dr"><span id="igc_login_user"></span><b class="caret"></b></span> <span id="igc_logout" class="igc-logout fa-sign-out"></span>
+						<span class="fa fa-play" id="b_play"></span>
+ 						<span class="fa fa-tasks" style="font-size:14px;" id="b_style"></span>
+						<span class="igc-uname" id="igc_login_dr">
+							<span id="igc_login_user"></span><b class="caret"></b>
+						</span> 
+						<span id="igc_logout" class="igc-logout fa-sign-out"></span>
  					</span>
  				</li>
  			</ul>
