@@ -34,3 +34,4 @@ INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (26, 5, 
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (27, 2, 'amplix_h2','com.amplix.connector.MemoryDBJdbcDriver','AMPLIX InMemoryDB','jdbc:amplix_memdb:<dbname>',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (28, 1, 'tibero','com.tmax.tibero.jdbc.TbDriver','Tmax Tibero','jdbc:tibero:thin:@<server>[:<8629>]:<service_name>',1);
 INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (29, 2, 'pardot','pardot','Pardot connection','pardot',1);
+INSERT INTO igcdbh (seq, gid, tid, drvcls, drvname, surl, mstat) VALUES (31, 1, 'datavirtuality', 'com.datavirtuality.dv.jdbc.Driver', 'Data Virtuality', 'jdbc:datavirtuality:<db-name>@mm://<host>:<31000>', 1);
