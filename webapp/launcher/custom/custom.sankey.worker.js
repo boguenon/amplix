@@ -8,6 +8,7 @@
 		n = 0,
 		bc,
 		lmap = {},
+		s, t,
 		sm, k;
 		
 	for (j=0; j < colfix; j++)

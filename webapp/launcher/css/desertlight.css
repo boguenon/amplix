@@ -2913,8 +2913,8 @@ a:active .webix_custom_radio {
 	border-color: #5d5d5d;
 }
 
-.navbar {
-	border: 1px solid transparent;
+.igc-navbar {
+	border: 0px solid transparent;
 	border-color: #e7e7e7;
 	background: #5d5d5d;
 }
