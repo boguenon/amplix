@@ -117,54 +117,81 @@ IG$.cVis.html_ranktable = $s.extend(IG$.cVis.base, {
 				td = $("<td></td>").appendTo(thr);
 				td.addClass("ig-dvrtbl-data");
 			}
-			
+
 			$.each(tabledata, function(i, row) {
 				if (i < rowfix)
 					return;
 			
 				if (row[0].merged == 1 || row[0].merged == 0)
 				{
-					tr = $("<tr></tr>");
-					
-					var td_row = [],
+					var render_tr = [],
+						td_row = [],
 						exp_row,
 						exp_crows = [],
-						exp_cell;
+						exp_cell,
+						stname;
 					
-					for (j=colfix; j < colcnt + 1; j++)
+					for (let loop1 = colfix; loop1 < colcnt + 1; loop1++)
 					{
-						exp_row = [];
-						exp_crows.push(exp_row);
-						expdata.rows.push(exp_row);
-						
-						for (k=0; k < colfix + slength + 1; k++)
+						var render_row = {
+							ths: []
+						};
+
+						render_row.tr = tr = $("<tr></tr>");
+
+						if (i < rowfix)
 						{
-							exp_row.push({});
+							tr.appendTo(th);
 						}
+						else
+						{
+							tr.appendTo(tb);
+						}
+
+						if (loop1 == colfix)
+						{
+							var tm = $("<td class='ig-dvrtbl-fixed' rowspan='" + (colcnt - colfix + 1) + "'></td>").appendTo(tr);
+							render_row.ths.push(tm);
+						}
+
+						for (j=0; j < colfix + slength - 1; j++)
+						{
+							var tm = $("<td></td>").appendTo(tr);
+							render_row.ths.push(tm);
+
+							if (j == 0)
+							{
+								stname = "ig-drvtbl-header";
+							}
+							else
+							{
+								stname = "ig-dvrtbl-data";
+							}
+							
+							tm.addClass(stname);
+						}
+
+						// if (loop1 == colfix)
+						{
+							exp_row = [];
+							exp_crows.push(exp_row);
+							expdata.rows.push(exp_row);
+							
+							for (k=0; k < colfix + slength + 1; k++)
+							{
+								exp_row.push({});
+							}
+						}
+
+						render_tr.push(render_row);
 					}
 					
 					exp_row = exp_crows[0];
 					exp_row[0].rowspan = colcnt - colfix + 1;
-					
-					for (j=0; j < colfix + slength + 1; j++)
+
+					for (j=0; j < colfix + slength; j++)
 					{
-						var tm = $("<td></td>").appendTo(tr),
-							stname;
-						
-						if (j == 0)
-						{
-							stname = "ig-dvrtbl-fixed";
-						}
-						else if (j == 1)
-						{
-							stname = "ig-drvtbl-header";
-						}
-						else
-						{
-							stname = "ig-dvrtbl-data";
-						}
-						
-						tm.addClass(stname);
+						var tm = render_tr[0].ths[j]; // $("<td></td>").appendTo(tr),;
 						td_row.push(tm);
 						
 						for (k=0; k < exp_crows.length; k++)
@@ -208,9 +235,13 @@ IG$.cVis.html_ranktable = $s.extend(IG$.cVis.base, {
 					
 					td = td_row[1];
 					var hrow = tabledata[0];
-					
-					var dcell = $("<div class='ig-dvrtbl-category ig-dvrtbl-category-head'>" + (hrow[1].text || hrow[1].code) + "</div>")
-						.appendTo(td);
+
+					// var dcell = $("<div class='ig-dvrtbl-category ig-dvrtbl-category-head'>" + (hrow[1].text || hrow[1].code) + "</div>")
+					// 	.appendTo(td);
+
+					var dcell = render_tr[0].ths[1].html(hrow[1].text || hrow[1].code);
+					dcell.addClass("ig-dvrtbl-category");
+					dcell.addClass("ig-dvrtbl-head");
 						
 					exp_crows[0][1].text = hrow[1].text || hrow[1].code;
 					exp_crows[0][1].code = hrow[1].code;
@@ -219,17 +250,17 @@ IG$.cVis.html_ranktable = $s.extend(IG$.cVis.base, {
 					exp_crows[0][1].style.push("ig-dvrtbl-head");
 					
 					stname = exp_crows[0][1].style.join(" "); 
-					
+
 					es = expdata.styles[stname];
-								
+
 					if (!es)
 					{
 						es = expdata.styles[stname] = {};
 						es.cell = {
 							html: dcell
 						};
-					} 
-						
+					}
+
 					var n = 0;
 					
 					for (n=colfix; n < colcnt; n++)
@@ -239,8 +270,10 @@ IG$.cVis.html_ranktable = $s.extend(IG$.cVis.base, {
 							cls = "ig-dvrtbl-measure-head";
 							
 						cls += " ig-dvrtbl-measure-head_" + (cell.index);
-						var div_meas = $("<div class='" + cls + "'>" + celltext + "</div>")
-							.appendTo(td);
+						// var div_meas = $("<div class='" + cls + "'>" + celltext + "</div>")
+						// 	.appendTo(td);
+						var div_meas = render_tr[n - colfix + 1].ths[0].html(celltext);
+						div_meas.addClass(cls);
 						exp_crows[n-colfix + 1][1].text = celltext; 
 						exp_crows[n-colfix + 1][1].code = cell.code;
 						exp_crows[n-colfix + 1][1].style = exp_crows[n-colfix + 1][1].style || [];
@@ -255,7 +288,7 @@ IG$.cVis.html_ranktable = $s.extend(IG$.cVis.base, {
 							es.cell = {
 								html: div_meas
 							};
-						} 
+						}
 					}
 					
 					var seq = 2;
@@ -280,9 +313,10 @@ IG$.cVis.html_ranktable = $s.extend(IG$.cVis.base, {
 							exp_crows[0][seq].style = exp_crows[0][seq].style || [];
 							exp_crows[0][seq].style.push("ig-dvrtbl-category"); 
 							
-							var div_categ = $("<div class='ig-dvrtbl-category'>" + celltext + "</div>")
-								.appendTo(td);
-								
+							// var div_categ = $("<div class='ig-dvrtbl-category'>" + celltext + "</div>")
+							// 	.appendTo(td);
+							var div_categ = render_tr[0].ths[seq].html(celltext);
+							div_categ.addClass("ig-dvrtbl-category");
 							var stname = exp_crows[0][seq].style.join(" ");
 							
 							es = expdata.styles[stname];
@@ -319,13 +353,16 @@ IG$.cVis.html_ranktable = $s.extend(IG$.cVis.base, {
 								cell.r = j;
 								cell.c = k;
 								cls += " ig-dvrtbl-measure_" + (cell.index);
-								var div_meas = $("<div class='" + cls + "'>" + celltext + "</div>")
-									.appendTo(td);
-									
+								
+								// var div_meas = $("<div class='" + cls + "'>" + celltext + "</div>")
+								// 	.appendTo(td);
+								var div_meas = render_tr[k - colfix + 1].ths[seq-1].html(celltext);
+								div_meas.addClass("ig-dvrtbl-measure");
+								div_meas.addClass("ig-dvrtbl-measure_" + cell.index);
 								exp_crows[k - colfix + 1][seq].text = celltext;
 								exp_crows[k - colfix + 1][seq].code = cell.code;
 								exp_crows[k - colfix + 1][seq].style = cls.split(" ");
-								
+
 								es = expdata.styles[cls];
 								
 								if (!es)
@@ -364,14 +401,7 @@ IG$.cVis.html_ranktable = $s.extend(IG$.cVis.base, {
 						td_row[j].addClass("ig-dvrtbl-empty");
 					}
 					
-					if (i < rowfix)
-					{
-						tr.appendTo(th);
-					}
-					else
-					{
-						tr.appendTo(tb);
-					}
+					
 				}
 			});
 		}

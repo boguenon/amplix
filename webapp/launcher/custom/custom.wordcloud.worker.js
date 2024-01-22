@@ -570,6 +570,10 @@ IG$.cVis.wordcloud.prototype.drawWordcloud = function() {
 		rec = rdata[i];
 		d = {};
 		d.text = rec[colfix-1].text || rec[colfix-1].code;
+    if (d.text.length > 20)
+    {
+      d.text = d.text.substring(0, 20) + "...";
+    }
 
 		if (rec[colfix])
 		{
@@ -580,6 +584,8 @@ IG$.cVis.wordcloud.prototype.drawWordcloud = function() {
 			
 			if (isNaN(d.size))
 				continue;
+
+      d.size = Math.abs(d.size);
 				
 			if (isNaN(vmin))
 			{
@@ -699,7 +705,7 @@ IG$.cVis.wordcloud.prototype.drawWordcloud = function() {
 			.attr("text-anchor", "middle")
 			.attr("transform", function(d) {
 				var r = "translate(" + [d.x, d.y] + ")";
-				//r += "rotate(" + d.rotate + ")";
+				r += "rotate(" + d.rotate + ")";
 				return r;
 			})
 			.text(function(d) {return d.text;})
@@ -709,7 +715,7 @@ IG$.cVis.wordcloud.prototype.drawWordcloud = function() {
 		.words(fdata)
 		.padding(padding)
 		.size([width, height])
-		.rotate(function() {return ~~(Math.random() * 2) * 90})
+		.rotate(function() { return (~~(Math.random() * 6) - 3) * 30; }) // {return ~~(Math.random() * 2) * 90})
 		.font(fontFamily)
 		.fontSize(function(d) {
 			var r = 10;
