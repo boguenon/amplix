@@ -357,8 +357,8 @@
 		return scale(d.name);
 	};
 	
-	x = d3.scaleLinear([0, 1], [margin.left, width - margin.right]);
-	y = d3.scaleBand().domain(d3.range(n + 1)).rangeRound([margin.top, margin.top + barSize * (n + 1 + 0.1)]).padding(0.1);
+	let x = d3.scaleLinear([0, 1], [margin.left, width - margin.right]);
+	let y = d3.scaleBand().domain(d3.range(n + 1)).rangeRound([margin.top, margin.top + barSize * (n + 1 + 0.1)]).padding(0.1);
 
 	// replay;
 	
