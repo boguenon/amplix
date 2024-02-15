@@ -64,10 +64,10 @@ input,select,textarea{
     background-color:inherit
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202401240818"></link>
-<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202401240818" />
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202402142354"></link>
+<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202402142354" />
 <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>
-<script type="text/javascript" src="./js/igccud.min.js?_dc=202401240818"></script>
+<script type="text/javascript" src="./js/igccud.min.js?_dc=202402142354"></script>
 <script type="text/javascript">
 function start_chat() {
 	$("#main_loading").show();
@@ -97,7 +97,7 @@ function start_cuddle() {
 		html: $("#app_cuddle"),
 		_mts_: <%=params.get("_mts_") != null ? "'" + params.get("_mts_") + "'" : "null" %>,
 		channel_name: <%=params.get("channel_name") != null ? "'" + params.get("channel_name") + "'" : "null" %>,
-		request_url: "<%=request.getContextPath()%>/servlet/krcp",
+		request_url: "<%=request.getContextPath()%>/krcp",
 		ws_path: "<%=request.getContextPath()%>/websocket/collaborate",
 		message: {
 			start: "Start",

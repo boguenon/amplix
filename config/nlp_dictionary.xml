@@ -1,0 +1,52 @@
+<nlp_dictionary>
+    <report_explains>
+        <report_explain locale="en_US">
+        	<items>
+	            <item type="max">
+                    <content><![CDATA[The maximum <span class='dim-value'>{header}</span> among the provided data is for the category <span class='dim-value'>{row_header}</span>, and it is <span class='numeric-value'>{value}</span>, covers <span class='numeric-value'>{percent}%</span> of all value. This means that <span class='dim-value'>{row_header}</span> contributes the highest percentage to the total <span class='dim-value'>{header}</span> compared to the other categories listed. 
+It's higher than <span class='dim-value'>{row_header:1}</span>, with <span class='numeric-value'>{diff_value:0:1}</span> compared to <span class='numeric-value'>{value:1}</span>.]]></content>
+                    <post_content><![CDATA[
+If you have any more questions or if there's anything else you'd like to know, feel free to ask!]]></post_content>
+                </item>
+	            <item type="min">
+                    <content><![CDATA[The minimum <span class='dim-value'>{header}</span> among the provided data is for the category <span class='dim-value'>{row_header}</span>, and it is <span class='numeric-value'>{value}</span>, covers <span class='numeric-value'>{percent}%</span> of all value. This means that <span class='dim-value'>{row_header}</span> contributes the lowesst percentage to the total <span class='dim-value'>{header}</span> compared to the other categories listed. 
+It's lower than <span class='dim-value'>{row_header:1}</span>, with <span class='numeric-value'>{diff_value:0:1}</span> compared to <span class='numeric-value'>{value:1}</span>.]]></content>
+                    <post_content><![CDATA[
+If you have any more questions or if there's anything else you'd like to know, feel free to ask!]]></post_content>
+                </item>
+                <item type="statistics">
+                    <content><![CDATA[We can observe that the distribution of <span class='dim-value'>{header}</span> shows a {map:skewness:>:2}high positive skewness to the left (skew > 1){/map}{map:skewness:<:-2}high negative skewness to the right (skew < -1){/map}{map:skewness:between:-2:2}normal distribute skewness (skew < 1){/map}. {map:kurtosis:>:60}A kurtosis value of {kurtosis} is extremely high, meaning that
+there is a profusion of outliers in the dataset. We need to do something.{/map}]]></content>
+                </item>
+                <item type="statistics" is_summary="T">
+                    <content><![CDATA[{map:skewness:>:5}We can observe that the distribution of <span class='dim-value'>{header}</span> shows a high positive skewness to the left (skew > 5).{/map}{map:skewness:<:-5}We can observe that the distribution of <span class='dim-value'>{header}</span> shows a high negative skewness to the right (skew < -5).{/map}{map:skewness:between:-5:5}We can observe that the distribution of <span class='dim-value'>{header}</span> shows a skewness that shows normal distribution.(-5 < skew < 5).{/map}{map:kurtosis:>:40}A kurtosis value of {kurtosis} is extremely high, meaning that
+there is a profusion of outliers in the dataset. We need to do something.{/map}]]></content>
+                </item>
+	        </items>
+        </report_explain>
+        <report_explain locale="ko_KR">
+        	<items>
+	            <item type="max">
+                    <content><![CDATA[전체 데이터에서 <span class='dim-value'>{header}</span> 항목의 최대값은 카테고리 <span class='dim-value'>{row_header}</span> 에서, <span class='numeric-value'>{value}</span> 값에 해당합니다. 이는 전체의 <span class='numeric-value'>{percent}%</span>에 해당하는 값입니다. 이는 <span class='dim-value'>{row_header}</span> 가 다른 카테고리에 비해 <span class='dim-value'>{header}</span> 의 가장 많은 기여를 하고 있는 것을 의미합니다. 
+이는 두번째로 큰 값인 <span class='dim-value'>{row_header:1}</span> 에 비해 <span class='numeric-value'>{diff_value:0:1}</span> 만큼 크며, 두번째 항목의 값은 <span class='numeric-value'>{value:1}</span> 입니다.]]></content>
+                    <post_content><![CDATA[
+다른 필요하신 사항이나 질문이 있으시면 질문해 주세요 ^^]]></post_content>
+                </item>
+	            <item type="min">
+                    <content><![CDATA[전체 데이터에서 <span class='dim-value'>{header}</span> 항목의 최소값은 카테고리 <span class='dim-value'>{row_header}</span> 에서, <span class='numeric-value'>{value}</span> 값에 해당합니다. 이는 전체의 <span class='numeric-value'>{percent}%</span>에 해당하는 값입니다. 이는 <span class='dim-value'>{row_header}</span> 가 다른 카테고리에 비해 <span class='dim-value'>{header}</span> 의 가장 많은 기여를 하고 있는 것을 의미합니다. 
+이는 두번째로 작은 값인 <span class='dim-value'>{row_header:1}</span> 에 비해 <span class='numeric-value'>{diff_value:0:1}</span>의 차이를 가지고 있으며, 두번째 항목의 값은 <span class='numeric-value'>{value:1}</span> 입니다.]]></content>
+                    <post_content><![CDATA[
+다른 필요하신 사항이나 질문이 있으시면 질문해 주세요 ^^]]></post_content>
+                </item>
+                <item type="statistics">
+                    <content><![CDATA[<span class='dim-value'>{header}</span>에 해당하는 값의 분포를 살펴보면 왜도(비대칭도)의 값이 {map:skewness:>:2} 으로써 매우 놓츤 양의 값을 나타내고 있습니다. 이는 좌측으로 편향된 분포 (왜곡도 skew > 1){/map}{map:skewness:<:-2} 으로써 매우 높은 음수의 값을 나타내고 있습니다. 이는 우측으로 편향된 분포 (왜곡도 skew < -1){/map}{map:skewness:between:2:-2} 정규 분포의 대칭 (왜곡도 skew < 1){/map}을 의미하고 있습니다. {map:kurtosis:>:60}첨도를 의미하는 kurtosis 의 값이 {kurtosis} 이며 매우 높은 값을 보이고 있습니다. 이것은 데이터셋에 아웃라이어 혹은 이상치의 값을 가지고 있는것으로 보이며 분석을 위해 이상치를 제거하기 위한 작업이 필요해 보입니다.{/map}]]></content>
+                    <post_content><![CDATA[
+다른 필요하신 사항이나 질문이 있으시면 질문해 주세요 ^^]]></post_content>
+                </item>
+                <item type="statistics" is_summary="T">
+                    <content><![CDATA[{map:skewness:>:5}<span class='dim-value'>{header}</span>에 해당하는 값의 분포를 살펴보면 매우 큰 양의 값을 가지고 있습니다. 이는 좌측에 값의 분포가 편향 되어 있음을 의히합니다. (skew > 5).{/map} {map:skewness:<:-5}<span class='dim-value'>{header}</span>에 해당하는 값의 분포를 살펴보면 매우 큰 음의 값을 가지고 있습니다. 이는 우측에 값의 분포가 편향 되어 있음을 의히합니다. (skew < -5).{/map} {map:skewness:between:-5:5}<span class='dim-value'>{header}</span>에 해당하는 값의 분포를 살펴보면 정규분포의 특성을 가지고 있습니다. 이는 값의 분포가 대칭 되어 있음을 의히합니다. (-5 < skew < 5).{/map}{map:kurtosis:>:40}또한 첨도(kurtosis) 값이 {kurtosis} 로써 매우 큰 값에 해당하며 이는 아웃라이어 혹은 이상치의 값을 가지고 있습니다. 데이터 전처리 작업을 통해 아웃라이어를 제거하거나 아웃라이어의 원인 파익 등 작업을 권장 드립니다.{/map}]]></content>
+                </item>
+	        </items>
+        </report_explain>
+    </report_explains>
+</nlp_dictionary>

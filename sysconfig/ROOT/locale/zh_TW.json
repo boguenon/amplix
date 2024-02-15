@@ -8129,5 +8129,29 @@
     "group" : "locale_zh_TW_0019",
     "name" : "L_MR_TGT",
     "value" : "Data Target"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "ROBO_ERR_TAB",
+    "value" : "Oh, current tab cannot handle request! Please open and let me process that later."
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "ROBO_ERR_NO_MAINPANEL",
+    "value" : "Oh, cannot handle process on current application!"
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "ROBO_ERR_PROCESSING",
+    "value" : "Sorry for saying that. Had error while processing your requests."
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "ROBO_ERR_FIELD",
+    "value" : "Field need to be specified to handle your request. Please provide me field information."
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "ROBO_ERR_TAB_REPORT",
+    "value" : "Oh, currently active viewer is not report. Please open report and try again."
+  }, {
+    "group" : "locale_zh_TW_0019",
+    "name" : "ROBO_SUCCESS",
+    "value" : "Yeah, I did what you asked for. Let me help you more."
   } ]
 }

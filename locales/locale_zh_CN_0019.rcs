@@ -281,3 +281,10 @@ A;L_P_cond_end;END IF
 A;L_MONGO_SCH;Mongo Schedule
 A;L_MR_SRC;Data Source
 A;L_MR_TGT;Data Target
+
+A;ROBO_ERR_TAB;Oh, current tab cannot handle request! Please open and let me process that later.
+A;ROBO_ERR_NO_MAINPANEL;Oh, cannot handle process on current application!
+A;ROBO_ERR_PROCESSING;Sorry for saying that. Had error while processing your requests.
+A;ROBO_ERR_FIELD;Field need to be specified to handle your request. Please provide me field information.
+A;ROBO_ERR_TAB_REPORT;Oh, currently active viewer is not report. Please open report and try again.
+A;ROBO_SUCCESS;Yeah, I did what you asked for. Let me help you more.
