@@ -88,10 +88,12 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,
       font-family: NanumBarunGothic;
       font-smooth:always;
       -webkit-font-smoothing: antialiased;
-      font-size: 11px;
 }
 
-.idv-side-bar,
+.idv-side-bar {
+      font-size: 1em;
+}
+
 .x-window-header-text-default {
 	font-size: 14px;
 }
