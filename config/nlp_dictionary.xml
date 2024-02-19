@@ -14,6 +14,11 @@ It's lower than <span class='dim-value'>{row_header:1}</span>, with <span class=
                     <post_content><![CDATA[
 If you have any more questions or if there's anything else you'd like to know, feel free to ask!]]></post_content>
                 </item>
+                <item type="correlation" is_summary="T">
+                    <content><![CDATA[The correlation of the value shows following intuition of the data. 
+{map:corr:>:0.7}Following is highly positive related items. {tmpl}<span class='dim-value'>{header1}</span> - <span class='dim-value'>{header2}</span> (with correlation {corr}){/tmpl}{/map}
+{map:corr:<:-0.7}Following is highly negative related items. {tmpl}<span class='dim-value'>{header1}</span> - <span class='dim-value'>{header2}</span> (with correlation {corr}){/tmpl}{/map}]]></content>
+                </item>
                 <item type="statistics">
                     <content><![CDATA[We can observe that the distribution of <span class='dim-value'>{header}</span> shows a {map:skewness:>:2}high positive skewness to the left (skew > 1){/map}{map:skewness:<:-2}high negative skewness to the right (skew < -1){/map}{map:skewness:between:-2:2}normal distribute skewness (skew < 1){/map}. {map:kurtosis:>:60}A kurtosis value of {kurtosis} is extremely high, meaning that
 there is a profusion of outliers in the dataset. We need to do something.{/map}]]></content>
@@ -37,6 +42,11 @@ there is a profusion of outliers in the dataset. We need to do something.{/map}]
 이는 두번째로 작은 값인 <span class='dim-value'>{row_header:1}</span> 에 비해 <span class='numeric-value'>{diff_value:0:1}</span>의 차이를 가지고 있으며, 두번째 항목의 값은 <span class='numeric-value'>{value:1}</span> 입니다.]]></content>
                     <post_content><![CDATA[
 다른 필요하신 사항이나 질문이 있으시면 질문해 주세요 ^^]]></post_content>
+                </item>
+                <item type="correlation" is_summary="T">
+                    <content><![CDATA[The correlation of the value shows following intuition of the data. 
+{map:corr:>:0.7}Following is highly positive related items. {tmpl}<span class='dim-value'>{header1}</span> - <span class='dim-value'>{header2}</span> (with correlation {corr}){/tmpl}{/map}
+{map:corr:<:-0.7}Following is highly negative related items. {tmpl}<span class='dim-value'>{header1}</span> - <span class='dim-value'>{header2}</span> (with correlation {corr}){/tmpl}{/map}]]></content>
                 </item>
                 <item type="statistics">
                     <content><![CDATA[<span class='dim-value'>{header}</span>에 해당하는 값의 분포를 살펴보면 왜도(비대칭도)의 값이 {map:skewness:>:2} 으로써 매우 놓츤 양의 값을 나타내고 있습니다. 이는 좌측으로 편향된 분포 (왜곡도 skew > 1){/map}{map:skewness:<:-2} 으로써 매우 높은 음수의 값을 나타내고 있습니다. 이는 우측으로 편향된 분포 (왜곡도 skew < -1){/map}{map:skewness:between:2:-2} 정규 분포의 대칭 (왜곡도 skew < 1){/map}을 의미하고 있습니다. {map:kurtosis:>:60}첨도를 의미하는 kurtosis 의 값이 {kurtosis} 이며 매우 높은 값을 보이고 있습니다. 이것은 데이터셋에 아웃라이어 혹은 이상치의 값을 가지고 있는것으로 보이며 분석을 위해 이상치를 제거하기 위한 작업이 필요해 보입니다.{/map}]]></content>
