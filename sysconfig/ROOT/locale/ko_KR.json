@@ -8225,5 +8225,77 @@
     "group" : "locale_ko_KR_0019",
     "name" : "ROBO_SUCCESS",
     "value" : "넵. 방금 말씀하신 내용을 성공적으로 반영하였습니다. 보다 필요하신 사항은 언제든 말씀해 주세요."
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_C_LIST",
+    "value" : "다중 선택 리스트"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_ADD_SENTENCE",
+    "value" : "문장 추가하기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_INTENTS",
+    "value" : "인텐츠"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_UTTERANCE",
+    "value" : "구두 문구"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_ANSWERS",
+    "value" : "답변"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_TRIM_ENTRY_TYPE",
+    "value" : "엔티티 트림 유형"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_TEXTS",
+    "value" : "문장"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_REGEX",
+    "value" : "RegEx"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_LEFT_WORDS",
+    "value" : "왼쪽 단어 목록"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_RIGHT_WORDS",
+    "value" : "오른쪽 단어 목록"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_WORDS",
+    "value" : "단어 목록"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_SKIP_WORDS",
+    "value" : "스킵 단어 목록"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_MANDATORY",
+    "value" : "필수사항"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_MESSAGES",
+    "value" : "메시지"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_CONTENTS",
+    "value" : "컨텐츠"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_SRCH_RULES",
+    "value" : "률 검색하기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_EXP_RULES",
+    "value" : "률 반출하기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_IMP_RULES",
+    "value" : "률 가져오기"
   } ]
 }

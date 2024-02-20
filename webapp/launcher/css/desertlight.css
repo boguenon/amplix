@@ -960,10 +960,6 @@ div.webix_modal_cover {
   background-repeat: no-repeat;
   background-position: 2px center;
 }
-.webix_img_btn .webix_icon,
-.webix_img_btn_abs .webix_icon {
-  color: #ffffff;
-}
 .webix_img_btn_abs .webix_image,
 .webix_img_btn .webix_image {
   background-repeat: no-repeat;
@@ -2792,14 +2788,6 @@ a:active .webix_custom_radio {
   border-collapse: initial;
 }
 
-
-.webix_layout_toolbar.webix_toolbar .webix_img_btn_abs .webix_icon, 
-.webix_layout_toolbar.webix_toolbar .webix_img_btn_abs .webix_img_btn_text,
-.webix_img_btn .webix_icon, .webix_img_btn_abs .webix_icon
-{
-    color: #fff;
-}
-
 .webix_layout_toolbar.webix_toolbar .webixtype_base:active,
 .webix_layout_toolbar.webix_toolbar .webix_inp_counter_next:active,
 .webix_layout_toolbar.webix_toolbar .webix_inp_counter_prev:active,
@@ -2814,12 +2802,16 @@ a:active .webix_custom_radio {
   color: #fff;
 }
 
+.webix_layout_toolbar.webix_toolbar .webix_img_btn_abs:hover {
+  color: #e47911;
+}
+
 .webix_el_button input,
 .webix_el_toggle input,
 .webix_el_button button,
 .webix_el_toggle button,
 .webixbutton {
-  	color: #fff !important;
+  	color: #fff;
 }
 
 .webix_view.webix_control.webix_el_tabbar {
@@ -3148,3 +3140,85 @@ a:active .webix_custom_radio {
 .m-datagrid-cell-selected {
   background: #9b9b9b !important;
 }
+
+.idv-dtab-area > .ig-dtab-item {
+  background: #393939;
+}
+
+.idv-dtab-area > .ig-dtab-item.selected {
+  background-color: #191919;
+}
+
+.webix_layout_toolbar.webix_toolbar.ig-strut-header {
+  background-color: #191919;
+}
+
+.webix_layout_toolbar.webix_toolbar.ig-strut-header .webix_el_label {
+  color: #fff;
+}
+
+.webix_layout_toolbar.webix_toolbar .webixtype_base:focus,
+.webix_layout_toolbar.webix_toolbar .webix_inp_counter_next:focus,
+.webix_layout_toolbar.webix_toolbar .webix_inp_counter_prev:focus,
+.webix_layout_toolbar.webix_toolbar .webix_segment_0:focus,
+.webix_layout_toolbar.webix_toolbar .webix_segment_1:focus,
+.webix_layout_toolbar.webix_toolbar .webix_segment_N:focus {
+  background-color: rgba(0, 0, 0, 0.07);
+  color: #fff;
+}
+
+md-list-item.selected {
+  --md-outlined-field-content-color: #fff;
+  --md-outlined-field-content-weight: 300;
+  --md-outlined-field-focus-content-color: #fff;
+  --md-outlined-field-focus-label-text-color: #fff;
+  --md-outlined-field-focus-leading-content-color: #fff;
+  --md-outlined-field-focus-outline-color: #fff;
+  --md-outlined-field-focus-supporting-text-color: #fff;
+  --md-outlined-field-focus-trailing-content-color: #fff;
+  --md-outlined-field-hover-content-color: #fff;
+  --md-outlined-field-hover-label-text-color: #fff;
+  --md-outlined-field-hover-leading-content-color: #fff;
+  --md-outlined-field-hover-outline-color: #fff;
+  --md-outlined-field-hover-supporting-text-color: #fff;
+  --md-outlined-field-hover-trailing-content-color: #fff;
+  --md-outlined-field-label-text-color: #fff;
+  --md-outlined-field-label-text-weight: 300;
+  --md-outlined-field-leading-content-color: #fff;
+  --md-outlined-field-outline-color: #fff;
+  --md-outlined-field-supporting-text-color: #fff;
+  --md-outlined-field-supporting-text-weight: 300;
+}
+
+.igc-md-ctrl {
+  --md-outlined-field-content-color: #fff;
+  --md-outlined-field-content-weight: 300;
+  --md-outlined-field-focus-content-color: #fff;
+  --md-outlined-field-focus-label-text-color: #fff;
+  --md-outlined-field-focus-leading-content-color: #fff;
+  --md-outlined-field-focus-outline-color: #fff;
+  --md-outlined-field-focus-supporting-text-color: #fff;
+  --md-outlined-field-focus-trailing-content-color: #fff;
+  --md-outlined-field-hover-content-color: #fff;
+  --md-outlined-field-hover-label-text-color: #fff;
+  --md-outlined-field-hover-leading-content-color: #fff;
+  --md-outlined-field-hover-outline-color: #fff;
+  --md-outlined-field-hover-supporting-text-color: #fff;
+  --md-outlined-field-hover-trailing-content-color: #fff;
+  --md-outlined-field-label-text-color: #fff;
+  --md-outlined-field-label-text-weight: 300;
+  --md-outlined-field-leading-content-color: #fff;
+  --md-outlined-field-outline-color: #fff;
+  --md-outlined-field-supporting-text-color: #fff;
+  --md-outlined-field-supporting-text-weight: 300;
+}
+
+.igc-md-btn {
+  --md-outlined-field-content-color: #fff;
+  --md-outlined-field-focus-content-color: #fff;
+}
+
+
+
+
+

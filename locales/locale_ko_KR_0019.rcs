@@ -288,3 +288,22 @@ A;ROBO_ERR_PROCESSING;처리중에 오류가 발생하였습니다. 다른 질�
 A;ROBO_ERR_FIELD;명령을 수행하기 위해서는 필드를 지정해 주셔야 됩니다. 질의에 필드에 대한 정보를 추가하신 후 다시 시도해 주세요.
 A;ROBO_ERR_TAB_REPORT;현재 활성 뷰어는 리포트가 아닙니다. 리포트 화면을 여신 후 질의를 다시 시도해 주세요.
 A;ROBO_SUCCESS;넵. 방금 말씀하신 내용을 성공적으로 반영하였습니다. 보다 필요하신 사항은 언제든 말씀해 주세요.
+
+A;L_C_LIST;다중 선택 리스트
+A;L_ADD_SENTENCE;문장 추가하기
+A;B_INTENTS;인텐츠
+A;L_UTTERANCE;구두 문구
+A;L_ANSWERS;답변
+A;L_TRIM_ENTRY_TYPE;엔티티 트림 유형
+A;L_TEXTS;문장
+A;B_REGEX;RegEx
+A;L_LEFT_WORDS;왼쪽 단어 목록
+A;L_RIGHT_WORDS;오른쪽 단어 목록
+A;L_WORDS;단어 목록
+A;L_SKIP_WORDS;스킵 단어 목록
+A;L_MANDATORY;필수사항
+A;L_MESSAGES;메시지
+A;B_CONTENTS;컨텐츠
+A;L_SRCH_RULES;률 검색하기
+A;L_EXP_RULES;률 반출하기
+A;L_IMP_RULES;률 가져오기

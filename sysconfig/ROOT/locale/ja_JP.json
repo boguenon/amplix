@@ -8153,5 +8153,77 @@
     "group" : "locale_ja_JP_0019",
     "name" : "ROBO_SUCCESS",
     "value" : "Yeah, I did what you asked for. Let me help you more."
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_C_LIST",
+    "value" : "Multi List Selection"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_ADD_SENTENCE",
+    "value" : "Add Sentence"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "B_INTENTS",
+    "value" : "Intents"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_UTTERANCE",
+    "value" : "Utterance"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_ANSWERS",
+    "value" : "Answers"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_TRIM_ENTRY_TYPE",
+    "value" : "Trim Entity Type"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_TEXTS",
+    "value" : "Texts"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "B_REGEX",
+    "value" : "RegEx"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_LEFT_WORDS",
+    "value" : "Left Words"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_RIGHT_WORDS",
+    "value" : "Right Words"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_WORDS",
+    "value" : "Words"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_SKIP_WORDS",
+    "value" : "Skip Words"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_MANDATORY",
+    "value" : "Mandatory"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_MESSAGES",
+    "value" : "Messages"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "B_CONTENTS",
+    "value" : "Contents"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_SRCH_RULES",
+    "value" : "Search Rules"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_EXP_RULES",
+    "value" : "Export Rules"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_IMP_RULES",
+    "value" : "Import Rules"
   } ]
 }

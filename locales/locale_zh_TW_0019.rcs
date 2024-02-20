@@ -288,3 +288,22 @@ A;ROBO_ERR_PROCESSING;Sorry for saying that. Had error while processing your req
 A;ROBO_ERR_FIELD;Field need to be specified to handle your request. Please provide me field information.
 A;ROBO_ERR_TAB_REPORT;Oh, currently active viewer is not report. Please open report and try again.
 A;ROBO_SUCCESS;Yeah, I did what you asked for. Let me help you more.
+
+A;L_C_LIST;Multi List Selection
+A;L_ADD_SENTENCE;Add Sentence
+A;B_INTENTS;Intents
+A;L_UTTERANCE;Utterance
+A;L_ANSWERS;Answers
+A;L_TRIM_ENTRY_TYPE;Trim Entity Type
+A;L_TEXTS;Texts
+A;B_REGEX;RegEx
+A;L_LEFT_WORDS;Left Words
+A;L_RIGHT_WORDS;Right Words
+A;L_WORDS;Words
+A;L_SKIP_WORDS;Skip Words
+A;L_MANDATORY;Mandatory
+A;L_MESSAGES;Messages
+A;B_CONTENTS;Contents
+A;L_SRCH_RULES;Search Rules
+A;L_EXP_RULES;Export Rules
+A;L_IMP_RULES;Import Rules
