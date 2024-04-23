@@ -139,6 +139,7 @@ IG$.kpi_3/*dlg_vsyntax*/ = $s.extend($s.window, {
 				'->',
 				{
 					text: IRm$.r1('B_CONFIRM'),
+					bodyCls: "ig-btn-confirm",
 					handler: function() {
 						this._confirm();
 					},
@@ -434,6 +435,7 @@ IG$.kpi_1/*dlg_vindicator*/ = $s.extend($s.window, {
 				'->',
 				{
 					text: IRm$.r1('B_CONFIRM'),
+					bodyCls: "ig-btn-confirm",
 					handler: function() {
 						this._confirm();
 					},
