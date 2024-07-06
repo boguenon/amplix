@@ -36,6 +36,11 @@
 	for (i=rowfix; i < data.length; i++)
 	{
 		c = data[i][colfix].code || "0";
+
+		c = Number(c);
+
+		if (isNaN(c) || c <= 0)
+			continue;
 		
 		bc = 0;
 		
@@ -60,14 +65,14 @@
 			sm = lmap[k];
 			if (sm)
 			{
-				sm.value += Number(c);
+				sm.value += c;
 			}
 			else
 			{
 				sm = {
 					source: s,
 					target: t,
-					value: Number(c)
+					value: c
 				};
 			
 				snode.links.push(sm);

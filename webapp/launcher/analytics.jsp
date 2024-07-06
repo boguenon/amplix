@@ -49,19 +49,19 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202404231020" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202407052244" />
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202404231020\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202407052244\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202404231020" />
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202404231020" />
+<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202407052244" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202407052244" />
 <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202404231020"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202404231020"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202404231020"></script>
+<script type="text/javascript" src="../config.js?_dc=202407052244"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202407052244"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202407052244"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -124,13 +124,13 @@ IG$.__microloader(modules, function() {
 	});
 });
 </script>
-<!-- start cuddler -->
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202404231020"></link>
+<!-- start ai data explorer -->
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202407052244"></link>
 <script type="text/javascript">
 function _load_cuddler(instance) {
 	var assist_message = [
 		"Welcome to amplixbi! <br/>I am here to assit you!",
-		"We have agents to cuddle you. <br/> Just click me!"
+		"We have agents to help you. <br/> Just click me!"
 	];
 
 	function rotate_msg() {
@@ -200,7 +200,10 @@ function _load_cuddler(instance) {
 		if (IG$._robo_inst._dockmode)
 		{
 			$("#mainview").appendTo(robo_container_dock);
-			$("#robo_main").appendTo(robo_container_dock);
+			$("#robo_main")
+				.appendTo(robo_container_dock)
+				.css("height", "");
+				
 			$("#robo_wrap").appendTo(robo_container_dock);
 
 			$("#robo_main").resizable("option", "handles", "W, s, sw");
@@ -220,7 +223,7 @@ function _load_cuddler(instance) {
 	});
 }
 </script>
-<!-- end cuddler -->
+<!-- end ai data explorer -->
 </head>
 <body scroll="no">
 	<div id="mainview">
@@ -235,7 +238,7 @@ function _load_cuddler(instance) {
 		</div>
 	</div>
 	
-	<!-- start cuddler --> 
+	<!-- start ai data explorer --> 
 	<div class="robo_wrap" id="robo_wrap" style="display:none;">
 		<div class="robo_icon">
 			<img src="./images/cuddler.png" width="55px" height="42px">
@@ -246,7 +249,7 @@ function _load_cuddler(instance) {
 	<div class="robo_main fadeInRight animated" id="robo_main">
 		<div class="robo_area">
 			<div class="robo_title">
-				<span class="robo_title_text">Expert Bot is here for cuddle you!</span>
+				<span class="robo_title_text">AI Data Explorer!</span>
 				<div class="robo_title_button">
 					<a id="robo_dock" class="robo_dock">
 						<i class="robo-window-dock"></i>
@@ -261,6 +264,6 @@ function _load_cuddler(instance) {
 		</div>
 	</div>
 	<div class="robo_container_dock" id="robo_container_dock" style="display:none;"></div>
-	<!-- end cuddler -->
+	<!-- end ai data explorer -->
 </body>
 </html>

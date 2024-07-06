@@ -40,12 +40,12 @@ body {
 	overflow-x: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/igccud.min.css?_dc=202404231020"></link>
+<link rel="stylesheet" href="./css/igccud.min.css?_dc=202407052244"></link>
 <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>
 <script type="text/javascript">
 var assist_message = [
 	"Welcome to amplixbi! <br/>I am here to assit you!",
-	"We have agents to cuddle you. <br/> Just click me!"
+	"We have agents to help you. <br/> Just click me!"
 ];
 
 function rotate_msg() {
@@ -109,7 +109,7 @@ $(document).ready(function() {
 <div class="robo_main fadeInRight animated" id="robo_main">
 	<div class="robo_area">
 		<div class="robo_title">
-			<span class="robo_title_text">Expert Bot is here for cuddle you!</span>
+			<span class="robo_title_text">AI Data Explorer!</span>
 			<div class="robo_title_button">
 				<a id="robo_close" class="robo_close">
 					<i class="fa fa-window-close"></i>
