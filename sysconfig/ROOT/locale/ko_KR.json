@@ -8297,5 +8297,45 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_IMP_RULES",
     "value" : "률 가져오기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_RECOMMEND",
+    "value" : "추천항목"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "T_PV_RECOM",
+    "value" : "피벗 추천"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "B_FILE",
+    "value" : "파일"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_IGNORE_BOTTOM",
+    "value" : "밑단 제외"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_HEADER_COLNAME",
+    "value" : "헤더로 물리명 사용"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_REG_RECOM",
+    "value" : "추천 등록"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_C_REGRECOM",
+    "value" : "해당 쉬트를 추천항목으로 등록하시겠습니까?"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_NEW_FBV",
+    "value" : "폼뷜더 보기"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_C_UPD_RECOM",
+    "value" : "현재 피벗을 제안되는 항목으로 변경하시겠습니까?"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_PRECISION",
+    "value" : "소수점"
   } ]
 }

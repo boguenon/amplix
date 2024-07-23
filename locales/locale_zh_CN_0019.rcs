@@ -307,3 +307,17 @@ A;B_CONTENTS;Contents
 A;L_SRCH_RULES;Search Rules
 A;L_EXP_RULES;Export Rules
 A;L_IMP_RULES;Import Rules
+
+A;L_RECOMMEND;Recommend
+A;T_PV_RECOM;Pivot Recommend
+A;B_FILE;File
+A;L_IGNORE_BOTTOM;Ignore Bottom
+A;L_HEADER_COLNAME;Use Physical Header
+A;L_REG_RECOM;Register Recommend
+A;L_C_REGRECOM;Do you want to register this sheet as Recommend?
+A;L_NEW_FBV;FormBuilder Viewer
+
+A;L_C_UPD_RECOM;Do you want to replace current pivot to recommended suggestions?
+
+A:L_V_PIVOT_CLS;Pivot with Cluster
+A;L_PRECISION;Precision

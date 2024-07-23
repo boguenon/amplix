@@ -62,12 +62,12 @@ body, div {
 	overflow: hidden;
 }
 </style>
-<link rel="stylesheet" href="./css/appsl.min.css?_dc=202407070701" type="text/css">
-<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202407070701" />
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202407070701" />
+<link rel="stylesheet" href="./css/appsl.min.css?_dc=202407230412" type="text/css">
+<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202407230412" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202407230412" />
 <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202407070701"></script>
-<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202407070701"></script>
+<script type="text/javascript" src="../config.js?_dc=202407230412"></script>
+<script type="text/javascript" src="./js/igc8<%=(is_debug ? "" : ".min")%>.js?_dc=202407230412"></script>
 
 <script type="text/javascript">
 var useLocale = "en_US";

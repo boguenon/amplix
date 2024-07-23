@@ -8309,5 +8309,45 @@
     "group" : "locale_en_US_0019",
     "name" : "L_IMP_RULES",
     "value" : "Import Rules"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_RECOMMEND",
+    "value" : "Recommend"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "T_PV_RECOM",
+    "value" : "Pivot Recommend"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "B_FILE",
+    "value" : "File"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_IGNORE_BOTTOM",
+    "value" : "Ignore Bottom"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_HEADER_COLNAME",
+    "value" : "Use Physical Header"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_REG_RECOM",
+    "value" : "Register Recommend"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_C_REGRECOM",
+    "value" : "Do you want to register this sheet as Recommend?"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_NEW_FBV",
+    "value" : "FormBuilder Viewer"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_C_UPD_RECOM",
+    "value" : "Do you want to replace current pivot to recommended suggestions?"
+  }, {
+    "group" : "locale_en_US_0019",
+    "name" : "L_PRECISION",
+    "value" : "Precision"
   } ]
 }

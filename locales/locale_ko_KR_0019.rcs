@@ -307,3 +307,17 @@ A;B_CONTENTS;컨텐츠
 A;L_SRCH_RULES;률 검색하기
 A;L_EXP_RULES;률 반출하기
 A;L_IMP_RULES;률 가져오기
+
+A;L_RECOMMEND;추천항목
+A;T_PV_RECOM;피벗 추천
+A;B_FILE;파일
+A;L_IGNORE_BOTTOM;밑단 제외
+A;L_HEADER_COLNAME;헤더로 물리명 사용
+A;L_REG_RECOM;추천 등록
+A;L_C_REGRECOM;해당 쉬트를 추천항목으로 등록하시겠습니까?
+A;L_NEW_FBV;폼뷜더 보기
+
+A;L_C_UPD_RECOM;현재 피벗을 제안되는 항목으로 변경하시겠습니까?
+
+A:L_V_PIVOT_CLS;클러스터링 피벗
+A;L_PRECISION;소수점

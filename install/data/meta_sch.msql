@@ -201,7 +201,7 @@ CREATE TABLE igcms (
   iuid #CHAR#(17) NOT NULL,
   pid #CHAR#(17) #NULL#,
   mctype #NUMBER#(4) #NULL#,
-  cname #VARCHAR#(100) #NULL#,
+  cname #VARCHAR#(200) #NULL#,
   mdate #LONG# #NULL#,
   pstatus #NUMBER#(4) NOT NULL,
   node #VARCHAR#(1000),
@@ -228,7 +228,6 @@ CREATE INDEX idx_igcms_f1 ON igcms(iuid);
 CREATE UNIQUE INDEX idx_igcms_f2 ON igcms(pid, cname, mts, pstatus);
 CREATE UNIQUE INDEX idx_igcms_f3 ON igcms(iuid, pstatus, mts);
 
-CREATE INDEX idx_igcms_f4 ON igcms(cname);
 CREATE INDEX idx_igcms_f5 ON igcms(pid);
 CREATE INDEX idx_igcms_f6 ON igcms(mctype);
 CREATE INDEX idx_igcms_f7 ON igcms(memo, iuid);
@@ -288,7 +287,7 @@ CREATE TABLE igctrashbin (
   iuid #CHAR#(17) NOT NULL,
   pid #CHAR#(17) #NULL#,
   mctype #NUMBER#(4) #NULL#,
-  cname #VARCHAR#(100) #NULL#,
+  cname #VARCHAR#(200) #NULL#,
   mdate #LONG# #NULL#,
   pstatus #NUMBER#(4) NOT NULL,
   node #VARCHAR#(1000),
