@@ -106,16 +106,18 @@ IG$.cVis.navermap.prototype.draw = function(results) {
 	
 	map = new naver.maps.Map(jcontainer[0], { 
 		center: mpoint,
-		zoom: defaultLevel
-		// enableWheelZoom : true,
-		// enableDragPan : true,
-		// enableDblClickZoom : false,
-		// mapMode : 0,
-		// activateTrafficMap : false,
-		// activateBicycleMap : false,
+		zoom: defaultLevel,
+		enableWheelZoom : true,
+		enableDragPan : true,
+		enableDblClickZoom : false,
+		mapMode : 0,
+		activateTrafficMap : false,
+		activateBicycleMap : false,
 		// minMaxLevel : [ 1, 14 ]
 	});
 	me.map = map;
+
+	// map.setCenter(mpoint);
 	
 	var colfix = results.colfix,
 		rowfix = results.rowfix,

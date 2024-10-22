@@ -36,14 +36,14 @@ IG$.cVis.googlemap = $s.extend(IG$.cVis.base, {
 			
 			IG$.getScriptCache([
 				{
-					src: "https://maps.googleapis.com/maps/api/js?key=" + ig$.google_map_api_key, // + "&callback=initMap",
+					src: "https://maps.googleapis.com/maps/api/js?key=" + ig$.google_map_api_key + "&libraries=maps&v=beta", // + "&callback=initMap",
 					defer: true,
 					async: true
 				}
 			], new IG$.callBackObj(this, function() {
 				var js = [
 						"./custom/custom.map.google.worker.js",
-						"./custom/custom.map.google.clustermarker.js"
+						"./custom/custom.map.google.clustermarkerplus.js"
 					];
 				
 				IG$.getScriptCache(
@@ -65,6 +65,21 @@ IG$.cVis.googlemap = $s.extend(IG$.cVis.base, {
 		{
 			google.maps.event.trigger(map, "resize");
 		}
+	},
+
+	dispose: function() {
+		// called when need to dispose the component
+		var me = this,
+			map = me.map_inst,
+			chartview = me.chartview,
+			container = chartview.container;
+			
+		if (map)
+		{
+			// $(container).empty();
+		}
+		
+		//me.map_inst = null;
 	}
 });
 

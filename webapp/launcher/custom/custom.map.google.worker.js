@@ -14,17 +14,17 @@
 
 	map = new google.maps.Map(container, mapOptions);
 
-	google.maps.event.addListener(map, 'center_changed', function() {
-		me.validateData();
-	});
+	// google.maps.event.addListener(map, 'center_changed', function() {
+	// 	me.validateData();
+	// });
 
-	google.maps.event.addListener(map, 'bounds_changed', function() {
-		me.validateData();
-	});
+	// google.maps.event.addListener(map, 'bounds_changed', function() {
+	// 	me.validateData();
+	// });
 
-	google.maps.event.addListener(map, 'zoom_changed', function() {
-		me.validateData();
-	});
+	// google.maps.event.addListener(map, 'zoom_changed', function() {
+	// 	me.validateData();
+	// });
 
 	return map;
 };
@@ -69,7 +69,7 @@ IG$.cVis.googlemap.prototype.updateData = function() {
 		};
 
 		me.req_cnt = 0;
-		chartview._reqData.call(chartview, bopt);
+		// chartview._reqData.call(chartview, bopt);
 	}
 	else
 	{
@@ -114,6 +114,24 @@ IG$.cVis.googlemap.prototype.draw = function(results) {
 		me.clusters = [];
 	}
 
+	map_inst.data.loadGeoJson("./data/geojson/kr/4812.json");
+	map_inst.data.setStyle(function(feature) {
+		return {
+		  	strokeWeight: 1
+		};
+	});
+	map_inst.data.addListener('mouseover', function(event) {
+		var feature = event.feature;
+		console.log("mouse over on feature");
+		map_inst.data.revertStyle();
+		map_inst.data.overrideStyle(event.feature, {
+			strokeColor: "red",
+			strokeWeight: 2
+		});
+	});
+	map_inst.data.addListener('mouseout', function(event) {
+		map_inst.data.revertStyle();
+	});
 	me.setData(chartview, results);
 }
 
@@ -206,13 +224,14 @@ IG$.cVis.googlemap.prototype.setData = function(chartview, results) {
 			mlat = (maxLat + minLat) / 2;
 		}
 
-		var mpoint = new google.maps.LatLng(mlat, mlng);
+		var mpoint = {lat: mlat, lng: mlng}; // new google.maps.LatLng(mlng, mlat); // mlat, mlng);
 		
 		map.setCenter(mpoint);
+		map.setZoom(defaultLevel);
 		
 		me.validateData();
 		
-		return;
+		// return;
 	}
 
 	var colfix = results.colfix,
@@ -234,7 +253,7 @@ IG$.cVis.googlemap.prototype.setData = function(chartview, results) {
 	{
 		for (i=0; i < rowfix; i++)
 		{
-			seriesname = (i==0) ? results.data[i][colfix].code : seriesname + " " + results.data[i][colfix].code;
+			seriesname = (i==0) ? results._tabledata[i][colfix].code : seriesname + " " + results._tabledata[i][colfix].code;
 		}
 	}
 
@@ -271,6 +290,61 @@ IG$.cVis.googlemap.prototype.setData = function(chartview, results) {
 		});
 	}
 
+	var is_cluster = true,
+		markers = [],
+		cluster_marker_styles = [
+			MarkerClusterer.withDefaultStyle({
+				url: "./images/m1.png",
+				width: 53,
+				height: 52,
+				anchorText: [0, 0],
+				anchorIcon: [0, 0],
+				textColor: "#ff00ff",
+				textSize: 10,
+			}),
+			MarkerClusterer.withDefaultStyle({
+				url: "./images/m2.png",
+				width: 53,
+				height: 52,
+				anchorText: [0, 0],
+				anchorIcon: [0, 0],
+				textColor: "#ff0000",
+				textSize: 11,
+			}),
+			MarkerClusterer.withDefaultStyle({
+				url: "./images/m3.png",
+				width: 53,
+				height: 52,
+				anchorText: [0, 0],
+				anchorIcon: [0, 0],
+				textColor: "#0000ff",
+				textSize: 12,
+			}),
+			MarkerClusterer.withDefaultStyle({
+				url: "./images/m4.png",
+				width: 53,
+				height: 52,
+				anchorText: [0, 0],
+				anchorIcon: [0, 0],
+				textColor: "#0000ff",
+				textSize: 12,
+			}),
+			MarkerClusterer.withDefaultStyle({
+				url: "./images/m5.png",
+				width: 53,
+				height: 52,
+				anchorText: [0, 0],
+				anchorIcon: [0, 0],
+				textColor: "#0000ff",
+				textSize: 12,
+			})
+		];
+
+	if (me.markerClusterer)
+	{
+		me.markerClusterer.clearMarkers();
+	}
+
 	$.each(results.geodata, function(i, p) {
 		var mkey = p.lat + "_" + p.lng,
 			pt = new google.maps.LatLng(p.lat, p.lng),
@@ -305,11 +379,20 @@ IG$.cVis.googlemap.prototype.setData = function(chartview, results) {
 		}
 		else
 		{
-			if (p.c && p.cc)
+			if (is_cluster)
 			{
-				cluster = new ClusterMarker_(pt, p.cc, styles_, 60);
-				cluster.setMap(map);
-				me.clusters.push(cluster);
+				// cluster = new ClusterMarker_(pt, p.cc, styles_, 60);
+				// cluster.setMap(map);
+				// me.clusters.push(cluster);
+				// var markerImage = new google.maps.MarkerImage(
+				// 	imageUrl,
+				// 	new google.maps.Size(24, 32)
+				// );
+				marker = new google.maps.Marker({
+					position: pt
+					// icon: markerImage
+				});
+				markers.push(marker);
 			}
 			else
 			{
@@ -319,27 +402,35 @@ IG$.cVis.googlemap.prototype.setData = function(chartview, results) {
 				marker.setPosition(pt);
 				marker.setMap(map);
 				me.markers.push(marker);
-				
-				google.maps.event.addListener(marker, 'click', function() {
-					var html = '<div id="content">'+
-						'<div id="bodyContent"><table>',
-						i;
-					
-					if (d)
-					{
-						for (i=0; i < d.length; i++)
-						{
-							html += "<tr><td><b>" + (h[i].text || h[i].code) + "</b></td><td>" + (d[i].text || d[i].code) + "</td></tr>";
-						}
-					}
-					html += '</table></div>'+
-						'</div>';
-					me.infowindow.setContent(html);
-					me.infowindow.open(me.map, this);
-				});
 			}
+
+			google.maps.event.addListener(marker, 'click', function() {
+				var html = '<div id="content">'+
+					'<div id="bodyContent"><table>',
+					i;
+				
+				if (d)
+				{
+					for (i=0; i < d.length; i++)
+					{
+						html += "<tr><td><b>" + (h[i].text || h[i].code) + "</b></td><td>" + (d[i].text || d[i].code) + "</td></tr>";
+					}
+				}
+				html += '</table></div>'+
+					'</div>';
+				me.infowindow.setContent(html);
+				me.infowindow.open(me.map, this);
+			});
 		}
 	});
+
+	if (is_cluster)
+	{
+		me.markerClusterer = new MarkerClusterer(map, markers, {
+			styles: cluster_marker_styles
+			// clusterClass: style === 3 ? "custom-clustericon" : undefined,
+		});
+	}
 },
 
 IG$.cVis.googlemap.prototype.updatedisplay = function(w, h) {

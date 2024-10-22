@@ -36,6 +36,9 @@ persist.validatesql = "select 1"
 ############################################################################
 application.mainpage.mdi 					= "../launcher/analytics.jsp"
 application.mainpage.dashboard 				= "../launcher/dashboard.jsp"
+application.mainpage.dataworks 				= "../launcher/dataworks.jsp"
+
+application.service.environment             = "development"
 
 application.folder.plugins								= ""
 application.folder.upload								= ""

@@ -8337,5 +8337,89 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_PRECISION",
     "value" : "소수점"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_DISCUSSIONS",
+    "value" : "분석토론"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_DS_TARGET",
+    "value" : "대상 파일 업로드"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_DS_LD_OPT",
+    "value" : "데이터 옵션"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_COLUMNS",
+    "value" : "컬럼항목"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_DS_FINISH",
+    "value" : "데이터 로딩 완료"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_CREATE_DTB",
+    "value" : "신규 데이터 집합 생성"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_APPEND_DTB",
+    "value" : "데이터 집합에 추가"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_UPLOAD_MODE",
+    "value" : "데이터 유형"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "L_DS_TITLE",
+    "value" : "데이터웍스 마법사"
+  }, {
+    "group" : "locale_ko_KR_0016",
+    "name" : "T_DATA_UPLOAD_DESC",
+    "value" : "분석할 데이터의 파일 업로드 혹은 데이터의 URL 을 입력하신 후 리포트를 생성할 수 있습니다."
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_WELCOME",
+    "value" : "방문해주셔서 감사합니다."
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_VOTING",
+    "value" : "투표 참여"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_DEFAULT_VALUE",
+    "value" : "기본 값"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_TB_ALIASES",
+    "value" : "테이블 별칭"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_TB_ALIAS_DB",
+    "value" : "대상 데이터베이스"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_TB_ALIAS_TBSQL",
+    "value" : "테이블 별칭 쿼리"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_TB_ALIAS_TBSQL_EX",
+    "value" : "SELECT TB_NM, TB_ALIAS FROM TABLEMETA"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_TB_ALIAS_COLSQL",
+    "value" : "컬럼 별칭 쿼리"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_TB_ALIAS_COLSQL_EX",
+    "value" : "SELECT COL_NM, COL_ALIAS FROM COLUMNMETA WHERE TB_NM=?"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_NLP_SVR_ENABLE",
+    "value" : "NLP 서버 사용"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_GPT_API_KEY",
+    "value" : "ChatGPT API 키"
   } ]
 }

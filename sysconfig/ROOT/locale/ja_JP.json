@@ -8265,5 +8265,49 @@
     "group" : "locale_ja_JP_0019",
     "name" : "L_PRECISION",
     "value" : "Precision"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_WELCOME",
+    "value" : "Welcome!"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_VOTING",
+    "value" : "Voting"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_DEFAULT_VALUE",
+    "value" : "Default Value"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_TB_ALIASES",
+    "value" : "Table Aliases"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_TB_ALIAS_DB",
+    "value" : "Target Databases"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_TB_ALIAS_TBSQL",
+    "value" : "Table Alias Query"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_TB_ALIAS_TBSQL_EX",
+    "value" : "SELECT TB_NM, TB_ALIAS FROM TABLEMETA"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_TB_ALIAS_COLSQL",
+    "value" : "Column Alias Query"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_TB_ALIAS_COLSQL_EX",
+    "value" : "SELECT COL_NM, COL_ALIAS FROM COLUMNMETA WHERE TB_NM=?"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_NLP_SVR_ENABLE",
+    "value" : "Enable NLP Server"
+  }, {
+    "group" : "locale_ja_JP_0019",
+    "name" : "L_GPT_API_KEY",
+    "value" : "ChatGPT API Key"
   } ]
 }

@@ -644,7 +644,7 @@ IG$.cVis.kpi.prototype.draw = function(results) {
 
 		if (me.cindopt.boxlayout == "hscr" || me.cindopt.boxlayout == "hfit")
 		{
-			pnode = $("<div class='row'></div>").appendTo(me.plotinner);
+			pnode = $("<div class='kpi-row'></div>").appendTo(me.plotinner);
 			span = Math.floor(12 / cobj.length);
 			span = span < 1 ? 1 : span;
 		}
@@ -702,7 +702,7 @@ IG$.cVis.kpi.prototype.draw = function(results) {
 				}
 			}
 			
-			c._dyn_sc.apply(me, [chartdiv, results._tabledata, i, dataobj]);
+			c._dyn_sc && c._dyn_sc.apply(me, [chartdiv, results._tabledata, i, dataobj]);
 			
 			if (dataobj && dataobj.length)
 			{

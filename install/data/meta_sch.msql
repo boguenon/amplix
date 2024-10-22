@@ -229,7 +229,7 @@ CREATE UNIQUE INDEX idx_igcms_f2 ON igcms(pid, cname, mts, pstatus);
 CREATE UNIQUE INDEX idx_igcms_f3 ON igcms(iuid, pstatus, mts);
 
 CREATE INDEX idx_igcms_f5 ON igcms(pid);
-CREATE INDEX idx_igcms_f6 ON igcms(mctype);
+CREATE INDEX idx_igcms_f6 ON igcms(mctype, revise);
 CREATE INDEX idx_igcms_f7 ON igcms(memo, iuid);
 CREATE INDEX idx_igcms_tenant ON igcms(mts);
 

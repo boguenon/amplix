@@ -322,3 +322,20 @@ A;L_C_UPD_RECOM;Do you want to replace current pivot to recommended suggestions?
 
 A:L_V_PIVOT_CLS;Pivot with Cluster
 A;L_PRECISION;Precision
+
+A;L_WELCOME;Welcome!
+A;L_VOTING;Voting
+A;L_DEFAULT_VALUE;Default Value
+
+A;L_TB_ALIASES;Table Aliases
+A;L_TB_ALIAS_DB;Target Databases
+A;L_TB_ALIAS_TBSQL;Table Alias Query
+A;L_TB_ALIAS_TBSQL_EX;SELECT TB_NM, TB_ALIAS FROM TABLEMETA
+A;L_TB_ALIAS_COLSQL;Column Alias Query
+A;L_TB_ALIAS_COLSQL_EX;SELECT COL_NM, COL_ALIAS FROM COLUMNMETA WHERE TB_NM=?
+A;L_NLP_SVR_ENABLE;Enable NLP Server
+A;L_GPT_API_KEY;ChatGPT API Key
+
+A;L_DE_LABEL;End Label
+A;L_DE_FORMAT;End Label Format
+A;L_ANIM_DUR;Animation Duration

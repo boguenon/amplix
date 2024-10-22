@@ -53,3 +53,14 @@ A;L_FV_OPT;폼뷰어 옵션
 A;L_NEW_ANAL;신규 분석
 A;L_ANAL_GROUP;분석 카테고리
 A;L_ANALYSIS_TYPE;분석 유형
+
+A;L_DISCUSSIONS;분석토론
+A;L_DS_TARGET;대상 파일 업로드
+A;L_DS_LD_OPT;데이터 옵션
+A;L_COLUMNS;컬럼항목
+A;L_DS_FINISH;데이터 로딩 완료
+A;L_CREATE_DTB;신규 데이터 집합 생성
+A;L_APPEND_DTB;데이터 집합에 추가
+A;L_UPLOAD_MODE;데이터 유형
+A;L_DS_TITLE;데이터웍스 마법사
+A;T_DATA_UPLOAD_DESC;분석할 데이터의 파일 업로드 혹은 데이터의 URL 을 입력하신 후 리포트를 생성할 수 있습니다.

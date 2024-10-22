@@ -39,11 +39,8 @@ IG$._customChartPanels = function() {
 					d3 = [{name: "Select Value", value: ""}],
 					d4 = [{name: "Select Value", value: ""}],
 					d5 = [{name: "Select Value", value: ""}],
-					maptype = me.down("[name=maptype]"),
-					d1val = "", d2val = "", d3val = "";
 					
-				maptype.store.loadData(IG$.mLU ? IG$.mLU.maptype : []);
-				maptype.setValue(option.maptype);
+					d1val = "", d2val = "", d3val = "";
 				
 				$.each(ma.sheetoption.model.rows, function(i, row) {
 					d1.push({
@@ -301,7 +298,11 @@ IG$._customChartPanels = function() {
 		},
 		
 		invalidateFields: function(opt) {
-			var me = this, subtype = opt.subtype;
+			var me = this, 
+				ma = me.__main__,
+				option = (ma.sheetoption && ma.sheetoption.model ? ma.sheetoption.model.chart_option : null),
+				maptype = me.down("[name=maptype]"),
+				subtype = opt.subtype;
 			
 			var _esri_version = ig$.arcgis_version || "0";
 			
@@ -314,8 +315,20 @@ IG$._customChartPanels = function() {
 				subtype == "esri" ||
 				subtype == "vworldmap");
 			*/
+
+			if (subtype == "koreamap" || subtype == "kr_drill_map" || subtype == "changwon_pop_map")
+			{
+				var maptypes = IG$.cVis.koreaMapTypes();
+				maptype.store.loadData(maptypes.sido);
+			}
+			else
+			{
+				maptype.store.loadData(IG$.mLU ? IG$.mLU.maptype : []);
+			}
+
+			maptype.setValue(option ? option.maptype : null);
 			
-			me.down("[name=mapoptions]").setVisible(subtype == "map");
+			me.down("[name=mapoptions]").setVisible(subtype == "map" || subtype == "koreamap" || subtype == "kr_drill_map" || subtype == "changwon_pop_map");
 			me.down("[name=m_xypos]").setVisible(subtype == "vworldmap");
 			me.down("[name=m_arc_basemap]").setVisible(subtype == "esri");
 			me.down("[name=m_arc_view]").setVisible(subtype == "esri" && _esri_version > 3);
@@ -431,8 +444,8 @@ IG$._customChartPanels = function() {
 								name: "m_zoom_level",
 								fieldLabel: IRm$.r1("L_ZOOM_LEVEL"), // "Zoom Level",
 								minValue: 1,
-								maxValue: 10
-							} 
+								maxValue: 20
+							}
 						]
 					},
 					{
@@ -492,7 +505,11 @@ IG$._customChartPanels = function() {
 										{
 											name: "Info",
 											value: "info"
-										} 
+										},
+										{
+											name: "Pie",
+											value: "pie"
+										}
 									]
 								},
 								listeners: {

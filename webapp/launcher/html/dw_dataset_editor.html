@@ -2,8 +2,8 @@
                 <div class="col-lg-12">
                     <div class="ibox">
                         <div class="ibox-title">
-                            <h5>Wizard with Validation</h5>
-                            <div class="ibox-tools">
+                            <h5><span amp_type="locale" amp_locale="L_DS_TITLE"></span></h5>
+                            <!-- <div class="ibox-tools">
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
                                 </a>
@@ -19,132 +19,22 @@
                                 <a class="close-link">
                                     <i class="fa fa-times"></i>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="ibox-content">
                             <h2>
-                                Validation Wizard Form
+                                <span amp_type="locale" amp_locale="T_DATA_UPLOAD"></span>
                             </h2>
                             <p>
-                                This example show how to use Steps with jQuery Validation plugin.
+                                <span amp_type="locale" amp_locale="T_DATA_UPLOAD_DESC"></span>
                             </p>
 
-                            <form id="dataset_form" action="#" class="wizard-big">
-                                <h1>File Upload</h1>
-                                <fieldset>
-                                    <h2>File Upload</h2>
-                                    <div class="row">
-                                        <div class="col-lg-8">
-                                        	<ul id="ds_files" class="list-group clear-list m-t">
-                                        	</ul>
-                                        	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-				                                Upload File
-				                            </button>
-				                            <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-				                            	<div class="modal-dialog">
-					                                <div class="modal-content animated bounceInRight">
-				                                        <div class="modal-header">
-				                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				                                            <i class="fa fa-laptop modal-icon"></i>
-				                                            <h4 class="modal-title">Modal title</h4>
-				                                            <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-				                                        </div>
-				                                        <div class="modal-body">
-				                                        	<div class="form-group">
-							                                	<label><span amp_type="locale" amp_locale="L_FILE_UPLOAD">File Upload</span></label>
-							                                	<div>
-							                                		<div class="fileinput fileinput-new input-group" data-provides="fileinput">
-										                                <div class="form-control" data-trigger="fileinput">
-										                                	<i class="glyphicon glyphicon-file fileinput-exists"></i> 
-										                                	<span class="fileinput-filename"></span>
-										                                </div>
-										                                <span class="input-group-addon btn btn-default btn-file">
-										                                	<span class="fileinput-new" amp_type="locale" amp_locale="L_SELECT_FILE">Select file</span>
-										                                	<span class="fileinput-exists">Change</span>
-										                                	<input type="file" name="bbs_file" />
-										                                </span>
-										                                <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
-										                            </div>
-							                                	</div>
-							                                </div>
-				                                            <div class="form-group">
-				                                                <label>Delimiter *</label>
-				                                                <select name="delimiter" class="form-control">
-				                                                	<option value=",">Comma</option>
-				                                                	<option value="tab">Tab</option>
-				                                                	<option value="space">Space</option>
-				                                                	<option value="|">|</option>
-				                                                </select>
-				                                            </div>
-				                                            <div class="form-group">
-				                                                <label>Encoding *</label>
-				                                                <select name="encoding" class="form-control">
-				                                                </select>
-				                                            </div>
-				                                            <div class="form-group">
-				                                                <label>Skip Headers *</label>
-				                                                <input name="skip_headers" type="number" class="form-control ">
-				                                            </div>
-				                                            <div class="form-group">
-				                                                <label>Skip Columns *</label>
-				                                                <input name="skip_columns" type="number" class="form-control ">
-				                                            </div>
-				                                            <div class="form-group">
-				                                                <label>Header Counts *</label>
-				                                                <input name="header_counts" type="number" class="form-control ">
-				                                            </div>
-				                                            <div class="form-group">
-				                                                <label>Un pivot definition *</label>
-				                                                <input name="unpivotdef" type="text" class="form-control ">
-				                                            </div>
-				                                        </div>
-				                                        <div class="modal-footer">
-				                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-				                                            <button type="button" class="btn btn-primary">Save changes</button>
-				                                        </div>
-				                                    </div>
-				                                </div>
-				                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-4">
-                                            <div class="text-center">
-                                                <div style="margin-top: 20px">
-                                                    <i class="fa fa-sign-in" style="font-size: 180px;color: #e5e5e5 "></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </fieldset>
-                                <h1>Target Fields</h1>
-                                <fieldset>
-                                    <h2>Target Fields</h2>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <ul id="m1" class="list-group clear-list m-t">
-                                        	</ul>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <ul id="m1f" class="list-group clear-list m-t">
-                                        	</ul>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <h1>Data Source</h1>
-                                <fieldset>
-                                    <div class="text-center" style="margin-top: 120px">
-                                        <h2>You did it Man :-)</h2>
-                                    </div>
-                                </fieldset>
-
-                                <h1>Finish</h1>
-                                <fieldset>
-                                    <h2>Terms and Conditions</h2>
-                                    <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>
-                                </fieldset>
-                            </form>
+                            <div id="dataset_form" action="#" class="wizard-big" style="padding:10px;height:500px">
+                                <div id="dataset_viewer" style="position:relative;width:100%;height:100%;"></div>
+							</div>
+                            <div class="modal-footer">
+								<button id="dataset_btn_next" type="button" class="btn btn-primary">Next</button>
+                            </div>
                         </div>
                     </div>
                 </div>

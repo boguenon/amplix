@@ -6,10 +6,10 @@
 		                    <h2><span amp_type="locale" amp_locale="B_DATASET">DataSet</span></h2>
 		                    <ol class="breadcrumb">
 		                        <li>
-		                            <a href="index.html"><span amp_type="locale" amp_locale="S_HOME">Home</span></a>
+		                            <a href=""><span amp_type="locale" amp_locale="S_HOME"></span></a>
 		                        </li>
 		                        <li class="active">
-		                            <strong><span amp_type="locale" amp_locale="B_DATASET">Dataset</span></strong>
+		                            <strong><span amp_type="locale" amp_locale="B_DATASET"></span></strong>
 		                        </li>
 		                    </ol>
 		                </div>
@@ -26,27 +26,38 @@
 			                <div class="col-sm-8">
 			                    <div class="ibox">
 			                        <div class="ibox-content">
-			                            <span class="text-muted small pull-right">Last modification: <i class="fa fa-clock-o"></i> 2:10 pm - 12.06.2014</span>
-			                            <h2>Datasets</h2>
+			                            <!-- span class="text-muted small pull-right">Last modification: <i class="fa fa-clock-o"></i> 2:10 pm - 12.06.2014</span -->
+			                            <h2><span amp_type="locale" amp_locale="B_DATASET"></span></h2>
 			                            <p>
-			                                All clients need to be verified before you can send email and set a project.
+											<span amp_type="locale" amp_locale="B_DATASET_DESC"></span>
 			                            </p>
 			                            <div class="input-group">
 			                                <input type="text" placeholder="Search dataset " class="input form-control">
 			                                <span class="input-group-btn">
-			                                    <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
+			                                    <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> <span amp_type="locale" amp_locale="B_SEARCH"></span></button>
 			                                </span>
 			                            </div>
 			                            <div class="clients-list">
-			                            	<span class="pull-right small text-muted">1406 Elements</span>
+			                            	<span class="pull-right small text-muted"><span id="dataset_counts"></span> Elements</span>
 				                            <ul class="nav nav-tabs" role="tablist">
-				                                <li class="active"><a data-toggle="tab" href="#tab-1" aria-controls="tab-1" role="tab"><i class="fa fa-user"></i> Contacts</a></li>
+				                                <li class="active"><a data-toggle="tab" href="#tab-1" aria-controls="tab-1" role="tab"><i class="fa fa-user"></i> <span amp_type="locale" amp_locale="B_DATASET"></span></a></li>
 				                            </ul>
 				                            <div class="tab-content">
 				                                <div id="tab-1" class="tab-pane active" role="tabpanel">
 				                                    <div class="full-height-scroll">
+														<div id="ds_bread" class="row wrapper border-bottom white-bg page-heading">
+															<div class="col-lg-4">
+																<ol class="breadcrumb">
+																	
+																</ol>
+															</div>
+														</div>
 				                                        <div class="table-responsive">
-				                                            <table class="table table-striped table-hover">
+															<table id="tb_workspace" class="table table-striped table-hover">
+				                                                <tbody id="workspace_lists">
+				                                                </tbody>
+				                                            </table>
+				                                            <table id="tb_dataset" class="table table-striped table-hover">
 				                                                <tbody id="dataset_lists">
 				                                                </tbody>
 				                                            </table>
@@ -67,6 +78,7 @@
 			                            <div class="tab-content">
 			                                <div id="contact-1" class="tab-pane active">
 			                                    <div class="row m-b-lg">
+													<!--
 			                                        <div class="col-lg-4 text-center">
 			                                            <h2>Nicki Smith</h2>
 			
@@ -88,104 +100,107 @@
 			                                                    class="fa fa-envelope"></i> Send Message
 			                                            </button>
 			                                        </div>
+													-->
 			                                    </div>
 			                                    <div class="client-detail">
-			                                    <div class="full-height-scroll">
-			
-			                                        <strong>Last activity</strong>
-			
-			                                        <ul class="list-group clear-list">
-			                                            <li class="list-group-item fist-item">
-			                                                <span class="pull-right"> 09:00 pm </span>
-			                                                Please contact me
-			                                            </li>
-			                                            <li class="list-group-item">
-			                                                <span class="pull-right"> 10:16 am </span>
-			                                                Sign a contract
-			                                            </li>
-			                                            <li class="list-group-item">
-			                                                <span class="pull-right"> 08:22 pm </span>
-			                                                Open new shop
-			                                            </li>
-			                                            <li class="list-group-item">
-			                                                <span class="pull-right"> 11:06 pm </span>
-			                                                Call back to Sylvia
-			                                            </li>
-			                                            <li class="list-group-item">
-			                                                <span class="pull-right"> 12:00 am </span>
-			                                                Write a letter to Sandra
-			                                            </li>
-			                                        </ul>
-			                                        <strong>Notes</strong>
-			                                        <p>
-			                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			                                            tempor incididunt ut labore et dolore magna aliqua.
-			                                        </p>
-			                                        <hr/>
-			                                        <strong>Timeline activity</strong>
-			                                        <div id="vertical-timeline" class="vertical-container dark-timeline">
-			                                            <div class="vertical-timeline-block">
-			                                                <div class="vertical-timeline-icon gray-bg">
-			                                                    <i class="fa fa-coffee"></i>
-			                                                </div>
-			                                                <div class="vertical-timeline-content">
-			                                                    <p>Conference on the sales results for the previous year.
-			                                                    </p>
-			                                                    <span class="vertical-date small text-muted"> 2:10 pm - 12.06.2014 </span>
-			                                                </div>
-			                                            </div>
-			                                            <div class="vertical-timeline-block">
-			                                                <div class="vertical-timeline-icon gray-bg">
-			                                                    <i class="fa fa-briefcase"></i>
-			                                                </div>
-			                                                <div class="vertical-timeline-content">
-			                                                    <p>Many desktop publishing packages and web page editors now use Lorem.
-			                                                    </p>
-			                                                    <span class="vertical-date small text-muted"> 4:20 pm - 10.05.2014 </span>
-			                                                </div>
-			                                            </div>
-			                                            <div class="vertical-timeline-block">
-			                                                <div class="vertical-timeline-icon gray-bg">
-			                                                    <i class="fa fa-bolt"></i>
-			                                                </div>
-			                                                <div class="vertical-timeline-content">
-			                                                    <p>There are many variations of passages of Lorem Ipsum available.
-			                                                    </p>
-			                                                    <span class="vertical-date small text-muted"> 06:10 pm - 11.03.2014 </span>
-			                                                </div>
-			                                            </div>
-			                                            <div class="vertical-timeline-block">
-			                                                <div class="vertical-timeline-icon navy-bg">
-			                                                    <i class="fa fa-warning"></i>
-			                                                </div>
-			                                                <div class="vertical-timeline-content">
-			                                                    <p>The generated Lorem Ipsum is therefore.
-			                                                    </p>
-			                                                    <span class="vertical-date small text-muted"> 02:50 pm - 03.10.2014 </span>
-			                                                </div>
-			                                            </div>
-			                                            <div class="vertical-timeline-block">
-			                                                <div class="vertical-timeline-icon gray-bg">
-			                                                    <i class="fa fa-coffee"></i>
-			                                                </div>
-			                                                <div class="vertical-timeline-content">
-			                                                    <p>Conference on the sales results for the previous year.
-			                                                    </p>
-			                                                    <span class="vertical-date small text-muted"> 2:10 pm - 12.06.2014 </span>
-			                                                </div>
-			                                            </div>
-			                                            <div class="vertical-timeline-block">
-			                                                <div class="vertical-timeline-icon gray-bg">
-			                                                    <i class="fa fa-briefcase"></i>
-			                                                </div>
-			                                                <div class="vertical-timeline-content">
-			                                                    <p>Many desktop publishing packages and web page editors now use Lorem.
-			                                                    </p>
-			                                                    <span class="vertical-date small text-muted"> 4:20 pm - 10.05.2014 </span>
-			                                                </div>
-			                                            </div>
-			                                        </div>
-			                                    </div>
+													<div class="full-height-scroll">
+														<div style="display:none;">
+															<strong>Last activity</strong>
+					
+															<ul class="list-group clear-list">
+																<li class="list-group-item fist-item">
+																	<span class="pull-right"> 09:00 pm </span>
+																	Please contact me
+																</li>
+																<li class="list-group-item">
+																	<span class="pull-right"> 10:16 am </span>
+																	Sign a contract
+																</li>
+																<li class="list-group-item">
+																	<span class="pull-right"> 08:22 pm </span>
+																	Open new shop
+																</li>
+																<li class="list-group-item">
+																	<span class="pull-right"> 11:06 pm </span>
+																	Call back to Sylvia
+																</li>
+																<li class="list-group-item">
+																	<span class="pull-right"> 12:00 am </span>
+																	Write a letter to Sandra
+																</li>
+															</ul>
+														</div>
+														<strong>Notes</strong>
+														<p>
+															<span amp_type="locale" amp_locale="L_SEL_DATASET"></span>
+														</p>
+														<!--
+														<hr/>
+														<strong>Timeline activity</strong>
+														<div id="vertical-timeline" class="vertical-container dark-timeline">
+															<div class="vertical-timeline-block">
+																<div class="vertical-timeline-icon gray-bg">
+																	<i class="fa fa-coffee"></i>
+																</div>
+																<div class="vertical-timeline-content">
+																	<p>Conference on the sales results for the previous year.
+																	</p>
+																	<span class="vertical-date small text-muted"> 2:10 pm - 12.06.2014 </span>
+																</div>
+															</div>
+															<div class="vertical-timeline-block">
+																<div class="vertical-timeline-icon gray-bg">
+																	<i class="fa fa-briefcase"></i>
+																</div>
+																<div class="vertical-timeline-content">
+																	<p>Many desktop publishing packages and web page editors now use Lorem.
+																	</p>
+																	<span class="vertical-date small text-muted"> 4:20 pm - 10.05.2014 </span>
+																</div>
+															</div>
+															<div class="vertical-timeline-block">
+																<div class="vertical-timeline-icon gray-bg">
+																	<i class="fa fa-bolt"></i>
+																</div>
+																<div class="vertical-timeline-content">
+																	<p>There are many variations of passages of Lorem Ipsum available.
+																	</p>
+																	<span class="vertical-date small text-muted"> 06:10 pm - 11.03.2014 </span>
+																</div>
+															</div>
+															<div class="vertical-timeline-block">
+																<div class="vertical-timeline-icon navy-bg">
+																	<i class="fa fa-warning"></i>
+																</div>
+																<div class="vertical-timeline-content">
+																	<p>The generated Lorem Ipsum is therefore.
+																	</p>
+																	<span class="vertical-date small text-muted"> 02:50 pm - 03.10.2014 </span>
+																</div>
+															</div>
+															<div class="vertical-timeline-block">
+																<div class="vertical-timeline-icon gray-bg">
+																	<i class="fa fa-coffee"></i>
+																</div>
+																<div class="vertical-timeline-content">
+																	<p>Conference on the sales results for the previous year.
+																	</p>
+																	<span class="vertical-date small text-muted"> 2:10 pm - 12.06.2014 </span>
+																</div>
+															</div>
+															<div class="vertical-timeline-block">
+																<div class="vertical-timeline-icon gray-bg">
+																	<i class="fa fa-briefcase"></i>
+																</div>
+																<div class="vertical-timeline-content">
+																	<p>Many desktop publishing packages and web page editors now use Lorem.
+																	</p>
+																	<span class="vertical-date small text-muted"> 4:20 pm - 10.05.2014 </span>
+																</div>
+															</div>
+														</div>
+														-->
+													</div>
 			                                    </div>
 			                                </div>
 			                                <div id="contact-2" class="tab-pane">
