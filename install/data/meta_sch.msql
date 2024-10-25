@@ -409,7 +409,7 @@ CREATE TABLE igcudbauth (
 );
 
 CREATE TABLE igcsm (
-	iuid #CHAR#(17) NOT NULL,
+	iuid #CHAR#(17),
 	sid #CHAR#(17) NOT NULL,
 	seq #NUMBER#(4) NOT NULL,
 	snder #VARCHAR#(255),
