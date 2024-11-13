@@ -61,24 +61,24 @@
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
 <link rel="stylesheet" type="text/css" href="./css/bootstrap.3.3.7.min.css"/>
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202411122306" />
-<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202411122306" />
-<link rel="stylesheet" type="text/css" href="./css/dworks.min.css?_dc=202411122306" />
-<link rel="stylesheet" type="text/css" href="./css/dataworks.css?_dc=202411122306" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202411122314" />
+<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202411122314" />
+<link rel="stylesheet" type="text/css" href="./css/dworks.min.css?_dc=202411122314" />
+<link rel="stylesheet" type="text/css" href="./css/dataworks.css?_dc=202411122314" />
 
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202411122306\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202411122314\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202411122306" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202411122314" />
 <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.3.3.7.min.js"></script>
-<script type="text/javascript" src="../config.js?_dc=202411122306"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202411122306"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202411122306"></script>
-<script type="text/javascript" src="./js/igcdw.min.js?_dc=202411122306"></script>
+<script type="text/javascript" src="../config.js?_dc=202411122314"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202411122314"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202411122314"></script>
+<script type="text/javascript" src="./js/igcdw.min.js?_dc=202411122314"></script>
 <script type="text/javascript">
 
 var useLocale = "<%=lang%>";
@@ -186,11 +186,11 @@ IG$.__microloader(modules, function() {
 		        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
 		            <div class="navbar-header">
 		                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-		                <form role="search" class="navbar-form-custom" action="search_results.html">
+		                <!-- form role="search" class="navbar-form-custom" action="search_results.html">
 		                    <div class="form-group">
 		                        <input type="text" amp_type="placeholder" amp_locale="B_SEARCH" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
 		                    </div>
-		                </form>
+		                </form -->
 		            </div>
 		            <ul class="nav navbar-top-links navbar-right">
 		                <li>
