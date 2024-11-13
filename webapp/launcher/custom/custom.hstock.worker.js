@@ -230,6 +230,10 @@ IG$.cVis.hstock.prototype.draw = function(results) {
 			yaxis = [
 				{
 					type: "value",
+					scale: true,
+					splitArea: {
+						show: true
+					},
 					position: "left",
 					title: {
 						text: null
@@ -260,23 +264,114 @@ IG$.cVis.hstock.prototype.draw = function(results) {
 		}
 		
 		df = cop.s_t_fo;
-		
-		for (i=colfix; i < cols; i++)
-		{
-			for (j=0; j < rowfix; j++)
-			{
-				sname = (j == 0) ? data[j][i].text : sname + "|" + data[j][i].text;
+
+		var upcolor = '#ec0000';
+		var downcolor = '#00da3c';
+		var upborder = '#8A0000';
+		var downborder = '#008F28';
+
+		var candlestick = {
+			type: "candlestick",
+			name: "candlestick",
+			data: [],
+			itemStyle: {
+				color: upcolor,
+				color0: downcolor,
+				borderColor: upborder,
+				borderColor0: downborder
+			},
+			// markPoint: {
+			// 	label: {
+			// 		formatter: function (param) {
+			// 			return param != null ? Math.round(param.value) + '' : '';
+			// 		}
+			// 	},
+			// 	data: [
+			// 		{
+			// 			name: 'highest value',
+			// 			type: 'max',
+			// 			valueDim: 'highest'
+			// 		},
+			// 		{
+			// 			name: 'lowest value',
+			// 			type: 'min',
+			// 			valueDim: 'lowest'
+			// 		},
+			// 		{
+			// 			name: 'average value on close',
+			// 			type: 'average',
+			// 			valueDim: 'close'
+			// 		}
+			// 	],
+			// 	tooltip: {
+			// 		formatter: function (param) {
+			// 		  return param.name + '<br>' + (param.data.coord || '');
+			// 		}
+			// 	}
+			// },
+			markLine: {
+				symbol: ["none", "none"],
+				data: [
+					// [
+					// 	{
+					// 		name: 'from lowest to highest',
+					// 		type: 'min',
+					// 		valueDim: 'lowest',
+					// 		symbol: 'circle',
+					// 		symbolSize: 10,
+					// 		label: {
+					// 		show: false
+					// 		},
+					// 		emphasis: {
+					// 			label: {
+					// 				show: false
+					// 			}
+					// 		}
+					// 	},
+					//   	{
+					// 		type: 'max',
+					// 		valueDim: 'highest',
+					// 		symbol: 'circle',
+					// 		symbolSize: 10,
+					// 		label: {
+					// 		show: false
+					// 		},
+					// 		emphasis: {
+					// 			label: {
+					// 				show: false
+					// 			}
+					// 		}
+					//   	}
+					// ],
+					{
+						name: 'min line on close',
+						type: 'min',
+						valueDim: 'close'
+					},
+					{
+						name: 'max line on close',
+						type: 'max',
+						valueDim: 'close'
+					}
+				]
 			}
-			
-			s = {
-				name: sname,
-				_c: [i],
-				data: [],
-				type: "line"
-			};
-			series.push(s);
-		}
-		
+		};
+
+		var categoryData  = [];
+
+		series.push(candlestick);
+
+		var avgSeries = {
+			type: 'line',
+			data: [],
+			smooth: true,
+			lineStyle: {
+			  opacity: 0.5
+			}
+		};
+
+		series.push(avgSeries);
+				
 		if (usedualaxis && dualaxisitem && dualaxisitem.length > 0)
 		{
 			yaxis.push(
@@ -302,73 +397,61 @@ IG$.cVis.hstock.prototype.draw = function(results) {
 				}
 			}
 		}
-		
-		for (i=0; i < series.length; i++)
-		{
-			if (cop.renderas && cop.renderas.length > i && cop.renderas[i] != null && cop.renderas[i] != "")
-			{
-				series[i].type = IG$.getSeriesType(cop.renderas[i]);
-			}
-		}
+
+		var pvalue;
 		
 		for (i=rowfix; i < rows; i++)
 		{
-			dt = data[i][dtcol].code || data[i][dtcol].text;
-			if (!dt)
+			dt = data[i][dtcol].text || data[i][dtcol].code;
+			if (!dt || cols - colfix < 3)
 				continue;
-				
-			if (df == "epoch")
+
+			categoryData.push(dt);
+
+			dr = [];
+
+			var cvalue;
+
+			if (cols - colfix >= 5)
 			{
-				dv = Number(dt);
-				if (isNaN(dv))
-					continue;
-				dt = new Date(dv);
-			}
-			else if (df)
-			{
-				dt = getDateFromFormat(dt, df);
-			}
-			else
-			{
-				if (dt.length == 8)
+				for (k=colfix; k < cols; k++)
 				{
-					y = dt.substring(0, 4);
-					m = dt.substring(4, 6);
-					d = dt.substring(6, 8);
-					dt = new Date(y, m, d).getTime();
-				}
-				else if (dt.length > 11)
-				{
-					y = dt.substring(0, 4);
-					m = dt.substring(4, 6);
-					d = dt.substring(6, 8);
-					h = dt.substring(8, 10);
-					mm = dt.substring(10, 12);
-					ss = 0;
-					if (dt.length > 13)
-					{
-						ss = dt.substring(12, 14);
-					}
-					dt = new Date(y, m, d, h, mm, ss).getTime();
-				}
-			}
-			for (j=0; j < series.length; j++)
-			{
-				dr = [dt];
-				for (k=0; k < series[j]._c.length; k++)
-				{
-					v = data[i][series[j]._c[k]].code;
+					v = data[i][k].code;
 					v = Number(v);
 					dr.push(v || 0);
 				}
-				
-				series[j].data.push(dr);
+
+				cvalue = Number(data[i][colfix + 5].code) || 0;
+				avgSeries.data.push(cvalue);
 			}
+			else if (cols - colfix == 3)
+			{
+				var m = Number(data[i][colfix].code) || 0;
+				var M = Number(data[i][colfix + 2].code) || 0;
+				v = m + (M - m) * 0.2;
+				dr.push(v);
+
+				v = m + (M - m) * 0.8;
+				dr.push(v);
+
+				dr.push(m);
+				dr.push(M);
+
+				cvalue = Number(data[i][colfix + 1].code) || 0;
+				avgSeries.data.push(cvalue);
+			}
+			candlestick.data.push({value: dr, itemStyle: {color: cvalue > pvalue ? downcolor : upcolor, borderColor: cvalue > pvalue ? downborder : upborder}});
+			pvalue = cvalue;
 		}
 		
 		var copt = {
 			chart: {
 				renderTo: container[0]
+			},
+			grid: {
+				left: 60,
+				right: 60,
+				bottom: 100
 			},
 			rangeSelector: {
 				selected: 1
@@ -380,20 +463,33 @@ IG$.cVis.hstock.prototype.draw = function(results) {
 				type: "time"
 			},
 			yAxis: yaxis,
-			series: series
+			series: series,
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+				  	type: 'cross'
+				}
+			}
 		};
 
 		if (window.echarts)
 		{
 			copt.xAxis = [
 				{
-					type: "time"
+					type: "category",
+					data: categoryData,
+					boundaryGap: false,
+					axisLine: { onZero: false },
+					min: 'dataMin',
+    				max: 'dataMax'
 				}
 			];
 			
 			copt.dataZoom = [
 				{
-					type: "slider"
+					type: "slider",
+					maxValueSpan: 60,
+					startValue: (categoryData.length - 60) || 0
 				}	
 			];
 			
@@ -427,7 +523,7 @@ IG$.cVis.hstock.prototype.draw = function(results) {
 			hchart.on("click", function(params) {
 				if (params.componentType == "series")
 				{
-					_chartview.procClickEvent(
+					chartview.procClickEvent(
 						{
 							series: {
 								name: params.seriesName,

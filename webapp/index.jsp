@@ -14,7 +14,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202410250300" />
+    <link rel="stylesheet" href="./main/css/main.min.css?_dc=202411122057" />
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="./main/css/mainpage_ie.css" />
 <![endif]-->
@@ -24,8 +24,8 @@
     var __mts_id = null;
     var __uri = "<%=uri%>";
    	</script>
-   	<script type="text/javascript" src="./config.js?_dc=202410250300"></script>
-    <script type="text/javascript" src="./main/js/main.min.js?_dc=202410250300"></script>
+   	<script type="text/javascript" src="./config.js?_dc=202411122057"></script>
+    <script type="text/javascript" src="./main/js/main.min.js?_dc=202411122057"></script>
 </head>
 <body class="index nav-light hoverable">
 	
@@ -113,6 +113,30 @@
 				                    </div>
 				                </div>
 				            </div>
+							<div class="service-two-columns2">
+                                <div class="service-summary2">
+                                    <div class="text-group-service">
+                                        <div class="service-title-preview-layout">
+                                            <div class="service-name-summary-tab" data-trackas="service-name-summary-tab">        
+                                                <a id="btn_item2">Dashboard</a>     
+                                            </div>
+                                        </div>
+                                        <div class="service-title-summary-tab">Interactive dashboard viewer without programming burden.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-two-columns2">
+                                <div class="service-summary2">
+                                    <div class="text-group-service">
+                                        <div class="service-title-preview-layout">
+                                            <div class="service-name-summary-tab" data-trackas="service-name-summary-tab">        
+                                                <a id="btn_item4">Data Works</a>     
+                                            </div>
+                                        </div>
+                                        <div class="service-title-summary-tab">Start your Data Works and share over the professional data scientists.</div>
+                                    </div>
+                                </div>
+                            </div>
 							<!--
 				            <div class="service-two-columns2">
 				                <div class="service-summary2">

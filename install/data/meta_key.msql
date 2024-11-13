@@ -39,7 +39,7 @@ ALTER TABLE igcscp ADD CONSTRAINT idx_igcscp_pk PRIMARY KEY(mid, sid, seq);
 ALTER TABLE igcserver ADD CONSTRAINT idx_igcserver_pk PRIMARY KEY(pname, content);
 ALTER TABLE igcshare ADD CONSTRAINT idx_igcshare_pk PRIMARY KEY(suid, mtu, muid);
 ALTER TABLE igcsj ADD CONSTRAINT idx_igcsj_pk PRIMARY KEY(jid, sid, executeid);
-ALTER TABLE igcsm ADD CONSTRAINT idx_igcsm_pk PRIMARY KEY(iuid, sid, seq);
+ALTER TABLE igcsm ADD CONSTRAINT idx_igcsm_pk PRIMARY KEY(sid, seq);
 ALTER TABLE igcsso ADD CONSTRAINT idx_igcsso_pk PRIMARY KEY(mtu, muid, seq);
 ALTER TABLE igcsubscript ADD CONSTRAINT idx_igcsubscript_pk PRIMARY KEY(scid);
 ALTER TABLE igcsystemlogs ADD CONSTRAINT idx_igcsystemlogs_pk PRIMARY KEY(lid);
