@@ -60,23 +60,26 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202411122057" />
-<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202411122057" />
-<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202411122057" />
-<link rel="stylesheet" type="text/css" href="./css/dataworks.3.3.7.css" />
-<link rel="stylesheet" type="text/css" href="./css/dataworks.css" />
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.3.3.7.min.css"/>
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202411122153" />
+<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202411122153" />
+<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202411122153" />
+<link rel="stylesheet" type="text/css" href="./css/dworks.min.css?_dc=202411122153" />
+<link rel="stylesheet" type="text/css" href="./css/dataworks.css?_dc=202411122153" />
 
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202411122057\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202411122153\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202411122057" />
-<script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202411122057"></script>
-<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202411122057"></script>
-<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202411122057"></script>
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202411122153" />
+<script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.3.3.7.min.js"></script>
+<script type="text/javascript" src="../config.js?_dc=202411122153"></script>
+<script type="text/javascript" src="../bootconfig<%=(is_debug ? "_debug" : "")%>.js?_dc=202411122153"></script>
+<script type="text/javascript" src="./js/igca<%=(is_debug ? "" : ".min")%>.js?_dc=202411122153"></script>
+<script type="text/javascript" src="./js/igcdw.min.js?_dc=202411122153"></script>
 <script type="text/javascript">
 
 var useLocale = "<%=lang%>";

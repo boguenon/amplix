@@ -1,5 +1,5 @@
 ﻿ig$.bootconfig = {
-	"cache": "202411122057",
+	"cache": "202411122153",
     "boot": {
         "framework": [
             "./js/material_web.js",
@@ -38,9 +38,15 @@
         "app_dashboard": [
             "./js/app_dashboard.min.js"
         ],
+        "app_dataworks": [
+            "./js/app_dataworks.min.js"
+        ],
         "app_viewer": [
             "./js/app_viewer.min.js",
             "./js/custom_viewer.min.js"
+        ],
+        "dataworks_main": [
+            "./js/dataworks_main.min.js"
         ],
         "custom": [
             "./js/customer_specific.js",
