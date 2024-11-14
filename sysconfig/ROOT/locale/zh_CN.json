@@ -8301,5 +8301,65 @@
     "group" : "locale_zh_CN_0019",
     "name" : "L_GPT_API_KEY",
     "value" : "ChatGPT API Key"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_KAKAO",
+    "value" : "Kakao"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_K_ENABLED",
+    "value" : "Enable Kakao API"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_K_REST_API_KEY",
+    "value" : "Rest API Key"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_K_REDIRECT_URI",
+    "value" : "Redirect URL"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_K_CLIENT_SECRET",
+    "value" : "Client Secret"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_K_TOKEN_URI",
+    "value" : "Token URL"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_K_AUTH_URI",
+    "value" : "Authenticate URL"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_K_API_HOST",
+    "value" : "API Hostname"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_K_OAUTH_TOKEN",
+    "value" : "OAuth Token"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_K_GET_TOKEN",
+    "value" : "Get OAuth Token"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_NLP_BO",
+    "value" : "Enable NLP"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_DE_LABEL",
+    "value" : "End Label"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_DE_FORMAT",
+    "value" : "End Label Format"
+  }, {
+    "group" : "locale_zh_CN_0019",
+    "name" : "L_ANIM_DUR",
+    "value" : "Animation Duration"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_CUSTOM_CSS",
+    "value" : "Custom CSS"
   } ]
 }

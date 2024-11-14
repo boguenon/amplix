@@ -1,0 +1,13 @@
+A;L_KAKAO;Kakao
+A;L_K_ENABLED;Enable Kakao API
+A;L_K_REST_API_KEY;Rest API Key
+A;L_K_REDIRECT_URI;Redirect URL
+A;L_K_CLIENT_SECRET;Client Secret
+A;L_K_TOKEN_URI;Token URL
+A;L_K_AUTH_URI;Authenticate URL
+A;L_K_API_HOST;API Hostname
+A;L_K_OAUTH_TOKEN;OAuth Token
+A;L_K_GET_TOKEN;Get OAuth Token
+
+A;L_NLP_BO;Enable NLP
+A;L_CUSTOM_CSS;Custom CSS

@@ -8421,5 +8421,65 @@
     "group" : "locale_ko_KR_0019",
     "name" : "L_GPT_API_KEY",
     "value" : "ChatGPT API 키"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_KAKAO",
+    "value" : "카카오"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_K_ENABLED",
+    "value" : "카카오 API 사용"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_K_REST_API_KEY",
+    "value" : "Rest API 키"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_K_REDIRECT_URI",
+    "value" : "Redirect URL"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_K_CLIENT_SECRET",
+    "value" : "Client Secret"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_K_TOKEN_URI",
+    "value" : "토큰 URL"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_K_AUTH_URI",
+    "value" : "인증 URL"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_K_API_HOST",
+    "value" : "API 호스트"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_K_OAUTH_TOKEN",
+    "value" : "OAuth 토큰"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_K_GET_TOKEN",
+    "value" : "Get OAuth 토큰"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_NLP_BO",
+    "value" : "NLP AI 활성화"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_DE_LABEL",
+    "value" : "설명 라벨"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_DE_FORMAT",
+    "value" : "설명 라벨 양식"
+  }, {
+    "group" : "locale_ko_KR_0019",
+    "name" : "L_ANIM_DUR",
+    "value" : "에니메이션 시간"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_CUSTOM_CSS",
+    "value" : "커스텀 CSS"
   } ]
 }

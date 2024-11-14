@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="../launcher/js/jquery-3.6.4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var btn_close = $("#btn_close");
+
+        btn_close.bind("click", function(e) {
+            var qstring = window.location.search;
+            var params = {};
+            if (qstring)
+            {
+                if (qstring.startsWith("?"))
+                    qstring = qstring.substring(1);
+
+                var q = qstring.split("&");
+                for (var i=0; i < q.length; i++)
+                {
+                    var p = q[i].split("=");
+                    if (p.length == 2)
+                    {
+                        var pn = p[0];
+                        var pv = p[1];
+                        
+                        params[pn] = pv;
+                    }
+                }
+            }
+            window.opener['kakao_callbcak_code'] = params.code;
+            self.close();
+        });
+    });
+</script>
+</head>
+<body>
+    <button id="btn_close">Close</button>
+</body>
+</html>
