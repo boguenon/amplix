@@ -11,3 +11,14 @@ A;L_K_GET_TOKEN;Get OAuth Token
 
 A;L_NLP_BO;Enable NLP
 A;L_CUSTOM_CSS;Custom CSS
+
+A;L_BASE_LIB;Base Library
+
+A;L_INTERFACES;Interfaces
+A;L_DELIVERY_CHANNELS;Delivery Channels
+
+A;L_NOTI_KAKAO;Notify on Kakao
+A;L_NOTI_DELI;Notify Delivery
+A;L_SC_TRIGGER;Notify Trigger
+
+A;B_ATTACHMENTS;Attachments

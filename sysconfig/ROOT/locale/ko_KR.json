@@ -8481,5 +8481,33 @@
     "group" : "locale_ko_KR_0020",
     "name" : "L_CUSTOM_CSS",
     "value" : "커스텀 CSS"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_BASE_LIB",
+    "value" : "기반 클래스"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_INTERFACES",
+    "value" : "외부 인터페이스"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_DELIVERY_CHANNELS",
+    "value" : "딜리버리 채널"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_NOTI_KAKAO",
+    "value" : "카카오 알림 메시지"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_NOTI_DELI",
+    "value" : "알림 전송"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_SC_TRIGGER",
+    "value" : "알림 트리거"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "B_ATTACHMENTS",
+    "value" : "첨부파일"
   } ]
 }

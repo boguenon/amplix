@@ -527,4 +527,6 @@ IG$.cVis.calendar.prototype.dispose = function() {
 	{
 		hchart.dispose();
 	}
+
+	me.container && me.container.empty();
 };

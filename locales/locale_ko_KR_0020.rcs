@@ -11,3 +11,14 @@ A;L_K_GET_TOKEN;Get OAuth 토큰
 
 A;L_NLP_BO;NLP AI 활성화
 A;L_CUSTOM_CSS;커스텀 CSS
+
+A;L_BASE_LIB;기반 클래스
+
+A;L_INTERFACES;외부 인터페이스
+A;L_DELIVERY_CHANNELS;딜리버리 채널
+
+A;L_NOTI_KAKAO;카카오 알림 메시지
+A;L_NOTI_DELI;알림 전송
+A;L_SC_TRIGGER;알림 트리거
+
+A;B_ATTACHMENTS;첨부파일

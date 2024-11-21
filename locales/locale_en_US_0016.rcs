@@ -51,3 +51,14 @@ A;L_FV_OPT;Form Viewer Option
 A;L_NEW_ANAL;New Analysis
 A;L_ANAL_GROUP;Analysis Group
 A;L_ANALYSIS_TYPE;Analysis Type
+
+A;L_DISCUSSIONS;Discussions
+A;L_DS_TARGET;DataSource File Upload
+A;L_DS_LD_OPT;Data Options
+A;L_COLUMNS;Columns
+A;L_DS_FINISH;Completed Data Loading.
+A;L_CREATE_DTB;Create New DataSet
+A;L_APPEND_DTB;Append on DataSet
+A;L_UPLOAD_MODE;Upload Mode
+A;L_DS_TITLE;DataWorks DataLoader Wizard
+A;T_DATA_UPLOAD_DESC;Create report and analysis after upload data file or load data from URL.

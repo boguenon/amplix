@@ -8449,5 +8449,73 @@
     "group" : "locale_en_US_0020",
     "name" : "L_CUSTOM_CSS",
     "value" : "Custom CSS"
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "L_DISCUSSIONS",
+    "value" : "Discussions"
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "L_DS_TARGET",
+    "value" : "DataSource File Upload"
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "L_DS_LD_OPT",
+    "value" : "Data Options"
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "L_COLUMNS",
+    "value" : "Columns"
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "L_DS_FINISH",
+    "value" : "Completed Data Loading."
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "L_CREATE_DTB",
+    "value" : "Create New DataSet"
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "L_APPEND_DTB",
+    "value" : "Append on DataSet"
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "L_UPLOAD_MODE",
+    "value" : "Upload Mode"
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "L_DS_TITLE",
+    "value" : "DataWorks DataLoader Wizard"
+  }, {
+    "group" : "locale_en_US_0016",
+    "name" : "T_DATA_UPLOAD_DESC",
+    "value" : "Create report and analysis after upload data file or load data from URL."
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_BASE_LIB",
+    "value" : "Base Library"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_INTERFACES",
+    "value" : "Interfaces"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_DELIVERY_CHANNELS",
+    "value" : "Delivery Channels"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_NOTI_KAKAO",
+    "value" : "Notify on Kakao"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_NOTI_DELI",
+    "value" : "Notify Delivery"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_SC_TRIGGER",
+    "value" : "Notify Trigger"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "B_ATTACHMENTS",
+    "value" : "Attachments"
   } ]
 }
