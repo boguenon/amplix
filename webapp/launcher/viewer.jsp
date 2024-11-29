@@ -40,6 +40,12 @@
 	
 	String objid = params.get("objid");
     objid = objid != null && objid.trim().length() > 0 ? objid : null;
+
+	String jobid = params.get("jobid");
+	jobid = jobid != null && !jobid.trim().isEmpty() ? jobid : null;
+
+	String slink = params.get("slink");
+	slink = slink != null && !slink.trim().isEmpty() ? slink : null;
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,31 +57,31 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="icon" href="../favicon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202411202125" />
-<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202411202125" />
-<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202411202125" />
+<link rel="stylesheet" type="text/css" href="./css/apps.min.css?_dc=202411290501" />
+<link rel="stylesheet" type="text/css" href="./css/mdb.min.css?_dc=202411290501" />
+<link rel="stylesheet" type="text/css" href="./css/custom_lang_<%=lang.toLowerCase()%>.css?_dc=202411290501" />
 <%
 if (theme != null && theme.length() > 0)
 {
-	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202411202125\" />");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/" + theme.toLowerCase() + ".css?_dc=202411290501\" />");
 }
 %>
-<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202411202125" />
-<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202411202125" />
+<link rel="stylesheet" type="text/css" href="./viewer/css/viewer.css?_dc=202411290501" />
+<link rel="stylesheet" type="text/css" href="./css/custom.css?_dc=202411290501" />
 
 <style>
 #wrap {
 	top: 0px;
 }
 #content {
-	top: <%= (objid == null ? "102" : "0") %> px;
+	top: <%= (objid == null && jobid == null && slink == null ? "102" : "0") %> px;
 }
 </style>
 
 <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>    
-<script type="text/javascript" src="../config.js?_dc=202411202125"></script>
-<script type="text/javascript" src="../bootconfig.js?_dc=202411202125"></script>
-<script type="text/javascript" src="./js/igca.min.js?_dc=202411202125"></script>
+<script type="text/javascript" src="../config.js?_dc=202411290501"></script>
+<script type="text/javascript" src="../bootconfig.js?_dc=202411290501"></script>
+<script type="text/javascript" src="./js/igca.min.js?_dc=202411290501"></script>
 
 <script type="text/javascript">
 var useLocale = "<%=lang%>";
@@ -140,6 +146,25 @@ IG$.__microloader(modules, function() {
 		});
 		
 		viewer_inst.create();
+
+		$(viewer_inst.target).bind("instance_event", function() {
+			var args = arguments;
+				type = args[2];
+
+			console.log(">> navigation event :" + type + "!");
+
+			if (type == "done")
+			{
+				clearTimeout(viewer_inst._etimer);
+
+				viewer_inst._etimer = setTimeout(function() {
+					if (window.onAmplixViewerLoaded)
+					{
+						window.onAmplixViewerLoaded(type);
+					}
+				}, 800);
+			}
+		});
 	});
 });
 </script>
