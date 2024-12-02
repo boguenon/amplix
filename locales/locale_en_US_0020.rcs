@@ -22,3 +22,14 @@ A;L_NOTI_DELI;Notify Delivery
 A;L_SC_TRIGGER;Notify Trigger
 
 A;B_ATTACHMENTS;Attachments
+
+A;L_AI;AI
+A;L_AI_TYPE;AI Provider
+A;L_AI_GPT_API;OpenAI API Key
+A;L_AI_GPT_ORG;OpenAI Org ID
+A;L_AI_GPT_PRJ;OpenAI Project ID
+A;L_AI_GPT_MODEL;ChatGPT Model
+A;L_AI_LLAMA_HOST;Llama API EndPoint
+
+A;L_AI_Q;AI Questions
+A;L_AI_PIVOT_REQ;Pivot AI Questions

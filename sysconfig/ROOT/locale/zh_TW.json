@@ -8437,5 +8437,41 @@
     "group" : "locale_zh_TW_0020",
     "name" : "B_ATTACHMENTS",
     "value" : "Attachments"
+  }, {
+    "group" : "locale_zh_TW_0020",
+    "name" : "L_AI",
+    "value" : "AI"
+  }, {
+    "group" : "locale_zh_TW_0020",
+    "name" : "L_AI_TYPE",
+    "value" : "AI Provider"
+  }, {
+    "group" : "locale_zh_TW_0020",
+    "name" : "L_AI_GPT_API",
+    "value" : "OpenAI API Key"
+  }, {
+    "group" : "locale_zh_TW_0020",
+    "name" : "L_AI_GPT_ORG",
+    "value" : "OpenAI Org ID"
+  }, {
+    "group" : "locale_zh_TW_0020",
+    "name" : "L_AI_GPT_PRJ",
+    "value" : "OpenAI Project ID"
+  }, {
+    "group" : "locale_zh_TW_0020",
+    "name" : "L_AI_GPT_MODEL",
+    "value" : "ChatGPT Model"
+  }, {
+    "group" : "locale_zh_TW_0020",
+    "name" : "L_AI_LLAMA_HOST",
+    "value" : "Llama API EndPoint"
+  }, {
+    "group" : "locale_zh_TW_0020",
+    "name" : "L_AI_Q",
+    "value" : "AI Questions"
+  }, {
+    "group" : "locale_zh_TW_0020",
+    "name" : "L_AI_PIVOT_REQ",
+    "value" : "Pivot AI Questions"
   } ]
 }

@@ -22,3 +22,14 @@ A;L_NOTI_DELI;알림 전송
 A;L_SC_TRIGGER;알림 트리거
 
 A;B_ATTACHMENTS;첨부파일
+
+A;L_AI;AI
+A;L_AI_TYPE;AI 제공자
+A;L_AI_GPT_API;OpenAI API 키
+A;L_AI_GPT_ORG;OpenAI Org ID
+A;L_AI_GPT_PRJ;OpenAI Project ID
+A;L_AI_GPT_MODEL;ChatGPT 모델
+A;L_AI_LLAMA_HOST;Llama API 접속경로
+
+A;L_AI_Q;AI 질의문
+A;L_AI_PIVOT_REQ피벗 AI 질의문
