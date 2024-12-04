@@ -1,5 +1,5 @@
 ﻿ig$.bootconfig = {
-	"cache": "202412020353",
+	"cache": "202412040826",
     "boot": {
         "framework": [
             "./js/material_web.js",
