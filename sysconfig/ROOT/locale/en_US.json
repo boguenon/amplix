@@ -8553,5 +8553,17 @@
     "group" : "locale_en_US_0020",
     "name" : "L_AI_PIVOT_REQ",
     "value" : "Pivot AI Questions"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_AI_SUMMARY",
+    "value" : "AI StoryIt"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_AI_TREND_REQ",
+    "value" : "AI Trend Questions"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_ADD",
+    "value" : "Click to Add or Replace"
   } ]
 }

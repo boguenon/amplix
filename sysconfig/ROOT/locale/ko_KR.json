@@ -8541,5 +8541,17 @@
     "group" : "locale_ko_KR_0020",
     "name" : "L_AI_Q",
     "value" : "AI 질의문"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_AI_SUMMARY",
+    "value" : "AI 요약 보고서 보기"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_AI_TREND_REQ",
+    "value" : "AI 트랜드 질의문"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_ADD",
+    "value" : "항목 추가 변경하시려면 클릭해 주세요"
   } ]
 }

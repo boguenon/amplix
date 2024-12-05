@@ -33,3 +33,8 @@ A;L_AI_LLAMA_HOST;Llama API EndPoint
 
 A;L_AI_Q;AI Questions
 A;L_AI_PIVOT_REQ;Pivot AI Questions
+
+
+A;L_AI_SUMMARY;AI StoryIt
+A;L_AI_TREND_REQ;AI Trend Questions
+A;L_ADD;Click to Add or Replace

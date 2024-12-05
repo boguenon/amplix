@@ -662,6 +662,10 @@
 							"cls": "ig_r_ct"
 						},
 						{
+							"name": "AI Trend",
+							"cls": "ig_r_trend"
+						},
+						{
 							"name": "Schedule",
 							"cls": "ig_r_sch"
 						},
