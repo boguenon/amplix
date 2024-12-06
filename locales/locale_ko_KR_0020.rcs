@@ -38,3 +38,6 @@ A;L_AI_PIVOT_REQ피벗 AI 질의문
 A;L_AI_SUMMARY;AI 요약 보고서 보기
 A;L_AI_TREND_REQ;AI 트랜드 질의문
 A;L_ADD;항목 추가 변경하시려면 클릭해 주세요
+
+A;L_AI_LLAMA_API;Llama API 키
+A;L_AI_LLAMA_MODEL;Llama 모델

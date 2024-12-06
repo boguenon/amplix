@@ -8565,5 +8565,13 @@
     "group" : "locale_en_US_0020",
     "name" : "L_ADD",
     "value" : "Click to Add or Replace"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_AI_LLAMA_API",
+    "value" : "Llama API Key"
+  }, {
+    "group" : "locale_en_US_0020",
+    "name" : "L_AI_LLAMA_MODEL",
+    "value" : "Llama Model"
   } ]
 }

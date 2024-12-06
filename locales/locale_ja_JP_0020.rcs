@@ -38,3 +38,6 @@ A;L_AI_PIVOT_REQ;Pivot AI Questions
 A;L_AI_SUMMARY;AI StoryIt
 A;L_AI_TREND_REQ;AI Trend Questions
 A;L_ADD;Click to Add or Replace
+
+A;L_AI_LLAMA_API;Llama API Key
+A;L_AI_LLAMA_MODEL;Llama Model

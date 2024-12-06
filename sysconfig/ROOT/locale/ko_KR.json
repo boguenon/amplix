@@ -8553,5 +8553,13 @@
     "group" : "locale_ko_KR_0020",
     "name" : "L_ADD",
     "value" : "항목 추가 변경하시려면 클릭해 주세요"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_AI_LLAMA_API",
+    "value" : "Llama API 키"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_AI_LLAMA_MODEL",
+    "value" : "Llama 모델"
   } ]
 }
