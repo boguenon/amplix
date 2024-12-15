@@ -24,7 +24,6 @@ IG$.cVis.barrace = $s.extend(IG$.cVis.base, {
         if (!IG$.cVis.barrace._loaded)
         {
             var js = [
-					"./custom/d3-array.v2.min.js",
                     "./custom/custom.barrace.worker.js"
                 ];
             

@@ -24,7 +24,7 @@ IG$.cVis.circlepacking = $s.extend(IG$.cVis.base, {
 		if (!IG$.cVis.circlepacking._loaded)
 		{
 			var js = [
-					"./custom/d3-array.v2.min.js",
+					"./js/d3-hierarchy.min.js",
 					"./custom/custom.circlepacking.worker.js"
 				];
 			
