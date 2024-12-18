@@ -41,3 +41,13 @@ A;L_ADD;항목 추가 변경하시려면 클릭해 주세요
 
 A;L_AI_LLAMA_API;Llama API 키
 A;L_AI_LLAMA_MODEL;Llama 모델
+
+A;S_STDDEV;표준편차
+A;F_IRR;Internal Rate of Return
+A;F_NPV;Net present value of investment
+A;F_PV;Present value of investment
+A;F_FV;Future value of investment
+A;F_PMT;Periodic Payment for an annuity
+A;F_NPER;Number of periods for an investment
+A;L_OPTION_VALUE;설정값
+A;L_V_PIVOT_CLS;클러스터링 피벗

@@ -8485,5 +8485,49 @@
     "group" : "locale_zh_CN_0020",
     "name" : "L_AI_LLAMA_MODEL",
     "value" : "Llama Model"
+  }, {
+    "group" : "locale_zh_CN_0008",
+    "name" : "F_STDDEV",
+    "value" : "Standard Deviation"
+  }, {
+    "group" : "locale_zh_CN_0008",
+    "name" : "F_STDDEVP",
+    "value" : "Standard Deviation P"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "S_STDDEV",
+    "value" : "Std Dev"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "F_IRR",
+    "value" : "Internal Rate of Return"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "F_NPV",
+    "value" : "Net present value of investment"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "F_PV",
+    "value" : "Present value of investment"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "F_FV",
+    "value" : "Future value of investment"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "F_PMT",
+    "value" : "Periodic Payment for an annuity"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "F_NPER",
+    "value" : "Number of periods for an investment"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_OPTION_VALUE",
+    "value" : "Option Value"
+  }, {
+    "group" : "locale_zh_CN_0020",
+    "name" : "L_V_PIVOT_CLS",
+    "value" : "Pivot with Cluster"
   } ]
 }

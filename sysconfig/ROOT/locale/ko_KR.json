@@ -8561,5 +8561,49 @@
     "group" : "locale_ko_KR_0020",
     "name" : "L_AI_LLAMA_MODEL",
     "value" : "Llama 모델"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "F_STDDEV",
+    "value" : "표준편차"
+  }, {
+    "group" : "locale_ko_KR_0008",
+    "name" : "F_STDDEVP",
+    "value" : "표준편차 P"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "S_STDDEV",
+    "value" : "표준편차"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "F_IRR",
+    "value" : "Internal Rate of Return"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "F_NPV",
+    "value" : "Net present value of investment"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "F_PV",
+    "value" : "Present value of investment"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "F_FV",
+    "value" : "Future value of investment"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "F_PMT",
+    "value" : "Periodic Payment for an annuity"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "F_NPER",
+    "value" : "Number of periods for an investment"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_OPTION_VALUE",
+    "value" : "설정값"
+  }, {
+    "group" : "locale_ko_KR_0020",
+    "name" : "L_V_PIVOT_CLS",
+    "value" : "클러스터링 피벗"
   } ]
 }

@@ -1,7 +1,7 @@
 A;L_CLEAR_FORMULA;Clear Formula
 A;B_MORE;More
-A;F_STDEV;Standard Deviation
-A;F_STDEVP;Standard Deviation P
+A;F_STDDEV;Standard Deviation
+A;F_STDDEVP;Standard Deviation P
 A;F_PERCENTILE;Percentile
 A;F_PERCENTILE_EXE;Percentile Excel
 A;L_FORMULA_GROUP;Formula Group

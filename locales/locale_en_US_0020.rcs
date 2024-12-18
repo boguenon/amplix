@@ -40,3 +40,13 @@ A;L_ADD;Click to Add or Replace
 
 A;L_AI_LLAMA_API;Llama API Key
 A;L_AI_LLAMA_MODEL;Llama Model
+
+A;S_STDDEV;Std Dev
+A;F_IRR;Internal Rate of Return
+A;F_NPV;Net present value of investment
+A;F_PV;Present value of investment
+A;F_FV;Future value of investment
+A;F_PMT;Periodic Payment for an annuity
+A;F_NPER;Number of periods for an investment
+A;L_OPTION_VALUE;Option Value
+A;L_V_PIVOT_CLS;Pivot with Cluster
